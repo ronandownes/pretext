@@ -62,7 +62,7 @@ jobs:
               echo "::warning::The original Core Mathematics source references a missing sec-5-5.ptx; omitting this reference in the temporary build checkout only."
               sed -i 's|<xi:include href="./sec-5-5.ptx" />|<!-- Missing upstream sec-5-5.ptx: omitted from generated edition -->|' sources/core-math/source/ch5.ptx
             fi
-            if ( cd "sources/$name" && pretext build web ); then
+            if ( cd "sources/$name" && pretext build web --no-generate ); then
               result=0
             else
               result=$?
@@ -73,7 +73,7 @@ jobs:
               if [ -d "$candidate" ]; then
                 mkdir -p "site/$name"
                 cp -a "$candidate/." "site/$name/"
-                echo "$name: built" >> site/build-status.txt
+                echo "$name: HTML built (diagram asset generation deferred)" >> site/build-status.txt
               else
                 echo "$name: build succeeded but output location not found" >> site/build-status.txt
               fi
@@ -116,3 +116,15 @@ jobs:
           publish_dir: ./site
           publish_branch: gh-pages
           force_orphan: false
+      - name: Verify publication contains textbooks
+        shell: bash
+        run: |
+          echo "=== Individual PreTeXt build outcomes ==="
+          cat site/build-status.txt
+          number=$(find site -mindepth 2 -maxdepth 2 -name '*.html' | wc -l)
+          echo "Published textbook HTML root pages: $number"
+          if [ "$number" -eq 0 ]; then
+            echo "::error::No PreTeXt textbook HTML was produced; the published page is only a placeholder."
+            exit 1
+          fi
+
