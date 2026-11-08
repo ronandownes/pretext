@@ -49,6 +49,33 @@ jobs:
           python-version: '3.12'
       - name: Install PreTeXt
         run: python -m pip install pretext
+      - name: Correct legacy LaTeX text escapes in the temporary build checkout
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          # Fix only missing percent escapes inside simple LaTeX \text{...}
+          # This leaves the original imported Git repository files unchanged.
+          pattern = re.compile(r'\\text\{([^{}]*)\}')
+          for source in ('core-math', 'int-algebra'):
+              changed_files = 0
+              replacements = 0
+              for path in (Path('sources') / source).rglob('*'):
+                  if not path.is_file() or path.suffix.lower() not in ('.ptx', '.xml'):
+                      continue
+                  original = path.read_text(encoding='utf-8')
+                  def repair(match):
+                      global replacements
+                      content, count = re.subn(r'(?<!\\)%', r'\\%', match.group(1))
+                      replacements += count
+                      return r'\text{' + content + '}'
+                  repaired = pattern.sub(repair, original)
+                  if repaired != original:
+                      path.write_text(repaired, encoding='utf-8')
+                      changed_files += 1
+              print(f'{source}: escaped {replacements} bare percent characters in {changed_files} temporary build files')
+          PY
       - name: Build each source book
         shell: bash
         run: |
@@ -58,9 +85,11 @@ jobs:
           touch site/.nojekyll
           for name in core-math elem-alg int-algebra mfg trig; do
             echo "::group::Build $name"
-            if [ "$name" = "core-math" ] && [ ! -f "sources/core-math/source/sec-5-5.ptx" ]; then
-              echo "::warning::The original Core Mathematics source references a missing sec-5-5.ptx; omitting this reference in the temporary build checkout only."
-              sed -i 's|<xi:include href="./sec-5-5.ptx" />|<!-- Missing upstream sec-5-5.ptx: omitted from generated edition -->|' sources/core-math/source/ch5.ptx
+            if [ "$name" = "core-math" ]; then
+              # The upstream filename has an uppercase S; Linux XIncludes are case-sensitive.
+              test -f sources/core-math/source/Sec-5-5.ptx
+              sed -i 's|href="./sec-5-5.ptx"|href="./Sec-5-5.ptx"|' sources/core-math/source/ch5.ptx
+              echo "Restored complete upstream Section 5.5, including its cross-reference targets."
             fi
             if ( cd "sources/$name" && pretext build web --no-generate ); then
               result=0
