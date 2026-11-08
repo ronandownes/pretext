@@ -47,6 +47,19 @@ jobs:
             git -C /tmp/orcca-upstream rev-parse HEAD > sources/orcca/UPSTREAM-COMMIT.txt
             echo "::endgroup::"
           fi
+          # Applied Discrete Structures by Alan Doerr and Kenneth Levasseur.
+          # Preserve the original PreTeXt source for teacher reference only.
+          if [ -f "sources/ads/UPSTREAM-COMMIT.txt" ]; then
+            echo "Preserving existing Applied Discrete Structures source import"
+          else
+            echo "::group::Import Applied Discrete Structures"
+            git clone --depth 1 --branch master "https://github.com/klevasseur/ads.git" /tmp/ads-upstream
+            mkdir -p sources/ads
+            rsync -a --exclude='.git' --exclude='output/' --exclude='published/' /tmp/ads-upstream/ sources/ads/
+            printf '%s\n' "https://github.com/klevasseur/ads" > sources/ads/UPSTREAM-URL.txt
+            git -C /tmp/ads-upstream rev-parse HEAD > sources/ads/UPSTREAM-COMMIT.txt
+            echo "::endgroup::"
+          fi
       - name: Commit imported source without overwriting repository history
         shell: bash
         run: |
@@ -96,7 +109,7 @@ jobs:
           mkdir -p site
           : > site/build-status.txt
           touch site/.nojekyll
-          for name in core-math elem-alg int-algebra mfg trig; do
+          for name in core-math elem-alg int-algebra mfg trig ads; do
             echo "::group::Build $name"
             if [ "$name" = "core-math" ]; then
               # The upstream filename has an uppercase S; Linux XIncludes are case-sensitive.
@@ -137,6 +150,7 @@ jobs:
             ('mfg','Functions and Sequences','Modeling, Functions, and Graphs'),
             ('trig','Trigonometry','Trigonometry'),
             ('orcca','Algebra reference','ORCCA source (three parts; build not enabled)'),
+            ('ads','Discrete Mathematics reference','Applied Discrete Structures — Doerr and Levasseur'),
           ]
           items = []
           for slug, subject, title in titles:
