@@ -1,0 +1,5 @@
+core-math: build failed (exit 1)
+elem-alg: build failed (exit 1)
+int-algebra: build failed (exit 1)
+mfg: build failed (exit 1)
+trig: build failed (exit 1)
