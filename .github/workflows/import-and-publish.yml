@@ -1,0 +1,108 @@
+name: Import Yoshiwara sources and publish
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-and-publish.yml'
+      - 'README.md'
+permissions:
+  contents: write
+jobs:
+  import-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download original PreTeXt sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p sources
+          for name in core-math elem-alg int-algebra mfg trig; do
+            echo "::group::Import $name"
+            git clone --depth 1 "https://github.com/byoshiwara/$name.git" "/tmp/yoshiwara-$name"
+            mkdir -p "sources/$name"
+            rsync -a --delete --exclude='.git' --exclude='output/' --exclude='published/' --exclude='generated/' "/tmp/yoshiwara-$name/" "sources/$name/"
+            printf '%s\n' "https://github.com/byoshiwara/$name" > "sources/$name/UPSTREAM-URL.txt"
+            git -C "/tmp/yoshiwara-$name" rev-parse HEAD > "sources/$name/UPSTREAM-COMMIT.txt"
+            echo "::endgroup::"
+          done
+      - name: Commit imported source without overwriting repository history
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources
+          if ! git diff --cached --quiet; then
+            git commit -m "Import Yoshiwara PreTeXt source repositories [skip ci]"
+            git push
+          fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PreTeXt
+        run: python -m pip install pretext
+      - name: Build each source book
+        shell: bash
+        run: |
+          set -uo pipefail
+          mkdir -p site
+          : > site/build-status.txt
+          for name in core-math elem-alg int-algebra mfg trig; do
+            echo "::group::Build $name"
+            (
+              cd "sources/$name"
+              pretext build web
+            )
+            result=$?
+            if [ "$result" -eq 0 ]; then
+              candidate="sources/$name/output/web"
+              if [ ! -d "$candidate" ]; then candidate="sources/$name/output/html"; fi
+              if [ -d "$candidate" ]; then
+                mkdir -p "site/$name"
+                cp -a "$candidate/." "site/$name/"
+                echo "$name: built" >> site/build-status.txt
+              else
+                echo "$name: build succeeded but output location not found" >> site/build-status.txt
+              fi
+            else
+              echo "$name: build failed (exit $result)" >> site/build-status.txt
+            fi
+            echo "::endgroup::"
+          done
+      - name: Create the unified collection home page
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import html
+          titles = [
+            ('core-math','Number','Core Mathematics'),
+            ('elem-alg','Algebra','Elementary Algebra'),
+            ('int-algebra','Advanced Algebra','Intermediate Algebra'),
+            ('mfg','Functions and Sequences','Modeling, Functions, and Graphs'),
+            ('trig','Trigonometry','Trigonometry'),
+          ]
+          items = []
+          for slug, subject, title in titles:
+            d=Path('site')/slug
+            pages=sorted(d.glob('*.html')) if d.exists() else []
+            target='index.html' if (d/'index.html').exists() else (pages[0].name if pages else '')
+            if target:
+              items.append(f'<li><a href="{slug}/{target}"><strong>{html.escape(subject)}</strong><span>{html.escape(title)}</span></a></li>')
+            else:
+              items.append(f'<li class="pending"><strong>{html.escape(subject)}</strong><span>Source imported; HTML build pending</span></li>')
+          content='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>School Mathematics</title>
+          <style>body{font:18px/1.6 system-ui,sans-serif;max-width:950px;margin:4rem auto;padding:0 1.3rem;background:#fcfcfd;color:#19283d}h1{font-size:clamp(2.2rem,5vw,3.8rem)}p{max-width:65ch}ul{list-style:none;padding:0;display:grid;gap:1rem}li a,li.pending{display:block;padding:1.2rem 1.5rem;border:1px solid #ccd5df;border-radius:12px;text-decoration:none;color:inherit;background:white}li a:hover{border-color:#3468ac;background:#f0f6ff}li span{display:block;color:#576679;font-size:.89rem}footer{font-size:.85rem;margin-top:3rem;color:#576679}</style>
+          <main><h1>School Mathematics</h1><p>One collection of open PreTeXt mathematics material, organised by subject. This is the initial source import; the five texts have not yet been editorially merged into a single book.</p><ul>'''+''.join(items)+'''</ul><footer>Original material by Katherine Yoshiwara and contributors. Original copyright and licensing information is retained in the <a href="https://github.com/ronandownes/pretext/tree/main/sources">source folders</a>.</footer></main></html>'''
+          Path('site/index.html').write_text(content,encoding='utf-8')
+          PY
+      - name: Publish website to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
+          force_orphan: false
