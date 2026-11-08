@@ -23,6 +23,13 @@ The following five upstream source collections are already preserved under `sour
 - Three published parts: https://spot.pcc.edu/math/orcca/ed3/html/part-linear-equations-and-lines.html (Part I, 3rd edition); https://spot.pcc.edu/math/orcca/ed2/html/part-preparation-for-stem.html (Part II, 2nd edition); https://spot.pcc.edu/math/orcca/ed2/html/part-preparation-for-college-algebra.html (Part III, 2nd edition).
 - Licence: CC BY 4.0 with specific attribution, readable/accessibly presented maths, and **trademark/cover/branding exclusions**; read its README before adaptation. The upstream 3rd-edition source remains work in progress.
 
+**Applied Discrete Structures** — Alan Doerr and Kenneth Levasseur:
+- Source: https://github.com/klevasseur/ads (PreTeXt, upstream default branch `master`).
+- Original website: https://faculty.uml.edu/klevasseur/ads/ads.html ; current edition: https://discretemath.org/
+- Source import target: `sources/ads/`, with an upstream commit record. The import-and-build workflow will attempt to render its web edition separately.
+- Licence: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States; preserve attribution and do not treat as unrestricted commercial material.
+- Content: 16 chapters, including sets, combinatorics, discrete probability, logic, recursion and graph theory. These are **reference content only** until expressly curated for the authored book.
+
 ## External PreTeXt references — not locally imported editable source
 
 - **Discrete Mathematics for Computer Science**, L. J. Miller: https://icsatkcc.github.io/Discrete-Math-for-Computer-Science/section1_2-basic_Set_Operations.html
