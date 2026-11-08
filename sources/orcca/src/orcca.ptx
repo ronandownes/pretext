@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <xi:include href="./bookinfo.ptx"/>
+  <book xml:id="orcca">
+    <title>Open Resources for Community College Algebra</title>
+    <xi:include href="./frontmatter.ptx"/>
+    <part xml:id="part-linear-equations-and-lines">
+        <title>Linear Equations and Lines</title>
+        <xi:include href="./chapter-variables-expressions-equations-and-inequalities.ptx"/>
+        <xi:include href="./chapter-linear-equations-and-inequalities.ptx"/>
+        <xi:include href="./chapter-graphing-lines.ptx"/>
+        <xi:include href="./chapter-systems-of-two-linear-equations.ptx"/>
+    </part>
+    <!-- <part xml:id="part-preparation-for-stem">
+        <title>Preparation for STEM</title>
+        <xi:include href="./chapter-exponents-and-polynomials.ptx"/>
+        <xi:include href="./chapter-radical-expressions-and-equations.ptx"/>
+        <xi:include href="./chapter-solving-quadratic-equations.ptx"/>
+        <xi:include href="./chapter-quantities-in-the-physical-world.ptx"/>
+        <xi:include href="./chapter-topics-in-graphing.ptx"/>
+    </part> -->
+    <!-- <part xml:id="part-preparation-for-college-algebra">
+        <title>Preparation for College Algebra</title>
+        <xi:include href="./chapter-factoring.ptx"/>
+        <xi:include href="./chapter-functions.ptx"/>
+        <xi:include href="./chapter-rational-functions-and-equations.ptx"/>
+        <xi:include href="./chapter-graphs-and-equations.ptx"/>
+    </part> -->
+    <xi:include href="./backmatter.ptx"/>
+  </book>
+</pretext>
+
+<!-- Checklist -->
+<!-- Every exercise has @label -->
+<!-- Every "exercises" as "subexercises" structure. Possible titles are Review and Warmup, Skills Practice, Applications, Challenge -->
+<!-- Every review section is structured the new way -->
+<!-- Multipart exercises use tasks wherever appropriate -->
+<!-- Exercisegroups have titles -->
+<!-- Indexing -->
+<!-- CCOG indexing -->
+<!-- Every section has a reading questions -->
+<!-- Each chapter has an introduction -->
+
+

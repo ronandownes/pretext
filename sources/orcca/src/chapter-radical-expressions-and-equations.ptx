@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-radical-expressions-and-equations">
+  <title>Radical Expressions and Equations</title>
+  <introduction>
+    <p>
+      Radicals like <m>\sqrt[3]{\phantom{x}}</m> are the notation we use for a math operation that
+      is the opposite process from raising to a power. Just like exponents, there are valid (and not
+      valid) ways to combine radical expressions and end with a simpler expression. This chapter
+      covers these <q>rules</q> for radicals as well as a few other related topics.
+    </p>
+  </introduction>
+  <xi:include href="section-square-and-nth-root-properties.ptx" />
+  <xi:include href="section-rationalizing-the-denominator.ptx" />
+  <xi:include href="section-radical-expressions-and-rational-exponents.ptx" />
+  <xi:include href="section-solving-radical-equations.ptx" />
+  <xi:include href="review-radical-expressions-and-equations.ptx" />
+</chapter>
+

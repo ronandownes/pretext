@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <bibinfo>
+    <author>
+      <personname>Faculty</personname>
+      <institution>Portland Community College</institution>
+    </author>
+
+    <date><today /></date>
+
+    <credit>
+      <role>Project Lead</role>
+      <entity>Alex Jordan</entity>
+    </credit>
+
+    <credit>
+      <role>Contributing Authors</role>
+      <entity>Ann Cary, Alex Jordan, Ross Kouzes, Scot Leavitt, Cara Lee, Carl Yao, Ralf Youtz</entity>
+    </credit>
+
+    <credit>
+      <role>Significant Contributors</role>
+      <entity>Kara Colley, Chris Hughes, Wendy Lightheart, Ian Kit Nicolas</entity>
+    </credit>
+
+    <credit>
+      <role>Cover Image</role>
+      <entity>Ralf Youtz</entity>
+    </credit>
+
+    <edition>3</edition>
+
+    <website>
+      <url href="https://www.pcc.edu/ORCCA" visual="pcc.edu/ORCCA"/>
+    </website>
+
+    <copyright>
+      <year>2024</year>
+      <holder>Portland Community College</holder>
+      <shortlicense>
+          Open Resources for Community College Algebra is licensed under a Creative Commons
+          Attribution 4.0 International License. This license enables reusers to distribute, remix,
+          adapt, and build upon the material in any medium or format, so long as attribution is
+          given to the creator. We recommend attribution as follows. If you redistribute all or part
+          of this textbook, include in every digital format page view (including but not limited to
+          EPUB, PDF, and HTML) and on every physical printed page the following attribution:
+          <q>Original source material and other information freely available at
+          <url href="https://www.pcc.edu/orcca" visual="pcc.edu/orcca"/>.</q>
+          The Portland Community College name, Portland Community College logo, ORCCA name, Open
+          Resources for Community College Algebra name, ORCCA logo, and front and back cover designs
+          are not subject to the Creative Commons license and may not be reproduced without the
+          prior and express written consent of Portland Community College. For questions regarding
+          this license, please contact
+          <url href="mailto:orcca-group@pcc.edu" visual="orcca-group@pcc.edu"/>.
+      </shortlicense>
+    </copyright>
+  </bibinfo>
+
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
+
+  <acknowledgement>
+    <p>
+      This book was originally made possible through Portland Community College's Strategic
+      Investment Funding, approved by PCC's Budget Planning Advisory Council and the Board of
+      Directors. Subsequent revisions have been funded by PCC as well. Without significant funding
+      to provide the authors with the adequate time, an ambitious project such as this one would not
+      be possible.
+    </p>
+
+    <p>
+      The technology that makes it possible to create integrated print, HTML, and other output is
+      <pretext/>, created by Rob Beezer and supported by many additional contributors.
+    </p>
+
+    <p>
+      This book uses <webwork/> to provide most of its exercises, which may be used for online
+      homework. <webwork/> was created by Mike Gage and Arnie Pizer, and has decades of further
+      development from many contributors. A grant from OpenOregon funded the bridge betweeen
+      <pretext/> and <webwork/>.
+    </p>
+
+    <p>
+      The Javascript library MathJax allows math content to render nicely on screen in the HTML
+      version. Additionally, MathJax makes web accessible mathematics possible. MathJax was created
+      by Davide Cervone, and is now maintained by the MathJax nonprofit organization.
+    </p>
+
+    <p>
+      The PDF versions are built using the typesetting software <latex/> (via <pretext/>). <tex/>
+      was created by Donald Knuth and then Leslie Lamport created enhancements leading to <latex/>.
+      Many contributors have further evolved <latex/> to where it is today.
+    </p>
+
+    <p>
+      Some exercises in this textbook use features developed for Runestone Academy, a hosting
+      platform for interactive open-source textbooks. You may create a course on Runestone Academy
+      that uses this textbook, and track student progress and grades there. Brad Miller is the
+      creator and maintainer of Runestone Academy.
+    </p>
+
+    <p>
+      Each of these open technologies, along with many that we use but have not listed here, has
+      been enhanced by many additional contributors over many decades. We are indebted to these
+      contributors for their many contributions. By releasing this book with an open license, we
+      honor their dedication to open software and open education.
+    </p>
+  </acknowledgement>
+
+  <preface xml:id="preface-to-all">
+    <title>To All</title>
+    <paragraphs>
+      <title>HTML, PDF, and print</title>
+      <p>
+        This book is freely available in the following formats: HTML, ePub, PDF-for-screen,
+        PDF-for-print, and Braille. Additionally, a printed and bound copy is available for purchase
+        at low cost. All versions offer essentially the same content and are synchronized such that
+        cross-references match across versions. (For economic reasons, the PDF-for-print and printed
+        copies leave out some nonessential supplementary content.) Information about all versions
+        can be found at <url href="https://www.pcc.edu/orcca" visual="pcc.edu/orcca"/>.
+      </p>
+
+      <p>
+        There are some notable differences between the HTML version, PDF-for-screen, and
+        PDF-for-print.
+        <ul>
+          <li>
+            <p>
+              The HTML version offers interactive elements, easier navigation than print, and its
+              content is web accessible.
+            </p>
+          </li>
+          <li>
+            <p>
+              Two PDF versions can be downloaded. One version is intended to be read on a screen
+              with a PDF viewer. This version retains full color, has its text centered on the page,
+              and includes hyperlinking. The other version is intended for printing on two-sided
+              paper and then binding. Most of its color has been converted with care to grayscale.
+              Text is positioned to the left or right of each page in a manner to support two-sided
+              binding. Hyperlinks have been disabled. Page numbering on the two PDF versions will
+              differ.
+            </p>
+          </li>
+          <li>
+            <p>
+              Printed and bound copies are available for purchase online. Up-to-date information
+              about purchasing a copy should be available at
+              <url href="https://www.pcc.edu/orcca" visual="pcc.edu/orcca"/>. Contact
+              <url href="mailto:orcca-group@pcc.edu" visual="orcca-group@pcc.edu"/> if you have
+              trouble finding the latest version online.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Copying Content</title>
+      <p>
+        The source files for this book are available through
+        <url href="https://www.pcc.edu/orcca" visual="pcc.edu/orcca"/>,
+        and openly licensed. However, it may be more convenient to copy certain things directly
+        from the HTML version.
+      </p>
+
+      <p>
+        The graphs and other images that appear in this book are available in various file formats.
+        While viewing the book with a web browser, right-click on an image to view it in a new tab.
+        The web browser will reveal the path to the image. In almost all cases, you will initially
+        see a <c>.svg</c> version of the image. But editing that extension to <c>.png</c>,
+        <c>.eps</c>, <c>.pdf</c>, and <c>.tex</c> will provide access to these other formats.
+      </p>
+
+      <p>
+        Mathematical content can be copied from the HTML version. To copy math content into
+        <pubtitle>MS Word</pubtitle>, right-click or control-click over the math content, and click
+        to <c>Show Math As MathML Code</c>. Click <q>Copy to Clipboard</q>. In
+        <pubtitle>Word</pubtitle>, use <c>Paste Special</c> to paste the content as
+        <c>Unformatted Text</c>. To copy math content into <latex/> source, right-click or
+        control-click over the math content, and click to <c>Show Math As TeX Commands</c>.
+      </p>
+
+      <p>
+        Tables can be copied from the HTML version and pasted into applications like
+        <pubtitle>MS Word</pubtitle>. However, mathematical content within tables will not always
+        paste correctly without a little extra effort as described above.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Accessibility</title>
+      <p>
+        The eBook version is intended to meet or exceed web accessibility standards. If you
+        encounter an accessibility issue, please report it.
+        <ul>
+          <li>
+            <p>
+              All graphs and images should have meaningful alt text that communicates what a sighted
+              person would see, without necessarily giving away anything that is intended to be
+              deduced from the image.
+            </p>
+          </li>
+          <li>
+            <p>
+              All math content is rendered using MathJax. MathJax has a contextual menu that can be
+              accessed in several ways, depending on what operating system and browser you are
+              using. The most common way is to right-click or control-click on some piece of math
+              content.
+            </p>
+          </li>
+          <li>
+            <p>
+              In the MathJax contextual menu, you may set options for triggering a zoom effect on
+              math content, and also by what factor the zoom will be. Also in the MathJax contextual
+              menu, you can activate more accessibility tools, including the ability to display
+              speech strings for math expressions. Setting the speech strings to the
+              <q>Clearspeak</q> rules produces speech strings that are intended to match how the
+              math would be spoken aloud.
+            </p>
+          </li>
+          <li>
+            <p>
+              A screen reader will generally have success verbalizing the math content from MathJax.
+              With certain screen reader and browser combinations, you may need to set some
+              configuration settings in the MathJax contextual menu.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Tablets and Smartphones</title>
+      <p>
+        <pretext/> documents like this book are <q>mobile-friendly</q>. When you view the HTML
+        version, the display adapts to whatever screen size or window size you are using. A math
+        teacher will usually recommend that you do not study from the small screen on a phone, but
+        if it's necessary, the HTML version gives you that option.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title><webwork /> for Online Homework</title>
+      <p>
+        Most exercises are available in a ready-to-use collection of <webwork/> problem sets. Anyone
+        interested in using these problem sets may contact the project leads. The <webwork/> set
+        definition files and supporting files should be available for download from
+        <url href="https://www.pcc.edu/orcca" visual="www.pcc.edu/orcca"/>.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Odd Answers</title>
+      <p>
+        The answers to exercises are not printed in the PDF versions for economy. But the HTML
+        version offers answers to odd-numbered exercises in an appendix.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Interactive and Static Examples</title>
+      <p>
+        Traditionally, a math textbook has examples throughout each section. This textbook uses two
+        types of <q>example</q>:
+      </p>
+      <p>
+        <dl width="narrow">
+          <li>
+            <title>Static</title>
+            <p>
+              These are labeled <q>Example</q>. Static examples may or may not be subdivided into a
+              <q>statement</q> followed by a walk-through solution. This is basically what
+              traditional examples from math textbooks do.
+            </p>
+          </li>
+
+          <li>
+            <title>Active</title>
+            <p>
+              These are labeled <q>Checkpoint</q>. In the HTML version, active examples have
+              <webwork/> answer blanks where a reader may try submitting an answer. In the PDF
+              output, active examples are almost indistinguishable from static examples, but there
+              is a <webwork/> icon indicating that a reader could interact more actively using the
+              HTML version. Most of the time, a walk-through solution is provided immediately
+              following the answer blank.
+            </p>
+            <p>
+              Some readers using the HTML version will skip the opportunity to try an active example
+              and go straight to its solution. That is OK. Some readers will try an active example
+              once and then move on to just read the solution. That is also OK. Some readers will
+              tough it out for a period of time and resist reading the solution until they answer
+              the active example themselves.
+            </p>
+            <p>
+              For readers of the PDF, the expectation is to read the example and its solution just
+              as they would read a static example.
+            </p>
+            <p>
+              A reader is <em>not</em> required to try submitting an answer to an active example
+              before moving on. A reader <em>is</em> expected to read the solution to an active
+              example, even if they succeed on their own at finding an answer.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Reading Questions</title>
+      <p>
+        Each section has a few <q>reading questions</q> immediately before the exercises. These may
+        be treated as regular homework questions, but they are intended to be something more. The
+        intention is that reading questions could be used in certain classroom models as a tool to
+        encourage students to do their assigned reading, and as a tool to measure what basic concepts
+        might have been misunderstood by students following the reading.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Alternative Video Lessons</title>
+      <p>
+        Most sections open with an alternative video lesson (that is visible in the HTML version and
+        linked using a QR code in PDF). These video playlists are managed through a YouTube
+        account, and it is possible to swap videos out for better ones at any time, provided that
+        does not disrupt courses at PCC. Please contact us if you would like to submit a different
+        video into these video collections.
+      </p>
+    </paragraphs>
+  </preface>
+
+  <!-- <preface xml:id="preface-pedagogical-decisions">
+    <title>Pedagogical Notes</title>
+    <p>
+      The authors and the greater PCC faculty have taken various positions on certain pedagogical
+      and notational questions that arise in basic algebra instruction. We attempt to catalog these
+      decisions here, although this list is certainly incomplete. If you find something in the book
+      that runs contrary to these decisions, please let us know.
+      <ul>
+        <li>
+          <p>
+            Basic math is addressed in an appendix. For the course sequence taught at PCC, this
+            content is prerequisite and not within the scope of this book. However it is common for
+            students in the basic algebra sequence to have skills deficiencies in these areas, so we
+            include the basic math appendix. It should be understood that the content there does not
+            attempt to teach basic math from first principles. It is itended to be more of a review
+            or reference.
+          </p>
+        </li>
+        <li>
+          <p>
+            Interleaving is our preferred approach, compared to a proficiency-based approach. To us,
+            this means that once the book covers a topic, that topic will be appear in subsequent
+            sections and chapters in indirect ways.
+          </p>
+        </li> -->
+        <!-- <li>
+            <p>
+              The <m>y</m>-intercept is a single number, not an ordered pair whose first coordinate
+              is <m>0</m>. The notion of a <m>y</m>-intercept makes sense in higher dimensions than
+              two, so why specify <m>(0,b)</m>? It's also implied in the name, <m>y</m>-intercept,
+              that this place is on the <m>y</m>-axis. So <m>x</m> (and <m>z</m>, <m>w</m>, <etc />)
+              are implied to be <m>0</m>, and there is no need to repeat that in an ordered tuple.
+            </p>
+            <p>
+              We feel similarly for an <m>x</m>-intercept. We acknowledge one downside to this
+              position. And that is the unfortunate situation of a student who calculates an
+              <m>x</m>-intercept of say <m>2</m> and a <m>y</m>-intercept of say <m>3</m> and comes
+              to think that their line passes through <m>(2,3)</m>.
+            </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            We round decimal results to four significant digits, or possibly fewer leaving out
+            trailing zeros. We do this to maintain consistency with the most common level of
+            precision that <webwork/> uses to assess decimal answers. We generally <em>round</em>,
+            not <em>truncate</em>, and we use the <m>\approx</m> symbol. For example,
+            <m>\pi\approx3.142</m> and Portland's population is <m>\approx609500</m>. On rare
+            occasions where it is the better option, we truncate and use an ellipsis. For example,
+            <m>\pi=3.141\ldots</m>.
+          </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            We offer <em>alternative</em> video lessons associated with each section, found at the
+            top of most sections in the HTML version. We hope these videos provide readers with an
+            alternative to whatever is in the reading, but there may be discrepancies here and there
+            between the video content and reading content.
+          </p>
+        </li>
+        <li>
+          <p>
+            We believe in opening a topic with some level of application rather than abstract
+            examples, whenever that is possible. From applications and practical questions, we move
+            to motivate more abstract definitions and notation. Sometimes this means there are
+            easy examples that <em>follow</em> more difficult contextual examples.
+          </p>
+        </li>
+        <li>
+          <p>
+            Linear inequalities are not strictly separated from linear equations. The section that
+            teaches how to solve <m>2x+3=8</m> is immediately followed by the section teaching how
+            to solve <m>2x+3\lt8</m>.
+          </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            When issues of <q>proper formatting</q> of student work arise, we value that the reader
+            understand <em>why</em> such things help the reader to communicate outwardly. We believe
+            that mathematics is about more than understanding a topic, but also about understanding
+            it well enough to communicate results to others. For example we promote progression of
+            equations like
+            <md>
+              <mrow>1+1+1\amp=2+1</mrow>
+              <mrow>\amp=3</mrow>
+            </md>
+            instead of
+            <md>
+              1+1+1=2+1=3
+            </md>.
+            We want students to understand that the former method makes their work easier for a
+            reader to read. It is not simply a matter of <q>this is the standard and this is how
+            it's done</q>.
+          </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            When solving equations (or systems of linear equations), most examples should come with
+            a check, intended to communicate to students that checking is part of the process. In
+            <xref first="chapter-variables-expressions-equations-and-inequalities" last="chapter-systems-of-two-linear-equations">Chapters</xref>,
+            these checks will be complete simplifications using order of operations one step at a
+            time. The later sections may have more summary checks where steps are skipped or carried
+            out together, or we promote entering expressions into a calculator to check.
+          </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            Within a section, any first context-free example of solving some equation (or system)
+            should summarize with some variant of both <q>the solution is<ellipsis/></q> and
+            <q>the solution set is<ellipsis/></q>. Later examples can mix it up, but always offer at
+            least one of these.
+          </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            With applications of linear equations (not including linear systems), we limit
+            applications to situations where the setup will be in the form
+            <m>x + \text{expression-in-}x = C</m> and also to certain rate problems where the setup
+            will be in the form <m>at + bt = C</m>. There are other classes of application problem
+            (mixing problems, interest problems, <ellipsis />) which can be handled with a system of
+            two equations, and we reserve these until linear systems are covered.
+          </p>
+        </li> -->
+        <!-- <li>
+          <p>
+            With simplifications of rational expressions in one variable, we always include domain
+            restrictions that are lost in the simplification. For example, we would write
+            <m>\frac{x(x+1)}{x+1}=x</m>, for <m>x\neq-1</m>. With <em>multivariable</em> rational
+            expressions, we are content to ignore domain restrictions lost during simplification.
+          </p>
+        </li> -->
+      <!-- </ul>
+    </p>
+  </preface> -->
+
+  <!-- <preface xml:id="preface-entering-webwork-answers">
+    <title>Entering WeBWorK Answers</title>
+    <p>
+      This preface offers some guidance with syntax for <webwork/> answers.
+      <webwork/> answer blanks appear in the active reading examples
+      (called <q>checkpoints</q>)
+      in the <init>HTML</init> eBook version of the book.
+      If you are using <webwork/> for online homework,
+      then you will also enter answers into <webwork/> answer blanks there.
+    </p>
+
+    <paragraphs>
+      <title>Basic Arithmetic</title>
+      <p>
+        The five basic arithmetic operations are:
+        addition, subtraction, multiplication, division, and raising to a power.
+        The symbols for addition and subtraction are <m>+</m> and <m>-</m>,
+        and both of these are directly available on most keyboards as <c>+</c> and <c>-</c>.
+      </p>
+
+      <p>
+        On paper, multiplication is sometimes written using <m>\times</m>
+        and sometimes written using <m>\cdot</m> (a centered dot).
+        Since these symbols are not available on most keyboards, WeBWorK uses <c>*</c> instead,
+        which is often <c>shift-8</c> on a full keyboard.
+      </p>
+
+      <p>
+        On paper, division is sometimes written using <m>\div</m>,
+        sometimes written using a fraction layout like <m>\frac{4}{2}</m>,
+        and sometimes written just using a slash, <m>/</m>.
+        The slash is available on most full keyboards, near the question mark.
+        <webwork/> uses <c>/</c> to indicate division.
+      </p>
+
+      <p>
+        On paper, raising to a power is written using a two-dimensional layout like <m>4^2</m>.
+        Since we don't have a way to directly type that with a simple keyboard,
+        calculators and computers use the caret character,
+        <c>^</c>, as in <c>4^2</c>.
+        The character is usually <c>shift-6</c>.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Roots and Radicals</title>
+      <p>
+        On paper, a square root is represented with a radical symbol like <m>\sqrt{\phantom{x}}</m>.
+        Since a keyboard does not usually have this symbol,
+        <webwork/> and many computer applications use <c>sqrt( )</c> instead.
+        For example, to enter <m>\sqrt{17}</m>, type <c>sqrt(17)</c>.
+      </p>
+
+      <p>
+        Higher-index radicals are written on paper like <m>\sqrt[4]{12}</m>.
+        Again we have no direct way to write this using most keyboards.
+        In <em>some</em> <webwork/> problems it is possible to type something like
+        <c>root(4, 12)</c> for the fourth root of twelve.
+        However this is not enabled for all <webwork/> problems.
+      </p>
+
+      <p>
+        As an alternative that you may learn about in a later chapter,
+        <m>\sqrt[4]{12}</m> is mathematically equal to <m>12^{1/4}</m>,
+        so it can be typed as <c>12^(1/4)</c>.
+        Take note of the parentheses, which very much matter.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Common Hiccups with Grouping Symbols</title>
+      <p>
+        Suppose you wanted to enter <m>\frac{x+1}{2}</m>.
+        You might type <c>x+1/2</c>, but this is not right.
+        The computer will use the order of operations
+        and do your division first, dividing <m>1</m> by <m>2</m>.
+        So the computer will see <m>x+\frac{1}{2}</m>.
+        To address this,
+        you would need to use grouping symbols like parentheses,
+        and type something like <c>(x+1)/2</c>.
+      </p>
+
+      <p>
+        Suppose you wanted to enter <m>6^{1/4}</m>,
+        and you typed <c>6^1/4</c>.
+        This is not right.
+        The order of operations places a higher priority on exponentiation than division,
+        so it calculates <m>6^1</m> first and then divides the result by <m>4</m>.
+        That is simply not the same as raising <m>6</m> to the <m>\frac{1}{4}</m> power.
+        Again the way to address this is to use grouping symbols,
+        like <c>6^(1/4)</c>.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Entering Decimal Answers</title>
+      <p>
+        Often you will find a decimal answer with decimal places that go on and on.
+        You are allowed to round, but not by too much.
+        <webwork/> generally looks at how many
+        <em>significant digits</em> you use,
+        and generally expects you to use <alert>four or more</alert> correct significant digits.
+      </p>
+
+      <p>
+        <q>Significant digits</q> and <q>places past the decimal</q> are not the same thing.
+        To count significant digits,
+        read the number left to right and look for the first nonzero digit.
+        Then count all the digits to the right including that first one.
+      </p>
+
+      <p>
+        The number <m>102.3</m> has four significant digits,
+        but only one place past the decimal.
+        This number could be a correct answer to a <webwork/> question.
+        The number <m>0.0003</m> has one significant digit and four places past the decimal.
+        This number might cause you trouble if you enter it,
+        because maybe the <q>real</q> answer was <m>0.0003091</m>,
+        and rounding to <m>0.0003</m> was too much rounding.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Special Symbols</title>
+      <p>
+        There are a handful of special symbols that are easy to write on paper,
+        but it's not clear how to type them.
+        Here are <webwork/>'s expectations.
+      </p>
+
+      <tabular>
+        <col halign="center" />
+        <col />
+        <col />
+        <row bottom="medium">
+          <cell>Symbol</cell>
+          <cell>Name</cell>
+          <cell>How to Type</cell>
+        </row>
+        <row>
+          <cell><m>\infty</m></cell>
+          <cell>infinity</cell>
+          <cell><c>infinity</c> or <c>inf</c></cell>
+        </row>
+        <row>
+          <cell><m>\pi</m></cell>
+          <cell>pi</cell>
+          <cell><c>pi</c></cell>
+        </row>
+        <row>
+          <cell><m>\cup</m></cell>
+          <cell>union</cell>
+          <cell><c>U</c></cell>
+        </row>
+        <row>
+          <cell><m>\mathbb{R}</m></cell>
+          <cell>the real numbers</cell>
+          <cell><c>R</c></cell>
+        </row>
+        <row>
+          <cell><m>\mid</m></cell>
+          <cell>such that</cell>
+          <cell><c>|</c> (<c>shift-\</c>, where <c>\</c> is above the <c>enter</c> key)</cell>
+        </row>
+        <row>
+          <cell><m>\leq</m></cell>
+          <cell>less than or equal to</cell>
+          <cell><c>&lt;=</c></cell>
+        </row>
+        <row>
+          <cell><m>\geq</m></cell>
+          <cell>greater than or equal to</cell>
+          <cell><c>&gt;=</c></cell>
+        </row>
+        <row>
+          <cell><m>\neq</m></cell>
+          <cell>not equal to</cell>
+          <cell><c>!=</c></cell>
+        </row>
+      </tabular>
+
+    </paragraphs>
+  </preface> -->
+
+</frontmatter>
+
