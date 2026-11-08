@@ -1,5 +1,5 @@
-core-math: build failed (exit 1)
+core-math: HTML built (diagram asset generation deferred)
 elem-alg: HTML built (diagram asset generation deferred)
-int-algebra: build failed (exit 1)
+int-algebra: HTML built (diagram asset generation deferred)
 mfg: HTML built (diagram asset generation deferred)
 trig: HTML built (diagram asset generation deferred)
