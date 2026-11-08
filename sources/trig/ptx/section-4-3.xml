@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="Periodic-Functions"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Using Trigonometric Functions</title>
+<idx><h>periodic function</h></idx>
+
+<subsection><title>Solving Trigonometric Equations</title>
+    <idx><h>trigonometric equation</h></idx>
+    
+<p>One of the main reasons we learned about reference angles is to help us solve trigonometric equations. Remember that there are always two angles between <m>0\degree</m> and <m>180\degree</m> with a given sine ratio between 0 and 1.</p>
+
+<example><statement><p>You are riding on the Ferris wheel we modeled in Section 4.2, where your height above ground is given as a function of <m>\theta</m>  by
+            <me>h = 100 + 100 \sin (\theta)</me> 
+When your height is at least 136 feet, you can see the snow on a distant mountain range. Between what angles of rotation can you see snow?</p></statement>
+
+<solution><sidebyside widths = "55% 35%" valigns="middle middle">
+<p>Look at the diagram of the Ferris wheel to see that when your height is 136 feet, the sine of the angle <m>\theta</m> is <m>\dfrac{36}{100}</m>, or 0.36. The angle with sine 0.36 is 
+        <me>\sin^{-1}(0.36) = 21.1 \degree</me></p>
+
+    <image xml:id="fig-4-2-ferris-height-136ft"><description>ferris wheel where height is 136</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate(O) at (0,0);
+        \def\t {atan(36/100)};
+        \coordinate(P) at ({\t}:2cm);
+        \coordinate(Q) at ({2*cos(\t)},0);
+        \coordinate(R) at ({180-\t}:2cm);
+        \draw[gray!80!white, thick, dashed] (-2.5,{2*sin(\t)}) -- +(5.2,0) ;
+   
+        \draw[black, thick] (O) circle (2cm);
+        \draw[gray!80!white, thick, ->,>=stealth'] (2.25,{2*sin(\t)+.5}) -- +(0,-.5) node[below, xshift=2, color=blue] { $36'$};
+        \draw[gray!80!white, thick, <-,>=stealth'] (2.25,0) -- +(0,-.7) node[below, yshift=2, color=blue] { $100'$};
+        \draw[gray!80!white, thick, <-,>=stealth'] (2.25,-2) -- +(0,.8) ;
+        \draw[gray!80!white, thick, <-,>=stealth'] (-2.25,{2*sin(\t)}) -- +(0,-1.3) node[below, xshift=-2, yshift=2, color=blue] { $136'$};
+        \draw[gray!80!white, thick, <-,>=stealth'] (-2.25,-2) -- +(0,.8) ;
+        \draw[gray!80!white, thick] (-2.5,-2) -- +(5.2,0);
+
+        \draw[black, thick, ->,>=stealth'] (0,-2.25)--(0,2.3);
+        \draw[black, thick, ->,>=stealth'] (-2.5,0)--(2.7,0);
+        \draw[red, thick, ->,>=stealth'] (1,0) arc (0:\t:1) node[right, midway, yshift=1] {$\theta$};
+
+        \draw[blue, thick] (O) --(P);
+
+        \filldraw[black] (P) circle (1.6pt);
+        \filldraw[black] (R) circle (1.6pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>And you will be able to see snow until you descend again below 136 feet. That will happen at the angle in the second quadrant with sine 0.36, namely, the second quadrant angle with reference angle 21.1°. And that angle is
+    <me>180 \degree - 21.1 \degree = 158.9 \degree</me>.</p>
+</solution></example>
+
+<p>As another example, the two solutions to the equation <m>~\sin (\theta) = 0.4226~</m> are <m>25\degree</m> and <m>155\degree</m>. That is,
+        <me>\sin (25\degree) = \sin (155\degree) = 0.4226</me>
+These two angles are supplementary, so they have the same reference angle, as shown below on the left.</p>  
+<sidebyside widths="35% 35%" margins="12% 12%">
+    <image xml:id="fig-4-1-eqna"><description>supplementary angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \coordinate(A) at (25:2cm);
+        \coordinate(B) at (155:2cm);
+        \draw[black, thick, ->,>=stealth'] (0,-2.2)--(0,2.2) node[above] {$y$};
+        \draw[black, thick, ->,>=stealth'] (-2.2,0)--(2.2,0) node[right] {$x$};
+        \draw [gray!80!white] (O) circle [radius=2cm];
+
+        \draw[blue, thick, ->,>=stealth'] (O) -- (B) node[above left, xshift=3, yshift=-3] {\color{red}$155\degree$};
+        \draw[blue, thick, ->,>=stealth'] (O) -- (A);
+
+        \draw [thick, color=red] (O) ++(.9,0) arc(0:25:.9)
+           node[right, midway] {$25\degree$};
+        \draw [thick, color=red] (O) ++(-.9,0) arc(180:155:.9)
+           node[left, midway] {$25\degree$};
+        \draw [thick, red, ->,>=stealth'] (O) ++(.3,0) arc(0:155:.3);
+
+        \node[text width=.25cm] at (0,-2.45){ a.};
+
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <image xml:id="fig-4-1-eqnb"><description>third and fourth quadrant angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \coordinate(A) at (-25:2cm);
+        \coordinate(B) at (205:2cm);
+        \draw[black, thick, ->,>=stealth'] (0,-2.2)--(0,2.2) node[above] {$y$};
+        \draw[black, thick, ->,>=stealth'] (-2.2,0)--(2.2,0) node[right] {$x$};
+        \draw [gray!80!white] (O) circle [radius=2cm];
+
+        \draw[blue, thick, ->,>=stealth'] (O) -- (B) node[below left, xshift=3, yshift=3] {\color{red}$205\degree$};
+        \draw[blue, thick, ->,>=stealth'] (O) -- (A) node[below right, xshift=-3, yshift=3] {\color{red}$335\degree$};
+
+        \draw [thick, color=red] (O) ++(.9,0) arc(0:-25:.9)
+           node[right, midway] {$25\degree$};
+        \draw [thick, color=red] (O) ++(-.9,0) arc(180:205:.9)
+           node[left, midway] {$25\degree$};
+        \draw [thick, red, ->,>=stealth'] (O) ++(.3,0) arc(0:335:.3);
+        \draw [thick, red, ->,>=stealth'] (O) ++(.6,0) arc(0:205:.6);
+
+        \node[text width=.25cm] at (0,-2.45){ b.};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>But now consider the equation <m>\sin (\theta) = -0.4226</m>. There are two solutions between <m>0\degree</m> and <m>360\degree</m> to this equation also. They are the angles in the third and fourth quadrants whose reference angle is <m>25\degree</m>, namely <m>205\degree</m> and <m>335\degree</m>, as shown above on the right. But your calculator will not give you one of these angles!</p> 
+
+<p>When you ask your calculator for an angle whose sine is negative, it will give you a negative angle. For example, you will find
+    <me>\sin^{-1}(-0.4226) = -25\degree</me>
+Of course, the reference angle for <m>-25\degree</m> is <m>25\degree</m>, so you can find the solutions between <m>0\degree</m> and <m>360\degree</m> with that reference angle.</p>
+
+<exercise><statement><p>Solve the equation <m>~\sin (\theta) = -0.6428~</m> for angles between <m>0\degree</m> and <m>360\degree</m>. Round your answers to the nearest degree.</p>
+</statement>
+
+<answer><p>Use your calculator to evaluate 
+        <me>\sin^{-1}(-0.6428) = -40\degree</me>  
+The angle <m>-40\degree</m> is in the fourth quadrant, but it is not between <m>0\degree</m> and <m>360\degree</m>. We need an angle that is coterminal with <m>-40\degree</m>, so we add <m>360\degree</m>.
+    <me>-40\degree + 360\degree = 320\degree</me> 
+Thus, one of the solutions is <m>320\degree</m>.</p>
+
+<sidebyside widths="65% 30%" margins="0% 0%">
+ <p>The sine is also negative in the third quadrant, so there should also be a solution in the third quadrant. The reference angle for <m>320\degree</m> is <m>40\degree</m>, and the third-quadrant angle with reference angle <m>40\degree</m> is <m>220\degree</m>, as shown at right. You can check that, rounded to four decimal places, both angles satisfy the equation, that is, </p>
+        <image xml:id="exam4-1-8"><description>angles in 3rd and 4th quadrants</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+        \coordinate(O) at (0,0);
+        \coordinate(A) at (-40:2cm);
+        \coordinate(B) at (220:2cm);
+        \draw[black, thick, ->,>=stealth'] (0,-2.2)--(0,2.2) node[above] {$y$};
+        \draw[black, thick, ->,>=stealth'] (-2.2,0)--(2.2,0) node[right] {$x$};
+        \draw [gray!80!white] (O) circle [radius=2cm];
+
+        \draw[blue, thick, ->,>=stealth'] (O) -- (B) node[below left, xshift=3, yshift=3] {\color{red}$220\degree$};
+        \draw[blue, thick, ->,>=stealth'] (O) -- (A) node[below right, xshift=-3, yshift=3] {\color{red}$320\degree$};
+
+        \draw [thick, red, <->,>=stealth'] (O) ++(.9,0) arc(0:-40:.9)
+           node[right, midway] {$40\degree$};
+        \draw [thick, red, <->,>=stealth'] (O) ++(-.9,0) arc(180:220:.9)
+           node[left, midway] {$40\degree$};
+        \draw [thick, red, ->,>=stealth'] (O) ++(.3,0) arc(0:320:.3);
+        \draw [thick, red, ->,>=stealth'] (O) ++(.6,0) arc(0:220:.6);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+    <p><me>\sin (320\degree) = -0.6428~~~~\text{and} ~~~~\sin (220\degree) = -0.6428</me></p> 
+</answer></exercise>
+
+<note><p>In the previous Exercise we found two solutions of the equation <m>\sin (\theta) = -0.6428</m>. Actually, there are infinitely many solutions <mdash/> namely, all the angles coterminal with <m>320\degree</m> or <m>220\degree</m>.        
+Because we can easily find coterminal solutions by adding or subtracting multiples of <m>360\degree</m>, when solving an equation we usually list only the solutions between <m>0\degree</m> and <m>360\degree</m>.</p></note>
+
+<p>What about equations involving the cosine? If the cosine is positive, the solutions will lie in the first and fourth quadrants.</p>
+
+<example><statement><p>Refer to the <xref ref="Example-KOPS-Rule" text="custom">Example</xref> in Section 4.2. about the Knee Over Pedal Stem Rule. The distance between the cyclist's foot and the KOPS line is 
+        <me>d = 18 - 18 \cos (\theta)</me> 
+At what angles is the cyclist's knee within 9 centimeters of the KOPS line?</p></statement>
+
+<solution><sidebyside widths="58% 35%" margins="0% 0%" valigns="middle middle"><p>We would like to find all angles for which <m>d</m> is less than 9. Consider the diagram of the bicycle wheel at right to see that the cosine of the angle at <m>d=9</m> cm is <m>\dfrac{9}{18} = \dfrac{1}{2}</m>. So we need two angles whose cosine is <m>\dfrac{1}{2}</m>, one in the first quadrant and one in the fourth quadrant. </p>
+        <image xml:id="KOPS-9cm"><description>knee within 9cm of KOPS line</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.9]
+        \coordinate(O) at (0,0);
+        \coordinate(P) at (60:2cm);
+        \coordinate(P2) at (300:2cm);
+        \coordinate(Q) at (1,0);
+        \coordinate(R) at ($ (2,0) ++2*sin(60)*(0,1)$);
+
+        \draw[gray!80!white, thick, dashed] (1,2.3) -- +(0,-4.55);
+
+        \draw[gray!80!white, thick] (2,2.3) -- (2, -2.25) node[below right, yshift=13, color=blue] {$x=18$};
+        \draw[blue, thick, <->,>=stealth'] (1,2) -- +(1,0) node[midway,fill=white, inner sep=2pt] {$9$};
+
+        \draw[black, thick, ->,>=stealth'] (0,-2.25)--(0,2.3);
+        \draw[black, thick, ->,>=stealth'] (-2.3,0)--(3,0);
+        \draw[red, thick, ->,>=stealth'] (0.5,0) arc (0:60:0.5) node[right, xshift=2, yshift=1, midway,fill=white, inner sep=0pt] {$60^\circ$};
+        \draw[red, thick, ->,>=stealth'] (0.4,0) arc (0:300:0.4) node[below left, yshift=-8, midway] {$300^\circ$};
+
+        \draw[blue, thick] (O) --(P) node[above left, midway, xshift=4, color=blue] {$18$};
+        \draw[blue, thick] (O) --(P2);
+
+        \draw[black, thick] (O) circle (2cm);
+        \filldraw[black] (P) circle (1.5pt);
+        \filldraw[black] (P2) circle (1.5pt);
+
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+    <p>You may recognize <m>\dfrac{1}{2}</m> as the cosine of the special angle 60°, or you can evaluate <m>\cos^{-1}\left(\dfrac{1}{2}\right)</m>. The fourth quadrant angle with reference angle 60° is 300°. So <m>d</m> is less than 9 when the angle of the crank is between 0° and 60°, and again between 300° and 360°.</p>
+</solution></example>
+
+<p>If the cosine of an angle is negative, your calculator will give you the second quadrant angle with that cosine. For equations involving a negative tangent, your calculator will give you a negative angle.</p>
+
+<exercise><statement><p>Solve the equation <m>~\tan (\theta) = -0.4~</m> for angles between <m>0\degree</m> and <m>360\degree</m>.</p>
+</statement>
+
+<answer><p>You can check that <m>~\tan^{-1}-(0.4) = -21.8\degree</m>. The tangent is negative in the second and fourth quadrants, and the reference angle is <m>\tan^{-1}(0.4) = 21.8\degree</m>, so the solutions are <m>158.2\degree</m> and <m>338.2\degree</m>.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>The Unit Circle</title>
+    <idx><h>unit circle</h></idx>
+
+<p>Now that we are thinking of angles as rotations, we'll introduce a tool called the <term>unit circle</term> that will be useful as we proceed.</p>
+
+<p>Figure (a) below shows an angle of <m>30\degree</m> in standard position in a circle of radius 2. The hypotenuse of its reference triangle is the radius of the circle, so the legs of the triangle have lengths 1 and <m>\sqrt{3}</m>. The coordinates of the point <m>P</m> where the terminal side meets the circle are thus <m>(\sqrt{3}, 1)</m>. (You can check that these coordinates satisfy the equation of the circle, <m>x^2 + y^2 = 4</m>.)</p>
+<sidebyside widths="40% 40%">
+    <image xml:id="fig-4-1-circle2"><description>angle on circle of radius 2</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.9]
+    \coordinate(O) at (0,0);
+    \coordinate(A) at (30:2cm);
+    \coordinate(Ap) at (30:2.7cm);
+    \coordinate(B) at ($ 2* cos(30)*(1,0) $);
+
+    \draw[black, thick, ->,>=stealth'] (0,-2.2)--(0,2.3) node[above] {$y$};
+    \draw[black, thick, ->,>=stealth'] (-2.2,0)--(2.3,0) node[right] {$x$};
+    \draw [gray!80!white] (O) circle [radius=2cm];
+
+    \draw[blue, thick] (B) rectangle ++(-.25,.25);
+    \draw[gray!80!white, thick, dashed] (B)--(A) node[right, midway, xshift=-3.5]{\color{blue}1};
+    \draw[gray!80!white, thick, dashed] (B)--(O) node[below, midway]{\color{blue}$\sqrt{3}$};
+    \draw[blue, thick, ->,>=stealth'] (O) --(Ap);
+    \filldraw[black] (A) circle (1.8pt) node[anchor=north west, xshift=2,yshift=7] {$P\left(\sqrt{3}, 1\right)$};
+
+    \node[text width=.15cm] at (.7,.7){\color{blue} 2};
+    \node[text width=.25cm] at (0,-2.5){ a.};
+    \end{tikzpicture}]]>
+    </latex-image></image>
+    <image xml:id="fig-4-1-unitcircle"><description>angle in unit circle</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.9]
+    \coordinate(O) at (0,0);
+    \coordinate(A) at (30:2cm);
+    \coordinate(Ap) at (30:2.7cm);
+    \coordinate(B) at ($ 2* cos(30)*(1,0) $);
+
+    \draw[black, thick, ->,>=stealth'] (0,-2.3)--(0,2.3) node[above] {$y$};
+    \draw[black, thick, ->,>=stealth'] (-2.2,0)--(2.3 ,0) node[right] {$x$};
+    \draw [gray!80!white] (O) circle [radius=2cm];
+
+    \draw[blue, thick] (B) rectangle ++(-.25,.25);
+    \draw[gray!80!white, thick, dashed] (B)--(A) node[right, midway, xshift=1, yshift=-1,fill=white, inner sep=1pt]{\color{blue} $\frac{1}{2}  $ };
+    \draw[gray!80!white, thick, dashed] (B)--(O) node[below, midway]{\color{blue}$\frac{\sqrt{3}}{2}$};
+    \draw[blue, thick, ->,>=stealth'] (O) --(Ap);
+    \filldraw[black] (A) circle (1.8pt) node[anchor=north west, xshift=4,yshift=9] { 
+    $Q\left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right)$};
+
+    \node[text width=.15cm] at (.7,.7){\color{blue} 1};
+    \node[text width=.25cm] at (0,-2.5){ b.};
+
+    \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>Now consider the circle of radius 1 in Figure (b).  A circle of radius 1 is called a <term>unit circle</term><idx><h>unit circle</h></idx>.  In this figure, the hypotenuse of the reference triangle for <m>30\degree</m> has length 1.  What are the coordinates of the point <m>Q</m> where the terminal side meets the circle?  Each side of this triangle is <m>\frac{1}{2}</m> the length of the sides of the similar triangle in Figure (a), so the coordinates of <m>Q</m> are <m>\left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right)</m>. (Once again, you should check that these coordinates satisfy the equation of the circle, <m>x^2 + y^2 = 1</m>.)</p>
+ 
+<p> Perhaps you recognize the coordinates of the point <m>Q</m>. Because <m>r = 1</m> in this circle, the definitions of the sine and cosine are 
+    <me>\cos (\theta) = \dfrac{x}{r} = \dfrac{x}{1} = x ~~~~\text{and}~~~~ \sin (\theta) = \dfrac{y}{r} = \dfrac{y}{1} = y</me>       
+ We see that the coordinates <m>(x,y)</m> of <m>Q</m> are given by <m>(\cos (\theta), \sin (\theta))</m>.  We have discovered an important property of unit circles.</p>
+
+<assemblage><title>Angles in a Unit Circle</title>
+    <idx><h>unit circle</h><h>angles in</h></idx><idx><h>unit circle</h><h>coordinates of point</h></idx>
+<p>Let <m>P</m> be a point on a unit circle determined by the terminal side of an angle <m>\theta</m> in standard position. Then the coordinates <m>(x,y)</m>  of <m>P</m> are given by 
+    <me>\blert{x = \cos (\theta),~~~~~~y = \sin (\theta)}</me></p>
+</assemblage>
+
+<example><statement>
+<sidebyside widths="62% 28%" valigns="middle middle" margins="0% 5%">
+    <p>Find the coordinates of point <m>P</m> on the unit circle shown at right.</p><!--<image source="photos/exam4-1-10.png"><description>angles</description></image>-->
+        <image xml:id="exam4-1-10"><description>unit circle with angle</description><latex-image>
+       <![CDATA[
+       \begin{tikzpicture}
+       \coordinate(O) at (0,0);
+       \coordinate(A) at (315:1.5cm);
+       \coordinate(B) at ($ 1.5* cos(45)*(1,0) $);
+
+       \draw[black, thick, ->,>=stealth'] (0,-1.6)--(0,1.7) node[above] {$y$};
+       \draw[black, thick, ->,>=stealth'] (-1.6,0)--(1.7,0) node[right] {$x$};
+       \draw[blue,thick] (B) rectangle ++(-.2,-.2);
+       \draw [gray!80!white] (O) circle [radius=1.5cm];
+       \draw[red, thick] (.3,0) arc(0:315:0.3) node[left, midway, xshift=3, yshift=-11]{$315\degree$};
+
+       \draw[gray!80!white, thick, dashed] (B)--(A);
+       \draw[blue, thick] (O) --(A) node[left,midway, xshift=3, yshift=-4]{1};
+       \filldraw[black] (A) circle (1.8pt) node[anchor= west, xshift=4,yshift=0] {$P$};
+
+       \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<solution><p>The coordinates of <m>P</m> are given by  
+    <me>x = \cos (315\degree),~~~y = \sin (315\degree)</me>.  
+The reference angle for <m>315\degree</m> is <m>~ 360\degree - 315\degree = 45\degree</m>, so the trig ratios of <m>315\degree</m> are the same as the ratios for <m>45\degree</m>, up to sign.</p>
+
+<p> Because <m>315\degree</m> is in the fourth quadrant, we have <m>\cos (315\degree) = \frac{1}{\sqrt{2}}</m> and <m>\sin (315\degree) = \frac{-1}{\sqrt{2}}</m>. Thus, the coordinates of <m>P</m> are <m>\left(\frac{1}{\sqrt{2}}, \frac{-1}{\sqrt{2}}\right)</m>.</p>
+</solution></example>
+
+<exercise><statement><sidebyside widths="55% 35%" valigns="middle middle" margins="0% 5%"><p>Find the sine, cosine, and tangent of the angle <m>\varphi</m> shown at right.</p><!--<image source="photos/exer4-1-10.png"><description>angles</description></image>-->
+        <image xml:id="exer4-1-10"><description>angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \coordinate(A) at (224.43:1.5cm);
+        \coordinate(B) at (-1.5,-1.05);
+
+        \draw[black, thick, ->,>=stealth'] (0,-1.6)--(0,1.7) node[above] {$y$};
+        \draw[black, thick, ->,>=stealth'] (-1.6,0)--(1.7,0) node[right] {$x$};
+        \draw [gray!80!white] (O) circle [radius=1.5cm];
+        \draw[red, thick] (.3,0) arc(0:180+asin(.7):0.3) node[left, midway, xshift=0, yshift=1]{$\varphi$};
+
+        \draw[gray!80!white, thick, dashed, text=black] (B)--++(3.1,0) node[right]{$y=-0.7$};
+        \draw[blue, thick] (O) --(A);
+        \filldraw[black] (A) circle (1.8pt);
+
+        \node[text width=2cm,anchor=west] at (1,1.2){ $x^2+y^2=1 $ };
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</sidebyside></statement>
+
+<answer><p><m>y = -0.7</m>, so <m>\sin (\varphi) = -0.7000</m>. Then 
+    <me>x = -\sqrt{1-y^2} = -0.7141 = \cos (\varphi)</me>, 
+and <m>~\tan (\varphi) = \dfrac{y}{x} = 0.9802</m>.</p>
+</answer></exercise>
+
+<activity><title>Unit Circles</title>
+    <idx><h>unit circle</h></idx>
+
+    <image width="70%" xml:id="act4-2"><description>grid with circles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.18]
+        \coordinate (O) at (0,0);
+        \draw[step=1cm,cyan,very thin] (-21,-21) grid (21,21);
+        \draw[thick,->,>=stealth'] (-21,0) -- (21.8,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-21) -- (0,21.8) node[anchor=south] {$y$};
+
+        \draw[red,thick] (O) circle (10);
+        \draw[blue,thick] (O) circle (20);
+
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (10,-1)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (20,-1)    {2};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,10)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,20)    {2};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><ol marker="1.">
+    <li><p>Use a protractor to draw an angle <m>36\degree</m> in standard position.
+    <ol marker="a.">  
+        <li>Estimate the coordinates of the point <m>P</m> where the terminal side of the angle intersects 
+        the circle of radius <m>r=2</m>.</li>
+        <li>Calculate approximate values for <m>\cos (\theta)</m> and <m>\sin (\theta)</m> using the coordinates of <m>P</m>.</li> 
+        <li>Estimate the coordinates of the point <m>Q</m> where the terminal side of the angle intersects 
+        the circle of radius <m>r=1</m>.</li>
+        <li>Calculate approximate values for <m>\cos (\theta)</m> and <m>\sin (\theta)</m> using the coordinates of <m>Q</m>.</li>
+    </ol></p></li>  
+
+    <li>Use a protractor to draw an angle <m>107\degree</m> in standard position. Repeat parts (a)-(d) for this new angle.</li>
+    <li>Use a protractor to draw an angle <m>212\degree</m> in standard position. Repeat parts (a)-(d) for this new angle.</li>
+    <li>Use a protractor to draw an angle <m>325\degree</m> in standard position. Repeat parts (a)-(d) for this new angle.</li>
+    <li><p>What do you notice about the coordinates of the point located on the unit circle by an angle and the values of the trig ratios of that angle?</p></li>
+ </ol></p></activity>   
+</subsection>
+
+<subsection><title>Location by Coordinates</title>
+
+<p>One of the most useful applications of the trigonometric ratios allows us to find distances or locations specified by angles. Starting with the definitions of sine and cosine,
+        <me>\cos (\theta) = \dfrac{x}{r} ~~~~   \text{and} ~~~~   \sin (\theta) = \dfrac{y}{r}</me>
+ we can solve for <m>x</m> and <m>y</m>, the coordinates of points on the terminal side of the angle, and obtain the following results.</p>
+
+<assemblage><title>Coordinates</title>
+    <idx><h>coordinates of point</h></idx><idx><h>coordinates of point</h><seealso>polar coordinates</seealso></idx>
+<p>If point <m>P</m> is located at a distance <m>r</m> from the origin in the direction specified by angle <m>\theta</m> in standard position, then the coordinates of <m>P</m> are
+        <me>\blert{x = r \cos (\theta) ~~~~ \text{and} ~~~~ y = r \sin (\theta)}</me>
+</p></assemblage>
+
+<sidebyside widths="55% 42%" margins="0% 0%">
+<p>These formulas make sense when we think of the unit circle. On a unit circle, the coordinates of a point designated by angle <m>\theta</m> are <m>\Big(\cos (\theta), \sin (\theta)\Big)</m>, as shown at right. On a circle of radius <m>r</m>, the angle <m>\theta</m> forms a similar triangle whose dimensions are scaled up by a factor of <m>r</m>. In particular, the legs of the new triangle are <m>r</m> times larger than the original triangle.</p>
+        <image xml:id="fig-4-2-rcircle"><description>points on circles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \coordinate(P) at (50:2cm);
+        \coordinate(Q) at ($ 2*cos(50)*(1,0)$);
+        \coordinate(R) at (50:0.9cm);
+        \coordinate(S) at ($ 0.9*cos(50)*(1,0)$);
+
+
+        \draw[gray!80!white, thick] (P) -- (Q);
+        \draw[gray!80!white, thick] (Q) rectangle ++(-.2,.2);
+        \draw[gray!80!white, thick] (R) -- (S);
+        \draw[gray!80!white, thick] (S) rectangle ++(-.2,.2);
+
+        \draw[black, thick] (O) circle (2cm);
+        \draw[black, thick] (O) circle (0.9cm);
+
+        \draw[black, thick, ->,>=stealth'] (0,-2.2)--(0,2.3) node[above] {$y$};
+        \draw[black, thick, ->,>=stealth'] (-2.3,0)--(2.3,0) node[right] {$x$};
+
+        \draw[blue, thick] (O) --(P) node[above , yshift=0] {$P$};
+        \filldraw[blue] (P) circle (2pt)  node[anchor=west , xshift=3] {($r \, \cos \theta, r \, \sin \theta)$};
+        \filldraw[blue] (R) circle (2pt);
+
+        \node[text width=2cm,fill=white, inner sep=1pt] at (0.2,-1.3)    {$x^2+y^2=1$};
+        \node[text width=2cm] at (2,-2.) {$x^2+y^2=r^2$};
+
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<example><statement><p>Point <m>P</m> is located 6 centimeters from the origin in the direction of <m>292\degree</m>. Find the coordinates of <m>P</m>, rounded to hundredths.</p></statement>
+
+<solution><sidebyside widths="68% 30%" valigns="middle middle" margins="0% 0%">
+<p>The location of point <m>P</m> is shown at right. We see that <m>r = 6</m>, and we can use a calculator to evaluate <m>\cos (292\degree)</m> and <m>\sin (292\degree)</m>. 
+        <md><mrow>x \amp = r \cos (292\degree) \amp\amp \text{and} \amp y \amp = r \sin (292\degree)</mrow>
+            <mrow>\amp = 6(0.3746) \amp\amp\amp \amp = 6(-0.9272)</mrow>
+            <mrow>\amp = 2.2476 \amp\amp\amp \amp = -5.5632</mrow></md></p>
+    <image xml:id="exam4-2-1"><description>point on angle</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.9]
+    \coordinate(O) at (0,0);
+    \coordinate(P) at (292:2cm);
+    \coordinate(Q) at ($ 2*cos(292)*(1,0)$);
+    \coordinate(R) at (292:2.3cm);
+
+    \draw[gray!80!white, thick] (Q) rectangle ++(-.2,-.2);
+    \draw[gray!80!white, thick, dashed] (P) -- (Q);
+
+    \draw[black, thick, ->,>=stealth'] (0,-2.2)--(0,1.3) node[above] {$y$};
+    \draw[black, thick, ->,>=stealth'] (-1.5,0)--(2.3,0) node[right] {$x$};
+    \draw[gray!80!white, ultra thick, dashed] (Q) -- (O);
+    \draw[red, thick, ->,>=stealth'] (0.25,0) arc (0:292:0.25) node[left, midway, yshift=-12] {$ 292\degree$};
+    \draw[blue, thick] (O) --(R) ;
+    \filldraw[blue] (P) circle (2pt)  node[anchor=west , xshift=3] {$P(x,y)$};
+
+    \node[text width=1cm,fill=white, inner sep=1pt] at (-0.1,-1.5)    {$\color{blue} r=6$};
+    \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+    <p>The coordinates of <m>P</m> are approximately <m>(2.25, -5.56)</m>.</p>
+</solution></example>
+
+<exercise><statement>
+<p>You find an old map that shows a buried treasure located 500 yards from the big oak tree in the direction <m>215\degree</m>, as shown below. You don't have anything  with you to measure angles, but you have your calculator.</p>
+<sidebyside widths="60% 40%" valigns="middle middle" margins="0% 0%">
+    <p><ol marker="a.">
+        <li>Find the cosine of <m>215\degree</m>. How far west should you walk from the big oak in order to be directly north of the treasure?</li>
+        <li>Find the sine of <m>215\degree</m>. How far south should you walk from your present location before you begin digging?</li>
+    </ol></p>
+        <image xml:id="exer4-2-1"><description>angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=1.2,cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},cross/.default={5pt}];
+        \coordinate(O) at (0,0);
+        \coordinate(P) at (215:2cm);
+        \coordinate(Q) at ($ 2*cos(215)*(1,0)$);
+        \coordinate(R) at (215:2.3cm);
+
+        \draw[gray!80!white, thick] (Q) rectangle ++(.2,-.2);
+        \draw[gray!80!white, thick, dashed] (P) -- (Q);
+
+        \draw[black, thick, ->,>=stealth'] (0,-1.6)--(0,1.3) node[above] {N};
+        \draw[black, thick, ->,>=stealth'] (1.5,0)--(-2.3,0) node[left] {W};
+        \draw[gray!80!white, ultra thick, dashed] (Q) -- (O);
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc (0:215:0.25) node[above left, midway, yshift=0] {$ 215\degree$};
+        \draw[blue, thick] (O) --(R) ;
+
+        \node[text width=1.cm,fill=white, inner sep=1pt] at (-.6,-0.9)    {\color{blue}\small 500 yd};
+        \filldraw[black] (O) circle (1.3pt) node[anchor=north west, xshift=2, yshift=-1, fill=white,inner sep=1pt]{oak tree};
+        \draw (P) node[cross,red, ultra thick] {};
+        \node[text width=1.cm, anchor=north west, xshift=-3, yshift=-3] at (P) {\color{red}treasure};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside> </statement>
+<answer><p><ol marker="a.">
+    <li><m>500 \cos(35\degree) = 409.58</m> yds </li>
+    <li><m>500 \sin(35\degree) = 286.79</m> yds </li> 
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title> Bearings</title>
+<idx><h>bearing</h></idx>
+
+<sidebyside widths="60% 32%" valigns="middle middle" margins="0% 5%">
+<p>Navigational directions for ships and planes are sometimes given as <term>bearings</term><idx><h>bearing</h></idx>, which are angles measured clockwise from north.  For example, a bearing of <m>110\degree</m> is equivalent to an angle of <m>-20\degree</m> in standard position, or to its coterminal angle <m>340\degree</m>, as shown at right.</p>
+        <image xml:id="fig-4-2-bearings"><description>Bearing of 110 degrees</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \coordinate(P) at (340:2.4cm);
+
+        \draw[black, thick, ->,>=stealth'] (0,-1.2)--(0,1.3) node[above] {N};
+        \draw[black, thick, ->,>=stealth'] (-1.7,0)--(2.3,0);
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc (0:340:0.25) node[below left, midway, xshift=3, yshift=-3] {$\theta = 340\degree$};
+        \draw[blue, thick, ->,>=stealth'] (0, 0.5,0) arc (90:-20:0.5) node[above right, midway, xshift=-2, yshift=-2] {$110\degree$};
+        \draw[blue, thick] (O) --(P) ;
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+<p>From this example, we see that to convert a bearing to an angle <m>\theta</m> in standard position, we can subtract the bearing from <m>90\degree</m>, or
+    <me>\blert{\theta = -\text{bearing} + 90\degree}</me></p>
+
+<example><statement><p>Francine leaves the airport at a bearing of <m>245\degree</m> and flies 60 miles. How far south of the airport is she at that time?</p>
+</statement>
+
+<solution><p>A bearing of <m>245\degree</m> is in the same direction as an angle of</p><sidebyside widths="55% 30%" valigns="middle middle"><p>  <me>-245\degree + 90\degree = -155\degree</me> in standard position, as shown at right, or as the coterminal angle <me>-155\degree + 360\degree = 205\degree</me>.</p>
+        <image xml:id="exam4-2-2"><description>Bearing of 245 degrees, 60 miles distance</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate(O) at (0,0);
+        \coordinate(P) at (205:2.cm);
+        \coordinate(Q) at ($ 2*cos(205)*(1,0) $);
+
+        \draw[blue, thick] (Q) rectangle ++(.2,-.2);
+        \draw[gray!80!white, thick, dashed] (P)--(Q) node[left, midway] {$\color{blue} y$};
+        \draw[black, thick, ->,>=stealth'] (0,-1.2)--(0,1.3) node[above] {N};
+        \draw[black, thick, ->,>=stealth'] (-2.1,0)--(2.3,0);
+        \draw[blue, thick] (P)--(O) node[below right, midway, xshift=-10, yshift=-1] {\color{blue} 60 mi};
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc (0:205:0.25) node[above left, midway, xshift=1, yshift=-5] {$\theta = 205\degree$};
+        \draw[blue, thick, ->,>=stealth'] (0, 0.5,0) arc (90:-155:0.5);
+        \node[align=center] at (1.2,.7) {\color{blue}bearing \\ \color{blue}$245\degree$};
+        \draw[blue, thick] (O) --(P);        
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+<p> We would like the <m>y</m>-coordinate of Francine's position, so we calculate <m>y = r \sin (205\degree)</m>. 
+        <md><mrow>y \amp = r \sin (205\degree)</mrow>
+            <mrow>\amp = 60(-0.4226) = -25.36</mrow></md>
+Francine is about 25.4 miles south of the airport.</p>
+</solution></example>
+
+<exercise><statement><p>Delbert leaves the airport and flies 150 miles at a bearing of <m>132\degree</m>. How far east of the airport is he at that time?</p></statement>
+
+<answer><p><m>150 \cos(42\degree) = 111.5</m> mile</p></answer></exercise>
+</subsection>
+
+<subsection><title>Angle of Inclination</title>
+    <idx><h>angle of inclination</h></idx>
+
+<sidebyside widths="60% 25%" valigns="middle middle" margins="0% 10%">
+<p>The tangent function also has applications in measurement. The figure at right shows a line in the <m>xy</m>-plane. The angle <m>\alpha</m> measured in the positive direction from the positive <m>x</m>-axis to the line is called the <term>angle of inclination</term> of the line.</p> 
+        <image xml:id="fig-angle-inclination"><description>angle of inclination</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.55]
+        \coordinate (O) at (0,0);
+        \coordinate (x) at (3.5,0);
+        \coordinate (y) at (0,2);
+        \coordinate (A) at (3,1.8);
+        \coordinate (B) at (1.,0);
+        \coordinate (C) at (2.5,0);
+        \coordinate (D) at (-1,-1.8);
+
+        \draw[black,  thick, ->,>=stealth'] (-1.5,0) --  (x) node[right] {$x$} ;
+        \draw[black,  thick, ->,>=stealth'] (0,-2) --  (y) node[above] {$y$}  ;
+        \draw[black,  thick, <->,>=stealth'] (D) --  (A)  ;
+        \draw[red, thick] (1.9,0) arc (0:{atan(0.9)}:.9) node [right, midway,xshift=0,yshift=1] {$\alpha$};
+
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<sidebyside widths="65% 30%" valigns="middle middle" margins="0% 0%">
+<p>Recall that the <term>slope</term><idx><h>slope</h></idx> of a line is given by the ratio <m>m = \dfrac{\Delta y}{ \Delta x} =\dfrac {\text{change in}~ y}{\text{change in}~x}</m> as we move from one point to another on the line. So, if we create a right triangle by dropping a perpendicular segment from the line to the <m>x</m>-axis, the ratio of sides <m>\dfrac {\text{opposite}}{\text{adjacent}}</m> gives the slope of the line.</p> 
+        <image xml:id="fig-angle-inclination2"><description>slope of angle of inclination</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.65]
+        \coordinate (O) at (0,0);
+        \coordinate (x) at (4,0);
+        \coordinate (y) at (0,2.8);
+        \coordinate (A) at (4,2.7);
+        \coordinate (B) at (3.5,0);
+        \coordinate (C) at (3.5,2.25);
+        \coordinate (D) at (-1,-1.8);
+        \draw[blue] (B) rectangle ++(-.3,.3);
+        \draw[gray,thick,dashed] (B)--(C);
+        \draw[black,  thick, ->,>=stealth'] (-1.,0) --  (x) node[right] {$x$} ;
+        \draw[black,  thick, ->,>=stealth'] (0,-2) --  (y) node[above] {$y$}  ;
+        \draw[black,  thick, <->,>=stealth'] (D) --  (A)  ;
+        \draw[red, thick] (1.9,0) arc (0:{atan(0.9)}:.9) node [right, midway,xshift=0,yshift=1] {$\alpha$};
+        \draw [blue, decorate, decoration={brace,amplitude=5pt}] (3.6,2.25) -- (3.6,0) node [blue,right,midway, xshift=3] { $\Delta y$};
+        \draw [blue, decorate, decoration={brace,amplitude=5pt}] (3.5,-.1) -- (1,-.1) node [blue,below,midway, yshift=-3] { $\Delta x$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside> 
+
+<p>But the ratio <m>\dfrac {\text{opposite}}{\text{adjacent}}</m> is also the tangent of the angle <m>\alpha</m>.</p>
+
+<assemblage><title>Angle of Inclination</title>
+<idx><h>angle of inclination</h></idx>
+    <idx><h>angle</h><h>of inclination</h></idx>
+    <idx><h>angle</h><h>of inclination</h><seealso>angle of inclination</seealso></idx>
+
+<p>The <term>angle of inclination</term> of a line is the angle <m>\alpha</m> measured in the positive direction from the positive <m>x</m>-axis to the line. If the slope of the line is <m>m</m>, then
+        <me>\blert{\tan (\alpha) = m}</me> 
+where <m>0\degree \le \alpha \le 180\degree</m>.</p></assemblage>
+
+<example><statement><p>Find the angle of inclination of the line <m>~y = \frac{3}{4}x - 3</m>.</p>
+</statement>
+
+<solution><sidebyside widths="50% 30%" valigns="middle middle"><p>The slope of the line is <m>\frac{3}{4}</m>. Therefore,
+    <md><mrow>\tan (\alpha) \amp = \dfrac{3}{4}</mrow>
+        <mrow>\alpha \amp = \tan^{-1} \left(\dfrac{3}{4}\right) = 36.9\degree</mrow></md>
+The angle of inclination is <m>36.9\degree</m>.</p>
+        <image xml:id="exam4-2-7"><description>graph y = 3/4 x - 3</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale = 0.35]
+        \draw[cyan] (-1,-3) grid (8,5);
+
+        \coordinate (A) at (-1, -9/4);
+        \coordinate (B) at (8, 4.5);
+
+        \draw[black,  thick, ->,>=stealth'] (-1.1,0) --  (8.55,0) node[right] {$x$} ;
+        \draw[black,  thick, ->,>=stealth'] (0,-3.1) --  (0,5.55) node[above] {$y$}  ;
+        \draw[red,  thick] (B) --  (A)  ;
+
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {2, 4, 6, 8} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+        \foreach \y [evaluate=\y as \yi using int( 2* \y )]   in {-3, -1, 2, 4} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+</solution></example>
+
+<exercise><statement><sidebyside widths="50% 27%" margins="0% 13%" valigns="middle middle">
+<p>Find the angle of inclination of the line shown at right,
+        <me>y = \dfrac{-6}{5}x + 2</me> </p>
+        <image xml:id="exer4-2-7"><description>graph y= -6/5 x +2</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.8, yscale=.64]
+        \draw[cyan] (-1,-1) grid (3,3);
+
+        \coordinate (A) at (-5/6, 3);
+        \coordinate (B) at (2.5,-1);
+
+        \draw[black,  thick, ->,>=stealth'] (-1.1,0) --  (3.3,0) node[right] {$x$} ;
+        \draw[black,  thick, ->,>=stealth'] (0,-1.1) --  (0,3.33) node[above] {$y$}  ;
+        \draw[red,  thick] (B) --  (A)  ;
+
+        \foreach \x [evaluate=\x as \xi using int( 1* \x )] in {1,2,3} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+        \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {1,2,3} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+
+<answer><p><m>180 \degree + \tan^{-1}\left(\dfrac{-6}{5}\right) = 129.8\degree</m></p></answer></exercise>
+
+<p>Thinking about slope and the angle of inclination can help us understand the graph of the tangent function.</p>
+
+<example><statement><p><ol marker = "a.">
+    <li><p>What happens to the slope of a line as its angle of inclination <m>\alpha</m> increases from <m>0\degree</m> toward <m>90\degree</m>?</p></li>
+    <li><p>What happens to the slope of a line as its angle of inclination <m>\alpha</m> decreases from <m>180\degree</m> toward <m>90\degree</m>?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker = "a.">
+    <li><sidebyside widths="45% 45%" margins="0% 0%" valigns="middle middle">
+        <stack><p>Consider the slopes of the lines shown at right, as <m>\alpha</m> increases.</p>
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                  
+                <row bottom="minor">
+                    <cell><m>\alpha</m></cell>
+                    <cell><m>0\degree</m></cell>
+                    <cell><m>30\degree</m></cell>
+                    <cell><m>45\degree</m></cell>
+                    <cell><m>60\degree</m></cell>
+                    <cell><m>75\degree</m></cell>
+                    <cell><m>85\degree</m></cell></row>
+                <row>
+                    <cell><m>m</m></cell> 
+                    <cell><m>0</m></cell>
+                    <cell><m>0.6</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>1.7</m></cell>
+                    <cell><m>3.7</m></cell>
+                    <cell><m>11.4</m></cell></row>
+                </tabular></stack>
+            <image xml:id="Example-angles-inclination"><description>lines with different angles of inclination</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}[scale=.7]
+    
+            \draw[black,  thick, ->,>=stealth'] (-3,0) --  (3,0) node[right] {$x$} ;
+            \draw[black,  thick, ->,>=stealth'] (0,-3) --  (0,3) node[left] {$y$}  ;
+            \draw[red, thick] (-3,{-sqrt(3)}) -- (3,{sqrt(3)}) node[right]{$\alpha=30^\circ$};    
+            \draw[blue, thick] (-3,-3) -- (2.7,2.7) node[right]{$\alpha=45^\circ$};    
+            \draw[red, thick] ({-sqrt(3)},-3) -- ({sqrt(3)},3) node[above, xshift=7mm, yshift=-3]{$\alpha=60^\circ$};    
+            \draw[blue, thick] ({-3/tan(75)},-3) -- ({3/tan(75)},3) node[above, xshift=5, yshift=2]{$\alpha=75^\circ$};    
+            \draw[red, thick] ({-3/tan(85)},-3) -- ({3/tan(85)},3);  
+            \draw[gray, <-,>=stealth'] ({2.5/tan(85)},2.5) -- (-.8,2.3)  node[left, xshift=2,text=red]{$\alpha=85^\circ$};
+            \draw[red, thick, ->,>=stealth'] (0.7,0) arc(0:85:.7);
+            \draw[blue, thick, ->,>=stealth'] (1,0) arc(0:75:1);
+            \draw[red, thick, ->,>=stealth'] (1.3,0) arc(0:60:1.3);
+            \draw[blue, thick, ->,>=stealth'] (1.6,0) arc(0:45:1.6);
+            \draw[red, thick, ->,>=stealth'] (1.9,0) arc(0:30:1.9);
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+    <sidebyside widths="45% 45%" margins="0% 0%" valigns="middle middle">
+    <p>The slopes increase towards infinity as <m>\alpha</m> increases. But the values of the slope <m>m</m> are the values of <m>\tan (\alpha)</m>, and if we plot those values against <m>\alpha</m>, we see the graph of the tangent function emerging.</p>
+            <image xml:id="tangent0to90deg"><description>tangent graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=0.7]
+            \draw[cyan] (0,-3) grid (6,5);
+    
+            \draw[->,>=stealth'] (-.1,0) -- (6.4,0) node[right] {$\alpha$};
+            \draw[->,>=stealth'] (0,-3.1) -- (0,5.3);
+            \foreach \x [evaluate=\x as \xi using int( 30* \x )] in {1,2,...,6}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$\xi^\circ $};
+    
+            \foreach \y   in {-2,-1,1,2,...,5} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\y};
+    
+            \draw[gray,thick,dashed] (3,-3)--+(0,8);
+            \draw[domain={0:atan(5)/30},smooth,variable=\x,red,very thick, ->, >=stealth'] plot ({\x},{tan(30*\x)});
+            \foreach \x in {0,1,1.5,2,2.5}
+            \filldraw[black] ({\x},{tan(30*\x)}) circle (2pt);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+        
+    <li><sidebyside widths="40% 50%" margins="0% 0%" valigns="middle middle">
+        <stack><p>Now consider the slopes of the lines as <m>\alpha</m> decreases from <m>180\degree</m> toward <m>90\degree</m>.</p>
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                  
+                <row bottom="minor">
+                    <cell><m>180\degree</m></cell>
+                    <cell><m>150\degree</m></cell>
+                    <cell><m>135\degree</m></cell>
+                    <cell><m>120\degree</m></cell>
+                    <cell><m>105\degree</m></cell>
+                    <cell><m>95\degree</m></cell></row>
+                <row><cell><m>0</m></cell>
+                    <cell><m>-0.6</m></cell> 
+                    <cell><m>-1</m></cell>
+                    <cell><m>-1.7</m></cell>
+                    <cell><m>-3.7</m></cell>
+                    <cell><m>-11.5</m></cell></row>
+                    </tabular></stack>
+        <stack><image xml:id="Example-More-angles-inclination"><description>lines with different angles of inclination</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}[scale=.7]    
+            \draw[black,  thick, ->,>=stealth'] (-3,0) --  (3,0) node[right] {$x$} ;
+            \draw[black,  thick, ->,>=stealth'] (0,-3) --  (0,3) node[right] {$y$}  ;
+            \draw[red, thick] (3,{-sqrt(3)}) -- (-3,{sqrt(3)}) node[left, xshift=2]{$\alpha=150^\circ$};    
+            \draw[blue, thick] (3,-3) -- (-2.7,2.7) node[left, xshift=2]{$\alpha=135^\circ$};    
+            \draw[red, thick] ({sqrt(3)},-3) -- ({-sqrt(3)},3) node[above, xshift=-12, yshift=-1]{$\alpha=120^\circ$};    
+            \draw[blue, thick] ({3/tan(75)},-3) -- ({-3/tan(75)},3) node[above, xshift=10, yshift=2]{$\alpha=105^\circ$};    
+            \draw[red, thick, ->,>=stealth'] (0.7,0) arc(0:150:.7);
+            \draw[blue, thick, ->,>=stealth'] (1,0) arc(0:135:1);
+            \draw[red, thick, ->,>=stealth'] (1.3,0) arc(0:120:1.3);
+            \draw[blue, thick, ->,>=stealth'] (1.6,0) arc(0:105:1.6);
+            \end{tikzpicture}]]>
+            </latex-image></image></stack></sidebyside>
+    <sidebyside widths="45% 45%" margins="0% 0%" valigns="middle middle">
+    <p>The slopes decrease towards negative infinity as <m>\alpha</m> decreases. But, as before, the values of the slope <m>m</m> are the values of <m>\tan (\alpha)</m>, and if we plot those values against <m>\alpha</m>, we see the graph of the tangent function.</p>
+            <image xml:id="tangent90to180deg"><description>tangent graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=0.7]
+            \draw[cyan] (0,-5) grid (6,3);    
+            \draw[->,>=stealth'] (-.1,0) -- (6.4,0) node[right] {$\alpha$};
+            \draw[->,>=stealth'] (0,-5.1) -- (0,3.3);
+            \foreach \x [evaluate=\x as \xi using int( 30* \x )] in {1,2,...,6}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$\xi^\circ $};
+    
+            \foreach \y   in {-5,-4,-3,-2,-1,1,2,3} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\y};
+    
+            \draw[gray,thick,dashed] (3,-5)--+(0,8);
+            \draw[domain={0:atan(3)/30},smooth,variable=\x,red,very thick, ->, >=stealth'] plot ({\x},{tan(30*\x)});
+            \draw[domain={{6-atan(5)/30}:6},smooth,variable=\x,red,very thick, <-, >=stealth'] plot ({\x},{tan(30*\x)});
+            \foreach \x in {3.5,4,4.5,5,6}
+            \filldraw[black] ({\x},{tan(30*\x)}) circle (2pt);
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></li>
+</ol></p></solution></example>
+
+<exercise><statement><p><ol marker = "a.">
+    <li><p>What happens to the angle of inclination <m>\alpha</m> of a line as its slope increases from <m>0</m> toward <m>\infty</m>?</p></li>
+    <li><p>What happens to the angle of inclination <m>\alpha</m> of a line as its slope decreases through negative values from <m>0</m> toward <m>- \infty</m>?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker = "a.">
+    <li><p>The angle increases from <m>0\degree</m> toward <m>90\degree</m>.</p></li>
+    <li><p>The angle decreases from <m>180\degree</m> toward <m>90\degree</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Sinusoidal Functions</title>
+    <idx><h>sinusoidal function</h></idx><idx><h>function</h><h>sinusoidal</h></idx>
+
+<p>Many interesting functions have graphs shaped like sines or cosines, even though they may not be functions of angles.</p>
+
+<example><statement><p>Imagine a grandfather clock. As the minute hand sweeps around, the height of its tip changes with time. Which of the graphs shown below best represents the height of the tip of the minute hand as a function of time?</p>
+        <image width="85%" xml:id="exam4-3-3"><description>3 graphs</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.72]
+        \coordinate (O) at (0,0);
+
+        \draw[->,>=stealth'] (O)++(-1.5,0) -- +(3.2,0) node[right] {$t$};
+        \draw[->,>=stealth'] (O)++(0,-0.1) -- +(0,3.3) node[above] {$h$};
+
+        \draw[red, very thick] (O)++(0,2) circle (.7 cm);
+        \node[text width=.2 cm] at (0,-.6) {a.};
+
+        % second graph
+        \coordinate (O) at (4.2,0);
+
+        \draw[->,>=stealth'] (O)++(-0.2,0) -- +(3.2,0) node[right] {$t$};
+        \draw[->,>=stealth'] (O)++(0,-0.1) -- +(0,3.3) node[above] {$h$};
+
+        \draw[red, very thick] (O)++(0,2.7) --++(.6,-1.4)--++(.6,1.4)--++(.6,-1.4)--++(.6,1.4)--++(.12,-0.28);
+
+        \node[text width=.2 cm] at ($(O)+(1.5,-.6)$) {b.};
+
+        % third graph
+        \coordinate (O) at (9.4,0);
+
+        \draw[->,>=stealth'] (O)++(-0.2,0) -- +(3.2,0) node[right] {$t$};
+        \draw[->,>=stealth'] (O)++(0,-0.1) -- +(0,3.3) node[above] {$h$};
+
+        \draw[domain=9.4:12.2,smooth,variable=\x,red,very thick] plot ({\x},{2+ 0.7*cos(deg((\x- 9.4)*4.8))});
+        \node[text width=.2 cm] at ($(O)+(1.5,-.6)$) {c.};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+
+<solution><p>Figure (a) is not the graph of a function at all: It does not pass the vertical line test. That is, some values of <m>t</m>, such as <m>t = 0</m>, correspond to more than one value of <m>h</m>, which is not possible in the graph of a function.</p>
+<p>Figure (b) shows the height of the minute hand varying between a maximum and minimum value. The height decreases at a constant rate (the graph is straight and the slope is constant) until the minimum is reached, and then increases at a constant rate.</p>
+
+<sidebyside widths="60% 35%" margins="0% 0%"><p> But notice that during the 10 minutes from 12:10 to 12:20 the height of the minute hand decreases about half the diameter of the clock, while from 12:20 to 12:30 the height decreases only about a quarter of the diameter of the clock, as shown at right.</p>
+        <image xml:id="exam4-3-3soln"><description>clock</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \draw[black, thick] (O) circle (1.6 cm);
+
+        \foreach \theta [evaluate=\theta as \h using int(3*\theta )]  in {1, 2, 3, 4}  {
+            \node[text width = .3cm] at (-90*\theta+90:1.3){\h}; }
+
+        \coordinate (h2) at (30:1.5);
+        \coordinate (h4) at (-30:1.5);
+        \coordinate (h6) at (-90:1.5);
+
+        \draw[red, very thick] (h2)--(O)--(h4)--(O)--(h6);
+
+        \coordinate (P) at ($ (1.5,0)+ 1.5*sin(30)*(0,1) $);
+        \coordinate (Q) at ($ (1.5,0)+ 1.5*sin(30)*(0,-1) $);
+        \coordinate (R) at (0.9,-1.5);
+
+        \draw[gray!70!white, thick] (P) -- +(2.5,0);
+        \draw[gray!70!white, thick] (Q) -- +(2.5,0);
+        \draw[blue, thick, <-,>=stealth'] (P)++(1.3,0) --+(0,-.5) node[below, fill=white, inner sep=0] { $\frac{1}{2}$ diameter};
+        \draw[blue, thick, <-,>=stealth'] (Q)++(1.3,0) --+(0,.5);
+        \draw[gray!70!white, thick] (R) -- +(3.1,0);
+        \node[text width = 2.4cm, text=blue] at (3,-1.2){$\frac{1}{4}$ diameter};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside> 
+<p>Thus the height of the minute hand does not decrease at a constant rate.</p>
+<p>Figure (c) is the best choice. The graph is curved because the slopes are not constant. The graph is steep when the height is changing rapidly, and the graph is nearly horizontal when the height is changing slowly. The height changes slowly near the hour and the half-hour, and more rapidly near the quarter-hours.</p>
+</solution></example>
+
+<exercise><statement><p>As the moon revolves around the earth, the percent of the disk that we see varies sinusoidally with a period of approximately 30 days. There are eight phases, starting with the new moon, when the moon's disk is dark, followed by waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, last quarter, and waning crescent. Which graph  best represents the phases of the moon?</p> 
+<p><ol marker="a.">
+    <li><image xml:id="exer4-3-3a" width="50%"><description>sinusoidal graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.8,yscale=.48]
+        \draw[cyan, xstep=.5, ystep=.5] (0,0) grid (6,5);
+
+        \draw[->,>=stealth'] (-0.1,0) -- (6.3,0) node[right] {$t$};
+        \draw[->,>=stealth'] (0,-.1) -- (0,5.3) node[above] {$y$};
+
+        \foreach \x [evaluate=\x as \xi using int( 10* \x )] in {0, 1, 2, ..., 6}
+        \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+        \foreach \y  [evaluate=\y as \yi using int( 20* \y )] in {2.5,5}
+        \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+        \draw[samples=65,domain=-0:6,smooth,variable=\x,red,very thick] plot ({\x},{ 2.5+2.5*sin(deg(\x*2*pi/3))});
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><image xml:id="exer4-3-3b" width="50%"><description>sinusoidal graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.8,yscale=.48]
+        \draw[cyan, xstep=.5, ystep=.5] (0,0) grid (6,5);
+
+        \draw[->,>=stealth'] (-0.1,0) -- (6.3,0) node[right] {$t$};
+        \draw[->,>=stealth'] (0,-.1) -- (0,5.3) node[above] {$y$};
+
+        \foreach \x [evaluate=\x as \xi using int( 10* \x )] in {0, 1, 2, ..., 6}
+        \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+        \foreach \y  [evaluate=\y as \yi using int( 20* \y )] in {2.5,5}
+        \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+        \draw[samples=65,domain=-0:6,smooth,variable=\x,red,very thick] plot ({\x},{ 2.5-2.5*cos(deg(\x*2*pi/3))});
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><image xml:id="exer4-3-3c" width="50%"><description>sinusoidal graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.8,yscale=.48]
+        \draw[cyan, xstep=.5, ystep=.5] (0,0) grid (6,5);
+
+        \draw[->,>=stealth'] (-0.1,0) -- (6.3,0) node[right] {$t$};
+        \draw[->,>=stealth'] (0,-.1) -- (0,5.3) node[above] {$y$};
+
+        \foreach \x [evaluate=\x as \xi using int( 50* \x /3)] in {0, 3, 6}
+        \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+        \foreach \y  [evaluate=\y as \yi using int( 6* \y )] in {2.5,5}
+        \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {   \yi};
+
+        \draw[samples=65,domain=-0:6,smooth,variable=\x,red,very thick] plot ({\x},{ 2.5-2.5*cos(deg(\x*2*pi/3))});
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+</ol></p></statement>
+    
+<answer><p> (b), because it has the correct period.</p></answer></exercise>
+
+<example><statement><p>The table shows the number of hours of daylight in Glasgow, Scotland on the first of each month.</p>
+    <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">                  
+        <row bottom="minor">
+            <cell>Month</cell>
+            <cell>Jan</cell>
+            <cell>Feb</cell>
+            <cell>Mar</cell>
+            <cell>Apr</cell>
+            <cell>May</cell>
+            <cell>Jun</cell>
+            <cell>Jul</cell>
+            <cell>Aug</cell>
+            <cell>Sep</cell>
+            <cell>Oct</cell>
+            <cell>Nov</cell>
+            <cell>Dec</cell></row>
+        <row>
+            <cell>Daylight Hours</cell> 
+            <cell><m>7.1</m></cell>
+            <cell><m>8.7</m></cell>
+            <cell><m>10.7</m></cell>
+            <cell><m>13.1</m></cell>
+            <cell><m>15.3</m></cell>
+            <cell><m>17.2</m></cell>
+            <cell><m>17.5</m></cell>
+            <cell><m>16.7</m></cell>
+            <cell><m>13.8</m></cell>
+            <cell><m>11.5</m></cell>
+            <cell><m>9.2</m></cell>
+            <cell><m>7.5</m></cell></row>
+            </tabular>
+<p><ol marker="a.">
+        <li>Sketch a sinusoidal graph of daylight hours as a function of time, with <m>t = 1</m> in January.</li>
+        <li>Estimate the period, amplitude, and midline of the graph.</li>
+</ol></p></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>Plot the data points and fit a sinusoidal curve by eye, as shown below.</p>
+        <image width="70%" xml:id="exam4-3-4"><description>sinusoidal graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [xscale=.35, yscale=.14] 
+            \draw[cyan, xstep=1, ystep=2] (0,0) grid (18,20);
+
+            \draw[->,>=stealth'] (-0.1,0) -- (18.6,0) node[right] {$t$};
+            \draw[->,>=stealth'] (0,-.1) -- (0,20.9) node[above] {$y$};
+            \draw[green, ultra thick, dashed] (0,12.12)--+(18,0);
+
+            \foreach \x [evaluate=\x as \xi using int( 1* \x /1)] in {4, 8, ..., 16}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+            \foreach \y  [evaluate=\y as \yi using int( 1* \y )] in {4, 8,..., 20}
+            \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+            \draw[domain=-0:18,smooth,variable=\x,red,very thick] plot ({\x},{ 12.25-5.25*cos(deg((\x-.66)*pi/6))});
+            \foreach \x  in {1,2, ..., 12}
+            \filldraw[black] (\x, {12.25-5.25*cos(deg((\x-.66)*pi/6))}) ellipse (.12 and .3);
+            \end{tikzpicture}]]>
+            </latex-image></image></li>
+    <li>The period of the graph is 12 months. The midline is approximately <m>y = 12.25,</m> and the amplitude is approximately 5.25.</li>
+</ol></p></solution></example>
+
+ <exercise><statement><p>The figure shows the number of daylight hours in Jacksonville, Florida, in Anchorage, Alaska, at the Arctic Circle, and at the Equator.</p>
+    <image width="70%" source="photos/fig-chap2-proj-ex-2-1"><description>graph of daylight hours</description></image>
+ <p><ol marker="a.">
+    <li>Which graph corresponds to each location?</li>
+    <li>What are the maxium and minimum number of daylight hours in Jacksonville?</li>
+    <li>For how long are there 24 hours of daylight per day at the Arctic Circle?</li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li>At the Equator there is no variation in the hours of daylight, so it is the constant graph at height 12. The greatest variation in the hours of daylight occurs farthest north, at the Arctic Circle, so it is the green graph, then red for Anchorage and blue for Jacksonville. </li>
+    <li>14 hours and 10 hours</li>
+    <li>Four months</li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Other Periodic Functions</title>
+    <idx><h>periodic function</h></idx>
+<p>There are other periodic functions besides sinusoidal functions. Any function that repeats a pattern at intervals of fixed length is periodic.</p>
+
+<assemblage><title>Periodic Function</title>
+    <idx><h>periodic function</h></idx><idx><h>period</h></idx>
+<p>The function <m>y = f(x)</m> is <term>periodic</term> if there is a smallest value of <m>p</m> such that 
+        <me>\blert{f(x + p) = f(x)}</me> 
+for all <m>x</m>. The constant <m>p</m> is called the <term>period</term> of the function.</p></assemblage>
+
+<example><statement><p>Which of the functions shown below are periodic? If the function is periodic, give its period.</p>
+<sidebyside widths="33% 24% 30%" valigns="bottom bottom bottom">
+    <image xml:id="Fig-Arccos"><description>Arccos graph</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}  [scale=.2]
+    \draw[cyan] (0,-6) grid (16,6);
+    \draw[->,>=stealth'] (0,0) -- (16.9,0) node[right] {$x$};
+    \draw[->,>=stealth'] (0,-6) -- (0,6.9) node[above] {$y$};
+
+    \foreach \x [evaluate=\x as \xi using int( 45* \x )] in {4, 8,...,16}
+    \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+    \foreach \y  [evaluate=\y as \yi using int( 4* \y/3 )] in {-6,-3,3,6}
+    \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-1, fill=white, inner sep=1pt] {\yi};
+
+    \draw[domain=0:{acos(1/6)/45},smooth,variable=\x,red,thick, ->, >=stealth'] plot ({\x},{ 1/cos(45*\x)});
+    \draw[domain={acos(-1/6)/45}:{4+acos(1/6)/45},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({\x},{ 1/cos(45*\x)});
+    \draw[domain={8-acos(1/6)/45}:{8+acos(1/6)/45},smooth,variable=\x,red,thick, <->, >=stealth'] plot ({\x},{ 1/cos(45*\x)});
+    \draw[domain={8+acos(-1/6)/45}:{12+acos(1/6)/45},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({\x},{ 1/cos(45*\x)});
+    \draw[domain={16-acos(1/6)/45}:{16},smooth,variable=\x,red,thick, <-, >=stealth'] plot ({\x},{ 1/cos(45*\x)});
+    \node at (8,-9) {(a)};
+
+    \end{tikzpicture}]]>
+    </latex-image></image>
+    <image xml:id="Fig-Quartic"><description>polynomial graph</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}  [scale=.3]
+    \draw[cyan] (-4,-4) grid (4,4);
+    \draw[->,>=stealth'] (-4,0) -- (4.9,0) node[right] {$x$};
+    \draw[->,>=stealth'] (0,-4) -- (0,4.9) node[above] {$y$};
+
+    \foreach \x in {-3,2}
+    \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below,yshift=-3, fill=white, inner sep=1pt] {$ \x $};
+    \foreach \y  [evaluate=\y as \yi using int( 4* \y )] in {-2,2}
+    \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-1, fill=white, inner sep=1pt] {\yi};
+
+    \draw[domain=-2.54:3.3,smooth,variable=\x,red, thick, <->, >=stealth'] plot ({\x},{ (\x+2)*(\x+1)*(\x-1)*(\x-3)/4 });
+    \node at (0,-6) {(b)};
+    \end{tikzpicture}]]>
+    </latex-image></image>
+    <image xml:id="Fig-Periodic"><description>periodic graph</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}  [scale=.2]
+    \draw[cyan] (-8,0) grid (8,12);
+    \draw[->,>=stealth'] (-8,0) -- (8.9,0) node[right] {$x$};
+    \draw[->,>=stealth'] (0,0) -- (0,12.9) node[above] {$y$};
+
+    \foreach \x in {-4,-8,4, 8}
+    \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below,yshift=-3, fill=white, inner sep=1pt] {$ \x $};
+    \foreach \y  [evaluate=\y as \yi using int( 1/2* \y )] in {4,8}
+    \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-1, fill=white, inner sep=1pt] {\yi};
+
+    \draw[red,thick, ->, >=stealth'] (-7,6)--(-8,6);
+    \draw[domain=-7:-5,smooth,variable=\x,red, thick] plot ({\x},{  2* (\x+6)^2+4 });
+    \draw[red,thick] (-5,6)--++(2,0);
+    \draw[domain=-3:-1,smooth,variable=\x,red, thick] plot ({\x},{8-  2* (\x+2)^2 });
+    \draw[red,thick] (-1,6)--++(2,0);
+    \draw[domain=1:3,smooth,variable=\x,red, thick] plot ({\x},{  2* (\x-2)^2+4 });
+    \draw[red,thick] (3,6)--++(2,0);
+    \draw[domain=5:7,smooth,variable=\x,red, thick] plot ({\x},{8-  2* (\x-6)^2 });
+    \draw[red,thick, ->, >=stealth'] (7,6)--(8,6);
+    \node at (0,-4) {(c)};
+    \end{tikzpicture}]]>
+    </latex-image></image>
+</sidebyside></statement>
+
+<solution><p><ol marker="a.">
+    <li>This graph is periodic with period 360.</li>
+    <li>This graph is not periodic.</li>
+    <li>This graph is periodic with period 8.</li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Which of the functions shown below are periodic? If the function is periodic, give its period.</p>
+    <sidebyside widths="30% 30% 30%" valigns="bottom bottom bottom">
+        <image xml:id="Fig-Fourrier-wave"><description>periodic graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}  [xscale=.6, yscale=.4]
+            \draw[->,>=stealth'] (0,0) -- (6.3,0);
+            \draw[->,>=stealth'] (0,-1) -- (0,3.2);
+        
+            \foreach \x  in {1,2,...,6}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below,yshift=-3, fill=white, inner sep=1pt] {$ \x $};
+        
+            \draw[domain=-.5:5.5,samples=65,smooth,variable=\x,red,thick, ->, >=stealth'] plot ({\x+.5}, {0.9+.77*cos(180*(\x) )-0.7*sin(360*(\x) )} );
+            \node at (3,-1.8) {(a)};
+        
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="Fig-Piecewise-linear-wave"><description>periodic graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}  [xscale=.6, yscale=.4]
+            \draw[->,>=stealth'] (0,0) -- (6.3,0);
+            \draw[->,>=stealth'] (0,-2.5) -- (0,1.7);
+        
+            \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {1,2,...,6}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below] {$ \xi $};
+            \draw[red,thick,->,>=stealth'] (0,-2)--++(1.49,3)--++(.01,-3)--++(1.49,3)--++(.01,-3)--++(1.49,3)--++(.01,-3)--++(1.49,3);
+            \node at (3,-3.3) {(b)};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="Fig-Underdamped-wave"><description>not periodic graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}  [xscale=.6, yscale=.4]
+            \draw[->,>=stealth'] (0,0) -- (6.3,0);
+            \draw[->,>=stealth'] (0,-2.1) -- (0,2.1);
+        
+            \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {1,2,...,6}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below] {$ \xi $};
+        
+            \draw[domain=0:6.,samples=129,smooth,variable=\x,red, thick,->,>=stealth'] plot ({\x}, {(1+\x/6)*cos(360*(\x) ) });
+            \node at (3,-3.3) {(c)};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+</statement>
+
+<answer><p><ol marker="a." cols="3">
+        <li>Period:  2</li>
+        <li>Period:  3</li>
+        <li>Not periodic</li>
+</ol></p></answer></exercise>
+
+<example><statement><p>A patient receives regular doses of medication to maintain a certain level of the drug in his body.  After each dose, the patient's body eliminates a certain percent of the medication before the next dose is administered. The graph shows the amount of the drug, in milliliters, in the patient's body as a function of time in hours.</p>
+        <!-- <image source="photos/fig-chap2-proj-ex-1-4"><description>graph</description></image> -->
+            <image width="50%" xml:id="Fig-medication-in-blood"><description>Piecewise decreasing exponential graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}  [scale=.3]
+            \draw[cyan, xstep=2] (0,0) grid (20,8);
+            \draw[->,>=stealth'] (0,0) -- (20.8,0);
+            \draw[->,>=stealth'] (0,0) -- (0,8.6);
+        
+            \foreach \x [evaluate=\x as \xi using int( \x )] in {4,8,...,20}
+            \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below] {$ \xi $};
+            \foreach \y [evaluate=\y as \yi using int( \y *5 + 20 )] in {0,2,...,8}
+            \draw[black] ($ \y *(0,1) +(.08,0) $) --++(-.16,0) node[left] {$ \yi $};
+            \draw[domain=0:3.99,samples=65,smooth,variable=\x,red,very thick] plot ({\x}, { 6*(1/3)^(\x/4) } ) --++(.01,4);
+            \draw[domain=0:3.99,samples=65,smooth,variable=\x,red,very thick] plot ({\x+4}, { 6*(1/3)^(\x/4) } ) --++(.01,4);
+            \draw[domain=0:3.99,samples=65,smooth,variable=\x,red,very thick] plot ({\x+8}, { 6*(1/3)^(\x/4) } ) --++(.01,4);
+            \draw[domain=0:3.99,samples=65,smooth,variable=\x,red,very thick] plot ({\x+12}, { 6*(1/3)^(\x/4) } ) --++(.01,4);
+            \draw[domain=0:4,samples=65,smooth,variable=\x,red,very thick] plot ({\x+16}, { 6*(1/3)^(\x/4) } );
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    <p><ol marker="a.">
+        <li>How much of the medication is administered with each dose?</li>
+        <li>How often is the medication administered?</li>
+        <li>What percent of the drug is eliminated from the body between doses?</li>
+    </ol></p></statement>
+    
+<solution><p><ol marker="a.">
+    <li>The medication level increase from 30 ml to 50 ml at each cycle of the graph, so 20 ml of medication are administerd at each dose.</li>
+    <li>The medication level peaks sharply evey four hours, when each new dose is administered.</li>
+    <li>The medication level declines by 20 ml between doses, or <m>\dfrac{20}{50} = 0.4</m>, or 40%</li>
+</ol></p></solution></example>
+
+<exercise><statement><p>You are sitting on your front porch late one evening, and you see a light coming down the road tracing out the path shown below, with distances in inches. You realize that you are seeing a bicycle light, fixed to the front wheel of the bike.</p>
+    <!-- <image source="photos/fig-chap2-proj-ex-1-5"><d    escription>graph</description></image> -->
+    <image width="55%" xml:id="Fig-bicycle-light-on-wheel"><description>Curtate troichoid traced by fixed point inside circle as circle rolls without slipping</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}  [xscale=.54, yscale=.27]
+        \draw[cyan, xstep=2] (0,0) grid (12,12);
+        \draw[->,>=stealth'] (0,0) -- (12.8,0);
+        \draw[->,>=stealth'] (0,0) -- (0,13);
+    
+        \foreach \x [evaluate=\x as \xi using int(25* \x )] in {2,4,...,12}
+        \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[below] {$ \xi $};
+        \foreach \y [evaluate=\y as \yi using int( \y *2 )] in {4,8,12}
+        \draw[black] ($ \y *(0,1) +(.08,0) $) --++(-.16,0) node[left] {$ \yi $};
+        \draw[domain=0:4,samples=65,smooth,variable=\x,red,very thick] plot ({3* \x -.32*sin(\x*360}, { 6-4*cos(\x *360) } );
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><ol marker="a.">
+    <li>Approximately what is the period of the graph?</li>
+    <li>How far above the ground is the light?</li>
+    <li>What is the diameter of the bicycle wheel?</li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li>75 in</li>
+    <li>4 in</li>
+    <li>24 in</li>
+</ol></p></answer></exercise>
+
+<p>Review the following skills you will need for this section.</p>
+<theorem>    
+    <sidebyside><p>Sketch the graph.  Give the equations of any vertical or horizontal asymptotes.</p></sidebyside>   
+    <sidebyside><p><ol marker="1." cols="2">
+        <li><p><m>f(x) = \dfrac{1}{x - 2}</m></p></li>
+        <li><p><m>g(x) = \dfrac{1}{x + 3} </m></p></li>
+        <li><p><m>h(x) = \dfrac{1}{x^2 - 1}</m></p></li>
+        <li><p><m>H(x) = \dfrac{-1}{(x + 1)^2}</m></p></li>
+        <li><p><m>G(x) = \dfrac{2x + 1}{x}</m></p></li>
+        <li><p><m>F(x) = \dfrac{x}{x - 1}</m></p></li>
+    </ol></p></sidebyside>
+
+    <sidebyside><p><m>\underline{\qquad\qquad\qquad\qquad}</m></p></sidebyside>
+    <conclusion>
+    <sidebyside><p>Algebra Refresher Answers</p></sidebyside>
+    <p><ol marker="1." cols="2">
+        <li><image width="70%" xml:id="ar4-3-1ans"><description>graph</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.45]
+                \draw[cyan] (-2,-3) grid (4,3);
+
+                \draw[->,>=stealth'] (-2.1,0) -- (4.6,0) node[right] {$x$};
+                \draw[->,>=stealth'] (0,-3.1) -- (0,3.3) node[above] {$y$};
+
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-2,2} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+                \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {-2, 2} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+                \draw[domain={-2:5/6},smooth,variable=\x,red,very thick] plot ({\x},{1/(2*\x-2)});
+
+                \draw[domain={7/6:4},smooth,variable=\x,red,very thick] plot ({\x},{1/(2*\x-2)});
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        <p><m>x = 2,~~y = 0</m></p></li>
+        <li><image width="70%" xml:id="ar4-3-2ans"><description>graph</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.45]
+                \draw[cyan] (-4,-3) grid (2,3);
+
+                \draw[->,>=stealth'] (-4.1,0) -- (2.6,0) node[right] {$x$};
+                \draw[->,>=stealth'] (0,-3.1) -- (0,3.3) node[above] {$y$};
+
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-4,-2,2} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+                \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {-2, 2} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+                \draw[domain={-4:-5/3},smooth,variable=\x,red,very thick] plot ({\x},{1/(2*\x +3)});
+
+                \draw[domain={-8/6:2},smooth,variable=\x,red,very thick] plot ({\x},{1/(2*\x +3)});
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        <p><m>x = -3,~~y = 0</m></p></li>
+        <li><image width="70%" xml:id="ar4-3-3ans"><description>graph</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [xscale=.375, yscale=.5]
+                \draw[cyan] (-4,-3) grid (4,3);
+
+                \draw[->,>=stealth'] (-4.1,0) -- (4.6,0) node[right] {$x$};
+                \draw[->,>=stealth'] (0,-3.1) -- (0,3.3) node[above] {$y$};
+
+                \foreach \x [evaluate=\x as \xi using int(  \x )] in {-4,-2,2,4} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+                \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {-2, 2} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+                \draw[domain={-4:-2/sqrt(3)},smooth,variable=\x,red,very thick] plot ({\x},{1/( (\x)^2 -1)});
+
+                \draw[domain={-sqrt(2/3):sqrt(2/3)},smooth,variable=\x,red,very thick] plot ({\x},{1/( (\x)^2 -1)});
+
+                \draw[domain={2/sqrt(3):4},smooth,variable=\x,red,very thick] plot ({\x},{1/( (\x)^2 -1)});
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        <p><m>x = -1,~~x = 1~~y = 0</m></p></li>
+        <li><image width="70%" xml:id="ar4-3-4ans"><description>graph</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (-3,-4) grid (3,2);
+
+                \draw[->,>=stealth'] (-3.1,0) -- (3.3,0) node[right] {$x$};
+                \draw[->,>=stealth'] (0,-4.1) -- (0,2.3) node[above] {$y$};
+
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-2,2} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+                \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {-2, 2} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+                \draw[domain={-3:-3/4},smooth,variable=\x,red,very thick] plot ({\x},{-1/( (2*\x +1)^2 )});
+
+                \draw[domain={-1/4:3},smooth,variable=\x,red,very thick] plot ({\x},{-1/( (2*\x +1)^2 )});
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        <p><m>x = -1,~~y = 0</m></p></li>
+        <li><image width="70%" xml:id="ar4-3-5ans"><description>graph</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [xscale=.5, yscale=.375]
+                \draw[cyan] (-3,-2) grid (3,6);
+
+                \draw[->,>=stealth'] (-3.1,0) -- (3.3,0) node[right] {$x$};
+                \draw[->,>=stealth'] (0,-2.1) -- (0,6.3) node[above] {$y$};
+
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-2,2} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+                \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {-2, 2} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+                \draw[domain={-3:-1/8},smooth,variable=\x,red,very thick] plot ({\x},{ (4*\x+1)/( 2*\x ) });
+
+                \draw[domain={1/8:3},smooth,variable=\x,red,very thick] plot ({\x},{ (4*\x+1)/( 2*\x )});
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        <p><m>x = 0,~~y = 2</m></p></li>
+        <li><image width="70%" xml:id="ar4-3-6ans"><description>graph</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (-3,-2) grid (3,4);
+
+                \draw[->,>=stealth'] (-3.1,0) -- (3.3,0) node[right] {$x$};
+                \draw[->,>=stealth'] (0,-2.1) -- (0,4.3) node[above] {$y$};
+
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-2,2} \draw[black] ($ \x *(1,0) +(0,.08) $) --++(0,-.16) node[anchor=north, xshift=0,yshift=-3, fill=white, inner sep=1pt] {$ \xi $};
+
+                \foreach \y [evaluate=\y as \yi using int( 1* \y )]   in {-2, 2, 4} \draw[black] (.08,\y ) --++(-.16,0) node[anchor=east, xshift=-3, fill=white, inner sep=1pt] {\yi};
+
+                \draw[domain={-3:1/3},smooth,variable=\x,red,very thick] plot ({\x},{ (2*\x)/( 2*\x - 1) });
+
+                \draw[domain={4/6:3},smooth,variable=\x,red,very thick] plot ({\x},{ (2*\x)/( 2*\x - 1 )});
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        <p><m>x = 1,~~y = 1</m></p></li>
+</ol></p></conclusion>
+</theorem>
+</subsection>
+
+<subsection><title>Section 4.3 Summary</title>
+<subsubsection><title>Vocabulary</title>
+<p><ul cols="3">   
+    <li>Unit Circle</li>
+    <li>Angle of Inclination</li>
+    <li>Bearings</li>
+    <li>Period</li>
+    <li>Periodic</li>
+</ul></p></subsubsection>
+
+<subsubsection><title>Concepts</title>
+<p><ol marker="1.">
+
+    <li>To solve an equation of the form <m>\sin (\theta) = k</m>, or <m>\cos (\theta) = k</m>, or <m>\tan (\theta) = k</m>, we can use the appropriate inverse trig key on a calculator to find one solution (or a coterminal angle.)  We use reference angles to find a second solution between <m>0\degree</m> and <m>360\degree</m>.</li>
+    
+    <li><assemblage><title>Angles in a Unit Circle</title>
+        <p>Let <m>P</m> be a point on a unit circle determined by the terminal side of an angle <m>\theta</m> in standard position. Then the coordinates <m>(x,y)</m>  of <m>P</m> are given by <me>x = \cos (\theta),~~~~~~y = \sin (\theta)</me></p></assemblage></li>
+
+    <li><assemblage><title>Coordinates</title><p>If point <m>P</m> is located at a distance <m>r</m> from the origin in the direction specified by angle <m>\theta</m> in standard position, then the coordinates of <m>P</m> are
+            <me>x = r \cos (\theta) ~~~~ \text{and} ~~~~ y = r \sin (\theta)</me>
+    </p></assemblage></li>
+    
+    <li>Navigational directions for ships and planes are sometimes given as <term>bearings</term>, which are angles measured clockwise from north.</li>
+
+    <li><assemblage><title>Angle of Inclination</title>
+    <p>The <term>angle of inclination</term> of a line is the angle <m>\alpha</m> measured in the positive direction from the positive <m>x</m>-axis to the line. If the slope of the line is <m>m</m>, then
+            <me>\tan (\alpha) = m</me> where  <m>0\degree \le \alpha \le 180\degree</m>.</p></assemblage></li>
+
+    <li><assemblage><title>Periodic Function</title>
+    <p>The function <m>y = f(x)</m> is <term>periodic</term> if there is a smallest value of <m>p</m> such that <me>f(x + p) = f(x)</me> for all <m>x</m>. The constant <m>p</m>  is called the <term>period</term> of the function.</p></assemblage></li>
+    </ol></p></subsubsection>
+
+<subsubsection><title>Study Questions</title>
+<p><ol marker="1.">
+    <li>If the angle of inclination of a line is greater than <m>45\degree</m>, what can you say about its slope?</li>
+    <li>Sketch two examples of a function with period 8:  one that is sinusoidal, and one that is not.</li>
+    <li>Explain why the coordinates of points on a unit circle are given by the cosine and sine of an angle in standard position.</li>
+    <li>How are bearings measured?</li>
+</ol></p></subsubsection>
+
+<subsubsection><title>Skills</title>
+<p><ol marker="1.">
+    <li>Solve trigonometric equations, graphically and algebraically    #1-20</li>
+    <li>Find coordinates of points on circles    #21-36</li>
+    <li>Use bearings to determine position    #37-42</li>
+    <li>Find and use the angle of inclination of a line    #43-50</li>
+    <li>Identify periodic functions and give their periods    #51<ndash/>54</li>
+    <li>Sketch periodic functions    #55-58</li>
+    <li>Sketch graphs to model sinusoidal functions    #59-68</li>
+    <li>Analyze periodic graphs    #69-76</li>
+</ol></p></subsubsection>
+</subsection>
+
+<xi:include href="./hmwk-4-3.xml" />  
+
+
+</section>

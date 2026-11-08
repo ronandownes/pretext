@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkJoint-Variation"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Joint Variation</title>
+
+<subsubsection xml:id="tkEvalFncn"><title>Evaluate a function of two variables</title>
+
+<introduction><p>We evaluate a function of two variables just as we do any other function: by substituting the given values for the variables.</p></introduction>
+
+<subsubsubsection><title>Examples</title>
+
+<example><statement><p>Evaluate <m>~f(x,y) = 1.6x^2 + 2.4y~</m> for <m>x=24</m> and <m>y=300</m>.</p></statement>
+
+<solution><p>We substitute <m>\alert{240}</m> for <m>x</m> and <m>\alert{300}</m> for <m>y</m>.
+    <md><mrow>f(\alert{24}, \alert{300}) \amp = 1.6(\alert{24}^2) + 2.4(\alert{300})</mrow>
+        <mrow> \amp = 1.6(576) + 2.4(300) = 921.6 + 720 = 1641.6</mrow></md></p></solution></example>
+
+<example><statement><p><m>h(s,t) = 12s^{2/3}t^{1/4}</m>.  Evaluate <m>h(35,60).</m> Round your answer to thousandths.</p></statement>
+
+<solution><p>We substitute <m>\alert{35}</m> for <m>s</m> and <m>\alert{60}</m> for <m>t</m>.
+    <md><mrow>h(\alert{35}, \alert{60}) \amp = 12(\alert{35}^{2/3})(\alert{60}^{1/4})</mrow>
+        <mrow>\amp = 12(10.700)(2.783) = 357.353</mrow></md></p></solution></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<exercise><statement><p>Evaluate <m>~g(a,b) = \dfrac{4a^3}{b^{1/2}}~</m> for <m>a=8</m> and <m>b=12</m>.</p></statement>
+<answer><p><m>591.207</m></p></answer></exercise>
+
+<exercise><statement><p><m>~F(d,w) = 6.5d^{0.25}w^{0.4}~</m>. Evaluate <m>~F(32, 18)</m>.</p></statement>
+<answer><p><m>49.126</m></p></answer></exercise>
+</subsubsubsection>
+
+</subsubsection>
+
+<subsubsection><title>2. Read a table for a function of two variables</title>
+
+<introduction><p>Values of the first input variable are listed in the first column, and values of the second input variable are listed in the first row. The output values are shown in the body of the table.</p></introduction>
+
+<subsubsubsection><title>Example</title>
+
+<example><statement><p>The table shows values for <m>~z=f(x,y)</m>.
+
+    <sidebyside><tabular top="minor" halign="center"  right="minor" left="minor" bottom="minor">
+        <col right="major" /><col/><col/><col/><col/><col/>
+        
+        <row bottom="major"> 
+            <cell right="minor" bottom="minor"><m>x~{\Large\setminus}~y</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell></row>
+        <row> 
+            <cell><m>1</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>25</m></cell></row>
+        <row> 
+            <cell><m>2</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>18</m></cell>
+            <cell><m>32</m></cell>
+            <cell><m>50</m></cell></row>
+        <row> 
+            <cell><m>3</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>12</m></cell>
+            <cell><m>27</m></cell>
+            <cell><m>48</m></cell>
+            <cell><m>75</m></cell></row>
+        <row> 
+            <cell><m>4</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>36</m></cell>
+            <cell><m>64</m></cell>
+            <cell><m>100</m></cell></row>
+        <row> 
+            <cell><m>5</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>45</m></cell>
+            <cell><m>80</m></cell>
+            <cell><m>125</m></cell></row>
+    </tabular></sidebyside>
+<ol marker="a.">
+    <li>Evaluate <m>~f(3,5)</m>.</li>
+    <li>Solve the equation <m>~f(x,y) = 16.~</m> Give your answer as an ordered pair.</li>
+    <li>Is the function <m>~f(2,y)~</m> increasing or decreasing?</li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>The inputs are <m>x=3</m> and <m>y=5</m>. We look in the third row and fifth column to find <m>~f(3,5) = 75.</m></li>
+    <li>We see the entry 16 in the fourth row and the second column, so <m>x=4</m> and <m>y=2</m>.  The solution is <m>(4,2).</m></li>
+    <li>The entries in the second row are increasing as <m>y</m> increases, so <m>~f(2,y)~</m> is increasing.</li>
+</ol></p></solution></example>
+ </subsubsubsection>
+
+ <subsubsubsection><title>Exercise</title>       
+
+<exercise><statement><p>The table shows values for <m>~z=f(x,y)</m>.
+
+    <sidebyside><tabular top="minor" halign="center"  right="minor" left="minor" bottom="minor">
+        <col right="major" /><col/><col/><col/><col/><col/>
+        
+        <row bottom="major"> 
+            <cell right="minor" bottom="minor"><m>x~{\Large\setminus}~y</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>15</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>25</m></cell>
+            <cell><m>30</m></cell></row>
+        <row> 
+            <cell><m>4</m></cell>
+            <cell><m>82</m></cell>
+            <cell><m>61</m></cell>
+            <cell><m>58</m></cell>
+            <cell><m>30</m></cell>
+            <cell><m>26</m></cell></row>
+        <row> 
+            <cell><m>8</m></cell>
+            <cell><m>78</m></cell>
+            <cell><m>59</m></cell>
+            <cell><m>60</m></cell>
+            <cell><m>35</m></cell>
+            <cell><m>26</m></cell></row>
+        <row> 
+            <cell><m>12</m></cell>
+            <cell><m>75</m></cell>
+            <cell><m>53</m></cell>
+            <cell><m>62</m></cell>
+            <cell><m>40</m></cell>
+            <cell><m>26</m></cell></row>
+        <row> 
+            <cell><m>16</m></cell>
+            <cell><m>67</m></cell>
+            <cell><m>46</m></cell>
+            <cell><m>64</m></cell>
+            <cell><m>45</m></cell>
+            <cell><m>26</m></cell></row>
+        <row> 
+            <cell><m>20</m></cell>
+            <cell><m>62</m></cell>
+            <cell><m>40</m></cell>
+            <cell><m>66</m></cell>
+            <cell><m>50</m></cell>
+            <cell><m>26</m></cell></row>
+    </tabular></sidebyside></p>
+<p><ol marker="a.">
+    <li>Evaluate <m>~f(8,20)</m>.</li>
+    <li>Solve the equation <m>~f(x,y) = 62.~</m> Give your answer as an ordered pair.</li>
+    <li>For which value(s) of <m>x</m> is the function <m>~f(x,y)~</m> decreasing?</li></ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>60</m> </li>
+    <li><m>(12,20)</m> and <m>(20,10)</m></li>
+    <li><m>x=4</m></li>
+</ol></p></answer></exercise>
+</subsubsubsection>
+</subsubsection>
+
+<subsubsection><title>3. Find a constant of variation</title>
+
+<subsubsubsection><title>Example</title>
+
+<example><statement><p>The table shows values for <m>~z=f(x,y)</m>, where <m>z</m> varies directly with <m>x</m> and inversely with the square of <m>y</m>. Find the constant of variation.
+
+    <sidebyside><tabular top="minor" halign="center"  right="minor" left="minor" bottom="minor">
+        <col right="major" /><col/><col/><col/><col/><col/>
+        
+        <row bottom="major"> 
+            <cell right="minor" bottom="minor"><m>x~{\Large\setminus}~y</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row> 
+            <cell><m>1</m></cell>
+            <cell><m>60</m></cell>
+            <cell><m>15</m></cell>
+            <cell><m>\dfrac{20}{3}</m></cell>
+            <cell><m>\dfrac{15}{4}</m></cell></row>
+        <row> 
+            <cell><m>2</m></cell>
+            <cell><m>120</m></cell>
+            <cell><m>30</m></cell>
+            <cell><m>\dfrac{40}{3}</m></cell>
+            <cell><m>\dfrac{15}{2}</m></cell></row>
+        <row> 
+            <cell><m>3</m></cell>
+            <cell><m>180</m></cell>
+            <cell><m>45</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>\dfrac{45}{2}</m></cell></row>
+        <row> 
+            <cell><m>4</m></cell>
+            <cell><m>240</m></cell>
+            <cell><m>60</m></cell>
+            <cell><m>\dfrac{80}{3}</m></cell>
+            <cell><m>15</m></cell></row>
+    </tabular></sidebyside></p></statement>
+
+<solution><p>The function <m>f</m> has the form <m>z=\dfrac{kx}{y^2}</m>.  To find <m>k</m> we substitue values for the variables.  For example, <m>x=60</m> when <m>x=1</m> and <m>y=1</m>, so
+    <me>60=\dfrac{k(1)}{1^2}</me>
+and <m>k=60</m>.  Thus, <m>z=\dfrac{60x}{y^2}</m>.</p></solution></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercise</title>       
+
+<exercise><statement><p>The table shows values for <m>~z=f(x,y)</m>, where <m>z</m> varies directly with <m>x^2</m> and <m>y^2</m>. Find the constant of variation.
+
+    <sidebyside><tabular top="minor" halign="center"  right="minor" left="minor" bottom="minor">
+        <col right="major" /><col/><col/><col/><col/><col/>
+        
+        <row bottom="major"> 
+            <cell right="minor" bottom="minor"><m>x~{\Large\setminus}~y</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m>8</m></cell></row>
+        <row> 
+            <cell><m>4</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>64</m></cell>
+            <cell><m>144</m></cell>
+            <cell><m>256</m></cell></row>
+        <row> 
+            <cell><m>8</m></cell>
+            <cell><m>64</m></cell>
+            <cell><m>256</m></cell>
+            <cell><m>576</m></cell>
+            <cell><m>1024</m></cell></row>
+        <row> 
+            <cell><m>10</m></cell>
+            <cell><m>100</m></cell>
+            <cell><m>400</m></cell>
+            <cell><m>900</m></cell>
+            <cell><m>1600</m></cell></row>
+        <row> 
+            <cell><m>12</m></cell>
+            <cell><m>144</m></cell>
+            <cell><m>576</m></cell>
+            <cell><m>1296</m></cell>
+            <cell><m>2304</m></cell></row>
+    </tabular></sidebyside></p></statement>
+
+<answer><p><m>z=\dfrac{1}{4}x^2y^2</m></p></answer></exercise>
+</subsubsubsection>
+
+</subsubsection>
+
+</subsection> 

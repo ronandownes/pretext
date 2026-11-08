@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkPropertiesOfLines"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Properties of Lines</title>
+                
+<subsubsection xml:id="tkLineSlope"><title>Find the slope of a line</title> 
+
+<p>We can tell whether two lines are parallel, perpendicular, or neither by comparing their slopes.</p>
+
+<example><statement><p>Find the slope of the line  <m>~6x-8y = 9</m></p></statement>
+
+<solution><p>The easiest way to find the slope of this line is to put its equation into slope-intercept form by solving for <m>y</m>. 
+    <md><mrow>-8y \amp = -6x+9</mrow>
+        <mrow>y \amp = \dfrac{-6x+9}{-8} = \dfrac{3}{4}x - \dfrac{9}{8}</mrow></md>
+The slope of the line is <m>\dfrac{3}{4}</m>.</p></solution></example>
+
+<example><statement><p>Find the slope of the line whose intercepts are <m>(112,0)</m> and <m>(0,140)</m>.</p></statement>
+
+<solution><p>We use the slope formula.
+        <me>m = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{140-0}{0-112} = \dfrac{140}{-112} = \dfrac{-5}{4}</me></p>
+</solution></example>
+                   
+<exercise><statement><p>Find the slope of the line  <m>~2.8x+3.6y = 1.2</m></p></statement>
+<answer><p><m>\dfrac{7}{9}</m></p></answer></exercise>
+
+<exercise><statement><p>Find the slope of the line  <m>~6x=72</m></p></statement>
+<answer><p>undefined</p></answer></exercise>
+
+<exercise><statement><p>Find the slope of the line that passes through <m>(15,-6)</m> and <m>(10,-3)</m>.</p></statement>
+<answer><p><m>\dfrac{-3}{5}</m></p></answer></exercise>
+
+<exercise><statement><p>Find the slope of a line that describes a 35% grade (or incline).</p></statement>
+<answer><p><m>\dfrac{7}{20}</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkPtSlopForm"><title>Use the point-slope formula</title> 
+
+<p>Recall the point-slope formula for finding the equation of a line:
+    <me>y-y_1 = m(x-x_1)</me></p>
+
+<example><statement><p>Find the <m>y</m>-intercept of the line of slope <m>\dfrac{-2}{3}</m> that passes through <m>(-8,9)</m>.</p></statement>
+
+<solution><p>We first use the point-slope formula to find the equation of the line.
+        <md><mrow>y-9 \amp = \dfrac{-2}{3}(x+8)  \amp \amp \blert{\text{Multiply by 3 to clear the fraction.}}</mrow>
+            <mrow>3y-27 \amp = -2x-16 \amp \amp \blert{\text{Add 27 to both sides.}}</mrow>
+            <mrow>3y \amp = -2x+11 \amp \amp \blert{\text{Divide both sides by 3.}}</mrow>
+            <mrow>y \amp = \dfrac{-2}{3}x + \dfrac{11}{3}</mrow></md>
+The <m>y</m>-intercept of the line is <m>\left(0, \dfrac{11}{3}\right)</m>.</p></solution></example>
+
+<example><statement><p>Find the equation of the line with <m>x</m>-intercept <m>(2,0)</m> that passes through <m>(-3,-3)</m>.</p>
+</statement>
+
+<solution><p>We first compute the slope, using the two points given.
+    <me>m =  \dfrac{0+3}{2+3} = \dfrac{3}{5}</me>
+Now we can use the point-slope formula.
+    <md><mrow>y-0 \amp = \dfrac{3}{5}(x-2) \amp \amp \blert{\text{Multiply by 5 to clear the fraction.}}</mrow>
+        <mrow>5y \amp = 3x-6  \amp \amp \blert{\text{Divide both sides by 5.}}</mrow>
+        <mrow>y \amp = \dfrac{3}{5}x - \dfrac{6}{5}</mrow></md></p>
+</solution></example>
+                 
+<exercise><statement><p>Find the equation of the line that has slope <m>\dfrac{-1}{3}</m> and passes through <m>(-4,-6)</m>.</p></statement>
+<answer><p><m>y = \dfrac{1}{3}x=\dfrac{22}{3}</m></p></answer></exercise>
+
+<exercise><statement><p>Find the equation of the line that has slope <m>0</m> and passes through <m>(25,64)</m>.</p></statement>
+<answer><p><m>y=64</m></p></answer></exercise>
+
+<exercise><statement><p>Find the <m>y</m>-intercept of the line that passes through <m>(-5,49)</m> and has slope <m>\dfrac{-4}{5}</m>.</p></statement>
+<answer><p><m>(0,0)</m></p></answer></exercise>
+
+<exercise><statement><p>Find the <m>y</m>-intercept of the line that has slope <m>\dfrac{-7}{3}</m> and passes through <m>(-6,0)</m>.</p></statement>
+<answer><p><m>(0,-14)</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkGeomProp"><title>Use properties of geometric figures</title> 
+
+<p>Analytic geometry uses algebra to help solve geometric problems.</p>
+
+<example><statement><sidebyside widths="55% 35%" valigns="middle middle"><stack><p>The figure shows isosceles triangle <m>ABC</m> and its altitude <m>\overline{AP}</m>. (Recall that the altitude of a triangle is the segment perpendicular to the base that passes through the opposite vertex.) For this problem, we'll use the following property:</p>
+<p>  In an isoceles triangle, the altitude bisects the base.</p></stack> 
+    <image xml:id="fig-isosceles-triangle"><description>isosceles triangle</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[cyan, thin] (-6,-7) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (-6,0)--(10.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-7)--(0,10.8) node[above]{$y$};
+        \foreach \x in {-5,5,10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+          \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \filldraw[red] (-4,5) circle (.2) node[text=black, above left, yshift=2,fill=white, inner sep=2] {$A$};
+        \filldraw[red] (6,0) circle (.2) node[text=black, above right, yshift=2,fill=white, inner sep=2] {$B$};
+        \filldraw[red] (-2,-6) circle (.2) node[text=black, left, xshift=-2,fill=white, inner sep=2] {$C$};
+        \filldraw[red] (2,-3) circle (.2) node[text=black, below right, yshift=-2,fill=white, inner sep=2] {$P$};
+        \draw[blue, thick, dashed] (-4,5)--(2,-3);
+        \draw[blue] (2,-3)++({180+atan(-4/3)}:.7) -- ++({atan(3/4)}:.7) -- ++({atan(-4/3)}:.7);
+        \draw[magenta!90!black,ultra thick] (-4,5)--(6,0)--(-2,-6)--cycle;
+        \draw[blue, thick, dashed] (-4,5)--(2,-3);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+<p><ol marker="a.">
+    <li>Find the equation of the line that includes <m>\overline{AP}</m>.</li>
+    <li>Find the coordinates of point <m>P</m>.</li>
+    <li>Find the length of the segment <m>\overline{AP}</m>.</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>Because <m>\overline{AP}</m> is perpendicular to <m>\overline{BC}</m>, we can find its slope.  The coordinates of <m>B</m> and <m>C</m> are <m>(6,0)</m> and <m>(2,-6)</m>, so the slope of <m>\overline{BC}</m> is
+        <me>\dfrac{-6-0}{-2-6} = \dfrac{3}{4}</me>
+    The slope of <m>\overline{AP}</m> is the negative reciprocal of <m>\dfrac{3}{4}</m>, or <m>\dfrac{-4}{3}</m>.</p>
+    <p> Now we can use the point-slope formula with <m>m=\dfrac{-4}{3}</m> and the coordinates of <m>A(-4,5)</m> to calculate the equation of the line. 
+        <md><mrow>\dfrac{-4}{3} \amp = \dfrac{y-5}{x+4}  \amp \amp \blert{\text{Cross-multiply.}}</mrow>
+            <mrow> 3(y-5) \amp = -4(x+4)   \amp \amp \blert{\text{Apply the distributive law.}}</mrow>
+            <mrow> 3y-15 \amp = -4x-16  \amp \amp \blert{\text{Add 15 to both sides.}}</mrow>
+            <mrow> 3y \amp = -4x-1  \amp \amp \blert{\text{Divide both sides by 3.}}</mrow>
+            <mrow> y \amp = \dfrac{-4}{3}x - \dfrac{1}{3}</mrow></md></p></li>
+    <li><p>Because the altitude bisects the base, point <m>P</m> is the midpoint of <m>\overline{BC}</m>.  The coordinates of <m>B</m> and <m>C</m> are <m>(6,0)</m> and <m>(2,-6)</m>, so we use the midpoint formula to find the coordinates of <m>P</m>.
+        <md><mrow>x \amp = \dfrac{-2+6}{2} = 2</mrow>
+            <mrow>y \amp = \dfrac{-6+0}{2} = -3</mrow></md>
+    The coordinates of <m>P</m> are <m>(2,-3)</m>.</p></li>
+    <li><p>The coordinates of <m>P</m> are <m>(2,-3)</m>, and the coordinates of <m>A</m> are <m>(-4,5)</m>.  We use the distance formula to find the length of <m>\overline{AP}</m>.
+        <me>\overline{AP} = \sqrt{(-4-2)^2+(5+3)^2} = \sqrt{36+64} = 10</me></p></li>
+</ol></p></solution></example>
+                   
+<exercise><statement><sidebyside widths="55% 30%" valigns="middle middle"><stack><p>The line <m>y=-2x+9</m> is tangent at point <m>Q</m> to a circle with center <m>C(-4,2)</m>.  For this problem, use the following property:</p>
+<p> The tangent to a circle is perpendicular to the radius through the point of tangency.</p></stack>
+    <image xml:id="fig-circle-tangent"><description>circle and tangent line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[magenta!90!black,ultra thick] (-4,2) circle ({sqrt(45});
+        \draw[red,thick, <->, >=stealth'] (-1/2,10)--(5,-1);
+        \filldraw (-4,2) circle (.2) node[below] {$C(-4,2)$};
+        \filldraw (2,5) circle (.2) node[right, yshift=2] {$Q$};
+        \draw[blue] (2,5)++({180+atan(1/2)}:.7) -- ++({atan(-2)}:.7) -- ++({atan(1/2)}:.7);
+        \draw[blue, thick, dashed] (-4,2)--(2,5);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+<p><ol marker="a.">
+    <li>Find the equation of the line through <m>C</m> and <m>Q</m>.</li>
+    <li>Find the coordinates of <m>Q</m>.</li>
+    <li>Find the radius of the circle, <m>r=CQ</m>.</li>
+    <li>Find the equation of the circle.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>y=\dfrac{1}{2}x=4</m></li>
+    <li><m>(2,5)</m></li>
+    <li><m>3\sqrt{5}</m></li>
+    <li><m>(x+4)^2+(y-2)^2=45</m></li></ol></p></answer></exercise>
+
+<exercise><statement><sidebyside widths="55% 22%" valigns="middle middle"><stack><p>In the right triangle shown, <m>\overline{ST}</m> is parallel to the shorter leg, and <m>h=\dfrac{9}{10}r</m>.  For this problem, use the following property:</p>
+<p>  A line parallel to the base of a triangle cuts off a similar triangle. (Recall that the sides of similar triangles are proportional.)</p></stack>
+    <image xml:id="fig-triangle-cut"><description>triangle cut parallel to base</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.65]
+        \def\O{(0,0)};
+        \def\S{(0,6)};
+        \def\T{({sqrt(19)/27*20},6)};
+        \draw[blue] (0,9) rectangle +(.5,-.5);
+        \draw[magenta!90!black,ultra thick] (0,0)-- (0,9) -- ({sqrt(19)/9*10},9) -- cycle;
+        \draw[black,thick] (2.1,9.25) --++(.7,-.25) --++(-.7,-.25);
+        \draw[black,thick] (1.3,6.25) --++(.7,-.25) --++(-.7,-.25);
+        \draw[red,very thick] \S -- \T;
+        \filldraw[red] \O circle (.15) node[below left] {$O$};
+        \filldraw[red] \S circle (.15) node[above right] {$S$};
+        \filldraw[red] \T circle (.15) node[above left] {$T$};
+        \node[text=blue] at (-0.7,4.5) {$h$};
+        \node[text=blue] at (3.1,4.5) {$r$};
+        \node[text=blue] at (2.4,9.8) {$b$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+<p><ol marker="a.">
+    <li>Write an expression for <m>r</m> in terms of <m>h</m>.</li>
+    <li>Find an expression for <m>b</m> in terms of <m>h</m>.</li>
+    <li>If <m>OS=\dfrac{2}{3}h</m> find an expression for <m>ST</m> in terms of <m>h</m>.</li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>r=\dfrac{10}{9}h</m> </li>
+    <li><m>b=\dfrac{\sqrt{19}}{9}h</m></li>
+    <li><m>ST = \dfrac{2\sqrt{19}}{27}h</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>The quadrilateral <m>ABCD</m> has vertices <m>~A(-4,-1),~B(-2,5),~C(8,5)~</m> and <m>~D(6,-1).</m></p>
+    <image width="45%" xml:id="fig-quadrilateral"><description>triangle cut parallel to base</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[blue, thick, dashed] (-4,-1)--(8,5);
+        \draw[blue, thick, dashed] (-2,5)--(6,-1);
+        \draw[magenta!90!black,ultra thick] (-4,-1) -- (-2,5) -- (8,5) -- (6,-1) --cycle;
+        \filldraw (-4,-1) circle (.2) node[below] {$A(-4,-1)$};
+        \filldraw (-2,5) circle (.2) node[above] {$B(-2,5)$};
+        \filldraw (8,5) circle (.2) node[above] {$C(8,5)$};
+        \filldraw (6,-1) circle (.2) node[below] {$D(6,-1)$};
+        \filldraw[red] (2,2) circle (.2) node[text=black,below, yshift=-2] {$P$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+<p><ol marker="a.">
+    <li>Show that <m>ABCD</m> is a parallelogram (its opposite sides are parallel).</li>
+    <li>Find equations for the lines through the diagonals, <m>\overline{AC}</m> and <m>\overline{BD}</m>.</li>
+    <li>Find the intersubsection of the diagonals, <m>P</m>.</li>
+    <li>Find the lengths of <m>\overline{AP}</m> and <m>\overline{PC}</m>, and the lengths of <m>\overline{BP}</m> and <m>\overline{PD}</m>.</li>
+    <li><p>This example illustrates the following property of parallelograms:</p>  
+        <p>The diagonals of a parallelogram <fillin characters="6"/> each other.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>m_{\overline{AB}}=m_{\overline{CD}}=\dfrac{3}{2}; ~m_{\overline{AD}}=m_{\overline{BC}}=0</m></li>
+    <li><m>y=\dfrac{1}{2}x+1; ~y=\dfrac{-3}{4}x+\dfrac{7}{2}</m></li>
+    <li><m>(2,2)</m></li>
+    <li><m>AP=PC=3\sqrt{5}; ~BP=PD=5</m></li>
+    <li>bisect</li>
+</ol></p></answer></exercise>
+</subsubsection>                 
+
+</subsection>

@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} 
+\coordinate (O) at (0,0);
+\node at (O) {$-6-(+3)=-6+(-3)=-9$};
+\coordinate(A) at (-1.8,0.15);
+\coordinate(B) at (-1.95,.8);
+\draw[blue, ->, >=stealth'] (A) to [out=100, in=180, looseness=2, edge node={node[above right, xshift=2, yshift=-3, scale=.8] {change to addition}}] (B);
+\coordinate(A) at (0.69,0.8);
+\coordinate(B) at (0.5,.25);
+\draw[blue, ->, >=stealth'] (A) to [out=0, in=70, looseness=2] (B);
+\coordinate(A) at (-1.2,-0.25);
+\coordinate(B) at (-0.8,-.8);
+\draw[blue, ->, >=stealth'] (A) to [out=270, in=180, looseness=2, edge node={node[below right, xshift=9, yshift=4, scale=.8] {change sign}}] (B);
+\coordinate(A) at (.8,-0.8);
+\coordinate(B) at (1,-.25);
+\draw[blue, ->, >=stealth'] (A) to [out=0, in=270, looseness=2] (B);
+\end{tikzpicture}%
+}
+\end{document}

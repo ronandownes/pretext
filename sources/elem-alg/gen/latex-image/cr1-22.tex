@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=0.5]
+\coordinate (O) at (0,0);
+\draw[cyan] (O) grid (10,10);
+\draw[black,thick, ->, >=stealth'] (O)--(11,0) node[right]{$s$};
+\draw[black,thick, ->, >=stealth'] (O)--(0,11) node[left]{$t$};
+\foreach \x in  {5,10} {
+ \draw[cyan,thick] (\x,0)--++(0,10);
+ \draw[cyan,thick] (0,\x)--++(10,0);
+ \draw[black, thick] (\x,.08) --++(0,-.16)  node[below]   {\x};
+ \draw[black, thick] (.08,\x) --++(-.16,0)  node[left]   {\x};
+}
+\draw[samples=65,domain=0:10,smooth,variable=\x,red,very thick] plot ({\x},{9-(\x-4)^2/4});
+\node[below left, xshift=1] at (O) {0};
+\end{tikzpicture}%
+}
+\end{document}

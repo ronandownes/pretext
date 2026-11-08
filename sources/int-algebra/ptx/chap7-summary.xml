@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="chap7-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter 7 Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>exponential growth</p></li>
+    <li><p>growth factor</p></li>
+    <li><p>initial value</p></li>
+    <li><p>compound interest</p></li>
+    <li><p>principal</p></li>
+    <li><p>balance</p></li>
+    <li><p>percent growth rate</p></li>
+    <li><p>exponential decay</p></li>
+    <li><p>decay factor</p></li>
+    <li><p>exponential function</p></li>
+    <li><p>base</p></li>
+    <li><p>exponential equation</p></li>
+    <li><p>logarithm</p></li>
+    <li><p>common logarithm</p></li>
+    <li><p>doubling time</p></li>
+    <li><p>half-life</p></li>
+</ul></p>
+
+</subsection>
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+    <li>Exponential growth is modeled by increasing functions of the form <m>P(t)=P_0b^t</m>,  where the growth factor, <m>b</m>, is a number greater than 1.  </li>
+    <li><assemblage><title>Exponential Growth</title>
+        <p>The function
+                <me>P(t)=P_0 b^t</me> 
+        describes <term>exponential growth</term>, where <m>P_0=P(0)</m> is the <term>initial value</term> of the function and <m>b</m> is the <term>growth factor</term>.</p></assemblage></li>
+	<li><assemblage><title>Growth by a Constant Percent</title>
+        <p>The function
+            <me>P(t) =P_0 (1+r)^t</me>
+        describes exponential growth at a constant percent rate of growth, <m>r</m>.</p>
+        <p> The <term>initial value</term> of the function is <m>P_0 = P(0)</m>, and <m>b=1+r</m> is the <term>growth factor</term>.</p></assemblage></li>
+    <li><assemblage><title>Compound Interest</title>
+        <p>If a <term>principal</term> of <m>P</m> dollars is invested in an account that pays an interest rate <m>r</m> compounded annually, the <term>balance</term> <m>B</m> after <m>t</m> years is given by
+            <me>B=P(1+r)^t</me></p></assemblage></li>
+    <li><assemblage><title>Laws of Exponents</title><p><ol marker="I.">
+        <li><p><m>\displaystyle{a^m\cdot a^n = a^{m+n}}</m></p></li>
+        <li><p><m>\displaystyle{\frac{a^m}{a^n}=a^{m-n}}</m></p></li>
+        <li><p><m>\displaystyle{\left(a^m\right)^n=a^{mn}}</m></p></li>
+        <li><p><m>\displaystyle{\left(ab\right)^n=a^n b^n}</m></p></li>
+        <li><p><m>\displaystyle{\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}}</m></p></li></ol></p></assemblage></li>
+    <li>If <m>0 \lt b \lt 1</m>, then <m>P(t)=P_0b^t</m> is a decreasing function. In this case <m>P(t)</m> is said to describe exponential decay.</li> 
+    <li>A percent increase of <m>r</m> (in decimal form) corresponds to a growth factor of <m>b=1+r</m>.  
+        A percent decrease of  <m>r</m> corresponds to a decay factor of <m>b=1-r</m>. </li>
+    <li><assemblage><title>Exponential Growth and Decay</title><idx>exponential growth and decay</idx>
+        <p>The function
+            <me>P(t) = P_0 b^t</me>
+        models exponential growth and decay.</p>
+        <p><ul>
+            <li><m>P_0 =P(0)</m> is the <term>initial value</term><idx>initial value</idx> of <m>P</m>;</li>
+            <li><m>b</m> is the <term>growth</term>  or <term>decay factor</term>.</li></ul><ol>
+        <li><p>If <m>b \gt 1</m>, then <m>P(t)</m> is increasing, and <m>b = 1 + r</m>, where <m>r</m> represents percent increase.</p></li>
+        <li><p>If <m>0 \lt b \lt 1</m>, then <m>P(t)</m> is decreasing, and <m>b = 1 - r</m>, where <m>r</m> represents percent decrease.</p></li></ol></p></assemblage></li>
+    <li><assemblage><title>Exponential Function</title>
+        <p>An <term>exponential function</term> has the form
+            <me>f(x) = ab^x,~~~~ \text{ where } ~~~b \gt 0 ~~~\text{ and } ~~~b \ne 1 \text{, } ~~~a \ne 0</me>
+        </p></assemblage></li>
+	<li><assemblage><title>Exponential Notation for Radicals</title>
+        <p>For any integer <m>n \ge 2</m> and for <m>a \ge 0</m>,
+            <me>a^{1/n} = \sqrt[n]{a}</me>
+        </p></assemblage></li>
+    <li>The growth factor of an exponential function is analogous to the slope of a linear function:  Each measures how
+       quickly the function is increasing (or decreasing).</li>  
+    <li>Suppose <m>L(t)=a+mt</m> is a linear function and <m>E(t)=ab^t</m> is an exponential function. For each unit that <m>t</m> increases, <m>m</m> units are added to the value of <m>L(t)</m>, whereas the value of <m>E(t)</m> is multiplied by <m>b</m>.</li>  
+    <li>We do not allow the base  of an exponential function to be negative, because if <m>b \lt 0</m>, then <m>b^x</m> is not a real number for some values of <m>x</m>. </li>  
+    <li><assemblage><title>Properties of Exponential Functions, <m>f(x) = ab^x</m>, <m>a \gt 0</m></title><p><ol>
+        <li><p>If <m>b \gt 1</m>, the function is increasing and concave up;</p> 
+        <p>if <m>0 \lt b \lt 1</m>, the function is decreasing and concave up.</p></li>
+        <li><p>The <m>y</m>-intercept is <m>(0,a)</m>. There is no <m>x</m>-intercept.</p></li></ol></p></assemblage></li>
+    <li>The negative <m>x</m>-axis is a horizontal asymptote for exponential functions with <m>b \gt 1</m>. For exponential functions with <m>0 \lt b \lt 1</m>, the positive <m>x</m>-axis is an asymptote.</li>
+    <li>Exponential functions are not the same as the power functions we studied earlier.  Although both involve expressions with exponents, it is the location of the variable that makes the difference. </li>
+    <li><assemblage><title>Power Functions vs Exponential Functions</title>
+        <sidebyside>
+            <tabular>
+        <col halign="left" width="50%"/>
+        <col halign="left" width="25%"/>
+        <col halign="left" width="25%"/>
+         <row>
+            <cell><p><m>\hphantom{General formula and m}</m></p></cell>
+            <cell><p><term>Power Functions</term></p></cell>
+            <cell><p><term>Exponential Functions</term></p></cell></row>
+        <row>
+            <cell><p><em>General formula</em></p></cell>
+            <cell><p><m>f(x)=kx^p</m></p></cell>
+            <cell><p><m>g(x)=ab^x</m></p></cell></row>
+        <row>
+            <cell><p><em>Description</em></p></cell>
+            <cell><p>variable base and constant exponent</p></cell>
+            <cell><p>constant base and variable exponent</p></cell></row>
+        <row>
+            <cell><p><em>Example</em></p></cell>
+            <cell><p><m>f(x)=2x^3</m></p></cell>
+            <cell><p><m>g(x)=2(3^x)</m></p></cell></row>
+        </tabular></sidebyside></assemblage></li>
+    <li>Many exponential equations can be solved by writing both sides of the equation as powers with the same base. If two equivalent powers have the same base, then their exponents must be equal also (as long as the base is not 0 or <m>\pm 1</m>).</li>
+    <li><assemblage><title>Definition of Logarithm</title>
+        <p>For <m>b\gt 0, b\ne 1</m>, the <term>base <m>b</m> logarithm of <m>x</m></term>,<idx>base</idx>
+        written <m>\log_{(b)} x</m>, is the exponent to which <m>b</m> must be raised in order to yield <m>x</m>.
+        </p></assemblage></li>
+	<li><assemblage><title>Logarithms and Exponents: Conversion Equations</title>
+        <p>If <m>b \gt 0</m>, <m>b\ne 1</m>, and <m>x \gt 0</m>,
+            <me>\blert{y = \log_b {(x)}}~~~ \text{ if and only if }~~~ \blert{ x = b^y}</me></p></assemblage></li>
+	<li><assemblage><title>Some Useful Logarithms</title>
+        <p>For any base <m>b \gt 0, b\ne 1</m>,
+            <md><mrow>\log_b {(b)} \amp = 1~~~ \text{ because } ~~~b^1 = b</mrow>
+                <mrow>\log_b {(1)} \amp = 0 ~~~ \text{ because } ~~~b^0 = 1</mrow>
+                <mrow>\log_b{(b^x)} \amp = x~~~ \text{ because } ~~~b^x = b^x</mrow></md>
+        </p></assemblage></li>
+    <li>We use logarithms to solve exponential equations, just as we use square roots to solve quadratic equations. The operation of taking a base <m>b</m> logarithm is the inverse of raising the base <m>b</m> to a power, just as extracting square roots is the inverse of squaring a number.</li>
+    <li><assemblage><title>Steps for Solving Base 10 Exponential Equations</title>
+        <p><ol marker="1.">
+            <li>Isolate the power on one side of the equation.</li>
+            <li>Rewrite the equation in logarithmic form.</li>
+            <li>Use a calculator, if necessary, to evaluate the logarithm.</li>
+            <li>Solve for the variable.</li></ol></p>
+        </assemblage></li>
+    <li><assemblage><title>Properties of Logarithms</title>
+        <p>If <m>x,~y,</m> and <m>b\gt 0,</m> and <m>b\ne 1</m>, then <ol marker="1.">
+            <li><m>\log_b {(xy)} = \log_b {(x)} + \log_b {(y)}</m></li>
+            <li><m>\log_b {\left(\dfrac{x}{y}\right)} = \log_b {(x)} - \log_b {(y)}</m></li>
+            <li><m>\log_b {(x^k)} = k\log_b {(x)} </m></li></ol>
+        </p></assemblage></li>
+    <li><assemblage><title>Steps for Solving Exponential Equations</title>
+        <p><ol marker="1.">
+            <li>Isolate the power on one side of the equation.</li>
+            <li>Take the base 10 logarithm of both sides of the equation.</li>
+            <li>Apply the third property of logarithms to simplify.</li>
+            <li>Use a calculator, if necessary, to evaluate the logarithm.</li>
+            <li>Solve for the variable.</li></ol></p></assemblage></li> 
+    </ol></p>
+</subsection>
+
+<xi:include href="./chap7-rev-problems.xml" />  <!--exercises  -->
+
+</section>
+<!-- </appendix> -->
+<!-- </book>  </mathbook> -->

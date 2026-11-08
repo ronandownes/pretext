@@ -1,0 +1,228 @@
+<exercises xml:id="prac-6-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 6-5</title>
+
+<exercisegroup><introduction><p>In Problems 1-4, the figures represent centimeter grids.</p></introduction> 
+
+<exercise number="1"><statement><p><ol marker="a.">
+  <li><p>On the grid below, enlarge the triangle by doubling the lengths of the horizontal and vertical sides. What is the scale factor?</p></li>
+  <li><p>How many triangles of the original size fit inside the enlarged triangle? Draw them in.</p></li>
+  <li><p>Now draw an even bigger triangle by tripling the lengths of the horizontal and vertical sides of the original triangle. What is the scale factor?</p></li>
+  <li><p>How many triangles of the original size fit inside this even bigger triangle? Draw them in.</p></li>
+  <li><p>What is the area of the original triangle? What is the area of the enlarged triangle you drew in part (a)?  What is the area of the even bigger triangle you drew in part (c)?</p></li>
+</ol></p>
+    <image source="hp-6-5-1.png" width="60%"></image></statement>
+<answer><p><ol marker="a.">
+  <li><p>2</p></li>
+  <li><p>4</p></li>
+  <li><p>3</p></li>
+  <li><p>9</p></li>
+  <li><p>6 sq cm, 24 sq cm, 54 sq cm</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a.">
+  <li><p>On the grid below, enlarge the parallelogram by doubling the lengths of the horizontal and vertical sides. What is the scale factor?</p></li>
+  <li><p>How many parallelograms of the original size fit inside the enlarged parallelogram? Draw them in.</p></li>
+  <li><p>Now draw an even bigger parallelogram by tripling the lengths of the horizontal and vertical sides of the original parallelogram. What is the scale factor?</p></li>
+  <li><p>How many parallelograms of the original size fit inside this even bigger parallelogram? Draw them in.</p></li>
+  <li><p>What is the area of the original parallelogram? What is the area of the enlarged parallelogram you drew in part (a)?  What is the area of the even bigger parallelogram you drew in part (c)?</p></li>
+</ol></p>
+    <image source="hp-6-5-2.png" width="70%"></image></statement></exercise>
+
+<exercise number="3"><statement><p>Record the dimensions of the rectangle, its perimeter and its area in the table below.  Complete the table for parts (a) through (c).<ol marker="a.">
+  <li><p>Enlarge the dimensions of the rectangle by 50%.</p></li>
+  <li><p>Enlarge the dimensions of the original rectangle by 100%.</p></li>
+  <li><p>Enlarge the dimensions of the original rectangle by 25%.</p></li>
+</ol></p>
+    <image source="hp-6-5-3.png" width="55%"></image>
+<tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell></cell>
+            <cell>Base</cell>
+            <cell>Height</cell>
+            <cell>Perimeter</cell>
+            <cell>Area</cell></row>
+        <row bottom="minor">
+            <cell>Original Rectangle</cell>
+            <cell><m>\hphantom{0000000}</m></cell>
+            <cell><m>\hphantom{0000000}</m></cell>
+            <cell><m>\hphantom{0000000}</m></cell>
+            <cell><m>\hphantom{0000000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Enlarged by 50%</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Enlarged by 100%</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Enlarged by 25%</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+      </tabular></statement>
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell></cell>
+            <cell>Base</cell>
+            <cell>Height</cell>
+            <cell>Perimeter</cell>
+            <cell>Area</cell></row>
+        <row bottom="minor">
+            <cell>Original Rectangle</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+            <cell>24</cell>
+            <cell>32</cell></row>
+        <row bottom="minor">
+            <cell>Enlarged by 50%</cell>
+            <cell>6</cell>
+            <cell>12</cell>
+            <cell>36</cell>
+            <cell>72</cell></row>
+        <row bottom="minor">
+            <cell>Enlarged by 100%</cell>
+            <cell>8</cell>
+            <cell>16</cell>
+            <cell>46</cell>
+            <cell>128</cell></row>
+        <row bottom="minor">
+            <cell>Enlarged by 25%</cell>
+            <cell>5</cell>
+            <cell>10</cell>
+            <cell>30</cell>
+            <cell>50</cell></row>
+      </tabular></p></answer></exercise>
+
+<exercise number="4"><statement><p>Record the dimensions of the rectangle, its perimeter and its area in the table below.  Complete the table for parts (a) through (c).<ol marker="a.">
+  <li><p>Reduce the dimensions of the rectangle by 50%.</p></li>
+  <li><p>Reduce the dimensions of the original rectangle by 100%. (Careful: the dimensions of the new rectangle will be 75% of their original size!)</p></li>
+  <li><p>Reduce the dimensions of the original rectangle by 25%.</p></li>
+</ol></p>
+    <image source="hp-6-5-4.png" width="70%"></image>
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell></cell>
+            <cell>Base</cell>
+            <cell>Height</cell>
+            <cell>Perimeter</cell>
+            <cell>Area</cell></row>
+        <row bottom="minor">
+            <cell>Original Rectangle</cell>
+            <cell><m>\hphantom{0000000}</m></cell>
+            <cell><m>\hphantom{0000000}</m></cell>
+            <cell><m>\hphantom{0000000}</m></cell>
+            <cell><m>\hphantom{0000000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Reduced by 50%</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Reduced by 250%</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Reduced by 75%</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+      </tabular></statement></exercise>
+  </exercisegroup>
+
+<exercise number="5"><statement><p>Elina has a 3-inch by 5-inch photograph of her cat, Sinbad. She wants to enlarge the photo by a factor of 1.5 in each dimension. <ol marker="a."> 
+  <li><p>By what factor will the area of the photo increase?</p></li>  
+  <li><p>What will be the area of the enlarged photograph?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>2.25</p></li>  
+  <li><p>33.75 sq in</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="6"><statement><p>For their publicity campaign, the Magazine Sweepstakes staff is making a poster-size version of a check for ten million dollars. A normal check is <m>2\frac{1}{2}</m> inches wide by 6 inches long, and the poster size version will be 12 times as big in both dimensions. <ol marker="a."> 
+  <li><p>By what factor will the area increase?</p></li>  
+  <li><p>What will be the area of the poster-size check?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="7"><statement><p>Emily made a scale model of her sailboat. Each dimension of her model is one-tenth that of the real sailboat. If the real sail has an area of 75 square feet, what is the area of the model's sail?</p></statement>
+<answer><p>0.75 sq ft</p></answer></exercise>
+
+<exercise number="8"><statement><p>Nora wants to make a copy of a mural covering an area of 10 square meters. She doesn't have a wall large enough for a full-size copy, so her version will be only one half the size in each dimension. What will be the area of the copy?</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 9-10, <ol marker="a.">
+  <li><p>Find the scale factor.</p></li>
+  <li><p>Use the scale factor to answer the question.</p></li></ol></p></introduction> 
+
+<exercise number="9"><statement><p>Here is a box.</p><sidebyside widths="50% 40%" valigns="top top">
+  <p><ol marker="a.">
+  <li><p>If we double all the dimensions of the box, how will its surface area change?</p></li>
+  <li><p>How will its volume change?</p></li>
+</ol></p>
+    <image source="hp-6-5-9.png"></image></sidebyside></statement>
+<answer><p><ol marker="a.">
+  <li><p>4 times as large</p></li>
+  <li><p>8 times as large</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement><p>Here is a cube.</p>
+  <sidebyside widths="50% 30%" valigns="top top"><p><ol marker="a.">
+  <li><p>If we cut all the dimensions of the cube in half, how will its surface area change?</p></li>
+  <li><p>How will its volume change?</p></li></ol></p>
+    <image source="hp-6-5-10.png"></image></sidebyside></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11-12, find two objects that are similar.</p></introduction>
+
+<exercise number="11"><statement><image source="hp-6-5-11.png" width="100%"></image></statement>
+<answer><p>(a) and (e) </p></answer></exercise>
+
+<exercise number="12"><statement><image source="hp-6-5-12.png" width="100%"></image></statement></exercise>
+</exercisegroup>
+
+<exercise number="13"><statement><p>A four-inch tall bottle holds 100 cubic centimeters of medicine.  How much medicine does a six-inch tall bottle with a similar shape hold?</p></statement>
+  <answer><p>337.5 cu m</p></answer></exercise>
+
+<exercise number="14"><statement><p>Angel wants to guess the number of jelly beans in a jar that is 45 cm tall. He finds a jar of similar shape that is 15 cm tall and fills it with jelly beans. It holds 280 jelly beans. What should Angel guess for the number of jelly beams in the taller jar?</p></statement></exercise>
+
+<exercise number="15"><statement><p>An orange of diameter 8 centimeters has a peel of about 200 square centimeters. How much peel would you expect an orange of diameter 10 centimeters to have?</p></statement>
+  <answer><p>156.25 sq cm</p></answer></exercise>
+
+<exercise number="16"><statement><sidebyside widths="55% 40%" valigns="middle middle"><p>The Dome of the Rock is a shrine located in Jerusalem, and is the oldest surviving Islamic building. The dome itself has a diameter of about 20 meters, and is roofed with lead covered in gold. A model of the dome is 0.5 meters in diameter and required 15.7 square meters of gold leaf. How much gold leaf would be needed to cover the actual Dome?</p><image source="hp-6-5-16.png"></image></sidebyside></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 17-20, use the following fact: When the dimensions of a solid object are all scaled up, its weight is scaled by the same factor as its volume. </p></introduction>
+
+<exercise number="17"><statement><p>If a 6-foot tall, 180-pound human being were scaled up to a height of 60 feet, what would the giant's weight be?</p></statement>
+<answer><p>180,000 lb</p></answer></exercise>
+
+<exercise number="18"><statement><p>A typical boll weevil is 1 centimeter long and weighs 0.0003 grams. If gamma rays produced a mutant boll weevil 5 meters long, how much would it weigh?</p></statement></exercise>  
+
+<exercise number="19"><statement><sidebyside widths="55% 40%" valigns="middle middle"><p>The military museum wants to make a scale-model replica of the B2 Bomber. The scale is 1 to 50. The real B2 bomber has a wingspan of 172 feet and weighs 158,100 pounds.<ol marker="a.">  
+  <li><p>What is the wing-span of the model?</p></li>
+  <li><p>How much will the model weigh?</p></li>
+</ol></p><image source="hp-6-5-19.png"></image></sidebyside></statement>
+<answer><p><ol marker="a.">  
+  <li><p>3.44 ft</p></li>
+  <li><p>1.2648 lb</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="20"><statement><sidebyside widths="60% 20%" valigns="middle middle"><p>Bistro Paris is making a four-foot tall model of the Eiffel Tower. The original Eiffel Tower is 984 feet tall and weighs 7300 tons.<ol marker="a.">  
+  <li><p>What is the scale factor?</p></li>
+  <li><p>How much will the model weigh? (There are 2000 pounds in one ton.)</p></li>
+</ol></p><image source="hp-6-5-20.png"></image></sidebyside></statement></exercise> 
+</exercisegroup> 
+
+<exercise number="21"><statement><p>Solve the problem about pizzas that opened this Lesson:  Which is the better deal: $15 for three 8-inch pizzas or $15 for one 16-inch pizza?</p></statement>
+<answer><p>one 16-inch pizza</p></answer></exercise>
+
+<exercise number="22"><statement><p>At the Chicken Coop, each dimension of the super-bucket of fried chicken is 1.5 times the corresponding dimension of the mini-bucket. Which is the better deal: $24 for three mini-buckets of fried chicken, or  $24 for one super-bucket?</p></statement></exercise>
+
+</exercises>

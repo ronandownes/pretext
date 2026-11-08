@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.4]
+\draw[cyan] (-5,-5) grid (5,5);
+\draw[black, thick, ->, >=stealth'] (-5,0)--(6,0) node[right]{$x$};
+\draw[black, thick, ->, >=stealth'] (0,-5)--(0,6) node[left, xshift=2]{$y$};
+\foreach \x  in  {-5, 5} {
+ \draw[cyan, thick] (\x,-5) --++(0,10);
+ \draw[cyan, thick] (-5,\x) --++(10,0);
+ \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+ \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\draw[red, very thick,<->, >=stealth'] (-4,-5)--(5,4);
+\draw[red, very thick,<->, >=stealth'] (-3,5)--(5,-1);
+\node[text=blue, align=center] at (0,-6.75) {Consistent and independent;\\one solution};
+
+\def\delx{14};
+\draw[cyan] ({\delx-5},-5) grid ({\delx+5},5);
+\draw[black, thick, ->, >=stealth'] ({\delx-5},0)--({\delx+6},0) node[right]{$x$};
+\draw[black, thick, ->, >=stealth'] (\delx,-5)--++(0,11) node[left, xshift=2]{$y$};
+\foreach \x  in  {-5, 5} {
+ \draw[cyan, thick] ({\delx+\x},-5) --++(0,10);
+ \draw[cyan, thick] ({\delx-5},\x) --++(10,0);
+ \draw[black] ({\delx+\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+ \draw[black] ({\delx+.15},\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\draw[red, very thick,<->, >=stealth'] ({\delx-3},-5)--({\delx+1},5);
+\draw[red, very thick,<->, >=stealth'] ({\delx-1},-5)--({\delx+3},5);
+\node[text=blue, align=center] at (\delx,-6.75) {Inconsistent;\\no solution};
+
+\def\delx{28};
+\draw[cyan] ({\delx-5},-5) grid ({\delx+5},5);
+\draw[black, thick, ->, >=stealth'] ({\delx-5},0)--({\delx+6},0) node[right]{$x$};
+\draw[black, thick, ->, >=stealth'] (\delx,-5)--++(0,11) node[left, xshift=2]{$y$};
+\foreach \x  in  {-5, 5} {
+ \draw[cyan, thick] ({\delx+\x},-5) --++(0,10);
+ \draw[cyan, thick] ({\delx-5},\x) --++(10,0);
+ \draw[black] ({\delx+\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+ \draw[black] ({\delx+.15},\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\draw[red, very thick,<->, >=stealth'] ({\delx-4},5)--({\delx+5},-1);
+\node[text=blue, align=center] at (\delx,-6.75) {Dependent;\\infinitely many solutions};
+\end{tikzpicture}%
+}
+\end{document}

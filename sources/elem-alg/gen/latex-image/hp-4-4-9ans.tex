@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} 
+\coordinate (O) at (0,0);
+\coordinate (B) at (0,3);
+\coordinate (C) at (0,2);
+\filldraw[black] (O) circle (.8mm) node[below, yshift=-2] {Dallas};
+\filldraw[red] (B) circle (.8mm) node[right] {Bonnie};
+\filldraw[blue] (C) circle (.8mm) node[above right] {Clyde};
+\draw [red,decorate,decoration={brace,amplitude=5pt}] (O)++(-.2,0) -- ($(B)+(-.2,0)$) node [black, left, xshift=-4,midway] {$40t$};
+\draw [blue,decorate,decoration={brace,amplitude=5pt}] (C)++(.2,0) -- ($(O)+(.2,0)$) node [black, right, xshift=4,midway] {$70(t-3)$};
+\end{tikzpicture}%
+}
+\end{document}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap9"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Equations and Graphs</title>
+    
+<introduction>
+    <sidebyside width="50%" margins="0% 5%"><image source="images/cubdoub.png"><description>curves</description></image></sidebyside>
+
+    <p>In ancient Athens, around 430 BCE, one quarter of the city's residents perished in a plague. The people of Athens consulted the oracle at Delos, so the story goes, to find a cure for the plague. The oracle replied that they should construct a new cubical altar to the gods, and its volume should be double the volume <idx><h>volume</h></idx> of the existing cubical altar. Now, if the original altar had a side of length <m>x</m>, you can work out that the new altar should have side length <m>\sqrt[3]{2} x</m>, so that the new volume is <m>2x^3</m>.</p>
+<sidebyside width="50%">
+    <image xml:id="fig-doubling-cube">
+        <description>two cubes</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture}  [scale=.6]
+        \def\x{3};
+        \def\d{1};
+        \def\y{3*3^(1/3)};
+        \def\c{3^(1/3)};
+        \draw[gray,ultra thick] (0,0) rectangle ++(\x,\x);
+        \draw[gray,ultra thick] (\d,\d) rectangle ++(\x,\x);
+        \draw[gray,ultra thick] (0,0) -- ++(\d,\d);
+        \draw[gray,ultra thick] (\x,0) -- ++(\d,\d);
+        \draw[gray,ultra thick] (0,\x) -- ++(\d,\d);
+        \draw[gray,ultra thick] (\x,\x) -- ++(\d,\d);
+        \node[text=blue] at ({\d+\x/2},{\d+\x+.4}) {$x$};
+        \node[text=blue] at ({\d+\x+.1},{\d/2-.2}) {$x$};
+        \node[text=blue] at ({\d+\x+.6},{\d+\x/2}) {$x$};
+        \node[text=red] at ({\d+\x/4}, -.7) {$V=x^3$};
+
+        \def\h{6};
+        \def\y{3*3^(1/3)};
+        \def\c{3^(1/3)};
+        \draw[gray,ultra thick] (\h,0) rectangle ++({\y},{\y});
+        \draw[gray,ultra thick] ({\h+\c},{\c}) rectangle ++({\y},{\y});
+        \draw[gray,ultra thick] (\h,0) -- ++({\c},{\c});
+        \draw[gray,ultra thick] ({\h+\y},0) -- ++({\c},{\c});
+        \draw[gray,ultra thick] ({\h},{\y}) -- ++({\c},{\c});
+        \draw[gray,ultra thick] ({\h+\y},{\y}) -- ++({\c},{\c});
+        \node[text=blue] at ({\h+\c+\y/2},{\c+\y+.5}) {$\sqrt[3]{2}x$};
+        \node[text=blue] at ({\h+\c+\y+.3},{\c/2-.2}) {$\sqrt[3]{2}x$};
+        \node[text=blue] at ({\h+\c+\y+1.0},{\c+\y/2}) {$\sqrt[3]{2}x$};
+        \node[text=red] at ({\h+\c+\y/3}, -.7) {$V=2x^3$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+</sidebyside>
+<p>But the ancient Greeks could not use algebra to solve the problem -- it hadn't been invented yet. Instead, they used geometrical methods. The Delian problem of doubling the cube remained unsolved for many years. But sometime around 350 BCE, a mathematician named Menaechmus, who was the tutor to Alexander the Great, solved the problem, and in so doing invented the <term>conic sections</term><idx>conic section</idx><idx><h>conic section</h><seealso>circle, ellipse, hyperbola, parabola</seealso></idx><idx><h>conic</h><see>conic section</see></idx>.</p>
+
+<p>A "section" is a slice, and the conic sections are the curves formed by slicing a cone by a plane. Depending on the angle of the slice, we get four different curves, as shown below.</p>
+
+    <sidebyside width="75%"><image source="images/conics"><description>graph</description></image></sidebyside>
+
+<p>We have already met the parabola, which is described by the quadratic equation <m>y=ax^2+bx+c</m>. It turns out that the other conic sections are also described by quadratic equations. These curves have many interesting properties as abstract objects, but as often happens with mathematical discoveries, they are also useful in applications. Conic sections appear in art and architecture, in medicine, science, and engineering.</p>
+
+    <sidebyside widths="30% 30% 30%"><image source="images/fireworks.png"><description>fireworks</description></image><image source="images/operahouse.png"><description>operahouse</description></image><image source="images/fountain.png"><description>fountain</description></image></sidebyside>
+
+    <sidebyside widths="30% 30% 30%"><image source="images/mollweide.png"><description>mollweide</description></image><image source="images/Decca.png"><description>Decca</description></image><image source="images/ellipsestadium.png"><description>ellipsestadium</description></image></sidebyside>
+
+    <sidebyside widths="30% 30% 30%"><image source="images/headlight.png"><description>headlight</description></image><image source="images/sundial.png"><description>sundial</description></image><image source="images/telescope.png"><description>telescope</description></image></sidebyside>
+   
+    <sidebyside widths="30% 30% 30%"><image source="images/whispering.png"><description>whispering</description></image><image source="images/sonicboom.png"><description>sonicboom</description></image><image source="images/orbits.png"><description>orbits</description></image></sidebyside>
+
+    <sidebyside widths="30% 30% 30%"><image source="images/bridge.png"><description>bridge</description></image><image source="images/navigation.png"><description>navigation</description></image><image source="images/lithotripsy.png"><description>lithotripsy</description></image></sidebyside>
+   
+</introduction>
+
+<xi:include href="./section-9-1.xml" />  <!--Properties of Lines-->
+<xi:include href="./section-9-2.xml" /> <!--Distance and Midpoint Forms-->
+<xi:include href="./section-9-3.xml" />  <!--Conic Sections: Ellipses-->
+<xi:include href="./section-9-4.xml" />  <!--Conic Sections:Hyperbolas-->
+<xi:include href="./section-9-5.xml" />  <!--Nonlinear Systems-->
+<xi:include href="./chap9-summary.xml" /> <!--Summary and Review-->
+        
+
+</chapter> 
+<!-- </book>  </mathbook> -->

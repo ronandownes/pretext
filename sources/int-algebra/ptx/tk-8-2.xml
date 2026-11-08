@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkAlgebraicFractions" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Algebraic Fractions</title>
+                 
+<subsubsection xml:id="tkFactPoly"><title>Factor a polynomial</title>
+
+<introduction><p>To reduce an algebraic fraction, we must factor its numerator and denominator.</p></introduction>
+                   
+<example><statement><p>Factor.
+<ol marker="a." cols="3">
+	<li><m>4x^2-4x</m></li>
+	<li><m>4x^2-1</m></li>
+	<li><m>4x^2-4x+2</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>We factor out  a common factor of <m>4x</m> to get <m>4x(x-1)</m>.</p></li>
+	<li><p>This is a difference of two squares that factors as <m>(2x-1)(2x+1)</m>.</p></li> 
+	<li><p>This is the square of a binomial, <m>(2x-1)^2</m>.</p></li>
+</ol></p></solution></example>
+
+<example><statement><p>Factor.
+<ol marker="a." cols="3">
+	<li><m>27a^2-3</m></li>
+	<li><m>27a^3-1</m></li>
+	<li><m>81a^3-a</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>We first factor out 3 to find <m>3(9a^2-1)</m>, then factor the difference of two squares to get <m>3(3a-1)(3a+1)</m>.</p></li>
+	<li><p>This is a differece of two cubes, which factors as <m>(3a-1)(9a^2+3a+1)</m>.</p></li>
+	<li><p>We first factor out <m>a</m> to get <m>a(81a^2-1)</m>, then factor the difference of two squares to get <m>a(9a-1)(9a+1)</m> .</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Factor completely  <m>2x^3+16y^3</m></p></statement>
+<answer><p><m>2(x+2y)(x^2-2xy+4y^2)</m></p></answer></exercise>
+
+<exercise><statement><p>Factor completely  <m>4x^2y-36y^3</m></p></statement>
+<answer><p><m>4y(x-3y)(x+3y)</m></p></answer></exercise>
+
+<exercise><statement><p>Factor completely  <m>2b^3-6b^2-36b</m></p></statement>
+<answer><p><m>2b(b-6)(b+3)</m></p></answer></exercise>
+
+<exercise><statement><p>Factor completely  <m>9b^4+9b^2</m></p></statement>
+<answer><p><m>9b^2(b^2+1)</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkOppBin"><title>Find the opposite of a binomial</title>
+
+<introduction><p>To find the opposite or negative of a binomial we multiply by <m>-1</m>.</p></introduction>
+                   
+<example><statement><p>Which of these is the opposite of <m>m^2-p~</m>?
+<ol marker="a." cols="3">
+	<li><m>m^2+p</m></li>
+	<li><m>m-p^2</m></li>
+	<li><m>p-m^2</m></li>
+</ol></p></statement>
+
+<solution><p>The opposite of <m>m^2-p</m> is <m>-(m^2-p) = -m^2+p</m>, or <m>p-m^2</m>.</p></solution></example>
+
+<example><statement><p>Which of these pairs of binomials are opposites?
+<ol markerl="a.">
+	<li><m>3c-5</m> and <m>5+3c</m></li>
+	<li><m>5-3c</m> and <m>3-5c</m></li>
+	<li><m>5c-3</m> and <m>3-5c</m></li>
+</ol></p></statement>
+
+<solution><p>The opposite of <m>5c-3</m> is <m>-(5c-3)=-5c+3</m>, or <m>3-5c</m>, so (c) is correct.</p></solution></example>
+
+<exercise><statement><p>Find the opposite of the binomial <m>~2x+1</m></p></statement>
+<answer><p><m>-2x-1</m></p></answer></exercise>
+
+<exercise><statement><p>Find the opposite of the binomial <m>~b^2-b</m></p></statement>
+<answer><p><m>b-b^2</m></p></answer></exercise>
+
+<exercise><statement><p>Find the opposite of the binomial <m>~-4n+8</m></p></statement>
+<answer><p><m>4n-8</m></p></answer></exercise>
+
+<exercise><statement><p>Find the opposite of the binomial <m>~-3z^2-2</m></p></statement>
+<answer><p><m>3z^2+2</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkAsymp"><title>Asymptotes</title>
+
+<introduction><p>The asymptotes of rational functions are horizontal and vertical lines.</p></introduction>
+                   
+<example><statement><p>Give the equation and slope of the line.</p>
+	<image width="30%" xml:id="fig-x-eq-neg15"><description>vertical line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+		\draw[cyan, thin] (-4,-4) grid (4,4);
+		\draw[black,very thick, ->, >=stealth'] (-4,0)--(4.8,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-4)--(0,4.8) node[above]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(5*\x)] in {-4,-2,2,4} {
+		 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		  \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[magenta!90!black,ultra thick,<->, >=stealth'] (-3,-4)--(-3,4);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+
+<solution><p>This line is a vertical line. All the points on the line have <m>x</m>-coordinate <m>-15</m>, so the equation of the line is <m>x=-15</m>. Because <m>\Delta x=0</m> between any two points on the line, its slope is undefined.</p></solution></example>
+
+<example><statement><p>Give the equation and slope of the line.</p>
+	<image width="30%" xml:id="fig-y-eq-40"><description>horizontal line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+		\draw[cyan, thin] (-2,-2) grid (6,6);
+		\draw[black,very thick, ->, >=stealth'] (-2,0)--(6.8,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-2)--(0,6.8) node[above]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(10*\x)] in {6,-2,2,4} {
+		 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		  \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[magenta!90!black,ultra thick,<->, >=stealth'] (-2,4)--(6,4);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+
+<solution><p>This line is a horizontal line. All the points on the line have <m>y</m>-coordinate <m>04</m>, so the equation of the line is <m>y=40</m>.  Because <m>\Delta y=0</m> between any two points on the line, its slope is <m>0</m>.</p></solution></example>
+
+<exercise><statement><p>Give the equation and slope of the line.</p>
+	<image width="30%" xml:id="fig-y-eq-neg16"><description>horizontal line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (-2,-4) grid (6,4);
+		\draw[black,very thick, ->, >=stealth'] (-2,0)--(6.8,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-4)--(0,4.8) node[above]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(10*\x)] in {6,-2,2,4} {
+		 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(8*\x)] in {-4,-2,2,4} {
+		  \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[magenta!90!black,ultra thick,<->, >=stealth'] (-2,-2)--(6,-2);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+<answer><p><m>y=-16;~ m=0</m></p></answer></exercise>
+
+<exercise><statement><p>Give the equation and slope of the line.</p>
+	<image width="30%" xml:id="fig-x-eq-30"><description>vertical line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+		\draw[cyan, thin] (-2,-3) grid (6,5);
+		\draw[black,very thick, ->, >=stealth'] (-2,0)--(6.8,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-3)--(0,5.8) node[above]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(10*\x)] in {6,-2,2,4} {
+		 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(15*\x)] in {-2,2,4} {
+		  \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[magenta!90!black,ultra thick,<->, >=stealth'] (3,-3)--(3,5);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+<answer><p><m>x=30</m>; <m>~ m~</m>is undefined</p></answer></exercise>
+
+<exercise><statement><p>Give the equation and slope of the line.</p>
+	<image width="30%" xml:id="fig-y-eq-45"><description>horizontal line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+		\draw[cyan, thin] (-2,-3) grid (6,5);
+		\draw[black,very thick, ->, >=stealth'] (-2,0)--(6.8,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-3)--(0,5.8) node[above]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(10*\x)] in {6,-2,2,4} {
+		 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(15*\x)] in {-2,2,4} {
+		  \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[magenta!90!black,ultra thick,<->, >=stealth'] (-2,3)--(6,3);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+<answer><p><m>y=45; m=0</m></p></answer></exercise>
+
+<exercise><statement><p>Give the equation and slope of the line.</p>
+	<image width="30%" xml:id="fig-x-eq-neg24"><description>vertical line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+		\draw[cyan, thin] (-5,-3) grid (3,5);
+		\draw[black,very thick, ->, >=stealth'] (-5,0)--(3.8,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-3)--(0,5.8) node[above]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(12*\x)] in {-4,-2,2} {
+		 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(15*\x)] in {-2,2,4} {
+		  \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[magenta!90!black,ultra thick,<->, >=stealth'] (-2,-3)--(-2,5);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+<answer><p><m>x=-24</m>; <m>~ m~</m>is undefined</p></answer></exercise>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="NonlinearSystems"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Nonlinear Systems</title>
+
+<subsection><title>Systems Involving Quadratic Equations</title>
+
+<p>Recall that the solution to a <m>2 \times 2</m> system of linear equations is the intersection point of the graphs of the equations. This is also true of systems in which one or both of the equations is quadratic. The figure below shows the three cases for systems of one quadratic and one linear equation. </p>
+
+<image width="70%" source="images/fig-3-cases-quadratic-system" ><description>graphs of 3 cases for quadratic system</description></image>
+
+<p>In the next Example, we use both graphical and algebraic techniques to solve the system.</p> 
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of problems that can be solved with a system of equations, see <xref ref="tkNonLinSys" text="custom"> Section 9.5.1 </xref> of the Toolkit.</p></aside>
+
+<example xml:id="example-Pizza-system"><statement><p>The Pizza Connection calculates that the cost, in dollars, of producing <m>x</m> pizzas per day is given by
+            <me>C = 0.15x^2 + 0.75x + 180</me>
+The Pizza Connection charges $15 per pizza, so the revenue from selling <m>x</m> pizzas is
+            <me>R=15x</me>
+ How many pizzas per day must the Pizza Connection sell in order to break even?</p></statement>
+    
+<solution><p>To break even means to make zero profit. Because
+            <me>\blert{\text{Profit} = \text{Revenue} - \text{Cost}}</me>
+the break-even points occur when revenue equals cost. In mathematical terms, we would like to find any values of <m>x</m> for which <m>R = C</m>. If we graph the revenue and cost functions on the same axes, these values correspond to points where the two graphs intersect. Use the <kbd>WINDOW</kbd> settings
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 94</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 1400</mrow></md>
+on your calculator to obtain the graph shown below. You can verify that the two intersection points are <m>(15, 225)</m> and <m>(80, 1200)</m>.</p>
+    <image width="45%" source="images/fig-GC-quadratic-system" ><description>GC figure for quadratic system</description></image>
+<p>Thus, the Pizza Connection must sell either 15 or 80 pizzas in order to break even. On the graph we see that revenue is greater than cost for <m>x</m>-values between 15 and 80, so the Pizza Connection will make a profit if it sells between 15 and 80 pizzas.</p>
+        
+<p>We can also solve algebraically for the break-even points. The intersection points of the two graphs correspond to the solutions of the system of equations
+            <md><mrow>y\amp =0.15x^2 + 0.75x + 180</mrow>
+                <mrow>y \amp= 15x</mrow></md>
+We equate the two expressions for <m>y</m> and solve for <m>x</m>:
+            <md><mrow>0.15x^2 + 0.75x + 180 \amp= 15x\amp\amp \blert{\text{Subtract }15x \text{ from both sides.}}</mrow>
+                <mrow>0.15x^2 - 14.25x + 180 \amp= 0\amp\amp \blert{\text{Use the quadratic formula.}}</mrow></md>
+            <md><mrow>x \amp= \frac{14.25 \pm\sqrt{14.25^2 - 4(0.15)(180)}}{2(-0.05)}\amp\amp \blert{\text{Simplify.}}</mrow>
+                <mrow>\amp= \frac{14.25 \pm 9.75}{0.3}</mrow></md>
+The solutions are 15 and 80, as we found from the graph.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            Context("Point");
+            $answer=List("(2,5)");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code> 
+    <statement><p><ol marker="a.">
+            <li><p>Solve the system algebraically:
+                    <md><mrow>y \amp= x^2 - 8x + 17</mrow>
+                        <mrow>y \amp{}+ 4x =13</mrow></md></p>
+                <p>Solution: <var name="$answer" width="6" evaluator="$my_evaluator" /> Note: list solutions as ordered pairs.</p> </li>
+            <li><p>Graph both equations, and show the solutions on the graph. </p></li></ol></p>
+        </statement>
+        <solution><p><ol marker="a." cols="2">
+                <li><p><m>(2,5) </m></p></li>
+                <li><p>A graph is below.</p></li></ol></p>
+        </solution>
+    </webwork>
+    <conclusion>
+        <p>Graph of system:</p>
+        <image width="35%" xml:id="fig-ex-9-5-1answ"><description>parabola and line</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=.4, yscale=.45] 
+                \draw[cyan] (-2,-1) grid (10,8);
+                \draw[black,thick,->,>=stealth'] (-2,0)--(10.8,0) node[right]{$x$};
+                \draw[black,thick,->,>=stealth'] (0,-1)--(0,8.8) node[above]{$y$};
+                \foreach \x  in {-2,2,4,6,8,10} {
+                  \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(2*\x)] in {2,4,6,8} {
+                  \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                }
+                \draw[samples=65,domain={4-sqrt(15):4+sqrt(15)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot (\x, {((\x)^2-8*\x+17)/2});
+                \draw[blue,thick, <->,>=stealth'](-3/4,8)--(15/4,-1);
+                \filldraw[black] (2,2.5) ellipse (.18 and .16) node[above right, xshift=.1cm, fill=white, inner sep=1]{$(2,5)$};
+                \end{tikzpicture}]]>
+                </latex-image></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p><ol marker="a.">
+            <li><p>Solve the system algebraically:
+                    <md><mrow>y \amp= x^2 - 8x + 17</mrow>
+                        <mrow>y \amp{}+ 4x =13</mrow></md></p></li>
+            <li><p>Graph both equations, and show the solutions on the graph. </p></li>
+    </ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+                <li><p><m>(2,5) </m></p></li>
+                <li><image width="55%" xml:id="fig-ex-9-5-1ans"><description>parabola and line</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=.4, yscale=.45] 
+                \draw[cyan] (-2,-1) grid (10,8);
+                \draw[black,thick,->,>=stealth'] (-2,0)--(10.8,0) node[right]{$x$};
+                \draw[black,thick,->,>=stealth'] (0,-1)--(0,8.8) node[above]{$y$};
+                \foreach \x  in {-2,2,4,6,8,10} {
+                  \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(2*\x)] in {2,4,6,8} {
+                  \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                }
+                \draw[samples=65,domain={4-sqrt(15):4+sqrt(15)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot (\x, {((\x)^2-8*\x+17)/2});
+                \draw[blue,thick, <->,>=stealth'](-3/4,8)--(15/4,-1);
+                \filldraw[black] (2,2.5) ellipse (.18 and .16) node[above right, xshift=.1cm, fill=white, inner sep=1]{$(2,5)$};
+                \end{tikzpicture}]]>
+                </latex-image></image></li>
+    </ol></p></answer></exercise>
+
+<p>What about a system of two quadratic equations <m>~y = ax^2 + bx + c~</m>?  You can sketch some possible systems to convince yourself that two such graphs can intersect in one point, two points, or no points at all.</p>
+
+<example><statement><p>Solve the system
+            <md><mrow>y \amp= (x + 1.1)^2</mrow>
+                <mrow>y \amp = 7.825 - 2x - 2.5x^2</mrow></md></p></statement>
+    
+<solution><p>We graph these two equations in the standard window and use the <term>intersect</term> feature to locate one of the solutions, as shown in the figure.</p>
+    <sidebyside widths="55% 40%" margins="0% 0%" valigns="middle middle">
+ <p>You can check that the point <m>(0.9, 4)</m> is an exact solution to the system by substituting <m>x = 0.9</m> and <m>y = 4</m> into each equation of the system. We find the other solution by moving the bug close to the other intersection point and using the <term>intersect</term> feature again. You can verify that the other solution is the point <m>(-2.1, 1).</m></p>
+    <image source="images/fig-GC-quadratic-system2" ><description>GC graph showing quadratic system</description></image>
+        </sidebyside>
+<p>To solve the system algebraically, we equate the two expressions for <m>y</m>.
+            <md><mrow>(x + 1.1)^2 = 7.825 − 2x − 2.5x^2</mrow></md>
+After expanding the left side and collecting like terms, we arrive at a quadratic equation, which we can solve with the quadratic formula, and find two values for <m>x</m>, namely <m>x = 0.9</m> and <m>x = -2.1</m>. To find the <m>y</m>-value for each of these intersection points, we substitute the <m>x</m>-coordinate into either of the two original equations. For example, for <m>x = 0.9</m>, 
+            <me>y = (0.9 + 1.1)^2 = 2^2 = 4</me></p></solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            Context("Point");
+            $answer=List("(-2,9),(5,-12)");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+
+        </pg-code> 
+    <statement><p><ol marker="a.">
+            <li><p>Solve the system algebraically:
+                    <md><mrow>y \amp= x^2 - 6x - 7</mrow>
+                        <mrow>y \amp= 13 - x^2</mrow></md></p>
+                <p>Solutions: <var name="$answer" width="12" evaluator="$my_evaluator" /> Note: list solutions as ordered pairs, and use a comma to separate different solutions.</p> </li>
+            <li><p>Graph both equations, and show the solutions on the graph.</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+                <li><p><m>(-2,9), (5,-12) </m></p></li>
+                <li><p>A graph is below.</p></li></ol></p>
+    </solution></webwork>
+    <conclusion>
+        <p>Graph of system:</p>
+        <image width="35%" source="images/fig-ex-9-5-2ans"><description>two parabolas</description></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p><ol marker="a.">
+            <li><p>Solve the system algebraically:
+                    <md><mrow>y \amp= x^2 - 6x - 7</mrow>
+                        <mrow>y \amp= 13 - x^2</mrow></md></p></li>
+            <li><p>Graph both equations, and show the solutions on the graph.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+            <li><p><m>(-2,9), (5,-12) </m></p></li>
+            <li><image width="55%" source="images/fig-ex-9-5-2ans"><description>two parabolas</description></image></li>
+        </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Systems Involving Conic Sections</title><idx><h>conic section</h><h>systems involving</h></idx><idx><h>system of equations</h><h>involving conic sections</h></idx>
+
+<p>A system of two parabolas can have one, two, or no solutions, depending on the graphs of the two equations. Systems involving other conics may have up to four solutions.</p>
+
+<example xml:id="Example-intersection-of-conics"><statement><p>Find the intersection points of the graphs of
+            <md><mrow>x^2+y^2 \amp=5</mrow>
+                <mrow>xy\amp=2</mrow></md></p></statement>
+
+<solution>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of using substitution, see <xref ref="tkSubst" text="custom"> Section 9.5.3 </xref> of the Toolkit.</p></aside>
+        <sidebyside widths="60% 35%" margins="0% 0%" valigns="middle middle">
+<p>We will use substitution to solve the system. We solve the easier of the two equations (the second equation) for <m>y</m> to obtain <m>y =\dfrac{2}{x}</m>. Then we substitute <m>\dfrac{2}{x} </m> for <m>y</m> in the first equation to find
+            <me>x^2+\left(\frac{2}{x} \right)^2=5 \quad\text{ or }\quad x^2+\frac{4}{x^2} =5  </me></p>
+        <image xml:id="fig-example-9-5-3"><description>circle and hyperbola</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6] 
+                \draw[lightgray] (-5,-5) grid (5,5);
+                \draw[black,thick,->,>=stealth'] (-5,0)--(5.8,0) node[right]{$x$};
+                \draw[black,thick,->,>=stealth'] (0,-5)--(0,5.8) node[above]{$y$};
+                \foreach \x  in {-4,4} {
+                  \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                  \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+                }
+                \draw[red, very thick] (0,0) circle ({sqrt(5)});
+                \draw[samples=65,domain={2/5:5},smooth,variable=\x,blue,very thick, <->,>=stealth'] plot (\x, {2/\x});
+                \draw[samples=65,domain={-5:-2/5},smooth,variable=\x,blue,very thick, <->,>=stealth'] plot (\x, {2/\x});
+                \filldraw[black] (1,2) circle (.15);
+                \filldraw[black] (-1,-2) circle (.15);
+                \filldraw[black] (2,1) circle (.15);
+                \filldraw[black] (-2,-1) circle (.15);
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside>
+    <p>This equation has only one variable, <m>x</m>, and we solve it by first clearing fractions. We multiply both sides by <m>x^2</m>, and then subtract <m>5x^2</m> to obtain
+            <md><mrow>x^4-5x^2+4\amp=0 \amp\amp \blert{\text{Factor the left side.}}</mrow>
+                <mrow>(x^2-1)(x^2-4)\amp=0 \amp\amp \blert{\text{Apply the zero-facor principle.}}</mrow>
+                <mrow>x^2-1=0\quad\text{ or }\quad x^2\amp-4=0\amp\amp \blert{\text{Solve each equation.}}</mrow>
+                <mrow>x=1, \quad x=-1,\quad x=2\amp, \quad \text{ or }\quad x=-2</mrow></md>
+    Finally, substitute each of these values into <m>y=\dfrac{2}{x} </m> to find the <m>y</m>-components of each solution. The intersection points of the two graphs are <m>(1,2)</m>, <m>(-1,-2)</m>, <m>(2,1)</m>, and <m>(-2,-1)</m>. The graph of the system is shown above.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            Context("Point");
+            $answer=List("(6,1),(-6,-1)");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code> 
+    <statement><p>Find the intersection points of the graphs of
+                <md><mrow>x^2-y^2 \amp= 35</mrow>
+                    <mrow>xy \amp= 6</mrow></md></p>
+            <p>Solution: <var name="$answer" width="12" evaluator="$my_evaluator" /> Note: list solutions as ordered pairs, and use a comma to different solutions.</p> 
+    </statement>
+    <solution><p><m>(6,1)</m>, <m>(-6,-1) </m></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Find the intersection points of the graphs of
+                <md><mrow>x^2-y^2 \amp= 35</mrow>
+                    <mrow>xy \amp= 6</mrow></md></p></statement>
+<answer><p><m>(6,1)</m>, <m>(-6,-1) </m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Solving Systems by Elimination</title><idx>elimination method</idx><idx><h>system of equations</h><h>elimination method</h></idx>
+
+<p>We used substitution in the previous <xref ref="Example-intersection-of-conics" text="custom">Example</xref> to solve the system. If both equations are of the form 
+    <me>ax^2 + by^2 = c</me>
+elimination of variables is more efficient.</p>
+
+<example><statement><p>Find the solutions to the following system of equations.
+            <md><mrow>x^2 - 2y^2 \amp=1</mrow>
+                <mrow>\frac{x^2}{15}+\frac{y^2}{10}\amp=1 </mrow></md>
+Verify the solutions on a graph.</p></statement>
+
+<solution><sidebyside widths="60% 38%" margins="0% 0%" valigns="middle middle">
+<p> We multiply the first equation by 3 and the second by 60 to obtain
+            <md><mrow>3x^2 − 6y^2 = 3</mrow>
+                <mrow>4x^2 + 6y^2 = 60</mrow></md>
+Adding these two equations, we have</p>
+    <image source="images/fig-gc-hyperbola-ellipse"><description>GC ellipse and hyperbola</description></image></sidebyside>
+<p>
+            <md><mrow>7x^2 \amp= 63</mrow>
+                <mrow>x^2\amp=9</mrow></md>
+so <m>x = \pm 3</m>. We substitute these values for <m>x</m> into either equation and solve for <m>y</m> to find the solutions <m>(3, 2)</m>, <m>(3, -2)</m>, <m>(-3, 2)</m> and <m>(-3, -2)</m>.</p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of using elimination, see <xref ref="tkElim" text="custom"> Section 9.5.3 </xref> of the Toolkit.</p></aside>
+
+<p>The two original equations describe a hyperbola and an ellipse. We can obtain graphs on the calculator by solving each equation for <m>y</m> to get
+    <me>y=\pm\sqrt{\frac{x^2-1}{2}} \quad\text{ and }\quad y=\pm\sqrt{10\left(1-\frac{x^2}{15} \right)}</me>
+Using the window <m>[-7.05,7.05] \times [-4.65,4.65]</m>, we obtain the graph shown above. The solutions of the system are the intersection points of the graphs.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            Context("Point");
+            $answer=List("(2,3), (-2,3), (2,-3),(-2,-3)");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+
+        </pg-code> 
+    <statement><p>Find the intersection points of the graphs of
+                <md><mrow>y^2-x^2 \amp= 5</mrow>
+                    <mrow>x^2+y^2 \amp= 13</mrow></md></p>
+            <p>Solution: <var name="$answer" width="20" evaluator="$my_evaluator" /> Note: list solutions as ordered pairs, and use a comma to different solutions.</p> 
+    </statement>
+        <solution> <p><m>(2,3)</m>, <m>(-2,3)</m>, <m>(2,-3) </m>, <m>(-2,-3)</m> </p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Find the intersection points of the graphs of
+                <md><mrow>y^2-x^2 \amp= 5</mrow>
+                    <mrow>x^2+y^2 \amp= 13</mrow></md></p></statement>
+    <answer> <p><m>(2,3)</m>, <m>(-2,3)</m>, <m>(2,-3) </m>, <m>(-2,-3)</m> </p></answer></exercise>
+
+<p>For some quadratic systems, we use a combination of elimination of variable sand substitution.</p>
+
+<example><statement><p>Find the intersection of the circles given by the equations.
+    <md><mrow>x^2-4x+y^2+2y\amp=20</mrow>
+        <mrow>x^2-12x+y^2+10y\amp= -12</mrow></md></p></statement>
+
+<solution> <sidebyside widths="60% 38%" margins="0% 0%" valigns="middle middle">
+<p>We subtract the second equation from the first equation to obtain
+                <md><mrow>8x - 8y = 32</mrow></md>
+Solving for <m>x</m>, we have
+                <md><mrow>x = y + 4</mrow></md></p>
+    <image xml:id="fig-example-9-5-4"><description>two circles</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6] 
+                \draw[lightgray] (-2,-7) grid (8,3);
+                \draw[black,thick,->,>=stealth'] (-2,0)--(8.8,0) node[right]{$x$};
+                \draw[black,thick,->,>=stealth'] (0,-7)--(0,3.8) node[above]{$y$};
+                \foreach \x [evaluate=\x as \xi using int(2*\x)] in {2,4,6} {
+                  \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+                  }
+                \foreach \x [evaluate=\x as \xi using int(2*\x)] in {2,-2,-4,-6} {
+                  \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                }
+                \draw[red, very thick] (1,-1/2) circle (5/2);
+                \draw[blue, very thick] (3,-5/2) circle (7/2);
+                \filldraw[black] (-1/2,-5/2) circle (.15);
+                \filldraw[black] (3,1) circle (.15);
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside>
+<p>Next, we substitute <m>\alert{y + 4}</m> for <m>x</m> into either of the original equations. We use the first equation to find
+        <md><mrow>(\alert{y+4})^2-4(\alert{y+4})+y^2+2y\amp= 20 \amp\amp \blert{\text{Remove parentheses.}}</mrow>
+            <mrow>(y^2+8y+16)-4y-16+y^2+2y\amp=20 \amp\amp \blert{\text{Collect like terms.}}</mrow>
+            <mrow>2y^2+6y-20\amp=0 \amp\amp \blert{\text{Divide both sides by 2.}}</mrow>
+            <mrow>y^2+3y-10\amp= 0 \amp\amp \blert{\text{Factor the left side.}}</mrow>
+            <mrow>(y+5)(y-2)\amp= 0</mrow></md>
+Thus, <m>y = -5</m> or <m>y = 2</m>. From the equation <m>x = y + 4</m>, we find that when <m>y = -5</m>, <m>x =-1</m>, and when <m>y = 2</m>, <m>x = 6</m>. Thus the two circles intersect at <m>(-1, -5)</m> and <m>(6, 2)</m>, as shown in the figure above.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+    <webwork><pg-code>
+            Context("Point");
+            $answer=List("(2,5), (10,1)");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code> 
+    <statement><p>Find the intersection points of the graphs of
+                <md><mrow>x^2 -8x+y^2+2y \amp= 23</mrow>
+                    <mrow>x^2-12x+y^2 -6y\amp= -25</mrow></md></p>
+            <p>Solution: <var name="$answer" width="20" evaluator="$my_evaluator" /> Note: list solutions as ordered pairs, and use a comma to different solutions.</p> 
+    </statement>
+        <solution><p><m>(2,5)</m>, <m>(10,1)</m> </p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Find the intersection points of the graphs of
+                <md><mrow>x^2 -8x+y^2+2y \amp= 23</mrow>
+                    <mrow>x^2-12x+y^2 -6y\amp= -25</mrow></md></p></statement>
+    <answer><p><m>(2,5)</m>, <m>(10,1)</m> </p></answer></exercise>
+
+</subsection>  
+ 
+ 
+<xi:include href="./section-9-5-exercises.xml" />          
+
+
+</section>

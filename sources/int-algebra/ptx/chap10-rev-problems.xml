@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+
+<exercises xml:id="chap10-rev-problems"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 10 Review Problems</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 1 and 2, make a table of values for the function and sketch a graph.</p></introduction>
+
+<exercise number="1"><statement><p><m>f(x)=\log_4 {(x)}</m></p></statement></exercise>
+
+<exercise number="2"><statement><p><m>f(x)=\log_{1/4} {(x)}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 3 and 4, simplify.</p></introduction>
+
+<exercise number="3"><statement><p><ol marker="a.">
+	<li><m>10^{\log_6 {(n)}}</m></li>
+	<li><m>\log_2{(4^{x+3})}</m></li></ol></p></statement></exercise>
+
+<exercise number="4"><statement><p><ol marker="a.">
+	<li><m>\log {(100^x)}</m></li>
+	<li><m>3^{2 \log_3 {(t)}}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5-12, solve.</p></introduction>
+
+<exercise number="5"><statement><p><m>\log_{3}{(\frac{1}{3})}=y </m></p></statement>
+<answer><p><m>-1</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>\log_{3}{(x)}=4 </m></p></statement></exercise>
+
+<exercise number="7"><statement><p><m>\log_{2}{(y)}=-1 </m></p></statement>
+<answer><p><m>\dfrac{1}{2} </m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>\log_{5}{(y)}=-2 </m></p></statement></exercise>
+
+<exercise number="9"><statement><p><m>\log_{b} {(16)}=2 </m></p></statement>
+<answer><p><m>4 </m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>\log_{b}{(9)}=\dfrac{1}{2} </m></p></statement></exercise>
+
+<exercise number="11"><statement><p><m>\log_{4}{\left(\dfrac{1}{2}t+1\right)}=-2 </m></p></statement>
+<answer><p><m>\dfrac{-15}{8} </m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>\log_{2}{(3x-1)}=3 </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13-16, solve.</p></introduction>
+
+<exercise number="13"><statement><p><m>\log_3 {(x)} + \log_3 {(4)} = 2</m></p></statement>
+<answer><p><m>\dfrac{9}{4} </m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>\log_2{(x + 2}) - \log_2 {(3)} = 6</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>\log_{10}{(x-1)} + \log_{10} {(x+2)} = 1</m></p></statement>
+<answer><p><m>3 </m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>\log_{10}{(x + 2)} - \log_{10} {(x-3)} = 1</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17-22, solve.</p></introduction>
+
+<exercise number="17"><statement><p><m>e^x=4.7 </m></p></statement>
+<answer><p><m>x\approx 1.548 </m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>e^x=0.5 </m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>\ln {(x)} =6.02 </m></p></statement>
+<answer><p><m>x\approx 411.58 </m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>\ln {(x)}=-1.4 </m></p></statement></exercise>
+
+<exercise number="21"><statement><p><m>4.73=1.2e^{0.6x} </m></p></statement>
+<answer><p><m>x\approx 2.286 </m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>1.75=0.3e^{-1.2x} </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 23-26, simplify.</p></introduction>
+
+<exercise number="23"><statement><p><m>e^{(\ln {(x)}/2)} </m></p></statement>
+<answer><p><m>\sqrt{x} </m></p></answer></exercise>
+
+<exercise number="24"><statement><p><m>\ln {\left(\left(\dfrac{1}{e} \right)^{2n}\right)} </m></p></statement></exercise>
+
+<exercise number="25"><statement><p><m>\ln {\left(\dfrac{e^k}{e^3} \right)} </m></p></statement>
+<answer><p><m>k-3 </m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>e^{\ln{(e+x)}} </m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="27"><statement><p>In 1970, the population of New York City was 7,894,862. In 1980, the population had fallen to 7,071,639.<ol marker="a.">
+        <li><p>Write an exponential function using base <m>e</m> for the population of New York over that decade.</p></li>
+        <li><p>By what percent did the population decline annually?</p></li>
+    </ol></p></statement>
+<answer><p><ol cols="2">
+    <li><p><m>P = 7,894,862e^{-0.011t}</m></p></li>
+    <li><p>1.095%</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>In 1990, the population of New York City was 7,322,564. In 2000, the population was 8,008,278.<ol marker="a.">
+        <li><p>Write an exponential function using base <m>e</m> for the population of New York over that decade.</p></li>
+        <li><p>By what percent did the population increase annually?</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="29"><statement><p>You deposit $1000 in a savings account paying 5% interest compounded continuously.<ol>
+        <li><p>Find the amount in the account after 7 years.</p></li>
+        <li><p>How long will it take for the original principal to double?</p></li>
+        <li><p>Find a formula for the time <m>t</m> required for the amount to reach <m>A</m>.</p></li>
+    </ol></p></statement>
+<answer><p><ol cols="3">
+    <li><p>$1419.07</p></li>
+    <li><p>13.9 years</p></li>
+    <li><p><m>t = 20 \ln\left(\dfrac{A}{1000} \right)</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>The voltage, <m>V</m>, across a capacitor in a certain circuit is given by the function
+    <me>V(t) = 100(1-e^{-0.5t}) </me>
+where <m>t</m> is the time in seconds.<ol>
+    <li><p>Make a table of values and graph <m>V(t)</m> for <m>t = 0</m> to <m>t = 10</m>.</p></li>
+    <li><p>Describe the graph. What happens to the voltage in the long run?</p></li>
+    <li><p>How much time must elapse (to the nearest hundredth of a second) for the voltage to reach 75 volts?</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="31"><statement><p>Solve for <m>t</m>: <m>~~y = 12 e^{-kt} + 6</m></p></statement>
+<answer><p><m>t=\dfrac{-1}{k}\ln{\left(\dfrac{y-6}{12} \right)} </m></p></answer></exercise>
+
+<exercise number="32"><statement><p>Solve for <m>k</m>: <m>~~N = N_0 + 4 \ln{(k + 10)}</m></p></statement></exercise>
+
+<exercise number="33"><statement><p>Solve for <m>M</m>: <m>~~Q=\dfrac{1}{t}\left(\dfrac{\log {(M)}}{\log {(N)}} \right) </m></p></statement>
+<answer><p><m>M=N^{Qt} </m></p></answer></exercise>
+
+<exercise number="34"><statement><p>Solve for <m>t</m>: <m>~~C_H = C_L\cdot 10^{k}t </m></p></statement></exercise>
+
+<exercise number="35"><statement><p>Express <m>~~P(t) = 750e^{0.32t}~~</m> in the form <m>P(t) = P_0b^t</m>.</p></statement>
+<answer><p><m>P(t) = 750 (1.3771)^t</m></p></answer></exercise>
+
+<exercise number="36"><statement><p>Express <m>~~P(t) = 80e^{-0.6t}~~</m> in the form <m>P(t) = P_0 b^t</m>.</p></statement></exercise>
+
+<exercise number="37"><statement><p>Express <m>~~N(t)=600(0.4)^{t}~~</m> in the form <m>N(t) = N_0 e^{kt}</m>.</p></statement>
+<answer><p><m>N(t) = 600 e^{-0.9163t}</m></p></answer></exercise>
+
+<exercise number="38"><statement><p>Express <m>~~N(t) =100(1.06)^{t}~~</m> in the form <m>N(t) = N_0 e^{kt}</m>.</p></statement></exercise>
+
+<exercise number="39"><statement><p>Plot the values on a log scale.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor"><col right="major"/><col/><col/><col/><col/>
+        <row><cell><m>x</m></cell>
+            <cell><m>0.04</m></cell>
+            <cell><m>45</m></cell>
+            <cell><m>1200</m></cell>
+            <cell><m>560,000</m></cell></row>
+    </tabular></sidebyside></statement>
+<answer><sidebyside width="80%"><image source="images/fig-ans-chap5-rev-63"><description>log scale</description></image></sidebyside></answer></exercise>
+
+<exercise number="40"><statement><p>Plot the values on a log scale.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor"><col right="major"/><col/><col/><col/><col/>
+        <row><cell><m>x</m></cell>
+            <cell><m>0.0007</m></cell>
+            <cell><m>0.8</m></cell>
+            <cell><m>3.2</m></cell>
+            <cell><m>2500</m></cell></row>
+    </tabular></sidebyside></statement></exercise>
+
+<exercise number="41"><statement><sidebyside widths="50% 30%">
+    <p>The graph describes a network of streams near Santa Fe, New Mexico. It shows the number of streams of a given order, which is a measure of their size. Use the graph to estimate the number of streams of orders 3, 4, 8, and 9. (Source: Leopold, Wolman, and Miller)</p>
+    <image source="images/fig-chap5-rev-65"><description>stream order on semi-log scale</description></image>
+</sidebyside></statement>
+<answer><p>Order 3: 17,000; Order 4: 5000; Order 8: 40; Order 9: 11</p></answer></exercise>
+
+<exercise number="42"><statement><p>Large animals use oxygen more efficiently when running than small animals do. The graph shows the amount of oxygen various animals use, per gram of their body weight, to run 1 kilometer. Estimate the body mass and oxygen use for a kangaroo rat, a dog, and a horse. (Source: Schmidt-Neilsen, 1972)</p>
+    <image width="70%" source="images/fig-O2-efficiency-log-log"/>
+</statement></exercise>
+
+<exercise number="43"><statement><p>The loudest sound created in a laboratory registered at 210 decibels.  The energy from such a sound is sufficient to bore holes in solid material.  Find the intensity of a 210-decibel sound.</p></statement></exercise>
+
+<exercise number="44"><statement><p>The most powerful earthquake ever recorded occurred in Chile on 22 May 1960. The magnitude of the earthquake was approximately 9.5. What was the amplitude of its seismographic trace.</p></statement></exercise>
+
+<exercise number="45"><statement><p>In 2004, a magnitude 9.0 earthquake struck Sumatra in Indonesia. How much more powerful was this quake than the 1906 San Francisco earthquake of magnitude 8.3?</p></statement></exercise>
+
+<exercise number="46"><statement><p>The sound of rainfall registers at 50 decibels. What is the decibel level of a sound twice as loud?</p></statement></exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</exercises>

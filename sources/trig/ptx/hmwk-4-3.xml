@@ -1,0 +1,1023 @@
+<?xml version="1.0"?>
+
+<exercises xml:id="hmwk-4-3-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Homework 4.3</title>
+
+<exercisegroup cols="3"><introduction><p>For Problems 1<ndash/>8, use the graphs to estimate the solutions to the equations. Show your work on the graph.</p>
+        <image width="70%" xml:id="fig-4-2-sinegraph"><description>sine graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [xscale=1.2, yscale=2]
+    
+            \draw[cyan,xstep=pi/9,ystep=0.2]
+            (0,-1) grid (2*pi,1);
+    
+            \draw[->,>=stealth'] (-0.3,0) -- (6.5,0) node[right] {$\theta$};
+            \draw[->,>=stealth'] (0,-0.2) -- (0,1.2) node[above] {$y=\sin(\theta)$};
+    
+            \foreach \x [evaluate=\x as \xi using int( 20*(\x ))]  in {2, 4,...,18}
+            \draw[black] ($ pi*\x /9*(1,0) +(0,.04) $) --++(0,-.08) node[anchor=north, yshift=-4, fill=white, inner sep=0pt] { \xi};
+            \foreach \y   in {-1, -.8, ..., -.2, .2, .4,..., 1}
+            \draw[black] (.08,\y ) --++(-.16,0) ;
+            \foreach \y in {-1,1}
+            \draw[black, thick] (.12,\y ) --++(-.24,0) node[anchor=east] { \y};
+    
+            \draw[domain=0:2*pi,smooth,variable=\x,red,very thick] plot ({\x},{sin(deg(\x))});
+            \end{tikzpicture}]]>
+        </latex-image></image>
+    
+        <image width="70%" xml:id="fig-4-2-cosinegraph"><description>cosine graph</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [xscale=1.2, yscale=2]
+    
+            \draw[cyan,xstep=pi/9,ystep=0.2]
+            (0,-1) grid (2*pi,1);
+    
+            \draw[->,>=stealth'] (-0.3,0) -- (6.5,0) node[right] {$\theta$};
+            \draw[->,>=stealth'] (0,-0.2) -- (0,1.2) node[above] {$y=\cos(\theta)$};
+    
+            \foreach \x [evaluate=\x as \xi using int( 20*(\x ))]  in {2, 4,...,18}
+            \draw[black] ($ pi*\x /9*(1,0) +(0,.04) $) --++(0,-.08) node[anchor=north, yshift=-4, fill=white, inner sep=0pt] { \xi};
+            \foreach \y   in {-1, -.8, ..., -.2, .2, .4,..., 1}
+            \draw[black] (.08,\y ) --++(-.16,0) ;
+            \foreach \y in {-1,1}
+            \draw[black, thick] (.12,\y ) --++(-.24,0) node[anchor=east] {\y};
+    
+            \draw[domain=0:2*pi,smooth,variable=\x,red,very thick] plot ({\x},{cos(deg(\x))});
+            \end{tikzpicture}]]>
+        </latex-image></image></introduction>
+    
+    <exercise number="1"><statement><p><m>\sin (\theta) = 0.6</m></p></statement>
+    <answer><p><m>36.9\degree,~143.1\degree</m></p></answer></exercise>
+    
+    <exercise number="2"><statement><p><m>\sin (\theta) = -0.8</m></p></statement></exercise>
+    
+    <exercise number="3"><statement><p><m>\cos (\theta) = 0.3</m></p></statement>
+    <answer><p><m>72.5\degree,~287.5\degree</m></p></answer></exercise>
+    
+    <exercise number="4"><statement><p><m>\cos (\theta) = -0.4</m></p></statement></exercise>
+    
+    <exercise number="5"><statement><p><m>\sin (\theta) = -0.2</m></p></statement>
+    <answer><p><m>191.5\degree,~348.5\degree</m></p></answer></exercise>
+    
+    <exercise number="6"><statement><p><m>\sin (\theta) = 1.2</m></p></statement></exercise>
+    
+    <exercise number="7"><statement><p><m>\cos (\theta) = -0.9</m></p></statement>
+    <answer><p><m>154.2\degree,~205.8\degree</m></p></answer></exercise>
+    
+    <exercise number="8"><statement><p><m>\cos (\theta) = -1.1</m></p></statement></exercise>
+    </exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 9<ndash/>14, find all solutions between <m>0\degree</m> and <m>360\degree</m>. Round to the nearest degree.</p></introduction>
+
+<exercise number="9"><statement><p><m>\tan (\theta) = 8.1443</m></p></statement>
+<answer><p><m>83\degree,~263\degree</m></p> </answer></exercise>
+
+<exercise number="10"><statement><p><m>\sin (\theta) = 0.7880</m></p></statement></exercise>
+ 
+<exercise number="11"><statement><p><m>\cos (\theta) = 0.9205</m></p></statement>
+<answer><p><m>23\degree,~337\degree</m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>\tan (\theta) = -3.4874</m></p></statement></exercise>
+
+<exercise number="13"><statement><p><m>\sin (\theta) = -0.9962</m></p></statement>
+<answer><p><m>265\degree,~275\degree</m></p> </answer></exercise>
+
+<exercise number="14"><statement><p><m>\cos (\theta) = -0.0349</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15<ndash/>20, find exact values for all solutions between <m>0\degree</m> and <m>360\degree</m>.</p></introduction>
+
+<exercise number="15"><statement><p><m>\cos (\theta) = -\cos (24\degree)</m></p></statement>
+<answer><p><m>156\degree,~204\degree</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>\tan(\theta) = -\tan (9\degree)</m></p></statement></exercise>
+ 
+<exercise number="17"><statement><p><m>\sin (\theta) =-\sin (66\degree)</m></p></statement>
+<answer><p><m>246\degree,~294\degree</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>\cos (\theta) = -\cos (78\degree)</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>\tan (\theta) = -\tan (31\degree)</m></p></statement>
+<answer><p><m>149\degree,~329\degree</m></p> </answer></exercise>
+
+<exercise number="20"><statement><p><m>\sin (\theta) = -\sin (42\degree)</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 21<ndash/>24, </p>
+    <p><ol marker="a.">
+        <li> Use a calculator to find the coordinates of the point <m>P</m>. Round to hundredths.</li>
+        <li> Find the coordinates of the point <m>Q</m> on the circle of radius 2.</li>
+    </ol></p></introduction>
+    
+<exercise number="21"><statement><image width="100%" xml:id="hp4-1-79"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.12]
+
+        \coordinate (O) at (0,0);
+        \coordinate (P) at (200:10);
+        \coordinate (Q) at (200:20);
+
+        \draw[step=1cm,cyan,very thin] (-21,-21) grid (21,21);
+        \draw[thick,->,>=stealth'] (-21,0) -- (21.8,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-21) -- (0,23) node[anchor=south] {$y$};
+        \draw[black,  thick] (Q)++(200:2)--(O) ;
+
+        \draw[red,thick] (O) circle (10);
+        \draw[blue,thick] (O) circle (20);
+
+        \filldraw[red] (P) circle (.25cm) node[anchor=north east, yshift=-5,fill=white,inner sep=1pt]{$P$};
+        \filldraw[blue] (Q) circle (.25cm) node[anchor=north east, yshift=-5,fill=white,inner sep=1pt]{$Q$} ;
+
+        \draw[gray, thick, ->,>=stealth'] (3,0) arc(0:200:3) node[above left,midway, xshift=0, yshift=0,fill=white,inner sep=1pt, text=black] {$ 200\degree$};
+
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (10,-1.7)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (20,-1.7)    {2};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,10)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,20)    {2};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+    
+<answer><p><ol marker="a.">
+    <li> <m>(-0.94, -0.34)</m></li>
+    <li> <m>(-1.88, -0.68)</m></li>
+</ol></p> </answer></exercise>
+
+<exercise number="22"><statement><image width="100%" xml:id="hp4-1-80"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.12]
+
+        \coordinate (O) at (0,0);
+        \coordinate (P) at (228:10);
+        \coordinate (Q) at (228:20);
+
+        \draw[step=1cm,cyan,very thin] (-21,-21) grid (21,21);
+        \draw[thick,->,>=stealth'] (-21,0) -- (21.8,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-21) -- (0,23) node[anchor=south] {$y$};
+        \draw[black,  thick] (Q)++(228:8)--(O) ;
+
+        \draw[red,thick] (O) circle (10);
+        \draw[blue,thick] (O) circle (20);
+
+        \filldraw[red] (P) circle (.25cm) node[anchor=north , yshift=-7,fill=white,inner sep=1pt]{$P$};
+        \filldraw[blue] (Q) circle (.25cm) node[anchor=north , yshift=-7,fill=white,inner sep=1pt]{$Q$} ;
+
+        \draw[gray, thick, ->,>=stealth'] (3,0) arc(0:228:3) node[above left,midway, xshift=0, yshift=0,fill=white,inner sep=1pt, text=black] {$ 228\degree$};
+
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (10,-1.7)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (20,-1.7)    {2};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,10)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,20)    {2};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+
+<exercise number="23"><statement> <image width="100%" xml:id="hp4-1-81"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.12]
+
+        \coordinate (O) at (0,0);
+        \coordinate (P) at (160:10);
+        \coordinate (Q) at (160:20);
+
+        \draw[step=1cm,cyan,very thin] (-21,-21) grid (21,21);
+        \draw[thick,->,>=stealth'] (-21,0) -- (21.8,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-21) -- (0,23) node[anchor=south] {$y$};
+        \draw[black,  thick] (Q)++(160:2)--(O) ;
+
+        \draw[red,thick] (O) circle (10);
+        \draw[blue,thick] (O) circle (20);
+
+        \filldraw[red] (P) circle (.25cm) node[anchor=south east , yshift=7,fill=white,inner sep=1pt]{$P$};
+        \filldraw[blue] (Q) circle (.25cm) node[anchor=south east , yshift=7,fill=white,inner sep=1pt]{$Q$} ;
+
+        \draw[gray, thick, ->,>=stealth'] (3,0) arc(0:160:3) node[above right,midway, xshift=0, yshift=0,fill=white,inner sep=1pt, text=black] {$ 160\degree$};
+
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (10,-1.7)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (20,-1.7)    {2};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,10)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,20)    {2};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+    
+<answer><p><ol marker="a.">
+    <li> <m>(-0.94, 0.34)</m></li>
+    <li> <m>(-1.88, 0.68)</m></li>
+</ol></p> </answer></exercise>
+
+<exercise number="24"><statement><image width="100%" xml:id="hp4-1-82"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.12]
+
+        \coordinate (O) at (0,0);
+        \coordinate (P) at (312:10);
+        \coordinate (Q) at (312:20);
+
+        \draw[step=1cm,cyan,very thin] (-21,-21) grid (21,21);
+        \draw[thick,->,>=stealth'] (-21,0) -- (21.8,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-21) -- (0,23) node[anchor=south] {$y$};
+        \draw[black,  thick] (Q)++(312:10)--(O) ;
+
+        \draw[red,thick] (O) circle (10);
+        \draw[blue,thick] (O) circle (20);
+
+        \filldraw[red] (P) circle (.25cm) node[anchor=west , xshift=7,fill=white,inner sep=1pt]{$P$};
+        \filldraw[blue] (Q) circle (.25cm) node[anchor=west , xshift=7,fill=white,inner sep=1pt]{$Q$} ;
+
+        \draw[gray, thick, ->,>=stealth'] (3,0) arc(0:312:3) node[above left,midway, xshift=0, yshift=0,fill=white,inner sep=1pt, text=black] {$ 312\degree$};
+
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (10,-1.7)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (20,-1.7)    {2};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,10)    {1};
+        \node[text width=.2cm,fill=white,inner sep=1pt] at (-1,20)    {2};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>        
+
+<exercisegroup cols="3"><introduction><p>For Problems 25<ndash/>30, find exact values for the coordinates of the point.</p></introduction>
+
+<exercise number="25"><statement><image width="80%" xml:id="hp4-2-1"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (315:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:315:.25) node[left, midway, xshift=2,yshift=2]{ $315\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above right, midway, yshift=-4]{ 8};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>(4\sqrt{2},-4\sqrt{2})</m></p></answer></exercise>
+
+<exercise number="26"><statement><image width="80%" xml:id="hp4-2-2"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (225:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:225:.25) node[above left, midway, xshift=5, yshift=-2]{ $225\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above left, midway, yshift=-4]{ 12};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+
+<exercise number="27"><statement><image width="80%" xml:id="hp4-2-3"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (240:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:240:.25) node[above left, midway, xshift=5, yshift=-2]{ $240\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above left, midway, yshift=-4]{ 20};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+    <answer><p><m>(-10,-10\sqrt{3})</m></p></answer></exercise>
+        
+<exercise number="28"><statement><image width="80%" xml:id="hp4-2-4"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (330:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:330:.25) node[below left, midway, xshift=3, yshift=-2]{ $330\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above right, midway, yshift=-4]{ 4};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise> 
+
+<exercise number="29"><statement><image width="80%" xml:id="hp4-2-5"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (150:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:150:.25) node[above right, midway, xshift=0, yshift=-5]{ $150\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above right, midway, xshift=-4]{ 15};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>(\dfrac{-15\sqrt{3}}{2},\dfrac{15}{2})</m></p></answer></exercise>
+        
+<exercise number="30"><statement><image width="80%" xml:id="hp4-2-6"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (120:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:120:.25) node[above right, midway, xshift=0, yshift=-5]{ $120\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above right, midway, xshift=-4]{ 9};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 31<ndash/>36, find the coordinates of the point, rounded to hundredths.</p></introduction>
+
+<exercise number="31"><statement><image width="80%" xml:id="hp4-2-7"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (258:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:258:.25) node[above left, midway, xshift=4, yshift=-5]{ $258\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[ left, midway, xshift=0]{ 6};
+        \filldraw[black] (A) circle (1.5pt);
+
+        \end{tikzpicture}]]>
+    </latex-image></image></statement> 
+        
+<answer><p><m>(-1.25,-5.87)</m></p></answer></exercise>
+        
+<exercise number="32"><statement><image width="80%" xml:id="hp4-2-8"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (312:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:312:.25) node[ left, midway, xshift=1, yshift=-10]{ $312\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above right, midway, yshift=-3]{16};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise> 
+
+<exercise number="33"><statement><image width="80%" xml:id="hp4-2-9"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (296:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:296:.25) node[above left, midway, xshift=4, yshift=0]{ $296\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[above right, midway, yshift=-5]{ 13};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+        
+<answer><p><m>(5.70, -11.86)</m></p></answer></exercise>
+        
+<exercise number="34"><statement><image width="80%" xml:id="hp4-2-10"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (341:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:341:.25) node[ left, midway, xshift=2, yshift=-8]{ $341\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[below , midway, yshift=0]{ 10};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+
+<exercise number="35"><statement><image width="80%" xml:id="hp4-2-11"><description>circle</description><latex-image>
+       <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (204:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:204:.25) node[above left, midway, xshift=2, yshift=-4]{ $204\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[below , midway, yshift=0]{ 20};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+    
+<answer><p><m>(9.46,-3.26)</m></p></answer></exercise>
+
+<exercise number="36"><statement><image width="80%" xml:id="hp4-2-12"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8] 
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (106:1.5);
+        \draw[black, thick, ->,>=stealth'] (-1.7,0) -- (2,0) ;
+        \draw[black, thick, ->,>=stealth'] (0,-1.7) -- (0,2) ;
+
+        \draw[red, thick, ->,>=stealth'] (0.25,0) arc(0:106:.25) node[above right, midway, xshift=0, yshift=-4]{ $106\degree$};
+
+        \draw[gray!80!white, thick] (O) circle (1.5cm);
+        \draw[blue, thick] (O)--(A) node[left , midway, yshift=0]{ 7};
+        \filldraw[black] (A) circle (1.5pt);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 37<ndash/>41, a ship sails from the seaport on the given bearing for the given distance.</p>
+    <p><ol marker="a.">
+        <li>Make a sketch showing the ship's current location relative to the seaport.</li>
+        <li>How far east or west of the seaport is the ship's present location?  How far north or south?</li>
+    </ol></p></introduction>    
+    
+<exercise number="37"><statement><p><m>36\degree</m>, 26 miles</p></statement>
+    
+<answer><p><ol marker="a.">
+    <li><image width="60%" xml:id="hp4-2-13ans"><description>angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.9]
+        \coordinate (O) at (0,0);
+        \coordinate (p) at (54:3);
+        \draw[gray, thick, ->, >=stealth'] (O) --+(0,2.7) node[above, text=black]{N};
+        \draw[black,thick] (0,0)--(p) node[left, midway, xshift=7, yshift=15, fill=white, inner sep=1, text=blue] {26 mi};
+        \draw[cyan] (O)--($ 3*cos(54)*(1,0)$) --(p);
+        \draw[red] (0,.7) arc(90:54:0.7) node[above, xshift=4, midway]{$36\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>15.3 mi east, 21 mi north</li>
+</ol></p></answer></exercise>
+
+<exercise number="38"><statement><p><m>124\degree</m>, 80 km</p></statement></exercise>
+    
+<exercise number="39"><statement><p><m>230\degree</m>, 120 km</p></statement>
+        
+<answer><p><ol marker="a.">
+    <li><image width="80%" xml:id="hp4-2-15ans"><description>angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \coordinate (O) at (0,0);
+        \coordinate (p) at (-140:4);
+        \draw[gray, thick, ->, >=stealth'] (O) --+(0,1) node[above, text=black]{N};
+        \draw[black,thick] (0,0)--(p) node[below right, midway, text=blue] {120 km};
+        \draw[cyan] (O)--($ 4*cos(-140)*(1,0)$) --(p);
+        \draw[red, ->,>=stealth'] (0,.4) arc(90:-140:0.4) node[right, midway]{$230\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li> 91.9 km west, 77.1 km south</li>
+</ol></p></answer></exercise>
+
+<exercise number="40"><statement><p><m>318\degree</m>, 75 miles</p></statement></exercise>
+
+<exercise number="41"><statement><p><m>285\degree</m>, 32 km</p></statement>
+        
+<answer><p><ol marker="a.">
+    <li> <image width="100%" xml:id="hp4-2-17ans"><description>angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \coordinate (O) at (0,0);
+        \coordinate (p) at (-195:4);
+        \draw[gray, thick, ->, >=stealth'] (O) --+(0,1.2) node[above, text=black]{N};
+        \draw[black,thick] (0,0)--(p) node[above right, midway, xshift=-7, text=blue] {32 km};
+        \draw[cyan] (O)--($ 4*cos(-195)*(1,0)$) --(p);
+        \draw[red, ->,>=stealth'] (0,.4) arc(90:-195:0.4) node[right, midway]{$285\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+<li>  30.9 km west, 8.3 km north</li>
+</ol></p></answer></exercise>
+        
+<exercise number="42"><statement><p><m>192\degree</m>, 260 miles</p></statement></exercise> 
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 43<ndash/>46, find the angle of inclination of the line.</p></introduction>
+
+<exercise number="43"><statement><p><m>y = \dfrac{5}{4}x - 3</m></p></statement>
+<answer><p><m>51.34\degree</m></p></answer></exercise>
+
+<exercise number="44"><statement><p><m>y = 6 + \dfrac{2}{9}x</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>y = -2 - \dfrac{3}{8}x</m></p></statement>
+<answer><p><m>159.44\degree</m></p></answer></exercise>
+
+<exercise number="46"><statement><p><m>y = \dfrac{-7}{2}x + 1</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 47<ndash/>50, find an equation for the line passing through the given point with angle of inclination <m>\alpha</m>.
+</p></introduction>
+
+<exercise number="47"><statement><p><m>(3,-5), ~\alpha = 28\degree</m></p></statement>
+<answer><p><m>y + 5 = (\tan 28\degree)(x - 3)~</m> or <m>~y + 5 = 0.532(x - 3)</m></p> </answer></exercise>
+
+<exercise number="48"><statement><p><m>(-2,6), ~\alpha = 67\degree</m></p></statement></exercise>
+ 
+<exercise number="49"><statement><p><m>(-8,12), ~\alpha = 112\degree</m></p></statement>
+<answer><p><m>y - 12 = (\tan 112\degree)(x + 8)~</m> or <m>~y - 12 = -2.475(x + 8)</m></p></answer></exercise>
+
+<exercise number="50"><statement><p><m>(-4,-1), ~\alpha = 154\degree</m></p></statement></exercise>
+</exercisegroup>
+ 
+ <exercisegroup cols="2"><introduction><p>Which of the graphs in Problems Problems 51<ndash/>54 are periodic? If the graph is periodic, give its period.</p></introduction>
+
+    <exercise number="51"><statement><image width="60%" source="photos/hp4-3-49"><description>graph</description></image></statement>
+    <answer><p>not periodic</p></answer></exercise>
+
+    <exercise number="52"><statement><image width="60%" source="photos/hp4-3-50"><description>graph</description></image></statement></exercise>
+
+    <exercise number="53"><statement><image width="60%" source="photos/hp4-3-51"><description>graph</description></image></statement>
+    <answer><p>Periodic with period 4</p></answer></exercise>
+
+    <exercise number="54"><statement><image width="60%" source="photos/hp4-3-52"><description>graph</description></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 55<ndash/>58, sketch a periodic function that models the situation.</p></introduction>
+
+<exercise number="55"><statement><p>At a ski slope, the lift chairs take 5 minutes to travel from the bottom, at an elevation of 3000 feet, to the top, at elevation 4000 feet.  The cable supporting the ski lift chairs is a loop turning on pulleys at a constant speed.  At the top and bottom, the chairs are at a constant elevation for a few seconds to allow skiers to get on and off.</p>
+    <p><ol marker="a."> 
+    <li>Sketch a graph of <m>h(t)</m>, the height of one chair at time <m>t</m>. Show at least two complete trips.</li>
+    <li>What is the period of <m>h(t)</m>?</li>
+</ol></p></statement>
+    
+<answer><p><ol marker="a."><li><image width="70%" xml:id="hp4-3-53ans"><description>piecewise linear graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.32]
+
+        \draw[cyan] (0,0) grid (20,9);
+        \draw[black,thick,->,>=stealth'] (0,0) --(20.8,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0) --(0,9.4) node[above]{$y$};
+
+        \foreach \x in {5, 10, 15, 20} {
+            \draw[black] (\x,0.1)--+(0, -.2) node[below]{\small \x};
+        };
+        \foreach \y [evaluate=\y as \yi using int( 500* \y )] in {2, 4, 6, 8} {
+            \draw[black] (0.1,\y)--+(-.2,0) node[left]{\small \yi};
+        };
+
+        \draw[red, ultra thick] (0,6)--++(5,2)--++(5,-2) --++(5,2)--++(5,-2);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>10 minutes</li>
+</ol></p></answer></exercise>
+
+<exercise number="56"><statement><p>The heater in Paul's house doesn't have a thermostat; it runs on a timer.  It uses 300 watts when it is running.  Paul sets the heater to run from 6 am to noon, and again from 4 pm to 10 pm in the evening.</p>
+    <p><ol marker="a."> 
+    <li>Sketch a graph of <m>P(t)</m>, the power drawn by the heater as a function of time.  Show at least two days of heater use.</li>
+    <li>What is the period of <m>P(t)</m>?</li>
+</ol></p></statement></exercise>
+
+<exercise number="57"><statement><p>Francine adds water to her fish pond once a week to keep the depth at 30 centimeters.  During the week the water evaporates at a constant rate of 0.5 centimeters per day.</p>
+    <p><ol marker="a."> 
+    <li>Sketch a graph of <m>D(t)</m>, the depth of the water as a function of time.  Show at least two weeks.</li>
+    <li>What is the period of <m>D(t)</m>?</li>
+</ol></p></statement>
+    
+<answer><p><ol marker="a."><li><image width="70%" xml:id="hp4-3-55ans"><description>piercewise linear graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.4]
+
+        \draw[cyan] (0,0) grid (15,7);
+        \draw[black,thick,->,>=stealth'] (0,0) --(15.6,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0) --(0,7.4) node[above]{$y$};
+
+        \foreach \x [evaluate=\x as \xi using int( \x/7)] in {7, 14} {
+            \draw[black] (\x,0.1)--+(0, -.2) node[below]{\small \xi};
+        };
+        \foreach \y [evaluate=\y as \yi using int( 5* \y )] in {2, 4, 6} {
+            \draw[black] (0.1,\y)--+(-.2,0) node[left]{\small \yi};
+        };
+
+        \draw[red, ultra thick] (0,6)--++(7,-.7)--++(0,.7) --++(7,-.7)--++(0,.7)--++(1, -.1);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>1 week</li></ol></p></answer></exercise>
+
+<exercise number="58"><statement><p>Erin's fox terrier, Casey, is very energetic and bounces excitedly at dinner time.  Casey can jump 30 inches high, and each jump takes him 0.8 seconds.</p>
+    <p><ol marker="a."> 
+    <li>Sketch a graph of Casey's height, <m>h(t)</m>, as a function of time.  Show at least two jumps.</li>
+    <li>What is the period of <m>h(t)</m>?</li>
+</ol></p></statement></exercise>
+</exercisegroup> 
+
+<exercisegroup><introduction><p>For Problems 59<ndash/>64, sketch a sinusoidal function that models the situation.</p></introduction>
+
+<exercise number="59"><statement>
+    <p>Delbert's bicycle wheel is 24 inches in diameter, and he has a light attached to the spokes 10 inches from the center of the wheel.  It is dark, and he is cycling home slowly from work.  The bicycle wheel makes one revolution every second.</p>
+    <p><ol marker="a.">
+        <li>At <m>t = 0</m>, the light is at its highest point the bicycle wheel.  Sketch a graph of the light's height as a function of <m>t</m>.</li>
+        <li>Give the period, midline, and amplitude of your graph.</li>
+    </ol></p></statement>
+    
+<answer><p><ol marker="a."><li><image width="60%" xml:id="hp4-3-57ans"><description>sinusoidal graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.72, yscale=.24]
+
+        \draw[cyan] (0,0) grid (9,12);
+        \draw[black,thick,->,>=stealth'] (0,0) --(9.3,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0) --(0,12.4) node[above]{$y$};
+
+        \foreach \x [evaluate=\x as \xi using int( \x/4)] in {4,8} {
+            \draw[black] (\x,0.1)--+(0, -.2) node[below]{ \xi};
+        };
+        \foreach \y [evaluate=\y as \yi using int( 2* \y )] in {5,10} {
+            \draw[black] (0.1,\y)--+(-.2,0) node[left]{ \yi};
+        };
+
+        \draw[samples=65,domain={0:9},smooth,variable=\x,red,very thick] plot ({\x},{6 + 5* cos( 90*\x)});
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>period 1 sec, midline <m>y = 12</m>, amp 10 inches</li>
+</ol></p></answer></exercise>
+
+<exercise number="60"><statement><p>The paddlewheel on the Delta Queen steamboat is 28 feet in diameter, and is rotating once every ten seconds.  The bottom of the paddlewheel is 4 feet below the surface of the water.</p>
+    <p><ol marker="a.">
+        <li>The ship's logo is painted on the center of one of the paddlewheel blades.  At <m>t = 0</m>, the logo is at the top of the wheel.  Sketch a graph of the logo's height above the water as a function of <m>t</m>.</li>
+        <li>Give the period, midline, and amplitude of your graph.</li>
+    </ol></p></statement></exercise>
+
+<exercise number="61"><statement><p>The population of mosquitoes at Marsh Lake is a sinusoidal function of time.  The population peaks around June 1 at about 6000 mosquitoes per square kilometer, and is smallest on December 1, at 1000 mosquitoes per square kilometer.</p>
+    <p><ol marker="a.">
+        <li>Sketch a graph of <m>M(t)</m>, the number of mosquitoes as a function of the month, where <m>t = 0</m> on January 1.</li>
+        <li>Give the period, midline, and amplitude of your graph.</li>
+    </ol></p></statement>
+    
+<answer><p><ol marker="a."><li><image width="60%" xml:id="hp4-3-59ans"><description>sinusoidal graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.54, yscale=.36]
+
+        \draw[cyan] (0,0) grid (12,7);
+        \draw[black,thick,->,>=stealth'] (0,0) --(12.5,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0) --(0,7.6) node[above]{$y$};
+
+        \foreach \x  in {2,4,...,12} {
+            \draw[black] (\x,0.1)--+(0, -.2) node[below]{ \x};
+        };
+        \foreach \y [evaluate=\y as \yi using int( 1000* \y )] in {2,4,6} {
+            \draw[black] (0.1,\y)--+(-.2,0) node[left]{ \yi};
+        };
+
+        \draw[samples=65,domain={0:12},smooth,variable=\x,red,very thick] plot ({\x},{3.5 - 2.5* cos( 30*\x)});
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>period 1 year, midline <m>y = 3500</m>, amp 2500</li>
+</ol></p></answer></exercise>
+
+<exercise number="62"><statement><p>The height of the tide in Cabot Cove can be approximated by a sinusoidal function.  At 5 am on July 23, the water level reached its high mark at the 20-foot line on the pier, and at 11 am, the water level was at its lowest at the 4-foot line.</p>
+    <p><ol marker="a.">
+        <li>Sketch a graph of <m>W(t)</m>, the water level as a function of time, from midnight on July 23 to midnight on July 24.</li>
+        <li>Give the period, midline, and amplitude of your graph.</li>
+    </ol></p></statement></exercise>
+
+<exercise number="63"><statement><p>The average daily maximum temperature in Stockholm, Sweden is <m>30\degree</m>F in January and <m>72\degree</m> F in July. </p>
+    <p><ol marker="a.">
+        <li>Sketch a sinusoidal graph of <m>S(t)</m>, the average maximum temperature in Stockholm as a function of time, for one year.</li>
+        <li>Give the period, midline, and amplitude of your graph.</li>
+    </ol></p></statement>
+    
+<answer><p><ol marker="a."><li><image width="60%" xml:id="hp4-3-61ans"><description>sinusoidal graph</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.54, yscale=.045]
+
+        \draw[cyan, ystep=5] (0,20) grid (12,80);
+        \draw[black,->,>=stealth'] (0,16) --+(12.5,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,20) --(0,80.9) node[above]{$y$};
+        \draw[black] (0,20)--++(-.3, -1)--++(.6,-1)--++(-.3,-1);
+        \draw[black,thick] (0,16) --++(0,1);
+
+        \foreach \x  in {2,4,...,12} {
+            \draw[black] (\x,16.1)--+(0, -.2) node[below]{ \x};
+        };
+        \foreach \y in {20,40,...,80} {
+            \draw[black] (0.1,\y)--+(-.2,0) node[left]{ \y};
+        };
+
+        \draw[samples=65,domain={0:12},smooth,variable=\x,red,very thick] plot ({\x},{51 - 21* cos( 30*\x)});
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>period 1 year, midline <m>y = 51</m>, amp 21</li>
+</ol></p></answer></exercise>
+
+<exercise number="64"><statement><p>The average daily maximum temperature in Riyadh, Saudi Arabia is <m>86\degree</m>F in January and <m>113\degree</m>F in July.</p>
+    <p><ol marker="a.">
+        <li>Sketch a sinusoidal graph of <m>R(t)</m>, the average maximum temperature in Riyadh as a function of time, for one year.</li>
+        <li>Give the period, midline, and amplitude of your graph.</li>
+    </ol></p></statement></exercise>
+</exercisegroup>    
+
+<exercise number="65"><statement><p>Each situation describes a periodic function.  Match each situation with the appropriate graph.</p>
+<p><ol marker="a.">
+    <li>When the heart contracts, blood pressure in the arteries rises rapidly to a peak (systolic blood pressure) and then falls off quickly to a minimum (diastolic blood pressure).  Blood pressure is a function of time.</li>
+    <li>After an injection is given to a patient, the amount of the drug present in his bloodstream decreases over time.  The patient receives injections at regular intervals to restore the drug level to the prescribed level.  The amount of the drug present is a function of time.</li>
+    <li>The monorail shuttle train between the north and south terminals at Gatwick Airport departs from the south terminal every 12 minutes.  The distance from the train to the south terminal is a function of time.</li>
+    <li>Delbert gets a haircut every two weeks.  The length of his hair is a function of time.</li>
+    </ol></p>
+    <image width="100%" source="photos/fig-chap2-proj-ex-1-3"><description>graph</description></image></statement>
+    
+<answer><p>a.  IV  b.  III  c.  II  d.  I</p></answer></exercise>
+
+<exercise number="66"><statement><p>Match each of the following situations with an appropriate graph below.</p>
+<p><ol marker="a.">
+    <li>The number of hours of daylight in Salt Lake City varies from a minimum of 9.6 hours on the winter solstice to a maximum of 14.4 hours on the summer solstice.</li>
+    <li>A weight is 6.5 feet above the floor, suspended from the ceiling by a spring.  The weight is pulled down to 5 feet above the floor and released, rising past 6.5 feet in 0.5 seconds before attaining its maximum height of  feet.  Neglecting the effects of friction, the height of the weight will continue to oscillate between its minimum and maximum height.</li>
+    <li>The voltage used in U.S. electrical current changes from <m>155</m>V to <m>-155</m>V and back 60 times each second.</li>  
+    <li>Although the moon is spherical, what we see from earth looks like a disk, sometimes only partly visible.  The percentage of the moon's disk that is visible varies between 0 (at new moon) to 100 (at full moon).</li>
+</ol></p>
+<image width="65%" source="photos/hp4-3-64"><description>graph</description></image></statement></exercise>
+
+<exercise number="67"><statement><p>The table shows sunrise and sunset times in Los Angeles on the fifteenth of each month.</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                  
+        <row bottom="minor">
+            <cell>Month</cell>
+            <cell>Oct</cell>
+            <cell>Nov</cell>
+            <cell>Dec</cell>
+            <cell>Jan</cell>
+            <cell>Feb</cell>
+            <cell>Mar</cell></row>
+        <row>
+            <cell>Sunrise</cell> 
+            <cell><m>5:58</m></cell>
+            <cell><m>6:26</m></cell>
+            <cell><m>6:51</m></cell>
+            <cell><m>6:59</m></cell>
+            <cell><m>6:39</m></cell>
+            <cell><m>6:04</m></cell></row>
+        <row>
+            <cell>Sunset</cell> 
+            <cell><m>17:20</m></cell>
+            <cell><m>16:50</m></cell>
+            <cell><m>16:45</m></cell>
+            <cell><m>17:07</m></cell>
+            <cell><m>17:37</m></cell>
+            <cell><m>18:01</m></cell></row>    
+            </tabular>
+    
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                  
+                <row bottom="minor">
+                    <cell>Month</cell>
+                    <cell>Apr</cell>
+                    <cell>May</cell>
+                    <cell>Jun</cell>
+                    <cell>Jul</cell>
+                    <cell>Aug</cell>
+                    <cell>Sep</cell></row>
+                <row>
+                    <cell>Sunrise</cell> 
+                    <cell><m>5:22</m></cell>
+                    <cell><m>4:52</m></cell>
+                    <cell><m>4:42</m></cell>
+                    <cell><m>4:43</m></cell>
+                    <cell><m>5:15</m></cell>
+                    <cell><m>5:37</m></cell></row>
+                <row>
+                    <cell>Sunset</cell> 
+                    <cell><m>18:25</m></cell>
+                    <cell><m>18:48</m></cell>
+                    <cell><m>19:07</m></cell>
+                    <cell><m>19:05</m></cell>
+                    <cell><m>18:40</m></cell>
+                    <cell><m>18:00</m></cell></row>    
+                    </tabular>
+    <p><ol marker="a.">
+        <li>Use the left-hand grid to plot the sunrise times and sketch a sinusoidal graph through the points.</li>
+        <li>Use the right-hand grid to plot the sunset times and sketch a sinusoidal graph through the points.</li>
+    </ol></p><image width="90%" xml:id="hp4-3-67"><description>grid</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [xscale=.45, yscale=.36] 
+            \coordinate (O) at (0,0);
+            \draw[cyan] (0,0.9) grid (12,12);
+            \draw[black,->,>=stealth'] (O) --+(12.5,0) node[right]{$m$};
+            \draw[black,thick,->,>=stealth'] (O)++(0,.9) --++(0,12.) node[above]{$y$};
+            \draw[black] (O)++(0,.9)--++(-.3, -.2)--++(.6,-.2)--++(-.3,-.2) -- ++(0, -.3);
+    
+            \foreach \x  in {2,4,...,12} {
+                \draw[black] (\x,0)--+(0, -.2) node[below]{ \x};
+            };
+            \foreach \y  [evaluate=\y as \yi using int(  \y /2 + 2)] in {2, 4, 6, ..., 12} {
+                \draw[black] (0.1,\y)--+(-.2,0) node[left]{ \yi};
+            };
+    
+            % second grid
+            \coordinate (O) at (15,0);
+            \draw[cyan] (15,0.9) grid (27,12);
+            \draw[black,->,>=stealth'] (O) --+(12.5,0) node[right]{$m$};
+            \draw[black,thick,->,>=stealth'] (O)++(0,.9) --++(0,12.) node[above]{$y$};
+            \draw[black] (O)++(0,.9)--++(-.3, -.2)--++(.6,-.2)--++(-.3,-.2) -- ++(0, -.3);
+    
+            \foreach \x  in {2,4,...,12} {
+                \draw[black] (O)++(\x,0)--+(0, -.2) node[below]{ \x};
+            };
+            \foreach \y  [evaluate=\y as \yi using int(  \y /2 + 14)] in {2, 4, 6, ..., 12} {
+                \draw[black] (O)++(0.1,\y)--+(-.2,0) node[left]{ \yi};
+            };
+            \end{tikzpicture}]]>
+            </latex-image></image></statement>
+        
+    <answer><image xml:id="hp4-3-67ans"><description>two graphs</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [xscale=.5, yscale=.4] 
+            \coordinate (O) at (0,0);
+            \draw[cyan] (0,0.9) grid (12,12);
+            \draw[black,->,>=stealth'] (O) --+(12.5,0) node[right]{$m$};
+            \draw[black,thick,->,>=stealth'] (O)++(0,.9) --++(0,12.) node[above]{$y$};
+            \draw[black] (O)++(0,.9)--++(-.3, -.2)--++(.6,-.2)--++(-.3,-.2) -- ++(0, -.3);
+    
+            \foreach \x  in {2,4,...,12} {
+                \draw[black] (\x,0)--+(0, -.2) node[below]{ \x};
+            };
+            \foreach \y  [evaluate=\y as \yi using int(  \y /2 + 2)] in {2, 4, 6, ..., 12} {
+                \draw[black] (0.1,\y)--+(-.2,0) node[left]{ \yi};
+            };
+    
+            % second grid
+            \coordinate (O) at (15,0);
+            \draw[cyan] (15,0.9) grid (27,12);
+            \draw[black,->,>=stealth'] (O) --+(12.5,0) node[right]{$m$};
+            \draw[black,thick,->,>=stealth'] (O)++(0,.9) --++(0,12.) node[above]{$y$};
+            \draw[black] (O)++(0,.9)--++(-.3, -.2)--++(.6,-.2)--++(-.3,-.2) -- ++(0, -.3);
+    
+            \foreach \x  in {2,4,...,12} {
+                \draw[black] (O)++(\x,0)--+(0, -.2) node[below]{ \x};
+            };
+            \foreach \y  [evaluate=\y as \yi using int(  \y /2 + 14)] in {2, 4, 6, ..., 12} {
+                \draw[black] (O)++(0.1,\y)--+(-.2,0) node[left]{ \yi};
+            };
+    
+            %\def\sunrise{{5.97, 6.43, 6.85, 6.98, 6.65, 6.1, 5.4, 4.9, 4.7, 4.72, 5.25, 5.62}}
+            \def\sunrise{{7.93, 8.87, 9.7, 9.97, 9.3, 8.13, 6.73, 5.73, 5.4, 5.43, 6.5, 7.23}}
+            %\def\sunset{{17.3, 16.8, 16.75, 17.1, 17.6, 18., 18.4, 18.8, 19.1, 19.1, 18.67, 18}}
+            \def\sunset{{6.67, 5.67, 5.5, 6.23, 7.23, 8., 8.83, 9.6, 10.23, 10.17, 9.33, 8}}
+    
+            \foreach \x  in {0, 1,..., 11}
+                \filldraw[red] (\x, \sunrise[\x]) ellipse (3.6pt and 4.5pt) ;
+    
+            \draw[samples=65,domain={0:12},smooth,variable=\x,blue,very thick] plot ({\x},{7.57 + 2.3* sin( deg(.55*\x+.12)))});
+    
+            \foreach \x [evaluate=\x as \y using (  \x  + 15)] in {0, 1,..., 11}
+                \filldraw[red] (\y, \sunset[\x])  ellipse (3.6pt and 4.5pt) ;
+    
+            \draw[samples=65,domain={0:12},smooth,variable=\x,blue,very thick] plot ({\x+15},{7.92 + 2.24* sin( deg(.49*\x-2.45)))});
+            \end{tikzpicture}]]>
+            </latex-image></image></answer></exercise>
+
+<exercise number="68"><statement><p><ol marker="a.">
+    <li><p>Use the data from Problem 67 to complete the table with the hours of sunlight in Los Angeles on the fifteenth of each month.</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                  
+            <row bottom="minor">
+                <cell>Month</cell>
+                <cell>Oct</cell>
+                <cell>Nov</cell>
+                <cell>Dec</cell>
+                <cell>Jan</cell>
+                <cell>Feb</cell>
+                <cell>Mar</cell></row>
+            <row>
+                <cell>Hours of Daylight</cell> 
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell></row>
+                </tabular>
+
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                  
+            <row bottom="minor">
+                <cell>Month</cell>
+                <cell>Apr</cell>
+                <cell>May</cell>
+                <cell>Jun</cell>
+                <cell>Jul</cell>
+                <cell>Aug</cell>
+                <cell>Sep</cell></row>
+            <row>
+                <cell>Hours of Daylight</cell> 
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell></row>
+                </tabular></li>
+    <li><p>Plot the daylight hours and sketch a sinusoidal graph through the points.</p>
+        <image width="50%" xml:id="hp4-3-68"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.45, yscale=.36] 
+        \coordinate (O) at (0,0);
+        \draw[cyan] (0,0.9) grid (12,12);
+        \draw[black,->,>=stealth'] (O) --+(12.5,0) node[right]{$m$};
+        \draw[black,thick,->,>=stealth'] (O)++(0,.9) --++(0,12.) node[above]{$y$};
+        \draw[black] (O)++(0,.9)--++(-.3, -.2)--++(.6,-.2)--++(-.3,-.2) -- ++(0, -.3);
+
+        \foreach \x  in {2,4,...,12} {
+            \draw[black] (\x,0)--+(0, -.2) node[below]{\x};
+        };
+        \foreach \y  [evaluate=\y as \yi using int(  \y /2 + 9)] in {2, 4, 6, ..., 12} {
+            \draw[black] (0.1,\y)--+(-.2,0) node[left]{ \yi};
+        };
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    </ol></p></statement></exercise>
+ 
+<exercise number="69"><statement><p>Many people who believe in astrology also believe in biorhythms.  The graph shows an individual's three biorhythms, physical, emotional, and intellectual, for 36 days, from <m>t = 0</m> on September 30 to November 5.</p>
+    <image width="65%" source="photos/fig-chap2-proj-ex-2-6"><description>grid</description></image>
+    <p><ol marker="a.">
+        <li>Find the dates of highest and lowest activity for each biorhythm during the month of October.</li>
+        <li>Find the period of each biorhythm in days.</li>
+        <li>On the day of your birth, all three biorhythms are at their maximum.  How old will you be before all three are again at the maximum level?</li>
+</ol></p></statement>
+    
+<answer><p><ol marker="a.">
+        <li>Emotional high: Oct 5 and Nov 3, low: Oct 19; Physical high: Sep 30 and Oct 23, low: Oct 12 and Nov 4; Intellectual high: Oct 10, low: Oct 26</li>
+        <li>Emotional:  28 days, physical:  23 days, intellectual:  32 days</li>
+        <li>5152 days</li>
+</ol></p></answer></exercise>
+
+<exercise number="70"><statement><p>The path of a satellite orbiting above the earth makes a sinusoidal graph on a map of the earth, with its midline at the equator.  On the map below, sketch a graph for a satellite that orbits the earth every 90 minutes, and strays no farther than 4000 km from the equator. (One degree of latitude is equal to 111 kilometers.) The satellite passes over the spot <m>0\degree</m> latitude and <m>0\degree</m> longitude at time <m>t = 0</m>. Label a scale on the equator to serve as a time axis for your graph.</p>
+    <image width="90%" source="photos/hp4-3-68.png"><description>map</description></image>
+</statement></exercise>
+ 
+<exercise number="71"><statement><p><ol marker="a.">
+    <li><p>Is the function shown periodic?  If so, what is its period?  If not, explain why not.</p>
+    <image width="50%" source="photos/fig-chap2-proj-ex-2-7"><description>graph</description></image></li>
+    <li>Compute the difference between the maximum and minimum function values.  Sketch in the midline of the graph.</li>
+    <li>Find the smallest positive value of <m>k</m> for which <m>f(x) = f(x + k)</m> for all <m>x</m>.</li>
+    <li>Find the smallest positive values of <m>a</m> and <m>b</m> for which <m>f(b) - f(a)</m> is a maximum.</li>
+</ol></p></statement>
+    
+<answer><p><ol marker="a.">
+    <li>periodic, period 8</li>
+    <li>4, midline: <m>y = 3</m></li>
+    <li><m>k = 8</m></li>
+    <li><m>a = 3,~b = 7</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="72"><statement><p><ol marker="a.">
+    <li><p>Find the period, the maximum and minimum values, and the midline of the graph of <m>y = f(x)</m> shown.</p>
+    <!--<image source="photos/hp4-3-70.png">-->
+    <image width="50%" source="photos/fig-chap2-proj-ex-2-8"><description>graph</description></image></li>
+    <li>Sketch a graph of <m>y = 2f(x)</m>.</li>
+    <li>Sketch a graph of <m>y = 2 + f(x)</m>.</li>
+    <li>Modify the graph of <m>f(x)</m> so that the period is twice its current value.</li>
+</ol></p></statement></exercise>
+
+<exercise number="73"><statement><p>The graph shows arterial blood pressure, measured in millimeters of mercury (mmHg), as a function of time.</p>
+        <!--<image source="photos/hp4-3-71.png">-->
+        <image width="55%" source="photos/fig-chap2-proj-ex-1-6"><description>graph</description></image>
+    <p><ol marker="a.">
+        <li>What are the maximum (systolic) and minimum (diastolic) pressures?  The pulse pressure is the difference of systolic and diastolic pressures.  What is the pulse pressure?</li>
+        <li>The mean arterial pressure is the diastolic pressure plus one-third of the pulse pressure.  Calculate the mean arterial pressure, and draw a horizontal line on the graph at that pressure.</li>
+        <li>The blood pressure graph repeats its cycle with each heartbeat.  What is the heart rate, in beats per minute, of the person whose blood pressure is shown in the graph?</li>
+</ol></p></statement>
+    
+<answer><p><ol marker="a.">
+        <li>systolic 120 mm Hg, diastolic 80 mm Hg, pulse pressure 40 mm Hg.</li>
+        <li><m>93\frac{1}{3}</m></li>
+        <li>72 beats per minute</li>
+</ol></p></answer></exercise>
+
+<exercise number="74"><statement><p>Here is a tide chart for Los Angeles for the week of December 17–23, 2000.  The horizontal axis shows time in hours, with <m>t = 12</m> corresponding to noon on December 17.  The vertical axis shows the height of the tide in feet above mean sea level.</p>
+    <image width="80%" source="photos/fig-chap2-proj-ex-2-11"><description>graph</description></image>
+    <p><ol marker="a.">
+        <li>High tides occurred at 3:07 am and 2:08 pm on December 17, and low tides at 8:41 am and 9:02 pm.  Estimate the heights of the high and low tides on that day.</li>
+        <li>Is tide height a periodic function of time?  Use the information from part (a) to justify your answer.</li>
+        <li> Make a table showing approximate times and heights for the high tides throughout the week.  Make a similar table for the low tides.</li>
+        <li>Describe the trend in the heights of the high tides over the week.  Describe the trend in the heights of the low tides.</li>
+        <li>What is the largest height difference between consecutive high and low tides during the week shown?   When does it occur?</li>
+</ol></p></statement></exercise>
+
+<exercise number="75"><statement><p>The apparent magnitude of a star is a measure of its brightness as seen from earth.  Smaller values of apparent magnitude correspond to brighter stars.  The graph below, called a light curve, shows the apparent magnitude of the star Algol as a function of time.  Algol is actually a system of two stars, a bright principal star and its dimmer companion, in orbit around each other.  As each star passes in front of the other it eclipses some of the light that reaches earth.</p> 
+    <image width="75%" source="photos/fig-chap2-proj-ex-2-9"><description>graph</description></image>
+<p><ol marker="a.">
+    <li>The light curve is periodic.  What is its period?</li>
+    <li>What is the range of apparent magnitudes of the Algol system?</li>
+    <li>Explain the large and small dips in the light curve.  What is happening to cause the dips?</li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li>69 hours.</li>
+    <li>2.2 to 3.5</li>
+    <li>The larger dip corresponds to when the brighter star is eclipsed, the smaller dip corresponds to when the dimmer star is eclipsed.</li>
+</ol></p></answer></exercise>
+
+<exercise number="76"><statement><p>Some stars, called Cepheid variable stars, appear to pulse, getting brighter and dimmer periodically.  The graph shows the light curve for the star Delta Cephei.</p> 
+    <image width="75%" source="photos/fig-chap2-proj-ex-2-10"><description>graph</description></image>
+<p><ol marker="a.">
+    <li>What is the period of the graph?</li>
+    <li>What is the range of apparent magnitudes for Delta Cephei?</li>
+</ol></p></statement></exercise>            
+     
+</exercises>

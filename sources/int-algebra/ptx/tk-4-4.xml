@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkQuadraticInequalities" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Quadratic Inequalities </title>
+                 
+<subsubsection xml:id="tkLinIneq"><title>Solve a linear inequality</title>
+
+<p>First, let's review solving linear inqualities.</p>
+
+<example><statement><p>Solve <m>~-3x+1 \gt 7~</m> and graph the solutions on a number line.</p></statement>
+ 
+<solution><p> 
+    <md><mrow>-3x+1 \amp \gt 7 \amp \amp \blert{\text{Subtract 1 from both sides.}}</mrow>
+        <mrow>-3x \amp \gt 6  \amp \amp \blert{\text{Divide both sides by -3.}}</mrow>
+        <mrow>x \amp \lt -2 \amp \amp \blert{\text{Reverse the direction of the inequality.}}</mrow></md>
+The graph of the solutions is shown below.</p>
+    <sidebyside width="50%"><image source="images/fig-6-5-1.png"><description>number line</description></image></sidebyside>
+</solution></example>
+
+<example><statement><p>Solve <m>~-3 \lt 2x-5 \le 6~</m> and graph the solutions on a number line.</p></statement>
+ 
+<solution><p> 
+    <md><mrow>-3 \amp \lt 2x-5 \le 6 \amp \amp \blert{\text{Add 5 on all three sides.}}</mrow>
+        <mrow>2 \amp \lt 2x \le 11 \amp \amp \blert{\text{Divide each side by 2.}}</mrow>
+        <mrow>1 \amp \lt x \le \dfrac{11}{2} \amp \amp \blert{\text{Do not reverse the inequality.}}</mrow></md>
+ The graph of the solutions is shown below.</p>
+    <sidebyside width="50%"><image source="images/fig-6-5-2.png"><description>number line</description></image></sidebyside>       
+</solution></example>
+
+<exercise><statement><p>Solve the inequality <m>~8-4x \gt -2~</m></p> </statement>
+    <answer><p><m>x \lt \dfrac{5}{2}</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~-6 \le \dfrac{4-x}{3} \lt 2~</m></p> </statement>
+    <answer><p><m>22 \ge x \gt -2</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~3x-5 \lt -6x+7~</m></p> </statement>
+    <answer><p><m>x \lt \dfrac{4}{3}</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~-6 \gt 4-5b \gt -21~</m></p> </statement>
+    <answer><p><m>2 \lt b \lt 5</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkIntParab"><title><m>x</m>-intercepts of a parabola</title>
+
+<introduction><p>To solve a quadratic inequality, we first find the <m>x</m>-intercepts of the graph. Remember that there are four different methods for solving a quadratic equation.</p></introduction>
+
+<example><statement><p>Find the <m>x</m>-intercepts of the parabola <m>~y=4x^2-12</m></p></statement>
+
+<solution><p>Set <m>y=0</m> and solve for <m>x</m>. Use extraction of roots.
+    <md><mrow>4x^2-12 \amp = 0 </mrow>
+        <mrow>4x^2 \amp = 12 </mrow>
+        <mrow>x^2 \amp = 3 </mrow>
+        <mrow>x \amp = \pm \sqrt{3}</mrow></md>
+The <m>x</m>-intercepts are <m>(\sqrt{3},0)</m> and <m>(-\sqrt{3},0)</m>, or about <m>(1.7,0)</m> and <m>(-1.7,0)</m>.</p>
+</solution></example>
+
+<example><statement><p>Find the <m>x</m>-intercepts of the parabola <m>~y=-4x^2-12x</m></p></statement>
+
+<solution><p>Set <m>y=0</m> and solve for <m>x</m>. Factor the right side.
+    <md><mrow>0 \amp = -4x^2-12x </mrow>
+        <mrow>0 \amp = -4x(x+3) \amp \amp \blert{\text{Set each factor equal to 0.}}</mrow>
+        <mrow>4x\amp = 0~~~~~~x+3 = 0 </mrow>
+        <mrow>x \amp = 0~~~~~~x=-3</mrow></md>
+The <m>x</m>-intercepts are <m>(0,0)</m> and <m>(-3,0)</m>.</p>
+</solution></example>
+
+<example><statement><p>Find the <m>x</m>-intercepts of the parabola <m>~y=4x^2-12x+8</m></p></statement>
+
+<solution><p>Set <m>y=0</m> and solve for <m>x</m>. Factor the right side.
+    <md><mrow>0 \amp = 4x^2-12x+8 </mrow>
+        <mrow>0 \amp = 4(x^2-3x+2) </mrow>
+        <mrow>0 \amp = 4(x-2)(x-1) \amp \amp \blert{\text{Set each factor equal to 0.}}</mrow>
+        <mrow>x-2\amp = 0~~~~~~x-1 = 0 </mrow>
+        <mrow>x \amp = 2~~~~~~x=1</mrow></md>
+The <m>x</m>-intercepts are <m>(2,0)</m> and <m>(1,0)</m>.</p>
+</solution></example>
+
+<example><statement><p>Find the <m>x</m>-intercepts of the parabola <m>~y=12-12x-4x^2</m></p></statement>
+
+<solution><p>Set <m>y=0</m> and solve for <m>x</m>. Use the quadratic formula.
+    <md><mrow>0 \amp = -4x^2-12x+12 \amp \amp \blert{a=-4,~b=-12,~c=12}</mrow>
+        <mrow>x \amp = \dfrac{12 \pm \sqrt{(-12)^2-4(-4)(12)}}{2(-4)}</mrow>
+        <mrow>\amp = \dfrac{12 \pm \sqrt{144+96}}{-8}</mrow>
+        <mrow> \amp = \dfrac{12 \pm \sqrt{240}}{-8} = \dfrac{12 \pm 4\sqrt{15}}{-8} \amp \amp \blert{\sqrt{240} = \sqrt{16 \cdot 15} = 4\sqrt{15}}</mrow>
+        <mrow>\amp =\dfrac{-3 \pm \sqrt{15}}{2} </mrow></md>
+The <m>x</m>-intercepts are <m>\left(\dfrac{-3 + \sqrt{15}}{2},0\right)</m> and <m>\left(\dfrac{-3 - \sqrt{15}}{2},0\right)</m>, or about <m>(0.44,0)</m> and <m>(-3.44,0)</m>.</p>
+</solution></example>
+
+<p>For each Exercise, find the <m>x</m>-intercepts of the parabola. </p>
+
+<exercise><statement><p><m>~y=2x^2-7x+3</m></p></statement>
+    <answer><p><m>\left(\dfrac{1}{2},0\right),~(3,0)</m></p></answer></exercise>
+
+<exercise><statement><p><m>~y=7x-2x^2</m></p></statement>
+    <answer><p><m>(0,0)</m>, <m>\left(\dfrac{7}{2},0\right)</m></p></answer></exercise>
+
+<exercise><statement><p><m>~y=10-2x^2</m></p></statement>
+    <answer><p><m>(2.24,0),~(-2.24,0)</m></p></answer></exercise>
+
+<exercise><statement><p><m>~y=2x^2+10x+3</m></p></statement>
+    <answer><p><m>(-0.32,0),~(-4.68,0)</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch2" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	  <title>Numbers and Variables</title>
+  
+
+  
+  <xi:include href="./sec-2-1.ptx" />
+  <xi:include href="./sec-2-2.ptx" />
+  <xi:include href="./sec-2-3.ptx" />
+  <xi:include href="./sec-2-4.ptx" />
+  <xi:include href="./sec-2-5.ptx" />
+<!-- 
+  <xi:include href="./sec_first-examples.ptx" />
+
+  <xi:include href="./ex_first.ptx"/> -->  
+</chapter>

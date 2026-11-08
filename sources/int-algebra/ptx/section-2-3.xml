@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="AlgebraicSolution"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Algebraic Solution of Systems</title>
+
+<introduction>
+<p>In the previous section we used graphs to solve a system of two linear equations in two unknowns. Graphs help us visualize the system and its solution, but do not always provide the most efficient or most accurate way to find the solution. In this section we review two methods for solving a 2x2 linear system algebraically.</p>
+</introduction>
+
+<subsection><title>Substitution Method</title><idx><h>system of equations</h><h>substitution method</h></idx><idx><h>substitution method</h><see>system of equations</see></idx>
+
+<p>You may be familiar with the <term>substitution method</term> for solving a system of equations. The idea is to write an expression for one of the variables in terms of the other variable, and then substitute that expression into the other equation.</p>
+
+<example><statement><p>Solve the system
+    <md><mrow>x + y \amp = 10</mrow>
+        <mrow>2x - y\amp = 2</mrow></md>
+</p></statement>
+
+<solution><p>If we solve the first equation for <m>y</m>, we get <m>y = 10 - x</m>. We can substitute the expression <m>\alert{10 - x}</m> for <m>y</m> into the second equation to get 
+    <me>2x - (\alert{10 - x}) = 2</me> 
+an equation in only one variable.  Finally, we solve this equation:
+    <md><mrow>2x-10 + x \amp = 2</mrow>
+        <mrow>3x \amp = 12</mrow>
+        <mrow>x \amp = 4</mrow></md>
+And because <m>y=10 - x</m>, we find <m>y = 10 - 4 = 6</m>. The solution is <m>x = 4, y = 6</m>. We may sometimes write the solution as an ordered pair, <m>(4,6)</m>.</p>
+</solution></example>
+
+<p>Here is a summary of the steps for solving a system by substitution.</p>
+
+<assemblage><title>To Solve a System by Substitution</title>
+    <p><ol marker="1.">
+        <li><p>Choose one of the variables in one of the equations. (It is best to choose a variable whose coefficient is <m>1</m> or <m>-1</m>.) Solve the equation for that variable.</p></li>
+        <li><p>Substitute the result of Step 1 into the other equation. This gives an equation in one variable.</p></li>
+        <li><p>Solve the equation obtained in Step 2. This gives the solution value for one of the variables.</p></li>
+        <li><p>Substitute this value into the result of Step 1 to find the solution value of the other variable.</p></li>
+    </ol></p>
+</assemblage>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+        $explain = RadioButtons(
+          ["Solve both equations for \(y\).",
+          "Substitute a value for \(x\).",
+          "Solve one of the equations for one of the variables.",
+          "Add the equations together."],
+          2, 
+        );            
+        </pg-code>
+    <statement><p>What is the first step in the substitution method?</p>
+        <p><var name="$explain" form="buttons"/></p>      
+    </statement>
+    <solution><p>Solve one of the equations for one of the variables.</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>What is the first step in the substitution method?</p>
+    <p><ol marker="a.">
+        <li><p>Solve both equations for <m>y</m>.</p></li>
+        <li><p>Substitute a value for <m>y</m>.</p></li>
+        <li><p>Solve one of the equations for one of the variables.</p></li>
+        <li><p>Add the equations together.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            Context()->variables->add(y=>"Real");
+            $xeq = Formula("2y-2");
+            $y = Compute("1");
+            $x = Compute("0");
+            Context("Point");
+            $solution = Point($x,$y);
+        </pg-code>
+    <statement><p>Follow the suggested steps to solve the system by substitution:
+                <md><mrow>3y-2x\amp=3</mrow>
+                    <mrow>x-2y\amp=-2</mrow></md>
+        <ul>
+        <li><p>Step 1</p>
+            <p>Solve the second equation for <m>x</m> in terms of <m>y</m>.</p>
+                    <p><m>x=</m><var name="$xeq" width="5"/> </p></li>
+        <li><p>Step 2</p>
+            <p>Substitute your expression for <m>x</m> into the first equation.</p>
+                    <p><m>3y -2 \large(</m><var name="$xeq" width="5"/><m>{\large)} =3</m> </p></li>
+        <li><p>Step 3</p>
+            <p>Solve the equation you got in Step 2.</p>
+                        <p><m>y=</m><var name="$y" width="2"/> </p></li>
+        <li><p>Step 4</p>
+            <p>You now have the solution value for <m>y</m>. Substitute that value into your result from Step 1 to find the solution value for <m>x</m>. </p>
+                         <p><m>x=</m><var name="$x" width="2"/> </p>
+            <p>As always, you should check that your solution values satisfy both equations in the system.</p>
+            <p>The solution to the system is <var name="$solution" width="6"/> (Give the solution as an ordered pair.)</p>
+            </li></ul></p>
+    </statement>
+    <solution><p>Follow the suggested steps to solve the system by substitution:
+                <md><mrow>3y-2x\amp=3</mrow>
+                    <mrow>x-2y\amp=-2</mrow></md>
+        <ul>
+        <li><p>Step 1</p>
+            <p><m>x=<var name="$xeq" /></m> </p></li>
+        <li><p>Step 2</p>
+            <p><m>3y -2 \large(<var name="$xeq"/>{\large)} =3</m> 
+        </p></li>
+        <li><p>Step 3</p>
+            <p><m>y=<var name="$y"/></m> </p></li>
+        <li><p>Step 4</p>
+            <p><m>x=<var name="$x"/></m> </p>
+            <p>The solution to the system is <m><var name="$solution"/></m></p></li>
+        </ul></p>
+    </solution>
+    </webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Follow the suggested steps to solve the system by substitution:
+                <md><mrow>3y-2x\amp=3</mrow>
+                    <mrow>x-2y\amp=-2</mrow></md>
+        <ul>
+        <li><p>Step 1: Solve the second equation for <m>x</m> in terms of <m>y</m>.</p></li>
+        <li><p>Step 2: Substitute your expression for <m>x</m> into the first equation.</p></li>
+        <li><p>Step 3: Solve the equation you got in Step 2.</p></li>
+        <li><p>Step 4: You now have the solution value for <m>y</m>. Substitute that value into your result from Step 1 to find the solution value for <m>x</m>. </p>
+            <p>As always, you should check that your solution values satisfy both equations in the system.</p></li>
+        </ul></p></statement>
+    <answer><p><m>(0,1)</m></p></answer></exercise>
+</subsection>
+   
+<subsection xml:id="ElimMeth"><title>Elimination Method</title><idx>elimination method</idx><idx><h>elimination method</h><seealso>system of equations</seealso></idx><idx><h>system of equations</h><h>elimination method</h></idx>
+
+<p>A second algebraic method for solving systems is called <term>elimination</term>. As with the substitution method, we obtain an equation in a single variable, but we do it by eliminating one of the variables in the system. We must first put both equations into the general linear form <m>Ax + By = C</m>.</p>
+
+<example xml:id="Example-elimination-method"><statement><p>Solve the system
+            <md><mrow>5x \amp = 2y+21</mrow>
+                <mrow>2y \amp = 19-3x</mrow></md></p></statement>
+    
+<solution><p>First, we rewrite each equation in the form <m>Ax + By = C</m>.
+    <md><mrow>5x\amp= 2y+21\amp\amp\blert{\text{Subtract }2y}
+        \amp 2y\amp=19-3x \amp\amp\blert{\text{Add }3x \text{ to}}</mrow>
+        <mrow>\underline{\hphantom{5x}-2y}\amp= \underline{{-2y}\hphantom{21} }\amp\amp\blert{\text{from both sides.}}
+        \amp \underline{\hphantom{3x}{+3x}}\amp=\underline{{+3x}\hphantom{3x}} \amp\amp\blert{\text{both sides.}}</mrow>
+        <mrow>5x-2y\amp= 21\amp\amp
+                    \amp 3x+2y\amp=19</mrow></md>
+We add the equations together by adding the left side of the first equation to the left side of the second equation, and then adding the two right sides together, as follows:
+            <md><mrow>5x-2y \amp =21</mrow>
+                <mrow>\underline{3x+2y}\amp =\underline{19\vphantom{2y}}</mrow>
+                <mrow>8x\hphantom{{}+2y} \amp = 40</mrow></md>
+Note that the <m>y</m>-terms canceled, or were <term>eliminated</term>. Solving the new equation, <m>8x = 40</m>, we find that <m>x = 5</m>. We are not finished yet, because we must still find the value of <m>y</m>. We can substitute our value for <m>x</m> into either of the original equations, and solve for <m>y</m>. We'll use the second equation, <m>3x+2y=19</m>:
+            <md><mrow>3(\alert{5})+2y \amp = 19 \amp\amp \blert{\text{Subtract 15 from both sides.}}</mrow>
+                <mrow>2y \amp = 4 \amp\amp \blert{\text{Divide by 2.}}</mrow>
+                <mrow>y \amp = 2     </mrow></md>
+Thus, the solution is the point <m>(5,2)</m>.</p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>       
+        $explain = RadioButtons(
+          ["Point-slope form",
+          "Slope-intercept form",
+          "General linear form",
+          "Coordinate form"],
+          2, 
+        );            
+        </pg-code>
+    <statement><p>In order to use the elimination method, in what form should you write the equations?</p>
+        <p><var name="$explain" form="buttons"/></p>      
+    </statement>
+<solution><p>The general linear form is usually the most convenient form when using the elimination method to solve a system.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>In order to use the elimination method, in what form should you write the equations?</p>
+    <p><ol marker="a." cols="2">
+        <li><p>Point-slope form</p></li>
+         <li><p>Slope-intercept form</p></li>
+         <li><p>General linear form</p></li>
+         <li><p>Coordinate form</p></li>
+    </ol></p></statement></exercise>
+
+<p>In the previous <xref ref="Example-elimination-method" text="custom">Example</xref>, the elimination method worked because the coefficients of <m>y</m> in the two equations were opposites, <m>2</m> and <m>-2</m>. This caused the <m>y</m>-terms to cancel out when we added the two equations together. What if the coefficients of neither <m>x</m> nor <m>y</m> are opposites? Then we must multiply one or both of the equations in the system by a suitable constant.</p>
+
+<p>Consider the system
+   <md><mrow>4x+3y\amp = 7</mrow>
+       <mrow>3x+y\amp =-1</mrow></md>
+We can eliminate the <m>y</m>-terms if we multiply each term of the second equation by <m>\alert{-3}</m>, so that the coefficients of <m>y</m> will be opposites:
+   <md><mrow>\alert{-3}(3x+y=-1) ~ \longrightarrow ~ {-9x}-3y=3</mrow></md>
+Be careful to multiply each term by <m>-3</m>, not just the <m>y</m>-term. We can now replace the second equation by its new version to obtain this system:
+   <md><mrow>4x+3y\amp = 7</mrow>
+       <mrow>-9x-3y\amp =3</mrow></md></p>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            Context()->variables->add(y=>"Real");
+            $lhs = Formula("-5x");
+            $rhs = Compute("10");
+            $x = Compute("-2");
+            $y = Compute("5");
+            Context("Point");
+            $solution = Point($x,$y);
+        </pg-code>
+    <statement><p>Follow the suggested steps to solve the system
+                <md><mrow>4x+3y \amp = 7</mrow>
+                    <mrow>-9x-3y \amp = 3</mrow></md>
+        <ul>
+            <li><p>Step 1</p>
+                <p>Add the equations together.</p>
+                <p><var name="$lhs" width="3"/><m>{}={}</m><var name="$rhs" width="3"/></p></li>
+            <li><p>Step 2</p>
+                <p>Solve the resulting equation for <m>x</m>.</p>
+                <p><m>x=</m><var name="$x" width="2"/> </p></li>
+            <li><p>Step 3</p>
+                <p>Substitute your value for <m>x</m> into either original equation and solve for <m>y</m>.</p>
+                <p><m>y=</m><var name="$y" width="2"/> </p></li>
+            <li><p>Step 4</p>
+                <p>Check that your solution satisfies both original equations.</p>
+                <p>The solution to the system is <var name="$solution" width="6"/> (Give the solution as an ordered pair.)</p></li>
+        </ul></p></statement>
+    <solution><p><ul>
+            <li><p>Step 1</p>
+                <p><m><var name="$lhs"/>=<var name="$rhs" width="3"/></m></p></li>
+            <li><p>Step 2</p>
+                <p><m>x=<var name="$x"/></m></p></li>
+            <li><p>Step 3</p>
+                <p><m>y=<var name="$y"/></m></p></li>
+            <li><p>Step 4</p>
+                <p><md><mrow>4(<var name="$x"/>)+3(<var name="$y"/>) \amp = 7</mrow>
+                    <mrow>-9(<var name="$x"/>)-3(<var name="$y"/>) \amp = 3</mrow></md></p>
+                <p>The solution to the system is <m><var name="$solution"/></m></p> </li>
+        </ul></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Follow the suggested steps to solve the system
+                <md><mrow>4x+3y \amp = 7</mrow>
+                    <mrow>-9x-3y \amp = 3</mrow></md></p>
+        <p><ul>
+            <li><p>Step 1: Add the equations together.</p></li>
+            <li><p>Step 2: Solve the resulting equation for <m>x</m>.</p></li>
+            <li><p>Step 3: Substitute your value for <m>x</m> into either original equation and solve for <m>y</m>.</p></li>
+            <li><p>Step 4: Check that your solution satisfies both original equations.</p></li>
+        </ul></p></statement>
+<answer><p><m>(-2,5)</m></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+         $TF = PopUp(
+          ["?","equal","opposites","reciprocals"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>Before adding the two equations together, we must arrange it so that the coefficients of one of the variables are <var name="$TF" form="popup"/></p>
+    </statement>
+    <solution><p>opposites</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Before adding the two equations together, we must arrange it so that the coefficients of one of the variables are <fillin characters="10"/>.</p></statement></exercise>
+
+<p>When we add a multiple of one equation to the other we are making a <term>linear combination</term><idx>linear combination</idx> <idx><h>system of equations</h><h>linear combination</h></idx> of the equations. The method of elimination is also called the method of linear combinations. Sometimes we need to multiply both equations by suitable constants in order to eliminate one of the variables.</p>
+
+<example xml:id="Example-linear-combinations"><statement><p>Use linear combinations to solve the system
+           <md><mrow>5x-2y \amp = 22</mrow>
+               <mrow>2x - 5y \amp =13</mrow></md> </p></statement>
+
+<solution><p>This time we choose to eliminate the <m>x</m>-terms. We must arrange things so that the coefficients of the <m>x</m>-terms are opposites, so we look for the smallest integer that both 2 and 5 divide into evenly. (This number is called the <term>lowest common multiple</term><idx>lowest common multiple (LCM)</idx>, or <term>LCM</term>, of 2 and 5.) The LCM of 2 and 5 is 10. We want one of the coefficients of <m>x</m> to be <m>10</m>, and the other to be <m>-10</m>.</p>
+<p>To achieve this, we multiply the first equation by <m>2</m> and the second equation by <m>-5</m>.
+            <md><mrow>\alert{2}(5x-2y\amp=22)\amp\amp \rightarrow\amp 10x - 4y \amp=44 </mrow>
+                <mrow>\alert{-5}(2x-5y\amp=13)\amp\amp \rightarrow\amp -10x +25y \amp=-65 </mrow></md>
+Adding these new equations eliminates the <m>x</m>-term and yields an equation in <m>y</m>.
+            <md><mrow>10x - 4y \amp = \hphantom{-}44</mrow>
+                <mrow>\underline{-10x + 25y} \amp =\underline{ -65 \vphantom{y}}</mrow>
+                <mrow>21y \amp = -21</mrow></md>
+We solve for <m>y</m> to find <m>y = -1</m>. Finally, we substitute <m>y = \alert{-1}</m> into the first equation and solve for <m>x</m>.
+            <md><mrow>5x-2(\alert{-1})\amp = 22</mrow>
+                <mrow>5x\amp = 20</mrow>
+                <mrow>x\amp = 4</mrow></md>
+The solution of the system is the point <m>(4, -1)</m>.</p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>       
+        $explain = RadioButtons(
+          ["A) The divisor",
+          "B) The quotient",
+          "C) The lowest common multiple",
+          "D) The lowest common factor"],
+          2, 
+        );            
+        </pg-code>
+    <statement><p>What is the name of the smallest integer that two integers, <m>a</m> and <m>b</m>, divide into evenly?</p>
+        <p><var name="$explain" form="buttons"/></p>      
+    </statement>
+    <solution><p>The lowest common multiple</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>What is the name of the smallest integer that two integers, <m>a</m> and <m>b</m>, divide into evenly?</p>
+    <p><ol marker="a." cols="2">
+        <li><p>The divisor</p></li>
+         <li><p>The quotient</p></li>
+         <li><p>The lowest common multiple</p></li>
+         <li><p>The lowest common factor</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            Context()->variables->add(y=>"Real");
+            $lhs0 = Formula("3x");
+            $rhs0 = Compute("2y+13");
+            $lhs1 = Formula("3y-15");
+            $rhs1 = Compute("-7x");
+            $x = Compute("3");
+            $y = Compute("-2");
+            Context("Point");
+            $solution = Point($x,$y);
+        </pg-code>
+    <statement><p>Follow the suggested steps to solve the system by elimination
+                <md><mrow>\frac{3}{2}x = y + \frac{13}{2}</mrow>
+                    <mrow>y-5= \frac{-7}{3}x</mrow></md>
+    First, clear the fractions: multiply the first equation by 2: </p>
+    <p><var name="$lhs0" width="2"/><m>=</m><var name="$rhs0" width="5"/>, </p>
+    <p>and the second equation by 3.</p>
+    <p><var name="$lhs1" width="5"/><m>=</m><var name="$rhs1" width="3"/> </p>
+    <p><ul>
+        <li><p>Step 1</p>
+            <p>Write each equation in the form <m>Ax + By = C</m>.</p></li>
+        <li><p>Step 2</p>
+            <p>Eliminate the <m>y</m>-terms: Multiply each equation by an appropriate constant.</p></li>
+        <li><p>Step 3</p>
+            <p>Add the new equations and solve the result for <m>x</m>.</p>
+            <p><m>x=</m><var name="$x" width="2"/> </p></li>
+        <li><p>Step 4</p>
+            <p>Substitute your value for <m>x</m> into the second equation and solve for <m>y</m>.</p>
+            <p><m>y=</m><var name="$y" width="2"/> </p>
+            <p>The solution to the system is <var name="$solution" width="6"/> (Give the solution as an ordered pair.)</p>
+            </li></ul></p>
+        </statement>
+    <solution><p>
+            <md><mrow><var name="$lhs0"/> = <var name="$rhs0"/></mrow>
+                    <mrow><var name="$lhs1"/>= <var name="$rhs1"/></mrow></md>
+        <ul>
+        <li><p>Step 1
+            <md><mrow>3x-2y \amp= 13</mrow>
+                <mrow>7x+3y \amp= 15</mrow></md></p></li>
+        <li><p>Step 2
+            <md><mrow>9x-6y \amp= 39</mrow>
+                <mrow>14x+6y \amp= 30</mrow></md></p></li>
+        <li><p>Step 3</p>
+            <p><m>x=<var name="$x"/></m></p></li>
+        <li><p>Step 4</p>
+            <p><m>y=<var name="$y"/></m></p>
+            <p>The solution to the system is <m><var name="$solution"/></m>.</p></li>
+    </ul></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Follow the suggested steps to solve the system by elimination
+                <md><mrow>\frac{3}{2}x = y + \frac{13}{2}</mrow>
+                    <mrow>y-5= \frac{-7}{3}x</mrow></md>
+    First, clear the fractions: multiply the first equation by 2 and the second equation by 3. </p>
+    <p><ul>
+        <li><p>Step 1: Write each equation in the form <m>Ax + By = C</m>.</p></li>
+        <li><p>Step 2: Eliminate the <m>y</m>-terms: Multiply each equation by an appropriate constant.</p></li>
+        <li><p>Step 3: Add the new equations and solve the result for <m>x</m>.</p></li>
+        <li><p>Step 4: Substitute your value for <m>x</m> into the second equation and solve for <m>y</m>.</p></li>
+    </ul></p></statement>
+<answer><p><m>(3,2)</m></p></answer></exercise>
+
+<note><p>Which method should you choose to solve a particular system? Both methods work on any linear system, but the substitution method is easier if one of the variables in one of the equations has coefficient <m>1</m> or <m>-1</m>.</p></note>
+</subsection>
+
+<subsection><title>Problem Solving with Systems</title>
+
+<p>If there are two unknown quantities in an applied problem, it is often more easily solved by writing a system of two equations.</p>
+
+<example><statement><p>Staci stocks two kinds of sleeping bags in her sporting goods store, a standard model and a down-filled model for colder temperatures. From past experience, she estimates that she will sell twice as many of the standard variety as of the down-filled. She has room to stock 84 sleeping bags at a time. How many of each variety should Staci order?</p></statement>
+    
+<solution><p>We begin by choosing variables for the unknown quantities.
+            <md><mrow>\amp\text{Number of standard sleeping bags: }~x</mrow>
+                <mrow>\amp\text{Number of down-filled sleeping bags: }~y</mrow></md></p>
+    <p>We write two equations about the variables. 
+            <md><mrow>\amp\text{Staci needs twice as many standard model as down-filled: } \amp x \amp = 2y</mrow>
+                <mrow>\amp\text{The total number of sleeping bags is 84: }\amp x+y \amp = 84</mrow></md>
+    We will solve this system using substitution. Notice that the first equation is already solved for <m>x</m> in terms of <m>y</m>. We substitute <m>\alert{2y}</m> for <m>x</m> in the second equation to obtain
+            <md><mrow>\alert{2y} + y \amp = 84</mrow>
+                <mrow>3y\amp = 84</mrow></md>
+    Solving for <m>y</m>, we find <m>y=\alert{28}</m>. Finally, substitute this value into the first equation to find
+            <md><mrow>x = 2(\alert{28}) = 56</mrow></md>
+    The solution to the system is <m>x = 56</m>, <m>y = 28</m>. Staci should order 56 standard sleeping bags and 28 down-filled bags.</p></solution></example>
+
+<p>In the next Exercise, we'll use the formula <m>I=Pr</m> for calculating the interest, <m>I</m>, earned on an investment.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review the interest formula, see <xref ref="tkInterest" text="custom"> Section 2.3.1 </xref> of the Toolkit.</p></aside>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Jerry invested $2000, part in a CD at 4% interest and the remainder in a business venture at 9%.  After one year, his income from the business venture was $37 more than his income from the CD. How much did he invest at each rate?
+    <ol marker="a.">
+    <li><p>Choose variables for the unknown quantities.</p>
+        <p>Fill in the table.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell>Principal</cell>
+                <cell>Interest Rate</cell>
+                <cell>Interest</cell></row>
+            <row> 
+                <cell>First investment</cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell></row>
+            <row> 
+                <cell>Second investment</cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell>
+                <cell><m>\hphantom{0000}</m></cell></row>
+            </tabular></li>
+    <li><p>Write two equations; one about the principal, and one about the interest.</p>
+        <p><m>\blert{\text{Principal:}}</m></p>
+        <p><m>\blert{\text{Interest:}}</m></p></li>
+    <li>Solve the system. (Which method seems easiest, substitution or elimination?)</li>
+    <li>Write your answer to the question in the problem in a sentence.</li>
+</ol></p></statement>
+<answer>Jerry invested $1100 at 4% innterest and $900 at 9% interest.</answer></exercise>
+
+<p>A useful application of linear systems involves mixtures. In the next Example, we use the percent formula <m>P=rW</m>. For instance, suppose that 35% of a class of 60 students are math majors. Then the number of math majors is   
+    <md><mrow>\text{Part} \amp = \text{Percent rate} \times \text{Whole}</mrow>
+        <mrow>\text{Number of math majors} \amp = 0.35 \times 60 = 21</mrow></md></p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review the percent formula, see <xref ref="tkPercent" text="custom"> Section 2.3.2 </xref> of the Toolkit.</p></aside>
+
+<example><statement><p>A chemist wants to produce 45 milliliters of a 40% solution of carbolic acid by mixing a 20% solution with a 50% solution. How many milliliters of each should she use?</p>
+    <image width="55%" source="photos/fig-4-4-2"><description>picture</description></image>
+</statement>
+
+<solution><p>We let <m>x</m> represent the number of milliliters of the 20% solution she needs and <m>y</m> the number of milliliters of the 50% solution. We can use a table to organize the information. The first two columns contain the variables and information given in the problem: the number of milliliters of each solution and its strength as a percent.</p>
+    
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+    <col width="20%"></col> <col width="20%"></col><col width="20%"></col><col width="18%"></col>             
+                    <row bottom="minor">
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><p>Number of Milliliters (<m>W</m>)</p></cell>
+                        <cell><p>Percent Acid (<m>r</m>)</p></cell>
+                        <cell><p>Amount of Acid (<m>P</m>)</p></cell></row>
+                    <row> 
+                        <cell>20% Solution</cell>
+                        <cell><m>x</m></cell>
+                        <cell><m>0.20</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell>50% Solution</cell>
+                        <cell><m>y</m></cell>
+                        <cell><m>0.50</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell>Mixture</cell>
+                        <cell><m>45</m></cell>
+                        <cell><m>0.40</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                </tabular>
+
+<p>We fill in the last column of the table by using the formula <m>P=rW</m>. The entries in this last column give the amount of the important ingredient (in this case, milliliters of acid) in each component solution and in the mixture.</p>
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+    <col width="20%"></col> <col width="20%"></col><col width="20%"></col><col width="18%"></col>             
+                    <row bottom="minor">
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><p>Number of Milliliters (<m>W</m>)</p></cell>
+                        <cell><p>Percent Acid (<m>r</m>)</p></cell>
+                        <cell><p>Amount of Acid (<m>P</m>)</p></cell></row>
+                    <row> 
+                        <cell>20% Solution</cell>
+                        <cell><m>x</m></cell>
+                        <cell><m>0.20</m></cell>
+                        <cell><m>\blert{0.20x}</m></cell></row>
+                    <row> 
+                        <cell>50% Solution</cell>
+                        <cell><m>y</m></cell>
+                        <cell><m>0.50</m></cell>
+                        <cell><m>\blert{0.50y}</m></cell></row>
+                    <row> 
+                        <cell>Mixture</cell>
+                        <cell><m>45</m></cell>
+                        <cell><m>0.40</m></cell>
+                        <cell><m>\blert{0.40(45)}</m></cell></row>
+                </tabular>
+
+<p>Now we can write two equations about the mixture problem. The first equation is about the total number of milliliters mixed together. The chemist must mix <m>x</m> milliliters of one solution with <m>y</m> milliliters of the other solution and end up with 45 milliliters of the mixture, so
+    <me>\blert{\text{Total amount of mixture:}}~~~~~~x+y=45</me>
+The second equation uses the fact that the acid in the mixture can only come from the acid in each of the two original solutions. We used the last column of the table to calculate how much acid was in each component, and we add these quantities to get the amount of acid in the mixture.
+    <me>\blert{\text{Amount of acid:}}~~~~~~0.20x+0.50y=0.40(45)</me>
+These two equation make up a system:
+    <md><mrow>x+y=45</mrow>
+        <mrow>0.20x+0.50y=18</mrow></md>
+To simplify the system we first multiply the second equation by 100 to clear the decimals. 
+    <md><mrow>x+y=45</mrow>
+        <mrow>20x+50y=1800</mrow></md>
+We'll solve this system by elimination. Multiply the first equation by <m>-20</m>, and add the equations together.
+    <md><mrow>-20x-20y \amp = -900</mrow>
+        <mrow>\underline{20x+50y} \amp \underline{ {}= 1800\vphantom{y}}</mrow>
+        <mrow>30y \amp = 900</mrow></md> 
+Solving for <m>y</m>, we find <m>y=30</m>. We substitute <m>y=\alert{30}</m> into the first equation to find
+    <me>x+\alert{30}=45</me>
+or <m>x=15</m>. The chemist needs 15 milliliters of the 20% solution and 30 milliliters of the 50% solution for the mixture.</p></solution></example>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Polls conducted by Senator Bluff's campaign manager show that he can win 60% of the rural vote in his state but only 45% of the urban vote. If 1,200,000 citizens vote, how many voters from rural areas and how many from urban areas must vote in order for the Senator to win 50% of the votes?
+<ol marker="a.">
+<li><p>Let <m>x</m> represent the number of rural voters and <m>y</m> the number of urban voters. Fill in the table.</p>
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell>Number of Voters <m>(W)</m></cell>
+                        <cell>Percent for Bluff <m>(r)</m></cell>
+                        <cell>Number for Bluff <m>(P)</m></cell></row>
+                    <row> 
+                        <cell>Rural</cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell>Urban</cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell>Total</cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    </tabular></li>
+    <li><p>Add down the first and third columns to write a system of equations.</p>
+
+        <p><m>\blert{\text{Number of voters:}}</m></p>
+
+        <p><m>\blert{\text{Number for Bluff:}}</m></p></li>
+    <li>Solve the system.</li>
+    <li>Answer the question in the problem.</li>
+</ol></p></statement>
+<answer>800,000 rural voters and 400,000 urban voters</answer></exercise>
+</subsection>
+
+<subsection xml:id="IncDep"><title>Inconsistent and Dependent Systems</title>
+
+<p>Recall that a system of two linear equations does not always have a unique solution; it may be inconsistent or dependent. The elimination method will reveal whether the system falls into one of these two cases.</p>
+
+<example><statement><p>Solve each system by elimination.<ol marker="a." cols="2">
+            <li><md><mrow>3x-y \amp =4</mrow>
+                <mrow>-6x+2y\amp = 2</mrow></md></li>
+            <li><md><mrow>x-2y\amp =3</mrow>
+                    <mrow>2x-4y\amp = 6</mrow></md></li></ol></p></statement>
+    
+<solution><p><ol marker="a.">
+    <li><sidebyside widths="40% 55%" margins="0% 0%" valigns="middle middle"><image xml:id="fig-example-2-3-4a">
+                    <description>parallel lines</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.6]
+                    \draw[cyan] (-5,-5) grid (5,5);
+                    \draw[black,thick,->,>=stealth'] (-5,0)--++(10.6,0) node[right]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,-5)--++(0,10.6) node[above]{$y$};
+                    \foreach \x  in {-5,5} {
+                      \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                      \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+                    }
+                    \draw[red,thick, <->,>=stealth'] (-1/3,-5) -- (3,5);
+                    \draw[blue,thick, <->,>=stealth] (-2,-5) -- (4/3,5);
+                    \end{tikzpicture}]]>
+                </latex-image></image>                    
+        <p>To eliminate the <m>y</m>-terms, we multiply the first equation by 2 and add:
+                    <md><mrow>6x-2y\amp =\hphantom{1}8</mrow>
+                        <mrow>\underline{-6x+2y}\amp = \underline{\hphantom{1}2\vphantom{y}} </mrow>
+                        <mrow>0x+0y\amp =10</mrow></md></p></sidebyside>
+        <p>Both variables are eliminated, and we are left with the false statement <m>0 = 10</m>. There are no values of <m>x</m> or <m>y</m> that will make this equation true, so the system has no solutions. The graph shows that the system is inconsistent.</p></li>
+    <li><sidebyside widths="40% 55%" margins="0% 0%" valigns="middle middle"><image xml:id="fig-example-2-3-4b">
+                    <description>parallel lines</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.6]
+                    \draw[cyan] (-5,-5) grid (5,5);
+                    \draw[black,thick,->,>=stealth'] (-5,0)--++(10.6,0) node[right]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,-5)--++(0,10.6) node[above]{$y$};
+                    \foreach \x  in {-5,5} {
+                      \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                      \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+                    }
+                    \draw[blue,thick, <->,>=stealth] (-5,-4) -- (5,1);
+                    \end{tikzpicture}]]>
+                </latex-image></image>                    
+    <p>To eliminate the <m>x</m>-terms, we multiply the first equation by <m>-2</m> and add:
+                    <md><mrow>-2x+4y\amp =-6</mrow>
+                        <mrow>\underline{\hphantom{-}2x-4y}\amp = \underline{\hphantom{-}6\vphantom{y}} </mrow>
+                        <mrow>0x+0y\amp =\hphantom{-}0</mrow> </md></p></sidebyside>
+    <p>We are left with the true but unhelpful equation <m>0 = 0</m>. The two equations are in fact equivalent (one is a constant multiple of the other), so the system is dependent. The graph of both equations is shown in the figure.</p>
+    </li></ol></p></solution></example>
+
+<assemblage><title>Inconsistent and Dependent Systems</title><idx><h>system of equations</h><h>inconsistent</h></idx><idx><h>system of equations</h><h>dependent</h></idx><idx><h>system of equations</h><h>elimination method</h></idx>
+<p>When using elimination to solve a system:<ol marker="1.">
+    <li><p>If combining the two equations results in an equation of the form
+            <md><mrow>0x+0y = k \amp\amp(k\ne 0)</mrow></md>
+        then the system is inconsistent.</p></li>
+    <li><p>If combining the two equations results in an equation of the form
+            <md><mrow>0x+0y =0</mrow></md>
+        then the system is dependent.</p></li></ol></p>
+</assemblage>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>       
+        $explain = RadioButtons(
+          ["dependent",
+          "inconsistent",
+          "consistent and independent"],
+          0, 
+        );            
+        </pg-code>
+    <statement><p>Identify the system as dependent, inconsistent, or consistent and independent.
+            <md><mrow>x+3y=6</mrow>
+                <mrow>2x-12=-6y</mrow></md></p>
+        <p><var name="$explain" form="buttons"/></p></statement>
+    <solution><p>Dependent</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Identify the system as dependent, inconsistent, or consistent and independent.
+            <md><mrow>x+3y=6</mrow>
+                <mrow>2x-12=-6y</mrow></md></p></statement>
+<answer><p>Dependent</p></answer></exercise>
+</subsection>
+ 
+<xi:include href="./section-2-3-exercises.xml" />                
+
+</section>

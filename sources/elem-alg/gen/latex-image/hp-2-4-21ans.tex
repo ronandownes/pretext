@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.4]
+\draw[black,thick, ->, >=stealth'] (-11.8,0)--(11.8,0);
+\foreach \x in  {-11, -10, ..., 11} {
+ \draw[black] (\x,.3) --++(0,-.3);
+}
+\foreach \x in  {-10,-5,0,5,10} {
+ \draw[black] (\x,.6) --++(0,-.6)  node[below,, yshift=-2] {$\x$};
+}
+\draw[red, ultra thick, ->, >=stealth'] (-5,0)--(11.8,0);
+\draw[red, fill=white] (-5,0) circle (3mm);
+\end{tikzpicture}%
+}
+\end{document}

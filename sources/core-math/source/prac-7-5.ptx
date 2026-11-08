@@ -1,0 +1,502 @@
+<exercises xml:id="prac-7-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 7-5</title>
+
+<exercisegroup cols="2"><introduction><p>In Problems 1 and 2, perform the indicated operations.</p></introduction>
+
+<exercise number="1"><statement><p><ol marker="a.">
+  <li><m>-12-4</m></li>
+  <li><m>-12(-4)</m></li>
+  <li><m>-12-(-4)</m></li>
+  <li><m>-12+(-4)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><m>-16</m></li>
+  <li><m>48</m></li>
+  <li><m>-8</m></li>
+  <li><m>-16</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a.">
+  <li><m>-5-9</m></li>
+  <li><m>-5(-9)</m></li>
+  <li><m>-5-(-9)</m></li>
+  <li><m>-5+(-9)</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="3"><statement><p>Answer the following questions about Problem 1or Problem 2:<ol marker="a.">
+  <li><p>Which two parts have the same answer?</p></li>
+  <li><p>Which part is a multiplication problem?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>(a) and (d)</p></li>
+  <li><p>(b)</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a.">
+  <li><p>The sum of two negative numbers is always  <fillin></fillin>.</p></li>
+  <li><p>The product of two negative numbers is always <fillin></fillin> .</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5-8, compute mentally.</p></introduction>
+
+<exercise number="5"><statement><p><ol marker="a.">
+  <li><m>2-7</m></li>
+  <li><m>-2-7</m></li>
+  <li><m>-2+7</m></li>
+  <li><m>2-(-7)</m></li>
+  <li><m>-2-(-7)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><m>-5</m></li>
+  <li><m>-9</m></li>
+  <li><m>5</m></li>
+  <li><m>9</m></li>
+  <li><m>5</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="6"><statement><p><ol marker="a.">
+  <li><m>9-5</m></li>
+  <li><m>-9-5</m></li>
+  <li><m>-9+5</m></li>
+  <li><m>9-(-5)</m></li>
+  <li><m>-9-(-5)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="7"><statement><p><ol marker="a.">
+  <li><m>-3-3</m></li>
+  <li><m>-3(-3)</m></li>
+  <li><m>-3-(-3)</m></li>
+  <li><m>-3+(-3)</m></li>
+  <li><m>-3 \div (-3)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><m>-6</m></li>
+  <li><m>9</m></li>
+  <li><m>0</m></li>
+  <li><m>-6</m></li>
+  <li><m>-3 \div (-3)</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="8"><statement><p><ol marker="a.">
+  <li><m>8-8</m></li>
+  <li><m>8(-8)</m></li>
+  <li><m>8-(-8)</m></li>
+  <li><m>8+(-8)</m></li>
+  <li><m>8 \div (-8)</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="9"><statement><p><ol marker="a.">
+  <li><p>Find two numbers whose sum equals zero.</p></li>
+  <li><p>Find two numbers whose difference equals zero.</p></li>
+  <li><p>Find two numbers whose product equals zero.</p></li>
+  <li><p>Find two numbers whose quotient equals zero.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>For example, <m>3</m> and <m>-3</m></p></li>
+  <li><p>For example, <m>3</m> and <m>3</m></p></li>
+  <li><p>For example, <m>3</m> and <m>0</m></p></li>
+  <li><p>For example, <m>0</m> and <m>-3</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement><p><ol marker="a.">
+  <li><p>Find two numbers whose product is 1.</p></li>
+  <li><p>Find two numbers whose product is <m>-1</m>.</p></li>
+  <li><p>Find two numbers whose quotient is 1.</p></li>
+  <li><p>Find two numbers whose quotient is <m>-1</m>.</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11-16, compute the sum.</p></introduction>
+
+<exercise number="11"><statement><m>6+2-12+3</m></statement>
+<answer><m>-1</m></answer></exercise>
+
+<exercise number="12"><statement><m>-9+4-3+2</m></statement></exercise>
+
+<exercise number="13"><statement><m>2+5-8-1</m></statement>
+<answer><m>-2</m></answer></exercise>
+
+<exercise number="14"><statement><m>13-6-12+17</m></statement></exercise>
+
+<exercise number="15"><statement><m>-7-8+16-4</m></statement>
+<answer><m>-3</m></answer></exercise>
+
+<exercise number="16"><statement><m>20-10-10-8</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17-26, simplify by following the rules for addition and subtraction.</p></introduction>
+
+<exercise number="17"><statement><m>-3-4-(-2)</m></statement>
+<answer><m>-5</m></answer></exercise>
+
+<exercise number="18"><statement><m>7-10-(-5)</m></statement></exercise>
+
+<exercise number="19"><statement><m>6-8-(-9)-1</m></statement>
+<answer><m>6</m></answer></exercise>
+
+<exercise number="20"><statement><m>-7-2-3-(-8)</m></statement></exercise>
+
+<exercise number="21"><statement><m>3+2-(-4)+(-7)</m></statement>
+<answer><m>2</m></answer></exercise>
+
+<exercise number="22"><statement><m>-6+5+(-2)-(-8)</m></statement></exercise>
+
+<exercise number="23"><statement><m>12-(-7)-(-2)-4</m></statement>
+<answer><m>17</m></answer></exercise>
+
+<exercise number="24"><statement><m>-11-2-(-4)-(-3)</m></statement></exercise>
+
+<exercise number="25"><statement><m>21+(-15)-(-2)-7</m></statement>
+<answer><m>1</m></answer></exercise>
+
+<exercise number="26"><statement><m>-14-(-16)-4+(-7)</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 27-30, simplify. Pay close attention to the parentheses.</p></introduction>
+
+<exercise number="27"><statement><p><ol marker="a." cols="4">
+  <li><m>4-7</m></li>
+  <li><m>4(-7)</m></li>
+  <li><m>4-(-7)</m></li>
+  <li><m>-(4-7)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="4">
+  <li><m>-3</m></li>
+  <li><m>-28</m></li>
+  <li><m>11</m></li>
+  <li><m>3</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p><ol marker="a." cols="4">
+  <li><m>-4-7</m></li>
+  <li><m>-4(-7)</m></li>
+  <li><m>-4-(-7)</m></li>
+  <li><m>-(-4-7)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="29"><statement><p><ol marker="a." cols="4">
+  <li><m>12-20</m></li>
+  <li><m>12(-20)</m></li>
+  <li><m>12-(-20)</m></li>
+  <li><m>-(-12-20)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="4">
+  <li><m>-8</m></li>
+  <li><m>-240</m></li>
+  <li><m>32</m></li>
+  <li><m>32</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p><ol marker="a." cols="4">
+  <li><m>-12-20</m></li>
+  <li><m>-12(-20)</m></li>
+  <li><m>-12-(-20)</m></li>
+  <li><m>-(12-20)</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31-42, <ol marker="a.">
+  <li><p>How many terms are there in each expression?  Underline the terms.</p></li>
+  <li><p>Follow the order of operations to simplify each expression.</p></li>
+</ol></p></introduction>
+
+<exercise number="31"><statement><p><ol marker="a.">
+  <li><m>-8-3(-2)</m></li>
+  <li><m>-8(-3)-2</m></li>
+  <li><m>(-8)(-3)(-2)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li>two, <m>-2</m></li>
+  <li>two, <m>22</m></li>
+  <li>one, <m>-48</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="32"><statement><p><ol marker="a.">
+  <li><m>(-8-3)(-2)</m></li>
+  <li><m>-8(-3-2)</m></li>
+  <li><m>-8-(3-2)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="33"><statement><p><ol marker="a.">
+  <li><m>-8-3-2</m></li>
+  <li><m>(-8-3)-2</m></li>
+  <li><m>-(8-3-2)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li>three, <m>-13</m></li>
+  <li>three, <m>-13</m></li>
+  <li>one, <m>-3</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="34"><statement><p><ol marker="a.">
+  <li><m>8-(-3)-2</m></li>
+  <li><m>8-(-3-2)</m></li>
+  <li><m>8-(-3)(-2)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="35"><statement><p><ol marker="a.">
+  <li><m>4-6-8</m></li>
+  <li><m>4(-6)(-8)</m></li>
+  <li><m>4-6(-8)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li>three, <m>-10</m></li>
+  <li>one, <m>192</m></li>
+  <li>two, <m>52</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p><ol marker="a.">
+  <li><m>-5+9(-16)</m></li>
+  <li><m>-5(9)-16</m></li>
+  <li><m>-5(9)(-16)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="37"><statement><p><ol marker="a.">
+  <li><m>3-3(-3)(3)</m></li>
+  <li><m>3(-3)+3(-3)</m></li>
+  <li><m>3(-3-3)-3</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li>two, <m>30</m></li>
+  <li>two, <m>-18</m></li>
+  <li>two, <m>-21</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="38"><statement><p><ol marker="a.">
+  <li><m>3-9(-2)-5</m></li>
+  <li><m>(-3+9)(-2-5)</m></li>
+  <li><m>-3(-9)-(2-5)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="39"><statement><m>12-8(-3)+5-8</m></statement>
+<answer><p>four, <m>33</m></p></answer></exercise>
+
+<exercise number="40"><statement><m>-3+9(-3)-5-7</m></statement></exercise>
+
+<exercise number="41"><statement><m>-5-2(-4)(9)+7-2</m></statement>
+<answer><p>four, <m>72</m></p></answer></exercise>
+
+<exercise number="42"><statement><m>20-4-6(-3)(-2)</m></statement></exercise>
+</exercisegroup>
+
+<exercise number="43"><statement><p>Find each product. <ol marker="a." cols="2">
+  <li><m>(-2)(-3)(4)</m></li>
+  <li><m>(-2)(-3)(-4)</m></li>
+  <li><m>(-2)(3)(4)</m></li>
+  <li><m>(-2)(-3)(4)(2)</m></li>
+  <li><m>(-2)(-3)(-4)(2)</m></li>
+  <li><m>(-2)(-3)(-4)(-2)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+  <li><m>-24)</m></li>
+  <li><m>24</m></li>
+  <li><m>-24</m></li>
+  <li><m>48</m></li>
+  <li><m>-48</m></li>
+  <li><m>48</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="44"><statement><p>Use your results from Problem 43 to complete the statements:<ol marker="a.">
+  <li><p>The product of an odd number of negative numbers is <fillin></fillin> .</p></li>
+  <li><p>The product of an even number of negative numbers is <fillin></fillin> .</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 45-50, simplify. Perform multiplications and divisions in order from left to right.</p></introduction>
+
+<exercise number="45"><statement><m>-120 \div 6(-2)</m></statement>
+<answer><m>40</m></answer></exercise>
+
+<exercise number="46"><statement><m>80 \div (-4)(-5)</m></statement></exercise>
+
+<exercise number="47"><statement><m>90 \div (-6) \div (-3) \cdot 2</m></statement>
+<answer><m>10</m></answer></exercise>
+
+<exercise number="48"><statement><m>-144 \div (-12) \div 12(-3)</m></statement></exercise>
+
+<exercise number="49"><statement><m>-10(-18_ \div 6(-3)</m></statement>
+<answer><m>-90</m></answer></exercise>
+
+<exercise number="50"><statement><m>16(-20) \div (-4)(-5)</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 51-60, simplify by following the order of operations.</p></introduction>
+
+<exercise number="51"><statement><p><ol marker="a." cols="2">
+  <li><m>24 \div 6-2</m></li>
+  <li><m>24 \div (-6-2)</m></li>
+  <li><m>24 \div (-6)-2</m></li>
+  <li><m>24-6 \div (-2)</m></li>
+  <li><m>24 \div (-6) \div (-2)</m></li>
+  <li><m>24 \div (-6 \div 2)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+  <li><m>2</m></li>
+  <li><m>3</m></li>
+  <li><m>-6</m></li>
+  <li><m>27</m></li>
+  <li><m>2</m></li>
+  <li><m>-8</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="52"><statement><p><ol marker="a.">
+  <li><m>-36 \div (-6)(-3)</m></li>
+  <li><m>-36 \div (-6-3)</m></li>
+  <li><m>36(-3) \div (-6)</m></li>
+  <li><m>-36 \div (-6) \div 3</m></li>
+  <li><m>-36 \div (-3) \div (-6)</m></li>
+  <li><m>(-36-6) \div (-3)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="53"><statement><m>10 \div (20-30)</m></statement>
+<answer><m>-1</m></answer></exercise>
+
+<exercise number="54"><statement><m>-16 \div (-12+8)</m></statement></exercise>
+
+<exercise number="55"><statement><m>-120 \div (30 \div 6)</m></statement>
+<answer><m>-24</m></answer></exercise>
+
+<exercise number="56"><statement><m>90 \div (-15 \div 3)</m></statement></exercise>
+
+<exercise number="57"><statement><m>-9+12 \div (-3)(8-2)</m></statement>
+<answer><m>-33</m></answer></exercise>
+
+<exercise number="58"><statement><m>40 \div (-4) + 12(-6-6)</m></statement></exercise>
+
+<exercise number="59"><statement><m>-10-(6-8) \div 2(8-13)</m></statement>
+<answer><m>-5</m></answer></exercise>
+
+<exercise number="60"><statement><m>-3(12-6) \div (4-7) + 8</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 61-68, simplify. Perform operations above or below fraction bars first.
+</p></introduction>
+
+<exercise number="61"><statement><m>\dfrac{36}{6-10}</m></statement>
+<answer><m>-9</m></answer></exercise>
+
+<exercise number="62"><statement><m>\dfrac{-20-10}{4}</m></statement></exercise>
+
+<exercise number="63"><statement><m>\dfrac{-30+15}{3-8}</m></statement>
+<answer><m>3</m></answer></exercise>
+
+<exercise number="64"><statement><m>\dfrac{9-15}{3-5}</m></statement></exercise>
+
+<exercise number="65"><statement><m>\dfrac{8-2(-17)}{4 \cdot 6 - 3}</m></statement>
+<answer><m>2</m></answer></exercise>
+
+<exercise number="66"><statement><m>\dfrac{-27+6(3)}{-9+3(4)}</m></statement></exercise>
+
+<exercise number="67"><statement><m>\dfrac{15}{-3} - \dfrac{4-8}{8-12}</m></statement>
+<answer><m>-6</m></answer></exercise>
+
+<exercise number="68"><statement><m>\dfrac{-25-3}{-5-2} - \dfrac{8-2(-6)}{8-12}</m></statement></exercise>
+</exercisegroup>
+
+<exercise number="69"><statement><p><ol marker="a.">
+  <li><p>Use your calculator to verify that <m>-\dfrac{2}{5} = \dfrac{-2}{5} = \dfrac{2}{-5}</m></p></li>
+  <li><p>Does <m>-\dfrac{2}{5} = \dfrac{-2}{-5}</m>?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>All equal <m>-0.4</m></p></li>
+  <li><p>No</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="70"><statement><p><ol marker="a.">
+  <li><p>Use your calculator to verify that <m>-\dfrac{9}{4} = \dfrac{-9}{4} = \dfrac{9}{-4}</m></p></li>
+  <li><p>Does <m>-\dfrac{9}{4} = \dfrac{-9}{-4}</m>?</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 71-74, evaluate. In each expression, which operation should you perform first?</p></introduction>
+
+<exercise number="71"><statement><p><ol marker="a." >
+  <li><m>-6 \cdot 2^3</m></li>
+  <li><m>(-6 \cdot 2)^3</m></li>
+  <li><m>6^3-2^3</m></li>
+  <li><m>6(-2)^3</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." >
+  <li><m>48</m></li>
+  <li><m>-572</m></li>
+  <li><m>208</m></li>
+  <li><m>-48</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="72"><statement><p><ol marker="a." >
+  <li><m>-2-4^2</m></li>
+  <li><m>-2(-4)^2</m></li>
+  <li><m>(-2-4)^2</m></li>
+  <li><m>-2(-4^2)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="73"><statement><p><ol marker="a." >
+  <li><m>6(-4)^2</m></li>
+  <li><m>(-6-4)^2</m></li>
+  <li><m>-6-4^2</m></li>
+  <li><m>(-6)^2(-4)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." >
+  <li><m>96</m></li>
+  <li><m>100</m></li>
+  <li><m>-22</m></li>
+  <li><m>-144</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="74"><statement><p><ol marker="a." >
+  <li><m>3-4^3</m></li>
+  <li><m>3(-4)^3</m></li>
+  <li><m>-(3-4)^3</m></li>
+  <li><m>3^3-4^3</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="75"><statement><p>Simplify each expression, and explain how you followed the order of operations.<ol marker="a." cols="2">
+  <li><m>-2-(-2)^3</m></li>
+  <li><m>-2(-2)^3</m></li>
+  <li><m>-2-2^3</m></li>
+  <li><m>(-2-2)^3</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." >
+  <li><m>6</m></li>
+  <li><m>16</m></li>
+  <li><m>-10</m></li>
+  <li><m>-64</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="76"><statement><p>Simplify each expression, and explain how you followed the order of operations.<ol marker="a." cols="3">
+  <li><m>3-5 \cdot 4^2</m></li>
+  <li><m>-3-5(-4)^2</m></li>
+  <li><m>-3-(5-4)^2</m></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 78-84, use the order of operations to simplify.</p></introduction>
+
+<exercise number="77"><statement><m>-4(2-3^2)</m></statement>
+<answer><m>28</m></answer></exercise>
+
+<exercise number="78"><statement><m>-6(-1-3)^2</m></statement></exercise>
+
+<exercise number="79"><statement><m>(-2)(-3)-2^2</m></statement>
+<answer><m>2</m></answer></exercise>
+
+<exercise number="80"><statement><m>3-(-5)^2-2^3</m></statement></exercise>
+
+<exercise number="81"><statement><m>4-6 \cdot 3^2</m></statement>
+<answer><m>-50</m></answer></exercise>
+
+<exercise number="82"><statement><m>-6+2 \cdot 4^2</m></statement></exercise>
+
+<exercise number="83"><statement><m>4-(-2 \cdot 3)^2</m></statement>
+<answer><m>-32</m></answer></exercise>
+
+<exercise number="84"><statement><m>-(3 \cdot 2)^2-5</m></statement></exercise>
+</exercisegroup>
+
+</exercises>

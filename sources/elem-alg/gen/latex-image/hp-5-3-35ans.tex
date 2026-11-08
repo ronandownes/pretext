@@ -1,0 +1,35 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}
+\draw[magenta!80!black, ultra thick] (2,0) arc(0:180:2);
+\draw[domain=0:180,variable=\t, smooth, samples=65, magenta!90!black, thick, dashed] plot ({2*cos(\t)}, {.4*sin(\t)});
+\draw[domain=0:-180,variable=\t, smooth, samples=65, magenta!80!black, thick] plot ({2*cos(\t)}, {.4*sin(\t)});
+\filldraw[black] (0,0) circle (0.5mm);
+\draw[black,thick] (0,0)--(2,0) node[above,midway, yshift=2, fill=white, inner sep = 1] {40 ft};
+
+\end{tikzpicture}%
+}
+\end{document}

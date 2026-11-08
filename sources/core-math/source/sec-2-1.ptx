@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Decimal Numbers</title>
+
+<sidebyside widths="40% 40%"><p><ul>
+    <li><p>Place Value</p></li>
+    <li><p>Comparing Decimal Fractions</p></li>
+    <li><p>Fractions to Decimals</p></li>
+    <li><p>Rounding and Estimating</p></li>
+  </ul></p>
+      <image source="cubeflat.png"></image></sidebyside>
+
+<subsection><title>The Metric System</title>
+<p>Let's compare the imperial (everyday, American) system of units with the <term>metric system</term>.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Imperial System</cell>
+      <cell>Metric System</cell></row>
+    <row>
+      <cell colspan="2"><m>\blert{\large{\text{Length}}}</m></cell></row>
+    <row>
+      <cell>1 mile = 1760 yards</cell>
+      <cell>1 kilometer = 1000 meters</cell></row>
+    <row>
+      <cell>1 yard = 3 feet</cell>
+      <cell>1 meter = 100 centimeters</cell></row>
+    <row>
+      <cell>1 foot = 12 inches</cell>
+      <cell>1 centimeter = 10 millimeters</cell></row>
+    <row >
+      <cell colspan="2"><m>\blert{\large{\text{Weight}}}</m></cell></row>
+    <row>
+      <cell>1 ton = 2000 pounds</cell>
+      <cell>1 kilogram = 1000 grams</cell></row>
+    <row>
+      <cell>1 pound = 16 ounces</cell>
+      <cell>1 gram = 100 centigrams</cell></row>
+    <row>
+      <cell>1 ounce = 437.5 grams</cell>
+      <cell>1 centigram = 10 milligrams</cell></row>
+    <row>
+      <cell colspan="2"><m>\blert{\large{\text{Volume}}}</m></cell></row>
+    <row>
+      <cell>1 gallon = 4 quarts</cell>
+      <cell>1 liter = 100 centiliters</cell></row>
+    <row>
+      <cell>1 quart = 2 pints</cell>
+      <cell>1 centiliter = 100 milliliters</cell></row>
+    </tabular></p>
+
+<note><p>Notice two properties of the metric system:</p>
+  <p><ul>
+  <li><p>Each larger unit is 10, 100 or 1000 times a smaller one.</p></li>
+  <li><p>The names of related units all use "kilo," "centi," or "milli."</p></li></ul></p></note>
+
+<p> For example, the basic unit of length in the metric system is the <term>meter</term>. Smaller units of length are always one-tenth as long as the previous one.</p>
+
+  <p><md><mrow>1 ~\text{decimeter} \amp = 0.1 ~\text{meter}</mrow>
+    <mrow>1 ~\text{centimeter} \amp = 0.1 ~\text{decimeter} = 0.01 ~\text{meter}</mrow>
+    <mrow>1 ~\text{millimeter} \amp = 0.1 ~\text{centimeter} = 0.01 ~\text{decimeter} = 0.001 ~\text{meter}</mrow></md></p>
+
+<p>The picture below shows a portion of a meter stick.
+
+  <image source="meterstick.png" width="80%"></image></p>
+
+<p>The metric system is easy to use because it fits with our base-10 number system. In the same way, <term>decimal fractions</term> are easy to use.</p>
+</subsection>
+
+<subsection><title> Place Value</title>
+
+<p>Remember the <term>place values</term> in our base-10 number system. For example,
+
+  <image source="placevalue.png" width="40%"></image></p>
+
+<p>The places after the decimal point represent fractions of a whole number, and it is important to remember that:</p>
+
+<assemblage><title>Decimal Fractions</title>
+<p>The place-value of the last digit tells us the denominator of the fraction.</p></assemblage>
+
+<activity><title>Place Value</title>
+<p>Complete the table.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+
+    <row header="yes">
+      <cell>Decimal Fraction</cell>
+      <cell>Common Fraction</cell>
+      <cell>Words</cell></row>
+    <row>
+      <cell><m>0.04</m></cell>
+      <cell><m>\dfrac{4}{100}</m></cell>
+      <cell>four hundredths</cell></row>
+    <row>
+      <cell><m>0.8</m></cell>
+      <cell><m>\vphantom{\dfrac{4}{100}}</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell></cell>
+      <cell><m>\dfrac{7}{1000}</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell></cell>
+      <cell><m>\vphantom{\dfrac{4}{100}}</m></cell>
+      <cell>one thousandth</cell></row>
+    <row>
+        <cell></cell>
+        <cell><m>\dfrac{9}{10}</m></cell>
+        <cell></cell></row>
+    <row>
+        <cell><m>0.002</m></cell>
+        <cell><m>\vphantom{\dfrac{4}{100}}</m></cell>
+        <cell></cell></row>
+    <row>
+      <cell></cell>
+      <cell><m>\vphantom{\dfrac{4}{100}}</m></cell>
+      <cell>eight hundredths</cell></row>
+    <row>
+      <cell></cell>
+      <cell><m>\dfrac{5}{100}</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell><m>0.03</m></cell>
+      <cell><m>\vphantom{\dfrac{4}{100}}</m></cell>
+      <cell></cell></row>
+    </tabular></p>
+  </activity>
+
+<note><p>Be careful when reading decimal fractions! Remember that the position or place value of a digit tells us the denominator of the fraction.
+
+  <md><mrow>0.4~~~~~~ \amp \text{is four tenths} \amp\amp \text{or}~~~~~\dfrac{4}{10}</mrow>
+      <mrow>0.04~~~~~~ \amp \text{is four hundredths} \amp\amp \text{or}~~~~~\dfrac{4}{100}</mrow>
+      <mrow>0.004~~~~~~ \amp \text{is four thousandths} \amp\amp \text{or}~~~~~\dfrac{4}{1000}</mrow></md>
+
+In the same way, 4 and 40 and 400 are very different numbers.</p></note>
+
+<p>Here is a way to think of decimal fractions. Imagine that the 10 by 10 by 10 block shown below represents one whole.
+    <image source="block.png" width="60%"></image></p>
+
+<p>Then one horizontal slice of the block (a "flat") represents one tenth of one whole. One row of the flat (a "stick") represents one hundredth, and one small cube represents one thousandth.</p>
+    <image source="flatsandsticks.png" width="80%"></image>
+
+<p>There are ten flats in a whole, ten sticks in a flat, and ten cubes in a stick. Or, in other words, a flat is one tenth of a whole, a stick is one tenth of a flat, and a cube is one tenth of a stick.</p>  
+
+<assemblage><title>Decimal Places</title>
+<p>Each decimal place is one tenth of the preceding place.</p></assemblage>
+
+<example><statement><p>Use blocks to represent the decimal fraction 0.253 as part of one whole.</p></statement>
+
+<solution><p>We read the fraction as "two hundred fifty-three thousandths." (Note that the last digit, 3, is in the thousandths place.)</p>
+<p> We can analyze the fraction as follows:
+
+  <md><mrow>0.253~~~~ = ~~~~ 0.2 ~~~~ \amp + ~~~~ 0.05 ~~~~ + ~~~~ 0.003</mrow>
+      <mrow>\text{two-tenths} \amp + \text{five-hundredths + three-thousandths}</mrow></md>
+
+Here is the picture of the fraction.</p>
+    <image source="dec-253.png" width="70%"></image>
+
+<p>You can check that there are 253 small cubes (thousandths) total.</p></solution></example>
+
+<exercise><statement><p>What decimal fraction does this picture represent?
+    <image source="dec-636.png" width="70%"></image></p></statement>
+
+<answer><p>0.636</p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Comparing Decimal Fractions</title>
+
+<sidebyside widths="65% 25%"><p><stack><p>A study published in the "Journal of the American Medical Association" found that "calculation and decimal point errors accounted for approximately 15% of all prescribing errors in a tertiary care teaching hospital" and "for almost 70% of all detected medication prescribing errors among children."</p>
+<p>Everyone should understand how decimal fractions represent portions of a whole.</p></stack></p>
+    <image source="pills.png"></image></sidebyside>
+
+<example><statement><p>Write these decimal fractions in order of size, from smallest to largest.
+
+<me>~~~~0.4,~~~~~~0.36,~~~~~~0.325,~~~~~~0.058</me></p></statement>
+
+<solution><p>We'll look at the place values in each fraction.
+
+    <md><mrow>0.4~~~~\amp 4~ \text{tenths}</mrow>
+        <mrow>0.36~~~~\amp 3~ \text{tenths} + 6~ \text{hundredths}</mrow>
+        <mrow>0.325~~~~\amp 3~ \text{tenths}+ 2~ \text{hundredths} + 5~ \text{thousandths}</mrow>
+        <mrow>0.058~~~~\amp 0~ \text{tenths}+ 5~ \text{hundredths} + 8~ \text{thousandths}</mrow></md>
+
+It might be helpful to picture each fraction using blocks, as demonstrated in Example 2.1.3.</p> 
+<p>We first look at the tenths place; a fraction with more tenths is larger than a fraction with fewer tenths. Thus, 0.4 is the largest fraction in this group, and 0.058 is the smallest.</p> 
+<p>Next we consider the hundredths place to see that 0.36 is larger than 0.325, because 6 hundredths is larger than 2 hundredths. Thus, the correct order from smallest to largest is
+
+<me>~~~~0.058,~~~~~~0.325,~~~~~~0.36,~~~~~~0.04</me>
+
+Here are the four fractions shown on a number line.</p>
+    <image source="decorder.png" width="90%"></image>
+</solution></example>
+
+<note><p> Do not make the <m>\alert{\text{ERROR}}</m> of thinking that 0.325 is larger than 0.36 because 325 is larger than 36! Remember to compare decimal fractions one decimal place at a time:  tenths, then hundredths, etc.</p></note>
+
+<exercise><statement><p>Plot the fractions on the number line.
+  
+  <me>~~~~0.68,~~~~~~0.800,~~~~~~0.92,~~~~~~0.356,~~~~~~0.608</me></p>
+  
+  <!-- <image source="zerotoone.png" width="80%"></image> -->
+  <image xml:id="zerotoone" width="80%"><description>From 0 to 1 by hundredths</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=1]
+    \draw[black,thick] (0,0)--(10,0);
+    \draw[black] (0,0) --++(0,-.8)node[below] {$0$};
+    \draw[black] (10,0) --++(0,-.8)node[below] {$1$};
+    \foreach \x in  {.1,.2,..., 9.9} {
+      \draw[black] (\x,0) --++(0,-.25);
+      }
+    \foreach \x in  {.5,1,..., 9.5} {
+      \draw[black] (\x,0) --++(0,-.4);
+      }
+    \foreach \x in  {1,...,9} {
+      \draw[black] (\x,0) --++(0,-.6);
+      }
+  \end{tikzpicture}]]>
+  </latex-image></image>
+  <answer>
+  <image xml:id="zerotoone-with-decimals" width="80%" margins="0% 20%"><description>From 0 to 1 by hundredths</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=1]
+    \draw[black,thick] (0,0)--(10,0);
+    \draw[black] (0,0) --++(0,-.8)node[below] {$0$};
+    \draw[black] (10,0) --++(0,-.8)node[below] {$1$};
+    \foreach \x in  {.1,.2,..., 9.9} {
+      \draw[black] (\x,0) --++(0,-.25);
+      }
+    \foreach \x in  {.5,1,..., 9.5} {
+      \draw[black] (\x,0) --++(0,-.4);
+      }
+    \foreach \x in  {1,...,9} {
+      \draw[black] (\x,0) --++(0,-.6);
+      }
+    \draw[blue, <-,>=stealth'] (6.8,0) --++(0,.3)node[above] {$0.68$};
+  \draw[blue, <-,>=stealth'] (8,0) --++(0,.6)node[above] {$0.800$};
+  \draw[blue, <-,>=stealth'] (9.2,0) --++(0,.6)node[above] {$0.92$};
+  \draw[blue, <-,>=stealth'] (3.56,0) --++(0,.6)node[above] {$0.356$};
+  \draw[blue, <-,>=stealth'] (6.08,0) --++(0,.6)node[above] {$0.608$};
+  \end{tikzpicture}]]>
+  </latex-image></image>
+  </answer></statement></exercise>
+
+<note><p> Another common <m>\alert{\text{ERROR}}</m> is to think that 0.058 is larger than 0.4, because "zero doesn't count." But in this case the zero tells us that
+  <me>0.\alert{0}58~~~~~~\text{has}~~~~~~\alert{0}~\text{tenths}</me>
+  while
+  <me>0.\alert{4}~~~~~~\text{has}~~~~~~\alert{4}~\text{tenths}</me>
+Once again, we compare decimal fractions by comparing each place value in order.</p></note>
+
+<assemblage><title>A Quick Fractions Refresher</title>
+<p>There is more than one way to write any particular fraction. For example, the following fractions are all equivalent to <m>\dfrac{1}{2}</m>:
+
+  <me>\dfrac{2}{4},~~~~~~\dfrac{3}{2},~~~~~~\dfrac{5}{10},~~~~~~\dfrac{25}{50}</me>
+
+because each reduces to <m>\dfrac{1}{2}</m>.</p>
+
+<p><m>\blert{\text{Exercise:}}</m>   Write three fractions equivalent to <m>\dfrac{2}{3}</m>.</p></assemblage>
+
+<p>Similarly, there is more than one way to write any particular decimal fraction. The following decimal fractions are equivalent:
+    <image source="seventenths.png" width="70%"></image>
+
+and so on. Each of these fractions reduces to <m>\dfrac{7}{10}</m>, or 0.7. Note that the denominator of each decimal fraction is given by the place value of the last digit after the decimal point.</p>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Write each decimal fraction as a common fraction.
+      <me>~~~~0.30,~~~~~~0.03,~~~~~~0.030,~~~~~~0.300,~~~~~~0.003</me></p></li>
+  <li><p>Which fractions are equal?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The denominator of each fraction is given by the place value of the last digit after the decimal point.
+
+    <md><mrow>0.30 = \dfrac{30}{100}~~~~~~\amp \text{reduces to}~~\dfrac{3}{10}</mrow>
+        <mrow>0.03 = \dfrac{3}{100}~~~~~~\amp \text{cannot be reduced}</mrow>
+        <mrow>0.030 = \dfrac{30}{1000}~~~~~~\amp \text{reduces to}~~\dfrac{3}{100}</mrow>
+        <mrow>0.300 = \dfrac{300}{1000}~~~~~~\amp \text{reduces to}~~\dfrac{3}{10}</mrow>
+        <mrow>0.003 = \dfrac{3}{1000}~~~~~~\amp \text{cannot be reduced}</mrow></md></p></li>
+  <li><p>The fractions 0.30 and 0.300 are both equal to <m>\dfrac{3}{10}</m>. The fractions 0.03 and 0.030 are both equal to <m>\dfrac{3}{100}</m>.  We see that an extra zero at the end of a decimal fraction does not change its value.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Explain why 0.15 and 0.150 are equivalent fractions, but 0.150 and 0.015 are not equivalent.
+  <md><mrow>0.15 = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow>
+      <mrow>0.150 = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow>
+      <mrow>0.015 = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow></md>
+  </p></statement>
+
+<answer><p><m>0.15 = \dfrac{15}{100}</m>, and <m>0.150 = \dfrac{150}{1000}</m>, which can be reduced to <m>\dfrac{15}{100}</m>, so those two fractions are equal. (Both are equivalent to <m>\dfrac{3}{20}</m>.) But <m>0.015 = \dfrac{15}{1000} = \dfrac{3}{200}</m>.</p></answer></exercise>
+</subsection>
+
+<subsection xml:id="fractodec"><title>Fractions to Decimals</title>
+
+<p>Another way to get a feel for decimal fractions is to relate them to familiar common fractions. Remember that the fraction bar is actually a division symbol, so the fraction <m>\dfrac{1}{2}</m> means "1 divided by 2." If you use your calculator to carry out the division, you will find
+
+<me>\dfrac{1}{2} = 1 \div 2 = 0.5</me>
+
+Some decimal equivalents of common fractions <term>terminate</term> or end, like 
+
+  <me>\dfrac{3}{8} = 0.375</me>
+
+but others repeat a pattern of digits without ending, like
+
+  <me>\dfrac{5}{6} = 0.833333 ...</me>
+    
+We denote these <term>repeating decimals</term> with a bar over the digits that repeat, like this:
+
+  <me>\dfrac{5}{6} = 0.8\overline{3}</me></p>
+
+<example><statement><p>Write the decimal equivalent of the fraction <m>\dfrac{3}{11}</m>.</p></statement>
+
+<solution><p>We use a calculator to compute  <m>3 \div 11</m>
+  
+ <me>\dfrac{3}{11} = 3 \div 11 = 0.27272727 ...</me>
+
+  We write the result with a repeater bar:   <m>\dfrac{3}{11} = 0.\overline{27}</m>.</p></solution></example>
+
+<exercise><statement><p>Write the decimal equivalent of the fraction <m>\dfrac{7}{22}</m>.</p></statement>
+
+<answer><p><m>0.3\overline{18}</m></p></answer></exercise>
+
+<activity xml:id="actdecequiv"><title>Decimal Equivalents</title>
+<p><ol>
+  <li><p>Use your calculator to find the decimal equivalent of each common fraction. Use a repeater bar to denote any repeating decimals.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+
+    <row header="yes">
+      <cell>Fraction</cell>
+      <cell>Decimal </cell>
+      <cell>Fraction</cell>
+      <cell>Decimal </cell></row>
+    <row>
+      <cell><m>\dfrac{1}{3}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{4}{5}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{2}{3}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{1}{6}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{1}{4}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{5}{6}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{3}{4}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{1}{8}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{1}{5}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{3}{8}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+        <cell><m>\dfrac{2}{5}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{5}{8}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{3}{5}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\dfrac{7}{8}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p></li>
+
+<li><p>Plot each decimal fraction on the number line below.</p>
+    <image source="zerotoone.png" width="90%"></image></li>
+
+<li><p>Which of the fractions above are repeating decimals?</p></li>
+</ol></p>
+</activity>
+
+<assemblage><title>Question</title>
+<p>Is there a way to tell which fractions have terminating decimals, and which ones have repeating decimals?</p></assemblage>
+</subsection>
+
+<subsection xml:id="rounding"><title>Rounding and Estimating</title>
+
+<p>My town has a population of 8300 people. Is that closer to 8000 people or 9000 people? If we count by 100's, 8300 is closer to 8000.</p>
+    <image source="roundpop.png" width="80%"></image>
+
+<p>So if I <term>round</term> the population to 1000's of people, my town's population is about 8000. In fact, we can say that any population less than 8500 is about 8000, and a population 8500 or above is about 9000.</p>
+
+<example><statement><p>Is 0.837 closer to 0.8 or to 0.9?</p></statement>
+
+<solution><p>In this Example, we are <term>rounding</term> to the nearest tenth. We use the same reasoning as above:  because 3 is less than 5, 0.8<m>\blert{3}</m>7 is closer to 0.8.</p>
+    <image source="roundtenth.png" width="90%"></image></solution></example>
+
+<note><p> In the last Example, we <term>rounded down</term> to the nearest tenth. To decide which way to round, we looked at the next digit, in the hundredths place, to see if it was greater than or less than 5. We did not have to consider the 7 in the thousandths place -- it is too small to make a difference in this case.</p></note>
+
+<p>We can round a number to any place-value we like. In the next Checkpoint, we round to the hundredths place.</p>
+
+<exercise><statement><p>Round 0.258 to hundredths. (Is 0.258 closer to 0.25 or to 0.26?) Illustrate on the number line.</p>
+  <!-- <image source="roundhund.png" width="90%"></image> -->
+  <image xml:id="roundhund" width="85%"><description>From 0.25 to 0.26</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=1]
+    \draw[black,thick] (0,0)--(10,0);
+    \draw[black] (0,0) --++(0,-.8)node[below] {$0.25$};
+    \draw[black] (5,0) --++(0,-.8)node[below] {$0.255$};
+    \draw[black] (10,0) --++(0,-.8)node[below] {$0.26$};
+    \foreach \x in  {.1,.2,..., 9.9} {
+      \draw[black] (\x,0) --++(0,-.25);
+      }
+    \foreach \x in  {.5,1,..., 9.5} {
+      \draw[black] (\x,0) --++(0,-.4);
+      }
+    \foreach \x in  {1,...,9} {
+      \draw[black] (\x,0) --++(0,-.6);
+      }
+  \end{tikzpicture}]]>
+  </latex-image></image></statement>
+
+<answer><p><m>0.26</m></p><image xml:id="pttwofive-to-pttwosix-with-decimals" width="85%" margins="0% 15%"><description>From 0.25 to 0.26 by 0.0001</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=1]
+  \draw[black,thick] (0,0)--(10,0);
+  \draw[black] (0,0) --++(0,-.8)node[below] {$0.25$};
+  \draw[black] (5,0) --++(0,-.8)node[below] {$0.255$};
+  \draw[black] (10,0) --++(0,-.8)node[below] {$0.26$};
+  \foreach \x in  {.1,.2,..., 9.9} {
+    \draw[black] (\x,0) --++(0,-.25);
+    }
+  \foreach \x in  {.5,1,..., 9.5} {
+    \draw[black] (\x,0) --++(0,-.4);
+    }
+  \foreach \x in  {1,...,9} {
+    \draw[black] (\x,0) --++(0,-.6);
+    }
+  \draw[blue, <-,>=stealth'] (8,0) --++(0,.6)node[above] {$0.258$};
+\end{tikzpicture}]]>
+</latex-image></image></answer></exercise>
+
+<activity><title>Rounding</title>
+  <p>Fill in the blanks.</p>
+
+<p><ol>
+  <li><p>When we round to the nearest tenth, we look at the digit in the <fillin></fillin> place. If that digit is less than <fillin></fillin> , we round<fillin></fillin> to the smaller tenth. If that digit is <fillin></fillin> or greater, we round up to the larger tenth.</p></li> 
+
+<li><p>When we round to the nearest hundredth, we look at the digit in the <fillin></fillin> place. If that digit is less than <fillin></fillin> , we round<fillin></fillin> to the smaller hundredth. If that digit is <fillin></fillin> or greater, we round up to the larger hundredth.</p></li>
+
+<li><p>When we round to any place value, we look at the digit to the <fillin></fillin> of that place. If that digit is less than <fillin></fillin> , we <fillin></fillin> . If that digit is <fillin></fillin> or greater, we <fillin></fillin> .</p></li>
+</ol></p>
+</activity>
+
+<example><statement><p>Find the decimal form of each fraction.  Round your answers to hundredths.</p>
+<p><ol marker="a." cols="2">
+  <li><p><m>\dfrac{3}{7}</m></p></li>
+  <li><p><m>\dfrac{2}{7}</m></p></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>We use a calculator to divide 3 by 7.
+    <me>\dfrac{3}{7} = 3 \div 7 = 0.428571 ...~~~~~~~~~\blert{2~\text{is in the hundredths place.}}</me>
+    To round to hundredths, we look at the digit after the hundredths place, which in this case is 8.  Beacause 8 is larger than 5, we round up to the next hundredth, to get  0.43.  So, <m>\dfrac{3}{7}</m> is approximately 0.43.</p></li>
+  <li><p>We use a calculator to divide 5 by 7.
+    <me>\dfrac{5}{7} = 5 \div 7 = 0.714285 ...~~~~~~~~~\blert{1~\text{is in the hundredths place.}}</me>
+    The digit after the hundredths place is 4, which is less than 5, so we round down to 0.71. So, <m>\dfrac{5}{7}</m> is approximately 0.71.</p></li>
+  </ol></p></solution></example>
+
+  <p>To understand rounding, we need to think about place value. In Example 2.1.16(a), the number  <m>0.4\blert{28}</m>  is between  <m>0.4\blert{20}</m>  and  <m>0.4\blert{30}</m>, but it is closer to 0.430, just as 28 is closer to 30 than it is to 20. So we round up to 0.430, or just 0.43.</p>
+  <p>In part (b), the number <m>0.7\blert{14}</m> is between <m>0.7\blert{10}</m> and <m>0.7\blert{20}</m>, but it is closer to  0.710, just as 14 is closer to 10 than it is to 20.  So we round down to 0.710, or just 0.71.</p>
+
+  <note><p>In Example 2.1.16, it is important to realize that <m>\dfrac{3}{7}</m> is <m>\alert{\text{not equal}}</m> to 0.43;  it is only <m>\alert{\text{approximately equal}}</m> to 0.43. Whenever we round off a decimal fraction, the result is always an approximation.</p></note>
+
+  <exercise><statement><p>Write the decimal form of each fraction. Round to hundredths if the decimal does not terminate. Is this decimal form exactly equal to the fraction, or an approximation?</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+
+    <row header="yes">
+      <cell>Fraction</cell>
+      <cell>Decimal Form</cell>
+      <cell>Equal (Yes or No)</cell></row>
+    <row>
+      <cell><m>\dfrac{3}{5}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{7}{20}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{1}{3}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{4}{9}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{8}{25}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{2}{3}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p>
+  </statement>
+
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+
+    <row header="yes">
+      <cell>Fraction</cell>
+      <cell>Decimal Form</cell>
+      <cell>Equal (Yes or No)</cell></row>
+    <row>
+      <cell><m>\dfrac{3}{5}</m></cell>
+      <cell><m>0.6</m></cell>
+      <cell>Yes</cell></row>
+    <row>
+      <cell><m>\dfrac{7}{20}</m></cell>
+      <cell><m>0.35</m></cell>
+      <cell>Yes</cell></row>
+    <row>
+      <cell><m>\dfrac{1}{3}</m></cell>
+      <cell><m>0.33</m></cell>
+      <cell>No</cell></row>
+    <row>
+      <cell><m>\dfrac{4}{9}</m></cell>
+      <cell><m>0.44</m></cell>
+      <cell>No</cell></row>
+    <row>
+      <cell><m>\dfrac{8}{25}</m></cell>
+      <cell><m>0.32</m></cell>
+      <cell>Yes</cell></row>
+    <row>
+      <cell><m>\dfrac{2}{3}</m></cell>
+      <cell><m>0.67</m></cell>
+      <cell>No</cell></row>
+    </tabular></p></answer></exercise>
+
+<example><statement><p>How big is one centimeter? A centimeter is 0.393701 of one inch. Round this fraction to the nearest tenth, and compare it to the decimal equivalents of common fractions in Activity 2.</p></statement>
+
+<solution><p>To round to tenths we look at the digit in the hundredths place. Because 9 is greater than 5, we round up to 0.4.</p>
+   <image source="roundup.png" width="35%"></image>
+
+<p>A centimeter is approximately 0.4 of one inch. By consulting Activity 2, we see that 0.4 is equal to <m>\dfrac{2}{5}</m>. (Or 
+we can reduce <m>\dfrac{4}{10}</m> to <m>\dfrac{2}{5}</m>.) So one centimeter is a little smaller than <m>\dfrac{2}{5}</m> of an inch.</p>  
+    <image source="cmtoinch.png" width="30%"></image></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>One kilometer is 0.621371 of one mile. How many miles long is a 10K (10 kilometer) race?</p></li>
+
+  <li><p>Round your answer to part (a) to tenths, and compare to the closest familiar common fraction.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>6.21371 miles</p></li>
+  <li><p>Approximately 6.2 miles, or <m>6\dfrac{1}{5}</m> miles</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>metric system</p></li>
+  <li><p>meter</p></li>
+  <li><p>decimal fraction</p></li>
+  <li><p>place value</p></li>
+  <li><p>terminate</p></li>
+  <li><p>repeating decimal</p></li>
+  <li><p>rounding</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-2-1.ptx" />
+
+
+</section>

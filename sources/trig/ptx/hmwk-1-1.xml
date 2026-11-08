@@ -1,0 +1,1146 @@
+<?xml version="1.0"?>
+
+<exercises xml:id="section-1-1-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Homework 1.1</title>
+
+<exercisegroup>
+        <introduction><p>For Problems 1<ndash/>6, sketch and label a triangle with the given properties.</p></introduction>
+    <exercise number="1"><statement>
+        <p>An isosceles triangle with vertex angle 30°</p></statement>
+    <answer><image width="10%" xml:id="hp1-1-1ans">
+    <description>isosceles triangle with vertex angle 30°</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.8]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2,0);
+        \coordinate (C) at (75: tan(75);
+        \draw[red] ($ (C)+(255:1) $) arc (255:285:1) node[below, midway, yshift=-4, text=black] {$30\degree$};
+        \draw[black, thick] (A)--(C)  node[left,midway ]{1};
+        \draw[black, thick] (B)--(C)  node[right,midway ]{1};
+        \draw[black, thick] (A)--(B);
+    \end{tikzpicture}]]>
+    </latex-image></image></answer></exercise>
+
+    <exercise number="2"><statement>
+        <p>A scalene triangle with one obtuse angle (<term>Scalene</term><idx><h>scalene triangle</h></idx><idx><h>triangle</h><h>scalene</h></idx> means three unequal sides.)</p></statement>
+    </exercise>
+
+    <exercise number="3"><statement>
+        <p>A right triangle with legs 4 and 7</p></statement>
+    <answer><image width="20%" xml:id="hp1-1-3ans"><description>right triangle with legs 4 and 7</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (2.1,0);
+    \coordinate (C) at (0,1.2);
+    \draw[blue, thick] (0,0) rectangle (.25,.25);
+
+    \draw[black, thick] (A)--(C)  node[left,midway ]{4}; 
+    \draw[black, thick] (B)--(C);
+    \draw[black, thick] (A)--(B)  node[below,midway ]{7}; 
+    \end{tikzpicture}]]>
+    </latex-image></image></answer></exercise>
+
+    <exercise number="4"><statement>
+        <p>An isosceles right triangle</p>
+    </statement></exercise>
+
+    <exercise number="5"><statement>
+        <p>An isosceles triangle with one obtuse angle</p></statement>
+    <answer><image width="25%" xml:id="hp1-1-5ans"><description>An isosceles triangle with one obtuse angle</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.9]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (325:2);
+        \coordinate (C) at (215:2);
+        \draw[red] ($ (A)+(325:.5) $) arc (325:215:.5) node[below, midway, yshift=0, text=black] {$110\degree$};
+
+        \draw[black, thick] (A)--(C)  node[left,midway, yshift=3 ]{\small 1}; 
+        \draw[black, thick] (B)--(C);
+        \draw[black, thick] (A)--(B)  node[right,midway,yshift=3 ]{\small 1}; 
+    \end{tikzpicture}]]>
+    </latex-image></image></answer></exercise>
+
+    <exercise number="6"><statement>
+        <p>A right triangle with one angle 20°</p>
+    </statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+        <introduction><p>For Problems 7<ndash/>20, find each unknown angle.</p></introduction>
+
+<exercise number="7"><statement><image width="50%" xml:id="hp1-1-7"><description>triangle theta</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.9]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2.8,.5);
+        \coordinate (C) at( 3.1,2.);
+        \draw[red] ({atan(5/28)}:1.3) arc ({atan(5/28)}:{atan(20/31)}:1.3) node[right,midway, xshift=-1, yshift=2, text=black]{$23.2\degree$};
+        \draw[red] ($ (B)+({180+atan(5/28)}:.3) $) arc ({180+atan(5/28)}:{71.8+atan(5/28)}:.3) node[left,midway, xshift=3, yshift=4, text=black]{$\theta$};
+        \draw[red] ($ (C)+({180+atan(20/31)}:.5) $) arc ({180+atan(20/31)}:{228+atan(20/31)}:.5) node[below left,midway, xshift=6, yshift=2, text=black]{$48\degree$};
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+    \end{tikzpicture}]]>
+</latex-image></image></statement>
+<answer><p><m>\theta = 108.8\degree</m></p></answer></exercise>
+
+<exercise number="8"><statement><image width="80%" xml:id="hp1-1-8"><description>triangle phi</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4.8,1.2);
+        \coordinate (C) at( 1.2,1.2);
+        \draw[red] ({atan(1/4)}:.6) arc ({atan(1/4)}:45:.6) node[right,midway, xshift=-1, yshift=3, text=black]{$\phi$};
+        \draw[red] ($ (B)+(-1.6,0) $) arc (180:{180+atan(1/4}:1.6) node[left,midway, xshift=1, yshift=0, text=black]{$17\degree$};
+        \draw[red] ($ (C)+(.3,0) $) arc (0:-135:.3) node[below right,midway, xshift=-4, yshift=2, text=black]{$131.6\degree$};
+        \filldraw[black] (C) circle (.2pt) node[anchor=north west, xshift=-6,yshift=-1] {$$};\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+    \end{tikzpicture}]]>
+</latex-image></image></statement></exercise>
+
+<exercise number="9"><statement><image width="45%" xml:id="hp1-1-9"><description>triangle alpha</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.72]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (3.7,0);
+        \coordinate (C) at( 0,-2);
+        \draw[red] ($ (B)+(-0.8,0) $) arc (180:{180+atan(20/37}:.8) node[left, midway, yshift=-1]{$\alpha$};
+        \draw[red] ($ (C)+(0,0.4) $) arc (90:{atan(20/37}:.4) node[above right, midway, xshift=-3]{$61\degree$};
+        %\filldraw[black] (A) circle (.2pt) node[anchor=south west, xshift=8, yshift=2]{$x$};
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \draw[blue, thick] (A)rectangle (.25,-.25);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>\alpha = 29\degree</m></p></answer></exercise>
+
+<exercise number="10"><statement><image width="60%" xml:id="hp1-1-10"><description>triangle gamma</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.63]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (5,0);
+        \coordinate (C) at( 0.5,-1.5);
+        \draw[red] (.5,0) arc (0:-atan(3):.5) node[below right, midway, xshift=-1, yshift=2]{$\gamma$};
+        \draw[red] ($ (B)+(-1.5,0)$) arc (180:180+atan(1/3):1.5) node[left, midway, xshift=1, yshift=-1]{$18\degree$};
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \draw[blue] (0.4,-1.2) -- (0.7,-1.1) --(0.8,-1.4) --( C)  -- cycle;
+        %\draw[blue, thick] (O)rectangle (.25,-.25);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+
+    <exercise number="11"><statement><image width="50%" xml:id="hp1-1-11"><description>triangle beta</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.63]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4.1,0);
+        \coordinate (C) at( 3.7,1.8);
+        \draw[red] (1,0) arc (0:atan(18/37):1) node[right, midway, yshift=2, text=black]{$26\degree$};
+        \draw[red] ($ (C)+({180+atan(18/37)}:0.5) $) arc (180+atan(18/37): 360-atan(18/4):0.5) node[below, midway, text=black]{$\beta$};
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \draw[black,  thick] (A) --  (B) node [below, midway] {$10$};
+        \draw[black,  thick] (A) --  (C) node [above, midway, yshift=2] {$10$};
+        \draw[black,  thick] (B)--(C);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>\beta = 77\degree</m></p></answer></exercise>
+
+<exercise number="12"><statement><image width="17%" xml:id="hp1-1-12"><description>triangle omega</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (1.2,1.8);
+        \coordinate (C) at( 0,3.6);
+        \draw[red] ($ (B) + ({180+atan(3/2)}:.3) $) arc (180+atan(3/2): 180-atan(3/2):.3) node[left, midway, yshift=-3, text=black]{$\omega$};
+        \draw[red] ($ (C) + (0,-.9) $) arc (270: 360-atan(3/2):.9) node[below, midway, xshift=3, yshift=-3, text=black]{$32\degree$};
+        %\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \draw[black,  thick] (A) --  (B) node [below, midway, xshift=5] {$7$};
+        \draw[black,  thick] (B) --  (C) node [above, midway, xshift=5] {$7$};
+        \draw[black,  thick] (A)--(C);
+    \end{tikzpicture}]]>
+</latex-image></image></statement></exercise>
+
+<exercise number="13"><statement><image width="55%" xml:id="hp1-1-13"><description>triangle alpha</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.8]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2.5,0);
+        \coordinate (C) at( 0,1.);
+        \coordinate (D) at( 2.5,1.);
+        \draw[red] (1.5,0) arc (180:180-atan(2/5):1) node [left, midway, xshift=0, yshift=1, text=black] {$\alpha$};
+        \draw[red] (1,1) arc (0:-21.8:1) node [right, midway, xshift=1, yshift=-2, text=black] {$12 \degree$};
+        \draw[black,  thick] (B) --( C);
+        \draw[black,  thick] (-.3,0) --  (3.8,0);
+        \draw[black,  thick] (-.3,1.) --  (3.8,1);
+        \draw[black,  thick,->] (-.3,0) --  (3,0);
+        \draw[black,  thick,->] (-.3,1.) --  (3,1.);
+        \draw[blue,  thick, dashed] (A)--(C);
+        \draw[blue, thick] (A) rectangle (.25,.25);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+<answer><p><m>\alpha = 12\degree</m></p></answer></exercise>
+
+<exercise number="14"><statement><image width="45%" xml:id="hp1-1-14"><description>triangle beta</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.8]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (1.2,0);
+    \coordinate (C) at( 1.2,2.5);
+    \coordinate (D) at( 0,2.5);
+    \draw[red] (1.2,1.7) arc (-90:-115.64:.8) node [below, midway, xshift=0, yshift=0, text=black] {$\beta$};
+    %\filldraw[black] (C) circle (.2pt) node[anchor=north east, xshift=-2, yshift=-12]{$\beta$};
+    \draw[red] (0,.8) arc (90:64.36:.8) node [above, midway, xshift=2, yshift=0, text=black] {$4 \degree$};
+    \draw[black,  thick] (A) -- (B) --(C) -- cycle;
+    \draw[black,  thick] (-.8,0) --  (2.5,0);
+    \draw[blue,  thick, dashed] (A)--(0,2.5);
+    \draw[blue, thick] (A) rectangle (-.25,.25);
+    \draw[blue, thick] (B) rectangle +(.25,.25);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+
+<exercise number="15"><statement><image width="50%" xml:id="hp1-1-15"><description>triangle theta</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (1.2,0);
+    \coordinate (C) at( 1.2,2.5);
+    \draw[red] (-.3,0) arc (180:59.6:.3) node [above, midway, xshift=-8, yshift=-3, text=black] {$115\degree$};
+    \draw[red] (.75,1) arc (0:64.36:.3) node [above right, midway, xshift=-2, yshift=-3, text=black] {$\theta$};
+    \draw[black,  thick] (A)--(B) --( C) -- cycle;
+    \draw[black,  thick] (-.3,-.625) --( C);
+    \draw[black,  thick] (-1,0) --  (3.,0);
+    \draw[black,  thick] (-1,1.) --  (3.,1);
+    \draw[black,  thick,->] (B) --  (2.5,0);
+    \draw[black,  thick,->] (1.2,1) --  (2.5,1);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>\theta = 65\degree</m></p></answer></exercise>
+
+<exercise number="16"><statement><image width="50%" xml:id="hp1-1-16"><description>triangle phi</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.72]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (0,1.2);
+        \coordinate (C) at(-1.8,0);
+        \coordinate (D) at (0,2);
+        \coordinate (E) at (-3,0);
+        \coordinate (F) at (-.9,.6);
+        \coordinate(G) at (-1.26,1.18);
+
+        \draw[red] (0,.9) arc (-90:-147.3:.3) node [below left, midway, xshift=7, yshift=0, text=black] {$48\degree$};
+        \draw[red] (-2.5,0) arc (0:34.3:.5) node [right, midway, xshift=2, yshift=3, text=black] {$\phi$};
+
+        \draw[black,  thick] (A)--(B) --( C) -- cycle;
+        \draw[black,  thick] (A)--(D) --( E) -- cycle;
+
+        %\draw[black,  thick] (-3.3,-.625) --(2,3);
+        \draw[black,  thick] (-3.3,0) --  (.5,0);
+        %\draw[black,  thick] (-1,1.) --  (3.,1);
+        \draw[black,  thick,->] (C) --  (F);
+        \draw[black,  thick,->] (E) --  (G);
+    \end{tikzpicture}]]>
+</latex-image></image></statement></exercise>
+
+<exercise number="17"><statement><image width="45%" xml:id="hp1-1-17"><description>triangle theta</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2.5,-1);
+        \coordinate (C) at (3,1);
+
+        \draw[red] (0,.5) arc (90:18.4:.5) node [above right, midway,xshift=0, yshift=0, text=black] {$82\degree$};
+        \draw[red] (.7,0) arc (0:-21.8:.7) node [right, midway, xshift=2, yshift=-1.5, text=black] {$4\degree$};
+        \draw[red] ({atan(-2/5)}:1.5)  arc (atan(-2/5):atan(1/3):1.5) node [right, midway, xshift=0, yshift=0, text=black] {$\theta$};
+
+        \draw[black,  thick] (A)--(B) --( C) -- cycle;
+        \draw[black,  thick] (0,-1) --(0,1);
+        \draw[blue, thick] (A) rectangle (-.25,.25);
+        \draw[black,  thick] (-.5, 0) --  (1, 0);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>\theta = 12\degree</m></p></answer></exercise>
+
+<exercise number="18"><statement><image width="50%" xml:id="hp1-1-18"><description>triangle alpha</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.63]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2,-1.9);
+        \coordinate (C) at (-2.4,0.8);
+
+        \draw[red] (0,.5) arc (90:161.6:.5) node [above , midway,xshift=-3, yshift=0, text=black] {$68\degree$};
+        \draw[red] (.5,0) arc (0:-43.5:.5) node [right, midway, xshift=2, yshift=-3, text=black] {$43\degree$};
+        \draw[red] (-.19,0.063) arc (161.6:316.5:.2) node [below, midway, xshift=1, yshift=2, text=black] {$\alpha$};
+
+        \draw[black,  thick] (A)--(B) --( C) -- cycle;
+
+        \draw[black,  thick] (A) --(0,1);
+        \draw[blue, thick] (A) rectangle (.25,.25);
+        \draw[black,  thick] (A) --  (1.5, 0);
+    \end{tikzpicture}]]>
+</latex-image></image></statement></exercise>
+
+<exercise number="19"><statement><image width="40%" xml:id="hp1-1-19"><description>triangle psi</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.63]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (3.2,0.8);
+        \coordinate (C) at (2,2.4);
+
+        \draw[gray,  thick,->] (A) --(0,3);
+        \draw[gray,  thick,->] (2,0) --(2,3);
+        \draw[gray, thick] (C) rectangle +(-.25,.25);
+        \draw[gray,  thick] (1,2.4) --  (3, 2.4);
+
+        \draw[red] (0,.8) arc (90:50.2:.8) node [above , midway,xshift=5, yshift=0,text=black] {$41\degree$};
+        \draw[red] (2.4,2.4) arc (0:-53.1:.4) node [right, midway, xshift=0, yshift=-3,text=black] {$58\degree$};
+        \draw[red] ($ (C)+({180+atan(1.2)}:.7)$) arc (180+atan(1.2):360-atan(1.6):.7) node [below, midway, fill=white, inner sep=0pt,text=black] {$\psi$};
+        \draw[black,  thick] (A)--(B) --(C) -- cycle;
+    \end{tikzpicture}]]>
+</latex-image></image></statement>
+    <answer><p><m>\psi = 73\degree</m></p></answer></exercise>
+
+<exercise number="20"><statement><image width="40%" xml:id="hp1-1-20"><description>triangle beta</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.72]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (1,2.4);
+    \coordinate (C) at (3,1.2);
+
+    \draw[gray,  thick,->] (A) --(0,3);
+    \draw[gray,  thick,->] (3,0) --(3,3);
+
+    \draw[red] (0,1.3) arc (90:67.3:1.3) node [above , midway,xshift=3, yshift=4, text=black] {$23\degree$};
+    \draw[red] (3,1.6) arc (90:149.1:.4) node [above left, midway, xshift=5, yshift=1, text=black] {$61\degree$};
+    \draw[red] (0.8,1.93) arc (247:331:.5) node [below, midway, text=black] {$\beta$};
+    \draw[black,  thick] (A)--(B) --( C) -- cycle;
+    \end{tikzpicture}]]>
+</latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+        <introduction><p>In Problems 21 and 22, the angle labeled <m>\phi</m> is called an <term>exterior angle</term><idx><h>angle</h><h>exterior</h></idx><idx><h>triangle</h><h>exterior angle</h></idx> of the triangle, formed by one side and the extension of an adjacent side.  Find <m>\phi</m>.</p></introduction>
+<exercise number="21"><statement><image width="55%" xml:id="hp1-1-21"><description>ext angle</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2.9,0);
+        \coordinate (C) at( 2,1.2);
+        \draw[red] (0.7,0) arc (0:30:.7) node[right, midway, yshift=2, text=black]{$30\degree$};
+        \draw[red] ($(B)+ (0.4,0)$) arc (0:180-atan(1.2/.9):.4) node[above, midway, xshift=2, text=black]{$122\degree$};
+        \draw[red] ($(C)+ (210:.4)$) arc (210:122:.4) node[left, midway, text=black]{$\phi$};
+
+        \draw[black,  thick] (1.4,2) --  (B);
+        \draw[black,  thick] (A) --  (4.2,0);
+        \draw[black,  thick] (A)--(C);
+    \end{tikzpicture}]]>
+</latex-image></image></statement>
+<answer><p><m>\phi = 88\degree</m></p></answer></exercise>
+
+<exercise number="22"><statement><image width="50%" xml:id="hp1-1-22"><description>ext angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.63]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3.1,0);
+            \coordinate (C) at( 2.4,2.016);
+            \draw[red] (.25,0) arc(0: -180+atan(1.008):.25) node[below right, midway, xshift=-3, yshift=2, text=black]{$140\degree$};
+            \draw[red] ($ (B)+(-.25,0)$) arc(180:360-atan(2.016/.7):.25) node[below left, midway, xshift=3, yshift=2, text=black]{$\phi$};
+            \draw[red] ($ (C)+({atan(1.008)}:.3)$) arc(atan(1.008):-atan(2.016/.7):.3) node[right, midway, xshift=0, yshift=0, text=black]{$110\degree$};
+            %\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black,  thick] (-.5,-.42) --  (2.9,2.436);
+            \draw[black,  thick] (C) --  (3.3,-.576);
+            \draw[black,  thick] (A)--(B);
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercise number="23"><statement><p>In parts (a) and (b), find the exterior angle <m>\phi</m>.</p>
+<p><ol marker="a." cols="2">
+    <li><image width="40%" xml:id="hp1-1-23a"><description>ext angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.9]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (1.73,0);
+            \coordinate (C) at( .4,2.3);
+            \draw[red] (.4,0) arc (0:atan(23/4):.4) node[right, midway, yshift=2, text=black] {$80\degree$};
+            \draw[red] ($(B)+(.3,0)  $) arc (0:180-atan(23/13.3:.3) node[right, midway, yshift=4, text=black] {$\phi$};
+            \draw[red] ($(C)+({180+atan(23/4)}:.7)  $) arc (180+atan(23/4):360-atan(23/13.3:.7) node[below, midway, xshift=1, text=black] {$40\degree$};
+            \draw[black,  thick] (B) --  (C);
+            \draw[black,  thick] (C) --  (A);
+            \draw[black,  thick] (A)--(2.4,0);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><image width="60%" xml:id="hp1-1-23b"><description>ext angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.9]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3.1,0);
+            \coordinate (C) at(1,1.2);
+            \draw[red] (.4,0) arc (0:atan(1.2):.4) node[right, midway, yshift=2, text=black] {$50\degree$};
+            \draw[red] ($(B)+(.3,0) $) arc (0:180-atan(1.2/2.1):.3) node[above, midway, yshift=-2, text=black] {$\phi$};
+            \draw[red] ($(C)+({180+atan(1.2)}:.3)  $) arc (180+atan(1.2):360-atan(1.2/2.1:.3) node[below, midway, xshift=3, text=black] {$110\degree$};
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black,  thick] (A)--(3.7,0);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><p>Find an algebraic expression for <m>\phi</m>.</p> 
+    <p><image width="60%" xml:id="hp1-1-23c"><description>ext angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3.1,0);
+            \coordinate (C) at(.9,1.6);
+            \draw[red] (.3,0) arc (0:atan(16/9):.3) node[right, midway, yshift=2, text=black] {$\alpha$};
+            \draw[red] ($(B)+(.3,0) $) arc (0:180-atan(16/21):.3) node[above, midway, yshift=-2, text=black] {$\phi$};
+            \draw[red] ($(C)+({180+atan(16/9)}:.3)  $) arc (180+atan(16/9):360-atan(16/21:.3) node[below, midway, xshift=1, text=black] {$\beta$};
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black,  thick] (A)--(3.7,0);
+        \end{tikzpicture}]]>
+    </latex-image></image></p></li>
+    <li>Use your answer to part (c) to write a rule for finding an exterior angle of a triangle.</li>
+</ol></p>
+</statement>
+<answer><p><ol marker="a."> 
+    <li><m>\phi = 120\degree</m></li>
+    <li><m>\phi = 160\degree</m></li>
+    <li><m>\phi = \alpha + \beta</m></li>
+    <li>An exterior angle is equal to the sum of the opposite interior angles.</li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement>
+<p><ol marker="a.">
+    <li><sidebyside widths="50% 27%" valigns="middle middle"><p>Find the three exterior angles of the triangle.  What is the sum of the exterior angles?</p>
+    <image xml:id="hp1-1-24a"><description>ext angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3.6,1);
+            \coordinate (C) at(2,2.1);
+            \draw[red] ($(A)+({atan(1/3.6)}:.7)$) arc (atan(1/3.6): atan(2.1/2):.7) node[above right, midway,yshift=-1, text=black] {$45\degree$};
+            \draw[red] ($(A)+({atan(1/3.6)}:.4)$) arc (atan(1/3.6): -180+atan(2.1/2):.4) node[below, midway, xshift=4,yshift=3, text=black] {$\theta$};
+            \draw[red] ($(B)+({180+atan(1/3.6)}:.6)$) arc (180+atan(1/3.6):180-atan(11/16):.6) node[left, midway, xshift=2,yshift=-2, text=black] {$50\degree$};
+            \draw[red] ($(B)+({atan(1/3.6)}:.3)$) arc (atan(1/3.6):180-atan(11/16):.3) node[above, midway, text=black] {$\psi$};
+            \draw[red] ($(C)+({180+atan(2.1/2)}:.3)$) arc (180+atan(2.1/2):360-atan(11/16):.3) node[below, midway, xshift=1,yshift=1, text=black] {$85\degree$};
+            \draw[red] ($(C)+({180+atan(2.1/2)}:.5)$) arc (180+atan(2.1/2):180-atan(11/16):.5) node[left, midway, xshift=0,yshift=0, text=black] {$\phi$};
+
+
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black,  thick] (B) --  (1.2,2.66);
+            \draw[black,  thick] (C) --  (-.5,-.5025);
+            \draw[black,  thick] (A)--(4.14,1.15);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></li>
+    <li><sidebyside widths="50% 27%" valigns="middle middle"><p>Write an algebraic expression for each exterior angle in terms of one of the angles of the triangle. What is the sum of the exterior angles?</p>
+    <image xml:id="hp1-1-24b"><description>ext angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3.6,1);
+            \coordinate (C) at(2,2.1);
+            \draw[red] ($(A)+({atan(1/3.6)}:.7)$) arc (atan(1/3.6): atan(2.1/2):.7) node[above right, midway,yshift=-1, text=black] {$\alpha$};
+            \draw[red] ($(A)+({atan(1/3.6)}:.4)$) arc (atan(1/3.6): -180+atan(2.1/2):.4) node[below, midway, xshift=4,yshift=3, text=black] {$\theta$};
+            \draw[red] ($(C)+({180+atan(2.1/2)}:.5)$) arc (180+atan(2.1/2):180-atan(11/16):.5) node[left, midway, xshift=0,yshift=0, text=black] {$\phi$};
+            \draw[red] ($(C)+({180+atan(2.1/2)}:.3)$) arc (180+atan(2.1/2):360-atan(11/16):.3) node[below, midway, xshift=1,yshift=1, text=black] {$\beta$};
+            \draw[red] ($(B)+({180+atan(1/3.6)}:.6)$) arc (180+atan(1/3.6):180-atan(11/16):.6) node[left, midway, xshift=2,yshift=-2, text=black] {$\gamma$};
+            \draw[red] ($(B)+({atan(1/3.6)}:.3)$) arc (atan(1/3.6):180-atan(11/16):.3) node[above, midway, text=black] {$\psi$};
+
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black,  thick] (B) --  (1.2,2.66);
+            \draw[black,  thick] (C) --  (-.5,-.5025);
+            \draw[black,  thick] (A)--(4.14,1.15);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></li>
+</ol></p>
+</statement></exercise>
+
+<exercisegroup cols="2">
+        <introduction><p>In Problems 25 and 26, the figures inscribed are <term>regular polygons</term><idx><h>polygon</h><h>regular</h></idx>, which means that all their sides are the same length, and all the angles have the same measure. Find the angles <m>\theta</m> and <m>\phi</m>.</p></introduction>
+
+<exercise number="25"><statement><image width="45%" xml:id="hp1-1-25"><description>pentagon</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+        \coordinate(O) at (0,0);
+        \coordinate (A) at (1.71,.556 );
+        \coordinate (B) at (0,1.8);
+        \coordinate (C) at(-1.71,.556);
+        \coordinate (D) at (-1.058,-1.456);
+        \coordinate (E) at(1.058,-1.456);
+        \draw (0,0) circle (1.8);
+        \draw[red](234: .4) arc (234:306: .4) node[below, midway, yshift=2, text=black]{$\theta$};
+        \draw[red]($(D)+(.4,0)$) arc (0:54: .4) node[right, midway, yshift=2, text=black]{$\phi$};
+
+        \draw[black,  thick] (A) -- (B) --( C) --(D) --(E)-- cycle;
+        \draw[black,  thick] (B) --  (O);
+        \draw[black,  thick] (C) --  (O);
+        \draw[black,  thick] (A)--(O);
+        \draw[black,  thick] (D) --  (O);
+        \draw[black,  thick] (E)--(O);
+    \end{tikzpicture}]]>
+</latex-image></image></statement>
+    <answer><p><m>\theta = 72\degree, \phi = 54\degree</m></p></answer></exercise>
+
+<exercise number="26"><statement><image width="45%" xml:id="hp1-1-26"><description>hexagon</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+        \coordinate(O) at (0,0);
+        \coordinate (A) at (1.8,0 );
+        \coordinate (B) at (0.9,1.559);
+        \coordinate (C) at(-.9,1.559);
+        \coordinate (D) at (-1.8,0);
+        \coordinate (E) at(-0.9,-1.559);
+        \coordinate (F) at(0.9,-1.559);
+
+        \draw (0,0) circle (1.8);
+        \draw[red](240: .4) arc (240:300: .4) node[below, midway, yshift=2, text=black]{$\theta$};
+        \draw[red]($(E)+(.4,0)$) arc (0:60: .4) node[right, midway, yshift=2, text=black]{$\phi$};
+
+        \draw[black,  thick] (A) -- (B) --( C) --(D) --(E)--(F) -- cycle;
+        \draw[black,  thick] (B) --  (O);
+        \draw[black,  thick] (C) --  (O);
+        \draw[black,  thick] (A)--(O);
+        \draw[black,  thick] (D) --  (O);
+        \draw[black,  thick] (E)--(O);
+        \draw[black,  thick] (F)--(O);
+    \end{tikzpicture}]]>
+</latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+        <introduction><p>In problems 27 and 28, <m>\triangle ABC</m> is equilateral.  Find the unknown angles.</p></introduction>
+<exercise number="27"><statement><image width="53%" xml:id="hp1-1-27"><description>triangles</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.63]
+        \coordinate (A) at (0,0 );
+        \coordinate (B) at (60:3.6);
+        \coordinate (C) at (3.6,0);
+        \coordinate (D) at (2.425,2.035);
+        \coordinate (E) at (2.425,0);
+        \draw[red] ($ (D)+(120:.3) $) arc (120:220:.3) node[left, midway, text=black]{$\theta$};
+        \draw[red] (.5,0) arc (0:40:.5) node[right, yshift=2, midway, text=black]{$40\degree$};
+        \draw[red] ($ (D)+(-60:.8) $) arc (-60:-90:.8) node[below, xshift=2, midway, text=black]{$\phi$};
+
+        \filldraw[black] (A) circle (.2pt) node[anchor=north  east , xshift=1, yshift=0]{$A$};
+        \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=1, yshift=-2]{$B$};
+        \filldraw[black] (C) circle (.2pt) node[anchor=north west , xshift=-1,yshift=0]{$C$};
+
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+
+        \draw[black,  thick] (A)--(D);
+        \draw[black,  thick] (D) --  (E);
+        \draw[blue, thick] (E) rectangle +(.25,.25);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>\theta = 100\degree, \phi = 30\degree</m></p></answer></exercise>
+
+<exercise number="28"><statement><image width="70%" xml:id="hp1-1-28"><description>triangles</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.68]
+        \coordinate (A) at (0,0 );
+        \coordinate (B) at (1.8,3);
+        \coordinate (C) at (3.6,0);
+        \coordinate (D) at (5.4,3.2);
+        \coordinate (E) at (30:{1.8*sqrt(3)});
+        \draw[red, <->, >=stealth'] (1.2,0)  arc (0:30:1.2) node[right, midway, yshift=2, text=black]{$\phi$};
+        \draw[red, <->, >=stealth'] (30:1.2) arc (30:60:1.2) node[above right, midway, yshift=-2, text=black]{$\phi$};
+        \draw[red, <->, >=stealth'] ($ (E)+(120:0.5)$)  arc (120:210:0.5) node[left, midway, yshift=0, text=black]{$\theta$};
+        \draw[red, <->, >=stealth'] ($(C)+(.8,0)$)  arc (0:60:.8) node[right, midway, yshift=2, text=black]{$\psi$};
+        \draw[red, <->, >=stealth'] ($(C)+(60:.8)$) arc (60:120:.8) node[above, midway, yshift=-2, text=black]{$\psi$};
+
+        \filldraw[black] (A) circle (.2pt) node[anchor=north  east , xshift=1, yshift=0]{$A$};
+        \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=1, yshift=-2]{$B$};
+        \filldraw[black] (C) circle (.2pt) node[anchor=north west , xshift=-1,yshift=0]{$C$};
+
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \draw[black,  thick] (A)--(D);
+        \draw[black,  thick] (D) --  (C);
+        \draw[black,  thick] (5.4,0) --  (C);
+    \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercise number="29"><statement>
+    <sidebyside widths="35% 40%">
+    <image xml:id="hp1-1-29"><description>triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (1.2,2);
+            \coordinate (C) at (4.8,0);
+            \coordinate (D) at (2.4,0);
+            \draw[red] (.3,0) arc (0:atan(2/1.2):.3) node[right, midway, yshift=2, text=black]{$\theta$};
+            \draw[red] ($ (B)+({180+atan(2/1.2)}:.3)$) arc (180+atan(2/1.2):240+atan(2/1.2):.3) node[below, midway, text=black]{$\theta$};
+            \draw[red] ($ (C)+(-1,0)$) arc (180:180-atan(2/3.6):1) node[left, midway, yshift=2, text=black]{$\phi$};
+            \draw[red] ($ (B)+({-atan(2/3.6)}:1)$) arc (-atan(2/3.6):-atan(2/1.2):1) node[below right, midway, xshift=-1, yshift=2, text=black]{$\phi$};
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north  east , xshift=1, yshift=0]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=1, yshift=-2]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north west , xshift=-1,yshift=0]{$C$};
+
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+
+            \draw[black,  thick] (B)--(D);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><ol marker="a."> 
+        <li><p><m>2 \theta + 2 \phi =~</m><fillin characters="8"/></p></li>
+        <li><p><m>\theta + \phi =~</m><fillin characters="8"/></p></li>
+        <li><p><m>\triangle ABC</m> is<m>~~~</m><fillin characters="8"/></p></li>
+    </ol></p>
+    </sidebyside></statement>
+    <answer><p><ol marker="a.">
+        <li><m>180\degree</m></li>
+        <li><m>90\degree</m></li>
+        <li>a right triangle</li>
+    </ol></p></answer></exercise>
+
+<exercise number="30"><statement><sidebyside widths="40% 33%"  margins="15% 10%" valigns="middle middle">
+    <p>Find <m>\alpha</m> and <m>\beta</m>.</p> 
+    <image xml:id="hp1-1-30"><description>triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (5,0);
+            \coordinate (C) at (.96,1.9);
+            \coordinate (D) at (.96,0);
+
+            \draw[red,thick] (.96,1.2) arc (270: 335:.7) node[below right, midway, text=black] {$\beta$};
+            \draw[red] (.3,0) arc (0:65:.3) node[right, midway, xshift=-2, yshift=2, text=black]{$\alpha$};
+            \draw[red] ($ (B)+(-1,0)$) arc (180:155:1) node[left, midway, yshift=2, text=black]{$25^\circ$};
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north  east , xshift=1, yshift=0]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north west, xshift=-1, yshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=south , xshift=-1,yshift=0]{$C$};
+            \filldraw[black] (D) circle (.2pt) node[anchor=north , xshift=0,yshift=0]{$D$};
+
+            \draw[blue,  thick] (0.85,1.67) -- (1.08,1.57) -- (1.19,1.79);
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+
+            \draw[gray,  thick] (C)--(D);
+            \draw[blue,  thick] (D) rectangle +(.25,.25);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement></exercise>
+
+<exercise number="31"><statement><sidebyside widths="28% 60%" valigns="bottom top">
+    <image xml:id="hp1-1-31"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate(O) at (0,0);
+            \coordinate (A) at (-1.6,0 );
+            \coordinate (B) at (-0.8,1.39);
+            \coordinate (C) at(1.6,0);
+
+            \draw (0,0) circle (1.6);
+            \filldraw[black] (O) circle (1.4pt) node[anchor=north, xshift=0, yshift=-1]{$O$};
+            \filldraw[black] (A) circle (1.4pt) node[anchor=north east, xshift=0, yshift=0]{$A$};
+            \filldraw[black] (B) circle (1.4pt) node[anchor=south east, xshift=0, yshift=0]{$B$};
+            \filldraw[black] (C) circle (1.4pt) node[anchor=north west, xshift=0, yshift=0]{$C$};
+
+            \draw[black,  thick] (A) -- (B);
+            \draw[black,  thick] (B) --( C)  ;
+            \draw[black,  thick] (A) -- (O) node[below, midway]{\color{blue}$r$} ;
+            \draw[black, thick] (O) -- (C) node[below, midway]{\color{blue}$r$};
+            \draw[black,  thick] (B) --  (O) node[left, midway]{\color{blue}$r$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><ol marker="a."> 
+        <li>Explain why <m>\angle OAB</m> and <m>\angle ABO</m> are equal in measure.</li>
+        <li>Explain why <m>\angle OBC</m> and <m>\angle BCO</m> are equal in measure.</li>
+        <li>Explain why <m>\angle ABC</m> is a right angle.  (Hint:  Use Problem 29.)</li>
+    </ol></p>
+    </sidebyside></statement>
+    <answer><p><ol marker="a.">
+        <li>They are base angles of an isosceles triangle.</li>
+        <li>They are base angles of an isosceles triangle.</li>
+        <li><m>\angle OAB</m> corresponds to <m>\theta</m> of Problem 29, and <m>\angle OBC</m> corresponds to <m>\phi</m> of Problem 29.</li>
+    </ol></p></answer></exercise>
+
+    <exercise number="32"><statement><sidebyside widths="28% 60%" valigns="bottom top">
+    <image xml:id="hp1-1-32"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate(O) at (0,0);
+            \coordinate (A) at (-1.6,0 );
+            \coordinate (B) at (.55,1.5);
+            \coordinate (D) at(1.6,0);
+
+            \draw (0,0) circle (1.6);
+            \filldraw[black] (O) circle (1.4pt) node[anchor=north, xshift=0, yshift=-1]{$O$};
+            \draw[red] (-.25,0) arc (180:atan(1.5/.55):.25) node[above left, midway, xshift=2, yshift=-3]{$\gamma$};
+            \draw[red] (.4,0) arc (0:atan(1.5/.55):.4) node[right, midway, yshift=2]{$\theta$};
+            \filldraw[black] (A) circle (.4pt) node[anchor=north east, xshift=0, yshift=0]{$A$};
+            \draw[red] ($(A)+(.4,0)$) arc (0:atan(1.5/2.15):.4) node[right, midway, yshift=2]{$\alpha$};
+            \filldraw[black] (B) circle (.4pt) node[anchor=south west, xshift=0, yshift=0]{$B$};
+            \draw[red] ($(B)+({180+atan(1.5/.55)}:.5)$) arc (180+atan(1.5/.55):180+atan(1.5/2.15):.5) node[below left, midway, xshift=2, yshift=2]{$\beta$};
+            \filldraw[black] (D) circle (.4pt) node[anchor=north west, xshift=0, yshift=0]{$D$};
+
+            \draw[black,  thick] (A) -- (B);
+            \draw[black,  thick] (A) -- (O) ;
+            \draw[black, thick] (O) -- (D) ;
+            \draw[black,  thick] (B) --  (O) node[right, midway, yshift=-1]{\color{blue}$r$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><ol marker="a."> 
+        <li>Compare <m>\theta</m> with <m>\alpha + \beta</m>. (Hint:  What do you know about supplementary angles and the sum of angles in a triangle?</li>
+        <li>Compare <m>\alpha</m> and <m>\beta</m>.</li>
+        <li>Explain why the <term>inscribed angle</term><idx><h>angle</h><h>inscribed</h></idx> <m>\angle BAO</m> is half the size of the <term>central angle</term><idx><h>angle</h><h>central</h></idx> <m>\angle BOD</m>.</li>
+    </ol></p>
+    </sidebyside></statement></exercise>
+
+<exercisegroup cols="2">
+<exercise number="33"><statement><p>Find <m>\alpha</m> and <m>\beta</m>.</p>
+        <!--<image source="photos/hp1-1-33.png"><description>equil triangle</description></image>-->
+    <image width="50%" xml:id="hp1-1-33"><description>equil triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (B) at (0,0 );
+            \coordinate (A) at (1.5,2.6);
+            \coordinate (C) at (1.5,0);
+            \coordinate (D) at (3,0);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=south  east , xshift=0, yshift=0]{$A$};
+            \draw[red, <->,>=stealth'] ($ (A)+({180+atan(26/15)}:.9) $) arc(180+atan(26/15):270:.9) node[below, midway, xshift=-1]{$\alpha$};
+            \draw[red, <->,>=stealth'] ($ (A)+({-atan(26/15)}:.9) $) arc(-atan(26/15):-90:.9) node[below, midway, xshift=1]{$\alpha$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north east, xshift=0, yshift=0]{$B$};
+            \draw[red] (.4,0) arc (0:atan(26/15):.4) node[right, midway, yshift=2]{$\beta$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north  , xshift=0,yshift=0]{$C$};
+            \filldraw[black] (D) circle (.2pt) node[anchor=north west, xshift=0, yshift=0]{$D$};
+
+            \draw[blue, thick] (C) rectangle +(0.25,0.25);
+            \draw[black,  thick] (A) -- (B) node[left, midway, xshift=-2]  {\color{blue}$2$};
+            \draw[black,  thick] (A) -- (D) node[right, midway, xshift=2]  {\color{blue}$2$};
+            \draw[black,  thick] (C) -- (B) node[below, midway]  {\color{blue}$1$};
+            \draw[black,  thick] (C) -- (D) node[below, midway]  {\color{blue}$1$};
+            \draw[black,  thick] (A)--(C) node [left, midway, yshift=-7] {\color{blue}$b$};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><m>\alpha = 30\degree, \beta = 60\degree</m></p></answer></exercise>
+
+<exercise number="34"><statement><p>Find <m>\alpha</m> and <m>\beta</m>.</p>
+        <!--<image source="photos/hp1-1-34.png"><description>square</description></image>-->
+    <image width="50%" xml:id="hp1-1-34"><description>square</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (3,3);
+            \coordinate (C) at (3,0);
+            \coordinate (D) at (0,3);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north  east , xshift=0, yshift=0]{$A$};
+            \draw[red] (.4,0) arc(0:45:.4) node[right, midway, yshift=2]{$\alpha$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south west, xshift=0, yshift=0]{$B$};
+            \draw[red] ($(B)+(0,-.4)$) arc(-90:-135:.4) node[below, midway, xshift=-2]{$\beta$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north  west, xshift=0,yshift=0]{$C$};
+
+            \draw[blue, thick] (C) rectangle +(-0.25,0.25);
+            \draw[blue, thick] (D) rectangle +(0.25,-0.25);
+            \draw[black,  thick] (A) -- (B) node[left, midway, xshift=-1, yshift=4]  {\color{blue}$d$};
+            \draw[black,  thick] (A) -- (D) node[left, midway, xshift=-2]  {\color{blue}$1$};
+            \draw[black,  thick] (C) -- (B) node[right, midway, xshift=2]  {\color{blue}$1$};
+            \draw[black,  thick] (B) -- (D) node[above, midway]  {\color{blue}$1$};
+            \draw[black,  thick] (A)--(C) node [below, midway] {\color{blue}$1$};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>In Problems 35<ndash/>44, arrows on a pair of lines indicate that they are parallel.  Find <m>x</m> and <m>y</m> .
+    </p></introduction>
+    <exercise number="35"><statement>
+            <!--<image source="photos/hp1-1-35.png"><description>parallel lines</description></image>-->
+        <image width="55%" xml:id="hp1-1-35"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.9]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (1.2,0);
+            \coordinate (C) at (0,1);
+            \coordinate (D) at (2,1);
+            \draw[red] ($(D)+(.3,0)$) arc(0:47:.3) node[right, midway, yshift=2]{$47^\circ$};
+            \draw[red] ($(D)+(-.3,0)$) arc(180:227:.3) node[below left, midway]{$x$};
+            \draw[red] ($(B)+(.2,0)$) arc(0:-133:.2) node[below right, midway, yshift=0]{$y$};
+    
+            \draw[black,  thick] (-.5,0) -- (3.2,0) ;
+            \draw[black,  thick, <-] (A) -- (B) ;
+            \draw[black,  thick] (.8,-.5) -- (2.4,1.5) ;
+            \draw[black,  thick] (-.5,1) -- (3.2,1) ;
+            \draw[black,  thick, <-] (C) -- (D) ;
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+    <answer><p><m>x = 47\degree, y = 133\degree</m></p></answer></exercise>
+    
+    <exercise number="36"><statement>
+            <!--<image source="photos/hp1-1-36.png"><description>parallel lines</description></image>-->
+        <image width="55%" xml:id="hp1-1-36"><description>parallel lines</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}[scale=.8]
+                \coordinate (A) at (0,0 );
+                \coordinate (B) at (-1.8,1);
+                \coordinate (C) at (1.8,-1);
+                \draw[red] (0.9,0) arc (0:-28:.9) node[right, midway, yshift=-2]{$28\degree$};
+                \draw[red] (0,.5) arc (90:180-atan(1/1.8):.5) node[above, midway, xshift=-2]{$x$};
+                \draw[red] (0,-.25) arc (270:180-atan(1/1.8):.25) node[below left, midway, xshift=2]{$y$};
+    
+                \draw[blue, thick] (A) rectangle +(.25,.25);
+                \draw[black,  thick] (A) -- (2,0) ;
+                \draw[black,  thick] (0,-1) -- (0,1) ;
+                \draw[black,  thick] (B) -- (C) ;
+            \end{tikzpicture}]]>
+        </latex-image></image></statement></exercise>
+    
+    <exercise number="37"><statement>
+            <!--<image source="photos/hp1-1-37.png"><description>parallel lines</description></image>-->
+        <image width="70%" xml:id="hp1-1-37"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (1.8,.9);
+            \coordinate (C) at (B)++(-1,.5);
+            \coordinate (D) at (-1,-.5 );
+            \coordinate (E) at (B)++(-1,2);
+    
+            \filldraw[black] (A) circle (.2pt) node[anchor=south   , xshift=0, yshift=7]{\color{red}$2x+30^\circ$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=west , xshift=6, yshift=-2]{\color{red}$x-2y$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north , xshift=3, yshift=-4]{\color{red}$150\degree$};
+    
+            \draw[black,  thick] (-2.5,1.25) -- +(4,-2) ;
+            \draw[black,  thick] (D) -- +(4,2) ;
+            \draw[black,  thick] (B)++(1.4,-.7) -- +(-5,2.5) ;
+            \draw[black,  thick, ->] (A) -- +(-1.6,.8);
+            \draw[black,  thick, ->] (B) --+ (-2.6,1.3) ;
+    
+            \draw[red, thick] (.36,.18) arc (26.6:153.4:.4);
+            \draw[red, thick] (1.6,.79) arc (206.6:333.4:.25);
+            \draw[red, thick] (.27,.134) arc (26.6:-26.6:.3);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+    <answer><p><m>x = 60\degree, y = 15\degree</m></p></answer></exercise>
+    
+    <exercise number="38"><statement>
+            <!--<image source="photos/hp1-1-38.png"><description>parallel lines</description></image>-->
+        <image width="60%" xml:id="hp1-1-38"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (2,.728);
+            \coordinate (C) at (A)++(0,2);
+            \coordinate (D) at (2,2);
+    
+            \draw[black,  thick] (-1.5,-.546) -- +(4.5,1.638) ;
+            \draw[black,  thick] (0,-1) -- +(0,3.5) ;
+            \draw[black,  thick] (2,-1) -- +(0,3.5) ;
+            \draw[black,  thick, ->] (A) -- +(0,2);
+            \draw[black,  thick, ->] (B) -- (2,2) ;
+    
+            \draw[red, thick] (0,-.4) arc (-90:-160:.4) node[below left, midway, xshift=5, yshift=-3] {$x+2y$};
+            \draw[red, thick] (0,-.25) arc (-90:20:.23) node [below right, xshift=-6,yshift=-2] {$3x-10^\circ$};
+            \draw[red, thick] (2,.428) arc (-90:20:.3) node [below right] {$110\degree$};
+        \end{tikzpicture}]]>
+        </latex-image></image></statement></exercise>
+    
+    <exercise number="39"><statement>
+            <!--<image source="photos/hp1-1-39.png"><description>parallel lines</description></image>-->
+        <image width="55%" xml:id="hp1-1-39"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0 );
+    
+            \draw[black,  thick] (0.13,-.75) -- (-.397,2.25) ;
+            \draw[black,  thick] (-2,0) -- +(4,0) ;
+            \draw[black,  thick] (-2,1.5) -- +(4,0) ;
+            \draw[black,  thick, ->] (A) -- +(1.5,0);
+            \draw[black,  thick, ->] (0,1.5) -- +(1.5,0) ;
+    
+            \draw[red, thick] (.3,0) arc (0:-80:.3) node[below right, midway, yshift=2] {$4x-20y$};
+            \draw[red, thick] (-.3,0) arc (180:100:.3) node [above left, xshift=-1,yshift=-7] {$3y+32^\circ$};
+            \draw[red, thick] (.041,1.5) arc (0:-80:.35) node [below right, xshift=3,yshift=5] {$5y$};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+    <answer><p><m>x = 100\degree, y = 16\degree</m></p></answer></exercise>
+    
+    <exercise number="40"><statement>
+            <!--<image source="photos/hp1-1-40.png"><description>parallel lines</description></image>-->
+        <image width="60%" xml:id="hp1-1-40"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (0,1);
+            \coordinate (C) at(-2,-.5);
+            \coordinate (D) at(2,.5);
+            \coordinate (E) at (-2,.5);
+            \coordinate (F) at (2,1.5);
+    
+            \draw[black,  thick] (0.,-1.) -- +(0,3) ;
+            \draw[black,  thick, ->] (C) -- (D) ;
+            \draw[black,  thick, ->] (E) -- (F) ;
+            \draw[black,  thick] (D) -- +(.5,.125);
+            \draw[black,  thick] (F) --+ (.5,.125) ;
+    
+            \draw[red, thick] (0,.3) arc (90:194:.3) node[left, midway] {$100\degree$};
+            \draw[red, thick] (0,-.3) arc (270:374:.3) node[right, midway, yshift=-4] {$x+3y$};
+            \draw[red, thick] (0,1.4) arc (90:14:.4) node[right, midway, xshift=-6, yshift=8] {$2x+2y$};
+        \end{tikzpicture}]]>
+        </latex-image></image></statement></exercise>
+    
+    <exercise number="41"><statement>
+            <!--<image source="photos/hp1-1-41.png"><description>parallel lines</description></image>-->
+        <image width="75%" xml:id="hp1-1-41"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (0.7,-1);
+            \coordinate (C) at(1.36,1.94);
+            \coordinate (D) at(1.15,1.64);
+            \coordinate (E) at (3.5,0);
+            \coordinate (F) at (-1,-1.43);
+            \coordinate (G) at (-.638,-.9116);
+            \coordinate (H) at (-1.94,0);
+    
+            \draw[blue,thick] (G)++(-.164,.115) -- ++(.115,.164) -- +(.164,-.115);  
+            \draw[black,  thick] (-2.5,0) -- (E) ;
+            \draw[black,  thick] (E) -- (D) ;
+            \draw[black,  thick] (C) -- (F) ;
+            \draw[black,  thick] (.056,-1.4116) -- (H);
+            \draw[black,  thick, ->] (E) --+ (-1.5,1.05) ;
+            \draw[black,  thick, ->] (G) --+ (-.5,.35) ;
+            \draw[red] ($ (D)+({atan(1.64/1.15)}:.25) $) arc (atan(1.64/1.15):-35:.25) node[right, midway] {$x$};
+            \draw[red] ($ (A)+(-.4,0) $) arc (180:180+atan(164/115):.4) node[left, midway, yshift=-2] {$y$};
+            \draw[red] ($ (E)+(-.7,0) $) arc (180:145:.7) node[left, midway, yshift=2] {$35\degree$};
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+    <answer><p><m>x = 90\degree, y = 55\degree</m></p></answer></exercise>
+    
+    <exercise number="42"><statement>
+            <!--<image source="photos/hp1-1-42.png"><description>parallel lines</description></image>-->
+        <image width="65%" xml:id="hp1-1-42"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (2.5,0);
+            \coordinate (C) at(.44,2.5);
+    
+            \draw[black,  thick] (A) -- (B) --(C) -- cycle;
+            \draw[black,  thick] (-1.,0) -- (3.5,0) ;
+            \draw[black,  thick] (-1.,2.5) -- (3.5,2.5) ;
+            \draw[black,  thick, ->] (A) -- (3.3,0) ;
+            \draw[black,  thick, ->] (C) -- (3.3,2.5) ;
+            \draw[red, <->,>=stealth'] (.6,0) arc (0:80:.6) node[right, midway, yshift=2]{$80\degree$};
+            \draw[red, <->,>=stealth'] ($(C)+(.8,0)$) arc (0:-45:.8) node[right, midway, yshift=-2]{$x$};
+            \draw[red, <->,>=stealth'] ($(C)+(-45:.8)$) arc (-45:-180+atan(25/4.4:.8) node[below, midway, yshift=0]{$x$};
+            \draw[red, <->,>=stealth'] ($(B)+(0.4,0)$) arc (0:180-atan(25/20.6:.4) node[above, midway, yshift=0]{$y$};
+    
+        \end{tikzpicture}]]>
+        </latex-image></image></statement></exercise>
+    
+    <exercise number="43"><statement>
+            <!--<image source="photos/hp1-1-43.png"><description>parallel lines</description></image>-->
+        <image width="60%" xml:id="hp1-1-43"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (2.5,0);
+            \coordinate (C) at(.44,2.5);
+    
+            \draw[black,  thick] (A) -- (B) node[below, midway, text=blue] {$6$} --(C) -- cycle node[left, midway, text=blue] {$6$};
+            \draw[black,  thick] (-1.,0) -- (3.5,0) ;
+            \draw[black,  thick] (-1.,2.5) -- (3.5,2.5) ;
+            \draw[black,  thick, ->] (A) -- (3,0) ;
+            \draw[black,  thick, ->] (C) -- (3.0,2.5) ;
+            \draw[red] ($ (C)+(-.3,0)$) arc(180: 180+atan(25/4.4):.3) node[left,midway, yshift=-2]{$y$};
+            \draw[red] ((-.3,0) arc(180:atan(25/4.4):.3) node[left,midway, xshift=4, yshift=2]{$100\degree$};
+            \draw[red] ($ (B)+(-.5,0)$) arc(180: 180-atan(25/20.6):.5) node[left,midway, yshift=2]{$x$};
+    
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+    <answer><p><m>x = 50\degree, y = 80\degree</m></p></answer></exercise>
+    
+    <exercise number="44"><statement>
+            <!--<image source="photos/hp1-1-44.png"><description>parallel lines</description></image>-->
+        <image width="60%" xml:id="hp1-1-44"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (2.7,1.25);
+            \coordinate (C) at(0,2.5);
+    
+            \draw[black,  thick] (A) -- (B) --(C) -- cycle;
+            %\draw[black,  thick] (-1.,0) -- (3.5,0) ;
+            \draw[black,  thick] (B) -- (2.7,2.5) ;
+            \draw[black,  thick] (-.91,-.43) -- (3.61,1.68) ;
+            \draw[black,  thick, ->] (A) -- +(0,1.25) ;
+            \draw[black,  thick, ->] (B) -- +(0,1) ;
+            \draw[red] ($ (C)+(0,-.4)$) arc(-90:-25:.4) node[below right, midway, xshift=-5]{$65\degree$};
+            \draw[red] ($ (B)+(0,.4)$) arc(90:180-atan(12.5/27:.4) node[above, midway, xshift=-2]{$x$};
+            \draw[red] ($ (B)+(0,.6)$) arc(90:atan(12.5/27:.6) node[above, midway, xshift=4]{$y$};
+    
+            \node at (1.35,2.2) {\color{blue}$15$};
+            \node at (1.35,.3) {\color{blue}$15$};
+        \end{tikzpicture}]]>
+        </latex-image></image></statement></exercise>
+    </exercisegroup>
+
+<exercise number="45"><statement><p><ol marker="a.">
+    <li><sidebyside widths="45% 35%" margins="0% 7%">
+        <p>Among the angles labeled 1 through 5 in the figure at right, find two pairs of equal angles.</p>
+                <!--<image source="photos/hp1-1-45.png"><description>parallel lines</description></image>-->
+    <image xml:id="hp1-1-45"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (3,0);
+            \coordinate (C) at(2.5,2);
+
+            \draw[black,  thick] (A) -- (B) --(C) -- cycle;
+            \draw[black,  thick] (-.5,0) -- (5,0) ;
+            \draw[black,  thick] (-.5,2) -- (5,2) ;
+            \draw[black,  thick, ->] (A) -- (4,0) ;
+            \draw[black,  thick, ->] (0,2) -- (4,2) ;
+
+            \filldraw[black] (C) circle (.2pt) node[anchor=north east, xshift=-14, yshift=0]{\color{red}$4$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north , xshift=-3, yshift=-5]{\color{red}$2$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north west, xshift=2, yshift=0]{\color{red}$5$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=south west, xshift=12,yshift=-1]{\color{red}$1$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=-1,yshift=-1]{\color{red}$3$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></li>
+    <li><m>\angle 4 + \angle 2 + \angle 5 =~</m><fillin characters="8"/></li>
+    <li>Use parts (a) and (b) to explain why the sum of the angles of a triangle is <m>180 \degree </m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>\angle 1 = \angle 4, \angle 3 = \angle 5</m></li>
+    <li><m>180\degree</m></li>
+    <li>In the equation <m>\angle 4 + \angle 2 + \angle 5 = 180\degree,</m> substitute <m>\angle 1</m> for <m>\angle 4</m>, and substitute <m>\angle 3</m> for <m>\angle 5</m> to conclude that the sum of the angles in the triangle is <m>180 \degree</m>.</li>
+</ol></p></answer></exercise>
+
+<exercise number="46"><statement>
+    <p><ol marker="a." cols="2">
+        <li><p>In the figure below, find <m>\theta</m>, and justify your answer.</p>
+                <!--<image source="photos/hp1-1-46a.png"><description>parallel lines</description></image>-->
+    <image width="75%" xml:id="hp1-1-46a"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+        \coordinate (A) at (0,0);
+        \def\k{1.7};
+        \def\h{2.5};
+        \coordinate (B) at ({\k/tan(58)+\k/tan(26)},0);
+        \coordinate (C) at({\k/tan(26)},\k);
+        \coordinate (D) at({\h/tan(26)},\h);
+
+        \draw[black,  thick, dashed] (A) -- (C) ;
+        \draw[black,  thick] (C) -- (D) ;
+        \draw[black,  thick] (B) -- (C) ;
+        \draw[black,  thick] (5.4,0) -- +(.5,0) ;
+        \draw[black,  thick] (5.4,\h) -- +(.5,0) ;
+        \draw[black,  thick, ->] (A) -- (5.4,0) ;
+        \draw[black,  thick, ->] (0,\h) -- ++(5.4,0) ;
+        \draw[red] ($(D)+(-1,0)$) arc(180:206:1) node[left,midway,yshift=-2]{$26\degree$};
+        \draw[red] ($(C)+(26:.5)$) arc(26:-58:.5) node[right,midway]{$\theta$};
+        \draw[red] ($(B)+(-.5,0)$) arc(180:122:.5) node[left,midway,yshift=2]{$58\degree$};
+
+    \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><p>Write an algebraic expression for <m>\theta</m> in the figure below.</p>
+                <!--<image source="photos/hp1-1-46b.png"><description>parallel lines</description></image>-->
+    <image width="70%" xml:id="hp1-1-46b"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (B) at (3.5,0);
+            \coordinate (C) at(2,.8);
+            \coordinate (D) at(3.2,2.4);
+
+            \draw[black,  thick] (C) -- (D) ;
+            \draw[black,  thick] (B) -- (C) ;
+            \draw[black,  thick] (0,0) -- (5,0) ;
+            \draw[black,  thick] (0,2.4) -- +(5,0) ;
+            \draw[black,  thick, ->] (0,0) -- (4,0) ;
+            \draw[black,  thick, ->] (0,2.4) -- (4,2.4) ;
+            \draw[red] ($(D)+(-.5,0)$) arc(180:180+atan(16/12):.5) node[left,midway,yshift=-2]{$v$};
+            \draw[red] ($(C)+({atan(4/3)}:.5)$) arc(atan(3/4):-atan(8/15):.5) node[right,midway]{$\theta$};
+            \draw[red] ($(B)+(-.8,0)$) arc(180:180-atan(8/15):.8) node[left,midway,yshift=2]{$w$};
+    
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    </ol></p></statement></exercise>
+
+<exercise number="47"><statement><sidebyside widths="65% 18%" valigns="middle middle"><p><m>ABCD</m> is a rectangle.  The diagonals of a rectangle bisect each other.  In the figure, <m>\angle AQD = 130\degree</m>.  Find the angles labeled 1 through 5 in order, and give a reason for each answer.</p>
+    <!--<image source="photos/hp1-1-47.png"><description>rectangle</description></image>-->
+    <image xml:id="hp1-1-47"><description>rectangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (2.5,0);
+            \coordinate (C) at(2.5,-5);
+            \coordinate (D) at(0,-5);
+            \coordinate (Q) at (1.25,-2.5);
+
+            \draw[black,  thick] (A) rectangle (C) ;
+            \draw[black,  thin] (B) -- (D) ;
+            \draw[black,  thin] (A) -- (C) ;
+            \draw[red] ($(B)+(-.5,0)$) arc(180:180+atan(2):.5) node[left,midway, yshift=-2]{$4$};
+            \draw[red] ($(B)+(0,-1)$) arc(-90:-180+atan(2):1) node[below,midway]{$5$};
+            \draw[red] ($(D)+(.5,0)$) arc(0:atan(2):.5) node[right,midway, yshift=2]{$3$};
+
+            \filldraw[black] (Q) circle (2pt) node[anchor=south, xshift=0,yshift=6]{$Q$};
+            \draw[red] ($(Q)+({180-atan(2)}:.2)$) arc(180-atan(2):180+atan(2):.2) node[left,midway, xshift=2]{$130\degree$};
+            \draw[red] ($(Q)+({-atan(2)}:.3)$) arc(-atan(2):atan(2):.3) node[right,midway]{$1$};
+            \draw[red] ($(Q)+({180+atan(2)}:.5)$) arc(180+atan(2):360-atan(2):.5) node[below,midway]{$2$};
+            \filldraw[black] (A) circle (.8pt) node[anchor=south east, xshift=0,yshift=0]{$A$};
+            \filldraw[black] (B) circle (.8pt) node[anchor=south west, xshift=0,yshift=0]{$B$};
+            \filldraw[black] (C) circle (.8pt) node[anchor=north west, xshift=0,yshift=0]{$C$};
+            \filldraw[black] (D) circle (.8pt) node[anchor=north east, xshift=0,yshift=0]{$D$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+<answer><p><m>\angle 1 = 130\degree</m> because vertical angles are equal. <m>\angle 2 = 50\degree</m> because it makes a straight angle with a <m>130\degree</m> angle. <m>\angle 3 = 65\degree</m> because it is a base angle of an isosceles triangle whose vertex angle is <m>50\degree</m>. <m>\angle 4 = 65\degree</m> for the same reason.  <m>\angle 5 = 25\degree</m> because it is complementary to <m>\angle 4</m>.</p> </answer></exercise>
+
+<exercise number="48"><statement><sidebyside widths="45% 45%" valigns="middle middle"><p>A tangent meets the radius of a circle at a right angle.  In the figure,<m>\angle AOB = 140\degree</m>.  Find the angles labeled 1 through 5 in order, and give a reason for each answer.</p>
+    <!--<image source="photos/hp1-1-48.png"><description>circle with tangents</description></image>-->
+    <image xml:id="hp1-1-48"><description>circle with tangents</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (O) at (0,0 );
+            \coordinate (A) at (80:2 ); %80 degree
+            \coordinate (B) at (-65:2); %-65 deg
+            \coordinate (C) at(7.5:6.6);
+
+            \draw (O) circle (2);
+            \draw[black,  thick] (A) -- (C) ;
+            \draw[black,  thick] (B) -- (C) ;
+            \draw[black,  thick] (A) -- (B) ;
+            \draw[black,  thick] (A) -- (O) ;
+            \draw[black,  thick] (O) -- (B) ;
+            \draw[black,  thick] (O) -- (C) ;
+
+            \filldraw[black] (O) circle (1.5pt) node[anchor=east, xshift=0,yshift=0]{$O$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=south, xshift=0,yshift=0]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north , xshift=0, yshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=west, xshift=1, yshift=0]{$C$};
+            \draw[red] ($(C)+(187.5:1.5)$) arc(187.5:170:1.5) node[left,midway]{$3$};
+            \draw[red] ($(A)+(-82.5:.8)$) arc(-82.5:-10:.8) node[below right,midway, yshift=2]{$2$};
+            \draw[red] ($(A)+(-82.5:1)$) arc(-82.5:-100:1);
+            \draw[blue, <-,>=stealth'] (.31,.93)--(0,.6)--(-.3,.8) node[above, yshift=-2,text=red]{$1$};
+            \draw[red] ($.5*(A)+.5*(B)+(7.5:.4)$) arc(7.5:97.5:.4) node[right,midway, yshift=2]{$4$};
+            \draw[red] (7.5:.3) arc(7.5:80:.3);
+            \draw[blue, <-,>=stealth'] (.25,.25)--(.4,.5)--(1.2,-.2) node[below, yshift=2,text=red]{$5$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement></exercise>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+</exercises>

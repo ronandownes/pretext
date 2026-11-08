@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Angles and Triangles</title>
+
+  <sidebyside widths="50% 50%"><p><ul>
+    <li><p>Angles</p></li>
+    <li><p>Measuring Angles</p></li>
+    <li><p>Using a Protractor</p></li>
+    <li><p>Triangles</p></li>
+    <li><p>Sides and Angles</p></li>
+  </ul></p>
+      <image source="geodesic dome.png"></image></sidebyside>
+  
+  <subsection><title>Angles</title>
+
+<p>When two line segments meet at a point, they form an <term>angle</term>. The point where the two sides meet is called the <term>vertex</term>. Here are some angles. </p>
+
+  <!-- <image source="angles.png" width="55%"></image>-->
+  <image xml:id="angles" width="55%"><description>Acute angles</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.5]
+    \def\r{4};
+    \def\frac{.6};
+
+    \coordinate (O) at (-\r,0);
+    \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(50:\r)$);
+
+    \coordinate (O) at ({1.4*\r},0);
+    \draw[red,thick, <->, >=stealth'] ($ (O)+(110:\r)$) --(O) -- ($ (O)+(160:\r)$);
+
+    \coordinate (O) at ({2*\r},0);
+    \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(90:\r)$);
+
+    \coordinate (O) at (-\r,{-1.1*\r});
+    \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(25:\r)$);
+
+    \coordinate (O) at ({.9*\r},{-.2*\r});
+    \draw[red,thick, <->, >=stealth'] ($ (O)+(-40:\r)$) --(O) -- ($ (O)+(-110:\r)$);
+
+    \coordinate (O) at ({2.4*\r},{-1.1*\r});
+    \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(120:\r)$);
+    \end{tikzpicture}]]>
+</latex-image></image>
+
+  <p>You are probably familiar with a <term>right angle</term>, such as the corner of a square. Each of the corners of the tabletop below is a right angle. The two arms of a plus sign form four right angles. We say that the sides of a right angle are <term>perpendicular</term>.</p> 
+    <image source="rightangles.png" width="65%"></image>
+    <p><m>~~~~~~~~~~~~~~~~~~~~\blert{\text{Right angles: a square table}}~~~~~~~~~~\blert{\text{Perpendicular lines make a plus sign}}</m></p>
+
+  <p>Now imagine slowly opening a laptop computer until the two sides lie flat on the table. The two sides form an angle that gradually opens until the two covers form a straight line. We give different names to angles, depending on how open they are.</p>  
+
+    <p><m>~~~~~~~~~~~~~~~\blert{\text{Partially open}}~~~~~~~~~~\blert{\text{More than half-way open}}~~~~~~~~~~~~~\blert{\text{All the way open}}</m></p>
+
+      <image source="computerangles.png" width="95%"></image>
+
+    <p><m>~~~~~~~~~~~~~~~\blert{\text{An acute angle}}~~~~~~~~~~~~~~~~\blert{\text{An obtuse angle}}~~~~~~~~~~~~~~~~~~~~~~\blert{\text{A straight angle}}</m></p>
+
+<assemblage><title>Kinds of Angles</title><p><ul>
+      <li><p>If the sides are less open than a right angle, we call the angle <term>acute</term>.</p></li>  
+      <li><p>If the sides are more open than a right angle, we call the angle <term>obtuse</term>.</p></li>  
+      <li><p>If the two sides are totally open to form a straight line, we call the angle a <term>straight angle</term>.</p></li></ul></p></assemblage>
+
+    <!-- <image source="kindsofangles.png" width="75%"></image>-->
+
+    <image xml:id="kindsofangles" width="75%"><description>Acute, obtuse, and straight angles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.7]
+      \def\r{4};
+      \def\frac{.4};
+  
+      \coordinate (O) at (0,0);
+      \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(40:\r)$);
+      \draw[blue,thick, <->, >=stealth'] ($(O)+(0:{\frac*\r}) $) arc (0:40:{\frac*\r}) node[midway, right, align=left, xshift=2, yshift=2] { Acute \\  Angle};
+  
+      \coordinate (O) at ({1.4*\r},0);
+      \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(110:\r)$);
+      \draw[blue,thick, <->, >=stealth'] ($(O)+(0:{\frac*\r}) $) arc (0:110:{\frac*\r}) node[midway, above, align=center, yshift=2, xshift=2] { Obtuse \\ Angle};
+  
+      \coordinate (O) at ({3.3*\r},0);
+      \draw[red,thick, <->, >=stealth'] ($ (O)+(0:{.7*\r})$) --(O) -- ($ (O)+(180:{.7*\r})$);
+      \filldraw[red] (O) circle (.1) node[above, text=blue, yshift=3]{Straight Angle};
+  
+      \end{tikzpicture}]]>
+  </latex-image></image>
+  
+  <example><statement><p>In the pictures below, the handles of the hedge clipper form an acute angle. The hands of the clock form an obtuse angle.</p>
+          <image source="clipperandclock.png" width="55%"></image>
+          <p><m>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\blert{\text{An acute angle}}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\blert{\text{An obtuse angle}}</m></p></statement></example>
+
+  <exercise><statement><p>Acute, right, or obtuse? Choose the best answer for each angle in the photograph.
+          <image source="ballet.png" width="45%"></image></p>
+      <p><ol marker="a.">
+          <li><p>The ballerina's arms form a(n) <fillin characters="10"/> angle.</p></li>
+          <li><p>The ballerina's legs form a(n) <fillin characters="10"/> angle.</p></li>
+          <li><p>The male dancer's legs form a(n)<fillin characters="10"/> angle.</p></li></ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+          <li><p>obtuse</p></li>
+          <li><p>right</p></li>
+          <li><p>acute</p></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Measuring Angles</title>
+  <p>We use <term>degrees</term> to measure how open an angle is. The symbol for a degree is <m>\degree</m>.  A right angle is 90<m>\degree</m>, and a straight angle is 180<m>\degree</m>. </p>
+        <!-- <image source="rightstraight.png" width="70%"></image>   -->     
+
+<image xml:id="rightstraight" width="70%"><description>Acute, obtuse, and straight angles</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=.7]
+  \def\r{4};
+  \def\frac{.4};
+
+  \coordinate (O) at (0,0);
+  \draw[red] (O) rectangle ({.21*\r,.21*\r});
+  \node[text=red] at ({.11*\r,.1*\r}){$90^\circ$};
+  \draw[blue,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(90:\r)$);
+  \node[text=blue] at ({.5*\r, -.2*\r}) {A right angle};
+
+  \coordinate (O) at ({1.4*\r},0);
+  \draw[blue,thick, <->, >=stealth'] (O) -- ($ (O)+(0:{1.6*\r}) $);
+  \filldraw[blue] ($(O)+({.8*\r},0)$) circle (.1);
+  \draw[red,<->, >=stealth'] ($(O)+({.4*\r},0)$) arc (180:0:{.4*\r}) node[midway, fill=white, inner sep=1]{$180^\circ$};
+  \node[text=blue] at ($ (O)+({.8*\r, -.2*\r})$) {A straight angle};
+
+  \end{tikzpicture}]]>
+</latex-image></image>
+    
+  <p>The degree measure of an acute angle is less than 90<m>\degree</m>, and the degree measure of an obtuse angle is between 90<m>\degree</m> and 180<m>\degree</m>.  </p>
+        <!-- <image source="acuteobtuse.png" width="100%"></image>-->
+        <sidebyside widths="48% 48%" margins="0% 0%"><stack>
+          <image xml:id="Acute-angles"><description>Acute angles</description><latex-image>
+              <![CDATA[
+              \begin{tikzpicture} [scale=.5]
+              \def\r{4};
+              \def\frac{.6};
+      
+              \coordinate (O) at (0,0);
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(90:\r)$) --(O) -- ($ (O)+(152:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(90:{\frac*\r})$) arc (90:152:{\frac*\r}) node[midway,fill=white, inner sep=1]{$62^\circ$};
+          
+              \coordinate (O) at ({1.1*\r},\r);
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(225:\r)$) --(O) -- ($ (O)+(270:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(225:{.8*\r})$) arc (225:270:{.8*\r}) node[midway,fill=white, inner sep=1]{$45^\circ$};
+          
+              \coordinate (O) at ({1.6*\r},\r);
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(-71:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(0:{\frac*\r})$) arc (0:-71:{\frac*\r}) node[midway,fill=white, inner sep=1]{$71^\circ$};
+          
+              \coordinate (O) at (-\r,{-.2*\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(-54:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(0:{\frac*\r})$) arc (0:-54:{\frac*\r}) node[midway,fill=white, inner sep=1]{$54^\circ$};
+          
+              \coordinate (O) at (0.7,{-.7*\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(12:\r)$);
+              \draw[thick, <-, >=stealth'] ($ (O)+(12:{0.6*\r})$) arc (12:27:{0.6*\r});
+              \draw[thick, <-, >=stealth'] ($ (O)+(0:{0.6*\r})$) arc (0:-15:{0.6*\r});
+              \node at ($ (O)+(6:{0.8*\r}) $) {$12^\circ$};
+          
+              \coordinate (O) at ({1.9*\r},{-\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(50:\r)$) --(O) -- ($ (O)+(117:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(50:{\frac*\r})$) arc (50:117:{\frac*\r}) node[midway,fill=white, inner sep=1]{$67^\circ$};
+              \end{tikzpicture}]]>
+          </latex-image></image>
+          <p><m>\qquad\quad\blert{\text{Some acute angles}}</m></p>
+          </stack>
+          <stack><image xml:id="Obtuse-angles" width="48%"><description>Obtuse angles</description><latex-image>
+              <![CDATA[
+              \begin{tikzpicture} [scale=.5]
+              \def\r{3.6};
+              \def\frac{.6};
+      
+              \coordinate (O) at (0,0);
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(75:\r)$) --(O) -- ($ (O)+(191:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(75:{\frac*\r})$) arc (75:191:{\frac*\r}) node[midway,fill=white, inner sep=1]{$116^\circ$};
+          
+              \coordinate (O) at ({1.6*\r},{.65*\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(165:\r)$) --(O) -- ($ (O)+(287:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(165:{.6*\r})$) arc (165:287:{.6*\r}) node[midway,fill=white, inner sep=1]{$112^\circ$};
+          
+              \coordinate (O) at ({2.25*\r},{-.3*\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(-85:\r)$) --(O) -- ($ (O)+(83:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(-85:{\frac*\r})$) arc (-85:83:{\frac*\r}) node[midway,fill=white, inner sep=1]{$168^\circ$};
+          
+              \coordinate (O) at ({-.5*\r},{-.3*\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(-106:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(0:{\frac*\r})$) arc (0:-106:{\frac*\r}) node[midway,fill=white, inner sep=1]{$106^\circ$};
+          
+              \coordinate (O) at (2.6,{-1.1*\r});
+              \draw[red,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(94:\r)$);
+              \draw[thick, <->, >=stealth'] ($ (O)+(0:{\frac*\r})$) arc (0:94:{\frac*\r}) node[midway,fill=white, inner sep=1]{$94^\circ$};   
+              \end{tikzpicture}]]>
+          </latex-image></image>
+          <p><m>\qquad\quad\blert{\text{Some obtuse angles}}</m></p>
+          </stack>
+      </sidebyside>
+<assemblage><title>Question</title><p>What do you think an angle of 0<m>\degree</m> looks like?</p></assemblage>
+
+<note><p>The measure of an angle does not depend on the orientation of the angle, or on how long the sides are, or whether the angle is combined with other angles. It only depends on how open the sides are. Here are some pictures of 30<m>\degree</m> angles.</p>
+    <!-- <image source="thirtydeg.png" width="100%"></image>-->
+    <image xml:id="thirty-deg-angles"><description>Thirty degree angles in different orientations</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.8]
+      \def\r{4};
+      \def\frac{.3};
+  
+      \coordinate (O) at (0,0);
+      \draw[gray] ($ (O)+(90:{.86*\r})$) --(O);
+      \draw[thick] ($ (O)+(180:{\frac*\r})$) -- (O)-- (60:\r);
+      \draw[red,thick](90:1) arc (90:60:1) node[midway,above, xshift=3] at ($ (O)+(75:{0.4*\r}) $) {$30^\circ$};
+  
+      \coordinate (O) at ({.7*\r},0);
+      \coordinate (B) at ($ (O)+(75:\r)$);
+      \draw[thick]  (B)--(O) -- ($ (O)+({2*\r*cos(75)},0)$)--cycle;
+      \draw[red,thick] ($ (B)+(255:{.3*\r})$) arc (255:285:{.3*\r}) node[text=red, midway, below] {$30^\circ$};
+  
+      \coordinate (O) at ({1.5*\r},0);
+      \coordinate (A) at ($ (O)+(90:{.8*\r})$);
+      \coordinate (B) at ($ (O)+({0.8*sqrt(3)*\r},0)$);
+      \draw[thick] (A) --(O) -- (B)--cycle;
+      \draw[thick, black] ($ (O)+(0:.5)$) arc (0:90:.5) node[right, midway, yshift=2]{$90^\circ$};
+      \draw[thick, black] ($ (A)+(270:.45)$) arc (270:330:.45) node[below, midway, xshift=4]{$60^\circ$};
+      \draw[thick, red] ($ (B)+(180:.8)$) arc (180:150:.8) node[left, midway, yshift=2]{$30^\circ$};
+  
+      \coordinate (O) at ({3*\r},{0});
+      \draw[black,thick, <->, >=stealth'] ($ (O)+(0:\r)$) --(O) -- ($ (O)+(30:\r)$);
+      \draw[thick, red] ($ (O)+(0:.8)$) arc (0:30:.8) node[right, midway, yshift=2]{$30^\circ$};
+  
+      \end{tikzpicture}]]>
+  </latex-image></image>
+</note>
+
+<p>We use the symbol <m>\angle</m> to stand for "angle."</p>
+
+<example><statement><p>The picture shows two angles that together make a right angle. If the measure of <m>\angle~A</m> is 25<m>\degree</m>, what is the measure of <m>\angle~B</m>?</p>
+    <!-- <image source="anglesAandB.png" width="25%"></image>-->
+    <image xml:id="anglesAandB" width="25%"><description>Complementary angles</description><latex-image>
+      <![CDATA[
+        \begin{tikzpicture} [scale=.85]
+        \draw[ thick, <->, >=stealth'] (4,0)--(0,0)--(0,3);
+        \draw[ thick, ->, >=stealth'] (0,0)--(25:3.7);
+        \draw[red,thick] (0:1.5) arc (0:25:1.5) node[right, midway, yshift=2]{$A$};
+        \draw[red,thick] (90:1) arc (90:25:1) node[above, midway, xshift=2] {$B$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+  </statement>
+
+  <solution><p>A right angle measures 90<m>\degree</m>, so the sum of <m>\angle~A</m> plus <m>\angle~B</m> must be 90<m>\degree</m>.  Therefore, 
+      <me>\angle~B = 90\degree - \angle~A = 90\degree - 25\degree = 65\degree</me>
+  The measure of <m>\angle~B</m> is 65<m>\degree</m>, or <m>\angle~B = 65\degree</m>.</p></solution></example>
+
+<exercise><statement><p>Find the measure of the unknown angle. Parts (a) and (b) show right angles.<ol marker="a." cols="2">
+  <li><!--<image source="findangle-a.png" width="60%"></image>-->
+      <image xml:id="findangle-a" width="50%"><description>Complementary angles</description><latex-image>
+      <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \def\B{52};
+        \draw[ thick, <->, >=stealth'] (3,0)--(0,0)--(0,3);
+        \draw[ thick, ->, >=stealth'] (0,0)--(\B:3.7);
+        \draw[red,thick] (0:.75) arc (0:\B:.75) node[right, midway, yshift=2]{$B$};
+        \draw[red,thick] (90:1) arc (90:\B:1) node[above, midway, xshift=2] {$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>\angle~A = 38\degree, ~~ \angle~B =~?</m></p></li>
+  <li><!-- <image source="findangle-b.png" width="60%"></image>-->
+    <image xml:id="findangle-b" width="50%"><description>Complementary angles</description><latex-image>
+      <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \def\B{35};
+        \draw[ thick, <->, >=stealth'] (3,0)--(0,0)--(0,3);
+        \draw[ thick, ->, >=stealth'] (0,0)--(\B:3.7);
+        \draw[ thick, ->, >=stealth'] (0,0)--({2*\B}:3.2);
+        \draw[red,thick] (0:.75) arc (0:\B:.75) node[right, midway, yshift=2]{$C$};
+        \draw[red,thick] (\B:.9) arc (\B:{2*\B}:.9) node[above, midway, xshift=4]{$B$};
+        \draw[red,thick] (90:1.2) arc (90:{2*\B}:1.2) node[above, midway, yshift=2] {$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>\angle~A = 20\degree, ~~ \angle~B = \angle~C =~?</m></p></li>
+  <li><!--<image source="findangle-c.png" width="75%"></image>-->
+    <image xml:id="findangle-c" width="75%"><description>Supplementary angles</description><latex-image>
+      <![CDATA[
+        \begin{tikzpicture} [scale=.6]
+        \def\B{85};
+        \draw[ thick, <->, >=stealth'] (3,0)--(-3,0);
+        \draw[ thick, ->, >=stealth'] (0,0)--(\B:2.7);
+        \draw[red,thick] (0:.5) arc (0:\B:.5) node[right, midway, yshift=4]{$B$};
+        \draw[red,thick] (180:.9) arc (180:\B:.9) node[above, midway, xshift=-4] {$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><m>\angle~A =~?, ~~ \angle~B = 85\degree</m></p></li>
+  <li><!-- <image source="findangle-d.png" width="70%"></image>-->
+    <image xml:id="findangle-d" width="65%"><description>Supplementary angles</description><latex-image>
+      <![CDATA[
+        \begin{tikzpicture} [scale=.6]
+        \def\B{27};
+        \draw[ thick, <->, >=stealth'] (3,0)--(-3,0);
+        \draw[ thick, <->, >=stealth'] ({180+\B}:{3/cos(\B)})--(\B:{3/cos(\B)});
+        \draw[red,thick] (0:1) arc (0:\B:1) node[right, midway, yshift=1]{$B$};
+        \draw[red,thick] (180:.75) arc (180:\B:.75) node[above, midway, xshift=-4] {$A$};
+        \draw[red,thick] (0:.5) arc (0:{-180+\B}:.5) node[below, midway, xshift=-4] {$C$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>\angle~B = 27\degree, ~~ \angle~A =~?, ~~ \angle~C =~?</m></p></li></ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>52 \degree</m></p></li>
+  <li><p><m>35 \degree</m></p></li>
+  <li><p><m>95 \degree</m></p></li>
+  <li><p><m>153 \degree, ~ 153 \degree</m></p></li>
+</ol></p></answer></exercise>  
+
+</subsection>
+
+<subsection><title>Using a Protractor</title>
+  
+  <p>We use a <term>protractor</term> to measure angles.</p>
+      <!-- <image source="protractor.png" width="70%"></image>-->
+      <image xml:id="Protractor" width="60%"><description>Protractor</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.85]
+        \def\del{0.4};
+        \draw[thin] (6.,0) --++(0,-\del)--(-6,-\del)--++(0,\del);
+        \draw[black,thick](0,4)--(0,6);
+    
+        \draw[thick] (12:4) arc (12:168:4cm);
+        \draw[thick] (12:4) -- (168:4);
+        \draw[thin] (-.6,0)--(.6,0);
+        \draw[thick, fill=white] (0,0) circle (.15);
+        \draw[thick] (5,0) arc (0:180:5);
+        \node[fill=white, inner sep=2] at (90:5) {\Large $90$};
+        \draw[thick] (6,0) arc (0:180:6cm);
+    
+        \foreach \i in {1,2,...,179}
+            \draw[black,thick] (\i:6)--(\i:5.7);
+        \foreach \i [evaluate=\i as \k using int( 180- \i )]   in {0,10,..., 80}{
+            \draw[black,thick] (\i:6)--(\i:4);
+            \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:5.25) {\k}; ;
+            \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:4.5) {\i}; };
+        \foreach \i [evaluate=\i as \k using int( 180- \i )]   in {100,110, ..., 180}{
+            \draw[black,thick] (\i:6)--(\i:4);
+            \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:5.25) {\k}; ;
+            \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:4.5) {\i}; };
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+  <assemblage><title>Using a protractor to measure an angle</title><p><ol marker="1.">
+    <li><p>Place the center dot of the protractor at the vertex of the angle.</p></li>
+    <li><p>Line up the bottom line of the protractor along one of the sides of the angle.</p></li>  
+    <li><p>Read the number where the other side of the angle meets the scale on the circular edge of the protractor.</p></li>
+  </ol></p></assemblage>
+
+<example><statement><p>Use a protractor to measure this angle:</p>
+    <!-- <image source="protractorangle.png" width="25%"></image>-->
+    <image xml:id="Angle40-deg" width="40%"><description>Acute angle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.85]
+      \def\r{8};
+      \draw[ultra thick, ->, >=stealth'] ((0,0)--(40:\r) node[right]{\large $A$};
+      \draw[ultra thick, ->, >=stealth'] ((0,0)--(0:\r) node[right]{\large $B$};
+      \node[above left] at (0,0) {\large $O$};
+      \end{tikzpicture}]]>
+  </latex-image></image>
+  </statement>
+
+<solution><p>Place the protractor as shown below, with the vertex O in the center and side OB lined up along the bottom of the protractor.</p>
+    <!-- <image source="protractor40.png" width="70%"></image> -->
+    <image xml:id="protractor40" width="70%"><description>Angle under protractor</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.85]
+      \def\del{0.4};
+  
+      \def\r{8};
+      \draw[ultra thick, ->, >=stealth'] ((0,0)--(40:\r) node[right]{\large $A$};
+      \draw[ultra thick, ->, >=stealth'] ((0,0)--(0:\r) node[right]{\large $B$};
+      \node[above left] at (0,0) {\large $O$};
+  
+      \draw[thin] (6.,0) --++(0,-\del)--(-6,-\del)--++(0,\del);
+      \draw[black,thick](0,4)--(0,6);
+  
+      \draw[thick] (12:4) arc (12:168:4cm);
+      \draw[thick] (12:4) -- (168:4);
+      \draw[thin] (-.6,0)--(-.15,0);
+      \draw[thick] (0,0) circle (.15);
+      \draw[thick] (5,0) arc (0:180:5);
+      \node[fill=white, inner sep=2] at (90:5) {\Large $90$};
+      \draw[thick] (6,0) arc (0:180:6cm);
+  
+      \foreach \i in {1,2,...,179}
+          \draw[black,thick] (\i:6)--(\i:5.7);
+      \foreach \i [evaluate=\i as \k using int( 180- \i )]   in {0,10,..., 80}{
+          \draw[black,thick] (\i:6)--(\i:4);
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:5.25) {\k}; ;
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:4.5) {\i}; };
+      \foreach \i [evaluate=\i as \k using int( 180- \i )]   in {100,110, ..., 180}{
+          \draw[black,thick] (\i:6)--(\i:4);
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:5.25) {\k}; ;
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:4.5) {\i}; };
+          \draw[red, very thick] (40:4.5) circle (.35);
+          \draw[red, very thick, <-, >=stealth'] (3.9,2.7) -- (7,2) node[right]{\large $\angle AOB$};
+          \end{tikzpicture}]]>
+  </latex-image></image>
+  
+<p>Now follow the scale that increases from side OB up to side OA. In this case it is the inner scale. We see that side OA meets the inner scale at 40<m>\degree</m>. The measure of <m>\angle~AOB</m> is 40<m>\degree</m>.</p>
+</solution></example>
+
+<note><p>Notice that the protractor has one scale that starts at the right edge and increases in the counterclockwise direction, and a second scale that starts on the left edge. That's so you can line up the first side of the angle in either direction from the center.</p></note>
+
+<exercise><statement><p>What is the measure of the obtuse angle shown below?</p>
+    <!-- <image source="protractor135.png" width="70%"></image>-->
+    <image xml:id="protractor135" width="70%"><description>Obtuse angle under protractor</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.85]
+      \def\del{0.4};
+  
+      \def\r{7};
+      \draw[ultra thick, ->, >=stealth'] ((0,0)--(135:\r);
+      \draw[ultra thick, ->, >=stealth'] ((0,0)--(0:\r);
+      \draw[blue,very thick, <->, >=stealth'] (0:{.9*\r}) arc (0:135:{.9*\r});
+  
+      \draw[thin] (6.,0) --++(0,-\del)--(-6,-\del)--++(0,\del);
+      \draw[black,thick](0,4)--(0,6);
+  
+      \draw[thick] (12:4) arc (12:168:4cm);
+      \draw[thick] (12:4) -- (168:4);
+      \draw[thin] (-.6,0)--(-.15,0);
+      \draw[thick] (0,0) circle (.15);
+      \draw[thick] (5,0) arc (0:180:5);
+      \node[fill=white, inner sep=2] at (90:5) {\Large $90$};
+      \draw[thick] (6,0) arc (0:180:6cm);
+  
+      \foreach \i in {1,2,...,179}
+          \draw[black,thick] (\i:6)--(\i:5.7);
+      \foreach \i [evaluate=\i as \k using int( 180- \i )]   in {0,10,..., 80}{
+          \draw[black,thick] (\i:6)--(\i:4);
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:5.25) {\k}; ;
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:4.5) {\i}; };
+      \foreach \i [evaluate=\i as \k using int( 180- \i )]   in {100,110, ..., 180}{
+          \draw[black,thick] (\i:6)--(\i:4);
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:5.25) {\k}; ;
+          \node[rotate={-90+\i}, fill=white, inner sep=1] at ({\i}:4.5) {\i}; };
+          \end{tikzpicture}]]>
+  </latex-image></image>
+</statement>
+
+<answer><p><m>135 \degree</m></p></answer></exercise>
+
+<activity><title>Measuring Angles</title>
+  <p><ol marker="1.">
+
+  <li><p>Use your straightedge to draw an acute angle. Use your protractor to find the degree measure of your angle.</p></li>
+
+  <li><p>Use your straightedge to draw an obtuse angle. Use your protractor to find the degree measure of your angle.</p></li>
+
+  <li><p>Use your protractor to find the degree measure of each angle.</p>
+      <!-- <image source="activityangles.png" width="70%"></image>-->
+      <image xml:id="activityangles" width="70%"><description>Acute  and obtuse angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.65]
+        \def\r{4};
+      
+        \coordinate (O) at (0,0);
+        \coordinate (B) at (60:\r);
+        \node[above, right, text=blue] at (B) {$B$};
+        \draw[thick] (B) -- (O) node[left, text=blue]{$O$} -- (0:\r) node[right, text=blue]{$C$};
+        \draw[red, <->, >=stealth'] (0:1) arc (0:60:1);
+        \node[text=blue] at ({.5*\r, -.2*\r}) {$\angle BOC=$};
+      
+        \coordinate (O) at ({2.*\r},0);
+        \coordinate (P) at ($ (O)+(120:\r)$);
+        \node[above, left, text=blue] at (P) {$P$};
+        \draw[thick] (P) -- (O) node[left, text=blue]{$O$} -- +(0:\r) node[right, text=blue]{$Q$};
+        \draw[red, <->, >=stealth'] ($(O)+(0:1)$) arc (0:120:1);
+        \node[text=blue] at ($ (O)+({.2*\r, -.2*\r})$) {$\angle POQ=$};
+      
+        \end{tikzpicture}]]>
+      </latex-image></image>  
+    </li>
+
+  <li><p><ol marker="a.">    
+      <li><p>On another sheet of paper, use your straightedge to draw a triangle of any shape you like. Label the angles of your triangle A, B, and C.</p></li>  
+      <li><p>Now cut or tear off the three angles and place the vertex of angle A on the dot below.</p></li>  
+      <li><p>Next place the vertex of angle B at the dot so that one of its sides touches one of the sides of angle A. Repeat with angle C.
+
+          <me>\LARGE{\cdot}</me></p></li>   
+
+      <li><p>What do you notice about the sum of the three angles? Write it below:</p></li></ol></p></li></ol></p>
+</activity>
+</subsection>
+
+<subsection xml:id="triangles"><title>Triangles</title>
+
+<p>Triangles come in various shapes, depending on the size of their angles or the lengths of their sides. Here are the names of some triangles classified by the size of their angles.</p>
+
+<assemblage><title>Triangles</title>
+  <p><ul>
+  <li><p>A <term>right triangle</term> has one right angle.</p></li>
+  <li><p>In an <term>acute triangle</term>, all three angles are acute.</p></li>
+  <li><p>In an <term>obtuse triangle</term>, one of the angles is obtuse.</p></li></ul></p></assemblage>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Some right triangles </p>
+    <!-- <image source="righttris.png" width="50%"></image>-->
+    <image xml:id="righttris" width="75%"><description>Three right triangles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.65]
+    
+      \coordinate (O) at (0,0);
+      \draw[black,thick, fill=purple!60!red!15!white] (O) -- (2.8,0) -- (0,-3.2)--cycle;
+      \draw[violet,thick, fill=magenta, opacity = .5] (O) rectangle ++ (.3,-.3);
+   
+      \coordinate (O) at (6,-.3);
+      \draw[blue,thick] (O)--($(O)+(220:3.5) $) -- ($(O)+(310:1.7) $) -- cycle;
+      \draw[blue,thick] (O)--++(220:.3) -- ++(310:.3) --++(40:.3) -- cycle;
+       
+      \coordinate (O) at (-4.4,-3);
+      \draw[blue] (O) rectangle ++(.3,.3);
+      \draw[red,thick] (O)--($(O)+(0:3.) $) -- ($(O)+(90:3.) $) -- cycle;
+    
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+</li>
+
+  <li><p>Some acute triangles </p>
+    <!-- <image source="acutetris.png" width="50%"></image>-->
+    <image xml:id="acutetris" width="75%"><description>Three acute triangles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.85]    
+      \coordinate (A) at (0,0);
+      \draw[red] (.3,0) arc (0:atan(3):.3);
+      \coordinate (B) at (2,0);
+      \draw[red] (1.7,0) arc (180:{180-atan(3)}:.3);
+      \coordinate (C) at (1,3);
+      \draw[blue,thick] (A) -- (B) -- (C)--cycle;
+      \coordinate (D) at ($ .5*(A)+.5*(C)$);
+      \draw[gray] (D)--++(-.15,.05)--++(.3,-.1);
+      \coordinate (D) at ($ .5*(B)+.5*(C)$);
+      \draw[gray] (D)--++(.15,.05)--++(-.3,-.1);
+   
+      \coordinate (A) at (3.3,0);
+      \def\c{2.5};
+      \coordinate (B) at ($ (A)+(80:\c)$);
+      \coordinate (C) at ($ (A)+(0:{\c*sin(55)/sin(45)})$);
+      \draw[black,thick] (A) -- (B) -- (C)--cycle;
+      \draw[red] ($ (A)+ (.3,0)$) arc (0:80:.3) node[midway, right, yshift=2] {$80^\circ$};
+      \draw[red] ($ (B)+ (260:.5)$) arc (260:315:.5) node[midway, below, xshift=3, yshift=-2] {$55^\circ$};
+      \draw[red] ($ (C)+ (-.5,0)$) arc (180:135:.5) node[midway, left, yshift=2] {$45^\circ$};
+   
+      \coordinate (A) at (-3.5,1.25);
+      \def\c{2.5};
+      \coordinate (B) at ($ (A)+(30:\c)$);
+      \coordinate (C) at ($ (A)+(-30:\c)$);
+      \draw[magenta,thick] (A) -- (B) -- (C)--cycle;
+    
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+
+  <li><p>Some obtuse triangles </p>
+    <!--<image source="obtusetris.png" width="50%"></image>-->
+    <image xml:id="obtusetris" width="75%"><description>Three obtuse triangles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}     
+      \coordinate (A) at (0,0);
+      \coordinate (B) at (3,.5);
+      \coordinate (C) at (3.5,2);
+      \draw[magenta,thick] (A) -- (B) -- (C)--cycle;
+   
+      \coordinate (A) at (3.8,-.5);
+      \coordinate (B) at ($ (A)+(3.2,1.7)$);
+      \coordinate (C) at ($ (A)+(3.2,3)$);
+      \draw[black,thick] (A) -- (B) -- (C)--cycle;   
+   
+      \coordinate (A) at (-3.8,1.5);
+      \coordinate (B) at ($ (A)+(200:3.2)$);
+      \coordinate (C) at ($ (A)+(340:3.2)$);
+      \draw[blue,thick] (A) -- (B) -- (C)--cycle;   
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+</ol></p></statement></example>
+
+<exercise><statement><p> Identify each triangle as right, acute, or obtuse. The little square indicates that the angle is <m>90 \degree</m>.</p>
+<p><ol marker="a." cols="2">
+  <li><!-- <image source="4atri.png" width="60%"></image>-->
+    <image xml:id="Four-atri" width="60%"><description>30-60-90 triangle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.9]   
+      \coordinate (C) at (0,0);
+      \coordinate (B) at ({2*sqrt(3)},0);
+      \coordinate (A) at (0,2);
+      \draw[blue] (C) rectangle ++(.3,.3);
+      \draw[black,thick] (A) -- (B) -- (C)--cycle; 
+      \draw[red] ($(A) + (0,-.6)$) arc (270:330:.6) node[midway, below, xshift=2]{$60^\circ$};
+      \draw[red] ($(B) + (-1,0)$) arc (180:150:1) node[midway, left]{$30^\circ$};
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="4btri.png" width="60%"></image>-->
+    <image xml:id="Four-btri" width="75%"><description>Obtuse triangle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}  
+      \coordinate (C) at (0,0);
+      \coordinate (B) at (6,0);
+      \coordinate (A) at (2,2);
+      \draw[magenta,thick] (A) -- (B) -- (C)--cycle; 
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="4ctri.png" width="60%"></image>-->
+    <image xml:id="Four-ctri" width="60%"><description>Acute triangle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}  
+      \coordinate (C) at (0,0);
+      \coordinate (B) at (6,1);
+      \coordinate (A) at (2,4);
+      \draw[blue,thick] (A) -- (B) -- (C)--cycle; 
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="4dtri.png" width="60%"></image>-->
+    <image xml:id="Four-dtri" width="80%"><description>Right triangle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.4]
+      \coordinate (C) at (0,0);
+      \draw[rotate=244,blue](C) rectangle ++(.6,.6);
+      \coordinate (B) at ({9*tan(26)},0);
+      \coordinate (A) at (0,9);
+      \draw[rotate=244,black,thick] (0,9) -- ({9*tan(26)},0) -- (C)--cycle  node[above, midway]{$9$}; 
+      \draw[rotate=244,red] ({9*tan(26)-1},0) arc (180:116:1) node[midway, right, yshift=2] {$64^\circ$};
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="4etri.png" width="70%"></image>-->
+    <image xml:id="Four-etri" width="70%"><description>Acute triangle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.6] 
+      \coordinate (M) at (0,0);
+      \coordinate (N) at (-1.5,3);
+      \coordinate (P) at (2.8,.5);
+      \draw[black,thick] (M) -- (N) node[above left]{$N$} -- (P) node[above right] {$P$}--cycle node[below left] {$M$}; 
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="4ftri.png" width="50%"></image>-->
+    <image xml:id="Four-ftri" width="50%"><description>Acute triangle</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.65] 
+      \coordinate (E) at (0,0);
+      \coordinate (D) at (1.5,4);
+      \coordinate (F) at (3,0);
+      \draw[black,thick, fill=blue!50!white] (E) -- (D) node[above right]{$D$} -- (F) node[below right] {$F$}--cycle node[below left] {$E$}; 
+      \filldraw[black] (E) circle (.1);
+      \filldraw[black] (D) circle (.1);
+      \filldraw[black] (F) circle (.1);
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>right</p></li>
+  <li><p>obtuse</p></li>
+  <li><p>acute</p></li>
+  <li><p>right</p></li>
+  <li><p>obtuse</p></li>
+  <li><p>acute</p></li>
+</ol></p></answer></exercise>
+
+<p>Here are the names of some triangles classified by the lengths of their sides.</p>
+
+<assemblage><title>Triangles</title>
+  <p><ul>
+  <li><p>All three sides of an <term>equilateral</term> triangle are equal in length.</p></li>
+  <li><p>In an <term>isosceles triangle</term>, two sides are equal in length.</p></li>
+  <li><p>In a <term>scalene triangle</term>, all three sides have different lengths.</p></li>
+</ul></p></assemblage>
+
+<example><statement><p><ol marker="a.">
+  <li><p> An equilateral triangle.</p> <!-- <image source="equitri.png" width="20%"></image>-->
+    <image xml:id="equitri" width="20%"><description>Two acute triangles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.85]    
+      \coordinate (A) at (0,0);
+      \def\c{2.5};
+      \coordinate (B) at ($ (A)+(0:\c)$);
+      \coordinate (C) at ($ (A)+(-60:\c)$);
+      \draw[black, thick] (A) -- (B) -- (C)--cycle;
+    
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><p> Some isosceles triangles.</p> <!-- <image source="isostri.png" width="70%"></image>-->
+    <image xml:id="isostri" width="75%"><description>Three isosceles triangles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.85]    
+      \coordinate (A) at (0,0);
+      \coordinate (B) at (2,0);
+      \coordinate (C) at (1,3);
+      \draw[rotate=-80, black,thick, fill=green] (A) -- (2,0) node[below left]{$S$}-- (1,3) node[right] {$R$}--cycle node[above] {$Q$};
+      \coordinate (D) at ($ .5*(A)+.5*(C)$);
+      \draw[rotate=-80,gray] ($ .5*(1,3)$)--++(-.15,.05)--++(.3,-.1);
+      \coordinate (D) at ($ .5*(B)+.5*(C)$);
+      \draw[rotate=-80,gray] ($ .5*(2,0)+.5*(1,3)$)--++(.15,.05)--++(-.3,-.1);
+   
+      \coordinate (A) at (4,-2.);
+      \coordinate (B) at ($ (A)+( 2,1.5)$);
+      \coordinate (C) at ($ (A)+(4,0)$);
+      \draw[black,thick] (A) -- (B) -- (C)--cycle;
+   
+      \coordinate (A) at (8.5,-.2);
+      \coordinate (B) at ($ (A)+(1.4,0)$);
+      \coordinate (C) at ($ (A)+(.7,-2.)$);
+      \draw[magenta,thick] (A) -- (B) -- (C)--cycle;
+    
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><p> Some scalene triangles.</p> <!-- <image source="scaltri.png" width="70%"></image>-->
+    <image xml:id="scaltri" width="75%"><description>Three scalene triangles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}  
+      \coordinate (A) at (0,0);
+      \coordinate (B) at (2,.2);
+      \coordinate (C) at (2.3,1.5);
+      \draw[black,thick] (A) -- (B)-- (C)--cycle;
+   
+      \coordinate (A) at (3,0);
+      \coordinate (B) at ($ (A)+( 1.2,1.9)$);
+      \coordinate (C) at ($ (A)+(4,0)$);
+      \draw[magenta,thick] (A) -- (B) -- (C)--cycle;
+   
+      \coordinate (A) at (8,0);
+      \coordinate (B) at ($ (A)+(3,0)$);
+      \coordinate (C) at ($ (A)+(2.2,1.9)$);
+      \draw[blue,thick, fill=cyan] (A) -- (B) -- (C)--cycle;
+    
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li></ol></p></statement></example>
+
+<exercise><statement><p> Identify each triangle as equilateral, isosceles, or scalene. Sides that have the same number of little hatch marks are equal in length.</p><ol marker="a." cols="2">
+  <li><!-- <image source="atri.png" width="60%"></image>-->
+    <image xml:id="atri" width="55%"><description>Triangle with two equal sides</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}
+      \coordinate (E) at (0,0);
+      \coordinate (D) at (240:4);
+      \coordinate (F) at (330:4);
+      \draw[black,thick] (E) -- (D) -- (F)--cycle ; 
+      \coordinate (P) at ($.5*(E)+.5*(F)$);
+      \draw[blue, thick] ($(P) + (60:.3)$) -- ++(240:.6);
+      \coordinate (P) at ($.5*(E)+.5*(D)$);
+      \draw[blue, thick] ($(P) + (150:.3)$) -- ++(330:.6);
+      \coordinate (P) at ($.47*(D)+.53*(F)$);
+      \draw[blue, thick] ($(P) + (105:.3)$) -- ++(285:.6);
+      \coordinate (P) at ($.53*(D)+.47*(F)$);
+      \draw[blue, thick] ($(P) + (105:.3)$) -- ++(285:.6);
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="btri.png" width="60%"></image>-->
+    <image xml:id="btri" width="65%"><description>Triangle with three different length sides</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}
+      \coordinate (E) at (0,0);
+      \coordinate (D) at (4,0);
+      \coordinate (F) at (1.3,1.8);
+      \draw[black,thick] (E) -- (D) -- (F)--cycle ; 
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="ctri.png" width="50%"></image>-->
+    <image xml:id="ctri" width="50%"><description>Triangle with three different length sides</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}[scale=.7]
+      \coordinate (E) at (0,0);
+      \coordinate (D) at (2,0);
+      \coordinate (F) at (-.7,2.5);
+      \draw[black,thick] (E) -- (D) node[midway, below]{$a$} -- (F) node[midway, above right]{$c$}--cycle node[midway, yshift=-2, left]{$b$}; 
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="dtri.png" width="50%"></image>-->
+    <image xml:id="dtri" width="50%"><description>Triangle with three equal sides and equal angles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}
+      \coordinate (E) at (0,0);
+      \coordinate (D) at (2,0);
+      \coordinate (F) at (60:2);
+      \draw[red] (.3,0) arc (0:60:.3);
+      \draw[red] (1.7,0) arc (180:120:.3);
+      \draw[red] ($ (F)+ (240:.3)$) arc (240:300:.3);
+      \draw[black,thick] (E) -- (D)  -- (F) --cycle ; 
+      \coordinate (A) at ($ .5*(E)+.5*(D)$);
+      \draw[blue] (A)++(90:.1)--++(0,-.2);
+      \coordinate (B) at ($ .5*(F)+.5*(D)$);
+      \draw[blue] (B)++(30:.1)--++(210:.2);
+      \coordinate (C) at ($ .5*(E)+.5*(F)$);
+      \draw[blue] (C)++(150:.1)--++(330:.2);
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!--  <image source="etri.png" width="60%"></image>-->
+    <image xml:id="etri" width="65%"><description>Right triangle with two equal sides and two equal angles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}[scale=1]
+      \coordinate (E) at (0,0);
+      \coordinate (D) at (2,0);
+      \coordinate (F) at (0,2);
+      \draw[red] (E) rectangle (.2,.2);
+      \draw[red] (1.7,0) arc (180:135:.3);
+      \draw[red] ($ (F)+ (0,-.3)$) arc (270:315:.3);
+      \draw[black,thick] (E) -- (D)node[below right]{$C$}  -- (F)node[above left]{$B$} --cycle node[below left]{$A$}; 
+      \coordinate (A) at ($ .5*(E)+.5*(D)$);
+      \draw[blue] (A)++(90:.1)--++(0,-.2);
+      \coordinate (C) at ($ .5*(E)+.5*(F)$);
+      \draw[blue] (C)++(.1,0)--++(-.2,0);
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li>
+  <li><!-- <image source="ftri.png" width="40%"></image>-->
+    <image xml:id="ftri" width="30%"><description>Triangle with two equal sides and two equal angles</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}
+      \coordinate (E) at (0,0);
+      \coordinate (D) at ({4*cos(75)},0);
+      \coordinate (F) at (75:2);
+      \draw[red] (.3,0) arc (0:75:.3);
+      \draw[red] ({4*cos(75)-.3},0) arc (180:105:.3);
+      \draw[black,thick] (E) -- (D)  -- (F) --cycle ; 
+      \coordinate (B) at ($ .5*(F)+.5*(D)$);
+      \draw[blue] (B)++(15:.1)--++(195:.2);
+      \coordinate (C) at ($ .5*(E)+.5*(F)$);
+      \draw[blue] (C)++(165:.1)--++(345:.2);
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+  </li></ol></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>isosceles</p></li>
+  <li><p>scalene</p></li>
+  <li><p>scalene</p></li>
+  <li><p>equilateral</p></li>
+  <li><p>isosceles</p></li>
+  <li><p>isosceles</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Sides and Angles</title>
+
+<p>You may have noticed that the longest side in a triangle is always opposite the largest angle.</p>
+
+<example><statement><p>In the triangle below, side <m>c</m> is opposite the 120<m>\degree</m> angle, and it is the longest side. Side <m>b</m>, which is the shortest side, is opposite the 20<m>\degree</m> angle.</p>
+    <!-- <image source="sidestri.png" width="40%"></image>-->
+    <image xml:id="sidestri" width="40%"><description>Triangle with angles 20 deg, 40 deg, 120 deg and opposite sides b, a, c</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture}[scale=1.2]
+      \def\c {4};
+      \coordinate (B) at (0,0);
+      \coordinate (A) at (4,0);
+      \coordinate (C) at (20:{\c*sin(40)/sin(120)});
+      \draw[thick] (B)--(A) node[midway, below]{$c$} -- (C) node[midway, above right]{$b$} -- cycle node[midway, above left]{$a$};
+      \draw[red] (1,0) arc (0:20:1) node[midway,right]{$20^\circ$};
+      \draw[red] (3.6,0) arc (180:140:.4) node[midway,left,yshift=2]{$40^\circ$};
+      \draw[red] ($(C)+(200:.2)$) arc (200:320:.2) node[midway,below]{$120^\circ$};
+      \end{tikzpicture}]]>
+    </latex-image></image>  
+<p>In fact, because <m>120\degree \gt  40\degree \gt  20\degree</m>,  we know that <m>c \gt a \gt b</m>.</p></statement></example>
+
+<note><p><ul>
+  <li><p>The symbol <m>\blert{\gt}</m>  means "is greater than."  
+    So, <m>c \gt a \gt b</m> means  "<m>c</m> is greater than <m>a</m>, which is greater than <m>b</m>."</p></li>  
+  <li><p>Similarly, the symbol <m>\blert{\lt}</m>  means "is less than." </p></li> 
+  <li><p>These symbols are called <term>inequality symbols</term> (as opposed to equals signs), and sentences such as <m>c \gt a \gt b</m> are called <term>inequalities</term> (as opposed to equations).</p></li></ul></p></note>
+
+<assemblage><title>Inequality Symbols</title>
+  <p><m>~~~~~~~~\blert{\gt}~~~~</m> means  "is greater than"</p>
+  <p><m>~~~~~~~~\blert{\lt}~~~~</m>means  "is less than"</p></assemblage>
+
+<exercise><statement><p>Write an inequality about the angles in the triangle below.</p>
+      <!-- <image source="ineqtri.png" width="30%"></image>-->
+      <image xml:id="ineqtri" width="30%"><description>Triangle with sides 10, 14, and 16</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.25]
+        \def\k {1/7};
+        \coordinate (A) at (0,0);
+        \node[left, text=red] at (A) {$A$};
+        \coordinate (B) at (2,{14*sin(acos(1/7))});
+        \node[left, text=red] at (-5.5,13) {$B$};
+        \coordinate (C) at (10,0);
+        \node[right, text=red] at (8.5,5) {$C$};
+        \draw[rotate=30, thick] (2,{14*sin(acos(1/7))})--(A) node[midway, left, yshift=-2, text=blue]{$14$} -- (10,0) node[midway, below right, text=blue]{$10$} -- cycle node[midway, above right, text=blue]{$16$};
+        \end{tikzpicture}]]>
+      </latex-image></image>  
+      </statement>
+
+<answer><p><m>\angle A \gt \angle C \gt \angle B</m></p></answer></exercise>
+
+<assemblage><title>Sides and Angles</title>
+  <p>In any triangle, the angle opposite the longest side is the largest angle, and the angle opposite the shortest side is the smallest angle.</p></assemblage>
+
+<p>What about triangles that have equal sides, namely isosceles and equilateral triangles? The angles opposite equal sides must also be equal.</p>
+
+<assemblage><title>Definition</title>
+  <p>In an isosceles triangle, the two equal angles (the ones opposite the equal sides) are called the <term>base angles</term>, and the third angle (the one included between the equal sides) is called the <term>vertex angle</term>.</p>
+      <!-- <image source="vertexangle.png" width="25%"></image>-->
+      <image xml:id="vertexangle" width="30%"><description>Triangle with two equal sides and two equal angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=2]
+        \coordinate (B) at (0,0);
+        \node[below left] at (B) {$B$};
+        \coordinate (C) at ({4*cos(65)},0);
+        \node[below right] at (C) {$C$};
+        \coordinate (A) at (65:2);
+        \node[above] at (A) {$A$};
+        \draw[blue, fill=cyan] (65:1.5) arc (245:295:.5) -- (A) --cycle;
+        \node[text=blue, align=center] at ({2*cos(65)},1.05) {vertex\\angle};
+        \draw[red, fill=pink] (.3,0) arc (0:65:.3) --(0,0)-- cycle;
+        \draw[red, fill=pink] ({4*cos(65)-.3},0) arc (180:115:.3) --(C)-- cycle;
+        \node[text=red] at ({2*cos(65)}, .15){base angles};
+        \draw[red] (.26,0) arc (0:65:.26);
+        \draw[red] ({4*cos(65)-.26},0) arc (180:115:.26);
+        \node[text=blue] at ({2*cos(65)}, -.25){\large Isosceles Triangle};
+        \draw[black,thick] (B) -- (C)  -- (A) --cycle ; 
+        \coordinate (D) at ($ .5*(A)+.5*(C)$);
+        \draw[blue] (D)++(15:.1)--++(195:.2);
+        \coordinate (E) at ($ .5*(A)+.5*(B)$);
+        \draw[blue] (E)++(165:.1)--++(345:.2);
+        \end{tikzpicture}]]>
+      </latex-image></image>  
+</assemblage>
+
+<example><statement><p>The triangle below is isosceles. What is the measure of the other base angle, and what is the measure of the vertex angle?</p>
+      <!-- <image source="tri38deg.png" width="35%"></image>-->
+      <image xml:id="tri38deg" width="30%"><description>Triangle with two sides of length 12 and base angle 38 deg</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at ({-6*cos(38)},0);
+        \coordinate (C) at (142:3);
+        \draw[red] (-.8,0) arc (180:142:.8) node[midway, left, yshift=2]{$38^\circ$};
+        \draw[black,thick] (B) -- (C) node[midway,left, xshift=-2,yshift=4, text=blue]{$12$}  -- (A) node[midway,right,yshift=4, text=blue]{$12$}  --cycle ; 
+        \end{tikzpicture}]]>
+      </latex-image></image>  
+</statement>
+
+<solution><p>The base angles of an isosceles triangle are equal, so the other base angle is 38<m>\degree</m>. To find the vertex angle, we recall that the sum of all the angles in a triangle is 180<m>\degree</m>, so the vertex angle must be
+            <md><mrow>\text{vertex angle} \amp = 180 \degree - (38 \degree + 38 \degree)</mrow>
+            <mrow>~~~~~~~~~~\amp =  180 \degree - 76 \degree = 104 \degree </mrow></md>
+</p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>The vertex angle of the isosceles triangle below is 120<m>\degree</m>. What is the measure of each base angle?</p>
+        <!-- <image source="tri120deg.png" width="40%"></image>-->
+        <image xml:id="tri120deg" width="40%"><description>Triangle with two sides of length 12 and base angle 38 deg</description><latex-image>
+          <![CDATA[
+          \begin{tikzpicture}[scale=.75]
+          \coordinate (A) at (0,0);
+          \coordinate (B) at (4,0);
+          \coordinate (C) at (30:{4*sqrt(3)});
+          \node[text=blue, below left] at (A) {$E$};
+          \node[text=blue, below right] at (B) {$F$};
+          \node[text=blue, above right] at (C) {$D$};
+          \draw[red] (3.6,0) arc (180:60:.4) node[midway, above, xshift=-2, yshift=2]{$120^\circ$};
+          \draw[black,thick] (B) -- (C)-- (A) --cycle ; 
+          \draw[blue] (2,-.2)--++(0,.4);
+          \coordinate (D) at ($.5*(B)+.5*(C)$);
+          \draw[blue] ($(D)+ (150:.2)$)--++(330:.4);
+          \end{tikzpicture}]]>
+        </latex-image></image>  
+    </li>
+  <li><p>What is the measure of each angle of an equilateral triangle?</p></li></ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>Each base angle is <m>~30\degree</m>.</p></li>
+  <li><p>Each angle in an equilateral triangle is <m>~60\degree</m>.</p></li>
+</ol></p></answer></exercise>
+
+Here are the facts we have discovered about angles in triangles.
+
+  <assemblage><title> Angles in Triangles</title><p><ul>
+    <li><p>The sum of the angles in any triangle is 180<m>\degree</m>.</p></li>
+    <li><p>The base angles of an isosceles triangle are equal.</p></li>
+    <li><p>All the angles of an equilateral triangle are equal.</p></li></ul></p></assemblage>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>angle</p></li>
+  <li><p>vertex</p></li>
+  <li><p>right angle</p></li>
+  <li><p>perpendicular</p></li>
+  <li><p>acute angle</p></li>
+  <li><p>obtuse angle</p></li>
+  <li><p>straight angle</p></li>
+  <li><p>protractor</p></li>
+  <li><p>degrees</p></li>
+  <li><p>equilateral</p></li>
+  <li><p>isosceles</p></li>
+  <li><p>scalene</p></li>
+  <li><p>inequality symbols</p></li>
+  <li><p>base angles</p></li>
+  <li><p>vertex angle</p></li>
+</ul></p></subsection>
+    
+    <xi:include href="./prac-1-4.ptx" />
+    
+</section>

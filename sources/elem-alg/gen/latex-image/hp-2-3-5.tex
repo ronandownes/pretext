@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.3]
+\coordinate (O) at (0,0);
+\draw[cyan] (0,-12) grid (20,8);
+\draw[black,thick, ->, >=stealth'] (0,0)--(21.6,0) node[right]{$d$};
+\draw[black,thick, ->, >=stealth'] (0,-12)--(0,9.6) node[left, xshift=2]{$P$};
+\foreach \x in  {5, 10, 15, 20} {
+ \draw[cyan, very thick] (\x,-12) --++(0,20);
+ \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\foreach \y [evaluate=\y as \yi using int( 50* \y )] in {-12, -8, -4, 4, 8} {
+ \draw[cyan, very thick] (0,\y) --++(20,0);
+ \draw[black] (.15,\y) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\yi$};
+}
+\draw[blue, very thick] (0,-12)--(20,4);
+\filldraw[red]  (0,-12) circle (2mm) node[above, xshift=-1, yshift=6, fill=white, inner sep=1, text=black] {(a)}; 
+\filldraw[red]  (10,-4) circle (2mm) node[above, xshift=-5, yshift=3, fill=white, inner sep=1, text=black] {(b)}; 
+\filldraw[red]  (15,0) circle (2mm) node[above, xshift=-5, yshift=3, fill=white, inner sep=1, text=black] {(c)}; 
+\filldraw[red]  (20,4) circle (2mm) node[above, xshift=-3, yshift=5, fill=white, inner sep=1, text=black] {(d)}; 
+\end{tikzpicture}%
+}
+\end{document}

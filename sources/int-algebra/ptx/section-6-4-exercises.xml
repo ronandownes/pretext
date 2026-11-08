@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+
+<exercises xml:id="section-6-4-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 6.4</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercisegroup><introduction><p>Each question in Problems 1<ndash/>4 is followed by three examples.  Use your calculator to decide if the examples are true or false, then circle the correct answer.</p></introduction>
+
+<exercise number="1"><statement><p>Is <m>~\sqrt{a+b} =\sqrt{a}+\sqrt{b}~</m>?  Yes or No<ol marker="a.">
+    <li><m>\sqrt{12} = \sqrt{8}+\sqrt{4}</m></li>
+    <li><m>\sqrt{5} = \sqrt{2}+\sqrt{3}</m></li>
+    <li><m>\sqrt{25} = \sqrt{9}+\sqrt{16}</m></li></ol></p></statement>
+<answer><p>No</p></answer></exercise>         
+
+<exercise number="2"><statement><p>Is <m>~\sqrt{a-b} =\sqrt{a}-\sqrt{b}~</m>?  Yes or No<ol marker="a.">
+    <li><m>\sqrt{36} =\sqrt{100}-\sqrt{64}</m></li>
+    <li><m>\sqrt{20} =\sqrt{16}-\sqrt{4}</m></li>
+    <li><m>\sqrt{9} =\sqrt{10}-\sqrt{1}</m></li></ol></p></statement></exercise>
+
+<exercise number="3"><statement><p>Is <m>~\sqrt{ab} =\sqrt{a}\sqrt{b}~</m>?  Yes or No<ol marker="a.">
+    <li><m>\sqrt{36} = \sqrt{9}\sqrt{4}</m></li>
+    <li><m>\sqrt{12} = \sqrt{3}\sqrt{4}</m></li>
+    <li><m>\sqrt{15} = \sqrt{3}\sqrt{5}</m></li></ol></p></statement>
+<answer><p>Yes</p></answer></exercise>  
+
+<exercise number="4"><statement><p>Is <m>~\sqrt{\dfrac{a}{b}} =\dfrac{\sqrt{a}}{\sqrt{b}}~</m>?  Yes or No<ol marker="a.">
+    <li><m>\sqrt{\dfrac{144}{9}} =\dfrac{\sqrt{144}}{\sqrt{9}}</m></li>
+    <li><m>\sqrt{\dfrac{64}{5}} =\dfrac{\sqrt{64}}{\sqrt{5}}</m></li>
+    <li><m>\sqrt{\dfrac{5}{8}} =\dfrac{\sqrt{5}}{\sqrt{8}}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="5"><statement><p>Which of the four possible properties listed above are true, and which are false?  Write the true properties below:</p></statement>
+<answer><p><me>~\sqrt{ab} =\sqrt{a}\sqrt{b}~</me>
+    <me>~\sqrt{\dfrac{a}{b}} =\dfrac{\sqrt{a}}{\sqrt{b}}~</me></p></answer></exercise>
+
+<exercise number="6"><statement><p>True or False. State which property (or non-property) above supports your answer.
+<ol cols="2">
+    <li><p><m>\sqrt{9b^4} = \sqrt{9}\sqrt{b^4}</m></p></li>
+    <li><p><m>\sqrt{4-x^2} = \sqrt{4}-\sqrt{x^2}</m></p></li>
+    <li><p><m>\sqrt{\dfrac{3a}{16}} = \dfrac{\sqrt{3a}}{\sqrt{16}}</m></p></li>
+    <li><p><m>\sqrt{2+w} = \sqrt{2}+\sqrt{w}</m></p></li>
+    <li><p><m>\sqrt{\dfrac{x}{9}} = \dfrac{\sqrt{x}}{3}</m></p></li>
+    <li><p><m>\sqrt{x^2+y^2} = x+y</m></p></li>
+    <li><p><m>\sqrt{1-25b^2} = 1-5b</m></p></li>
+    <li><p><m>\sqrt{7m^2} = m\sqrt{7}</m></p></li>
+</ol></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup><introduction><p>For Problems 7<ndash/>9, simplify. Assume that all variables represent positive numbers.
+</p></introduction>
+
+<exercise number="7"><statement><p><ol marker="a." cols="3">
+            <li><p><m>\sqrt{18} </m></p></li>
+            <li><p><m>\sqrt[3]{24} </m></p></li>
+            <li><p><m>-\sqrt[4]{64} </m></p></li>
+        </ol></p></statement>
+        <answer><p><ol marker="a." cols="3">
+            <li><p><m>3\sqrt{2} </m></p></li>
+            <li><p><m>2\sqrt[3]{3} </m></p></li>
+            <li><p><m>-2\sqrt[4]{4}=-2\sqrt{2} </m></p></li>
+        </ol></p></answer></exercise>
+
+<exercise number="8"><statement><p><ol marker="a." cols="3">
+            <li><p><m>\sqrt{60,000} </m></p></li>
+            <li><p><m>\sqrt[3]{900,000} </m></p></li>
+            <li><p><m>\sqrt[3]{\dfrac{-40}{27}} </m></p></li>
+        </ol></p></statement></exercise>
+
+<exercise number="9"><statement><p><ol marker="a." cols="3">
+            <li><p><m>\sqrt[3]{x^{10}} </m></p></li>
+            <li><p><m>\sqrt{27z^3} </m></p></li>
+            <li><p><m>\sqrt[4]{48a^9} </m></p></li>
+        </ol></p></statement>
+        <answer><p><ol marker="a." cols="3">
+            <li><p><m>x^3 \sqrt[3]{x} </m></p></li>
+            <li><p><m>3z\sqrt{3z} </m></p></li>
+            <li><p><m>2a^2 \sqrt[4]{3a} </m></p></li>
+        </ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 10<ndash/>13, simplify. Assume that all variables represent positive numbers.</p></introduction>
+
+<exercise number="10"><statement><p><ol marker="a.">
+        <li><p><m>-\sqrt{18s}\sqrt{2s^3} </m></p></li>
+        <li><p><m>\sqrt[3]{7h^2}\sqrt[3]{-49h} </m></p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="11"><statement><p><ol marker="a.">
+        <li><p><m>\sqrt{16-4x^2} </m></p></li>
+        <li><p><m>\sqrt[3]{8A^3+A^6} </m></p></li>
+    </ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+        <li><p><m>2\sqrt{4-x^2} </m></p></li>
+        <li><p><m>A\sqrt[3]{8+A^3} </m></p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="12"><statement><p><ol marker="a.">
+        <li><p><m>\dfrac{\sqrt{45x^3y^3}}{\sqrt{5y}} </m></p></li>
+        <li><p><m>\dfrac{\sqrt[3]{8b^7}}{\sqrt[3]{a^6b^2}} </m></p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="13"><statement><p><ol marker="a.">
+        <li><p><m>\dfrac{ab}{\sqrt[3]{a^2b}} </m></p></li>
+        <li><p><m>\dfrac{\sqrt{x^2y}}{\sqrt{xy}} </m></p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>\sqrt[3]{ab^2} </m></p></li>
+    <li><p><m>x\sqrt{xy} </m></p></li>
+    </ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 14<ndash/>16, simplify and combine like terms.</p></introduction>
+
+<exercise number="14"><statement><p><ol marker="a." cols="2">
+    <li><m>4\sqrt{3}+\sqrt{27}</m></li>
+    <li><m>\sqrt{50x}+\sqrt{32x}</m></li></ol></p></statement></exercise>
+
+<exercise number="15"><statement><p><ol marker="a." cols="2">
+    <li><m>\sqrt[3]{81}+2\sqrt[3]{24}-3\sqrt[3]{3}</m></li>
+    <li><m>3\sqrt[3]{16}-\sqrt[3]{2}-2\sqrt[3]{54}</m></li></ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+        <li><m>4\sqrt[3]{3} </m></li>
+        <li><m>-\sqrt[3]{2} </m></li></ol></p></answer></exercise>
+
+<exercise number="16"><statement><p><ol marker="a." cols="2">
+    <li><m>2v\sqrt{v}+3\sqrt{v^3}-\dfrac{v^2}{\sqrt{v}}</m></li>
+    <li><m>12\sqrt[3]{w^2}-\sqrt[3]{w}\left(-2\sqrt[3]{w}\right)+\dfrac{8w^2}{\sqrt[3]{w}}</m></li></ol></p></statement>
+</exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17<ndash/>20, multiply.</p></introduction>
+
+<exercise number="17"><statement><p><ol marker="a.">
+    <li><m>3\sqrt{2}\left(\sqrt{6}+\sqrt{10}\right)</m></li>
+    <li><m>\sqrt{3k}\left(3\sqrt{k}-k\sqrt{6k}\right)</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>6\sqrt{3}+6\sqrt{5}</m></li>
+    <li><m>3k\sqrt{3}-3k^2\sqrt{2}</m></li></ol></p></answer></exercise>
+
+<exercise number="18"><statement><p><ol marker="a.">
+    <li><m>\sqrt[3]{2}\left(\sqrt[3]{20}-2\sqrt[3]{12}\right)</m></li>
+    <li><m>\sqrt[3]{3}\left(2\sqrt[3]{18}+\sqrt[3]{36}\right)</m></li></ol></p></statement></exercise>
+
+<exercise number="19"><statement><p><ol marker="a.">
+    <li><m>(\sqrt{x}-3)(\sqrt{x}+3)</m></li>
+    <li><m>\left(\sqrt{2}-\sqrt{3}\right)\left(\sqrt{2}+2\sqrt{3}\right)</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>x-9</m></li>
+    <li><m>-4+\sqrt{6}</m></li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p><ol marker="a.">
+    <li><m>\left(\sqrt{5}-\sqrt{2}\right)^2</m></li>
+    <li><m>\left(\sqrt{a}-2\sqrt{b}\right)^2</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="21"><statement><p>Reduce if possible.<ol marker="a." cols="3">
+    <li><m>\dfrac{9-3\sqrt{5}}{3}</m></li>
+    <li><m>\dfrac{-8+\sqrt{8}}{4}</m></li>
+    <li><m>\dfrac{6a-\sqrt{18}}{6a}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><m>3-\sqrt{5}</m></li>
+    <li><m>\dfrac{-4+\sqrt{2}}{2}</m></li>
+    <li><m>\dfrac{2a-\sqrt{2}}{2a}</m></li></ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>Write each expression as a single fraction in simplest form.<ol marker="a." cols="3">
+    <li><m>\dfrac{5}{4}+\dfrac{3\sqrt{2}}{2}</m></li>
+    <li><m>\dfrac{3}{2a}+\dfrac{\sqrt{3}}{6a}</m></li>
+    <li><m>\dfrac{3\sqrt{3}}{2}+3</m></li></ol></p></statement>
+</exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 23<ndash/>26, rationalize the denominator.</p></introduction>
+
+<exercise number="23"><statement><p><ol marker="a.">
+    <li><m>\sqrt{\dfrac{7x}{18}}</m></li>
+    <li><m>\sqrt{\dfrac{2a}{b}}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>\dfrac{\sqrt{14x}}{6}</m></li>
+    <li><m>\dfrac{\sqrt{2ab}}{b}</m></li></ol></p></answer></exercise>
+
+<exercise number="24"><statement><p><ol marker="a.">
+    <li><m>\dfrac{6\sqrt{2}}{\sqrt{12v}}</m></li>
+    <li><m>\dfrac{2\sqrt{3}}{\sqrt{2k}}</m></li></ol></p></statement></exercise>
+
+<exercise number="25"><statement><p><ol marker="a.">
+    <li><m>\dfrac{4}{1+\sqrt{3}}</m></li>
+    <li><m>\dfrac{x}{x-\sqrt{3}}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>-2{1-\sqrt{3}}</m></li>
+    <li><m>\dfrac{x(x+\sqrt{3}}{x^2-3}</m></li></ol></p></answer></exercise>
+
+<exercise number="26"><statement><p><ol marker="a.">
+    <li><m>\dfrac{\sqrt{6}-3}{2-\sqrt{6}}</m></li>
+    <li><m>\dfrac{\sqrt{x}+\sqrt{y}}{\sqrt{x}-\sqrt{y}}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 27 and 28, verify by substitution that the number is a solution of the quadratic equation.</p></introduction>
+
+<exercise number="27"><statement><p><m>x^2+4x-1=0</m>, <m>-2+\sqrt{5}</m></p></statement>
+<answer><p><m>x^2+4x=(4-4\sqrt{5}+5)+(8+4\sqrt{5})=1</m> </p></answer></exercise>
+
+<exercise number="28"><statement><p><m>4x^2-20x+22=0</m>,<m>\dfrac{5-\sqrt{3}}{2}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="29"><statement><p><ol marker="a.">
+    <li><p>Write an expression for the height of an equilateral triangle of side <m>w</m>.</p>
+    <sidebyside width="20%"><image xml:id="fig-equilateral-triangle-side-w"><description>triangle</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=1.3]
+        \draw[gray,very thick,dashed] (1,{sqrt(3)}) -- (1,0);
+        \draw[magenta!90!black,very thick] (0,0)--(2,0)--(1,{sqrt(3)})--cycle;
+        \draw[blue] (1.25,0) -- ++(0,.25)--++(-0.25,0);
+        \node at (1.8,0.9) {$w$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+    <li>Write an expression for the area of the triangle.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>\dfrac{w\sqrt{3}}{2}</m></li>
+    <li><m>\dfrac{w^2\sqrt{3}}{4}</m></li></ol></p></answer></exercise>
+
+<exercise number="30"><statement><p><ol marker="a.">
+    <li><p>Write an expression in terms of <m>k</m> for the height of the pyramid shown below.</p>
+    <sidebyside width="20%"><image source="images/fig-pyramid-sq-base-k"><description>pyramid with square base of side k and lateral edge 2k</description></image></sidebyside></li>
+    <li>Write an expression in terms of <m>k</m> for the volume of the pyramid.</li></ol></p></statement></exercise>
+</subexercises>
+
+</exercises>

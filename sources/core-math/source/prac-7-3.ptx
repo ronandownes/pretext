@@ -1,0 +1,336 @@
+<exercises xml:id="prac-7-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 7-3</title>
+
+<exercisegroup><introduction><p>For Problems 1-8, multiply or divide, if possible.</p></introduction>
+
+<exercise number="1"><statement><p><ol marker="a." cols="2">
+  <li><m>3(-6)</m></li>
+  <li><m>-4(-8)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-18</m></li>
+  <li><m>32</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a." cols="2">
+  <li><m>-9(-2)</m></li>
+  <li><m>-6 \cdot 8</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="3"><statement><p><ol marker="a." cols="2">
+  <li><m>-7 \cdot 4</m></li>
+  <li><m>5(-9)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-28</m></li>
+  <li><m>-45</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a." cols="2">
+  <li><m>-36 \div 4</m></li>
+  <li><m>-42 \div (-6)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="5"><statement><p><ol marker="a." cols="2">
+  <li><m>-56 \div (-8)</m></li>
+  <li><m>70 \div (-10)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>7</m></li>
+  <li><m>-7</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="6"><statement><p><ol marker="a." cols="2">
+  <li><m>24 \div (-8)</m></li>
+  <li><m>-63 \div 7</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="7"><statement><p><ol marker="a." cols="2">
+  <li><m>0 \div (-12)</m></li>
+  <li><m>0(-12)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>0</m></li>
+  <li><m>0</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="8"><statement><p><ol marker="a." cols="2">
+  <li><m>-12 \div 0</m></li>
+  <li><m>-12 \cdot 0</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="9"><statement><p><ol marker="a." cols="2">
+  <li><m>12 \div (-12)</m></li>
+  <li><m>12(-12)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-1</m></li>
+  <li><m>-144</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="10"><statement><p><ol marker="a." cols="2">
+  <li><m>\dfrac{-84}{-6}</m></li>
+  <li><m>\dfrac{-110}{5}</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="11"><statement><p><ol marker="a." cols="2">
+  <li><m>\dfrac{96}{-6}</m></li>
+  <li><m>\dfrac{-95}{-5}</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-16</m></li>
+  <li><m>19</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="12"><statement><p><ol marker="a." cols="2">
+  <li><m>\dfrac{0}{-7}</m></li>
+  <li><m>\dfrac{-7}{0}</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="13"><statement><p>Use the idea of repeated addition to explain why the product of a positive number and a negative number is negative.</p></statement>
+  <answer><p>Adding several negative numbers gives a negative sum.</p></answer></exercise>
+
+<exercise number="14"><statement><p>Use ideas about money to explain why the product of two negative numbers is positive.</p></statement></exercise>
+
+<exercise number="15"><statement><p>Delbert says that "two negatives make a positive."  For which operations is he correct:  addition, subtraction, multiplication, division.</p></statement>
+  <answer><p>Multiplication and division</p></answer></exercise>
+
+<exercise number="16"><statement><p>True or False:<ol marker="a.">
+  <li><p>The product of any number and zero is undefined.</p></li>
+  <li><p>The quotient of any number divided by zero is undefined.</p></li>
+  <li><p>The quotient of zero divided by any number is undefined.</p></li>
+  <li><p>The sum of any number and its opposite is undefined.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="17"><statement><p>Fill in each blank with "is always positive," "is always negative," or "could be either positive or negative."<ol marker="a.">
+  <li><p>The sum of two negative numbers <fillin></fillin>.</p></li>
+  <li><p>The difference of two negative numbers <fillin></fillin>.</p></li>
+  <li><p>The product of two negative numbers <fillin></fillin>.</p></li>
+  <li><p>The quotient of two negative numbers <fillin></fillin>.</p></li>
+</ol></p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>Always negative</p></li>
+  <li><p>Either</p></li>
+  <li><p>Always positive</p></li>
+  <li><p>Always positive</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="18"><statement><p>Fill in each blank with "is always positive," "is always negative," or "could be either positive or negative."<ol marker="a.">
+  <li><p>The sum of two a positive number and a negative number <fillin></fillin>.</p></li>
+  <li><p>The difference of a positive number and a negative number <fillin></fillin>.</p></li>
+  <li><p>The product of a positive number and a negative number <fillin></fillin>.</p></li>
+  <li><p>The quotient of a positive number and a negative number  <fillin></fillin>.</p></li>
+</ol></p></statement></exercise>  
+
+<exercisegroup><introduction><p>For Problems 19-24, <ol marker="a.">
+  <li><p>Write a product or quotient of signed numbers to describe the story.</p></li>  
+  <li><p>Evaluate the product or quotient to answer the question.</p></li>
+</ol></p></introduction>
+
+<exercise number="19"><statement><p>Whitney is climbing down a sheer cliff. She has spaced pitons vertically every 6 meters. What is her net elevation change after she has descended to the eighth piton from the top?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><m>8(-6)</m></li>
+  <li><p><m>-48~</m> feet</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>The bank erroneously charged Utako with five withdrawals of $400 each.  If her balance is actually $0, what does the bank believe her balance is?</p></statement></exercise>
+
+<exercise number="21"><statement><p>The temperature on the ice planet Hoth dropped 115<m>\deg</m> in just 4 hours.  What was the average temperature change per hour?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><m>\dfrac{-115}{4}</m></li>
+  <li><p><m>-28.75~</m> degrees per hour</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>Bertha lost 30 pounds in 8 weeks.  What was Bertha's average change in weight per week?</p></statement></exercise>
+
+<exercise number="23"><statement><p>The U.S. balance book shows an entry of $100,000,000,000 representing the failure of numerous savings and loan institutions. If this amount were to be divided equally among the 100 million adult citizens, how much of the balance would be assigned to each?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><m>-100,000,000,000 \div 100,000,000</m></li>
+  <li><p><m>-1000~</m> dollars</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>Petra implements a scheme that successfully cuts her firm's $250,000 debt in half.  What is the resulting balance?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 25-34, which operation is indicated in each expression? Simplify the expression.</p></introduction>
+
+<exercise number="25"><statement><p><ol marker="a." cols="2">
+  <li><m>-6(-8)</m></li>
+  <li><m>-6 - 8</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+    <li><m>48</m></li>
+    <li><m>-14</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="26"><statement><p><ol marker="a." cols="2">
+  <li><m>5 -(-9)</m></li>
+  <li><m>-5 (-9)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="27"><statement><p><ol marker="a." cols="2">
+  <li><m>12 - (-4)</m></li>
+  <li><m>12 \div (-4)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>16</m></li>
+  <li><m>-3</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="28"><statement><p><ol marker="a." cols="2">
+  <li><m>-36 \div 9</m></li>
+  <li><m>-36 - 9</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="29"><statement><p><ol marker="a." cols="2">
+  <li><m>-40 - (-8)</m></li>
+  <li><m>-40 \div (-8)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-32</m></li>
+  <li><m>5</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="30"><statement><p><ol marker="a." cols="2">
+  <li><m>24 + (-6)</m></li>
+  <li><m>24 \div (-6)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="31"><statement><p><ol marker="a." cols="2">
+  <li><m>-3 + (-8)</m></li>
+  <li><m>-3(-8)</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-11</m></li>
+  <li><m>24</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="32"><statement><p><ol marker="a." cols="2">
+  <li><m>-2 (-13)</m></li>
+  <li><m>-2 - (-13)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="33"><statement><p><ol marker="a." cols="2">
+  <li><m>-9(7)</m></li>
+  <li><m>-9 + 7</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-63</m></li>
+  <li><m>-2</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="34"><statement><p><ol marker="a." cols="2">
+  <li><m>8-12</m></li>
+  <li><m>8(-12)</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 35-40, write each division fact as an equivalent multiplication fact.
+</p></introduction>
+
+<exercise number="35"><statement><m>-40 \div 8 = -5</m></statement>
+  <answer><m>(-5)(8) = -40</m></answer></exercise>
+
+<exercise number="36"><statement><m>-80 \div (-16) = 5</m></statement></exercise>
+
+<exercise number="37"><statement><m>\dfrac{56}{-4} = -14</m></statement>
+  <answer><m>-14(-4) = 56</m></answer></exercise>
+
+<exercise number="38"><statement><m>\dfrac{-72}{-3} = 24</m></statement></exercise>
+
+<exercise number="39"><statement><m>\dfrac{-196}{-7} = 28</m></statement>
+  <answer><m>28(-7) = -196</m></answer></exercise>
+
+<exercise number="40"><statement><m>\dfrac{-72}{12} = -6</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 41-48, use your calculator to multiply or divide. Round your answers to two decimal places if necessary. </p></introduction>
+
+<exercise number="41"><statement><m>-18 (-23)</m></statement>
+  <answer><m>414</m></answer></exercise>
+
+<exercise number="42"><statement><m>374 \div (-22)</m></statement></exercise>
+
+<exercise number="43"><statement><m>-434 \div (-14)</m></statement>
+  <answer><m>31</m></answer></exercise>
+
+<exercise number="44"><statement><m>25(-19)</m></statement></exercise>
+
+<exercise number="45"><statement><m>\dfrac{288}{-16}</m></statement>
+  <answer><m>-18</m></answer></exercise>
+
+<exercise number="46"><statement><m>\dfrac{-312}{-26}</m></statement></exercise>
+
+<exercise number="47"><statement><m>(-0.3)(26.1)</m></statement>
+  <answer><m>-7.83</m></answer></exercise>
+
+<exercise number="48"><statement><m>(2.8)(-5.4)</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 49-52, compute each power.</p></introduction>
+
+<exercise number="49"><statement><p><ol marker="a." cols="2">
+  <li><m>(-3)^2</m></li>
+  <li><m>(-2)^3</m></li>
+  <li><m>-3^2</m></li>
+  <li><m>-2^3</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>9</m></li>
+  <li><m>-8</m></li>
+  <li><m>-9</m></li>
+  <li><m>-8</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="50"><statement><p><ol marker="a." cols="2">
+  <li><m>-4^2</m></li>
+  <li><m>-4^3</m></li>
+  <li><m>(-4)^2</m></li>
+  <li><m>(-4)^3</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="51"><statement><p><ol marker="a." cols="2">
+  <li><m>(-1)^3</m></li>
+  <li><m>(-1)^4</m></li>
+  <li><m>-1^4</m></li>
+  <li><m>-1^5</m></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+  <li><m>-1</m></li>
+  <li><m>1</m></li>
+  <li><m>-1</m></li>
+  <li><m>-1</m></li>
+  </ol></p></answer></exercise>
+
+<exercise number="52"><statement><p><ol marker="a." cols="2">
+  <li><m>(-5)^3</m></li>
+  <li><m>(-9)^2</m></li>
+  <li><m>-8^2</m></li>
+  <li><m>-3^3</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="53"><statement><p><ol marker="a.">
+  <li><p>Compute each power.<ol marker="i." cols="3">
+    <li><m>(-2)^1</m></li>
+    <li><m>(-2)^2</m></li>
+    <li><m>(-2)^3</m></li>
+    <li><m>(-2)^4</m></li>
+    <li><m>(-2)^5</m></li>
+    <li><m>(-2)^6</m></li>
+  </ol></p></li>
+  <li><p>Do you see a pattern developing? What is the connection between the exponent and the sign of the answer? The sign of the power is <fillin></fillin> if the exponent is <fillin></fillin>.</p></li>
+</ol></p></statement>
+  <answer><p><ol marker="a." cols="2">
+    <li><m>-2, 4, -8, 16, -32, 64</m></li>
+    <li><p>negative, odd</p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="54"><statement><p><ol marker="a.">
+  <li><p>Explain why <m>(-3)^4</m> and <m>-3^4</m> are different numbers.</p></li>
+  <li><p>Explain why <m>(-3)^3</m> and <m>-3^3</m> are the same number.</p></li>
+</ol></p></statement></exercise>
+
+
+</exercises>

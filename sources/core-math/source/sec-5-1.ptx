@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-5-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <title>Working with Variables</title>
+
+  <sidebyside widths="50% 45%" valigns="middle middle"><p><ul>
+    <li><p>Like Terms</p></li>
+    <li><p>Equivalent Expressions</p></li>
+    <li><p>Constant Multiples of Terms</p></li>
+    <li><p>Terms with Exponents</p></li>
+    <li><p>Multiplying Variable Expressions</p></li>
+    <li><p>Evaluating Variable Expressions</p></li>
+  </ul></p>
+      <image source="cats.png"></image></sidebyside> 
+  
+<subsection><title>Like Terms</title>
+
+<p>You know from arithmetic that you can combine quantities of the same type. For example, if you have three cats and your roommate has two cats, then together you have (3 + 2) cats, or 5 cats.</p> 
+
+<activity><title>Like Terms</title>
+
+<p><ol marker="1.">
+    <li><p>Suppose tuition at your college is $20 per unit. If you are enrolled in eight units this semester and plan to enroll in ten units next semester, then you can figure your tuition for the year in two ways.</p>
+
+    <p>Method 1:  Calculate the tuition for each semester, then add them up:
+        <me>\blert{8}($20) + \blert{10} ($20) = <fillin characters="4"/> + <fillin characters="4"/> = <fillin characters="4"/></me></p>
+    <p>Method 2: Add up the number of units for the whole year, then calculate the tuition:
+        <me>\blert{(8 + 10)} ($20) = <fillin characters="2"/> ($20) = <fillin characters="4"/></me>
+    Either calculation gives your total tuition for the year.</p></li>
+
+    <li><p>Next year the tuition at your college is going up to some unknown figure, <m>x</m> dollars per unit. If you take the same number of units next year, your tuition will be
+        <me>\blert{8}x~ \text{dollars} + \blert{10}x~  \text{dollars}</me>
+    This time you cannot use Method 1 to calculate your tuition, because you don't know what <m>x</m> is equal to.</p>
+    <p>But we can use Method 2.  We add up multiples of <m>x</m> dollars exactly the same way we added up multiples of $20. Your tuition for the year will be
+        <me>\blert{(8 + 10)}(x) = <fillin characters="2"/>(x)~ \text{dollars}</me>
+    Now as soon as you learn the value of , you can find your tuition for the year.</p></li>
+  </ol></p></activity>
+
+<p>In Activity 5.1.1, <m>8x</m> and <m>10x</m> are called <term>like terms</term>, because the variable part of each term, <m>x</m>, is the same.  (Recall that <term>terms</term> are expressions that are added or subtracted, and <term>factors</term> are expressions that are multiplied together.)</p>
+
+<p>The numbers multiplied by the variable are called the <term>coefficients</term> of the variable. In Activity 5.1.1 the coefficients are 8 and 10.</p>
+
+<assemblage><title>To add or subtract like terms</title>
+<p><ol marker="1.">
+  <li><p>Add or subtract the coefficients.</p></li>
+  <li><p>Do not change the variable part of the terms.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Add or subtract like terms.
+  <ol marker="a." cols="2">
+    <li><m>9m-4m</m></li>
+    <li><m>6st + 8st</m></li>
+  </ol></p></statement>
+
+  <solution><p>We add or subtract the coefficients of the terms. The variable part of the terms remains the same.
+    <ol marker="a.">
+      <li><m> 9m - 4m = (9-4)m = 5m ~~~~~~~ \blert{\text{Subtract coefficients, keep the variable factor.}}</m></li>
+      <li><m> 6st + 8st = (6+8)st = 14st ~~~~~~~ \blert{\text{Add coefficients, keep the variable factor.}}</m></li>
+    </ol></p></solution></example>
+
+<exercise><statement><p>Add like terms:  <m>~~4ab + 11ab</m></p></statement>
+<answer><p><m>15ab</m></p></answer></exercise>
+
+<note><p>Because <m>x = 1 \cdot x</m>, the coefficient of <m>x</m> is <m>1</m>.  Also, because 0 times any number is 0, we have  
+    <me>0 \cdot x = 0</me></p></note>
+
+<example><statement><p>Combine like terms.</p>
+  <ol marker="a.">
+    <li><p><m>3x + x = 4x ~~~~~~~ \blert{\text{Add coefficients, keep the variable factor.}}</m></p></li>
+    <li><p><m>3w - w = 2w ~~~~~~~  \blert{\text{Subtract coefficients, keep the variable factor.}}</m></p></li>
+</ol></statement></example>
+
+<exercise><statement><p>Combine like terms:  <m>~pq + pq</m></p></statement>
+<answer><p><m>2pq</m></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Equivalent Expressions</title>
+
+<p>Combining like terms gives us a simpler expression that is <term>equivalent</term> to the original. Equivalent expressions have the same value when we substitute a number for the variable. It is always a good idea to replace complicated expressions with simpler ones if we can.</p>
+
+<note><p>We cannot combine unlike terms. If you have three cats and your roommate has two canaries, and you try to combine them, you will still have three cats and two canaries, if you're lucky.</p></note> 
+
+<p>If the variable parts of the terms are not identical, they are not like terms, and they cannot be combined.  Here are some examples of unlike terms.
+
+  <md><mrow>3x ~~ \text{and} ~~ 5y \hphantom{0000} \amp   ~~ \text{are not like terms}</mrow>
+      <mrow>6a ~~ \text{and} ~~ 2ab \hphantom{0000} \amp   ~~ \text{are not like terms}</mrow>
+      <mrow>4z ~~ \text{and} ~~ 8 \hphantom{0000} \amp   ~~ \text{are not like terms}</mrow></md>
+
+  So, expressions such as
+    <m>3x + 5y ~~ \text{or} ~~ 6a-2ab ~~ \text{or} ~~ 4z - 8</m>  
+cannot be simplified;  they just stay the way they are.</p>
+
+<assemblage><title>A Quick Refresher</title>
+<p>Remember the order of operations:  we perform all multiplications (and 
+divisions) before additions and subtractions.  For example, to evaluate
+    <me>3 + 5x ~~~~\text{for} ~~~~x = \alert{6}</me>
+we perform the multiplication first.
+    <me>3 + 5(\alert{6}) = 3 + 30 = 33</me></p></assemblage>
+
+<activity><title>Equivalent Expressions</title>
+
+<p>Complete the table to help you decide whether the two expressions are equivalent.</p>
+<p><ol marker="1.">
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                   
+        <row >
+            <cell><m>x</m></cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row> 
+            <cell><m>4x + 3x</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        <row> 
+            <cell><m>7x</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>               
+    </tabular>
+    <p>Is <m>4x + 3x</m> equivalent to <m>7x</m>?</p></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                        
+        <row >
+            <cell><m>x</m></cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row> 
+            <cell><m>4 + 3x</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        <row> 
+            <cell><m>7x</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>               
+    </tabular>
+    <p>Is <m>4 + 3x</m> equivalent to <m>7x</m>?</p></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                        
+        <row >
+            <cell><m>x</m></cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row> 
+            <cell><m>4x + 3</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        <row> 
+            <cell><m>7x</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>               
+    </tabular>
+    <p>Is <m>4x + 3</m> equivalent to <m>7x</m>?</p></li>
+  </ol></p></activity>
+</subsection>
+
+<subsection><title>Constant Multiples of Terms</title>
+
+<p>Recall that <m>3x</m> means <m>3</m> times <m>x</m>,  or
+    <me>3x = x + x + x</me>
+because multiplication is really just repeated addition.  Similarly, <m>3(2x)</m>  means <m>3</m> times <m>2x</m>, or
+    <me>3(2x) = 2x + 2x + 2x</me>
+By combining like terms, we see that  <m>~2x + 2x + 2x = 6x</m>.  Thus,
+    <me>3(2x) = 6x</me></p>
+
+<assemblage><p>To multiply a term by a constant, we multiply the coefficient of the term by the constant.</p></assemblage>
+
+<example><statement><p>The members of the Concert Choir agree that each member of the Choir should sell five tickets to the spring concert.
+<ol marker="a.">
+  <li><p>If one ticket sells for  <m>x</m>  dollars, how much will each member make from ticket sales?</p></li>
+  <li><p>The Choir has 20 members.  How much will they earn from ticket sales?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Each member of the choir will earn <m>5x</m>  dollars.</p></li>
+  <li><p>The Choir will earn  <m>20(5x)</m>,  or  <m>100x</m>  dollars.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Every staff member will carry home two sets of new regulations from the meeting. Each set of regulations weighs <m>h</m> ounces.
+<ol marker="a.">
+  <li><p>How many ounces will each staff member carry home?</p></li>
+  <li><p>There are 9 staff members.  What is the total weight they carry home?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><m>2h</m></li>
+  <li><m>18h</m></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Terms with Exponents</title>
+
+<assemblage><title>Another Quick Refresher</title>
+<p>An <term>exponent</term> is a number that appears above and to the right of a particular factor.  It tells us how many times that factor occurs in the product.</p> 
+  
+<p>For example, we can write <m>32</m> as <m>2^5</m>.</p>
+      <image source="exponent.png" width="50%"></image></assemblage>
+
+<p>In like terms the variable parts of the terms must be exactly the same, including their exponents.  For example,
+      <me>5x^2 ~~ \text{and} ~~ 2x^2 ~~ \text{are like terms}</me>
+but
+      <me>6x ~~ \text{and} ~~ 3x^2 ~~ \text{are not like terms}</me></p>
+
+<p>This is because <m>x</m> and <m>x^2</m> are usually not the same number (unless <m>x</m> happens to be 0 or 1), so we cannot combine them into one group (like cats and canaries).</p>
+
+<example><statement><p>Combine like terms.
+<ol marker="a." cols="2">
+    <li><m>4x^2 + 3x^2</m></li>
+    <li><m>7a^2 + 5a</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We add the coefficients, <m>4 + 3</m>,  and leave the variable part, <m>x</m>, unchanged.
+        <me>4x^2 + 3x^2 = (4 + 3) x^2 = 7x^2</me></p></li>
+    <li><p><m>7a^2</m> and <m>5a</m> are not like terms, because the variable, <m>a</m>, does not have the same exponent.  So we cannot combine the terms; this expression cannot be simplified.</p></li>
+</ol></p></solution></example>
+
+<note><p>When combining like terms, we <em>do not add the exponents</em>.  For example,
+      <me>4x^2 + 3x^2 = 7x^4 ~~~~ \alert{\text{is  incorrect!}}</me>
+(What is the correct answer?)</p></note>
+
+<exercise><statement><p>Combine like terms:  <m>~~~ 7w^3 + 8w^3</m></p></statement>
+
+<answer><m>15w^3</m></answer></exercise>
+</subsection>
+
+<subsection><title>Multiplying Variable Expressions</title>
+
+<p>What about multiplying variable expressions? We will need one fact from arithmetic: We can rearrange factors in any order and get the same product. Try it yourself. For example, multiply from left to right:
+
+  <md><mrow>(2)(3)(4)(5) \amp = (6)(4)(5)</mrow>
+      <mrow>           \amp = (24)(5) = ??</mrow></md>
+
+Now rearrange the factors and multiply again.
+
+  <md><mrow>(4)(3)(5)(2) \amp = (12)(5)(2)</mrow>
+      <mrow>           \amp = (60)(2) = ??</mrow></md>
+
+The product is the same.</p>
+  
+<p>Rearranging the order of factors in a product works with variables, too.</p>
+
+<example><statement><p>Multiply  <m>~(2a)(3a)</m></p></statement>
+
+<solution><p>First, we rearrange the factors to put the coefficients together and the variable factors together.
+      <me>(2a)(3a) = 2 \cdot 3 \cdot a \cdot a</me>
+Now we can multiply <m>2 \cdot 3</m>  to get 6, and <m>a \cdot a</m> to get <m>a^2</m>.  Thus,
+      <me>(2a)(3a) = 2 \cdot 3 \cdot a \cdot a = 6a^2</me></p></solution></example>
+
+<note><p>Be careful to distinguish between multiplying and adding.  Remember that
+      <me>2x ~~~~ \text{means} ~~~~ x + x ~~~~\text{(addition),}</me>
+while
+      <me>x^2 ~~~~ \text{means} ~~~~ x \cdot x ~~~~ \text{(multiplication).}</me>
+For example, if  <m>x=5</m>,
+      <me>2x = 5 + 5 = 10 ~~~~ \text{and} ~~~~x^2 = 5 \cdot 5 = 25</me></p></note>
+
+<exercise><statement><p>Multiply  <m>~(7q)(2q)</m></p></statement>
+
+<answer><m>14q^2</m></answer></exercise>
+</subsection>
+
+<subsection><title>Evaluating Algebraic Expressions</title>
+
+<p>When we evluate an algebraic expression, we follow the order of operations.</p>
+
+<assemblage><title>Order of Operations</title>
+<p><ol marker="1.">
+  <li><p>Perform any operations inside parentheses, or above or below a fraction bar, or inside a radical.</p></li>
+  <li><p>Compute all powers and roots.</p></li>
+  <li><p>Perform all multiplications and divisions in the order in which they occur from left to right.</p></li>
+  <li><p>Perform additions and subtractions in order from left to right.</p></li>
+</ol></p></assemblage>
+
+<p>(You can review the order of operations in <xref ref="Order-of-Operations" text="custom"> Section 4.5 </xref>.)</p>
+
+<example><statement><p>Evaluate the expression <m>~20-2x^2~</m>  for <m>x=3</m>.</p></statement>
+
+<solution><p>We begin by substituting <m>\alert{3}</m> for <m>x</m> in the expression.
+    <md><mrow>20 - 2x^2 \amp = 20 - 2 \cdot \alert{3}^2 \amp \amp \blert{\text{Compute the power first.}}</mrow>
+        <mrow>  \amp = 20 - 2 \cdot 9 \amp \amp \blert{\text{Multiply.}}</mrow>
+        <mrow>  \amp = 20 - 18 = 2  \amp \amp \blert{\text{Subtract.}}</mrow></md></p></solution></example>
+
+<exercise><statement><p>Evaluate the expression <m>(8 - b^2)(8 - b)^2</m>  for  <m>b=2</m>.</p>
+<p>Hint:   Simplify each factor, then multiply them together.</p></statement>
+
+<answer><m>144</m></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>like terms</p></li>
+  <li><p>factors</p></li>
+  <li><p>coefficient</p></li>
+  <li><p>equivalent expressions</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-5-1.ptx" />
+
+
+
+</section>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkNonlinearSystems"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Nonlinear Systems</title>
+                
+<subsubsection xml:id="tkNonLinSys"><title>Write a system of equations</title> 
+
+<p>Problems that involve two variables can sometimes be described by a system of equations.</p>
+
+<example><statement><p>The area of a rectangle is 874 square millimeters, and its perimeter is 122 millimeters.   Write a system of equations for the dimensions of the rectangle.</p></statement>
+
+<solution><p>We use the formulas for area and perimeter, where <m>w</m> stands for the width of the rectangle, and <m>l</m> stands for its length.
+	<md><mrow>lw \amp = 874</mrow>
+		<mrow>2l+2w \amp = 122</mrow></md></p>
+</solution></example>
+
+<example><statement><p>A small plane flies at a constant speed. In 5 hours, it travels 750 miles with a tailwind, but it travels only 600 miles in 5 hours against the wind. Write a system of equations for the speed of the plane and the speed of the wind.</p>
+</statement>
+
+<solution><p>We let <m>v</m> stand for the speed of the plane, and <m>w</m> stand for the speed of the wind. We use the formula <m>RT=D</m>.
+	<md><mrow>(v+w)5 \amp = 750</mrow>
+		<mrow>(v-w)5 \amp = 600</mrow></md></p>
+</solution></example>
+
+<p>Write a system of equations for the problem.</p>
+
+<exercise><statement><p>Darryl plans to mix some 50% solution with some 75% solution to make 20 liters of 60% solution. How much of each should he use?</p></statement>
+<answer><p><md><mrow>x+y=20</mrow>
+			<mrow>0.5x+0.75y=12</mrow></md></p></answer></exercise>
+
+<exercise><statement><p>The perimeter of a rectangle is 38 inches.  If we triple the width and decrease the length by 8 inches, we increase the area of the rectangle by 40%.  What are the dimensions of the original rectangle?
+</p></statement>
+<answer><p><md><mrow>2l+2w=38</mrow>
+			<mrow>3w(l-8)=1.4lw</mrow></md></p></answer></exercise>
+
+<exercise><statement><p>The express train travels 15 miles per hour faster than the local.  The local takes 10 minutes longer to travel 30 miles than the express takes.  Find the speed of each.</p></statement>
+<answer><p><md><mrow>v=15+l</mrow>
+			<mrow>\dfrac{30}{l} = \dfrac{30}{v}+\dfrac{1}{6}</mrow></md></p></answer></exercise>
+
+<exercise><statement><p>Delbert made $65 interest on his money market account this year.  Francine invested $100 less than Delbert at 0.5% higher interest rate and earned $66.  How much did Delbert invest, and at what interest rate?</p></statement>
+<answer><p><md><mrow>Pr=65</mrow>
+			<mrow>(P-100)(r+0.005) = 66</mrow></md></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSubst"><title>Use substitution</title>
+
+<p>We can use substitution to solve some systems of equations.</p>
+
+<example><statement><p>Use substitution to write an equation in one variable.
+	<md><mrow>x^2-8x+y^2+2y \amp = 23</mrow>
+		<mrow>x+2y \amp = 12</mrow></md></p></statement>
+
+<solution><p>We solve the second equation for <m>x</m> to get <m>x = \alert{12-2y}</m>, and then substitute this expression into the first equation.
+	<md><mrow>(\alert{12-2y})^2-8(\alert{12-2y})+y^2+2y \amp = 23</mrow>
+		<mrow>144-48y+4y^2-96+16y+y^2+2y \amp = 23</mrow>
+		<mrow>5y^2-30y+25 \amp = 0</mrow></md></p>
+</solution></example>
+
+<p>Use substitution to write an equation in one variable.</p>
+
+<exercise><statement><p><md><mrow>x^2-2x+y^2+4y \amp = 20</mrow>
+							<mrow>y-x \amp = 4</mrow></md></p></statement>
+<answer><p><m>2x^2+10x+12=0</m></p></answer></exercise>
+
+<exercise><statement><p><md><mrow>x^2-y^2 \amp = 16</mrow>
+							<mrow>xy \amp = 6</mrow></md></p></statement>
+<answer><p><m>x^4-16x^2-36=0</m></p></answer></exercise>
+
+<exercise><statement><p><md><mrow>x^2-12x+y^2+2 \amp = 0</mrow>
+							<mrow>y \amp = 4x-7</mrow></md></p></statement>
+<answer><p><m>17x^2-68x+51=0</m></p></answer></exercise>
+
+<exercise><statement><p><md><mrow>x^2-4x+y^2+2y \amp = 5</mrow>
+							<mrow>x+2y \amp = -5</mrow></md></p></statement>
+<answer><p><m>5y^2+30y+40=0</m></p></answer></exercise>
+
+<example><statement><p>Find the intersection points of the graphs of
+        <md><mrow>x^2+y^2\amp = 5</mrow>
+            <mrow>xy \amp = 2</mrow></md>          
+</p></statement>
+    
+<solution><p>We will use substitution to solve the system. First we solve the "easier" of the two equations (the second equation) for <m>y</m> to obtain
+    <me>y=\dfrac{2}{x}</me>
+We substitute <m>\alert{\dfrac{2}{x}}</m> for <m>y</m> in the first equation to find
+    <me>x^2 + \left(\alert{\dfrac{2}{x}}\right)^2 = 5 ~~~~\text{or} ~~~~~ x^2 + \dfrac{4}{x^2}=5</me>
+This equation has only one variable, <m>x</m>, and we solve it by first clearing fractions. We multiply both sides by <m>x^2</m>, and then subtract <m>5x^2</m> to obtain
+    <me>x^4-5x^2+4=0</me>
+Then we factor the left side to get
+    <me>(x^2-1)(x^2-4)=0</me>
+and apply the zero-factor principle to find 
+    <me>x^2-1 = 0 ~~~~ \text{or} ~~~~ x^2-4=0</me>
+We solve each of these equations to find
+    <me>x=1,~~ x=-1, ~~ x=2, ~~ \text{or} ~~ x=-2</me>
+Finally, we substitute each of these values into <m>y=\dfrac{2}{x}</m> to find the  <m>y</m>-components of each solution. The intersubsection points of the two graphs are <m>(1,2),~ (-1,-2), ~ (2,1)</m> and <m>(-2,-1)</m>. The graph of the system is shown below.</p>        
+    <image  width="40%" source="images/fig-10-5-exm1ans.png"><description>conics</description></image>
+</solution></example>
+
+<exercise><statement><p>Find the intersection points of the graphs of
+    <md><mrow>x^2-y^2\amp = 35</mrow>
+        <mrow>xy \amp = 6</mrow></md>
+</p></statement>
+<answer><p><m>(6,1),~ (-6,-1)</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkElim"><title>Use elimination</title>
+
+<example><statement><p>Find the solutions to the following system of the equations.
+        <md><mrow>x^2-2y^2\amp = 1</mrow>
+            <mrow>\dfrac{x^2}{15}+\dfrac{y^2}{10} \amp = 1</mrow></md>
+Verify the solutions on a graph.</p></statement>
+
+<solution><p>We multiply the first equation by 3 and the second by 60 to obtain the new system
+        <md><mrow>3x^2-6y^2\amp = 3</mrow>
+            <mrow>4x^2+6y^2 \amp = 60</mrow></md>
+    Adding these two equations, we have 
+        <md><mrow>7x^2\amp = 63</mrow>
+            <mrow>x^2 \amp = 9</mrow>
+            <mrow>x \amp = \pm 3</mrow></md>
+    We substitute these values for into any of the equations involving <m>y</m> and solve, to find the solutions <m>(3,2), ~ (3,-2),~ (-3,2)</m> and <m>(-3,-2)</m>.</p>
+    <p>The two original equations describe a hyperbola and an ellipse. We can obtain graphs on a graphing utility by solving each equation for <m>y</m> to get 
+            <md><mrow>y\amp = \pm\sqrt{\dfrac{x^2-1}{2}}</mrow>
+                <mrow>y \amp = \pm\sqrt{10(1-\dfrac{x^2}{15}}</mrow></md>
+    We enter these equations to obtain the graph shown below. The solutions of the system are the intersubsection points of the graphs.</p>            
+        <image width="40%" source="images/fig-10-5-exm2ans.png"><description>conics</description></image>
+</solution></example>
+
+<exercise> <statement><p>Find the intersection points of the graphs of
+        <md><mrow>x^2-y^2\amp = 5</mrow>
+            <mrow>x^2 + y^2 \amp = 13</mrow></md></p></statement>
+ <answer><p><m>(2,3),~ (-2,3),~ (2,-3),~ (-2,-3)</m></p></answer></exercise>
+
+<p>For some quadratic systems, we can use a combination of elimination of variables and substitution.</p>
+
+<example><statement><p>Find the intersection of the circles given by the equations.
+        <md><mrow>x^2 - 4x + y^2 + 2y\amp = 20</mrow>
+            <mrow>x^2 - 12x + y^2 + 10y \amp = -12</mrow></md></p></statement>
+
+<solution><p>We subtract the second equation from the first to obtain  
+            <me>8x-8y=32</me>
+    Solving for <m>x</m> we have
+            <me>x=y+4</me>        
+     We substitute <m>\alert{y+4}</m> for <m>x</m> into either of the original equations.  We'll use the first equation.
+            <md><mrow>(\alert{y+4})^2 - 4(\alert{y+4}) + y^2 + 2y\amp = 20</mrow>
+                <mrow>(y^2+8y+16)- 4y-16 +y^2 + 2y \amp = 20</mrow>
+                <mrow>2y^2+6y-20 \amp = 0</mrow>
+                <mrow>y^2+3y-10 \amp = 0</mrow>
+                <mrow>(y+5)(y-2) \amp = 0</mrow></md>
+    Thus <m>y=-5</m> or <m>y=2</m>. From our first new equation we find that when <m>y=-5,~ x=-1</m>, and when <m>y=2,~ x=6</m>. Thus the two circles intersect at <m>(-1,-5)</m> and <m>(6,2)</m>, as shown below.</p>
+                <image width="45%" source="images/fig-10-5-exm3ans.png"><description>conics</description></image>
+</solution></example>
+
+<exercise> <statement><p>Find the intersection points of the graphs of
+        <md><mrow>x^2-8x + y^2 + 2y\amp = 23</mrow>
+            <mrow>x^2 -12x + y^2 - 6y \amp = -25</mrow></md></p></statement>
+<answer><p><m>(2,5),~ (10,1)</m></p></answer></exercise>   
+</subsubsection>
+
+</subsection>

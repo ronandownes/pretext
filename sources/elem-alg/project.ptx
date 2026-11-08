@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project ptx-version="2" source="ptx">
+  <targets>
+    <target name="web" format="html" source="elem-alg.xml" publication="publication.ptx" />
+    <target name="runestone" format="html" source="elem-alg.xml" output-dir="published/elemalg" publication="runestone.ptx" />
+    <target name="print-latex" format="latex" source="elem-alg.xml" publication="publication.ptx" />
+    <target name="print" format="pdf" source="elem-alg.xml" publication="publication.ptx" />
+    <target name="subset" format="html" source="test-section.ptx" publication="publication.ptx" />
+    <target name="braille" format="braille" braille-mode="emboss" source="elem-alg.xml" publication="publication.ptx" />
+  </targets>
+</project>

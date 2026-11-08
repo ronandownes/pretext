@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="SomeBasicGraphs"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Some Basic Graphs</title>
+
+<introduction><p>In this section we study the graphs of some important basic functions. Many functions fall into families or classes of similar functions, and recognizing the appropriate family for a given situation is an important part of modeling.</p>  
+   
+<p> We'll need two new algebraic operations.</p></introduction>
+
+<subsection><title>Cube Roots</title>   
+
+<p>You are familiar with square roots.  Every non-negative number has two square roots, defined as follows.
+    <me>\blert{~s~~~\text{is a square root of}~~~n~~~\text{if}~~~    s^2=n}</me>
+There are several other kinds of roots, one of which is called the <term>cube root</term>.  We define the cube root as follows.</p>
+
+<definition><title>Cube Root</title><idx>cube root</idx><idx><h>root</h><h>cube root</h></idx>
+<statement><p><m>b</m> is the <term>cube root</term> of <m>a</m> if <m>b</m> cubed equals <m>a</m>.  In symbols, we write
+    <me>\blert{b=\sqrt[3]{a}~~~~\text{if}~~~~b^3=a}</me></p></statement></definition>
+
+<p>Square roots of negative numbers are not real (they are complex), but every real number has a real cube root.  For example,
+    <md><mrow> 4=\sqrt[3]{64}~~~~~~ \amp \text{because} \amp \amp 4^3=64</mrow>
+        <mrow> -3=\sqrt[3]{-27}~~~~~~ \amp \text{because} \amp \amp (-3)^3=-27</mrow></md>       
+Simplifying radicals occupies the same position in the order of operations as computing powers:  after parentheses, and before products and quotients.</p>
+
+<example><statement><p>Simplify each expression. 
+<ol marker="a." cols = "2">
+    <li><m>3\sqrt[3]{-8}</m></li>
+    <li> <m>2-\sqrt[3]{-125}</m></li></ol></p>
+</statement>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of cube roots, see <xref ref="tkCubRt" text="custom"> Section 5.3.1 </xref> and <xref ref="tkOrderOp" text="custom"> Section 5.3.3 </xref> of the Toolkit.</p></aside>
+
+<solution><p><ol marker="a." cols="2">
+    <li><m>3\sqrt[3]{-8}=3(-2)=-6</m></li>
+    <li><m>2-\sqrt[3]{-125}=2-(-5)=7</m></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title> Practice 1</title>
+<webwork>
+    <pg-code>
+        $a = Compute("-7");
+        $b = Compute("9/2");
+    </pg-code>
+    <statement><p>Simplify each expression.<ol marker="a." cols = "2">
+        <li><p><m>5-3\sqrt[3]{64}=</m><var name="$a" width="4"/></p></li>
+        <li><p><m>\dfrac{6-\sqrt[3]{-27}}{2}=</m><var name="$b" width="4"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols = "2">
+        <li><m>-7</m></li>
+        <li> <m>\dfrac{9}{2}</m></li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title> Practice 1</title>
+<statement><p>Simplify each expression.</p>
+    <p><ol marker="a." cols = "2">
+        <li><p><m>5-3\sqrt[3]{64}</m></p></li>
+        <li><p><m>\dfrac{6-\sqrt[3]{-27}}{2}</m></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols = "2">
+        <li><m>-7</m></li>
+        <li> <m>\dfrac{9}{2}</m></li>
+    </ol></p></solution></exercise>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork>
+    <pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or False.<ol marker="a.">
+        <li><p>A negative number has a negative cube root. <var name="$True" form="popup"/></p></li>
+        <li><p>A negative number has a negative square root. <var name="$False" form="popup"/></p></li>
+        <li><p>A positive number has a negative square root. <var name="$True" form="popup"/></p></li>
+        <li><p>A positive number has a negative cube root. <var name="$False" form="popup"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li>True</li>
+            <li>False</li>
+            <li>True</li>
+            <li>False</li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>A negative number has a negative cube root.</p></li>
+        <li><p>A negative number has a negative square root.</p></li>
+        <li><p>A positive number has a negative square root</p></li>
+        <li><p>A positive number has a negative cube root.</p></li>
+    </ol></p></statement></exercise>
+
+<note><p>We can use the calculator to find cube roots as follows. Press the MATH  key to get a menu of options. Option 4 is labeled  <m>\sqrt[3]{~~}</m>;  this is the cube root key. To find the cube root of, say, 15.625, we key in
+    <m>\qquad\qquad</m> <kbd>MATH</kbd> <kbd>4</kbd> <m>15.625</m> <kbd name="right-paren"/> <kbd>ENTER</kbd>
+and the calculator returns the result, 2.5. Thus, <m>\sqrt[3]{15.625} = 2.5</m>. You can check this result by verifying that <m>~2.5^3=15.625</m>.</p></note>
+</subsection>
+
+<subsection><title>Absolute Value</title>
+
+<p>We use the absolute value to discuss problems involving distance. For example, consider the number line below.  Starting at the origin, we travel in opposite <em>directions</em> to reach the two numbers <m>6</m> and <m>-6</m>, but the <em>distance</em> we travel in each case is the same.</p>
+    <image width="50%" source="images/fig-abs-six"><description>absolute value</description></image>  
+
+<p>The distance from a number <m>c</m> to the origin is called the <term>absolute value</term><idx>absolute value</idx><idx><h>function</h><h>absolute value</h><see>absolute value</see></idx> of <m>c</m>, denoted by <m>\abs{c}</m>. Because distance is never negative, the absolute value of a number is always positive (or zero). Thus, <m>\abs{6}= 6</m> and <m>\abs{-6} = 6</m>. In general, we define the absolute value of a number <m>x</m> as follows.</p>
+
+<definition><title>Absolute Value</title>
+    <statement><p>The <term>absolute value</term><idx>absolute value</idx> of <m>x</m> is defined by
+        <md><mrow>\abs{x} =
+                    \begin{cases}
+                    x \amp \text{if } x\ge 0</mrow>
+            <mrow>-x  \amp \text{if } x\lt 0
+                \end{cases}</mrow></md></p></statement>
+</definition>
+
+<p>This definition is called <term>piecewise</term>, because the formula has two pieces.  It says that the absolute value of a positive number (or zero) is the same as the number. To find the absolute value of a negative number, we take the opposite of the number, which is then positive. For instance,
+    <me>\abs{-6}=-(-6)=6</me></p>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>       
+            $absneg = RadioButtons(
+              ["\( x \) must be zero.",
+              "\( x \) must be negative.",
+              "\( x \) must be zero or negative.",
+              "This cannot happen for any value of \( x \)."],
+              2, 
+            );            
+        </pg-code>
+    <statement>
+        <p>If <m> \left| x \right| =-x </m>, what can you say about <m> x </m>?</p>
+        <p><var name="$absneg" form="buttons"/></p>      
+    </statement>
+    <solution>
+        <p><m> x </m> must be zero or negative if <m> \left| x \right| =-x </m>.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>If <m> \left| x \right| =-x </m>, what can you say about <m> x </m>?</p>
+    <p><ol marker="a.">
+        <li><p><m>x</m> must be zero.</p></li>
+        <li><p><m>x</m> must be negative.</p></li>
+        <li><p><m>x</m> must be zero or negative.</p></li>
+        <li><p>This cannot happen for any value of <m>x</m>.</p></li>
+    </ol></p></statement></exercise>           
+
+<p>Absolute value bars act like grouping devices in the order of operations:  you should complete any operations that appear inside absolute value bars before you compute the absolute value.</p>
+
+<example xml:id="example-abs"><statement><p>Simplify each expression. </p>
+    <p><ol marker="a." cols ="2">
+        <li><p><m>\abs{3 - 8}</m></p></li>
+        <li><p><m>\abs{3} - \abs{8}</m></p></li>
+    </ol></p></statement>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples using absolute value, see <xref ref="tkAbsVal" text="custom"> Section 5.3.2 </xref> and <xref ref="tkOrderOp" text="custom"> Section 5.3.3 </xref> of the Toolkit.</p></aside>
+
+<solution><p><ol marker="a.">
+        <li><p>We simplify the expression inside the absolute value bars first.
+            <me>\abs{3 - 8} = \abs{-5} = 5</me></p></li>
+        <li><p>We simplify each absolute value; then subtract.
+            <me>\abs{3} - \abs{8} = 3 - 8 = -5</me></p></li>
+    </ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            Context("LimitedNumeric");
+            $ans1 = 12 - 3*abs(-6);
+            $ans2 = -7 - 3*abs(2 - 9);
+        </pg-code>
+    <statement><p>Simplify each expression.</p>
+            <p><ol marker="a." cols = "2">
+                <li><p><m>12 - 3 \left|-6\right|=</m><var name="$ans1" width="2"/> </p></li>
+                <li><p><m>-7 - 3\left|2 - 9\right|=</m><var name="$ans2" width="2"/></p></li>
+            </ol></p></statement>
+    <solution><p><ol marker="a." cols="2">
+                <li><p><m>-6</m></p></li>
+                <li><p><m>-28</m></p></li>
+            </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Simplify each expression.</p>
+    <p><ol marker="a." cols = "2">
+        <li><p><m>12 - 3 \left|-6\right|=</m></p></li>
+        <li><p><m>-7 - 3\left|2 - 9\right|=</m></p></li>
+    </ol></p></statement>
+<solution><p><ol marker="a." cols="2">
+        <li><p><m>-6</m></p></li>
+        <li><p><m>-28</m></p></li>
+</ol></p></solution></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or False: <m>\left| {a+b} \right| = \left|{a}\right| + \left|{b}\right|</m> <var name="$False" form="popup"/></p>
+        <instruction>
+            Hint: Try some values of <m>a</m> and <m>b</m>.
+        </instruction>
+    </statement>
+    <solution><p>False</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>True or False: <m>\left| {a+b} \right| = \left|{a}\right| + \left|{b}\right|</m></p>
+         <p>Hint: Try some values of <m>a</m> and <m>b</m>.</p>
+    </statement></exercise>
+</subsection>
+
+<subsection xml:id="EightBasicGraphs"><title>Eight Basic Graphs</title><idx><h>graph</h><h>eight basic</h></idx>
+
+<p>Most of the graphs in this section will be new to you, but many useful graphs are variations of the eight basic functions shown below.</p>
+
+<p>Consider the first pair of graphs. You have already studied the graph of <m>f(x)=x^2</m>, the basic parabola. Compare that graph with the graph of <m>g(x)=x^3</m>. Notice several differences in the shape of the two graphs. Once you have a good idea of the shape of a graph, up can make a quick sketch with just a few "guide points." For these two graphs, complete a short table of values to find useful guide points:</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row>
+                    <row> 
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>\qquad</m></cell>
+                        <cell><m>\qquad</m></cell>
+                        <cell><m>\qquad</m></cell>
+                        <cell><m>\qquad</m></cell>
+                        <cell><m>\qquad</m></cell></row>
+                    <row> 
+                        <cell><m>g(x)</m></cell>
+                        <cell><m>~~</m></cell>
+                        <cell><m>~~</m></cell>
+                        <cell><m>~~</m></cell>
+                        <cell><m>~~</m></cell>
+                        <cell><m>~~</m></cell></row>
+                    </tabular>
+
+    <image width="70%" source="images/fig-parabola-cubic"><description>graphs</description></image>
+
+<p>The next pair of graphs are <m>f(x)=\sqrt{x}</m> and <m>g(x)=\sqrt[3]{x}</m>. Once again, notice the differences in the two graphs. For example, we cannot take the square root of a negative number, but we can take its cube root. How is this reflected in the graphs?</p>
+
+<sidebyside  widths="36% 32%" margins="10% 10%" valigns="middle middle">
+    <image xml:id="fig-square-root"><description>square root graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[lightgray] (0,0) grid (12,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(12.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$y$};
+        \foreach \x  in {5,10} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         }
+        \foreach \x in {5,10} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={0:12},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {sqrt(\x)});
+        \node[above, text=red, fill=white, inner sep=2] at (6,4) {$f(x)=\sqrt{x}$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    <image xml:id="fig-cube-root"><description>cube root graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-6,-6) grid (6,6);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-6)--(0,6.6) node[above]{$y$};
+        \foreach \x  in {5,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         }
+        \foreach \x in {-3,3} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={0:6},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {(\x)^(1/3)});
+        \draw[samples=65,domain={0:6},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {-\x}, {-(\x)^(1/3)});
+        \node[ text=red, fill=white, inner sep=2] at (3,-2.5) {$g(x)=\sqrt[3]{x}$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<p>The next pair of functions, <m>f(x)=\dfrac{1}{x}</m> and <m>g(x)=\dfrac{1}{x^2}</m>, are both undefined at <m>x=0</m>, so their graphs do not include any points with <m>x</m>-coordinate zero. For very small positive values of <m>x</m>, both <m>f(x)</m> and <m>g(x)</m> get very large. As <m>x</m> gets closer to zero, the graphs approach the vertical line <m>x=0</m> (the <m>y</m>-axis). This line is called a <term>vertical asymptote</term><idx>vertical asymptote</idx><idx><h>asymptote</h><h>vertical</h></idx> for the graph.</p>
+
+<p>Also, notice that for very large values of <m>x</m>, both <m>f(x)</m> and <m>g(x)</m> get very close to zero. Their graphs approach the horizontal line <m>y=0</m> (the <m>x</m>-axis).  This line is called the <term>horizontal asymptote</term><idx><h>asymptote</h><h>horizontal</h></idx><idx>horizontal asymptote</idx> for the graph.</p>
+
+    <image width="70%" source="images/fig-inverses"><description>graphs</description></image>
+
+<p>Finally, compare the familiar graph of <m>f(x)=x</m> with the graph of <m>g(x)=\abs{x}</m>. The piecewise definition of <m>\abs{x}</m> means that we graph <m>y=x</m> in the first quadrant (where <m>x \ge 0</m>), and <m>y=-x</m> in the first quadrant <m>x \lt 0</m>).  The result is the V-shaped graph shown below.</p>
+
+<sidebyside  widths="30% 35%" margins="8% 8%">
+    <image xml:id="fig-line"><description>y=x</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-5,-5) grid (5,5);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.5) node[above]{$y$};
+        \foreach \x  in {-4,4} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         }
+        \foreach \x in {-4,4} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,very thick, <->,>=stealth'] (-5,-5)--(5,5);
+        \node[ text=red, fill=white, inner sep=2] at (-2.7,2.3) {$f(x)=x$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    <image xml:id="fig-absolute-value"><description>y=abs(x)</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-6,-4) grid (6,6);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,6.5) node[above]{$y$};
+        \foreach \x  in {-5,5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         }
+        \foreach \x in {5} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,very thick, <-,>=stealth'] (-6,6)--(0,0);
+        \draw[red,very thick, ->,>=stealth'] (0,0)--(6,6);
+        \node[ text=red, fill=white, inner sep=2] at (-2.7,-2.3) {$g(x)=|x|$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<p>Because they are fundamental to further study of mathematics and its applications, you should become familiar with the properties of these eight graphs, and be able to sketch them easily from memory, using their basic shapes and a few guidepoints.</p>
+</subsection>
+
+
+
+<xi:include href="./section-5-3-exercises.xml" /> <!-- exercises  -->
+</section> 
+<!-- </book>  </mathbook> -->

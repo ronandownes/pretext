@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Intercepts"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Intercepts</title>
+<idx><h>intercept</h></idx>
+
+<subsection><title>Intercepts of a Line</title>
+
+<assemblage><title>Intercepts</title>
+    <idx><h>intercept</h><h>of a line</h></idx>
+<p>The <term>intercepts</term> of a line are the points where the graph crosses the axes.</p></assemblage>
+
+<p>It is easy to recognize the intercepts of a line on a good graph. Here is a graph of the line  
+        <md><mrow>y=\dfrac{1}{2}x+4</mrow></md></p>
+<sidebyside widths="50% 40%" valigns="middle middle" margins="0% 5%">
+    <stack><p>We can see that its <m>x</m>-intercept is the point <m>(-8,0)</m>, and its <m>y</m>-intercept is <m>(0,4)</m>.</p> 
+    <p>If we have an equation for a line we can find the intercepts of its graph algebraically. In Example 1 we'll use algebra to find the intercepts of this line.</p></stack>
+<!--<image source="photos/fig-3-1-1.png"><description>graph</description></image>-->
+<image xml:id="fig-3-1-1"><description>graph of line</description><latex-image>
+    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+    <![CDATA[\tikzset{%
+    }
+    \begin{tikzpicture} [scale=0.5]
+    \draw[cyan] (-10,-4) grid (2,6);
+    \draw[black,thick, ->, >=stealth'] (-10,0)--(3,0) node[right]{$x$};
+    \draw[black,thick, ->, >=stealth'] (0,-4)--(0,7) node[left, xshift=2]{$y$};
+    \foreach \x in  {-10,-5} {
+     \draw[cyan,very thick] (\x,-4) --(\x,6); 
+     \draw[black] (\x,.08) --++(0,-.16)  node[below, yshift=-2, fill=white, inner sep=2]   {$\x$};
+    }
+    \draw[cyan, very thick] (-10,5) --(2,5); 
+    \foreach \y  in  {-3,5} {
+     \draw[black] (.08,\y) --++(-.16,0)  node[left, xshift=-2, fill=white, inner sep=2] {$\y$};
+    }
+    \draw[red, ultra thick, <->, >=stealth'] (-10,-1)--(2,5);
+    \filldraw[red!80!black] (-8,0) circle (2mm);
+    \filldraw[red!80!black] (0,4) circle (2mm);
+    \end{tikzpicture}]]></latex-image></image></sidebyside>
+
+<assemblage><title>Look Closer</title>
+<p>Look at the intercepts on the graph above. Because the <m>y</m>-intercept of a graph lies on the <m>y</m>-axis, its <m>x</m>-coordinate must be zero. And because the <m>x</m>-intercept lies on the <m>x</m>-axis, its <m>y</m>-coordinate must be zero.</p></assemblage> 
+
+<example><statement><p>Use algebra to find the intercepts of the graph of <m>~y=\dfrac{1}{2}x+4</m>.</p></statement>
+
+<solution><p>To find the <m>y</m>-intercept, we substitute <m>\alert{0}</m> for <m>x</m> in the equation and solve for <m>y</m>.  
+	<md><mrow>y=\dfrac{1}{2}(\alert{0})+4 = 4</mrow></md>  
+The <m>y</m>-intercept is <m>(0,4)</m>, as we saw above. To find the <m>x</m>-intercept, we substitute <m>\alert{0}</m> for <m>y</m> in the equation and solve for <m>x</m>.
+	<md><mrow>\alert{0} \amp = \dfrac{1}{2}x+4 \amp \amp  \blert{\text{Subtract 4 from both sides.}}</mrow>
+        <mrow>-4  \amp = \dfrac{1}{2}x  \amp \amp  \blert{\text{Multiply both sides by 2.}}</mrow>
+        <mrow>-8  \amp = x</mrow></md>   
+The <m>x</m>-intercept is <m>(-8,0)</m>, as expected.</p></solution></example>
+
+<assemblage><title>To find the intercepts of a graph</title>
+    <idx><h><em>x</em>-intercept</h></idx>
+    <idx><h><em>y</em>-intercept</h></idx>
+    <idx><h>intercept</h><h>finding intercepts of a graph</h></idx>
+<p><ul>
+	<li><p>To find the <m>x</m>-intercept of a graph:</p>
+	<p>Substitute <m>0</m> for <m>y</m> in the equation and solve for <m>x</m>.</p></li>
+
+	<li><p>To find the <m>y</m>-intercept of a graph:</p>
+	<p>Substitute <m>0</m> for <m>x</m> in the equation and solve for <m>y</m>.</p></li>
+</ul></p></assemblage>
+
+<exercise number="1"><statement><p>What are the intercepts of a line?</p></statement>
+    	<answer>The points where the graph crosses the axes.</answer></exercise>
+
+<exercise number="2"><statement><p>How do we find the <m>x</m>-intercept of the graph of an equation?</p></statement>   	<answer><p>Substitute <m>0</m> for <m>y</m> in the equation and solve for <m>x</m>.</p></answer></exercise>
+</subsection>
+
+<subsection><title>The Intercept Method of Graphing</title>
+    <idx><h>intercept</h><h>method of graphing</h></idx>
+
+<p>We can use the <m>x</m>- and <m>y</m>-intercepts to graph a linear equation quickly. Instead of choosing several different values of <m>x</m> to find points on the graph, we find the two intercepts and fill in the short table shown below. By finding the missing values for <m>x</m> and <m>y</m> we are finding the intercepts of the graph.</p>
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                    	<cell><m>\hphantom{0000}</m></cell> 
+                        <cell><m>0</m></cell></row>
+                    </tabular>
+
+<example><statement><p>Graph the equation <m>3x+2y=7</m> by the intercept method.</p></statement>
+
+<solution><p>First, we find the <m>x</m>- and <m>y</m>-intercepts of the graph. To find the <m>y</m>-intercept of the graph, we substitute <m>0</m> for <m>x</m> and solve for <m>y</m>.
+	<md><mrow>3(\alert{0}) + 2y \amp = 7 \amp \amp  \blert{\text{Simplify the left side.}}</mrow>
+        <mrow>2y  \amp = 7  \amp \amp  \blert{\text{Divide both sides by 2.}}</mrow>
+        <mrow>y  \amp = \dfrac{7}{2} = 3\dfrac{1}{2}</mrow></md>   
+The <m>y</m>-intercept is the point <m>(0,3\dfrac{1}{2})</m>.</p>
+<p>To find the <m>x</m>-intercept of the graph, we substitute <m>0</m> for <m>y</m> and solve for <m>x</m>.
+	<md><mrow>3 + 2(\alert{0}) \amp = 7 \amp \amp  \blert{\text{Simplify the left side.}}</mrow>
+        <mrow>3x  \amp = 7  \amp \amp  \blert{\text{Divide both sides by 3.}}</mrow>
+        <mrow>x \amp = \dfrac{7}{3} = 2\dfrac{1}{3}</mrow></md>   
+The <m>x</m>-intercept is the point <m>(2\dfrac{1}{3}, 0)</m>.</p>
+<p>Here is a table showing the two intercepts. We plot the intercepts and connect them with a straight line to obtain the graph below.</p>
+	<sidebyside widths="30% 35%" valigns="middle middle" margins="0% 20%">
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>3\dfrac{1}{2}</m></cell></row>
+                    <row> 
+                        <cell><m>2\dfrac{1}{3} </m></cell>
+                        <cell><m>0</m></cell></row>
+                    </tabular>
+        <!--<image source="photos/fig-3-1-ex2.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-1-ex2"><description>graph of line and intercepts</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=0.5]
+        \draw[cyan] (-4,-4) grid (6,6);
+         \draw[cyan,very thick] (5,-4) --(5,6); 
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,7) node[left, xshift=2]{$y$};
+        \foreach \x in  {5} {
+         \draw[black] (\x,.08) --++(0,-.16)  node[below, yshift=-2, fill=white, inner sep=2]   {$\x$};
+        }
+        \draw[cyan, very thick] (-4,5) --(6,5); 
+        \foreach \y  in  {-3,5} {
+         \draw[black] (.08,\y) --++(-.16,0)  node[left, xshift=-2, fill=white, inner sep=2]   {$\y$};
+        }
+         \draw[black] (.15,-3) --++(-.3,0)  node[left]   {$-3$};
+        \draw[red, ultra thick, <->, >=stealth'] (-5/3,6)--(5,-4);
+        \filldraw[red!80!black] (7/3,0) circle (2mm);
+        \filldraw[red!80!black] (0,7/2) circle (2mm);
+        \filldraw[blue] (1,2) circle (1mm);
+        \end{tikzpicture}]]></latex-image></image></sidebyside>
+<p>It is a good idea to find a third point as a check.  We choose <m>x=\alert{1}</m> and solve for <m>y</m>. 
+		<md><mrow>3 + 2(\alert{1}) \amp = 7 \amp \amp  \blert{\text{Subtract 3 from both sides.}}</mrow>
+            <mrow>2y \amp = 4  \amp \amp  \blert{\text{Divide both sides by 2.}}</mrow>
+            <mrow>y \amp = 2</mrow></md>  
+You can check that the point <m>(1,2)</m> lies on the graph.</p></solution></example>
+
+<p>The <term>intercept method</term> for graphing a line is often faster and more efficient than making a table and plotting points.</p>
+
+<assemblage><title>To Graph a Linear Equation Using the Intercept Method</title>
+    <idx><h>intercept</h><h>method of graphing</h></idx>
+<p><ol marker="1.">
+	<li><p>Find the <m>x</m>- and <m>y</m>-intercepts of the graph.</p></li>   
+	<li>Draw the line through the two intercepts.</li>
+	<li>Find a third point on the graph as a check. (Choose any convenient value for <m>x</m> and solve for <m>y</m>.)</li>
+</ol></p></assemblage>
+
+<exercise number="3"><statement><p>How do we graph a line by the intercept method?</p></statement>
+    	<answer><p>Draw a line through the two intercepts.</p></answer></exercise>
+
+<exercise number="4"><statement><p>Make a table that you can use with the intercept method.</p></statement>
+    	<answer><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                    	<cell><m>\hphantom{0000}</m></cell> 
+                        <cell><m>0</m></cell></row>
+                    </tabular></answer></exercise>
+
+<exercise number="5"><statement><p>What is the <m>y</m>-intercept of the line <m>3x+2y=7</m>?</p></statement>
+    	<answer><m>\left(0,3\dfrac{1}{2}\right)</m></answer></exercise>
+</subsection>
+
+<subsection><title>Interpreting the Intercepts</title>
+    <idx><h>intercept</h><h>interpreting</h></idx>
+
+<p>The intercepts of a graph give us valuable information about a problem. They often represent the starting or ending values for a particular variable.</p>
+
+<example xml:id="example-3-1-3"><statement><p>The temperature in Nome was <m>-12 \degree</m> at noon and has been rising at a rate of <m>2 \degree</m> per hour all day. <ol marker="a.">
+	<li>Write and graph an equation for the temperature <m>T</m> at <m>h</m> hours after noon.</li>
+	<li>Find the intercepts of the graph. What do the intercepts tell us about the temperature in Nome?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>An equation for the temperature is
+		<md><mrow>T=-12+2h</mrow></md>
+		A graph of the equation is shown below. </p>
+		<!--<image source="photos/fig-3-1-ex3.png"><description>graph</description></image>-->
+    <image width="55%" xml:id="fig-3-1-ex3"><description>graph: line and intercepts</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=0.5]
+        \draw[cyan] (-4,-8) grid (10,4);
+        \draw[cyan,very thick] (5,-8) --(5,4); 
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(10.6,0) node[right]{$h$};
+        \draw[black,thick, ->, >=stealth'] (0,-8)--(0,4.6) node[left, xshift=2]{$T$};
+        \foreach \x in  {5} {
+         \draw[black] (\x,.08) --++(0,-.16)  node[below, yshift=-2, fill=white, inner sep=2]   {$\x$};
+        }
+        \draw[cyan, very thick] (-4,-5) --(10,-5); 
+        \foreach \y [evaluate=\y as \yi using int(2*\y)] in  {-5,3} {
+         \draw[black] (.08,\y) --++(-.16,0)  node[left, xshift=-2, fill=white, inner sep=2]   {$\yi$};
+        }
+         \draw[black] (.15,-3) --++(-.3,0)  node[left]   {$-3$};
+        \draw[red, ultra thick, <->, >=stealth'] (-2,-8)--(10,4);
+        \filldraw[red!80!black] (6,0) circle (2mm);
+        \filldraw[red!80!black] (0,-6) circle (2mm);
+        \end{tikzpicture}]]></latex-image></image></li>
+	<li><p>To find the <m>T</m>-intercept, we set <m>h=0</m> and solve for<m>T</m>.
+			<md><mrow>T=-12 + 2(\alert{0})=-12</mrow></md>
+		The <m>T</m>-intercept is <m>(0,-12)</m>. This point tells us that when <m>h=0,~ T=-12</m>, or the temperature at noon was <m>-12 \degree</m>.</p>
+		<p>To find the <m>h</m>-intercept, we set <m>T=0</m> and solve for <m>h</m>. 
+			<md><mrow>\alert{0} \amp = -12+2h \amp \amp  \blert{\text{Add 12 to both sides.}}</mrow>
+                <mrow>12 \amp = 2h  \amp \amp  \blert{\text{Divide both sides by 2.}}</mrow>
+                <mrow>6 \amp = h</mrow></md>   
+        The <m>h</m>-intercept is the point <m>(6,0)</m>. This point tells us that when <m>h=6,~T=0</m>, or the temperature will reach zero degrees at six hours after noon, or 6 pm.</p></li>
+    </ol></p></solution></example>
+
+<exercise number="6"><statement><p>The intercepts of a graph often represent the <fillin characters="6"/> or <fillin characters="6"/> values for a particular variable.</p></statement>
+    	<answer><p>starting, ending</p></answer></exercise>
+
+<exercise number="7"><statement><p>What does the <m>h</m>-intercept tell us in <xref ref="example-3-1-3" text="type-global"/>?</p></statement>
+    	<answer><p>The temperature will reach zero degrees at 6 pm.</p></answer></exercise>
+
+<problem>
+<p>Choose the correct algebraic expression for each of the following situations.</p>
+<assemblage><p>
+		<md><mrow>5x-8=30 ~~~~~~~~ \dfrac{x}{5}-30=8 ~~~~~~~~ \dfrac{x-30}{5}=8</mrow>
+			<mrow>5x+8=30 ~~~~~~~~ \dfrac{x}{5}+30=8 ~~~~~~~~ \dfrac{x+30}{5}=8</mrow></md>
+	</p></assemblage>
+
+<p><ol marker="1.">
+    <li><p>Ilciar has earned a total of 30 points on the first four quizzes in his biology class. What must he earn on the fifth quiz to end up with an average of 8?</p></li>
+    <li><p>Jocelyn ordered five exotic plants from a nursery. She paid a total of $30, including an $8 shipping fee. How much did she pay for each plant?</p></li>
+    <li><p>To buy new equipment, the five members of the chess club used $30 from the treasury, and each member donated $8. How much did the equipment cost?</p></li>
+    <li><p>Hemman bought 5 tapes on sale, and he cashed in a gift certificate for $8. He then owed the clerk $30. How much was each tape?</p></li>
+    <li><p>Nirusha and four other people won the office baseball pool. After spending $30 of her share, Nirusha had $8 left. What was the total amount in the pool?</p></li>
+</ol></p>
+
+<answer>
+<p><ol marker="1." cols="3">
+    <li><m>\dfrac{x+30}{5}=8</m></li>
+    <li><m>5x+8=30</m></li>
+    <li><m>\dfrac{x-30}{5}=8</m></li>
+    <li><m>5x-8=30</m></li>
+    <li><m>\dfrac{x}{5}-30=8</m></li></ol></p>
+</answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Intercept Method of Graphing</title>
+
+<p><ol marker="1.">
+    <li><sidebyside widths="55% 45%" valigns="middle middle">
+        <p><ol marker="a.">
+    <li>Find the <m>x</m>- and <m>y</m>-intercepts of the graph of 
+            <md><mrow>3x-2y=12</mrow></md></li>
+    <li><p>Graph by the intercept method.</p><p></p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>0</m></cell></row>
+                    </tabular></li>
+    <li>Plot a third point as a check.</li></ol></p>
+    <image source="photos/stangrid8"><description>grid</description></image></sidebyside></li>
+
+    <li><sidebyside widths="55% 45%" valigns="middle middle">
+        <p><ol marker="a.">
+    <li>Find the <m>x</m>- and <m>y</m>-intercepts of the graph of 
+            <md><mrow>2x=5y-10</mrow></md></li>
+    <li><p>Graph by the intercept method.</p><p></p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>0</m></cell></row>
+                    </tabular></li>
+    <li>Plot a third point as a check.</li></ol></p>
+    <image source="photos/stangrid8"><description>grid</description></image></sidebyside></li>
+</ol></p>  
+</activity>
+
+<activity><title>Interpreting the Intercepts</title>
+
+<p><ol marker="1.">
+<li><p>Around 1950, people began cutting down the world's rain forests to clear land for agriculture.  In 1970, there were about 9.8 million square kilometers of rain forest left, and by 1990 that figure had been reduced to 8.2 million square kilometers.</p> 
+
+<p>These two data points are shown on the graph below. The horizontal axis displays the year, <m>x</m>, and the vertical axis shows the amount of rainforest remaining, <m>y</m> (in millions of square kilometers).</p>
+<p><ol marker="a.">  
+    <li><p>If we continue to clear the rainforests at the same rate, the graph will be a straight line. Draw a straight line through the two points in the figure above. Make your line long enough to cross both axes.</p> 
+
+    <image width="75%" source="photos/act-3-1-2-1"><description>grid</description></image></li>
+
+    <li><p>Estimate the coordinates of the <m>x</m>- and <m>y</m>-intercepts of your graph.
+    <md><mrow> \amp x\text{-intercept:}~~ <fillin characters="10"/></mrow>                             
+        <mrow> \amp y\text{-intercept:}~~ <fillin characters="10"/></mrow></md>                            
+        Use the intercepts to answer the following questions:</p></li>
+    <li>How many million square kilometers of rainforest were present initially?</li>
+    <li> If we continue to clear the rainforest at the same rate, when will it be completely demolished?</li> 
+</ol></p></li>
+
+<li><sidebyside widths="55% 40%" valigns="middle middle">
+    <p>Sheri bought a bottle of multivitamins for her family. The number of vitamins left in the bottle after <m>d</m> days is given by
+        <md><mrow>N=300-5d</mrow></md>
+    <ol marker="a.">
+    <li><p>Find the intercepts and use them to make a graph of the equation.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>d</m></cell>
+                        <cell><m>N</m></cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>0</m></cell></row>
+                    </tabular></li>
+    <li>Explain what each intercept tells us about the vitamins.</li>
+</ol></p>
+    <!--<image source="photos/act-3-1-2.png"><description>grid</description></image>-->
+    <image xml:id="act-3-1-2-2"><description>unlabeled grid</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=0.5, yscale=.6]
+            \draw[cyan] (0,0) grid (10,10);
+            \foreach \x in  {1,2,...,10} {
+             \draw[black] (\x,.15) --++(0,-.3);
+             \draw[black] (.15,\x) --++(-.3,0);
+            }            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></li>
+</ol></p></activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Finding the intercepts of a grpah</li>
+    <li>Graphing a line by the intercept method</li>
+    <li>Interpreting the intercepts in context</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>In Activity 1, Problem 1, Delbert says that the intercepts are <m>(4,-6)</m>. What is wrong with his statement?</li>
+    <li>In Activity 2, Problem 1, how did you find the answer to part (c)?</li>
+    <li>In Activity 2, Problem 2, what intervals did you use to scale each axis?</li>
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+<introduction><p><ol marker="a.">
+    <li>Find the <m>x</m>- and <m>y</m>-intercepts of the line.</li>
+    <li>Use the intercept method to graph the line.</li>
+</ol></p></introduction>    
+
+<p><ol marker="1." cols="2">
+    <li><p><m>3x-5y=15</m></p>
+    <image source="photos/stangrid8"><description>grid</description></image></li>
+
+    <li><p><m>y=\dfrac{-4}{3}x+8</m></p>
+    <image source="photos/stangrid8"><description>grid</description></image></li>
+
+    <li><p><m>\dfrac{x}{6} + \dfrac{y}{8} = -1</m></p>
+    <image source="photos/stangrid8"><description>grid</description></image></li>
+
+    <li><p><m>x - \dfrac{2}{3}y -4 = 0</m></p>
+    <image source="photos/stangrid8"><description>grid</description></image></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p> <ol marker= "1." cols="2">
+    <li><m>(5,0),~(0,-3)</m></li>
+    <li><m>(6,0),~(0,8)</m></li>
+    <li><m>(-6,0),~(0,-8)</m></li>
+    <li><m>(4,0),~(0,-6)</m></li>
+</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-3-1.xml" />
+</section>

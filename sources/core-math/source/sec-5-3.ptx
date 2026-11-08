@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-5-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <title>Problem Solving</title>
+
+  <sidebyside widths="40% 35%" valigns="middle middle" margins="5% 20%"><p><ul>
+    <li><p>Using Formulas</p></li>
+    <li><p>Writing an Equation</p></li>
+    <li><p>Modeling a Problem</p></li>
+  </ul></p>
+      <image source="mindgears.png"></image></sidebyside> 
+  
+<subsection><title>Using Formulas</title>
+
+<p>Writing and solving equations are important skills for solving problems. Many problems can be solved using familiar formulas.</p>
+
+<assemblage><title>A Quick Refresher</title>
+<p>We have solved equations by undoing the operation performed on the variable.  For example, in the equation
+      <me>4x = 28</me>
+the variable <m>x</m> is multiplied by 4, so we divide both sides of the equation by 4:
+      <md><mrow>\dfrac{4x}{\blert{4}} \amp = \dfrac{28}{\blert{4}} \hphantom {0000} \blert{\text{Divide both sides by 4.}}</mrow>
+          <mrow> x \amp = 7</mrow></md>
+The solution is 7.  We can check the solution by substituting <m>\alert{7}</m> for  in the equation.
+    <me>\text{Check:}~~~~4(\alert{7}) = 28~~~~ \blert{\text{True.}}</me>                                                  
+Because this statement is true, 7 is indeed the solution.</p></assemblage>
+
+<example><statement><p>How long will it take Rudi to swim one mile if she can swim at a rate of 50 yards per minute?</p></statement>
+
+<solution><p>We will use the formula  <m>d=rt</m>.  We are asked to find the time it takes Rudi to swim a mile, so <m>t</m> will be the variable in our equation.</p>  
+<p>Rudi's swimming rate is given in yards per minute, so we must first convert the distance, one mile, into yards:  one mile is equal to 1760 yards.</p>
+<p>Next we substitute <m>\alert{50}</m> for <m>r</m> and <m>\alert{1760}</m> for <m>d</m> into the formula.
+    <md><mrow>d \amp = rt</mrow>
+        <mrow>\alert{1760} \amp = \alert{50}t</mrow></md>
+Finally, we solve the equation for <m>t</m>.  Because <m>t</m> has been multiplied by 50, we divide both sides of the equation by 50.
+    <md><mrow>\dfrac{1760}{\blert{50}} \amp = \dfrac{50t}{\blert{50}} \hphantom {0000} \blert{\text{Divide both sides by 50.}}</mrow>
+        <mrow>35.2 = t</mrow></md>
+It takes Rudi 35.2 minutes to swim one mile.  (How long is 0.2 minutes in seconds?)</p></solution></example>
+
+<note><p>To finish solving a problem, we write a sentence that answers the question in the problem.</p></note>
+
+<exercise><statement><p>Logicorp calculates that its costs next month will be $9100. What revenue do they need to make a profit of $1100?</p>
+<p><m>\blert{\text{Choose the appropriate formula.}}</m></p>
+
+<p><m>\blert{\text{Solve an equation.}}</m></p>
+
+<p><m>\blert{\text{Write a sentence to answer the question.}}</m></p>
+</statement>
+
+<answer><p><m>P=R-C</m></p>
+<p><m>1100 = R - 9100</m></p>
+<p>They will need a revenue of $10,200.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Writing an Equation</title>
+
+<p>Sometimes we can write an equation to solve a problem. Here is a simple example.</p>
+
+<example><statement><p>The sum of 17 and a number is 45. What is the number?</p></statement>
+
+<solution><p>We choose a variable, say <m>n</m>, to represent the unknown number. Then we write an equation about the number <m>n</m>. Look for mathematical words to help you:  "sum" indicates addition, and "is" means equals.
+    <md><mrow>\text{The sum of 17 and a number} \amp = 45.</mrow>
+        <mrow>\hphantom{00000000} 17 ~~ + ~~ n \amp = 45</mrow></md>
+Finally, we solve the equation.  Because 17 is added to <m>n</m>, we subtract 17 from both sides of the equation.
+    <md><mrow>17 + n \amp = ~~~45 \hphantom{000} \blert{\text{Subtract 17 from both sides.}}</mrow>
+        <mrow>\underline{-17}~~~~~~~ \amp = \underline{-17}</mrow>
+        <mrow>  n \amp = 28</mrow></md>
+The number is 28.</p></solution></example>
+
+<exercise><statement><p>The product of 13 and a number is 598.</p>
+<p><ol marker="a.">   
+  <li><p>Write an equation that describes this problem.</p></li>
+
+  <li><p>Solve your equation.  What is the number?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">   
+  <li><m>13n = 598</m></li>
+  <li><p>The number is 46.</p></li>
+</ol></p></answer></exercise>
+
+<assemblage><title><m>\blert{\large{\text{PATIENCE!}}}</m></title>
+<sidebyside widths="20% 70%" valigns="middle middle"><image source="annoyed.png"></image>
+<p>Yes, we know that you can solve these problems in your head!</p></sidebyside>  
+<p>But the point is not the answers to the problems, the point is to 
+  <me>\blert{\text{practice writing algebraic equations!}}</me></p>
+<sidebyside widths="80% 12%" valigns="middle middle"><p>which can help us solve much harder (and more realistic) problems once we have developed the necessary skills.</p><image source="happy.png"></image></sidebyside></assemblage>
+
+</subsection>
+
+<subsection><title>Modeling a Problem</title>
+
+<p>For many problems we must write an equation by putting together the information given in the problem.</p>
+
+<example><statement><p>For healthy weight loss, the ratio of calories you get from carbohydrates to calories from protein should be 3 to 2. On a diet of 1500 calories per day, you should consume 450 calories of protein. How many calories of carbohydrates should you eat?</p></statement>
+
+<solution><p>Follow the steps to write an equation.</p>
+
+<p>Step 1:  What are we asked to find in the problem?  Choose a variable to represent it.
+    <me>\blert{\text{Calories from carbohydrates:} ~C}</me></p>
+
+<p>Step 2:  Find something in the problem that we can express in two different ways.
+    <me>\blert{\text{Ratio of carb calories to protein calories}}</me></p>
+
+<p>Write an equation using the two expressions.
+    <me>\dfrac{\blert{\text{Carb calories}}}{\blert{\text{Protein calories}}}:~~~~~~\dfrac{C}{450} = \dfrac{3}{2} ~~~~~~\blert{\text{Ratio of 3 to 2.}}</me></p>
+
+<p>Step 3:  Solve the equation.
+    <md><mrow>\dfrac{C}{450} \amp = \dfrac{3}{2}~~~~~~~~~~~~~~{\blert{\text{Multiply both sides by 450.}}}</mrow>
+        <mrow>450 \left(\dfrac{C}{450}\right) \amp = \left(\dfrac{3}{2}\right)450~~~~~~~~{\blert{\text{Multiply.}}}</mrow>
+        <mrow>C \amp = 675</mrow></md></p>
+
+<p>Answer the question in the problem.
+    <me>\blert{\text{You should eat 675 calories of carbohydrates.}}</me></p>
+</solution></example>
+
+<note><p>Observe some things about our solution:</p>
+<p><ul>
+  <li><p>Our equation did not start with  "<m>C = </m>" !  The variable is part of the equation, but the equation itself is about something else, in this case, a ratio.</p></li>
+  <li><p>We did not use the 1500 calories per day in our solution.  We used only the information we needed to write an equation.</p></li>
+</ul></p></note>
+
+<p>We summarize our method in three steps.</p> 
+
+<assemblage><title>Steps for Modeling a Problem</title>
+<p><ol marker="1.">
+  <li><p>Identify the unknown quantity and choose a variable to represent it.</p></li>
+  <li><p>Find some quantity that can be expressed in two different ways, and write an equation.</p></li>
+  <li><p>Solve the equation, and answer the question in the problem.</p></li>
+</ol></p></assemblage>
+
+<exercise><statement><p>Claudia and her alpaca Lima together weigh 173 pounds. Claudia alone weighs 94 pounds. How much does Lima weigh?</p>
+
+<p>Step 1:  Let <m>w</m> stand for Lima's weight in pounds.</p>  
+<p>Step 2:  Find two different expressions for the sum of Claudia's and Lima's weights, and write an equation.</p>
+<p>Step 3:  Solve your equation and answer the question.</p></statement>
+
+<answer><p><m>94 + w = 173</m></p>
+<p>Lima weighs 79 pounds.</p></answer></exercise>
+
+<p>You can probably find Lima's weight using arithmetic alone, but can you write an equation for the problem?!</p>
+
+<p>Here are two things to remember about writing equations to solve problems.</p>
+
+<assemblage><title>Problem-Solving Hints</title>
+<p><ol marker="1.">
+  <li><p>It is very important to specify precisely what the variable represents. You will have to write an equation about this variable, so you must have a clear idea of what it stands for.</p>
+  <p>In particular, the variable must stand for a number, so in the previous exercise, <m>w</m> stands for "Lima's weight," not for "Lima."</p></li>
+  <li><p>Although the equation includes the variable, the two sides of the equation may actually be expressions for some other quantity.</p> 
+  <p>In the previous Example, the variable <m>C</m> stands for calories, but the equation gives two ways to express a ratio.</p></li>
+</ol></p></assemblage>
+
+<activity><title>Problem Solving</title>
+
+<p>Follow the three steps to solve the problems. Remember that writing an equation is more important than finding the answer!</p>
+
+<p><ol marker="1.">
+  <li><p>Toshiro must reduce his daily calorie intake by 260 calories. If his goal is 1350 calories per day, what is his current calorie intake?</p>
+
+  <p>Step 1: What are we asked to find?  Choose a variable for that quantity.</p>
+
+  <p>Step 2:  Find two different ways to express Toshiro's dieting goal, and write an equation.</p>
+
+  <p>Step 3:  Solve the equation and answer the question.</p></li>
+
+  <li><p>The ratio of calories from saturated fat to calories from polyunsaturated fat in most margarine is 0.4. A tablespoon of margarine contains 45 calories from polyunsaturated fat. How many calories from saturated fat does a tablespoon of margarine contain?</p>
+
+  <p>Step 1: What are we asked to find?  Choose a variable for that quantity.</p>
+
+  <p>Step 2: Write the ratio of calories from saturated fat to calories from polyunsaturated fat in two different ways.</p>
+
+  <p>Step 3:  Solve the equation and answer the question.</p></li>
+
+  <li><p>How much money must Francisco deposit in a savings account that pays 3% interest if he wants to earn $240 interest in 2 years?</p>
+
+  <p>Step 1: What are we asked to find?  Choose a variable for that quantity.</p>
+
+  <p>Step 2: Find two different ways to express Francisco's interest, and write an equation.</p>
+
+  <p>Step 3:  Solve the equation and answer the question.</p></li>
+</ol></p></activity>  
+
+</subsection>
+
+
+<xi:include href="./prac-5-3.ptx" />
+
+
+</section>
+

@@ -1,0 +1,734 @@
+<exercises xml:id="prac-7-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 7-4</title>
+
+<exercisegroup><introduction><p>Complete the table for the expressions in Problems 1<ndash/>4.</p></introduction>
+
+<exercise number="1"><statement><p><m>2-5x</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps to isolate <m>x~~~~</m></cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+</statement>
+
+<answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps to isolate <m>x~~~~</m></cell></row>
+        <row bottom="minor">
+            <cell>1. Multiply by <m>-5</m> </cell>
+            <cell>1. Subtract 2</cell></row>
+        <row bottom="minor">
+            <cell>2. Add 2</cell>
+            <cell>2. Divide by <m>-5</m></cell></row>
+        </tabular></answer></exercise>
+
+<exercise number="2"><statement><p><m>-1-6y</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>y</m></cell>
+            <cell>Steps to isolate <m>y~~~~</m></cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+</statement></exercise>
+
+<exercise number="3"><statement><p><m>\dfrac{z}{3} + 4</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>z</m></cell>
+            <cell>Steps to isolate <m>z~~~~</m></cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+</statement>
+
+<answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps to isolate <m>x~~~~</m></cell></row>
+        <row bottom="minor">
+            <cell>1. Divide by 3</cell>
+            <cell>1. Subtract 4</cell></row>
+        <row bottom="minor">
+            <cell>2. Add 4</cell>
+            <cell>2. Multiply by 3</cell></row>
+        </tabular></answer></exercise>
+
+<exercise number="4"><statement><p><m>\dfrac{w-7}{2}</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>w</m></cell>
+            <cell>Steps to isolate <m>w~~~~</m></cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+</statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5-18, solve the equation. Show your work.</p></introduction>
+
+<exercise number="5"><statement><m>3-9x = -15</m></statement>
+<answer><p>2</p></answer></exercise>
+
+<exercise number="6"><statement><m>-6x-5 = 19</m></statement></exercise>
+
+<exercise number="7"><statement><m>-3x+7 = -26</m></statement>
+<answer><p>11</p></answer></exercise>
+
+<exercise number="8"><statement><m>-2-8x = 38</m></statement></exercise>
+
+<exercise number="9"><statement><m>\dfrac{-7x}{2}+14 = 18</m></statement>
+<answer><p>\dfrac{-8}{7}</p></answer></exercise>
+
+<exercise number="10"><statement><m>\dfrac{5x}{3}-9 = -11</m></statement></exercise>
+
+<exercise number="11"><statement><m>7+\dfrac{x}{-2} = -2</m></statement>
+<answer><p>18</p></answer></exercise>
+
+<exercise number="12"><statement><m>8+\dfrac{x}{-9} = -1</m></statement></exercise>
+
+<exercise number="13"><statement><m>-17 = \dfrac{-6x}{5}-5</m></statement>
+<answer><p>10</p></answer></exercise>
+
+<exercise number="14"><statement><m>15 = -3+\dfrac{2x}{-3}</m></statement></exercise>
+
+<exercise number="15"><statement><m>\dfrac{x+8}{-4} = -3</m></statement>
+<answer><p>4</p></answer></exercise>
+
+<exercise number="16"><statement><m>\dfrac{x-5}{8} = -7</m></statement></exercise>
+
+<exercise number="17"><statement><m>\dfrac{6-5x}{8} = -3</m></statement>
+<answer><p>6</p></answer></exercise>
+
+<exercise number="18"><statement><m>\dfrac{-3-4x}{2} = -1</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 19-24,<ol marker="a.">
+  <li><p>Identify the unknown quantity and choose a variable to represent it.</p></li>
+  <li><p>Find something in the problem that can be described in two ways and write an equation.</p></li>  
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+</ol></p></introduction>
+
+<exercise number="19"><statement><p>Starting at a depth of <m>-45</m> feet, a diver begins descending at a rate of <m>-15</m> feet per minute. How long will it take him to reach a depth of <m>-159</m> feet?</p></statement>
+<answer><ol marker="a.">
+  <li><p>Time to reach <m>-150</m> ft: <m>t</m></p></li>
+  <li><p><m>-45-15t=-150</m></p></li>
+  <li><p>It will take 7 min.</p></li>
+</ol></answer></exercise>
+
+<exercise number="20"><statement><p>At noon the temperature was 16°, and it has been growing colder at a rate of 3° per hour. How long will it be before the temperature reaches <m>-26°</m>?</p></statement></exercise>
+
+<exercise number="21"><statement><p>Alida has to let her chocolate pie cool to room temperature before cutting it. The pie comes out of the oven at 350°, and room temperature is 75°. If the pie cools on average 11° per minute, how long must Alida wait?
+</p></statement>
+<answer><ol marker="a.">
+  <li><p>Time to wait: <m>t</m></p></li>
+  <li><p><m>350-11t=75</m></p></li>
+  <li><p>She must wait 25 min.</p></li>
+</ol></answer></exercise>
+
+<exercise number="22"><statement><p>Dean is cycling down Mt. Whitney, and descends at a rate of 80 feet per minute. If he started at an elevation of 9600 feet, how long will it be before he reaches an elevation of 1200 feet?</p>
+  <image source="hp-7-4-22.png" width="60%"></image>
+</statement></exercise>
+
+<exercise number="23"><statement><p>Lois spent Saturday afternoon playing hand after hand of Fizbin with her sister. At 3 o'clock Lois had a score of 60 points, but by 5 o'clock her score was <m>-96</m>.  If Lois lost 12 hands after 3 o'clock and didn't win any, how much is each hand worth?</p></statement>
+<answer><ol marker="a.">
+  <li><p>Value of one hand <m>w</m></p></li>
+  <li><p><m>60-12w=-96</m></p></li>
+  <li><p>One hand is worth 13 points.</p></li>
+</ol></answer></exercise>
+
+<exercise number="24"><statement><p>Jean-Paul started a tab at The Common Grounds coffee house by paying the owner $50. One month later, Jean-Paul owed the owner $72.40. If a cup of coffee costs $1.70, how many cups did Jean-Paul drink?</p></statement>
+</exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 25-28, plot the points.</p></introduction>
+
+<exercise number="25"><statement><p><m>(2,3),~(2,-3),~(-2,3),~(-2,-3)</m></p>
+  <image source="coords3.png" width="80%"></image></statement>
+<answer><image source="hp-7-4-25ans" width="60%"></image></answer></exercise>
+
+<exercise number="26"><statement><p><m>(0,4),~(4,0),~(-4,0),~(0,-4)</m></p>
+  <image source="coords3.png" width="80%"></image></statement>
+</exercise>
+
+<exercise number="27"><statement><p><m>(1,5),~(5,1),~(-5,1),~(-1,5)</m></p>
+  <image source="coords3.png" width="80%"></image></statement>
+<answer><image source="hp-7-4-27ans" width="60%"></image></answer></exercise>
+
+<exercise number="28"><statement><p><m>(2,2),~(6,6),~(-2,-2),~(-6,-6)</m></p>
+  <image source="coords3.png" width="80%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>Answer the questions in Problems 29-30.</p></introduction>
+
+<exercise number="29"><statement><p><ol marker="a.">
+  <li><p>If a point lies in the third quadrant, what do you know about its coordinates?</p></li>
+  <li><p>If a point lies in the second quadrant, what do you know about its coordinates?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>They are both negative.</p></li>
+  <li><p><m>x</m> is negative; <m>y</m> is positive</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p><ol marker="a.">
+  <li><p>If a point lies on the <m>x</m>-axis, what do you know about its coordinates?</p></li>
+  <li><p>If a point lies on the <m>y</m>-axis, what do you know about its coordinates?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31-42, <ol marker="a.">
+  <li><p>Make a table showing three solutions to the equation.</p></li>
+  <li><p>Graph the equation.</p></li>  
+</ol></p></introduction>
+
+<exercise number="31"><statement><p><m>y=x</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement>
+
+<answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>3</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>3</m></cell></row>
+        </tabular>
+   <image source="hp-7-4-31ans" width="60%"></image></answer></exercise>
+
+<exercise number="32"><statement><p><m>y=2x</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement></exercise>
+
+<exercise number="33"><statement><p><m>y=x - 1</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement>
+
+ <answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>-5</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>4</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>-6</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>3</m></cell></row>
+        </tabular>
+   <image source="hp-7-4-33ans" width="60%"></image></answer></exercise>
+
+<exercise number="34"><statement><p><m>y=x + 2</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement></exercise>
+
+<exercise number="35"><statement><p><m>y=-2x</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement>
+
+ <answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>4</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>8</m></cell></row>
+        </tabular>
+   <image source="hp-7-4-35ans" width="60%"></image></answer></exercise>
+
+<exercise number="36"><statement><p><m>y=-3x</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement></exercise>
+
+<exercise number="37"><statement><p><m>y=-x - 5</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement>
+
+ <answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>-5</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>4</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>-5</m></cell>
+            <cell><m>-9</m></cell></row>
+        </tabular>
+   <image source="hp-7-4-37ans" width="60%"></image></answer></exercise>
+
+<exercise number="38"><statement><p><m>y=-x + 4</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement></exercise>
+
+<exercise number="39"><statement><p><m>y=2x+3</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement>
+
+ <answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>-5</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>3</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>7</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>9</m></cell></row>
+        </tabular>
+   <image source="hp-7-4-39ans" width="60%"></image></answer></exercise>
+
+<exercise number="40"><statement><p><m>y=-3x-1</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement></exercise>
+
+<exercise number="41"><statement><p><m>y=\dfrac{1}{2}x - 4</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement>
+
+ <answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>6</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>-6</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>-1</m></cell></row>
+        </tabular>
+   <image source="hp-7-4-41ans" width="60%"></image></answer></exercise>
+
+<exercise number="42"><statement><p><m>y=\dfrac{2}{3}x + 2</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+   <image source="grid10by10.png" width="90%"></image></statement></exercise>
+ </exercisegroup>
+
+<exercise number="43"><statement><p>Eloise makes $20 an hour as a computer programmer. Let <m>x</m> represent the number of hours Eloise works in a week, and let <m>y</m> represent her earnings.</p>
+  <p><ol marker="a.">
+  <li><p>Write an equation expressing <m>y</m> in terms of <m>x</m>.</p></li>
+  <li><p>Complete the table and graph your equation.</p>
+
+  <sidebyside widths="30% 60%" valigns="middle middle" margins="5% 5%">
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>~y~</m></cell></row>
+        <row><cell>0</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>10</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>20</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>40</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-43.png"></image></sidebyside></li>    
+               
+  <li><p>How many hours must Eloise work in order to make $500?  Write and solve an equation, then locate the corresponding point on your graph.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>y=20x</m></p></li>
+  <li><image source="hp-7-4-43ans.png"></image></li>
+  <li><p>25 hrs</p></li>
+</ol></p></answer></exercise> 
+
+<exercise number="44"><statement><p>Anatole sells hand-tooled leather belts for $15 each. Let <m>x</m> represent the number of belts hesells in a week, and let <m>y</m> represent his revenue.</p>
+<p><ol marker="a.">
+  <li><p>Write an equation expressing <m>y</m> in terms of <m>x</m>.</p></li>
+  <li><p>Complete the table and graph your equation.</p>
+
+  <sidebyside widths="30% 50%" valigns="middle middle" margins="10% 10%">
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>~y~</m></cell></row>
+        <row><cell>0</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>5</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>10</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>20</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-43.png"></image></sidebyside></li>    
+               
+  <li><p>How many belts must Anatole sell in order to make $600?  Write and solve an equation, then locate the corresponding point on your graph.</p></li>
+</ol></p></statement></exercise> 
+
+<exercise number="45"><statement><p>The equation that relates the temperature in degrees Fahrenheit to the temperature in degrees Celsius is
+  <me>F=1.8C+32</me></p>
+<p><ol marker="a.">
+  <li><p>Graph the equation.</p>
+      <sidebyside widths="30% 40%" valigns="middle middle" margins="10% 10%">
+        <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~C~</m></cell>
+            <cell><m>~F~</m></cell></row>
+        <row><cell><m>-20</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>-10</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>0</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>10</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>20</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-45.png"></image></sidebyside></li>
+  <li><p>What Celsius temperature is equal to 86° F?  Write and solve an equation, then locate the corresponding point on your graph.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><image source="hp-7-4-45ans.png"></image></li>
+  <li><p>30° C</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="46"><statement><p>On the planet Kaldor in the Gamma Quadrant, there are no seasons. The temperature at noon on any day is given by the formula
+  <me>T = 50 + 0.2h</me> 
+  where <m>h</m> is your elevation in Kaldorian feet, and <m>T</m> is the temperature in Kaldorian degrees. </p>
+<p><ol marker="a."> 
+<li><p>Graph the equation.</p>
+      <sidebyside widths="30% 45%" valigns="middle middle" margins="10% 10%">
+        <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~h~</m></cell>
+            <cell><m>~T~</m></cell></row>
+        <row><cell><m>-1000</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>-500</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>0</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>1000</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>1500</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-46.png"></image></sidebyside></li>
+  <li><p>At what elevation is the temperature on Kaldor 150 degrees?  Write and solve an equation, then locate the corresponding point on your graph.</p></li>
+  </ol></p></statement></exercise> 
+
+<exercise number="47"><statement><p>Stuart invested $800 in a computer and word processor and now makes $5 a page typing research papers. Let <m>x</m> represent the number of pages Stuart has typed, and let <m>y</m> represent his profit from his business venture.</p> 
+  <p><ol marker="a.">
+  <li><p>Write an equation expressing <m>y</m> in terms of <m>x</m>.</p></li>
+  <li><p>Complete the table and graph your equation.</p>
+  <sidebyside widths="30% 55%" valigns="middle middle" margins="10% 5%">
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>~y~</m></cell></row>
+        <row><cell>0</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>50</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>100</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>200</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-47.png"></image></sidebyside></li>    
+               
+  <li><p>How many pages must Stuart type in order to break even?  Write and solve an equation to answer this question, then verify the answer on your graph.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>y=-800+5x</m></p></li>
+  <li><image source="hp-7-4-47ans.png"></image></li>
+  <li><p>160 pages</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="48"><statement><p>The Haley Light Opera ended last season $1200 in debt, but they are selling tickets to their summer series at $20 each. Let <m>x</m> represent the number of tickets they sell, and let <m>y</m> represent their balance.</p>
+
+<p><ol marker="a.">
+  <li><p>Write an equation expressing <m>y</m> in terms of <m>x</m>.</p></li>
+  <li><p>Complete the table and graph your equation.</p>
+  <sidebyside widths="30% 60%" valigns="middle middle" margins="5% 5%">
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>~y~</m></cell></row>
+        <row><cell>0</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>20</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>40</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>100</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-48.png"></image></sidebyside></li>    
+               
+  <li><p>How many tickets must they sell in order to erase their debt?  Write and solve an equation to answer this question, then verify the answer on your graph.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="49"><statement><p>An archaeological expedition gathers at a remote village at an altitude of 750 feet. They descend on foot into the valley below, at approximately 120 feet in elevation per hour.  Let <m>x</m> represent the number of hours they have been hiking, and let <m>y</m> represent their elevation.</p>
+  <p><ol marker="a.">
+    <li><p>Write an equation expressing <m>y</m> in terms of <m>x</m>.</p></li>
+    <li><p>Complete the table and graph your equation.</p>
+  <sidebyside widths="30% 50%" valigns="middle middle" margins="10% 10%">
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>~y~</m></cell></row>
+        <row><cell>0</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>2</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>5</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>7</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-49.png"></image></sidebyside></li>    
+               
+  <li><p>How long will it take them to reach their site, which lies 210 feet below sea level on the valley floor?  Write and solve an equation to answer this question, then verify the answer on your graph.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>y=750-120x</m></p></li>
+  <li><image source="hp-7-4-49ans.png"></image></li>
+  <li><p>8 hrs</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="50"><statement><p>A group of adventurers would like to set a new elevation record for a hot-air balloon flight.  The temperature on the ground is 24°C, and the temperature decreases by about 8°C per kilometer above the earth's surface. Let <m>x</m> represent the balloon's altitude in kilometers, and let <m>y</m> represent the temperature.</p>
+<p><ol marker="a.">
+  <li><p>Write an equation expressing <m>y</m> in terms of <m>x</m>.</p></li>
+  <li><p>Complete the table and graph your equation.</p>
+  <sidebyside widths="30% 60%" valigns="middle middle" margins="5% 5%">
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>~x~</m></cell>
+            <cell><m>~y~</m></cell></row>
+        <row><cell>0</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>2</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>5</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell>10</cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></p>
+    <image source="hp-7-4-50.png"></image></sidebyside></li>    
+               
+  <li><p>What is the altitude at the top of the troposphere, where the temperature is 120C?  Write and solve an equation to answer this question, then verify the answer on your graph.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="51"><statement><p>Plot all the points whose <m>y</m>-coordinate is <m>3</m>. What do you get?</p></statement>
+<answer><p>A horizontal line</p></answer></exercise>
+
+<exercise number="52"><statement><p>Plot all the points whose <m>x</m>-coordinate is <m>-3</m>. What do you get?</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 53-62, evaluate the expression for the given values of the variables.</p></introduction>
+
+<exercise number="53"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>-a</m></p><p>for <m>a=-8.2</m></p></sidebyside></statement>
+<answer><p>8.2</p></answer></exercise>
+
+<exercise number="54"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>-(-b)</m></p><p>for <m>b=-1.4</m></p></sidebyside></statement></exercise>
+
+<exercise number="55"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>c-d</m></p><p>for <m>c=-3,~d=-5</m></p></sidebyside></statement>
+<answer><p>2</p></answer></exercise>
+
+<exercise number="56"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>-k+l</m></p><p>for <m>k=-7,~l=4</m></p></sidebyside></statement></exercise>
+
+<exercise number="57"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>-3m-2n</m></p><p>for <m>m=-5,~n=-2</m></p></sidebyside></statement>
+<answer><p>19</p></answer></exercise>
+
+<exercise number="58"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>\dfrac{24}{x} - 7y</m></p><p>for <m>x=-3,~y=-2</m></p></sidebyside></statement></exercise>
+
+<exercise number="59"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>\dfrac{3-p}{-9-q}</m></p><p>for <m>p=-3,~q=-9</m></p></sidebyside></statement>
+<answer><p>undefined</p></answer></exercise>
+
+<exercise number="60"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>\dfrac{5-r}{-15-s}</m></p><p>for <m>r=5,~s=15</m></p></sidebyside></statement></exercise>
+
+<exercise number="61"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>-1-2(u+7)</m></p><p>for <m>u=-5</m></p></sidebyside></statement>
+<answer><m>-5</m></answer></exercise>
+
+<exercise number="62"><statement><sidebyside widths="20% 50%" margins="10% 10%"><p><m>6-3(2-v)</m></p><p>for <m>v=-1</m></p></sidebyside></statement></exercise>
+
+</exercisegroup>
+
+
+</exercises>
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap4"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Applications of Quadratic Models</title>
+    
+<introduction>
+    <sidebyside width="60%" margins="0% 40%"><image source="images/shutterstock_534935254.jpg"><description>hungry nestlings</description></image></sidebyside>
+    
+    <sidebyside widths="55% 35%" margins="0% 0%" valigns="middle middle">
+<stack>
+<p>An important part of modeling is optimization, finding the best possible solution to a particular problem. For qudaratic models, this often involves finding the vertex of the graph where the maximum or minumum value of the output variable occurs.</p>
+        
+<p>For example, biologists conducted a four-year study of the nesting habits of a species of wrens, The bar graph shows the clutch size (the number of eggs) in 433 nests. Why is 8 or 9 eggs the most common clutch size? Does that number increase the birds' chances of survival?</p>
+</stack>
+        <image xml:id="fig-clutch-size"><description>bar graph</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+           \begin{tikzpicture} [xscale=.4]
+            \draw[cyan] (0,0) grid (11,7);
+            \draw[black,thick] (0,0)--++(11,0) node[below,, yshift=-.5cm,midway]{Clutch size};
+            \draw[black,thick] (0,0)--(0,7);
+            \node[rotate=90] at (-2.7,3.50) {Number of clutches};
+            \foreach \x [evaluate=\x as \xi using int(1+\x)] in {1,3,...,11} {
+             \node at ({\x-.5},-.25) {$\xi$};
+            }
+            \foreach \x [evaluate=\x as \xi using int(20*\x)] in {1,2,...,7} {
+              \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+            }
+            \draw[red,fill=magenta!30!white] (0,0) rectangle ++(1,.05);
+            \draw[red,fill=magenta!30!white] (2,0) rectangle ++(1,.1);
+            \draw[red,fill=magenta!30!white] (3,0) rectangle ++(1,.6);
+            \draw[red,fill=magenta!30!white] (4,0) rectangle ++(1,1.15);
+            \draw[red,fill=magenta!30!white] (5,0) rectangle ++(1,3.6);
+            \draw[red,fill=magenta!30!white] (6,0) rectangle ++(1,6.3);
+            \draw[red,fill=magenta!30!white] (7,0) rectangle ++(1,5.75);
+            \draw[red,fill=magenta!30!white] (8,0) rectangle ++(1,3);
+            \draw[red,fill=magenta!30!white] (9,0) rectangle ++(1,1);
+            \draw[red,fill=magenta!30!white] (10,0) rectangle ++(1,.15);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<p>The average weight of the young birds decrreases as the size of the brood increases, and the survival of individual nestlings is linked to their weight. Which clutch size produces the largest average number of survivors?</p>
+        
+<p>The graph shows the number of survivors for each clutch size in the study, along with the curve of best fit. The equation for the curve is <m>y=-0.0105x^2+0.2x - 0.035</m>. Looking at the graph, the optimum clutch size for maximizing the survival of the nestlings is about 9 eggs. How does this optimum clutch size compare with the most frequently observed clutch size in the study?</p>
+
+    <sidebyside width="50%"><image xml:id="fig-clutch-survival"><description>scatterplot and parabola</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (0,0) grid[step=2] (14,10);
+                \draw[black,thick,->,>=stealth'] (0,0)--++(14.6,0) node[below, midway, yshift=-.6cm]{Clutch size};
+                \draw[black,thick,->,>=stealth'] (0,0)--(0,10.6);
+                \node[rotate=90, align=center] at (-2.3,5.50) {Percent of surviving \\clutches};
+                \foreach \x  in {2,4,...,14} {
+                  \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(10*\x)] in {2,4,...,10} {
+                  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                }
+                \draw[samples=65,domain={1:14},smooth,variable=\x,red,very thick] plot (\x,{-0.105*(\x)^2 + 2*\x - 0.35 });
+                \filldraw[red] (2,2) circle (.15);
+                \filldraw[red] (3,5.2) circle (.15);
+                \filldraw[red] (4,6) circle (.15);
+                \filldraw[red] (5,7.8) circle (.15);
+                \filldraw[red] (6,8.05) circle (.15);
+                \filldraw[red] (7,8.8) circle (.15);
+                \filldraw[red] (8,8.3) circle (.15);
+                \filldraw[red] (9,8.55) circle (.15);
+                \filldraw[red] (10,9.2) circle (.15);
+                \filldraw[red] (11,8.4) circle (.15);
+                \filldraw[red] (12,9.85) circle (.15);
+                \filldraw[red] (13,8.05) circle (.15);
+                \filldraw[red] (14,7.15) circle (.15);
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+
+
+
+</introduction>
+
+<!--  -->
+     <xi:include href="./section-4-1.xml" /> <!-- Quadratic Formula  -->
+     <xi:include href="./section-4-2.xml" /> <!-- The Vertex  -->
+     <xi:include href="./section-4-3.xml" /> <!-- Curve Fitting  -->
+     <xi:include href="./section-4-4.xml" /> <!-- Quadratic Inequalities-->
+     <xi:include href="./chap4-summary.xml" /> <!--Summary & Review-->
+       
+
+</chapter> 
+<!-- </book>  </mathbook> -->

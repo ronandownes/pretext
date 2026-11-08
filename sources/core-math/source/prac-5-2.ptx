@@ -1,0 +1,559 @@
+<exercises xml:id="prac-5-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 5.2</title>
+
+<exercisegroup><introduction><p>For Problems 1-4, answer with a sentence.</p></introduction>
+
+<exercise number="1"><statement><p>What is a formula?</p></statement>
+  <answer><p>A formula is an equation that relates two or more variables.</p></answer></exercise>
+
+<exercise number="2"><statement><p>What does it mean to evaluate a formula?</p></statement></exercise>
+
+<exercise number="3"><statement><p>How do we convert a percent to a decimal fraction?</p></statement>
+  <answer><p>Divide by 100.</p></answer></exercise>
+
+<exercise number="4"><statement><p>The formulas <m>I=Prt</m> and <m>P=rW</m> each use the variable <m>r</m>.  Explain how the formulas are different, and what <m>r</m> stands for in each.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>State a formula for the quantities in Problems 5-10, and explain what the variables in each formula represent.</p></introduction>
+
+<exercise number="5"><statement><p>average value</p></statement>
+  <answer><p><m>A=\dfrac{S}{n}</m>; <m>S</m> is the sum of values, <m>n</m> is the number of values</p></answer></exercise>
+
+<exercise number="6"><statement><p>distance</p></statement></exercise>
+
+<exercise number="7"><statement><p>interest</p></statement>
+  <answer><p><m>I=Prt</m>; <m>P</m> is the principal, <m>r</m> is the interest rate, <m>t</m> is the time</p></answer></exercise>
+
+<exercise number="8"><statement><p>area of a rectangle</p></statement></exercise>
+
+<exercise number="9"><statement><p>part (of a whole)</p></statement>
+  <answer><p><m>P=rW</m>; <m>r</m> is the percentage rate, <m>W</m> is the whole</p></answer></exercise>
+
+<exercise number="10"><statement><p>profit</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 11-20, choose the appropriate formula and evaluate it to answer the question.</p>
+</introduction>
+
+<exercise number="11"><statement><p>Elias took in $8200 last week at his auto repair shop.  His total costs for the week, including salaries and overhead, were $6835.  What was his profit for the week?</p></statement>
+  <answer><p>$1365</p></answer></exercise>
+
+<exercise number="12"><statement><p>Heather spent $475 to rent a booth at the Craft Fair and to buy materials for her product.  Her receipts at the end of the fair came to $950.  What was her profit from the fair?</p></statement></exercise>
+
+<exercise number="13"><statement><p>Ridwan bicycled for six hours at an average speed of 14 miles per hour.  How far did he ride?</p></statement>
+  <answer><p>84 miles</p></answer></exercise>
+
+<exercise number="14"><statement><p>Elsie is on a cruise to Alaska.  The cruise ship averaged 32 miles per hour for the first two days of the trip.  How far did it travel?</p></statement></exercise>
+
+<exercise number="15"><statement><p>Lucinda lost 12 pounds in 16 weeks.  What was her average weekly weight loss?</p></statement>
+  <answer><p>0.75 lbs per wk</p></answer></exercise>
+
+<exercise number="16"><statement><p>Shala drove 480 miles on 15 gallons of gas.  What was her average gas mileage?</p></statement></exercise>
+
+<exercise number="17"><statement><p>Nina deposited $500 in a savings account that earned 2.5% interest annually. How much interest will she earn after one year?</p></statement>
+  <answer><p>$12.50</p></answer></exercise> 
+
+<exercise number="18"><statement><p>Yusuf's retirement account pays 6% interest annually. If his account contains $12,000, how much interest will he earn this year?</p></statement></exercise>
+
+<exercise number="19"><statement><p>Isabelle spends 35% of her take-home pay on rent.  If she takes home $1500 per month, what is her rent?</p></statement>
+  <answer><p>$525</p></answer></exercise>
+
+<exercise number="20"><statement><p>Naturelle shampoo is 4% almond extract.  How much almond extract is in a 16-ounce bottle of shampoo?</p></statement></exercise>
+</exercisegroup>          
+
+<exercisegroup><introduction><p>For Problems 21-30, evaluate the expression to complete the table. Round your answers to two places if necessary.</p></introduction>
+
+<exercise number="21"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>z</m></cell>
+            <cell>0</cell>
+            <cell>3</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell><m>~5z+4~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+
+<answer><p>4, 19, 54</p></answer></exercise>
+
+<exercise number="22"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>y</m></cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>7</cell></row>
+        <row bottom="minor">
+            <cell><m>~8y-6~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement></exercise>
+
+<exercise number="23"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>b</m></cell>
+            <cell>4</cell>
+            <cell>6</cell>
+            <cell>9</cell></row>
+        <row bottom="minor">
+            <cell><m>~26-2b~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+  <answer><p>18, 14, 8</p></answer></exercise>
+
+<exercise number="24"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>a</m></cell>
+            <cell>0</cell>
+            <cell>1</cell>
+            <cell>8</cell></row>
+        <row bottom="minor">
+            <cell><m>~12+3a~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement></exercise>
+
+<exercise number="25"><statement><p>Lucinda lost 12 pounds in 16 weeks.  What was her average weekly weight loss?<sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>h</m></cell>
+            <cell>7</cell>
+            <cell>13</cell>
+            <cell>24</cell></row>
+        <row bottom="minor">
+            <cell><m>~\dfrac{h-5}{4}~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+  <answer><p>0.5, 2, 4.75</p></answer></exercise>
+
+<exercise number="26"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>v</m></cell>
+            <cell>3</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell><m>~\dfrac{v+12}{10}~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement></exercise>
+
+<exercise number="27"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>d</m></cell>
+            <cell>0.2</cell>
+            <cell>3</cell>
+            <cell>6.5</cell></row>
+        <row bottom="minor">
+            <cell><m>~8(d+1)~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+  <answer><p>9.6, 32, 60</p></answer></exercise> 
+
+<exercise number="28"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>g</m></cell>
+            <cell>4.5</cell>
+            <cell>5.6</cell>
+            <cell>6</cell></row>
+        <row bottom="minor">
+            <cell><m>~3(g-4)~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement></exercise>
+
+<exercise number="29"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>m</m></cell>
+            <cell>0.5</cell>
+            <cell>3</cell>
+            <cell>12</cell></row>
+        <row bottom="minor">
+            <cell><m>~\dfrac{m}{3+m}~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+  <answer><p>0.14, 0.5, 0.8</p></answer></exercise>
+
+<exercise number="30"><statement><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>s</m></cell>
+            <cell>0</cell>
+            <cell>2</cell>
+            <cell>6.5</cell></row>
+        <row bottom="minor">
+            <cell><m>~\dfrac{s}{8-s}~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 31-36, complete the table and write an expression.</p></introduction>
+
+<exercise number="31"><statement><p>The oven temperature started at 75° and is rising at 30° per minute. Fill in the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Minutes elapsed</cell>
+            <cell>1</cell>
+            <cell>3</cell>
+            <cell>5</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell>Oven temperature</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+  <p><ol marker="a.">
+      <li><p>Describe in words how to find the oven temperature at any time.</p></li>
+      <li><p>Let <m>m</m> represent the number of minutes elapsed since the oven was turned on and write an algebraic expression for the oven temperature.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+      <li><p>Add 30 times the nuber of minutes elapsed to 75.</p></li>
+      <li><p><m>75 + 30m</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="32"><statement><p>Herman weighed 215 pounds when he went on a diet.  He has been losing 3 pounds a week.  Fill in the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Weeks passed</cell>
+            <cell>4</cell>
+            <cell>6</cell>
+            <cell>10</cell>
+            <cell>15</cell>
+            <cell>18</cell></row>
+        <row bottom="minor">
+            <cell>Herman's weight</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+  <p><ol marker="a.">
+      <li><p>Describe in words how to find Herman's weight at the end of any week.</p></li>
+      <li><p>Let <m>w</m> represent the number of weeks that Herman has been dieting and write an algebraic expression for his weight.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="33"><statement><p>Luisa's parents have agreed to pay her $800 annual tuition plus half her annual living expenses while she is in school.  Fill in the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Luisa's living expenses</cell>
+            <cell>2400</cell>
+            <cell>3000</cell>
+            <cell>4000</cell>
+            <cell>4500</cell>
+            <cell>5000</cell></row>
+        <row bottom="minor">
+            <cell>Parents will contribute</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+  <p><ol marker="a.">
+      <li><p>Describe in words how to find the amount Luisa's parents will contribute to Luisa's support.</p></li>
+      <li><p>Let <m>a</m> represent Luisa's annual living expenses and write an algebraic expression for the amount her parents will contribute to her support.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+      <li><p>Add half of luisa's expenses to 800.</p></li>
+      <li><p><m>800 + 0.5a</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="34"><statement><p>Aunt Charlotte is leaving $1000 to her cat, and the rest of her estate will be divided equally among her three nephews.  Fill in the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Aunt Charlotte's estate ($)</cell>
+            <cell>16,000</cell>
+            <cell>25,000</cell>
+            <cell>40,000</cell>
+            <cell>100,000</cell></row>
+        <row bottom="minor">
+            <cell>Each nephew's share ($)</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+  <p><ol marker="a.">
+      <li><p>Describe in words how to find each nephew's share of the estate.</p></li>
+      <li><p>Let <m>e</m> stand for the amount of Aunt Charlotte's estate and write an algebraic expression for the amount each nephew will inherit.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="35"><statement><p>Mildred canned 80 pints of tomatoes.  She kept some for herself, and divided the rest equally among her four daughters.  Fill in the table. </p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Pints Mildred kept</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+            <cell>12</cell>
+            <cell>20</cell></row>
+        <row bottom="minor">
+            <cell>Pints for each daughter</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+  <p><ol marker="a.">
+      <li><p>Describe in words how to find each daughter's share of the canned tomatoes.</p></li>
+      <li><p>Let <m>M</m> stand for the number of pints Mildred kept and write an algebraic expression for the number of pints she gave each daughter.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+      <li><p>Subtract Mildred's pints from 80 and divide the result by 4.</p></li>
+      <li><p><m>\dfrac{80-M}{4}</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p>Station KPUB plans to add 8% of the revenue from this spring's pledge drive to its new recordings budget.  They already have $800 set aside for new recordings.  Fill in the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Pledge drive revenue ($)</cell>
+            <cell>5000</cell>
+            <cell>10,000</cell>
+            <cell>12,000</cell>
+            <cell>16,000</cell></row>
+        <row bottom="minor">
+            <cell>New recordings budget ($)</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+  <p><ol marker="a.">
+      <li><p>Describe in words how to find the budget for new recordings.</p></li>
+      <li><p>Let <m>P</m> stand for the pledge drive revenue and write an algebraic expression for the new recordings budget.</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For problems 37-40, choose the correct algebraic expression.</p>
+
+<assemblage><p>
+    <md><mrow> \hphantom{000} 2t+12 \hphantom{0000000000} \amp 12-2t \hphantom{000}</mrow>
+        <mrow> \hphantom{000} 2(t+12) \hphantom{0000000000} \amp 2t-12 \hphantom{000}</mrow></md>
+</p></assemblage></introduction>
+
+<exercise number="37"><statement><p>Janine's history book has 12 chapters. If she studies 2 chapters a week, how many chapters will she have left after <m>t</m> weeks?</p></statement>
+  <answer><m>12-2t</m></answer></exercise>
+
+<exercise number="38"><statement><p>Arturo is 12 years older than twice the age of his nephew. If Arturo's nephew is <m>t</m> years old, how old is Arturo?</p></statement></exercise>
+
+<exercise number="39"><statement><p>Rick made 12 fewer than twice as many phone calls as his roommate made this month.  If Rick's roommate made <m>t</m> phone calls, how many calls did Rick make?</p></statement>
+  <answer><m>2t-12</m></answer></exercise>
+
+<exercise number="40"><statement><p>Every winter, the Civic Society knits mittens for the children of the county orphanage.  This year there are 12 more children than last year.  If there were <m>t</m> children last year, how many mittens will they need this year?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For problems 41-44, choose the correct algebraic expression.</p>
+
+<assemblage><p>
+    <md><mrow> \hphantom{000} \dfrac{m}{12}-3 \hphantom{0000000000} \amp \dfrac{m-3}{12} \hphantom{000}</mrow>
+        <mrow> \hphantom{000} \dfrac{12}{m-3} \hphantom{0000000000} \amp 3-\dfrac{12}{m} \hphantom{000}</mrow></md>
+</p></assemblage></introduction>
+
+<exercise number="41"><statement><p>Twelve divided by 3 less than <m>m</m>.</p></statement>
+  <answer><m>\dfrac{12}{m-3}</m></answer></exercise>
+
+<exercise number="42"><statement><p>Three less than the quotient of <m>m</m> divided by 12.</p></statement></exercise>
+
+<exercise number="43"><statement><p>The quotient of 3 less than <m>m</m> divided by 12.</p></statement>
+  <answer><m>\dfrac{m-3}{12}</m></answer></exercise>
+
+<exercise number="44"><statement><p>Subtract from 3 the quotient of 12 and <m>m</m>.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For problems 45-50, write an algebraic expression.</p></introduction>
+
+<exercise number="45"><statement><p>Tuition at Woodrow University is $400 plus $30 per unit.  How much tuition will you pay if you enroll in <m>u</m> units?</p></statement>
+  <answer><m>400 + 30u</m></answer></exercise>
+
+<exercise number="46"><statement><p>Moira's income is $50 more than one-third of her mother's income.  If her mother's income is <m>I</m>, how much is Moira's income?</p></statement></exercise>
+
+<exercise number="47"><statement><p>After paying their monthly expenses of $560, Hank and his three partners split the rest of their revenue.  If this month's revenue is <m>R</m>,  how much is Hank's share?</p></statement>
+  <answer><m>\dfrac{R-560}{4}</m></answer></exercise>
+
+<exercise number="48"><statement><p>Otis buys 200 pounds of dog food at a time, and uses 15 pounds a week for his dog Ralph.  How much dog food does Otis have left after <m>w</m> weeks?</p></statement></exercise>
+
+<exercise number="49"><statement><p>Getaway Tours offers a Caribbean cruise for $2000 per person if 12 people sign up.  For each additional person who signs up, the price per person is reduced by $60.  How much will you payfor the cruise if <m>p</m>  additional people sign up?</p></statement>
+  <answer><m>2000-60p</m></answer></exercise>
+
+<exercise number="50"><statement><p>Renee receives $600 for appearing in a corn chip commercial, plus a residual of $80 each time thecommercial is aired.  If the commercial plays <m>t</m>  times, how much will Renee make?</p></statement>
+</exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>In Problems 51-58, choose variables for each unknown quantity and write an algebraic expression.</p></introduction>
+
+<exercise number="51"><statement><p>The sum of the length and the width.</p></statement>
+  <answer><m>L+W</m></answer></exercise>
+
+<exercise number="52"><statement><p>The principal times the interest rate.</p></statement></exercise>
+
+<exercise number="53"><statement><p>The product of the base and the height.</p></statement>
+  <answer><m>bh</m></answer></exercise>
+
+<exercise number="54"><statement><p>The ratio of the number of gallons of alcohol to the total volume.</p></statement></exercise>
+
+<exercise number="55"><statement><p>The weight of the copper divided by the total weight.</p></statement>
+  <answer><m>\dfrac{c}{w}</m></answer></exercise>
+
+<exercise number="56"><statement><p>The rebate deducted from the sale price.</p></statement></exercise>
+
+<exercise number="57"><statement><p>The distance traveled divided by the time elapsed.</p></statement>
+  <answer><m>\dfrac{d}{t}</m></answer></exercise>
+
+<exercise number="58"><statement><p>The difference between the height of the roof and the height of the tree.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>In Problems 59-64, use two operations to write an algebraic expression.</p></introduction>
+
+<exercise number="59"><statement><p>Five hours more than the product of 7 and Arnold's daily workout time.</p></statement>
+  <answer><m>7w+5</m></answer></exercise>
+
+<exercise number="60"><statement><p>The ratio of school lunches to 12 cafeteria workers, increased by 8.</p></statement></exercise>
+
+<exercise number="61"><statement><p>The sum of rent and utilities, decreased by $60.</p></statement>
+  <answer><m>r+u-60</m></answer></exercise>
+
+<exercise number="62"><statement><p>Ten less than the difference of your budget and your expenses.</p></statement></exercise>
+
+<exercise number="63"><statement><p>One-half the sum of the radius and three.</p></statement>
+  <answer><m>\dfrac{1}{2}(r+3)</m></answer></exercise>
+
+<exercise number="64"><statement><p>Two times the sum of five and the length.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>In Problems 65-72, evaluate the formula for the given values of the variables.
+</p>
+
+<assemblage><p>The perimeter of a rectangle is given by the formula   
+    <me>P = 2l + 2w</me>
+where <m>l</m> is the length of the rectangle, and <m>w</m> is its width.</p></assemblage></introduction>
+
+<exercise number="65"><statement><p>The length of a rectangular rug is 7.4 feet, and its width is 4.8 feet.  How long a fringe is needed to border the entire rug?</p></statement>
+  <answer><p>24.4 ft</p></answer></exercise>
+
+<exercise number="66"><statement><p>Mario's vegetable garden is 25 meters long and 15 meters wide.  How much chicken wire does he need to enclose the garden?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>
+<assemblage><p>The temperature in degrees Celsius is given by  
+      <me>C = \dfrac{5F - 160}{9}</me>  
+where <m>F</m> is the temperature in degrees Fahrenheit. </p></assemblage></p></introduction>
+
+<exercise number="67"><statement><p>Normal body temperature is  98.6°F.  What is normal body temperature in degrees Celsius?</p></statement>
+  <answer><p>37°</p></answer></exercise>
+
+<exercise number="68"><statement><p>Water freezes at 32°F.  What is the freezing point of water in degrees Celsius?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>
+<assemblage><p>The area of a trapezoid is given by the formula   
+    <me>A = \dfrac{h}{2}(b+c)</me>
+where <m>h</m> is the height of the trapezoid, and <m>b</m> and <m>c</m> are the upper and lower bases.</p>
+    <image source="trapezoid.png" width="50%"></image>
+</assemblage></p></introduction>
+
+<exercise number="69"><statement><p>One section of the roof on Emery's garage has the shape of a trapezoid.  The top of the roof is 30 feet long, and the bottom of the roof is 40 feet long.  The distance between the top and bottom is 15 feet.  What is the area of this section of the roof?</p>
+    <image source="roof.png" width="40%"></image></statement>
+  <answer><p>525 sq ft</p></answer></exercise>
+
+<exercise number="70"><statement><p>The glass cooktop on Joy's modern high-tech stove has the shape of a trapezoid.  It is 36 inches wide at the back and 28 inches wide in front.  The distance from front to back is 20 inches.  What is the area of the cooktop?</p>
+    <image source="cooktop.png" width="30%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>
+<assemblage><p>If you deposit <m>P</m> dollars in an account earning simple interest rate <m>r</m>, then after <m>t</m> years the amount of money in the account is given by
+    <me>A = P + Prt</me></p>
+</assemblage></p></introduction>
+
+<exercise number="71"><statement><p>Marla deposits $50,000 at an interest rate of 6% for five years.  How much is in her account at the end of that time?
+</p></statement>
+  <answer><p>$65,000</p></answer></exercise>
+
+<exercise number="72"><statement><p>Clyde pulls off a bank heist and gets away with $800,000. Before he is apprehended, he manages to deposit the money in a Swiss bank account that pays 5.5% simple annual interest. When he gets out of jail 7 years later, Clyde closes his account and relocates to Rio de Janeiro. How much money does Clyde withdraw from the bank?
+</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 73-82, evaluate the expression for the given values of the variables.</p>
+</introduction>
+
+<exercise number="73"><statement><p><m>4y-x\hphantom{000000}</m> for <m>~x=7~</m> and <m>~y=3</m></p></statement>
+  <answer><p>5</p></answer></exercise>
+
+<exercise number="74"><statement><p><m>2yx\hphantom{00000000}</m> for <m>~x=8~</m> and <m>~y=9</m></p></statement>
+</exercise>
+
+<exercise number="75"><statement><p><m>7(s+t)\hphantom{000000}</m> for <m>~s=12~</m> and <m>~t=28</m></p></statement>
+  <answer><p>280</p></answer></exercise>
+
+<exercise number="76"><statement><p><m>8(s-t)\hphantom{000000}</m> for <m>~s=27~</m> and <m>~t=15</m></p></statement>
+</exercise>
+
+<exercise number="77"><statement><p><m>5a-6b\hphantom{000000}</m> for <m>~a=10~</m> and <m>~b=4</m></p></statement>
+  <answer><p>26</p></answer></exercise>
+
+<exercise number="78"><statement><p><m>4a+3b\hphantom{000000}</m> for <m>~a=8~</m> and <m>~b=7</m></p></statement>
+</exercise>
+
+<exercise number="79"><statement><p><m>\dfrac{3w+z}{z}\hphantom{000000}</m> for <m>~w=8~</m> and <m>~z=6</m></p>
+</statement>
+  <answer><p>5</p></answer></exercise>
+
+<exercise number="80"><statement><p><m>\dfrac{w+2z}{z}\hphantom{000000}</m> for <m>~w=9~</m> and <m>~z=3</m></p></statement>
+</exercise>
+
+<exercise number="81"><statement><p><m>\dfrac{h}{g}-k\hphantom{0000000}</m> for <m>~h=1.2,~ g=0.6~</m> and <m>~k=0.8</m></p></statement>
+  <answer><p>1.2</p></answer></exercise>
+
+<exercise number="82"><statement><p><m>v+\dfrac{u}{t}\hphantom{0000000}</m> for <m>~v=0.3,~u=0.8,~</m> and <m>~t=0.5</m></p></statement>
+</exercise>
+</exercisegroup>
+
+</exercises>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

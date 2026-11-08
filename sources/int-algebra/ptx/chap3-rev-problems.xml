@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+
+
+<exercises xml:id="chap3-rev-problems"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 3 Review Problems</title>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 1<ndash/>6, solve by extraction of roots.</p></introduction>
+
+<exercise number="1"><statement><p><m>x^2+7=13-2x^2</m></p></statement>
+    <answer><p><m>\pm \sqrt{2}</m></p></answer></exercise>
+
+<exercise number="2"><statement><p><m>\dfrac{2x^2}{5}-7=9</m></p></statement>
+    <answer><p><m>\pm \sqrt{40}</m></p></answer></exercise>
+
+<exercise number="3"><statement><p><m>3(x+4)^2=60</m></p></statement>
+    <answer><p><m>-4 \pm \sqrt{20}</m></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>(7x-1)^2=15</m></p></statement>
+    <answer><p><m>\dfrac{1 \pm \sqrt{15}}{7}</m></p></answer></exercise>
+
+<exercise number="5"><statement><p><m>(2x-5)^2=9</m></p></statement>
+    <answer><p><m>1,~4</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>(3.5-0.2x)^2=1.44</m></p></statement>
+    <answer><p><m>11.5,~23.5</m></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 7<ndash/>10, solve by factoring.</p></introduction>
+
+<exercise number="7"><statement><p><m>(w+1)(2w-3)=3</m></p></statement>
+    <answer><p><m>\dfrac{-3}{2},~2</m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>6y=(y+1)^2+3</m></p></statement>
+    <answer><p><m>2,~2</m></p></answer></exercise>
+
+<exercise number="9"><statement><p><m>4x-(x+1)(x+2)=-8</m></p></statement>
+    <answer><p><m>-2,~3</m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>3(x+2)^2=15+12x</m></p></statement>
+    <answer><p><m>-1,~1</m></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 11 and 12, write a quadratic equation with integer coefficients and with the given solutions.</p></introduction>
+    
+<exercise number="11"><statement><p><m>\dfrac{-3}{4}</m> and <m>8</m></p></statement>
+    <answer><p><m>4x^2-29x-24=0</m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>\dfrac{5}{3}</m> and <m>\dfrac{5}{3}</m></p></statement>
+    <answer><p><m>9x^2-30x+25=0</m></p></answer></exercise>
+</exercisegroup>  
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 13 and 14, graph the equation using the ZDecimal setting. Locate the <m>x</m>-intercepts, and use them to write the quadratic expression in factored form.</p></introduction>
+    
+<exercise number="13"><statement><p><m>y=x^2-0.6x-7.2</m></p></statement>
+    <answer><p><m>y=(x-3)(x+2.4)</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>y=-x^2+0.7x+2.6</m></p></statement>
+    <answer><p><m>y=-(x+1.3)(x-2)</m></p></answer></exercise>
+</exercisegroup> 
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 15<ndash/>18, <ol marker="a.">
+        <li>Find the coordinates of the vertex and the intercepts.</li>
+        <li>Sketch the graph.</li></ol></p></introduction>
+
+<exercise number="15"><statement><p><m>y=\dfrac{1}{2}x^2</m></p></statement>
+    <answer>
+        <p>
+            <ol marker="a.">
+                <li><p>
+                    Vertex: <m>(0,0)</m>, <m>y</m>-int: <m>(0,0)</m>, <m>x</m>-int: <m>(0,0)</m>
+                </p></li>
+                <li>
+                    <sidebyside width="40%" margins="0% 30%">
+                        <image xml:id="fig-ch3-rev-15ans">
+                            <description>parabola</description>
+                            <latex-image>
+                            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                            <![CDATA[\tikzset{%
+                            }
+                            \begin{tikzpicture} [scale=.35]
+                            \draw[cyan] (-10,-10) grid (10,10);
+                            \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+                            \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+                            \foreach \x in  {-5, 5, -10, 10} {
+                             \draw[cyan, very thick] (\x,-10) --++(0,20);
+                             \draw[cyan, very thick] (-10,\x) --++(20,0);
+                             \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                             \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                            }
+                            \draw[samples=65,domain={-sqrt(20):sqrt(20)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 /2 });
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                        </image>
+                    </sidebyside>
+                </li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+<exercise number="16"><statement><p><m>y=x^2-4</m></p></statement>
+<!--     <answer><p><ol marker="a.">
+        <li><p>Vertex: <m>(0,-4)</m>, <m>y</m>-int: <m>(0,-4)</m>, <m>x</m>-int: <m>(-2,0),~(2,0)</m></p></li>
+        </ol></p></answer> -->
+</exercise>
+
+<exercise number="17"><statement><p><m>y=x^2-9x</m></p></statement>
+    <answer>
+        <p>
+            <ol marker="a.">
+                <li><p>Vertex: <m>\left(\dfrac{9}{2},\dfrac{-81}{4}\right)</m>, <m>y</m>-int: <m>(0,0)</m>, <m>x</m>-int: <m>(0,0),~(9,0)</m></p></li>
+                <li>
+                    <sidebyside width="40%" margins="0% 30%">
+                        <image xml:id="fig-ch3-rev-17ans">
+                            <description>parabola</description>
+                            <latex-image>
+                            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                            <![CDATA[\tikzset{%
+                            }
+                            \begin{tikzpicture} [scale=.35]
+                            \draw[cyan] (-10,-15) grid (10,5);
+                            \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+                            \draw[black,thick, ->, >=stealth'] (0,-15)--(0,6.6) node[left, xshift=2]{$y$};
+                            \foreach \x in  {-5, 5, -10, 10} {
+                             \draw[cyan, very thick] (\x,-15) --++(0,20);
+                             \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                            }
+                            \draw[black,thick, ->, >=stealth'] (0,-15)--(0,6.6) node[left, xshift=2]{$y$};
+                            \foreach \x [evaluate=\x as \xi using int(2*\x)] in  {-15,-10,-5,5} {
+                             \draw[cyan, very thick] (-10,\x) --++(20,0);
+                             \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                            }
+                            \draw[samples=65,domain={-1):10},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{((\x)^2 - 9*\x)/2 });
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                        </image>
+                    </sidebyside>
+                </li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+<exercise number="18"><statement><p><m>y=-2x^2-4x</m></p></statement>
+<!--     <answer><p><ol marker="a.">
+        <li><p>Vertex: <m>(-1,2)</m>, <m>y</m>-int: <m>(0,0)</m>, <m>x</m>-int: <m>(0,0),~(-2,0)</m></p></li>
+        <li><sidebyside width="40%"><image source="images/fig???"><description>figures </description></image></sidebyside></li></ol></p></answer> -->
+</exercise>
+</exercisegroup> 
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 19<ndash/>22, solve by completing the square.</p></introduction>
+
+<exercise number="19"><statement><p><m>x^2-4x-6=0</m></p></statement>
+    <answer><p><m>2 \pm \sqrt{10}</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>x^2+3x=3</m></p></statement>
+    <answer><p><m>\dfrac{-3}{2} \pm \sqrt{\dfrac{21}{4}}</m></p></answer></exercise>
+
+<exercise number="21"><statement><p><m>2x^2+3=6x</m></p></statement>
+    <answer><p><m>\dfrac{3}{2} \pm \sqrt{\dfrac{3}{4}}</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>3x^2=2x+3</m></p></statement>
+    <answer><p><m>\dfrac{1}{3} \pm \sqrt{\dfrac{10}{9}}</m></p></answer></exercise>
+</exercisegroup> 
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 23<ndash/>26, solve the formula for the indicated variable.</p></introduction>
+
+<exercise number="23"><statement><p><m>K=\dfrac{1}{2}mv^2,~~</m>for <m>v</m></p></statement>
+    <answer><p><m>v=\pm \sqrt{\dfrac{2K}{m}}</m></p></answer></exercise>
+
+<exercise number="24"><statement><p><m>a^2+b^2=c^2,~~</m>for <m>b</m></p></statement>
+    <answer><p><m>b=\pm \sqrt{c^2-a^2}</m></p></answer></exercise>
+
+<exercise number="25"><statement><p><m>V=\dfrac{1}{3}s^2h,~~</m> for <m>h</m></p></statement>
+    <answer><p><m>s=\pm \sqrt{\dfrac{3V}{h}}</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>A=P(1+r)^2,~~</m> for <m>r</m></p></statement>
+    <answer><p><m>r=\pm \sqrt{\dfrac{A}{P}}-1</m></p></answer></exercise>
+</exercisegroup>      
+
+<exercise number="27"><statement><p>In a tennis tournament among <m>n</m> competitors,  <m>\dfrac{n(n-1)}{2}</m> matches must be played.  If the organizers can schedule 36 matches, how many players should they invite?</p></statement>
+    <answer><p>9</p></answer></exercise>
+
+<exercise number="28"><statement><p>The formula  <m>S=\dfrac{n(n-1)}{2}</m>  gives the sum of the first  positive integers.  How many consecutive integers must be added to make a sum of 91?</p></statement>
+    <answer><p>13</p></answer></exercise>
+
+<exercise number="29"><statement><p>Lewis invested $2000 in an account that compounds interest annually.  He made no deposits or withdrawals after that.  Two years later he closed the account, withdrawing $2464.20.  What interest rate did Lewis earn?</p></statement>
+    <answer><p>11%</p></answer></exercise>
+
+<exercise number="30"><statement><p>Earl borrowed $5500 from his uncle for 2 years with interest compounded annually.  At the end of two years he owed his uncle $6474.74.  What was the interest rate on the loan?</p></statement>
+    <answer><p>8.5%</p></answer></exercise>
+
+<exercise number="31"><statement><p>The perimeter of an equilateral triangle is 36 inches.  Find its altitude.  (Hint:  The altitude is the perpendicular bisector of the base.)</p></statement>
+    <answer><p><m>\sqrt{108} \approx 10.4</m> in</p></answer></exercise>
+
+<exercise number="32"><statement><p>The base of an isosceles triangle is one inch shorter than the equal sides, and the altitude of the triangle is two inches shorter than the equal sides.  What is the length of the equal sides?</p></statement>
+    <answer><p>17 in</p></answer></exercise>
+
+<exercise number="33"><statement><p>A car traveling at 50 feet per second (about 34 miles per hour) can stop in 2.5 seconds after applying the brakes hard.  The distance the car travels, in feet, <m>t</m> seconds after applying the brakes is <m>d=50t-10t^2</m>.   How long does it take the car to travel 40 feet?</p></statement>
+    <answer><p>1 sec</p></answer></exercise>
+
+<exercise number="34"><statement><p>You have 300 feet of wire fence to mark off a rectangluar Christmas tree lot with a center-divider, using a brick wall as one side of the lot.  If you would like to enclose a total area of 7500 square feet, what should be the dimensions of the lot?</p></statement>
+    <answer><p>50 ft by 150 ft</p></answer></exercise>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 35 and 36, show that the shaded areas are equal.</p></introduction>
+
+<exercise number="35"><statement>
+    <sidebyside width="80%"><image source="images/fig-chap3-rev-35"><description>figures </description></image></sidebyside>
+</statement>
+    <answer><p><m>A_1=x^2-\left(\dfrac{1}{2}y^2+\dfrac{1}{2}y^2\right)=x^2-y^2;~~A_2=(x+y)(x-y)=x^2-y^2</m></p></answer></exercise>
+
+<exercise number="36"><statement>
+    <sidebyside  width="60%"><image source="images/fig-chap3-rev-36"><description>figures </description></image></sidebyside>
+</statement>
+    <answer><p><m>A_1=\pi (x+y)^2- \pi x^2 - \pi y^2 = 2 \pi xy;~~A_2=\pi y (2x) = 2 \pi xy</m></p></answer></exercise>
+</exercisegroup>
+
+</exercises>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="InverseVariation"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Inverse Variation</title>
+
+<subsection><title>Inverse Variation</title><idx>inverse variation</idx><idx><h>inversely proportional</h><seealso>inverse variation</seealso></idx><idx><h>variation</h><see>inverse variation</see></idx>
+
+<p>How long does it take to travel a distance of 600 miles? The answer depends on your average speed. If you are on a bicycle trip, your average speed might be 15 miles per hour. In that case, your traveling time will be
+    <me>T = \frac{D}{R}= \frac{600}{15}= 40 \text{ hours}</me>
+(Of course, you will have to add time for rest stops; the 40 hours are just your travel time.) </p>
+
+<p>If you are driving your car, you might average 50 miles per hour. Your travel time is then
+    <me>T = \frac{D}{R}= \frac{600}{50}= 12 \text{ hours}</me></p>
+
+<p>If you take a commercial air flight, the plane’s speed might be 400 miles per hour, and the flight time would be
+    <me>T = \frac{D}{R}= \frac{600}{400}= 1.5 \text{ hours}</me></p>
+
+<p>You can see that for higher average speeds, the travel time is shorter. In other words, the time needed for a 600-mile journey is a decreasing function of average speed. In fact, a formula for the function is
+    <me>T = f (R) = \frac{600}{R}</me></p>
+
+<p>This function is an example of <term>inverse variation</term><idx>inverse variation</idx>. A table of values and a graph of the function are shown below.</p>
+<sidebyside widths="50% 30%" margins="5% 10%">
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>R</m></cell>
+            <cell><m>T</m></cell></row>
+        <row>
+            <cell><m>10</m></cell>
+            <cell><m>60</m></cell></row>
+        <row>
+            <cell><m>15</m></cell>
+            <cell><m>40</m></cell></row>
+        <row>
+            <cell><m>20</m></cell>
+            <cell><m>30</m></cell></row>
+        <row>
+            <cell><m>50</m></cell>
+            <cell><m>12</m></cell></row>
+        <row>
+            <cell><m>200</m></cell>
+            <cell><m>3</m></cell></row>
+        <row>
+            <cell><m>400</m></cell>
+            <cell><m>1.5</m></cell></row>
+    </tabular>
+<image source="images/fig-inverse-variation"><description>graph of time vs average speed</description></image></sidebyside>
+
+<assemblage><title>Inverse Variation</title><idx>constant of variation</idx>
+<p><m>y</m> <term>varies inversely</term><idx>varies inversely</idx> with <m>x</m> if
+    <me>y = \dfrac{k}{x}\text{, }x \ne 0</me>
+where <m>k</m> is a positive constant.</p></assemblage>
+
+<warning><p>Inverse variation describes a decreasing function, <idx>decreasing function</idx> but not every decreasing function represents inverse variation. People sometimes mistakenly use the phrase <em>varies inversely</em> to describe any decreasing function, but if <m>y</m> varies inversely with <m>x</m>, the variables must satisfy an equation of the form <m>y = \dfrac{k}{x}</m>, or <m>xy = k</m>.</p></warning>
+
+<p> To decide whether two variables truly vary inversely, we can check whether their product is constant. For instance, in the preceding travel-time example, we see from the table that <m>RT = 600</m>.</p>
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>R</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>15</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>50</m></cell>
+            <cell><m>200</m></cell>
+            <cell><m>400</m></cell></row>
+        <row>
+            <cell><m>T</m></cell>
+            <cell><m>60</m></cell>
+            <cell><m>40</m></cell>
+            <cell><m>30</m></cell>
+            <cell><m>12</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>1.5</m></cell></row>
+        <row>
+            <cell><m>RT</m></cell>
+            <cell><m>600</m></cell>
+            <cell><m>600</m></cell>
+            <cell><m>600</m></cell>
+            <cell><m>600</m></cell>
+            <cell><m>600</m></cell>
+            <cell><m>600</m></cell></row>
+    </tabular>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+            $invvar = RadioButtons(
+              ["Check whether \(xy\) is a constant.",
+              "Check whether the function is decreasing.",
+              "Check whether \(y\) is the reciprocal of \(x\).",
+              "Check whether \(y/x\) is a constant."],
+              0, 
+            );            
+        </pg-code> 
+    <statement><p>How can you test whether a table for <m>y=f(x)</m> represents inverse variation?</p>
+        <p><var name="$invvar" form="buttons"/></p>      
+    </statement>
+    <solution><p>Check whether <m>xy</m> is a constant.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>How can you test whether a table for <m>y=f(x)</m> represents inverse variation?</p>
+    <p><ol marker="a.">
+        <li><p>Check whether <m>xy</m> is a constant.</p></li>
+        <li><p>Check whether the function is decreasing.</p></li>
+        <li><p>Check whether <m>y</m> is the reciprocal of <m>x</m>.</p></li>
+        <li><p>Check whether <m>y/x</m> is a constant.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Finding a Formula for Inverse Variation</title>
+
+<p>If we know that two variables vary inversely and we can find one pair of corresponding values for the variables, we can determine <m>k</m>, the constant of variation.<idx>constant of variation</idx></p>
+
+<example><statement><p>The amount of current, <m>I</m>, that flows through a circuit varies inversely with the resistance, <m>R</m>, on the circuit. An iron with a resistance of 12 ohms draws 10 amps of current.
+<ol marker="a.">
+        <li><p>Write a formula that gives current as a function of the resistance. </p>
+            <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of inverse variation, see <xref ref="tkInvVar" text="custom"> Section 5.5.1 </xref> and <xref ref="tkFindCon" text="custom"> Section 5.5.3 </xref> of the Toolkit.</p></aside></li>
+        <li><p> Complete the table and graph your function in a suitable window.</p>
+            <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row>
+                    <cell><m>R</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell></row>
+                <row>
+                    <cell><m>I</m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell></row>
+            </tabular></li>
+        <li><p>How much current is drawn by a light bulb with a resistance of 533.3 ohms?</p></li>
+        <li><p>What is the resistance of a toaster that draws 12.5 amps of current?</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>Because <m>I</m> varies inversely with <m>R</m>, we know that <m>I=\dfrac{k}{R}</m>. To find the constant <m>k</m>, we substitute <m>\alert{10}</m> for <m>I</m> and <m>\alert{12}</m> for <m>R</m>.
+            <md><mrow>\alert{10} \amp =\dfrac{k}{\alert{12}} \amp \amp \blert{\text{Solve for}~k.}</mrow>
+                <mrow>k \amp = 10 \cdot 12 = 120</mrow></md>
+    So the formula is <m>I=\dfrac{120}{R}</m>.</li>
+    <li><p>We use the formula to complete the table.</p>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row>
+                    <cell><m>R</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell></row>
+                <row>
+                    <cell><m>I</m></cell>
+                    <cell><m>120</m></cell>
+                    <cell><m>60</m></cell>
+                    <cell><m>12</m></cell>
+                    <cell><m>6</m></cell></row>
+            </tabular>
+        <p>A graph of <m>I</m> as a function of <m>R</m> is shown below.</p>
+        <image width="40%" xml:id="fig-example-5-5-1"><description>current vs resistance</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.25]
+                \draw[cyan] (0,0) grid (25,25);
+                \draw[black,thick, ->, >=stealth'] (0,0)--(26,0) node[right]{$R$};
+                \draw[black,thick, ->, >=stealth'] (0,0)--(0,26) node[above]{$I$};
+                \foreach \x [evaluate=\x as \xi using int(2*\x)] in {5,10,15,20,25} {
+                 \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                 \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[samples=65,domain={6/5:25},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {30/(\x)});
+                \filldraw[red] (6,5) circle (.3) node[above right, xshift=4, fill=white, inner sep=2] {$(12,10)$};
+                \node[black,fill=white, inner sep=2] at (12,20) {$I=\Large \frac{120}{R}$};
+                \end{tikzpicture}]]>
+            </latex-image></image></li>
+     <li>We substitute <m>\alert{533.3}</m> for <m>R</m> in the formula.
+        <me>I=\dfrac{120}{\alert{533.3}} = 0.225</me>
+        The light bulb draws 0.225 amps of current.</li>
+     <li>We substitute <m>\alert{12.5}</m> for <m>I</m> in the formula and solve for <m>R</m>.
+            <md><mrow>\alert{12.5} \amp =\dfrac{120}{R} \amp \amp \blert{\text{Solve for}~R.}</mrow>
+                <mrow>R \amp = \dfrac{120}{12.5} = 9.6</mrow></md>
+        The toaster has a resistance of 9.6 ohms.</li></ol>
+</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+  <webwork><pg-code>
+        $refreshCachedImages = 1;
+        $fun=Formula("120/x");
+        $fake=Formula("6*x");
+        $fake2=Formula("120-6*x");
+        $fake3=Formula("120-x^2/4");
+
+        foreach my $i (0..3) {
+        $gr[$i] = init_graph(-4,-10,22,130, axes=>[0,0], grid=>[13,14], size=>[240,240]);
+        $gr[$i]->lb('reset');
+        for my $j (10,20) {
+          $gr[$i]->lb( new Label($j, 0, $j,'black','center','top','large'));
+        }
+        for my $j (50,100) {
+          $gr[$i]->lb( new Label(0, $j, $j,'black','right','middle','large'));
+        }
+        }
+        add_functions($gr[0], "$fun for x in &lt;.1,20>  using color:red and weight:2");
+        $gr[0]->lb( new Label(20,120,"(D)", 'black','center','middle','large'));
+
+        add_functions($gr[1], "$fake for x in &lt;0,20>  using color:red and weight:2");
+        $gr[1]->lb( new Label(20,120,"(A)", 
+        'black','center','middle','large'));
+
+        add_functions($gr[2], "$fake2 for x in &lt;0,20>  using color:red and weight:2");
+        $gr[2]->lb( new Label(20,120,"(B)", 
+        'black','center','middle','large'));
+
+        add_functions($gr[3], "$fake3 for x in &lt;0,20>  using color:red and weight:2");
+        $gr[3]->lb( new Label(20,120,"(C)", 
+        'black','center','middle','large'));
+
+        $mc = RadioButtons(
+                    [ "(A)", "(B)", "(C)","(D)",
+                    "none of the above"],
+                    3
+                );
+            Context()->variables->add(C=>"Real",p=>"Real");
+            $f1 = Formula("C");
+            $f2 = Formula("120/p");
+
+            $multians = MultiAnswer($f1,$f2)->with(
+              singleResult => 1,
+              checker => sub {
+                  my ( $correct, $student, $self ) = @_;
+                  my ( $f1stu, $f2stu ) = @{$student};
+                  my ( $f1, $f2 ) = @{$correct};
+                  return ( ($f1 == $f1stu &amp;&amp; $f2 == $f2stu) ||
+                       ($f1 == $f2stu &amp;&amp; $f2 == $f1stu)  
+                  );
+              }
+            );            
+      </pg-code>
+    <statement><p>Delbert's officemates want to buy a $120 gold watch for a colleague who is retiring. The cost per person is inversely proportional to the number of people who contribute.</p>
+        <p><ol marker="a.">
+            <li><p>Express the cost per person, <m>C</m>, as a function of the number of people, <m>p</m>, who contribute.</p>
+            <p><var name="$multians" width="2"/><m>=</m><var name="$multians" width="10"/> </p></li>
+            <li><p>Sketch the function for <m>0 \le p \le 20</m>.</p>
+                <image pg-name="$gr[1]" width="20%"/>
+                <image pg-name="$gr[2]" width="20%"/>
+                <image pg-name="$gr[3]" width="20%"/>
+                <image pg-name="$gr[0]" width="20%"/>
+            <p>The graph of cost per person is</p>
+            <p><var name="$mc" form="buttons"/> </p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><p><m>C=\dfrac{120}{p}</m></p></li>
+        <li><image pg-name="$gr[0]" width="20%"/>
+            <p>A graph is also shown below.</p></li>
+          </ol></p>
+    </solution>
+  </webwork>
+    <conclusion>
+        <image width="30%" margins="0% 70%" source="images/fig-ex-5-4-1ans"><description>reciprocal</description></image>
+    </conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Delbert's officemates want to buy a $120 gold watch for a colleague who is retiring. The cost per person is inversely proportional to the number of people who contribute.</p>
+        <p><ol marker="a.">
+            <li><p>Express the cost per person, <m>C</m>, as a function of the number of people, <m>p</m>, who contribute.</p></li>
+            <li><p>Sketch the function for <m>0 \le p \le 20</m>.  </p></li>
+        </ol></p></statement>
+
+<solution><p><ol marker="a.">
+        <li><p><m>C=\dfrac{120}{p}</m></p></li>
+        <li><image width="30%" margins="0% 70%" source="images/fig-ex-5-4-1ans"><description>reciprocal</description></image></li>
+          </ol></p></solution></exercise>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more graphs of inverse variation, see <xref ref="tkSketchVar" text="custom"> Section 5.5.2 </xref> </p></aside>
+</subsection>
+
+<subsection><title>Inverse Variation with a Power</title>
+
+<p>We can also define inverse variation with a power of the variable.</p>
+
+<assemblage><title>Inverse Variation with a Power</title><idx><h>inverse variation</h><h>with a power</h></idx>
+<p><m>y</m> <term>varies inversely</term><idx>varies inversely</idx> with <m>x^n</m> if
+    <me>y = \frac{k}{x^n}\text{, }x \ne 0</me>
+    where <m>k</m> and <m>n</m> are positive constants.</p></assemblage>
+
+<p>We may also say that <m>y</m> is <term>inversely proportional</term><idx>inversely proportional</idx><idx><h>proportional</h><h>inversely</h></idx><idx><h>proportional</h><h>inversely</h><seealso>inverse variation</seealso></idx> to <m>x^n</m>.</p>
+
+<example xml:id="example-EMR-vs-distance"><statement><p>The intensity of electromagnetic radiation, such as light or radio waves, varies inversely with the square of the distance from its source. Radio station KPCC broadcasts a signal that is measured at 0.016 watt per square meter by a receiver 1 kilometer away.
+<ol marker="a.">
+    <li>Write a formula that gives signal strength as a function of distance.</li>
+    <li>If you live 5 kilometers from the station, what is the strength of the signal you will receive?</li>
+    <li><p>Graph your function in the window
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 6</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 0.02</mrow></md></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>Let <m>I</m> stand for the intensity of the signal in watts per square meter, and <m>d</m> for the distance from the station in kilometers. Then <m>I = \dfrac{k}{d^2}</m>. To find the constant <m>k</m>, we substitute <m>\alert{0.016}</m> for <m>I</m> and <m>1</m> for <m>d</m>. Solving for <m>k</m> gives us
+            <md><mrow>\alert{0.016} \amp = \dfrac{k}{1^2} </mrow>
+                <mrow>k \amp = 0.016 (1^2) = 0.016</mrow></md>
+        Thus, <m>I = \dfrac{0.016}{d^2}</m>.</p></li>
+    <li><p>Now we can substitute <m>\alert{5}</m> for <m>d</m> and solve for <m>I</m>.
+        <me>I = \frac{0.016}{\alert{5}^2}= 0.00064</me>
+    At a distance of 5 kilometers from the station, the signal strength is 0.00064 watt per square meter.</p></li>
+    <li><p>The graph is shown below.</p>
+        <image width="30%" xml:id="fig-example-5-5-2"><description>inverse-square</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.45]
+                \draw[cyan] (0,0) grid (6,10);
+                \draw[black,thick, ->, >=stealth'] (0,0)--(6.6,0) node[right]{$d$};
+                \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$I$};
+                \foreach \x in {5} {
+                 \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                 }
+                \foreach \x [evaluate=\x as \xi using (\x/500)] in {5} {
+                 \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                 \draw[black] (.1,10) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$0.02$};
+                \draw[samples=65,domain={sqrt(4/5):6},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {8/(\x)^2});
+                \filldraw[red] (1,8) circle (.1) node[right, xshift=4, fill=white, inner sep=2] {$(1,0.016)$};
+                \node[black,fill=white, inner sep=2] at (4,6) {$I=\Large \frac{0.016}{d^2}$};
+                \end{tikzpicture}]]>
+                </latex-image></image></li></ol></p>
+</solution></example>
+
+<p>To summarize, an inverse variation is an example of a decreasing function, but not every decreasing function describes an inverse variation.<idx>decreasing function</idx></p> 
+
+<assemblage><title>Test for Inverse Variation</title><idx><h>inverse variation</h><h>test for</h></idx><idx><h>test for inverse variation</h></idx>
+    <p>If the product <m>~yx^n~</m> is constant and <m>n</m> is positive, then <m>y</m> varies inversely with <m>x^n</m>.</p></assemblage>
+
+<p>The graphs of some typical inverse variations are shown below. They are versions of the basic graphs you studied in Section 5.3, but restricted to positive <m>x</m>-values only.</p>
+
+<image width="50%" source="images/fig-inverse-variation-with-power"><description>inverse variation</description></image>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+        $Yes = PopUp(
+          ["?","Yes", "No"],
+          1, 
+        );
+    </pg-code>
+<statement><p>Use the table to decide whether <m>H</m> could vary inversely with <m>m^2</m>.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell><m>m</m></cell>
+                <cell><m>0.05</m></cell>
+                <cell><m>0.20</m></cell>
+                <cell><m>0.25</m></cell>
+                <cell><m>0.4</m></cell></row>
+            <row> 
+                <cell><m>H</m></cell>
+                <cell><m>240</m></cell>
+                <cell><m>15</m></cell>
+                <cell><m>9.6</m></cell>
+                <cell><m>3.75</m></cell></row>
+            </tabular>
+        <p><var name="$Yes" form="popup"/></p></statement>
+    <solution>
+        <p>Yes, the product <m>Hm^2</m> is the constant 0.6 for all pairs <m>(m,H)</m> in the table.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Use the table to decide whether <m>H</m> could vary inversely with <m>m^2</m>.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell><m>m</m></cell>
+                <cell><m>0.05</m></cell>
+                <cell><m>0.20</m></cell>
+                <cell><m>0.25</m></cell>
+                <cell><m>0.4</m></cell></row>
+            <row> 
+                <cell><m>H</m></cell>
+                <cell><m>240</m></cell>
+                <cell><m>15</m></cell>
+                <cell><m>9.6</m></cell>
+                <cell><m>3.75</m></cell></row>
+            </tabular></statement>
+    <solution>
+        <p>Yes, the product <m>Hm^2</m> is the constant 0.6 for all pairs <m>(m,H)</m> in the table.</p>
+    </solution></exercise>
+
+<p>In Section 5.4, we considered the scaling property of direct variation. If <m>y=kx</m> and you double the value of <m>x</m>, then the value of <m>y</m> doubles also. If <m>y=kx^2</m> and you double the value of <m>x</m>, then the value of <m>y</m> is multiplied by a factor of <m>2^2=4</m>.</p>
+
+<p>What happens when you double the input of an inverse variation?</p>
+
+<example xml:id="example-weight-vs-distance-from-earth"><statement><p>The weight, <m>w</m>, of an object varies inversely with the square of its distance, <m>d</m>, from the center of the Earth. Thus,
+        <me>w = \dfrac{k}{d^2}</me>
+If you double your distance from the center of the Earth, what happens to your weight? What if you triple the distance?</p></statement>
+
+<solution><p>Suppose you weigh <m>W</m> pounds at distance <m>D</m> from the center of the Earth. Then  <m>W = \dfrac{k}{D^2}</m>. At distance <m>2D</m>, your weight will be
+    <me>w = \frac{k}{(2D)^2}= \frac{k}{4D^2}= \frac{1}{4}\cdot\frac{k}{D^2}
+        = \frac{1}{4}W</me>
+Your new weight will be <m>\dfrac{1}{4}</m> of your old weight. By a similar calculation, you can check that by tripling the distance, your weight will be reduced to <m>\dfrac{1}{9}</m> of its original value.</p></solution></example>
+
+<exercise component="webwork" xml:id="exercise-rusty-boltw"><title>Practice 2</title>
+    <webwork><pg-code>
+            $explain =  RadioButtons(
+                    ["\( F_\text{new}=\frac{1}{2}F_\text{old}  \)",
+                    "\( F_\text{new}=2F_\text{old}  \)",
+                    "\( F_\text{new}=\frac{3}{2}F_\text{old}  \)",
+                    "\( F_\text{new}=\frac{2}{3}F_\text{old}  \)"
+                    ],
+                    3
+                );
+        </pg-code>
+        <statement><p>The amount of force, <m>F</m>, (in pounds) needed to loosen a rusty bolt with a wrench is inversely proportional to the length, <m>l</m>, of the wrench. Thus,
+                <me>F = \frac{k}{l}</me>
+            If you increase the length of the wrench by 50% so that the new length is <m>1.5l</m>, what happens to the amount of force required to loosen the bolt?</p>
+            <p><var name="$explain" form="buttons"/> </p>
+        </statement>
+        <solution>
+            <p><m>F_\text{new}=\dfrac{2}{3}F_\text{old} </m></p>
+        </solution>
+    </webwork></exercise>
+
+<exercise component="main" xml:id="exercise-rusty-bolt"><title>Practice 2</title>
+    <statement><p>The amount of force, <m>F</m>, (in pounds) needed to loosen a rusty bolt with a wrench is inversely proportional to the length, <m>l</m>, of the wrench. Thus,
+                <me>F = \frac{k}{l}</me>
+    If you increase the length of the wrench by 50% so that the new length is <m>1.5l</m>, what happens to the amount of force required to loosen the bolt?</p></statement>
+    <solution><p><m>F_\text{new}=\dfrac{2}{3}F_\text{old} </m></p></solution></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork>
+    <pg-code>
+        $a = PopUp(
+          ["?","i", "ii", "iii", "iv"],
+          4, 
+        );
+        $b = PopUp(
+          ["?","i", "ii", "iii", "iv"],
+          2, 
+        );
+        $c = PopUp(
+          ["?","i", "ii", "iii", "iv"],
+          3, 
+        );
+        $d = PopUp(
+          ["?","i", "ii", "iii", "iv"],
+          1, 
+        );
+    </pg-code>
+    <statement>
+        <p>
+            Match each formula with its description below. 
+            <ol marker="a." cols="2">
+                <li><p>Direct variation <var name="$a" form="popup"/></p></li>
+                <li><p>Direct variation with a power <var name="$b" form="popup"/></p></li>
+                <li><p>Inverse variation <var name="$c" form="popup"/></p></li>
+                <li><p>Inverse variation with a power <var name="$d" form="popup"/></p></li>
+            </ol>
+        </p>
+        <p><ol marker="i." cols ="2">
+            <li><m>I=\dfrac{50}{d^2}</m></li>
+            <li><m>S=15.3h^2</m></li>
+            <li><m>N=\dfrac{2600}{P}</m></li>
+            <li><m>C=85A</m></li></ol>
+        </p>
+    </statement>
+    <solution>
+        <p><ol marker="a." cols ="2">
+        <li>iv</li>
+        <li>ii</li>
+        <li>iii</li>
+        <li>i</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p> Match each formula with its description below.</p> 
+    <p><ol marker="a." cols="2">
+        <li><p>Direct variation</p></li>
+        <li><p>Direct variation with a power </p></li>
+        <li><p>Inverse variation</p></li>
+        <li><p>Inverse variation with a power</p></li>
+    </ol></p>
+    <p><ol marker="i." cols ="2">
+            <li><m>I=\dfrac{50}{d^2}</m></li>
+            <li><m>S=15.3h^2</m></li>
+            <li><m>N=\dfrac{2600}{P}</m></li>
+            <li><m>C=85A</m></li>
+    </ol></p></statement>
+    <solution>
+        <p><ol marker="a." cols ="2">
+        <li>iv</li>
+        <li>ii</li>
+        <li>iii</li>
+        <li>i</li></ol></p>
+    </solution></exercise>
+</subsection>
+
+<xi:include href="./section-5-5-exercises.xml" /> <!-- exercises  -->
+</section> 
+<!-- </book>  </mathbook> -->

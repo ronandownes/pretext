@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture}
+\node[right] at (0,0) {$2^5 = 2\cdot 2\cdot 2\cdot 2\cdot 2=32$};
+\coordinate (A) at (.4,.25);
+\coordinate (B) at ($ (A)+(.5,.5)$);
+\coordinate (C) at (1,-.2);
+\coordinate (D) at ($ (C)+(2.4,0)$);
+\draw[blue,<-,>=stealth'] (A) to [out=90,in=180] (B) node[right]{exponent};
+\draw [blue,decorate,decoration={brace,amplitude=5pt}] (D) -- (C) node [below , midway, yshift=-3,   scale=.9] {5 factors of 2};
+\coordinate (E) at (4.8,.7);
+\coordinate (F) at (4.4,0);
+\draw[blue,<-,>=stealth'] (F) to [out=0,in=0] (E) node[left]{power};
+\coordinate (G) at (0.2,-.25);
+\coordinate (H) at (-.2,-.7);
+\draw[blue,<-,>=stealth'] (G) to [out=270,in=0] (H) node[left]{base};
+\end{tikzpicture}%
+}
+\end{document}

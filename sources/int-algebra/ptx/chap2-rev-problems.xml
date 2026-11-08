@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+
+
+<exercises xml:id="chap2-rev-problems"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 2 Review Problems</title>
+
+<exercise number="1"><statement><p>The scatterplot shows the boiling temperature of various substances on the horizontal axis and their heats of vaporization on the vertical axis. (The heat of vaporization is the energy needed to change the substance from liquid to gas at its boiling point.)</p>
+    <sidebyside width="45%"><image source="images/fig-chap2-rev-1"><description>scatterplot of boiling point vs heat of vaporization</description></image></sidebyside>
+<p><ol marker="a.">
+    <li><p>Use a straightedge to estimate a line of best fit for the scatterplot.</p></li>
+    <li><p>Use your line to predict the heat of vaporization of silver, whose boiling temperature is <m>2160\degree</m>C.</p></li>
+    <li><p>Find the equation of the regression line.</p></li>
+    <li><p>Use the regression line to predict the heat of vaporization of potassium bromide, whose boiling temperature is <m>1435\degree</m>C.</p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside width="50%" margins="0% 50%"><image source="images/fig-chap2-rev-1ans"><description>regression line for boiling point vs heat of vaporization</description></image></sidebyside></li>
+    <li><p>235 kilojoules</p></li>
+    <li><p><m>y=0.106x + 4.6</m></p></li>
+    <li><p><m>156.7\degree\text{C}</m></p></li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><term>Archaeopteryx</term> is an extinct creature with characteristics of both birds and reptiles. Only six fossil specimens are known, and only five of those include both a femur (leg bone) and a humerus (forearm bone) The scatterplot shows the lengths of femur and humerus for the five Archaeopteryx specimens. Draw a line of best fit for the data points.</p>
+    <sidebyside width="35%"><image source="images/fig-chap2-rev-2"><description>scatterplot of femur vs humerus</description></image></sidebyside>
+<p><ol marker="a.">
+    <li><p>Predict the humerus length of an Archaeopteryx whose femur is 40 centimeters</p></li>
+    <li><p>Predict the humerus length of an Archaeopteryx whose femur is 75 centimeters</p></li>
+    <li><p>Use your answers from parts (b) and (c) to approximate the equation of a regression line.</p></li>
+    <li><p>Use your answer to part (d) to predict the humerus length of an Archaeopteryx whose femur is 60 centimeters.</p></li>
+    <li><p>Use your calculator and the given points on the scatterplot to find the least squares regression line. Compare the score this equation gives for part (d) with what you predicted earlier. The ordered pairs defining the data are <m>(38, 41)</m>, <m>(56, 63)</m>, <m>(59, 70)</m>, <m>(64, 72)</m>, <m>(74, 84)</m>.</p></li></ol></p></statement>
+<answer><sidebyside width="35%"><image source="images/fig-chap2-rev-2ans"><description>scatterplot with regression line</description></image></sidebyside>
+        <p><ol marker="a.">
+            <li><p><m>45</m> cm</p></li>
+            <li><p><m>87</m> cm</p></li>
+            <li><p><m>y = 1.2x - 3</m></p></li>
+            <li><p><m>69</m> cm</p></li>
+            <li><p><m>y = 1.197x - 3.660</m>; <m>68.16</m> cm</p></li></ol></p></answer></exercise>
+
+<exercise number="3"><statement><p>In 1986 the space shuttle Challenger exploded because of O-ring failure on a morning when the temperature was about <m>30\degree\text{F}</m>. Previously there had been 1 incident of O-ring failure when temperature was <m>70\degree\text{F}</m> and 3 incidents when the temperature was <m>54\degree\text{F}</m>. Use linear extrapolation to estimate the number of incidents of O-ring failure you would expect when the temperature is <m>30\degree\text{F}</m>.</p></statement>
+<answer><p>6</p></answer></exercise>
+
+<exercise number="4"><statement><p>Thelma typed a 19-page technical report in 40 minutes. She required only 18 minutes for an 8-page technical report. Use linear interpolation to estimate how long Thelma would require to type a 12-page technical report.</p></statement>
+<answer><p>26 min</p></answer></exercise>
+    
+<exercisegroup cols="2"><introduction><p>For problems 5<ndash/>6, solve the system by graphing. Use the <term>ZDecimal</term> window.</p></introduction>
+
+<exercise number="5"><statement><p><m>
+                \begin{aligned}[t]
+                y\amp = -2.9x-0.9\\
+                y\amp = 1.4-0.6x 
+                \end{aligned} </m></p></statement>
+<answer><p><m>(-1,2) </m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>
+                \begin{aligned}[t]
+                y\amp = 0.6x - 1.94 \\
+                y\amp = -1.1x + 1.29 
+                \end{aligned} </m></p></statement>
+<answer><p><m>(1.9, -0.8) </m></p></answer></exercise>
+</exercisegroup>
+    
+<exercisegroup cols="2"><introduction><p>For problems 7<ndash/>10, solve the system by using substitution or elimination.
+</p></introduction>
+
+<exercise number="7"><statement><p><m>
+                \begin{aligned}[t]
+                x+5y\amp = 18 \\
+                x-y\amp = -3 
+                \end{aligned} </m></p></statement>
+<answer><p><m>\left(\dfrac{1}{2}, \dfrac{7}{2} \right) </m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>
+                \begin{aligned}[t]
+                x+5y\amp = 11\\
+                2x+3y\amp = 8
+                \end{aligned} </m></p></statement>
+<answer><p><m>(1,2) </m></p></answer></exercise>
+
+<exercise number="9"><statement><p><m>
+                \begin{aligned}[t]
+                \dfrac{2}{3}x-3y\amp = 8 \\
+                x-\dfrac{3}{4}y\amp = 12 
+                \end{aligned} </m></p></statement>
+<answer><p><m>(1,2) </m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>
+                \begin{aligned}[t]
+                3x\amp = 5y-6 \\
+                3y\amp = 10-11x
+                \end{aligned} </m></p></statement>
+<answer><p><m>\left(\dfrac{1}{2}, \dfrac{3}{2} \right)</m></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For problems 11<ndash/>14,  decide whether the system is inconsistent, dependent, or consistent and independent.</p></introduction>
+
+<exercise number="11"><statement><p><m>
+                \begin{aligned}[t]
+                2x-3y\amp = 4 \\
+                x+2y\amp = 7
+                \end{aligned} </m></p></statement>
+<answer><p>Consistent and independent</p></answer></exercise>
+
+<exercise number="12"><statement><p><m>
+                \begin{aligned}[t]
+                2x-3y\amp = 4\\
+                6x-9y\amp = 4
+                \end{aligned} </m></p></statement>
+<answer><p>Inconsistent</p></answer></exercise>
+
+<exercise number="13"><statement><p><m>
+                \begin{aligned}[t]
+                2x-3y\amp = 4 \\
+                6x-9y\amp = 12 
+                \end{aligned} </m></p></statement>
+<answer><p>Dependent</p></answer></exercise>
+
+<exercise number="14"><statement><p><m>
+                \begin{aligned}[t]
+                x-y\amp = 6 \\
+                x+y\amp = 6
+                \end{aligned} </m></p></statement>
+<answer><p> Consistent and independent</p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For problems 15<ndash/>20,  solve the system using Gaussian reduction.</p>
+</introduction>
+
+<exercise number="15"><statement><p><m>
+                    \begin{alignedat}[t]{5}
+                    x\amp{}+{}\amp 3y\amp{}-{}\amp z\amp{}=3 \\
+                    2x \amp{}-{} \amp y\amp{}+{}\amp 3z\amp{}=1 \\
+                    3x \amp{}+{} \amp 2y\amp {}+{}\amp z\amp{}=5
+                    \end{alignedat} </m></p></statement>
+<answer><p><m>(2,0,-1) </m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>
+                    \begin{alignedat}[t]{5}
+                    x\amp{}+{}\amp y\amp{}+{}\amp z\amp{}=2 \\
+                    3x \amp{}-{} \amp y\amp{}+{}\amp z\amp{}=4 \\
+                    2x \amp{}+{} \amp y\amp {}+{}\amp 2z\amp{}=3
+                    \end{alignedat} </m></p></statement>
+<answer><p><m>(2,1,-1) </m></p></answer></exercise>
+
+<exercise number="17"><statement><p><m>
+                    \begin{aligned}[t]
+                    x+z=5 \\
+                    y-z=-8 \\
+                    2x+z=7 
+                    \end{aligned} </m></p></statement>
+<answer><p><m>(2,-5,3) </m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>
+                    \begin{alignedat}[t]{5}
+                    x\amp{}+{}\amp 4y\amp{}+{}\amp 4z\amp{}=0 \\
+                    3x \amp{}+{} \amp 2y\amp{}+{}\amp z\amp{}= -4 \\
+                    2x \amp{}-{} \amp 4y\amp {}+{}\amp z\amp{}= -11 
+                    \end{alignedat} </m></p></statement>
+<answer> <p><m>\left(2,\dfrac{3}{2},-1\right) </m></p></answer></exercise>
+
+<exercise number="19"><statement><p><m>
+                    \begin{alignedat}[t]{5}
+                    \dfrac{1}{2}x\amp{}+{}\amp y\amp{}+{}\amp z \amp{}={}\amp 3\\
+                    x \amp{}-{} \amp 2y\amp{}-{}\amp \dfrac{1}{3}z \amp {}={}\amp-5 \\
+                    \dfrac{1}{2}x \amp{}-{} \amp 3y\amp {}-{}\amp \dfrac{2}{3}z\amp{}={}\amp -6
+                    \end{alignedat} </m></p></statement>
+<answer><p><m>(-2,1,3) </m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>
+                    \begin{alignedat}[t]{5}
+                    \dfrac{3}{4}x\amp{}-{}\amp \dfrac{1}{2}y \amp{}+{}\amp 6z \amp{}={}\amp 2 \\
+                    \dfrac{1}{2}x \amp{}+{} \amp y\amp{}-{}\amp \dfrac{3}{4}z \amp {}={}\amp0 \\
+                    \dfrac{1}{4}x \amp{}+{} \amp \dfrac{1}{2}y\amp {}-{}\amp \dfrac{1}{2}z\amp{}={}\amp 0
+                    \end{alignedat} </m></p></statement>
+<answer><p><m>(2,-1,0) </m></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>Solve Problems 21<ndash/>26 by writing and solving a system of linear equations in twoor three variables.</p></introduction>
+
+<exercise number="21"><statement><p>A math contest exam has 40 questions. A contestant scores 5 points for each correct answer, but loses 2 points for each wrong answer. Lupe answered all the questions and her score was 102. How many questions did she answer correctly?</p></statement>
+<answer><p>26</p></answer></exercise>
+
+<exercise number="22"><statement><p>A game show contestant wins $25 for each correct answer he gives but loses $10 for each incorrect response. Roger answered 24 questions and won $355. How many answers did he get right?</p></statement>
+<answer><p>17</p></answer></exercise>
+
+<exercise number="23"><statement><p>Barbara wants to earn $500 a year by investing $5000 in two accounts, a savings plan that pays 8% annual interest and a high-risk option that pays 13.5% interest. How much should she invest in each account?
+</p></statement>
+<answer><p>$3181.82 at 8%, $1818.18 at 13.5%</p></answer></exercise>
+
+<exercise number="24"><statement><p>An investment broker promises his client a 12% return on her funds. If the broker invests $3000 in bonds paying 8% interest, how much must he invest in stocks, with an estimated rate of return equal to 15% interest, to keep his promise?
+</p></statement>
+<answer><p>$4000</p></answer></exercise>
+
+<exercise number="25"><statement><p>The perimeter of a triangle is 30 centimeters. The length of one side is 7 centimeters shorter than the second side, and the third side is 1 centimeter longer than the second side. Find the length of each side.</p></statement>
+<answer><p>5 cm, 12 cm, 13 cm</p></answer></exercise>
+
+<exercise number="26"><statement><p>A company ships its product to three cities: Boston, Chicago, and Los Angeles. The cost of shipping is $10 per crate to Boston, $5 per crate to Chicago, and $12 per crate to Los Angeles. The company’s shipping budget for April is $445. It has 55 crates to ship, and demand for their product is twice as high in Boston as in Los Angeles. How many crates should the company ship to each destination?</p></statement>
+<answer><p>20 to Boston, 25 to Chicago, 10 to Los Angeles</p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 27<ndash/>30, graph the inequality.</p></introduction>
+
+<exercise number="27"><statement><p><m>3x-4y\lt 12</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-27"><description>strict inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-28/3,-10)--(10,9/2)--(10,10)--(-10,10)--(-10,-10)--cycle;
+        \draw[red,thick, dashed,<->, >=stealth'] (-28/3,-10)--(10,9/2);
+        \node[fill=magenta!10!white, inner sep=2] at (-6,8) {$3x-4y < 12$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="28"><statement><p><m>x \gt 3y-6</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-28"><description>strict inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-10,-4/3)--(10,16/3)--(10,-10)--(-10,-10)--cycle;
+        \draw[red,thick, dashed,<->, >=stealth'] (-10,-4/4)--(10,16/3);
+        \node[fill=white, inner sep=2] at (-6,8) {$x > 3y-6$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="29"><statement><p><m>y \lt \dfrac{-1}{2}</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-29"><description>strict inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-10,-1/2)--(10,-1/2)--(10,-10)--(-10,-10)--cycle;
+        \draw[red,thick, dashed,<->, >=stealth'] (-10,-1/2)--(10,-1/2);
+        \node[fill=white, inner sep=2] at (-6,8) {$y < \frac{-1}{2} $};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="30"><statement><p><m>-4\le x \lt 2</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-30"><description>compound inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[lightgray] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-10,3)--(10,3)--(10,10)--(-10,10)--cycle;
+        \draw[red,thick, dashed,<->, >=stealth'] (-10,3)--(10,3) node[above,midway, xshift=2.5cm, yshift=1cm, fill=magenta!10!white, inner sep=2] {$y > 3$};
+        \filldraw[blue!50!white, opacity=.2] (2,10)--(2,-10)--(-10,-10)--(-10,10)--cycle;
+        \draw[blue,thick,<->, >=stealth'] (2,10)--(2,-10) node[left,midway, xshift=-1.5cm,yshift=-1.5cm, midway,fill=blue!10!white, inner sep=2] {$x\le 2$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31<ndash/>34, graph the solutions to the system of inequalities.
+</p></introduction>
+
+<exercise number="31"><statement><p><m>y \gt 3, \quad x\le2</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-31"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[lightgray] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-10,3)--(10,3)--(10,10)--(-10,10)--cycle;
+        \draw[red,thick, dashed,<->, >=stealth'] (-10,3)--(10,3) node[above,midway, xshift=2.5cm, yshift=1cm, fill=magenta!10!white, inner sep=2] {$y \gt 3$};
+        \filldraw[blue!50!white, opacity=.2] (2,10)--(2,-10)--(-10,-10)--(-10,10)--cycle;
+        \draw[blue,thick,<->, >=stealth'] (2,10)--(2,-10) node[left,midway, xshift=-1.5cm,yshift=-1.5cm, midway,fill=blue!10!white, inner sep=2] {$x\le 2$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="32"><statement><p><m>y \ge x, \quad x\gt 2</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-32"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[lightgray] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-10,-10)--(10,10)--(10,10)--(-10,10)--cycle;
+        \draw[red,thick, <->, >=stealth'] (-10,-10)--(10,10) node[above,midway, xshift=-2.5cm, yshift=1cm, fill=magenta!10!white, inner sep=2] {$y \geq x$};
+        \filldraw[blue!50!white, opacity=.2] (2,10)--(2,-10)--(10,-10)--(10,10)--cycle;
+        \draw[blue,thick, dashed,<->, >=stealth'] (2,10)--(2,-10) node[right,midway, xshift=.5cm,yshift=-1.5cm,fill=blue!10!white, inner sep=2] {$x \gt 2$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="33"><statement><p><m>3x-6 \lt 6, \quad x+2y\gt 6</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-33"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[lightgray] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-4/3,-10)--(16/3,10)--(-10,10)--(-10,-10)--cycle;
+        \draw[red,thick, dashed, <->, >=stealth'] (-4/3,-10)--(16/3,10) node[above,midway, xshift=-2.5cm, yshift=-1cm, fill=magenta!10!white, inner sep=2] {$3x-y \lt 6$};
+        \filldraw[blue!50!white, opacity=.2] (-10,8)--(10,-2)--(10,10)--(-10,10)--cycle;
+        \draw[blue,thick, dashed,<->, >=stealth'] (-10,8)--(10,-2) node[above,midway, xshift=2.5cm,yshift=.5cm,fill=blue!10!white, inner sep=2] {$x+2y \gt 6$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="34"><statement><p><m>x-3y \gt 3, \quad y\lt x+2</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-34"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[lightgray] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-10,-13/3)--(10,7/3)--(10,-10)--(-10,-10)--cycle;
+        \draw[red,thick, dashed, <->, >=stealth'] (-10,-13/3)--(10,7/3);
+        \draw[red,<-,>=stealth] (-8,-4.8) -- (-6,6) node[above, fill=white, text=red, inner sep=2]{$x-3y>3$};
+        \filldraw[blue!50!white, opacity=.2] (-10,-8)--(8,10)--(10,10)--(10,-10)--(-10,-10)--cycle;
+        \draw[blue,thick, dashed,<->, >=stealth'] (-10,-8)--(8,10) node[above,midway, xshift=2.5cm,yshift=.5cm,fill=blue!10!white, inner sep=2] {$y<x+2$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 35<ndash/>38<ol marker="a.">
+        <li><p>Graph the solutions to the system of inequalities.</p></li>
+        <li><p>Find the coordinates of the vertices.</p></li></ol></p></introduction>
+
+<exercise number="35"><statement><p><m>
+        \begin{aligned}[t]
+        \amp 3x-4y \le 12\\
+        \amp x\ge0, \quad  y\le 0
+        \end{aligned}</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-35"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[lightgray] (-5,-5) grid (5,5);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(5.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,5.7) node[above]{$y$};
+        \foreach \x in {-5,5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (0,0)--(4,0)--(0,-3)--cycle;
+        \draw[red,thick]  (0,0)--(4,0)--(0,-3)--cycle;
+        \filldraw[red] (0,0) circle (0.15) node[above left, xshift=-2,fill=white, inner sep=2] {$(0,0)$};
+        \filldraw[red] (0,-3) circle (0.15) node[ left, xshift=-2,fill=white, inner sep=2] {$(0,-3)$};
+        \filldraw[red] (4,0) circle (0.15) node[ above, yshift=2,fill=white, inner sep=2] {$(4,0)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="36"><statement><p><m>
+        \begin{aligned}[t]
+        \amp x-2y\le 6\\
+        \amp y\le x\\
+        \amp x\ge 0, \quad y\ge 0
+        \end{aligned}</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-36"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[lightgray] (-5,-5) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.7) node[above]{$y$};
+        \foreach \x in {-5,5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (0,0)--(6,0)--(10,2)--(10,10)--cycle;
+        \draw[red,very thick]  (0,0)--(6,0);
+        \draw[red,thick, ->,>=stealth']  (0,0)--(10,10);
+        \draw[red,thick, ->,>=stealth']  (6,0)--(10,2);
+        \filldraw[red] (0,0) circle (0.15) node[above left, xshift=-2,fill=white, inner sep=2] {$(0,0)$};
+        \filldraw[red] (6,0) circle (0.15) node[ below right, yshift=-2,fill=white, inner sep=2] {$(4,0)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="37"><statement><p><m>
+        \begin{aligned}[t]
+        \amp x+y \le5\\
+        \amp y\ge x\\
+        \amp y\ge 2, \quad x\ge 0
+        \end{aligned}</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-37"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.75]
+        \draw[lightgray] (-5,0) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+        \foreach \x in {-5,5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          }
+        \foreach \x in {10,5} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (0,2)--(2,2)--(5/2,5/2)--(0,5)--cycle;
+        \draw[red,very thick] (0,2)--(2,2)--(5/2,5/2)--(0,5)--cycle;
+        \filldraw[red] (0,2) circle (0.1) node[left, xshift=-2,fill=white, inner sep=2] {$(0,2)$};
+        \filldraw[red] (2,2) circle (0.1) node[ below, yshift=-2,fill=white, inner sep=2] {$(2,2)$};
+        \filldraw[red] (5/2,5/2) circle (0.1) node[above right, xshift=2,fill=white, inner sep=1] {\large$\left(\frac{5}{2},\frac{5}{2} \right )$};
+        \filldraw[red] (0,5) circle (0.1) node[ above right, xshift=2,fill=white, inner sep=2] {$(0,5)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="38"><statement><p><m>
+        \begin{aligned}[t]
+        \amp x-y \le -3\\
+        \amp x+y \le 6\\
+        \amp x \le4 \\
+        \amp x\ge0, \quad y\ge 0
+        \end{aligned}</m></p></statement>
+<answer><sidebyside width="80%"><image xml:id="fig-rev-2-38"><description>system of inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.75]
+        \draw[lightgray] (-5,0) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+        \foreach \x in {-5,5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          }
+        \foreach \x in {10,5} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (0,3)--(3/2,9/2)--(0,6)--cycle;
+        \draw[red,very thick] (0,3)--(3/2,9/2)--(0,6)--cycle;
+        \filldraw[red] (0,3) circle (0.1) node[left, xshift=-2,fill=white, inner sep=2] {$(0,2)$};
+        \filldraw[red] (3/2,9/2) circle (0.1) node[ right, xshift=2,fill=white, inner sep=1] {\large$\left(\frac{3}{2},\frac{9}{2} \right )$};
+        \filldraw[red] (0,6) circle (0.1) node[ above left, xshift=-2,fill=white, inner sep=2] {$(0,6)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+</exercisegroup>
+
+<exercise number="39"><statement><p>Ruth wants to provide cookies for the customers at her bookstore. It takes 20 minutes to mix the ingredients for each batch of peanut butter cookies and 10 minutes to bake them. Each batch of granola cookies takes 8 minutes to mix and 10 minutes to bake. Ruth does not want to use the oven more than 2 hours a day, or to spend more than 2 hours a day mixing ingredients. Write a system of inequalities for the number of batches of peanut butter cookies and of granola cookies that Ruth can make in one day, and graph the solutions.</p></statement>
+<answer><p><m>20p+9g \le 120</m>, <m>10p+10g \le 120</m>, <m>p\ge 0</m>, <m>g\ge 0</m> </p>
+        <sidebyside width="40%" margins="0% 5%"><image xml:id="fig-rev-2-39"><description>system of inequalities</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.2]
+            \draw[lightgray] (0,0) grid[step=2] (20,20);
+            \draw[black,thick,->,>=stealth'] (-0,0)--(20.8,0) node[right]{$p$};
+            \draw[black,thick,->,>=stealth'] (0,0)--(0,20.8) node[above]{$g$};
+            \foreach \x in {10,20} {
+              \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \filldraw[magenta!50!white, opacity=.2] (0,0)--(0,12)--(2,10)--(6,0)--cycle;
+            \draw[red,very thick] (0,0)--(0,12)--(2,10)--(6,0)--cycle;
+            \filldraw[red] (0,12) circle (0.25) node[left, xshift=-2,fill=white, inner sep=2] {$(0,12)$};
+            \filldraw[red] (2,10) circle (0.25) node[above right, xshift=2,fill=white, inner sep=1] {$\left(2,10 \right )$};
+            \filldraw[red] (6,0) circle (0.25) node[ below right, yshift=-2,fill=white, inner sep=2] {$(6,0)$};
+            \filldraw[red] (0,0) circle (0.25) node[below left, yshift=-2,fill=white, inner sep=2] {$(0,0)$};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></answer></exercise>
+
+<exercise number="40"><statement><p>A vegetarian recipe calls for 32 ounces of a combination of tofu and tempeh. Tofu provides 2 grams of protein per ounce and tempeh provides 1.6 grams of protein per ounce. Graham would like the dish to provide at least 56 grams of protein. Write a system of inequalities for the amount of tofu and the amountof tempeh for the recipe, and graph the solutions.</p></statement>
+<answer><p><m>x+y \le 32</m>, <m>2x+1.6y \ge 56</m>, <m>x\ge 0</m>, <m>y\ge 0</m>, where <m>x</m> represents ounces of tofu, <m>y</m> the ounces of tempeh</p>
+        <sidebyside width="40%" margins="0% 5%"><image xml:id="fig-rev-2-40"><description>system of inequalities</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.5]
+            \draw[lightgray] (0,0) grid (10,10);
+            \draw[black,thick,->,>=stealth'] (-0,0)--(10.8,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,0)--(0,10.8) node[above]{$y$};
+            \foreach \x [evaluate=\x as \xi using int(4*\x)] in {2,4,...,10} {
+              \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+            }
+            \filldraw[magenta!50!white, opacity=.2] (7,0)--(8,0)--(3,5)--cycle;
+            \draw[red,very thick] (7,0)--(8,0)--(3,5)--cycle;
+            \filldraw[red] (3,5) circle (0.1) node[above right, xshift=2,fill=white, inner sep=2] {$(12,20)$};
+            \filldraw[black] (8,0) circle (0.1) node[ above right, yshift=2,fill=white, inner sep=2, text=black] {$(32,0)$};
+            \filldraw[black] (7,0) circle (0.1);
+            \draw[<-,>=stealth'] (6.6, .2) -- (4,1.5)  node[left, yshift=2,fill=white, inner sep=2, text=black] {$(28,0)$};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></answer></exercise>
+</exercises>

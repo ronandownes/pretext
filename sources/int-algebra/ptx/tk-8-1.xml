@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkPolynomialFunctions" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Polynomial Functions</title>
+                 
+<subsubsection xml:id="tkSumandProd"><title>Compute sums and products</title>
+
+<p>Compare the rules for simplilfying products to the rules for simplifying sums.</p>
+                   
+<example><statement><p>Simplify each expression if possible. 
+<ol marker="a." cols="2">
+    <li><m>3x^2-5x^3</m></li>
+    <li><m>3x^2(-5x^3)</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>This expression is a difference of terms, but they are not like terms (because the variable has different exponents), so we cannot combine them.</li>
+    <li>This expression is a product, and the powers have the same base, so we can apply the first law of exponents to get <m>~3x^2(-5x^3)=-15x^5</m>.</li>
+</ol></p></solution></example>
+
+<example><statement><p>Simplify each expression if possible. 
+<ol marker="a." cols="2">
+    <li><m>-6t^4-8t^4</m></li>
+    <li><m>-6t^4(-8t^4)</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>This expression is a difference of like terms, so we can combine their coefficients to get <m>~-6t^4-8t^4=-14t^4</m></li>
+    <li>This expression is a product, and the powers have the same base, so we can apply the first law of exponents to get <m>~-6t^4(-8t^4)=48t^8</m></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Simplify each expression if possible. 
+<ol marker="a." cols="2">
+    <li><m>2a^2-9a^3+a^2</m></li>
+    <li><m>2a^2(-9a^3+a^2)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>3a^2-9a^3</m></li>
+    <li><m>-18a^5+2a^4</m></li></ol></p></answer></exercise>
+
+<exercise><statement><p>Simplify each expression if possible. 
+<ol markerl="a." cols="2">
+    <li><m>7-4a^3+2a^3</m></li>
+    <li><m>7-4a^2(2a^3)</m></li>
+</ol></p></statement>
+<answer><p><ol markerl="a.">
+    <li><m>7-2a^3</m></li>
+    <li><m>7-8a^5</m></li>
+</ol></p></answer></exercise>  
+</subsubsection>
+
+<subsubsection xml:id="tkUseForm"><title>Use formulas</title>
+
+<p>There are several useful formulas for simplifying polynomials.</p>
+
+<example><statement><p>If <m>~a=5t^4,~</m> find <m>a^3</m> and <m>3a^2</m>.</p></statement>
+    
+<solution><p>We substitute <m>5t^4</m> for <m>a</m> to find
+    <md><mrow>a^3 \amp =(\blert{5t^4})^3 = 5^3(t^4)^3 = 125t^{12} \amp \amp \blert{\text{Apply the third law of exponents.}}</mrow>
+        <mrow>3a^2 \amp = 3(\blert{5t^4})^2 = 3 \cdot 5^2(t^4)^2 = 75t^8</mrow></md></p>
+</solution></example>
+
+<example><statement><p>If <m>a=2y</m> and <m>b=-3z^2</m>, find <m>b^3</m> and <m>3a^2b</m>.</p></statement>
+    
+<solution><p>We substitute <m>2y</m> for <m>a</m> and <m>-3z^2</m> for <m>b</m> to find
+    <md><mrow>b^3 \amp =(\blert{-3z^2})^3 = (-3)^3(z^2)^3 = -27z^6 </mrow>
+        <mrow>3a^2b \amp = 3 (\blert{2y})^2(\blert{-3z^2}) = 3(4y^2)(-3z^2)=-36y^2z^2</mrow></md></p>
+</solution></example>
+
+<exercise><statement><p>If <m>~a=-4x^3~</m> and <m>~b=3h</m>, find <m>a^3</m> and <m>ab^2</m>.</p></statement>  
+    <answer><p><m>-64x^9;~~-36x^3h^2</m></p></answer></exercise>
+
+<exercise><statement><p>If <m>x=6p^2</m> and <m>y=mq^2</m>, find <m>y^3</m> and <m>x^2y</m>.</p></statement>
+    <answer><p><m>m^3q^6;~~-36mp^4q^2</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSqBin"><title>Square binomials</title>
+
+<p>Sometimes it is easier to use formulas to square binomials.</p>
+
+<assemblage><title>Special Products of Binomials</title>
+<p><md><mrow>\amp(a + b)^2 = (a + b) (a + b) = a^2 + 2ab + b^2</mrow>
+        <mrow>\amp(a - b)^2 = (a - b) (a - b) = a^2 - 2ab + b^2</mrow>
+        <mrow>\amp(a + b) (a - b)= a^2 -b^2</mrow></md></p></assemblage>
+
+<example><statement><p>Use the identity <m>~(a+b)^2=a^2+2ab+b^2~</m> to expand <m>~(3h^2+4k^3)^2</m>.  </p></statement>
+    
+<solution><p>We substitute <m>3h^2</m> for <m>a</m> and <m>4k^3</m> for <m>b</m> into the identity.
+    <md><mrow>(3h^2+4k^3)^2 \amp =(3h^2)^2 +2(3h^2)(4k^3) +(4k^3)^2</mrow>
+        <mrow> \amp = 9h^4+24h^2k^3+16k^6</mrow></md></p>
+</solution></example>
+
+<example><statement><p>Use the identity <m>~(a-b)^2=a^2-2ab+b^2~</m> to expand <m>~(2xy^2-5)^2</m>.  </p></statement>
+    
+<solution><p>We substitute <m>2xy^2</m> for <m>a</m> and <m>5</m> for <m>b</m> into the identity.
+    <md><mrow>(2xy^2-5)^2 \amp =(2xy^2)^2 -2(2xy^2)(5) +5^2</mrow>
+        <mrow> \amp = 4x^2y^4 - 20xy^2+25</mrow></md></p>
+</solution></example>
+
+<exercise><statement><p>Expand <m>~(8w^4-3w^3)^2</m></p></statement>
+    <answer><p><m>64w^8-48w^7+9w^6</m></p></answer></exercise>
+
+<exercise><statement><p>Expand <m>~(a^3b+9ab^3)^2</m></p></statement>
+    <answer><p><m>a^6b^2+18a^4b^4+81a^2b^6</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,38 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [scale=.5]
+\draw[cyan] (0,0) grid (10,10);
+\draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$m$};
+\draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[left, xshift=1]{$S$};
+\foreach \x  in  {1,2,...,10} {
+ \draw[black, thick] (\x,0.09) --++(0,-.18);
+}
+\foreach \y in  {1,2,...,10} {
+ \draw[black, thick] (.09,\y) --++(-.18,0);
+}
+\end{tikzpicture}%
+}
+\end{document}

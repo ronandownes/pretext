@@ -1,0 +1,330 @@
+<exercises xml:id="prac-6-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 6-3</title>
+
+<exercisegroup cols="2"><introduction><p>In Problems 1-6, <ol marker="a.">
+    <li><p>Decide whether the two variables are proportional.</p></li>
+    <li><p>If the variables are proportional, write an equation relating them.</p></li>
+</ol></p></introduction> 
+
+<exercise number="1"><statement>
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~ h~~</m></cell>
+            <cell>3</cell>
+            <cell>6</cell>
+            <cell>8</cell>
+            <cell>12</cell></row>
+        <row bottom="minor">
+            <cell><m> k</m></cell>
+            <cell>9</cell>
+            <cell>18</cell>
+            <cell>24</cell>
+            <cell>36</cell></row>
+        </tabular></statement>
+    <answer><m>k=3h</m></answer></exercise>
+
+<exercise number="2"><statement>
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~ C~~</m></cell>
+            <cell>1</cell>
+            <cell>3</cell>
+            <cell>6</cell>
+            <cell>12</cell></row>
+        <row bottom="minor">
+            <cell><m> R</m></cell>
+            <cell>15</cell>
+            <cell>35</cell>
+            <cell>65</cell>
+            <cell>125</cell></row>
+        </tabular></statement></exercise>
+
+<exercise number="3"><statement>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>Y</m></cell>
+            <cell><m>V</m></cell></row>
+        <row bottom="minor">
+            <cell>2</cell>
+            <cell>4</cell></row>
+        <row bottom="minor">
+            <cell>3</cell>
+            <cell>9</cell></row>
+        <row bottom="minor">
+            <cell>5</cell>
+            <cell>25</cell></row>
+        <row bottom="minor">
+            <cell>8</cell>
+            <cell>64</cell></row>        
+        </tabular></statement>
+    <answer><p>No</p></answer></exercise>
+
+<exercise number="4"><statement>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>n</m></cell>
+            <cell><m>s</m></cell></row>
+        <row bottom="minor">
+            <cell>9</cell>
+            <cell>3</cell></row>
+        <row bottom="minor">
+            <cell>16</cell>
+            <cell>4</cell></row>
+        <row bottom="minor">
+            <cell>49</cell>
+            <cell>7</cell></row>
+        <row bottom="minor">
+            <cell>121</cell>
+            <cell>11</cell></row>        
+        </tabular></statement></exercise>
+
+<exercise number="5"><statement>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>H</m></cell>
+            <cell><m>t</m></cell></row>
+        <row bottom="minor">
+            <cell>2</cell>
+            <cell>0.5</cell></row>
+        <row bottom="minor">
+            <cell>4</cell>
+            <cell>0.25</cell></row>
+        <row bottom="minor">
+            <cell>5</cell>
+            <cell>0.2</cell></row>
+        <row bottom="minor">
+            <cell>10</cell>
+            <cell>0.1</cell></row>        
+        </tabular></statement>
+    <answer><p>No</p></answer></exercise>
+
+<exercise number="6"><statement>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>B</m></cell>
+            <cell><m>d</m></cell></row>
+        <row bottom="minor">
+            <cell>3</cell>
+            <cell>0.6</cell></row>
+        <row bottom="minor">
+            <cell>4</cell>
+            <cell>0.8</cell></row>
+        <row bottom="minor">
+            <cell>6</cell>
+            <cell>1.2</cell></row>
+        <row bottom="minor">
+            <cell>9</cell>
+            <cell>1.8</cell></row>
+        </tabular></statement></exercise>        
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>In Problems 7-14, decide whether the graph or equation describes proportional variables.</p></introduction> 
+
+<exercise number="7"><statement><image source="hp-6-3-7.png" width="70%"></image></statement>
+  <answer><p>No</p></answer></exercise>
+
+<exercise number="8"><statement><image source="hp-6-3-8.png" width="70%"></image></statement></exercise>
+
+<exercise number="9"><statement><image source="hp-6-3-9.png" width="70%"></image></statement>
+  <answer><p>No</p></answer></exercise>
+
+<exercise number="10"><statement><image source="hp-6-3-10.png" width="70%"></image></statement></exercise>
+
+<exercise number="11"><statement><p><m>f = 5.8-d</m></p></statement>
+  <answer><p>No</p></answer></exercise>
+
+<exercise number="12"><statement><p><m>t = 1.4q</m></p></statement></exercise>
+
+<exercise number="13"><statement><p><m>S = \dfrac{13m}{7}</m></p></statement>
+  <answer><p>Yes</p></answer></exercise>
+
+<exercise number="14"><statement><p><m>L = 12v^2</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="15"><statement><p><ol marker="a.">
+  <li><p><m>T</m> is proportional to <m>w</m> if their  <fillin></fillin> is constant.</p></li>
+  <li><p><m>T</m> is proportional to <m>w</m> if <m>T</m> is a   <fillin></fillin> of <m>w</m>.</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+  <li><p>quotient</p></li>
+  <li><p>multiple</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="16"><statement><p>Write two different equations that say that  <m>R</m> is proportional to <m>h</m>.</p></statement></exercise> 
+
+<exercise number="17"><statement><p><ol marker="a.">
+  <li><p>What is a constant of proportionality?</p></li>
+  <li><p>How can you find it?</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+  <li><p>The quotient of two proportional variables</p></li>
+  <li><p>Divide one variable by the other</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="18"><statement><p>If <m>R</m> is proportional to <m>h</m>,  what can you say about the graph of <m>R</m>  versus <m>h</m>?</p></statement></exercise>
+
+<exercise number="19"><statement><p>Trish's real-estate commission is proportional to the amount of the sale.  She made $3200 commission on a sale of $80,000.<ol marker="a.">
+  <li><p>Write an equation relating Trish's commission, <m>C</m>, to her sales, <m>S</m>.</p></li>
+  <li><p>What would her commission be on the sale of a $200,000 property?</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+  <li><p><m>C = 0,04S</m></p></li>
+  <li><p>$8000</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>Property taxes are proportional to the value of the property. Gwen paid $3000 in property tax on her summer home, which is valued at $120,000.<ol marker="a.">
+  <li><p>Write an equation relating the property tax, <m>T</m>,to the value of the property, <m>V</m>.</p></li>
+  <li><p>How much will Gareth pay on his cabin, which was assessed at $50,000?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="21"><statement><p>How do we calculate the amount of increase or decrease in a quantity?</p></statement>
+    <answer><p>Subtract the old value from the new value</p></answer></exercise>
+
+<exercise number="22"><statement><p>What does the Greek letter delta, <m>\Delta</m>, represent?</p></statement></exercise>
+
+<exercise number="23"><statement><p>State the definition of slope, in words, and then in symbols.</p></statement>
+    <answer><p>Change in output value divided by change in input value, <m>\dfrac{\Delta y}{\Delta y}</m></p></answer>
+    </exercise>
+    
+<exercise number="24"><statement><p>What does the slope of a line measure?</p></statement></exercise>
+
+<exercise number="25"><statement><p>Lynette is saving money for the down payment on a new car. The graph shows the amount <m>A</m> she has saved <m>w</m> weeks after the first of the year.</p><sidebyside widths="50% 50%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>How much has Lynette saved after 2 weeks?</p></li>
+  <li><p>When will Lynette have saved $700?</p></li>
+  <li><p>Compute the slope of the graph, <m>\dfrac{\Delta A}{\Delta w}</m>, including units.</p></li>
+  <li><p>What does the slope tell you about the problem?</p></li>
+</ol></p><image source="hp-6-3-25.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>$300</p></li>
+  <li><p>10 weeks</p></li>
+  <li><p>$50 per week</p></li>
+  <li><p>The rate at which Lynette's savings increases</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>Joshua is saving newspapers for the paper drive at his son's school. The graph shows the amount of newspaper <m>P</m> he has saved <m>t</m> weeks after the paper drive began.</p><sidebyside widths="50% 50%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>How many pounds of newspaper has Joshua saved after 4 weeks?</p></li>
+  <li><p>When will Joshua have saved 180 pounds of newspapers?</p></li>
+  <li><p>Compute the slope of the graph, <m>\dfrac{\Delta P}{\Delta t}</m>, including units.</p></li>
+  <li><p>What does the slope tell you about the problem?</p></li>
+</ol></p><image source="hp-6-3-26.png"></image></sidebyside></statement></exercise>
+
+<exercise number="27"><statement><p>Britney is raising a goat to show at the state fair. The graph shows the goat's weight <m>W</m> when it was <m>t</m> months old.</p><sidebyside widths="50% 50%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>How much did the goat's weight increase from the second month to the fourth month? From the fourth month to the eighth month?</p></li>
+  <li><p>Compute the goat's rate of growth, including units.</p></li>
+  <li><p>Illustrate the rate of growth, <m>\dfrac{\Delta W}{\Delta t}</m>, on the graph.</p></li>
+</ol></p><image source="hp-6-3-27.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>5 lbs, 10 lbs</p></li>
+  <li><p>2.5 lbs per month</p></li>
+  <li><p><image source="ans-6-3-27.png" width = "60%"></image></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>Jason is raising a rabbit for the county fair. The graph shows the rabbit's weight <m>W</m> when it was <m>t</m> weeks old.</p><sidebyside widths="50% 50%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>How much did the rabbit's weight increase from the fourth week to the twelfth week? From the second week to the eighth week?</p></li>
+  <li><p>When will Joshua have saved 180 pounds of newspapers?</p></li>
+  <li><p>Compute the rabbit's rate of growth, including units.</p></li>
+  <li><p>Illustrate the rate of growth, <m>\dfrac{\Delta W}{\Delta t}</m>, on the graph.</p></li>
+</ol></p><image source="hp-6-3-28.png"></image></sidebyside></statement></exercise>
+
+<exercise number="29"><statement><p>The graph shows the wholesale cost <m>C</m> of <m>p</m> pounds of dry-roasted peanuts.</p><sidebyside widths="50% 50%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>What does the slope of this graph tell you about dry-roasted peanuts?</p></li>
+  <li><p>Compute the slope, including units.</p></li>
+  <li><p>If the Lone Star Barbecue increases its weekly order of peanuts from 100 to 120 pounds, how much will the cost increase?</p></li>
+</ol></p><image source="hp-6-3-29.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>Cost per pound</p></li>
+  <li><p>$1.50 per lb</p></li>
+  <li><p>$30</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>The graph shows the cost <m>C</m> in thousands of dollars for <m>s</m> thousand square feet of grass sod for a lawn.</p><sidebyside widths="50% 50%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>What does the slope of this graph tell you about sod?</p></li>
+  <li><p>Compute the slope, including units.</p></li>
+  <li><p>The Huron Breeze golf course is considering expanding its proposed putting green from 12,000 square feet to 15,000 square feet. How much will the cost of the sod increase?</p></li>
+</ol></p><image source="hp-6-3-30.png"></image></sidebyside></statement></exercise>
+
+<exercise number="31"><statement><p>The steepness of an incline, like a ramp or a staircase, can be measured by its slope.</p><sidebyside widths="60% 25%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>Find the slope of the staircase shown if its height is 12 feet and the horizontal distance between the foot and the head of the staircase is 8 feet.</p></li>  
+  <li><p>Would a staircase of slope <m>\frac{5}{4}</m> be steeper than the one pictured, or not as steep?</p></li>
+</ol></p><image source="hp-6-3-31.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>\frac{3}{2}</m></p></li>  
+  <li><p>not as steep</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="32"><statement><p><sidebyside widths="60% 32%" valigns="middle middle"><p><ol marker="a.">
+  <li><p>Find the slope of the ramp pictured if its height is 4 feet and the horizontal distance from its base to its top is 10 feet.</p></li>
+  <li><p>Would a ramp of slope <m>\frac{3}{5}</m> be steeper than the one pictured, or not as steep?</p></li>
+</ol></p><image source="hp-6-3-32.png"></image></sidebyside></p></statement></exercise>
+
+<exercise number="33"><statement><p>Suppose you know that the slope of a line is 25.<ol marker="a.">
+  <li><p>If you start at any point on the line and move 1 unit to the right, how many units must you move up to reach another point on the line?</p></li>
+  <li><p>How many units must you move up if you move 3 units to the right?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>25</p></li>
+  <li><p>75</p></li>
+</ol></p></answer></exercise> 
+
+<exercise number="34"><statement><p>Suppose you know that the slope of a line is 8.<ol marker="a.">
+  <li><p>If you start at any point on the line and move 1 unit to the right, how many units must you move up to reach another point on the line?</p></li>
+  <li><p>How many units must you move up if you move 4 units to the right?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="35"><statement><p>Suppose you know that the slope of a line is <m>\frac{3}{4}</m>.<ol marker="a.">
+  <li><p>If you start at any point on the line and move 4 units to the right, how many units must you move up to reach another point on the line?</p></li>
+  <li><p>How many units must you move up if you move 6 units to the right?</p></li> 
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>3</p></li>
+  <li><p>4.5</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p>Suppose you know that the slope of a line is <m>\frac{3}{4}</m>.<ol marker="a.">
+  <li><p>If you start at any point on the line and move 1 unit to the right, how many units must you move up to reach another point on the line?</p></li>
+  <li><p>How many units must you move up if you move 3 units to the right?</p></li>
+</ol></p></statement></exercise> 
+
+<exercisegroup cols="2"><introduction><p>For Problems 37-40, sketch a line whose slope is given. Start your line at any point on the vertical axis.</p></introduction>
+
+<exercise number="37"><statement><p><m>m = \dfrac{\Delta y}{\Delta x} = \dfrac{5}{1}</m></p>
+  <image source="hp-6-3-37.png" width="100%"></image></statement>
+<answer><image source="ans-6-3-37.png" width="70%"></image></answer></exercise>
+
+<exercise number="38"><statement><p><m>m = \dfrac{\Delta y}{\Delta x} = \dfrac{15}{1}</m></p>
+  <image source="hp-6-3-38.png" width="100%"></image></statement></exercise>
+
+<exercise number="39"><statement><p><m>m = \dfrac{\Delta C}{\Delta r} = \dfrac{8}{3}</m></p>
+  <image source="hp-6-3-39.png" width="100%"></image></statement>
+<answer><image source="ans-6-3-39.png" width="100%"></image></answer></exercise>
+
+<exercise number="40"><statement><p><m>m = \dfrac{\Delta d}{\Delta n} = \dfrac{5}{4}</m></p>
+  <image source="hp-6-3-40.png" width="100%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>Problems 41 and 42 involve lines with negative slopes.
+</p></introduction>
+
+<exercise number="41"><statement><p>Roy is traveling home by train. The graph shows his distance <m>d</m> miles from home <m>h</m> hours after the train started.<ol marker="a.">
+  <li><p>Compute the slope of the graph, including units.</p></li>
+  <li><p>What does the slope tell you about Roy's journey?</p></li> 
+</ol></p>
+<image source="hp-6-3-41.png" width="45%"></image></statement>
+<answer><p><ol marker="a.">
+  <li><p>-75 miles per hour</p></li>
+  <li><p>The rate at which the distance to home decreases</p></li> 
+</ol></p></answer></exercise>
+
+<exercise number="42"><statement><p>Antoine is living off his savings while he goes to college this year. The graph shows the amount of Antoine's savings, <m>S</m> dollars, left after <m>t</m> months.
+<ol marker="a.">
+  <li><p>Compute the slope of the graph, including units.</p></li>
+  <li><p>What does the slope tell you about Antoine's savings?</p></li> 
+</ol></p>
+<image source="hp-6-3-42.png" width="45%"></image></statement></exercise>
+</exercisegroup>
+
+</exercises>

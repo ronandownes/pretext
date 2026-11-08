@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-7-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>Multiplying and Dividing Signed Numbers</title>
+
+  <sidebyside widths="45% 45%" valigns="middle middle" margins="0% 5%"><p><ul>
+    <li><p>Multiplication</p></li>
+    <li><p>Division</p></li>
+    <li><p>Powers of Negative Numbers</p></li>
+  </ul></p>
+      <image source="debttoasset.png"></image></sidebyside>
+
+<subsection><title>Multiplication</title>
+
+<p>Multiplication of integers is really just a short cut for repeated addition.  For example,
+    <image source="multa.png" width="65%"></image>
+Similarly,
+    <image source="multb.png" width="90%"></image>
+Because the sum of five <m>-2</m>'s added together is <m>-10</m>, the product <m>5(-2)</m> is equal to <m>-10</m> also.</p>
+
+<note><p>Think of this problem in terms of money:  if you owe five different people two dollars each, then you are actually in debt by $10.</p></note>
+
+<p>It is also true that  
+    <me>(-2)(5) = 10</me>
+because we can multiply two numbers in either order and get the same answer.</p>  
+  
+<p>From these examples, the following rule seems reasonable.</p>
+
+<assemblage><title>Opposite Signs</title>
+  <p>The product of two numbers with opposite signs is negative.</p></assemblage>
+
+<example><statement><p><ol marker="a." cols="2">
+  <li><p><m>(-3)(6) = -18</m></p></li>
+  <li><p><m>8(-4) = -32</m></p></li>
+  <li><p><m>9(-0.3) = -2.7</m></p></li>
+  <li><p><m>\left(-\dfrac{1}{2}\right)(6) = -3</m></p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p>Multiply.</p>
+  <p><ol marker="a." cols="2">
+  <li><p><m>5(-4)</m></p></li>
+  <li><p><m>(-7)(2)</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>-20</m></p></li>
+  <li><p><m>-14</m></p></li>
+</ol></p></answer></exercise>
+
+<p>What about the product of two negative numbers?</p>
+
+  <assemblage><title>Product of Negative Numbers</title>
+    <p>The product of two negative numbers is positive.</p></assemblage>
+
+<p>This rule is the hardest one to understand. Try reading the Note below to see if it convinces you.</p>
+
+<note><p>Earlier we argued that erasing a debt of $500 had the same effect as adding $500 to your net worth. This example helped us understand that subtracting a negative number is the same as adding a positive number.</p>   
+<p>Now imagine that three debts of $500 are erased from your balance sheet. This is equivalent to increasing your net worth by $1500. We express this mathematically as
+    <me>-3(-500) = 1500</me></p></note>
+
+<example><statement><p><ol marker="a." cols="2">
+  <li><p><m>(-4)(-5) = 20</m></p></li>
+  <li><p><m>-1.5(-8) = 12</m></p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p>Multiply.</p>
+  <p><ol marker="a." cols="2">
+  <li><p><m>(-9)(-7)</m></p></li>
+  <li><p><m>(-6)(-0.4)</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>63</m></p></li>
+  <li><p><m>2.4</m></p></li>
+</ol></p></answer></exercise>
+
+<p>We already know that the product of two positive numbers is positive. And here is another reasonable fact:</p>
+
+  <assemblage><title>Products with Zero</title>
+      <p>Zero times any number, positive or negative, is zero.</p></assemblage>
+
+<p>For example,
+    <me> 0(-28) = 0 ~~~~ \text{and} ~~~~ -17(0) = 0</me></p>
+
+<p>Combining all these facts, we get the following set of rules.</p>
+
+<assemblage><title>Products of Signed Numbers</title>
+<p><ol>
+  <li><p>The product of two numbers with the same sign is positive.</p></li>
+  <li><p>The product of two numbers with opposite signs is negative.</p></li>
+  <li><p>The product of any number and zero is zero.</p></li>
+</ol></p></assemblage>
+</subsection>
+
+<subsection><title>Division</title>
+
+<p>Division is the opposite operation for multiplication.  Every division fact can be rewritten as an equivalent multiplication fact.  For example,
+    <me>\dfrac{12}{4} = \alert{3} ~~~~ \text{because} ~~~~ 4 \cdot \alert{3} = 12</me>
+We'll use this idea to investigate division of signed numbers.</p>  
+
+<activity><title>Quotients</title>
+
+<p>Each division problem below is rewritten as a multiplication problem.<ol marker="i.">
+    <li><p><m>\dfrac{-20}{5} = <fillin></fillin>~~</m> because  <m>~~5 \cdot <fillin></fillin> = -20</m></p></li>
+    <li><p><m>\dfrac{-14}{-2} = <fillin></fillin>~~</m> because  <m>~~-2 \cdot <fillin></fillin> = -14</m></p></li>
+</ol></p>
+
+<p><ol>
+  <li><p>In the first multiplication problem, should the blank be replaced by a positive number or a negative number?</p>
+      <p>Why?</p></li>
+
+  <li><p>Fill in the blanks:
+      <me>5 \cdot <fillin></fillin> = -20, ~~~~ \text{so} ~~~~ \dfrac{-20}{5} = <fillin></fillin></me></p></li>
+
+  <li><p>From this example, we see that:</p>
+
+    <assemblage><p>The quotient of a negative number and a positive number is  <fillin></fillin>.</p></assemblage></li>
+
+  <li><p>In the second multiplication problem, should the blank be replaced by a positive number or a negative number?</p>
+      <p>Why?</p></li>
+
+  <li><p>Fill in the blanks:
+      <me>-2 \cdot <fillin></fillin> = -14, ~~~~ \text{so} ~~~~ \dfrac{-14}{-2} = <fillin></fillin></me></p></li>
+
+  <li><p>From this example, we see that:</p>
+
+    <assemblage><p>The quotient of two negative numbers is  <fillin></fillin>.</p></assemblage></li>
+
+  <li><p>Compute the quotients. <ol marker="a." cols="2">
+      <li><p><m>\dfrac{27}{-3}</m></p></li>
+      <li><p><m>\dfrac{-28}{-7}</m></p></li>
+      <li><p><m>-56 \div (-7)</m></p></li>
+      <li><p><m>-12 \div 2</m></p></li>
+    </ol></p></li>
+  </ol></p></activity>
+
+  <p>What about quotients involving zero? We know that zero times any number is zero, so what does that mean for division?</p>
+
+  <activity><title>Quotients Involving Zero</title>
+
+  <p><ol>
+    <li><p>We'll first consider two examples where zero is divided by a number. Rewrite each quotient as a product.
+
+        <me>\dfrac{0}{8} = \blert{?} ~~~~ \text{is equivalent to:} ~~ <fillin></fillin></me>
+        <me>\dfrac{0}{-5} = \blert{?} ~~~~ \text{is equivalent to:} ~~ <fillin></fillin></me></p></li>
+
+    <li><p>What number can we use to replace the question marks and make true statements?  There is only one possible answer.
+        <me>\dfrac{0}{8} = \blert{?} ~~~~ \text{because} ~~~~ 8 \cdot \blert{?} = 0</me>
+    and
+        <me>\dfrac{0}{8} = \blert{?} ~~~~ \text{because} ~~~~ 8 \cdot \blert{?} = 0</me></p></li>
+
+    <li><p>From these examples, we see that:
+
+      <assemblage><p>The quotient of zero divided by any number (except zero) is   <fillin></fillin>.</p></assemblage></p></li>
+
+    <li><p>Next we'll look at two examples in which a number is divided by zero.  Again, begin by rewriting each quotient as a product.
+
+        <me>\dfrac{15}{0} = \blert{?} ~~~~ \text{is equivalent to:} ~~ <fillin></fillin></me>
+        <me>\dfrac{-4}{0} = \blert{?} ~~~~ \text{is equivalent to:} ~~ <fillin></fillin></me></p></li>
+
+    <li><p>What number can we use to replace the question marks and make true statements?</p></li>
+
+    <li><p>Because zero times any number is zero, we cannot find any number that will result in a product of 15 or a product of 4.  There is no solution to either multiplication problem, and consequently there are no solutions to the division problems either.  We say that division by zero is undefined.</p>
+
+      <assemblage><p>The quotient of any number divided by zero is  <fillin></fillin> .</p></assemblage></li>
+
+    <li><p>Compute the quotients. <ol marker="a." cols="2">
+        <li><m>\dfrac{0}{-5}</m></li>
+        <li><m>\dfrac{-18}{0}</m></li>
+        <li><m>\dfrac{-83}{0}</m></li>
+        <li><m>\dfrac{0}{-83}</m></li>
+      </ol></p></li>
+</ol></p></activity>
+
+<p>We summarize the rules for division as follows.</p>
+
+<assemblage><title>Rules for Dividing Signed Numbers</title>
+<p><ol>
+  <li><p>The quotient of two numbers with the same sign is positive.</p></li>
+  <li><p>The quotient of two numbers with opposite signs is negative.</p></li>
+  <li><p>Zero divided by any number (except zero) is zero.</p></li>
+  <li><p>The quotient of any number divided by zero is undefined.</p></li>
+</ol></p></assemblage>
+
+</subsection>
+
+<subsection><title>Powers of Negative Numbers</title>
+
+<p>Recall that an exponent indicates repeated multiplication.  For example,
+    <me>4^3 ~~~~ \text{means} ~~~~   4 \cdot 4 \cdot 4</me>
+where 4 is called the base and 3 is called the exponent.  We read <m>4^3</m> as "4 to the third power" or "4 cubed."  We can also compute powers of negative numbers.</p>
+
+  <assemblage><title>Powers of Negative NUmbers</title>
+    <p>To show that a negative number is raised to a power, we must enclose the negative number in parentheses.</p></assemblage>
+
+<p>For example, to indicate the square of 5, we write
+      <me>(-5)^2 = (-5)(-5) = 25 ~~~~~~  \blert{\text{Exponent applies to}~ (-5).}</me>
+If the negative number is not enclosed in parentheses, then the exponent applies only to the positive number.  The negative sign tells us that the power is negative.  For example,
+      <me>-5^2 = -(5 \cdot 5) = -25 ~~~~~~  \blert{\text{Exponent applies only to}~ 5.}</me></p>
+
+<p>Look carefully at how the placement of parentheses changes the meaning of the expressions in the next Example.</p> 
+
+<example><statement><p>Compute each power.<ol marker="a." cols="2">
+  <li><m>-4^2</m></li>
+  <li><m>(-4)^2</m></li>
+  <li><m>-(4)^2</m></li>
+  <li><m>(-4^2)</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Only 4 is squared:    
+      <me>-4^2 = -4 \cdot 4 = -16</me></p></li>
+  <li><p>The negative number is squared:    
+      <me>(-4)^2 = (-4)(-4) = 16</me></p></li> 
+  <li><p>Only 4 is squared:
+      <me>-(4)^2 = -(4)(4) = -16</me></p></li>
+  <li><p>Only 4 is squared, and the entire expression appears within parentheses:    
+      <me>(-4^2) = (-4 \cdot 4) = -16</me></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write each power as a repeated product, then compute.</p>
+  <p><ol marker="a." cols="3">
+    <li><m>(-2)^4</m></li>
+    <li><m>-2^4</m></li>
+    <li><m>(-2)^3</m></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li><m>16</m></li>
+    <li><m>-16</m></li>
+    <li><m>-8</m></li>
+  </ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>product</p></li>
+  <li><p>quotient</p></li>
+  <li><p>power</p></li>
+  <li><p>expponent</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-7-3.ptx" />
+
+
+</section>

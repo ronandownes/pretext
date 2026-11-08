@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.6]
+\coordinate (O) at (0,0);
+\draw[cyan] (O) grid (6,10);
+\draw[black,very thick, ->, >=stealth'] (O)--(6.6,0) node[right]{$t$};
+\draw[black,very thick, ->, >=stealth'] (O)--(0,10.8) node[left, xshift=2]{$D$};
+\foreach \x  in  {5} {
+ \draw[cyan, very thick] (\x,0) --++(0,10);
+ \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+}
+\foreach \x [evaluate=\x as \xi using int(25*\x] in  {2,4,6,8,10} {
+ \draw[cyan, very thick] (0,\x) --++(6,0);
+ \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+}
+\draw[blue, line width=0.8mm, dashed] (2,4)--++(2,0) node[above,midway, yshift=1, midway, fill=white, inner sep=1, scale=.75] {$\Delta t = 2$};
+\draw[blue, line width=0.8mm, dashed] (4,4)--++(0,4) node[right,midway, xshift=1, midway, fill=white, inner sep=1, scale=.8] {$\Delta D = 100$};
+\draw[red, ultra thick, ->, >=stealth'] (O)--(5,10);
+\filldraw[red!80!black] (2,4) circle (2mm) node[text=black,below right,yshift=-4, xshift=1, fill=white, inner sep=1] {$G(2,100)$};
+\filldraw[red!80!black] (4,8) circle (2mm) node[text=black,above left,yshift=2, xshift=-5, fill=white, inner sep=1] {$H(4,200)$};
+\end{tikzpicture}%
+}
+\end{document}

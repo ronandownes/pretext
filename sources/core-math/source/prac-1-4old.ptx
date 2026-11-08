@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-1-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 1.4</title>
+
+<exercise number="1"><statement><p>At what time do the hands of a clock form a 90<m>\degree</m> angle? At what time do they form a straight angle?</p></statement>
+<answer><p>3 o'clock, 6 o'clock</p></answer></exercise>
+
+<exercise number="2"><statement><p>A rectangle has four right angles. What is the sum of the angles in a rectangle?</p></statement></exercise>
+
+<exercise number="3"><statement><p>Is it possible for a triangle to have more than one obtuse angle? Why or why not?</p></statement>
+<answer><p>No. The sum of the angles would be more than 180°.</p></answer></exercise>
+
+<exercise number="4"><statement><p>What can you say about the sum of the two acute angles in a right triangle?</p></statement></exercise>
+
+<exercise number="5"><statement><p>The word "vertex" has several meanings in mathematics. Describe two ways it is used in this lesson.</p></statement>
+<answer><p>The point where the two sides of an angle meet, and the angle between the equal sides of an isosocelels triangle.
+</p></answer></exercise>
+
+<exercise number="6"><statement><p>Can two acute angles add up to a straight angle? Why or why not?</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 7-12, sketch and label a triangle with the given properties.</p></introduction>
+
+<exercise number="7"><statement><p>An isosceles triangle with vertex angle 30<m>\degree</m></p></statement>
+<answer><p><image source="ans-1-4-7.png" width="40%"></image></p></answer></exercise>
+
+<exercise number="8"><statement><p>A right triangle with one angle 20<m>\degree</m></p></statement></exercise>
+
+<exercise number="9"><statement><p>A scalene triangle with one obtuse angle</p></statement>
+<answer><p><image source="ans-1-4-9.png" width="40%"></image></p></answer></exercise>
+
+<exercise number="10"><statement><p>An isosceles right triangle</p></statement></exercise>
+
+<exercise number="11"><statement><p>An isosceles triangle with one obtuse angle</p></statement>
+<answer><p><image source="ans-1-4-11.png" width="40%"></image></p></answer></exercise>
+
+<exercise number="12"><statement><p>An equilateral triangle</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13-14, use a protractor to measure the angles in the triangle. Find the sum of the angles to check your work.</p></introduction>
+
+<exercise number="13"><statement><p><image source="bigtri.png" width="50%"></image></p></statement>
+<answer><p><m>80 \degree, ~30 \degree, ~70 \degree</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><image source="bigtri2.png" width="50%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15-16, find the angle made by the hands of the clock, without using a protractor.</p></introduction>
+
+<exercise number="15"><statement><p><image source="clockangle.png" width="50%"></image></p></statement>
+<answer><p><m>150 \degree</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><image source="clockangle2.png" width="50%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17-22, find the measure of the unknown angles. Show your work.</p></introduction>
+
+<exercise number="17"><statement><p><image source="hp-1-4-17.png" width="45%"></image></p>
+    <p><m>~~~~~~~~~\angle A = 38\degree</m></p></statement>
+<answer><p><m>52 \degree</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><image source="hp-1-4-18.png" width="50%"></image></p>
+    <p><m>~~~~~~~~~\angle A = 74\degree</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><image source="hp-1-4-19.png" width="60%"></image></p>
+    <p><m>~~~~~~~~~\angle B = 57\degree</m></p></statement>
+<answer><p><m>123 \degree</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><image source="hp-1-4-20.png" width="25%"></image></p>
+    <p><m>~~~~~~~~~\angle A = 158\degree</m></p></statement></exercise>
+
+<exercise number="21"><statement><p><image source="hp-1-4-21.png" width="35%"></image></p>
+    <p><m>~~~~~~~~~\angle A = 39\degree</m></p></statement>
+<answer><p><m>141 \degree, ~39 \degree</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><image source="hp-1-4-22.png" width="50%"></image></p><p><m>\angle B = 86\degree</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 23-24, the angles between consecutive radii are equal. Give the measure of each angle.</p></introduction>
+
+<exercise number="23"><statement><p><image source="sixsectors.png" width="50%"></image></p>
+    <p><ol marker="a.">
+      <li><m>\angle AOB =</m></li>
+      <li><m>\angle AOC =</m></li>
+      <li><m>\angle AOD =</m></li>
+      <li><m>\angle AOE =</m></li>
+      <li><m>\angle AOF =</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+      <li><m>30 \degree</m></li>
+      <li><m>60 \degree</m></li>
+      <li><m>90 \degree</m></li>
+      <li><m>120 \degree</m></li>
+      <li><m>150 \degree</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement><p><image source="foursectors.png" width="40%"></image></p>
+    <p><ol marker="a.">
+      <li><m>\angle AOB =</m></li>
+      <li><m>\angle AOC =</m></li>
+      <li><m>\angle AOD =</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 25-36, find the measure of the unknown angle. Show your work.</p></introduction>
+
+<exercise number="25"><statement><p><image source="hp-1-4-25.png" width="50%"></image></p></statement>
+<answer><p><m>109 \degree</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><image source="hp-1-4-26.png" width="70%"></image></p></statement></exercise>
+
+<exercise number="27"><statement><p><image source="hp-1-4-27.png" width="70%"></image></p></statement>
+<answer><p><m>29 \degree</m></p></answer></exercise>
+
+<exercise number="28"><statement><p><image source="hp-1-4-28.png" width="70%"></image></p></statement></exercise>
+
+<exercise number="29"><statement><p><image source="hp-1-4-29.png" width="70%"></image></p></statement>
+<answer><p><m>77 \degree</m></p></answer></exercise>
+
+<exercise number="30"><statement><p><image source="hp-1-4-30.png" width="30%"></image></p></statement></exercise>
+
+<exercise number="31"><statement><p><image source="hp-1-4-31.png" width="55%"></image></p></statement>
+<answer><p><m>120 \degree</m></p></answer></exercise>
+
+<exercise number="32"><statement><p><image source="hp-1-4-32.png" width="80%"></image></p></statement></exercise>
+
+<exercise number="33"><statement><p><image source="hp-1-4-33.png" width="70%"></image></p></statement>
+<answer><p><m>88 \degree</m></p></answer></exercise>
+
+<exercise number="34"><statement><p><image source="hp-1-4-34.png" width="70%"></image></p></statement></exercise>
+
+<exercise number="35"><statement><p><image source="hp-1-4-35.png" width="50%"></image></p></statement>
+<answer><p><m>60 \degree, ~30 \degree</m></p></answer></exercise>
+
+<exercise number="36"><statement><p><image source="hp-1-4-36.png" width="50%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 37-40, explain why the measurements shown in the figure <m>\alert{\text{cannot be accurate}}</m>.</p></introduction>
+
+<exercise number="37"><statement><p><image source="hp-1-4-37.png" width="60%"></image></p></statement>
+<answer><p>The sum of the angles is not 180°.</p></answer></exercise>
+
+<exercise number="38"><statement><p><image source="hp-1-4-38.png" width="70%"></image></p></statement></exercise>
+
+<exercise number="39"><statement><p><image source="hp-1-4-39.png" width="70%"></image></p></statement>
+<answer><p>The triangle should be isosceles.</p></answer></exercise>
+
+<exercise number="40"><statement><p><image source="hp-1-4-40.png" width="75%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="41"><statement><p>What is the measure of each base angle in a right isosceles triangle?</p></statement>
+<answer><p><m>45 \degree</m></p></answer></exercise>
+
+<exercise number="42"><statement><p>In a particular right triangle, the largest angle is three times the smallest angle.  What are the measures of the three angles?</p></statement></exercise>
+
+<exercise number="43"><statement><p>Why is the longest side in a right triangle always opposite the right angle?</p></statement>
+<answer><p>It is the largest angle.</p></answer></exercise>
+
+<exercise number="44"><statement><p>Is it possible for the vertex angle in an isosceles triangle to be obtuse?  Explain your reasoning.</p></statement></exercise>
+
+<exercise number="45"><statement><p>Find the measure of each angle in the figure below. (There are eight identical isosceles triangles around the center of the octagon.)</p><p><image source="octagon.png" width="25%"></image></p></statement>
+<answer><p>Central angles: <m>45 \degree</m>, all other angles: <m>67.5 \degree</m></p></answer></exercise>
+
+<exercise number="46"><statement><p>Find the measure of each unknown angle.</p><p><image source="transversal.png" width="50%"></image></p></statement></exercise>
+
+</exercises>

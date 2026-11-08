@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-6-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>More About Similarity</title>
+
+  <sidebyside widths="50% 30%" valigns="middle middle" margins="5% 10%"><p><ul>
+    <li><p>Areas of Similar Figures</p></li>
+    <li><p>Volumes of Proportional Solids</p></li>
+  </ul></p>
+      <image source="cannisters.png"></image></sidebyside>
+
+<introduction>
+
+<assemblage><title>A Quick Refresher</title>
+<p>Two figures are similar if, and only if <ol>
+  <li><p>Their corresponding angles are equal, and</p></li>
+  <li><p>Their corresponding sides are proportional.</p></li>
+</ol></p></assemblage>
+
+<p>The ratio of corresponding sides in similar figures is constant. But what about the ratio of the areas of the two figures?  Will the ratio of the areas be the same as the ratio of the sides?</p>
+</introduction>
+
+<subsection><title>Areas of Similar Figures</title>
+
+<p>The Pizza Company sells its 8-inch cheese pizza for $5.00 and its 16-inch cheese pizza for $15.00. Which is the better deal:  three 8-inch pizzas for $15.00, or one 16-inch pizza for $15.00?</p>
+    <image source="pizzas.png" width="70%"></image>
+<p>At first it might seem that the smaller pizzas are a better deal, since doubling the diameter of the pizza tripled its price. But with pizza, the better deal is the one that gives you the most pizza for your money, and because pizzas are flat, that means the most area.</p>
+
+<p><m>\blert{\text{Question:}}</m> Does doubling the diameter of a pizza double its area?</p>
+
+<p>What about square pizzas? Does a 20-inch square pizza have twice the area of a 10-inch square pizza? In general, if we increase the dimensions of a figure by a particular scale factor, will its area also increase by the same factor?</p>  
+
+<activity><title>Scaling Areas</title>
+
+<p><sidebyside widths="70% 10%" margins="0% 15%" valigns="middle middle"> <p>What happens to the area of a square when we scale up its dimensions? We'll start with a square that measures 3 inches on each side: </p> <image source="three-in.png" width="10%"></image></sidebyside></p>
+
+<p><ol>
+  <li><p>What is the area of the original square?</p>  
+        <p>Area = <fillin></fillin></p></li>
+  <li><p>Let's double the side of the square.  Compute the area of the new square.</p>
+
+    <sidebyside widths="30% 20% 30%" margins="0% 5%" valigns="middle middle middle"><p>Area = <fillin></fillin></p>  <image source="six-in.png"></image><p> side = 6 inches</p></sidebyside></li>
+
+  <li><p>Now we'll compute some scale factors. </p>
+
+    <p>Scale factor for dimensions: <ul>
+
+      <li><p>Ratio of new side to original side: <m>\dfrac{\text{new side}}{\text{original side}} = <fillin></fillin></m></p></li>         
+      <li><p>The original dimensions are scaled by a factor of <fillin></fillin></p></li>
+    </ul></p>
+
+    <p>Scale factor for areas: <ul>
+
+      <li><p>Ratio of new area to original area: <m>\dfrac{\text{new area}}{\text{original area}} = <fillin></fillin></m></p></li>         
+      <li><p>The original area is scaled by a factor of <fillin></fillin></p></li>
+    </ul></p>
+
+    <p><sidebyside widths="40% 10% 20%" margins="0% 15%" valigns="middle middle middle"><p>How many of the original squares fit inside the new square?</p><image source="three-in.png"></image><image source="six-in.png"></image></sidebyside></p></li>
+
+  <li><p>What happens if we triple the original side? Compute the area of the new square.</p>
+
+    <sidebyside widths="25% 30% 30%" margins="0% 5%" valigns="middle middle middle"><p>Area = <fillin></fillin></p><image source="nine-in.png"></image><p> side = 9 inches</p></sidebyside></li>
+
+  <li><p>Compute scale factors again. </p>
+
+    <p>Scale factor for dimensions: <ul>
+
+      <li><p>Ratio of new side to original side: <m>\dfrac{\text{new side}}{\text{original side}} = <fillin></fillin></m></p></li>         
+      <li><p>The original dimensions are scaled by a factor of <fillin></fillin></p></li>
+    </ul></p>
+
+    <p>Scale factor for areas: <ul>
+
+      <li><p>Ratio of new area to original area: <m>\dfrac{\text{new area}}{\text{original area}} = <fillin></fillin></m></p></li>         
+      <li><p>The original area is scaled by a factor of <fillin></fillin></p></li>
+    </ul></p>
+
+    <p><sidebyside widths="30% 10% 30%" margins="0% 15%" valigns="middle middle middle"><p>How many of the original squares fit inside the new square?</p><image source="three-in.png"></image><image source="nine-in.png"></image></sidebyside></p></li>
+
+  <li><p>Can you see a pattern in the results of your calculations?</p>
+
+      <p>Suppose the side of the new square is <m>\alert{5}</m> times the side of the original square.</p>
+      <p>Then the area of the new square will be <fillin></fillin> times the area of the original square.</p>
+  
+      <p><m>\blert{\text{Check}} ~~</m> your answer by performing the calculations:<ul>
+          <li><p>Side of new square: <fillin></fillin></p></li>                       
+          <li><p>Area of new square:  <fillin></fillin></p></li>                             
+          <li><p>Ratio of new area to original area: <fillin></fillin></p></li>                                     
+      </ul></p></li>
+
+  <li><p>You should now have a conjecture about the areas of squares. (A <term>conjecture</term> is an educated guess.)  Fill in the blank below.</p>
+
+  <p>If we scale (multiply) the sides of a square by a number <m>k</m>, then the area of the new square is <fillin></fillin>  times the area of the original square.</p></li>
+</ol></p></activity>
+
+<p>The discovery you made in the Activity about squares is true for any similar figures.</p>
+
+<assemblage><title>Area Principle for Similar Figures</title>
+ <p>If we multiply each dimension of a figure by <m>k</m>, then <ol>
+  <li><p>The new figure is similar to the original figure, and </p></li>
+  <li><p>The area of the new figure is <m>k^2</m> times the area of the original figure. </p></li>
+</ol></p></assemblage>
+
+<note><p>Recall that the exponent 2 in <m>k^2</m> tells us to multiply together 2 copies of <m>k</m>, so  <m>k^2 = k \times k</m>.  For example,
+    <me>5^2 = 5 \times 5 = 25 \hphantom{000000} \blert{\text{two factors of 5}}</me></p></note>
+
+<p>Now back to the pizza question: A 16-inch pizza has 4 times the area of an 8-inch pizza, so $15 for a 16-inch pizza is a better deal than $15 for three 8-inch pizzas.</p>
+
+<p>We can use the area principle to solve other problems about area.</p>
+
+<example><statement><p> An architect is drawing up floor plans for a new housing development. The dining room in her plan has an area of only 120 square feet. If she can increase the dimensions of the room by a factor of 1.25, what will the new area be?</p></statement>
+
+<solution><p>The architect would like to scale the dimensions of the dining room by <m>k = 1.25</m>.  According to the Area Principle, the area of the new dining room will be <m>(1.25)^2</m>, or 1.5625, times the old area. The new area will then be
+      <md><mrow>1.5625 \times 120 \amp = 187.5~~ \text{square feet}</mrow>
+          <mrow>\blert{k^2 \times \text{old area}} \amp = \blert{\text{new area}}</mrow></md></p></solution></example>
+
+<exercise><statement><p>Alys wants to replace her old hot tub with a new circular spa. If the radius of the new spa is twice the radius of the hot tub, how much greater will the area of the spa be?</p>
+      <image source="hottub.png" width = "70%"></image></statement>
+
+<answer><p>The area of the spa will be 4 times greater than the area of the hot tub.</p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Volumes of Proportional Solids</title>
+
+<p>Two three-dimensional objects are called <term>proportional</term> or <term>similar</term> if they have the same shape but different sizes. The properties of similar two-dimensional figures also hold for similar three-dimensional objects.</p>
+
+<assemblage><title>Properties of Similar Solids</title>
+<p><ul> 
+    <li><p>The ratios of all corresponding dimensions in similar objects are equal.</p></li>  
+    <li><p>The corresponding angles in similar objects are equal.</p></li>
+    <li><p>If we scale all the dimensions of a particular object by the same number, the new object will be similar to the old one.</p></li>
+</ul></p></assemblage>
+
+<p><m>\blert{\text{Question:}}</m> How are the volumes of similar objects related?</p>
+
+<activity><title>Scaling Volumes</title>
+
+<p>What happens to the volume of an object when we scale up its dimensions? We'll start with a box. </p>
+
+<p><ol>
+  <li><p>Compute the volume of the box with these dimensions.</p>
+    <p><sidebyside widths="35% 16%" margins = "5% 30%" valigns = "middle middle"><stack>
+      <p>length = 3 inches</p> 
+      <p>width = 2 inches</p>
+      <p>height = 5 inches</p></stack>
+   <image source="box.png"></image></sidebyside></p>
+
+    <p>Volume = <fillin></fillin></p></li> 
+
+  <li><sidebyside widths="45% 30%" margins = "5% 15%" valigns = "middle middle"><stack><p>Let's double each dimension of the box and compute the volume of the new box.</p>
+    <p>length = <fillin></fillin> inches</p> 
+      <p>width = <fillin></fillin> inches</p>
+      <p>height = <fillin></fillin> inches</p></stack>
+    <image source="biggerbox.png"></image></sidebyside>
+
+      <p>Volume = <fillin></fillin></p></li>
+
+  <li><p>Now we'll compute some scale factors.</p>  
+  
+    <p>Scale factor for dimensions: <ul>
+        <li><p><m>\dfrac{\text{new length}}{\text{original length}} = \dfrac{\text{new width}}{\text{original width}} = \dfrac{\text{new height}}{\text{original height}} = <fillin></fillin></m></p></li>
+
+        <li><p>The original dimensions are scaled by a factor of <m>k = </m><fillin></fillin>.</p></li></ul></p>
+
+    <p>Scale factor for volume: <ul>
+        <li><p><m>\dfrac{\text{new volume}}{\text{original volume}} = <fillin></fillin></m></p></li>
+
+        <li><p>The original volume is scaled by a factor of <fillin></fillin>.</p></li></ul></p>
+
+    <p><sidebyside widths="40% 15% 30%" margins="0% 5%" valigns="middle middle middle"><p>How many of the original boxes fit inside the new box?</p><image source="box.png"></image><image source="biggerbox.png"></image></sidebyside></p></li>
+
+    <li><p><sidebyside widths="40% 45%" margins = "5% 5%" valigns = "middle middle"><stack>
+      <p>What happens if we triple the dimensions of the original box?</p>   
+
+      <p>Compute the volume of the new box.</p>
+      <p>length = 3 inches</p> 
+      <p>width = 2 inches</p>
+      <p>height = 5 inches</p>
+    <p>Volume = <fillin></fillin></p></stack>
+   <image source="biggestbox.png"></image></sidebyside></p></li>
+
+   <li><p>Compute the scale factors again.</p>
+
+      <p>Scale factor for dimensions: <ul>
+        <li><p><m>\dfrac{\text{new length}}{\text{original length}} = \dfrac{\text{new width}}{\text{original width}} = \dfrac{\text{new height}}{\text{original height}} = <fillin></fillin></m></p></li>
+
+        <li><p>The original dimensions are scaled by a factor of <m>k = </m><fillin></fillin>.</p></li></ul></p>
+
+    <p>Scale factor for volume: <ul>
+        <li><p><m>\dfrac{\text{new volume}}{\text{original volume}} = <fillin></fillin></m></p></li>
+
+        <li><p>The original volume is scaled by a factor of <fillin></fillin>.</p></li></ul></p>
+
+    <p><sidebyside widths="30% 15% 45%" valigns="middle middle middle"><p>How many of the original boxes fit inside the new box?</p><image source="box.png"></image><image source="biggestbox.png"></image></sidebyside></p></li>
+
+    <li><p>Can you see a pattern in the results of your calculations?</p>
+
+      <p>Suppose the side of the new box are <m>\alert{5}</m> times the dimensions of the original box.</p>
+      <p>Then the volume of the new box will be <fillin></fillin> times the volume of the original box.</p>
+  
+      <p><m>\blert{\text{Check}} ~~</m> your answer by performing the calculations:<ul>
+          <li><p>Length of new box: <fillin></fillin></p></li> 
+          <li><p>Width of new box: <fillin></fillin></p></li>
+          <li><p>Height of new box: <fillin></fillin></p></li>                      
+          <li><p>Volume of new box:  <fillin></fillin></p></li>                             
+          <li><p>Ratio of new volume to original volume: <fillin></fillin></p></li>                                     
+      </ul></p></li>
+
+  <li><p>You should now have a conjecture about the volumes of boxes. Fill in the blank below.</p>
+
+  <p>If we scale (multiply) the dimensions of a box by a number <m>k</m>, then the volume of the new box is <fillin></fillin>  times the volume of the original box.</p></li>
+</ol></p></activity>
+
+<p>The discovery you made in this Activity about boxes is true for any similar objects.</p>
+
+<assemblage><title>Volume Principle for Similar Objects</title>
+ <p>If we multiply each dimension of a three-dimensional object by <m>k</m>, then <ol>
+  <li><p>The new object is similar to the original object, and </p></li>
+  <li><p>The volume of the new object is <m>k^3</m> times the volume of the original object. </p></li>
+</ol></p></assemblage>
+
+<note><p>Recall that the exponent 3 in <m>k^3</m> tells us to multiply together 3 copies of <m>k</m>, so  <m>k^3 = k \times k \times k</m>.  For example,
+    <me>5^3 = 5 \times 5 \times 5 = 125 \hphantom{000000} \blert{\text{three factors of 5}}</me></p></note>
+
+<p>We can use the volume principle to solve problems about volume.</p>
+
+<example><statement><p>In Gulliver's Travels, the Lilliputians are tiny people about six inches tall. How would the volume of a Lilliputian compare to the volume of a human who is six feet tall?</p></statement>
+
+<solution><p>The scale factor of the dimensions is the ratio of the Lilliputian's height to the human's height:
+    <me>\dfrac{6~\text{inches}}{6~\text{feet}} = \dfrac{6~\text{inches}}{72~\text{inches}} = \dfrac{1}{12}</me>
+
+Thus, the volume is scaled by  
+    <me>\left(\dfrac{1}{12}\right)^3 = \dfrac{1}{12} \times \dfrac{1}{12} \times \dfrac{1}{12} = \dfrac{1}{1728}</me>
+
+The volume of a Lilliputian would be <m>\frac{1}{1728}</m> of the volume of a 6-foot tall human.</p>
+<p>(The weight of a Lilliputian would also be <m>\frac{1}{1728}</m> of the weight of a human. A 6-foot tall man weighs about 180 pounds, so a Lilliputian would weigh <m>\frac{180}{1728}</m> pounds, or <m>1\frac{2}{3}</m> ounces.)</p></solution></example>
+
+<exercise><statement><sidebyside widths="55% 35%" valigns="middle middle"><p>The radius of Jupiter is about 10.7 times the radius of the Earth. How does the volume of Jupiter compare to the volume of the Earth?</p><image source="jupiter.png"></image></sidebyside></statement>
+
+<answer><p>The volume of Jupiter is about 1225 times the volume of the Earth.</p></answer></exercise>
+
+</subsection>
+
+<xi:include href="./prac-6-5.ptx" />
+
+</section>

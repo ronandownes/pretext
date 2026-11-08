@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-3-1-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 3.1</title>
+    
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Simplify.<ol marker="a." cols="3">
+    <li><m>4-2\sqrt{64}</m></li>
+    <li><m>\dfrac{4-\sqrt{64}}{2}</m></li>
+    <li><m>\sqrt{9-4(-18)}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+        <li><p><m>-12</m></p></li>
+        <li><p><m>-2</m></p></li>
+        <li><p><m>9</m></p></li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p>Give a decimal approximation rounded to thousandths.<ol marker="a." cols="3">
+    <li><m>5\sqrt{3}</m></li>
+    <li><m>\dfrac{-2}{3}\sqrt{21}</m></li>
+    <li><m>-3+2\sqrt{6}</m></li></ol></p></statement></exercise>
+
+<exercise number="3"><statement><p>Use the definition of square toot to simplify the expression.<ol marker="a." cols="3">
+    <li><m>\sqrt{29}(\sqrt{29})</m></li>
+    <li><m>(\sqrt{7})^2</m></li>
+    <li><m>\dfrac{6}{\sqrt{6}}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+        <li><p><m>29</m></p></li>
+        <li><p><m>7</m></p></li>
+        <li><p><m>\sqrt{6}</m></p></li></ol></p></answer></exercise>
+
+<exercise number="4"><statement><p>Solve. Remember that every positive number has two square roots.<ol marker="a." cols="3">
+        <li><p><m>3x^2=147</m></p></li>
+        <li><p><m>4x^2=25 </m></p></li>
+        <li><p><m>3x^2=15</m></p></li></ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+        <li><p><m>\pm 7</m></p></li>
+        <li><p><m>\pm \dfrac{5}{2}</m></p></li>
+        <li><p><m>\pm \sqrt{5}</m></p></li></ol></p></answer></exercise>
+
+<exercise number="5"><statement><p><ol marker="a.">
+        <li><p>Complete the table and graph <m>~y=2x^2-5</m>.</p> 
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>-3~</m></cell>
+                        <cell><m>-2~</m></cell>
+                        <cell><m>-1~</m></cell>
+                        <cell><m>~0~</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~2~</m></cell>
+                        <cell><m>~3~</m></cell></row>
+                    <row> 
+                        <cell><m>~y~</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular>
+            <image width="25%" xml:id="fig-hw-3-1-3"><description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.5]
+                    \draw[cyan] (-4,-8) grid (4,12);
+                    \draw[black,thick,->,>=stealth'] (-4,0)--++(8.6,0) node[right]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,-8)--(0,12.6) node[above]{$y$};
+                    \foreach \x  in {-4,-2,2,4} {
+                      \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                    }
+                    \foreach \x in {-8,-6,-4,-2,2,4,6,8,10,12} {
+                      \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+                    }
+                    \end{tikzpicture}]]>
+                </latex-image></image></li>
+        <li>Use the graph to solve the equation <m>~2x^2-5=7</m>. Show your work on the graph. How many solutions did you find?</li>
+        <li><p>Solve the equation <m>~2x^2-5=7~</m> algebraically, by "undoing" each operation.</p></li></ol></p>
+    </statement>
+<answer><p><ol marker="a.">
+            <li><image width="32%" xml:id="fig-hw-3-1-3ans"><description>parabola</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.5]
+                    \draw[cyan] (-4,-8) grid (4,12);
+                    \draw[black,thick,->,>=stealth'] (-4,0)--++(8.6,0) node[right]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,-8)--(0,12.6) node[above]{$y$};
+                    \foreach \x  in {-4,-2,2,4} {
+                      \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                    }
+                    \foreach \x in {-8,-6,-4,-2,2,4,6,8,10,12} {
+                      \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+                    }
+                    \draw[samples=65,domain={-sqrt(17/2):sqrt(17/2)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot (\x,{2*(\x)^2-5});
+                    \draw[green!60!black,ultra thick] (-4,7)--(4,7);
+                    \draw[green!60!black,ultra thick, dashed, ->, >=stealth'] ({-sqrt(6)},7) -- ++(0,-7);
+                    \draw[green!60!black,ultra thick, dashed, ->, >=stealth'] ({sqrt(6)},7) -- ++(0,-7);
+                    \filldraw[red] ({-sqrt(6)},7) circle (.2);
+                    \filldraw[red] ({sqrt(6)},7) circle (.2);
+                    \end{tikzpicture}]]>
+                </latex-image></image></li>
+            <li>Two solutions. <m>\approx \pm 2.5</m></li>
+            <li><m>\pm \sqrt{6}</m></li></ol></p></answer></exercise>
+
+<exercise number="6"><statement><p>Use the Pythagorean theorem to find the unknown side. <m>~\alert{\text{[TK]}}</m>  To review the Pythagorean theorem, see <xref ref="tkPythTh" text="custom"> Section 3.1.4 </xref> of the Toolkit. </p>
+    <p><ol marker="a." cols="2">
+    <li><image width="75%" xml:id="fig-x-6-10-rt-triangle">
+        <description>right triangle, legs x and 6, hypotenuse 10</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[blue] (8,0) rectangle +(-.8,.8);
+        \draw[black,thick] (0,0)--(8,0)--(8,6)--cycle;
+        \node at (4,-.6) {$x$};
+        \node at (8.8,3) {$6$};
+        \node at (3.8,3.8) {$10$};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><image width="100%" xml:id="fig-12-35-z-rt-triangle">
+        <description>right triangle, legs 12 and 35, hypotenuse z</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.15]
+        \draw[blue] (0,0) rectangle +(2,-2);
+        \draw[black,thick] (0,0)--(35,0)--(0,-12)--cycle;
+        \node at (17.5,2) {$35$};
+        \node at (18,-8) {$z$};
+        \node at (-2.5,-6) {$12$};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+</ol></p></statement></exercise>
+
+</subexercises>
+
+<subexercises><title>Skills Practice</title>            
+
+<exercisegroup cols="2"><introduction><p>For problems 7<ndash/>14, Solve by extracting roots. Give exact values for your answers.
+</p></introduction>
+
+<exercise number="7"><statement><p><m>3x^2-9=0</m></p></statement>
+    <answer><p><m>\pm \sqrt{3}</m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>\dfrac{3x^2}{5}=6</m></p></statement></exercise>
+
+ <exercise number="9"><statement><p><m>(2x-1)^2=16</m></p></statement>
+    <answer><p><m>\dfrac{5}{2},~\dfrac{-3}{2} </m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>4(x-1)^2=12</m></p></statement></exercise>       
+
+<exercise number="11"><statement><p><m>\left(x-\dfrac{2}{3}\right)^2=\dfrac{5}{9}</m></p></statement>
+    <answer><p><m>\dfrac{2}{3} \pm \dfrac{\sqrt{5}}{3}</m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>81\left(x+\dfrac{1}{3}\right)^2=1</m></p></statement></exercise>
+
+ <exercise number="13"><statement><p><m>3(8x-7)^2=24</m></p></statement>
+    <answer><p><m>\dfrac{7}{8},\pm \dfrac{\sqrt{8}}{8} </m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>2(5x-12)^2=48</m></p></statement></exercise>       
+</exercisegroup>
+
+
+<exercisegroup cols="2"><introduction><p>For problems 15 and 16, solve by extracting roots. Round your answers to two decimal places.</p></introduction>
+        
+<exercise number="15"><statement><p><m>5x^2-97=3.2x^2-38</m></p></statement>
+    <answer><p><m>\pm 5.73</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>17-\dfrac{x^2}{4}=43-x^2</m></p></statement></exercise>        
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For problems 17 and 18, <ol marker="a.">
+    <li>Use technology to graph the quadratic equation in the suggested window.</li>
+    <li>Use your graph to find two solutions for the equation in part (b).</li>  
+    <li>Check your solutions algebraically, using mental arithmetic.</li></ol></p></introduction>
+
+<exercise number="17"><statement><p><ol marker="a.">
+    <li><m>y=3(x-4)^2</m>
+        <md><mrow>\text{Xmin} \amp = -5 \amp \amp \text{Ymin} = -20</mrow>
+            <mrow>\text{Xmax} \amp = 15 \amp \amp \text{Ymax}  = 130</mrow></md></li>
+    <li><m>3(x-4)^2 = 108</m></li></ol></p></statement>
+    <answer><p> b. 10, -2</p></answer></exercise>
+
+<exercise number="18"><statement><p><ol marker="a.">
+    <li><m>y=\dfrac{1}{2}(x+3)^2</m>
+        <md><mrow>\text{Xmin} \amp = -15 \amp \amp \text{Ymin}  = -5</mrow>
+            <mrow>\text{Xmax} \amp = 5 \amp \amp \text{Ymax}  = 15</mrow></md></li>
+    <li><m>\dfrac{1}{2}(x+3)^2 = 8</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For problems 19<ndash/>22, solve the formula for the specified variable.
+</p></introduction>
+        
+<exercise number="19"><statement><p><m>F=\dfrac{mv^2}{r},~</m> for <m>v</m></p></statement>
+    <answer><p><m>\pm \dfrac{Fr}{m}</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>S=4 \pi r^2,~</m> for <m>r</m></p></statement></exercise>  
+
+<exercise number="21"><statement><p><m>L=\dfrac{8}{\pi^2}T^2,~</m> for <m>T</m></p></statement>
+    <answer><p><m>\pm pi \sqrt{\dfrac{L}{8}}</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>s= \dfrac{1}{2}gt^2,~</m> for <m>t</m></p></statement></exercise>      
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercisegroup><introduction><p>For problems 23 and 24, <ol marker="a.">
+    <li>Make a sketch of the situation described, and label a right triangle.</li>
+    <li>Use the Pythagorean theorem to solve each problem.</li></ol></p></introduction>
+
+<exercise number="23"><statement><p>The size of a TV screen is the length of its diagonal.  If the width of a 35-inch 
+    TV screen is 28 inches, what is its height?</p></statement>
+    <answer><p>21 in</p></answer></exercise>
+
+<exercise number="24"><statement><p>A 30-meter pine tree casts a shadow of 30 meters, how far is the tip of the shadow from the top of the tree? </p></statement></exercise>
+</exercisegroup>
+
+<exercise number="25"><statement><p>You plan to deposit your savings of $1600 in an account that compounds interest annually.<ol marker="a.">
+    <li>Write a formula for the amount, <m>A</m>, in your savings account after two years in terms of the interest rate, <m>r</m>.</li>
+    <li><p>Complete the table showing your account balance after two years for various interest rates.</p>
+
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~r~</m></cell>
+                        <cell><m>0.02</m></cell>
+                        <cell><m>0.04</m></cell>
+                        <cell><m>0.06</m></cell>
+                        <cell><m>0.08</m></cell></row>
+                    <row> 
+                        <cell><m>~A~</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></li>
+    <li>To the nearest tenth of a percent, what interest rate will you require if you want your $1600 to grow to $2000 in two years?</li>
+    <li>Use your calculator to graph the formula for the account balance.  Locate the point on the graph that corresponds to the amount in part (c).</li></ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>A=1600(1+r)^2</m></li>
+        <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~r~</m></cell>
+                        <cell><m>0.02</m></cell>
+                        <cell><m>0.04</m></cell>
+                        <cell><m>0.06</m></cell>
+                        <cell><m>0.08</m></cell></row>
+                    <row> 
+                        <cell><m>~A~</m></cell>
+                        <cell><m>1664.64</m></cell>
+                        <cell><m>1730.56</m></cell>
+                        <cell><m>1797.76</m></cell>
+                        <cell><m>1866.24</m></cell></row>
+                    </tabular></li>
+        <li>11.8%</li></ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>Two years ago Carol's living expenses were $1200 per month. This year the same items cost Carol $1400 per month. What was the annual inflation rate for the past two years?</p></statement></exercise>
+
+<exercise number="27"><statement><sidebyside widths="60% 30%" valigns="middle middle">
+<p>What size rectangle will fit inside a circle of radius 30 feet if the length of the rectangle must be three times its width?</p>        
+    <image xml:id="fig-inscribed-rectangle"><description>rectangle inscribed in circle radius 30</description><latex-image>
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.08  ]
+            \draw[red] (0,0) circle (30);
+            \draw[black,thick] (-9.5,-28.5) rectangle +(19,57);
+            \node at (0,-25.5) {$x$};
+            \node at (13,0) {$3x$};
+            \filldraw[blue] (0,0) circle (.8);
+            \draw[blue,thick] (0,0) -- (9.2,28.5) node[above left, midway] {30 ft};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></statement>
+<answer><p>19 ft by 57 ft</p></answer></exercise>
+
+<exercise number="28"><statement><p>A storage box for sweaters is constructed from a square sheet of cardboard measuring <m>x</m> inches on a side. The volume of the box, in cubic inches, is
+    <me>V=10(x-20)^2</me>
+If the box should have a volume of 1960 cubic inches, what size cardboard square is needed?</p></statement></exercise>
+
+<exercise number="29"><statement><p>A large bottle of shampoo is 20 centimeters tall and cylindrical in shape.
+    <ol marker="a.">
+    <li>Write a formula for the volume of the bottle in terms of its radius.</li>
+    <li><p>Complete the table of values for the volume equation. If you cut the radius of the bottle in half, by what factor does the volume decrease?</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~r~</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~2~</m></cell>
+                        <cell><m>~3~</m></cell>
+                        <cell><m>~4~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~6~</m></cell>
+                        <cell><m>~7~</m></cell>
+                        <cell><m>~8~</m></cell></row>
+                    <row> 
+                        <cell><m>~V~</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></li>
+    <li>What radius should the bottle have if it must hold 240 milliliters of shampoo? (A milliliter is equal to one cubic centimeter.)</li>
+    <li>Use your calculator to graph the volume equation. (Use the table to help you choose a suitable window.) Locate the point on the graph that corresponds to the bottle in part (c). Make a sketch of your graph, and lable the scales on the axes.</li></ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>V=62.8r^2</m></li>
+        <li><m>\dfrac{1}{4}</m></li>
+        <li>1.96 cm</li></ol></p></answer></exercise>
+
+<exercise number="30"><statement><sidebyside widths="65% 25%" margins="0% 5%" valigns="middle middle">
+<p>The area of a ring is given by the formula
+        <md><mrow>A = \pi R^2 - \pi r^2</mrow></md>
+ where <m>R</m> is the radius of the outer circle, and <m>r</m> is the radius of the inner circle.</p>
+        <image source="images/fig-annulus"><description>graph</description></image></sidebyside><p><ol marker="a.">
+    <li>Suppose the inner radius of the ring is kept fixed at <m>r=4</m> centimeters, but the radius of the outer circle, <m>R</m>, is allowed to vary. Find the area of the ring when the outer radius is 6 centimeters, 8 centimeters, and 12 centimeters.</li>
+    <li><p>Graph the area equation, with <m>r=4</m>, in the window
+        <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 14.1</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 400</mrow></md>
+        Use the Trace to verify your answers to part (a).</p></li>
+    <li>Trace along the curve to the point <m>(9.75, 248.38217)</m>. What do the coordinates of this point represent?</li>
+    <li>Use your graph to estimate the outer radius of the ring when its area is 100 square centimeters.</li>
+    <li>Write and solve an equation to answer part(d).</li></ol></p></statement>
+</exercise>
+
+<exercisegroup><introduction><p>For Problems 31 and 32, solve for <m>x</m> in terms of <m>a</m>, <m>b</m>, and <m>c</m>.</p></introduction>
+
+ <exercise number="31"><statement><p><ol marker="a." cols="2">
+    <li><m>\dfrac{ax^2}{b} = c</m></li>
+    <li><m>\dfrac{bx^2}{c} - a = 0</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m> \pm \sqrt{\dfrac{bc}{a}}</m></li>
+    <li><m> \pm \sqrt{\dfrac{ac}{b}}</m></li></ol></p></answer></exercise>
+
+<exercise number="32"><statement><p><ol marker="a." cols="2">
+    <li><m>(x-a)^2 = 16</m></li>
+    <li><m>(ax+b)^2 = 9</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+    </subexercises>
+
+</exercises>

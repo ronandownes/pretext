@@ -1,0 +1,19 @@
+<image xml:id="fig9-1-5">
+        <description>beetle on conveyor belt</description>
+        <latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (0,2);
+        \coordinate (B) at (4,0);
+        \filldraw[brown!10] (-2.5,-1) rectangle ++(7.5,4);
+        \filldraw[lightgray!50] (-2.5,0) rectangle ++(7.5,2);
+        \draw[blue,thick,->,>=stealth'] (O)--(A)node[left,midway] {2 $\dfrac{\text{in}}{\text{sec}}$};
+        \draw[blue,thick,->,>=stealth'] (A) --++(B) node[above,midway] {4 in/sec};
+        \draw[green!60!black,very thick,->,>=stealth'] (O)--($ (A)+(B) $);
+        \draw[red, ->,>=stealth'] (0:.8) arc(0:{atan(1/2)}:0.8) node[right, midway, yshift=0] {$26.2\degree$};
+        \filldraw[black] (O) circle (.8mm) node[below left] {$P$};
+        \filldraw[black] (A) ++(B) circle (.8mm) node[above right] {$Q$};
+        \end{tikzpicture}]]>
+    </latex-image>
+</image>

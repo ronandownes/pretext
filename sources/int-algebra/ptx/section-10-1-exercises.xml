@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+
+<exercises xml:id="section-10-1-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 10.1</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 1<ndash/>4, convert the logarithmic equation into exponential form.</p></introduction>
+
+<exercise number="1"><statement><p><m>\log_9{(729)}=y</m></p></statement>
+<answer><p><m>9^y=729</m></p></answer></exercise>
+
+<exercise number="2"><statement><p><m>\log_b{(8)}=-3</m></p></statement></exercise>
+
+<exercise number="3"><statement><p><m>\log_{10}{(C)}=-4.5</m></p></statement>
+<answer><p><m>10^{-4.5}=C</m></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>\log_m{(n)}=p</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 5<ndash/>8, write the expression as a single log with a coefficient of 1.</p></introduction>
+
+<exercise number="5"><statement><p><m>\dfrac{1}{2}\log_b{(16)}+2\left(\log_b{(2)}-\log_b{(8)}\right)</m></p></statement>
+<answer><p><m>\log_b{\left(\dfrac{1}{4}\right)}</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>\dfrac{1}{2}\left(\log_5{(6)}+2\log_5{(4)}\right)-\log_5{(2)}</m></p></statement></exercise>
+
+<exercise number="7"><statement><p><m>\dfrac{1}{2}\left(\log_{10}{(y)}+\log_{10}{(x)}-3\log_{10}{(z)}\right)</m></p></statement>
+<answer><p><m>\log_{10}{\left(\sqrt{\dfrac{xy}{z^3}}\right)}</m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>\dfrac{1}{3}\left(\log_{10}{(x)}-2\log_{10}{9}-\log_{10}{(z)}\right)</m></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup><introduction><p>For Problems 9 and 10, <ol marker="a.">
+	<li>Make a table of values for each function.</li>
+	<li>Graph both functions on the same set of axes.</li></ol></p></introduction>
+
+<exercise number="9"><statement><p><m>f(x) = 3^x</m>, <m>\quad g(x) = \log_3{(x)}</m></p>
+     <image width="45%" xml:id="fig-3-to-x-and-log3-grid">
+        <description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[cyan] (-4,-4) grid (8,8);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(8.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,8.6) node[above]{$y$};
+        \foreach \x in  {-3,3,6} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+<answer><image width="50%" xml:id="fig-3-to-x-and-log3">
+        <description>3 to x and log base 3</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[cyan] (-4,-4) grid (8,8);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(8.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,8.6) node[above]{$y$};
+        \foreach \x in  {-3,3,6} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }\draw[darkgray,thick, dashed,<->,>=stealth'] (-4,-4)--(8,8) node[below, yshift=-6mm, fill=white, inner sep=2]{$y=x$};
+        \draw[samples=65,domain={3^(-4)}:{8)},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)},{ln(\x)/ln(3)});
+        \draw[samples=65,domain={-4:ln(8)/ln(3)},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{3^(\x)});
+        \node[text=red, fill=white, inner sep=2] at (3,-2) {$g(x)=\log_{3}{x}$};
+        \node[text=blue, fill=white, inner sep=2] at (-2.3,1.3) {$f(x)=3^x$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</answer></exercise>
+
+<exercise number="10"><statement><p><m>f(x) = \left(\dfrac{1}{2}\right)^x</m>, <m>\quad g(x) = \log_{1/2}{(x)}</m></p>
+    <image width="50%" xml:id="fig-half-to-x-and-log-half-grid">
+        <description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.50]
+        \draw[cyan] (-6,-6) grid (6,6);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-6)--(0,6.6) node[above]{$y$};
+        \foreach \x in  {-3,3,6,-6} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11 and 12, <m>f(x)=\log_{10}{(x)}</m>.  Evaluate the expression, and round the answer to four decimal places.</p></introduction>
+
+<exercise number="11"><statement><p><ol marker="a.">
+	<li><m>18-5f(3)</m></li>
+	<li><m>\dfrac{2}{5+f(0.6)}</m></li></ol></p></statement>
+<answer><p><ol marker="a."  cols="2">
+	<li><m>15.6144</m></li>
+	<li><m>0.4186</m></li></ol></p></answer></exercise>
+
+<exercise number="12"><statement><p><ol marker="a.">
+	<li><m>15-4f(7)</m></li>
+	<li><m>\dfrac{3}{2+f(0.2)}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13 and 14, evaluate the expression.</p></introduction>
+
+<exercise number="13"><statement><p><m>R=\dfrac{1}{L}\log_{10}{\left(\dfrac{P}{L-P}\right)}~</m>, for <m>L=8500</m> and <m>P=3600</m></p></statement>
+<answer><p><m>-1.58 \times 10^{-5}</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>M=\sqrt{\dfrac{\log_{10}{(H)}}{k\log_{10}{(H_0)}}}~</m>, for <m>H=0.93,~H_0 = 0.02</m>, and <m>k=0.006</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15 and 16, <m>f(x)=\log_{10}{(x)}</m>. Solve for <m>x</m>.</p></introduction>
+
+<exercise number="15"><statement><p><ol marker="a.">
+	<li><m>f(x)=1.41</m></li>
+	<li><m>f(x)=0.52</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+	<li><m>25.70</m></li>
+	<li><m>3.31</m></li></ol></p></answer></exercise>
+
+<exercise number="16"><statement><p><ol marker="a.">
+	<li><m>f(x)=0.8</m></li>
+	<li><m>f(x)=-1.3</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17 and 18, solve for the unknown variable.</p></introduction>
+
+<exercise number="17"><statement><p><ol marker="a.">
+	<li><m>\log_2{(y)}=-1</m></li>
+	<li><m>\log_b{(0.1)}=-1</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+	<li><m>\dfrac{1}{2}</m></li>
+	<li><m>01</m></li></ol></p></answer></exercise>
+
+<exercise number="18"><statement><p><ol marker="a.">
+	<li><m>3(\log_7{(x)})+5=7</m></li>
+	<li><m>5(\log_2{(x)})+6=-14</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="19"><statement><p>Let <m>f(x)=3^x</m> and <m>g(x)=\log_3{(x)}</m><ol marker="a." cols="2">
+	<li>Compute <m>f(4)</m></li>
+	<li>Compute <m>g\left[f(4)\right]</m></li>
+	<li>Compute <m>\log_3{(3^{1.8})}</m></li>
+	<li>Compute <m>\log_3{(3^{a})}</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+	<li>81</li>
+	<li>4</li>
+	<li>1.8</li>
+	<li><m>a</m></li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>Let <m>f(x)=\log_2{(x)}</m> and <m>g(x)=2^x</m><ol marker="a." cols="2">
+	<li>Compute <m>f(32)</m></li>
+	<li>Compute <m>g\left[f(32)\right]</m></li>
+	<li>Compute <m>2^{\log_2{(6)}}</m></li>
+	<li>Compute <m>2^{\log_2{(Q)}}</m></li></ol></p></statement></exercise>
+
+<exercise number="21"><statement><p>Each figure shows a portion of the graph of one of the following functions. Match each function with its graph.</p>
+    <image width="80%" source="images/fig-6-curves"><description>six curves</description></image>
+<p><ol marker="a." cols="3">
+    <li><m>f(x)=2^x</m></li>
+    <li><m>f(x)=x^2</m></li>
+    <li><m>f(x)=\dfrac{2}{x}</m></li>
+    <li><m>f(x)=\sqrt{x}</m></li>
+    <li><m>f(x)=\log_2{(x)}</m></li>
+    <li><m>f(x)=\left(\dfrac{1}{2}\right)^x</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li>IV</li>
+    <li>V</li>
+    <li>I</li>
+    <li>II</li>
+    <li>III</li>
+    <li>VI</li></ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>Choose the graph for each function described below.<ol marker="a.">
+    <li>The area, <m>A</m>, of a pentagon is a quadratic function of the length <m>l</m>, of its side.</li>
+    <li>The strength, <m>F</m>, of a hurricane varies inversely with its speed, <m>s</m>.</li>
+    <li>The price of food has increased 3% every year for a decade.</li>
+    <li>The magnitude, <m>M</m>, of a star is a logarithmic function of its brightness, <m>I</m>.</li>
+    <li>The speed of the train increased at a constant rate.</li>
+    <li>if you don't practice a foreign language, you lose <m>\dfrac{1}{8}</m> of the words in your working vocabulary each year.</li></ol></p>
+    <image width="75%" source="images/fig-six-curves"><description>six curves</description></image></statement></exercise>
+
+<exercise number="23"><statement><p><ol marker="a.">
+	<li>How large must <m>x</m> be before the graph of <m>y=\log_{10}{(x)}</m> reaches a height of 4?</li>
+	<li>How large must <m>x</m> be before the graph of <m>y=\log_{10}{(x)}</m> reaches a height of 8?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+	<li>10,000</li>
+	<li>100,000,000</li></ol></p></answer></exercise>
+
+<exercise number="24"><statement><p><ol marker="a.">
+	<li>How large must <m>x</m> be before the graph of <m>y=\log_2{(x)}</m> reaches a height of 5?</li>
+	<li>How large must <m>x</m> be before the graph of <m>y=\log_2{(x)}</m> reaches a height of 10?</li></ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 25<ndash/>28, solve the logarithmic equation.</p></introduction>
+
+<exercise number="25"><statement><p><m>\log_{10} {(x)} + \log_{10}{(x + 21)} = 2</m></p></statement>
+<answer><p><m>4</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>\log_{8} {(x+5)} - \log_{8}2 = 1</m></p></statement></exercise>
+
+<exercise number="27"><statement><p><m>\log_{10} {(x+2)} + \log_{10}{(x-1)} = 1</m></p></statement>
+<answer><p>3</p></answer></exercise>
+
+<exercise number="28"><statement><p><m>\log_{3} {(x-2)} - \log_{3}{(x+1)} = 3</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="29"><statement><p>In a psychology experiment, volunteers were asked to memorize a list of nonsense words, and 24 hours later they were tested to see how many of the words they recalled. On average, the subjects had forgotten 20% of the words. The researchers found that the more lists their volunteers memorized, the larger the fraction of words they were unable to recall. (Source: Underwood, <pubtitle>Scientific American</pubtitle>, vol. 210, no. 3)</p>
+    <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col halign="left"/><col/><col/><col/><col/><col/><col/>
+        <row>
+            <cell>Number of lists, <m>n</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>12</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>20</m></cell></row>
+        <row>
+            <cell>Percent forgotten, <m>F</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>40</m></cell>
+            <cell><m>55</m></cell>
+            <cell><m>66</m></cell>
+            <cell><m>74</m></cell>
+            <cell><m>80</m></cell></row>
+    </tabular>
+    <p><ol>
+        <li><p>Plot the data. What sort of function seems to fit the data points?</p></li>
+        <li><p>Psychologists often describe rates of forgetting by logarithmic functions. Graph the function 
+        	<me>f(n) = 16.6 + 46.3 \log {(n)}</me>
+        on the same graph with your data. Comment on the fit.</p></li>
+        <li><p>What happens to the values of <m>f(n)</m> as <m>n</m> grows increasingly large? Does this behavior accurately reflect the situation being modeled?</p></li>
+    </ol></p></statement>
+<answer><p><ol>
+    <li><image width="40%" source="images/fig-ans-5-2-27"><description>data points and log curve</description></image></li>
+    <li><p>The graph resembles a logarithmic function. The function is close to the points but appears too steep at first and not steep enough after <m>n = 15</m>. Overall, it is a good fit.</p></li>
+    <li><p><m>f</m> grows (more and more slowly) without bound. <m>f</m> will eventually exceed <m>100</m> per cent, but no one can forget more than 100% of what is learned.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>The water velocity at any point in a stream or river is related to the logarithm of the depth at that point. For the Hoback River near Bondurant, Wyoming, 
+    <me>v = 2.63 + 1.03 \log {(d)}</me>
+where <m>v</m> is the velocity of the water, in feet per second, and <m>d</m> is the vertical distance from the stream bed, in feet, at that point. For Pole Creek near Pinedale, Wyoming,
+    <me>v = 1.96 + 0.65 \log {(d)}</me>
+Both streams are <m>1.2</m> feet deep at the locations mentioned. (Source: Leopold, Luna, Wolman, and Gordon, 1992)<ol>
+    <li><p>Complete the table of values for each stream.</p>
+            <tabular left="minor" right="minor" top="minor" bottom="minor" halign="left">
+                <row>
+                    <cell>Distance from bed (feet)</cell>
+                    <cell><m>0.2</m></cell>
+                    <cell><m>0.4</m></cell>
+                    <cell><m>0.6</m></cell>
+                    <cell><m>0.8</m></cell>
+                    <cell><m>1.0</m></cell>
+                    <cell><m>1.2</m></cell></row>
+                <row>
+                    <cell><line>Velocity, Hoback</line><line>River, (ft/sec)</line></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell></row>
+                <row>
+                    <cell>Velocity, Pole Creek (ft/sec)</cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell></row>
+            </tabular></li>
+    <li><p>If you double the distance from the bed, by how much does the velocity increase in each stream?</p></li>
+    <li><p>Plot both functions on the same graph.</p></li>
+    <li><p>The average velocity of the entire stream can be closely approximated as follows: Measure the velocity at 20% of the total depth of the stream from the surface and at 80% of the total depth, then average these two values. Find the average velocity for the Hoback River and for Pole Creek.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="31"><statement><p>In <xref ref="example-life-expectancy" text="type-global"/> of this section, we considered a formula for the average life expectancy in the U.S. as a function of years after 1900,
+	<me>L(x)=18.53+28.92 \log {(x)}</me>
+According to the formula, in what year was the life expectancy 70 years?</p></statement>
+<answer><p>1962</p></answer></exercise>
+
+<exercise number="32"><statement><p>In Practice 5 of this section, we considerd a formula for the average height, in centimeters, of girls between the ages of 2 and 20.
+	<me>H(t) = 49.29+91.3 \log {(t)}</me>
+According to the formula, at what age should a girl expect to be 152.4 centimeters (5 feet) tall?</p></statement></exercise>
+
+</subexercises>
+</exercises>

@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture}
+\node[right] at (0,0) {$y=\alert{6x+1000}$};
+\coordinate (A) at (2.95,-.15);
+\draw [blue,decorate,decoration={brace,amplitude=5pt}] (A) -- ++(-2.05,0) node [below right,xshift=2.5cm, scale=.9] {Substitute into the second equation.};
+\coordinate (B) at (-.05,-1.);
+\node[right] at (B) {$\alert{y}=2x+1200$};
+\draw[blue,->,>=stealth'] (1.9,-.4) to [out=270,in=90] ($(B)+(.28,.15)$);
+\coordinate (C) at (-1.9,-2.1);
+\node[right] at (C) {$\alert{6x+1000}=2x+1200$};
+\draw [blue,decorate,decoration={brace,amplitude=5pt}] (C)++(.15,.2) -- ++(2,0);
+\draw[blue,->,>=stealth'] (B)++(.22,-.21) to [out=270,in=90] ($(C)+(1.2,0.45)$);
+\node at ($(C)+(-.7,.8)$) {to get};
+\end{tikzpicture}%
+}
+\end{document}

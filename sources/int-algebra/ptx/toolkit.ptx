@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="toolkit"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Algebra Toolkit</title>
+<xi:include href="./tkch1.xml" /> 
+<xi:include href="./tkch2.xml" /> 
+<xi:include href="./tkch3.xml" /> 
+<xi:include href="./tkch4.xml" /> 
+<xi:include href="./tkch5.xml" /> 
+<xi:include href="./tkch6.xml" /> 
+<xi:include href="./tkch7.xml" /> 
+<xi:include href="./tkch8.xml" /> 
+<xi:include href="./tkch9.xml" /> 
+<xi:include href="./tkch10.xml" />
+
+</appendix>

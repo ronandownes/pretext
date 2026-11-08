@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkSlope"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Slope</title>
+                 
+<subsubsection xml:id="tkUseRatios"><title>Use ratios for comparison</title>
+
+><p>Slope is a type of ratio that compares vertical distance per unit of horizontal distance. We use ratios for comparison in other situations, for example, when shopping we might compute price per unit.</p>
+
+<example><statement><p>You are choosing between two brands of iced tea.  Which is a better bargain: a 28-ounce bottle of Teatime for $1.82, or a 36-ounce bottle of Leafdream for $2.25?</p></statement>
+ 
+<solution><p>Compute the ratio price per ounce for each brand.
+    <me>\text{Teatime:}~~~\dfrac{182 \text{ cents}}{28 \text{ ounces}}= 6.5 \text{ cents per ounce}</me>
+    <me>\text{Leafdream:}~~~\dfrac{225 \text{ cents}}{36 \text{ ounces}}= 6.25 \text{ cents per ounce}</me>
+Leafdream is the better bargain.</p></solution></example>
+
+<example><statement><p>The trail to Lookout Point gains 780 feet in elevation over a distance of 1.3 miles. The trail to Knife Edge gains 950 feet in elevation over a distance of 1.6 miles.  Which trail is steeper?</p></statement>
+
+<solution><p>Compute the ratio of elevation gain to horizontal distance traveled for each trail.
+    <me>\text{Lookout Point:}~~~\dfrac{780 \text{ feet}}{1.3 \text{ miles}}= 600 \text{ feet per mile}</me>
+    <me>\text{Knife Edge:}~~~\dfrac{950 \text{ feet}}{1.6 \text{ miles}}= 593.75 \text{ feet per mile}</me>
+The Lookout Point trail is steeper.</p></solution></example>
+
+<exercise><statement><p>Rachel drove 292.4 miles on 8.6 gallons of gasoline. Reuben drove 390 miles on 12 gallons of gasoline.  Who got the better gas mileage?</p>
+<p>Hint:  Compute the ratio miles per gallon.</p></statement>
+    <answer><p>Rachel:  34 miles per gallon;  Reuben:  32.5 miles per gallon</p></answer></exercise>
+
+<exercise><statement><p>Leslie drove 168 miles in 2.8 hours, and Mark drove 224 miles in 3.5 hours. Who drove at the greater average speed?</p>
+<p>Hint:  Compute the ratio miles per hour.</p></statement>
+    <answer><p>Mark:  64 miles per hour;  Leslie:  60 miles per hour</p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSlopefromGraph"><title>Calculate slope from a graph</title>
+
+<p>We often think of slope as measuring the "steepness" of a graph, but the appearance of steepness is also affected by the scales on the axes.</p>
+
+<example><statement><p>Calculate the slope of the line.</p>
+    <image width="35%" xml:id="fig-calculate-slope-grid"><description>line on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.54, yscale=.36]
+        \draw[cyan] (0,0) grid (8,18);
+        \draw[black,thick,->,>=stealth'] (0,0)--(8.8,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,19.3) node[left]{$h$};
+        \foreach \x in {2,4,6,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\x};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,4,...,18} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[magenta!90!black,ultra thick, ->, >=stealth'](0,1)--(8,17);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+
+<solution><p>Choose two points on the line, and calculate the ratio of vertical change to horizontal change.  Use the grid lines on the graph, but don't forget to note the scales on the axes.</p>
+    <image width="35%" xml:id="fig-calculate-slope">
+        <description>line marked with horizontal and vertical change between two points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.54, yscale=.36]
+        \draw[cyan] (0,0) grid (8,18);
+        \draw[black,thick,->,>=stealth'] (0,0)--(8.8,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,19.3) node[left]{$h$};
+        \foreach \x in {2,4,6,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\x};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,4,...,18} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[magenta!90!black,ultra thick, ->, >=stealth'](0,1)--(8,17);
+        \draw[blue!80!black, ultra thick,  dashed] (2,5)--(6,5) node[midway, below, yshift=-2, fill=white, inner sep=2, text=red]{$\Delta t=4$};
+        \draw[blue!80!black, ultra thick,  dashed, text=red] (6,5) -- (6,13) node[midway, right, xshift=2, fill=white, inner sep=2]{$\Delta h=16$};
+        \filldraw[red] (2,5) ellipse (.18 and .27);
+        \filldraw[red] (6,13) ellipse (.18 and .27);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+<p>The slope is the ratio <m>\dfrac{\Delta h}{\Delta t}</m>. The variable on the horizontal axis increases by 4 units, from 2 to 6, so <m>\Delta t=4</m>. The variable on the vertical axis increases by 8 grid lines, but each grid line represents 2 units, so <m>\Delta h=16</m>. Thus, the slope is <m>\dfrac{\Delta h}{\Delta t} = \dfrac{16}{4}=4</m>.
+</p></solution></example>
+
+<example><statement><p>Calculate the slope of the line.</p>
+    <image width="35%" xml:id="fig-calculate-slope2-grid"><description>line on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (0,0) grid (10,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(10.8,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.8) node[left]{$V$};
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\x};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[magenta!90!black,ultra thick, ->, >=stealth'](0,10)--(10,5);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+
+<solution><p>Choose two points on the line, and calculate the ratio of vertical change to horizontal change. Use the grid lines on the graph, but don't forget to note the scales on the axes.</p>
+<image width="35%" xml:id="fig-calculate-slope2">
+        <description>line marked with horizontal and vertical change between two points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (0,0) grid (10,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(10.8,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.8) node[left]{$V$};
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\x};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[magenta!90!black,ultra thick, ->, >=stealth'](0,10)--(10,5);
+        \draw[blue!80!black, ultra thick,  dashed, ->, >=stealth'] (2,9)--(8,9) node[midway, above, yshift=2, fill=white, inner sep=2, text=red]{$\Delta t=12$};
+        \draw[blue!80!black, ultra thick,  dashed, ->, >=stealth', text=red] (8,9) -- (8,6) node[midway, right, xshift=2, fill=white, inner sep=2]{$\Delta V=-6$};
+        \filldraw[red] (2,9) circle (.2);
+        \filldraw[red] (8,6) circle (.2);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+<p>The slope is the ratio <m>\dfrac{\Delta V}{\Delta t}</m>. The horizontal variable, <m>t</m>, increases by 6 grid lines, but each grid line represents 2 units, so <m>\Delta t=12</m>. The vertical variable, <m>V</m>, decreases by 3 grid lines, or 6 units, so <m>\Delta V=-6</m>. Thus, <m>\dfrac{\Delta V}{\Delta t} = \dfrac{-6}{12}=\dfrac{-1}{2}</m>.</p></solution></example>
+
+<exercise><statement><p>Calculate the slope of the line.</p>
+    <p>Hint: Find two points that lie on the intersubsection of grid lines, so that it's easy to read their coordinates.  For example, you could use <m>(2, 300)</m> and <m>(8, 600)</m>.</p>
+    <image width="35%" xml:id="fig-calculate-slope3"><description>line on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (0,0) grid (12,10);
+        \draw[black,thick,->,>=stealth'] (0,0)--(12.8,0) node[right]{$w$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,11.) node[left]{$A$};
+        \foreach \x  in {2,4,...,12} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\x};
+        }\foreach \x [evaluate=\x as \xi using int( 100* \x )]  in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[magenta!90!black,ultra thick, ->, >=stealth'](0,2)--(12,8);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+    <answer><p><m>50</m></p></answer></exercise>
+
+<exercise><statement><p>Calculate the slope of the line.</p>
+<p>Hint: Find two points that lie on the intersubsection of grid lines. For example, you could use <m>(0, 60)</m> and <m>(3, -12)</m>.</p>
+    <image width="30%" xml:id="fig-calculate-slope4"><description>line on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (-5,-5) grid (7,10);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(7.8,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,11) node[left]{$y$};
+        \foreach \x  in {-5,5} {
+          \draw[black,thick] (\x,.06)--++(0,-.12) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+        }\foreach \x [evaluate=\x as \xi using int( 12* \x )]  in {-4,-2,2,4,8,10} {
+          \draw[black,thick] (.06,\x)--++(-.12,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \draw[magenta!90!black,ultra thick, <->, >=stealth'](-5/2,10)--(5,-5);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+    <answer><p><m>-24</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkInterpSlope"><title>Interpret the slope</title>
+
+<example><statement><p>Audrey can drive 150 miles on 6 gallons of gas, and 225 miles on 9 gallons of gas.</p>
+<!--<image source="photos/hp-3-3-17.png"><description>graph</description></image>-->
+    <image width="35%" xml:id="hp-3-3-17"><description>graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid (10,12);
+        \draw[black,very thick, ->, >=stealth'] (O)--(11.5,0) node[right]{$g$};
+        \draw[black,very thick, ->, >=stealth'] (O)--(0,13.5) node[left]{$d$};
+        \foreach \x  in  {5,10} {
+         \draw[cyan, very thick] (\x,0) --++(0,12);
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(25*\x] in  {4,8,12} {
+         \draw[cyan, very thick] (0,\x) --(10,\x);
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (O)--(10,10);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><ol marker="a.">
+    <li>Compute the slope of the graph, including units.</li>
+    <li>Interpret the slope as a rate; what does it tell you about the problem?</li>
+</ol></p></statement>
+<solution><p><ol marker="a.">
+    <li><p><m>\dfrac{\Delta d}{\Delta g} = \dfrac{225-150}{9-6} = \dfrac{25\text{ miles}}{1\text{ gallon}} </m></p></li>
+    <li><p>The car gets 25 miles per gallon in gas mileage</p></li>
+</ol></p></solution></example>
+
+<exercise ><statement><p>The sales tax on a $15 purchase is 60 cents, and 80 cents on a $20 purchase.</p>
+<!--<image source="photos/hp-3-3-18.png"><description>segment</description></image>-->
+    <image width="35%" xml:id="hp-3-3-18"><description>line on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture}
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid[ystep=1/2] (4,5);
+        \draw[black,very thick, ->, >=stealth'] (O)--(4.5,0) node[right]{$p$};
+        \draw[black,very thick, ->, >=stealth'] (O)--(0,5.5) node[left]{$T$};
+        \foreach \x [evaluate=\x as \xi using int(5*\x] in  {2,4} {
+         \draw[cyan, very thick] (\x,0) --++(0,5);
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(16*\x] in  {.5,1.5,2.5,3.5,4.5} {
+         \draw[cyan, very thick] (0,\x) --(4,\x);
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (O)--(4,5);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><ol marker="a.">
+    <li>Compute the slope of the graph, including units.</li>
+    <li>Interpret the slope as a rate; what does it tell you about the problem?
+</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>\dfrac{4~ \text{cents}}{\text{dollar}}</m></li>
+    <li><p>The tax rate is 4 cents per dollar, or 4%</p></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Lynette is saving money for the down payment on a new car. The figure below shows the amount <m>A</m> she has saved, in dollars, <m>w</m> weeks after the first of the year.</p>
+<!--<image source="photos/hp-3-3-19.png"><description>graph</description></image>-->
+    <image width="45%" xml:id="hp-3-3-19"><description>graph of line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid (12,10);
+        \draw[black,very thick, ->, >=stealth'] (O)--(13,0) node[right]{$w$};
+        \draw[black,very thick, ->, >=stealth'] (O)--(0,11) node[left]{$A$};
+        \foreach \x in  {2,4,...,12} {
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(100*\x] in  {2,4,...,10} {
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (0,2)--(12,8);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><ol marker="a.">
+    <li>Compute the slope of the graph, including units.</li> 
+    <li>What does the slope tell you about the problem?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>~\dfrac{\Delta A}{\Delta w}=50~</m> dollars/week</p></li> 
+    <li><p>Lynette is saving $50 per week.</p></li></ol></p></answer></exercise>
+
+<exercise><statement><p>Jason is raising a rabbit for the county fair. The figure below shows the rabbit's weight <m>W</m> when it was <m>t</m> weeks old.</p>
+<!--<image source="photos/hp-3-3-20.png"><description>graph</description></image>-->
+    <image width="40%" xml:id="hp-3-3-20"><description>graph of line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (O)--(11,0) node[right]{$t$};
+        \draw[black,very thick, ->, >=stealth'] (O)--(0,11) node[left]{$W$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x] in  {2,4,...,10} {
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(2*\x] in  {2,4,...,10} {
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (0,1)--(10,6);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p><ol marker="a.">
+    <li>Compute the rabbit's rate of growth, including units.</li>
+    <li>What does the slope tell you about the problem?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>~\dfrac{\Delta W}{\Delta t}=1~</m> pound/week</li>
+    <li><p>The rabbit gained 1 pound per week in weight.</p></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+
+<!--<subsubsection xml:id="tkCalcVol"><title>Calculate volume</title>
+
+<p>The volume of a box is measured in cubic units and can be calculated using the formula <m>V=lwh</m>, where <m>l,~w,</m> and <m>h</m> stand for the length, width, and height of the box. Volume measures the amount of space inside an object by telling us how many blocks 1 unit on a side will fit inside the space. For example, the volume of the box below, whose dimensions are given in centimeters, is</p>
+<sidebyside widths="40% 60%" >
+    <image source="images/fig-2-1-5.png"><description>box</description></image>
+    <p><md><mrow>V \amp = lwh </mrow>
+           <mrow>\amp = (6)(4)(3) = 72~ \text{cubic centimeters}</mrow></md></p></sidebyside>
+
+<example><statement><p>An aquarium is 24 inches long and 10 inches wide. What is the area of its base? How much water is needed to fill it to a depth of 5 inches?</p></statement>
+
+<solution><p>The area of the base is
+    <me>A=lw=(24~ \text{in})(10~ \text{in})=240~ \text{in}^2</me>
+To calculate the volume of water, we can multiply the area of the base, <m>lw</m>, by the height of the water, <m>h</m>. 
+    <me>V=(lw)h=Ah=(240~ \text{in}^2)(5~ \text{in})=1200~ \text{in}^3</me></p>
+</solution></example>
+</subsubsection>-->
+
+</subsection>

@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+ \tikzset{%
+ }
+ \begin{tikzpicture} 
+ \coordinate(O) at (0,0);
+ \coordinate(A) at (4.2,2.4);
+ \coordinate(B) at (3.,0);
+ \draw[cyan,thick] (O) rectangle ++(.22,.22);
+ \draw[cyan,thick] (B) rectangle ++(.22,.22);
+ \draw[cyan,thick] (A) rectangle ++(-.22,-.22);
+ \draw[cyan,thick] (4.2,0) rectangle ++(-.22,.22);
+ \draw[red, line width=.8mm] (B) --++(0,2.4);
+ \draw[red, line width=.8mm] (O) rectangle (A);
+ \node[below, scale=.9] at (2.2,-.2) {$\textbf{Area}=36$};
+ \node[left] at (0,1.25) {$4$};
+ \node[above] at (1.5,2.5) {$x$};
+ \node[above] at (3.6,2.5) {$2$};
+\end{tikzpicture}%
+}
+\end{document}

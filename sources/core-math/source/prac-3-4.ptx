@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-3-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 3.4</title>
+
+<exercise number="1"><statement><p>What is the circumference of a circle?</p></statement>
+<answer><p>The distance around the circle.</p></answer></exercise>
+
+<exercise number="2"><statement><p>Explain how you could draw a circle using a piece of string, a pencil, and a nail.</p></statement></exercise>
+
+<exercise number="3"><statement><p>How did we find the value of <m>\pi</m>  in this lesson?</p></statement>
+<answer><p>By dividing the circumference of a circle by its diameter.</p></answer></exercise>
+
+<exercise number="4"><statement><p>Why do we say that <m>\pi</m> is an irrational number? (If you don't remember the meaning of "irrational number," look it up.)</p></statement></exercise>
+
+<exercise number="5"><statement><p>Some people use <m>\dfrac{22}{7}</m> as an approximation for <m>\pi</m>. Is that value more or less than <m>\pi</m> ?</p></statement>
+<answer><p>More than <m>\pi</m></p></answer></exercise>
+
+<exercise number="6"><statement><p>We justified the formula for the area of a circle by cutting the circle into <fillin></fillin>
+and rearranging them into a  <fillin></fillin>.</p></statement></exercise>
+
+<exercise number="7"><statement><p>Sketch a circle and one of its diameters. State a formula for the circumference of a circle in terms of its diameter.</p></statement>
+<answer><image source ="ans-3-4-7.png" width="40%"></image><m>C = \pi d</m></answer></exercise>
+
+<exercise number="8"><statement><p>Sketch a circle and one radius. State a formula for the circumference of a circle in terms of its radius.</p></statement></exercise>
+
+<exercise number="9"><statement><p>Sketch a circle and one radius. State a formula for the area of a circle in terms of its radius.</p></statement>
+<answer><image source ="ans-3-4-9.png" width="40%"></image><m>A = \pi r^2</m></answer></exercise>
+
+<exercise number="10"><statement><p>Sketch a sphere and one radius. State a formula for the volume of a sphere in terms of its radius.</p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11-13, find the circumference of the circle. Round your answers to two decimal places.</p></introduction>
+
+<exercise number="11"><statement><p><m>r =</m> 8 inches</p></statement>
+<answer><p>50.27 in</p></answer></exercise>
+
+<exercise number="12"><statement><p><m>r =</m> 3 feet</p></statement></exercise>
+
+<exercise number="13"><statement><p><m>r =</m> 1.2 meters</p></statement>
+<answer><p>3.77 m</p></answer></exercise>
+
+<exercise number="14"><statement><p><m>r =</m> 10 centimeters</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15-18, find the radius of the circle whose circumference is given. Round your answers to two decimal places.</p></introduction>
+
+<exercise number="15"><statement><p><m>C =</m> 60 yards</p></statement>
+<answer><p>9.55 yd</p></answer></exercise>
+
+<exercise number="16"><statement><p><m>C =</m> 8.7 feet</p></statement></exercise>
+
+<exercise number="17"><statement><p><m>C =</m> 42.5 inches</p></statement>
+<answer><p>6.76 in</p></answer></exercise>
+
+<exercise number="18"><statement><p><m>C =</m> 100 meters</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 19-22, find the area of the circle. Round your answers to two decimal places.</p></introduction>
+
+<exercise number="19"><statement><p><m>r =</m> 0.2 centimeter</p></statement>
+<answer><p>0.13 sq cm</p></answer></exercise>
+
+<exercise number="20"><statement><p><m>r =</m> 0.5 meter</p></statement></exercise>
+
+<exercise number="21"><statement><p><m>d =</m> 25 yards</p></statement>
+<answer><p>1963.50 sq yd</p></answer></exercise>
+
+<exercise number="22"><statement><p><m>d =</m> 8 feet</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 23-28, find the volume of the sphere.</p></introduction>
+
+<exercise number="23"><statement><p><m>r =</m> 2 meters</p></statement>
+<answer><p>33.5 cu m</p></answer></exercise>
+
+<exercise number="24"><statement><p><m>r =</m> 6 centimeters</p></statement></exercise>
+
+<exercise number="25"><statement><p><m>r =</m> 0.1 centimeter</p></statement>
+<answer><p>0.004 cu cm</p></answer></exercise>
+
+<exercise number="26"><statement><p><m>r =</m> 0.3 inches</p></statement></exercise>
+
+<exercise number="27"><statement><p><m>r =</m> 5.2 feet</p></statement>
+<answer><p>588.98 cu ft</p></answer></exercise>
+
+<exercise number="28"><statement><p><m>r =</m> 25 meters</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>Problems 29-36 involve an area, a circumference, or a volume. Decide which measure is appropriate, then solve the problem.</p></introduction>
+
+<exercise number="29"><statement><p>A rotating lawn sprinkler waters a circle whose edge is 8 feet from the sprinkler. How much lawn does the sprinkler water?</p></statement>
+<answer><p>201.06 sq ft</p></answer></exercise>
+
+<exercise number="30"><statement><p>Francine wants to install a circular window in the stairwell in her house. The window has a diameter of 30 inches. How much weather-stripping will Francine need to seal the window?</p></statement></exercise>
+
+<exercise number="31"><statement><p>To find the diameter of a large tree in his yard, Delbert wraps a string around the trunk and thenmeasures its length. If the string is 72.25 inches long, what is the diameter of the tree?</p></statement>
+<answer><p>23 in</p></answer></exercise> 
+
+<exercise number="32"><statement><p>How much canvas material is needed to cover a circular wading pool with diameter 14 feet?</p></statement></exercise>
+
+<exercise number="33"><statement><p>The first solo transatlantic balloon crossing was completed in 1984 in a helium-filled balloon called Rosie O'Grady. The diameter of the balloon was 58.7 feet. Assuming that the balloon was approximately spherical, calculate the amount of helium it contained.</p></statement>
+<answer><p>111,409.34 cu ft</p></answer></exercise>
+
+<exercise number="34"><statement><p>The circumference of a spherical candle is 15.7 inches. What is the amount of wax in the candle?</p></statement></exercise>
+
+<exercise number="35"><statement><p>Evaporation from a body of water depends upon the exposed surface of the water. Graham measures the distance around the edge of a large circular fish pond as 75.4 feet. Calculate the size of the water surface.</p></statement>
+<answer><p>452.39 sq ft</p></answer></exercise>
+
+<exercise number="36"><statement><p>Francine has 200 yards of fencing material. How much space can she enclose for her horse if she makes a circular pen?</p></statement></exercise>
+</exercisegroup>
+
+<exercise number="37"><statement><sidebyside widths="55% 35%"><p>The London Eye, or the Millennium Wheel, is an observation wheel on the South Bank of the River Thames in London. It is 443 feet tall, and the diameter of the wheel is 394 feet. It has 32 "capsules" for passengers.</p>
+      <image source ="londoneye.png"></image></sidebyside>
+<p><ol marker="a.">  
+  <li><p>What is the circumference of the wheel?</p></li>
+  <li><p>The wheel makes one revolution every 30 minutes. What is the speed of the capsules, in feet per minute?</p></li>
+  <li><p>What is the speed of the capsules in miles per hour?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p>1237.8 ft</p></li>
+  <li><p>41.26 ft per min</p></li>
+  <li><p>0.47 mph</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="38"><statement><sidebyside widths="60% 35%"><p>The Prague Astronomical Clock, or Orloj, was built in 1410 and is the oldest clock in the world that still functions. The clock mechanism has three main components: the astronomical dial, representing the position of the Sun and Moon in the sky; an hourly show of moving figures striking the time; and a calendar dial with medallions representing the months.</p>
+      <image source ="orloj.png"></image></sidebyside>  
+  <p><ol marker="a.">
+  <li><p>The diameter of the clock face is 300 centimeters. What is the circumference of the clock face?</p></li>  
+  <li><p>The clock has no minute hand, and the hour hand makes one revolution every 24 hours. What is the speed of the tip of the hour hand, in meters per minute?</p></li>
+  <li><p>What is the speed of the tip of the hour hand, in kilometers per hour?</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 39-44, find the area and perimeter of the figure. Round your answers to two decimal places.</p></introduction>
+
+<exercise number="39"><statement><p><image source ="hp-3-4-39.png" width="60%"></image></p></statement>
+<answer><p>Area: 55.86 sq cm, perimeter: 37.42 cm</p></answer></exercise>
+
+<exercise number="40"><statement><p><image source ="hp-3-4-40.png" width="60%"></image></p></statement></exercise>
+
+<exercise number="41"><statement><p><image source ="hp-3-4-41.png" width="60%"></image></p></statement>
+<answer><p>Area: 76.27 sq ft, perimeter: 34.85 ft</p></answer></exercise>
+
+<exercise number="42"><statement><p><image source ="hp-3-4-42.png" width="60%"></image></p></statement></exercise>
+
+<exercise number="43"><statement><p><image source ="hp-3-4-43.png" width="60%"></image></p></statement>
+<answer><p>Area: 30.90 sq m, perimeter: 85.70 m</p></answer></exercise>
+
+<exercise number="44"><statement><p><image source ="hp-3-4-44.png" width="60%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="45"><statement><p>Find the diameter of a circular window if its area should be approximately 16 square feet.</p></statement>
+<answer><p>4.51 ft</p></answer></exercise>
+
+<exercise number="46"><statement><p>A chocolate cake recipe fits into a rectangular pan measuring 8 inches by 10 inches. If you want to bake the same cake in a circular pan of the same size, what should its radius be?</p>
+    <image source ="choccake.png" width="70%"></image></statement></exercise>
+
+<exercise number="47"><statement><sidebyside widths="50% 40%"><p>Angela has fenced off a 15-foot square vegetable garden in the corner of her backyard. Her pet goat, Capri, is tethered by a 15-foot rope to the corner of the garden fence, as shown below.  What is the area of grass that Capri can reach?</p> 
+  <image source ="capri.png" width="60%"></image></sidebyside></statement>
+<answer><p>530.14 sq ft</p></answer></exercise>
+
+
+<exercise number="48"><statement><p>Delbert's front lawn is 40 feet long and 20 feet wide. He installs sprinklers around the perimeter, as shown below. If the sprinklers are adjusted so that there is no overlap in their range, what is the area of the lawn that will be missed?</p> 
+    <image source ="sprinklers.png" width="60%"></image></statement></exercise>
+
+</exercises>

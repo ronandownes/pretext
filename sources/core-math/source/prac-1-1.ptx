@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-1-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 1.1</title>
+
+<exercise number="1"><statement><p><ol marker="a.">
+  <li><p>What does the denominator of a fraction tell us?</p></li>
+  <li><p>What does the numerator of a fraction tell us?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>How many things are in the whole.</p></li>
+  <li><p>How many things are in the part.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a.">
+  <li><p>How can you use your calculator to find <m>\dfrac{1}{2}</m> of any number?</p></li>
+  <li><p>Multiplying a number by <m>\dfrac{1}{2}</m> is the same as dividing by <fillin characters="15" />.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="3"><statement><p><ol marker="a.">
+  <li><p>Explain why 50 cents is half of one dollar.</p></li>
+  <li><p>Explain why 0.5 is the same as <m>\dfrac{1}{2}</m>.</p></li>
+  <li><p>Explain why 50% is the same as <m>\dfrac{1}{2}</m>.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>There are 100 cents in a dollar.</p></li>
+  <li><p>0.5 means <m>\dfrac{5}{10}.</m></p></li>
+  <li><p>50% is half of 100%.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a.">
+  <li><p>Explain why 25 cents is one-quarter of a dollar.</p></li>
+  <li><p>Explain why 0.25 is the same as <m>\dfrac{1}{4}</m>.</p></li>
+  <li><p>Explain why 25% is the same as <m>\dfrac{1}{4}</m>.</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup>
+    <introduction><p>For Problems 5-8, <ol marker="a.">
+  <li><p>Find one-half of the amount.</p></li>
+  <li><p>Find one-fourth of the amount.</p></li>
+  <li><p>Find three-fourths of the amount.</p></li></ol></p></introduction>
+
+<exercise number="5"><statement><p>A doorway is 88 inches tall.</p></statement>
+<answer><p><ol marker="a.">
+  <li><p>44 inches</p></li>
+  <li><p>22 inches</p></li>
+  <li><p>66 inches</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="6"><statement><p>A fossil is 50,000 years old.</p></statement></exercise>
+
+<exercise number="7"><statement><p>A jug contains 64 fluid ounces of laundry detergent.</p></statement>
+<answer><p><ol marker="a.">
+  <li><p>32 fluid ounces</p></li>
+  <li><p>16 fluid ounces</p></li>
+  <li><p>48 fluid ounces</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="8"><statement><p>A 20 million dollar budget was approved by the city council.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 9-12, draw a line to show one-half of the figure.</p></introduction>
+
+<exercise number="9"><statement><p><image source="hp-1-1-9.png" width="35%"></image></p></statement>
+<answer><image source="ans-1-1-9.png" width="30%"></image></answer></exercise>
+
+<exercise number="10"><statement><p><image source="hp-1-1-10.png" width="35%"></image></p></statement></exercise>
+
+<exercise number="11"><statement><p><image source="hp-1-1-11.png" width="50%"></image></p></statement>
+<answer><image source="ans-1-1-11.png" width="30%"></image></answer></exercise>
+
+<exercise number="12"><statement><p><image source="hp-1-1-12.png" width="40%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 13-16, draw two lines to show one-fourth of the figure.</p></introduction>
+
+<exercise number="13"><statement><p><image source="hp-1-1-13.png" width="35%"></image></p></statement>
+<answer><image source="ans-1-1-13.png" width="30%"></image></answer></exercise>
+
+<exercise number="14"><statement><p><image source="hp-1-1-14.png" width="35%"></image></p></statement></exercise>
+
+<exercise number="15"><statement><p><image source="hp-1-1-15.png" width="50%"></image></p></statement>
+<answer><image source="ans-1-1-15.png" width="30%"></image></answer></exercise>
+
+<exercise number="16"><statement><p><image source="hp-1-1-16.png" width="40%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 17-20, show the calculation you used to find the answer.</p></introduction>
+
+<exercise number="17"><statement><p>Sharelle gave her daughter 225 milliliters of cough medicine, which is half the adult dosage. What is the adult dosage?</p></statement>
+<answer><p>450 ml</p></answer></exercise>
+
+<exercise number="18"><statement><p>Claudia's alpaca weighs 76 kilograms, which is about half the weight of an adult llama. How much does a llama weigh?</p></statement></exercise>
+
+<exercise number="19"><statement><p>Elsie read 48 pages of a novel this afternoon, which was one-fourth of her assignment. How many pages was she assigned to read?</p></statement>
+<answer><p>192 pages</p></answer></exercise>
+
+<exercise number="20"><statement><p>Mike spent a quarter of his paycheck on a new phone that cost $194.50. How much was his paycheck?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 21-24, show how you found the answer.</p></introduction>
+
+<exercise number="21"><statement><p><ol marker="a.">
+  <li><p>What is <m>\dfrac{1}{4}</m> of 2 cups of flour?</p></li>
+  <li><p>What is <m>\dfrac{3}{4}</m> of 2 cups of flour?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>0.5</m> cup</p></li>
+  <li><p><m>1.5</m> cups</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="22"><statement><p><ol marker="a.">
+  <li><p>What is <m>\dfrac{1}{4}</m> of 6 gallons of water?</p></li>
+  <li><p>What is <m>\dfrac{3}{4}</m> of 6 gallons of water?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="23"><statement><p><ol marker="a.">
+  <li><p>How far is <m>\dfrac{1}{4}</m> of 90 miles?</p></li>
+  <li><p>How far is <m>\dfrac{3}{4}</m> of 90 miles?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>22.5</m> miles</p></li>
+  <li><p><m>67.5</m> miles</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement><p><ol marker="a.">
+  <li><p>How much is <m>\dfrac{1}{4}</m> of $247?</p></li>
+  <li><p>How much is <m>\dfrac{3}{4}</m> of $247?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="25"><statement><p>Complete the table with the missing quantites. (Hint: If you know <m>\dfrac{1}{4}</m> of a number, how can you find <m>\dfrac{3}{4}</m> of the number?</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+        <cell></cell>
+        <cell><m>\dfrac{1}{4}</m></cell>
+        <cell><m>\dfrac{3}{4}</m></cell>
+        <cell><m>\dfrac{4}{4}</m></cell></row>
+    <row>
+        <cell>a.</cell>
+        <cell><m>8</m></cell>
+        <cell><m>\hphantom{000000}</m></cell>
+        <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+        <cell>b.</cell>
+        <cell><m>\hphantom{000000}</m></cell>
+        <cell><m>9</m></cell>
+        <cell></cell></row>
+    <row>
+        <cell>c.</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell><m>12</m></cell></row>
+    <row>
+        <cell>d.</cell>
+        <cell><m>12</m></cell>
+        <cell></cell>
+        <cell></cell></row>
+    <row>
+        <cell>e.</cell>
+        <cell></cell>
+        <cell><m>18</m></cell>
+        <cell></cell></row>
+    <row>
+        <cell>f.</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell><m>36</m></cell></row>
+    </tabular></statement></exercise>
+
+<exercise number="26"><statement><p>Complete the table with the missing quantites. (Hint: If you know <m>\dfrac{1}{2}</m> of a number, how can you find <m>\dfrac{1}{4}</m> of the number?</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+        <cell></cell>
+        <cell><m>\dfrac{1}{4}</m></cell>
+        <cell><m>\dfrac{3}{4}</m></cell>
+        <cell><m>\dfrac{4}{4}</m></cell></row>
+    <row>
+        <cell>a.</cell>
+        <cell><m>14</m></cell>
+        <cell><m>\hphantom{000000}</m></cell>
+        <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+        <cell>b.</cell>
+        <cell><m>\hphantom{000000}</m></cell>
+        <cell><m>12</m></cell>
+        <cell></cell></row>
+    <row>
+        <cell>c.</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell><m>20</m></cell></row>
+    <row>
+        <cell>d.</cell>
+        <cell><m>30</m></cell>
+        <cell></cell>
+        <cell></cell></row>
+    <row>
+        <cell>e.</cell>
+        <cell></cell>
+        <cell><m>36</m></cell>
+        <cell></cell></row>
+    <row>
+        <cell>f.</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell><m>64</m></cell></row>
+    </tabular></p></statement></exercise>
+
+<exercise number="27"><statement><p><ol marker="a.">
+    <li><p>If you know one-half of a number and one-quarter of a number, how can you find three-quarters of the number?</p></li>
+    <li><p>If you know one-half of a number, how can you find three-quarters of the number?</p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>Add them.</p></li>
+    <li><p>Find one-half of one-half and add to one-half.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p><ol marker="a.">
+    <li><p>If you know three-quarters of a number, how can you find one-quarter of the number?</p></li>
+    <li><p>If you know three-quarters of a number, how can you find one-half of the number?</p></li></ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 29-34, 
+<ol marker = "a.">
+    <li><p>Give the values of the whole quantity and the part described.</p></li>
+    <li><p>Write the fraction described in the problem.</p></li>
+    <li><p>Decide whether the fraction described is less than (<m>\lt</m>), equal to (<m>=</m>), or greater than (<m>\gt</m>) one-fourth. Explain how you made your decision.</p></li>
+</ol></p></introduction>
+
+<exercise number="29"><statement><p>Cyrus cut 10 inches from a yard of wire. (Hint: How many inches are in a yard?)</p></statement>
+<answer><m>36, ~10, ~\dfrac{10}{36}, ~\gt</m></answer></exercise>
+
+<exercise number="30"><statement><p>Paula poured an 8-oz glass from a quart bottle. (Hint: How many ounces are in a quart?)</p></statement></exercise>
+
+<exercise number="31"><statement><p>There were 8 snow days in November. (Hint: How many days are there in November?)</p></statement>
+<answer><m>30, ~8, ~\dfrac{8}{30}, ~\gt</m></answer></exercise>
+
+<exercise number="32"><statement><p>Jason is 40 minutes into a 2-hour test. (Hint: How many minutes are there in 2 hours?)</p></statement></exercise>
+
+<exercise number="33"><statement><p>3 out of 10 voters favor the proposal.</p></statement>
+<answer><m>10, ~3, ~\dfrac{3}{10}, ~\gt</m></answer></exercise>
+
+<exercise number="34"><statement><p>Danny swims 2 days a week. (Hint: How many days are there in a week?)</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 35-38, show the calculation you used to find the answer.</p></introduction>
+
+<exercise number="35"><statement><p>Pedro's dog weighs 31 pounds and his cat weighs 14 pounds. Does his cat weigh more or less than half his dog's weight?</p></statement>
+<answer><p>Less</p></answer></exercise>
+
+<exercise number="36"><statement><p>Alicia's parents live 328 miles away. She has driven 170 miles. Is that more or less than half the distance?</p></statement></exercise>
+
+<exercise number="37"><statement><p>A deck of playing cards has 52 cards divided evenly into 4 suits. Each suit has 3 face cards. Are the face cards more or less than one-fourth of the deck?</p></statement>
+<answer><p>Less</p></answer></exercise>
+
+<exercise number="38"><statement><p>A right angle is 90°. Is 60° more or less than three-quarters of a right angle?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 39-42, decide which fraction of one whole is larger. Explain how you know your answer is correct. (Hint:  Compare each fraction to <m>\dfrac{1}{2}</m>.)</p></introduction>
+
+<exercise number="39"><statement><p><m>\dfrac{5}{8}</m> or <m>\dfrac{7}{16}</m></p></statement>
+<answer><m>\dfrac{5}{8}</m></answer></exercise>
+
+<exercise number="40"><statement><p><m>\dfrac{5}{9}</m> or <m>\dfrac{5}{11}</m></p></statement></exercise>
+
+<exercise number="41"><statement><p><m>\dfrac{3}{7}</m> or <m>\dfrac{5}{9}</m></p></statement>
+<answer><m>\dfrac{5}{9}</m></answer></exercise>
+
+<exercise number="42"><statement><p><m>\dfrac{3}{4}</m> or <m>\dfrac{4}{9}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 43-46, decide which fraction of one whole is larger. Explain how you know your answer is correct. (Hint:  Compare each fraction to <m>\dfrac{1}{4}</m>.)</p></introduction>
+
+<exercise number="43"><statement><p><m>\dfrac{3}{8}</m> or <m>\dfrac{3}{16}</m></p></statement>
+<answer><m>\dfrac{3}{8}</m></answer></exercise>
+
+<exercise number="44"><statement><p><m>\dfrac{2}{7}</m> or <m>\dfrac{3}{16}</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>\dfrac{2}{9}</m> or <m>\dfrac{3}{8}</m></p></statement>
+<answer><m>\dfrac{3}{8}</m></answer></exercise>
+
+<exercise number="46"><statement><p><m>\dfrac{5}{18}</m> or <m>\dfrac{6}{25}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 47-50, write fractions that are:<ol marker="a.">
+  <li><p>Less than <m>\dfrac{1}{4}</m></p></li>
+  <li><p>Between <m>\dfrac{1}{4}</m> and <m>\dfrac{1}{2}</m></p></li>
+  <li><p>Between <m>\dfrac{1}{2}</m> and <m>\dfrac{3}{4}</m></p></li>
+  <li><p>Greater than <m>\dfrac{3}{4}</m></p></li></ol>  
+  Label the number line with the benchmark fractions, and locate your fractions on the line.</p></introduction>  
+
+<exercise number="47"><statement><p>There are 32 fluid ounces in a quart. Choose fractions with denominator 32.
+  <image source="emptyfourths.png" width="70%"><description>number line</description></image></p></statement>
+<answer><p>Many answers are possible.</p></answer></exercise>
+
+<exercise number="48"><statement><p>One mile of swimming is 72 laps. Choose fractions with denominator 72.
+  <image source="emptyfourths.png" width="70%"><description>number line</description></image></p></statement></exercise>
+
+<exercise number="49"><statement><p>There are 360° in one complete revolution. Choose fractions with denominator 360.
+  <image source="emptyfourths.png" width="70%"><description>number line</description></image></p></statement>
+<answer><p>Many answers are possible.</p></answer></exercise>
+
+<exercise number="50"><statement><p>One day is 1440 minutes. Choose fractions with denominator 1440.
+  <image source="emptyfourths.png" width="70%"><description>number line</description></image></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="51"><statement><p>If you increase the numerator of a fraction, is the new fraction a larger or smaller part than the original?</p></statement>
+<answer><p>Larger</p></answer></exercise>
+
+<exercise number="52"><statement><p>If you increase the denominator of a fraction, is the new fraction a larger or smaller part than the original?</p></statement></exercise>
+
+<exercise number="53"><statement><p>Shari pays exactly one quarter of her monthly salary in rent. If she gets a raise but her rent stays the same, will she be paying more or less than a quarter of her salary for rent?</p></statement>
+<answer><p>Less</p></answer></exercise>
+
+<exercise number="54"><statement><p>Jarel scored 45 points on his essay. He thought the essay was worth 60 points, but it was actually worth 50 points. Is his grade higher or lower than he originally thought?</p></statement></exercise> 
+
+</exercises>

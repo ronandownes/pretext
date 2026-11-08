@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="EquationswithFractions"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Equations with Fractions</title><idx><h>equation</h><h>with fractions</h></idx>
+
+<introduction>
+<sidebyside widths="34% 64%" margins="0% 0%" valigns="middle middle">
+    <image source="images/fig-solve-rational-equation"><description>graph of rational function for solving equation</description></image>
+<p>In <xref ref="example-pedal-aircraft" text="type-global"/> of Section 8.2 Francine planned a 60-mile training run on her cycle-plane. The time required for the training run, in terms of the windspeed, <m>x</m>, is given by:
+    <me>t=f(x) = \dfrac{60}{15-x}</me>
+If it takes Francine 9 hours to cover 60 miles, what is the speed of the wind? We can answer this question by reading values from the graph of <m>f</m>, as shown at left. When <m>t = 9</m>, the value of <m>x</m> is between 8 and 9, so the windspeed is between 8 and 9 miles per hour.</p></sidebyside>
+</introduction>
+
+<subsection><title>Solving Algebraically</title>
+
+<p>If we need a more accurate value for the windspeed, we can solve the equation
+    <me>\dfrac{60}{15-x}=9</me>
+To start, we multiply each side of the equation by the denominator of the fraction. This will clear the fraction and give us an equivalent equation without fractions.</p>
+
+<example><statement><p>Solve the equation  <m>~~\dfrac{60}{15-x}=9</m></p></statement>
+
+<solution><p>We multiply both sides of the equation by <m>\alert{15 - x}</m> to obtain
+        <md><mrow>\alert{(15 - x)}\frac{60}{15-x}\amp =9\alert{(15 - x)}</mrow>
+            <mrow>60 \amp = 9(15 - x)\amp\amp \blert{\text{Apply the distributive law.}}</mrow></md>
+From here we can proceed as usual.
+        <md><mrow>60 \amp = 135 - 9x\amp\amp \blert{\text{Subtract 135 from both sides.}}</mrow>
+            <mrow>-75 \amp = -9x\amp\amp \blert{\text{Divide by }-9.}</mrow>
+            <mrow>8.\overline{3} \amp = x</mrow></md>
+The windspeed was <m>8.\overline{3}</m>, or <m>8\frac{1}{3}</m> miles per hour.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            $r1 = Compute("-2");
+            $r2 = Compute("4");
+            $a = List("$r1, $r2");
+            $my_evaluator = $a -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code>
+        <statement>
+            <p>Solve <m>\dfrac{x^2}{x+4}=2</m></p>
+            <p><m>x=</m><var name="$answer" width="10" evaluator="$my_evaluator"/></p>
+            <instruction>Separate different values with a comma.</instruction>
+        </statement>
+         <solution><p><m>x = -2, x = 4</m></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Solve <m>\dfrac{x^2}{x+4}=2</m></p></statement>
+        <answer><p><m>x = -2, x = 4</m></p></answer></exercise>
+
+<p>If the equation contains more than one fraction, we can clear all the denominators at once by multiplying both sides by the LCD of the fractions. <idx><h>lowest common denominator</h><h>clearing fractions with</h></idx></p>
+
+<example xml:id="example-clear-fractions"><statement><p>Solve  <m>~~\dfrac{3}{4} = 8- \dfrac{2x+11}{x-5}</m></p></statement>
+
+<solution><p>The LCD for the two fractions in the equation is <m>\blert{4(x-5)}</m>. We multiply both sides of the equation by the LCD.
+    <md><mrow>{\blert{4(x-5)}}\left(\dfrac{3}{4}\right)  \amp = \left(8- \dfrac{2x+11}{x-5}\right) \cdot {\blert{4(x-5)}} \amp \amp  \blert{\stackrel{{\Large\text{Apply the}}} {\text{distributive law.}}}</mrow>
+        <mrow>{\blert{\cancel{4}(x-5)}}\left(\dfrac{3}{\cancel{4}}\right)  \amp = {\blert{4(x-5)}}(8)- {\blert{4\cancel{(x-5)}}}\left(\dfrac{2x+11}{\cancel{x-5}}\right)</mrow>
+        <mrow>3(x-5) \amp = 32(x-5)-4(2x+11)</mrow></md>
+We proceed as usual to complete the solution. First we use the distributive law to remove parentheses.
+    <md><mrow>3x-15 \amp = 32x-160-8x-44 \amp \amp \blert{\text{Combine like terms.}}</mrow>
+        <mrow>3x-15 \amp = 24x-204</mrow>
+        <mrow>-21x \amp = -189</mrow>
+        <mrow>x \amp = 9</mrow></md>
+The solution is <m>x=9</m>.
+</p></solution></example>
+
+ <warning><p>We must multiply <em>each term</em> of an equation by the LCD, whether or not the term is a fraction. In the previous <xref ref="example-clear-fractions" text="custom" >Example</xref> we multiplied each term by the LCD, including the 8.</p></warning>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        $r1 = Compute("4");
+        $r2 = Compute("1");
+        $answer = List("$r1, $r2");
+        $my_evaluator = $answer -> cmp(
+         showHints=>1,
+         showLengthHints => 1,
+         partialCredit => 1,
+        ); 
+   </pg-code>
+   <statement><p>Solve   <m>\quad\dfrac{1}{x-2}+\dfrac{2}{x} = 1</m></p>
+        <p><m>x=</m><var name="$answer" width="6" evaluator="$my_evaluator"/> Enter solutions separated by a comma.</p>
+    </statement>
+    <solution><p><m>1</m>, <m>4</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Solve   <m>\quad\dfrac{1}{x-2}+\dfrac{2}{x} = 1</m></p></statement>
+    <answer><p>The solutions are <m>x=1</m> and <m>x=4</m>.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Proportions</title><idx>proportion</idx>
+
+<p>A <term>proportion</term> <idx>proportion</idx> is a statement that two ratios are equal. For example,
+    <me>\dfrac{7}{5} = \dfrac{x}{6} </me>    
+To solve this proportion, we can multiply both sides by the LCD, 30, to get
+    <md><mrow>\alert{30}\left(\dfrac{7}{5}\right) \amp = \left(\dfrac{x}{6}\right)\alert{30}</mrow>
+        <mrow>42 \amp = 5x \amp \amp \blert{\text{Divide both sides by 5.}}</mrow>
+        <mrow>x = \dfrac{42}{5} = 8.4</mrow></md></p>
+
+<p>There is a short-cut we can use that avoids calculating an LCD. Observe that we can arrive at the equation <m>42=5x</m> by <term>cross-multiplying</term><idx><h>cross-multiplying</h><see>proportion</see></idx><idx><h>proportion</h><h>cross-multiplying</h></idx>:</p>
+    <image width="15%" xml:id="fig-cross-multiply"><description>cross-multiplying</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture}
+        \coordinate (O) at (0,0);
+        \def\dx{.3};
+        \def\dy{.13};
+        \coordinate (A) at (\dx,-\dy);
+        \coordinate (B) at (\dx,\dy);
+        \node[left] at (O) {$\displaystyle{\frac{7}{5}}\quad={}$};
+        \node[right] at (O) {$\,\displaystyle{\frac{x}{6}}$};
+        \draw[blue,thick,->,>=stealth'] (-0.7,0.1)++(-\dx,\dy)--++(A);
+        \draw[blue,thick,->,>=stealth'] (0.15,-0.2)++(-\dx,\dy)--++(A);
+        \draw[red,thick,->,>=stealth'] (-0.7, -0.1)++(-\dx,-\dy)--++(B);
+        \draw[red,thick,->,>=stealth'] (0.15,0.2)++(-\dx,-\dy)--++(B);
+        \node[left] at (0,-.8) {$42\quad={}$};
+        \node[right] at (0,-.8) {$5x$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+<p>We then proceed as before to complete the solution.</p>
+
+<p>The cross-multiplying shortcut is a fundamental property of proportions.</p>
+
+<assemblage><title>Property of Proportions</title><idx>property of proportions</idx><idx><h>proportion</h><h>cross-multiplying</h></idx>
+<p><me>\blert{\text{If}~~\dfrac{a}{b}=\dfrac{c}{d},~~~\text{then}~~~ad=bc,~~\text{as long as}~ b,d \ne 0}</me>
+</p></assemblage>
+
+<example><statement><p>The scale on a map of Fairfield County says that <m>\dfrac{3}{4}</m> centimeter represents a distance of 10 kilometers. If Eastlake and Kenwood are 6 centimeters apart on the map, what is the distance between the two towns?</p></statement>
+
+<solution><p>The ratio of the two actual distances is the same as the ratio of the corresponding distances on the map.  We let <m>x</m> stand for the distance between Eastlake and Kenwood, and write a proportion.</p>  
+<p>We must be careful to keep the same order in both ratios. We choose to put the distance between towns in the numerators, and the distances on the scale in the denominator.
+    <me>\dfrac{\text{distance between towns}}{\text{distance on scale}}:~~~~\dfrac{x}{10} = \dfrac{6}{\dfrac{3}{4}}</me>
+To solve the propotion, we cross-multiply.
+    <md><mrow>\dfrac{3}{4}x \amp = 10 \cdot 6</mrow>
+        <mrow>x \amp = \dfrac{60}{\dfrac{3}{4}} = 80</mrow></md>
+The two towns are 80 kilometers apart.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork><pg-code>
+        Context("Fraction");
+        $a = Compute("666+ 2/3");
+    </pg-code>
+    <statement><p> On a scale model of Fantasy Valley, <m>1\dfrac{1}{2}</m> inches represents 50 yards. If the distance from the water slide to the bungee jump is 20 inches on the model, what is the distance between the two rides?</p>
+        <p><var name="$a" width="7"/> yards</p>
+    </statement>
+    <solution><p><m>666\dfrac{2}{3}</m> yards</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p> On a scale model of Fantasy Valley, <m>1\dfrac{1}{2}</m> inches represents 50 yards. If the distance from the water slide to the bungee jump is 20 inches on the model, what is the distance between the two rides?</p></statement>
+<answer><p>The distance between the two rides is <m>666\dfrac{2}{3}</m> yards.</p></answer></exercise>
+
+<warning><p>Do not try to use "cross-multiplying" on equations that are not proportions, or on any other operations involving fractions. The shortcut works only on proportions.</p></warning>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );        
+        $lcd = PopUp(
+            [ "?", 
+            "LCD", 
+            "average",
+            "reciprocal"],
+            1
+        );        
+        $ratios = PopUp(
+            [ "?", 
+            "equations", 
+            "factors",
+            "ratios"],
+            3
+        );        
+        $prop = PopUp(
+            [ "?", 
+            "reduced fractions", 
+            "improper fractions",
+            "proportions"],
+            3
+        );        
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>To clear fractions from an equation, we multiply each term by the <var name="$lcd" form="popup"/> of all the fractions.</p></li>
+        <li><p>True or False:  When clearing fraction from an equation, we do not multiply terms that are not fractions. <var name="$False" form="popup"/></p></li>
+        <li><p>A proportion is a statement that two <var name="$ratios" form="popup"/> are equal. </p></li>
+        <li><p>Cross-multiplying works only on  <var name="$prop" form="popup"/>.</p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>LCD</li>
+    <li>False</li>
+    <li>ratios</li>
+    <li>proportions</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Fill in the blanks to complete each statement.<ol marker="a.">
+        <li><p>To clear fractions from an equation, we multiply each term by the <fillin characters="10"/> of all the fractions.</p></li>
+        <li><p>True or False:  When clearing fraction from an equation, we do not multiply terms that are not fractions.</p></li>
+        <li><p>A proportion is a statement that two <fillin characters="10"/> are equal. </p></li>
+        <li><p>Cross-multiplying works only on <fillin characters="10"/>.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Extraneous Solutions</title>
+
+<p>Recall that an algebraic fraction is undefined for any values of <m>x</m> that make its denominator equal zero. These values cannot be solutions to equations involving the fraction. Consider the equation
+    <me>\dfrac{x}{x-3}=\frac{3}{x-3}+2</me>
+When we multiply both sides by the LCD, <m>x - 3</m>, we obtain
+    <md><mrow>\alert{(x - 3)}\frac{x}{x-3} \amp =\alert{(x - 3)}\frac{3}{x-3}+\alert{(x - 3)}\cdot 2</mrow>
+        <mrow>x \amp = 3 + 2x - 6</mrow></md>
+whose solution is <m>x = 3</m>. However, <m>x = 3</m> is <em>not</em> a solution of the original equation. Both sides of the equation are undefined at <m>x = 3</m>. If you graph the two functions
+    <me>Y_1=\frac{x}{x-3} \hphantom{space}\text{and}\hphantom{space}Y_2=\frac{3}{x-3}+2</me>
+you will find that the graphs never intersect, which means that there is no solution to the original equation.</p>
+
+<p>What went wrong with our method of solution? We multiplied both sides of the equation by <m>x - 3</m>, which is zero when <m>x = 3</m>, so we really multiplied both sides of the equation by zero. Multiplying by zero does not produce an equivalent equation, and false solutions may be introduced.</p>
+
+<p> An apparent solution that does not satisfy the original equation is called an <term>extraneous solution</term><idx>extraneous solution</idx>. Whenever we multiply an equation by an expression containing the variable, we should check that the solution obtained does not cause any of the fractions to be undefined.</p>
+
+<example xml:id="example-clear-fractions2"><statement><p>Solve the equation  <m>~\dfrac{6}{x}+1=\dfrac{1}{x+2}</m>.</p></statement>
+
+<solution><p>We multiply both sides by the LCD, <m>x(x + 2)</m>. Notice that we multiply <em>each term</em> on the left side by the LCD, to get
+                <me>\alert{x(x + 2)}\left(\frac{6}{x}+1\right)=\alert{x(x + 2)}\frac{1}{x+2}</me>
+    or
+                <me>6(x + 2) + x(x + 2) = x</me>
+    We use the distributive law to remove the parentheses and write the result in standard form:
+                <md><mrow>6x + 12 + x^2 + 2x\amp = x</mrow>
+                    <mrow>x^2 + 7x + 12 \amp = 0</mrow></md>
+    This is a quadratic equation that we can solve by factoring. 
+                <me>(x + 3)(x + 4) = 0</me>
+    so the solutions are <m>x = -3</m> and <m>x = -4</m>. Neither of these values causes either denominator to equal zero, so they are not extraneous solutions.</p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review solving quadratic equations, see <xref ref="tkSolveQuadEqn" text="custom"> Section 8.5.1 </xref> of the Toolkit.</p></aside>
+
+<warning><p>The following "solution" for the previous <xref ref="example-clear-fractions2" text="custom" >Example</xref> is incorrect.  Do you see why?
+    <md><mrow>\alert{x(x + 2)}\frac{6}{x}+1 \amp =\alert{x(x + 2)}\frac{1}{x+2}</mrow>
+        <mrow>6x+12+1 \amp = x</mrow>
+        <mrow>5x \amp = -13</mrow>
+        <mrow>x \amp = \dfrac{-13}{5}</mrow></md></p></warning>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+        $undef = PopUp(
+            [ "?", 
+            "the numerator equals zero", 
+            "the denominator equals zero",
+            "it includes decimals",
+            "there is a variable in the denominator"],
+            2
+        );        
+        $extra = PopUp(
+            [ "?", 
+            "an extraneous", 
+            "a double",
+            "a principal",
+            "a multiple"],
+            1
+        );        
+        $zero = PopUp(
+            [ "?", 
+            "a nonzero integer",
+            "an expression containing the variable", 
+            "any irrational number"],
+            2
+        );        
+        $term = PopUp(
+            [ "?", 
+            "term", 
+            "denominator",
+            "fraction only"],
+            1
+        );        
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li>An algebraic fraction is undefined when <var name="$undef" form="popup"/>.</li>
+        <li>An apparent solution that does not satisfy the original equation is called  <var name="$extra" form="popup"/> solution.</li>
+        <li>We may introduce extraneous solutions if we multiply both sides of an equation by <var name="$zero" form="popup"/>.</li>
+        <li>We must multiply each <var name="$term" form="popup"/> of the equation by the LCD.</li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">    
+        <li>the denominator equals zero</li>
+        <li>an extraneous</li>
+        <li>an expression containing the variable</li>
+        <li>term</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+    <statement><p>Fill in the blanks to complete each statement.<ol marker="a.">
+        <li><p>An algebraic fraction is undefined when <fillin characters="10"/>.</p></li>
+        <li><p>An apparent solution that does not satisfy the original equation is called <fillin characters="10"/> solution.</p></li>
+        <li><p>We may introduce extraneous solutions if we multiply both sides of an equation by <fillin characters="10"/>.</p></li>
+        <li><p>We must multiply each <fillin characters="10"/> of the equation by the LCD.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        $answer = Compute("-1/2");
+    </pg-code>
+    <statement><p>Solve <m>\quad\dfrac{9}{x^2+x-2} + \dfrac{1}{x^2-x} = \dfrac{4}{x-1}</m></p>
+        <p><m>x=</m><var name="$answer" width="7"/></p>
+    </statement>
+    <solution><p><m>\dfrac{-1}{2}</m></p></solution>
+</webwork></exercise> 
+
+<exercise component="main"><title>Practice 4</title>
+    <statement><p>Solve <m>\quad\dfrac{9}{x^2+x-2} + \dfrac{1}{x^2-x} = \dfrac{4}{x-1}</m></p></statement>
+    <answer><p><m>\dfrac{-1}{2}</m></p></answer></exercise>
+</subsection>       
+
+<subsection><title>Solving Graphically</title>
+
+<p>We can use graphs to solve an equation, as we see in the following Example.</p>
+
+<example><statement><p>Solve the equation graphically: <m>~\dfrac{6}{x}+1=\dfrac{1}{x+2}</m></p></statement>
+
+<solution><p>We graph the two functions
+            <me>Y_1=\frac{6}{x}+1 \hphantom{space}\text{and}\hphantom{space}Y_2=\frac{1}{x+2}</me>
+    in the window
+            <md><mrow>\text{Xmin} \amp = -4.7 \amp\amp \text{Xmax} = 4.7</mrow>
+                <mrow>\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10</mrow></md>
+    as shown in figure (a).</p>
+        <image width="90%" source="images/fig-GC-intersection-of-rational-functions"><description>GC images of intersecting rational functions</description></image>
+<p>It appears that the two graphs may intersect in the third quadrant, around <m>x = -3</m>. To investigate further, we change the window settings to
+            <md><mrow>\text{Xmin} \amp = -4.55 \amp\amp \text{Xmax} = -2.2</mrow>
+                <mrow>\text{Ymin} \amp = -1.3 \amp\amp \text{Ymax} = -0.3</mrow></md>
+and obtain the close-up view shown in figure (b). In this window, we can see that the graphs intersect in two distinct points, and by using the Trace we find that their <m>x</m>-coordinates are <m>x = -3</m> and <m>x = -4</m>.
+</p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review solving equations graphically, see <xref ref="tkFracEqnGraphly" text="custom"> Section 8.5.2 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork><pg-code>
+        $r1 = Compute("1");
+        $r2 = Compute("4");
+        $answer = List("$r1, $r2");
+        $my_evaluator = $answer -> cmp(
+         showHints=>1,
+         showLengthHints => 1,
+         partialCredit => 1,
+        ); 
+    </pg-code>
+<statement><p>The manager of a new health club kept track of the number of active members over the club's first few months of operation.  The number, <m>N</m>  of active members, in hundreds, <m>t</m> months after the club opened is given by the equation
+    <md><mrow>N=\dfrac{10t}{4+t^2}</mrow></md>
+    <ol marker="a.">
+    <li><p>Graph the equation in the window
+        <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 9.4</mrow>
+            <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 3</mrow></md></p></li>
+    <li><p>Use the graph to find out in which months the club had 200 active members.</p>
+        <p>Months: <var name="$answer" width="5"/> Enter month numbers separated by a comma.</p></li>
+    <li>Verify your answer algebraically by solving an equation.</li></ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>A graph is below.</li>
+    <li>1, 4</li>
+</ol></p></solution></webwork>
+<conclusion>
+    <p>Graph for (a):</p>
+    <image width="40%" source="images/fig-GC-healt-club-membership"><description>graph</description></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>The manager of a new health club kept track of the number of active members over the club's first few months of operation.  The number, <m>N</m>  of active members, in hundreds, <m>t</m> months after the club opened is given by the equation
+    <md><mrow>N=\dfrac{10t}{4+t^2}</mrow></md></p>
+    <p><ol marker="a.">
+        <li><p>Graph the equation in the window
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 9.4</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 3</mrow></md></p></li>
+        <li><p>Use the graph to find out in which months the club had 200 active members.</p></li>
+        <li><p>Verify your answer algebraically by solving an equation.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><image width="40%" source="images/fig-GC-healt-club-membership"><description>graph</description></image></li>
+    <li>In months 1 and 4</li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Applications</title>
+
+<p>Application problems may lead to equations with algebraic fractions.</p>
+
+<example xml:id="example-kayak-current"><statement><p>Rani times herself as she kayaks 30 miles down the Derwent River with the help of the current. Returning upstream against the current, she manages only 18 miles in the same amount of time. Rani knows that she can kayak at a rate of 12 miles per hour in still water. What is the speed of the current?</p></statement>
+
+<solution><p>If we let <m>x</m> represent the speed of the current, we can use the formula 
+    <me>\text{time} = \dfrac{\text{distance}}{\text{rate}}</me> 
+to fill in the following table.</p>
+        <tabular top="major" left="minor" right="minor" bottom="minor" halign="center">
+            <row>
+                <cell></cell>
+                <cell>Distance</cell>
+                <cell>Rate</cell>
+                <cell>Time</cell></row>
+            <row>
+                <cell>Downstream</cell>
+                <cell><m>30</m></cell>
+                <cell><m>12+x</m></cell>
+                <cell><m>\dfrac{30}{12+x}</m></cell></row>
+            <row>
+                <cell>Upstream</cell>
+                <cell><m>18</m></cell>
+                <cell><m>12-x</m></cell>
+                <cell><m>\dfrac{18}{12-x}</m></cell></row>
+        </tabular>
+<p>Because Rani paddled for equal amounts of time upstream and downstream, we have the equation
+        <me>\frac{30}{12+x}=\frac{18}{12-x}</me>
+The LCD for the fractions in this equation is <m>\alert{(12 + x)(12 - x)}</m>. We multiply both sides of the equation by the LCD to obtain
+        <md><mrow>\alert{\cancel{(12 + x)}(12 - x)}\dfrac{30}{\cancel{12+x}} \amp =\dfrac{18}{\cancel{12-x}}\alert{(12 + x)\cancel{(12 - x)}}</mrow>
+            <mrow>30 (12 - x) \amp = 18 (12 + x)</mrow></md>
+Solving this equation, we find
+        <md><mrow>360 - 30x \amp = 216 + 18x</mrow>
+            <mrow>144 \amp = 48x</mrow>
+            <mrow>3 \amp = x</mrow></md>
+The speed of the current is 3 miles per hour.</p></solution></example>
+
+<p>We can solve the equation in <xref ref="example-kayak-current" text="type-global"/> graphically by considering two functions, one for each side of the equation. Graph the two functions
+    <me>Y_1=\frac{30}{12+x} \hphantom{space}\text{and}\hphantom{space}Y_2=\frac{30}{12-x}</me>
+in the window
+    <md><mrow>\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 10</mrow></md>
+to obtain the graph shown below.</p>
+        <image width="35%" source="images/fig-GC-intersecting-rational-functions"><description>intersecting rational functions</description></image>
+<p>The function <m>Y_1</m> gives the time it takes Rani to paddle 30 miles downstream, and <m>Y_2</m> gives the time it takes her to paddle 18 miles upstream. Both of these times depend on the speed of the current, <m>x</m>.</p> 
+
+<p>We are looking for a value of <m>x</m> that makes <m>Y_1</m> and <m>Y_2</m> equal. This occurs at the intersection point of the two graphs, <m>(3, 2)</m>. Thus, the speed of the current is 3 miles per hour, as we found in <xref ref="example-kayak-current" text="type-global"/>. The y-coordinate of the intersection point gives the time Rani paddled on each part of her trip: 2 hours each way.</p>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+        $d = Compute("18");
+        $downrate = Formula("x+3");
+        $uprate = Formula("x-3");
+        $downtime = Formula("$d/(x+3)");
+        $uptime = Formula("$d/(x-3)");
+        $times = Formula("$downtime + $uptime");
+        $t = Compute("9/2");
+        $ans = Compute("9");
+    </pg-code>
+    <statement><p>A cruise boat travels 18 miles downstream and back in <m>4\dfrac{1}{2}</m> hours. If the speed of the current is 3 miles per hour, what is the speed of the boat in still water? <ol marker="a.">
+        <li><p>Let <m>x</m> represent the speed of the boat in still water, and fill in the table.</p>
+                    <tabular top="major" left="minor" right="minor" bottom="minor" halign="center">
+                        <row>
+                            <cell></cell>
+                            <cell>Distance</cell>
+                            <cell>Rate</cell>
+                            <cell>Time</cell></row>
+                        <row>
+                            <cell>Downstream</cell>
+                            <cell><var name="$d" width="2"/></cell>
+                            <cell><var name="$downrate" width="3"/></cell>
+                            <cell><var name="$downtime" width="8"/></cell></row>
+                        <row>
+                            <cell>Upstream</cell>
+                            <cell><var name="$d" width="2"/></cell>
+                            <cell><var name="$uprate" width="3"/></cell>
+                            <cell><var name="$uptime" width="8"/></cell></row>
+                    </tabular></li>
+        <li><p>Write an equation to model the problem:</p>
+            <p><m>\text{Downstream time + Upstream time = Total trip time}</m></p>
+            <p><var name="$times" width="20"/><m>=</m> <var name="$t" width="3"/></p></li>
+        <li><p>Solve your equation, and answer the question in the problem.</p>
+            <p><m>x=</m><var name="$ans" width="3"/>: The speed of the boat in still water is <var name="$ans" width="2"/> mph.</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+    <li><tabular top="major" left="minor" right="minor" bottom="minor" halign="center">
+            <row>
+                <cell></cell>
+                <cell>Distance</cell>
+                <cell>Rate</cell>
+                <cell>Time</cell></row>
+            <row>
+                <cell>Downstream</cell>
+                <cell><m>18</m></cell>
+                <cell><m>x+3</m></cell>
+                <cell><m>\dfrac{18}{x+3}</m></cell></row>
+            <row>
+                <cell>Upstream</cell>
+                <cell><m>18</m></cell>
+                <cell><m>x-3</m></cell>
+                <cell><m>\dfrac{18}{x-3}</m></cell></row>
+        </tabular></li>
+    <li><m>\dfrac{18}{x+3} + \dfrac{18}{x-3} = \dfrac{9}{2}</m></li>
+    <li>9 mph</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>A cruise boat travels 18 miles downstream and back in <m>4\dfrac{1}{2}</m> hours. If the speed of the current is 3 miles per hour, what is the speed of the boat in still water?</p>
+    <p><ol marker="a.">
+        <li><p>Let <m>x</m> represent the speed of the boat in still water, and fill in the table.</p>
+                    <tabular top="major" left="minor" right="minor" bottom="minor" halign="center">
+                        <row>
+                            <cell></cell>
+                            <cell>Distance</cell>
+                            <cell>Rate</cell>
+                            <cell>Time</cell></row>
+                        <row>
+                            <cell>Downstream</cell>
+                            <cell><m>\hphantom{00000}</m></cell>
+                            <cell><m>\hphantom{00000}</m></cell>
+                            <cell><m>\hphantom{00000}</m></cell></row>
+                        <row>
+                            <cell>Upstream</cell>
+                            <cell><m>\hphantom{00000}</m></cell>
+                            <cell><m>\hphantom{00000}</m></cell>
+                            <cell><m>\hphantom{00000}</m></cell></row>
+                    </tabular></li>
+        <li><p>Write an equation to model the problem:</p>
+            <p><m>\text{Downstream time + Upstream time = Total trip time}</m></p></li>
+        <li><p>Solve your equation, and answer the question in the problem.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><tabular top="major" left="minor" right="minor" bottom="minor" halign="center">
+            <row>
+                <cell></cell>
+                <cell>Distance</cell>
+                <cell>Rate</cell>
+                <cell>Time</cell></row>
+            <row>
+                <cell>Downstream</cell>
+                <cell><m>18</m></cell>
+                <cell><m>x+3</m></cell>
+                <cell><m>\dfrac{18}{x+3}</m></cell></row>
+            <row>
+                <cell>Upstream</cell>
+                <cell><m>18</m></cell>
+                <cell><m>x-3</m></cell>
+                <cell><m>\dfrac{18}{x-3}</m></cell></row>
+            </tabular></li>
+        <li><m>\dfrac{18}{x+3} + \dfrac{18}{x-3} = \dfrac{9}{2}</m></li>
+        <li><p>In still water the boat travels at 9 mph.</p></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Formulas</title>
+
+<p>Algebraic fractions may appear in formulas that relate several variables.  If we want to solve for one variable in terms of the others, we may need to clear the fractions.</p>
+
+<example><statement><p>Solve the formula <m>~~p=\dfrac{v}{q+v}~~ </m> for <m>v</m>.</p></statement>
+
+<solution><p>Because the variable we want appears in the denominator, we must first multiply both sides of the equation by that denominator, <m>q+v</m>.
+        <md><mrow>\alert{(q+v)}p \amp= \alert{(q+v)}\frac{v}{q+v}</mrow>
+            <mrow>(q + v)p \amp = v</mrow></md>
+We apply the distributive law on the left side, then collect all terms that involve <m>v</m> on one side of the equation.
+        <md><mrow>qp + vp \amp = v \amp\amp \blert{\text{Subtract }vp \text{ from both sides.}}</mrow>
+            <mrow>qp = v - vp</mrow></md>
+We cannot combine the two terms containing <m>v</m> because they are not like terms. However, we can factor out <m>v</m>, so that the right side is written as a single term containing the variable <m>v</m>. We can then complete the solution.
+        <md><mrow>qp \amp = v(1 - p) \amp\amp \blert{\text{Divide both sides by }  1- p.}</mrow>
+            <mrow>\frac{qp}{1-p} \amp= v</mrow></md></p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 7</title>
+    <webwork><pg-code>
+            Context()->variables->add(a=>"Real", b=>"Real", H=>"Real");
+            $f = Formula("(b*H)/(2b-H)");
+        </pg-code>
+        <statement><p>Solve for <m>a</m>: <m>~\dfrac{2ab}{a+b}=H </m></p>
+            <p><m>a=</m><var name="$f" width="15"/> </p>
+        </statement>
+        <solution><p><m>a=\dfrac{bH}{2b-H}</m> </p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 7</title>
+<statement><p>Solve for <m>a</m>: <m>~\dfrac{2ab}{a+b}=H </m></p></statement>
+    <answer><p><m>a=\dfrac{bH}{2b-H}</m> </p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );        
+    </pg-code>
+    <statement><p>True or False.<ol marker="a.">
+        <li><p>To solve an equation graphically, we graph two functions, <m>y=</m> (each side of the equation.) <var name="$True" form="popup"/></p></li>
+        <li><p>The solutions are the <m>y</m>-coordinates of the intersection points of the two graphs.  <var name="$False" form="popup"/></p></li>
+        <li><p>To solve a formula that is linear in the desired variable, we must get all terms including that variable on one side of the equation. <var name="$True" form="popup"/></p></li>
+        <li><p>If two or more terms on one side of the equation include the desired variable, we factor it out. <var name="$True" form="popup"/></p></li></ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>True</li>
+    <li>False</li>
+    <li>True</li>
+    <li>True</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Decide whether each statement is true or false.<ol marker="a.">
+        <li><p>To solve an equation graphically, we graph two functions, <m>y=</m> (each side of the equation.)</p></li>
+        <li><p>The solutions are the <m>y</m>-coordinates of the intersection points of the two graphs.</p></li>
+        <li><p>To solve a formula that is linear in the desired variable, we must get all terms including that variable on one side of the equation.</p></li>
+        <li><p>If two or more terms on one side of the equation include the desired variable, we factor it out.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Summary</title>
+
+<p>In this chapter we have learned a number of algebraic skills to deal with fractions. Here are the operations we studied:
+<ul>
+    <li>reducing fractions</li>
+    <li>multiplying and dividing fractions</li>
+    <li>adding and subtracting fractions</li>
+    <li>simplifying complex fractions</li>
+    <li>polynomial division</li>
+    <li>solving equations with fractions</li>
+</ul></p>
+
+<p>Each type of operation has a particular method, and it may help to review which method to use on each type of operation. To practice choosing the appropriate technique, see <xref ref="tkChooseTech" text="custom"> Section 8.5.3 </xref> of the Toolkit.</p>
+
+</subsection>
+
+
+<xi:include href="./section-8-5-exercises.xml" />                
+
+
+</section>
+<!-- </book>  </mathbook> -->

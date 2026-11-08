@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=1]
+\draw[cyan] (0,0) grid[step=1/2] (4,4);
+\foreach \x in {1,2,3,4} {
+ \draw[cyan,very thick] (\x,0)--(\x,4);
+ \draw[black,very thick] (\x, .1)--++(0,-.2) node[below]{$ \x $};
+ \draw[cyan,very thick] (0,\x)--(4,\x);
+ \draw[black,very thick] (.1,\x)--++(-.2,0) node[left]{$ \x $};
+ }
+\draw[black, very thick,->,>=stealth'] (0,0)--(4.6,0) node[right]{$x$};
+\draw[black, very thick,->,>=stealth'] (0,0)--(0,4.6) node[left]{$y$};
+\end{tikzpicture}%
+}
+\end{document}

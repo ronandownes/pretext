@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter.  Fill in and comment/uncomment to see how this -->
+<!-- works.                                                        -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_frontmatter">
+  <bibinfo>
+    <author>
+      <personname>Katherine Yoshiwara</personname>
+      <institution>Los Angeles Pierce College</institution>
+    </author>
+    <date><today/></date>
+        <copyright>
+            <year>2025</year>
+            <holder>Katherine Yoshiwara</holder>
+            <minilicense>GFDL License</minilicense>
+            <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>  All trademarks<trademark /> are the registered<registered /> marks of their respective owners.</shortlicense>
+        </copyright>
+  </bibinfo>
+
+    <titlepage>
+        <titlepage-items/>
+    </titlepage>
+
+    <colophon>
+        <colophon-items/>
+    </colophon>
+
+
+  <preface xml:id="meta_frontmatter-preface">
+
+<p>This book is meant for anyone who wants to refresh his or her basic math skills. Or for anyone who would like to increase their understanding of the principles behind those skills and why they work. The book can be used as a textbook for college students or other adults, or it can be used for individual study. The sections are largely independent, so a reader can pick and choose topics of interest.</p>
+
+<p>The exposition proceeds at a leisurely pace so that the reader can feel comfortable with the material. In fact, you may find that some parts seem very elementary. That is fine; you can relax and congratulate yourself on your existing knowledge. Learning proceeds best when we examine a topic from various angles, and ideas are sealed in memory by revisiting them in different settings.
+We think you will find something new to think about in most sections.</p>
+
+<p>Each Example in the text is followed by a similar Checkpoint for you to try yourself. There are also Activities that can be used in a classroom setting. If you are reading the book on your own, we hope you will try at least some of the Practice problems; keep pencil and paper handy to jot down your thoughts and calculations. Once again, learning occurs most efficiently, especially in mathematics, if you engage actively with the material.</p> 
+
+<p>But most of all, we hope you will find the material useful, and enjoy learning more about mathematics.</p>
+    
+</preface>
+
+</frontmatter>
+

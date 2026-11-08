@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+
+
+<!-- This file was originally part of the book     -->
+<!--  Trigonometry   -->
+<!--                                               -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<exercises xml:id="hmwk-9-2-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Homework 9-2</title>
+
+<exercisegroup><introduction><p>For Problems 1<ndash/>4, give the coordinate form of each vector shown in the figure. Use the coordinate form to find the following.</p>
+    <image width="35%" xml:id="hp9-2-1"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.3]
+
+        \draw[cyan] (0,0) grid (13,9);
+        \coordinate (u) at (3,2);
+        \coordinate (v) at (-5,3);
+        \coordinate (w) at (6,-3);
+        \coordinate (z) at (-3, -5);
+
+        \draw[red, thick,->,>=stealth'] (1,6)--++(u) node[above right, xshift=-1, fill=white, inner sep=1] {\textbf{u}};
+        \draw[red, thick,->,>=stealth'] (11,5)--++(v) node[above , xshift=2, yshift=1, fill=white, inner sep=1] {\textbf{v}};;
+        \draw[red, thick,->,>=stealth'] (1,4)--++(w) node[ below, xshift=-3, yshift=-4, fill=white, inner sep=1] {\textbf{w}};
+        \draw[red, thick,->,>=stealth'] (12,6)--++(z) node[below, xshift=4, yshift=-3, fill=white, inner sep=1] {\textbf{z}};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</introduction>
+
+<exercise number="1"><statement><p><ol marker="a." cols="3">
+    <li><m>\|{\bf{u}}\|</m></li>
+    <li><m>2{\bf{u}}</m></li>
+    <li><m>\|2{\bf{u}}\|</m></li>
+</ol></p></statement>
+
+<answer><p><m>{\bf{u}} = 3{\bf{i}}+2{\bf{j}}</m><ol marker="a." cols="4">
+    <li><m>\sqrt{13}</m></li>
+    <li><m>6{\bf{i}}+4{\bf{j}}</m></li>
+    <li><m>2\sqrt{13}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a." cols="3">
+    <li><m>\|{\bf{v}}\|</m></li>
+    <li><m>\dfrac{1}{2}{\bf{v}}</m></li>
+    <li><m>\left\|\dfrac{1}{2}{\bf{v}}\right\|</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="3"><statement><p><ol marker="a." cols="3">
+    <li><m>\|{\bf{w}}\|</m></li>
+    <li><m>-{\bf{w}}</m></li>
+    <li><m>\|-{\bf{w}}\|</m></li>
+</ol></p></statement>
+
+<answer><p><m>{\bf{w}} = 6{\bf{i}}-3{\bf{j}}</m><ol marker="a." cols="3">
+    <li><m>3\sqrt{5}</m></li>
+    <li><m>-6{\bf{i}}+3{\bf{j}}</m></li>
+    <li><m>3\sqrt{5}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a." cols="3">
+    <li><m>\|{\bf{z}}\|</m></li>
+    <li><m>-3{\bf{z}}</m></li>
+    <li><m>\|-3{\bf{z}}\|</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="5"><statement><p><ol marker="a.">
+    <li><p>For the vectors <m>{\bf{u}}</m> and <m>{\bf{v}}</m> above, calculate <m>{\bf{u}}+{\bf{v}}</m> and <m>\|{\bf{u}}+{\bf{v}}\|</m>.</p></li>
+    <li><p>Which of the following statements is true?<ol marker="i.">
+        <li><m>\|{\bf{u}}\|+\|{\bf{v}}\| \le \|{\bf{u}}+{\bf{v}}\|</m></li>
+        <li><m>\|{\bf{u}}\|+\|{\bf{v}}\| = \|{\bf{u}}+{\bf{v}}\|</m></li>
+        <li><m>\|{\bf{u}}\|+\|{\bf{v}}\| \ge \|{\bf{u}}+{\bf{v}}\|</m></li>
+    </ol></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>{\bf{u}}+{\bf{v}} = -2{\bf{i}}+5{\bf{j}}</m> and <m>\|{\bf{u}}+{\bf{v}}\| = \sqrt{29}</m></li>
+    <li><m>\|{\bf{u}}\|+\|{\bf{v}}\| \ge \|{\bf{u}}+{\bf{v}}\|</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="6"><statement><p><ol marker="a.">
+    <li><p>For the vectors <m>{\bf{w}}</m> and <m>{\bf{z}}</m> above, calculate <m>{\bf{w}}+{\bf{z}}</m> and <m>\|{\bf{w}}+{\bf{z}}\|</m>.</p></li>
+    <li><p>Which of the following statements is true?<ol marker="i.">
+        <li><m>\|{\bf{w}}\|+\|{\bf{z}}\| \le \|{\bf{w}}+{\bf{z}}\|</m></li>
+        <li><m>\|{\bf{w}}\|+\|{\bf{z}}\| = \|{\bf{w}}+{\bf{z}}\|</m></li>
+        <li><m>\|{\bf{w}}\|+\|{\bf{z}}\| \ge \|{\bf{w}}+{\bf{z}}\|</m></li>
+    </ol></p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 7<ndash/>10,</p>
+<sidebyside widths="40% 35%" valigns="middle middle"><p><ol marker="a.">
+    <li>Sketch the vector and give its coordinate form.</li>
+    <li>Find the magnitude and direction of the vector.</li></ol></p>
+    <image xml:id="hp9-2-7"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.2]
+
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black, thick,->,>=stealth'] (-10,0)--(10.9,0) node[right] {$x$};
+        \draw[black, thick,->,>=stealth'] (0,-10)--(0,10.9) node[above] {$y$};
+
+        \foreach \x in {-10,-5,5,10} {
+         \draw[black,thick] (\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=1]{$\x$};
+         \draw[black,thick] (0.2,\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=1]{$\x$};
+        }
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</introduction>    
+
+<exercise number="7"><statement><p>The displacement vector from <m>(1,-2)</m> to <m>(-4,6)</m>.</p></statement>
+    
+<answer><p><ol marker="a.">
+    <li><sidebyside widths="20% 20%" valigns="middle middle" margins="0% 50%">
+    <image xml:id="hp9-2-7ans"><description>vector</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.2]
+
+        \draw[cyan] (-5,-3) grid (2,7);
+        \draw[black, thick,->,>=stealth'] (-5,0)--(2.9,0) node[right] {$x$};
+        \draw[black, thick,->,>=stealth'] (0,-3)--(0,7.9) node[above] {$y$};
+
+        \foreach \x in {5} {
+         \draw[black,thick] (-\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=1]{$\x$};
+         \draw[black,thick] (0.2,\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=1]{$\x$};
+        }
+
+        \draw[red, thick,->,>=stealth'] (1,-2)--(-4,6);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+        <p><m>-5{\bf{i}}+8{\bf{j}}</m></p></sidebyside></li>
+    <li><m>\|{\bf{v}}\| = \sqrt{89},~~\theta = 122\degree</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="8"><statement><p>The displacement vector from <m>(-5,2)</m> to <m>(4,7)</m>.</p></statement></exercise>
+
+<exercise number="9"><statement><p>The displacement vector from <m>(-2,9)</m> to <m>(-4,8)</m>.</p></statement>
+    
+<answer><p><ol marker="a.">
+    <li><sidebyside widths="20% 20%" valigns="middle middle" margins="0% 50%">
+    <image xml:id="hp9-2-9ans"><description>vector</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.2]
+        \draw[cyan] (-5,-1) grid (2,10);
+        \draw[black, thick,->,>=stealth'] (-5,0)--(2.9,0) node[right] {$x$};
+        \draw[black, thick,->,>=stealth'] (0,-1)--(0,10.9) node[above] {$y$};
+
+        \foreach \x in {5} {
+         \draw[black,thick] (-\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=1]{$\x$};
+         \draw[black,thick] (0.2,\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=1]{$\x$};
+        }
+
+        \draw[red, thick,->,>=stealth'] (-2,9)--(-4,8);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+        <p><m>-2{\bf{i}}-{\bf{j}}</m></p></sidebyside></li>
+    <li><m>\|{\bf{v}}\| = \sqrt{5},~~\theta = 206.6\degree</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement><p>The displacement vector from <m>(-6,2)</m> to <m>(3,0)</m>.</p></statement></exercise>
+</exercisegroup>
+
+<exercise number="11"><statement><p>Hermione is 12 meters east and 3 meters north of Harry. Ron is 6 meters east and 9 meters north of Hermione.<ol marker="a.">
+    <li>Calculate the displacement vector from Harry to Ron in coordinate form. Let <m>{\bf{i}}</m> point east and <m>{\bf{j}}</m> point north.</li>
+    <li>Find the magnitude and direction of the displacement vector.</li></ol></p></statement> 
+    
+<answer><p><ol marker="a.">
+    <li><m>18{\bf{i}}+12{\bf{j}}</m></li>
+    <li><m>\|{\bf{v}}\| = 6\sqrt{13},~~\theta = 33.7\degree</m></li>
+</ol></p></answer></exercise>
+        
+<exercise number="12"><statement><p>Delbert and Francine are climbing a rock wall. Delbert is 8 feet to the right and and 23 feet above their starting point. Francine is 2 feet to the right and 7 feet above Delbert.
+<ol marker= "a.">  
+    <li>Calculate the displacement vector from the starting point to Francine in coordinate form. Let <m>{\bf{i}}</m> point right and <m>{\bf{j}}</m> point up.</li>
+    <li>Find the magnitude and direction of the displacement vector.</li>
+</ol></p></statement> </exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13<ndash/>18, find the magnitude and direction of the vector.</p></introduction>
+
+<exercise number="13"><statement><p><m>{\bf{v}} = -6{\bf{i}}+6{\bf{j}}</m></p></statement> 
+    <answer><p><m>\|{\bf{v}}\| = 6\sqrt{2},~~\theta = 135\degree</m></p></answer></exercise>
+        
+<exercise number="14"><statement><p><m>{\bf{p}} = -12{\bf{i}}-5{\bf{j}}</m></p></statement> </exercise>
+
+<exercise number="15"><statement><p><m>{\bf{w}} = 7\sqrt{3}{\bf{i}}-7{\bf{j}}</m></p></statement>
+    <answer><p><m>\|{\bf{w}}\| = 14,~~\theta = -30\degree</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>{\bf{z}} = -6\sqrt{2}{\bf{i}}+6\sqrt{6}{\bf{j}}</m></p></statement></exercise>
+     
+<exercise number="17"><statement><p><m>{\bf{q}} = 52{\bf{i}}+96{\bf{j}}</m></p></statement>
+    <answer><p><m>\|{\bf{q}}\| = 4\sqrt{745},~~\theta = 61.56\degree</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>{\bf{s}} = 3.2{\bf{i}}-1.8{\bf{j}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 19<ndash/>22, find the coordinate form of the vector.</p></introduction>
+
+<exercise number="19"><statement><p><m>\|{\bf{v}}\|=6,~\theta = -45\degree</m></p></statement>
+    <answer><p><m>{\bf{v}} = 3\sqrt{2}{\bf{i}}-3\sqrt{2}{\bf{j}}</m></p></answer></exercise>
+        
+<exercise number="20"><statement><p><m>\|{\bf{v}}\|=200,~\theta = 240\degree</m></p></statement></exercise>
+
+<exercise number="21"><statement><p><m>\|{\bf{v}}\|=8.3,~\theta = 37\degree</m></p></statement>
+    <answer><p><m>{\bf{v}} \approx 6.629{\bf{i}}+4.995{\bf{j}}</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>\|{\bf{v}}\|=23,~\theta = 200\degree</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 23<ndash/>26, sketch each vector and its components. Use the coordinate form to find the resultant vector <m>{\bf{u}}+{\bf{v}}</m>, and sketch it.</p></introduction>
+
+<exercise number="23"><statement><p><m>{\bf{u}} = -3{\bf{i}}+2{\bf{j}},~{\bf{v}} = 4{\bf{i}}-4{\bf{j}}</m></p></statement>
+    
+<answer><sidebyside widths="15% 50%" margins="0% 5%"><p><m>{\bf{i}}-2{\bf{j}}</m></p>
+    <image xml:id="hp9-2-23ans"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.3]
+        \draw[cyan] (-4,-3) grid (2,3);
+        \draw[black, thick,->,>=stealth'] (-4,0)--(2.9,0) node[right] {$x$};
+        \draw[black, thick,->,>=stealth'] (0,-3)--(0,3.9) node[above] {$y$};
+
+        \foreach \x in {3} {
+         \draw[black,thick] (-\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=1]{$\x$};
+         \draw[black,thick] (0.2,\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=1]{$\x$};
+        }
+
+        \coordinate(u) at (-3,2);
+        \coordinate(v) at (4,-4);
+
+        \draw[lightgray,->,>=stealth'] (0,0)--(u);
+        \draw[lightgray,->,>=stealth'] (u)--++(v);
+        \draw[red, thick,->,>=stealth'] (0,0)--($ (u)+(v)$);
+
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</answer></exercise>
+
+<exercise number="24"><statement><p><m>{\bf{u}}= 5{\bf{i}}+{\bf{j}},~{\bf{v}} = 2{\bf{i}}-3{\bf{j}}</m></p></statement></exercise>
+
+<exercise number="25"><statement><p><m>{\bf{u}}= -5{\bf{i}}-2{\bf{j}},~{\bf{v}} = {\bf{i}}+6{\bf{j}}</m></p></statement>
+    
+<answer><sidebyside widths="30% 50%" margins="0% 5%"><p><m>-4{\bf{i}}+4{\bf{j}}</m></p>
+    <image xml:id="hp9-2-25ans"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.2]
+        \draw[cyan] (-6,-3) grid (3,5);
+        \draw[black, thick,->,>=stealth'] (-6,0)--(3.9,0) node[right] {$x$};
+        \draw[black, thick,->,>=stealth'] (0,-3)--(0,5.9) node[above] {$y$};
+
+        \foreach \x in {3} {
+         \draw[black,thick] (-\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=1]{$\x$};
+         \draw[black,thick] (0.2,\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=1]{$\x$};
+        }
+
+        \coordinate(u) at (-5,-2);
+        \coordinate(v) at (1,6);
+
+        \draw[lightgray,->,>=stealth'] (0,0)--(u);
+        \draw[lightgray,->,>=stealth'] (u)--++(v);
+        \draw[red, thick,->,>=stealth'] (0,0)--($ (u)+(v)$);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</answer></exercise>
+
+<exercise number="26"><statement><p><m>{\bf{u}}=8{\bf{i}}-3{\bf{j}},~{\bf{v}}= -4{\bf{i}}-2{\bf{j}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 27<ndash/>30, find the sum <m>{\bf{u}}+{\bf{v}}</m> of the given vectors.</p></introduction>
+
+<exercise number="27"><statement><p><m>{\bf{u}}=13{\bf{i}}-8{\bf{j}},~{\bf{v}}= -1{\bf{i}}+11{\bf{j}}</m></p></statement>
+<answer><p><m>12{\bf{i}}+3{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="28"><statement><p><m>{\bf{u}}=3.7{\bf{i}}+2.6{\bf{j}},~{\bf{v}}=-1.3{\bf{i}}-5.7{\bf{j}}</m></p></statement></exercise>
+
+<exercise number="29"><statement><p><m>{\bf{u}}=-3{\bf{i}}+9{\bf{j}},~{\bf{v}}=5.8{\bf{i}}-7.1{\bf{j}}</m></p></statement>
+<answer><p><m>2.8{\bf{i}}+1.9{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="30"><statement><p><m>{\bf{u}}=6{\bf{i}}-8{\bf{j}},~{\bf{v}}=23{\bf{i}}+42{\bf{j}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 31<ndash/>38, find the coordinate form of the vector, where
+        <me>{\bf{u}}=2{\bf{i}}+3{\bf{j}},~~{\bf{v}}=-5{\bf{i}}+4{\bf{j}},~~{\bf{w}}=-2{\bf{i}}-5{\bf{j}},~~{\bf{z}}=8{\bf{i}}-3{\bf{j}}</me></p></introduction>
+
+<exercise number="31"><statement><p><m>{\bf{u}}+{\bf{v}}</m></p></statement>
+<answer><p><m>-3{\bf{i}}+7{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="32"><statement><p><m>{\bf{w}}-{\bf{z}}</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>4{\bf{w}}</m></p></statement>
+<answer><p><m>-8{\bf{i}}-20{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="34"><statement><p><m>-3{\bf{v}}</m></p></statement></exercise>
+
+<exercise number="35"><statement><p><m>2{\bf{z}}-{\bf{u}}</m></p></statement>
+<answer><p><m>14{\bf{i}}-9{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="36"><statement><p><m>-{\bf{w}}+5{\bf{u}}</m></p></statement></exercise>
+
+<exercise number="37"><statement><p><m>3{\bf{v}}-{\bf{w}}+2{\bf{u}}</m></p></statement>
+<answer><p><m>-9{\bf{i}}+23{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="38"><statement><p><m>{\bf{z}}-2({\bf{v}}+{\bf{w}})</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 39<ndash/>42, find a unit vector <m>{\bf{u}}</m> in the same direction as the given vector.</p></introduction>
+
+<exercise number="39"><statement><p><m>{\bf{r}}=-12{\bf{i}}+5{\bf{j}}</m></p></statement>
+<answer><p><m>\dfrac{-12}{13}{\bf{i}}+\dfrac{5}{13}{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="40"><statement><p><m>{\bf{s}}=7{\bf{i}}-24{\bf{j}}</m></p></statement></exercise>
+
+<exercise number="41"><statement><p><m>{\bf{t}}={\bf{i}}-{\bf{j}}</m></p></statement>
+<answer><p><m>\dfrac{1}{\sqrt{2}}{\bf{i}}-\dfrac{1}{\sqrt{2}}{\bf{j}}</m></p></answer></exercise>
+ 
+<exercise number="42"><statement><p><m>{\bf{w}}=-2{\bf{i}}-3{\bf{j}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 43<ndash/>46, find a vector <m>{\bf{v}}</m> in the same direction as <m>{\bf{w}}</m>, but with the given length.</p></introduction>
+
+<exercise number="43"><statement><p><m>{\bf{w}}=8{\bf{i}}+15{\bf{j}},~ \|{\bf{v}}\|=51</m></p></statement>
+<answer><p><m>24{\bf{i}}+45{\bf{j}}</m></p></answer></exercise>
+
+<exercise number="44"><statement><p><m>{\bf{w}}=-20{\bf{i}}-21{\bf{j}},~ \|{\bf{v}}\|=58</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>{\bf{w}}=-3{\bf{i}}+{\bf{j}},~ \|{\bf{v}}\|=4</m></p></statement>
+<answer><p><m>\dfrac{-12}{\sqrt{10}}{\bf{i}}+\dfrac{4}{\sqrt{10}}{\bf{j}}</m></p></answer></exercise>
+
+<exercise number="46"><statement><p><m>{\bf{w}}={\bf{i}}-2{\bf{j}},~ \|{\bf{v}}\|=7</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 47<ndash/>50,
+<ol marker="a."> 
+    <li>Draw a diagram using arrows to represent the vectors.</li>
+    <li>Convert each vector to coordinate form.</li>
+    <li>Use the coordinate form to add or subtract the vectors.</li>
+</ol></p></introduction>
+
+<exercise number="47"><statement><p>Find <m>{\bf{u}}+{\bf{v}}</m>, where <m>{\bf{u}}</m> has magnitude 2.6 and direction <m>\theta = 23\degree</m>, <m>{\bf{v}}</m> has magnitude 5.8 and direction <m>\theta = 223\degree</m>.</p></statement>
+
+<answer><p><ol marker="a."> 
+    <li><image width="25%" xml:id="hp9-2-47ans"><description>vectors</description><latex-image>
+        <![CDATA[
+            \begin{tikzpicture} [scale=0.3]
+            \draw[cyan] (-3,-3) grid (3,2);
+            \draw[black, thick,->,>=stealth'] (-3,0)--(3.9,0) node[right] {$x$};
+            \draw[black, thick,->,>=stealth'] (0,-3)--(0,2.9) node[above] {$y$};
+
+            \foreach \x in {2} {
+             \draw[black,thick] (\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=0]{$\x$};
+             \draw[black,thick] (0.2,\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=0]{$\x$};
+             \draw[black,thick] (-\x,0.2)--++(0,-.4) node[below, yshift=-2, fill=white, inner sep=0]{$-\x$};
+             \draw[black,thick] (0.2,-\x)--++(-.4,0) node[left, xshift=-2, fill=white, inner sep=0]{$-\x$};
+            }
+
+            \coordinate(u) at (23:2.6);
+            \coordinate(v) at (223:5.8);
+
+            \draw[blue,->,>=stealth'] (0,0)--(u);
+            \draw[blue,->,>=stealth'] (u)--++(v);
+            \draw[red, thick,->,>=stealth'] (0,0)--($ (u)+(v)$);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><m>{\bf{u}}=2.393{\bf{i}}+1.016{\bf{j}},~~{\bf{v}}=-4.242{\bf{i}}-3.956{\bf{j}}</m></li>
+    <li><m>-1.849{\bf{i}}-2.940{\bf{j}}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="48"><statement><p>Find <m>{\bf{u}}+{\bf{v}}</m>, where <m>{\bf{u}}</m> has magnitude 50 and direction <m>\theta = 173\degree</m>, <m>{\bf{v}}</m> has magnitude 70 and direction <m>\theta = 308\degree</m>.</p></statement></exercise>
+
+<exercise number="49"><statement><p>Find <m>{\bf{u}}-{\bf{v}}</m>, where <m>{\bf{u}}</m> has magnitude 35 and direction <m>\theta = 110\degree</m>, <m>{\bf{v}}</m> has magnitude 60 and direction <m>\theta = 165\degree</m>.</p></statement>
+
+<answer><p><ol marker="a."> 
+    <li><image width="27%" xml:id="hp9-2-49ans"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.025]
+        \draw[cyan] (-30,-20) grid[step=10] (50,60);
+        \draw[black, thick,->,>=stealth'] (-30,0)--(59,0) node[right] {$x$};
+        \draw[black, thick,->,>=stealth'] (0,-20)--(0,69) node[above] {$y$};
+
+         \draw[black,thick] (40,02)--++(0,-4) node[below, yshift=-2, fill=white, inner sep=0]{$40$};
+
+        \foreach \x in {20} {
+         \draw[black,thick] (\x,02)--++(0,-4) node[below, yshift=-2, fill=white, inner sep=0]{$\x$};
+         \draw[black,thick] (-\x,02)--++(0,-4) node[below, yshift=-2, fill=white, inner sep=0]{$-\x$};
+         \draw[black,thick] (2,-\x)--++(-4,0) node[left, yshift=-2, fill=white, inner sep=0]{$-\x$};
+        }
+
+        \coordinate(u) at (110:35);
+        \coordinate(v) at (165:60);
+
+        \draw[green!80!black,->,>=stealth'] (0,0)--(u) node[left,midway, xshift=-2, fill=white, inner sep=0]{\textbf{u}};
+        %\draw[blue,->,>=stealth'] (u)--++(v);
+        \draw[blue,->,>=stealth'] (40,30)--++(v) node[left, fill=white, inner sep=0]{\textbf{v}};
+        \draw[cyan,->,>=stealth'] (u)--++($-1*(v)$);
+        \draw[red, thick,->,>=stealth'] (0,0)--($ (u)-(v)$);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><m>{\bf{u}}=-11.97{\bf{i}}+32.889{\bf{j}},~~{\bf{v}}=-57.955{\bf{i}}+15.529{\bf{j}}</m></li>
+    <li><m>45.98{\bf{i}}+17.36{\bf{j}}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="50"><statement><p>Find <m>{\bf{u}}-{\bf{v}}</m>, where <m>{\bf{u}}</m> has magnitude 12.4 and direction <m>\theta = 250\degree</m>, <m>{\bf{v}}</m> has magnitude 8.8 and direction <m>\theta = 315\degree</m>.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 51<ndash/>56,
+<ol marker="a."> 
+    <li>Make a sketch using vectors to illustrate the problem.</li>
+    <li>Use the coordinate form of the vectors to solve problem.</li>
+</ol></p></introduction>
+
+<exercise number="51"><statement><p>The tornado displaced the trash bin to a spot 500 meters north and 800 meters east of its original position, and the flood later displaced the bin 2000 meters due south from there. How far and in what direction was the trash bin moved from it original position?</p></statement>
+
+<answer><p><ol marker="a."> 
+    <li><image width="22%" xml:id="hp9-2-51ans"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.12]
+        \draw[cyan] (-6,-16) grid[step=2] (10,6);
+        \draw[black, thick,->,>=stealth'] (-6,0)--(11,0) node[right] {$E$};
+        \draw[black, thick,->,>=stealth'] (0,-16)--(0,7) node[above] {$N$};
+
+        \draw[black,thick] (8,.40)--++(0,-.80) node[below, yshift=-2, fill=white, inner sep=0]{$800$};
+        \draw[black,thick] (.40,-8)--++(-.80,0) node[left, yshift=-2, fill=white, inner sep=0]{-$800$};
+
+        \coordinate(u) at (8,5);
+        \coordinate(v) at (0,-20);
+
+        \draw[green!80!black,->,>=stealth'] (0,0)--(u);
+        \draw[blue,->,>=stealth'] (u)--++(v);
+        \draw[red, thick,->,>=stealth'] (0,0)--($ (u)+(v)$);
+
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>1700 m, <m>28.1\degree</m> east of south</li>
+</ol></p></answer></exercise>
+
+<exercise number="52"><statement><p>A radio-controlled model plane pointed due west with an airspeed of 15 miles per hour, but there was a crosswind from the north at a speed of 8 miles per hour. How fast and in what direction is the plane moving relative to the ground?</p></statement></exercise>
+
+<exercise number="53"><statement><p>Nimish flies 10 km in a direction <m>175\degree</m> north from east, then turns and flies an additional 12 km due west.  How far and in what direction is Nimish's final position relative to his starting point?</p></statement>
+
+<answer><p><ol marker="a."> 
+    <li><image width="28%" xml:id="hp9-2-53ans"><description>vectors</description><latex-image>
+         <![CDATA[
+        \begin{tikzpicture} [scale=.09]
+        \draw[cyan] (-25,-10) grid[step=5] (5,10);
+        \draw[black, thick,->,>=stealth'] (-25,0)--(6,0) node[right] {$E$};
+        \draw[black, thick,->,>=stealth'] (0,-10)--(0,11) node[above] {$N$};
+
+        \draw[black,thick] (-10,.40)--++(0,-.80) node[below, yshift=-2, fill=white, inner sep=0]{$-10$};
+        \draw[black,thick] (-20,.40)--++(0,-.80) node[below, yshift=-2, fill=white, inner sep=0]{$-20$};
+        \draw[black,thick] (.40,-5)--++(-.80,0) node[left, yshift=-2, fill=white, inner sep=0]{-$5$};
+        \draw[black,thick] (.40,5)--++(-.80,0) node[left, yshift=-2, fill=white, inner sep=0]{$5$};
+
+        \coordinate(u) at (175:10);
+        \coordinate(v) at (180:12);
+
+        \draw[green!80!black,->,>=stealth'] (0,0)--(u);
+        \draw[blue,->,>=stealth'] (u)--++(v);
+        \draw[red, thick,->,>=stealth'] (0,0)--($ (u)+(v)$);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>21.98 km, <m>2.27\degree</m> north of west</li>
+</ol></p></answer></exercise>
+
+<exercise number="54"><statement><p>Dena sails 500 yards due south, then turns and sails 350 yards in the direction <m>300\degree</m> from east. How far and in what direction is Dena's final position relative to her starting point?</p></statement></exercise>
+
+<exercise number="55"><statement><p>After leaving the airport, Kelly flew 30 miles at a heading <m>30\degree</m> east of north, then 50 miles <m>70\degree</m> east of north, and finally 12 miles <m>20\degree</m> south of east. What is her current position relative to the airport?</p></statement>
+
+<answer><p><ol marker="a."> 
+    <li><image width="30%" xml:id="hp9-2-55ans"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.03]
+        \draw[cyan] (-10,-10) grid[step=10] (80,50);
+        \draw[black, thick,->,>=stealth'] (-10,0)--(85,0) node[right] {$E$};
+        \draw[black, thick,->,>=stealth'] (0,-10)--(0,55) node[above] {$N$};
+
+        \draw[black,thick] (50,.90)--++(0,-1.80) node[below, yshift=-2, fill=white, inner sep=0]{$50$};
+        \draw[black,thick] (.90,50)--++(-1.80,0) node[left, xshift=-2, fill=white, inner sep=0]{$50$};
+
+        \coordinate(u) at (60:30);
+        \coordinate(v) at (20:50);
+        \coordinate(w) at (-20:12);
+
+        \draw[green!80!black,->,>=stealth'] (0,0)--(u);
+        \draw[blue,->,>=stealth'] (u)--++(v);
+        \draw[teal,->,>=stealth'] ($ (u)+(v)$)--++(w);
+        \draw[red, thick,->,>=stealth'] (0,0)--($ (u)+(v)+(w)$);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>83 mi, <m>62\degree</m> east of north</li>
+</ol></p></answer></exercise>
+
+<exercise number="56"><statement><p>On a whale-watching trip, the SS Dolphin sailed 15 miles from port on a bearing of <m>40\degree</m>, then 8 miles on a bearing of <m>320\degree</m>, and then 4 miles on a bearing of <m>250\degree</m>. What is her current position relative to port?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 57<ndash/>60,
+<ol marker="a."> 
+    <li>Find the resultant force.</li>
+    <li>Find the additional force needed for the system to be in equilibrium.</li>
+</ol></p></introduction>
+
+<exercise number="57"><statement><p><m>{\bf{F_1}}=-3{\bf{i}}+{\bf{j}},</m> <m>~{\bf{F_2}}= 5{\bf{i}}-2{\bf{j}},</m> <m>~{\bf{F_3}}=-6{\bf{i}}-4{\bf{j}}</m></p></statement>
+
+<answer><p><ol marker="a."> 
+    <li><m>-4{\bf{i}}-5{\bf{j}}</m></li>
+    <li><m>4{\bf{i}}+5{\bf{j}}</m></li>
+</ol></p></answer></exercise>
+ 
+<exercise number="58"><statement><p><m>{\bf{F_1}}=10{\bf{i}}+4{\bf{j}},</m> <m>~{\bf{F_2}}= -12{\bf{i}}-9{\bf{j}},</m> <m>~{\bf{F_3}}=-3{\bf{i}}+5{\bf{j}}</m></p></statement></exercise>
+
+<exercise number="59"><statement><image width="50%" xml:id="hp9-2-59"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.32]
+        \draw[cyan] (0,0) grid (10,13);
+
+        \coordinate(O) at (4,9);
+        \coordinate(f1) at (0,-8);
+        \coordinate(f2) at (-3,0);
+        \coordinate(f3) at (-1,3);
+        \coordinate(f4) at (5,2);
+
+        \draw[red, very thick,->,>=stealth'] (O)--++(f1) node[right, xshift=3, yshift=2, fill=white, inner sep=0]{$\textbf{F}_1$};
+        \draw[red, very thick,->,>=stealth'] (O)--++(f2) node[below, yshift=-2, fill=white, inner sep=0]{$\textbf{F}_2$};
+        \draw[red, very thick,->,>=stealth'] (O)--++(f3) node[right, xshift=5, fill=white, inner sep=0]{$\textbf{F}_3$};
+        \draw[red, very thick,->,>=stealth'] (O)--++(f4) node[above left, xshift=-2, yshift=3, fill=white, inner sep=0]{$\textbf{F}_4$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+
+<answer><p><ol marker="a."> 
+    <li><m>{\bf{i}}-3{\bf{j}}</m></li>
+    <li><m>-{\bf{i}}+3{\bf{j}}</m></li>
+</ol></p></answer></exercise>
+ 
+<exercise number="60"><statement><image width="70%" xml:id="hp9-2-60"><description>vectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.36]
+        \draw[cyan] (0,0) grid (12,8);
+
+        \coordinate(O) at (6,4);
+        \coordinate(f1) at (-5,0);
+        \coordinate(f2) at (240:4);
+        \coordinate(f3) at (-30:5);
+        \coordinate(f4) at (45:3);
+
+        \draw[red, very thick,->,>=stealth'] (O)--++(f1) node[below , xshift=2, yshift=-5, fill=white, inner sep=0]{$\textbf{F}_1$};
+        \draw[red, very thick,->,>=stealth'] (O)--++(f2) node[above left, xshift=-2, yshift=2, fill=white, inner sep=0]{$\textbf{F}_2$};
+        \draw[red, very thick,->,>=stealth'] (O)--++(f3) node[above right, xshift=2, fill=white, inner sep=0]{$\textbf{F}_3$};
+        \draw[red, very thick,->,>=stealth'] (O)--++(f4) node[above right, xshift=2, yshift=2, fill=white, inner sep=0]{$\textbf{F}_4$};
+        \node[fill=white, inner sep =1] at (3.5,4.5) {200};
+        \node[fill=white, inner sep =1] at (5.7,1.4) {160};
+        \node[fill=white, inner sep =1] at (7.4,2.3) {200};
+        \node[ fill=white, inner sep =1] at (6,5.4) {120};
+        \draw[gray] (5,4) arc(180:240:1) node[left, midway, xshift=-3, yshift=-2, text=black, fill=white, inner sep=0]{$60\degree$};
+        \draw[gray,thick] (O)--++(2,0);
+        \draw[gray] (6.9,4) arc(0:45:.9) node[right, midway, xshift=4, yshift=2, text=black, fill=white, inner sep=0]{$45\degree$};
+        \draw[gray] (7.8,4) arc(0:-30:1.8) node[right, midway, xshift=5, yshift=-1, text=black, fill=white, inner sep=0]{$30\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+</exercisegroup>
+
+<exercise number="61"><statement><p><ol marker="a.">
+    <li>Find the magnitude of the vector<m>{\bf{v}}=6{\bf{i}}-8{\bf{j}}</m>, and the magnitude of the vector <m>2{\bf{v}}=12{\bf{i}}-16{\bf{j}}</m>, and verify that <m>\|2{\bf{v}}\| = 2\|{\bf{v}}\|</m>.</li>
+    <li>Let <m>{\bf{v}}=a{\bf{i}}+b{\bf{j}}</m>, and verify that <m>\|k{\bf{v}}\| = k\|{\bf{v}}\|</m>, for <m>k \gt 0</m>.</li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>\|{\bf{v}}\| = 10,~ 2\|{\bf{v}}\| = 20 = 2 \cdot 10</m></li>
+    <li><m>\|k{\bf{v}}\| = \sqrt{(ka)^2 +(kb)^2} = k\sqrt{a^2 + b^2}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="62"><statement><p><ol marker="a.">
+    <li>Find the magnitude of the vector <m>{\bf{v}}=3{\bf{i}}+5{\bf{j}}</m>, and verify that the vector <m> \dfrac{{\bf{v}}}{\|{\bf{v}}\|}</m> has magnitude 1.</li>
+    <li>Let <m>{\bf{v}}=a{\bf{i}}+b{\bf{j}}</m>, where <m>a</m> and <m>b</m> are not both <m>0</m>, and verify that <m> \dfrac{{\bf{v}}}{\|{\bf{v}}\|}</m>  is a unit vector.</li>
+</ol></p></statement></exercise>
+
+</exercises>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-2-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Variables</title>
+
+<sidebyside widths="50% 35%" valigns="middle middle"><p><ul>
+    <li><p>What is a Variable?</p></li>
+    <li><p>Bar Graphs</p></li>
+    <li><p>Using Letters for Variables</p></li>
+  </ul></p>
+      <image source="earth.png"></image></sidebyside>
+
+<subsection><title>What is a Variable?</title>
+
+<p>We live in a world of change. The numbers we use to measure our world change, too. The temperature and humidity of the environment change day-by-day, as do prices on the stock market. We monitor our blood pressure and cholesterol count to detect changes in our health. The connections between variable quantities help us understand the forces that shape our world.</p> 
+
+<example><statement><p><ol marker="a.">
+  <li><p> Consider the table below. Do you see a pattern that relates Delbert's age to Francine's age?</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Francine's age</cell>
+      <cell>Delbert's age</cell></row>
+    <row>
+      <cell>10</cell>
+      <cell>16</cell></row>
+    <row>
+      <cell>13</cell>
+      <cell>19</cell></row>
+    <row>
+      <cell>17</cell>
+      <cell>23</cell></row>
+    </tabular></p> 
+
+  <p>Yes: Delbert's age is always six more than Francine's age.</p></li>
+  <li><p>Write a mathematical sentence that expresses Delbert's age in terms of Francine's age.</p>
+  <me>\text{Delbert's age} = \blert{\text{Francine's age} + 6}</me></li>
+</ol></p></statement></example>
+
+<p>In the example above, Francine's age and Delbert's age are <term>variables</term>.</p>
+
+<assemblage><title>Definition</title>
+<p>A <term>variable</term> is a numerical quantity that can take on different values at different times or in different situations.</p></assemblage>
+
+<note><p>Quantities that do not change, such as the six-year age difference between Delbert and Francine, are called <term>constants</term>.</p></note>
+
+<exercise><statement><p>The table shows the regular price, in dollars, of several items at a sporting goods store, and the discount price with a coupon. </p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Regular Price ($)</cell>
+      <cell>Discount Price ($)</cell></row>
+    <row>
+      <cell>9.99</cell>
+      <cell>7.99</cell></row>
+    <row>
+      <cell>10.99</cell>
+      <cell>8.99</cell></row>
+    <row>
+      <cell>11.49</cell>
+      <cell>9.49</cell></row>
+    </tabular></p> 
+
+  <p><ol marker="a.">
+    <li><p>Is there a pattern that relates the discount price to the regular price?</p></li>
+    <li><p>Write a mathematical sentence that expresses the discount price in terms of the regular price.</p>
+          <p>Discount price =  </p></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><p>Yes, the discount price is $2 less than the regular price.</p></li>
+    <li><p>Discount price <m>=</m>  Regular price <m>-</m> $2</p></li>
+  </ol></p></answer></exercise>                                                 
+
+<assemblage><title>Looking for Patterns</title>
+  <p>Did you see the pattern relating the Discount price to the Regular price in Checkpoint 2.2.3? When we look for a pattern we can check several possibilities:</p>
+  <p><ul>
+  <li><p>Is there a constant number we can add to or subtract from the first variable to get the second variable?</p></li>
+  <li><p>Can we multiply or divide the first variable by a constant to get the second variable?</p></li>
+  <li><p>Is the sum or the product of the two variables a constant?</p></li>
+</ul></p></assemblage>
+
+<example><statement><p><ol marker="a.">
+  <li><p>In the table below, do you see a pattern that relates the total utility bill to your share?</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Utility Bill ($)</cell>
+      <cell>Your Share ($)</cell></row>
+    <row>
+      <cell>28</cell>
+      <cell>7</cell></row>
+    <row>
+      <cell>36</cell>
+      <cell>9</cell></row>
+    <row>
+      <cell>42</cell>
+      <cell>10.50</cell></row>
+    </tabular></p> 
+
+  <p>Yes:  Your share is one fourth of the total bill, so you can divide the total bill by 4 to find your share.</p></li>
+  <li><p>Write a mathematical sentence that expresses your share of the bill in terms of the total bill.
+    <me>\text{Your share} = \blert{\text{utility bill} \div 4}</me></p></li>
+  </ol></p></statement></example>
+
+  <p>In Example 2.3.4, Your Share and Utility Bill are variables, because they can change from month to month.</p>
+
+  <exercise><statement><p>The table shows the weight of a salad and the price charged by the cafeteria.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Weight (oz)</cell>
+      <cell>Price ($)</cell></row>
+    <row>
+      <cell>4</cell>
+      <cell>0.40</cell></row>
+    <row>
+      <cell>6</cell>
+      <cell>0.60</cell></row>
+    <row>
+      <cell>8</cell>
+      <cell>0.80</cell></row>
+    </tabular></p> 
+
+<p><ol marker="a.">
+  <li><p>Is there a pattern that relates the price of the salad to its weight?</p></li>
+   <li><p>Write a mathematical sentence that expresses the price of the salad in terms of its weight.</p>
+        <p>Price = </p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>Yes, the price is 0.10 times the weight in ounces.</p></li>
+   <li><p>Price = 0.10 <m>\times</m> Weight</p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Find the Rule</title>
+<introduction><p>Complete each table, then write a mathematical sentence relating the variables.</p></introduction>
+<p><ol cols="2">
+<li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Revenue ($)</cell>
+      <cell>Profit ($)</cell></row>
+    <row>
+      <cell>1000</cell>
+      <cell>800</cell></row>
+    <row>
+      <cell>850</cell>
+      <cell>650</cell></row>
+    <row>
+      <cell>500</cell>
+      <cell>300</cell></row>
+    <row>
+      <cell>400</cell>
+      <cell></cell></row>
+    </tabular></p>
+
+    <p>Profit = </p></li>
+
+<li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Price ($)</cell>
+      <cell>Tax ($)</cell></row>
+    <row>
+      <cell>100</cell>
+      <cell>8</cell></row>
+    <row>
+      <cell>150</cell>
+      <cell>12</cell></row>
+    <row>
+      <cell>175</cell>
+      <cell>14</cell></row>
+    <row>
+      <cell>200</cell>
+      <cell></cell></row>
+    </tabular></p>
+
+    <p>Tax = </p></li>
+
+<li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Gas Used (gal)</cell>
+      <cell>Gas Left (gal)</cell></row>
+    <row>
+      <cell>1.5</cell>
+      <cell>18.5</cell></row>
+    <row>
+      <cell>4.2</cell>
+      <cell>15.8</cell></row>
+    <row>
+      <cell>12.5</cell>
+      <cell>7.5</cell></row>
+    <row>
+      <cell>15.6</cell>
+      <cell></cell></row>
+    </tabular></p>
+
+    <p>Gas Left = </p></li>
+
+<li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Length(in)</cell>
+      <cell>Width (in)</cell></row>
+    <row>
+      <cell>2</cell>
+      <cell>18</cell></row>
+    <row>
+      <cell>3</cell>
+      <cell>12</cell></row>
+    <row>
+      <cell>4</cell>
+      <cell>9</cell></row>
+    <row>
+      <cell>6</cell>
+      <cell></cell></row>
+    </tabular></p>
+
+    <p>Width = </p></li>
+</ol></p></activity>
+</subsection>
+
+<subsection xml:id="bargraph"><title>Bar Graphs</title>
+
+<p>We can use a <term>bar graph</term> to display the values of a variable. The height of the bar illustrates the value at each time or in each situation.</p>
+
+<example><statement><p>The bar graph shows the number of new homes sold each month in Columbus County last year.</p>
+    <image source="bargraph1.png" width="75%"></image>
+<p><ol marker="a.">
+  <li><p>What variable is shown in this graph?
+        <me>\blert{\text{Number of new homes}}</me></p></li>
+  <li><p>How many houses were sold in March?
+        <me>\blert{\text{Twenty houses were sold in March.}}</me></p></li>
+  <li><p>In which month(s) were 35 houses sold?
+        <me>\blert{\text{Thirty-five houses were sold in July and in October.}}</me></p></li>
+  <li><p>In which month were the most houses sold, and how many houses were sold that month?
+        <me>\blert{\text{The most houses were sold in June;  40 houses were sold that month.}}</me></p></li>
+  <li><p>How much did housing sales decline from October to November?
+        <me>\blert{\text{Housing sales declined by 25 (from 35 to 10).}}</me></p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p>Refer to the bar graph in Example 2.3.6, which shows new home sales in Columbus County.</p> 
+<p><ol marker="a.">
+  <li><p>How many houses were sold in February?</p></li>
+  <li><p>In which month(s) were 20 houses sold?</p></li>
+  <li><p>In which month were the fewest houses sold, and how many houses were sold that month?</p></li>
+  <li><p>Fill in the table showing the number of new homes sold each month.</p>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Month</cell>
+      <cell>Houses Sold</cell>
+      <cell>Month</cell>
+      <cell>Houses Sold</cell></row>
+    <row>
+      <cell>January</cell>
+      <cell></cell>
+      <cell>July</cell>
+      <cell></cell></row>
+    <row>
+      <cell>February</cell>
+      <cell></cell>
+      <cell>August</cell>
+      <cell></cell></row>
+    <row>
+      <cell>March</cell>
+      <cell></cell>
+      <cell>September</cell>
+      <cell></cell></row>
+    <row>
+      <cell>April</cell>
+      <cell></cell>
+      <cell>October</cell>
+      <cell></cell></row>
+    <row>
+      <cell>May</cell>
+      <cell></cell>
+      <cell>November</cell>
+      <cell></cell></row>
+    <row>
+      <cell>June</cell>
+      <cell></cell>
+      <cell>December</cell>
+      <cell></cell></row>
+    </tabular></p></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>15 houses were sold in February.</p></li>
+  <li><p>20 houses were sold in March, April, and September.</p></li>
+  <li><p>5 houses were sold in December.</p></li>
+  <li><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Month</cell>
+      <cell>Houses Sold</cell>
+      <cell>Month</cell>
+      <cell>Houses Sold</cell></row>
+    <row>
+      <cell>January</cell>
+      <cell>25</cell>
+      <cell>July</cell>
+      <cell>35</cell></row>
+    <row>
+      <cell>February</cell>
+      <cell>15</cell>
+      <cell>August</cell>
+      <cell>30</cell></row>
+    <row>
+      <cell>March</cell>
+      <cell>20</cell>
+      <cell>September</cell>
+      <cell>20</cell></row>
+    <row>
+      <cell>April</cell>
+      <cell>20</cell>
+      <cell>October</cell>
+      <cell>35</cell></row>
+    <row>
+      <cell>May</cell>
+      <cell>30</cell>
+      <cell>November</cell>
+      <cell>10</cell></row>
+    <row>
+      <cell>June</cell>
+      <cell>40</cell>
+      <cell>December</cell>
+      <cell>5</cell></row>
+    </tabular></li>
+  </ol></p></answer></exercise>
+
+  <p>Here is a bar graph that shows the values of two variables.</p>
+
+<example><statement><p><sidebyside widths="50% 35%"><p>In the 1990's, when cell phones first became available, Motorola and Nokia were competing phone companies. The bar graph shows the portion of the market captured by each company from 1994 to 2000.</p>
+  <image source="oldphone.png"></image></sidebyside></p>
+
+  <image source="bargraph2.png" width="85%"></image>
+
+<p><ol marker="a.">
+  <li><p>What was Motorola's share of the market in 2000?   <m>~~~~~~\blert{\text{15%}}</m></p></li>
+  <li><p>In which year shown did Motorola have a 24% market share?   <m>~~~~~~\blert{\text{1997}}</m></p></li>
+  <li><p>In which of the years shown did Motorola have its largest market share?  What was that share?
+    <me>\blert{\text{In 1994 Motorola had 33% of the market.}}</me></p></li>    
+  <li><p>By how much did Motorola's market share exceed Nokia's in 1995?
+    <me>\blert{\text{8 percentage points}}</me></p></li>
+  <li><p>In which of the years shown did Motorola have its largest lead over Nokia in market share?  What was that lead?
+    <me>\blert{\text{In 1994 Motorola had a 12% lead in market share.}}</me></p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p>Refer to the bar graph in Example 2.3.8.</p>
+<p><ol marker="a.">  
+  <li><p>What was Nokia's share of the market in 2000?</p></li>  
+  <li><p>In which of the years shown did Nokia have its lowest market share?  What was that share?</p></li>  
+  <li><p>In which of the years shown did Nokia have its largest lead over Motorola in market share? What was that lead?</p></li> 
+  <li><p>In which year did Nokia overtake Motorola in market share?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">  
+  <li><p>31%</p></li>  
+  <li><p>1997, 19%</p></li>  
+  <li><p>2000, 16%</p></li> 
+  <li><p>1998</p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Making a Bar Graph</title>
+<introduction><p>The table shows the age distribution of the U.S. population in 1900 and in 2015.</p></introduction>
+  
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Age Group</cell>
+      <cell><line>% of Population</line><line>in 1900</line></cell>
+      <cell><line>% of Population</line><line>in 2015</line></cell></row>
+    <row>
+      <cell>Under 14</cell>
+      <cell>34</cell>
+      <cell>12</cell></row>
+    <row>
+      <cell>15 t0 24</cell>
+      <cell>20</cell>
+      <cell>21</cell></row>
+    <row>
+      <cell>25 to 44</cell>
+      <cell>28</cell>
+      <cell>26</cell></row>
+    <row>
+      <cell>45 to 54</cell>
+      <cell>14</cell>
+      <cell>26</cell></row>
+    <row>
+      <cell>5 and over</cell>
+      <cell>4</cell>
+      <cell>15</cell></row>
+    </tabular></p>
+
+<p><ol marker ="a.">
+  <li><p>Which was the largest age group in 1900?  In 2015? </p></li> 
+  <li><p>What percent of the population was under 25 in 1900?  In 2015?</p></li>
+  <li><p>What percent of the population was over 44 in 1900?  In 2015?</p></li>
+  <li><p>Make a double bar graph displaying the information in the table.                                      
+        <image source="bargraph3.png" width="85%"></image></p></li>
+  <li><p>In your opinion, what is the most striking change in the age distribution of the U. S. population form 1900 to 2015?  How is that change illustrated by the bar graph?</p></li>
+</ol></p></activity>
+</subsection>
+
+<subsection><title>Using Letters for Variables</title>
+
+<p>We often use a single letter to represent a variable quantity. In Example 2.3.10, the variables are Jayson's age and Shawna's age.</p>
+
+<example><statement><p>Shawna was 22 years old when her son Jayson was born.</p>
+<p><ol marker="a.">
+  <li><p>Fill in the table.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Jayson's age</cell>
+      <cell>1</cell>
+      <cell>4</cell>
+      <cell>7</cell>
+      <cell>12</cell>
+      <cell>18</cell></row>
+    <row>
+      <cell>(Calculation)</cell>
+      <cell><m>1+22</m></cell>
+      <cell><m>4+22</m></cell>
+      <cell><m>7+22</m></cell>
+      <cell><m>12+22</m></cell>
+      <cell><m>18+22</m></cell></row>
+    <row>
+      <cell>Shawna's age</cell>
+      <cell>23</cell>
+      <cell>26</cell>
+      <cell>29</cell>
+      <cell>34</cell>
+      <cell>40</cell></row>
+    </tabular></p></li>
+
+<li><p>Explain how to find Shawna's age if you know Jayson's age.
+    <me>\blert{\text{Add 22 to Jayson's age.}}</me></p></li>
+<li><p>Write a mathematical sentence for Francine's age.
+    <me>\text{Shawna's age} = \blert{\text{Jayson's age} +  22}</me></p></li>
+<li><p>Let <m>\alert{a}</m> stand for Jayson's age, and write an expression for Shawna's age in terms of <m>\alert{a}</m>.
+    <me>\text{Shawna's age} = \blert{a +  22}</me></p></li>
+<li><p>Check that your expression for Shawna's age gives the correct values when we replace Jayson's age by <m>\alert{a}</m> in the table in part (a).</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>\blert{a}</m></cell>
+      <cell>1</cell>
+      <cell>4</cell>
+      <cell>7</cell>
+      <cell>12</cell>
+      <cell>18</cell></row>
+    <row>
+      <cell><m>\blert{a+22}</m></cell>
+      <cell>23</cell>
+      <cell>26</cell>
+      <cell>29</cell>
+      <cell>34</cell>
+      <cell>40</cell></row>
+    </tabular></p></li>
+</ol></p></statement></example>
+
+<note><p>A letter used as a variable must always stand for a number. In Example 2.3.10, the variable <m>\alert{a}</m> stands for Jayson's age, which is a number. We cannot let a variable stand for, say, "Jayson," or for any other person or object.</p></note>
+
+<exercise><statement><p>A belt should be 3 inches longer than the maximum waist size it can fit.</p>
+<p><ol marker="a.">
+  <li><p>Fill in the table below.</p>  
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Waist size (inches)</cell>
+      <cell>24</cell>
+      <cell>28</cell>
+      <cell>32</cell>
+      <cell>36</cell></row>
+    <row>
+      <cell>(Calculation)</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    <row>
+      <cell>Belt length (inches)</cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+
+  <li><p>Explain how to find the belt length if you know the waist size.</p></li>
+  <li><p>Write a mathematical sentence for the belt length.</p>
+      <p>Belt length = </p></li>              
+  <li><p>Let <m>\alert{w}</m> stand for the waist size in inches, and write an expression for the belt length in terms of <m>\alert{w}</m>.</p></li>
+  <li><p>Put your expression for the belt length into the table, and check that it gives the same values as those in the table in part (a).</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>\blert{w} \hphantom{000}</m></cell>
+      <cell>24</cell>
+      <cell>28</cell>
+      <cell>32</cell>
+      <cell>36</cell></row>
+    <row>
+      <cell><m>\vphantom{w}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>Fill in the table below.</p>  
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Waist size (inches)</cell>
+      <cell><m>\hphantom{00}</m>24<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>28<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>32<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>36<m>\hphantom{00}</m></cell></row>
+    <row>
+      <cell>(Calculation)</cell>
+      <cell><m>24 + 3</m></cell>
+      <cell><m>28 + 3</m></cell>
+      <cell><m>32 + 3</m></cell>
+      <cell><m>36 + 3</m></cell></row>
+    <row>
+      <cell>Belt length (inches)</cell>
+      <cell>27</cell>
+      <cell>31</cell>
+      <cell>35</cell>
+      <cell>39</cell></row>
+    </tabular></p></li>
+
+  <li><p>Add 3 inches to the waist size.</p></li>
+  <li><p>Belt length = Waist size + 3</p></li>              
+  <li><p><m>w + 3</m></p></li>
+  <li><p>Put your expression for the belt length into the table, and check that it gives the same values as those in the table in part (a).</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>\blert{w} \hphantom{000}</m></cell>
+      <cell><m>\hphantom{00}</m>24<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>28<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>32<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>36<m>\hphantom{00}</m></cell></row>
+    <row>
+      <cell><m>\blert{w + 3}</m></cell>
+      <cell><m>\hphantom{00}</m>27<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>31<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>35<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>39<m>\hphantom{00}</m></cell></row>
+    </tabular></p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Using Letters for Variables</title>
+<p><ol>
+  <li><sidebyside widths="60% 30%" valigns="middle middle" margins="0% 10%"><p>Uncle Herb is on a diet. He can have 1200 calories per day.</p><image source="salad.png"></image></sidebyside>  
+    <p><ol marker="a.">
+      <li><p>If Uncle Herb has 700 calories for lunch, how many calories can he have for dinner?</p></li>
+      <li><p>Explain how to find the number of calories Uncle Herb can have for dinner if he consumes <m>c</m> calories for lunch.</p></li>
+      <li><p>Fill in the table for the given values of <m>c</m>.</p>        
+        <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m><m>\hphantom{00}</m>c \hphantom{000}</m></cell>
+      <cell><m>\hphantom{00}</m>200<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>350<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>425<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>640<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>870<m>\hphantom{00}</m></cell></row>
+    <row>
+      <cell><m>1200-c</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li></ol></p></li>
+
+<li><p>Quentin has to drive 600 miles. He plans to drive at a constant average speed.</p>
+    <p><ol marker="a.">
+      <li><p>How long will the journey take if he drives at 60 miles per hour?</p></li>
+      <li><p>Explain how to find how long the journey will take at <m>r</m> miles per hour.</p></li>
+      <li><p>Fill in the table for the given values of <m>r</m>.</p>        
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m><m>\hphantom{00}</m>r \hphantom{000}</m></cell>
+      <cell><m>\hphantom{00}</m>40<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>45<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>50<m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{00}</m>80<m>\hphantom{00}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{600}{r}</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li></ol></p></li>
+</ol></p></activity>
+
+<assemblage><title>A Quick Fractions Refresher</title>
+<p><ul>
+  <li><p>To find <m>\dfrac{1}{3}</m> of a number, we divide the number by 3:
+      <me>\dfrac{1}{3}~ \text{of}~ 36 = 36 \div 3 = 12</me></p></li>
+  <li><p>To find <m>\dfrac{2}{3}</m> of a number, we first find <m>\dfrac{1}{3}</m> of the number (divide by 3), then 
+  multiply the result by 2:
+      <me>\dfrac{2}{3}~ \text{of}~ 36 = 2 \times 12 = 24</me></p>
+
+<p><m>\blert{\text{Exercise}}</m> </p>
+  <p><ol marker="a."> 
+    <li><p>Find <m>\dfrac{1}{4}</m> of 120.</p></li>
+    <li><p>Find <m>\dfrac{3}{4}</m> of 120.</p></li></ol></p></li>
+
+<li><p>To find 5% of a number, we multiply the number by 0.05:
+      <me>5\% ~ \text{of}~ 80 = 0.05 \times 80 = 4</me></p></li>
+<li><p>If a number is increased by 5%, we multiply the number by 1.05:
+      <me>80~ \text{increased by}~ 5\% ~\text{is}~  1.05 \times 80 = 84</me></p>
+
+<p><m>\blert{\text{Exercise}}</m></p>
+  <p><ol marker="a."> 
+    <li><p>Find 15% of 60.</p></li>
+    <li><p>Increase 60 by 15%.</p></li></ol></p></li>
+</ul></p></assemblage>
+
+</subsection>
+
+<subsection><title>Vocabuary</title>
+<p><ul cols="2">
+  <li><p>variable</p></li>
+  <li><p>constant</p></li>
+  <li><p>bar graph</p></li>
+</ul></p></subsection>
+
+
+<xi:include href="./prac-2-3.ptx" />
+
+</section>

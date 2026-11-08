@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkLinMod"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Creating a Linear Model</title>
+                 
+<subsubsection xml:id="tkWriteLinMod"><title>Write a linear model</title>
+
+<introduction><p>When we say "Express <m>y</m> in terms of <m>x</m>,"  we mean to write an equation that looks like
+    <me>y = \text{algebraic expression in}~ x</me>
+We say that <m>x</m> is the input variable, and <m>y</m> is the output variable.</p>
+
+<p>In particular, a <term>linear model</term> has the form
+    <me>\blert{y = \text{starting value} + \text{rate} \times x}</me></p>
+</introduction>
+                    
+<example><statement><p>Steve bought a Blu-Ray player for $269 and a number of discs at $14 each. Write an expression for Steve's total bill, <m>B</m> (before tax), in terms of the number of discs he bought, <m>d</m>.</p></statement>
+                    
+<solution><p>We want an equation of the form
+        <me>B = \text{starting value} + \text{rate} \times d</me>
+    where Steve's bill started with the Blu-Ray player or $269, and then increased by a number of discs at a rate of $14 each.  Substituting those values, we have
+    <me>B=269+14d</me></p></solution></example>
+
+<example><statement><p>At 6 am the temperature was 50<m>\degree</m>, and it has been falling by 4<m>\degree</m> every hour. Write an equation for the temperature, <m>T</m>, after <m>h</m> hours.</p></statement>
+
+<solution><p>We want an equation of the form
+        <me>T = \text{starting value} + \text{rate} \times h</me>
+    The temperature started at 50<m>\degree</m>, and then decreased each hour at the rate of 4<m>\degree</m> per hour, so we subtract <m>4h</m> from 50 to get
+    <me>T=50-4h</me></p></solution></example>
+
+<example><statement><p>Kyli's electricity company charges her $6 per month plus $0.10 per kilowatt hour (kWh) of energy she uses. Write an equation for Kyli's electric bill, <m>E</m>, if she uses <m>w</m> kWh of electricity.</p></statement>
+
+<solution><p>Kyli's bill starts a6 $6 and increases by $0.10 for each kWh, <m>w</m>. Thus,
+    <me>E=6+0.10w</me></p></solution></example>
+
+<exercise><statement><p>Salewa saved $5000 to go to school full time. She spends $200 per week on living expenses. Write an equation for Salewa's savings, <m>S</m>, after <m>w</m> weeks.</p></statement>
+    <answer><p><m>S=5000-200w</m></p></answer></exercise>
+
+<exercise><statement><p>As a student at City College, Delbert pays a $50 registration fee plus $15 for each unit he takes. Write an equation that gives Delbert's tuition, <m>T</m>, if he takes <m>u</m> units.</p></statement>
+    <answer><p><m>T=50+15u</m></p></answer></exercise>
+
+<exercise><statement><p>Greta's math notebook has 100 pages, and she uses on average 6 pages per day for notes and homework. How many pages, <m>P</m>, will she have left after <m>d</m> days?</p></statement>
+    <answer><p><m>P=100-6d</m></p></answer></exercise>
+
+<exercise><statement><p>Asa has typed 220 words of his term paper, and is still typing at a rate of 20 words per minute.  How many words, <m>W</m>, will Asa have typed after <m>m</m> more minutes?</p></statement>
+    <answer><p><m>W=220+20m</m></p></answer></exercise>
+
+<exercise><statement><p>The temperature in Nome was <m>-12 \degree</m> F at noon. It has been rising at a rate of <m>2 \degree</m> F per hour all day. Write an equation for the temperature, <m>T</m>, after <m>h</m> hours.</p></statement>
+    <answer><p><m>T=-12+2h</m></p></answer></exercise>
+
+<exercise><statement><p>Francine borrowed money from her mother, and she owes her $750 right now. She has been paying off the debt at a rate of $50 per month. Write an equation for Francine's financial status, <m>F</m>, in terms of <m>m</m>, the number of months from now.</p></statement>
+    <answer><p><m>F=-750+50m</m></p></answer></exercise>
+<!--</subsubsubsection>-->
+</subsubsection>
+
+<subsubsection xml:id="tkPlotPoints"><title>Plot points and graph a line</title>
+
+<introduction><p>The simplest way to graph a line is to make a table and plot points. We will learn more efficient methods shortly.</p></introduction>
+
+<example><statement><p>Make a table of values, plot the points, and graph the equation <m>y=-2x+6</m>.</p></statement>
+
+<solution><p>Choose both positive and negative values for <m>x</m>. Calculate the <m>y</m>-value for each <m>x</m>-value by substituting the <m>x</m>-value into the equation.</p>
+
+<sidebyside widths="50% 40%">
+    <stack><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+    <col /><col/><col halign="left" />            
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell>
+                        <cell ><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>-3</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>y=-2(\alert{-3})+6=12</m></cell></row>
+                    <row> 
+                        <cell><m>-2</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>y=-2(\alert{-2})+6=10</m></cell></row>
+                    <row>
+                        <cell><m>-1</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>y=-2(\alert{-1})+6=8</m></cell></row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>y=-2(\alert{0})+6=6</m></cell></row>
+                    <row>
+                        <cell><m>1</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>y=-2(\alert{1})+6=4</m></cell></row>
+                    <row>
+                        <cell><m>2</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>y=-2(\alert{2})+6=2</m></cell></row>
+                    <row>
+                        <cell><m>3</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>y=-2(\alert{3})+6=0</m></cell></row>
+                    <row>
+                        <cell><m>4</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>y=-2(\alert{4})+6=-2</m></cell></row>
+                    </tabular>
+    <p>Next, sketch a Cartesian coordinate system with appropriate scales on the <m>x</m>- and <m>y</m>-axes. Plot each of the points in the table of values and connect them with a straight line. The completed graph is shown at right.</p></stack> 
+    <image xml:id="y-eq-neg2x-plus6"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[cyan] (-6,-6) grid (6,14);
+        \draw[black,very thick, ->, >=stealth'] (-6,0)--(6.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-4)--(0,14.8) node[left, xshift=2]{$y$};
+        \foreach \x  in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {-5,5,10} {
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[magenta!90!black,very thick, <->,>=stealth'] (-4,14)--(6,-6);
+        \filldraw[magenta!90!black] (-3,12) circle (.15) node[below left, xshift=-2,text=black, fill=white, inner sep=2] {$(-3,12)$};
+        \filldraw[magenta!90!black] (-2,10) circle (.15) node[below left, xshift=-2,text=black, fill=white, inner sep=2] {$(-2,10)$};
+        \filldraw[magenta!90!black] (-1,8) circle (.15) node[below left, xshift=-2,text=black, fill=white, inner sep=2] {$(-1,8)$};
+        \filldraw[magenta!90!black] (0,6) circle (.15) node[above right, xshift=2,text=black, fill=white, inner sep=2] {$(0,6)$};
+        \filldraw[magenta!90!black] (2,2) circle (.15) node[above right, xshift=2,text=black, fill=white, inner sep=2] {$(2,2)$};
+        \filldraw[magenta!90!black] (1,4) circle (.15) node[above right, xshift=2,text=black, fill=white, inner sep=2] {$(1,4)$};
+        \filldraw[magenta!90!black] (3,0) circle (.15) node[below left, xshift=-2,text=black, fill=white, inner sep=2] {$(3,0)$};
+        \filldraw[magenta!90!black] (4,-2) circle (.15) node[below left, xshift=-2,text=black, fill=white, inner sep=2] {$(4,-2)$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside>
+</solution></example>
+
+<example><statement><p>Byron borrowed $6000 from his uncle to help pay for his college education.  Now that he has graduated and has a job, he is paying back the loan at $100 per month.
+<ol marker="a.">    
+    <li>Write an equation showing the amount of money, <m>y</m>, that Byron still owes his uncle after <m>x</m> months.</li>
+    <li>Graph your equation.</li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><m>y=6000-100x</m></li>
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+    <col /><col/><col halign="left" />            
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><m>6000</m></cell>
+                        <cell><m>y=6000-100(\alert{0})=6000</m></cell></row>
+                    <row> 
+                        <cell><m>10</m></cell>
+                        <cell><m>5000</m></cell>
+                        <cell><m>y=6000-100(\alert{10})=5000</m></cell></row>
+                    <row>
+                        <cell><m>20</m></cell>
+                        <cell><m>4000</m></cell>
+                        <cell><m>y=6000-100(\alert{20})=4000</m></cell></row> 
+        </tabular></li></ol></p>
+    <sidebyside widths="40% 40%"><p>Now choose appropriate scales for the axes.  A good choice would be to scale the <m>x</m>-axis by 10's and the <m>y</m>-axis by 1000's.</p> 
+    <image xml:id="y-eq-6000-minus-100x"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.5]
+        \draw[cyan] (0,0) grid (7,7);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(7.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,7.6) node[left, xshift=2]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {2,4,6} {
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(1000*\x)] in  {5} {
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[magenta!90!black,very thick] (0,6)--(6,0);
+        \filldraw[magenta!90!black] (0,6) ellipse (.125 and .2);
+        \filldraw[magenta!90!black] (1,5) ellipse (.125 and .2);
+        \filldraw[magenta!90!black] (2,4) ellipse (.125 and .2);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside>
+</solution></example>
+
+<exercise><statement><p>Graph <m>~y=\dfrac{3}{4}x-3</m>.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-8</m></cell>
+                        <cell><m>-4</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>6</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    </tabular>
+    <image width="50%" source="images/fig-10x10-grid"><description>grid</description></image></statement>
+
+<answer><sidebyside widths="45% 40%" margins="0% 0%" valigns="middle middle">
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-8</m></cell>
+                        <cell><m>-4</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>6</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>-9</m></cell>
+                        <cell><m>-6</m></cell>
+                        <cell><m>-3</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1.5</m></cell></row>
+                    </tabular>
+        <image xml:id="y-eq-3fourths-x-minus3"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan, thin] (-10,-10) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[magenta!90!black,very thick, <->, >=stealth'] (-28/3,-10)--(10,9/2);
+        \filldraw[red] (-8,-9) circle (.2);
+        \filldraw[red] (-4,-6) circle (.2);
+        \filldraw[red] (0,-3) circle (.2);
+        \filldraw[red] (4,0) circle (.2);
+        \filldraw[red] (6,3/2) circle (.2);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside></answer>
+</exercise>
+
+<exercise><statement><p>Graph <m>~y=-3x+2</m>.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    </tabular>
+    <image width="50%" source="images/fig-10x10-grid"><description>grid</description></image></statement>
+
+<answer><sidebyside widths="45% 40%" margins="0% 0%" valigns="middle middle">
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>-4</m></cell>
+                        <cell><m>-10</m></cell></row>
+                    </tabular>
+        <image xml:id="y-eq-neg3x-plus2"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan, thin] (-10,-10) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[magenta!90!black,very thick, <->, >=stealth'] (4,-10)--(-8/3,10);
+        \filldraw[red] (-2,8) circle (.2);
+        \filldraw[red] (-1,5) circle (.2);
+        \filldraw[red] (0,2) circle (.2);
+        \filldraw[red] (2,-4) circle (.2);
+        \filldraw[red] (4,-10) circle (.2);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside></answer>
+</exercise>
+
+<exercise><statement><p>Stuart invested $800 in a computer and now makes $5 a page typing research papers. Let <m>x</m> represent the number of pages Stuart has typed, and let <m>y</m> represent his profit.  
+<ol marker="a.">
+    <li>Write an equation for <m>y</m> in terms of <m>x</m>.</li>
+    <li>Complete the table and graph your equation.</li></ol></p>
+
+        <sidebyside widths="40% 50%" margins="0% 0%" valigns="middle middle">
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>100</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>200</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row></tabular>
+        <image xml:id="fig-typing-profit-grid"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (0,-5) grid (10,5);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-5)--(0,5.6) node[left, xshift=2]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(25*\x)] in  {2,4,6,8, 10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(200*\x)] in  {-4,-2,2,4} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+         }
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>y=5x-800</m></li>
+    <li><sidebyside widths="40% 45%" margins="0% 10%" valigns="middle middle">
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+            <row>
+                <cell><m>x</m></cell>
+                <cell><m>y</m></cell></row>
+            <row>
+                <cell><m>0</m></cell>
+                <cell><m>-800</m></cell></row>
+            <row> 
+                <cell><m>50</m></cell>
+                <cell><m>-550</m></cell></row>
+            <row>
+                <cell><m>100</m></cell>
+                <cell><m>-300</m></cell></row>
+            <row>
+                <cell><m>200</m></cell>
+                <cell><m>200</m></cell></row>
+        </tabular>
+        <image xml:id="fig-typing-profit"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (0,-5) grid (10,5);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-5)--(0,5.6) node[left, xshift=2]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(25*\x)] in  {2,4,6,8, 10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(200*\x)] in  {-4,-2,2,4} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[magenta!90!black,very thick, ->, >=stealth'] (0,-4)--(10,9/4);
+        \filldraw[red] (0,-4) circle (.15);
+        \filldraw[red] (2,-2.75) circle (.15);
+        \filldraw[red] (4,-3/2) circle (.15);
+        \filldraw[red] (8,1) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside></li>
+</ol></p></answer>
+</exercise>
+
+<exercise><statement><p>Ludmilla earns a commission of 5% of her real estate sales.  Let <m>x</m> represent her sales in thousands of dollars, and let <m>y</m> represent the commission she earns from her sales, in thousands of dollars.
+<ol marker="a.">
+    <li>Write an equation for <m>y</m> in terms of <m>x</m>.</li>
+    <li>Complete the table and graph the equation.</li>
+</ol></p>
+        <sidebyside widths="40% 45%" margins="0% 0%" valigns="middle middle">
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>y</m></cell></row>
+                    <row>
+                        <cell><m>250</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>600</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>800</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>1000</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row></tabular>
+    <image xml:id="fig-Ludmilla-commission-grid"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (0,0) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,10.6) node[left, xshift=2]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in  {2,4,6,8, 10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5,10} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>y=0.05x</m></li>
+    <li><sidebyside widths="40% 45%" margins="0% 10%" valigns="middle middle">
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row>
+            <cell><m>x</m></cell>
+            <cell><m>y</m></cell></row>
+        <row>
+            <cell><m>250</m></cell>
+            <cell><m>12.5</m></cell></row>
+        <row> 
+            <cell><m>600</m></cell>
+            <cell><m>30</m></cell></row>
+        <row>
+            <cell><m>800</m></cell>
+            <cell><m>40</m></cell></row>
+        <row>
+            <cell><m>1000</m></cell>
+            <cell><m>50</m></cell></row></tabular>
+        <image xml:id="fig-Ludmilla-commission"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (0,0) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,10.6) node[left, xshift=2]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in  {2,4,6,8, 10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5,10} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[magenta!90!black,very thick, ->, >=stealth'] (0,0)--(10,5);
+        \filldraw[red] (2.5,1.25) circle (.15);
+        \filldraw[red] (6,3) circle (.15);
+        \filldraw[red] (8,4) circle (.15);
+        \filldraw[red] (10,5) circle (.15);
+        \draw[magenta!90!black,very thick, ->, >=stealth'] (0,0)--(10,5);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </sidebyside></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkSolveLinEq"><title>Solve a linear equation</title>
+
+<introduction><p>Recall that to solve an equation we want to "isolate" the variable on one side of the equals sign. We "undo" each operation performed on the variable by performing the opposite operation on both sides of the equation.</p></introduction>
+                
+<example><statement><p>Solve the equation <m>~~\dfrac{2}{3}x-5=7</m> </p></statement>
+                    
+<solution><p>
+    <md><mrow>\dfrac{2}{3}x-5 \amp = 7 \amp \amp \blert{\text{Add 5 to both sides.}}</mrow>
+        <mrow>\dfrac{2}{3}x \amp = 12 \amp \amp \blert{\text{To divide both sides by } \dfrac{2}{3}, \text{we:}}</mrow>
+        <mrow>\dfrac{3}{2}\left(\dfrac{2}{3}x\right) \amp =\dfrac{3}{2}(12) \amp \amp \blert{\text{Multiply by the reciprocal of }\dfrac{2}{3}.}</mrow>
+        <mrow>x \amp = 18 \amp \amp \blert{\text{The solution is 18.}}</mrow></md></p>
+    </solution></example>
+
+<example><statement><p>Solve the equation <m>~~2x+7=4x-3</m></p></statement>
+
+<solution><p>To begin, we must get both variable terms on the same side of the equation.
+    <md><mrow>2x+7 \amp = 4x-3 \amp \amp \blert{\text{Subtract}~2x~\text{from both sides.}}</mrow>
+        <mrow>7 \amp = 2x-3 \amp \amp \blert{\text{Add 3 to both sides.}}</mrow>
+        <mrow>10 \amp =2x   \amp \amp \blert{\text{Divide both sides by 2.}}</mrow>
+        <mrow>5 \amp = x \amp \amp \blert{\text{The solution is 5.}}</mrow>
+    </md></p></solution></example>
+
+<exercise><statement><p>Solve the equation <m>~~10=1-\dfrac{3x}{7}</m></p></statement>
+    <answer><p><m>-21</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the equation <m>~~6p-8=-3p-26</m> </p></statement>
+    <answer><p><m>-2</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the equation <m>~~12=\dfrac{7u+4}{5}</m> </p>
+<p>Hint:  Start by clearing the fraction:  multiply both sides by 5.</p></statement>
+    <answer><p><m>8</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the equation <m>~~0=13q+25-17q+7</m> </p>
+<p>Hint:  Start by combining like terms.</p></statement>
+    <answer><p><m>8</m></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkSolveLinIneq"><title>Solve a linear inequality</title>
+
+<introduction><p>The rules for solving an inequality are the same as those for solving an equation, with one important difference:</p>
+
+<assemblage> <title>Solving a Linear Inequality</title>
+<p>If we multiply or divide both sides of a linear inequality by a negative number, we must reverse the direction of the inequality symbol.</p></assemblage></introduction>
+
+<example><statement><p>Solve <m>~~-3x+1 \gt 7~~</m> and graph the solutions on a number line.</p></statement>
+<solution><p>
+        <md><mrow>-3x+1 \amp \gt 7 \amp \amp ~\blert{\text{ Subtract 1 from both sides.}}</mrow>
+            <mrow>-3x \amp \gt 6 \amp \amp\ 
+            \begin{array}{l}
+                \blert{\text{Divide both sides by }{-3}\text{, and reverse }}\\
+                \blert{\text{the direction of the inequality.}}
+                \end{array}</mrow>
+        <mrow>x \amp \lt -2</mrow></md>
+    The solutions are all the numbers less than <m>-2</m>.
+    The graph of the solutions is shown below.</p>
+    <image width="70%" source="images/fig-wu-1.png"><description>line graph</description></image>
+</solution></example>
+
+<example><statement><p>Solve <m>~~-3 \lt 2x-5 \le 6~~</m> and graph the solutions on a number line.</p></statement>
+
+<solution><p>
+    <md><mrow>-3 \amp \lt 2x-5 \le 6 \amp \amp \blert{\text{Add 5 on all three sides of the inequality.}}</mrow>
+        <mrow>2 \amp \lt 2x \le 11 \amp \amp \blert{\text{Divide each side by 2.}}</mrow>
+        <mrow>1 \amp \lt x \le \dfrac{11}{2} \amp \amp \blert{\text{Notice that we did not reverse the inequality.}}</mrow></md>
+    The solutions are all the numbers greater than 1 but less than 5.5. The graph of the solutions is shown below.</p>
+    <image width="80%" xml:id="fig-numline-betw1-and-11halves"><description>number line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+        \draw[black,very thick, ->, >=stealth'] (-7.5,0) -- (7.8,0) ;
+        \foreach \x in {-7,-6, ...,7} {
+         \draw[black] (\x,.2) -- ++(0,-.2) node[below,yshift=-2] {$\x$};
+        }
+        \foreach \x in {-5,0, 5} {
+         \draw[black] (\x,.3) -- ++(0,-.3);
+        }
+        \draw[red, line width=1mm] (1,0) -- (5.5,0);
+        \draw[red, fill=white] (1,0) circle (.15);
+        \filldraw[red] (11/2,0) circle (.15) node[above, yshift=2] {$\frac{11}{2}$};
+
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</solution></example>
+
+<p>Recall that a solid dot on a number line indicates that the number is part of the solution; an open dot means that the number is not part of the solution.</p>
+
+<exercise><statement><p>Solve the inequality <m>~~8-4x \gt -2~~</m> and graph the solutions on a number line.</p></statement>
+
+<answer><sidebyside widths="15% 55%" margins="0% 5%" valigns="middle middle">
+    <p><m>x \lt \dfrac{5}{2}</m></p>
+        <image xml:id="fig-numline-x-lt-5halves"><description>number line</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture}
+                \draw[black,very thick, ->, >=stealth'] (-2.5,0) -- (5.5,0) ;
+                \foreach \x in {-2,-1, ...,5} {
+                 \draw[black] (\x,.15) -- ++(0,-.15) node[below] {$\x$};
+                }
+                \draw[red, line width=0.8mm, ->, >=stealth'] (5/2,0) -- (-2.5,0);
+                \draw[red, fill=white] (5/2,0) circle (.1) node[above, yshift=2] {$\frac{5}{2}$};
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~~-6 \le \dfrac{4-x}{3} \lt 2~~</m> and graph the solutions on a number line.</p></statement>
+    
+<answer><sidebyside widths="15% 55%" margins="0% 5%" valigns="middle middle">
+    <p><m>22 \ge x \gt -2</m></p>
+        <image xml:id="fig-numline-x-btwn-neg2-and22"><description>number line</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.25]
+                \draw[black,very thick, ->, >=stealth'] (-5.5,0) -- (25.5,0) ;
+                \foreach \x in {-5,-4, ..., 25} {
+                 \draw[black] (\x,.3) -- ++(0,-.3);
+                }
+                \foreach \x in {-5,5,10,15,20} {
+                 \draw[black] (\x,.5) -- ++(0,-.5) node[below] {$\x$};
+                }
+                \draw[red, line width=0.8mm] (-2,0) -- (22,0);
+                \draw[red, fill=white] (-2,0) circle (.3) node[above, yshift=2] {$-2$};
+                \filldraw[red] (22,0) circle (.3) node[above, yshift=2] {$22$};
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~~3x-5 \lt -6x+7~~</m> and graph the solutions on a number line.</p></statement>
+
+<answer><sidebyside widths="15% 55%" margins="0% 5%" valigns="middle middle">
+    <p><m>x \lt \dfrac{4}{3}</m></p>
+        <image xml:id="fig-numline-x-lt-4thirds"><description>number line</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture}
+                \draw[black,very thick, ->, >=stealth'] (-2.5,0) -- (5.5,0) ;
+                \foreach \x in {-2,-1, ...,5} {
+                 \draw[black] (\x,.15) -- ++(0,-.15) node[below] {$\x$};
+                }
+                \draw[red, line width=0.8mm, ->, >=stealth'] (4/3,0) -- (-2.5,0);
+                \draw[red, fill=white] (4/3,0) circle (.1) node[above, yshift=2] {$\frac{4}{3}$};
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~~-6 \gt 4-5b \gt -21~~</m> and graph the solutions on a number line.</p></statement>
+    
+<answer><sidebyside widths="15% 55%" margins="0% 5%" valigns="middle middle">
+    <p><m>2 \lt b \lt 5</m></p>
+        <image xml:id="fig-numline-b-btwn-2-and5"><description>number line</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} 
+                \draw[black,very thick, ->, >=stealth'] (-1.5,0) -- (6.5,0) ;
+                \foreach \x in {-1,0, ...,6} {
+                 \draw[black] (\x,.15) -- ++(0,-.15) node[below] {$\x$};
+                }
+                \draw[red, line width=0.8mm] (2,0) -- (5,0);
+                \draw[red, fill=white] (2,0) circle (.1);
+                \draw[red, fill=white] (5,0) circle (.1);
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></answer></exercise>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="chap2-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>scatterplot</p></li>
+    <li><p>regression line</p></li>
+    <li><p>interpolation</p></li>
+    <li><p>extrapolation</p></li>
+    <li><p>linear system</p></li>
+    <li><p>solution of a system</p></li>
+    <li><p>ordered pair</p></li>
+    <li><p>inconsistent system</p></li>
+    <li><p>dependent system</p></li>
+    <li><p>equilibrium price</p></li>
+    <li><p>substitution method</p></li>
+    <li><p>elimination method</p></li>
+    <li><p>linear combination</p></li>
+    <li><p>ordered triple</p></li>
+    <li><p>back-substitution</p></li>
+    <li><p>triangular form</p></li>
+    <li><p>Gaussian reduction</p></li>
+</ul></p>
+
+</subsection>
+
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+    <li><p>We can approximate a linear pattern in a <term>scatterplot</term> using a <term>regression line</term>.</p></li>
+    <li><p>We can use <term>interpolation</term> or <term>extrapolation</term> to make estimates and predictions.</p></li>
+    <li><p>If we extrapolate too far beyond the known data, we may get unreasonable results.</p></li>
+    <li><p>A solution to a <m>2\times 2</m> linear system is an ordered pair that satisfies both equations.</p></li>
+    <li><p>A solution to a <m>2\times 2</m> linear system is a point where the two graphs intersect.</p></li>
+    <li><p>The graphs of the equations in an <term>inconsistent system</term> are parallel lines and hence to do not intersect.</p></li>
+    <li><p>The graphs of the two equations in a <term>dependent system</term> are the same line.</p></li>
+    <li><p>If a company's revenue exactly equals its costs (so that their profit is zero), we say that the business venture will <term>break even</term>.</p></li>
+    <li><p>For solving a <m>2\times 2</m> linear system, the <term>substitution method</term> is easier if one of the variables in one of the equations has a coefficient of <m>1</m> or <m>-1</m>.</p></li>
+    <li><p>If a <term>linear combination</term> of the equations in a system results in an equation of the form
+            <md><mrow>0x+0y=k  \amp\amp(k\ne 0)</mrow></md>
+        then the system is <term>inconsistent</term>. If an equation of the form
+            <md><mrow>0x+0y=0</mrow></md>
+        results, then the system is <term>dependent</term></p></li>
+    <li><p>The <term>point-slope</term> form is useful when we know the rate of change and one point on the line.</p></li>
+    <li><p>The solutions of the <term>linear inequality</term>
+        <md><mrow>ax+by+c\le 0\qquad\text{ or }\qquad ax+by+c\ge 0</mrow></md>
+        consists of the line <m>ax+by+c=0</m> and a <term>half-plane</term> on one side of that line.</p></li>
+    <li><assemblage><title>To Graph an Inequality Using a Test Point</title>
+        <p><ol marker="1.">
+            <li><p>Graph the corresponding equation to obtain the boundary line.</p></li>
+            <li><p>Choose a test point that does not lie on the boundary line.</p></li>
+            <li><p>Substitute the coordinates of the test point into the inequality.
+                <ol marker="a.">
+                    <li><p>If the resulting statement is true, shade the half-plane that includes the test point.</p></li>
+                    <li><p>If the resulting statement is false, shade the half-plane that does not include the test point.</p></li></ol></p></li>
+            <li><p>If the inequality is strict, make the boundary line a dashed line.</p></li></ol></p>
+        </assemblage></li>
+    <li><p>The solutions to a system of inequalities includes all points that are solutions to all the inequalities in the system. The graph of the system is the intersection of the shaded regions for each inequality in the system.</p></li>  
+    <li><p>A solution to an equation in three variables is an <term>ordered triple</term> of numbers that satisfies the equation.</p></li>
+    <li><p>To solve a <m>3\times 3</m> linear system, we use linear combinations to reduce the system to <term>triangular form</term>, and then use <term>back-substitution</term> to find the solutions.</p></li>
+    </ol></p>
+</subsection>
+
+<xi:include href="./chap2-rev-problems.xml" />  <!--exercises  -->
+
+</section>

@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-9-5-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 9.5</title>
+   
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Solve the system by substitution.
+    <md><mrow>3x-y \amp = 5</mrow>
+        <mrow>2x-3y \amp = 8</mrow></md></p></statement>
+<answer><p><m>(1,-2)</m></p></answer></exercise>
+
+<exercise number="2"><statement><p>Solve the system by elimination.
+    <md><mrow>5x+2y \amp = 5</mrow>
+        <mrow>4x+3y \amp = -3</mrow></md></p></statement></exercise>
+
+<exercise number="3"><statement><p>Solve <m>~x^2-19x+48=0</m></p></statement>
+<answer><p><m>x=3, 16</m></p></answer></exercise>
+
+<exercise number="4"><statement><p>Solve <m>~3x^2+18x=48</m></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="2"> <introduction><p>For Problems 5<ndash/>10, solve the system algebraically. Then use your calculator to graph both equations and verify your solutions.</p></introduction>
+
+<exercise number="5"><statement><p><m>
+        \begin{aligned}[t]
+        y \amp=x^2-4x+7 \\
+        y \amp=11-x     \\           
+        \end{aligned}</m></p></statement>
+<answer><p><m>(-1, 12), (4, 7)</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>
+        \begin{aligned}[t]
+        y \amp=-x^2 - 2x + 7 \\
+        y \amp=2x + 11     \\          
+        \end{aligned}</m></p></statement>
+<!--     <answer><p><m>(-2, 7) </m></p></answer> -->
+</exercise>
+
+<exercise number="7"><statement><p><m>
+        \begin{aligned}[t]
+        \amp y = x^2 + 8x + 8 \\
+        \amp 3y + 2x = -36  \\           
+        \end{aligned}</m></p></statement>
+<answer><p>No solution</p></answer></exercise>
+
+<exercise number="8"><statement><p><m>
+        \begin{aligned}[t]
+        y \amp= x^2 - 9 \\
+        y \amp= -2x^2 + 9x + 21  \\             
+        \end{aligned}</m></p></statement>
+<!--     <answer><p><m>(-2, -5), (5, 16)</m></p></answer> -->
+</exercise>
+
+<exercise number="9"><statement><p><m>
+        \begin{aligned}[t]
+        y \amp= x^2 - 0.5x + 3.5 \\
+        y \amp= -x^2 + 3.5x + 1.5 \\             
+        \end{aligned}</m></p></statement>
+<answer><p><m>(1, 4)</m></p></answer></exercise>
+
+<exercise number="10">
+    <statement><p><m>
+        \begin{aligned}[t]
+        y \amp= x^2 - 4x + 4 \\
+        y \amp= x^2 - 8x + 16  \\            
+        \end{aligned}</m></p></statement>
+<!--     <answer><p><m>(3,1)</m></p></answer> -->
+</exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For problems 11<ndash/>20, find the intersection points of the graphs by solving a system of equations. Verify your solutions by graphing</p></introduction>
+
+<exercise number="11"><statement><p><m>
+        \begin{aligned}[t]
+        \amp xy=4\\
+        \amp x^2+y^2=8
+        \end{aligned}</m></p></statement>
+<answer><p><m>(2,2) </m>, <m>(-2,-2) </m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>
+        \begin{aligned}[t]
+        \amp x^2-2y^2=-4\\
+        \amp xy=-4
+        \end{aligned}</m></p></statement>
+    <!-- <answer><p><m>(-2,2) </m>, <m>(2,-2) </m></p></answer> -->
+ </exercise>
+
+<exercise number="13"><statement><p><m>
+        \begin{aligned}[t]
+        \amp xy=-2\\
+        \amp x^2+y^2=5
+        \end{aligned}</m></p></statement>
+<answer><p><m>(2,-1) </m>, <m>(-2,1) </m>, <m>(1,-2) </m>, <m>(-1,2) </m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>
+        \begin{aligned}[t]
+        \amp 5y^2-x^2=1\\
+        \amp x^2+y^2=5
+        \end{aligned}</m></p></statement>
+    <!-- <answer><p><m>(\pm 2,\pm 1)</m></p></answer> -->
+ </exercise>
+
+<exercise number="15"><statement><p><m>
+        \begin{aligned}[t]
+        \dfrac{x^2}{14}+\dfrac{y^2}{35}\amp=1 \\
+        x^2+2y^2 \amp=54
+        \end{aligned}</m></p></statement>
+<answer><p><m>(\pm 2,-\pm 5) </m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>
+        \begin{aligned}[t]
+        \amp \dfrac{x^2}{2}-\dfrac{y^2}{16}=1 \\
+        \amp y^2-x^2=12
+        \end{aligned}</m></p></statement>
+    <!-- <answer><p><m>(\pm 2,\pm 4)</m></p></answer> -->
+ </exercise>
+
+<exercise number="17"><statement><p><m>
+        \begin{aligned}[t]
+        \amp x^2-8y^2=4 \\
+        \amp 10y^2-x^2=4
+        \end{aligned}</m></p></statement>
+<answer><p><m>(\pm 6,-\pm 2) </m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>
+        \begin{aligned}[t]
+        \amp x^2+y^2+2y=19 \\
+        \amp x^2-2x+y^2+8y=33
+        \end{aligned}</m></p></statement>
+    <!-- <answer><p><m>(2,3)</m>, <m>(-4,1) </m></p></answer> -->
+ </exercise>
+
+<exercise number="19"><statement><p><m>
+        \begin{aligned}[t]
+         (x+1)^2+(y-2)^2 \amp=5 \\
+         (x-5)^2 +(y+1)^2\amp=50
+        \end{aligned}</m></p></statement>
+<answer><p><m>(0,4) </m>, <m>(-2,0) </m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>
+        \begin{aligned}[t]
+         (x-1)^2+(y-6)^2 \amp=26 \\
+         (x-4)^2+(y-8)^2 \amp=65
+        \end{aligned}</m></p></statement>
+    <!-- <answer><p><m>(0,1)</m>, <m>(-4,7) </m></p></answer> -->
+ </exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercisegroup><introduction><p>Use a system of equations to solve Problems 21<ndash/>24.</p>
+</introduction>
+
+<exercise number="21"><statement><p>The area of a rectangle is 216 square feet. If the perimeter is 60 feet, find the dimensions of the rectangle.</p></statement>
+<answer><p>12 ft by 18 ft</p></answer></exercise>
+
+<exercise number="22"><statement><p>Leon flies his plane 840 miles in the same time that Marlene drives her automobile 210 miles. Suppose that Leon flies 180 miles per hour faster than Marlene drives. Find the rate of each.</p></statement>
+<!--    <answer><p>Marlene: 60 mph; Leon: 240 mph</p></answer> --> 
+</exercise>
+
+<exercise number="23"><statement><p>At a constant temperature, the pressure, <m>P</m>, and the volume, <m>V</m>, of a gas are related by the equation <m>PV = K</m>. The product of the pressure (in pounds per square inch) and the volume (in cubic inches) of a certain gas is 30 inch-pounds. If the temperature remains constant as the pressure is increased by 4 pounds per square inch, the volume is decreased by 2 cubic inches. Find the original pressure and volume of the gas.</p>
+</statement>
+<answer><p><m>P=6</m> lb per sq in; <m>V=5</m> cu. in.</p></answer></exercise>
+
+<exercise number="24"><statement><p>Kristen drove 50 miles to her sister's house, traveling 10 miles in heavy traffic to get out of the city and then 40 miles in less congested traffic. Her average speed in the city was 20 miles per hour less than her speed in light traffic. What was each rate if her trip took 1 hour and 30 minutes?</p></statement>
+<!--    <answer><p>heavy traffic: 20 mph; light traffic: 40 mph</p></answer> --> 
+</exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>Problems 25 and 26 deal with wildlife management and sustainable yield.</p></introduction>
+
+<exercise number="25"><statement><p>The annual increase, <m>I</m>, in the deer population in a national park is given by 
+            <md><mrow>I=kCx-kx^2</mrow></md>
+where <m>k=0.0002</m>, <m>C=6000</m>, and <m>x</m> is the current population.<ol marker="a.">
+    <li><p>Suppose hunters are allowed to kill 1000 deer per year. Sketch the graph of <m>H = 1000</m> on the same axes with a graph of <m>I</m>.</p>
+            <sidebyside width="70%"><image xml:id="fig-hw-9-5-21">
+                    <description>grid</description><latex-image>
+                            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                            <![CDATA[\tikzset{%
+                            }
+                            \begin{tikzpicture} [xscale=.8, yscale=.6] 
+                            \draw[lightgray] (0,-5) grid (14,10);
+                            \draw[black,thick,->,>=stealth'] (0,0)--(14.6,0) node[above]{$x$};
+                            \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.8) node[left]{$y$};
+                            \foreach \x [evaluate=\x as \xi using int(500*\x)] in {2,4,6,...,14} {
+                              \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+                              }
+                            \foreach \x [evaluate=\x as \xi using int(200*\x)] in {-5,0,5,10} {
+                              \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                            }
+                            \end{tikzpicture}]]>
+                            </latex-image></image></sidebyside></li>
+    <li><p>What sizes of deer populations will remain stable from year to year if 1000 deer are hunted annually?</p></li>
+    <li><p>Suppose 1600 deer are killed annually. What sizes of deer populations will remain stable?</p></li>
+    <li><p>What is the largest annual harvest that still allows for a stable population? (This harvest is called the maximum sustainable yield.) What is the stable population?</p></li>
+    <li><p>What eventually happens if the population falls below the stable value but hunting continues at the maximum sustainable yield?</p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside width="80%"><image xml:id="fig-hw-9-5-21ans">
+            <description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [xscale=.8, yscale=.6] 
+                    \draw[lightgray] (0,-5) grid (14,10);
+                    \draw[black,thick,->,>=stealth'] (0,0)--(14.6,0) node[above]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.8) node[left]{$y$};
+                    \foreach \x [evaluate=\x as \xi using int(500*\x)] in {2,4,6,...,14} {
+                      \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+                      }
+                    \foreach \x [evaluate=\x as \xi using int(200*\x)] in {-5,0,5,10} {
+                      \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                    }
+                    \draw[samples=65,domain={0:13.48},smooth,variable=\x,red,very thick,->,>=stealth'] plot (\x, { (12*\x- (\x)^2 )/4 });
+                    \draw[blue,ultra thick] (0,5)--(14,5);
+                    \end{tikzpicture}]]>
+                    </latex-image></image></sidebyside></li>
+    <li><p>1000 or 5000</p></li>
+    <li><p>2000 or 4000</p></li>
+    <li><p>harvst 1800; stable population 3000</p></li>
+    <li><p>extinction</p></li></ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>The annual increase, <m>N</m>, in a bear population of size <m>x</m> is
+    <me>N=0.0002x(2000-x)</me>
+if the bears are not hunted. The number of bears killed each year by hunters is related to the bear population by the equation <m>~K=0.2x</m>. (Note that in this model, hunting limits are adjusted to the size of the bear population.)<ol marker="a.">
+    <li><p>Graph <m>N</m> and <m>K</m> on the same axes for <m>~0 \le x \le 2000</m>.</p>
+        <sidebyside width="70%"><image xml:id="fig-hw-bear-rate-grid">
+                    <description>grid</description><latex-image>
+                            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                            <![CDATA[\tikzset{%
+                            }
+                            \begin{tikzpicture} [scale=1] 
+                            \draw[lightgray] (0,0) grid (10,5);
+                            \draw[black,thick,->,>=stealth'] (0,0)--(10.4,0) node[above]{$x$};
+                            \draw[black,thick,->,>=stealth'] (0,0)--(0,5.4) node[left]{$y$};
+                            \foreach \x [evaluate=\x as \xi using int(200*\x)] in {5,10} {
+                              \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+                              }
+                            \foreach \x [evaluate=\x as \xi using int(50*\x)] in {2,4} {
+                              \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                            }
+                            \end{tikzpicture}]]>
+                            </latex-image></image></sidebyside></li>
+    <li>When the bear population is 1200, which is greater, <m>N</m> or <m>K</m>? Will the population increase or decrease in the next year? By how many bears?</li>
+    <li>When the bear population is 900, which is greater, <m>N</m> or <m>K</m>? Will the population increase or decrease in the next year? By how many bears?</li>
+    <li>What sizes of bear population will remain stable after hunting?</li>
+    <li>What sizes of bear population will increase despite hunting?  What sizes will decrease?</li>
+    <li>Toward what size will the bear population tend over time?</li>
+    <li>Suppose hunting limits are raised so that <m>K=0.3x</m>. Toward what size will the bear population tend over time?</li></ol></p></statement></exercise> 
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 27<ndash/>28,<ol marker="a.">
+    <li><p>Find the break-even points by solving a system of equations.</p></li>
+    <li><p>Graph the equations for revenue and cost in the same window and verify your solutions on the graph.</p></li>
+    <li><p>Use the fact that
+            <md><mrow>\blert{\text{Profit} = \text{Revenue} - \text{Cost}}</mrow></md>
+        to find the value of <m>x</m> for which profit is maximum.</p></li></ol></p></introduction>
+
+<exercise number="27"><statement><p>Writewell, Inc. makes fountain pens. It costs Writewell 
+            <md><mrow>C = 0.0075x^2 + x + 2100</mrow></md>
+dollars to manufacture <m>x</m> pens, and the company receives <m>R = 13x</m> dollars in revenue from the sale of the pens. Use the window
+            <md><mrow>\text{Xmin}\amp=0 \amp \text{Ymin}\amp=0</mrow>
+                <mrow>\text{Xmax}\amp=1600 \amp \text{Ymax}\amp=20,000</mrow></md></p>        </statement>
+<answer><p><ol marker="a." cols="2">
+        <li><p><m>(200,~ 2600), (1400,~ 18,200)</m></p></li>
+        <li><sidebyside width="95%"><image source="images/fig-ans-6-4-49.jpg"><description>parabola and line</description></image></sidebyside></li>
+        <li><p><m>x=800</m></p></li></ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>A company can produce <m>x</m> lawn mowers for a cost of
+        <md><mrow>C = 0.125x^2 + 100,000</mrow></md>
+dollars. The sale of the lawn mowers will generate <m>R = 300x</m> dollars in revenue. Use the window
+        <md><mrow>\text{Xmin}\amp=0 \amp \text{Ymin}\amp=0</mrow>
+            <mrow>\text{Xmax}\amp=3000 \amp \text{Ymax}\amp=800,000</mrow></md></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+</exercises>

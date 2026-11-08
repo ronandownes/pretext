@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Variables"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Variables</title>
+    
+<subsection><title>What is a Variable?</title>
+<idx>variable</idx>
+                   
+<assemblage><title>Variable</title><idx>variable</idx>
+<p>A <term>variable</term> is a numerical quantity that changes over time or in different situations.</p></assemblage>
+
+    <p>We can show the values of a variable in a table or a graph.</p>
+                 
+<example><statement><p>Life expectancy is the average age to which people will live.  The table below shows that your life expectancy depends on the year of your birth. Thus, life expectancy is a variable.</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell>Year Born</cell>
+                        <cell>Life Expectancy</cell></row>
+                    <row> 
+                        <cell><m>1900</m></cell>
+                        <cell><m>49</m></cell></row>
+                    <row> 
+                        <cell><m>1910</m></cell>
+                        <cell><m>51</m></cell></row>
+                    <row> 
+                        <cell><m>1920</m></cell>
+                        <cell><m>58</m></cell></row>
+                    <row> 
+                        <cell><m>1930</m></cell>
+                        <cell><m>59</m></cell></row>
+                    <row> 
+                        <cell><m>1940</m></cell>
+                        <cell><m>63</m></cell></row>
+                    <row> 
+                        <cell><m>1950</m></cell>
+                        <cell><m>68</m></cell></row>
+                    <row> 
+                        <cell><m>1960</m></cell>
+                        <cell><m>70</m></cell></row>
+                    <row> 
+                        <cell><m>1970</m></cell>
+                        <cell><m>71</m></cell></row>
+                    <row> 
+                        <cell><m>1980</m></cell>
+                        <cell><m>74</m></cell></row>
+                    <row> 
+                        <cell><m>1990</m></cell>
+                        <cell><m>75</m></cell></row>    
+        </tabular>
+        <p><ol marker="a.">
+            <li><p>To what age could people born in 1940 expect to live?</p></li>
+            <li><p>In what year did people's life expectancy reach 70 years of age?</p></li>
+        </ol></p></statement>
+
+<solution><p><ol marker="a.">
+        <li><p>People born in 1940 lived to 63 years of age on average.</p></li>
+        <li><p>Life expectancy reached 70 years of age in 1960.</p></li>
+    </ol></p></solution></example>
+
+<example><statement>
+    <p>The graph below shows the average annual salaries of NFL football players, starting in 1940. The average salary of NFL football players is a variable.</p>
+    <image source="photos/fig-1-1-ex2" width="60%"/><description>graph of NFL salaries</description>
+    <p><ol marker="a.">
+        <li><p>Use the graph to estimate the average annual salary of NFL football players in 1975.</p></li>
+        <li><p>By how much did salaries increase from 1975 to 1980?</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a.">
+        <li><p>In 1975, the average NFL player's salary was $40,000.</p></li>
+        <li><p>In 1980, the average salary was $80,000, so salaries had increased from $40,000 to $80,000, or by 
+            <md><mrow>\$80,000 - \$40,000 = \$40,000</mrow></md></p></li>
+    </ol></p></solution></example>
+
+
+    <exercise number="1"><statement><p>A numerical quantity that changes over time or in different situations is called a <fillin characters="6"/>.</p></statement>
+        <answer><p>variable</p></answer></exercise>
+    <exercise number="2"><statement><p>We can show the values of a variable in a <fillin characters="6"/> or a <fillin characters="6"/>.</p></statement>
+        <answer><p>table, graph</p></answer></exercise>
+
+<assemblage><title>Look Closer</title>
+<p>By displaying the values of a variable in a table or a graph, we sometimes see trends or patterns in those values.  For example, we see that life expectancy has been increasing slowly over time, and that salaries of NFL football players have been increasing ever more rapidly since 1940.</p></assemblage>
+
+</subsection>
+
+<subsection><title>Using Letters to Represent Variables</title>
+
+<p>Imagine that you are traveling by airplane to another city. The table below shows the altitude of the airplane, in thousands of feet, at ten-minute intervals after take-off. The two quantities shown in the table, time and altitude, are both variables.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row bottom="minor">
+                    <cell>Time (min)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell>
+                    <cell><m>30</m></cell>
+                    <cell><m>40</m></cell>
+                    <cell><m>50</m></cell>
+                    <cell><m>60</m></cell>
+                    <cell><m>70</m></cell>
+                    <cell><m>80</m></cell>
+                    <cell><m>90</m></cell>
+                    <cell><m>100</m></cell>
+                    <cell><m>110</m></cell></row>
+                <row> 
+                    <cell>Altitude (1000 ft)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>8</m></cell>
+                    <cell><m>20</m></cell>
+                    <cell><m>21</m></cell>
+                    <cell><m>23</m></cell>
+                    <cell><m>28</m></cell>
+                    <cell><m>29</m></cell>
+                    <cell><m>30</m></cell>
+                    <cell><m>25</m></cell>
+                    <cell><m>13</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell><m>0</m></cell></row>
+            </tabular>
+
+<p>We often use a letter as a kind of short-hand to represent a variable. For this example, we use the following letters:  
+    <md><mrow>t~~~  \text{stands for the time elapsed after take-off}</mrow></md>
+    <md><mrow>h~~~  \text{stands for the plane's altitude at that time}</mrow></md></p>
+
+<p>We can get a better feel for the variables by plotting them on a graph. In the figure below, the values of <m>t</m> are displayed on the horizontal scale, or axis, and the values of <m>h</m> are shown on the vertical axis. The graph shows how the values of <m>h</m> are related to the values of <m>t</m>.</p>            
+    
+<!--<image source="photos/fig-1-1-1.png" />-->
+    <image xml:id="fig-1-1-1" width="70%"><description>airplane altitude</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.075, yscale=.15]
+        \draw[cyan] (0,0) grid[xstep=10, ystep=5] (110,40);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(119,0) node[right]{$t$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,45) node[above]{$h$};
+        \foreach \x in  {10, 20, ..., 110} {
+         \draw[black, thick] (\x,.75) --++(0,-1.5)  node[below]   {\x};
+        }
+        \foreach \y in  {10, 20, ..., 40} {
+         \draw[black, thick] (.75,\y) --++(-1.5,0)  node[left]   {\y};
+        }
+        \draw [red, ultra thick] plot [smooth] coordinates {(0,0) (10,8) (20,20) (30,21) (40,23) (50,28) (60,29) (70,30) (80,25) (85,20) (90,13) (100,5) (110,0) };
+        \end{tikzpicture}]]></latex-image></image>
+
+<example xml:id="Example-1-1-3"><statement><p><ol marker="a.">
+    <li>What is the value of <m>h</m> when <m>t=85</m>?  What do these values mean in this situation?</li>
+    <li>When is the plane descending?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The graph shows that <m>h</m> is approximately 20 when <m>t=85</m>. This means that at 85 minutes into the flight, the plane's altitude is about 20,000 feet.</p>
+        <!--<image source="photos/fig-1-1-ex3.png"/>-->
+    <image xml:id="fig-1-1-ex3" width="70%"><description>airplane altitude</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.075, yscale=.15]
+        \draw[cyan] (0,0) grid[xstep=10, ystep=5] (110,40);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(119,0) node[right]{$t$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,45) node[above]{$h$};
+        \foreach \x in  {10, 20, ..., 110} {
+         \draw[black, thick] (\x,.75) --++(0,-1.5)  node[below]   {\x};
+        }
+        \foreach \y in  {10, 20, ..., 40} {
+         \draw[black, thick] (.75,\y) --++(-1.5,0)  node[left]   {\y};
+        }
+        \draw [red, ultra thick] plot [smooth] coordinates {(0,0) (10,8) (20,20) (30,21) (40,23) (50,28) (60,29) (70,30) (80,25) (85,20) (90,13) (100,5) (110,0) };
+        \draw[blue, fill=blue] (85,20) ellipse (2cm and 1cm);
+        \end{tikzpicture}]]></latex-image></image></li>
+    <li>The plane is descending when its altitude is decreasing.  On the graph, <m>h</m> begins to decrease at <m>t=70</m> and continues decreasing until <m>t=110</m>. Thus, the plane is descending from the 70th minute until the end of the flight at 110 minutes.</li>
+</ol></p></solution></example>
+
+    <exercise number="3"><statement><p>We often use <fillin characters="6"/> as a shorthand to represent variable quantities.</p></statement>
+        <answer><p>letters</p></answer></exercise>      
+    <exercise number="4"><statement><p>Which variable is displayed on the vertical axis in <xref ref="Example-1-1-3" text="type-global"/>?</p></statement>
+        <answer><p>altitude</p></answer></exercise>
+
+<assemblage><title>Look Ahead</title>
+<p>It would be useful if we could discover a formula or rule to help us predict the values of an interesting variable.</p></assemblage>
+</subsection>
+
+<subsection><title>Connections Between Variables</title>
+
+<p>Sometimes there is a simple mathematical relationship between the values of two variables.</p>
+
+<example><statement><p>Fernando plans to share an apartment with three other students next year. The table shows his share of the rent for apartments of various prices.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row bottom="minor">
+                    <cell>Rent</cell>
+                    <cell><m>280</m></cell>
+                    <cell><m>300</m></cell>
+                    <cell><m>340</m></cell>
+                    <cell><m>360</m></cell>
+                    <cell><m>400</m></cell>
+                    <cell><m>460</m></cell>
+                    <cell><m>500</m></cell></row>
+                <row> 
+                    <cell>Fernando's share</cell>
+                    <cell><m>70</m></cell>
+                    <cell><m>75</m></cell>
+                    <cell><m>85</m></cell>
+                    <cell><m>90</m></cell>
+                    <cell><m>100</m></cell>
+                    <cell><m>\blert{?}</m></cell>
+                    <cell><m>\blert{?}</m></cell></row>
+            </tabular>
+
+<p><ol marker="a.">
+    <li>Fill in the blanks in the table.  Describe in words how you found the unknown values.   
+        <md><mrow>\blert{\text{Divide the rent by 4}}</mrow></md></li>
+    <li>Write a mathematical sentence <idx>mathematical sentence</idx> that gives Fernando's share of the total rent.
+        <md><mrow>\blert{\text{Fernando's share}=\text{Rent}\div 4}</mrow></md></li>
+    <li>The total rent and Fernando's share are variables. Let <m>R</m> stand for the total rent, and let <m>F</m> stand for Fernando's share. Using these letters, write a formula for Fernando's share of the rent.
+        <md><mrow>\blert{F=R \div 4}</mrow></md></li>
+    <li><p>Plot the points from the table and connect them with a smooth curve. Extend your line so that it reaches across the entire grid, not just the points that you plotted.</p>
+    <!--<image source="photos/fig-1-1-ex4.png"/>-->
+    <image xml:id="fig-1-1-ex4" width="75%"><description>Fernando's share of rent</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.015, yscale=.03]
+        \draw[cyan] (0,0) grid[xstep=50, ystep=15] (500,150);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(530,0) node[right]{$R$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,160) node[above]{$F$};
+        \foreach \x in  {100, 200, ..., 500} {
+         \draw[black, thick] (\x,2) --++(0,-4)  node[below]   {\x};
+        }
+        \foreach \y in  {30, 60, ..., 150} {
+         \draw[black, thick] (6,\y) --++(-12,0)  node[left]   {\y};
+        }
+        \draw [red, ultra thick] (0,0) -- (500,125);
+        \end{tikzpicture}]]></latex-image></image></li>         
+   </ol></p></statement></example>
+
+<assemblage><title>Equation</title>
+    <idx>mathematical sentence</idx>
+    <p>A formula <idx>formula</idx> relating two variables is a type of <term>equation</term><idx>equation</idx>, and an equation is just a statement that two quantities are equal.</p></assemblage>
+
+<p>By studying the values in a table, we may be able to find a relationship between the values, and then write an equation relating the two variables. </p>
+
+<example><statement><p>Write an equation that relates the two variables in the table.</p>
+  
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row bottom="minor">    
+                    <cell><m>~x~</m></cell>
+                    <cell><m>~5~</m></cell>
+                    <cell><m>~10~</m></cell>
+                    <cell><m>~15~</m></cell>
+                    <cell><m>~20~</m></cell>
+                    <cell><m>~25~</m></cell></row>
+                <row> 
+                    <cell><m>y</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>7</m></cell>
+                    <cell><m>12</m></cell>
+                    <cell><m>17</m></cell>
+                    <cell><m>22</m></cell></row>
+            </tabular></statement>
+
+<solution><p>The two variables are <m>x</m> and <m>y</m>. Each column of the table shows a related pair of values. Notice that 2 is 3 less than 5, 7 is 3 less than 10, and so on.  That is:
+    <md><mrow>
+          2 \amp = 5-3, \amp\amp 7 = 10-3</mrow>
+        <mrow>  12\amp = 15-3, \amp\amp 17 = 20-3 </mrow> </md>
+and so on. In each column, we can find <m>y</m> by subtracting 3 from <m>x</m>.  Thus,  <m>y=x-3</m>.</p></solution></example>
+
+<exercise number="5"><statement><p>A statement that two quantities are equal is called an <fillin characters="6"/>.</p></statement>
+        <answer><p>equation</p></answer></exercise>
+
+
+<problem>
+<statement><p>Choose the correct arithmetic operation (addition, subtraction, multiplication, or division) and explain how to answer the question.</p>
+
+<p><ol marker="1.">
+    <li>An air conditioner keeps the inside temperature <m>16\degree</m> cooler than the outside temperature.  If the outside temperature is <m>90\degree</m>, how can you find the inside temperature?</li>
+
+    <li>Tom's recipe for punch calls for 3 times as much fruit juice as soda.  If he has half a gallon of soda, how can he find the amount of fruit juice he needs?</li>
+
+    <li>A clothesline should be 2 feet longer than the distance between the supporting poles so that it can be tied at each end.  If the poles are 20 feet apart, how can you find the length of the clothesline?</li>
+
+    <li>The weight of a bridge is supported equally by 8 pillars.  If the bridge weighs one million tons, how can you find the weight each pillar must support?</li>
+
+    <li>Katrin has 4 hours to complete both her math and geography homework.  If her math assignment takes <m>2\dfrac{1}{2}</m> hours, how can she calculate how long she has for geography?</li>
+
+    <li>The cost of leasing a compact car is 63% the cost of a luxury car.  If the lease on the luxury car is $500 per month, how can you find the cost of leasing the compact car?</li>
+</ol></p></statement>
+
+<answer>
+<p><ol marker="1.">
+    <li>Subtract 16 from the outside temperature.</li>
+    <li>Multiply the amount of soda by 3.</li>
+    <li>Add 2 feet to the distance between the poles.</li>
+    <li>Divide the weight of the bridge by 8.</li>    
+    <li>Subtract the time for math from 4 hours.</li>    
+    <li>Multiply the cost of the luxury car by 0.63.</li>
+</ol></p></answer>
+</problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Reading a Graph</title>
+
+<p>The graph shows the U.S. unemployment rate as a precent of the labor force during the years surrounding the Great Depression.</p>
+    <!--<image source="photos/act1-1-1.png"><description>graph</description></image>-->
+    <image xml:id="act1-1-1" width="95%"><description>graph of unemployment rate</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [xscale=1, yscale=.3]
+            \draw[gray] (0,0) grid (13,25);
+            \foreach \x [evaluate=\x as \year using int(\x+1929)] in  {0,1,2,...,13} {
+             \draw[darkgray, thick] (\x,.25) --++(0,-.5)  node[below]   {\year};
+            }
+            \foreach \y in  {0,5,10, ..., 25} {
+             \draw[black, thick] (.1,\y) --++(-.2,0)  node[left]   {\y};
+             \draw[darkgray, very thick] (0,\y) --++(13,0);
+            }
+            \draw [blue, very thick] (0,3.2)-- (1,9)-- (2,16)-- (3,23.5)-- (4,24.9) --(5,21.7)--(6,20) -- (7,17) --(8,14) --(9,19) --(10,17) --(11,14.5) --(12, 9.5) -- (13,4.5);
+            \node[left, xshift=-1, rotate=90 ] at (-1.,18.5) {Unemployment Rate};
+            \node at (6,27) {\Large U.S. Unemployment Rate};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+<p><ol marker="a.">
+    <li>What was the unemployment rate in 1930?</li>
+    <li>When did the unemployment rate first reach 15%?</li>
+    <li>When did the unemplyment rate reach its highest value? What was the unemployment rate at that time?</li>
+    <li>After 1930, when was the first time the unemployment rate fell below 10%?</li>
+    <li>During which year did the unemployment rate show the greatest increase? During which year did it show the greatest decrease?</li>
+    <li>Complete the table:
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">Year</cell>
+                        <cell bottom="minor"><line>Unemployment</line><line>Rate</line></cell>
+                        <cell bottom="minor"><line>Labor Force</line><line>(Millions)</line></cell>
+                        <cell bottom="minor"><line>Number</line><line>Unemployed</line></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1929</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>48.0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>1930</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>48.8</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1931</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>49.6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1932</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>50.3</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1933</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>51.1</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1934</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>51.9</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1935</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>52.6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1936</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>53.3</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1937</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>54.1</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1938</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>54.9</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1939</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>55.6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1940</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>56.2</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1941</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>57.5</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1942</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>60.4</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    </tabular></li>
+        <li>During which year did the number of unemployed workers increase the most?</li>
+    </ol></p></activity>
+
+<activity><title>Writing Mathematical Sentences</title><idx>mathematical sentence</idx>
+
+<p><ol marker="1.">
+    <li><p>Barry lives with his aunt while he attends college. Every week he gives her $20 from his paycheck to help pay for groceries. Fill in the table:</p>
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell>Barry's paycheck</cell>
+            <cell><m>45</m></cell>
+            <cell><m>60</m></cell>
+            <cell><m>75</m></cell>
+            <cell><m>100</m></cell>
+            <cell><m>125</m></cell>
+            <cell><m>p</m></cell></row>
+        <row> 
+            <cell>Calculation</cell>
+            <cell><m>\blert{45-20}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        <row> 
+            <cell>Amount he keeps</cell>
+            <cell><m>\blert{25}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular>
+
+    <p><ol marker="a.">
+        <li>Explain in words how to find the amount Barry keeps from his paycheck.</li>
+        <li><p>Write your explanation as a mathematical sentence:</p>
+
+                <p>Amount he keeps <m>~=</m> </p></li>   
+               
+    <li>Let <m>p</m> stand for the amount of Barry's paycheck and <m>k</m> for the amount he keeps. Write an equation for <m>k</m> in terms of <m>p</m>.</li>
+    <li><p>Plot the points from the table and connect them with a smooth curve.</p>
+            <!--<image source="photos/act1-1-2.png"><description>graph</description></image>-->
+            <image xml:id="act1-1-2-1" width="70%"><description>grid 0 to 150 by 0 to 150</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.3]
+            \draw[cyan] (0,0) grid (15,15);
+            \draw[black,thick, ->, >=stealth'] (0,0)--(16,0) node[right]{$p$};
+            \draw[black,thick, ->, >=stealth'] (0,0)--(0,16.5) node[left]{$k$};
+            \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5,10,15} {
+             \draw[cyan, very thick] (\x,0)--++(0,15);
+             \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+             \draw[cyan, very thick] (0,\x)--++(15,0);
+            \draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+            }
+            \end{tikzpicture}]]>
+            </latex-image></image></li>
+    </ol></p></li>
+
+<li><p>Liz makes $6 an hour as a tutor in the Math Lab. Her wages for the week depend on the number of hours she works.  Fill in the table:</p>
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell>Hours worked</cell>
+            <cell><m>3</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>15</m></cell>
+            <cell><m>h</m></cell></row>
+        <row> 
+            <cell>Calculation</cell>
+            <cell><m>\blert{6 \times 3}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        <row> 
+            <cell>Wages</cell>
+            <cell><m>\blert{18}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular>
+        <p><ol marker="a.">
+        <li>Explain in words how to find the Liz's wages for the week.</li>
+        <li><p>Write your explanation as a mathematical sentence:</p>
+
+                <p>Wages <m>~=</m> </p></li>   
+               
+    <li>Let <m>h</m> stand for the number of hours Liz worked and <m>w</m> for her wages. Write an equation for <m>w</m> in terms of <m>h</m>.</li>
+    <li><p>Plot the points from the table and connect them with a smooth curve.</p>
+            <!--<image source="photos/act1-1-3.png"><description>graph</description></image>-->
+            <image xml:id="act-1-1-2-2" width="80%"><description>grid 0 to 15 by 0 to 100</description><latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture} [xscale=.4, yscale=.5]
+                    \draw[cyan] (0,0) grid (15,10);
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(16,0) node[right]{$h$};
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(0,11.2) node[left]{$w$};
+                    \foreach \x  in  {5,10,15} {
+                     \draw[cyan, very thick] (\x,0)--++(0,10);
+                     \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                     \draw[black, thick] (0,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$0$};
+                    \foreach \x [evaluate=\x as \xi using int(10*\x)] in {2,4,...,10} {
+                     \draw[cyan, very thick] (0,\x)--++(15,0);
+                    \draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \end{tikzpicture}]]>
+                    </latex-image></image></li>
+    </ol></p></li></ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Reading values from a graph</li>
+    <li>Plotting points from a table of values</li>
+    <li>Describing a relationship between two variables</li>
+    <li>Writing an equation relating two variables</li></ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>In Activity 1e, how do we calculate the increase in unemployment rate?</li>
+    <li>In Activity 1f, were more people unemployed in 1931 or in 1940?</li>
+    <li>In Activity 2, is the first row of the table plotted on the horizontal axis or the vertical axis?</li></ol></p>
+</assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+    <p><ol marker="A.">
+   <li> <introduction><p>Write an equation for <m>y</m> in terms of <m>x</m>.</p></introduction>
+
+<p><ol marker="1." cols="2">
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~2~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~8~</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>13</m></cell>
+                        <cell><m>16</m></cell></row>
+                    </tabular></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>~6~</m></cell>
+                        <cell><m>~12~</m></cell>
+                        <cell><m>~24~</m></cell>
+                        <cell><m>~30~</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell></row>
+                    </tabular></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~7~</m></cell>
+                        <cell><m>~8~</m></cell>
+                        <cell><m>~10~</m></cell></row>
+                    <row> 
+                        <cell><m>~y~</m></cell>
+                        <cell><m>~3~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~6~</m></cell>
+                        <cell><m>~8~</m></cell></row>
+                    </tabular></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~3~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~7~</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>28</m></cell></row>
+                    </tabular></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>~2~</m></cell>
+                        <cell><m>~4~</m></cell>
+                        <cell><m>~6~</m></cell>
+                        <cell><m>~9~</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>3</m></cell></row>
+                    </tabular></li>
+
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell><m>~4~</m></cell>
+                        <cell><m>~8~</m></cell>
+                        <cell><m>~12~</m></cell>
+                        <cell><m>~20~</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>15</m></cell></row>
+                    </tabular></li>
+</ol></p></li>
+
+<li><introduction><p>Matt wants to travel 240 miles to visit a friend over spring break. He is deciding whether to ride his bike or drive. If he travels at an average speed of <m>r</m> miles per hour, then the trip will take <m>t</m> hours. Use the graph to answer the questions.</p>
+        <!--<image source="photos/act1-1-4.png"><description>graph</description></image>-->
+        <image xml:id="prev-1-1-7" width="80%"><description>graph of time vs rate</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.6,yscale=.4]
+        \draw[cyan] (0,0) grid (15,15);
+        \draw[black, thick, ->, >=stealth'] (0,0)--(15.7,0) node[right]{$r$};
+        \draw[black, thick, ->, >=stealth'] (0,0)--(0,15.7) node[left, yshift=2]{$t$};
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in {2,4,...,14} {
+         \draw[cyan, very thick] (\x,0)--++(0,15);
+         \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in  {5,10,15} {
+         \draw[cyan, very thick] (0,\x)--++(15,0);
+        \draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={8/5}:{15},smooth,variable=\x,magenta!70!black, very thick, <->, >=stealth'] plot (\x,{24/\x});
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</introduction>
+
+<p><ol marker="1.">
+
+    <li>If Matt can ride at an average speed of 15 miles per hour, how long will the trip take?</li>
+
+    <li>If Matt wants to arrive in 8 hours, what average speed will he need to maintain?</li>
+
+    <li>How long will the trip take if Matt drives at 60 miles per hour?</li>
+
+    <li>If Matt doubles his speed, what happens to his travel time?</li>
+</ol></p></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p><ol marker="A.">
+<li><p><ol marker= "1." cols="3">
+    <li><m>y=x+8</m></li>
+    <li><m>y=x \div 6</m></li>
+    <li><m>y=x-2</m></li>
+    <li><m>y=4 \times x</m></li>
+    <li><m>y=12-x</m></li>
+    <li><m>y=\dfrac{3}{4} \times x</m></li>
+</ol></p></li>
+<li><p><ol marker="1." cols="2">
+    <li>16 hrs</li>
+    <li>30 mph</li>
+    <li>4 hrs</li>
+    <li>10. Travel time is cut in half</li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+</subsection>
+
+<xi:include href="./hmwk-1-1.xml" />
+
+</section>

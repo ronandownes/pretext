@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Graphing-Quadratic-Equations" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Graphing Quadratic Equations</title>
+
+<subsection><title><m>x</m>-Intercepts of a Parabola</title>
+	<idx><h><em>x</em>-intercept</h><h>of a parabola</h></idx>
+	<idx><h>intercept</h><seealso><em>x</em>-intercept</seealso></idx>
+
+<p>So far we have graphed quadratic equations by plotting points. But we can use some algebraic techniques to make the process easier.</p>
+<p>In <xref ref="Some-Quadratic-Models">Lesson</xref> we saw that the solutions of the equation
+	<md><mrow>40p-p^2=0</mrow></md>
+namely, <m>p=0</m> and <m>p=40</m>, are also the horizontal intercepts of the graph of  
+	<md><mrow>R=40p-p^2</mrow></md>
+This is the same connection we saw between the <m>x</m>-intercepts of a line and the solutions of its equation. Recall that the <m>x</m>-intercept of the line <m>y=mx+b</m> is the point where the graph crosses the <m>x</m>-axis. To find the <m>x</m>-intercepts of a line, we set <m>y=0</m> and solve for <m>x</m>. The same strategy applies to quadratic equations.</p>
+
+<assemblage><title><m>x</m>-Intercepts of a Parabola</title>
+	<idx><h><em>x</em>-intercept</h><h>of a parabola</h></idx>
+<p>	To find the <m>x</m>-intercepts of the graph of
+	<md><mrow>y=ax^2+bx+c</mrow></md> 
+we set <m>y=0</m> and solve the equation
+	<md><mrow>ax^2+bx+c=0</mrow></md></p></assemblage>
+
+<example xml:id="Example-6-4-1"><statement><p><ol marker="a.">
+	<li>Find the  intercepts of the graph of <m>~y=4x-x^2</m>.</li>
+	<li>Sketch the graph.</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li>We set <m>y=0</m> and solve the equation
+			<md><mrow>4x-x^2 \amp =0 \amp \amp \blert{\text{Factor the left side.}}</mrow>
+				<mrow>x(4-x) \amp =0 \amp \amp \blert{\text{Set each factor equal to 0.}}</mrow>
+				<mrow>x=0~~~~4-x \amp = 0  \amp \amp \blert{\text{Solve each equation.}}</mrow>
+				<mrow>x = 0~~~~x \amp = 4</mrow></md>
+	The <m>x</m>-intercepts are the points <m>(0,0)</m> and <m>(4,0)</m>.</li>
+	<li><sidebyside widths="60% 35%">
+		<stack><p>We make a table of values that includes the <m>x</m>-intercepts.</p><p></p>
+		<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell><m>~x~</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>4</m></cell>
+                <cell><m>5</m></cell></row>
+            <row> 
+                <cell><m>~y~</m></cell>
+                <cell><m>-5</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>4</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>-5</m></cell></row>
+            </tabular> <p></p>        
+        <p>We plot the points and connect them with a parabola, as shown in the figure.</p></stack>
+    <!--    <image source="photos/fig-6-4-ex1.png"><description>parabola</description></image>-->
+    <image xml:id="fig-6-4-ex1"><description>parabola</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture}[xscale=.5, yscale=.4]
+		\draw[cyan] (-2,-6) grid (6,6);
+		\draw[black, thick, ->, >=stealth'] (-2,0)--(6.6,0) node[right]{$x$};
+		\draw[black, thick, ->, >=stealth'] (0,-6)--(0,6.6) node[left]{$y$};
+		\foreach \x in {5} {
+		 \draw[cyan, very thick] (\x,-6)--++(0,12);
+		 \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\foreach \x in  {-5,5} {
+		 \draw[cyan, very thick] (-2,\x)--++(8,0);
+		\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\draw[samples=65,domain={2-sqrt(10)}:{2+sqrt(10)},smooth,variable=\x,magenta!80!black, ultra thick, <->,>=stealth'] plot ({\x},{4-(\x-2)^2});
+        \end{tikzpicture}]]></latex-image></image></sidebyside></li>
+    </ol></p></solution></example>
+
+<exercise number="1"><statement><p>How do we find the <m>x</m>-intercepts of the graph of <m>~y=ax^2+bx+c</m>?
+</p></statement>
+    <answer><p>Set <m>y=0</m> and solve for <m>x</m>.</p></answer></exercise>
+</subsection>
+
+<subsection><title>The Vertex</title>
+	<idx><h>vertex of a parabola</h></idx>
+	<idx><h>parabola</h><h>vertex</h></idx>
+
+<p>The graph of a quadratic equation <m>~y=ax^2+bx+c~</m> is a smooth curve, called a parabola, <idx><h>parabola</h></idx> that bends upwards or downwards.</p> 
+	
+<assemblage><title>The Vertex</title>
+	<idx><h>vertex of a parabola</h></idx>
+	<idx><h>parabola</h><h>vertex</h></idx>
+<p>The high or low point of a parabola is called its <term>vertex</term>.</p>
+</assemblage> 
+
+<sidebyside widths="60% 30%" valigns="middle middle" margins="0% 0%"><p>Look again at the graph of <m>~y=4x-x^2~</m> from <xref ref="Example-6-4-1" text="type-global"/>, shown at right. Notice that the graph is symmetric about a vertical line (called the <term>axis of symmetry</term>) that passes through the vertex. All the parabolas we'll study have a vertical axis of symmetry.</p>   
+	<!--<image source="photos/fig-6-4-1.png"><description>parabola</description></image>-->
+    <image xml:id="fig-6-4-1"><description>parabola</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture}[xscale=.5, yscale=.4]
+		\draw[cyan] (-2,-6) grid (6,6);
+		\draw[black, thick, ->, >=stealth'] (-2,0)--(6.6,0) node[right]{$x$};
+		\draw[black, thick, ->, >=stealth'] (0,-6)--(0,6.6) node[left]{$y$};
+		\foreach \x in {5} {
+		 \draw[cyan, very thick] (\x,-6)--++(0,12);
+		 \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\foreach \x in  {-5,5} {
+		 \draw[cyan, very thick] (-2,\x)--++(8,0);
+		\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\draw[samples=65,domain={2-sqrt(10)}:{2+sqrt(10)},smooth,variable=\x,magenta!80!black, ultra thick, <->,>=stealth'] plot ({\x},{4-(\x-2)^2});
+		\draw[ultra thick, densely dashed,blue!90!black] (2,-6)--(2,6);
+        \end{tikzpicture}]]></latex-image></image></sidebyside>
+
+<assemblage><title>Look Closer</title>
+<p>Because of this symmetry, the <m>x</m>-intercepts are located at equal distances on either side of the axis of symmetry. Or we can say that the <m>x</m>-coordinate of the vertex is exactly halfway between the two <m>x</m>-intercepts.</p></assemblage>
+
+<assemblage><title>Locating the Vertex</title>
+	<p>We can locate the vertex of a parabola by taking the average of its <m>x</m>-intercepts.</p>
+</assemblage>
+
+<exercise number="2"><statement><p>What is the vertex of a parabola?</p></statement>
+    <answer><p>The high or low point</p></answer></exercise>
+
+<example><statement><p>Find the vertex of the graph of <m>~y=4x-x^2.</m></p></statement>
+
+<solution><p>In Example 1 we found that the <m>x</m>-intercepts of the graph are <m>x=0</m> and <m>x=4</m>. The <m>x</m>-coordinate of the vertex is the average of these two numbers.
+	<md><mrow>x=\dfrac{0+4}{2}</mrow></md>
+The <m>x</m>-coordinate of the vertex is <m>x=2</m>. To find the <m>y</m>-coordinate of the vertex, we substitute <m>x=\alert{2}</m> into the equation of the parabola.
+	<md><mrow>y=4(\alert{2})-\alert{2}^2=8-4=4</mrow></md>
+The coordinates of the vertex are <m>(2,4)</m>, as you can see in the graph above.</p>
+</solution></example>
+
+<assemblage><title>The Vertex of a Parabola</title>
+	<idx><h>vertex of a parabola</h></idx>
+	<idx><h>parabola</h><h>vertex</h></idx>
+<p><ol marker="1.">
+	<li>The <m>x</m>-coordinate of the vertex is the average of the <m>x</m>-intercepts.</li>
+	<li>To find the <m>y</m>-coordinate of the vertex, substitute its <m>x</m>-coordinate into the equation of the parabola.</li>
+</ol></p></assemblage>
+
+<exercise number="3"><statement><p>How can we find the <m>x</m>-coordinate of the vertex of a parabola?</p></statement>
+    <answer><p>Take the average of its <m>x</m>-intercepts.</p></answer></exercise>
+
+<exercise number="4"><statement><p>How can we find the <m>y</m>-coordinate of the vertex of a parabola?</p></statement>
+    <answer><p>Substitute its <m>x</m>-coordinate into the equation of the parabola.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Graphing Parabolas</title>
+
+<p>By locating the <m>x</m>-intercepts and the vertex of the graph, we can make a quick sketch of a parabola.</p>
+
+<example><statement><p>Sketch a graph of  <m>~y=x^2-8x+7</m>.</p></statement>
+
+<solution><p>First we find the <m>x</m>-intercepts: we substitute <m>y=0</m> into the equation, and solve for <m>x</m>.
+		<md><mrow>x^2-8x+7 \amp =0 \amp \amp \blert{\text{Factor the left side.}}</mrow>
+				<mrow>(x-7)(x-1) \amp =0 \amp \amp \blert{\text{Set each factor equal to 0.}}</mrow>
+				<mrow>x-7=0~~~~x-1 \amp = 0  \amp \amp \blert{\text{Solve each equation.}}</mrow>
+				<mrow>x = 7~~~~x \amp = 1</mrow></md></p>
+<p>The <m>x</m>-intercepts are the points <m>(7,0)</m> and <m>(1,0)</m>. Next, we locate the vertex of the graph. The <m>x</m>-coordinate of the vertex is the average of the <m>x</m>-intercepts, so
+	<md><mrow>x=\dfrac{1+7}{2}=4</mrow></md>
+You can check that <m>x=4</m> is halfway between the two <m>x</m>-intercepts of the graph shown in the figure. To find the <m>y</m>-coordinate of the vertex, we evaluate the formula for the parabola at<m>x=\alert{4}</m>.
+		<md><mrow>y \amp = \alert{4}^2-8(\alert{4})+7</mrow>
+			<mrow> \amp = 16-32+7=-9</mrow></md></p>
+<sidebyside widths="50% 40%"><p>The vertex of the parabola is the point <m>(4,-9)</m>. We can also find the <m>y</m>-intercept of the graph by substituting <m>x=\alert{0}</m> into the equation. 
+	<md><mrow>\alert{0}^2-8(\alert{0})+7=7</mrow></md>
+The <m>y</m>-intercept is the point <m>(0,7)</m>. We plot the vertex and the intercepts and draw a smooth curve through them. The completed graph is shown at right.</p>
+	<image source="photos/fig-6-4-ex3"><description>parabola</description></image></sidebyside></solution></example> 
+<exercise number="3"><statement><p>How can we find the <m>y</m>-intercept of the graph of <m>~y=ax^2+bx+c</m>?</p>
+</statement>
+    <answer><p>Substitute <m>x=\alert{0}</m> into the equation.</p></answer></exercise>
+
+<p>By combining the techniques illustrated above, we write the following guidelines for sketching an accurate graph of a quadratic equation.</p>
+
+<assemblage><title>To Graph a Quadratic Equation</title>
+	<idx><h>quadratic equation</h><h>graphing</h></idx>
+	<idx><h>parabola</h><h>graphing</h></idx>
+<p><ol marker="1.">  
+	<li>Find the <m>x</m>-intercepts:  set <m>y=0</m> and solve for <m>x</m>.</li>
+	<li>Find the vertex:  the <m>x</m>-coordinate is the average of the <m>x</m>-intercepts.  
+	Find the <m>y</m>-coordinate by substituting the <m>x</m>-coordinate into the 
+	equation of the parabola.</li>
+	<li>Find the <m>y</m>-intercept:  set <m>x=0</m> and solve for <m>y</m>.</li>
+	<li>Draw a parabola through the points. The graph is symmetric about a vertical line through the vertex.</li>
+</ol></p></assemblage>
+
+<problem>
+<statement><p><ol marker="a.">
+	<li>Solve the equation.</li>
+	<li>Write the equation in the form  <m>ax+b=0</m>.</li>
+	<li>Graph the equation  <m>y=ax+b</m>.</li>
+	<li>Find the <m>x</m>-intercept of your graph. Compare with your answer to part (a).</li>
+</ol></p>
+
+<p><ol marker="1.">
+	<li><m>2x+5=11</m>
+	<!--<image source="photos/sw-6-4-1.png"><description>parabola</description></image>-->
+    <image width="50%" xml:id="sw-6-4-1"><description>grid</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture}[scale=.4]
+		\draw[cyan] (-5,-5) grid (5,5);
+		\draw[black, thick, ->, >=stealth'] (-5,0)--(6,0) node[right]{$x$};
+		\draw[black, thick, ->, >=stealth'] (0,-5)--(0,6) node[left, xshift=2]{$y$};
+		\foreach \x in {-3,3} {
+		 \draw[cyan, very thick] (\x,-5)--++(0,10);
+		 \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(2*\x)] in  {-3,3} {
+		 \draw[cyan, very thick] (-5,\x)--++(10,0);
+		\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+        \end{tikzpicture}]]></latex-image></image></li>
+
+	<li><m>2x-3=5x+9</m>
+	<!--<image source="photos/sw-6-4-2.png"><description>parabola</description></image>-->
+    <image width="50%" xml:id="sw-6-4-2"><description>grid</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture}[scale=.4]
+		\draw[cyan] (-5,-8) grid (5,2);
+		\draw[black, thick, ->, >=stealth'] (-5,0)--(6,0) node[right]{$x$};
+		\draw[black, thick, ->, >=stealth'] (0,-8)--(0,3) node[left, xshift=2]{$y$};
+		\foreach \x in {-3,3} {
+		 \draw[cyan, very thick] (\x,-8)--++(0,10);
+		 \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(2*\x)] in  {-3,-6,2} {
+		 \draw[cyan, very thick] (-5,\x)--++(10,0);
+		\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+        \end{tikzpicture}]]></latex-image></image></li>
+
+	<li><m>0.7x+0.2(100-x) = 0.3(100)</m>
+	<!--<image source="photos/sw-6-4-3.png"><description>parabola</description></image>-->
+	<image width="50%" xml:id="sw-6-4-3"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+		\begin{tikzpicture}[scale=.4]
+		\draw[cyan] (-5,-5) grid (5,5);
+		\draw[black, thick, ->, >=stealth'] (-5,0)--(6,0) node[right]{$x$};
+		\draw[black, thick, ->, >=stealth'] (0,-5)--(0,6) node[left, xshift=2]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(5*\x)] in {-4,-2,2,4} {
+		 \draw[cyan, very thick] (\x,-5)--++(0,10);
+		 \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(5*\x)] in  {-4,-2,2,4} {
+		 \draw[cyan, very thick] (-5,\x)--++(10,0);
+		\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+        \end{tikzpicture}]]></latex-image></image></li>
+
+	<li><m>4(7-x)=-2(6x-5)-6</m>
+	<!--<image source="photos/sw-6-4-4.png"><description>parabola</description></image>-->
+	<image width="50%" xml:id="sw-6-4-4"><description>grid</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture}[scale=.4]
+		\draw[cyan] (-5,-2) grid (5,8);
+		\draw[black, thick, ->, >=stealth'] (-5,0)--(6,0) node[right]{$x$};
+		\draw[black, thick, ->, >=stealth'] (0,-2)--(0,9) node[left, xshift=2]{$y$};
+		\foreach \x [evaluate=\x as \xi using int(2*\x)] in {-3,3} {
+		 \draw[cyan, very thick] (\x,-2)--++(0,10);
+		 \draw[black, thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(4*\x)] in  {3,6} {
+		 \draw[cyan, very thick] (-5,\x)--++(10,0);
+		\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+        \end{tikzpicture}]]></latex-image></image></li>
+</ol></p>
+</statement>
+
+<answer>
+<p><ol marker="1." cols="2">
+	<li><m>x=3</m></li>
+	<li><m>x=-4</m></li>
+	<li><m>x=20</m></li>
+	<li><m>x=-3</m></li>
+</ol></p></answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Parabolas</title>
+
+<p><ol marker="a.">
+	<li>Complete the table of values and graph each quadratic equation.</li>  
+	<li>Find the <m>x</m>-intercepts and the vertex of each graph.</li>
+</ol></p>
+
+<p><ol marker="1.">
+	<li><m>y=x^2+4</m>
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell><m>~x~</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>3</m></cell></row>
+        <row> 
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular>
+<image width="50%" source="photos/hp-6-1-2"><description>grid</description></image></li>
+
+  	<li><m>y=x^2-4</m>
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell><m>~x~</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>3</m></cell></row>
+        <row> 
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular>
+    <image width="50%" source="photos/hp-6-1-3"><description>grid</description></image></li>
+
+	<li><m>y=4x-x^2</m>
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell><m>~x~</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell></row>
+        <row> 
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular>
+    	<!--<image source="photos/act-6-4-3.png"><description>grid</description></image>-->
+		<image width="50%" xml:id="act-6-4-1-3"><description>grid</description><latex-image>
+	        <![CDATA[
+	        \begin{tikzpicture}[scale=.6]
+	        \draw[cyan] (-2,-4) grid (6,6);
+	        \draw[black, thick, ->, >=stealth'] (-2,0)--(6.7,0) node[right]{$x$};
+	        \draw[black, thick, ->, >=stealth'] (0,-4)--(0,6.7) node[left]{$y$};
+	        \foreach \x  in  {5} {
+	        \draw[cyan, very thick] (\x,-4)--++(0,10);
+	         \draw[black, thick] ({\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+	        }
+	        \foreach \x  in  {5} {
+	         \draw[cyan, very thick] (-2,\x)--++(8,0);
+	        \draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+	        }
+	        \end{tikzpicture}]]>
+	        </latex-image></image></li>    	
+
+	<li><m>y=(x-4)^2</m>
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell><m>~x~</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m>7</m></cell></row>
+        <row> 
+            <cell><m>~y~</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular>
+    	<!--<image source="photos/act-6-4-4.png"><description>grid</description></image>-->
+		<image width="50%" xml:id="act-6-4-1-4"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.6]
+        \draw[cyan] (-1,-2) grid (7,10);
+        \draw[black, thick, ->, >=stealth'] (-1,0)--(7.7,0) node[right]{$x$};
+        \draw[black, thick, ->, >=stealth'] (0,-2)--(0,10.7) node[left]{$y$};
+        \foreach \x  in  {5} {
+        \draw[cyan, very thick] (\x,-2)--++(0,12);
+         \draw[black, thick] ({\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {5,10} {
+         \draw[cyan, very thick] (-1,\x)--++(8,0);
+        \draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image></li>  
+</ol></p>
+</activity>
+
+<activity><title>Intercepts and Vertex</title>
+
+<p><ol marker="1.">
+
+<li><sidebyside widths="50% 40%" valigns="middle middle">
+<p><ol marker="a.">
+	<li><p>Find the <m>x</m>-intercepts of the graph of
+		<md><mrow>y=2x^2+8x</mrow></md></p></li>
+	<li>Find the vertex of the graph.</li>
+	<li>Find the <m>y</m>-intercept of the graph.</li>
+	<li>Sketch the graph.</li>
+</ol></p>
+	<!--<image source="photos/act-6-4-5.png"><description>grid</description></image>-->
+	<image xml:id="act-6-4-2-1"><description>grid</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[xscale=.6, yscale=.7]
+	\draw[cyan] (-6,-5) grid (2,5);
+	\draw[black, thick, ->, >=stealth'] (-6,0)--(2.7,0) node[right]{$x$};
+	\draw[black, thick, ->, >=stealth'] (0,-5)--(0,5.7) node[left]{$y$};
+	\foreach \x  in  {-5} {
+	\draw[cyan, very thick] (\x,-5)--++(0,10);
+	\draw[black, thick] ({\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+	}
+	\foreach \x [evaluate=\x as \yi using int(2*\x)] in  {5,-5} {
+	\draw[cyan, very thick] (-6,\x)--++(8,0);
+	\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\yi$};
+	}
+    \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></li>
+
+<li><sidebyside widths="50% 45%" valigns="middle middle">
+<p><ol marker="a.">
+	<li><p>Find the <m>x</m>-intercepts of the graph of
+		<md><mrow>y=2x^2+8x</mrow></md>
+		Hint: Factor out <m>-1</m> from the quadratic trinomial first.</p></li>
+	<li>Find the vertex of the graph.</li>
+	<li>Find the <m>y</m>-intercept of the graph.</li>
+	<li>Sketch the graph.</li>
+</ol></p>
+	<!--<image source="photos/act-6-4-6.png"><description>grid</description></image>-->
+	<image xml:id="act-6-4-2-2"><description>grid</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[xscale=.6, yscale=.5]
+    \draw[cyan] (-6,-6) grid (4,10);
+    \draw[black, thick, ->, >=stealth'] (-6,0)--(4.7,0) node[right]{$x$};
+    \draw[black, thick, ->, >=stealth'] (0,-6)--(0,10.7) node[left]{$y$};
+    \foreach \x  in  {-5} {
+    \draw[cyan, very thick] (\x,-6)--++(0,10);
+     \draw[black, thick] ({\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+    }
+    \foreach \x in {5,-5, 10} {
+     \draw[cyan, very thick] (-6,\x)--++(10,0);
+    \draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+    }
+    \end{tikzpicture}]]>
+    </latex-image></image> </sidebyside></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Finding the <m>x</m>-intercepts of a parabola</li>
+	<li>Finding the vertex of a parabola</li>
+	<li>Finding the <m>y</m>-intercept of a parabola</li>
+	<li>Sketching the graph of a quadratic equation</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>In Activity 1, Problems 1 and 2, how are the graphs different from the basic parabola?</li>
+	<li>In Activity 2, Problem 2, how does the <m>-1</m> coefficient of <m>x^2</m> affect the graph?</li>
+	<li>In Activity 2, Problem 2, does factoring  from the equation affect the <m>x</m>-intercepts of the graph?</li>    
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+<p><ol marker="a.">
+	<li>Find the <m>x</m>-intercepts of the graph.</li>
+	<li>Find the <m>y</m>-intercept of the graph.</li>
+	<li>Find the vertex of the graph.</li>
+</ol></p>
+
+<p><ol marker="1.">
+	<li><m>y=x^2-16</m></li>
+	<li><m>y=2x^2+16</m></li>
+	<li><m>y=x^2-10x+16</m></li>
+	<li><m>y=16+6x-x^2</m></li>
+</ol></p>
+
+
+<p>Answers to Homework Preview</p>
+<p><ol marker= "1.">
+	<li><p><ol marker="a." cols="3">
+		<li><m>(4,0),~(-4,0)</m></li>
+		<li><m>(0,-16)</m></li>
+		<li><m>(0,-16)</m></li>
+	</ol></p></li>
+	<li><p><ol marker="a." cols="3">
+		<li><m>(-8,0),~(0,0)</m></li>
+		<li><m>(0,0)</m></li>
+		<li><m>(-4,-32)</m></li>
+	</ol></p></li>
+	<li><p><ol marker="a." cols="3">
+		<li><m>(2,0),~(8,0)</m></li>
+		<li><m>(0,16)</m></li>
+		<li><m>(5,-9)</m></li>
+	</ol></p></li>
+	<li><p><ol marker="a." cols="3">
+		<li><m>(-2,0),~(8,0)</m></li>
+		<li><m>(0,16)</m></li>
+		<li><m>(3.25)</m></li>
+	</ol></p></li>
+	</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-6-4.xml" />
+</section>  
+

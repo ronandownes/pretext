@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="LogarithmicFunctions"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Logarithmic Functions</title>
+
+<subsection><title>Logarithms and Exponents</title>
+
+<p>Before we look at logarithmic functions, let's quickly review exponents and logs. For a particular base, let's say 5, taking a logarithm is the opposite operation for raising to a power. For example, if we raise base 5 to a power of <m>\alert{2}</m>, we get
+    <me> 5^\alert{2} = 25 ~~~~ \text{and thus} ~~~~ \log_5 {(25)} = \alert{2} </me>
+We can say that a logarithm is actually an exponent. Asking for the log base 5 of 25 is asking "what power of 5, or what exponent on base 5 will give me 25?"</p>
+
+<example><statement><p>Write each logarithmic equation as an equivalent exponential equation.</p>
+<p><ol marker="a." cols="2">
+    <li><m>\log_3 {(81)} = 4</m></li>
+    <li><m>\log_b {(32)} = 5</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The logarithm asks "To what power must I raise 3 to get 81?" The base is 3 and the logarithm (or exponent) is 4, so <m>3^4 = 81</m>.</p></li>
+    <li><p>The logarithm asks "To what power must I raise <m>b</m> to get 32?" The base is <m>b</m> and the logarithm (or exponent) is 5, so <m>b^5 = 32</m>.</p></li>
+</ol></p></solution></example>
+
+<p>For a more thorough review of logarithms  you can refer to <xref ref="LogExp" text="custom"> Section 7.3.1 </xref>.</p>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork>
+    <pg-code>
+        $step1 = RadioButtons(
+          ["Find multiples of 5.",
+          "Find the fifth root of 378.",
+          "Find powers of 5.",
+          "Divide 378 by 5."],
+          2, 
+        );            
+    </pg-code>
+    <statement><p>Which of these could you use to  estimate the value of <m>\log_5 {378}</m> ?</p>
+    <p><var name="$step1" form="buttons"/></p></statement>
+    <solution><p><var name="$step1"/></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Which of these could you use to estimate the value of <m>\log_5 {(378)}</m> ?</p>
+<p><ol marker="a.">
+    <li><p>Find multiples of 5.</p></li>
+    <li><p>Find the fifth root of 378.</p></li>
+    <li><p>Find powers of 5.</p></li>
+    <li><p>Divide 378 by 5.</p></li>
+</ol></p></statement></exercise>
+
+<p>Now we'll consider functions defined in terms of logarithms, or <term>logarithmic functions</term><idx>logarithmic function</idx>. For example,
+	<me>f(x)=\log_2 {(x)}</me>
+is a logarithmic function. In order to understand logarithmic functions better, we first investigate how they are related to more familiar functions, the exponential functions.</p>
+</subsection>
+
+<subsection><title>Inverse of a Function</title>
+
+<p>You know that raising to the <m>n</m>th power and taking <m>n</m>th roots are <em>inverse operations</em>. For example, if we first cube a number and then take the cube root of the result, we return to the original number.
+
+	<md><mrow>x \amp = \alert{5}~~~~~~\rightarrow~~~~~~x^3=125~~~~~~\rightarrow~~~~~~\sqrt[3]{x^3}=\sqrt[3]{125}=\alert{5}</mrow>
+		<mrow>\amp \blert{\text{Cube the number}}~~~~~~~~\blert{\text{Take the cube root}}~~~~~~~~\blert{\text{Original number}}</mrow></md>
+
+Now consider the functions that describe those operations: The graphs of <m>f(x)=x^3</m> and <m>g(x)=\sqrt[3]{x}</m> are related in an interesting way, as shown below.</p>
+
+	<image width="55%" xml:id="fig-cube-cuberoot"><description>cube root and cube funcions</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.55]
+        \draw[cyan] (-4,-4) grid (4,4);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(4.4,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,4.4) node[above]{$y$};
+        \foreach \x in  {-3,3} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[darkgray,thick, dashed,<->,>=stealth'] (-4,-4)--(4,4) node[below, yshift=-6mm, fill=white, inner sep=2]{$y=x$};
+        \draw[samples=65,domain={-(4^(1/3))}:{4^(1/3)},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)^3},{(\x)});
+        \draw[samples=65,domain={-(4^(1/3))}:{4^(1/3)},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{(\x)^3});
+        \node[text=red, fill=white, inner sep=2] at (2.8,.55) {$g(x)=\sqrt[3]{x}$};
+        \node[text=blue, fill=white, inner sep=2] at (-1.6,1.5) {$f(x)=x^3$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+
+<p>If we place a mirror along the line <m>y=x</m>, each graph is the reflection of the other. Or imagine folding the grid along the line <m>y=x</m>, and one graph will match the other exactly. We say that the graphs are "symmetric about the line <m>y=x</m>."</p>
+
+<p>The two functions <m>f(x)=x^3</m> and <m>g(x)=\sqrt[3]{x}</m> are called <term>inverse functions</term>. Look at the tables of values for the two functions.</p>
+	
+<sidebyside widths="45% 45%">
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>\dfrac{-1}{2}</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{2}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row>
+                    <row> 
+                        <cell><m>f(x)=x^3</m></cell>
+                        <cell><m>-8</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>\dfrac{-1}{8}</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{8}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>8</m></cell></row></tabular>
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-8</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>\dfrac{-1}{8}</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{8}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>8</m></cell></row>
+                    <row>
+                    	<cell><m>g(x)=\sqrt[3]{x}</m></cell>
+                        <cell><m>-2</m></cell>
+                        <cell><m>-1</m></cell>
+                        <cell><m>\dfrac{-1}{2}</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{2}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row></tabular></sidebyside>
+
+<p>By interchanging the rows in the table for <m>f(x)</m>, we get the table for <m>g(x)</m>. This makes sense when we recall that each function undoes the effect of the other. In fact, we define the cube root function by
+	<me>y=\sqrt[3]{x}~~~~\text{if and only if}~~~~x=y^3</me></p>
+<p>In other words, if we interchange the variables in the cubing function, <m>y=x^3</m>, to get <m>x=y^3</m>, we have an equivalent formula for the cube root function, <m>y=\sqrt[3]{x}</m>.</p>
+
+<p>Let's look at inverse operations in terms of functions. If we apply a function and then its inverse to an input, we return to that input. Use <m>f(x)=x^3</m> and <m>g(x)=\sqrt[3]{x}</m>, for example, and start by applying the innermost function.
+
+    <me>g(f(5)) = g(5^3) = g(125) = \sqrt[3]{125} = 5</me></p>
+
+<p>Without the function notation we are simply saying that <m>\sqrt[3]{x^3} = x</m>. But this is an example of the more general rule that if <m>f(x)</m> and <m>g(x)</m> are inverse functions, then <m>g(f(x))= x</m> and <m>f(g(x)) = x</m>.</p>
+
+<exercise component="webwork"><title>Quickcheck 2</title>
+<webwork>
+    <pg-code>
+        Context()->operators->undefine("^", "**");
+        Context()->functions->disable("All");
+        Context()->variables->add(b=>"Real");
+        $a = Compute("17");
+        $b = Compute("213");
+        $c = Formula("b");
+    </pg-code>
+    <statement><p>Simplify each expression without a calculator.<ol marker="a.">
+        <li><p>
+            <m>\sqrt[4]{17^4}=</m><var name="$a" width="3"/>
+        </p></li>
+        <li><p>
+            <m>(\sqrt{213})^2=</m><var name="$b" width="3"/>
+        </p></li>
+        <li><p>
+            <m>(\sqrt[5]{b})^5=</m><var name="$c" width="3"/>
+        </p></li></ol>
+    </p></statement>
+    <solution><p><ol marker="a.">
+        <li><m>17</m></li>
+        <li><m>213</m></li>
+        <li><m>b</m></li></ol>
+    </p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Quickcheck 2</title>
+<statement><p>Simplify each expression without a calculator.</p>
+    <p><ol marker="a." cols="3">
+        <li><p><m>\sqrt[4]{17^4}</m></p></li>
+        <li><p><m>(\sqrt{213})^2</m></p></li>
+        <li><p><m>(\sqrt[5]{b})^5</m></p></li>
+    </ol></p></statement></exercise>
+</subsection> 
+
+<subsection><title>Inverse of an Exponential Function</title>
+
+<p>Because <m>f(x) = x^3</m> and <m>g(x) = \sqrt[3]{x}</m> are inverse functions, we saw that
+    <me>y=\sqrt[3]{x}~~~~\text{if and only if}~~~~x=y^3</me></p>
+
+<p>A similar rule relates the operations of raising a base <m>b</m> to a power and taking a base <m>b</m> logarithm. You may recall from Chapter 7 that
+	<me>y = \log_b {(x)}~~~~\text{if and only if}~~~~x=b^y</me>
+So the function <m>g(x)=\log_b {(x)}</m> is the inverse function for <m>f(x)=b^x</m>. Each function undoes the effect of the other. For example, let <m>f(x)=2^x</m> and <m>g(x)=\log_2 {(x)}</m>. Start with <m>x=3</m>, apply <m>f</m>, and then apply <m>g</m> to the result.
+
+	<me>x = \alert{3}~~~~~~\rightarrow~~~~~~f(3)=2^3=8~~~~~~\rightarrow~~~~~~g(8)=\log_2{(8)} = \alert{3}</me>
+
+We return to the original number, 3.</p>
+
+<p>And because <m>f(x)=b^x</m> and <m>g(x)=\log_b {(x)}</m> are inverse functions, we can write these operations in one expression as
+	<me>g(f(3)) = \log_2{(2^{\alert{3}})} = \alert{3}</me>
+(Remember the order of operations: do what's inside of parentheses first, to get <m>\log_2{(8)}</m>.) Because the log and the exponential are inverse functions, this identity holds for any value of <m>x</m> and any base <m>b \gt 0</m>.  That is
+	<me>\blert{\log_b{(b^{x})} = x}</me>
+We can also apply the two functions in the opposite order, so that
+	<me>f(g(8)) = 2^{\log_2{(\alert{8})}} = \alert{8}</me>
+(We compute the exponent, <m>\log_2{(8)} = 3</m>, first, and then compute the power <m>2^3</m>.) And in general
+	<me>\blert{b^{\log_b{(x)}} = x}</me></p>
+
+<example><statement><p>For this Example, recall that <m>\log {(x)}</m>, the "common logarithm," means <m>\log_{10} {(x)}</m>.  Simplify each expression.
+<ol marker="a." cols="2">
+    <li><m>\log {(10^{3.4})}</m></li>
+    <li><m>10^{\log{(0.6)}}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>Because <m>\log {(x)}</m> and <m>10^x</m> are inverse functions, <m>\log {(10^{3.4})} = 3.4</m>. You can verify the result on your calculator by first computing <m>10^{3.4}</m> and then taking the log of the result.</p></li>
+    <li><p>Again, because <m>\log {(x)}</m> and <m>10^x</m> are inverse functions, <m>10^{\log{(0.6)}} = 0.6</m>. You can verify the result on your calculator by first computing <m>\log {(0.6)}</m> and then computing <m>10</m> to the result.</p></li>
+</ol></p></solution></example>
+
+<example><statement><p><m>f(x)=\log_6 {(x)}~</m> and <m>g(x)</m> is its inverse function.  
+<ol marker="a.">
+    <li>What is <m>~g</m>?</li>
+    <li>Evaluate and simplify <m>~f\left(g(4)\right)</m></li>
+    <li>Evaluate and simplify <m>~g\left(f(5)\right)</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The inverse of a logartihmic function is the exponential function with the same base, so <m>~g(x) = 6^x</m>.</p></li>
+    <li><p>First compute <m>g(4) = 6^4</m>. Then <m>~f(g(4)) = f(6^4) = \log_6 {(6^4)} = 4</m>.</p></li>
+    <li><p>First compute <m>f(5) = \log_6 {(5)}</m>. Then <m>~g(\log_6 {(5)}) = 6^{\log_6 {(5)}} = 5</m></p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>To see more examples using function notation, see <xref ref="tkUseFncnNot" text="custom"> Section 10.1.2 </xref> of the Toolkit.</p></aside></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+<webwork>
+    <pg-code>
+        Context()->operators->undefine("^", "**");
+        Context()->functions->disable("All");
+        $a = Compute("6");
+        $b = Compute("64");
+        $c = Formula("6");
+        $d = Formula("1000");
+    </pg-code>
+    <statement><p>Simplify each expression. <ol marker="a.">
+        <li><p><m>\log_4 {4^6}=</m><var name="$a" width="3"/></p></li>
+        <li><p><m>4^{\log_4 {64}}=</m><var name="$b" width="3"/></p></li>
+        <li><p><m>\log_{10} {10^6}=</m><var name="$c" width="3"/></p></li>
+        <li><p><m>10^{\log_{10} {1000}}=</m><var name="$d" width="3"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><m>6</m></li>
+        <li><m>64</m></li>
+        <li><m>6</m></li>
+        <li><m>1000</m></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Simplify each expression. <ol marker="a." cols="2">
+        <li><p><m>\log_4 {(4^6)}</m></p></li>
+        <li><p><m>4^{\log_4 {(64)}}</m></p></li>
+        <li><p><m>\log_{10} {(10^6)}</m></p></li>
+        <li><p><m>10^{\log_{10} {(1000)}}</m></p></li>
+    </ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+        <li><m>6</m></li>
+        <li><m>64</m></li>
+        <li><m>6</m></li>
+        <li><m>1000</m></li></ol></p>
+    </answer></exercise>
+</subsection>
+
+<subsection><title>Graphs of Logarithmic Functions</title>
+
+<p>What does the graph of a log function look like? We can use exponential functions to help us.</p>
+
+<example><statement><p>Graph <m>g(x) = \log_2{(x)}</m></p></statement>
+
+<solution><p>We can make a table of values for <m>g(x) = \log_2{(x)}</m> by interchanging the columns in a table for <m>f(x) = 2^x</m>.</p>
+	<sidebyside widths="40% 40%">
+		<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor"><m>x</m></cell>
+                        <cell bottom="minor"><m>f(x)=2^x</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-2</m></cell>
+                        <cell bottom="minor"><m>\dfrac{1}{4}</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>-1</m></cell>
+                        <cell bottom="minor"><m>\dfrac{1}{2}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>1</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>2</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>4</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m>8</m></cell></row>
+                    </tabular> 
+
+		<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor"><m>~x~</m></cell>
+                        <cell bottom="minor"><m>g(x)=\log_2{(x)}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>\dfrac{1}{4}</m></cell>
+                        <cell bottom="minor"><m>-2</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>\dfrac{1}{2}</m></cell>
+                        <cell bottom="minor"><m>-1</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>1</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>2</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>3</m></cell></row>
+                    </tabular></sidebyside> 
+
+<p>We plot the points for each function, connecting them with smooth curves, as shown below. You can see that the two graphs are symmetric about the line <m>y=x</m>.</p>
+
+<image width="60%" xml:id="fig-2-to-x-and-log2"><description>2 to x and log base 2</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[cyan] (-4,-4) grid (8,8);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(8.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,8.6) node[above]{$y$};
+        \foreach \x in  {-3,3,6} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[darkgray,thick, dashed,<->,>=stealth'] (-4,-4)--(8,8) node[below, yshift=-6mm, fill=white, inner sep=2]{$y=x$};
+        \draw[samples=65,domain={2^(-4)}:{8)},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)},{ln(\x)/ln(2)});
+        \draw[samples=65,domain={-4:ln(8)/ln(2)},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{2^(\x)});
+        \node[text=red, fill=white, inner sep=2] at (3,-2) {$g(x)=\log_{2}{x}$};
+        \node[text=blue, fill=white, inner sep=2] at (-2.3,1.3) {$f(x)=2^x$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For another example of a logarithmic function, see <xref ref="tkGraphLogFncn" text="custom"> Section 10.1.1 </xref> of the Toolkit.</p></aside>
+
+<p>The same technique works for graphing a log function with any base.</p>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork>
+    <pg-code>
+        Context()->flags->set(useBaseTenLog=>1); 
+        $Func = Formula("10**x");
+        $g[0] = Formula("log(x)");
+        $g[1] = Formula("10^(-x)");
+        $g[2] = Formula("-10^x");
+        $g[3] = Formula("-10^(-x)");
+        $dom[0] = 0.0001;
+        $dom[1] =-6;
+        $dom[2] =-6;
+        $dom[3] =-6;
+
+       foreach my $i (0..3) {
+        $gr[$i] = init_graph(-4,-4,4,4, axes=>[0,0], grid=>[8,8], size=>[300,300]);
+        add_functions($gr[$i], "$Func for x in &lt;-4,4> " .
+            "using color:red and weight:2");
+        add_functions($gr[$i], "$g[$i] for x in &lt;$dom[$i],4> " .
+            "using color:blue and weight:2");
+        }
+        ($gr[0]->fn)[0]->steps(200);
+
+       foreach my $i (0..3) {
+       $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.3,3,3,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.3,-3,-3,'black','center','middle'));
+        $gr[$i] -> lb(new Label (3,-0.3,3,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-3,-0.3,-3,'black','center','middle'));
+        }
+        $gr[0] -> lb(new Label (-3.3,3.3,"(C)",'black','center','middle'));
+        $gr[1] -> lb(new Label (-3.3,3.3,"(B)",'black','center','middle'));
+        $gr[2] -> lb(new Label (-3.3,3.3,"(A)",'black','center','middle'));
+        $gr[3] -> lb(new Label (-3.3,3.3,"(D)",'black','center','middle'));
+
+        $mc = RadioButtons(
+            [ "(A)", "(B)", "(C)","(D)"],
+            2
+        );
+      </pg-code>     
+<statement><p>Graph the function <m>f(x)=10^x</m> and its inverse function <m>g(x)=\log_{10}{x}</m> on the same axes.</p>
+            <image pg-name="$gr[2]" width="30%" />
+            <image pg-name="$gr[1]" width="30%"/>
+            <image pg-name="$gr[0]" width="30%"/>
+            <image pg-name="$gr[3]" width="30%"/>
+        <p>Which of the above is the best match for the graph?</p>
+        <p><var name="$mc" form="buttons"/> </p>
+</statement>
+    <solution><image pg-name="$gr[0]" width="30%"/>
+        <p>A graph is also shown below.</p>
+    </solution>
+</webwork>
+    <conclusion>
+        <p><m>f(x)=10^x</m> and its inverse function <m>g(x)=\log_{10}{x}</m>:</p>
+            <image width="30%"  xml:id="fig-10-to-x-and-log10w"><description>10 to x and common log</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.35]
+            \draw[cyan] (-2,-2) grid (12,12);
+            \draw[black,thick, ->, >=stealth'] (-2,0)--(12.9,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,12.9) node[above]{$y$};
+            \foreach \x in  {5,10} {
+             \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[darkgray,thick, dashed,<->,>=stealth'] (-2,-2)--(12,12) node[below, yshift=-6mm, fill=white, inner sep=2]{$y=x$};
+            \draw[samples=65,domain={.01}:{12)},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)},{ln(\x)/ln(10)});
+            \draw[samples=65,domain={-2:ln(12)/ln(10)},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{10^(\x)});
+            \node[text=red, fill=white, inner sep=2] at (10,3) {$g(x)=\log_{10}{x}$};
+            \node[text=blue, fill=white, inner sep=2] at (5,11.2) {$f(x)=10^x$};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Graph the function <m>f(x)=10^x</m> and its inverse function <m>g(x)=\log_{10}{(x)}</m> on the same axes.</p></statement>
+<answer><image width="50%"  xml:id="fig-10-to-x-and-log10"><description>10 to x and common log</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.28]
+            \draw[cyan] (-2,-2) grid (12,12);
+            \draw[black,thick, ->, >=stealth'] (-2,0)--(12.9,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,12.9) node[above]{$y$};
+            \foreach \x in  {5,10} {
+             \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[darkgray,thick, dashed,<->,>=stealth'] (-2,-2)--(12,12) node[below, yshift=-6mm, fill=white, inner sep=2]{$y=x$};
+            \draw[samples=65,domain={.01}:{12)},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)},{ln(\x)/ln(10)});
+            \draw[samples=65,domain={-2:ln(12)/ln(10)},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{10^(\x)});
+            \node[text=red, fill=white, inner sep=2] at (10,3) {$g(x)=\log_{10}{x}$};
+            \node[text=blue, fill=white, inner sep=2] at (5,11.2) {$f(x)=10^x$};
+            \end{tikzpicture}]]>
+            </latex-image></image></answer></exercise>
+
+<warning><p>Did you notice that the graphs of the log functions do not have any points with negative <m>x</m>-coordinates? This is because an exponential function has no negative (or zero) output values, so a log function has no negative or zero input values.</p>
+<p>For example, suppose that <m>~\log_5{(-25)} = x~</m>. Then <m>~5^x = -25~</m>. But this is impossible, because <m>5^x</m> cannot be negative. Thus, the log of a negative number (or zero) is undefined. In other words,</p>
+
+<me>\text{We cannot take the log of a negative number or zero.}</me></warning>
+
+<p>In addition, the logarithmic function has the following properties.</p>
+
+<assemblage><title>Properties of Log Functions</title>
+<p> For any base <m>b \gt 0, b \ne 1</m>: <ol marker="1.">
+	<li>The logarithmic function <m>y = \log_b {(x)}</m> is defined for positive <m>x</m> only.</li>
+	<li>The <m>x</m>-intercept <idx><em>x</em>-intercept</idx>of its graph is <m>(1,0)</m>.</li>
+	<li>The graph has a vertical asymptote at <m>x=0</m>.</li>
+	<li>The graphs of <m>y = \log_b {(x)}</m> and <m>y=b^x</m> are symmetric about the line <m>y=x</m>.</li></ol></p>
+</assemblage>
+
+<p>You can also see that while an exponential growth function increases very rapidly for positive input values, its inverse, the logarithmic function, grows extremely slowly. </p>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>       
+            $intlog = RadioButtons(
+              ["\((0,1)\)",
+              "\((1,0)\)",
+              "\((0,5)\)",
+              "There is none."],
+              3, 
+            );            
+        </pg-code>
+    <statement>
+        <p>What is the <m>y</m>-intercept of the graph of <m>y=\log_5 x</m> ?</p>
+        <p><var name="$intlog" form="buttons"/></p>      
+    </statement>
+    <solution>
+        <p>There is none: <m>\log_5 x</m> not defined for <m>x=0</m> (nor for negative values of <m>x</m>).</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>What is the <m>y</m>-intercept of the graph of <m>y=\log_5 {(x)}</m> ?</p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>(0,1)</m></p></li>
+        <li><p><m>(1,0)</m></p></li>
+        <li><p><m>(0,5)</m></p></li>
+        <li><p>There is none.</p></li>
+</ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Using Logarithmic Functions</title>
+
+<p>We can use the <kbd>LOG</kbd> key on a calculator to evaluate the function <m>f(x) = \log_{10}{(x)}</m>.</p>
+
+<example xml:id="example-GC-evaluate-logs"><statement><p>Let <m>f(x) = \log_{10}{(x)}</m>. Evaluate the following expressions.<ol marker="a." cols="3">
+		<li><m>f(35)</m></li>
+		<li><m>f(-8)</m></li>
+		<li><m>2 f(16) + 1</m></li>
+	</ol></p></statement>
+<solution><p><ol marker="a.">
+	<li><m>f (35) = \log_{10}{(35)}\approx 1.544</m></li>
+	<li><m>f(-8)</m>, or <m>\log_{10}{(-8)}</m>, is undefined.</li>
+	<li><m>2 f(16) + 1 = 2(\log_{10}{(16)}) + 1 \approx 2(1.204) + 1 = 3.408</m></li>
+	</ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork>
+    <pg-code>
+        Context()->flags->set(useBaseTenLog=>1); 
+        parserFunction("LOG(x,y)" => "log(y)/log(x)");
+        $a = Compute("20*log(4)");        
+    </pg-code>
+<statement><p>Evaluate  <m>~H(t)=20 \log_{10}{\dfrac{t}{C_L}}~</m> for <m>t=2</m>, where <m>C_L=0.5</m>.</p>
+        <p>Answer: <var name="$a" width="8"/></p>
+        <instruction>
+            For this WeBWorK problem, if you want <m> \log_{10} t </m>, you should enter "log(t)".
+        </instruction>
+    </statement>
+    <solution><p><m>20 \log_{10}{4} \approx 12.04</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Evaluate  <m>~H(t)=20 \log_{10}{\left(\dfrac{t}{0.5}\right)}~</m> for <m>t=2</m>.</p></statement>
+    <answer><p><m>20 \log_{10}{(4)} \approx 12.04</m></p></answer></exercise>
+
+<p>Recall that the subscript 10 is often omitted in applications that use common or base 10 logarithms, as illustrated in the following Example.</p>
+
+<example><statement><p>Evaluate the expression <me>~~T=\dfrac{1}{k}\log{\left(\dfrac{M_f}{M_0}+1\right)}~</me> for <m>k=0.028, ~M_f=1832</m>, and <m>M_0=15.3</m>.</p></statement>
+<solution><p>Follow the order of operations and calculate
+        <md><mrow>T \amp =\dfrac{1}{0.028}\log{\left(\dfrac{1832}{15.3}+1\right)} = \dfrac{\log{(120.739)}}{0.028}</mrow>
+            <mrow> \amp \approx \dfrac{2.082}{0.028} \approx 74.35</mrow></md></p>
+    <!--<p>A calculator keying sequence for the calculation is</p>
+    <p><m>\qquad\qquad</m><kbd>LOG</kbd> <m>1832</m> <kbd name="obelus"/> <m>15.3</m> <kbd>+</kbd> <m>1</m> <kbd>)</kbd> <kbd name="obelus"/> <m>0.028</m> <kbd>ENTER</kbd></p>-->
+    </solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            Context()->flags->set(useBaseTenLog=>1);
+            Context()->variables->add(t=>"Real", Df=>"Real", D0=>"Real");
+            $f = Formula("log(2)*t/(3log(Df/D0))");
+            $t = Compute("7");
+            $D0 = Compute("1");
+            $Df = Compute("1.05");
+            $answer = $f->eval(t=>$t, Df=>$Df, D0=>$D0)->with(
+              tolType => 'absolute',
+              tolerance => .51,
+            );
+        </pg-code>
+    <statement><p>The formula <m>T = \dfrac{\log {(2)} \cdot t_i}{3 \log{(D_f /D_0)}}</m> is used by X-ray technicians to calculate the doubling time of a malignant tumor. The diameter of the tumor when first detected is given by <m>D_0</m>, <m>D_f</m> is its diameter at the next reading, and <m>t_i</m> is the time interval between readings, in days. Calculate the doubling time of the following tumor: its diameter when first detected was 1 cm, and 7 days later its diameter was 1.05 cm.</p>
+            <p><var name="$answer" width="2"/> days </p>
+    </statement>
+    <solution><p>33 days</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>The formula 
+    <me>T = \dfrac{\log {(2)} \cdot t_i}{3 \log{(D_f /D_0)}}</me> 
+is used by X-ray technicians to calculate the doubling time of a malignant tumor. <m>D_0</m> is the diameter of the tumor when first detected, <m>D_f</m> is its diameter at the next reading, and <m>t_i</m> is the time interval between readings, in days.</p> 
+<p>Calculate the doubling time of the following tumor: its diameter when first detected was 1 cm, and 7 days later its diameter was 1.05 cm.</p></statement>
+    <answer><p>33 days</p></answer></exercise>
+
+<p>Logarithmic functions are useful for modeling increasing functions <idx>increasing function</idx> that slow down as the input increases.</p> 
+
+<example xml:id="example-life-expectancy"><statement><p>Life expectancy at birth is the average number of years a newborn child is expected to live. In 1900, the average life expectancy at birth in the U.S. was 47.3 years, and in 1910 it had risen to 50.0 years. During rest of the twentieth century, life expectancy was modeled by the formula
+    <me>L(x)=19.13 + 28.34 \log {(x)}</me>
+where <m>x</m> is the number of years after 1900. <ol marker="a.">
+    <li>Graph the life expectancy function for the years 1910 to 2000.</li>
+    <li>The life expectancy in 1950 was 68.2 years. What does the function <m>L(x)</m> predict for life expectancy in 1950?</li>
+    <li>According to the model, how much did life expectancy increase between 1920 and 1930? How much did it increase between 1990 and 2000?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We can make a table of values for <m>L(x)</m> and plot points to obtain the graph below, which also shows the actual data points for life expectancy for the decades from 1910 to 2000.</p>
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>30</m></cell>
+                        <cell><m>40</m></cell>
+                        <cell><m>50</m></cell>
+                        <cell><m>60</m></cell>
+                        <cell><m>70</m></cell>
+                        <cell><m>80</m></cell>
+                        <cell><m>90</m></cell>
+                        <cell><m>100</m></cell></row>
+                    <row> 
+                        <cell><m>L(x)</m></cell>
+                        <cell><m>47.5</m></cell>
+                        <cell><m>56.1</m></cell>
+                        <cell><m>61.1</m></cell>
+                        <cell><m>64.6</m></cell>
+                        <cell><m>67.4</m></cell>
+                        <cell><m>69.6</m></cell>
+                        <cell><m>71.5</m></cell>
+                        <cell><m>73.1</m></cell>
+                        <cell><m>74.6</m></cell>
+                        <cell><m>75.9</m></cell></row>
+                    </tabular>
+
+        <image width="60%" xml:id="fig-life-expectancy"><description>average life expectancy</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [xscale=.45, yscale=.9]
+        \draw[cyan] (0,4) grid[xstep=1,ystep=1/2] (10,8);
+        \draw[black,thick, ->, >=stealth'] (0,4)--(10.6,4) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,4)--(0,8.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in {5,10} {
+        \draw[black] (\x,4.15) --++(0,-.3)  node[below]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in {4,6,8} {
+        \draw[black] (.15,\x) --++(-.3,0)  node[left]   {$\xi$};
+        }
+        \draw[samples=65,domain={.55:10},smooth,variable=\x,red, very thick, ->, >=stealth'] plot (\x,{(19.13+28.38 * ln(10*\x)/ln(10))/10 });
+        \filldraw[blue] (1,5) ellipse (.2 and .1);
+        \filldraw[blue] (2,5.41) ellipse (.2 and .1);
+        \filldraw[blue] (3,5.97) ellipse (.2 and .1);
+        \filldraw[blue] (4,6.29) ellipse (.2 and .1);
+        \filldraw[blue] (5,6.82) ellipse (.2 and .1);
+        \filldraw[blue] (6,6.97) ellipse (.2 and .1);
+        \filldraw[blue] (7,7.08) ellipse (.2 and .1);
+        \filldraw[blue] (8,7.37) ellipse (.2 and .1);
+        \filldraw[blue] (9,7.54) ellipse (.2 and .1);
+        \filldraw[blue] (10,7.68) ellipse (.2 and .1);
+        \node at (6,3) {Years after 1900};
+        \node[rotate=90] at (-1.8,6) {Average Life Expectancy};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><p>We substitute <m>x=50</m> into the function to find
+        <me>L(50) = 19.13 + 28.34 \log {(50)} \approx 67.4</me>
+        The function predicts a life expectancy of 67.4 years in 1950.</p></li>
+    <li>Between 1920 and 1930, life expectancy increased from 56.1 to 61.1, or 5 years. Between 1990 and 2000 it increased from 74.6 to 75.9, or 1.3 years.</li></ol></p>
+</solution></example>
+
+<p>In the previous Example, we see that although life expectancy has been increasing over time, it has been slowing down or leveling off. In fact, life expectancy in the US actually declined slightly from 78.94 in 2013 to 78.81 in 2018. (What factors may have contributed to this decline?) By 2024 it had rebounded to 79.25. It remains to be seen how well the model predicts life expectancy in the 21st century.</p>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork>
+    <pg-code>
+        Context()->variables->add(t=>"Real");
+        Context()->flags->set(useBaseTenLog=>1); 
+        $f = Formula("49.29+91.3*log(t)");
+        @t = (2,5,10,15,20);
+        foreach my $i (0..4) {
+        $H[$i] = $f->eval(t=>$t[$i])->with(tolType => 'absolute',
+              tolerance => .51,);
+        }
+        $h10 = $f->eval(t=>10);
+        $h5 = $f->eval(t=>5);
+        $d1 = $h10-$h5;
+        $h20 = $f->eval(t=>20);
+        $h15 = $f->eval(t=>15);
+        $d2 = $h20-$h15;
+        $c1 = Compute("$d1")->with(tolType => 'absolute',
+              tolerance => .51,);
+        $c2 = Compute("$d2")->with(tolType => 'absolute',
+              tolerance => .51,);
+    </pg-code>
+<statement><p>The CDC (Centers for Disease Control and Prevention) provides Growth Charts for the average height and weight of children from age 2 to 20. The average height of girl children is given in centimeters by
+            <md><mrow>H(t) = 49.29+91.3 \log {t}</mrow></md>
+where <m>t</m> is age in years.</p>
+    <p><ol marker="a.">
+        <li>Graph the height function for <m>2 \le t \le 20</m>.</li>
+        <li><p>Use the height function to complete the table.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>t</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell></row>
+                    <row> 
+                        <cell><m>H(t)</m></cell>
+                        <cell><var name="$H[0]" width="3"/></cell>
+                        <cell><var name="$H[1]" width="3"/></cell>
+                        <cell><var name="$H[2]" width="3"/></cell>
+                        <cell><var name="$H[3]" width="3"/></cell>
+                        <cell><var name="$H[4]" width="3"/></cell></row>
+                    </tabular></li>
+        <li><p>How much is a girl's height expected to increase between the ages of 5 and 10? <var name="$c1" width="3"/> cm. </p>
+                <p>Between the ages of 15 and 20?  <var name="$c2" width="3"/> cm. </p></li>
+        </ol></p></statement>
+    <solution><p><ol marker="a.">
+        <li>A graph is below.</li>
+        <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>t</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell></row>
+                    <row> 
+                        <cell><m>H(t)</m></cell>
+                        <cell><var name="$H[0]"/></cell>
+                        <cell><var name="$H[1]"/></cell>
+                        <cell><var name="$H[2]"/></cell>
+                        <cell><var name="$H[3]"/></cell>
+                        <cell><var name="$H[4]"/></cell></row>
+                    </tabular></li>
+        <li><var name="$c1"/> cm, <var name="$c2"/> cm</li>
+        </ol></p></solution>
+</webwork>
+<conclusion><p>Graph for part (a):</p>
+    <image width="45%" xml:id="child-heightw"><description>curve</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[cyan] (2,4) grid (20,20);
+        \draw[black,thick] (1,4)--(20,4);
+        \draw[black,thick] (2,4)--(2,20);
+        \foreach \x [evaluate=\x as \xi using int(1*\x)] in {2,4,...,20} {
+         \draw[black] (\x,4.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in {4,6,...,20} {
+         \draw[black] (2.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={2:20},smooth,variable=\x,red, very thick] plot (\x,{(49.29+91.3 * ln(\x)/ln(10))/10 });
+        \node[font=\bf] at (11,1.5) {Age in Years};
+        \node[rotate=90,font=\bf] at (-1.6,12) {Height (cm)};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>The CDC (Centers for Disease Control and Prevention) provides Growth Charts for the average height and weight of children from age 2 to 20. The average height of girl children is given in centimeters by
+            <me>H(t) = 49.29+91.3 \log {(t)}</me>
+where <m>t</m> is age in years.</p>
+    <p><ol marker="a.">
+        <li>Graph the height function for <m>2 \le t \le 20</m>.</li>
+        <li><p>Use the height function to complete the table.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>t</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell></row>
+                    <row> 
+                        <cell><m>H(t)</m></cell>
+                        <cell><m>\hphantom{000}</m></cell>
+                        <cell><m>\hphantom{000}</m></cell>
+                        <cell><m>\hphantom{000}</m></cell>
+                        <cell><m>\hphantom{000}</m></cell>
+                        <cell><m>\hphantom{000}</m></cell></row>
+                    </tabular></li>
+        <li><p>How much is a girl's height expected to increase between the ages of 5 and 10?</p>
+            <p>Between the ages of 15 and 20?</p></li>
+        </ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><image width="55%" xml:id="child-height"><description>curve</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \draw[cyan] (2,4) grid (20,20);
+        \draw[black,thick] (1,4)--(20,4);
+        \draw[black,thick] (2,4)--(2,20);
+        \foreach \x [evaluate=\x as \xi using int(1*\x)] in {2,4,...,20} {
+         \draw[black] (\x,4.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in {4,6,...,20} {
+         \draw[black] (2.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={2:20},smooth,variable=\x,red, very thick] plot (\x,{(49.29+91.3 * ln(\x)/ln(10))/10 });
+        \node[font=\bf] at (11,1.5) {Age in Years};
+        \node[rotate=90,font=\bf] at (-1.6,12) {Height (cm)};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+        <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>t</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell></row>
+                    <row> 
+                        <cell><m>H(t)</m></cell>
+                        <cell><m>77</m></cell>
+                        <cell><m>113</m></cell>
+                        <cell><m>141</m></cell>
+                        <cell><m>157</m></cell>
+                        <cell><m>168</m></cell></row>
+                    </tabular></li>
+        <li><p>28 cm, 11 cm</p></li>
+    </ol></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork>
+    <pg-code>
+            $slow = RadioButtons(
+              ["\( f(x)=2x \)",
+              "\(f(x)=\log_2{x}\)",
+              "\(f(x)=\sqrt{x}\)",
+              "\(f(x)=\dfrac{x}{2} \)"],
+              1, 
+            );            
+    </pg-code>
+    <statement>
+        <p>Which function grows most slowly for large values of <m>x</m> ?</p>
+        <p><var name="$slow" form="buttons"/> </p>
+    </statement>
+    <solution><p><m>f(x)=\log_2{x}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>Which function grows most slowly for large values of <m>x</m> ?</p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>f(x)=2x</m></p></li>
+        <li><p><m>f(x)=\log_2{(x)}</m></p></li>
+        <li><p><m>f(x)=\sqrt{x}</m></p></li>
+        <li><p><m>f(x)=\dfrac{x}{2}</m></p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Solving Logarithmic Equations</title>
+
+<p>A <term>logarithmic equation</term><idx>logarithmic equation</idx><idx><h>logarithmic equation</h><seealso>conversion equations</seealso></idx><idx><h>logarithm</h><h>equation</h></idx> is one in which the variable appears inside of a logarithm. For example,
+	<me>\log_4 {(x)} = 3</me>
+is a log equation.</p>
+
+<p>If there is only one log involved, we can use the conversion equations to write the equation in exponential form. (Recall the conversion equations from <xref ref="LogExp" text="custom"> Section 7.3.1 </xref>.)</p>
+
+<assemblage><title>Logarithms and Exponents: Conversion Equations</title><idx>conversion equations</idx><idx><h>logarithm</h><h>conversion equations</h></idx>
+<p>If <m>b \gt 0</m>, <m>b\ne 1</m>, and <m>x \gt 0</m>,
+    <me>\blert{y = \log_b {(x)}}~~~ \text{ if and only if }~~~ \blert{ x = b^y}</me>
+</p></assemblage>
+
+<example><statement><p>Solve the equation <m>~\log_4{(2x-8)}=3</m>.</p></statement>
+		
+<solution><p>We use the conversion equations to write the equation in exponential form.
+	<md><mrow>2x-8 \amp = 4^3 \amp \amp \blert{\text{Evaluate the power.}}</mrow>
+		<mrow>2x-8 \amp = 64  \amp \amp \blert{\text{Solve for}~x.}</mrow>
+		<mrow> x \amp = 36</mrow></md>
+The solution is 36.</p></solution></example>
+    
+<exercise component="webwork"> <title>Practice 6</title>
+<webwork><pg-code>
+        $a = Compute("-40");
+    </pg-code>
+    <statement>
+        <p>Solve <m>~\log_5{(5-3x)} = 3</m></p>
+        <p><m>x=</m><var name="$a" width="5"/> </p>
+    </statement>
+    <solution><p><m>x=-40</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"> <title>Practice 6</title>
+<statement><p>Solve the equation <m>~\log_5{(5-3x)} = 3</m></p></statement>
+    <answer><p><m>x=-40</m></p></answer></exercise>
+
+<p>If an equation contains more than one log, we must first combine any expressions involving logs into a single logarithm.</p>
+
+<example><statement><p>Solve the equation <m>~~\log_{10}{(x + 1)} + \log_{10}{(x - 2)}= 1</m>.   </p></statement>
+
+<solution><p>We use Property (1) of logarithms (see <xref ref="properties-of-logarithms" text="custom">Properties of Logarithms</xref>) to rewrite the left-hand side as a single logarithm:
+	<me>\log_{10}{(x + 1)(x - 2)} = 1</me>
+Once the left-hand side is expressed as a single logarithm, we can rewrite the equation in exponential form as
+	<me>(x + 1)(x - 2) = 10^1</me></p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>to review using the properties of logs, see <xref ref="tkUseLogProps" text="custom"> Section 10.1.3 </xref> of the Toolkit.</p></aside>
+<p>Simplifying the right side gives us a quadratic equation to solve.
+	<md><mrow>x^2 - x - 2 \amp = 10 \amp \amp \blert{\text{Subtract 10 from both sides.}}</mrow>
+		<mrow>x^2 - x - 12 \amp = 0 \amp \amp \blert{\text{Factor the left side.}}</mrow>
+		<mrow>(x - 4)(x + 3) \amp= 0 \amp \amp \blert{\text{Apply the zero-factor principle.}}</mrow></md>
+We find <m>x = 4</m> or <m>x = -3</m>.  But let us check both of these values in the original equation. </p>
+
+<p>For <m>x=4</m> we have
+    <me>\log_{10}{(4 + 1)(4 - 2)} = \log_{10}{(5 \cdot 2)} = \log_{10}{(10)} = 1</me>
+so <m>x=4</m> is a solution.</p>
+
+<p>But <m>x = -3</m> is not a solution of the original equation, because neither <m>\log_{10}{(x + 1)}</m> nor <m>\log_{10}{(x - 2)}</m> is defined for <m>x = -3</m>. (Remember that we cannot take a logarithm of a negative number or zero.) We say that the apparent solution <m>x=-3</m> is <term>extraneous</term>, and the only solution of the original equation is <m>4</m>.<idx>extraneous solution</idx></p></solution></example>
+
+<p><term>Extraneous solutions</term> can arise whenever we solve a logarithmic equation, especially if there is more than one apparent solution. Therefore, we should always check that a possible solution does not cause one of the logarithms to be undefined.</p>
+
+<exercise component="webwork"> <title>Practice 7</title>
+<webwork><pg-code>
+        $a = Compute("500");
+    </pg-code>
+    <statement>
+        <p>Solve <m>~\log_{10}{x} + \log_{10}{2}= 3</m></p>
+        <p><m>x=</m><var name="$a" width="4"/> </p>
+    </statement>
+    <hint>
+        <p>Hint: Rewrite the left side as a single logarithm.</p>
+        <p>Rewrite the equation in exponential form.</p>
+        <p>Solve for <m>x</m>.</p>   
+        <p>Check for extraneous solutions.</p>
+    </hint>
+    <solution><p><m>x=500</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"> <title>Practice 7</title>
+<statement><p>Solve <m>~\log_{10}{(x)} + \log_{10}{(2)}= 3</m></p>
+        <p>Hint: <ol marker="1.">
+            <li><p>Rewrite the left side as a single logarithm.</p></li>
+            <li><p>Rewrite the equation in exponential form.</p></li>
+            <li><p>Solve for <m>x</m>.</p></li>   
+            <li><p>Check for extraneous solutions.</p></li></ol></p></statement>
+    <answer><p><m>x=500</m></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 5</title>
+<webwork><pg-code>
+        $a = PopUp(
+            [ "?", 
+            "a negative number or zero", 
+            "a fraction",
+            "a variable expression"],
+            1
+        );
+        $b = PopUp(
+            [ "?", 
+            "extraneous solutions", 
+            "irrational numbers"
+            ],
+            1
+        );
+        $c = PopUp(
+            [ "?", 
+            "a common denominator", 
+            "a single logarithm"
+            ],
+            2
+        );
+        $d = PopUp(
+            [ "?", 
+            "standard", 
+            "general",
+            "exponential",
+            "point-slope"
+            ],
+            3
+        );
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>We cannot take a logarithm of <var name="$a" form="popup"/>.</p></li>
+        <li><p>After solving a logarithmic equation, we must check for  <var name="$b" form="popup"/>.</p></li>
+        <li><p>If an equation contains more than one log, we must first combine them into  <var name="$c" form="popup"/>.
+        </p></li>
+        <li><p>If there is only one log involved, we write the equation in  <var name="$d" form="popup"/> form.</p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>a negative number or zero</li>
+    <li>extraneous solutions</li>
+    <li>a single logarithm</li>
+    <li>exponential form</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 5</title>
+<statement><p>Fill in the blanks to complete each statement.<ol marker="a.">
+        <li><p>We cannot take a logarithm of <fillin characters="10"/>.</p></li>
+        <li><p>After solving a logarithmic equation, we must check for <fillin characters="10"/>.</p></li>
+        <li><p>If an equation contains more than one log, we must first combine them into <fillin characters="10"/>.</p></li>
+        <li><p>If there is only one log involved, we rewrite the equation in <fillin characters="10"/> form.</p></li>
+    </ol></p></statement></exercise>
+
+</subsection>
+
+
+
+<xi:include href="./section-10-1-exercises.xml" />                
+
+
+</section>
+<!-- </book>  </mathbook> -->

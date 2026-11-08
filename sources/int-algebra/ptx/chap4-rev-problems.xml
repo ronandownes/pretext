@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+
+
+<exercises xml:id="chap4-rev-problems"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 4 Review Problems</title>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 1<ndash/>4, solve by using the quadratic formula.</p></introduction>
+
+<exercise number="1"><statement><p><m>\dfrac{1}{2}x^2+1=\dfrac{3}{2}x</m></p></statement>
+    <answer><p><m>1,~2</m></p></answer></exercise>
+
+<exercise number="2"><statement><p><m>x^2-3x+1=0</m></p></statement>
+    <answer><p><m>\dfrac{3 \pm \sqrt{5}}{2}</m></p></answer></exercise>
+
+<exercise number="3"><statement><p><m>x^2-4x+2=0</m></p></statement>
+    <answer><p><m>-\dfrac{4 \pm \sqrt{8}}{2}</m></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>2x^2+2x=3</m></p></statement>
+    <answer><p><m>\dfrac{-2 \pm \sqrt{28}}{4}</m></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 5 and 6, solve the formula for the indicated variable.</p></introduction>
+
+<exercise number="5"><statement><p><m>h=6t+3t^2,~~</m> for <m>t</m></p></statement>
+    <answer><p><m>\dfrac{6 \pm \sqrt{36-12h}}{6}</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>D=\dfrac{n^2-3n}{2},~~</m> for <m>n</m></p></statement>
+    <answer><p><m>\dfrac{3 \pm \sqrt{9+8D}}{2}</m></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 7<ndash/>10, use the discriminant to determine the nature of the solutions of the equation.</p></introduction>
+
+<exercise number="7"><statement><p><m>4x^2-12x+9=0</m></p></statement>
+    <answer><p>one repeated real solution</p></answer></exercise>
+
+<exercise number="8"><statement><p><m>2t^2+6t+5=0</m></p></statement>
+    <answer><p>two complex soutions</p></answer></exercise>
+
+<exercise number="9"><statement><p><m>2y^2=3y-4</m></p></statement>
+    <answer><p>two complex soutions</p></answer></exercise>
+
+<exercise number="10"><statement><p><m>\dfrac{x^2}{4} = x+\dfrac{5}{4}</m></p></statement>
+    <answer><p>two distinct real soutions</p></answer></exercise>
+</exercisegroup>
+  
+<exercise number="11"><statement><p>The height, <m>h</m>, of an object <m>t</m> seconds after being thrown from ground level is given by
+    <me>h=v_0 t-\dfrac{1}{2}gt^2</me>
+where <m>v_0</m> is its starting velocity and <m>g</m> is a constant that depends on gravity. On the moon, the value of <m>g</m> is approximately 5.6.  Suppose you hit a golf ball on the moon with an upwards velocity 100 feet per second.
+<ol marker="a.">
+    <li>Write an equation for the height of the golf ball <m>t</m> seconds after you hit it.</li>
+    <li>Graph your equation in the window
+        <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 47</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 1000</mrow></md></li>
+    <li>Use the TRACE key to estimate the maximum height the golf ball reaches.</li>
+    <li>Use your equation to calculate when the golf ball will reach a height of 880 feet.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>h=100t-2.8t^2</m></li>
+    <li>(graph) </li>
+    <li>893 ft</li>
+    <li><m>15 \dfrac{5}{7}</m> sec and 20 sec</li></ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>An acrobat is catapulted into the air from a springboard at ground level. His height <m>h</m> in meters is given by the formula 
+    <me>h=-4.9t^2+14.7t</me>
+where <m>t</m> is the time in seconds from launch. Use your calculator to graph the acrobat's height versus time.  Set the  WINDOW  values on your calculator to 
+    <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 4.7</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 12</mrow></md>
+<ol marker="a.">     
+    <li>Use the  TRACE  key to find the coordinates of the highest point on the graph.  When does the acrobat reach his maximum height, and what is that height?</li>
+    <li>Use the formula to find the height of the acrobat after 2.4 seconds.</li>  
+    <li>Use the  TRACE key to verify your answer to part (b).  Find another time when the acrobat is at the same height.</li>
+    <li>Use the  formula to find two times when the acrobat is at a height of 6.125 meters. Verify your answers on the graph.</li>
+    <li>What are the coordinates of the horizontal intercepts of your graph? What do these points have to do with the acrobat?</li></ol></p></statement>
+<answer><p><ol marker="a.">     
+    <li>1.5 sec, 11.025 m</li>
+    <li>7.056 m</li>  
+    <li>0.6 sec</li>
+    <li>0.5 sec, 2.5 sec</li>
+    <li><m>(0,0),~(3,0).</m> She leaves the springboard at <m>t=0</m> seconds and returns to the springboard at <m>t=3</m> seconds.</li></ol></p></answer></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13-16, <ol marker="a.">
+        <li>Find the coordinates of the vertex and the intercepts.</li>
+        <li>Sketch the graph.</li></ol></p></introduction>
+    
+<exercise number="13"><statement><p><m>y=x^2-x-12</m></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>\left(\dfrac{1}{2}, \dfrac{-49}{4}\right)</m>, <m>(-3,0)</m>, <m>(4,0)</m>, <m>(0,-12)</m></li>
+        <li><sidebyside  width="60%" margins="0% 0%">
+            <image xml:id="fig-ch4rev-13ans">
+                    <description>parabola</description>
+                    <latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.35]
+                    \draw[cyan] (-10,-15) grid (10,5);
+                    \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,-15)--(0,5.6) node[left, xshift=2]{$y$};
+                    \foreach \x in  {-10,-5, 5} {
+                     \draw[cyan, very thick] (\x,-15) --++(0,20);
+                     \draw[cyan, very thick] (-10,\x) --++(20,0);
+                     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                     \draw[black] (.15,-15) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$-15$};
+                     \draw[cyan, very thick] (10,-15) --++(0,20);
+                     \draw[cyan, very thick] (-10,-15) --++(20,0);
+                    \draw[samples=65,domain={-sqrt(69)/2+1/2:1/2++sqrt(69)/2},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 -\x - 12 });
+                    \filldraw[blue] (1/2,-49/4) circle (.2);
+                    \filldraw[black] (-3,0) circle (.2);
+                    \filldraw[black] (4,0) circle (.2);
+                    \filldraw[black] (0,-12) circle(.2);                    
+                    \end{tikzpicture}]]>
+                </latex-image>
+                </image>
+        </sidebyside></li></ol></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>y=-2x^2+x-4</m></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>\left(\dfrac{1}{4}, \dfrac{-31}{8}\right)</m>, no <m>x</m>-intercepts,<m>~(0,-4)</m></li>
+        <li><sidebyside  width="60%" margins="0% 0%">
+            <image xml:id="fig-ch4rev-14ans">
+                    <description>parabola</description>
+                    <latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [xscale=.7,yscale=.35]
+                    \draw[cyan] (-5,-15) grid (5,5);
+                    \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,-15)--(0,5.6) node[left, xshift=2]{$y$};
+                    \foreach \x in  {-5, 5} {
+                     \draw[cyan, very thick] (\x,-15) --++(0,20);
+                     \draw[cyan, very thick] (-5,\x) --++(10,0);
+                     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                     \draw[black] (.15,-15) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$-15$};
+                    \draw[cyan, very thick] (-5,-10) --++(0,10);
+                     \draw[cyan, very thick] (-5,-15) --++(10,0);
+                    \draw[samples=65,domain={-sqrt(89)/4+1/4:1/4++sqrt(89)/4},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-2*(\x)^2 +\x - 4 });
+                    \filldraw[blue] (1/4,-31/8) ellipse (.1 and .2);
+                    \filldraw[black] (0,-4) ellipse (.1 and .2);
+                    \end{tikzpicture}]]>
+                </latex-image>
+                </image>
+        </sidebyside></li></ol></p></answer></exercise>
+
+<exercise number="15"><statement><p><m>y=-x^2+2x+4</m></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>(1,5),~(-1.24,0),~(3.24,0),~(0,4)</m></li>
+        <li><sidebyside  width="60%" margins="0% 0%">
+            <image xml:id="fig-ch4rev-15ans">
+                    <description>parabola</description>
+                    <latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.35]
+                    \draw[cyan] (-10,-10) grid (10,10);
+                    \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+                    \foreach \x in  {-5, 5, -10, 10} {
+                     \draw[cyan, very thick] (\x,-10) --++(0,20);
+                     \draw[cyan, very thick] (-10,\x) --++(20,0);
+                     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                    \draw[samples=65,domain={-sqrt(15)+1:1+sqrt(15)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-(\x )^2 +2*\x+4 });
+                    \filldraw[blue] (1,5) circle (.2);
+                    \filldraw[black] (-1.24,0) circle (.2);
+                    \filldraw[black] (3.24,0) circle (.2);
+                    \filldraw[black] (0,4) circle (.2);
+                    \end{tikzpicture}]]>
+                </latex-image>
+                </image>
+        </sidebyside></li></ol></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>y=x^2-3x+4</m></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>\left(\dfrac{3}{2}, \dfrac{7}{4}\right),~</m> no <m>x</m>-intercepts,<m>~(0,4)</m></li>
+        <li><sidebyside  width="60%" margins="0% 0%">
+            <image xml:id="fig-ch4rev-16ans">
+                    <description>parabola</description>
+                    <latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.35]
+                    \draw[cyan] (-5,0) grid (10,10);
+                    \draw[black,thick, ->, >=stealth'] (-5,0)--(11.6,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(0,11.6) node[left, xshift=2]{$y$};
+                    \foreach \x in  {-5, 5,  10} {
+                     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                    \foreach \x in  { 5, 10} {
+                     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                    \draw[samples=65,domain={-sqrt(33)/2+3/2:3/2+sqrt(33)/2},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x )^2 -3*\x+4 });
+                    \filldraw[blue] (3/2,7/4) circle (.2);
+                    \filldraw[black] (0,4) circle (.2);
+                    \end{tikzpicture}]]>
+                </latex-image>
+                </image>
+        </sidebyside></li></ol></p></answer></exercise>
+</exercisegroup> 
+
+<exercise number="17"><statement><p>Find the equation for a parabola whose vertex is <m>(15,-6)</m> and that passes through the point <m>(3,22.8)</m>.</p></statement>
+    <answer><p><m>y=0.2(x-15)^2-6</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><ol marker="a.">
+    <li>Find the vertex of the graph of <m>y=-2(x-1)^2+5</m></li>
+    <li>Write the equation of the parabola in standard form.</li></ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>(1,5)</m></li>
+        <li><m>y=2x^2+4x+7</m></li></ol></p></answer></exercise>
+
+<exercise number="19"><statement><p>The total profit Kiyoshi makes from producing and selling <m>x</m> floral arrangements is 
+    <me>P=-0.4x^2+36x</me>
+<ol marker="a.">
+    <li>How many floral arrangements should Kiyoshi produce and sell to maximize his profit?</li>
+    <li>What is his maximum profit?</li>
+    <li>Verify your answers on a graph.</li></ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li>45</li>
+    <li>$810</li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>The Metro Rail service sells <m>1200-80x</m> fares each day when it charges <m>x</m> dollars per fare. <ol marker="a."> 
+    <li>Write an equation for the revenue in terms of the price of a fare.</li>
+    <li>What fare will return the maximum revenue?</li>
+    <li>What is the maximum revenue?</li>
+    <li>Verify your answers on a graph.</li></ol></p></statement>
+    <answer><p><ol marker="a."> 
+    <li><m>R=1200x-80x^2</m></li>
+    <li>$7.50</li>
+    <li>$4500</li></ol></p></answer></exercise>
+
+<exercise number="21"><statement><p>A beekeeper has beehives distributed over 60 square miles of pastureland. When she places four hives per square mile, each hive produces about 32 pints of honey per year. For each additional hive per square mile, honey production drops by 4 pints per hive. <ol marker="a.">  
+    <li>Write an equation for the total production of honey, in pints, in terms of the number of additional hives per square mile.</li>
+    <li>How many additional hives per square mile should the beekeeper install in order to maximize honey production?</li>
+    </ol></p></statement>
+    <answer><p><ol marker="a.">  
+    <li><m>y=60(4+2x)(32-4x)</m></li>
+    <li>2</li>
+    </ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>A small company manufactures radios. When it charges $20 for a radio, it sells 500 radios per month. For each dollar the price is increased, 10 fewer radios are sold per month. <ol marker="a."> 
+    <li>Write an equation for the monthly revenue in terms of the price increase over $20.</li>
+    <li>What should the company charge for a radio in order to maximize its monthly revenue?</li>
+</ol></p></statement>
+    <answer><p><ol marker="a."> 
+    <li><m>R=(20+x)(500-10x)</m></li>
+    <li>$35</li>
+</ol></p></answer></exercise>
+
+<exercise number="23"><statement><p>Find values of <m>a~, b,</m> and <m>c</m> so that the graph of the parabola <m>~y=ax^2+bx+c</m> contains the points <m>(-1,-4),~ (0,-6)~</m> and <m>(4,6)</m>.</p> </statement>
+    <answer><p><m>a=1,~b=-1,~c=-6</m></p></answer></exercise>
+
+<exercise number="24"><statement><p>Find a parabola that fits the following data points.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>-8</m></cell>
+                        <cell><m>-4</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>18</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>-14</m></cell></row>
+                    </tabular></sidebyside>
+</statement>
+    <answer><p><m>y=-\dfrac{1}{2}x^2-4x+10</m></p></answer></exercise>
+
+<exercise number="25"><statement><p>The height of a cannonball was observed at <m>0.2</m>-second intervals after the cannon was fired, and the data recorded in the table below.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Time (seconds)</cell>
+                        <cell><m>0.2</m></cell>
+                        <cell><m>0.4</m></cell>
+                        <cell><m>0.6</m></cell>
+                        <cell><m>0.8</m></cell>
+                        <cell><m>1.0</m></cell>
+                        <cell><m>1.2</m></cell>
+                        <cell><m>1.4</m></cell>
+                        <cell><m>1.6</m></cell>
+                        <cell><m>1.8</m></cell>
+                        <cell><m>2.0</m></cell></row>
+                    <row> 
+                        <cell>Height(metes)</cell>
+                        <cell><m>10.2</m></cell>
+                        <cell><m>19.2</m></cell>
+                        <cell><m>27.8</m></cell>
+                        <cell><m>35.9</m></cell>
+                        <cell><m>43.7</m></cell>
+                        <cell><m>51.1</m></cell>
+                        <cell><m>58.1</m></cell>
+                        <cell><m>64.7</m></cell>
+                        <cell><m>71.0</m></cell>
+                        <cell><m>76.8</m></cell></row>
+                    </tabular></sidebyside> <p><ol marker="a.">
+    <li>Find the equation of the least-squares regression line for height in terms of time.</li>
+    <li>Use the linear regression equation to predict the height of the cannonball at 3 seconds and at 4 seconds after it was fired.</li>
+    <li>Make a scatterplot of the data and draw the regression line on the same axes.</li>
+    <li>Find the quadratic regression equation for height in terms of time.</li>
+    <li>Use quadratic regression equation to predict the height of the cannonball at 3 seconds and at 4 seconds after it was fired.</li>
+    <li>Make a scatterplot of the data and draw the regression curve on the same axes.</li>  
+    <li>Which model is more appropriate for the height of the cannonball, linear or quadratic? Why?</li></ol></p>
+</statement>
+    <answer><p><ol marker="a.">
+    <li><m>h=36.98t+5.17</m></li>
+    <li>116.1 m, 153.1 m</li>
+    <li>(graph)</li>
+    <li><m>h=-4.858t^2+47.67t+0.89</m></li>
+    <li>100.2 m, 113.9 m</li>
+    <li>(graph)</li>  
+    <li>quadratic</li></ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>Max took a sequence of photographs of an explosion spaced at equal time intervals. From the photographs he was able to estimate the height and vertical velocity of some debris from the explosion, as shown in the table.  (Negative velocities indicate that the debris is falling back to earth.)</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Velocity (meters/second)</cell>
+                        <cell><m>67</m></cell>
+                        <cell><m>47</m></cell>
+                        <cell><m>27</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>-12</m></cell>
+                        <cell><m>-31</m></cell></row>
+                    <row> 
+                        <cell>Height (meters)</cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>122</m></cell>
+                        <cell><m>196</m></cell>
+                        <cell><m>232</m></cell>
+                        <cell><m>228</m></cell>
+                        <cell><m>185</m></cell></row>
+                    </tabular></sidebyside> <p><ol marker="a.">
+    <li>Enter the data into your calculator and create a scatterplot. Fit a quadratic regression equation to the data, and graph the equation on the scatterplot.</li>
+    <li>Use your regression equation to find the vertex of the parabola. What do the coordinates represent, in terms of the problem? What should the velocity of the debris be at its maximum height?</li></ol></p>
+</statement>
+    <answer><p><ol marker="a.">
+        <li><m>y=-0.05x^2-0.003x+234.2</m></li>
+        <li><m>(-0.03, 234.2)~</m> The velocity of the debris at its maximum height of 234.2 feet. The velocity there is actually zero.</li></ol></p>
+    </answer></exercise>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 27<ndash/>32, solve the inequality algebraically, and give your answers in interval notation. Verify your solutions by graphing.
+</p></introduction>
+
+<exercise number="27"><statement><p><m>(x-3)(x+2) \gt 0</m></p></statement>
+    <answer><p><m>(-\infty,-2) \cup (3,\infty)</m></p></answer></exercise>
+
+<exercise number="28"><statement><p><m>y^2-y-12 \le 0</m></p></statement>
+    <answer><p><m>[-3,4]</m></p></answer></exercise>
+
+<exercise number="29"><statement><p><m>2y^2-y \le 3</m></p></statement>
+    <answer><p><m>[-1,\dfrac{3}{2}]</m></p></answer></exercise>
+
+<exercise number="30"><statement><p><m>3z^2-5z \gt 2</m></p></statement>
+    <answer><p><m>(-\infty,-\dfrac{1}{3}) \cup (2,\infty)</m></p></answer></exercise>
+
+<exercise number="31"><statement><p><m>s^2 \le 4</m></p></statement>
+    <answer><p><m>[-2,2]</m> </p></answer></exercise>
+
+<exercise number="32"><statement><p><m>4t^2 \gt 12</m></p></statement>
+    <answer><p><m>(-\infty,-\sqrt{3}) \cup (\sqrt{3},\infty)</m></p></answer></exercise>
+</exercisegroup>
+
+<exercise number="33"><statement><p>The Sub Station sells <m>~220-\dfrac{1}{4}p~</m> submarine sandwiches at lunchtime if it sells them at <m>p</m> cents each.  <ol marker="a.">
+    <li>Write a formula for the Sub Station's daily revenue in terms of <m>p</m>.</li>
+    <li>What range of prices can the Sub Station charge if it wants to keep its daily revenue from subs over $480?</li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li><m>R=p(220-\dfrac{1}{4}p)</m></li>
+    <li><m>400 \lt p \lt 480</m></li></ol></p>
+</answer></exercise>
+
+<exercise number="34"><statement><p>When it charges <m>p</m> dollars for an electric screwdriver, Handy Hardware will sell <m>~30-\dfrac{1}{2}p~</m> screwdrivers per month.  <ol marker="a.">
+    <li>Write a formula in terms of <m>p</m> for Handy Hardware's monthly revenue from screwdrivers.</li>
+    <li>How much should Handy charge per screwdriver if it wants the monthly revenue from the screwdrivers to be over $400?</li></ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li><m>R=p(30-\dfrac{1}{2}p)</m></li>
+    <li><m>20 \lt p \lt 40</m></li></ol></p></answer></exercise>
+
+</exercises>

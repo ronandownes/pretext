@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Linear-Equations-and-Inequalities"   xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Linear Equations and Inequalities</title>
+
+<subsection><title>Solving Equations</title>
+    <idx><h>solving an equation</h></idx><idx><h>equation</h><h>solving</h></idx>
+
+<p>We solve an equation by isolating the variable on one side of the equation. If an equation involves two or more operations, we must undo those operations in reverse order.</p>
+
+<example xml:id="Example-2-4-1"><statement><p>The equation 
+    <md><mrow>T=50+15u</mrow></md> 
+describes college tuition consisting of a $50 registration fee plus $15 per unit. How many units can you take if you have $290 saved for tuition?</p></statement>
+
+<solution><p>We can answer the question by solving the equation
+	<md><mrow>\alert{290}=50+15u</mrow></md>
+where we have substituted $290 for the tuition, <m>T</m>. Think about the expression <m>50+15u</m>. How would you evaluate this expression if you were given a value for <m>u</m>? Following the order of operations, you would
+	<md><mrow>\amp 1.~~~\text{First multiply by 15}</mrow>
+        <mrow>\amp 2.~~~\text{Then add 50}</mrow></md>   
+
+In order to solve the equation, we must reverse these two steps to undo the operations and isolate the variable.  We first subtract 50 from both sides of the equation: 
+        <md><mrow>290 ~\amp = ~~~50+15u \amp \amp  \blert{\text{Subtract 50 from both sides.}}</mrow>
+            <mrow>\underline{\blert{-50}}  \amp = \underline{\blert{-50}}</mrow>
+            <mrow>240  ~\amp = ~~~~~~~~~~~~~15u</mrow></md>   
+                                            
+This isolates the term that contains the variable, <m>15u</m>. Then we divide both sides of the equation by 15. 
+ 		<md><mrow>
+            \dfrac{240}{\blert{15}} \amp = \dfrac{15u}{\blert{15}} \amp \amp \blert{\text{Divide both sides by 15.}}</mrow>
+        <mrow>16  \amp = u  </mrow> 
+     </md>                            
+
+You can enroll in 16 units. We can check the solution by substituting 16 for <m>u</m> in the original equation.
+		<md><mrow>\blert{\text{Check:}}~~~~~~~~~~~~    50+15u =\amp 290</mrow>
+            <mrow>50+15(\alert{16}) =\amp 50+240=290 ~~~~~ \blert{\text{True}}</mrow></md>   
+                    
+Because a true statement results, the solution checks.</p></solution></example>
+
+<assemblage><title>Look Closer</title>
+<p>In <xref ref="Example-2-4-1" text="type-global"/>, notice how we reversed the operations used in the equation.
+		<md><mrow>\amp \blert{\text{Operations performed on}~u} \amp \amp \blert{\text{Steps for solution}}</mrow>
+            <mrow>\amp 1.~~~\text{Multiply by 15}  \amp \amp 1.~~~\text{Subtract 50}</mrow>
+            <mrow>\amp 2.~~~\text{Add 50}  \amp \amp 2.~~~\text{Divide by 15}</mrow></md></p></assemblage>
+
+<assemblage><title>Strategy for solving equations</title>
+<p>To solve an equation that involves two or more operations, we undo those operations in reverse order.</p></assemblage>
+
+<example xml:id="Example-2-4-2"><statement><p>Solve <m>~8-3x=-10</m></p></statement>
+
+<solution><p>The left side of the equation has two terms: <m>8</m> and <m>-3x</m>. We want to isolate the term containing the variable, so we subtract 8 from both sides.
+		<md><mrow>8-3x \amp = -10 \amp \amp  \blert{\text{Subtract 8 from both sides.}}</mrow>
+            <mrow>\underline{\blert{-8}}  \amp =\underline{\blert{-8}}</mrow>
+            <mrow>-3x \amp = -18</mrow></md>   
+Next, we divide both sides by <m>-3</m> to get
+		<md><mrow>\dfrac{-3x}{\blert{-3}} \amp = \dfrac{-18}{\blert{-3}} \amp \amp \blert{\text{Divide both sides by}~-3.}</mrow>
+            <mrow>x \amp = 6</mrow></md>   
+The solutions is 6.
+	<md><mrow>\blert{\text{Check:}}~~~~~~~~8-3(\alert{6})=8-18=-10</mrow></md></p>
+</solution></example>   
+
+<warning><p>In the second step of <xref ref="Example-2-4-2" text="type-global"/>, the term <m>-3x</m> means "<m>-3</m> times <m>x</m>," so we divide both sides by <m>-3</m>. Do not try to add 3 to both sides.</p></warning>
+
+<exercise number="1"><statement><p>If an equation involves more than one operation, how must we undo those 
+operations? </p></statement>
+    	<answer><p>In reverse order</p></answer></exercise>
+
+<exercise number="2"><statement><p>Delbert says he solved the equation <m>-5x=15</m> by adding <m>5</m> to both sides. What is wrong with his method?</p></statement>
+    	<answer><p>He should divide by <m>-5</m>.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Applied Problems</title>
+    <idx><h>applied problems</h></idx>
+
+<p>Problem solving often involves signed numbers, either in the equation that models the problem or in its solution, or both.</p>
+
+<example><statement><p>The trout population in Clear Lake is decreasing by approximately 60 fish per year, and this year there are about 430 trout in the lake. If the population drops to 100, the Park Service will have to restock the lake.<ol marker="a.">
+    <li>Write an equation for the population <m>P</m> of trout <m>x</m> years from now.</li>
+    <li>When will the Park Service have to restock the lake?</li>
+    <li>Graph your equation for <m>P</m>, and illustrate your answer to part (b) on the graph.</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The population starts this year at 430, and decreases by 60 for each following year. Thus, <m>P=430-60x</m>.</p></li>
+    <li><p>We would like to find the value of <m>x</m> when <m>P=100</m>. We substitute 100 for <m>P</m>, and solve the equation for <m>x</m>.</p>
+
+        <p><md><mrow>100 ~~\amp = ~~~430-60x \amp \amp  \blert{\text{Subtract 430 from both sides.}}</mrow>
+            <mrow>\underline{\blert{-430}}  \amp = \underline{\blert{-430}}</mrow>
+            <mrow>-330 ~~\amp = -60x </mrow>
+            <mrow>\hphantom{0000}</mrow>
+            <mrow>\dfrac{-330}{\blert{-60}} \amp = \dfrac{-60x}{\blert{-60}} \amp \amp \blert{\text{Divide both sides by}~-60.}</mrow>
+            <mrow>5.5 \amp = x </mrow></md></p>  
+
+        <p>The Park Service will have to restock the lake in five and a half years, if the population continues to decline at the current rate.</p></li>       
+    <li><p>The figure shows the graph of the equation <m>P=430-60x</m>. To solve
+            <md><mrow>100=430-60x</mrow></md>
+         we locate the point on the graph with <m>P=100</m>, and read its <m>x</m>-coordinate, at about 5.5.</p>
+         <!--<image source="photos/fig-2-4-ex3.png"><description>graph</description></image>-->
+    <image width="55%" xml:id="fig-2-4-ex3"><description>graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.5, yscale=.018]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid[ystep=20] (10,440);
+        \draw[black,thick, ->, >=stealth'] (O)--(11,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (O)--(0,460) node[left, xshift=2]{$P$};
+        \foreach \x in  {10} {
+         \draw[cyan, very thick] (\x,0) --(\x,440);
+         \draw[black] (\x,5) --++(0,-10)  node[below] {$\x$};
+        }
+        \draw[cyan, very thick] (5,0) --(5,440);
+        \foreach \x in  {200, 300, 400} {
+         \draw[cyan, very thick] (0,\x) --(10,\x);
+         \draw[black] (.15,\x) --++(-.3,0)  node[left] {$\x$};
+        }
+        \draw[cyan, thick] (0,100) --(10,100);
+        \draw[red,very thick, <->, >=stealth'] (0,430)--({43/6},0);
+        \node[below, text=red] at (5.5,0) {$5.5$};
+        \draw[black] (.15,100)--++(-.3,0) node[left, text=red] {$100$};
+        \filldraw[blue] (5.5,100) ellipse (.2cm and 6cm);
+        \foreach \x in {0,1,1,2.2,3.3,4.4}{
+         \draw[black, very thick, ->,>=stealth'] (\x,100)--++(.8,0);
+         }
+        \foreach \x in {89, 66, 43, 20}{
+         \draw[black, very thick, ->,>=stealth'] (5.5, \x)--++(0, -20);
+         }
+        \end{tikzpicture}]]></latex-image></image></li>
+    </ol></p></solution></example>
+</subsection>
+
+<subsection><title>Solving Inequalities</title>
+    <idx><h>solving an inequality</h></idx><idx><h>inequality</h><h>solving</h></idx>
+
+<assemblage><title>Inequality</title><idx><h>inequality</h></idx>
+    <p>A statement that uses one of the symbols <m>~\gt~</m> or <m>~\lt~</m> is called an <term>inequality</term>.</p></assemblage>
+
+<p>Examples of inequalities are 
+	<md><mrow> -1 \gt -3 ~~~~~~ \text{and}~~~~~~ x \lt 2</mrow></md> 	
+Unlike the equations we have studied, which have at most one solution, an inequality can have infinitely many solutions.  A solution of an equation or inequality is said to <term>satisfy</term><idx><h>satisfy an equation or inequality</h></idx> the equation or inequality.</p>
+
+<example><statement><p>Solve the inequality  <m>~x \lt 2</m></p></statement>
+
+<solution><p>The solutions include <m>1, 0, -1, -2</m> and all the other negative integers, as well as fractions less than 2, such as <m>1\dfrac{3}{5},~ \dfrac{2}{3},</m> and <m>\dfrac{-17}{8}</m>. All of these values satisfy the inequality <m>~x \lt 2</m>.</p>
+<p> In fact, all the numbers to the left of 2 on the number line are solutions of <m>~x \lt 2</m>. Because we cannot list all these solutions, we often graph them on a number line as shown below.</p>
+	<!--<image source="photos/fig-2-4-ex4.png"><description>graph</description></image>-->
+    <image width="80%" xml:id="fig-2-4-ex4"><description>number line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[black,thick, ->, >=stealth'] (-11.8,0)--(11.8,0);
+        \foreach \x in  {-11, -10, ..., 11} {
+         \draw[black] (\x,.3) --++(0,-.3);
+        }
+        \foreach \x in  {-10,-5,0,5,10} {
+         \draw[black] (\x,.6) --++(0,-.6)  node[below] {$\x$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (2,0)--(-11.8,0);
+        \draw[red, fill=white] (2,0) circle (3mm);
+        \node[below, yshift=-2, text=red, scale=.9] at (2,0) {$2$};
+        \end{tikzpicture}]]></latex-image></image>
+
+<p>The open circle at 2 shows that 2 itself is not a solution (because 2 is not less than 2.)</p>
+</solution></example>
+
+<assemblage><title>Look Closer</title><idx><h>order symbol</h></idx>
+<p>An inequality that uses the symbol for less than, <m>\lt</m>, or greater than, <m>\gt</m>, is called a <term>strict inequality</term>. A nonstrict inequality uses one of the following symbols.
+    <md><mrow>\amp \blert{\ge}  \amp \amp \text{means  "greater than or equal to"}</mrow>
+        <mrow>\amp \blert{\le}    \amp \amp \text{means  "less than or equal to"}</mrow></md>
+
+For example, the graph of all solutions to the inequality
+    <md><mrow>x \ge -2</mrow></md>
+is shown below. We use a solid dot at <m>-2</m> to show that <m>-2</m> is included in the solutions.</p>
+    <!--<image source="photos/fig-2-4-1.png"><description>graph</description></image>-->
+    <image width="80%" xml:id="fig-2-4-1"><description>number line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[black,thick, ->, >=stealth'] (-11.8,0)--(11.8,0);
+        \foreach \x in  {-11, -10, ..., 11} {
+         \draw[black] (\x,.3) --++(0,-.3);
+        }
+        \foreach \x in  {-10,-5,0,5,10} {
+         \draw[black] (\x,.6) --++(0,-.6)  node[below] {$\x$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (-2,0)--(11.8,0);
+        \draw[red, fill=red] (-2,0) circle (2.5mm);
+        \node[below, yshift=-2, text=red, scale=.9] at (-2,0) {$-2$};
+        \end{tikzpicture}]]></latex-image></image>
+ </assemblage>
+
+<exercise number="3"><statement><p>A solution of an inequality is said to <fillin characters="6"/> the inequality.
+</p></statement>
+    	<answer><p>satisfy</p></answer></exercise>
+
+<exercise number="4"><statement><p>What is the difference between a strict and a nonstrict inequality?</p></statement>
+    	<answer><p>A nonstrict inequality includes "equal to."</p></answer></exercise>
+
+<p>	The rules for solving inequalities are very similar to the rules for solving equations, with one important difference. In the Activities we will develop the following strategies for solving inequalities.</p>
+
+<assemblage><title>To solve an inequality</title>
+<idx><h>inequality</h><h>solving</h></idx><idx>solving an inequality</idx>
+<p><ol marker= "1.">
+	<li>We can add or subtract the same quantity on both sides.</li> 
+	<li>We can multiply or divide both sides by the same positive number.</li>  
+	<li>If we multiply or divide both sides by a negative number, we must reverse the direction of the inequality.</li>
+</ol></p></assemblage>
+
+<example><statement><p>Solve  <m>~-3x+1 \gt 7,~</m>  and graph the solutions on a number line.</p></statement>
+
+<solution><p>We isolate  on one side of the inequality.
+    <md><mrow>-3x+1 \blert{-1}\amp \gt 7 \blert{-1}\amp \amp  \blert{\text{Subtract 1 from both sides.}}</mrow>
+        <mrow>-3x \amp \gt 6 \amp\amp\blert{\text{Divide both sides by}~-3;}</mrow>
+        <mrow>\dfrac{-3x}{\blert{-3}} \amp \lt \dfrac{6}{\blert{-3}} \amp \amp  \blert{\text{reverse the direction of the inequality.}}</mrow>
+        <mrow>x \amp \lt -2</mrow></md>   
+The graph of the solutions is shown below.</p>
+    <!--<image source="photos/fig-2-4-ex5.png"><description>graph</description></image>-->
+    <image width="80%" xml:id="fig-2-4-ex5"><description>number line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[black,thick, ->, >=stealth'] (-11.8,0)--(11.8,0);
+        \foreach \x in  {-11, -10, ..., 11} {
+         \draw[black] (\x,.3) --++(0,-.3);
+        }
+        \foreach \x in  {-10,-5,0,5,10} {
+         \draw[black] (\x,.6) --++(0,-.6)  node[below] {$\x$};
+        }
+        \draw[red, ultra thick, ->, >=stealth'] (-2,0)--(-11.8,0);
+        \draw[red, fill=white] (-2,0) circle (3mm);
+        \node[below, yshift=-2, text=red, scale=.9] at (-2,0) {$-2$};
+        \end{tikzpicture}]]></latex-image></image>
+</solution></example>
+</subsection>
+
+<subsection><title>Compound Inequalities</title>
+    <idx><h>inequality</h><h>compouind</h></idx><idx><h>compound inequality</h></idx>
+
+<p>An inequality in which the variable expression is bounded from above and from below is called a <term>compound inequality</term>  For example,
+	<md><mrow>-3 \lt 2x-5 \le 6</mrow></md>
+is a compound inequality. To solve a compound inequality, we must perform the steps needed to isolate <m>x</m> on all three sides of the inequality.</p>
+
+<example><statement><p>Solve <m>~-3 \lt 2x-5 \le 6</m></p></statement>
+
+<solution><p>To solve for <m>x</m>, we first add 5 on each side of the inequality symbols.
+    <md alignment="alignat"><mrow>-3\amp \lt{ }\amp 2x-5 \amp\le\amp \quad 6\amp</mrow>
+        <mrow>\underline{\blert{+5}}\amp\amp \underline{\blert{+5}} \amp\amp  ~\underline{\blert{+5}}\amp</mrow>
+        <mrow>-2 \amp \lt{ }\amp 2x ~~~\quad\amp \le\amp 11\amp </mrow></md>
+Next, to solve <m>2 \lt 2x \le 11</m>, we divide each side by 2.
+    <md><mrow>\dfrac{2}{\blert{2}} \amp \lt \dfrac{2x}{\blert{2}}  \le \dfrac{11}{\blert{2}}</mrow>
+        <mrow>1 \amp \lt x  \le \dfrac{11}{2}</mrow></md>  
+The solution consists of all numbers greater than 1 but less than or equal to <m>\dfrac{11}{2}</m>. The graph of the solutions is shown below.</p>
+    <!--<image source="photos/fig-2-4-ex6.png"><description>graph</description></image>-->
+    <image width="85%" xml:id="fig-2-4-ex6"><description>number line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.7]
+        \draw[black,thick, ->, >=stealth'] (-7.8,0)--(7.8,0);
+        \foreach \x in  {-7, -6, ..., 7} {
+         \draw[black] (\x,.2) --++(0,-.2);
+        }
+        \foreach \x in  {-5,0,5} {
+         \draw[black] (\x,.4) --++(0,-.4)  node[below] {$\x$};
+        }
+        \draw[red, ultra thick] (1,0)--(11/2,0);
+        \draw[red, fill=white] (1,0) circle (1.5mm);
+        \node[above, yshift=4, text=red, scale=.9] at (1,0) {$1$};
+        \draw[red, fill=red] (11/2,0) circle (1.5mm);
+        \node[above, yshift=3, text=red] at (11/2,0) {$\frac{11}{2}$};
+        \end{tikzpicture}]]></latex-image></image>
+    </solution></example>
+
+<exercise number="5"><statement><p>When do we need to reverse the direction of an inequality?</p></statement>
+    	<answer><p>When we multiply or divide by a negative number.</p></answer></exercise>
+
+<exercise number="6"><statement><p>What is a compound inequality?</p></statement>
+    	<answer><p>One in which the variable expression is bounded from above and from below.</p></answer></exercise>
+<problem>
+<p><ol marker="A.">
+<li><p>Solve each equation. Try to do so mentally (without using pencil and paper.)</p>
+
+<p><ol marker="1." cols="3">
+    <li><m>\dfrac{u}{3}=6</m></li>
+
+    <li><m>7=3+s</m></li>
+
+    <li><m>a-\dfrac{1}{3}=\dfrac{2}{3}</m></li>
+
+    <li><m>20=5m</m></li>
+
+    <li><m>\dfrac{1}{4}p=8</m></li>
+
+    <li><m>7t=5</m></li>
+</ol></p></li>
+
+<li><p>For numbers 1 and 2, fill in the tables. Then analyze the order of operations in your calculations.</p>
+ 
+<p><ol marker="1."> 
+<li><p>Consider the equation <m>3n-5=p</m>. Look at Table 1 to help you answer the questions.</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                    
+                    <row>
+                        <cell colspan="3" halign="center">Table 1</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>n</m></cell>
+                        <cell><m>3n</m></cell>
+                        <cell><m>3n-5</m></cell></row>
+                    <row>
+                        <cell><m>2</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>    
+                        <cell><m>5</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>    
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>7</m></cell></row>
+                    <row> 
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>22</m></cell></row>
+                    </tabular>
+<p><ol marker="a.">
+    <li>Let <m>n=2</m>. Explain how to find <m>p</m> in two steps.</li>
+    <li>Let <m>p=7</m>. Explain how to find <m>n</m> in two steps.</li>
+</ol></p></li>
+
+<li><p>Consider the equation <m>\dfrac{m}{4}+1=h</m>. Look at Table 2 to help you answer the questions.</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row>
+                        <cell colspan="3" halign="center">Table 2</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell><m>m</m></cell>
+                        <cell><m>\dfrac{m}{4}</m></cell>
+                        <cell><m>\dfrac{m}{4}+1</m></cell></row>
+                    <row>
+                        <cell><m>8</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>    
+                        <cell><m>12</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>    
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>6</m></cell></row>
+                    <row> 
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>2</m></cell></row>
+                    </tabular>
+<p><ol marker="a.">
+    <li>Let <m>m=8</m>. Explain how to find <m>h</m> in two steps.</li>
+    <li>Let <m>h=6</m>. Explain how to find <m>m</m> in two steps.</li>
+</ol></p></li>
+
+<li><p><ol marker="a.">
+	<li>If you put on socks and then put on shoes, what operations are needed to reverse the process?</li>
+	<li>You leave home and bicycle north for 3 miles and then east for 2 miles.  Suddenly you notice that you have dropped your wallet. How should you retrace your steps?</li>
+</ol></p></li>
+</ol></p></li>
+</ol></p>
+
+<answer>
+<p>A.</p>
+<p><ol marker="1." cols="3">
+    <li><m>18</m></li>
+    <li><m>4</m></li>
+    <li><m>1</m></li>
+    <li><m>4</m></li>
+    <li><m>32</m></li>
+    <li><m>\dfrac{5}{7}</m></li>
+</ol></p>
+</answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Order of Operations</title>
+
+<introduction><p>Study each Example, then try the corresponding Exercise.<ol marker="a.">
+    <li>Use the order of operations to analyze the expression containing the variable and plan your approach.</li>  
+    <li>Carry out the steps of the solution.</li>
+</ol></p></introduction>
+
+<p>EXAMPLE 1:  Solve <m>~~4x-5=7</m> <ol marker="a.">
+    <li><p>Analyze the expression <m>~4x-5</m>.</p>
+    <assemblage><p>
+        <md><mrow>\amp \blert{\text{Operations performed on}~x} \amp \amp \blert{\text{Steps for solution}}</mrow>
+        <mrow>\amp 1.~~~ \text{Multiply by 4} \amp \amp 1.~~~ \text{Add 5}</mrow>
+        <mrow>\amp 2.~~~ \text{Subtract 5} \amp \amp 2.~~~\text{Divide by 4}</mrow></md></p></assemblage>
+    </li>
+    <li><p>Carry out the solution.
+        <md><mrow>4x-5 \amp = 7 \amp \amp \blert{\text{Add 5 to both sides.}}</mrow>
+                <mrow>4x-5 \alert{+ 5} \amp = 7 \alert{+ 5}</mrow>
+                <mrow>4x \amp = 12 \amp \amp \blert{\text{Divide both sides by 4.}}</mrow>
+                <mrow>\dfrac{4x}{\alert{4}} \amp = \dfrac{12}{\alert{4}}</mrow>
+                <mrow> x \amp = 3</mrow></md></p>
+        <p>The solutions is 3. <m>~~~~~~~~\blert{\text{Check:}}~~~~4(\alert{3}) - 5 =7</m></p></li>
+    </ol></p>
+
+<p>Now try EXERCISE 1:  Solve <m>~~3x+2 = 17</m></p>
+
+<p>EXAMPLE 2:  Solve <m>~~\dfrac{-3t}{4} = 6</m> <ol marker="a.">
+    <li><p>Analyze the expression <m>~4x-5</m>.</p>
+        <assemblage><p>
+        <md><mrow>\amp \blert{\text{Operations performed on}~x} \amp \amp \blert{\text{Steps for solution}}</mrow>
+        <mrow>\amp 1.~~~ \text{Multiply by}~-3 \amp \amp 1.~~~ \text{Multiply by 4}</mrow>
+        <mrow>\amp 2.~~~ \text{Divide by 4} \amp \amp 2.~~~\text{Divide by} ~-3</mrow></md></p></assemblage>
+    </li>
+    <li><p>Carry out the solution.
+        <md><mrow>\dfrac{-3t}{4} \amp = 6 \amp \amp \blert{\text{Multiply both sides by 4.}}</mrow>
+                <mrow>\alert{4}\left(\dfrac{-3t}{4}\right) \amp = (6) \alert{4}</mrow>
+                <mrow>-3t \amp = 24 \amp \amp \blert{\text{Divide both sides by}~-3}</mrow>
+                <mrow>\dfrac{-3t}{\alert{-3}} \amp = \dfrac{24}{\alert{-3}}</mrow>
+                <mrow> x \amp = 3</mrow></md></p>
+    <p>The solutions is <m>-8</m>. <m>~~~~~~~~\blert{\text{Check:}}~~~~\dfrac{-3(\alert{-8})}{4} = 6</m></p></li></ol></p>
+
+<p>Now try EXERCISE 2:  Solve  <m>~~\dfrac{-4a}{5} = -12</m></p>
+
+<p>EXAMPLE 3:  Solve <m>~~5(z-6) = 65</m> <ol marker="a.">
+    <li><p>Analyze the expression <m>~4x-5</m>.</p>
+        <assemblage><p>
+        <md><mrow>\amp \blert{\text{Operations performed on}~x} \amp \amp \blert{\text{Steps for solution}}</mrow>
+        <mrow>\amp 1.~~~ \text{Subtract 6} \amp \amp 1.~~~ \text{Divide by 5}</mrow>
+        <mrow>\amp 2.~~~ \text{Multiply by 5} \amp \amp 2.~~~\text{Add 6}</mrow></md></p></assemblage></li>
+    <li><p>Carry out the solution.
+        <md><mrow>5(z-6) \amp = 65 \amp \amp \blert{\text{Divide both sides by 5.}}</mrow>
+                <mrow>\dfrac{5(x-6)}{\alert{5}} \amp = \dfrac{65}{\alert{5}}</mrow>
+                <mrow>z-6 \amp = 13 \amp \amp \blert{\text{Add 6 to both sides.}}</mrow>
+                <mrow>z-6 \alert{+6} \amp = 13 \alert{+6}</mrow>
+                <mrow> z \amp = 19</mrow></md></p>
+    <p>The solutions is <m>19</m>. <m>~~~~~~~~\blert{\text{Check:}}~~~~5(\alert{19}-6) = 65</m></p></li></ol></p>
+
+<p>Now try EXERCISE 3:  Solve  <m>~~\dfrac{b+3}{4} = 6</m></p>
+
+<p>EXERCISE 4: Follow the steps to solve the equation  <m>~~-6-\dfrac{2x}{3} = 8</m></p>
+
+    <p><m>\blert{\text{Add 6 to both sides.}}</m></p>
+    <p><m>\blert{\text{Rewrite the fraction} ~\dfrac{-2x}{3}~ \text{in standard form.}}</m></p>
+    <p><m>\blert{\text{Multiply both sides by 3.}}</m></p>
+    <p><m>\blert{\text{Divide both sides by}~ -2.}</m></p>
+    <p><m>\blert{\text{Check your solution.}}</m></p>
+</activity>
+
+<activity><title>Problem Solving</title>
+
+<p><ol marker="1.">
+<li><p>Mitch bought a Blu-Ray player for $269 and a number of discs at $14 each.
+    <ol marker="a.">
+    <li>Write an equation for Mitch's total bill, <m>B</m>, in terms of the number of discs, <m>d</m>, he bought.</li>
+    <li><p>If the total bill before tax was $367, how many discs did Mitch buy?</p>
+        <p><m>\blert{\text{Substitute 367 for}~B~\text{and solve for}~d.}</m></p>
+        <p><m>\blert{\text{Write your answer in a sentence.}}</m></p></li>
+    </ol></p></li>
+
+<li><p>Home Station had a promotion offering $4 off on a gallon of house paint.
+    <ol marker="a.">  
+    <li>Write an equation for the cost, <m>C</m>, of 15 gallons of paint in terms of the regular price, <m>p</m>.</li>
+    <li>Randall bought 15 gallons and paid $480 before tax. What is the regular price of a gallon of paint?</li>
+    </ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Inequalities</title>
+
+<p><ol marker="1.">
+<li><p>Properties of Inequalities</p>
+<p>Start with an inequality that we know is true, say <m>\blert{3 \lt 5}</m>. Which of the following operations keeps the inequality true?<ol marker="a.">
+    <li>Add a positive number, say 4, to both
+    sides of the inequality, to get
+    <sidebyside widths="30% 60%" valigns="middle middle">
+        <p><md><mrow>3 \blert{+4} \amp \lt 5 \blert{+4}</mrow>
+            <mrow>7 \amp \lt 9</mrow></md></p>
+        <image source="photos/act-2-4-1.png"><description>graph</description></image></sidebyside></li>
+    <li><p>Subtract the same quantity, say 6, from both
+    sides of the inequality, to get</p>
+    <sidebyside widths="30% 60%" valigns="middle middle">
+        <p><md><mrow>3 \blert{-6} \amp \lt 5 \blert{-6}</mrow>
+            <mrow>-3 \amp \lt -1</mrow></md></p>
+        <image source="photos/act-2-4-2.png"><description>graph</description></image></sidebyside></li>
+    <li><p>Multiply both sides of the inequality by a positive number, say 2, to get</p>
+        <sidebyside widths="30% 60%" valigns="middle middle">
+            <p><md><mrow>\blert{2}(3)  \amp \lt \blert{2}(5)</mrow>
+                <mrow>6 \amp \lt 10</mrow></md></p>
+        <image source="photos/act-2-4-3.png"><description>graph</description></image></sidebyside></li>
+    <li><p>Divide both sides of the inequality by a positive number, say 4, to get</p>
+        <sidebyside widths="30% 60%" valigns="middle middle">
+            <p><md><mrow>\dfrac{3}{\blert{4}}  \amp \lt \dfrac{5}{\blert{4}}</mrow></md></p>
+        <image source="photos/act-2-4-4.png"><description>graph</description></image></sidebyside></li>
+    <li><p>Multiply both sides of the inequality by a negative number, say <m>-2</m>, to get</p>
+        <sidebyside widths="30% 60%" valigns="middle middle">
+            <p><md><mrow>\blert{-2}(3)  \amp \lt \blert{-2}(5)</mrow>
+                <mrow>-6 \amp \lt -10</mrow>
+                <mrow>\alert{\text{False!}}</mrow></md></p>
+        <image source="photos/act-2-4-5.png"><description>graph</description></image></sidebyside></li>
+</ol></p></li>
+
+<li><p>Complete the box:</p>
+
+<assemblage><p>If we <fillin characters="4"/> or <fillin characters="4"/> both sides of an inequality by the same <fillin characters="4"/> quantity, we must <fillin characters="4"/> the direction of the inequality.</p></assemblage>
+</li>
+
+<li><p>Fill in the correct symbol, <m>\lt</m> or <m>\gt</m>, in each statement.<ol marker="a.">
+    <li>If <m>~~x \gt 8~</m>, then <m>~~x-7~ <fillin characters="3"/>~ 1.</m></li>
+    <li>If <m>~~x \lt -4~</m>, then <m>~~3x~ <fillin characters="3"/>~ -12.</m></li>
+    <li>If <m>~~x \gt -2~</m>, then <m>~~-9x~ <fillin characters="3"/>~ 18.</m></li>
+</ol></p></li>
+
+<li><p>Solving inequalities<ol marker="a.">
+    <li><m>\dfrac{x}{4} \ge -2</m>
+    <p><m>\blert{\text{What should you do to isolate}~x ?}</m></p>
+    <p><m>\blert{\text{Should you reverse the direction of the inequality?}}</m></p>
+
+    <p>Check:  Is your answer reasonable?</p><ul>
+    <li><p>Is <m>~-12~</m> a solution?</p></li>
+    <li><p>Is <m>~-5~</m> a solution?</p></li></ul></li>
+
+    <li><m>-5x \gt 20</m>
+    <p><m>\blert{\text{What should you do to isolate}~x ?}</m></p>
+    <p><m>\blert{\text{Should you reverse the direction of the inequality?}}</m></p>
+
+    <p>Check:  Is your answer reasonable?</p><ul>
+    <li><p>Is <m>~-10~</m> a solution?</p></li>
+    <li><p>Is <m>~2~</m> a solution?</p></li></ul></li>
+
+    <li><p>Solve <m>~~5-2x \le -3~~</m> and graph the solutions on the number line.</p>
+    <image width="90%" source="photos/act-2-4-6.png"><description>graph</description></image></li>
+
+    <li><p>Solve <m>~~-8 \lt 4-3x \lt 10~~</m> and graph the solutions on the number line.</p>
+    <image width="90%" source="photos/act-2-4-6.png"><description>graph</description></image></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Solving equations with two or more operations</li>
+    <li>Writing equations to model applied problems</li>
+    <li>Solving inequalities</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>To solve an equation, in what order do we undo the operations?</li>
+    <li>Which operation does a fraction bar represent?</li>
+    <li>When we evaluate the expression <m>~5(z-6)~</m>, which operation do we perform first?</li>
+    <li>When should you reverse the direction of an inequality?</li>
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<p>Solve.</p>
+<p><ol marker="1." cols="2">
+    <li><m>~~12=\dfrac{x}{6}</m></li>
+    <li><m>~~\dfrac{5a}{3} = 20</m></li>
+    <li><m>~~2(10z+18) = 96</m></li>
+    <li><m>~~8-b=-3</m></li>
+    <li><m>~~-2t+18=-4</m></li>
+    <li><m>~~7-\dfrac{2m}{3} = -9</m></li>
+    <li><m>~~8-4x \gt -2</m></li>
+    <li><m>~~-6 \le \dfrac{4-x}{3} \lt 2</m></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p> <ol marker= "1." cols="2">
+    <li><m>72</m></li>
+    <li><m>12</m></li>
+    <li><m>3</m></li>
+    <li><m>11</m></li>
+    <li><m>11</m></li>
+    <li><m>24</m></li>
+    <li><m>x \lt \dfrac{5}{2}</m></li>
+    <li><m>22 \ge x \gt -2</m></li></ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-2-4.xml" />
+</section>

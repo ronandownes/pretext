@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-5-4-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 5.4</title>
+    
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Solve<ol marker="a." cols="2">
+    <li><p><m>\dfrac{a}{a-2}=\dfrac{25}{30}</m></p></li>
+    <li><p><m>\dfrac{7}{90}=\dfrac{126}{5(t-2)^2}</m></p></li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><m>-10</m></li>
+    <li><m>-16, 20</m></li></ol></p>
+</answer></exercise>
+
+<exercise number="2"><statement><p>Sketch a graph in the first quadrant.<ol marker="a." cols="2">
+    <li><p><m>f(x)=2x</m></p>
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{2}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row>
+                    <row> 
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><p><m>g(x)=2x^2</m></p>
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{2}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row>
+                    <row> 
+                        <cell><m>g(x)</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><p><m>h(x)=\dfrac{2}{x}</m></p>
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>\dfrac{1}{2}</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row>
+                    <row> 
+                        <cell><m>h(x)</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell></row>
+                    </tabular></sidebyside></li></ol></p>
+    </statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup><introduction><p>For Problems 3 and 4, <ol marker="a.">
+    <li>Use the values in the table to find the constant of variation, <m>k</m>, and write <m>y</m> as a function of <m>x</m>.</li>
+    <li>Fill in the rest of the table with the correct values.</li>
+    <li>What happens to <m>y</m> when you double the value of <m>x</m>?</li></ol></p></introduction>
+
+<exercise number="3"><statement><p><m>y</m> varies directly with <m>x</m>.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m></m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>1.5</m></cell>
+                        <cell><m>2.4</m></cell>
+                        <cell><m>\hphantom{\qquad}</m></cell>
+                        <cell><m>4.5</m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>y=0.3x</m></li>
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>15</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>-0.6</m></cell>
+                        <cell><m>1.5</m></cell>
+                        <cell><m>2.4</m></cell>
+                        <cell><m>3.6</m></cell>
+                        <cell><m>4.5</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>y</m> doubles also</li></ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>y</m> varies directly with the square of <m>x</m>.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m></m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m>24</m></cell>
+                        <cell><m>54</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m>150</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5<ndash/>8, decide whether<ol marker="a.">
+    <li><m>y</m> varies directly with <m>x</m></li>
+    <li><m>y</m> varies directly with <m>x^2</m></li>
+    <li><m>y</m> does not vary directly with a power of <m>x</m></li></ol></p>
+<p>Explain why your choice is correct. If your choice is (a) or (b), find the constant of variation, <m>k</m>.</p>
+</introduction>
+
+<exercise number="5"><statement>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>8</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>2.0</m></cell>
+                        <cell><m>4.5</m></cell>
+                        <cell><m>12.5</m></cell>
+                        <cell><m>32.0</m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p>(b), <m>k=0.5</m></p></answer></exercise>
+
+<exercise number="6"><statement>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>9</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>28</m></cell>
+                        <cell><m>44</m></cell>
+                        <cell><m>68</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="7"><statement>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>1.5</m></cell>
+                        <cell><m>2.4</m></cell>
+                        <cell><m>5.5</m></cell>
+                        <cell><m>8.2</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>3.0</m></cell>
+                        <cell><m>7.2</m></cell>
+                        <cell><m>33</m></cell>
+                        <cell><m>73.8</m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p>(c)</p></answer></exercise>
+
+<exercise number="8"><statement>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>1.2</m></cell>
+                        <cell><m>2.5</m></cell>
+                        <cell><m>6.4</m></cell>
+                        <cell><m>12</m></cell></row>
+                    <row> 
+                        <cell><m>y</m></cell>
+                        <cell><m>7.20</m></cell>
+                        <cell><m>31.25</m></cell>
+                        <cell><m>204.80</m></cell>
+                        <cell><m>720.00</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="9"><statement><p>Delbert's credit card statement lists three purchases he made while on a business trip in the Midwest. His company's accountant would like to know the sales tax rate on the purchases.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <col right="major" halign="left"/><col/><col/><col/>
+        <row><cell><m>\text{Price of item} </m></cell>
+            <cell><m>18</m></cell>
+            <cell><m>28</m></cell>
+            <cell><m>12</m></cell></row>
+        <row><cell><m>\text{Tax} </m></cell>
+            <cell><m>1.17</m></cell>
+            <cell><m>1.82</m></cell>
+            <cell><m>0.78</m></cell></row>
+        <row><cell><m>\text{Tax}/\text{Price} </m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></sidebyside><p><ol marker="a.">
+        <li><p>Compute the ratio of the tax to the price of each item. Is the tax proportional to the price? What is the tax rate?</p></li>
+        <li><p>Express the tax, <m>T</m>, as a function of the price, <m>p</m>, of the item.</p></li>
+        <li><p>Sketch a graph of the function by hand, and label the scales on the axes.</p></li>
+    </ol></p></statement>
+<answer><p>
+    <ol marker="a.">
+    <li><sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <col right="major" halign="left"/><col/><col/><col/>
+            <row><cell><m>\text{Price of item} </m></cell>
+                <cell><m>18</m></cell>
+                <cell><m>28</m></cell>
+                <cell><m>12</m></cell></row>
+            <row><cell><m>\text{Tax} </m></cell>
+                <cell><m>1.17</m></cell>
+                <cell><m>1.82</m></cell>
+                <cell><m>0.78</m></cell></row>
+            <row><cell><m>\text{Tax}/\text{Price} </m></cell>
+                <cell><m>\alert{0.065}</m></cell>
+                <cell><m>\alert{0.065}</m></cell>
+                <cell><m>\alert{0.065}</m></cell></row>
+        </tabular></sidebyside>
+        <p>Yes; <m>6.5\%</m></p></li>
+    <li><p><m>T = 0.065p</m></p></li>
+    <li><sidebyside  width="50%"><image source="images/fig-ans-3-1-1"><description>direct variation</description></image></sidebyside></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement><p>At constant acceleration from rest, the distance traveled by a race car is proportional to the square of the time elapsed. The highest recorded road-tested acceleration is 0 to 60 miles per hour in 3.07 seconds, which produces the following data.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <col right="major" halign="left"/><col/><col/><col/>
+        <row><cell><m>\text{Time (seconds)} </m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>2.5</m></cell>
+            <cell><m>3</m></cell></row>
+        <row><cell><m>\text{Distance (feet)} </m></cell>
+            <cell><m>57.32</m></cell>
+            <cell><m>89.563</m></cell>
+            <cell><m>128.97</m></cell></row>
+        <row><cell><m>\text{Distance/Time}^2</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></sidebyside>
+    <p><ol marker="a.">
+        <li><p>Compute the ratios of the distance traveled to the square of the time elapsed. What was the acceleration, in feet per second squared?</p></li>
+        <li><p>Express the distance traveled, <m>d</m>, as a function of time in seconds, <m>t</m>.</p></li>
+        <li><p>Sketch a graph of the function by hand, and label the scales on the axes.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="11"><statement><p>The weight of an object on the Moon varies directly with its weight on Earth. A person who weighs 150 pounds on Earth would weigh only 24.75 pounds on the Moon.<ol marker="a.">
+    <li><p>Find a function that gives the weight <m>m</m> of an object on the Moon in terms of its weight <m>w</m> on Earth. Complete the table and graph your function in a suitable window.</p>
+        <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row><cell><m>w</m></cell>
+                    <cell><m>50</m></cell>
+                    <cell><m>100</m></cell>
+                    <cell><m>200</m></cell>
+                    <cell><m>400</m></cell></row>
+                <row><cell><m>m</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell></row>
+            </tabular></sidebyside></li>
+        <li><p>How much would a person weigh on the Moon if she weighs 120 pounds on Earth?</p></li>
+        <li><p>A piece of rock weighs 50 pounds on the Moon. How much will it weigh back on Earth?</p></li>
+        <li><p>If you double the weight of an object on Earth, what will happen to its weight on the Moon?</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>m = 0.165w</m></p>
+            <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row><cell><m>w</m></cell>
+                    <cell><m>50</m></cell>
+                    <cell><m>100</m></cell>
+                    <cell><m>200</m></cell>
+                    <cell><m>400</m></cell></row>
+                <row><cell><m>m</m></cell>
+                    <cell><m>\alert{8.25}</m></cell>
+                    <cell><m>\alert{16.5}</m></cell>
+                    <cell><m>\alert{33}</m></cell>
+                    <cell><m>\alert{66}</m></cell></row>
+            </tabular></sidebyside></li>
+    <li><p>19.8 lb</p></li>
+    <li><p>303.03 lb</p></li>
+    <li><p>It will double.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>The length of a rectangle is 10 inches, and its width is 8 inches. Suppose we increase the length of the rectangle while holding the width constant.<ol marker="a.">
+        <li><p>Fill in the table.</p>
+        <sidebyside><tabular bottom="minor" top="minor" left="minor" right="minor" halign="center">
+            <row><cell>Length</cell>
+                <cell>Width</cell>
+                <cell>Perimeter</cell>
+                <cell>Area</cell></row>
+            <row><cell><m>10</m></cell>
+                <cell><m>8</m></cell>
+                <cell></cell>
+                <cell></cell></row>
+            <row><cell><m>12</m></cell>
+                <cell><m>8</m></cell>
+                <cell></cell>
+                <cell></cell></row>
+            <row><cell><m>15</m></cell>
+                <cell><m>8</m></cell>
+                <cell></cell>
+                <cell></cell></row>
+            <row><cell><m>20</m></cell>
+                <cell><m>8</m></cell>
+                <cell></cell>
+                <cell></cell></row>
+        </tabular></sidebyside></li>
+    <li><p>Does the perimeter vary directly with the length?</p></li>
+    <li><p>Write a formula for the perimeter of the rectangle in terms of its length.</p></li>
+    <li><p>Does the area vary directly with the length?</p></li>
+    <li><p>Write a formula for the area of the rectangle in terms of its length.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="13"><statement><p>Hubble's law says that distant galaxies are receding from us at a rate that varies directly with their distance. (The speeds of the galaxies are measured using a phenomenon called redshifting.) A galaxy in the constellation Ursa Major is 980 million light-years away and is receding at a speed of 15,000 kilometers per second.
+    <ol marker="a.">
+        <li><p>Find a function that gives the speed, <m>v</m>, of a galaxy in terms of its distance, <m>d</m>, from Earth. Complete the table and graph your function in a suitable window. (Distances are given in millions of light-years.)</p>
+            <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row><cell><m>d</m></cell>
+                    <cell><m>500</m></cell>
+                    <cell><m>1000</m></cell>
+                    <cell><m>2000</m></cell>
+                    <cell><m>4000</m></cell></row>
+                <row><cell><m>m</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell></row>
+            </tabular></sidebyside></li>
+        <li><p>How far away is a galaxy in the constellation Hydra that is receding at 61,000 kilometers per second?</p></li>
+        <li><p>A galaxy in Leo is 1240 million light-years away. How fast is it receding from us?</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>v=15.306 d</m></li>
+    <li>3985 million light-years</li>
+    <li>18,979 km/sec</li></ol></p></answer>
+</exercise>
+
+<exercise number="14"><statement><p>The length, <m>L</m>, of a pendulum varies directly with the square of its period, <m>T</m>, the time required for the pendulum to make one complete swing back and forth. The pendulum on a grandfather clock is 3.25 feet long and has a period of 2 seconds.<ol marker="a.">
+        <li><p>Express <m>L</m> as a function of <m>T</m>. Complete the table and graph your function in a suitable window.</p>
+            <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row><cell><m>T</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell></row>
+                <row><cell><m>L</m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell></row>
+            </tabular></sidebyside></li>
+        <li><p>How long is the Foucault pendulum in the Pantheon in Paris, which has a period of 17 seconds?</p></li>
+        <li><p>A hypnotist uses a gold pendant as a pendulum to mesmerize his clients. If the chain on the pendant is 9 inches long, what is the period of its swing?</p></li>
+        <li><p>In order to double the period of a pendulum, how must you vary its length?</p></li>
+    </ol></p></statement></exercise>
+
+ <exercise number="15"><statement><p>The amount of power, <m>P</m>, generated by a windmill varies directly with the cube of the wind speed, <m>w</m>. A windmill on Oahu, Hawaii, produces 7300 kilowatts of power when the wind speed is 32 miles per hour.<ol marker="a.">
+        <li><p>Express the power as a function of wind speed. Complete the table and graph your function in a suitable window.</p>
+            <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row><cell><m>w</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell>
+                    <cell><m>40</m></cell>
+                    <cell><m>80</m></cell></row>
+                <row><cell><m>P</m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell>
+                    <cell><m>\hphantom{0000} </m></cell></row>
+            </tabular></sidebyside></li>
+        <li><p>How much power would the windmill produce in a light breeze of 15 miles per hour?</p></li>
+        <li><p>What wind speed is needed to produce 10,000 kilowatts of power?</p></li>
+        <li><p>If the wind speed doubles, what  happens to the amount of power generated?</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>P = \dfrac{1825}{8192}w^3\approx0.228w^3</m></p>
+        <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row><cell><m>w</m></cell>
+                <cell><m>10</m></cell>
+                <cell><m>20</m></cell>
+                <cell><m>40</m></cell>
+                <cell><m>80</m></cell></row>
+            <row><cell><m>P</m></cell>
+                <cell><m>\alert{223} </m></cell>
+                <cell><m>\alert{1782} </m></cell>
+                <cell><m>\alert{14,259} </m></cell>
+                <cell><m>\alert{114,074} </m></cell></row>
+        </tabular></sidebyside></li>
+   <li><p>752 kilowatts</p></li>
+    <li><p>33.54 mph</p></li>
+    <li><p>It is multiplied by 8.</p></li>
+</ol></p></answer></exercise>
+
+<exercisegroup><introduction><p>The functions described by a table or a graph in Problems 16-19 are examples of direct variation.<ol marker="a."> 
+    <li>Find an algebraic formula for the function, including the constant of variation, <m>k</m>.</li> 
+    <li>Answer the question in the problem.</li></ol></p></introduction>
+
+<exercise number="16"><statement><sidebyside widths="50% 27%" valigns="middle middle"><p>A wide pipe can handle a greater water flow than a narrow pipe. The graph shows the water flow through a pipe, <m>w</m>, as a function of its radius, <m>r</m>. How great is the water flow through a pipe of radius of 10 inches?</p>
+    <image source="images/fig-hw-5-4-16"><description>increasing concave up</description></image></sidebyside></statement>
+</exercise>
+
+<exercise number="17"><statement><sidebyside widths="50% 27%" valigns="middle middle"><p>The faster a car moves, the more difficult it is to stop. The graph shows the distance, <m>d</m>, required to stop a car as a function of its velocity, <m>v</m>, before the brakes were applied. What distance is needed to stop a car moving at 100 kilometers per hour?</p>
+    <image source="images/fig-hw-5-4-17"><description>increasing concave up</description></image></sidebyside></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>d = 0.005v^2</m></p></li>
+    <li><p>50 m</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="18"><statement><p>The maximum height attained by a cannonball depends on the speed at which it was shot. The table shows maximum height as a function of initial speed. What height is attained by a cannonball whose initial upward speed was 100 feet per second?</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row><cell>Speed (ft/sec)</cell>
+            <cell>Height (ft)</cell></row>
+        <row><cell><m>40</m></cell>
+            <cell><m>200</m></cell></row>
+        <row><cell><m>50</m></cell>
+            <cell><m>31.25</m></cell></row>
+        <row><cell><m>60</m></cell>
+            <cell><m>450</m></cell></row>
+        <row><cell><m>70</m></cell>
+            <cell><m>612.5</m></cell></row>
+    </tabular></sidebyside></statement></exercise>
+
+<exercise number="19"><statement><p>The strength of a cylindrical rod depends on its diameter. The greater the diameter of the rod, the more weight it can support before collapsing. The table shows the maximum weight supported by a rod as a function of its diameter. How much weight can a 1.2-centimeter rod support before collapsing?</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row><cell>Diameter (cm)</cell>
+            <cell>Weight (newtons)</cell></row>
+        <row><cell><m>0.5</m></cell>
+            <cell><m>150</m></cell></row>
+        <row><cell><m>1.0</m></cell>
+            <cell><m>600</m></cell></row>
+        <row><cell><m>1.5</m></cell>
+            <cell><m>1350</m></cell></row>
+        <row><cell><m>2.0</m></cell>
+            <cell><m>2400</m></cell></row>
+    </tabular></sidebyside></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>W = 600d^2 </m></p></li>
+    <li><p>864 newtons</p></li>
+</ol></p></answer></exercise>
+</exercisegroup>
+
+<exercise number="20"><statement><p>The wind resistance, <m>W</m>, experienced by a vehicle on the freeway varies directly with the square of its speed, <m>v</m>.<ol marker="a.">
+        <li><p>If you double your speed, what happens to the wind resistance?</p></li>
+        <li><p>If you drive one-third as fast, what happens to the wind resistance?</p></li>
+        <li><p>If you decrease your speed by 10%, what happens to the wind resistance?</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>Wind resistance quadruples.</p></li>
+    <li><p>It is one-ninth as great.</p></li>
+    <li><p>It is decreased by 19% because it is 81% of the original.</p></li>
+</ol></p></answer></exercise>
+
+</subexercises>
+
+</exercises>

@@ -1,0 +1,419 @@
+<exercises xml:id="prac-5-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 5.1</title>
+
+<exercisegroup><introduction><p>For Problems 1-6, answer with a sentence.</p></introduction>
+
+<exercise number="1"><statement><p>Explain what like terms are.  Give an example of like terms, and an example of unlike terms.</p></statement>
+<answer><p>Terms in which the variable parts are the same. <m>2x,~ 3x; ~~ 2x,~ 3y</m></p></answer></exercise>
+
+<exercise number="2"><statement><p>What is a coefficient?  Give an example.</p></statement></exercise>
+
+<exercise number="3"><statement><p>How can you test to see if two expressions are equivalent?</p></statement>
+<answer><p>Check to see if they both simplify to the same expression.</p></answer></exercise>
+
+<exercise number="4"><statement><p>What does an exponent tell you about its base?  Give an example.</p></statement></exercise>
+
+<exercise number="5"><statement><p>How does rearranging the factors in a product change the result?</p></statement>
+<answer><p>It does not change the result.</p></answer></exercise>
+
+<exercise number="6"><statement><p>What is the difference between factors and terms?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 7-12, decide whether the statement is true or false.</p></introduction>
+
+<exercise number="7"><statement><p>Like terms must have the same coefficient.</p></statement>
+<answer><p>False</p></answer></exercise>
+
+<exercise number="8"><statement><p>To multiply a term by a constant, we multiply each factor by the constant.</p></statement></exercise>
+
+<exercise number="9"><statement><p>The coefficient of the term <m>ab</m> is 1.</p></statement>
+<answer><p>True</p></answer></exercise>
+
+<exercise number="10"><statement><p>When we add or subtract like terms, the variable parts of the terms are altered as well as the coefficients.</p></statement></exercise>
+
+<exercise number="11"><statement><p>Terms with the same base but different exponents cannot be combined.</p></statement>
+<answer><p>True</p></answer></exercise>
+
+<exercise number="12"><statement><p>Expressions with the same base but different exponents cannot be multiplied together.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13-16, choose three values for the variable and show that the two expressions are the same for those values. (Do not choose 0 or 1.)</p></introduction>
+
+<exercise number="13"><statement><p><m>9g + 2g;  ~11g</m></p></statement>
+<answer><p>Many answers are possible.</p></answer></exercise>
+
+<exercise number="14"><statement><p><m>14v - 9v;  ~5v</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>5(3a);  ~15a</m></p></statement>
+<answer><p>Many answers are possible.</p></answer></exercise>
+
+<exercise number="16"><statement><p><m>4(6b);  ~24b</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="17"><statement><p>Explain the difference between <m>2x</m>  and <m>x^2</m>. Illustrate with a numerical example.</p></statement>
+<answer><p>In <m>2x</m> we multiply the variable by 2; in <m>x^2</m> we multiply the variable by itself.</p></answer></exercise>
+
+<exercise number="18"><statement><p>Explain the difference between <m>3x</m>  and <m>x^3</m>. Illustrate with a numerical example.</p></statement></exercise>
+
+<exercise number="19"><statement><p>
+<ol marker="a.">
+  <li><p>Explain the difference between <m>4x + 7x</m>  and  <m>4(7x)</m>.</p></li>
+  <li><p>Evaluate both of the expressions in part (a) for <m>x=3</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>In <m>4x + 7x</m> we add terms, and in <m>4(7x)</m> we multiply coefficients.</p></li>
+  <li><p><m>33; ~84</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>
+  <ol marker="a.">
+  <li><p>Explain the difference between <m>3a + 2a</m>  and <m>3(2a)</m>.</p></li>
+  <li><p>Evaluate both of the expressions in part (a) for <m>a=4</m></p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 21-28, add or subtract like terms.</p></introduction>
+
+<exercise number="21"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>4y + 2y</m></li>
+  <li><m>6x - 2x</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><m>6y</m></li>
+  <li><m>4x</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>d + d</m></li>
+  <li><m>h - h</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="23"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>8b + 8b</m></li>
+  <li><m>4b - 4b</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><m>16b</m></li>
+  <li><m>0</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>3pq + 12pq</m></li>
+  <li><m>18st-11st</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="25"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>47W + W</m></li>
+  <li><m>29K - 28K</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><m>48W</m></li>
+  <li><m>K</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>7.6a - 5.2 a</m></li>
+  <li><m>6.1p-4.3p</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="27"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>5x-4x+2x</m></li>
+  <li><m>2z+6z-z</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><m>3x</m></li>
+  <li><m>7z</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>ab + 5ab - 3ab</m></li>
+  <li><m>6bc+4bc-8bc</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 29-34, combine like terms.</p></introduction>
+
+<exercise number="29"><statement><m>6t+3-4t</m></statement>
+<answer><m>2t+3</m></answer></exercise>
+
+<exercise number="30"><statement><m>2+8t-5t</m></statement></exercise>
+
+<exercise number="31"><statement><m>13+8y-4y-7</m></statement>
+<answer><m>4y+6</m></answer></exercise>
+
+<exercise number="32"><statement><m>7+4y+6y+8</m></statement></exercise>
+
+<exercise number="33"><statement><m>22st+5s-6st-4s</m></statement>
+<answer><m>16st+s</m></answer></exercise>
+
+<exercise number="34"><statement><m>9u+6uv+8uv-2u</m></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 35-40, simplify.</p></introduction>
+
+<exercise number="35"><statement><m>6(5d)</m></statement>
+<answer><m>30d</m></answer></exercise>
+
+<exercise number="36"><statement><m>10(7v)</m></statement></exercise>
+
+<exercise number="37"><statement><m>0.25(16a)</m></statement>
+<answer><m>4a</m></answer></exercise>
+
+<exercise number="38"><statement><m>0.30(800x)</m></statement></exercise>
+
+<exercise number="39"><statement><m>20(0.50m)</m></statement>
+<answer><m>10m</m></answer></exercise>
+
+<exercise number="40"><statement><m>100(0.75n)</m></statement></exercise>
+</exercisegroup> 
+
+<exercisegroup cols="2"><introduction><p>For Problems 41-46, simplify by combining like terms.</p></introduction>
+
+<exercise number="41"><statement><m>6w^3 - 3w^3</m></statement>
+<answer><m>3w^3</m></answer></exercise>
+
+<exercise number="42"><statement><m>4s^2 + 7s^2</m></statement></exercise>
+
+<exercise number="43"><statement><m>8bc + 5bc</m></statement>
+<answer><m>13bc</m></answer></exercise>
+
+<exercise number="44"><statement><m>uv + uv</m></statement></exercise>
+
+<exercise number="45"><statement><m>pq^2 - pq^2</m></statement>
+<answer><m>0</m></answer></exercise>
+
+<exercise number="46"><statement><m>3u^3v - 3u^3v</m></statement></exercise>
+</exercisegroup> 
+
+<exercisegroup><introduction><p>For Problems 47-56, simplify the expression if possible. If the expression cannot be simplified, write "cannot be simplified."</p></introduction>
+
+<exercise number="47"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x+x</m></li>
+  <li><m>x \cdot x</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><m>2z</m></li>
+  <li><m>x^2</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="48"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x^2+x^2</m></li>
+  <li><m>x^2(x^2)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="49"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x+x^2</m></li>
+  <li><m>x(x^2)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>cannot be simplified</p></li>
+  <li><m>x^3</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="50"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>2x+3x</m></li>
+  <li><m>2x(3x)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="51"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x^2+x^3</m></li>
+  <li><m>x^2(x^3)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>cannot be simplified</p></li>
+  <li><m>x^5</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="52"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x+y</m></li>
+  <li><m>x \cdot y</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="53"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x+xy</m></li>
+  <li><m>x(xy)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>cannot be simplified</p></li>
+  <li><m>x^2y</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="54"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>xy+xy</m></li>
+  <li><m>xy(xy)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="55"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>2x+3y</m></li>
+  <li><m>2x(3y)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>cannot be simplified</p></li>
+  <li><m>6xy</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="56"><statement><p>
+<ol marker="a." cols="2">
+  <li><m>x^2y+xy^2</m></li>
+  <li><m>x^2y(xy^2)</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="57"><statement><p>Explain the difference between <m>2x^3</m> and <m>(2x)^3</m>.  Illustrate with a numerical example.</p></statement>
+
+<answer><p>In <m>2x^3</m> only <m>x</m> is cubed; in <m>(2x)^3</m>, <m>2x</m> is cubed. For <m>x=10,~ 2x^3 = 2000</m> and <m>(2x)^3= 8000</m>.</p></answer></exercise>
+
+<exercise number="58"><statement><p>Explain the difference between  <m>(3+h)^3</m>  and  <m>3+h^3</m>.  Illustrate with a numerical example.</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 59-64,  evaluate the expressions for the given value. Which pair of expressions in each group are equivalent?</p></introduction>
+
+<exercise number="59"><statement><p>Evaluate for <m>a=3</m>:
+<ol marker="a." cols="3">
+    <li><m>a^2+a^2</m></li>
+    <li><m>2a^2</m></li>
+    <li><m>a^4</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li><m>18</m></li>
+    <li><m>18</m></li>
+    <li><m>81</m></li>
+</ol></p>
+<p><m>a^2+a^2</m> and <m>2a^2</m> are equivalent.</p></answer></exercise>
+
+<exercise number="60"><statement><p>Evaluate for <m>b=2</m>:
+<ol marker="a." cols="3">
+    <li><m>b^2(b^3)</m></li>
+    <li><m>b^5</m></li>
+    <li><m>b^6</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="61"><statement><p>Evaluate for <m>v=5</m>:
+<ol marker="a." cols="3">
+    <li><m>2v(3v)</m></li>
+    <li><m>6v</m></li>
+    <li><m>6v^2</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li><m>150</m></li>
+    <li><m>30</m></li>
+    <li><m>150</m></li>
+</ol></p>
+<p><m>2v(3v)</m> and <m>6v^2</m> are equivalent.</p></answer></exercise>
+
+<exercise number="62"><statement><p>Evaluate for <m>t=4</m>:
+<ol marker="a." cols="3">
+    <li><m>2t+3t</m></li>
+    <li><m>5t^2</m></li>
+    <li><m>5t</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="63"><statement><p>Evaluate for <m>w=2</m>:
+<ol marker="a." cols="3">
+    <li><m>5w^2(2w^2)</m></li>
+    <li><m>10w^2</m></li>
+    <li><m>10w^4</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li><m>160</m></li>
+    <li><m>40</m></li>
+    <li><m>160</m></li>
+</ol></p>
+<p><m>5w^2(2w^2)</m> and <m>10w^4</m> are equivalent.</p></answer></exercise>
+
+<exercise number="64"><statement><p>Evaluate for <m>q=4</m>:
+<ol marker="a." cols="3">
+    <li><m>6q^2-3q^2</m></li>
+    <li><m>3q^2</m></li>
+    <li><m>3</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 65-68,  evaluate the expressions for the given value.</p></introduction>
+
+<exercise number="65"><statement><p>Evaluate for <m>x=3</m>:
+<ol marker="a." cols="2">
+    <li><m>18-4x</m></li>
+    <li><m>(18-4)x</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+    <li><m>6</m></li>
+    <li><m>42</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="66"><statement><p>Evaluate for <m>b=2</m>:
+<ol marker="a." cols="2">
+    <li><m>5 \cdot 6 - b^2</m></li>
+    <li><m>5(6-b^2)</m></li>
+</ol></p></statement></exercise>
+
+<exercise number="67"><statement><p>Evaluate for <m>m=5</m>:
+<ol marker="a." cols="2">
+    <li><m>3m^2-2m</m></li>
+    <li><m>3(m^2-m)-2</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+    <li><m>65</m></li>
+    <li><m>58</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="68"><statement><p>Evaluate for <m>c=4</m>:
+<ol marker="a." cols="2">
+    <li><m>12-2(c^2-10)</m></li>
+    <li><m>12-(2c^2-20)</m></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+</exercises>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

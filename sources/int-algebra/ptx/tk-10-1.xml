@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkLogFunctions" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Logarithmic Functions</title>
+           
+<subsubsection xml:id="tkGraphLogFncn"> <title>Graph log functions</title>
+
+<p>One way to graph a log function is to first make a table of values for its inverse function, the exponential function with the same base, then interchange the variables.</p>
+
+<exercise><statement><p><ol marker="a.">
+    <li><p>Complete the table of values and graph on the same grid: <m>~f(x)=x^3~</m> and <m>~g(x)=3^x~</m></p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~~~x~~~</m></cell>
+                        <cell><m>~~~0~~~</m></cell>
+                        <cell><m>~~~1~~~</m></cell>
+                        <cell><m>~~~2~~~</m></cell>
+                        <cell><m>~~~3~~~</m></cell>
+                        <cell><m>~~~4~~~</m></cell>
+                        <cell><m>~~~5~~~</m></cell>
+                        <cell><m>~~~6~~~</m></cell>
+                        <cell><m>~~~8~~~</m></cell>
+                        <cell><m>~~10~~~</m></cell></row>
+                    <row> 
+                        <cell><m>~f(x)~</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    <row> 
+                        <cell><m>~g(x)~</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular>
+        <!--<image width="50%" source="images/fig-5-2-3"><description>grid</description></image>-->
+    <image width="50%"><description>Grid for 3 to x and x-cubed</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.45]
+    \draw[cyan] (0,0) grid (10,10);
+    \draw[black,thick, ->, >=stealth'] (0,0)--(10.9,0) node[right]{$x$};
+    \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.9) node[above]{$y$};
+    \foreach \x [evaluate=\x as \y using int(100*\x)]  in  {5,10} {
+        \draw[black] (\x,.15) --++(0,-.3)  node[below]   {$\x$};
+        \draw[black] (.15,\x) --++(-.3,0)  node[left]   {$\y$};
+    }
+    \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><p>Use your tables from part (a) to graph <m>~h(x)=\sqrt[3]{x}~</m> and <m>~j(x)=\log_3 {(x)}~</m> on the same grid.</p>
+        <!--<image width="50%" source="images/fig-5-2-5"><description>grid</description></image>-->
+    <image width="50%"><description>Grid for log base 3 and cube root</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.45]
+    \draw[cyan] (0,0) grid (10,10);
+    \draw[black,thick, ->, >=stealth'] (0,0)--(10.9,0) node[right]{$x$};
+    \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.9) node[above]{$y$};
+    \foreach \x [evaluate=\x as \y using int(100*\x)]  in  {5,10} {
+        \draw[black] (\x,.15) --++(0,-.3)  node[below]   {$\y$};
+        \draw[black] (.15,\x) --++(-.3,0)  node[left]   {$\x$};
+    }
+    \end{tikzpicture}]]>
+    </latex-image></image></li>
+</ol></p></statement> 
+<answer><p><ol marker="a.">
+    <li><!--<image width="50%" source="images/fig-5-2-4"><description>graph</description></image>-->
+    <image width="50%"  xml:id="fig-3-to-x-and-x-cubed"><description>3 to x and x-cubed</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.45]
+    \draw[cyan] (0,0) grid (10,10);
+    \draw[black,thick, ->, >=stealth'] (0,0)--(10.9,0) node[right]{$x$};
+    \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.9) node[above]{$y$};
+    \foreach \x [evaluate=\x as \y using int(100*\x)]  in  {5,10} {
+        \draw[black] (\x,.15) --++(0,-.3)  node[below]   {$\x$};
+        \draw[black] (.15,\x) --++(-.3,0)  node[left]   {$\y$};
+    }
+    \draw[samples=65,domain={0}:{ln(1000)/ln(3))},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{3^(\x)/100});
+    \draw[samples=65,domain={0:10},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)},{(\x)^3 /100 });
+    \node[text=blue] at (4.8 ,10.8) {$g(x)=3^x$};
+    \node[text=red] at (9.5,10.8) {$f(x)=x^3$};
+    \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><!--<image width="50%" source="images/fig-5-2-6"><description>graph</description></image>-->
+    <image width="50%"  xml:id="fig-log-base-3-and-cube-toot"><description>log base 3 and cube root</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.45]
+    \draw[cyan] (0,0) grid (10,10);
+    \draw[black,thick, ->, >=stealth'] (0,0)--(10.9,0) node[right]{$x$};
+    \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.9) node[above]{$y$};
+    \foreach \x [evaluate=\x as \y using int(100*\x)]  in  {5,10} {
+        \draw[black] (\x,.15) --++(0,-.3)  node[below]   {$\y$};
+        \draw[black] (.15,\x) --++(-.3,0)  node[left]   {$\x$};
+    }
+    \draw[samples=65,domain={0.01}:{10},smooth,variable=\x,blue, thick, <->, >=stealth'] plot ({(\x)},{ln(100*\x)/ln(3)});
+    \draw[samples=65,domain={0:10},smooth,variable=\x,red, thick, <->, >=stealth'] plot ({(\x)},{(100*\x)^(1/3)});
+    \node[text=blue, fill=white, inner sep=1] at (8.8 ,4.8) {$j(x)=\log_3 {x}$};
+    \node[text=red] at (9.5,10.8) {$h(x)=\sqrt[3]{x}$};
+    \end{tikzpicture}]]>
+    </latex-image></image></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkUseFncnNot"><title>Use function notation</title>
+
+<p>A log function is the inverse of the exponential function with the same base, and vice versa.</p>
+
+<example><statement><p> For each function <m>~f(x)~</m>, decide whether <m>f(a+b)=f(a)+f(b)</m>.
+<ol marker="a." cols="2">
+    <li><m>f(x)=3^x</m></li>
+    <li><m>f(x)=\log_3 {(x)}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p><m>f(a+b)=3^{a+b},~</m> and <m>~f(a)+f(b) = 3^a+3^b.~</m></p>
+        <p> But <m>~3^{a+b}~</m> is not equivalent to <m>~3^a+3^b;~</m> in fact <m>~3^{a+b} =3^a \cdot 3^b.</m></p>
+        <p>So for this function, <m>f(a+b) \not= f(a)+f(b)</m>.</p></li>
+    <li><p><m>f(a+b)=\log_3 {(a+b)},~</m> and <m>~f(a)+f(b) = \log_3 {(a)} +\log_3 {(b)}.~</m></p>
+        <p> But <m>~\log_3 {(a+b)}~</m> is not equivalent to <m>~\log_3 {(a)} +\log_3 {9};~</m> in fact <m>~\log_3 {(ab)} = \log_3 {(a)} +\log_3 {(b)}.</m></p>
+        <p>So for this function, <m>f(a+b) \not= f(a)+f(b)</m>.</p></li>
+    </ol></p></solution></example>
+
+<exercise><statement><p><m>g(x)=5^x~</m>. Evaluate and simplify if possible.
+<ol marker="a." cols="2">
+    <li><m>g(3+t)</m></li>
+    <li><m>g(3t)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>125 \cdot 5^{t}</m></li>
+        <li><m>125^t</m></li>
+</ol></p></answer></exercise>
+
+<example><statement><p><m>q(x)=9^x~</m> and <m>p(x)</m> is its inverse function. Evaluate if possible.
+<ol marker="a." cols="2">
+    <li><m>q\left(\dfrac{1}{2}\right)</m></li>
+    <li><m>p(3)</m></li>
+    <li><m>q(0)</m></li>
+    <li><m>p(0)</m></li>
+</ol></p></statement>
+<solution><p><ol marker="a." cols="2">
+        <li><m>3</m></li>
+        <li><m>\dfrac{1}{2}</m></li>
+        <li><m>1</m></li>
+        <li>undefined</li>
+</ol></p></solution></example>
+
+<exercise><statement><p><m>h(x)=\log_4 {(x)}.~</m> Evaluate if possible.
+<ol marker="a." cols="2">
+    <li><m>h(4)</m></li>
+    <li><m>g(4)</m>, where <m>g</m> is the inverse function for <m>h</m></li>
+    <li><m>h(0)</m></li>
+    <li><m>g(0)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+        <li><m>1</m></li>
+        <li><m>256</m></li>
+        <li>undefined</li>
+        <li><m>1</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p><m>f(x)=\log_8 {(x)}~</m>. Evaluate and simplify if possible.
+<ol marker="a." cols="2">
+    <li><m>f(64p)</m></li>
+    <li><m>f(64+p)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+        <li><m>2+\log_8 {(p)}</m></li>
+        <li>cannot be simplified</li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkUseLogProps"><title>Use the properties of logarithms</title>
+
+<p>The three properties of logarithms are helpful in making computations involving logs.</p>
+
+<assemblage><title>Properties of Logarithms</title>
+    <p>If <m>x</m>, <m>y</m>, <m>b \gt 0</m>, and <m>b\ne 1</m>, then <ol marker="1.">
+        <li><p><m>\log_{b}{(xy)} = \log_{b}{(x)} + \log_{b}{(y)}</m></p></li>
+        <li><p><m>\log_{b}\left(\dfrac{x}{y}\right) = \log_b {(x)} - \log_b {(y)}</m></p></li>
+        <li><p><m>\log_b {(x^k)} = k \log_b {(x)} </m></p></li>
+</ol></p></assemblage>
+
+
+<example><statement><p>If <m>\log_b {(10)} = 2.303</m> and <m>\log_b {(2)} = 0.693</m>, what is <m>\log_b {(5)}</m>?</p></statement>
+
+<solution><p>Because <m>5 = \dfrac{10}{2}</m>,
+    <me>\log_b {(5)} = \log_b \left(\dfrac{10}{2}\right) = \log_b {(10)} - \log_b {(2)} = 2.303 - 0.693 = 1.61</me></p></solution></example>
+
+<example><statement><p>If <m>\log_b {(10)} = 2.303</m> and <m>\log_b {(2)} = 0.693</m>, what is <m>\log_b {(20)}</m>?</p></statement>
+
+<solution><p>Because <m>20 = 10 \cdot 2</m>,
+    <me>\log_b {(20)} = \log_b {(10 \cdot 2)} = \log_b {(10)} + \log_b {(2)} = 2.303 + 0.693 = 2.996</me></p></solution></example>
+
+<exercise><statement><p> Take the log of each number. What do you notice?
+<ol marker = "a." cols="2">
+    <li><m>8 \cdot 100 = 800</m></li>
+    <li><m>12 \cdot 1000 = 12,000</m></li>
+    <li><m>20 \cdot 25 = 500</m></li>
+    <li><m>200 \cdot 250 = 50,000</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>\log {(8)} + \log {(10)} = \log {(800)}</m></li>
+        <li><m>\log {(12)} + \log {(100)} = \log {(12,000)}</m></li>
+        <li><m>\log {(20)} + \log {(25)} = \log {(500)}</m></li>
+        <li><m>\log {(200)} + \log {(250)} = \log {(50,000)}</m></li></ol></p>
+    </answer></exercise>
+
+<exercise><statement><p>Compare the two operations. What do you notice?
+<ol marker = "a.">
+    <li>(i) Compute <m>10^{2.68}~~~~~~~~~~~~~~~~~</m>  (ii) Solve for <m>x:~~\log {(x)} = 2.68</m></li>
+    <li>(i) Compute <m>10^{-0.75}~~~~~~~~~~~~~~~~</m>  (ii) Solve for <m>x:~~\log {(x)} = -0.75</m></li>
+</ol></p></statement>
+<answer><p><ol marker = "a.">
+        <li>(i) and (ii) have the same answer: <m>478.63</m></li>
+        <li>(i) and (ii) have the same answer: <m>0.1778</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p><ol marker = "a.">
+    <li>The ratio of <m>N</m> to <m>P</m> is <m>32.6</m>.  Compute <m>\log {(N)} - \log {(P)}</m>.</li>
+    <li><m>\log {(z)} - \log {(t)} = 2.5</m>.  Compute <m>\dfrac{z}{t}</m>.</li>
+</ol></p></statement>
+<answer><p><ol marker = "a.">
+        <li><m>1.5132</m></li>
+        <li><m>316.2278</m></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+</subsection>

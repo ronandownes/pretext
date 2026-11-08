@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="The-Law-of-Sines"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>The Law of Sines</title><introduction>
+<idx><h>law of sines</h></idx>
+
+<p>We have learned to use the trigonometric ratios to solve right triangles. But the trig ratios are only valid for the sides of right triangles. Can we find unknown sides or angles in an oblique triangle?</p> 
+
+    <image width="75%" xml:id="fig-3-2-intro"><description>rigth triangle, oblique triangle</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture}
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (2,0);
+    \coordinate (B) at (0,1.5);
+
+    \draw[blue, thick] (C) rectangle +(.25,.25);
+    \draw[black] (A) node[anchor=north west] {$A$};
+    \draw[black] (B) node[anchor=south east, yshift=-3] {$B$};
+    \draw[black] (C) node[anchor=north east] {$C$};
+
+    \draw[black, thick] (C)--(B) node[left,midway] {\color{blue}?};
+    \draw[black, thick] (A)--(B) node[above right,midway] {\color{blue}$c$};
+    \draw[black, thick] (A)--(C) ;
+
+    \draw[red,thick] (A)++(-.5,0) arc(180:{180-atan(1.5/2)}:.5);
+
+    \node[text width=4.cm, text=blue] at (1,-1.2){We can find $a$ if we know $A$ and $c$ (and $C=90\degree$).};
+
+    %second triangle
+    \coordinate (C) at (5,0);
+    \coordinate (A) at (8,0);
+    \coordinate (B) at (5.5,1.5);
+
+    \draw[black] (A) node[anchor=north west] {$A$};
+    \draw[black] (B) node[anchor=south east, yshift=-3] {$B$};
+    \draw[black] (C) node[anchor=north east] {$C$};
+
+    \draw[black, thick] (C)--(B) node[left,midway] {\color{blue}?};
+    \draw[black, thick] (A)--(B) node[above right,midway] {\color{blue}$c$};
+    \draw[black, thick] (A)--(C) ;
+
+    \draw[red,thick] (A)++(-.5,0) arc(180:{180-atan(1.5/2.5)}:.5);
+
+    \node[text width=4.cm, text=blue] at (6.6,-1.){Can find $a$ if we know $A$ and $c$ and $C$?};
+        \end{tikzpicture}]]>
+    </latex-image></image> 
+
+<p>In this section and the next we find relationships among the sides and angles of oblique triangles. These relationships are called the Law of Sines and the Law of Cosines. To derive these new rules, we use what we already know about right triangles.</p> 
+
+<note><p>Reducing a new problem to an earlier one is a frequently used technique in mathematics.</p></note>
+
+<p>Consider the oblique triangle below. By drawing in the altitude <m>h</m> of the triangle, we create two right triangles, <m>\triangle BCD</m> and <m>\triangle ABD</m>, as shown in the figure. Now we can write expressions in terms of <m>h</m> for <m>\sin A</m> and for <m>\sin C</m>.</p>
+
+<sidebyside widths="55% 40%" valigns="middle middle" margins="0% 0%">
+    <stack><p>Looking at <m>\triangle BCD</m>, we see that 
+    <me>\dfrac{h}{a} = \sin (C).</me>
+Looking at <m>\triangle ABD</m>, we see that 
+    <me>\dfrac{h}{c} = \sin (A).</me> </p></stack>
+
+    <image xml:id="fig-3-2-tworight"><description>oblique triangle with altitude</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.72]
+    \coordinate (C) at (0,0);
+    \coordinate (A) at (6.5,0);
+    \coordinate (B) at (2.5,2.5);
+    \coordinate (D) at (2.5,0);
+
+    \draw[blue, thick] (D) rectangle +(-.25,.25);
+    \draw[blue, thick] (D) rectangle +(.25,.25);
+    \draw[black] (A) node[anchor= west] {$A$};
+    \draw[black] (B) node[anchor=south west, yshift=-3] {$B$};
+    \draw[black] (C) node[anchor=east] {$C$};
+    \draw[black] (D) node[anchor=north] {$D$};
+
+    \draw[black, thick] (C)--(B) node[above left,midway] {\color{blue}$a$};
+    \draw[black, thick] (A)--(B) node[above right,midway] {\color{blue}$c$};
+    \draw[black, thick] (A)--(C) ;
+    \draw[gray, thick, dashed] (D)--(B) node[right,midway] {\color{blue}$h$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>Now we solve each of these equations for <m>h</m>:
+    <md><mrow>\dfrac{h}{a} \amp = \sin (C) \amp\amp\text{and}\amp \dfrac{h}{c} \amp = \sin (A)\amp \amp\blert{\text{Solve each equation for } h.}</mrow>
+        <mrow>h \amp = a \sin (C)  \amp\amp\text{and}\amp   h\amp = c \sin (A) \amp\amp \blert{\text{Equate the expressions for } h.}</mrow></md>
+    <md><mrow>\amp\amp a \sin (C) \amp = c \sin (A)  \amp\amp \qquad\quad\amp \amp \blert{\text{Divide both sides by } ac.}
+    </mrow>
+    <mrow>\amp\amp \dfrac {\sin (C)}{c} \amp = \dfrac {\sin (A)}{a} </mrow></md></p>
+
+<p> We have derived a relationship between the angles <m>A</m> and <m>C</m> and their opposite sides, <m>a</m> and <m>c</m>. If we know any three of these quantities, we can find the fourth.</p>  
+<p>In a similar way, by drawing in the altitude from the vertex <m>C</m>, we can show that 
+        <me>\dfrac {\sin (A)}{a} = \dfrac {\sin (B)}{b}</me> 
+Putting both results together, we have the <term>Law of Sines</term>. The Law of Sines is true for any triangle, whether it is acute, right, or obtuse.</p>
+
+<assemblage><title>Law of Sines</title>
+    <idx><h>law of sines</h></idx>
+    
+    <sidebyside widths="70% 30%" margins="0% 0%">
+    <p>If the angles of a triangle are <m>A, B</m>, and <m>C</m>, and the opposite sides are respectively <m>a, b,</m> and <m>c</m>, then
+            <me>\blert{\dfrac {\sin (A)}{a} = \dfrac {\sin (B)}{b} = \dfrac {\sin (C)}{c}}</me></p>
+        
+        <image xml:id="fig-3-2-sineslaw"><description>triangle ABC</description><xi:include href="Fig-Law-of-Sines.ptx"/></image></sidebyside>
+    
+    <p>or equivalently, <me>\blert{\dfrac {a}{\sin (A)} = \dfrac {b}{\sin (B)} = \dfrac {c}{\sin (C)}}</me></p>         
+</assemblage>
+</introduction>
+
+<subsection><title>Finding a Side</title>
+
+<p> In the next example, we use the Law of Sines to find a distance.</p>
+
+<example><statement><p>Two observers onshore sight a ship at an unknown distance from the shore. The observers are 400 yards apart at points <m>A</m> and <m>B</m>, and they each measure the angle from the shoreline to the ship, as shown below. How far is the ship from the observer at <m>A</m>?</p>
+    <image width="80%" xml:id="exam3-2-1"><description>triangle</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.7]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0.284,2.383);
+    \coordinate (C) at (11,0);
+
+    \draw[black] (A) node[anchor= east] {$A$};
+    \draw[black] (B) node[anchor=east] {$B$};
+    \draw[black] (C) node[anchor=south] {$C$};
+
+    \draw[black, thick] (C)--(B);
+    \draw[black, thick] (A)--(B) node[above left,midway, text=blue] {400 yd};
+    \draw[black, thick] (A)--(C) node[below,midway, text=blue] {$d$};
+
+    \draw[red, thick] (C)++(-2.5,0) arc(180:{180-atan(2.4/11)}:2.5) node[left,midway] {$\theta$};
+    \draw[red, thick] (A)++(.4,0) arc(0:83.2:.4) node[above right,midway, xshift=-2, yshift=-2] {$83.2\degree$};
+    \draw[red, thick] (B)++(-.035,-.4) arc(-96.7:-17.3:.4) node[below right,midway, xshift=-2] {$79.4\degree$};
+
+    \filldraw[black] (C)++(0,-.1)--++(0,-.2) -- ++(.8,0) -- ++(.2,.2) -- ++(-.3,0) --++(0,.1) -- ++ (-.25,0) -- ++(0,.3) -- ++(-.1,0) -- ++(0,-.3) -- ++(-.2,0) -- ++(0,-.1) --cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+
+<solution><p>First note that <m>\triangle ABC</m> is not a right triangle, so we cannot use the trig ratios directly to find the sides of this triangle.</p>
+<p>The unknown distance <m>d</m> is the side opposite <m>\angle B = 79.4\degree</m>.  In order to use the Law of Sines, we must know another angle and the side opposite that angle.  We do: we know that side <m>c = 400</m>, and we can compute the angle at the ship, <m>\angle C</m>.
+        <me>\angle C = 180\degree - (79.4\degree + 83.2\degree) = 17.4\degree</me>
+Now we apply the Law of Sines, using angles <m>B</m> and <m>C</m>.
+    <md><mrow>\dfrac{b}{\sin (B)} \amp = \dfrac{c}{\sin (C)} \amp\amp \blert{\text{Substitute the given values.}}</mrow>
+        <mrow>\dfrac{d}{\sin (79.4\degree)} \amp = \dfrac{400}{\sin (17.4\degree)} \amp\amp \blert{\text{Evaluate sines.}}</mrow>
+        <mrow>\dfrac{d}{0.9829} \amp = \dfrac{400}{0.2990} \amp\amp \blert{\text{Multiply both sides by 0.9829.}}</mrow>
+        <mrow>d \amp = 1315</mrow></md>
+The ship is about 1315 yards from the observer at <m>A</m>.</p>
+</solution></example>
+
+<exercise><statement><p>Delbert and Francine are 40 feet apart on one side of a river. They make angle measurements to a pine tree on the opposite shore as shown below. What is the distance from Francine to the pine tree?</p>
+    <image width="35%" xml:id="exer3-2-1"><description>triangle</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.72]
+    \coordinate (C) at (0,0);
+    \coordinate (B) at (0,1.5);
+    \coordinate (A) at (-4.25,0.673);
+
+    \draw[black] (A) node[anchor= east] {$P$};
+    \draw[black] (B) node[anchor=west] {$D$};
+    \draw[black] (C) node[anchor=north west] {$F$};
+
+    \draw[black, thick] (C)--(B) node[right,midway] {\color{blue} 40 ft};
+    \draw[black, thick] (A)--(B);
+    \draw[black, thick] (A)--(C) node[below,midway] {\color{blue}$d$};
+
+    \draw[red, thick] (C)++(-.3,0) arc(180:99:.3) node[above left,midway, xshift=5, yshift=-3] {$81\degree$};
+    \draw[red, thick] (B)++(0,-.3) arc(-90:-169:.3) node[below left,midway,xshift=4, yshift=2] {$79\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+    
+<answer><p>The angle at <m>P</m> is <m>180 \degree-(79 \degree + 81 \degree) = 20 \degree</m>. Now we can use the Law of Sines:
+    <me>\dfrac{d}{\sin(79\degree)} = \dfrac{40}{\sin(20\degree)}</me>
+Solving for <m>d</m> we find the distance is about 114.8 feet.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Solving Triangles with the Law of Sines</title>
+
+<p>In order to apply the Law of Sines to find a side, we must know one angle of the triangle and its opposite side (either <m>a</m> and <m>A</m>, or <m>b</m> and <m>B</m>, or <m>c</m> and <m>C</m>), and one other angle. Then we can find the side opposite that angle.</p>
+
+<example><statement><sidebyside widths="60% 35%" margins="0% 5%"><p>In the triangle shown at right, 
+    <me>A = 37\degree, B = 54\degree,~ \text{and}~  a= 11</me>
+    <ol marker="a.">
+        <li>Find <m>b</m>.</li>
+        <li>Solve the triangle.</li>
+    </ol></p>
+    <image xml:id="exam3-2-2"><description>triangle</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.64]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (4.55,3.43);
+    \coordinate (C) at (4.7,0);
+
+    \draw[black] (A) node[anchor= east] {$A$};
+    \draw[black] (B) node[anchor=west] {$B$};
+    \draw[black] (C) node[anchor=north west] {$C$};
+
+    \draw[black, thick] (C)--(B) node[right,midway,text=blue] { $a=11$};
+    \draw[black, thick] (A)--(B) node[above left,midway,text=blue] { $c$};
+    \draw[black, thick] (A)--(C) node[below,midway,text=blue] {$b$};
+
+    \draw[red, thick] (A)++(.7,0) arc(0:37:.7) node[right,midway,yshift=2] {$37\degree$};
+    \draw[red, thick] (B)++(0.05,-.5) arc(-89:-143:.5) node[below left,midway,xshift=7] {$54\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p><ol marker= "a.">
+    <li><p>We use the Law of Sines with <m>a</m> and angle <m>A</m> to find <m>b</m>.
+        <md><mrow>\dfrac{a}{\sin (A)} \amp = \dfrac{b}{\sin (B)} \amp\amp \blert{\text{Substitute the given values.}}</mrow>
+            <mrow>\dfrac{11}{\sin (37\degree)} \amp = \dfrac{b}{\sin (54\degree)} \amp\amp \blert{\text{Solve for } b.}</mrow>
+            <mrow> \dfrac{11}{\sin (37\degree)} \cdot \sin (54\degree) \amp = b</mrow></md>
+        Evaluating this expression with a calculator, we find that <m>b \approx 14.79</m>.</p></li>      
+    <li><p>The angle <m>~C = 180\degree-(37\degree + 54\degree)=89\degree</m>. Now we use the Law of Sines to find side <m>c</m>.  
+        Note that it is safer to use the given side, <m>a</m>, rather than the value we calculated for <m>b</m>.
+            <md><mrow>\dfrac{a}{\sin (A)} \amp = \dfrac{c}{\sin (C)} \amp\amp \blert{\text{Substitute the known values.}}</mrow>
+            <mrow>\dfrac{11}{\sin (37\degree)} \amp = \dfrac{c}{\sin (89\degree)} \amp\amp \blert{\text{Solve for } c.}</mrow>
+            <mrow>\dfrac{11}{\sin (37\degree)} \cdot \sin (89\degree)\amp = c </mrow></md>
+        so <m>c \approx 18.28.</m></p></li>     
+    </ol></p></solution></example>
+
+<exercise><statement><sidebyside widths="50% 35%" margins="0% 10%" valigns="middle middle">
+    <stack><p>In the triangle at right, 
+            <me>A = 65\degree, C = 42\degree, ~\text{and}~ c = 16</me>  
+    Solve the triangle.</p>  
+    <p>(Hint:  Which side will you find first?)</p></stack>
+    <image xml:id="exer3-2-2"><description>triangle</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=1]
+    \coordinate (B) at (0,0);
+    \coordinate (A) at (73:1.6);
+    \coordinate (C) at (2.187,0);
+
+    \draw[black] (A) node[anchor= south] {$A$};
+    \draw[black] (B) node[anchor=east, xshift=-3] {$B$};
+    \draw[black] (C) node[anchor=west] {$C$};
+
+    \draw[black, thick] (C)--(B) node[below,midway,text=blue] {$a$};
+    \draw[black, thick] (A)--(B) node[above left,midway,yshift=-2,text=blue] {$c=16$};
+    \draw[black, thick] (A)--(C) node[above right,midway,text=blue] {$b$};
+    \draw[red, thick] (C)++(-.4,0) arc(180:138:.4) node[left,midway,yshift=3] {$42\degree$};
+    \draw[red, thick] (A)++(251.565:.3) arc(251.565:318:.3) node[below right,midway,xshift=-7] {$65\degree$};
+    \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<answer><p>First use the Law of Sines to find <m>a</m>.
+        <me>\dfrac{a}{\sin(65\degree)} = \dfrac{16}{\sin(42\degree)}</me>
+    Solving for <m>a</m> we find <m>a = 21.67</m>. Next we find angle <m>B</m>.
+        <me>b = 180\degree-(65\degree+42\degree) = 73\degree</me>
+    Finally, we use the Law of Sines to find <m>b</m>.
+        <me>\dfrac{b}{\sin(73\degree)} = \dfrac{16}{\sin(42\degree)}</me>
+    Solving this equation, we find <m>b = 22.87</m>.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Finding an Angle</title>
+    <idx><h>angle</h><h>find</h></idx>
+
+<p> We can also use the Law of Sines to find an unknown angle of a triangle. We must know two sides of the triangle and the angle opposite one of them.</p>
+
+<example><statement><sidebyside widths="50% 38%" margins="0% 5%">
+    <p>In the triangle shown at right, 
+        <me>B = 55\degree, a = 5,~ \text{and}~ b = 11</me> 
+    Solve the triangle.</p>
+        <image xml:id="exam3-2-3"><description>triangle</description><latex-image>
+            <![CDATA[
+        \begin{tikzpicture} [scale=1.2]
+        \coordinate (C) at (0,0);
+        \coordinate (A) at (2.2,0);
+        \coordinate (B) at (103.1:1);
+    
+        \draw[black] (A) node[anchor= west] {$A$};
+        \draw[black] (B) node[anchor=south, xshift=-2] {$B$};
+        \draw[black] (C) node[anchor=north, xshift=-2] {$C$};
+    
+        \draw[black, thick] (C)--(B) node[left,midway, yshift=-2, text=blue] {$a=5$};
+        \draw[black, thick] (A)--(B) node[above,midway, text=blue] {$c$};
+        \draw[black, thick] (A)--(C) node[below,midway, text=blue] {$b=11$};
+        \draw[red, thick] (103.1:.7) arc(-76.9:-21.9:.3) node[below right,midway,xshift=-2] {$55\degree$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+</statement>
+    
+<solution><p>We must find the three remaining parts of the triangle, <m>A, C</m>, and <m>c</m>. First, we use the Law of Sines to find <m>\sin (A)</m>.
+        <md><mrow>\dfrac{\sin (A)}{a} \amp = \dfrac{\sin (B)}{b} \amp\amp \blert{\text{Substitute the known values.}}</mrow>
+            <mrow>\dfrac{\sin (A)}{5} \amp = \dfrac{\sin (55\degree)}{11} \amp\amp \blert{\text{Multiply both sides by 5.}}</mrow>
+            <mrow>\sin (A) \amp = 5 \cdot \dfrac{\sin (55\degree)}{11} \approx 0.3723</mrow></md>
+So <m>~A = \sin^{-1}(0.3723) \approx 21.9\degree</m>. Now we know two angles, and we can find angle <m>C</m>.
+        <md><mrow>C \amp = 180\degree - (B + A)</mrow>
+            <mrow>\amp = 180\degree - 55\degree - 21.9\degree = 103.1\degree</mrow></md>
+Finally, we use the Law of Sines to find side <m>c</m>.  
+        <md><mrow>\dfrac{c}{\sin (C)} \amp = \dfrac{b}{\sin (B)} \amp\amp \blert{\text{Substitute the known values.}}</mrow>
+            <mrow>\dfrac{c}{\sin (103.1\degree)} \amp = \dfrac{11}{\sin (55\degree)} \amp\amp 
+                \begin{array}{l}
+                    \blert{\text{Multiply both sides by }}\\
+                    \blert{\sin (103.1\degree).}
+                 \end{array}</mrow>
+            <mrow>~c \amp = \dfrac{11}{\sin (55\degree)} \cdot \sin (103.1\degree)</mrow></md>
+Evaluating this expression with a calculator gives <m>c \approx 13.1.</m></p>
+</solution></example>
+
+<warning><p>In the last Example we used the value of <m>\sin (A)</m> to find angle <m>A</m>. But there are two angles that satisfy <m>\sin (A) = 0.3723</m>, one acute (21.9<m>\degree</m>) and one obtuse (158.1<m>\degree</m>). How did we know which one to choose?</p>
+        <image width="45%" xml:id="fig-3-2-caut"><description>supplementary angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}  [scale=.8]
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (2.78,0);
+        \coordinate (B) at (2.78,1.118);
+        \coordinate (C) at (-2.78,0);
+        \coordinate (D) at (-2.78,1.118);
+    
+        \draw[blue, thick] (A) rectangle +(-.25,.25);
+        \draw[blue, thick] (C) rectangle +(.25,.25);
+        \draw[gray, thick, dashed] (A)--(B);
+        \draw[gray, thick, dashed] (C)--(D);
+        \draw[black,thick,->,>=stealth'] (C)++(-.5,0) -- (3.25,0) ;
+        \draw[black,thick,->,>=stealth'] (O)++(0,-.1) -- +(0,2.5);
+        \draw[black, ultra thick] (.1,1.118) -- (-.1, 1.118) node[left] {$y$};
+    
+        \draw[black,  thick] (O)--(3.24,1.305);
+        \draw[black,  thick] (O)--(-3.24,1.305);
+        \draw[black,  thick] (O)--(B) node[above,midway, xshift=5, yshift=2,text=blue] {$r$};
+        \draw[black, thick] (O)--(D)  node[above, midway, xshift=-5, yshift=2,text=blue] {$r$};
+    
+        \draw[red,thick, ->,>=stealth'] (O)++(.7,0) arc(0:158.1:.7) node[above,midway,xshift=0.5cm, yshift=0 , fill=white, inner sep=0pt] {\small$158.1\degree$};
+        \draw[red,thick, ->,>=stealth'] (O)++(1.1,0) arc(0:21.9:1.1) node[right,midway,yshift=2 ] {$21.9\degree$};
+    
+        \filldraw[red] (B) circle (2pt);
+        \filldraw[red] (D) circle (2pt);
+    
+        \node[text width=3cm] at (-1,1.7){$\dfrac{y}{r}\approx 0.3723$};
+        \end{tikzpicture}]]>
+        </latex-image></image>  
+    <p>In this case, the obtuse angle is too big to fit in the triangle, because angle <m>B = 55\degree</m>.  Sometimes both angles will produce (different) triangles, and sometimes only the acute angle will work. You should always check whether both angles provide solutions.</p> </warning>
+
+<exercise><statement><p>Sketch a triangle with <m>C = 93\degree, a = 7</m>, and <m>c = 11</m>. 
+    <ol marker="a.">
+        <li>Use the Law of Sines to find another angle of the triangle.</li>
+        <li>Solve the triangle, and label your sketch with the results.</li>
+    </ol></p></statement>
+
+<answer><p><ol marker= "a.">
+        <li><p>We can use the Law of Sines to find angle <m>A</m>.
+            <me>\dfrac{\sin (A)}{7} = \dfrac{\sin (93\degree)}{11}</me>
+        Solve for <m>\sin(A)</m> to find <m>\sin(A)= 0.6355</m>, so 
+            <me>A = \sin^{-1}(0.6355) = 39.5\degree</me>. 
+        (Note that the supplement of <m>39.5\degree</m>, or <m>140.5\degree</m>, is too large to fit in the triangle because <m>C = 93\degree</m>.) </p></li>
+        <li><p>Now we can find angle <m>B = 47.5\degree</m>, and use the Law of Sines again to find <m>b = 8.13</m>.</p></li>
+    </ol></p></answer></exercise>
+
+<example><statement><p>Find two triangles in which <m>B = 14.4\degree, a = 8</m>, and <m>b = 3</m>, and sketch both triangles.</p></statement>
+
+<solution><p>Using the Law of Sines, we have
+        <md><mrow>\dfrac{\sin (A)}{a} \amp = \dfrac{\sin (B)}{b} \amp\amp \blert{\text{Substitute the known values.}}</mrow>
+            <mrow>\dfrac{\sin (A)}{8} \amp = \dfrac{\sin (14.4\degree)}{3} \amp\amp \blert{\text{Multiply both sides by 8.}}</mrow>
+            <mrow>\sin (A) \amp = 8 \cdot \dfrac{\sin (14.4\degree)}{3} \approx 0.6632</mrow></md>
+There are two angles with sine <m>0.6632</m>:
+    <ul>
+        <li>the acute angle <m>~A = \sin^{-1}(0.6632) = 41.5\degree,</m></li>
+        <li> or its supplement, <m>~A^{\prime} = 180\degree - 41.5\degree = 138.5\degree</m>.</li>
+    </ul></p>
+    <p>Each of these angles produces a different solution triangle, because the angle <m>C</m> and side <m>c</m> will be different also.
+    <ul>
+        <li>In the first case, angle <m>~C = 180\degree - (14.4\degree + 138.5\degree) = 27.1\degree</m>, and we have the triangle shown in figure (a).</li>  
+        <li>In the second case, <m>~C = 180\degree - (14.4\degree + 41.5\degree) = 124.1\degree</m>, which gives us the triangle shown in figure (b).</li>
+            </ul></p>
+        <image width="90%" xml:id="exam3-2-4"><description>triangles</description><latex-image>
+            <![CDATA[
+        \begin{tikzpicture} [scale=.7]
+        \coordinate (B) at (0,0);
+        \coordinate (A) at (3.73,.957);
+        \coordinate (C) at (5.6,0);
+    
+        \draw[black] (A) node[anchor=south east] {$A$};
+        \draw[black] (B) node[anchor=east] {$B$};
+        \draw[black] (C) node[anchor=north west] {$C$};
+    
+        \draw[black, thick] (C)--(B) node[below,midway] {8};
+        \draw[black, thick] (A)--(B) node[above left,midway, xshift=8] {\color{red}$5.5$};
+        \draw[black, thick] (A)--(C) node[above right,midway] {3};
+    
+        \draw[black,thick] (B)++(1.4,0) arc(0:14.4:1.4) node[right, midway, yshift=1] {$14.4\degree$};
+        \draw[red,thick] (C)++(-.6,0) arc(180:152.9:.6) node[left, midway, yshift=2] {$27.1\degree$};
+        \draw[red,thick] (A)++(-.291,-0.075) arc(194.4:332.9:.3);
+        \draw[gray,<-,>=stealth'] ($(A)+(-.1,-.35)$)--++(-.4,-.3)--(2.3,1) node[above, yshift=-2,text=red] {$138.5\degree$};
+    
+        \node[text width=1cm] at (3,-1.){a.};
+    
+        %second triangle
+        \coordinate (B) at (7,0);
+        \coordinate (A) at (13.77,1.74);
+        \coordinate (C) at (12.6,0);
+    
+        \draw[black] (A) node[anchor=west] {$A$};
+        \draw[black] (B) node[anchor=east] {$B$};
+        \draw[black] (C) node[anchor=north west] {$C$};
+    
+        \draw[black, thick] (C)--(B) node[below,midway] {8};
+        \draw[black, thick] (A)--(B) node[above left,midway, xshift=8] {\color{red}$5.5$};
+        \draw[black, thick] (A)--(C) node[below right,midway] {3};
+    
+        \draw[black,thick] (B)++(1.4,0) arc(0:14.4:1.4) node[right, midway, yshift=1] {$14.4\degree$};
+        \draw[red,thick] (C)++(-.3,0) arc(180:55.9:.3) node[left, midway, xshift=2, yshift=1] {$124.1\degree$};
+        \draw[red,thick] (A)++(194.4:.5) arc(194.4:235.9:.5) node[below left, midway, yshift=0] {$41.5\degree$};
+    
+        \node[text width=1cm] at (11,-1.){b.};
+            \end{tikzpicture}]]>
+        </latex-image></image></solution></example> 
+    
+<exercise><statement><p>Suppose that <m>~C = 29.7\degree, ~b = 8</m>, and <m>~c = 5</m>.</p> 
+    <p><ol marker="a.">
+            <li>Find two possible values for angle <m>B</m>.</li>
+            <li>Solve the triangle for both values of <m>B</m>, and sketch both solutions.</li>
+    </ol></p></statement>
+    
+<answer><p><ol marker= "a.">
+            <li>From the Law of Sines we find
+                <me>\dfrac{\sin (B)}{8} = \dfrac{\sin (29.7\degree)}{5}</me>
+            so <m>~\sin B = 0.7927~</m> and <m>B = 52.4\degree</m> or <m>B = 127.6\degree</m></li>
+            <li>In each case, we find angle <m>A</m> and then use the Law of Sines to find side <m>a</m>.
+            <sidebyside widths="40% 35%"  margins="0% 20%" valigns = "middle middle">
+                <p><m>A = 97.9\degree,~a = 10</m></p>
+        <image xml:id="exer3-2-4ans"><description>triangle</description><latex-image>
+            <![CDATA[
+        \begin{tikzpicture}  [scale=1]
+    
+        \coordinate (C) at (0,0);
+        \coordinate (A) at (2.4,0);
+        \coordinate (B) at (2.61,1.49);
+    
+        \draw[black] (A) node[anchor=north west, yshift=3] {$A$};
+        \draw[black] (B) node[anchor=south west, yshift=-3] {$B$};
+        \draw[black] (C) node[anchor=east] {$C$};
+    
+        \draw[black, thick] (C)--(B) node[above left,midway] {\color{blue}10};
+        \draw[black, thick] (A)--(B) node[right,midway] {\color{blue}5};
+        \draw[black, thick] (A)--(C) node[below,midway] {\color{blue}8};
+    
+        \draw[red, thick] (A)++(-.2,0) arc(180:82.1:.2) node[above,midway, xshift=-7, yshift=-2] {$97.9\degree$};
+        \draw[red, thick] (C)++(.5,0) arc(0:29.7:.5) node[right,midway, yshift=1] {$29.7\degree$};
+        \draw[red, thick] (B)++(209.7:.4) arc(209.7:264.1:.4) node[below left,midway, xshift=6, yshift=-3] {$52.4\degree$};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+        <sidebyside widths="40% 43%" margins="0% 15%" valigns = "middle middle">
+            <p>or <m>A = 22.7\degree,~a = 3.9</m></p>
+        <image xml:id="exer3-2-4anstoo"><description>triangle</description><latex-image>
+            <![CDATA[
+        \begin{tikzpicture} [scale=1.4]
+    
+        \coordinate (C) at (0,0);
+        \coordinate (A) at (2.4,0);
+        \coordinate (B) at (1.12,.638);
+    
+        \draw[black] (A) node[anchor=north west, yshift=3] {$A$};
+        \draw[black] (B) node[anchor=south] {$B$};
+        \draw[black] (C) node[anchor=east] {$C$};
+    
+        \draw[black, thick] (C)--(B) node[above left,midway] {\color{blue}3.9};
+        \draw[black, thick] (A)--(B) node[above right,midway] {\color{blue}5};
+        \draw[black, thick] (A)--(C) node[below,midway] {\color{blue}8};
+    
+        \draw[red, thick] (A)++(-.25,0) arc(180:157.3:.25) node[left,midway, xshift=-2, yshift=3] {$22.7\degree$};
+        \draw[red, thick] (C)++(.4,0) arc(0:29.7:.4) node[right,midway, yshift=1] {$29.7\degree$};
+        \draw[red, thick] (B)++(-.1305,-.0745) arc(209.7:337.3:.15) node[below,midway, xshift=0, yshift=2] {$127.6\degree$};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+</ol></p></answer></exercise> 
+
+<note><p>Because there can be more than one solution for a triangle in which we know two sides and an angle opposite one of them, this situation is called the <term>ambiguous case</term><idx><h>ambiguous case</h></idx> for the Law of Sines. (See Homework Problems 33<ndash/>42 for more about the ambiguous case.)</p></note>
+
+</subsection>
+
+<subsection><title>Applications</title>
+<p> In the next example, we use two triangles to solve the problem.</p>
+
+<example><statement><p>Richard wants to measure the height of a castle controlled by hostile forces. When he is as close as he can get to the castle, the angle of elevation to the top of the wall is <m>18.5\degree</m>. He then retreats 20 yards and measures the angle of elevation again; this time it is <m>15.9\degree</m>. How tall is the castle?</p>
+    <image width="65%" xml:id="exam3-2-5"><description>castle with angles of elevation</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.63]
+    \filldraw[gray!30!white] (0,0) -- ++(0,4.5) -- ++(-.5,0) -- ++(0,-.5) -- ++(-.5,0) -- ++(0,.5) -- ++(-.5,0) -- ++(0,-.5) -- ++(-.5,0) -- ++(0,.5) -- ++(-.5,0) -- ++(0,-4.5)--cycle;
+
+    \filldraw[black] (-1.55,2.5) -- ++(.6,0) -- ++(0,.6) arc(0:180:.3) -- cycle;
+
+    \coordinate (D) at (0,0);
+    \coordinate (A) at (0,4.5);
+    \coordinate (B) at (6,0);
+    \coordinate (C) at (10,0);
+
+    \draw[black] (A) node[anchor=south] {$A$};
+    \draw[black] (B) node[anchor=north] {$B$};
+    \draw[black] (C) node[anchor=north] {$C$};
+    \draw[black] (D) node[anchor=north] {$D$};
+
+    \draw[black, thick] (C)--(B) node[below,midway] {\color{blue}20 yd};
+    \draw[black, thick] (A)--(B)--(D);
+    \draw[black, thick] (A)--(C) node[above right,midway] {\color{blue}$r$};
+    \draw[black, thick] (A)--(D) node[right,midway] {\color{blue}$h$};
+    \draw[red] (B)++(-.7,0) arc(180:{180-atan(3/4)}:.7) node[left, xshift=2, yshift=1, midway]{$18.5\degree$};
+    \draw[red] (C)++(-1,0) arc(180:{180-atan(9/20)}:1) node[left, xshift=2, yshift=1, midway]{$15.9\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+
+<solution><sidebyside widths="45% 50%" valigns="middle middle">
+<p>Notice that <m>h</m> is one side of the right triangle <m>ADC</m>. If we can find its hypotenuse, labeled <m>r</m> in the figure, we can use the sine ratio to find <m>h</m>. To find <m>r</m>, we consider a second triangle, <m>ABC</m>, as shown below.</p>
+    <image xml:id="exam3-2-5soln"><description>triangles</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.54]
+    \coordinate (D) at (0,0);
+    \coordinate (A) at (0,4.5);
+    \coordinate (B) at (6,0);
+    \coordinate (C) at (10,0);
+
+    \draw[black] (A) node[anchor=south] {$A$};
+    \draw[black] (B) node[anchor=north] {$B$};
+    \draw[black] (C) node[anchor=north] {$C$};
+    \draw[black] (D) node[anchor=north] {$D$};
+
+    \draw[red, thick] (B)++(-.7,0) arc(180:{180-atan(4.5/6)}:.7) node[left, midway, yshift=1] {$18.5\degree$};
+    \draw[red, thick] (C)++(-1,0) arc(180:{180-atan(4.5/10)}:1) node[left, midway, yshift=1] {$15.9\degree$};
+
+    \draw[black, thick] (C)--(B) node[below,midway,text=blue] {20 yd};
+    \draw[black, thick] (A)--(B)--(D);
+    \draw[black, thick] (A)--(C) node[above right,midway,text=blue] {$r$};
+    \draw[black, thick] (A)--(D) node[right,midway,text=blue] {$h$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+<p>In this triangle, we know side <m>BC = 20</m> and would like to find side <m>AC = r</m>.  We can use the Law of Sines to find <m>r</m>, but first we must calculate the other angles of the triangle.</p>
+
+<p>Now, the angle opposite <m>r, ~\angle ABC</m>, is the complement of <m>18.5\degree</m>, so
+        <me>\angle ABC = 180\degree - 18.5\degree = 161.5\degree</me>
+The angle opposite the 20-yard side, <m>\angle BAC</m>, is
+        <me>\angle BAC = 180\degree - (161.5\degree + 15.9\degree) = 2.6\degree</me>
+Now we can apply the Law of Sines to find <m>r</m>. We have</p>
+
+<p><md><mrow>\dfrac{r}{\sin (161.5\degree)} \amp = \dfrac{20}{\sin (2.6\degree)} \amp\amp \blert{\text{Solve for }r.}</mrow>
+    <mrow>r \amp = \sin (161.5\degree) \cdot \dfrac{20}{\sin 2.6\degree}</mrow>
+    <mrow>\amp  \approx 139.9</mrow></md></p>
+
+<p>So <m>r</m> is about 139.9 yards. Finally, using the right triangle <m>ADC</m> and the definition of sine, we can write</p>
+
+<p><md><mrow>\dfrac{h}{r} \amp = \sin (15.9)\degree \amp\amp \blert{\text{Solve for }h.}</mrow>
+        <mrow>h \amp = r \cdot \sin (15.9)\degree \approx 38.33</mrow></md></p>
+<p>The castle is about 38.33 yards tall.</p></solution>
+</example> 
+
+<exercise><statement><p>Solve the problem in the previous example again, but instead of finding <m>r</m>, find the length <m>AB</m>, and then use <m>\triangle ABD</m> to find <m>h</m>.</p> </statement>
+
+<answer><p>We know that angle <m>ABC</m> is the supplement of angle <m>ABD</m>, or <m>161.5 \degree</m>. We can use the Law of Sines to find side <m>AB = 120.79</m>, and then use the tangent of <m>18.5 \degree</m> to find <m>h</m>.
+The castle is about 38.33 yards tall.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Measuring Astronomical Distances</title>
+<idx><h>parallax</h></idx>
+
+<p> If you look at a nearby object and alternately close your left and right eyes, the object seems to jump in position. This apparent change occurs because your eyes are viewing the object from two different positions spaced several centimeters apart. If the object at point <m>O</m> is straight ahead of one eye, it appears to be at some angle <m>p</m> away from the line of sight of the other eye. The angle <m>p</m> is called the <term>parallax</term><idx><h>parallax</h></idx> of the object.</p>
+
+<p> Use the figure below to see that <m>p</m> is also the angle between the directions to your two eyes when viewed from point <m>O</m>.  (What fact from geometry justifies this statement?)</p>
+    <image width="45%" xml:id="fig-3-2-parallax"><description>parallax</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.63]
+    \coordinate (A) at (0,0);
+    \coordinate (O) at (5.5,1.5);
+    \coordinate (B) at (0,1.5);
+    \coordinate (C) at (5.5,0);
+
+    \draw[red, thick] (A)++(1.7,0) arc(0:{atan(1.5/5.5)}:1.7) node[right, midway] {$p$};
+    \draw[red, thick] (O)++(-1.7,0) arc(180:{180+atan(1.5/5.5)}:1.7) node[left, midway, yshift=-2] {$p$};
+
+    \filldraw[black] (O) circle (1.5pt) node[anchor=south] {$O$};
+
+    \draw[black, thick] (B)-- +(7.7,0) ;
+    \draw[black, thick] (A)-- +(7.7,0);
+    \draw[black, thick,->] (O)--+(1.5,0);
+    \draw[black, thick,->] (C)--+(1.5,0);
+    \draw[black, thick] (A) -- (O) --+(2.2,.6);
+
+    \draw[black] (-.26,0) circle (.2);
+    \filldraw[black] (-.16,0) circle (.1);
+    \draw[black] (-.26,1.5) circle (.2);
+    \filldraw[black] (-.16,1.5) circle (.1);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<p>Astronomers use parallax to determine the distance from earth to stars and other celestial objects. Two observers on Earth at a known distance apart both measure the direction to the star. The difference in angle between those two directions is the parallax.</p>
+
+<example><statement> <p>Astronomers 1000 kilometers apart observe an asteroid with a parallax of <m>0.001\degree</m>. How far is the asteroid from Earth?</p></statement>
+
+<solution><p>We let <m>x</m> represent the distance to the asteroid. The asteroid and the two observers make an isosceles triangle with base 1000 km and equal sides of length <m>x</m>, as shown below.</p>
+    <image width="60%" xml:id="exam3-2-6"><description>parallax triangle</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.7]
+    \coordinate (O) at (0,0);
+    \coordinate (A) at (-7.5,.5);
+    \coordinate (B) at (-7.5,-.5);
+
+    \filldraw[black] (A) node[anchor=south east] {$A$};
+    \filldraw[black] (B) node[anchor=north east] {$B$};
+    \filldraw[black] (O) node[anchor=west] {$O$};
+
+    \draw[red, thick] (O)++(-2.49,-.166) arc({180+atan(1/15)}:{180-atan(1/15)}:2.5) node[left, midway, xshift=-2] {\footnotesize$0.001\degree$};
+
+    \draw[black, thick] (B)-- (O) node[below,midway] {\color{blue}$x$};
+    \draw[black, thick] (A)-- (O) node[above,midway] {\color{blue}$x$};
+    \draw[black, thick] (B)-- (A) node[left,midway] {\color{blue}$1000$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<p>The base angles of the triangle are both <m>~\dfrac{180\degree - 0.001\degree}{2} = 89.999\degree</m>. By the Law of Sines,</p>
+<p><md><mrow>\dfrac{x}{\sin (89.999\degree)} \amp = \dfrac{1000}{\sin (0.001\degree)} \amp\amp \blert{\text{Solve for }x.}</mrow>
+    <mrow>x \amp = \sin (89.999\degree) \cdot \dfrac{1000}{\sin (0.001\degree)}</mrow>
+    <mrow>x \amp \approx 57,000,000</mrow></md></p>
+<p>The asteroid is about 57 million kilometers from Earth (roughly one third of the distance to the Sun).</p></solution></example>  
+
+<exercise><statement><p>Two observers 800 kilometers apart observe an object with a parallax of <m>0.0005\degree</m>. How far is the object from Earth?</p> </statement>
+
+<answer><p>The base angles of the parallax triangle are both <m>\dfrac{180\degree - 0.0005\degree}{2} = 89.99975\degree</m>. Now use the Law of Sines to find the equal sides of the triangle. The object is about 91,673,247 km from Earth.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Small Angles: Minutes and Seconds</title>
+
+<p>To obtain the most accurate parallax measurements, the distance between the two observers should be as large as possible. But even measured from opposite sides of Earth's orbit, stars outside the solar system have parallaxes much smaller than <m>0.0001\degree</m>.</p>
+
+<p>In order to handle such small angles, we divide degrees into smaller units called <term>minutes</term> and <term>seconds</term>.  One minute is <m>\dfrac{1}{60}</m> of a degree, and 1 second is <m>\dfrac{1}{60}</m> of a minute, or <m>\dfrac{1}{3600}</m> of a degree.  We use the following notation for minutes and seconds.</p>
+
+<assemblage><title>Fractions of a Degree</title>
+<idx><h>minute (as a measure of angle)</h></idx>
+<idx><h>second (as a measure of angle)</h></idx>
+<p><ul>
+    <li>One minute:    <m>~~~~~~1^{\prime} = \dfrac{1\degree}{60}</m></li>
+    <li>One second:    <m>~~~~~~1^{\prime \prime} = \dfrac{1^{\prime}}{60} = \dfrac{1\degree}{3600}</m></li>
+</ul></p>         
+</assemblage>
+
+<p> When describing large distances, astronomers sometimes use the distance from Earth to the Sun, about 93 million miles, as the unit of measurement. This distance is called 1 <term>Astronomical Unit</term><idx><h>astronomical unit (AU)</h></idx>, or 1 <term>AU</term>. For example, an object that is three times as far away as the Sun would be at a distance of 3 AU.</p>
+
+<example><statement><p>The star Wolf 359 has a parallax of <m>0.85^{\prime \prime}</m> when observed from opposites sides of Earth's orbit. How far away is the star?</p></statement>
+
+<solution><p>In the figure below, the star Wolf 359 is located at point <m>O</m>. Our Sun is located at point <m>C</m>, halfway between the two observation points at <m>A</m> and <m>B</m>. Thus, the distance between the observation points is twice the distance from the Earth to the Sun, or 2 AU.</p>
+    <image width="50%" xml:id="exam3-2-7"><description>triangles for parallax</description><latex-image>
+        <![CDATA[
+    \begin{tikzpicture} [scale=.72]
+    \coordinate (O) at (0,0);
+    \coordinate (A) at (-7.5,1.5);
+    \coordinate (B) at (-7.5,-1.5);
+    \coordinate (C) at (-7.5,0);
+
+    \filldraw[black] (A) node[anchor=south] {$A$};
+    \filldraw[black] (B) node[anchor=north] {$B$};
+    \filldraw[black] (O) node[anchor=west] {$O$};
+    \filldraw[black] (C) circle(1.8pt) node[anchor=north west] {$C$};
+
+    \draw[black, thick] (C)-- (O) node[above,midway,text=blue] {$x$};
+    \draw[black, thick] (A)-- (O) -- (B) --cycle;
+
+    \draw[gray, thick] (A)++(-.1,0) -- +(-.5,0);
+    \draw[gray, thick] (B)++(-.1,0) -- +(-.5,0);
+    \draw[gray, thick, <-,>=stealth'] (A)++(-.4,0) -- +(0,-.9);
+    \draw[gray, thick, <-,>=stealth'] (B)++(-.4,0) -- +(0,.9);
+
+    \node[label={[rotate=90, color=blue]center:2 AU}] at (-7.9,0){};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<p>The altitude from <m>O</m> to side <m>\overline{AB}</m> forms a right triangle <m>ACO</m> and bisects the angle at <m>O</m>. Thus   
+        <me>\angle AOC = \dfrac{1}{2}(0.85^{\prime \prime}) = 0.425^{\prime \prime}</me> 
+We use the definition of tangent to find</p>
+<p><md><mrow>\tan 0.425^{\prime \prime} \amp = \dfrac{\text{opposite}}{\text{adjacent}}</mrow>
+    <mrow>\tan (0.425\degree / 3600) \amp = \dfrac{1}{x}  ~~~~~~~~~~~~~ \blert{\text{Solve for }x.}</mrow>
+    <mrow>x \amp = \dfrac{1}{\tan (0.425\degree / 3600)}  \approx 485,000</mrow></md></p>
+    
+<p>The star is approximately <m>485,000</m> AU from Earth, or nearly half a million times the distance from Earth to the Sun.</p></solution></example>
+
+<exercise><statement><p>Two observers are 1 AU (astronomical unit) apart.  They find that the parallax to a distant star is <m>1^{\prime \prime}</m>.  What is the distance to the star, in astronomical units?</p>  
+
+<p>(This distance is called a <term>parsec</term><idx><h>parsec</h></idx>. In other words, a parsec is the distance at which the parallax from observations 1 AU apart is <m>1^{\prime \prime}</m>.  In this Exercise, you are calculating the number of astronomical units in 1 parsec.)</p></statement>
+
+<answer><p>1 parsec <m>\approx 206,265</m> AU</p></answer></exercise>
+
+<p>Review the following skills you will need for this section.</p>
+<theorem>
+    <sidebyside><p>Convert to a decimal fraction.</p></sidebyside>   
+    <sidebyside><p><ol marker="1." cols="2">
+        <li><p>5 inches <m>=</m> <fillin characters = "6"/> foot</p></li>
+        <li><p>10 ounces <m>=</m> <fillin characters = "6"/> pound</p></li>
+        <li><p>24 minutes <m>=</m> <fillin characters = "6"/> hour</p></li>
+        <li><p>35 seconds <m>=</m> <fillin characters = "6"/> minute</p></li>
+        <li><p>16 minutes <m>=</m> <fillin characters = "6"/> degree</p></li>
+        <li><p><m>4^{\prime} =</m> <fillin characters = "6"/> <m>\degree</m></p></li>
+        <li><p><m>2^{\prime \prime} =</m> <fillin characters = "6"/> <m>\degree</m></p></li>
+        <li><p><m>1^{\prime} ~5^{\prime \prime}=</m> <fillin characters = "6"/><m>\degree</m></p></li>
+    </ol></p></sidebyside>
+
+    <sidebyside><p><m>\underline{\qquad\qquad\qquad\qquad}</m></p></sidebyside>
+    <conclusion>
+    <sidebyside><p>Algebra Refresher Answers</p></sidebyside>
+        <p><ol marker= "1." cols="4">
+            <li><m>0.41\overline{6}</m></li>
+            <li><m>0.625</m></li>
+            <li><m>0.4</m></li>
+            <li><m>0.58\overline{3}</m></li>
+            <li><m>0.2\overline{6}</m></li>
+            <li><m>0.0\overline{6}</m></li>
+            <li><m>0.000\overline{5}</m></li>
+            <li><m>0.0180\overline{5}</m></li>
+        </ol></p>
+    </conclusion>
+</theorem>
+</subsection>
+
+<subsection><title>Section 3.2 Summary</title>
+<subsubsection><title>Vocabulary</title>
+<p><ul cols="3">
+    <li>Parallax </li>
+    <li>Minute </li>
+    <li>Second </li>
+</ul></p>
+</subsubsection>
+
+<subsubsection><title>Concepts</title>
+<p><ol marker="1.">
+    <li><assemblage><title>Law of Sines</title>
+        <p>If the angles of a triangle are <m>A, B</m>, and <m>C</m>, and the opposite sides are respectively <m>a, b,</m> and <m>c</m>, then</p>
+        <sidebyside widths="60% 28%"><p><me>\dfrac {\sin (A)}{a} = \dfrac {\sin (B)}{b} = \dfrac {\sin (C)}{c}</me></p> <image xml:id="Summary-3-2-sineslaw"><description>triangle ABC</description><xi:include href="Fig-Law-of-Sines.ptx"/></image></sidebyside>
+        <p>or equivalently, <me>\dfrac {a}{\sin (A)} = \dfrac {b}{\sin (B)} = \dfrac {c}{\sin (C)}</me></p>         
+        </assemblage></li>
+    <li> We can use the Law of Sines to find an unknown side in an oblique triangle<idx><h>oblique triangle</h></idx><idx><h>triangle</h><h>oblique</h><seealso>oblique triangle</seealso></idx>. We must know the angle opposite the unknown side, and another side-angle pair.</li>
+    <li>We can also use the Law of Sines to find an unknown angle of a triangle. We must know two sides of the triangle and the angle opposite one of them.</li>
+    <li>Remember that there are two angles with a given sine. When using the Law of Sines, we must check whether both angles result in possible triangles.</li> 
+    <li>We use minutes and seconds to measure very small angles.
+        <assemblage><title>Fractions of a Degree</title>
+        <p><ul>
+            <li>One minute:    <m>~~~~~~1^{\prime} = \dfrac{1\degree}{60}</m></li>
+            <li>One second:    <m>~~~~~~1^{\prime \prime} = \dfrac{1^{\prime}}{60} = \dfrac{1\degree}{3600}</m></li>
+        </ul></p></assemblage></li>
+</ol></p></subsubsection>
+
+<subsubsection><title>Study Questions</title>
+<p><ol marker="1.">
+    <li>Can we use the Law of Sines to solve a right triangle?</li>
+    <li>Explain why we cannot use the Law of Sines to solve the triangle with <m>a = 8,~b = c</m> and <m>C = 35\degree</m>.</li>
+    <li>Francine says "I'm thinking of an angle whose sine is <m>0.3420</m> (rounded to four decimal places)."   Delbert says "The angle must be <m>20\degree</m> (rounded to the nearest degree)." Is he correct? Why or why not?</li>
+    <li> Sketch two possible triangles with <m>A=25\degree, ~b = 18</m>, and <m>a = 10</m>.</li>
+    <li>Try to sketch a triangle with <m>A=65\degree, ~b = 18</m>, and <m>a = 10</m>. What went wrong?</li>
+</ol></p></subsubsection>
+
+<subsubsection><title>Skills</title>
+<p><ol marker="1.">
+    <li>Use the Law of Sines to find a side    #1-6</li>
+    <li> Use the Law of Sines to find an angle    #7-12</li>
+    <li>Use the Law of Sines to solve an oblique triangle    #13-18</li>
+    <li>Solve problems using the Law of Sines    #19-28</li>
+     <li> Compute distances using parallax    #29-32</li>
+    <li>Solve problems involving the ambiguous case    #33-46</li>
+</ol></p></subsubsection>
+
+</subsection>      
+
+<xi:include href="./hmwk-3-2.xml" />  
+
+</section>

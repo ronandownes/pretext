@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkEquationsofLines"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Equations of Lines</title>
+
+<subsubsection xml:id="tkSlopeInt"><title>Slope-Intercept Form</title>
+
+<introduction><p>Because the <m>y</m>-intercept <m>(0,b)</m> is the "starting value" of a linear model, and its rate of change is measured by its slope,<m>m</m>, the equation for a linear model
+    <me>y = \text{starting value} + \text{rate} \times x</me>
+can be expressed in symbols as 
+    <me>y = b + mx</me></p>
+
+<assemblage><title>Slope-Intercept Form</title>
+    <p>If we write the equation of a linear function in the form,
+        <me>f (x) = b + mx</me>
+    then <m>m</m> is the <term>slope</term><idx>slope</idx> of the line, and <m>b</m> is the <term><m>y</m>-intercept</term>.</p>
+</assemblage></introduction>
+
+<example><statement><p>The temperature inside a pottery drying oven starts at 70 degrees and is rising at a rate of 0.5 degrees per minute. Write a function for the temperature, <m>H</m>, inside the oven after <m>t</m> minutes.</p></statement>
+ 
+<solution><p>At <m>t=0</m>, the temperature is 70 degrees, so <m>b=70</m>.</p>
+<p>The slope is given by the rate of increase of <m>H</m>, so <m>m=0.5</m>.</p>  
+<p>Thus, the function is 
+    <me>H=70+0.5t</me></p></solution></example>
+
+<example><statement><p>A perfect score on a driving test is 120 points, and you lose 4 points for each wrong answer. Write a function for your score, <m>S</m>, if you give <m>n</m> wrong answers.</p></statement>
+
+<solution><p>If <m>n=0</m>, your score is 120, so <m>b=120</m>.</p>
+<p>Your score decreases by 4 points per wrong answer, so <m>m=\dfrac{\Delta S}{\Delta n} = 4</m>. </p>
+<p> The function is 
+    <me>S=120-4n</me></p></solution></example>
+
+<exercise><statement><p>Monica has saved $7800 to live on while she attends college. She spends $600 a month. Write a function for the amount, <m>S</m>, in Monica's savings account after <m>t</m> months.</p></statement>
+    <answer><p><m>b=7800~~</m> and <m>~~m=-400~~</m>, so <m>~~S=7800-600t</m></p></answer></exercise>
+
+<exercise><statement><p>Jesse opened a new doughnut shop in an old store-front. He invested $2400 in remodeling and set-up, and he makes about $400 per week from the business.  Write a function giving the shop's financial standing, <m>F</m>, after <m>w</m> weeks.</p></statement>
+    <answer><p><m>b=-2400~~</m> and <m>~~m=400~~</m>, so <m>~~F=-2400+400w</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSlopeForm"><title>Calculate slope using a formula</title>
+
+<introduction><p>Recall that the subscripts on the coordinates in <m>~P_1(x_1,y_1)~</m> and <m>~P_2(x_2,y_2)~</m> just mean "first point" and "second point".</p>
+
+<assemblage><title>Two-Point Formula for Slope</title>
+    <p>The slope of the line joining points <m>~P_1(x_1,y_1)~</m> and <m>~P_2(x_2,y_2)~</m> is
+        <me>m = \dfrac{\Delta y}{\Delta x} = \dfrac{y_2-y_1}{x_2-x_1}~~~~~~\text{if}~~~~x_2 \not= x_1</me></p>
+</assemblage>
+</introduction>   
+
+<example><statement><p>Compute the slope of the line joining <m>(-6,2)</m> and <m>(3,-1)</m>.</p></statement>
+
+<solution><p>It doesn't matter which point is <m>P_1</m> and which is <m>P_2</m>, so we choose <m>P_1</m> to be <m>(-6,2)</m>.  Then <m>(x_1,y_1)=(-6,2)</m> and <m>(x_2,y_2)=(3,-1)</m>.  Thus,
+    <md><mrow>m \amp = \dfrac{y_2-y_1}{x_2-x_1}</mrow>
+        <mrow>\amp = \dfrac{-1-2}{3-(-6)} = \dfrac{-3}{9} = \dfrac{-1}{3}</mrow></md>
+</p></solution></example>
+
+<warning><p>Make sure that you subtract both the <m>x</m> and <m>y</m> coordinates in the same order! That is, do NOT calculate
+    <me>\dfrac{y_{\alert{2}}-y_{\alert{1}}}{x_{\alert{1}}-x_{\alert{2}}}~~~~~~~~~~\blert{\text{Incorrect!}}</me>
+or your slope will have the wrong sign.</p></warning>
+
+<exercise><statement><p>Compute the slope of the line joining the points <m>(5,2)</m> and <m>(8,7)</m>.</p></statement>
+    <answer><p><m>\dfrac{5}{3}</m></p></answer></exercise>
+
+<exercise><statement><p>Compute the slope of the line joining the points <m>(-3,-4)</m> and <m>(-7,1)</m>.</p></statement>
+    <answer><p><m>\dfrac{-5}{4}</m></p></answer></exercise>
+</subsubsection>
+                 
+
+<subsubsection xml:id="tkPtSlope"><title>Point-Slope Form</title>
+
+<introduction><p>If we don't know the <m>y</m>-intercept of a line but we do know one other point and the slope, we can still find an equation for the line.</p>
+
+<assemblage><title>Point-Slope Formula</title>
+<p>To find an equation for the line of slope <m>m</m> passing through the point <m>(x_1,y_1)</m>, use the point-slope formula
+      <me>\dfrac{y-y_1}{x-x_1} = m</me>
+or
+    <me>y-y_1=m(x-x_1)</me></p></assemblage></introduction>
+
+<example><statement><p>Find an equation for the line that passes through <m>(1,3)</m> and has slope <m>-2</m>.</p>
+</statement>
+
+<solution><p>We substitute <m>x_1=\alert{1}</m>, <m>y_1=\alert{3}</m>, and <m>m=\alert{-2}</m> into the point-slope formula.
+    <md><mrow>y-\alert{3} \amp = \alert{-2} (x-\alert{1}) \amp \amp \blert{\text{Apply the distributive law.}}</mrow>
+        <mrow> y-3 \amp = -2x + 2 \amp \amp \blert{\text{Add 3 to both sides.}}</mrow>
+        <mrow>y \amp = -2x + 5</mrow></md>
+</p></solution></example>
+
+<example><statement><p>Find an equation for the line of slope <m>\dfrac{-1}{2}</m> that passes through <m>(-3,-2)</m>.</p>
+</statement>
+
+<solution><p>We substitute <m>x_1=\alert{-3}</m>, <m>y_1=\alert{-2}</m>, and <m>m=\alert{\dfrac{-1}{2}}</m> into the point-slope formula.
+    <md><mrow>\dfrac{y-(\alert{-2})}{x-(\alert{-3})} \amp = \alert{\dfrac{-1}{2}}  \amp \amp \blert{\text{Simplify the left side.}}</mrow>
+        <mrow>\dfrac{y+2}{x+3} \amp = \dfrac{-1}{2} \amp \amp \blert{\text{Cross-multiply.}}</mrow>
+        <mrow>2(y+2) \amp = -1(x+3)   \amp \amp \blert{\text{Apply the distributive law.}}</mrow>
+        <mrow>2y+4 \amp = -x-3   \amp \amp \blert{\text{Subtract 4 from both sides.}}</mrow>
+        <mrow>2y \amp = -x-7   \amp \amp \blert{\text{Divide both sides by 2.}}</mrow>
+         <mrow>      y \amp = \dfrac{-1}{2}x-\dfrac{7}{2}</mrow></md>
+</p></solution></example>
+
+<exercise><statement><p>Find an equation for the line of slope <m>-4</m> that passes through <m>(2,-5)</m>.
+</p></statement>
+    <answer><p><m>y=-4x+3</m></p></answer></exercise>
+
+<exercise><statement><p>Find an equation for the line of slope <m>\dfrac{2}{3}</m> that passes through <m>(-6,1)</m>.
+</p></statement>
+    <answer><p><m>y=\dfrac{2}{3}x+5</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkPtSlopeGraph"><title>Graphing a linear equation by the point-slope method</title>
+
+<introduction><p>If we know one point on a line and its slope, we can sketch its graph without having to make a table of values.</p></introduction>
+
+<example><statement><p>Graph the line <m>~y=\dfrac{3}{4}x-2</m> </p></statement>
+
+<solution><p>Step1: Begin by plotting the <m>y</m>-intercept, <m>(0,-2)</m>.</p>
+    <sidebyside widths="60% 40%" valigns="middle middle"><stack>
+<p>Step 2:  We use the slope, <m>\dfrac{\Delta y}{\Delta x} = \dfrac{3}{4}</m>, to find another point on the line, as follows.  Start at the point <m>(0,-2)</m> and move 3 units up and 4 units to the right.  Plot a second point here, at <m>(4,1)</m>.</p>
+<p>Step 3: Find a third point by writing the slope as <m>\dfrac{\Delta y}{\Delta x} = \dfrac{-3}{-4}</m>:  from <m>(0,-2)</m>, move down 3 units and 4 units to the left.  Plot a third point here, at <m>(-4,-5)</m>.  </p></stack>
+    <image source="images/fig-1-5-1.png"><description>line</description></image></sidebyside>
+<p>Finally, draw a line through the three points.</p></solution></example>
+
+<example><statement><p>Graph the line of slope <m>\dfrac{-1}{2}</m> that passes through <m>(-3,-2)</m>.</p></statement>
+
+<solution><p>Step 1: Begin by plotting the point <m>(-3,-2)</m>.</p>
+    <sidebyside widths="55% 45%" valigns="middle middle"><stack>
+<p>Step 2: Use the slope, <m>\dfrac{\Delta y}{\Delta x} = \dfrac{-1}{2}</m>, to find another point on the line, as follows.  Start at the point <m>(-3,-2)</m> and move 1 unit down and 2 units to the right.  Plot a second point here, at <m>(-1,-3)</m>.</p>
+<p>Step 3:  Find a third point by writing the slope as <m>\dfrac{\Delta y}{\Delta x} = \dfrac{1}{-2}</m>:  from <m>(-3,-2)</m>, move 1 unit up and 2 units to the left.  Plot a third point here, at <m>(-5,-1)</m>.</p>
+</stack>
+   <image source="images/fig-1-5-2.png"><description>line</description></image></sidebyside>
+<p> Finally, draw a line through the three points.</p></solution></example>
+
+<exercise><statement><p>Graph the line <m>~y=\dfrac{-1}{3}x-3</m> </p>
+<image width="40%" xml:id="fig-10x10-grid"><description>10 by 10 grid</description><latex-image>
+    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+    <![CDATA[\tikzset{%
+    }
+    \begin{tikzpicture} [scale=.3]
+    \draw[cyan, thin] (-10,-10) grid (10,10);
+    \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+    \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+    \foreach \x in  {-5, 5, -10, 10} {
+     \draw[cyan, very thick] (\x,-10) --++(0,20);
+     \draw[cyan, very thick] (-10,\x) --++(20,0);
+     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+    }
+    \end{tikzpicture}]]>
+    </latex-image></image></statement>
+
+<answer><image width="35%" xml:id="y-eq-neg-third-x-minus3"><description>y = -x/3-3</description><latex-image>
+    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+    <![CDATA[\tikzset{%
+    }
+    \begin{tikzpicture} [scale=.3]
+    \draw[cyan, thin] (-10,-10) grid (10,10);
+    \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+    \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+    \foreach \x in  {-5, 5, -10, 10} {
+     \draw[cyan, very thick] (\x,-10) --++(0,20);
+     \draw[cyan, very thick] (-10,\x) --++(20,0);
+     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+    }
+    \draw[red, very thick,<->, >=stealth'] (-10,1/3) -- (10,-19/3);
+    \end{tikzpicture}]]>
+    </latex-image></image></answer></exercise>
+
+<exercise><statement><p>Graph the line with slope <m>m=\dfrac{3}{2}</m> passing through <m>(-1,-2)</m>. </p>
+    <image width="40%" source="images/fig-10x10-grid"><description>grid</description></image></statement>
+
+<answer><image width="35%" xml:id="y-eq-3x-over2-minus-half"><description>through (-1,-2) slope 3/2</description><latex-image>
+    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+    <![CDATA[\tikzset{%
+    }
+    \begin{tikzpicture} [scale=.3]
+    \draw[cyan, thin] (-10,-10) grid (10,10);
+    \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+    \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+    \foreach \x in  {-5, 5, -10, 10} {
+     \draw[cyan, very thick] (\x,-10) --++(0,20);
+     \draw[cyan, very thick] (-10,\x) --++(20,0);
+     \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+     \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+    }
+    \draw[red, very thick,<->, >=stealth'] (-19/3,-10) -- (7,10);
+    \filldraw[red] (-1,-2) circle (.25);
+    \end{tikzpicture}]]>
+    </latex-image></image></answer></exercise>
+</subsubsection>
+
+</subsection>

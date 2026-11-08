@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap8"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Polynomial and Rational Functions</title>
+    
+<introduction>
+    <sidebyside width="60%" margins="0% 40%"><image source="images/Durer-font.png"><description>font designed by Albrecht Durer</description></image></sidebyside>
+
+<p>The graphs of linear functions, quadratic functions, power functions, and exponential all have a characteristic shape. On the other hand, the family of polynomial funcions has graphs that represent a huge variety of different shapes.</p>
+    
+<p>Ever since Gutenberg's invention of movable type in 1455, artists and printers have been interested in the design of pleasing and practical fonts. In 1525, Albrecht Durer published <pubtitle>On the Just Shaping of Letters</pubtitle>, which set forth a system of rules for the geometric construction of Roman capitals. The letters shown above are examples of Durer's font. Until the twentieth century, a ruler and compass were the only practical design tools, so straight lines and circular arcs were the only geometric objects that could be accurately reproduced.</p>
+    
+<p>With the advent of computers, complex curves and surfaces, such as the smooth contours of modern cars, can be defined precisely. In the 1960s the French automobile engineer Pierre Bézier developed a new design tool based on <term>polynomials</term><idx>polynomial</idx>. <term>Bézier curves</term><idx>Bézier curves</idx> are widely used today in all fields of design, from technical plans and blueprints to the most creative artistic projects.</p>
+    
+<p>The study of Bézier curves falls under the general topic of curve fitting, <idx>curve fitting</idx> but these curves do not really have a scientific purpose. A scientist does not use Bézier curves to fit a function to data. Rather, Bézier curves have more of an artistic purpose. Computer programs like Illustrator, Freehand, and CorelDraw use cubic Bézier curves. The PostScript printer language and Type 1 fonts also use cubic Bézier curves, and TrueType fonts use quadratic Bézier curves.</p>
+    
+    <sidebyside width="50%"><image source="images/Letter-a"><description>design of the letter a</description>
+    </image></sidebyside>
+
+       
+</introduction>
+
+<xi:include href="./section-8-1.xml" /> <!--Polynomial Functions -->
+<xi:include href="./section-8-2.xml" /> <!--Algebraic Fractions -->
+<xi:include href="./section-8-3.xml" /> <!--Operations on Algebraic Fractions -->
+<xi:include href="./section-8-4.xml" /> <!--More Operations on Fractions-->
+<xi:include href="./section-8-5.xml" /> <!--Equations with Fractions-->
+<xi:include href="./chap8-summary.xml" /> <!--Summary and Review<-->
+
+</chapter>

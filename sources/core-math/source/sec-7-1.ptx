@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-7-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>Adding Signed Numbers</title>
+
+  <sidebyside widths="50% 50%" valigns="middle middle" margins="0% 0%"><p><ul>
+    <li><p>Adding Two Numbers with the Same Sign</p></li>
+    <li><p>Adding Two Numbers with Opposite Signs</p></li>
+    <li><p>Rules for Addition</p></li>
+    <li><p>Net Change</p></li>
+  </ul></p>
+      <image source="assets.png"></image></sidebyside>
+
+<introduction><p>In <xref ref="negnos" text="custom">Section 4.4</xref> we looked at some of the uses of negative numbers. Some easy examples are temperature and elevation. Negative numbers are used extensively in finance and the sciences, where it is important to perform calculations with both positive and negative numbers. If you like, you can review number lines and the definition of <term>integers</term> in <xref ref="integers" text="custom">Section 4.4</xref>.</p></introduction>
+
+<subsection><title>Adding Two Numbers with the Same Sign</title>
+
+<p>We'll use number lines to help us add signed numbers. You already know how to add two positive numbers; let's see how that looks on a number line.</p>
+
+<example><statement><p>Use a number line to illustrate the sum <m>(+4) + (+3)</m></p></statement>
+
+<solution><p>Plot the first number, <m>+4</m>,  as shown on the number line below.
+      <image source="exm-7-1-1.png" width="65%"></image>
+From that point, move 3 units in the <term>positive direction</term>, or to the right. This brings us to <m>+7</m>, so <m>(+4) + (+3) = 7</m>.</p></solution></example> 
+
+<exercise><statement><p>Illustrate the sum <m>(+2) + (+5)</m> on the number line.
+    <image source="signednumberline.png" width="95%"></image>
+    <me>(+2)+(+5) = </me></p></statement>
+<answer><m>+7</m></answer></exercise>
+
+<p>What about the sum of two negative numbers?  For example, what is 
+      <me>(-5) + (-3)~  ? </me>
+We'll use ideas about money to illustrate negative numbers.</p>
+
+<sidebyside widths="50% 30%"><p>Think of negative numbers as representing debts. It makes sense that the sum of two negative numbers is another negative number:  if you owe $5 to one person and $3 to another person, then you are $8 in debt.</p><image source="dollars.png"></image></sidebyside>  
+
+<example><statement><p>Use a number line to illustrate the sum <m>(-5) + (-3)</m></p></statement>
+
+<solution><p>Plot the first number, <m>-5</m>,  as shown on the number line below.
+      <image source="exm-7-1-2.png" width="65%"></image>
+From that point, move 3 units in the <term>negative direction</term>, or to the left. This brings us to <m>-8</m>,  so  <m>(-5) + (-3) = -8</m>.</p></solution></example>
+
+<exercise><statement><p>Illustrate the sum <m>(-1) + (-5)</m> on the number line.
+    <image source="signednumberline.png" width="95%"></image>
+    <me>(-1)+(-5) = </me></p></statement>
+    <answer><m>-6</m></answer></exercise>
+
+<p>From the examples above, we see that: </p>
+
+<assemblage><title>Adding Two Numbers with the Same Sign</title>
+<p><ol>  
+  <li><p>The sum of two positive numbers is positive.</p></li> 
+  <li><p>The sum of two negative numbers is negative.</p></li>
+</ol></p></assemblage>
+
+</subsection>
+
+<subsection><title>Adding Two Numbers with Opposite Signs</title>
+
+<p>Now suppose you have $6, but you owe someone $8. Your financial status is described by 
+  <me>(+6) + (-8)</me>
+Your debts are greater than your assets, so you are $2 in debt.</p>
+
+<example><statement><p>Use a number line to illustrate the sum <m>(+6) + (-8)</m></p></statement>
+
+<solution><p>Plot the first number, <m>+6</m>,  as shown on the number line below.
+      <image source="exm-7-1-3.png" width="65%"></image>
+From that point, move 8 units in the <term>negative direction</term>, or to the left. This brings us to <m>-2</m>,  so  <m>(+6) + (-8) = -2</m>.</p></solution></example> 
+
+<exercise><statement><p>Illustrate the sum <m>(-9) + (+2)</m> on the number line.
+    <image source="signednumberline.png" width="95%"></image>
+    <me>(-9)+(+2) = </me></p></statement>
+    <answer><m>-7</m></answer></exercise>
+
+<p>So if your debts are greater than your assets, you end up in debt. What if your assets are greater than your debts? In that case, your net worth is positive. Suppose you have $10, but you owe someone $6. We can represent this situation by the sum
+    <me>(+10) + (-6)</me>
+Once you pay off your debt, you still have $4 left.</p>
+
+<example><statement><p>Use a number line to illustrate the sum <m>(+10) + (-6)</m></p></statement>
+
+<solution><p>Plot the first number, <m>+10</m>,  as shown on the number line below.
+      <image source="exm-7-1-4.png" width="65%"></image>
+From that point, move 6 units in the <term>negative direction</term>, or to the left. This brings us to <m>+4</m>, so <m>(+10) + (-6) = +4</m>.</p></solution></example> 
+
+<note><p>Do you notice that adding a negative number has the same effect as subtracting a positive number?
+    <md><mrow>(+10) + (-6) = +4</mrow>
+        <mrow>(+10) - (+6) = +4</mrow></md>
+  Hold that thought; we'll see more about it shortly.</p></note>
+
+ <exercise><statement><p>Illustrate the sum <m>(-4) + (+8)</m> on the number line.
+    <image source="signednumberline.png" width="95%"></image>
+    <me>(-4)+(+8) = </me></p></statement>
+    <answer><m>+4</m></answer></exercise> 
+
+  <p><m>\large{\blert{\text{Summary}}}</m></p>
+
+  <p>From the examples above, we see that the sum of a positive number and a negative number can be either positive or negative. It depends on which is "bigger," (farther from zero), the positive number or the negative number.<ul>
+    <li><p>If the positive number is farther from zero, the sum will be positive.</p></li>  
+    <li><p>If the negative number is farther from zero, the sum will be negative.</p></li>
+  </ul></p>
+
+  <p>In other words, if your assets outweigh your debts, your net worth is positive. If your debts outweigh your assets, your net worth is negative.</p>
+
+  <p>So now we know the sign of the answer when we add two numbers of opposite signs, but how do we find its actual value? Look again at the examples above. Forget about the signs for a moment. If we subtract the two numbers, we find out by how much the "bigger" number outweighs the smaller one. Then we use the appropriate sign, positive or negative, for the answer.</p>
+
+<p>This makes sense if we consider another example about money. Suppose you earn $20, but you have a debt of $15. Your financial status is given by 
+    <me>(+20) + (-15)</me>
+You need $15 of your earnings to pay off the debt, so we subtract $15 from $20. The remainder, $5, is your net worth.
+    <image source="unnumexm-7-1.png" width="95%"></image></p>
+
+<p>Number lines give us a visual representation of signed numbers, but some people prefer a more concrete model. In Activity 7.1.1 we offer a different way to think about adding signed numbers.</p>
+
+<activity><title>Adding Two Numbers with Opposite Signs</title>
+
+<p>For this Activity you will need some counters, such as chips or blocks, in two different colors. One color represents positive numbers, and the other color represents negative numbers. You can choose which is which.</p>
+
+<sidebyside widths="60% 30%"><stack><p>Positive numbers are <fillin></fillin></p>
+  <p>Negative numbers are <fillin></fillin></p>
+  <p>We'll place counters on the table to represent sums of signed numbers.</p></stack>
+  <image source="counters.png" ></image></sidebyside>
+
+<p><ol>
+  <li><p>Let's start with <term>zero sums</term>. Suppose you have $5 in your wallet, and you spend $5 on coffee and a cookie. What is your financial status now?
+    <me>(+5)+(-5) = 0</me>
+  When we add two numbers that are opposites, we get zero. We represent the zero sum <m>(+5)+(-5)</m> with counters like this:
+        <image source="zerosum.png" width="60%"></image>
+  Because the sum is zero, we can remove them from the table. An empty table represents the number 0.</p>
+
+  <p>Note: In our examples below, yellow counters are positive and red ones are negative.</p> </li>
+
+  <li><p>Now we'll consider a sum of two numbers with opposite signs. Represent
+        <me>(+7)+(-3)</me>
+  by placing 7 positive counters and 3 negative counters on the table.
+        <image source="possum.png" width="65%"></image>
+  You can remove the zero sum <m>(+3)+(-3)</m> from the table. What do you have left?</p>
+
+  <p>You have just shown that <m>(+7)+(-3) = +4</m>.  But here's the important part:  You started with more positive counters than negative counters.  You took away or subtracted 3 of the 7 positive counters to make a zero sum, and you were left with 4 positive counters.</p></li>
+
+  <li><p>Use your counters to find the following sums of signed numbers. <ol marker="a." cols="2">
+      <li><p><m> (+6)+(-3) = <fillin></fillin></m></p></li>
+      <li><p><m> (+8)+(-6) = <fillin></fillin></m></p></li>
+      <li><p><m> (-3)+(+5) = <fillin></fillin></m></p></li>
+      <li><p><m> (-4)+(+9) = <fillin></fillin></m></p></li>
+    </ol></p></li>
+
+  <li><p><ol marker="a.">
+      <li><p>For each sum in part 3, were there more positive blocks or more negative blocks?</p></li> 
+      <li><p>For each sum in part 3, was the answer positive or negative?</p></li>
+    </ol></p></li> 
+
+  <li><p>For each sum in part 3, how many zero pairs did you remove?<ol marker="a." cols="2">
+      <li><p><fillin></fillin></p></li>
+      <li><p><fillin></fillin></p></li>
+      <li><p><fillin></fillin></p></li>
+      <li><p><fillin></fillin></p></li>
+    </ol></p></li>
+
+  <li><p>Use your counters to find the following sums of signed numbers.<ol marker="a." cols="2">
+      <li><p><m> (+2)+(-4) = <fillin></fillin></m></p></li>
+      <li><p><m> (+6)+(-8) = <fillin></fillin></m></p></li>
+      <li><p><m> (-6)+(+5) = <fillin></fillin></m></p></li>
+      <li><p><m> (-5)+(+2) = <fillin></fillin></m></p></li>
+    </ol></p></li> 
+
+    <li><p><ol marker="a.">
+      <li><p>For each sum in part 6, were there more positive blocks or more negative blocks?</p></li> 
+      <li><p>For each sum in part 6, was the answer positive or negative?</p></li>
+    </ol></p></li> 
+
+    <li><p>For each sum in part 6, how many zero pairs did you remove?<ol marker="a." cols="2">
+      <li><p><fillin></fillin></p></li>
+      <li><p><fillin></fillin></p></li>
+      <li><p><fillin></fillin></p></li>
+      <li><p><fillin></fillin></p></li>
+    </ol></p></li>
+
+    <li><p>Look back at your answers to Exercise 3 and Exercise 6. Do you see a way to find the sums without using counters?<ol marker="a.">
+      <li><p>How can you predict whether the sum will be positive or negative?</p></li> 
+      <li><p>Now ignore the signs of the two numbers being added. To get the answers would you add those two numbers or subtract them?</p></li>
+      <li><p>Can you explain your answer to part (b) in terms of zero sums?</p></li>
+    </ol></p></li>
+
+    <li><p>Explain to a classmate how to add two numbers with opposite signs.</p></li>
+</ol></p>
+</activity>
+
+<p>Which model for adding signed numbers was more helpful for you, number lines or counters? Do you find that you can visualize addition without a physical model?</p>
+</subsection>
+
+<subsection xml:id="addrules"><title>Rules for Addition</title>
+
+<p>We summarize below what we have learned about addition.</p>
+
+<assemblage><title>Rules for Addition of Signed Numbers</title>
+<p><ol>
+  <li><p>To add two numbers with the same sign:<ol marker="a.">
+      <li><p>Add the unsigned parts of the numbers.</p></li> 
+      <li><p>Use the same sign for the sum.</p></li>
+  </ol></p></li>
+  <li><p>To add two numbers with opposite signs:<ol marker="a.">
+      <li><p>Subtract the unsigned parts of the numbers.</p></li>  
+      <li><p>If the positive number is farther from zero, the sum is positive. If the negative number is farther from zero, the sum is negative.</p></li>
+  </ol></p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Use the Rules for Addition to find the following sums.<ol marker="a." cols="3">
+  <li><p><m>(-4) + (-12)</m></p></li>
+  <li><p><m>(-8) + (+2)</m></p></li>
+  <li><p><m>(-7) + (+9)</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Because <m>-4</m> and <m>-12</m> have the same sign, we add their unsigned parts to get
+    <me>4 + 12 = 16</me>
+  We use the same sign, <m>-</m>, for the answer.  Thus,
+      <me>\blert{(-4) + (-12) = -16}</me></p></li>
+  <li><p>Because <m>-8</m> and <m>+2</m> have opposite signs, we subtract their unsigned parts to get
+      <me>8 - 2 = 6</me>
+  The negative number is farther from zero, so the answer is negative.  Thus,
+      <me>\blert{(-8) + (+2) = -6}</me></p></li>
+  <li><p>Because <m>-7</m> and <m>+9</m> have opposite signs, we subtract their unsigned parts to get
+      <me>9 - 7 = 2</me>
+  The positive number is farther from zero, so the answer is positive.
+      <me>\blert{(-7) + (+9) = +2}</me></p></li>
+</ol></p></solution></example>
+
+<note><p>Here is an informal strategy for adding signed numbers:</p>
+<p><ul>
+  <li><p>Step 1    Do the two numbers have the same sign or opposite signs?</p></li>
+  <li><p>Step 2a   (Same sign)  Great:  add 'em up and keep the same sign.</p></li>
+  <li><p>Step 2b   (Opposite signs)  Which number is "bigger" (farther from zero)?  
+      That number wins -- use the sign of that number. Subtract to see how much bigger.</p></li>
+  </ul></p></note>  
+
+<exercise><statement><p>Use the Rules for Addition to find the following sums.<ol marker="a." cols="3">
+  <li><p><m>(-2) + (-2)</m></p></li>
+  <li><p><m>(-4) + (+3)</m></p></li>
+  <li><p><m>(+6) + (-8)</m></p></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+  <li><p><m>-4</m></p></li>
+  <li><p><m>-1</m></p></li>
+  <li><p><m>-2</m></p></li>
+</ol></p></answer></exercise>
+
+<note><p>We have been using parentheses to enclose the signed numbers in a sum. The parentheses help us decide which way the symbols and  are used:<ul>
+  <li><p>to indicate a positive or negative number, or</p></li>
+  <li><p>to show addition or subtraction.</p></li>
+</ul></p>  
+<p>Also, it can be confusing to have two plus or minus symbols in a row.</p>
+<p>However, we can often leave out the parentheses if it is easy to interpret the expression.  For instance, the three sums in Checkpoint 7.1.12 can be written as follows.<ol marker="a.">
+  <li><p><m>-2 + (-2)</m></p></li>
+  <li><p><m>-4 + 3</m></p></li>
+  <li><p><m>6 + (-8)</m></p></li>
+</ol></p>
+<p>In the next Lesson, we'll see how to simplify sums even further.</p></note>
+</subsection>
+
+<subsection><title>Net Change</title>
+
+<p>Usually we denote gains by positive numbers and losses by negative numbers. We can find the <term>net change</term> in a quantity by adding those gains and losses.</p>
+
+<example><statement><p>Seymour's stock gained 3 points on Tuesday, but lost 7 points on Wednesday. What was the net change in the stock since Tuesday?</p></statement>
+
+<solution><p>We use <m>+3</m> to denote a 3-point gain and <m>-7</m> to denote a 7-point loss in the price of the stock.  Then
+    <me>(+3) + (-7) = -4</me>
+The net change in Seymour's stock was a 4-point loss.</p></solution></example>
+
+<exercise><statement><p>When the ballots in a disputed district were recounted, Senator Dubya lost 58 votes, but he gained 42 votes when the absentee ballots were tallied.<ol marker="a.">  
+  <li><p>Write a sum of signed numbers to express the net change in the number of votes for Senator Dubya.</p></li> 
+  <li><p>What was the net change in votes for Senator Dubya?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><m>(-58)+(+42)</m></p></li> 
+  <li><p>The net change was a loss of 16 votes.</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>integers</p></li>
+  <li><p>net change</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-7-1.ptx" />
+
+</section>

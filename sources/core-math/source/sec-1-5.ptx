@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Perimeter and Area</title>
+
+  <sidebyside widths="40% 40%"><p><ul>
+    <li><p>Perimeter</p></li>
+    <li><p>Area</p></li>
+    <li><p>Estimating Area</p></li>
+  </ul></p>
+      <image source="floorplan.png"></image></sidebyside>
+
+<subsection><title>Perimeter</title>
+  <p>When we speak of the perimeter of a region, we usually mean the outer edge or boundary of the region. In mathematics, the <term>perimeter</term> means the length of that boundary. </p> 
+
+  <example><statement>
+    <sidebyside widths="60% 30%" margins="0% 10%" valigns="middle middle"><p>To find the perimeter of the region at right we add up the lengths of its sides:
+      <me>5+3+5+4+3=20</me>
+    The perimeter of the region is 20 inches.</p>
+      <image source="perim1.png"></image></sidebyside></statement></example>
+
+  <note><sidebyside widths="50% 35%"><p>Imagine that you are walking around the edge of the region. (If it is a very small region, imagine that you are an ant walking around the region.) The distance that you walk in one circuit around the region is its perimeter.</p> 
+        <image source="ants.png"></image></sidebyside></note>
+
+  <exercise><statement><p>One reason you might want to find a perimeter is to calculate the amount of fence you need to surround a region.  Find the perimeter of the community garden shown below.
+      <image source="perim2.png" width="60%"></image></p></statement>
+
+  <answer><p>The perimeter is 267 feet.</p></answer></exercise>
+
+ <assemblage><title>Perimeter</title>
+  <p> To find the perimeter of a straight-sided figure:<ol>
+      <li><p>Measure the length of each side.</p></li>
+      <li><p>Add up the lengths of the sides.</p></li></ol></p></assemblage>
+
+  <activity><title>Perimeter</title>
+  <p><ol>
+    <li><p>Find a straight-sided object near you. (Maybe a book, or a table-top? How about something more interesting, with more sides?)  Make a sketch of your object below. Now use a ruler or yardstick to calculate the object's perimeter. First find the perimeter in inches, and then in centimeters.</p>
+
+      <p>Sketch</p>
+
+      <p>Perimeter in inches:</p>
+
+      <p>Perimeter in centimeters:</p></li>
+
+    <li><p>Label the length, in centimeters, of each side of the triangle. Then find its perimeter.<ol marker = "a.">
+        <li><image source="perimtria.png" width="80%"></image>
+
+          <p>Perimeter in centimeters:</p></li>
+
+        <li><image source="perimtrib.png" width="80%"></image>
+
+          <p>Perimeter in centimeters:</p></li></ol></p></li>
+
+    <li><p>On the centimeter grid below, sketch two rectangles with different shapes that each have a perimeter of 20 centimeters. Label the <term>dimensions</term> (the length and the width) of each rectangle.
+
+          <image source="centgrid.png" width="90%"></image></p></li></ol></p></activity>
+
+    <note><sidebyside widths="60% 20%"><p>How can we find the perimeter of a figure if the sides are not straight? Well, we could use a tape measure, or we could wrap a string around the edge of the figure, then measure the length of the string.</p>
+        <image source="tapemeasure.png"></image></sidebyside></note>
+    </subsection>
+
+    <subsection><title>Area</title>
+
+    <p>Here are two rectangles with the same perimeter. They represent garden plots for blueberry bushes, and the lines in the grids represent measurements in yards. You can check that both rectangles have a perimeter of 24 yards, so both garden plots require the same amount of fence to keep out the deer.</p>
+          <image source="deerarea.png" width="90%"></image>
+    <p>Which garden plot has the most room for blueberry bushes inside, Garden A or Garden B? Suppose that each blueberry bush fills one square on the grid. Which rectangle encloses the most squares?
+
+        <md><mrow>\text{Garden A:}~~~~~~3 \times 9 \amp = 27 ~\text{squares}</mrow>
+            <mrow>\text{Garden B:}~~~~~~6 \times 6 \amp = 36 ~\text{squares}</mrow></md>
+
+    Garden B has more room inside. The number of squares that fit inside a perimeter is called the <term>area</term> of the region enclosed. We measure area in <term>square units</term>; in this case, square yards. The area of Garden A is 27 square yards, and the area of Garden B is 36 square yards.</p>
+
+    <assemblage><title>Definition</title>
+    <p>A <term>square unit</term> is just a square that measures 1 unit on each side. The figure below shows 1 square inch and 1 square centimeter.</p>
+          <image source="squnit.png" width="30%"></image></assemblage>
+
+    <note><p>We cannot use the same units to measure both area and perimeter. The units for perimeter, such as inches or miles, measure length. For area we need units that measure space. For area, we use square units.</p></note>
+
+    <p>The more square units that fit inside a region, the larger its area!</p>
+
+    <example><statement><p>Find the area of the figure below. Each square in the grid represents one square foot.</p>
+            <image source="areaexm2.png" width="40%"></image></statement>
+
+    <solution><p>It may be easier to count the squares inside the figure if we partition it into 3 rectangular pieces, like this:
+            <image source="areaexm2s.png" width="40%"></image>
+      Now we can count the number of square feet in each piece.
+            <md><mrow>\text{Piece 1:}~~~~~~2 \times 9 \amp = 12 ~~\text{squares}</mrow>
+                <mrow>\text{Piece 2:}~~~~~~2 \times 5 \amp = 10 ~~\text{squares}</mrow>
+                <mrow>\text{Piece 3:}~~~~~~2 \times 6 \amp = 12 ~~\text{squares}</mrow></md>
+      The total number of squares inside the figure is
+          <me>12 + 10 + 12 = 34~~ \text{squares}</me>
+      The area of the figure is 34 square feet.</p></solution></example>
+
+  <assemblage><p>Question:  Would the figure in the previous Example have the same area if you rearranged the pieces as shown below?
+          <image source="areaexm2q.png" width="60%"></image></p></assemblage>
+
+   <exercise><statement><p>Find the area of the figure below. The lines on the grid represent centimeters.
+          <image source="areaexer2.png" width="30%"></image></p></statement>
+
+  <answer><p>24 sq cm</p></answer></exercise>
+
+  <note><p>Do you see the difference between area and perimeter? <ul>
+    <li><p><m>\blert{\text{Perimeter}}~</m> measures the <m>\blert{\text{distance around the outside}}</m> of a region.</p></li> 
+    <li><p><m>\blert{\text{Area}}~</m> measures the amount of <m>\blert{\text{space enclosed inside}}</m> the region.</p></li></ul></p>
+    <sidebyside widths="60% 20%"><p>Perimeter is measured in linear units, and area is measured in square units. For example, the perimeter of the figure shown at right is 4 inches, and its area is 1 square inch.
+        <md><mrow>\blert{\large{\text{Perimeter:    4 inches}}}</mrow>
+            <mrow>\blert{\large{\text{Area:    1 square inch}}}</mrow></md></p>  
+          <image source="sqinch.png"></image></sidebyside></note>
+
+  <exercise><statement><p>Find the perimeter and area of each figure. Each square measures 1 centimeter on each side.</p>
+  <p><ol marker="a." cols="2">
+    <li><image source="areaexer3a.png" width="42%"></image></li>
+    <li><image source="areaexer3b.png" width="60%"></image></li>
+    <li><image source="areaexer3c.png" width="70%"></image></li>
+    <li><image source="areaexer3d.png" width="42%"></image></li>
+    <li><image source="areaexer3e.png" width="60%"></image></li>
+    <li><image source="areaexer3f.png" width="45%"></image></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><p>perimeter = 6 cm, area = 2 sq cm</p></li>
+    <li><p>perimeter = 8 cm, area = 3 sq cm</p></li>
+    <li><p>perimeter = 10 cm, area = 4 sq cm</p></li>
+    <li><p>perimeter = 10 cm, area = 4 sq cm</p></li>
+    <li><p>perimeter = 7 cm, area = 3 sq cm</p></li>
+  </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Estimating Area</title>
+
+<p>What if square units don't fit evenly inside a region?</p>
+
+<example><statement><p>Find the area of the triangle. The grid represents inches.</p>
+  <image source="areatri.png" width="30%"></image></statement>
+
+<solution><p>This is actually an easy example, because the diagonal side of the triangle cuts each unit square in half. So we can pair up the 6 half-squares to make 3 whole squares. Adding those squares to the 15 whole squares, we find that the area is
+  <me>15 + 3 = 18 ~\text{square inches}</me></p></solution></example>
+
+<note><sidebyside widths="60% 30%"><p>Here is another way to find the area of the triangle in the last Example. Note that the triangle is actually half of a rectangle, as shown at right. The rectangle has 6 rows of 6 squares each, so its area is
+  <me>6 \times 6 = 36 ~\text{square inches}</me>
+The area of the triangle is half of that, or 18 square inches.</p>
+    <image source="areatri.png"></image></sidebyside></note>
+
+<p>The method described in the Note above is useful in many situations. We can enclose the figure in a rectangle, and subtract the areas that are not inside the region.</p>
+
+<example><statement><p>Find the area enclosed by the octagon shown below. The grid represents centimeters.</p>
+  <image source="octarea.png" width = "30%"></image></statement>
+
+<solution><p><sidebyside widths="60% 30%"><p>Imagine enclosing the octagon in a rectangle, as shown at right. You can check that the rectangle encloses 7 rows of squares, and each row is 7 squares long. Thus, the area of the rectangle is
+  <me>7 \times 7 = 49 ~\text{square inches}</me>
+Now we just need to subtract the areas of the four "corners" of the rectangle.</p>
+    <image source="cornersoct.png"></image></sidebyside></p>
+
+<p>By looking at the top left corner, perhaps you can see that each of the four corners is half of a square whose area is 4 square centimeters. So each corner has an area of 2 square centimeters, and all four corners have a total area of 8 square centimeters.</p>
+<p>Finally, we subtract the area of the corners from the area of the rectangle, and what's left is the area inside the octagon:
+  <me>49 - 8 = 41 ~\text{square inches}</me></p></solution></example>
+
+<exercise><statement><p>Find the area of the <term>parallelogram</term>. Enclose the figure in a rectangle, then subtract the areas that are not inside the parallelogram. The grid represents centimeters.</p>
+  <image source="paralarea.png" width="40%"></image></statement>
+
+<answer><p>22 sq cm</p></answer></exercise>
+
+<p>We have investigated three different ways to calculate the area of a region.</p>
+
+<assemblage><title>Some methods for calculating area:</title>
+<p><ol>
+<li><p>Count the unit squares enclosed in the region, including your estimate of the number of whole squares made up of partial 
+  squares.</p></li>
+<li><p>Use multiplication to calculate the number of unit squares inside a rectangle.</p></li>
+<li><p>Enclose the region in an imaginary rectangle, calculate the area of the rectangle, and then subtract the areas of the parts outside the region.</p></li>
+</ol></p></assemblage>
+
+<activity><title>Area</title>
+<p>In this Activity, all grids represent centimeters.</p>
+<p><ol>
+<li><p>Estimate the area of each region by piecing together squares as necessary.</p>
+    <p><ol marker="a." cols="2">
+      <li><image source="actarea1a.png" width="80%"></image></li>
+      <li><image source="actarea1b.png" width="80%"></image></li></ol></p></li>
+<li><p>Use the fact that a triangle is half of a rectangle to find the area of each region. Hint:  It may help to draw in a useful <term>vertical line</term> (or two).</p>
+  <p><ol marker="a.">
+      <li><image source="actarea2a.png" width="60%"></image></li>
+      <li><image source="actarea2b.png" width="80%"></image></li></ol></p></li>
+<li><p>Find the area of each region by enclosing it in a rectangle and subtracting the areas of the parts outside the region.  Show your method.</p>
+  <p><ol marker="a.">
+      <li><image source="actarea3a.png" width="60%"></image></li>
+      <li><image source="actarea3b.png" width="60%"></image></li></ol></p></li>
+  </ol></p></activity>
+    
+  </subsection>
+
+  <subsection><title>Vocabulary</title>
+  <p><ul cols="2">
+    <li><p>perimeter</p></li>
+    <li><p>area</p></li>
+    <li><p>square unit</p></li>
+    <li><p>vertical line</p></li>
+  </ul></p></subsection>
+
+  <xi:include href="./prac-1-5.ptx" />
+
+  </section>

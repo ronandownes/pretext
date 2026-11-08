@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkIntegerExponents" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Integer Exponents</title>
+                 
+<subsubsection xml:id="tkNegExp"><title>Evaluate powers with negative exponents</title>
+
+<p>Remember that a negative exponent indicates a reciprocal, so for example
+    <me>x^{-2} = \dfrac{1}{x^2}</me>
+A negative exponent does <em>not</em> mean that the power is negative. So for example
+    <me>4^{-2} = \dfrac{1}{16}</me>;  <m>4^{-2}</m> does <em>not</em> mean <m>-16</m>.</p>
+
+<example><statement><p>Write each expression without using negative exponents.<ol marker="a." cols="2">
+    <li><m>10^{-4}</m></li>
+    <li><m>\left(\dfrac{x}{4}\right)^{-3}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><m>10^{-4} = \dfrac{1}{10^4} = \dfrac{1}{10,000}~</m>, or <m>~0.0001</m>.</li>
+    <li><p>To compute a negative power of a fraction, we compute the corresponding positive power of its reciprocal.  Thus,
+        <me>\left(\dfrac{x}{4}\right)^{-3} = \left(\dfrac{4}{x}\right)^3 = \dfrac{64}{x^3}</me></p></li>
+    </ol></p></solution></example>
+
+<example><statement><p>Write each expression using negative exponents.
+<ol marker="a." cols="2">
+    <li><m>\dfrac{1}{3a^4a^2}</m></li>
+    <li><m>\dfrac{8}{x^4}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><m>\dfrac{1}{3a^4a^2} = 3^{-4}a^{-2}</m></li>
+    <li><m>\dfrac{8}{x^4} = 8x^{-4}</m></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write each expression using negative exponents and evaluate.
+<ol marker="a." cols="2">
+    <li><m>(-6)^{-2}</m></li>
+    <li><m>\left(\dfrac{3}{5}\right)^{-2}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>\dfrac{1}{6^2} = \dfrac{1}{36}</m></li>
+    <li><m>\dfrac{5^2}{3^2} = \dfrac{25}{9}</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Write each expression using negative exponents.
+<ol marker="a." cols="2">
+    <li><m>4t^{-2}</m></li>
+    <li><m>(4t)^{-2}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>\dfrac{4}{t^2}</m></li>
+    <li><m>\dfrac{1}{16t^2}</m></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkExplaws"><title>Use the laws of exponents</title>
+
+<p>Recall the five Laws of Exponents.</p>
+
+<assemblage><title>Laws of Exponents</title>
+<p><ol marker="I.">
+    <li><p><m>\displaystyle{a^m\cdot a^n = a^{m+n}}</m></p></li>
+    <li><p><m>\dfrac{a^m}{a^n}=\begin{cases}
+        a^{m-n} \amp \text{if}~m \gt n\\
+        \dfrac{1}{a^{n-m}} \amp \text{if}~n \gt m
+        \end{cases}</m></p></li>
+    <li><p><m>\displaystyle{\left(a^m\right)^n=a^{mn}}</m></p></li>
+    <li><p><m>\displaystyle{\left(ab\right)^n=a^n b^n}</m></p></li>
+    <li><p><m>\displaystyle{\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}}</m></p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Multiply <m>~(2x^2y)(5x^4y^3)~</m>.</p></statement>
+ 
+<solution><p>Rearrange the factors to group together the numerical coefficients and the powers of each base.
+    <me>(2x^2y)(5x^4y^3) = (2)(5)x^2x^4yy^3</me>
+Multiply the coefficients together, and use the first law of exponents to find the products of the variable factors.
+    <me>(2)(5)x^2x^4yy^3 = 10x^6y^4 ~~~~~~~~ \blert{\text{Add exponents on each base.}}</me>
+</p></solution></example>
+
+<example><statement><p>Divide <m>~\dfrac{3x^2y^4}{6x^3y}</m>.</p></statement>
+    
+<solution><p>Consider the numerical coefficients and the powers of each base separately.  Use the second law of exponents to simplify each quotient of powers.
+    <md><mrow>\dfrac{3x^2y^4}{6x^3y} \amp = \dfrac{3}{6} \cdot \dfrac{x^2}{x^3} \cdot \dfrac{y^4}{y} \amp\amp \blert{\text{Subtract exponents on each base.}}</mrow>
+        <mrow>\amp = \dfrac{1}{2} \cdot \dfrac{1}{x^{3-2}} \cdot y^{4-1} \amp\amp \blert{\text{Multiply factors.}}</mrow>
+        <mrow>\amp = \dfrac{1}{2} \cdot \dfrac{1}{x} \cdot \dfrac{y^3}{1} = \dfrac{y^3}{2x} </mrow></md>
+</p></solution></example>
+
+<example><statement><p>Simplify <m>~(5a^3b)^2</m>.</p></statement>
+ 
+<solution><p>Apply the fourth law of exponents and square each factor.
+    <me>(5a^3b)^2 = 5^2(a^3)^2b^2 = 25a^6b^2 ~~~~~~~~ \blert{\text{Apply the third law:  multiply exponents.}}</me>
+</p></solution></example>
+
+<example><statement><p>Simplify <m>~\left(\dfrac{2}{y^3}\right)^3</m>.</p></statement>
+
+<solution><p>Apply the fifth law of exponents.
+    <md><mrow>\left(\dfrac{2}{y^3}\right)^3 \amp = \dfrac{2^3}{(y^3)^3} \amp\amp \blert{\text{Cube numerator and denominator.}}</mrow>
+        <mrow>\amp = \dfrac{2^3}{y^{3(3)}} = \dfrac{8}{y^9} \amp\amp \blert{\text{Apply the third law.}} </mrow></md>
+</p></solution></example>
+
+<exercise><statement><p>Multiply <m>~-3a^4b(-4a^3b)</m>.</p></statement>
+<answer><p><m>12a^7b^2</m></p></answer></exercise>
+
+<exercise><statement><p>Divide <m>~\dfrac{8x^2y}{12x^5y^3}</m>.</p></statement>
+<answer><p><m>\dfrac{2}{3x^3y^2}</m></p></answer></exercise>
+
+<exercise><statement><p>Simplify <m>~(6pq^4)^3</m>.</p></statement>
+<answer><p><m>216p^3q^{12}</m></p></answer></exercise>
+
+<exercise><statement><p>Simplify <m>~\left(\dfrac{n^3}{k^4}\right)^8</m>.</p></statement>
+<answer><p><m>\dfrac{n^{24}}{k^{32}}</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSciNot"><title>Use scientific notation</title>
+
+<introduction><p>If we move the decimal point to the left, we are making a number smaller, so we must multiply by a positive power of 10 to compensate.  If we move the decimal point to the right, we must multiply by a negative power of 10.</p></introduction>
+
+<example><statement><p>Write each number in scientific notation.
+<ol marker="a." cols="2">
+    <li><m>62,000,000</m></li>
+    <li><m>0.000431</m></li>
+</ol></p></statement>
+ 
+<solution><p><ol marker="a.">
+    <li><p>First, we position the decimal point so that there is just one nonzero digit to the left of the decimal.
+        <me>62,000,000 = 6.2 \times <fillin characters="6"/></me>                          
+    To recover <m>62,000,000</m> from <m>6.2</m>, we must move the decimal point seven places to the right. Therefore, we multiply <m>6.2</m> by <m>10^7</m>.
+        <me>62,000,000 = 6.2 \times 10^7</me></p></li>
+    <li><p>First, we position the decimal point so that there is just one nonzero digit to the left of the decimal.
+        <me>0.000431 = 4.31 \times <fillin characters="6"/></me>                          
+    To recover <m>0.000431</m> from <m>4.31</m>, we must move the decimal point seven places to the right. Therefore, we multiply <m>4.31</m> by <m>10^{-4}</m>.
+        <me>0.000431 = 4.31 \times 10^{-4}</me></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write each number in scientific notation.
+<ol marker="a.">
+    <li><p>The largest living animal is the blue whale, with an average weight of <m>~120,000,000~</m> grams.</p></li>
+    <li><p>The smallest animal is the fairy fly beetle, which weighs about <m>~0.000005~</m> grams.</p>
+</li></ol></p></statement> 
+<answer><p><ol marker="a.">
+    <li><m>1.2 \times 10^8</m></li>
+    <li><m>5 \times 10^{-6}</m></li>
+</ol></p></answer></exercise> 
+
+</subsubsection>
+
+</subsection>

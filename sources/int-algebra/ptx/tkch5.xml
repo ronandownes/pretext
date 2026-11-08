@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xml:id="tkchap5"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Chapter 5 Functions</title>
+    
+
+        
+<xi:include href="./tk-5-1.xml" />  
+<xi:include href="./tk-5-2.xml" />  
+<xi:include href="./tk-5-3.xml" />  
+<xi:include href="./tk-5-4.xml" />  
+<xi:include href="./tk-5-5.xml" />
+ 
+<xi:include href="./tk-5-6.xml" />
+
+</section> 

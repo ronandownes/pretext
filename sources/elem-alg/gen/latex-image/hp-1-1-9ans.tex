@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [xscale=.075, yscale=.075]
+\draw[cyan] (50,60) grid[step=5] (100,120);
+\draw[black,thick, ->, >=stealth'] (50,60)--(107,60) node[right]{$R$};
+\draw[black,thick, ->, >=stealth'] (50,60)--(50,127) node[left]{$S$};
+\foreach \x in  {50, 60, ..., 100} {
+ \draw[black, thick] (\x,60.75) --++(0,-1.5)  node[below]   {\x};
+}
+\foreach \y in  {60, 70, ..., 120} {
+ \draw[black, thick] (50.75,\y) --++(-1.5,0)  node[left]   {\y};
+}
+\draw[blue, very thick] (50,65)--(100,115);
+\foreach \x in {70, 75, 82, 86, 90}{
+ \draw[red, fill=red] (\x, {\x+15}) circle (1cm);
+ }
+\end{tikzpicture}%
+}
+\end{document}

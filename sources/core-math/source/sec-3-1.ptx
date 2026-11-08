@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-3-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Volume and Surface Area</title>
+
+<sidebyside widths="40% 50%"><p><ul>
+    <li><p>Surface Area</p></li>
+    <li><p>Boxes and Cubes</p></li>
+    <li><p>Volume</p></li>
+  </ul></p>
+      <image source="platonicsolids.png"></image></sidebyside>
+
+<subsection><title>Surface Area</title>
+
+<p>This is Brandi, the St. Bernard, and this is her dog house. We are going to paint her dog house. (You get to choose the color.)</p>
+    <image source="brandi.png" width="70%"></image>
+
+<p>We need to know how much paint to buy, so we'll start by calculating the area we want to paint. We won't paint the roof, of course, or the doorway, so that leaves the four sides of the house: front and back, left and right.</p>
+
+<activity><title>Surface Area</title>
+<p>Here are diagrams of the four faces of the dog house. Each grid line represents 6 inches. We'll find the area of each face.</p>  <p>Suggestion: Calculate the area in square feet.</p>
+ <p><ol>   
+  <li><image source="act-3-1-1a.png" width="90%"></image>
+    <p>Area of front face:   <fillin></fillin></p>                                                         
+  <p>Hint: You might think of this face as a rectangle with a triangle on top, and a smaller rectangle cut out of the middle.</p>
+
+  <p>Area of back face:   <fillin></fillin></p>                                                       
+  <p>Hint: Now that you know the area of the front face, what's the easiest way to find the area of the back face?</p></li>
+<li><image source="act-3-1-1b.png" width="90%"></image>
+  <p>Area of left face:  <fillin></fillin></p>                                                        
+  <p>Area of right face:  <fillin></fillin></p>                                                       
+    <p>Hint: These two are easy, and the same!</p></li>
+<li><p>Total area: <fillin></fillin></p></li>
+<li><p>On average, a gallon of paint covers 350 square feet. Will you have enough paint if you buy one quart?</p></li>
+</ol></p></activity>
+
+<p>When we calculate the sum of the areas of the outside faces of a three-dimensional object, it is called the <term>surface area</term> of the object. The simplest object for finding surface area is a box. Here is one.</p>
+      <image source="box1.png" width="45%"></image>
+
+<example><statement><p>Find the surface area of the box shown above. The dimensions are given in meters.</p></statement>
+
+<solution><p>The box has six faces: front and back, top and bottom, left and right. Here are the areas of the six faces.</p>
+<p><ul>
+  <li><p>Front:  <m>6 \times 3 = 18</m>  square meters</p></li>
+  <li><p>Back: same as the front</p></li>
+  <li><p>Top:  <m>6 \times 4 = 24</m>  square meters</p></li>
+  <li><p>Bottom: same as the top</p></li>
+  <li><p>Right:  <m>4 \times 3 = 12</m>  square meters</p></li>
+  <li><p>Left: same as the right</p></li>
+</ul></p>
+
+  <p>Finally, we add the areas of the six faces.
+      <me>18 + 18 + 24 + 24 + 12 + 12 = 108~~ \text{square meters}</me></p></solution></example>
+
+<note><p>You may find it easier to visualize the six faces of the box in an "unfolded" diagram.</p>
+    <image source="cutbox.png" width="40%"></image>
+<p>Imagine cutting the edges of the box on the red lines above and unfolding it to get a flat surface that looks like this:</p>
+    <image source="unfoldedbox.png" width="50%"></image>
+<p>If you fold up the sides along the yellow lines and close the top, you will get back the original box. (You can try this yourself by tracing the figure onto a piece of paper and cutting it out!)</p></note>
+</subsection>
+
+<subsection><title>Boxes and Cubes</title>
+
+<p>A <term>cube</term> is a box whose length, width, and height are all equal. That means that all six faces are identical. Here is a cube and an unfolded version.</p>
+    <image source="cube.png" width="70%"></image>
+
+<exercise><statement><p>A wooden block in the shape of a cube measures 3 inches on each side. What is its surface area?</p></statement>
+
+<answer><p>54 sq in</p></answer></exercise>
+
+<p>If you have never tried to draw a three-dimensional box before, follow the steps below.</p>
+
+<assemblage><title>Interlude: How to Draw a Box</title>
+
+<p>Step 1  Draw a rectangle for the front of the box.</p>
+      <image source="drawbox1.png" width="28%"></image>
+<p>Step 2  Draw a second rectangle for the back of the box.</p>
+      <image source="drawbox2.png" width="37%"></image>
+<p>Step 3  Connect the corners from the front to the back.</p>
+      <image source="drawbox3.png" width="35%"></image>
+</assemblage>
+
+<activity><title>Boxes Unfolded</title>
+
+<introduction><p>It may be helpful to cut out copies of the diagrams and fold them up.</p></introduction>
+
+<p><ol>
+  <li><p>Which of these diagrams can be folded up into a cube?</p>  
+      <p>If it makes a cube, label the squares with the faces of your cube: Front, Back, Top, Bottom, Left, Right.</p>
+      <p><ol marker="a." cols="2">
+      <li><p><image source="act-3-1-2a.png" width="80%"></image></p></li> 
+      <li><p><image source="act-3-1-2b.png" width="80%"></image></p></li>
+      <li><p><image source="act-3-1-2c.png" width="80%"></image></p></li>
+      <li><p><image source="act-3-1-2d.png" width="80%"></image></p></li>
+      <li><p><image source="act-3-1-2e.png" width="80%"></image></p></li>
+      <li><p><image source="act-3-1-2f.png" width="80%"></image></p></li></ol></p></li>
+  <li><p>Sketch the box that can be made from each diagram below, and label its dimensions. The grids represent inches.</p>
+      <p><ol marker="a.">
+      <li><p><image source="act-3-1-2boxa.png" width="80%"></image></p></li> 
+      <li><p><image source="act-3-1-2boxb.png" width="80%"></image></p></li></ol></p></li>
+  <li><p>Find the surface area of each of the boxes in Problem 2.</p></li>
+  </ol></p></activity>
+</subsection>
+
+<subsection><title>Volume</title>
+
+<p>Remember the cube in Checkpoint 3.1.3? In that exercise we were interested in the outer surface of the cube, the six faces that can be "unfolded" into a flat two-dimensional surface. Now we'll switch our focus to the three-dimensional space enclosed inside a box. We'll use cubes to measure that space.</p>
+  
+<p>Just as we use square units, such as square inches or square meters, to measure the area of a two-dimensional region, we use <term>cubic units</term> to measure the <term>volume</term> or amount of space inside a three-dimensional object. For instance, a <term>cubic inch</term> is the
+ amount of space enclosed inside a cube that measures 1 inch on each side. A <term>cubic meter</term> is ....  well, you get the idea.</p>
+    <image source="areavolume.png" width="90%"></image>
+
+<example><statement><p>Find the volume of the box shown below. The grid lines represent centimeters.</p>
+    <image source="boxvol.png" width="40%"></image></statement>
+
+<solution><p>We'd like to know how many "blocks," or cubic centimeters fit inside the box. Do we have to count them all? No:  first let's look at just the top layer of blocks.</p>
+      <image source="boxlayer.png" width="50%"></image>
+<p>Counting along the front face, there are 6 rows of 4 blocks each. So the volume of the top layer is
+    <me>6 \times 4 = 24~~\text{cubic centimeters}</me>
+Now, there are 3 layers of blocks, each containing 24 blocks, so the total number of blocks is
+    <me>3 \times 24 = 72~~\text{cubic centimeters}</me>
+The volume of the box is 72 cubic centimeters.</p>
+</solution></example>
+
+<note><p>We don't really need the grid lines to help us calculate the volume of a box. For example, here is a picture of a box with the standard labels for its dimensions.</p>
+    <image source="dimensionsbox.png" width="45%"></image>
+<p>Let's look at a particular example. We'll figure out how many cubic inches fit inside the box below, just as we did in Example 3.1.4.</p>
+    <image source="vol2400box.png" width="60%"></image>
+<p>The box is 10 inches high, so there are 10 layers of cubic inch blocks. Each layer contains 20 rows of 12 blocks each. One layer contains
+    <me>20 \times 12 = 240 \hphantom{0} \text{cubic inches}</me>
+There are 10 layers of 240 blocks, for a total of
+    <me>10 \times 240 = 2400 \hphantom{0} \text{cubic inches}</me>
+The volume of the box is 2400 cubic inches.</p></note>
+
+<exercise><statement><p><ol marker="a.">
+    <li><p>Draw a box, and label it with these dimensions:</p>
+        <p>length = 3 feet,  width = 5 feet,  height = 8 feet</p></li>
+    <li><p>Find the volume of the box.</p></li>
+    <li><p>Do you see an easy way to find the volume of a box when you know its dimensions? Describe your method.</p></li>
+  </ol></p></statement>
+  
+  <answer><p><ol marker="a.">
+    <li><image xml:id="box-3by5by8" width="22%" margins="0% 78%"><description>box 3 by 5 by 8</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.4]
+        \draw[gray, thick, dashed] (2,2) rectangle ++(3,8);
+        \draw[gray, thick, dashed] (0,0) --++(2,2);
+        \draw[thick] (0,0) rectangle (3,8);
+        \draw[thick](3,8)--++(2,2);
+        \draw[thick](3,0)--++(2,2)--++(0,8)--++(-3,0)--++(-2,-2);
+        \node[text width=1cm, text=blue] at (2.4,-.6){3 ft};
+        \node[text width=1cm, text=blue] at (5.5,.5){5 ft};
+        \node[text width=1cm, text=blue] at (7,5){8 ft};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><p>120 cu ft</p></li>
+    <li><p>Multiply the length times the width times the height.</p></li>
+  </ol></p></answer></exercise>
+  
+<activity><title>Volume</title>
+<p>Look back at the unfolded boxes in Problem 2 of Activity 3.1.2. (Here are tiny pictures of them.)</p>
+    <image source="tinybox.png" width="80%"></image>
+<p><ol>
+<li><p>Draw the folded up version of each box, and label its dimensions.</p></li>
+<li><p>Find the volume of each box.</p></li>
+</ol></p></activity>
+
+<note><p>Do you see the difference between surface area and volume?</p>
+<p><ul>  
+<li><p><term>Surface area</term> measures the area of the <m>\blert{\text{outside surface}}</m> of a three-dimensional object.</p></li>  
+<li><p><term>Volume</term> measures the amount of <m>\blert{\text{space inside}}</m> the object.</p></li> 
+</ul></p>
+<p><sidebyside widths="55% 35%"><stack><p>Surface area is measured in square units, and volume is measured in cubic units. For example, the surface area of the cube shown at right is 6 square inches, and its volume is 1 cubic inch.</p>
+  <p>Surface Area:    6 square inches</p>
+  <p>Volume:   1 cubic inch</p></stack>
+  <image source="cubicinch.png"></image></sidebyside></p></note>
+
+<p>You may be wondering how we can find the volume of objects with curved sides, which cannot be completely filled with cubical blocks. In later lessons we'll learn how to find the volume and surface area of familiar objects such as cylinders and spheres.</p>
+      <image source="pitcher.png" width="30%"></image>
+
+<p>But here is a method that will work on many irregular objects, such as the pitcher shown above. Fill the object with liquid or sand. Then pour the contents into a measuring cup or a box labeled with grid lines. The volume of liquid in the measuring cup is the same as the volume that came out of the pitcher!</p>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+    <li><p>volume</p></li>
+    <li><p>surface area</p></li>
+    <li><p>cube</p></li>
+    <li><p>cubic units</p></li>
+</ul></p></subsection>
+
+
+<xi:include href="./prac-3-1.ptx" />
+
+</section>

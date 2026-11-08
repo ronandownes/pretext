@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webwork-extraction>
+  <webwork-reps xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <authored>
+
+        <pg-code>
+              $refreshCachedImages = 1;
+              $h = -4;
+              $k = 0;
+              $a = sqrt(12);
+              $b = 3;
+              $xfunc[0] = sub { my $t = shift();
+              return $h+$a*cosh($t); };
+              $yfunc[0] = sub { my $t = shift();
+              return $k+$b*sinh($t); };
+              $xfunc[1] = sub { my $t = shift();
+              return $h+$b*cosh($t); };
+              $yfunc[1] = sub { my $t = shift();
+              return $k+$a*sinh($t); };
+              $xfunc[2] = sub { my $t = shift();
+              return $h+$a*sinh($t); };
+              $yfunc[2] = sub { my $t = shift();
+              return $k +$b*cosh($t); };
+              $xfunc[3] = sub { my $t = shift();
+              return $h + $b*sinh($t); };
+              $yfunc[3] = sub { my $t = shift();
+              return $k+$a*cosh($t); };
+              $xfunc[4] = sub { my $t = shift();
+              return $h-$a*cosh($t); };
+              $yfunc[4] = sub { my $t = shift();
+              return $k+$b*sinh($t); };
+              $xfunc[5] = sub { my $t = shift();
+              return $h-$b*cosh($t); };
+              $yfunc[5] = sub { my $t = shift();
+              return $k+$a*sinh($t); };
+              $xfunc[6] = sub { my $t = shift();
+              return $h+$a*sinh($t); };
+              $yfunc[6] = sub { my $t = shift();
+              return $k -$b*cosh($t); };
+              $xfunc[7] = sub { my $t = shift();
+              return $h + $b*sinh($t); };
+              $yfunc[7] = sub { my $t = shift();
+              return $k-$a*cosh($t); };
+
+              foreach my $i (0..3) {
+              $gr[$i] = init_graph(-15,-10,5,10, axes=&gt;[0,0], grid=&gt;[20,20], size=&gt;[240,240]);
+              $fn[$i] = new Fun( $xfunc[$i], $yfunc[$i], $gr[$i] );
+              $fn[$i]-&gt;domain(-3,3);
+              $fn[$i+4] = new Fun( $xfunc[$i+4], $yfunc[$i+4], $gr[$i] );
+              $fn[$i+4]-&gt;domain(-3,3);
+              }
+
+              foreach my $i (0..3) {
+              $gr[$i] -&gt; lb('reset');
+              $gr[$i] -&gt; lb(new Label (-0.8,5,5,'black','center','middle'));
+              $gr[$i] -&gt; lb(new Label (-0.8,-5,-5,'black','center','middle'));
+              $gr[$i] -&gt; lb(new Label (5,-0.8,5,'black','center','middle'));
+              $gr[$i] -&gt; lb(new Label (-5,-0.8,-5,'black','center','middle'));
+              }
+              $gr[0] -&gt; lb(new Label (-8.5,9,"(A)",'black','center','middle'));
+              $gr[1] -&gt; lb(new Label (-8.5,9,"(B)",'black','center','middle'));
+              $gr[2] -&gt; lb(new Label (-8.5,9,"(C)",'black','center','middle'));
+              $gr[3] -&gt; lb(new Label (-8.5,9,"(D)",'black','center','middle'));
+
+              $mc = RadioButtons(
+                      [ "(A)", "(B)", "(C)","(D)"],
+                      2
+                  );
+              Context(Point)-&gt;flags-&gt;set( reduceConstants =&gt; 0, reduceConstantFunctions =&gt; 0,  );
+              $vertices = List("(5+sqrt(15),-3), (5-sqrt(15),-3)");
+              $my_evaluator = $vertices -&gt; cmp(
+              showHints=&gt;1,
+              showLengthHints =&gt; 1,
+              partialCredit =&gt; 1,
+              ); 
+              $covertices = List("(5,-3+sqrt(8)), (5,-3-sqrt(8))");
+              $my_evaluator2 = $covertices -&gt; cmp(
+              showHints=&gt;1,
+              showLengthHints =&gt; 1,
+              partialCredit =&gt; 1,
+              ); 
+              $l1 = Formula("sqrt(3)/2 *(x+4)");
+              $l2 = Formula("-sqrt(3)/2 *(x+4)");
+              $multians = MultiAnswer($l1,$l2)-&gt;with(
+                singleResult =&gt; 0,
+                checkTypes =&gt; 0,
+                checker =&gt; sub {
+                    my ( $correct, $student, $self ) = @_;
+                    my ( $f1stu, $f2stu ) = @{$student};
+                    my ( $f1, $f2 ) = @{$correct};
+                    if ( ($f1 == $f1stu &amp;&amp; $f2 == $f2stu) ||
+                         ($f1 == $f2stu &amp;&amp; $f2 == $f1stu)  
+                    ) {
+                    return[1,1];
+                    } elsif ( ($f1 == $f1stu )  ||
+                             ($f2 == $f1stu )  
+                        ) {
+                        return [1,0];
+                    } elsif ( ($f1 == $f2stu)   ||
+                             ($f2 == $f2stu )  
+                        ) {
+                        return [0,1];
+                  } else {
+                      return [0,0];
+                  }
+                  }
+              );            
+          </pg-code>
+        <statement>
+          <p>
+            <ol label="a">
+              <li><p>Graph <m>\dfrac{y^2}{9} - \dfrac{(x+4)^2}{12} = 1</m></p>
+                     <sidebyside widths="35% 35%" margins="5% 5%"><image pg-name="$gr[0]"/><image pg-name="$gr[1]"/></sidebyside>
+                      <sidebyside widths="35% 35%" margins="5% 5%"><image pg-name="$gr[2]"/><image pg-name="$gr[3]"/></sidebyside>
+                      <p>Which of the above is the best match for the graph)?</p>
+                      <p><var name="$mc" form="buttons"/> </p></li>
+              <li><p>Find the equations of the asymptotes. (Enter "sqrt(2)" for <m>\sqrt{2}</m>.)</p>
+                      <p>Equations of asymptotes: <m>y=</m><var name="$multians" width="15"/> and </p>
+                      <p><m>y=</m><var name="$multians" width="15"/></p></li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol label="a">
+              <li><sidebyside widths="40%"><image pg-name="$gr[2]"/></sidebyside>
+                      <p>A graph is also shown below.</p></li>
+              <li><m>y=\dfrac{\sqrt{3}}{2}x+4</m>, <m>y=\dfrac{-\sqrt{3}}{2}x+4</m></li>
+            </ol>
+          </p>
+        </solution>
+
+    </authored>
+
+
+    <static seed="1">
+      <statement>
+      <p><ol label="a.">
+      <li>
+      <p>Graph <m>\dfrac{y^2}{9} - \dfrac{(x+4)^2}{12} = 1</m></p>
+      <sidebyside widths="35%">
+      <image source="images/webwork-1-image-1.png" />
+      </sidebyside>
+      <sidebyside widths="35%">
+      <image source="images/webwork-1-image-2.png" />
+      </sidebyside>
+      <sidebyside widths="35%">
+      <image source="images/webwork-1-image-3.png" />
+      </sidebyside>
+      <sidebyside widths="35%">
+      <image source="images/webwork-1-image-4.png" />
+      </sidebyside>
+      <p>Which of the above is the best match for the graph)?</p>
+      <p><var form="buttons">
+      <li>
+      <p>(A)</p>
+      </li>
+      <li>
+      <p>(B)</p>
+      </li>
+      <li>
+      <p>(C)</p>
+      </li>
+      <li>
+      <p>(D)</p>
+      </li>
+      </var></p>
+      </li>
+      <li>
+      <p>Find the equations of the asymptotes. (Enter <lq/>sqrt(2)<rq/> for <m>\sqrt{2}\text{.}</m>)</p>
+      <p>Equations of asymptotes: <m>y=</m><fillin name="AnSwEr0002" characters="15" /> and</p>
+      <p><m>y=</m><fillin name="AnSwEr0003" characters="15" /></p>
+      </li>
+      </ol></p>
+      </statement>
+      <answer>
+        <p><m>\text{(C)}</m></p>
+      </answer>
+      <answer>
+        <p><m>\frac{\sqrt{3}}{2}\!\left(x+4\right)</m></p>
+      </answer>
+      <answer>
+        <p><m>\frac{-\left(\sqrt{3}\right)}{2}\!\left(x+4\right)</m></p>
+      </answer>
+
+      <solution>
+      <p><ol label="a.">
+      <li>
+      <sidebyside widths="40%">
+      <image source="images/webwork-1-image-3.png" />
+      </sidebyside>
+      <p>A graph is also shown below.</p>
+      </li>
+      <li>
+      <p><m>y=\dfrac{\sqrt{3}}{2}x+4\text{,}</m> <m>y=\dfrac{-\sqrt{3}}{2}x+4</m></p>
+      </li>
+      </ol></p>
+      </solution>
+    </static>
+
+    <server-url hint="yes" solution="yes">https://webwork-ptx.aimath.org/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyTXVsdGlBbnN3ZXIucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzID0gMTsKJGggPSAtNDsKJGsgPSAwOwokYSA9IHNxcnQoMTIpOwokYiA9IDM7CiR4ZnVuY1swXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKmNvc2goJHQpOyB9OwokeWZ1bmNbMF0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYipzaW5oKCR0KTsgfTsKJHhmdW5jWzFdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgrJGIqY29zaCgkdCk7IH07CiR5ZnVuY1sxXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRhKnNpbmgoJHQpOyB9OwokeGZ1bmNbMl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCskYSpzaW5oKCR0KTsgfTsKJHlmdW5jWzJdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsgKyRiKmNvc2goJHQpOyB9OwokeGZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCArICRiKnNpbmgoJHQpOyB9OwokeWZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYSpjb3NoKCR0KTsgfTsKJHhmdW5jWzRdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgtJGEqY29zaCgkdCk7IH07CiR5ZnVuY1s0XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRiKnNpbmgoJHQpOyB9OwokeGZ1bmNbNV0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaC0kYipjb3NoKCR0KTsgfTsKJHlmdW5jWzVdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsrJGEqc2luaCgkdCk7IH07CiR4ZnVuY1s2XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKnNpbmgoJHQpOyB9OwokeWZ1bmNbNl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayAtJGIqY29zaCgkdCk7IH07CiR4ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoICsgJGIqc2luaCgkdCk7IH07CiR5ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrLSRhKmNvc2goJHQpOyB9OwoKZm9yZWFjaCBteSAkaSAoMC4uMykgewokZ3JbJGldID0gaW5pdF9ncmFwaCgtMTUsLTEwLDUsMTAsIGF4ZXM9PlswLDBdLCBncmlkPT5bMjAsMjBdLCBzaXplPT5bMjQwLDI0MF0pOwokZm5bJGldID0gbmV3IEZ1biggJHhmdW5jWyRpXSwgJHlmdW5jWyRpXSwgJGdyWyRpXSApOwokZm5bJGldLT5kb21haW4oLTMsMyk7CiRmblskaSs0XSA9IG5ldyBGdW4oICR4ZnVuY1skaSs0XSwgJHlmdW5jWyRpKzRdLCAkZ3JbJGldICk7CiRmblskaSs0XS0%2BZG9tYWluKC0zLDMpOwp9Cgpmb3JlYWNoIG15ICRpICgwLi4zKSB7CiRnclskaV0gLT4gbGIoJ3Jlc2V0Jyk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LDUsNSwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LC01LC01LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKDUsLTAuOCw1LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKC01LC0wLjgsLTUsJ2JsYWNrJywnY2VudGVyJywnbWlkZGxlJykpOwp9CiRnclswXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEEpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsxXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEIpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsyXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEMpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclszXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEQpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CgokbWMgPSBSYWRpb0J1dHRvbnMoCiAgICAgICAgWyAiKEEpIiwgIihCKSIsICIoQykiLCIoRCkiXSwKICAgICAgICAyCiAgICApOwpDb250ZXh0KFBvaW50KS0%2BZmxhZ3MtPnNldCggcmVkdWNlQ29uc3RhbnRzID0%2BIDAsIHJlZHVjZUNvbnN0YW50RnVuY3Rpb25zID0%2BIDAsICApOwokdmVydGljZXMgPSBMaXN0KCIoNStzcXJ0KDE1KSwtMyksICg1LXNxcnQoMTUpLC0zKSIpOwokbXlfZXZhbHVhdG9yID0gJHZlcnRpY2VzIC0%2BIGNtcCgKc2hvd0hpbnRzPT4xLApzaG93TGVuZ3RoSGludHMgPT4gMSwKcGFydGlhbENyZWRpdCA9PiAxLAopOyAKJGNvdmVydGljZXMgPSBMaXN0KCIoNSwtMytzcXJ0KDgpKSwgKDUsLTMtc3FydCg4KSkiKTsKJG15X2V2YWx1YXRvcjIgPSAkY292ZXJ0aWNlcyAtPiBjbXAoCnNob3dIaW50cz0%2BMSwKc2hvd0xlbmd0aEhpbnRzID0%2BIDEsCnBhcnRpYWxDcmVkaXQgPT4gMSwKKTsgCiRsMSA9IEZvcm11bGEoInNxcnQoMykvMiAqKHgrNCkiKTsKJGwyID0gRm9ybXVsYSgiLXNxcnQoMykvMiAqKHgrNCkiKTsKJG11bHRpYW5zID0gTXVsdGlBbnN3ZXIoJGwxLCRsMiktPndpdGgoCiAgc2luZ2xlUmVzdWx0ID0%2BIDAsCiAgY2hlY2tUeXBlcyA9PiAwLAogIGNoZWNrZXIgPT4gc3ViIHsKICAgICAgbXkgKCAkY29ycmVjdCwgJHN0dWRlbnQsICRzZWxmICkgPSBAXzsKICAgICAgbXkgKCAkZjFzdHUsICRmMnN0dSApID0gQHskc3R1ZGVudH07CiAgICAgIG15ICggJGYxLCAkZjIgKSA9IEB7JGNvcnJlY3R9OwogICAgICBpZiAoICgkZjEgPT0gJGYxc3R1ICYmICRmMiA9PSAkZjJzdHUpIHx8CiAgICAgICAgICAgKCRmMSA9PSAkZjJzdHUgJiYgJGYyID09ICRmMXN0dSkgIAogICAgICApIHsKICAgICAgcmV0dXJuWzEsMV07CiAgICAgIH0gZWxzaWYgKCAoJGYxID09ICRmMXN0dSApICB8fAogICAgICAgICAgICAgICAoJGYyID09ICRmMXN0dSApICAKICAgICAgICAgICkgewogICAgICAgICAgcmV0dXJuIFsxLDBdOwogICAgICB9IGVsc2lmICggKCRmMSA9PSAkZjJzdHUpICAgfHwKICAgICAgICAgICAgICAgKCRmMiA9PSAkZjJzdHUgKSAgCiAgICAgICAgICApIHsKICAgICAgICAgIHJldHVybiBbMCwxXTsKICAgIH0gZWxzZSB7CiAgICAgICAgcmV0dXJuIFswLDBdOwogICAgfQogICAgfQopOwoKQkVHSU5fUEdNTAphLiAgR3JhcGggW2BcZGZyYWN7eV4yfXs5fSAtIFxkZnJhY3soeCs0KV4yfXsxMn0gPSAxYF0KCiAgICBbQGltYWdlKGluc2VydEdyYXBoKCRnclswXSksIHdpZHRoPT4yMTApQF0qIFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyWzFdKSwgd2lkdGg9PjIxMClAXSogCgogICAgW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JbMl0pLCB3aWR0aD0%2BMjEwKUBdKiBbQGltYWdlKGluc2VydEdyYXBoKCRnclszXSksIHdpZHRoPT4yMTApQF0qIAoKICAgIFdoaWNoIG9mIHRoZSBhYm92ZSBpcyB0aGUgYmVzdCBtYXRjaCBmb3IgdGhlIGdyYXBoKT8KCiAgICBbX117JG1jfXs1fQoKCmEuICBGaW5kIHRoZSBlcXVhdGlvbnMgb2YgdGhlIGFzeW1wdG90ZXMuIChFbnRlciAic3FydCgyKSIgZm9yIFtgXHNxcnR7Mn1cdGV4dHsufWBdKQoKICAgIEVxdWF0aW9ucyBvZiBhc3ltcHRvdGVzOiBbYHk9YF1bX117JG11bHRpYW5zfXsxNX0gYW5kCgogICAgW2B5PWBdW19deyRtdWx0aWFuc317MTV9CgoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCmEuICBbQGltYWdlKGluc2VydEdyYXBoKCRnclsyXSksIHdpZHRoPT4yNDApQF0qIAoKICAgIEEgZ3JhcGggaXMgYWxzbyBzaG93biBiZWxvdy4KCgphLiAgW2B5PVxkZnJhY3tcc3FydHszfX17Mn14KzRcdGV4dHssfWBdIFtgeT1cZGZyYWN7LVxzcXJ0ezN9fXsyfXgrNGBdCgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+
+    <server-url hint="yes" solution="no">https://webwork-ptx.aimath.org/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyTXVsdGlBbnN3ZXIucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzID0gMTsKJGggPSAtNDsKJGsgPSAwOwokYSA9IHNxcnQoMTIpOwokYiA9IDM7CiR4ZnVuY1swXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKmNvc2goJHQpOyB9OwokeWZ1bmNbMF0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYipzaW5oKCR0KTsgfTsKJHhmdW5jWzFdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgrJGIqY29zaCgkdCk7IH07CiR5ZnVuY1sxXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRhKnNpbmgoJHQpOyB9OwokeGZ1bmNbMl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCskYSpzaW5oKCR0KTsgfTsKJHlmdW5jWzJdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsgKyRiKmNvc2goJHQpOyB9OwokeGZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCArICRiKnNpbmgoJHQpOyB9OwokeWZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYSpjb3NoKCR0KTsgfTsKJHhmdW5jWzRdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgtJGEqY29zaCgkdCk7IH07CiR5ZnVuY1s0XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRiKnNpbmgoJHQpOyB9OwokeGZ1bmNbNV0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaC0kYipjb3NoKCR0KTsgfTsKJHlmdW5jWzVdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsrJGEqc2luaCgkdCk7IH07CiR4ZnVuY1s2XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKnNpbmgoJHQpOyB9OwokeWZ1bmNbNl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayAtJGIqY29zaCgkdCk7IH07CiR4ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoICsgJGIqc2luaCgkdCk7IH07CiR5ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrLSRhKmNvc2goJHQpOyB9OwoKZm9yZWFjaCBteSAkaSAoMC4uMykgewokZ3JbJGldID0gaW5pdF9ncmFwaCgtMTUsLTEwLDUsMTAsIGF4ZXM9PlswLDBdLCBncmlkPT5bMjAsMjBdLCBzaXplPT5bMjQwLDI0MF0pOwokZm5bJGldID0gbmV3IEZ1biggJHhmdW5jWyRpXSwgJHlmdW5jWyRpXSwgJGdyWyRpXSApOwokZm5bJGldLT5kb21haW4oLTMsMyk7CiRmblskaSs0XSA9IG5ldyBGdW4oICR4ZnVuY1skaSs0XSwgJHlmdW5jWyRpKzRdLCAkZ3JbJGldICk7CiRmblskaSs0XS0%2BZG9tYWluKC0zLDMpOwp9Cgpmb3JlYWNoIG15ICRpICgwLi4zKSB7CiRnclskaV0gLT4gbGIoJ3Jlc2V0Jyk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LDUsNSwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LC01LC01LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKDUsLTAuOCw1LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKC01LC0wLjgsLTUsJ2JsYWNrJywnY2VudGVyJywnbWlkZGxlJykpOwp9CiRnclswXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEEpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsxXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEIpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsyXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEMpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclszXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEQpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CgokbWMgPSBSYWRpb0J1dHRvbnMoCiAgICAgICAgWyAiKEEpIiwgIihCKSIsICIoQykiLCIoRCkiXSwKICAgICAgICAyCiAgICApOwpDb250ZXh0KFBvaW50KS0%2BZmxhZ3MtPnNldCggcmVkdWNlQ29uc3RhbnRzID0%2BIDAsIHJlZHVjZUNvbnN0YW50RnVuY3Rpb25zID0%2BIDAsICApOwokdmVydGljZXMgPSBMaXN0KCIoNStzcXJ0KDE1KSwtMyksICg1LXNxcnQoMTUpLC0zKSIpOwokbXlfZXZhbHVhdG9yID0gJHZlcnRpY2VzIC0%2BIGNtcCgKc2hvd0hpbnRzPT4xLApzaG93TGVuZ3RoSGludHMgPT4gMSwKcGFydGlhbENyZWRpdCA9PiAxLAopOyAKJGNvdmVydGljZXMgPSBMaXN0KCIoNSwtMytzcXJ0KDgpKSwgKDUsLTMtc3FydCg4KSkiKTsKJG15X2V2YWx1YXRvcjIgPSAkY292ZXJ0aWNlcyAtPiBjbXAoCnNob3dIaW50cz0%2BMSwKc2hvd0xlbmd0aEhpbnRzID0%2BIDEsCnBhcnRpYWxDcmVkaXQgPT4gMSwKKTsgCiRsMSA9IEZvcm11bGEoInNxcnQoMykvMiAqKHgrNCkiKTsKJGwyID0gRm9ybXVsYSgiLXNxcnQoMykvMiAqKHgrNCkiKTsKJG11bHRpYW5zID0gTXVsdGlBbnN3ZXIoJGwxLCRsMiktPndpdGgoCiAgc2luZ2xlUmVzdWx0ID0%2BIDAsCiAgY2hlY2tUeXBlcyA9PiAwLAogIGNoZWNrZXIgPT4gc3ViIHsKICAgICAgbXkgKCAkY29ycmVjdCwgJHN0dWRlbnQsICRzZWxmICkgPSBAXzsKICAgICAgbXkgKCAkZjFzdHUsICRmMnN0dSApID0gQHskc3R1ZGVudH07CiAgICAgIG15ICggJGYxLCAkZjIgKSA9IEB7JGNvcnJlY3R9OwogICAgICBpZiAoICgkZjEgPT0gJGYxc3R1ICYmICRmMiA9PSAkZjJzdHUpIHx8CiAgICAgICAgICAgKCRmMSA9PSAkZjJzdHUgJiYgJGYyID09ICRmMXN0dSkgIAogICAgICApIHsKICAgICAgcmV0dXJuWzEsMV07CiAgICAgIH0gZWxzaWYgKCAoJGYxID09ICRmMXN0dSApICB8fAogICAgICAgICAgICAgICAoJGYyID09ICRmMXN0dSApICAKICAgICAgICAgICkgewogICAgICAgICAgcmV0dXJuIFsxLDBdOwogICAgICB9IGVsc2lmICggKCRmMSA9PSAkZjJzdHUpICAgfHwKICAgICAgICAgICAgICAgKCRmMiA9PSAkZjJzdHUgKSAgCiAgICAgICAgICApIHsKICAgICAgICAgIHJldHVybiBbMCwxXTsKICAgIH0gZWxzZSB7CiAgICAgICAgcmV0dXJuIFswLDBdOwogICAgfQogICAgfQopOwoKQkVHSU5fUEdNTAphLiAgR3JhcGggW2BcZGZyYWN7eV4yfXs5fSAtIFxkZnJhY3soeCs0KV4yfXsxMn0gPSAxYF0KCiAgICBbQGltYWdlKGluc2VydEdyYXBoKCRnclswXSksIHdpZHRoPT4yMTApQF0qIFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyWzFdKSwgd2lkdGg9PjIxMClAXSogCgogICAgW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JbMl0pLCB3aWR0aD0%2BMjEwKUBdKiBbQGltYWdlKGluc2VydEdyYXBoKCRnclszXSksIHdpZHRoPT4yMTApQF0qIAoKICAgIFdoaWNoIG9mIHRoZSBhYm92ZSBpcyB0aGUgYmVzdCBtYXRjaCBmb3IgdGhlIGdyYXBoKT8KCiAgICBbX117JG1jfXs1fQoKCmEuICBGaW5kIHRoZSBlcXVhdGlvbnMgb2YgdGhlIGFzeW1wdG90ZXMuIChFbnRlciAic3FydCgyKSIgZm9yIFtgXHNxcnR7Mn1cdGV4dHsufWBdKQoKICAgIEVxdWF0aW9ucyBvZiBhc3ltcHRvdGVzOiBbYHk9YF1bX117JG11bHRpYW5zfXsxNX0gYW5kCgogICAgW2B5PWBdW19deyRtdWx0aWFuc317MTV9CgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+
+    <server-url hint="no" solution="yes">https://webwork-ptx.aimath.org/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyTXVsdGlBbnN3ZXIucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzID0gMTsKJGggPSAtNDsKJGsgPSAwOwokYSA9IHNxcnQoMTIpOwokYiA9IDM7CiR4ZnVuY1swXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKmNvc2goJHQpOyB9OwokeWZ1bmNbMF0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYipzaW5oKCR0KTsgfTsKJHhmdW5jWzFdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgrJGIqY29zaCgkdCk7IH07CiR5ZnVuY1sxXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRhKnNpbmgoJHQpOyB9OwokeGZ1bmNbMl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCskYSpzaW5oKCR0KTsgfTsKJHlmdW5jWzJdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsgKyRiKmNvc2goJHQpOyB9OwokeGZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCArICRiKnNpbmgoJHQpOyB9OwokeWZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYSpjb3NoKCR0KTsgfTsKJHhmdW5jWzRdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgtJGEqY29zaCgkdCk7IH07CiR5ZnVuY1s0XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRiKnNpbmgoJHQpOyB9OwokeGZ1bmNbNV0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaC0kYipjb3NoKCR0KTsgfTsKJHlmdW5jWzVdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsrJGEqc2luaCgkdCk7IH07CiR4ZnVuY1s2XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKnNpbmgoJHQpOyB9OwokeWZ1bmNbNl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayAtJGIqY29zaCgkdCk7IH07CiR4ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoICsgJGIqc2luaCgkdCk7IH07CiR5ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrLSRhKmNvc2goJHQpOyB9OwoKZm9yZWFjaCBteSAkaSAoMC4uMykgewokZ3JbJGldID0gaW5pdF9ncmFwaCgtMTUsLTEwLDUsMTAsIGF4ZXM9PlswLDBdLCBncmlkPT5bMjAsMjBdLCBzaXplPT5bMjQwLDI0MF0pOwokZm5bJGldID0gbmV3IEZ1biggJHhmdW5jWyRpXSwgJHlmdW5jWyRpXSwgJGdyWyRpXSApOwokZm5bJGldLT5kb21haW4oLTMsMyk7CiRmblskaSs0XSA9IG5ldyBGdW4oICR4ZnVuY1skaSs0XSwgJHlmdW5jWyRpKzRdLCAkZ3JbJGldICk7CiRmblskaSs0XS0%2BZG9tYWluKC0zLDMpOwp9Cgpmb3JlYWNoIG15ICRpICgwLi4zKSB7CiRnclskaV0gLT4gbGIoJ3Jlc2V0Jyk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LDUsNSwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LC01LC01LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKDUsLTAuOCw1LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKC01LC0wLjgsLTUsJ2JsYWNrJywnY2VudGVyJywnbWlkZGxlJykpOwp9CiRnclswXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEEpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsxXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEIpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsyXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEMpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclszXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEQpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CgokbWMgPSBSYWRpb0J1dHRvbnMoCiAgICAgICAgWyAiKEEpIiwgIihCKSIsICIoQykiLCIoRCkiXSwKICAgICAgICAyCiAgICApOwpDb250ZXh0KFBvaW50KS0%2BZmxhZ3MtPnNldCggcmVkdWNlQ29uc3RhbnRzID0%2BIDAsIHJlZHVjZUNvbnN0YW50RnVuY3Rpb25zID0%2BIDAsICApOwokdmVydGljZXMgPSBMaXN0KCIoNStzcXJ0KDE1KSwtMyksICg1LXNxcnQoMTUpLC0zKSIpOwokbXlfZXZhbHVhdG9yID0gJHZlcnRpY2VzIC0%2BIGNtcCgKc2hvd0hpbnRzPT4xLApzaG93TGVuZ3RoSGludHMgPT4gMSwKcGFydGlhbENyZWRpdCA9PiAxLAopOyAKJGNvdmVydGljZXMgPSBMaXN0KCIoNSwtMytzcXJ0KDgpKSwgKDUsLTMtc3FydCg4KSkiKTsKJG15X2V2YWx1YXRvcjIgPSAkY292ZXJ0aWNlcyAtPiBjbXAoCnNob3dIaW50cz0%2BMSwKc2hvd0xlbmd0aEhpbnRzID0%2BIDEsCnBhcnRpYWxDcmVkaXQgPT4gMSwKKTsgCiRsMSA9IEZvcm11bGEoInNxcnQoMykvMiAqKHgrNCkiKTsKJGwyID0gRm9ybXVsYSgiLXNxcnQoMykvMiAqKHgrNCkiKTsKJG11bHRpYW5zID0gTXVsdGlBbnN3ZXIoJGwxLCRsMiktPndpdGgoCiAgc2luZ2xlUmVzdWx0ID0%2BIDAsCiAgY2hlY2tUeXBlcyA9PiAwLAogIGNoZWNrZXIgPT4gc3ViIHsKICAgICAgbXkgKCAkY29ycmVjdCwgJHN0dWRlbnQsICRzZWxmICkgPSBAXzsKICAgICAgbXkgKCAkZjFzdHUsICRmMnN0dSApID0gQHskc3R1ZGVudH07CiAgICAgIG15ICggJGYxLCAkZjIgKSA9IEB7JGNvcnJlY3R9OwogICAgICBpZiAoICgkZjEgPT0gJGYxc3R1ICYmICRmMiA9PSAkZjJzdHUpIHx8CiAgICAgICAgICAgKCRmMSA9PSAkZjJzdHUgJiYgJGYyID09ICRmMXN0dSkgIAogICAgICApIHsKICAgICAgcmV0dXJuWzEsMV07CiAgICAgIH0gZWxzaWYgKCAoJGYxID09ICRmMXN0dSApICB8fAogICAgICAgICAgICAgICAoJGYyID09ICRmMXN0dSApICAKICAgICAgICAgICkgewogICAgICAgICAgcmV0dXJuIFsxLDBdOwogICAgICB9IGVsc2lmICggKCRmMSA9PSAkZjJzdHUpICAgfHwKICAgICAgICAgICAgICAgKCRmMiA9PSAkZjJzdHUgKSAgCiAgICAgICAgICApIHsKICAgICAgICAgIHJldHVybiBbMCwxXTsKICAgIH0gZWxzZSB7CiAgICAgICAgcmV0dXJuIFswLDBdOwogICAgfQogICAgfQopOwoKQkVHSU5fUEdNTAphLiAgR3JhcGggW2BcZGZyYWN7eV4yfXs5fSAtIFxkZnJhY3soeCs0KV4yfXsxMn0gPSAxYF0KCiAgICBbQGltYWdlKGluc2VydEdyYXBoKCRnclswXSksIHdpZHRoPT4yMTApQF0qIFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyWzFdKSwgd2lkdGg9PjIxMClAXSogCgogICAgW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JbMl0pLCB3aWR0aD0%2BMjEwKUBdKiBbQGltYWdlKGluc2VydEdyYXBoKCRnclszXSksIHdpZHRoPT4yMTApQF0qIAoKICAgIFdoaWNoIG9mIHRoZSBhYm92ZSBpcyB0aGUgYmVzdCBtYXRjaCBmb3IgdGhlIGdyYXBoKT8KCiAgICBbX117JG1jfXs1fQoKCmEuICBGaW5kIHRoZSBlcXVhdGlvbnMgb2YgdGhlIGFzeW1wdG90ZXMuIChFbnRlciAic3FydCgyKSIgZm9yIFtgXHNxcnR7Mn1cdGV4dHsufWBdKQoKICAgIEVxdWF0aW9ucyBvZiBhc3ltcHRvdGVzOiBbYHk9YF1bX117JG11bHRpYW5zfXsxNX0gYW5kCgogICAgW2B5PWBdW19deyRtdWx0aWFuc317MTV9CgoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCmEuICBbQGltYWdlKGluc2VydEdyYXBoKCRnclsyXSksIHdpZHRoPT4yNDApQF0qIAoKICAgIEEgZ3JhcGggaXMgYWxzbyBzaG93biBiZWxvdy4KCgphLiAgW2B5PVxkZnJhY3tcc3FydHszfX17Mn14KzRcdGV4dHssfWBdIFtgeT1cZGZyYWN7LVxzcXJ0ezN9fXsyfXgrNGBdCgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+
+    <server-url hint="no" solution="no">https://webwork-ptx.aimath.org/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyTXVsdGlBbnN3ZXIucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzID0gMTsKJGggPSAtNDsKJGsgPSAwOwokYSA9IHNxcnQoMTIpOwokYiA9IDM7CiR4ZnVuY1swXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKmNvc2goJHQpOyB9OwokeWZ1bmNbMF0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYipzaW5oKCR0KTsgfTsKJHhmdW5jWzFdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgrJGIqY29zaCgkdCk7IH07CiR5ZnVuY1sxXSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRhKnNpbmgoJHQpOyB9OwokeGZ1bmNbMl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCskYSpzaW5oKCR0KTsgfTsKJHlmdW5jWzJdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsgKyRiKmNvc2goJHQpOyB9OwokeGZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaCArICRiKnNpbmgoJHQpOyB9OwokeWZ1bmNbM10gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayskYSpjb3NoKCR0KTsgfTsKJHhmdW5jWzRdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGgtJGEqY29zaCgkdCk7IH07CiR5ZnVuY1s0XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrKyRiKnNpbmgoJHQpOyB9OwokeGZ1bmNbNV0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkaC0kYipjb3NoKCR0KTsgfTsKJHlmdW5jWzVdID0gc3ViIHsgbXkgJHQgPSBzaGlmdCgpOwpyZXR1cm4gJGsrJGEqc2luaCgkdCk7IH07CiR4ZnVuY1s2XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoKyRhKnNpbmgoJHQpOyB9OwokeWZ1bmNbNl0gPSBzdWIgeyBteSAkdCA9IHNoaWZ0KCk7CnJldHVybiAkayAtJGIqY29zaCgkdCk7IH07CiR4ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRoICsgJGIqc2luaCgkdCk7IH07CiR5ZnVuY1s3XSA9IHN1YiB7IG15ICR0ID0gc2hpZnQoKTsKcmV0dXJuICRrLSRhKmNvc2goJHQpOyB9OwoKZm9yZWFjaCBteSAkaSAoMC4uMykgewokZ3JbJGldID0gaW5pdF9ncmFwaCgtMTUsLTEwLDUsMTAsIGF4ZXM9PlswLDBdLCBncmlkPT5bMjAsMjBdLCBzaXplPT5bMjQwLDI0MF0pOwokZm5bJGldID0gbmV3IEZ1biggJHhmdW5jWyRpXSwgJHlmdW5jWyRpXSwgJGdyWyRpXSApOwokZm5bJGldLT5kb21haW4oLTMsMyk7CiRmblskaSs0XSA9IG5ldyBGdW4oICR4ZnVuY1skaSs0XSwgJHlmdW5jWyRpKzRdLCAkZ3JbJGldICk7CiRmblskaSs0XS0%2BZG9tYWluKC0zLDMpOwp9Cgpmb3JlYWNoIG15ICRpICgwLi4zKSB7CiRnclskaV0gLT4gbGIoJ3Jlc2V0Jyk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LDUsNSwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclskaV0gLT4gbGIobmV3IExhYmVsICgtMC44LC01LC01LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKDUsLTAuOCw1LCdibGFjaycsJ2NlbnRlcicsJ21pZGRsZScpKTsKJGdyWyRpXSAtPiBsYihuZXcgTGFiZWwgKC01LC0wLjgsLTUsJ2JsYWNrJywnY2VudGVyJywnbWlkZGxlJykpOwp9CiRnclswXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEEpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsxXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEIpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclsyXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEMpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CiRnclszXSAtPiBsYihuZXcgTGFiZWwgKC04LjUsOSwiKEQpIiwnYmxhY2snLCdjZW50ZXInLCdtaWRkbGUnKSk7CgokbWMgPSBSYWRpb0J1dHRvbnMoCiAgICAgICAgWyAiKEEpIiwgIihCKSIsICIoQykiLCIoRCkiXSwKICAgICAgICAyCiAgICApOwpDb250ZXh0KFBvaW50KS0%2BZmxhZ3MtPnNldCggcmVkdWNlQ29uc3RhbnRzID0%2BIDAsIHJlZHVjZUNvbnN0YW50RnVuY3Rpb25zID0%2BIDAsICApOwokdmVydGljZXMgPSBMaXN0KCIoNStzcXJ0KDE1KSwtMyksICg1LXNxcnQoMTUpLC0zKSIpOwokbXlfZXZhbHVhdG9yID0gJHZlcnRpY2VzIC0%2BIGNtcCgKc2hvd0hpbnRzPT4xLApzaG93TGVuZ3RoSGludHMgPT4gMSwKcGFydGlhbENyZWRpdCA9PiAxLAopOyAKJGNvdmVydGljZXMgPSBMaXN0KCIoNSwtMytzcXJ0KDgpKSwgKDUsLTMtc3FydCg4KSkiKTsKJG15X2V2YWx1YXRvcjIgPSAkY292ZXJ0aWNlcyAtPiBjbXAoCnNob3dIaW50cz0%2BMSwKc2hvd0xlbmd0aEhpbnRzID0%2BIDEsCnBhcnRpYWxDcmVkaXQgPT4gMSwKKTsgCiRsMSA9IEZvcm11bGEoInNxcnQoMykvMiAqKHgrNCkiKTsKJGwyID0gRm9ybXVsYSgiLXNxcnQoMykvMiAqKHgrNCkiKTsKJG11bHRpYW5zID0gTXVsdGlBbnN3ZXIoJGwxLCRsMiktPndpdGgoCiAgc2luZ2xlUmVzdWx0ID0%2BIDAsCiAgY2hlY2tUeXBlcyA9PiAwLAogIGNoZWNrZXIgPT4gc3ViIHsKICAgICAgbXkgKCAkY29ycmVjdCwgJHN0dWRlbnQsICRzZWxmICkgPSBAXzsKICAgICAgbXkgKCAkZjFzdHUsICRmMnN0dSApID0gQHskc3R1ZGVudH07CiAgICAgIG15ICggJGYxLCAkZjIgKSA9IEB7JGNvcnJlY3R9OwogICAgICBpZiAoICgkZjEgPT0gJGYxc3R1ICYmICRmMiA9PSAkZjJzdHUpIHx8CiAgICAgICAgICAgKCRmMSA9PSAkZjJzdHUgJiYgJGYyID09ICRmMXN0dSkgIAogICAgICApIHsKICAgICAgcmV0dXJuWzEsMV07CiAgICAgIH0gZWxzaWYgKCAoJGYxID09ICRmMXN0dSApICB8fAogICAgICAgICAgICAgICAoJGYyID09ICRmMXN0dSApICAKICAgICAgICAgICkgewogICAgICAgICAgcmV0dXJuIFsxLDBdOwogICAgICB9IGVsc2lmICggKCRmMSA9PSAkZjJzdHUpICAgfHwKICAgICAgICAgICAgICAgKCRmMiA9PSAkZjJzdHUgKSAgCiAgICAgICAgICApIHsKICAgICAgICAgIHJldHVybiBbMCwxXTsKICAgIH0gZWxzZSB7CiAgICAgICAgcmV0dXJuIFswLDBdOwogICAgfQogICAgfQopOwoKQkVHSU5fUEdNTAphLiAgR3JhcGggW2BcZGZyYWN7eV4yfXs5fSAtIFxkZnJhY3soeCs0KV4yfXsxMn0gPSAxYF0KCiAgICBbQGltYWdlKGluc2VydEdyYXBoKCRnclswXSksIHdpZHRoPT4yMTApQF0qIFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyWzFdKSwgd2lkdGg9PjIxMClAXSogCgogICAgW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JbMl0pLCB3aWR0aD0%2BMjEwKUBdKiBbQGltYWdlKGluc2VydEdyYXBoKCRnclszXSksIHdpZHRoPT4yMTApQF0qIAoKICAgIFdoaWNoIG9mIHRoZSBhYm92ZSBpcyB0aGUgYmVzdCBtYXRjaCBmb3IgdGhlIGdyYXBoKT8KCiAgICBbX117JG1jfXs1fQoKCmEuICBGaW5kIHRoZSBlcXVhdGlvbnMgb2YgdGhlIGFzeW1wdG90ZXMuIChFbnRlciAic3FydCgyKSIgZm9yIFtgXHNxcnR7Mn1cdGV4dHsufWBdKQoKICAgIEVxdWF0aW9ucyBvZiBhc3ltcHRvdGVzOiBbYHk9YF1bX117JG11bHRpYW5zfXsxNX0gYW5kCgogICAgW2B5PWBdW19deyRtdWx0aWFuc317MTV9CgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+
+    <pg>
+#######################################
+###    Generated from PreTeXt source   
+###    on 2020-06-12T11:04:23-07:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "parserMultiAnswer.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$refreshCachedImages = 1;
+$h = -4;
+$k = 0;
+$a = sqrt(12);
+$b = 3;
+$xfunc[0] = sub { my $t = shift();
+return $h+$a*cosh($t); };
+$yfunc[0] = sub { my $t = shift();
+return $k+$b*sinh($t); };
+$xfunc[1] = sub { my $t = shift();
+return $h+$b*cosh($t); };
+$yfunc[1] = sub { my $t = shift();
+return $k+$a*sinh($t); };
+$xfunc[2] = sub { my $t = shift();
+return $h+$a*sinh($t); };
+$yfunc[2] = sub { my $t = shift();
+return $k +$b*cosh($t); };
+$xfunc[3] = sub { my $t = shift();
+return $h + $b*sinh($t); };
+$yfunc[3] = sub { my $t = shift();
+return $k+$a*cosh($t); };
+$xfunc[4] = sub { my $t = shift();
+return $h-$a*cosh($t); };
+$yfunc[4] = sub { my $t = shift();
+return $k+$b*sinh($t); };
+$xfunc[5] = sub { my $t = shift();
+return $h-$b*cosh($t); };
+$yfunc[5] = sub { my $t = shift();
+return $k+$a*sinh($t); };
+$xfunc[6] = sub { my $t = shift();
+return $h+$a*sinh($t); };
+$yfunc[6] = sub { my $t = shift();
+return $k -$b*cosh($t); };
+$xfunc[7] = sub { my $t = shift();
+return $h + $b*sinh($t); };
+$yfunc[7] = sub { my $t = shift();
+return $k-$a*cosh($t); };
+
+foreach my $i (0..3) {
+$gr[$i] = init_graph(-15,-10,5,10, axes=&gt;[0,0], grid=&gt;[20,20], size=&gt;[240,240]);
+$fn[$i] = new Fun( $xfunc[$i], $yfunc[$i], $gr[$i] );
+$fn[$i]-&gt;domain(-3,3);
+$fn[$i+4] = new Fun( $xfunc[$i+4], $yfunc[$i+4], $gr[$i] );
+$fn[$i+4]-&gt;domain(-3,3);
+}
+
+foreach my $i (0..3) {
+$gr[$i] -&gt; lb('reset');
+$gr[$i] -&gt; lb(new Label (-0.8,5,5,'black','center','middle'));
+$gr[$i] -&gt; lb(new Label (-0.8,-5,-5,'black','center','middle'));
+$gr[$i] -&gt; lb(new Label (5,-0.8,5,'black','center','middle'));
+$gr[$i] -&gt; lb(new Label (-5,-0.8,-5,'black','center','middle'));
+}
+$gr[0] -&gt; lb(new Label (-8.5,9,"(A)",'black','center','middle'));
+$gr[1] -&gt; lb(new Label (-8.5,9,"(B)",'black','center','middle'));
+$gr[2] -&gt; lb(new Label (-8.5,9,"(C)",'black','center','middle'));
+$gr[3] -&gt; lb(new Label (-8.5,9,"(D)",'black','center','middle'));
+
+$mc = RadioButtons(
+        [ "(A)", "(B)", "(C)","(D)"],
+        2
+    );
+Context(Point)-&gt;flags-&gt;set( reduceConstants =&gt; 0, reduceConstantFunctions =&gt; 0,  );
+$vertices = List("(5+sqrt(15),-3), (5-sqrt(15),-3)");
+$my_evaluator = $vertices -&gt; cmp(
+showHints=&gt;1,
+showLengthHints =&gt; 1,
+partialCredit =&gt; 1,
+); 
+$covertices = List("(5,-3+sqrt(8)), (5,-3-sqrt(8))");
+$my_evaluator2 = $covertices -&gt; cmp(
+showHints=&gt;1,
+showLengthHints =&gt; 1,
+partialCredit =&gt; 1,
+); 
+$l1 = Formula("sqrt(3)/2 *(x+4)");
+$l2 = Formula("-sqrt(3)/2 *(x+4)");
+$multians = MultiAnswer($l1,$l2)-&gt;with(
+  singleResult =&gt; 0,
+  checkTypes =&gt; 0,
+  checker =&gt; sub {
+      my ( $correct, $student, $self ) = @_;
+      my ( $f1stu, $f2stu ) = @{$student};
+      my ( $f1, $f2 ) = @{$correct};
+      if ( ($f1 == $f1stu &amp;&amp; $f2 == $f2stu) ||
+           ($f1 == $f2stu &amp;&amp; $f2 == $f1stu)  
+      ) {
+      return[1,1];
+      } elsif ( ($f1 == $f1stu )  ||
+               ($f2 == $f1stu )  
+          ) {
+          return [1,0];
+      } elsif ( ($f1 == $f2stu)   ||
+               ($f2 == $f2stu )  
+          ) {
+          return [0,1];
+    } else {
+        return [0,0];
+    }
+    }
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+a.  Graph [`\dfrac{y^2}{9} - \dfrac{(x+4)^2}{12} = 1`]
+
+    [@image(insertGraph($gr[0]), width=&gt;210)@]* [@image(insertGraph($gr[1]), width=&gt;210)@]* 
+
+    [@image(insertGraph($gr[2]), width=&gt;210)@]* [@image(insertGraph($gr[3]), width=&gt;210)@]* 
+
+    Which of the above is the best match for the graph)?
+
+    [_]{$mc}{5}
+
+a.  Find the equations of the asymptotes. (Enter "sqrt(2)" for [`\sqrt{2}\text{.}`])
+
+    Equations of asymptotes: [`y=`][_]{$multians}{15} and
+
+    [`y=`][_]{$multians}{15}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [@image(insertGraph($gr[2]), width=&gt;240)@]* 
+
+    A graph is also shown below.
+
+a.  [`y=\dfrac{\sqrt{3}}{2}x+4\text{,}`] [`y=\dfrac{-\sqrt{3}}{2}x+4`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+
+    </pg>
+
+  </webwork-reps>
+
+</webwork-extraction>

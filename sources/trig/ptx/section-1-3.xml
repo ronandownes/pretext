@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="circles"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Circles</title>
+
+<subsection><title>The Distance Formula</title>
+    <idx><h>distance formula</h></idx>
+
+<p>Delbert is hiking in the Santa Monica mountains, and he would like to know the distance from the Sycamore Canyon trail head, located at 12-C on his map, to the Coyote Trail junction, located at 8-F, as shown below.</p>
+    <image width="80%" source="photos/1-3SM.png"><description>map of mountains</description></image> 
+
+<p>Each interval on the map represents one kilometer. Delbert remembers the <term>Pythagorean theorem</term>, and uses the map coordinates to label the sides of a right triangle. The distance he wants is the hypotenuse of the triangle, so</p>
+    <p><md><mrow>d^2\amp = 4^2+3^2 = 16+9 = 25</mrow>
+            <mrow>d\amp = \sqrt{25} = 5</mrow></md></p>
+<p>The straight-line distance to Coyote junction is about 5 kilometers.</p>
+
+<p>The formula for the distance between two points is obtained in the same way. </p>
+    <sidebyside widths="60% 35%" margins="0% 0%">
+<p> We first label a right triangle with points <m>P_{1}</m> and <m>P_{2}</m> on opposite ends of the hypotenuse. (See the figure at right.) The sides of the triangle have lengths <m>\abs{x_2-x_1}</m> and <m>\abs{y_2-y_1}</m>.  We can use the Pythagorean theorem to calculate the distance between <m>P_{1}</m> and <m>P_{2}</m>: 
+        <me>d^2=(x_2-x_1)^2+(y_2-y_1)^2</me></p>
+<image source="photos/distform"><description>distance formula</description></image> </sidebyside>
+
+<p> Taking the (positive) square root of each side of this equation gives us the <term>distance formula</term>. </p>
+
+<assemblage><title>Distance Formula</title><idx><h>distance formula</h></idx> 
+<p>The distance <m>d</m> between two points <m>P_{1}(x_1, y_1)</m> and <m>P_{2}(x_2, y_2)</m> is
+    <me>\blert{d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}</me></p>
+</assemblage>
+
+<example><statement><p>Find the distance between <m>(2,-1)</m> and <m>(4,3)</m>.</p></statement>
+
+<solution><sidebyside widths="60% 35%" valigns="middle middle">
+<p>We substitute <m>(2,-1)</m> for <m>(x_1, y_1)</m> and <m>(4,3)</m> for <m>(x_2, y_2)</m> in the distance formula to obtain
+                <md><mrow>d\amp = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</mrow>
+                    <mrow>\amp = \sqrt{(4-2)^2+[3-(-1)]^2}</mrow> 
+                    <mrow>\amp = \sqrt{4+16} = \sqrt{20} = 2\sqrt{5}</mrow></md></p>
+    <image xml:id="exam1-3-1"><description>distance between two points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+          block/.style    = {draw, thick, rectangle, minimum height = 3em,
+            minimum width = 3em},
+          sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+          input/.style    = {coordinate}, % Input
+          output/.style   = {coordinate} % Output
+        }
+        \begin{tikzpicture}[auto, thick, scale=.45]
+            \draw[step=1cm,cyan,very thin] (-5,-5) grid (5,5);
+            \draw[thick,->,>=stealth'] (-5,0) -- (5.4,0) node[anchor=west] {$x$};
+            \draw[thick,->,>=stealth'] (0,-5) -- (0,5.4) node[anchor=south] {$y$};
+            `
+            \foreach \x in {-5,5}
+                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+            \foreach \y in {-5,5}
+                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+
+            \coordinate (A) at (2,-1);
+            \coordinate (B) at (4,-1);
+            \coordinate (C) at (4,3);
+
+            \filldraw[black] (A) circle (5pt) node[anchor=north east,xshift=11,yshift=-5,fill=white] {$(2,-1)$};
+            \filldraw[black] (C) circle (5pt) node[anchor=south ,yshift=2,fill=white] {$(4,3)$};
+
+            \draw[red, thick] (A)--(C) node[above left, midway,fill=white] {$2\sqrt{5}$};
+            \draw[black, ultra thick, dashed] (A)--(B) ;
+            \draw[black, ultra thick, dashed] (C)--(B) ;
+        \end{tikzpicture}]]></latex-image></image></sidebyside>
+
+<p>The exact value of the distance, shown at right, is <m>2\sqrt{5}</m> units.  We obtain the same answer if we use <m>(4,3)</m> for <m>P_1</m> and <m>(2,-1)</m> for <m>P_2</m>:
+                <me>\begin{aligned}[t]
+                d\amp = \sqrt{(2-4)^2+[(-1)-3]^2}\\ 
+                \amp = \sqrt{4+16} = \sqrt{20} = 2\sqrt{5}\\
+                \end{aligned}</me></p>
+   
+<p>We can use a calculator to obtain an approximation for this value, and find
+        <me>2\sqrt{5}\approx 2(2.236)=4.472</me></p>
+</solution></example>
+
+<warning><p>In the previous example, the radical <m>\sqrt{4+16}</m> cannot be simplified to <m>\sqrt{4}+\sqrt{16}</m>. (Do you remember why not?)</p></warning>
+
+<exercise><statement><p><ol marker="a.">
+    <li>Find the distance between the points <m>(-5,3)</m> and <m>(3,-9)</m>.</li>
+    <li>Plot the points on a Cartesian grid and show how the Pythagorean theorem is used to calculate the distance.</li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><p><m>4\sqrt{13}</m></p></li>
+    <li><sidebyside widths="45% 50%" valigns="middle middle" margins="0% 0%">
+    <p>The points <m>(-5,3)</m> and <m>(3,-9)</m> are two vertices of a right triangle with one horizontal leg of length 8 and one vertical leg of length 12. The distance between <m>(-5,3)</m> and <m>(3,-9)</m> is the hypotenuse <m>c</m>.
+        <md><mrow>c^2\amp = 8^2+12^2</mrow>
+            <mrow>\amp = 208</mrow> </md>
+    so <m>~c = \sqrt{208} = 4\sqrt{13}</m></p>
+
+    <image xml:id="exer1-3-1"><description>distance formula</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[auto, thick, scale=.4]
+        \draw[thick,->,>=stealth'] (-6,0) -- (5,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-10) -- (0,4.5) node[anchor=south] {$y$};        `
+        \foreach \x in {-5,2}
+            \draw (\x cm,2mm) -- (\x cm,-2mm) node[anchor=north] {$\x$};
+        \foreach \y in {-10,-5,2}
+            \draw (2mm,\y cm) -- (-2mm,\y cm) node[anchor=east] {$\y$};    
+        \coordinate (A) at (-5,3);
+        \coordinate (B) at (3,-9);
+        \coordinate (C) at (3,3);    
+        \filldraw[black] (A) circle (5pt) node[left] {$(-5,3)$};
+        \filldraw[black] (B) circle (5pt) node[below] {$(3,-9)$};
+        \draw[blue,thick] (C) rectangle +(-.6,-.6);
+        \draw[red, thick] (A)--(B) node[left, midway, xshift=-2] {$c=4\sqrt{13}$};
+        \draw[black, ultra thick, dashed] (A)--(C) ;
+        \draw[black, ultra thick, dashed] (C)--(B) ;
+        \draw [green, decorate, decoration={brace,amplitude=10pt}] ($ (A)+(0,.4) $)-- ($ (C)+(0,.4)$) node [blue,above,midway, yshift=.3cm] { $8$};
+        \draw [green, decorate, decoration={brace,amplitude=10pt}] ($ (C)+(0.4,0) $)-- ($ (B)+(0.4,0)$) node [blue,right,midway, xshift=.3cm] { $12$};
+    \end{tikzpicture}]]></latex-image></image></sidebyside></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Equation for a Circle</title>
+    <idx><h>circle</h><h>equation</h></idx>
+
+<p>A <term>circle</term><idx><h>circle</h></idx> is the set of all points in a plane that lie at a given distance, called the <term>radius</term><idx><h>radius</h></idx>, from a fixed point called the <term>center</term><idx><h>center</h></idx>.  We can use the distance formula to find an equation for a circle.</p>
+
+<p>The circle shown below has its center at the origin, <m>(0,0)</m>, and its radius is <m>r</m>.</p>  
+    <sidebyside widths="60% 30%" margins="0% 10%">
+<p>Now, the distance from the origin to any point <m>P(x,y)</m> on the circle is <m>r</m>.  Therefore,
+    <me>\sqrt{(x-0)^2+(y-0)^2} = r</me>   
+or, squaring both sides,
+    <me>(x-0)^2+(y-0)^2=r^2</me></p>
+    <image xml:id="circle"><description>circle centered at origin</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+          block/.style    = {draw, thick, rectangle, minimum height = 3em,
+            minimum width = 3em},
+          sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+          input/.style    = {coordinate}, % Input
+          output/.style   = {coordinate} % Output
+        }
+        \begin{tikzpicture}
+
+        \coordinate(O) at (0,0);
+        \coordinate (A) at (0.8,1.386 );
+
+        \draw (0,0) circle (1.6);
+
+        \draw[thick,->,>=stealth'] (-2,0) -- (2,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-2) -- (0,2) node[anchor=south] {$y$};
+
+        \filldraw[red] (A) circle (1.4pt) node[anchor=south west, xshift=0, yshift=0]{\color{black}$P(x,y)$};
+
+        \draw[red, thick] (O) -- (A) node[below right, midway]{\color{blue}$r$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside>  
+
+<p>Because every point on the circle must satisfy this equation, we have found an equation for the circle.</p>
+
+<assemblage><title>Circle</title>
+    <idx><h>circle</h><h>equation</h></idx>
+<p>The equation for a <term>circle</term> of radius <m>r</m> centered at the origin is
+        <me>\blert{x^2+y^2=r^2}</me></p>
+</assemblage>
+
+<example><statement><p>Find two points on the circle <m>~x^2+y^2=4~</m> with <m>x</m>-coordinate <m>-1</m>.</p></statement>
+
+<solution><p>We substitute <m>x=\alert{-1}</m> into the equation for the circle, and solve for <m>y</m>.</p>
+<sidebyside widths="60% 32%"><p>
+                <md><mrow>(\alert{-1}^2)+y^2 \amp = 4</mrow>
+                    <mrow>y^2 \amp = 4-1 = 3</mrow>
+                    <mrow>y \amp = \pm \sqrt{3}</mrow></md>
+The points are <m>(-1, \sqrt{3})</m> and <m>(-1,\sqrt{3})</m>, as shown at right. Note that <m>\sqrt{3} \approx 1.732</m>.</p>
+    <!--<image source="photos/exam1-3-2.png"><description>circle r=4</description></image>-->
+    <image xml:id="exam1-3-2"><description>circle with radius=2</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+          block/.style    = {draw, thick, rectangle, minimum height = 3em,
+            minimum width = 3em},
+          sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+          input/.style    = {coordinate}, % Input
+          output/.style   = {coordinate} % Output
+        }
+        \begin{tikzpicture} [scale = .7]
+
+        \draw[step=1cm,cyan,very thin] (-3,-3) grid (3,3);
+        \draw[thick,->,>=stealth'] (-3,0) -- (3.4,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-3) -- (0,3.4) node[anchor=south] {$y$};
+        `
+        \foreach \x in {-3,1,3}
+            \draw (\x cm,3pt) -- (\x cm,-3pt) node[anchor=north] {$\x$};
+        \foreach \y in {-3,1,3}
+            \draw (3pt,\y cm) -- (-3pt,\y cm) node[anchor=east] {$\y$};
+
+        \coordinate(O) at (0,0);
+        \coordinate (A) at (-1,1.732 );
+        \coordinate (B) at (-1,-1.732 );
+
+        \draw[red,thick] (0,0) circle (2);
+
+        \filldraw[black] (A) circle (2pt) node[anchor=south east, xshift=3, yshift=2, fill=white]{\color{black}$(-1,\sqrt{3})$};
+        \filldraw[black] (B) circle (2pt) node[anchor=north east, xshift=3, yshift=-2, fill=white]{\color{black}$(-1,-\sqrt{3})$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside>  
+</solution></example>
+
+<exercise><statement><p>Find the coordinates of two points on the circle <m>~~x^2+y^2=1~~</m> with <m>y</m>-coordinate <m>\dfrac{1}{2}</m>.</p></statement>
+
+<answer><p>Substitute <m>y=\dfrac{1}{2}</m> into the equation and solve for <m>x</m> to find <m>~x^2 = \dfrac{3}{4}~</m> so <m>~x=\dfrac{\sqrt{3}}{2}~</m> or <m>~x=\dfrac{-\sqrt{3}}{2}</m>. The points are <m>~    \left(\dfrac{\sqrt{3}}{2},\dfrac{1}{2}\right)</m>, <m>~\left(\dfrac{-\sqrt{3}}{2},\dfrac{1}{2}\right)</m></p>
+</answer></exercise>
+
+<definition><title>Unit Circle</title>
+<p> The circle in the exercise above, <m>~~\blert{x^2+y^2=1},~~</m> which is centered at the origin and has radius 1 unit, is called the <term>unit circle</term><idx><h>unit circle</h></idx>.</p></definition>
+</subsection>
+
+<subsection><title>Rational and Irrational Numbers</title>
+<idx><h>rational number</h></idx>
+<idx><h>irrational number</h></idx>
+
+<p> Every common fraction, such as <m>\dfrac{3}{4}</m>, can be written in many equivalent forms, including a decimal form.  For example,
+<me>\frac{3}{4}=\frac{6}{8}=\frac{75}{100}=0.75~~~~~\text{and}~~~~~\frac{5}{11}=\frac{20}{44}=\frac{50}{110}=0.\overline{45}</me></p>
+
+<p> where <m>0.\overline{45}</m> is the repeating decimal <m>~0.45454545....</m></p>  
+
+<p>Because the fraction bar denotes division, a fraction is a quotient of two integers, and we can calculate its decimal form by dividing the denominator into the numerator.</p>
+
+<definition><title>Rational Number</title>
+<p> Any number (including fractions) that can be written as a quotient of two integers <m>~~\dfrac{a}{b},~~\text{where}~~ b\not=0,~~</m> is called a <term>rational number</term><idx><h>rational number</h></idx>.</p></definition>
+
+<p>The decimal form of a rational number is either a <term>terminating decimal</term><idx><h>terminating decimal</h><seealso>rational number</seealso></idx><idx><h>terminating decimal</h></idx>, such as <m>0.75</m>, or a <term>repeating decimal</term><idx><h>repeating decimal</h><seealso>rational number</seealso></idx><idx><h>repeating decimal</h></idx>, such as <m>0.\overline{45}</m>. Thus, we can always write down an exact decimal equivalent for a rational number, although we may choose to round off a particularly long or unwieldy decimal. For example,
+    <me>\frac{3}{7}=0.\overline{428571}\approx 0.43</me></p>
+
+<warning><p> Note that <m>0.43</m> is <em>not</em> exactly equal to <m>\dfrac{3}{7}</m>; it is an <em>approximation</em> for <m>\dfrac{3}{7}</m>, just as <m>0.33</m> is an approximation for <m>\dfrac{1}{3}</m>. In our work, it will be important to distinguish between exact values and approximations.</p></warning>
+
+<definition><title>Irrational Number</title>
+ <p>An <term>irrational number</term><idx><h>irrational number</h></idx> is one that <em>cannot</em> be written as a quotient of two integers <m>\dfrac{a}{b}</m>,where <m>b\not=0</m>.</p></definition>
+
+ <p>Examples of irrational numbers are <m>\sqrt{3}</m>, <m>\sqrt[3]{586}</m>, and <m>\pi</m>. The decimal form of an irrational number is nonterminating and nonrepeating. The first few digits of the examples mentioned are
+                <md><mrow>\sqrt{3} \amp = 1.732050807568...</mrow>
+                    <mrow>\sqrt[3]{586} \amp = 8.368209391204...</mrow> 
+                    <mrow>\pi \amp = 3.141592653589...</mrow></md></p>  
+
+<p>but none of these decimal forms ever ends. Thus, <em>we cannot write down an exact decimal equivalent for an irrational number</em>. The best we can do is give a decimal approximation, no matter how many digits we include.</p> 
+
+<example><statement>
+    <p>Which values are exact, and which are approximations?</p> 
+    <p><ol marker="a." cols="2">
+        <li><m>\dfrac{7}{32}\rightarrow 0.21875</m></li>
+        <li><m>\sqrt{8}\rightarrow 2.828427125</m></li>
+        <li><m>\sqrt{0.16}\rightarrow 0.4</m></li>
+        <li><m>\dfrac{\pi}{2}\rightarrow 1.570796327</m></li>
+    </ol></p>
+</statement>
+
+<solution><p><ol marker="a.">
+        <li>Because <m>\dfrac{7}{32}</m> is a rational number, it has an exact decimal equivalent.  Divide 7 by 32 to see that <m>\dfrac{7}{32}=0.21875</m>.</li>
+        <li>Because 8 is not a perfect square, <m>\sqrt{8}</m> is irrational, so <m>2.828427125</m> is not the exact value of <m>\sqrt{8}</m>.</li>
+        <li><m>\sqrt{0.16}=\sqrt{\dfrac{16}{100}}=\dfrac{4}{10}=0.4</m>, so this value is exact.</li>
+        <li>Because <m>\dfrac{\pi}{2}</m> is an irrational number, it has no decimal equivalent, so <m>1.570796327</m> is an approximation.</li>
+</ol></p></solution></example>
+
+<exercise><statement><p> For which numbers can you give an exact decimal equivalent?</p>
+<p><ol marker="a." cols="4">
+        <li><m>\dfrac{\sqrt{3}}{2}</m></li>
+        <li><m>\dfrac{\sqrt{16}}{3}</m></li>
+        <li><m>2\pi</m></li>
+        <li><m>\dfrac{25}{17}</m></li>
+</ol></p></statement>
+
+<answer><p> (b) and (d) are rational numbers.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Circumference and Area</title>
+<idx><h>circumference</h></idx>
+
+<p>Recall from geometry that the circumference of a circle is proportional to its radius.</p>
+
+<assemblage><title>Circumference of a Circle</title>
+    <idx><h>circumference</h></idx>
+<p>The <term>circumference</term> of a circle of radius <m>r</m> is given by
+    <me>\blert{C=2\pi r}</me></p>
+</assemblage>
+
+<p>The number <m>\pi</m><idx><h><m>\pi</m></h></idx> gives the ratio of the circumference of any circle to its diameter.  It is an irrational number, <m>\pi\approx 3.14159</m>.</p> 
+<p>The length of a portion, or arc, of a circle, is called its <term>arclength</term><idx><h>arclength</h></idx>.</p>
+
+<example><statement><p>Delbert baked an apple pie with diameter 8 inches. If Francine cuts herself a 60° wedge, what is the arclength of the curved edge?</p></statement>
+
+<solution><p>The radius of the pie is 4 inches, so its circumference is <m>2\pi (4)</m> inches.</p>
+    <sidebyside widths="65% 25%" valigns="middle middle">
+<p> A 60° wedge, shown at right, is <m>\dfrac{1}{6}</m> of the entire pie, so its edge is <m>\dfrac{1}{6}</m> of the circumference. The exact length of the arc is thus 
+        <me> \dfrac{1}{6} (8\pi)=\dfrac{4\pi}{3} \text{ inches.}</me> </p>
+    <image xml:id="exam1-3-4"><description>circle with a wedge</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+          block/.style    = {draw, thick, rectangle, minimum height = 3em,
+            minimum width = 3em},
+          sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+          input/.style    = {coordinate}, % Input
+          output/.style   = {coordinate} % Output
+        }
+        \begin{tikzpicture} [scale = .7]
+
+        \coordinate(O) at (0,0);
+        \coordinate (A) at (0,2 );
+        \coordinate (B) at (1.732,1 );
+
+        \draw[gray,thick] (0,0) circle (2);
+        \draw[black, thick] (O)--(B) node[below right, midway, xshift=-5] {\color{blue}4 in.};
+        \draw[black, thick] (O)--(A);
+        \draw[red, thin] (0,.5) arc (90:30:0.5) node[above right, midway, xshift=-5]{$60\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>Using a calculator, we find that <m>\dfrac{4\pi}{3}=4.19</m> rounded to two decimal places, so the length of the curved edge is between 4 and 4<m>\frac{1}{2}</m> inches.</p>
+</solution></example>
+
+<exercise><statement>
+    <p> What is the arclength of the curved edge of a 60° wedge cut from a blueberry pie of diameter 10 inches?</p>
+</statement>
+
+<answer><p><m>\dfrac{1}{6}</m> of the circumference is 
+<m>~\dfrac{1}{6} (10\pi)=\dfrac{5\pi}{3}~ </m> inches or approximately 5.24 inches. </p>
+</answer></exercise>
+
+<p>The area of a circle is proportional to the square of its radius.</p>
+
+<assemblage><title>Area of a Circle</title>
+<idx><h>circle</h><h>area</h></idx>
+<idx><h>area</h><h>of circle</h></idx>
+<p>The <term>area</term> of a circle of radius <m>r</m> is given by
+        <me>\blert{A=\pi r^2}</me></p>
+</assemblage>
+
+<p>A portion of a circle shaped like a pie-shaped wedge is called a <term>sector</term><idx><h>sector</h></idx>.</p>
+
+<example><statement><p>What is the area of Francine's slice of apple pie in the previous example?</p></statement>
+
+<solution><p>As we saw in the previous example, Francine's sector of the pie is <m>\dfrac{1}{6}</m> of the entire pie, so its area <m>\dfrac{1}{6}</m> of the area of the whole pie, or
+    <me>\dfrac{1}{6} \pi (4^2)= \dfrac{8\pi}{3}~~ \text{square inches}</me></p>
+
+<p>The area of the wedge is <m>\dfrac{8\pi}{3}</m>, or about 8.38 square inches.</p></solution></example>
+
+<exercise><statement>
+    <p> What is the area of a 60° wedge cut from a blueberry pie of diameter 10 inches?</p></statement>
+    
+<answer><p><m>\dfrac{1}{6}</m> of the area is <m>~\dfrac{25\pi}{6} \approx 13.09~~\text{square inches}</m></p></answer></exercise>
+
+<p>Review the following skills you will need for this section.</p>
+<theorem>
+    <p>True of False.</p>
+    <p><ol marker="1." cols="2">
+        <li><m>\sqrt{a^2+b^2}=a+b</m></li>
+        <li><m>\sqrt{36+64}=6+8</m></li>
+        <li><m>\sqrt{16x^4}=4x^2</m></li>
+        <li><m>\sqrt{2x}\sqrt{3y}=\sqrt{6xy}</m></li>
+        <li><m>\sqrt{5x}+\sqrt{3x}=\sqrt{8x}</m></li>
+        <li><m>\sqrt{4+N}=2+\sqrt{N}</m></li>
+        <li><m>\sqrt{\dfrac{x}{4}}=\dfrac{\sqrt{x}}{2}</m></li>
+        <li><m>\sqrt{\dfrac{3}{2}}=\dfrac{\sqrt{6}}{2}</m></li>
+    </ol></p>
+    <conclusion>
+
+    <sidebyside><p>Algebra Refresher Answers</p></sidebyside>
+    <sidebyside>
+        <p><ol marker="1." cols="4">
+            <li> False</li>
+            <li> False</li>
+            <li> True</li>
+            <li> True</li>
+            <li> False</li>
+            <li> False</li>
+            <li> True</li>
+            <li> True</li>
+        </ol></p>
+</sidebyside>
+</conclusion>
+</theorem>
+</subsection>
+
+<subsection><title>Section 1.3 Summary</title>
+<subsubsection><title>Vocabulary</title>
+<p>Look up the definitions of new terms in the Glossary.</p>
+<p><ul cols="3">
+    <li>Rational number</li>
+    <li>Irrational number</li>
+    <li>Repeating decimal</li>
+    <li>Circle</li>
+    <li>Radius</li>
+    <li>Unit circle</li>
+    <li>Circumference</li>
+    <li>Arclength</li>
+</ul></p>
+</subsubsection>
+
+<subsubsection><title>Concepts</title>
+<p><ol marker="1.">
+    <li><assemblage><title>Distance Formula</title>
+        <p>The distance <m>d</m> between two points <m>P_{1}(x_1, y_1)</m> and <m>P_{2}(x_2, y_2)</m> is
+            <me>d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</me></p>
+        </assemblage></li>
+    <li><p> Any number that can be written as a quotient of two integers <m>~~\dfrac{a}{b},~~\text{where}~~ b\not=0,</m> is called a <term>rational number</term>.  The decimal form of a rational number is either a <term>terminating decimal</term> or a <term>repeating decimal</term>.</p></li>
+    <li><p> An <term>irrational number</term> is one that <em>cannot</em> be written as a quotient of two integers <m>~~\dfrac{a}{b},~~\text{where}~~ b\not=0</m>.  We cannot write down an exact decimal equivalent for an irrational number.</p></li>
+    <li><p>A <term>circle</term> is the set of all points in a plane that lie at a given distance, called the <term>radius</term>, from a fixed point called the <term>center</term>.</p></li>
+    <li><assemblage><title>Circle</title>
+        <p>The equation for a <term>circle</term> of radius <m>r</m> centered at the origin is
+            <me>x^2+y^2=r^2</me></p>
+        </assemblage></li>
+    <li><p> The circle <m>~x^2+y^2=1~</m>, which is centered at the origin and has radius 1 unit, is called the <term>unit circle</term>.</p></li>
+    <li><assemblage><title>Circumference of a Circle</title>
+        <p>The <term>circumference</term> of a circle of radius <m>r</m> is given by
+            <me>C=2\pi r</me></p>
+        </assemblage></li>
+    <li><assemblage><title>Area of a Circle</title>
+        <p>The <term>area</term> of a circle of radius <m>r</m> is given by
+            <me>A=\pi r^2</me></p>
+        </assemblage></li>
+</ol></p></subsubsection>
+
+<subsubsection><title>Study Questions</title>
+<p><ol marker="1.">
+    <li>Explain why the distance formula, <m>d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</m>,  cannot be simplified to <m>(x_2-x_1)+(y_2-y_1)</m>.</li>
+    <li>What is a unit circle, and what is its equation?</li>
+    <li>Can you give an exact decimal value for <m>\pi</m>?</li>
+    <li>What is the arclength of a semicircle of radius <m>r</m>?</li>
+</ol></p></subsubsection>
+
+<subsubsection><title>Skills</title>
+<p>Practice each skill in the Homework Problems listed.</p>
+<p><ol marker="1.">
+    <li>Find the distance between two points    #1-18</li>
+    <li>Distinguish between exact values and approximations    #19-24</li>
+    <li>Graph a circle    #25-30, 35-40</li>
+    <li>Find and use the equation for a circle    #31-34, 39-42, 55-56</li>
+    <li>Find the length of a fraction of a circle    #35-38, 43-54</li>
+    <li>Find the area of a sector of a circle    #43-50</li>
+</ol></p></subsubsection>
+</subsection>
+
+<!--<xi:include href="./summary-1-3.xml" />  summary  -->
+<xi:include href="./hmwk-1-3.xml" />    
+
+</section> 
+<!-- </book>  </mathbook> -->

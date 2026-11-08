@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap3"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Quadratic Models</title>
+    
+<introduction>
+    
+<p>The models we have explored so far are linear models; their graphs are straight lines. In this chapter, we investigate problems where the graph may change from increeasing to decreasing, or vice versa. The simplest sort of function that models this behavior is a quadratic function, one that involves the square of the variable.</p>
+
+<sidebyside widths="50% 50%" margins="0% 0%" valigns="middle middle">
+    <image source="images/shutterstock_106917041.jpg"><description>ball on inclined plane</description></image>
+    <p>Around 1600, Galileo began to study the motion of falling objects. He used a ball rolling down an inclined plane or ramp to slow down the motion, but he had no accurate way to measure time; clocks had not been invented yet. So he used water running into a jar to mark equal time intervals.</p>
+</sidebyside>
+
+<sidebyside widths="65% 30%" margins="0% 0%" valigns="middle middle">
+    <p>After many trials, Galileo found that the ball traveled 1 unit of distance down the plane in the first time interval, 3 units in the second time interval, 5 units in the third time interval, and so on, as shown in the figure, with the distances increasing through odd units of distance as time went on. </p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="major">
+            <cell>Time</cell>
+            <cell><line>Distance</line><line>traveled</line></cell>
+            <cell><line>Total</line><line>distance</line></cell></row>
+        <row>
+            <cell><m>1</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>1</m></cell></row>
+        <row>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>5</m></cell></row>
+        <row>
+            <cell><m>3</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>9</m></cell></row>
+        <row>
+            <cell><m>4</m></cell>
+            <cell><m>7</m></cell>
+            <cell><m>16</m></cell></row>
+        <row>
+            <cell><m>5</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>25</m></cell></row>
+    </tabular>
+</sidebyside>
+
+<sidebyside widths="66% 20%" margins="0% 0%"  valigns="middle middle">
+    <image source="images/fig-inclined-plane"><description>position of rolling ball marked on incline plane</description></image>        
+    <image source="images/fig-inclined-plane-graph"><description>graph of ball rolling down inclined plane</description></image>
+</sidebyside>
+
+<p>The total distance traveled by the ball can be modeled by the equation, <m>d = kt^2</m>, where <m>k</m> is a constant. Galileo found that this relationship holds no matter how steep he made the ramp. If we plot the height of the ball (rather than the distance traveled) versus time, we obtain a portion of the graph of a quadratic equation.</p>
+    
+<investigation><title>Falling</title>
+
+<p>Suppose you drop a small object from a height and let it fall under the influence of gravity.
+Does it fall at the same speed throughout its descent? The diagram shows a sequence of photographs of a steel ball falling onto a table. The photographs were taken using a stroboscopic flash at intervals of 0.05 second, and a scale on the left side shows the height of the ball, in feet, at each interval.</p>
+
+    <sidebyside width="90%"><image source="images/fig-inv-falling-object"><description>photos of falling object and grid</description></image></sidebyside>
+
+<p><ol marker="1.">
+<li><p>Complete the table showing the height of the ball at each 0.05-second interval. Measure the height at the bottom of the ball in each image. The first photo was taken at time <m>t=0</m>.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>t</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>0.05</m></cell>
+                        <cell><m>0.10</m></cell>
+                        <cell><m>0.15</m></cell>
+                        <cell><m>0.20</m></cell>
+                        <cell><m>0.25</m></cell>
+                        <cell><m>0.30</m></cell>
+                        <cell><m>0.35</m></cell>
+                        <cell><m>0.40</m></cell>
+                        <cell><m>0.45</m></cell>
+                        <cell><m>0.50</m></cell></row>
+                    <row> 
+                        <cell><m>h</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></li>
+
+<li><p>Plot the points in the table. Connect the points with a smooth curve to sketch a graph of height versus elapsed time. Is the graph linear?</p></li>
+
+<li><p>Use your graph to estimate the time elapsed when the ball is 3.5 feet high, and when it is 1 foot high.</p></li>
+
+<li><p>What was the change in the ball’s height during the first quarter second, from <m>t=0</m> to <m>t=0.25</m> ? What was the change in the ball’s height from <m>t=0.25</m> to <m>t=0.50</m> ?</p></li>
+
+<li><p>Add to your graph a line segment connecting the points at <m>t=0</m> and <m>t=0.25</m>, and a second line segment connecting the points at <m>t=0.25</m> and <m>t=0.50</m>. Compute the slope of each line segment.</p></li>
+
+<li><p>What do the slopes in part (5) represent in terms of the problem?</p></li>
+
+<li><p>Use your answers to part (4) to verify algebraically that the graph is not linear.</p></li>
+</ol></p></investigation>
+
+
+</introduction>
+    
+    <xi:include href="./section-3-1.xml" /> <!--Extraction of roots -->
+    <xi:include href="./section-3-2.xml" /> <!--Intercepts,... -->
+    <xi:include href="./section-3-3.xml" /> <!--Graphing Parab -->
+    <xi:include href="./section-3-4.xml" /> <!--Completing Square -->
+    <xi:include href="./chap3-summary.xml" /> <!--Summary and Review-->
+        
+
+</chapter> 
+<!-- </book>  </mathbook> -->

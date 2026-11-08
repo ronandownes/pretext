@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Graph-Equation" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Graphs and Equations</title>
+
+<subsection><title>Equations and Solutions</title>
+
+<p>In the last section we studied some linear models, and in particular we looked at graphs and equations that described those models. In this section we review some techniques and terminology related to equations, inequalities, and their graphs.</p>
+
+<definition><title>Solution</title>
+    <statement><p>A <term>solution</term><idx><h>solution</h><h>to an equation in one variable</h></idx> of an equation is a value of the variable that makes the equation true.
+</p></statement></definition>
+
+<p>For example, <m>x = \alert{−2}</m> is a solution of the equation
+    <me>4x^3 + 5x^2 -8x = 4</me>
+because <m>~~4(\alert{−2})^3 + 5(\alert{−2})^2 - 8(\alert{−2}) = -2 + 20 + 16 = 4</m>.</p>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork>
+    <pg-code>
+             $True = PopUp(
+              ["?","True","False"],
+              1, 
+            );        
+            $False = PopUp(
+              ["?","True","False"],
+              2, 
+            );            
+    </pg-code>    
+    <statement>
+        <p>Which of the following values are solutions of the equation
+            <md><mrow>-2x^3+x^2+16x=15\text{?}</mrow></md></p> 
+            
+            <p><ul>
+                <li><p><m>x=2</m> <var name="$False" form="popup"/></p></li>
+                <li><p><m>x=-3</m> <var name="$True" form="popup"/></p></li>
+                <li><p><m>x=3</m> <var name="$False" form="popup"/></p></li>
+                <li><p><m>x=1</m> <var name="$True" form="popup"/></p></li>
+            </ul></p>
+    </statement>
+    <solution><p><m>x=-3</m> and <m>x=1</m> both satisfy the equation.</p>
+    </solution></webwork>
+</exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Which of the following values are solutions of the equation
+            <me>-2x^3+x^2+16x=15\text{?}</me></p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>x=2</m></p></li>
+        <li><p><m>x=-3</m></p></li>
+        <li><p><m>x=3</m></p></li>
+        <li><p><m>x=1</m></p></li>
+    </ol></p></statement></exercise>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help on checking for a solution, see <xref ref="tkVerify" text="custom"> Section 1.2.1 </xref> of the Toolkit.</p></aside>
+
+<p>A <term>linear equation</term> has no powers of the variable other than 1. It has at most one solution. We find the solution by transforming the equation into a simpler <term>equivalent equation</term> whose solution is obvious.</p>
+
+<example><statement><p>Solve the equation <m>~~3(2x-5)-4x=2x-(6-3x) </m></p></statement>
+
+<solution><p>We begin by simplifying each side of the equation.
+        <md><mrow>3(2x-5)-4x\amp  =2x-(6-3x)\amp\amp\blert{\text{Apply the distrubutive law. }} </mrow>
+            <mrow>6x-15-4x\amp  =2x-6+3x\amp\amp\blert{\text{Combine like terms. }} </mrow>
+            <mrow>2x-15\amp  =5x-6\amp\amp\blert{\text{Add } {-5x+15} \text{ to both sides} } </mrow>
+            <mrow>-3x \amp = 9 \amp\amp \blert{\text{Divide both sides by }{-3.}} </mrow>
+            <mrow>x\amp = -3</mrow></md></p>
+
+        <aside><p><m>\alert{\text{[TK]}}~~</m>For more help on solving linear equations, see <xref ref="tkParens" text="custom"> Section 1.2.2 </xref> of the Toolkit.</p></aside>
+
+<p>The solution is <m>-3</m>. You can check that substituting <m>x=-3</m> into the original equation produces a true statement.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            $x = Compute("2");
+        </pg-code>
+    <statement><p>Find the solution of the equation <m>16 - 2(3x - 1) = 4x + 2(x - 3)</m>.</p>
+            <p><m>x=</m><var name="$x" width="3"/></p></statement>
+    <solution><p><m>x=2</m></p></solution>
+    </webwork>
+</exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Find the solution of the equation 
+    <me>16 - 2(3x - 1) = 4x + 2(x - 3)</me>.</p></statement>
+    <answer><p><m>x=2</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Linear Inequalities</title><idx>linear inequality</idx><idx><h>inequality</h><h>linear</h></idx>
+
+<p>Although a linear equation can have at most one solution, a linear <term>inequality</term> can have many solutions. For example, complete the table of values for the expression <m>5 − 2x</m>:</p>
+
+<tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+    <row>
+        <cell><m>x</m></cell>
+        <cell><m>-2</m></cell>
+        <cell><m>-1</m></cell>
+        <cell><m>~0~</m></cell>
+        <cell><m>~1~</m></cell>
+        <cell><m>~2~</m></cell>
+        <cell><m>~3~</m></cell>
+        <cell><m>~4~</m></cell></row>
+    <row>
+        <cell><m>5-2x</m></cell>
+        <cell><m></m></cell>
+        <cell><m></m></cell>
+        <cell><m></m></cell>
+        <cell><m></m></cell>
+        <cell><m></m></cell>
+        <cell><m></m></cell>
+        <cell><m></m></cell></row>
+    </tabular>
+<p>Now use your table to list at least three solutions of the inequality <m>~5 - 2x \lt 2</m>.</p>
+
+<example><statement><p>Use algebra to solve the inequality <m>~~5 -2x \lt 2</m>.</p></statement>
+    
+<solution><p>We begin by isolating the term containing the variable, just as we do when solving a linear equation. We subtract 5 from both sides to obtain  
+        <me>-2x \lt -3</me>
+Then we divide both sides by <m>−2</m> to find
+        <me>x ~\alert{\gt}~ \frac{-3}{-2}=\frac{3}{2} ~~~~~~~~~~~~~~~~ \blert{\text{Reverse the direction of the inequality.}} </me>
+Any value of <m>x</m> greater than <m>\frac{3}{2}</m> is a solution of the inequality. We write the solutions as <m>x \gt \frac{3}{2}</m>. Because we cannot list all of these solutions, we often illustrate them as a graph on a <term>number line</term>, as shown below.</p>
+        <image width="70%" xml:id="fig-example-1-3-2"><description>number line for inequality</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.9]
+            \draw[black,thick, <->, >=stealth'] (-5.5,0)--(5.6,0);
+            \foreach \x in  {-5,-4, ..., 5} {
+             \draw[black] (\x,.2) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[red,very thick,->, >=stealth'] (3/2,0)--(5.6,0);
+            \draw[white] (3/2,.1)--++(0,-.15) node[text=red,below]{$\frac{3}{2}$};
+            \draw[red, fill=white] (3/2,0) circle (0.1);
+            \end{tikzpicture}]]>
+        </latex-image></image>
+</solution></example>
+
+<p>In the Example above, we used the following rule for solving linear inequalities.</p>
+
+<assemblage><title>Solving a Linear Inequality</title><idx>linear inequality</idx><idx><h>inequality</h><h>linear</h></idx>
+<p>If we multiply or divide both sides of an inequality by a negative number, we must reverse the direction of the inequality.</p>
+</assemblage>
+
+<p>Other than the rule stated in the box above, the rules for solving a linear inequality are the same as the rules for solving a linear equation.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help on solving linear inequalities, see <xref ref="tkSolveLinIneq" text="custom"> Section 1.1.4 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+    <webwork><pg-code>
+            $ineq = RadioButtons(
+              ["\(2x &gt; -8  \) has solution \( x\lt -4 \) ",
+              "\(-2x &gt; -8  \) has solution \( x\lt 4 \)",
+              "\(x+2 &gt; -8  \) has solution \( x\lt -10\) ",
+              "\(x-2 &gt; -8  \) has solution \( x\lt -6 \)"],
+              1, 
+            );            
+        </pg-code>
+    <statement><p>Which of the following are correct solutions of the inequality? </p>
+            <p><var name="$ineq" form="buttons"/></p> 
+    </statement>
+    <solution><p><m>-2x \gt -8</m> has solution <m>x \lt 4</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Which of the following show the correct solutions of the inequality? </p>
+    <p><ol marker="a.">
+        <li><p><m>2x \gt -8~</m> has solution <m>~x \lt -4</m></p></li>
+        <li><p><m>-2x \gt -8~</m> has solution <m>~x \lt 4</m></p></li>
+        <li><p><m>x+2 \gt -8~</m> has solution <m>~x \lt -10</m></p></li>
+        <li><p><m>x-2 \gt -8~</m> has solution <m>~x \lt -6</m></p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            Context("Inequalities");
+            $answer= Compute("x  &lt; 3 ");
+        </pg-code>
+    <statement><p>Solve the inequality <m>2x + 1 \lt 7</m>, and graph the solutions on a number line.</p>
+            <p>Solution: <var name="$answer" width="8"/>
+    </p></statement>
+    <solution><p><m>x \lt 3</m></p>
+            <p>A number line is below.</p>
+    </solution>
+    </webwork>
+    <conclusion>
+        <image width="50%"  xml:id="fig-ex-ans-1-3-2w"><description>number line for inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.9]
+        \draw[black,thick, <->, >=stealth'] (-1.5,0)--(7.6,0);
+        \foreach \x in  {-1,0, ..., 7} {
+         \draw[black] (\x,.2) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,very thick,->, >=stealth'] (3,0)--(-1.5,0);
+        \draw[red, fill=white] (3,0) circle (0.1);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Solve the inequality <m>~2x + 1 \lt 7</m>, and graph the solutions on a number line.</p></statement>
+<answer><p><m>x \lt 3</m></p>
+    <image width="50%"  xml:id="fig-ex-ans-1-3-2"><description>solution number line for inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.9]
+        \draw[black,thick, <->, >=stealth'] (-1.5,0)--(7.6,0);
+        \foreach \x in  {-1,0, ..., 7} {
+         \draw[black] (\x,.2) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,very thick,->, >=stealth'] (3,0)--(-1.5,0);
+        \draw[red, fill=white] (3,0) circle (0.1);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </answer></exercise>
+</subsection>
+ 
+<subsection><title>Equations in Two Variables</title><idx><h>equation</h><h>in two variables</h></idx>
+
+<p>An <term>equation in two variables</term>, such as
+    <md><mrow>-3x + 4y = 24</mrow></md>
+has many solutions. Each <term>solution</term><idx><h>solution</h><h>to an equation in two variables</h></idx> consists of an <term>ordered pair</term> of values, one for <m>x</m> and one for <m>y</m>, that together satisfy the equation (make the equation true.)</p>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+    <webwork><pg-code>
+            $which = RadioButtons(
+              ["A value of \(x \) that makes the equation true.",
+              "An ordered pair of values \((x,y) \) that satisfy the equation.",
+              "Solving the equation for \(y\) in terms of \(x \).",
+              "The graph of the equation."],
+              1, 
+            );            
+        </pg-code>
+    <statement><p>What is the solution of an equation in two variables?</p>
+            <p><var name="$which" form="buttons"/></p> 
+        </statement>
+    <solution><p>An ordered pair of values <m>(x,y) </m> that satisfy the equation.</p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>What is the solution of an equation in two variables?</p>
+    <p><ol marker="a.">
+        <li><p>A value of <m>x</m> that makes the equation true</p></li>
+        <li><p>An ordered pair of values <m>(x,y)</m> that satisfy the equation</p></li>
+        <li><p>Solving the equation for <m>y</m> in terms of <m>x</m></p></li>
+        <li><p>The graph of the equation</p></li>
+    </ol></p></statement></exercise>
+
+<example><statement><p><ol marker="a.">
+            <li><p>Is <m>(2,7.5) </m> a solution of the equation <m>~-3x+4y=24</m>?</p></li>
+            <li><p>Is <m>(4,3) </m> a solution of the equation <m>~-3x+4y=24</m>?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+        <li><p>The ordered pair <m>(2,7.5) </m> is a solution of the equation above, because it satifies the equation.
+            <me>-3(\alert{2})+4(\alert{7.5})=-6+30=24</me></p></li>
+        <li><p>The ordered pair <m>(4,3) </m> is not a solution, because it does not satify the equation.
+            <me>-3(\alert{4})+4(\alert{3})=-12+12=0\ne 24</me></p></li>
+    </ol></p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help on finding solutions of an equation in two variables, see <xref ref="tkEqn2Var" text="custom"> Section 1.2.3 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork" xml:id="exercise-table-linear-equationw"><title>Practice 3</title>
+    <webwork><pg-code>
+            $a14 = Compute("-4");
+            $a16 = Compute("4");
+            $a22 = Compute("-3");
+            $a23 = Compute("0");
+            $a25 = Compute("6");
+        </pg-code>
+    <statement><p>Find some more solutions of the equation <m>-3x + 4y = 24</m> and complete the table of values:</p>
+        <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>-12</m></cell>
+                    <cell><m>-8</m></cell>
+                    <cell><var name="$a14" width="2"/></cell>
+                    <cell><m>0</m></cell>
+                    <cell><var name="$a16" width="2"/></cell></row>
+                 <row>
+                    <cell><m>y</m></cell>
+                    <cell><var name="$a22" width="2"/></cell>
+                    <cell><var name="$a23" width="2"/></cell>
+                    <cell><m>3</m></cell>
+                    <cell><var name="$a25" width="2"/></cell>
+                    <cell><m>9</m></cell></row>
+            </tabular></statement>
+
+<solution><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>-12</m></cell>
+                    <cell><m>-8</m></cell>
+                    <cell><m>-4</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>4</m></cell></row>
+                 <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>-3</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>9</m></cell></row>
+            </tabular></solution>
+</webwork></exercise>
+
+<exercise component="main" xml:id="exercise-table-linear-equation"><title>Practice 3</title>
+<statement><p>Find some more solutions of the equation <m>~-3x + 4y = 24~</m> and complete the table of values:</p>
+<tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>-12</m></cell>
+                    <cell><m>-8</m></cell>
+                    <cell><m>\hphantom{00}</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>\hphantom{00}</m></cell></row>
+                 <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>\hphantom{00}</m></cell>
+                    <cell><m>\hphantom{00}</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>\hphantom{00}</m></cell>
+                    <cell><m>9</m></cell></row>
+            </tabular></statement>
+
+<answer><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>-12</m></cell>
+                    <cell><m>-8</m></cell>
+                    <cell><m>-4</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>4</m></cell></row>
+                 <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>-3</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>9</m></cell></row>
+            </tabular></answer></exercise>
+
+<p>Because an equation in two variables may have many solutions, we can use a graph to visualize those solutions.</p>
+
+<definition><title>Graph</title><idx>graph</idx>
+    <statement><p>The <term>graph</term><idx>graph</idx> of an equation in two variables is just a picture of all its solutions.</p></statement>
+</definition>
+
+<p>You might think it would be difficult to find <em>all</em> the solutions of an equation, but for a linear equation <m>~Ax + By = C~</m>, we can at least illustrate the solutions: all the solutions lie on a straight line. (Later on we can prove that this is true.)</p>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+    <webwork>
+        <pg-code>
+            $true = PopUp(
+              ["?","True","False"],
+              1, # index of correct answer; could also just be the correct answer
+            );
+            $false = PopUp(
+              ["?","True","False"],
+              2, # index of correct answer; could also just be the correct answer
+            );
+        </pg-code>
+    <statement><p>True or false?</p><p><ol>
+        <li><p>All the solutions of a linear equation in two variables lie on a straight line.  <var name="$true" form="popup"/></p></li>
+        <li><p>The equation <m>-3x + 4y = 24</m> is a linear equation.  <var name="$true" form="popup"/></p></li>
+        <li><p>The graph of an equation in two variables is a picture of its solutions.  <var name="$true" form="popup"/></p></li>
+         <li><p>If a point lies on the graph of an equation, it is a solution of the equation.  <var name="$true" form="popup"/></p></li></ol></p>
+    </statement>
+    <solution>
+        <p><ol marker="a.">
+            <li>True</li>
+            <li>True</li>
+            <li>True</li>
+            <li>True</li>
+        </ol></p>
+    </solution></webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>True or false?</p><p><ol>
+        <li><p>All the solutions of a linear equation in two variables lie on a straight line.</p></li>
+        <li><p>The equation <m>~-3x + 4y = 24~</m> is a linear equation.</p></li>
+        <li><p>The graph of an equation in two variables is a picture of its solutions.</p></li>
+         <li><p>If a point lies on the graph of an equation, it is a solution of the equation.</p></li>
+    </ol></p></statement></exercise>
+
+<example><statement><sidebyside widths="50% 35%" margins="0% 10%" valigns="middle middle"><p>The figure shows a graph of the equation <m>~Ax + By = C</m>. Which of the following equations are true? <ol marker="a.">
+               <li><p><m>24B=C</m></p></li>
+               <li><p><m>Ap+Bq=C</m></p></li>
+               <li><p><m>Ag+Bh=C</m></p></li></ol></p>
+    <image xml:id="fig-example-1-3-4"><description>graph of line and points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-2,0) grid (7,10);
+        \draw[black,thick,->,>=stealth'] (-2,0)--(7.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-0.4)--(0,10.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int( 3* \x )] in  {4,8} {
+         \draw[black] (.2,\x) --++(-.2,0)  node[left, xshift=-4, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=2,domain=-1.6:6.7,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{8-5/4 *\x});
+        \filldraw[red] (2,7) circle (0.15) node[above right, yshift=4, fill=white, inner sep=1]{$(p,q)$};
+        \filldraw[red] (4.6,2.25) circle (0.15) node[above right, yshift=4, fill=white, inner sep=1]{$(g,h)$};
+        \filldraw[red] (0,8) circle (0.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>The point <m>(0, 24)</m> lies on the graph, so <m>x = 0</m>, <m>y = 24</m> is a solution of the equation. Thus, <m>A \cdot 0 + B \cdot 24 = C</m>, or  <m>24B = C</m> is a true statement.</p></li>
+    <li><p>The point <m>(p, q)</m> does not lie on the graph, so <m>x = p</m>, <m>y = q</m> does not satisfy the equation, and <m>A p+ B q = C</m> is a not true.</p></li>
+    <li><p>The point <m>(g,h )</m> does lie on the graph, so <m>x = g</m>, <m>y = h</m> does satisfy the equation, and <m>A g+ B h = C</m> is a true statement.</p></li></ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <introduction><image width="60%" xml:id="fig-ex-1-3-4w"><description>grid for plotting points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-15,-5) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-15,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x  in  {-14, -12,...,-2,2,4} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x  in  {-4, -2,2,4,6,8} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \end{tikzpicture}]]>
+    </latex-image></image></introduction>
+    <webwork><pg-code>
+            $which = RadioButtons(
+              ["\( (-13,4) \)",
+              " \( (-1.6,4.8) \)",
+              " \( (1.125,7) \)"],
+              1, 
+            ); 
+        </pg-code>
+    <statement><p>On the grid above, plot the points you found in Practice 3. All the points should lie on a straight line; draw the line with a ruler or straightedge. Which of the following points lie on the graph?</p>
+            <p><var name="$which" form="buttons"/></p>
+        <p>Which of the points above satisfy the equation in Practice 3?</p>
+            <p><var name="$which" form="buttons"/>
+        </p></statement>
+    <solution><p><m>(-1.6,4.8) </m> lies on the graph and satisfies the equation.</p></solution>
+    </webwork>
+    <conclusion><image width="60%" xml:id="fig-ex-ans-1-3-4w"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-15,-5) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-15,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x  in  {-14, -12,...,-2,2,4} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x  in  {-4, -2,2,4,6,8} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \draw[samples=2,domain=-44/3:5,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{6+3 *\x /4});
+        \filldraw[red] (-1.6,4.8) circle (0.15) node[above left, yshift=4, fill=white, inner sep=1]{$(-1.6,4.8)$};
+        \filldraw[red] (-13,-4) circle (0.15) node[right, xshift=6, fill=white, inner sep=1]{$(-13,-4)$};
+        \filldraw[red] (1.25,7) circle (0.15) node[above, yshift=7, fill=white, inner sep=1]{$(1.25,7)$};
+        \end{tikzpicture}]]>
+    </latex-image></image></conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>On the grid below, plot the points you found in Practice 3. All the points should lie on a straight line; draw the line with a ruler or straightedge. Which of the following points lie on the graph?</p>
+    <image width="70%" xml:id="fig-ex-1-3-4"><description>grid for plotting points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-15,-5) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-15,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x  in  {-14, -12,...,-2,2,4} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x  in  {-4, -2,2,4,6,8} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <stack><p><ol marker="a." cols="3">
+        <li><p><m>(-13,-4)</m></p></li>
+        <li><p><m>(-1.6, 4.8)</m></p></li>
+        <li><p><m>(1.25, 7)</m></p></li>
+    </ol></p>
+    <p>Which of the points above satisfy the equation in Practice 3?</p></stack></statement>
+<answer><image width="70%" xml:id="fig-ex-ans-1-3-4"><description>graph of line with points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-15,-5) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-15,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x  in  {-14, -12,...,-2,2,4} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x  in  {-4, -2,2,4,6,8} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \draw[samples=2,domain=-44/3:5,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{6+3 *\x /4});
+        \filldraw[red] (-1.6,4.8) circle (0.15) node[above left, yshift=4, fill=white, inner sep=1]{$(-1.6,4.8)$};
+        \filldraw[red] (-13,-4) circle (0.15) node[right, xshift=6, fill=white, inner sep=1]{$(-13,-4)$};
+        \filldraw[red] (1.25,7) circle (0.15) node[above, yshift=7, fill=white, inner sep=1]{$(1.25,7)$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>(-1.6,4.8) </m> lies on the graph and satisfies the equation.</p></answer></exercise>
+</subsection>
+
+<subsection xml:id="GraphSol"><title>Graphical Solution of Equations and Inequalities</title><idx><h>equation</h><h>graphical solution</h></idx>
+
+<p>Here is a clever way to solve an equation in one variable by using a graph. Suppose we would like to solve the equation <m>~150 = 285 - 15x</m>. We start by looking at the graph of <m>~y = 285 - 15x</m>.</p>
+
+<example xml:id="example-graph-to-solve"><statement><p>Use the graph of <m>~y = 285 - 15x~</m> to solve the equation 
+    <me>150 = 285 - 15x</me></p></statement>
+
+<solution><sidebyside widths="60% 30%" margins="0% 5%" valigns="middle middle">    
+    <stack><p>Compare the two equations in the problem. In the equation we want to solve, <m>y</m> has been replaced by <m>\alert{150}</m>. We begin by locating the point <m>P</m> on the graph for which <m>y = 150</m>.</p>  
+    <p>Next we find the <m>x</m>-coordinate of point <m>P</m> by drawing an imaginary line from <m>P</m> straight down to the <m>x</m>-axis. The <m>x</m>-coordinate of <m>P</m> is <m>x = 9</m>.</p>
+    </stack>
+    <image source="images/fig-graph-to-solve"><description>graph of line with point P</description></image></sidebyside>
+    <p> Thus, <m>P</m> is the point <m>(9,150)</m>, and <m>x = 9</m> when <m>y = 150</m>. The solution we seek is <m>x = 9</m>.</p> 
+    <p>You can verify the solution algebraically by substituting <m>x = \alert{9}</m> into the equation:</p> 
+    <p>Does <m>150 = 285 - 15(\alert{9})</m>? </p><p>
+        <me>285 - 15(\alert{9}) = 285 - 135 = 150 ~~~~~~\blert{\text{Yes}}</me>
+</p></solution></example>
+
+<note><p>The relationship between an equation and its graph is an important one. For the previous example, make sure you understand that the following three statements are equivalent.</p>
+    <p><ol marker="1.">
+        <li><p>The point <m>(9, 150)</m> lies on the graph of <m>y = 285 - 15x</m>.</p></li>
+        <li><p>The ordered pair <m>(9, 150)</m> is a solution of the equation <m>y = 285 - 15x</m>.</p></li>
+        <li><p><m>x=9</m> is a solution of the equation <m>150 = 285 - 15x</m>.</p></li>
+    </ol></p></note>
+
+<exercise component="webwork"><title>Practice 5</title>
+<introduction><image width="40%" xml:id="fig-ex-1-3-5w"><description>line</description><latex-image>
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-5,-2) grid (5,12);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,12.6) node[above]{$y$};
+        \foreach \x  in  {-5,5} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 5* \x )] in  {-2, 2,4,...,12} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\xi$};
+        }
+        \draw[samples=2,domain=-15/4:5,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{6-8 *\x /5});
+        \node[text width=2cm, fill=white, inner sep=2] at (2.5,6.45)    {$y=30-8x$};
+        \end{tikzpicture}]]>
+    </latex-image></image></introduction>
+<webwork><pg-code>
+        $answer = Compute("-2.5");
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Use the graph of <m>y = 30 - 8x</m> to solve the equation <m>30 - 8x = 50</m>. Follow the steps:
+            <ul>
+            <li><p>Step 1: Locate the point <m>P</m> on the graph with <m>y = 50</m>.</p></li>
+            <li><p>Step 2: Find the <m>x</m>-coordinate of your point <m>P</m>.</p></li></ul>
+        </p></li>
+        <li><p>Verify your solution algebraically.</p></li></ol></p>
+        <p><m>x=</m><var name="$answer" width="3"/> </p>
+    </statement>
+    <solution><p><m>x=-2.5</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><sidebyside widths="50% 40%" valigns="middle middle">
+    <p><ol marker="a.">
+        <li><p>Use the graph of <m>~y = 30 - 8x~</m> to solve the equation <m>~30 - 8x = 50</m>. Follow the steps:
+            <ul>
+            <li><p>Step 1: Locate the point <m>P</m> on the graph with <m>y = 50</m>.</p></li>
+            <li><p>Step 2: Find the <m>x</m>-coordinate of your point <m>P</m>.</p></li>
+        </ul></p></li>
+        <li><p>Verify your solution algebraically.</p></li>
+    </ol></p>
+    <image xml:id="fig-ex-1-3-5"><description>graph of line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-5,-2) grid (5,12);
+        \draw[black,thick,->,>=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,12.6) node[above]{$y$};
+        \foreach \x  in  {-5,5} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 5* \x )] in  {-2, 2,4,...,12} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\xi$};
+        }
+        \draw[samples=2,domain=-15/4:5,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{6-8 *\x /5});
+        \node[text width=2cm, fill=white, inner sep=2] at (2.5,6.45)    {$y=30-8x$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside></statement>
+    <answer><p><m>x=-2.5</m></p></answer></exercise>
+
+<p>We can also use graphs to solve inequalities. Consider the inequality
+    <me>285-15x \ge 150</me>
+To solve this inequality means to find all values of <m>x</m> that make the expression <m>285 -15x</m> greater than or equal to 150. We could begin by trying some values of <m>x</m>. Here is a table obtained by evaluating <m>285 − 15x</m>.</p>
+    <tabular top="minor" bottom="minor" right="minor" left="minor" halign="center">
+    <row>
+        <cell><m>x</m></cell>
+        <cell><m>0</m></cell>
+        <cell><m>2</m></cell>
+        <cell><m>4</m></cell>
+        <cell><m>6</m></cell>
+        <cell><m>8</m></cell>
+        <cell><m>10</m></cell>
+        <cell><m>12</m></cell></row>
+    <row>
+        <cell><m>285-15x</m></cell>
+        <cell><m>285</m></cell>
+        <cell><m>255</m></cell>
+        <cell><m>225</m></cell>
+        <cell><m>195</m></cell>
+        <cell><m>165</m></cell>
+        <cell><m>135</m></cell>
+        <cell><m>105</m></cell></row>
+</tabular>
+
+<p>From the table, we see that values of <m>x</m> less than or equal to 8 are solutions of the inequality, but we have not checked <em>all</em> possible <m>x</m>-values. We can get a more complete picture from a graph.</p>
+
+<example xml:id="example-graph-to-solve2"><statement><p>Use the graph of the equation <m>~y = 285 - 15x~</m> to solve the inequality <me>285 - 15x \gt 150</me></p></statement>
+
+<solution> <sidebyside  widths="50% 40%" margins="0% 0%" valigns="middle middle"><stack><p>We look for points on the graph with <m>y</m>-coordinates greater than or equal to 150. These points are shown in color. Which <m>x</m>-values produced these points?</p>
+<p>We can read the <m>x</m>-coordinates by dropping straight down to the <m>x</m>-axis, as shown by the arows. For example, the <m>x</m>-value corresponding to <m>y=150</m> is <m>x=9</m>. For larger values of <m>285-15x</m>, we must choose <m>x</m>-values less than 9. Thus,  all values of <m>x</m> less than or equal to 9 are solutions, as shown on the <m>x</m>-axis. </p></stack>
+   <image source="images/fig-graph-to-solve-inequality"><description>graph of line and solution of inequality</description></image></sidebyside>
+<p>We write the solutions as <m>x \le 9</m>.</p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 6</title>
+<introduction><image width="30%" xml:id="fig-ex-1-3-6w"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+        \draw[cyan] (-1,-2) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-1,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,10.6) node[above]{$y$};
+        \foreach \x  in  {5} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )] in  {5,10} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\xi$};
+        }
+        \draw[samples=2,domain=5/4:17/4,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{15- 4*\x });
+        \node[text width=2cm, fill=white, inner sep=2] at (3.5,8.45)    {$y=30-8x$};
+        \end{tikzpicture}]]>
+    </latex-image></image></introduction>
+<webwork><pg-code>
+        Context("Inequalities");
+        $answer = Compute("x &gt; 2");
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Use the graph of <m>y = 30 - 8x</m> to solve the inequality <m>30 - 8x \lt 14</m>. Follow the steps:<ul>
+            <li><p>Step 1: Locate the point <m>P</m> on the graph with <m>y = 14</m>.</p></li>
+            <li><p>Step 2: Find the <m>x</m>-coordinate of the point <m>P</m>.</p></li>
+            <li><p>Step 3: Which points on the graph have <m>y \lt 14</m>? Mark them on the graph.</p></li>
+            <li><p>Step 4: Find the <m>x</m>-coordinates of the points in Step 3. Mark them all on the <m>x</m>-axis.
+            </p></li></ul>
+        </p></li>
+        <li><p>Verify your solution algebraically.</p></li></ol></p>
+        <p>Solution: <var name="$answer" width="3"/> </p>
+    </statement>
+    <solution><p><m>x \gt 2</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><sidebyside widths="60% 30%">
+    <p><ol marker="a.">
+        <li><p>Use the graph of <m>~y = 30 - 8x~</m> to solve the inequality <m>~30 - 8x \lt 14</m>. Follow the steps:<ul>
+            <li><p>Step 1: Locate the point <m>P</m> on the graph with <m>y = 14</m>.</p></li>
+            <li><p>Step 2: Find the <m>x</m>-coordinate of the point <m>P</m>.</p></li>
+            <li><p>Step 3: Which points on the graph have <m>y \lt 14</m>? Mark them on the graph.</p></li>
+            <li><p>Step 4: Find the <m>x</m>-coordinates of the points in Step 3. Mark them all on the <m>x</m>-axis.
+            </p></li></ul>
+        </p></li>
+        <li><p>Verify your solution algebraically.</p></li>
+    </ol></p>
+    <image xml:id="fig-ex-1-3-6"><description>graph of line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+        \draw[cyan] (-1,-2) grid (5,10);
+        \draw[black,thick,->,>=stealth'] (-1,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,10.6) node[above]{$y$};
+        \foreach \x  in  {5} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )] in  {5,10} {
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\xi$};
+        }
+        \draw[samples=2,domain=5/4:17/4,smooth,variable=\x,red, thick,<->, >=stealth'] plot ({\x},{15- 4*\x });
+        \node[text width=2cm, fill=white, inner sep=2] at (3.5,8.45)    {$y=30-8x$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+<answer><p><m>x \gt 2</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Using a Graphing Utility</title>
+
+<p>We can use a graphing utility to graph equations if they are written in the form <m>~y = (\text{expression in }x)~</m>.
+First, let's review how to solve an equation for <m>y</m> in terms of <m>x</m>.</p>
+
+<example><statement><p>Solve the equation  <m>~6x-5y=90~</m> for <m>y</m> in terms of <m>x</m>.</p></statement>
+
+<solution><p>To begin, we isolate the <m>y</m>-term by subtracting <m>6x</m> from both sides of the equation.
+    <md><mrow>-5y \amp = 90 - 6x \amp \amp \blert{\text{Divid both sides by }-5.}</mrow>
+        <mrow>y \amp = \dfrac{90}{-5} - \dfrac{6x}{-5}  \amp \amp \blert{\text{Simplify.}}</mrow>
+        <mrow>y \amp = -18 + \dfrac{6}{5}x</mrow></md>
+Note that the equation now has the form of the linear models we saw in <xref ref="LinMod" text="custom">Section 1.1</xref>.</p></solution></example>
+
+<exercise component="webwork"><title> Practice 7</title>
+<webwork><pg-code>
+        $f = Compute("3/2 *x + 3/5");
+    </pg-code>
+<statement><p>Solve for <m>y</m> in terms of <m>x</m>:  <m>\quad 10y-15x=6</m></p>
+        <p><m>y=</m><var name="$f" width="10"/></p>
+</statement>
+<solution><p><m>y = 1.5x + 0.6</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title> Practice 7</title>
+<statement><p>Solve for <m>y</m> in terms of <m>x</m>:  <m>\quad 10y-15x=6</m></p></statement>
+<answer><p><m>y = 1.5x + 0.6</m></p></answer></exercise>
+
+ <p>Now we are ready to graph an equation with technology. For most graphing utilities, we follow three steps.</p>
+
+<assemblage><title>To Graph an Equation</title>
+<p><ol marker="1.">
+    <li><p>Enter the equation you wish to graph.</p></li>
+    <li><p>Select a graphing window.</p></li>
+    <li><p>Graph.</p></li>
+</ol></p></assemblage>
+
+<p>Choosing a graphing window corresponds to drawing the <m>x</m>- and <m>y</m>-axes and marking a scale on each axis when we graph by hand. The <term>standard graphing window</term> displays values from <m>-10</m> to <m>10</m> on both axes. We can start with this window and then adjust it if necessary.</p>
+
+<example><statement><p>Use a graphing utility to graph the equation <m>~3x + 2y = 16</m>.</p></statement>
+    
+<solution><p>First, we solve the equation for <m>y</m> in terms of <m>x</m>.
+            <md><mrow>3x+2y \amp = 16\amp\amp\blert{\text{Subtract } 3x \text{ from both sides.}} </mrow>
+                <mrow>2y\amp = -3x+16 \amp\amp\blert{\text{Divide both sides by 2.}} </mrow>
+                <mrow>y\amp = \frac{-3x}{2}+\frac{16}{2}\amp\amp \blert{\text{Simplify.}} </mrow>
+                <mrow>y\amp= -1.5x+8</mrow></md></p>
+    <sidebyside widths="60% 30%" margins="0% 5%"><p>
+ Now enter <m>-1.5x+8</m> after <m>Y =</m>, and choose the standard graphing window. The graph is shown at right.</p>
+    <image source="images/fig-example-1-3-7"><description>Graphing calculator line</description></image></sidebyside>
+</solution></example>
+
+<p>Don't forget to erase your graph when you are done.</p>
+
+<exercise component="webwork"><title>Practice 8</title>
+<webwork><pg-code>
+        Context()->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,  );
+        $f = Formula("3/4 x + 6");
+    </pg-code>
+    <statement><p><ol marker="a.">
+            <li><p>Solve the equation <m>-3x + 4y = 24</m> for <m>y</m> in terms of <m>x</m>.</p>
+            <p><m>y=</m><var name="$f" width="5"/></p></li>
+            <li><p>Graph the equation in the standard window.</p></li></ol></p></statement>
+    <solution><p><m>y=\dfrac{3}{4}x+6 </m></p></solution>
+</webwork>
+<conclusion>
+    <p>Graph for part (b):</p>
+    <image width="40%" xml:id="fig-ex-ans-1-3-7w"><description>graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.8,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.8) node[above]{$y$};
+        \foreach \x  in  {-10,-5,5,10} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \draw[samples=2,domain=-10:16/3,smooth,variable=\x,red, thick] plot ({\x},{3/4*\x +6});
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 8</title>
+<statement><p><ol marker="a.">
+            <li><p>Solve the equation <m>~-3x + 4y = 24~</m> for <m>y</m> in terms of <m>x</m>.</p></li>
+            <li><p>Graph the equation in the standard window.</p></li>
+        </ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+            <li><p><m>y=\dfrac{3}{4}x+6 </m></p></li>
+            <li><image xml:id="fig-ex-ans-1-3-7"><description>graph of line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (-10,0)--(10.8,0) node[right]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-10)--(0,10.8) node[above]{$y$};
+        \foreach \x  in  {-10,-5,5,10} {
+         \draw[black]  (\x,.1) --++(0,-.2)  node[below, yshift=-4, fill=white, inner sep=1] {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-4, fill=white, inner sep=1] {$\x$};
+        }
+        \draw[samples=2,domain=-10:16/3,smooth,variable=\x,red, thick] plot ({\x},{3/4*\x +6});
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+</ol></p></answer></exercise>
+
+<p>We can use the <kbd>TRACE</kbd> feature to find the coordinates of points on a graph.</p>
+
+<example><statement><p>Use a graph to find a solution to the equation <m>~y = -2.6x - 5.4~</m> with <m>y</m>-coordinate <m>-10.6</m>.</p></statement>
+    
+<solution><p>First we graph the equation <m>y = -2.6x - 5.4</m> in the window</p>
+        <tabular><row>
+                    <cell>Xmin<m>=-5</m></cell>
+                    <cell></cell>
+                    <cell>Xmax<m>=4.4</m></cell></row>
+                <row>
+                    <cell>Ymin<m>=-20</m></cell>
+                    <cell></cell>
+                    <cell>Ymax<m>=15</m></cell></row>
+        </tabular>
+        <image width="36%" source="images/fig-GC-trace"><description>graphing calculator trace</description></image>
+    <p>We press <kbd>TRACE</kbd>, and a "bug" begins flashing on the display. The coordinates of the bug appear at the bottom of the display, as shown in the figure. We use the left and right arrows to move the bug along the graph. You can check that the coordinates of the point <m>(2, -10.6)</m> do satisfy the equation <m>y = -2.6x - 5.4</m>.</p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 9</title>
+<webwork><pg-code>
+        Context("Point");
+        $answer = Point("(-2.5,-122)");
+    </pg-code>
+    <statement><p><ol marker="a.">
+            <li><p>Graph the equation <m>y=32x-42</m> in the window:</p>
+                <tabular>
+                <row>
+                    <cell>Xmin<m>=-4.7 \qquad</m></cell>
+                    <cell>Xmax<m>=4.7  \qquad</m></cell>
+                    <cell>Xscl<m>=1  \qquad</m></cell></row>
+                <row>
+                    <cell>Ymin<m>=-250  \qquad</m></cell>
+                    <cell>Ymax<m>=50  \qquad</m></cell>
+                    <cell>Yscl<m>=25  \qquad</m></cell></row>
+                </tabular></li>
+            <li><p>Use the Trace feature to find the point that has <m>y</m>-coordinate <m>-122</m>.</p>
+                <p><var name="$answer" width="8"/> Enter an ordered pair.</p></li>
+            <li><p>Verify your answer algebraically by substituting your <m>x</m>-value into the equation.</p></li>
+        </ol></p></statement>
+    <solution><p><ol marker="a.">
+            <li><p>A graph is below.</p></li>
+            <li><p><m>(-2.5,-122) </m></p></li>
+            <li><p><m>\blert{-122} = 32(\alert{-2.5}) - 42</m></p></li>
+        </ol></p>
+    </solution></webwork>
+<conclusion>
+    <p>Graph for part (a):</p>
+    <image width="40%" source="images/fig-GC-ex-1-2-9ans.png"><description>graphing calculator line</description></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 9</title>
+<statement><p><ol marker="a.">
+    <li><p>Graph the equation <m>~y=32x-42~</m> in the window:</p>
+        <sidebyside><tabular>
+        <row><cell>Xmin<m>=-4.7 \qquad</m></cell>
+                    <cell>Xmax<m>=4.7  \qquad</m></cell>
+                    <cell>Xscl<m>=1  \qquad</m></cell></row>
+        <row><cell>Ymin<m>=-250  \qquad</m></cell>
+                    <cell>Ymax<m>=50  \qquad</m></cell>
+                    <cell>Yscl<m>=25  \qquad</m></cell></row>
+                </tabular></sidebyside></li>
+    <li><p>Use the Trace feature to find the point that has <m>y</m>-coordinate <m>-122</m>.</p></li>
+    <li><p>Verify your answer algebraically by substituting your <m>x</m>-value into the equation.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+            <li><image width="40%" source="images/fig-GC-ex-1-2-9ans.png"><description>graphing calculatorC line</description></image></li>
+            <li><p><m>(-2.5,-122) </m></p></li>
+            <li><p><m>\blert{-122} = 32(\alert{-2.5}) - 42</m></p></li>
+        </ol></p>
+</answer></exercise>
+</subsection>
+
+<xi:include href="./section-1-2-exercises.xml" />           
+
+ 
+</section>
+<!-- </book>  </mathbook> -->

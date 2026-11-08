@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+
+<exercises  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Homework 4.3</title>
+
+<exercisegroup cols="3"><introduction><p>For Problems 1<ndash/>6, solve the system by the substitution method.
+</p></introduction>
+
+<exercise number="1"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp y=2x\\
+        \amp 3x+y=10
+        \end{aligned}
+    </m></p></statement>
+<answer><m>(2,4)</m></answer></exercise> 
+
+<exercise number="2"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2a+3b=4\\
+        \amp b=2a+4
+        \end{aligned}
+    </m></p></statement></exercise>
+
+<exercise number="3"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2x-3y=4 \\
+        \amp x+1=3y
+        \end{aligned}
+    </m></p></statement>
+<answer><m>(5,2)</m></answer></exercise>
+
+<exercise number="4"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2a+b=16 \\
+        \amp 4a-4=3b
+        \end{aligned}
+    </m></p></statement></exercise>
+
+<exercise number="5"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 8r+s=4 \\
+        \amp 2r+7s=-8
+        \end{aligned}
+    </m></p></statement>
+<answer><m>\left(\dfrac{2}{3}, \dfrac{-4}{3}\right)</m></answer></exercise>
+
+<exercise number="6"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 36a=6-3b \\
+        \amp 2b=3a-5
+        \end{aligned}
+    </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 7<ndash/>12, solve the system by elimination.</p></introduction>
+
+<exercise number="7"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp x+y=5\\
+        \amp x-y=1
+        \end{aligned}
+    </m></p></statement>
+<answer><m>(3,2)</m></answer></exercise> 
+
+<exercise number="8"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2a+b=3\\
+        \amp a+b=2
+        \end{aligned}
+    </m></p></statement></exercise>
+
+<exercise number="9"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 3x+2y=7\\
+        \amp x+y=3
+        \end{aligned}
+    </m></p></statement>
+<answer><m>(1,2)</m></answer></exercise>
+
+<exercise number="10"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 3a=1+5b\\
+        \amp 2b=14+6a
+        \end{aligned}
+    </m></p></statement></exercise>
+
+<exercise number="11"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2x+3y=-1\\
+        \amp 3x+5y=-2
+        \end{aligned}</m></p></statement>
+<answer><m>(1,-1)</m></answer></exercise>
+
+<exercise number="12"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 5z=1-3w\\
+        \amp 5w=2-7z
+        \end{aligned}
+    </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 13<ndash/>15, decide whether the system is inconsistent, dependent, or consistent and independent.</p></introduction>
+
+<exercise number="13"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 3x-6y=6\\
+        \amp x-2y=3
+        \end{aligned}
+    </m></p></statement>
+<answer><p>Inconsistent</p></answer></exercise> 
+
+<exercise number="14"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 8a=6+12b\\
+        \amp 4=6a-9b
+        \end{aligned}
+    </m></p></statement></exercise>
+
+<exercise number="15"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 3p=1+7q\\
+        \amp 21q=9p-3
+        \end{aligned}
+    </m></p></statement>
+<answer><p>Dependent</p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 16<ndash/>17, which method, elimination or substitution, would be easier to apply to the system?</p></introduction>
+
+<exercise number="16"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2u+3v=-8\\
+        \amp 2u-3v=-6
+        \end{aligned}</m></p></statement></exercise> 
+
+<exercise number="17"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 17a-b=0\\
+        \amp 11a+3b=4
+        \end{aligned}</m></p></statement>
+<answer><p>Elimination</p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 18<ndash/>21, <ol marker="a.">
+	<li>Choose variables for the two unknown quantities in the problem.</li>
+	<li>Write a system of equations to model the problem.</li>
+	<li>Solve the system and answer the question.</li></ol></p></introduction>
+
+<exercise number="18"><statement><p>A hamburger and a chocolate shake together contain 1030 calories. Two shakes and three hamburgers contain 2710 calories. How many calories are there in one hamburger and in one chocolate shake?</p></statement>
+</exercise>
+
+<exercise number="19"><statement><p>Darryl is in charge of buying furniture for a new restaurant. Chairs cost $175 and tables cost $250. Darryl's budget allows $11,400 for tables and chairs, and he plans to buy four chairs for each table.  How many of each can he buy?</p></statement>
+<answer><p><ol marker="a.">
+    <li><p>Number of chairs: <m>x</m>, number of tables: <m>y</m></p></li>
+    <li><p><m>
+        \begin{aligned}[t]
+        175x+250y\amp=11,400\\
+        x\amp=4y
+        \end{aligned}
+    </m></p></li>
+    <li>He can buy 12 tables and 48 chairs.</li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>The perimeter of a rectangle is 42 meters, and its width is 13 meters less than its length. Find the dimensions of the rectangle.</p></statement></exercise>
+
+<exercise number="21"><statement><p>Three pounds of bacon and 2 pounds of coffee costs $17.80. Two pounds of bacon and 5 pounds of coffee costs $32.40. How much do 1 pound of bacon and 1 pound of coffee cost?</p></statement>
+<answer><p><ol marker="a.">
+    <li><p>Cost of 1 lb of bacon: <m>x</m>, cost of 1 lb of coffee: <m>y</m></p></li>
+    <li><p><m>
+        \begin{aligned}
+        3x+2y\amp=17.80\\
+        2x+5y\amp=32.40
+        \end{aligned}
+    </m></p></li>
+    <li>One pound of bacon costs $2.20, and one pound of coffee costs $5.60. </li></ol></p></answer></exercise>
+</exercisegroup>
+ 
+</exercises>

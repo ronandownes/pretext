@@ -1,0 +1,957 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-5-3-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 5.3</title>
+    
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Evaluate each function.<ol marker="a." cols="2">
+    <li><p><m>f(x)=-2x^3-3x^2;~~f(-2)</m></p></li>
+    <li><p><m>g(x)=\dfrac{x-1}{x^2+2x};~~g(-1)</m></p></li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><m>4</m></li>
+    <li><m>2</m></li></ol></p>
+</answer></exercise>
+
+<exercisegroup><introduction><p>For Problems 2 and 3, compute each cube root. Round your answers to three decimal places if necessary. Verify your answers by cubing them.</p></introduction>
+
+<exercise number="2"><statement><p><ol marker="a." cols="2">
+    <li><m>\sqrt[3]{512}</m></li>
+    <li><m>\sqrt[3]{-125}</m></li>
+    <li><m>\sqrt[3]{-0.064}</m></li>
+    <li><m>\sqrt[3]{1.728}</m></li></ol></p>
+    </statement></exercise>
+
+<exercise number="3"><statement><p><ol marker="a." cols="2">
+    <li><m>\sqrt[3]{9}</m></li>
+    <li><m>\sqrt[3]{258}</m></li>
+    <li><m>\sqrt[3]{-0.02}</m></li>
+    <li><m>\sqrt[3]{-3.1}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>2.080</m></li>
+    <li><m>6.366</m></li>
+    <li><m>-0.126</m></li>
+    <li><m>-1.458</m></li></ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 4<ndash/>6, simplify each by following the order of operations.</p></introduction>
+
+<exercise number="4"><statement><p><ol marker="a." cols="2">
+    <li><m>\dfrac{6-2\sqrt[3]{64}}{2}</m></li>
+    <li><m>2\sqrt[3]{-125}-\sqrt[3]{6^2-3^2}</m></li></ol></p>
+</statement></exercise>
+
+<exercise number="5"><statement><p><ol marker="a." cols="2">
+    <li><m>\sqrt[3]{\dfrac{8-1}{64-8}}</m></li>
+    <li><m>\dfrac{4+\sqrt[3]{-216}}{8-\sqrt[3]{8}}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>\dfrac{1}{2}</m></li>
+    <li><m>\dfrac{-1}{3}</m></li></ol></p></answer></exercise>
+
+<exercise number="6"><statement><p><ol marker="a." cols="2">
+    <li><m>\sqrt[3]{3^3+4^3+5^3}</m></li>
+    <li><m>\sqrt[3]{9^3+10^3-1^3}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For problems 7<ndash/>10, simplify the expression according to the order of operations.</p></introduction>
+    <exercise number="7"><statement><ol marker="a.">
+            <li><p><m>-\abs{-9} </m></p></li>
+            <li><p><m>-(-9) </m></p></li>
+            <li><p><m>2-(-6) </m></p></li>
+            <li><p><m>2-\abs{-6} </m></p></li>
+        </ol></statement>
+    <answer><p><ol marker="a." cols="2">
+                <li><p><m>-9</m></p></li>
+                <li><p><m>9</m></p></li>
+                <li><p><m>9</m></p></li>
+                <li><p><m>-4</m></p></li>
+            </ol></p></answer></exercise>
+
+    <exercise number="8"><statement><ol marker="a.">
+            <li><p><m>\abs{-8}-\abs{12} </m></p></li>
+            <li><p><m>\abs{-8-12} </m></p></li>
+            <li><p><m>\abs{-3}+\abs{-5} </m></p></li>
+            <li><p><m>\abs{-3+(-5)} </m></p></li>
+        </ol></statement></exercise>
+
+    <exercise number="9"><statement><p><ol marker="a.">
+        <li><m>4-9\abs{2-8} </m></li>
+        <li><m>2-5\abs{-6-3} </m></li>
+        <li><m>\abs{-4-5} \abs{1-3(-5)} </m></li></ol></p></statement>
+        <answer><p><ol marker="a.">
+            <li><m>-50 </m></li>
+            <li><m>-43</m></li>
+            <li><m>144</m></li></ol></p></answer></exercise>
+
+    <exercise number="10"><statement><p><ol marker="a.">
+        <li><m>\abs{-3+7}\abs{-2(6-10)} </m></li>
+        <li><m> \abs{ \abs{-5}-\abs{-6}} </m></li>
+        <li><m>\abs{ \abs{4}-\abs{-6}} </m></li></ol></p></statement></exercise>
+</exercisegroup>
+    
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="2"><introduction><p> For Problems 11<ndash/>16, sketch the graph of the function by hand, paying attention to the shape of the graph. Carefully plot at least three “guide points” to ensure accuracy. If possible, plot the points with <m>x</m>-coordinates <m>-1, ~0,</m> and <m>1</m>.</p></introduction>
+
+<exercise number="11"><statement><p><m>f(x)=x^3</m></p>
+    <sidebyside width="70%">
+        <image xml:id="fig-x-cubed-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-5,-10) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,10.8) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {-10,-5,5,10} {
+         \draw[cyan] (5,\x) --++(-10,0);
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</statement>
+<answer><sidebyside width="80%">
+        <image xml:id="fig-x-cubed">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-5,-10) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,10.8) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {-10,-5,5,10} {
+         \draw[cyan] (5,\x) --++(-10,0);
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-10^(1/3):10^(1/3)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x}, {(\x)^3});
+        \filldraw[red] (-1,-1) circle (.15);
+        \filldraw[red] (1,1) circle (.15);
+        \filldraw[red] (0,0) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</answer></exercise>
+
+<exercise number="12"><statement><p><m>f(x)=\abs{x}</m></p>
+    <sidebyside width="70%">
+        <image xml:id="fig-abs-x-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-5,-2) grid (5,6);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-2)--(0,6.8) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {5} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</statement></exercise>
+
+<exercise number="13"><statement>
+    <p><m>f(x)=\sqrt{x}</m></p>
+    <sidebyside width="80%">
+        <image xml:id="fig-sqrt-x-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-2,-2) grid (10,5);
+        \draw[black,thick, ->, >=stealth'] (-2,0)--(10.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-2)--(0,5.8) node[above]{$y$};
+        \foreach \x in  {10,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {5} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</statement>
+<answer><sidebyside width="90%">
+        <image xml:id="fig-sqrt-x">
+        <description>square root of x</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-2,-2) grid (10,5);
+        \draw[black,thick, ->, >=stealth'] (-2,0)--(10.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-2)--(0,5.8) node[above]{$y$};
+        \foreach \x in  {10,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {5} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={0:10},smooth,variable=\x,red,very thick, ->, >=stealth'] plot ({\x}, {sqrt(\x)});
+        \filldraw[red] (1,1) circle (.15);
+        \filldraw[red] (0,0) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</answer></exercise>
+
+<exercise number="14"><statement>
+    <p><m>f(x)=\sqrt[3]{x}</m></p>
+    <sidebyside width="100%">
+        <image xml:id="fig-cube-root-x-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4 ]
+        \draw[cyan] (-10,-5) grid (10,5);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(10.8,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.6) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[cyan] (5,\x) --++(-10,0);
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {-10,-5,5,10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</statement></exercise>
+
+<exercise number="15"><statement>
+    <p><m>f(x)=\dfrac{1}{x}</m></p>
+    <sidebyside width="70%">
+        <image xml:id="fig-reciprocal-x-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-5,-5) grid (5,5);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.5) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</statement>
+<answer>
+    <sidebyside width="80%">
+        <image xml:id="fig-reciprocal-x">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[cyan] (-5,-5) grid (5,5);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.5) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={1/5:5},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x}, {1/(\x)});
+        \draw[samples=65,domain={1/5:5},smooth,variable=\x,red,very thick, <->, >=stealth'] plot (-{\x}, {-1/(\x)});
+        \filldraw[red] (1,1) circle (.15);
+        \filldraw[red] (-1,-1) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+</answer></exercise>
+
+<exercise number="16"><statement>
+    <p><m>f(x)=\dfrac{1}{x^2}</m></p>
+    <sidebyside width="70%"><image source="images/fig-reciprocal-x-grid"><description>graph</description></image></sidebyside>
+</statement></exercise>
+</exercisegroup>
+
+<exercise number="17"><statement><p><ol marker="a.">
+    <li>Use your calculator to graph <m>f(x)=x^2</m>  and <m>g(x)=x^3</m> on the same axes for <m>0 \le x \le 1</m>.
+        Which function is greater on that interval?</li>
+    <li>Use your calculator to graph <m>f(x)=\sqrt{x}</m> and <m>g(x)=\sqrt[3]{x}</m> on the same axes for <m>0 \le x \le 1</m>. Which function is greater on that interval?</li></ol>
+</p></statement>
+<answer><p><ol marker="a.">
+    <li><m>f</m></li>
+    <li><m>g</m></li></ol></p></answer></exercise>
+
+<exercise number="18"><statement><p><ol marker="a.">
+    <li>Use your calculator to graph <m>f(x)=\dfrac{1}{x}</m> and <m>g(x)=\dfrac{1}{x^2}</m> on the same axes for <m>0 \le x \le 1</m>.
+        Which function is greater on that interval?</li>
+    <li>Use your calculator to graph <m>f(x)=\dfrac{1}{x}</m> and <m>g(x)=\dfrac{1}{x^2}</m> on the same axes for <m>1 \le x \le 4</m>. Which function is greater on that interval?</li></ol></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="19"><statement><p>Use the graph of <m>y=\dfrac{1}{x}</m> to solve the inequality <m>\dfrac{1}{x} \le 2</m>.</p>
+    <sidebyside width="40%">
+        <image xml:id="fig-hw-5-3-19">
+            <description>graph of 1/x</description>
+            <latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-5,-5) grid [step=1/2] (5,5);
+            \draw[black,thick, ->, >=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.5) node[above]{$y$};
+            \foreach \x  in {-4,4,-2,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-4,4,-2,2} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-5:-1/5},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {1/\x});
+            \draw[samples=65,domain={1/5:5},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {1/\x});
+            \end{tikzpicture}]]>
+            </latex-image>
+        </image>
+    </sidebyside>
+</statement>
+<answer><p><m>(-\infty,0) \cup [0.5,\infty) </m></p></answer></exercise>
+
+<exercise number="20"><statement><p>Use the graph of <m>y=\abs{x-2}</m> to solve the inequality <m>\abs{x-2} \gt 1</m>.</p>
+    <sidebyside width="50%">
+        <image xml:id="fig-hw-5-3-20">
+            <description>graph of abs(x-2)</description>
+            <latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.7]
+            \draw[cyan] (-3.5,0) grid [step=1/2] (7.5,5.5);
+            \draw[black,thick, ->, >=stealth'] (-3.5,0)--(8,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,0)--(0,6) node[above]{$y$};
+            \foreach \x  in {-3,-2,-1,1,2,3,4,5,6,7} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {2,4} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-3.5:7.5},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {abs(\x-2)});
+            \end{tikzpicture}]]>
+            </latex-image>
+        </image>
+    </sidebyside>
+</statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 21<ndash/>26, graph the functions in the same window on your calculator. Describe how the graphs in parts (b) and (c) are different from the basic graph.</p></introduction>
+
+<exercise number="21"><statement><p><ol marker="a.">
+    <li><m>f(x)=x^3</m></li>
+    <li><m>g(x)=x^3-2</m></li>
+    <li><m>h(x)=x^3+1</m></li></ol></p></statement>
+<answer><p>(b): 2 units down, (c): 1 unit up</p></answer></exercise>
+
+<exercise number="22"><statement><p><ol marker="a.">
+    <li><m>f(x)=\abs{x}</m></li>
+    <li><m>g(x)=\abs{x-2}</m></li>
+    <li><m>h(x)=\abs{x+1}</m></li></ol></p></statement></exercise>
+
+<exercise number="23"><statement><p><ol marker="a.">
+    <li><m>f(x)=\dfrac{1}{x}</m></li>
+    <li><m>g(x)=\dfrac{1}{x+1.5}</m></li>
+    <li><m>h(x)=\dfrac{1}{x-1}</m></li></ol></p></statement>
+<answer><p>(b): 1.5 units left, (c): 1 unit right</p></answer></exercise>
+
+<exercise number="24"><statement><p><ol marker="a.">
+    <li><m>f(x)=\dfrac{1}{x^2}</m></li>
+    <li><m>g(x)=\dfrac{1}{x^2}+2</m></li>
+    <li><m>h(x)=\dfrac{1}{x^2}-1</m></li></ol></p></statement></exercise>
+
+<exercise number="25"><statement><p><ol marker="a.">
+    <li><m>f(x)=\sqrt{x}</m></li>
+    <li><m>g(x)=-\sqrt{x}</m></li>
+    <li><m>h(x)=\sqrt{-x}</m></li></ol></p></statement>
+<answer><p>(b): reflected about <m>x</m>-axis, (c): reflected about <m>y</m>-axis</p></answer></exercise>
+
+<exercise number="26"><statement><p><ol marker="a.">
+    <li><m>f(x)=\sqrt[3]{x}</m></li>
+    <li><m>g(x)=-\sqrt[3]{x}</m></li>
+    <li><m>h(x)=\sqrt[3]{-x}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="27"><statement><p>Match each graph with its equation.</p>
+    <sidebyside widths="22% 20% 20%" margins="15% 15%" valigns="middle middle middle"><image xml:id="fig-hw-5-3-21a">
+            <description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.36]
+            \draw[cyan] (-6,-6) grid [step=2] (6,10);
+            \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-6)--(0,10.6) node[above]{$y$};
+            \foreach \x  in {-4,4} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-4,4,8} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(10/3):sqrt(10/3)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {3*(\x)^2});
+            \node at (0,-8){(a)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-21b"><description>cubic</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.44, yscale=.22]
+            \draw[cyan] (-4,-12) grid [xstep=2, ystep=4] (4,12);
+            \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-12)--(0,12.6) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-8,8} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-(6)^(1/3):(6)^(1/3)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {2*(\x)^3});;
+            \node at (0,-16){(b)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-21c"><description>reciprocal</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.44, yscale=.33]
+            \draw[cyan] (-4,-8) grid [step=2] (4,8);
+            \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-8)--(0,8.6) node[above]{$y$};
+            \foreach \x  in {2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-2,4} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-4:-3/8},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {3/(\x)});
+            \draw[samples=65,domain={3/8:4},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {3/(\x)});;
+            \node at (0,-10){(c)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </sidebyside>
+    <sidebyside widths="20% 20% 20%" margins="15% 15%" valigns="middle middle middle">
+        <image xml:id="fig-hw-5-3-21d"><description>square root</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.45]
+            \draw[cyan] (-2,-2) grid [step=2] (6,8);
+            \draw[black,thick, ->, >=stealth'] (-2,0)--(6.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,8.6) node[above]{$y$};
+            \foreach \x  in {4} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {4} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={0:6},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {3*(\x)^(1/2)});
+            \node at (0,-4){(d)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-21e"><description>cube root</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-3,-4) grid [step=1] (3,4);
+            \draw[black,thick, ->, >=stealth'] (-3,0)--(3.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-4)--(0,4.6) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-2,2} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={0:3},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {2*(\x)^(1/3)});
+            \draw[samples=65,domain={0:3},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {-\x}, {-2*(\x)^(1/3)});
+            \node at (0,-5){(e)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-21f"><description>line</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.3, yscale=.6]
+            \draw[cyan] (-6,-4) grid [xstep=2] (6,4);
+            \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-4)--(0,4.6) node[above]{$y$};
+            \foreach \x  in {-4,4} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-2,2} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-6:6},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {(\x)/3});
+            \node at (0,-5){(f)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </sidebyside>
+<p><ol marker="i." cols="3">
+    <li><m>f(x)=3\sqrt{x}</m></li>
+    <li><m>f(x)=2x^3</m></li>
+    <li><m>f(x)=\dfrac{x}{3}</m></li>
+    <li><m>f(x)=\dfrac{3}{x}</m></li>
+    <li><m>f(x)=2\sqrt[3]{x}</m></li>
+    <li><m>f(x)=3x^2</m></li></ol></p>
+</statement>
+<answer><p><ol marker="i." cols="3">
+    <li>vi</li>
+    <li>ii</li>
+    <li>iv</li>
+    <li>i</li>
+    <li>v</li>
+    <li>iii</li></ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>Match each graph with its equation.</p>
+    <sidebyside widths="22% 16% 20%" margins="15% 15%" valigns="middle middle middle">
+        <image xml:id="fig-hw-5-3-22a"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.5]
+            \draw[cyan] (-4,-2) grid [step=2] (4,8);
+            \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,8.6) node[above]{$y$};
+            \foreach \x  in {2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {2,6} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(5):sqrt(5)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {3+(\x)^2});
+            \node at (0,-4){(a)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-22b"><description>cubic</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.4]
+            \draw[cyan] (-4,-6) grid [step=2] (4,6);
+            \draw[black,thick, ->, >=stealth'] (-3,0)--(3.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-6)--(0,6.6) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-4,4} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-(4)^(1/3):2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {-2+(\x)^3});
+            \node at (0,-8){(b)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-22c"><description>inverse square</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.5, yscale=.65]
+            \draw[cyan] (-2,-2) grid [xstep=2] (6,6);
+            \draw[black,thick, ->, >=stealth'] (-2,0)--(6.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,6.6) node[above]{$y$};
+            \foreach \x  in {2,4} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {2,4} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-2:-sqrt(1/6)+3},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {1/(\x-3)^2)});
+            \draw[samples=65,domain={sqrt(1/6)+3:6},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {1/(\x-3)^2)});
+            \draw[thick,dashed,blue](3,0)--(3,6);
+            \node at (3,-3){(c)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </sidebyside>
+    <sidebyside widths="20% 20% 20%" margins="15% 15%" valigns="middle middle middle">
+        <image xml:id="fig-hw-5-3-22d"><description>square root</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.4, yscale=.8]
+            \draw[cyan] (-4,-2) grid [step=2] (4,4);
+            \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,4.6) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {2} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-3:4},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {(\x+3)^(1/2)});
+            \node at (0,-3){(d)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-22e"><description>cube root</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.4, yscale=.6]
+            \draw[cyan] (-4,-2) grid [step=2] (4,6);
+            \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-2)--(0,6.6) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {4} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={0:4},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {2+(\x)^(1/3)});
+            \draw[samples=65,domain={0:4},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {-\x}, {2-(\x)^(1/3)});
+            \node at (0,-3){(e)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        <image xml:id="fig-hw-5-3-22f"><description>absolute value</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.4, yscale=.6]
+            \draw[cyan] (-4,-4) grid [step=2] (4,4);
+            \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-4)--(0,4.6) node[above]{$y$};
+            \foreach \x  in {-4,4} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-2,2} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-4:4},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {abs(\x)-3});
+            \node at (0,-5){(f)};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </sidebyside>
+<p><ol marker="i." cols="3">
+    <li><m>f(x)=x^3-2</m></li>
+    <li><m>f(x)=\sqrt[3]{x}+2</m></li>
+    <li><m>f(x)=\dfrac{1}{(x-3)^2}</m></li>
+    <li><m>f(x)=\abs{x}-3</m></li>
+    <li><m>f(x)=x^2+3</m></li>
+    <li><m>f(x)=\sqrt{x+3}</m></li></ol></p>
+</statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 29 and 30, each graph is a variation of one of the eight basic graphs.  Identify the basic graph for each.</p></introduction>
+
+<exercise number="29"><statement><p><ol marker="a." cols="2">
+    <li><sidebyside width="80%"><image xml:id="fig-translated-sqrt">
+        <description>translated square root</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[lightgray] (-1,-1) grid (11,5);
+        \draw[black,thick, ->, >=stealth'] (-1,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-1)--(0,5.6) node[above]{$y$};
+        \draw[samples=65,domain={4:11},smooth,variable=\x,red,very thick] plot ({\x}, {sqrt(\x-4)});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-translated-cube-rt">
+        <description>translated square root</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[lightgray] (-6,-1) grid (6,6);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-1)--(0,6.6) node[above]{$y$};
+        \draw[samples=65,domain={-6^(1/3):6^(1/3)},smooth,variable=\x,red,very thick] plot ({(\x)^3}, {\x+3});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-translated-abs">
+        <description>translated absolute value</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.3, yscale=.3]
+        \draw[lightgray] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(10.8,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,10.8) node[above]{$y$};
+        \draw[samples=65,domain={-10:10},smooth,variable=\x,red,very thick] plot (\x,{abs(\x)-3});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-reflected-reciprocal">
+        <description>reflected reciprocal</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[lightgray] (-6,-6) grid (6,6);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-6)--(0,6.6) node[above]{$y$};
+        \draw[samples=65,domain={-6:-1/6},smooth,variable=\x,red,very thick] plot (\x, {-1/\x});
+        \draw[samples=65,domain={1/6:6},smooth,variable=\x,red,very thick] plot (\x, {-1/\x});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-cubic">
+        <description>transformed cubic</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.75, yscale=.3 ]
+        \draw[lightgray] (-4,-10) grid (4,10);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,10.6) node[above]{$y$};
+        \draw[samples=65,domain={-8^(1/3):12^(1/3)},smooth,variable=\x,red,very thick] plot (\x, {-(\x)^3+2});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-inv-sq">
+        <description>transformed inverse-square</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.75, yscale=.4 ]
+        \draw[lightgray] (-4,-9) grid (4,5);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(4.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-9)--(0,5.6) node[above]{$y$};
+        \draw[samples=65,domain={-4:-1/sqrt(12)},smooth,variable=\x,red,very thick] plot (\x, {-1/(\x)^2+3});
+        \draw[samples=65,domain={1/sqrt(12):4},smooth,variable=\x,red,very thick] plot (\x, {-1/(\x)^2+3});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p>horizontal shift of square root <m>y=\sqrt{x}</m></p></li>
+    <li><p>vertical shift of cube root <m>y=\sqrt[3]{x}</m></p></li>
+    <li><p>vertical shift of absolute value <m>y=\abs{x}</m></p></li>
+    <li><p>vertical flip of reciprocal <m>y=\dfrac{1}{x}</m></p></li>
+    <li><p>vertical flip and vertical shift of cube <m>y=x^3</m></p></li>
+    <li><p>vertical flip and vertical shift of inverse-square <m>y=\dfrac{1}{x^2} </m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p><ol marker="a." cols="2">
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-cube-rt">
+        <description>transformed cube root</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[lightgray] (-6,-4) grid (6,4);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,4.6) node[above]{$y$};
+        \draw[samples=65,domain={-4^(1/3):8^(1/3)},smooth,variable=\x,red,very thick] plot ({-(\x)^3+2}, {\x});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-abs">
+        <description>transformed absolute value</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[lightgray] (-8,-5) grid (4,5);
+        \draw[black,thick, ->, >=stealth'] (-8,0)--(4.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.6) node[above]{$y$};
+        \draw[samples=65,domain={-8:4},smooth,variable=\x,red,very thick] plot ({\x}, {-abs(\x+2)+2});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-reciprocal">
+        <description>transformed reciprocal</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.75, yscale=.5 ]
+        \draw[lightgray] (-2,-5) grid (6,5);
+        \draw[black,thick, ->, >=stealth'] (-2,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.6) node[above]{$y$};
+        \draw[samples=65,domain={-2:14/5},smooth,variable=\x,red,very thick] plot ({\x}, {1/(\x-3)});
+        \draw[samples=65,domain={16/5:6},smooth,variable=\x,red,very thick] plot ({\x}, {1/(\x-3)});
+        \draw[blue, very thick,dashed] (3,5)--(3,-5);
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-sqrt">
+        <description>transformed square root</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5 ]
+        \draw[lightgray] (-6,-5) grid (6,2);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,2.6) node[above]{$y$};
+        \draw[samples=65,domain={-3.5:6},smooth,variable=\x,red,very thick] plot ({\x}, {-sqrt(\x+3.5)-1});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transfd-inv-sq">
+        <description>transformed inverse-square</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.5, yscale=.4 ]
+        \draw[lightgray] (-6,-5) grid (6,5);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.6) node[above]{$y$};
+        \draw[samples=65,domain={-6:-1/3},smooth,variable=\x,red,very thick] plot (\x, {1/(\x)^2-4});
+        \draw[samples=65,domain={1/3:6},smooth,variable=\x,red,very thick] plot (\x, {1/(\x)^2-4});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><sidebyside width="80%"><image xml:id="fig-transformed-cube">
+        <description>transformed cube</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.75, yscale=.25 ]
+        \draw[lightgray] (-6,-10) grid (2,10);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(2.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,10.6) node[above]{$y$};
+        \draw[samples=65,domain={-10^(1/3):10^(1/3)},smooth,variable=\x,red,very thick] plot ({\x-3.8}, {(\x)^3});
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 31 and 32, use the graph to estimate the solutions to the inequalities.</p></introduction>
+
+<exercise number="31"><statement><p>The figure shows a graph of <m>g(x) = \dfrac{4}{x+2}</m>.</p> 
+    <sidebyside width="30%"><image xml:id="fig-y-eq-4-over-x-plus-2">
+        <description>translated reciprocal</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=1 ]
+        \draw[cyan] (-3/2,0) grid[step=1/2] (7/2,11/2);
+        \draw[black,thick, ->, >=stealth'] (-3/2,0)--(4,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,6) node[above]{$y$};
+        \foreach \x in  {-1,1,2,3} {
+         \draw[cyan, very thick] (\x,0) --++(0,11/2);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x in  {1,2,...,5} {
+         \draw[cyan, very thick] (-3/2,\x) --++(5,0);
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-14/11:7/2},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x}, {4/(\x+2)});
+        \node[text=red, fill=white, inner sep=1] at (2,3.5) {$\displaystyle g(x)=\frac{4}{x+2}$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+<p><ol marker="a." cols="2">
+    <li><m>g(x) \gt 1</m></li>
+    <li><m>g(x) \lt 3</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>x \lt 2</m></li>
+    <li><m>x \gt \dfrac{-2}{3}</m></li></ol></p></answer>
+</exercise>
+
+<exercise number="32"><statement><p>The figure shows a graph of <m>H(z) = 4\sqrt[3]{z-4}+6</m>.</p> 
+    <sidebyside width="35%"><image xml:id="ffig-4cube-rt-z-minus4-plus6">
+        <description>translated reciprocal</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.3, yscale=.25]
+        \draw[cyan] (-4,-4) grid[step=2] (16,16);
+        \draw[black,thick, ->, >=stealth'] (-4,0)--(16.8,0) node[right]{$z$};
+        \draw[black,thick, ->, >=stealth'] (0,-4)--(0,16.8) node[left]{$H(z)$};
+        \foreach \x in  {10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-4:4},smooth,variable=\x,red,very thick, <-, >=stealth'] plot ({\x}, {-4*(4-\x)^(1/3)+6});
+        \draw[samples=65,domain={4:16},smooth,variable=\x,red,very thick, ->, >=stealth'] plot ({\x}, {4*(\x-4)^(1/3)+6});
+        \node[text=red, fill=white, inner sep=1] at (10.2,3.5) {$H(z)=4\sqrt[3]{z-4}+6$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+<p><ol marker="a." cols="2">
+    <li><m>H(z) \gt 14</m></li>
+    <li><m>H(z) \lt 6</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 33 and 34, graph the function in the window
+    <md><mrow>\text{Xmin} \amp = -47 \amp\amp \text{Xmax} = 47</mrow>
+        <mrow>\text{Ymin} \amp = -31 \amp\amp \text{Ymax} = 31</mrow></md>
+ Use the graph to solve each equation or inequality. Check your solutions algebraically.</p></introduction>
+
+    <exercise number="33"><statement><p>Graph <m>~~F(x) = 4\sqrt{x - 25}</m>.<ol marker="a.">
+            <li><p>Solve <m> ~~4\sqrt{x - 25}=16</m></p></li>
+            <li><p>Solve <m> ~~4\sqrt{x - 25}=-16</m></p></li>
+            <li><p>Solve <m>~~8\lt 4\sqrt{x - 25}\le 24</m></p></li>
+        </ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+        <li><p><m>41</m></p></li>
+        <li>no solution</li>
+        <li><p><m>29\lt x\le 61</m></p></li>
+    </ol></p></answer></exercise>
+
+    <exercise number="34"><statement><p>Graph <m>~~G(x) = 20 - 0.001(x - 8)^4 </m>.<ol marker="a.">
+            <li><p>Solve <m> ~~20 - 0.001(x - 8)^4 =26.2</m></p></li>
+            <li><p>Solve <m> ~~20 - 0.001(x - 8)^4 =-8.561</m></p></li>
+            <li><p>Solve <m> ~~20 - 0.001(x - 8)^4 \ge 10</m></p></li>
+        </ol></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+</exercises>

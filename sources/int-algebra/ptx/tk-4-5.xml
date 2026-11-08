@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkExponentialModels" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Exponential Models </title>
+                 
+<subsubsection><title>1. Solve power and exponential equations</title>
+
+<introduction><p>Compare the procedures for solving power equations and exponential equations.</p></introduction>
+
+<subsubsubsection><title>Examples</title>
+
+<example><statement><p>Solve <m>~3x^{1.05} = 18~</m>.  Round your answer to hundredths. </p></statement>
+ 
+<solution><p>This is a power equation. We divide both sides by 3 to isolate the variable, then raise both sides to the reciprocal of the exponent.
+    <md><mrow>(x^{1.05})^{1/1.05} \amp = 6^{1/1.05}</mrow>
+        <mrow>    x \amp = 5.51</mrow></md></p>                
+</solution></example>
+
+<example><statement><p>Solve <m>~3(1.05)^x = 18~</m>.  Round your answer to hundredths. </p></statement>
+ 
+<solution><p>This is an exponential equation. We divide both sides by 3, then take logarithms.
+    <md><mrow>\log(1.05^x) \amp = \log 6  \amp\amp \blert{\text{Apply the third log property.}}</mrow>
+        <mrow>x \log 1.05\amp = \log 6</mrow>
+        <mrow>x \amp =\dfrac{\log 6}{\log 1.05} = 36.72</mrow></md></p>                
+</solution></example>
+
+<example><statement><p>Solve <m>~9x^{3/5} = 36~</m>.  Round your answer to hundredths. </p></statement>
+ 
+<solution><p>This is a power equation. We divide both sides by 9 to isolate the variable, then raise both sides to the reciprocal of the exponent.
+    <md><mrow>(x^{3/5})^{5/3} \amp = 4^{5/3}</mrow>
+        <mrow>x \amp = 10.08</mrow></md></p>                
+</solution></example>
+
+<example><statement><p>Solve <m>~1.5(3^{x/5}) = 12~</m>.  Round your answer to hundredths. </p></statement>
+ 
+<solution><p>This is an exponential equation. We divide both sides by 1.5, then take logarithms.
+    <md><mrow>\log 3^{x/5} \amp = \log 8  \amp\amp \blert{\text{Apply the third log property.}}</mrow>
+        <mrow>\dfrac{x}{5} \log 3  \amp = \log 8</mrow>
+        <mrow>x \amp =\dfrac{5\log 8}{\log 3} = 9.46</mrow></md></p>                
+</solution></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<exercise><statement><p>Solve <m>~6x^{3/4}-8 = 76~</m>. Round your answer to hundredths.</p> </statement>
+    <answer><p><m>33.74</m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~6\left(\dfrac{3}{4}\right)^x-8 = 76~</m>. Round your answer to hundredths.</p></statement>
+    <answer><p><m>-9.17</m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~13.2(1.36)^x = 284.8~</m>. Round your answer to hundredths.</p></statement>
+    <answer><p><m>9.99</m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~13.2x^{1.26} = 284.8~</m>. Round your answer to hundredths.</p></statement>
+    <answer><p><m>11.45</m></p></answer></exercise>
+</subsubsubsection>
+</subsubsection>
+
+<subsubsection><title>2. Calculate gowth and decay rates</title>
+
+<introduction><p><assemblage><title>Doubling Time and Half-Life</title>
+<p>If <m>D</m> is the doubling time for an exponential function <m>P(t)</m>, then
+    <me>P(t) = P_0 2^{t/D}</me></p>
+
+<p>If <m>H</m> is the half-life for an exponential function <m>Q(t)</m>, then
+    <me>Q(t)=Q_0 (0.5)^{t/H}</me></p>
+</assemblage></p></introduction>
+
+<subsubsubsection><title>Examples</title>
+
+<example><statement><p>The half-life of a cold medication in the body is 6 hours. Find its decay rate.</p></statement>
+
+<solution><p>The decay law for the medication is 
+    <me>N=N_0(0.5)^{t/8}</me> 
+We can rewrite this expression as 
+    <me>N=N_0(0.5^{1/8})^t</me>
+so <m>b=0.5^{1/8}=0.9170</m>, and <m>r=1-b=0.083</m>. The decay rate is 8.3%.</p></solution></example>
+
+<example><statement><p>The growth rate of a population of badgers is 3.8% per year. Find its doubling time.</p></statement>
+
+<solution><p>The growth law for the population is <m>P=P_0(1.038)^t</m>. We set <m>P=2P_0</m> and solve for <m>t</m>.
+    <md><mrow>2P_0 \amp = P_0(1.038)^t  \amp\amp \blert{\text{Divide both sides by}~P_0.}</mrow>
+        <mrow>2 \amp = (1.038)^t  \amp\amp \blert{\text{Take the log of both sides.}}</mrow>
+        <mrow>\log 2 \amp = t \log 1.038  \amp\amp \blert{\text{Apply the third log property.}}</mrow>
+        <mrow>t \amp = \dfrac{\log 2}{\log 1.038} = 18.59</mrow></md>            
+The doubling time is 18.59 years.</p></solution></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<exercise><statement><p>The doubling time for a population is 18 years. Find its annual growth rate.</p></statement>
+    <answer><p>3.9%</p></answer></exercise>
+
+<exercise><statement><p>A radioactive isotope decays by 0.04% per second.  What is its half-life?</p></statement>
+    <answer><p>4.81 hrs</p></answer></exercise>
+</subsubsubsection>
+</subsubsection>
+
+<subsubsection><title>3. Analyze graphs of exponential functions</title>
+
+<introduction><p>From a graph, we can read the initial value of an exponential function and then its doubling time or hlaf-life.  From there we can calculate the growth or decay law.</p></introduction>
+
+<subsubsubsection><title>Examples</title>
+
+<example>
+    <statement>
+        <p>The graph shows the population, <m>P</m>, of a herd of llamas <m>t</m> years after 2000.<ol marker="a.">
+            <li>How many llamas were there in 2000?</li>
+            <li>What is the doubling time for the population?</li>
+            <li>What is the annual growth rate for the population?</li></ol>
+        </p>
+        <sidebyside width="35%">
+            <image xml:id="fig-llama-population">
+                <description>exponential growth</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=.45, yscale=.5]
+                \draw[cyan, thin] (0,0) grid (10,10);
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(10.7,0) node[right]{$t$};
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(0,10.7) node[above]{$P$};
+                \foreach \x  in  {5,10} {
+                 \draw[cyan!80!black,very thick] (\x,0) -- ++(0,10);
+                 \draw[black] (\x,.3) --++(0,-.6) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(10*\x)] in {5,10} {
+                 \draw[cyan!80!black,very thick] (0,\x) -- ++(10,0);
+                 \draw[black] (.3,\x) --++(-.6,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[samples=65,domain={0:10},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {1.5* 2^(\x/4) });
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+        </sidebyside>
+    </statement>
+    <solution>
+        <p><ol marker="a.">
+            <li> The initial value of the population is given by the <m>P</m>-intercept of the graph, <m>(0,15)</m>. There were 15 llamas in 2000.</li>
+            <li>Look for the time when the initial llama population doubles. When <m>t=4,~P=30</m>, and when <m>t=8,~P=60</m>, so the llama population doubles every 4 years.</li>
+            <li>The growth factor for the population is <m>2^{1/4} = 1.189</m>, so the annual growth rate is 18.9%.</li></ol>
+        </p>
+    </solution>
+</example>
+
+<example>
+    <statement>
+        <p>Write a decay law for the graph shown below, where <m>t</m> is in hours and <m>N</m> is in milligrams.</p>
+        <sidebyside width="40%">
+            <image xml:id="fig-exponential-decay">
+                <description>exponential decay</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=.4, yscale=.45]
+                \draw[cyan, thin] (0,0) grid (15,12);
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(15.9,0) node[right]{$t$};
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(0,12.9) node[above]{$N$};
+                \foreach \x  in  {5,10,15} {
+                 \draw[cyan!80!black,very thick] (\x,0) -- ++(0,12);
+                 \draw[black] (\x,.3) --++(0,-.6) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(50*\x)] in {4,8,12} {
+                 \draw[cyan!80!black,very thick] (0,\x) -- ++(15,0);
+                 \draw[black] (.3,\x) --++(-.6,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[samples=65,domain={0:15},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {12* 2^(-\x/5) });
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+        </sidebyside>
+    </statement>
+    <solution>
+        <p>The initial value is given by the vertical intercept of the graph, <m>(0,600)</m>, so <m>N_0 = 600</m>.</p>  <p>When <m>t=5,~N=300</m>, so the half-life of the substance is 5 hours. Thus the decay law is <m>N(t)=600(0.5)^{t/5}</m>, or <m>N(t)=600(0.87)^t</m>.</p>
+    </solution>
+</example> 
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<exercise><statement><p><ol marker="a.">
+    <li>Write a growth law for the population whose graph is shown, where <m>t</m> is in years.</li>
+    <li>What is the annual growth rate for the population?</li></ol></p>
+   <sidebyside width="35%">
+            <image xml:id="fig-population-growth">
+                <description>exponential growth</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=.45, yscale=.5]
+                \draw[cyan, thin] (0,0) grid (10,10);
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(10.7,0) node[right]{$t$};
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(0,10.7) node[above]{$P$};
+                \foreach \x  in  {5,10} {
+                 \draw[cyan!80!black,very thick] (\x,0) -- ++(0,10);
+                 \draw[black] (\x,.3) --++(0,-.6) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(10*\x)] in {5,10} {
+                 \draw[cyan!80!black,very thick] (0,\x) -- ++(10,0);
+                 \draw[black] (.3,\x) --++(-.6,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[samples=65,domain={0:10},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {1.5* 2^(\x/4) });
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+        </sidebyside>
+</statement>
+<answer><p><ol marker="a.">
+    <li><m>P(t) = 10(2^{t/2.5})</m></li>
+    <li>32.0%</li></ol></p></answer></exercise> 
+
+<exercise><statement><p><ol marker="a.">
+    <li>Write a decay law for the population whose graph is shown, where <m>t</m> is in days.</li>
+    <li>What is the daily decay rate for the population?</li></ol></p>
+   <sidebyside width="35%">
+            <image xml:id="fig-population-decay-exercise">
+                <description>exponential decay</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan, thin] (0,0) grid (10,12);
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(10.7,0) node[right]{$t$};
+                \draw[black,very thick, ->, >=stealth'] (0,0)--(0,12.7) node[above]{$P$};
+                \foreach \x  in  {5,10} {
+                 \draw[cyan!80!black,very thick] (\x,0) -- ++(0,12);
+                 \draw[black] (\x,.3) --++(0,-.6) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int(10*\x)] in {5,10} {
+                 \draw[cyan!80!black,very thick] (0,\x) -- ++(10,0);
+                 \draw[black] (.3,\x) --++(-.6,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[samples=65,domain={0:10},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, { 12*2^(-\x/3) });
+                \filldraw[red] (0,12) circle (.12);
+                \filldraw[red] (3,6) circle (.12);
+                \filldraw[red] (6,3) circle (.12);
+                \end{tikzpicture}]]>
+                </latex-image>
+            </image>
+        </sidebyside>
+</statement>
+<answer><p><ol marker="a.">
+    <li><m>P(t) = 120(0.5^{t/3})</m></li>
+    <li>20.6%</li></ol></p></answer></exercise> 
+</subsubsubsection>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Graphing-Parabolas"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Graphing Parabolas</title>
+
+<investigation xml:id="PerimArea"><title>Perimeter and Area</title>
+<sidebyside widths="65% 25%" margins="0% 0%" valigns="middle middle">
+<p>Do all rectangles with the same perimeter, say 36 inches, have the same area? Two different rectangles with perimeter 36 inches are shown. The first rectangle has base 10 inches and height 8 inches, and its area is 80 square inches. The second rectangle has base 12 inches and height 6 inches. Its area is 72 square inches.</p>
+    <image source="images/fig-two-rectangles-perimeter-36"><description>graph</description></image></sidebyside>
+
+<p><ol marker="1.">
+<li><p>The table shows the bases of various rectangles, in inches. Each rectangle has a perimeter of 36 inches. Fill in the height and the area of each rectangle. (To find the height of the rectangle, reason as follows: The base plus the height makes up half of the rectangle’s perimeter.)</p>
+
+<sidebyside widths="30% 65%" margins="0% 0%" valigns="middle middle"><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">Base</cell>
+                        <cell bottom="minor">Height</cell>
+                        <cell bottom="minor">Area</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10</m></cell>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>80</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>12</m></cell>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m>72</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>14</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>17</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>19</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>11</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>16</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell bottom="minor"><m>15</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                
+                    <row><cell bottom="minor"><m>13</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>7</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                 </tabular>
+    <image source="images/fig-grid-area-vs-perimeter"><description>grid</description></image></sidebyside></li>
+
+<li><p>What happens to the area of the rectangle when we change its base? On the grid above, plot the points with coordinates (Base, Area). (For this graph we will not use the heights of the rectangles.) The first two points, <m>(10, 80)</m> and <m>(12, 72)</m>, are shown. Connect your data points with a smooth curve.</p></li>
+
+<li><p>What are the coordinates of the highest point on your graph?</p></li>
+
+<li><p>Each point on your graph represents a particular rectangle with perimeter 36 inches. The first coordinate of the point gives the base of the rectangle, and the second coordinate gives the area of the rectangle. What is the largest area you found among rectangles with perimeter 36 inches? What is the base for that
+rectangle? What is its height?</p></li>
+
+<li><p>Describe the rectangle that corresponds to the point <m>(13, 65)</m>.</p></li>
+
+<li><p>Find two points on your graph with vertical coordinate 80.</p></li>
+
+<li><p>If the rectangle has area 80 square inches, what is its base? Why are there two different answers here? Describe the rectangle corresponding to each answer.</p></li>
+
+<li><p>Now we’ll write an algebraic expression for the area of the rectangle in terms of its base. Let <m>x</m> represent the base of the rectangle. First, express the height of the rectangle in terms of <m>x</m>. (Hint: If the perimeter of the rectangle is 36 inches, what is the sum of the base and the height?) Now write an expression for the area of the rectangle in terms of <m>x</m>.</p></li>
+
+<li><p>Use your formula from part (8) to compute the area of the rectangle when the base is 5 inches. Does your answer agree with the values in your table and the point on your graph?</p></li>
+
+<li><p>Use your formula to compute the area of the rectangle when <m>x=0</m> and when <m>x=18</m>. Describe the “rectangles” that correspond to these data points.</p></li>
+
+<li><p>Continue your graph to include the points corresponding to <m>x=0</m> and to <m>x=18</m>.</p></li>
+</ol></p></investigation>
+
+<subsection><title> Introduction </title>
+ 
+<p>The graph of any quadratic equation <m>y = ax^2 + bx + c</m> is a <term>parabola</term><idx>parabola</idx> (if <m>a \not= 0</m>). In this section we'll make a systematic study of the parabolas we've met earlier in the chapter. Some typical parabolas are shown below.</p>
+	<image source="images/fig-parabola-diagram"><description>two parabolas with labeled features</description></image>
+
+<p>To begin, notice that these parabolas share certain features. <ul>
+	<li>The graph has either a highest point (if the parabola opens downward, as in figure (a) or a lowest point (if the parabola opens upward, as in figure (b). This high or low point is called the <term>vertex</term><idx><h>vertex</h><h>of a parabola</h></idx> of the graph.</li>
+	<li>The parabola is symmetric about a vertical line, called the <term>axis of symmetry</term><idx><h>axis</h><h>of symmetry</h></idx><idx><h>parabola</h><h>axis of symmetry</h></idx><idx>axis of symmetry</idx><idx><h>axis of symmetry</h><seealso>parabola</seealso></idx><idx><h>symmetry</h><see>axis of symmetry</see></idx>, that runs through the vertex.</li> 
+	<li>A parabola has a <m>y</m>-intercept<idx><em>y</em>-intercept</idx>, and it may have zero, one, or two <m>x</m>-intercepts<idx><em>x</em>-intercept</idx>.</li>
+	<li>If there are two <m>x</m>-intercepts, they are equidistant from the axis of symmetry.</li>
+</ul></p>
+
+<p>The values of the constants <m>a</m>, <m>b</m>, and <m>c</m> determine the location and orientation of the parabola. We'll consider each of these constants separately.</p>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+            $axsym = RadioButtons(
+              ["The \(x\)-intercept",
+              "The \(y\)-intercept",
+              "The vertex",
+              "The origin"],
+              2, 
+            );            
+        </pg-code>
+    <statement>
+        <p>Which point on a parabola always lies on the axis of symmetry?</p>
+        <p><var name="$axsym" form="buttons"/></p>      
+    </statement>
+    <solution><p>The vertex</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Which point on a parabola always lies on the axis of symmetry?</p></statement></exercise>
+</subsection>
+
+<subsection><title>The Graph of <m>y = ax^2</m></title>
+
+<p>Use your calculator to graph the following three equations in the standard window, as shown below: 
+    <md><mrow>y \amp = x^2</mrow>
+        <mrow>y \amp = 3x^2</mrow>
+        <mrow>y \amp = 0.1x^2</mrow></md></p>
+    <image width="40%" source="images/fig-GC-3-parabolas"><description>3 parabolas</description></image>
+
+ <p>You can see that the graph of <m>y=3x^2</m> is narrower than the basic parabola, and the graph of <m>y=0.1x^2</m> is wider. As <m>x</m> increases, the graph of <m>y=3x^2</m> increases faster than the basic parabola, and the graph of <m>y=0.1x^2</m> increases more slowly. Compare the corresponding <m>x</m>-values for the three graphs shown in the table.</p>
+
+ <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y=x^2</m></cell>
+                        <cell><m>y=3x^2</m></cell>
+                        <cell><m>y=0.1x^2</m></cell></row>
+                    <row> 
+                        <cell><m>-2</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>0.4</m></cell></row>
+                    <row>
+                        <cell><m>1</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>0.1</m></cell></row>
+                    <row>
+                        <cell><m>3</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>27</m></cell>
+                        <cell><m>0.9</m></cell></row>
+                    </tabular></sidebyside> 
+
+<p>For each <m>x</m>-value, the points on the graph of <m>y=3x^2</m> are higher than the points on the basic parabola, while the points on the graph of <m>y=0.1x^2</m> are lower. Multiplying by a positive constant greater than 1 stretches the graph vertically, and multiplying by a positive constant less than 1 squashes the graph vertically.</p>
+
+<sidebyside widths="45% 40%" margins="0% 10%"><p>What about negative values for <m>a</m>?  Consider the graphs of
+    <md><mrow>y \amp = x^2</mrow>
+        <mrow>y \amp = -2x^2</mrow>
+        <mrow>y \amp = -0.5x^2</mrow></md></p>
+    <image xml:id="fig-parabolas-down"><description>parabolas</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=1, yscale=.8]
+                \draw[cyan] (-3,-5) grid (3,5);
+                \draw[black,thick,->,>=stealth'] (-3,0)--++(6.6,0) node[right]{$x$};
+                \draw[black,thick,->,>=stealth'] (0,-5)--(0,5.6) node[above]{$y$};
+                \foreach \x  in {-3,-2,-1,1,2,3} {
+                  \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-5,-4,-3,-2,-1,1,2,3,4,5} {
+                  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                }
+                \draw[samples=65,domain={-3:3},smooth,variable=\x,black,very thick] plot ({\x},{1/2*(\x)^2}) node[right]{$y=x^2$};
+                \draw[samples=65,domain={-3:3},smooth,variable=\x,blue,very thick] plot ({\x},{-1/4*(\x)^2}) node[right]{$y= -0.5x^2$};
+                \draw[samples=65,domain={-sqrt(5):sqrt(5)},smooth,variable=\x,red,very thick] plot ({\x},{-1*(\x)^2}) node[below]{$y=-2x^2$};
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+
+<p>We see that multiplying <m>x^2</m> by a negative constant reflects the graph about the <m>x</m>-axis. These parabolas open downward.</p>
+
+<assemblage xml:id="Summary-y-equals-ax-squared"><title>The Graph of <m>y=ax^2</m></title>
+<p><ul>
+    <li>The parabola opens upward if <m>a \gt 0</m></li>
+    <li>The parabola opens downward if <m>a \lt 0</m></li>
+    <li>The magnitude of <m>a</m> determines how wide or narrow the parabola is.</li>
+    <li>The vertex, the <m>x</m>-intercepts, and the <m>y</m>-intercept all coincide at the origin.</li>
+</ul></p></assemblage> 
+ 
+<example><statement><p>Sketch by hand a graph of each quadratic equation.<ol marker="a." cols="2">
+			<li><m>y = 2x^2</m></li>
+			<li><m>y = -\dfrac{1}{2}x^2</m></li></ol></p>
+</statement>
+
+<solution><p>Both equations have the form <m>y = ax^2</m>. The graph of <m>y = 2x^2</m> opens upward because <m>a = 2 \gt 0</m>, and the graph of <m>y = -\dfrac{1}{2}x^2</m> opens downward because <m>a = -\dfrac{1}{2}\lt 0</m>.</p> 
+<p>To make a reasonable sketch by hand, it is enough to plot a few <em>guidepoints</em>; the points with <m>x</m>-coordinates <m>1</m> and <m>-1</m> are easy to compute.</p>
+	
+	<sidebyside widths="30% 50%" valigns="middle middle">
+		<image source="images/fig-parabolas-vertically-scaled"><description>two vertically scaled parabolas</description></image> 
+		<stack>
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>y=2x^2</m></cell>
+            <cell><m>y=-\frac{1}{2}x^2</m></cell></row>
+        <row>
+            <cell><m>-1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>-\dfrac{1}{2}</m></cell></row>
+        <row>
+            <cell><m>0</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>0</m></cell></row>
+        <row>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>-\dfrac{1}{2}</m></cell></row>
+    </tabular>
+<p>We sketch parabolas through each set of guidepoints, as shown at left.</p></stack></sidebyside></solution>
+</example>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+         $TF = PopUp(
+          ["?","True","False"],
+          2, 
+        );
+         $True = PopUp(
+          ["?","True","False"],
+          1, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>If  <m>a\gt 1</m>, the graph of <m>y=ax^2</m> is wider than the basic parabola. <var name="$TF" form="popup"/></p></li>
+        <li><p>The vertex of a parabola lies on its axis of symmetry. <var name="$True" form="popup"/></p></li>
+        <li><p>If the <m>y</m>-intercept is negative, the parabola opens downward. <var name="$TF" form="popup"/></p></li>
+        <li><p>A parabola may have one, two, or three <m>x</m>-intercepts. <var name="$TF" form="popup"/></p></li>
+        </ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><p>False</p></li>
+            <li><p>True</p></li>
+            <li><p>False</p></li>
+            <li><p>False</p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>True or false.</p>
+    <p><ol marker="a.">
+        <li><p>If  <m>a\gt 1</m>, the graph of <m>y=ax^2</m> is wider than the basic parabola.</p></li>
+        <li><p>The vertex of a parabola lies on its axis of symmetry.</p></li>
+        <li><p>If the <m>y</m>-intercept is negative, the parabola opens downward.</p></li>
+        <li><p>A parabola may have one, two, or three <m>x</m>-intercepts.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <introduction>
+            <image source="images/fig-parabolas-vertically-scaled2w" width="25%"><description>basic parabola and four vertically scaled parabolas</description></image>
+    </introduction>
+    <webwork><pg-code>
+            $Popa = PopUp(
+            ["?","I","II", "III", "IV"],
+            3, 
+            );
+            $Popb = PopUp(
+            ["?","I","II", "III", "IV"],
+            2, 
+            );
+            $Popc = PopUp(
+            ["?","I","II", "III", "IV"],
+            1, 
+            );
+            $Popd = PopUp(
+            ["?","I","II", "III", "IV"],
+            4, 
+            );
+        </pg-code>
+        <statement><p>Match each parabola in the figure above with its equation. The basic parabola is shown in black.</p>
+            <p><ol marker="a.">
+            <li><p><m>y = -\dfrac{3}{4}x^2</m><var name="$Popa" form="popup"/></p> </li>
+            <li><p><m>y = \dfrac{1}{4}x^2</m><var name="$Popb" form="popup"/></p></li>
+            <li><p><m>y = \dfrac{5}{2}x^2</m><var name="$Popc" form="popup"/></p></li>
+            <li><p><m>y = -\dfrac{5}{4}x^2</m><var name="$Popd" form="popup"/></p></li></ol></p>
+        </statement>
+        <solution><p><ol marker="a." cols="4">
+                <li><p>III</p></li>
+                <li><p>II</p></li>
+                <li><p>I</p></li>
+                <li><p>IV</p></li></ol></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><sidebyside widths="50% 30%">
+            <stack><p>Match each parabola with its equation. The basic parabola is shown in black.</p>
+        <p><ol marker="a." cols="2">
+            <li><p><m>y = -\dfrac{3}{4}x^2</m></p> </li>
+            <li><p><m>y = \dfrac{1}{4}x^2</m></p></li>
+            <li><p><m>y = \dfrac{5}{2}x^2</m></p></li>
+            <li><p><m>y = -\dfrac{5}{4}x^2</m></p></li>
+        </ol></p></stack>
+        <image source="images/fig-parabolas-vertically-scaled2"><description>basic parabola and four vertically scaled parabolas</description></image></sidebyside></statement>
+    <solution><p><ol marker="a." cols="4">
+                <li><p>III</p></li>
+                <li><p>II</p></li>
+                <li><p>I</p></li>
+                <li><p>IV</p></li>
+    </ol></p></solution></exercise>
+</subsection>
+
+<subsection><title>The Graph of <m>y= x^2 + c</m></title>
+
+<sidebyside widths="50% 40%" margins="0% 10%"><p>Next, we consider the effect of the constant term, <m>c</m>, on the graph. Compare the graphs of 
+     <md><mrow>y \amp = x^2</mrow>
+        <mrow>y \amp = x^2+4</mrow>
+        <mrow>y \amp = x^2-4</mrow></md></p>
+    
+        <image xml:id="fig-parabolas-vertical-shift"><description>vertically shifted parabolas</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=1, yscale=.8]
+                \draw[cyan] (-3,-3) grid (3,5);
+                \draw[black,thick,->,>=stealth'] (-3,0)--++(6.6,0) node[right]{$x$};
+                \draw[black,thick,->,>=stealth'] (0,-3)--(0,5.6) node[above]{$y$};
+                \foreach \x  in {-3,-2,-1,1,2,3} {
+                   \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+                }
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )] in {-3,-2,-1,1,2,3,4,5} {
+                   \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+                }
+                \draw[samples=65,domain={-3:3},smooth,variable=\x,black,very thick] plot ({\x},{1/2*(\x)^2}) node[right]{$y=x^2$};
+                \draw[samples=65,domain={-3:3},smooth,variable=\x,blue,very thick] plot ({\x},{(\x)^2 /2 -2}) node[right]{$y= x^2-4$};
+                \draw[samples=65,domain={-sqrt(6):sqrt(6)},smooth,variable=\x,red,very thick] plot ({\x},{(\x)^2 /2+2}) node[above]{$y=x^2+4$};
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+
+<p>The graph of <m>y=x^2+4</m> is shifted upward four units compared to the basic parabola, and the graph of <m>y=x^2-4</m> is shifted downward four units. Look at the table, which shows the <m>y</m>-values for the three graphs.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y=x^2</m></cell>
+                        <cell><m>y=x^2+4</m></cell>
+                        <cell><m>y=x^2-4</m></cell></row>
+                    <row> 
+                        <cell><m>-1</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>-3</m></cell></row>
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>-4</m></cell></row>
+                    <row>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>0</m></cell></row>
+                    </tabular></sidebyside>
+
+<p>Each point on the graph of <m>y=x^2+4</m> is four units higher than the corresponding point on the basic parabola, and each point on the graph of <m>y=x^2-4</m> is four units lower. In particular, the vertex of the graph of <m>y=x^2+4</m> is the point <m>(0,4)</m>, and the vertex of the graph of <m>y=x^2-4</m> is the point <m>(0,-4)</m>.</p> 
+ 
+<assemblage xml:id="Summary-x-squared-plus-c" ><title>The Graph of <m>y=x^2+c</m></title>
+<p>Compared to the graph of <m>y=x^2</m>, the graph of <m>y=x^2+c</m><ul>
+    <li>is shifted upward by <m>c</m> units if <m>c \gt 0</m>.</li>
+    <li>is shifted downward by <m>c</m> units if <m>c \lt 0</m>.</li>
+</ul></p></assemblage> 
+
+<example xml:id="example-parabolas-vertically-shifted"><statement><p>Sketch graphs for the following quadratic equations.
+		<ol marker="a." cols="2">
+			<li><m>y = x^2 - 2</m></li>
+			<li><m>y = -x^2 + 4</m></li>
+		</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>The graph of <m>y = x^2 - 2</m> is shifted downward by two units, compared to the basic parabola. The vertex is the point <m>(0, -2)</m> and the <m>x</m>-intercepts are the solutions of the equation
+				<me>0 = x^2 - 2</me>
+	or <m>\sqrt{2}</m> and <m>-\sqrt{2}</m>. The graph is shown below.</p>
+		<image width="30%" source="images/fig-parabolas-vertically-shifted"><description>two vertically shifted parabolas</description></image></li>
+	<li><p>The graph of <m>y = -x^2 + 4</m> opens downward and is shifted <m>4</m> units up, compared to the basic parabola. Its vertex is the point <m>(0, 4)</m>. Its <m>x</m>-intercepts are the solutions of the equation 
+				<me>0 = -x^2 + 4</me>
+	or <m>2</m> and <m>-2</m>. You can verify both graphs with your graphing calculator.</p></li>
+		</ol></p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+    <webwork><pg-code>
+            $ans1 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              2, 
+            );
+            $ans2 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              3, 
+            );
+            $ans3 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              4, 
+            );
+            $ans4 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              1, 
+            );
+        </pg-code>
+    <statement><p>Match each equation with the description of its graph.<ol marker="a.">
+        <li><p><m>y=x^2-3 </m> <var name="$ans1" form="popup"/></p></li>
+        <li><p><m>y=-3x^2</m> <var name="$ans2" form="popup"/></p></li>
+        <li><p><m>y=3-x^2</m> <var name="$ans3" form="popup"/></p></li>
+        <li><p><m>y=\dfrac{1}{3}x^2 </m> <var name="$ans4" form="popup"/></p></li></ol></p>
+            <p><ol marker="i.">
+                    <li><p>Wider than the basic parabola.</p></li>
+                    <li><p>Shifted down 3 units from the basic parabola.</p></li>
+                    <li><p>Opens downward, narrower than the basic parabola.</p></li>
+                    <li><p>Opens downward, shifted up 3 units.</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+                <li>ii</li>
+                <li>iii</li>
+                <li>iv</li>
+                <li>i</li></ol></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Match each equation with the description of its graph.<ol marker="a." cols="2">
+        <li><p><m>y=x^2-3 </m></p></li>
+        <li><p><m>y=-3x^2</m></p></li>
+        <li><p><m>y=3-x^2</m></p></li>
+        <li><p><m>y=\dfrac{1}{3}x^2 </m></p></li>
+    </ol></p>
+    <p><ol marker="i.">
+        <li><p>Wider than the basic parabola.</p></li>
+        <li><p>Shifted down 3 units from the basic parabola.</p></li>
+        <li><p>Opens downward, narrower than the basic parabola.</p></li>
+        <li><p>Opens downward, shifted up 3 units.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <introduction>
+        <image width="25%" source="images/fig-vertically-shifted-parabola" ><description>vertically shifted parabola</description></image>
+    </introduction>
+    <webwork><pg-code>
+            $f = Formula("x^2-5");
+            Context("Point")->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,   );
+            $x1 = Formula("(sqrt(5),0)");
+            $x2 = Formula("(-sqrt(5),0)");
+            $xintercepts=Formula("(sqrt(5),0),(-sqrt(5),0)");
+            $my_evaluator = $xintercepts -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $y = Formula("(0,-5)");
+            $yintercepts=List("(0,-5)");
+            $my_evaluator2 = $yintercepts -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code>
+    <statement><p><ol marker="a.">
+                <li><p>Find an equation for the parabola shown above.</p>
+                <p><m>y=</m><var name="$f" width="8"/> </p></li>
+                <li><p>Give the <m>x</m>- and <m>y</m>-intercepts of the graph.</p>
+                <p><m>x</m>-intercepts: <var name="$xintercepts" width="18" evaluator="$my_evaluator"/> Note: Use "sqrt(2)" to get <m>\sqrt{2}</m>, and separate different ordered pairs with a comma.</p>
+                <p><m>y</m>-intercept: <var name="$yintercepts" width="18" evaluator="$my_evaluator2"/></p></li>
+                </ol></p>        
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+                <li><p><m>y = x^2 - 5</m></p></li>
+                <li><p><m>x</m>-intercepts: <m>(-\sqrt{5},0),(\sqrt{5},0)</m>; <m>y</m>-intercept: <m>(0,-5)</m> </p></li>
+            </ol></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><sidebyside widths="50% 25%">
+    <p><ol marker="a.">
+        <li><p>Find an equation for the parabola shown at right.</p></li>
+        <li><p>Give the <m>x</m>- and <m>y</m>-intercepts of the graph.</p></li>
+    </ol></p>
+    <image source="images/fig-vertically-shifted-parabola" ><description>vertically shifted parabola</description></image></sidebyside></statement>
+<solution>
+    <p><ol marker="a." cols="2">
+        <li><p><m>y = x^2 - 5</m></p></li>
+        <li><p><m>x</m>-intercepts: <m>(-\sqrt{5},0),(\sqrt{5},0)</m>; <m>y</m>-intercept: <m>(0,-5)</m> </p></li>
+    </ol></p></solution></exercise>
+</subsection>
+
+<subsection><title>The Graph of <m>y = ax^2 + bx</m></title>
+
+<p>How does the linear term, <m>bx</m>, affect the graph?</p> 
+
+ <example><statement><p>Describe the graph of the equation
+	<me>y = 2x^2 + 8x</me></p></statement>
+
+<solution><p>The graph in the standard window is shown below. We see that the axis of symmetry for this parabola is not the <m>y</m>-axis: the graph is shifted to the left, compared to the basic parabola. We find the <m>y</m>-intercepts of the graph by setting <m>y</m> equal to zero:  
+    <md><mrow>0 \amp= 2x^2 + 8x</mrow>
+        <mrow>\amp= 2x(x + 4)</mrow></md>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>To review solving quadratic equations, see <xref ref="tkSolvQuadEqn" text="custom"> Section 3.3.2 </xref> of the Toolkit.</p></aside>
+The solutions of this equation are <m>0</m> and <m>-4</m>, so the <m>x</m>-intercepts are the points <m>(0, 0)</m> and <m>(-4, 0)</m>.</p>
+<image width="35%" source="images/fig-GC-horizontally-shifted-parabola"  ><description>shifted parabola</description></image></solution></example>
+
+<p>We can find the vertex of the graph by using the symmetry of the parabola. The <m>x</m>-coordinate of the vertex lies exactly half-way between the <m>x</m>-intercepts, so we average their <m>x</m>-coordinates to find: 
+	<me>x=\frac{1}{2}[0 + (-4)] = -2</me></p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review the average of two numbers, see <xref ref="tkAvg" text="custom"> Section 3.3.1 </xref> of the Toolkit.</p></aside>
+
+<p>To find the <m>y</m>-coordinate of the vertex, substitute <m>x = -2</m> into the equation for the parabola:
+	<md><mrow>y \amp= 2(\alert{-2})^2 + 8(\alert{-2})</mrow>
+	   <mrow>\amp= 8 - 16 = -8</mrow></md>
+Thus, the vertex is the point <m>(-2,-8)</m>.</p>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            Context("Point")->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,   );
+            $xintercepts=List("(0,0),(6,0)");
+            $my_evaluator = $xintercepts -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $v = Point("(3,9)");
+        </pg-code>
+    <statement><p><ol marker="a.">
+            <li><p>Find the <m>x</m>-intercepts and the vertex of the parabola <m>y = 6x - x^2</m>.</p>
+                <p><m>x</m>-intercepts: <var name="$xintercepts" width="12" evaluator="$my_evaluator"/> Note: Use a comma to separate different points.</p>
+                <p>Vertex: <var name="$v" width="5" /></p></li>
+            <li><p>Verify your answers by graphing the function in the window
+                 <md><mrow>   \text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+                    <mrow>\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10</mrow></md></p></li>
+            </ol></p></statement>
+        <solution>
+            <p><m>x</m>-intercepts: <m>(0, 0)</m> and <m>(6, 0)</m>; vertex: <m>(3, 9)</m></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p><ol marker="a.">
+            <li><p>Find the <m>x</m>-intercepts and the vertex of the parabola <m>y = 6x - x^2</m>.</p></li>
+            <li><p>Verify your answers by graphing the function in the window
+                 <md><mrow>   \text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+                    <mrow>\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10</mrow></md></p></li>
+        </ol></p></statement>
+    <solution><p><m>x</m>-intercepts: <m>(0, 0)</m> and <m>(6, 0)</m>; vertex: <m>(3, 9)</m></p></solution></exercise>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>
+         $TF = PopUp(
+          ["?","True","False"],
+          2, 
+        );
+         $True = PopUp(
+          ["?","True","False"],
+          1, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>The axis of symmetry of <m>y=ax^2+bx</m> is shifted horizontally, compared to the basic parabola. <var name="$True" form="popup"/></p></li>
+        <li><p>The <m>x</m>-coordinate of the vertex is the average of the <m>x</m>-intercepts. <var name="$True" form="popup"/></p></li>
+        <li><p>The <m>y</m>-coordinate of the vertex is the same as the <m>y</m>-intercept. <var name="$TF" form="popup"/>
+            </p></li>
+        <li><p>We can use extraction of roots to solve <m>ax^2+bx=0</m>. <var name="$TF" form="popup"/></p></li>
+        </ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><p>True</p></li>
+            <li><p>True</p></li>
+            <li><p>False</p></li>
+            <li><p>False</p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>True or false.</p>
+    <p><ol marker="a.">
+        <li><p>The axis of symmetry of <m>y=ax^2+bx</m> is shifted horizontally, compared to the basic parabola.</p></li>
+        <li><p>The <m>x</m>-coordinate of the vertex is the average of the <m>x</m>-intercepts.</p></li>
+        <li><p>The <m>y</m>-coordinate of the vertex is the same as the <m>y</m>-intercept.</p></li>
+        <li><p>We can use extraction of roots to solve <m>ax^2+bx=0</m>.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection xml:id="VertexFormula"><title>A Formula for the Vertex</title>
+
+<sidebyside widths="55% 35%"  valigns="middle middle"><p>We can find a formula for the vertex of any parabola of the form
+	<me>y = ax^2 + bx</me>
+First, find the <m>x</m>-intercepts of the graph by setting <m>y</m> equal to zero and solving for <m>x</m>.</p>
+
+<image source="images/fig-parabola-vertex"><description>parabola with vertex and line of symmetry</description></image></sidebyside>
+
+<p><md><mrow>0 \amp= ax^2 + bx \amp\amp \blert{\text{Factor.}} </mrow>
+	   <mrow>\amp= x(ax + b) \amp\amp \blert{\text{Set each factor equal to zero.}} </mrow>
+	   <mrow>x \amp=0 ~~~\text{or}~~~ ax + b = 0 \amp\amp \blert{\text{Solve for}~x.} </mrow>
+	   <mrow>x \amp=0 ~~~\text{or}~~~  x =\frac{-b}{a}</mrow></md>
+The <m>x</m>-intercepts are the points <m>(0, 0)</m> and <m>(\dfrac{-b}{a}, 0)</m>.</p>
+
+<p>Next, we find the <m>x</m>-coordinate of the vertex by taking the average of the two <m>x</m>-intercepts.
+	<me>x=\frac{1}{2}\left[0+\left(\frac{-b}{a}\right)\right]=\frac{-b}{2a}</me>
+Now we have a formula for the <m>x</m>-coordinate of the vertex.</p>
+
+<assemblage><title>Vertex of a Parabola</title><idx><h>vertex</h><h>of a parabola</h></idx>
+	<p>For the graph of <m>y = ax^2 + bx</m>, the <m>x</m>-coordinate of the vertex is
+		<me>\blert{x_v=\frac{-b}{2a}}</me></p></assemblage>
+
+<p>We find the <m>y</m>-coordinate of the vertex by substituting its <m>x</m>-coordinate into the equation for the parabola. </p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of finding points on a parabola, see <xref ref="tkParabPts" text="custom"> Section 3.3.3 </xref> of the Toolkit.</p></aside>
+
+<example xml:id="example-parabola-vertex"><statement><p><ol marker="a.">
+	<li>Find the vertex of the graph of <m>f(x) = -1.8x^2 - 16.2x</m>.</li>
+	<li>Find the <m>x</m>-intercepts of the graph.</li>
+	</ol></p></statement>
+<solution><p><ol marker="a.">
+	<li>The <m>x</m>-coordinate of the vertex is
+			<me>x_v=\frac{-b}{2a}=\frac{-(-16.2)}{2(-1.8)}=-4.5</me>
+		To find the <m>y</m>-coordinate of the vertex, evaluate <m>f(x)</m> at <m>x = \alert{-4.5}</m>.
+			<me>y_v=-1.8(\alert{-4.5})^2 - 16.2(\alert{-4.5}) = 36.45</me>
+		The vertex is <m>(-4.5, 36.45)</m>.</li>
+	<li>To find the <m>x</m>-intercepts of the graph, set <m>y = 0</m> and solve.
+			<md><mrow>-1.8x^2 - 16.2x \amp= 0\amp\amp \blert{\text{Factor.}}</mrow>
+				<mrow>-x(1.8x + 16.2) \amp= 0\amp\amp \blert{\text{Set each factor equal to zero.}}</mrow>
+				<mrow>-x =0 \hphantom{blank} 1.8x + 16.2 \amp = 0\amp\amp \blert{\text{Solve each equation.}}</mrow>
+				<mrow>x = 0 \hphantom{blankblankblan} x  \amp= -9</mrow></md>
+		The <m>x</m>-intercepts of the graph are <m>(0, 0)</m> and <m>(-9, 0)</m>. The graph is shown below.</li>
+	</ol></p>
+		<image width="40%" source="images/fig-parabola-vertex2" ><description>downward opening parabola</description></image></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 5</title>
+<introduction>
+    <sidebyside widths="24% 24% 24% 24%" margins="0% 0%">
+        <image xml:id="fig-CP-3-3-4-Iw"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-4,-6) grid (2,4);
+            \draw[black,thick,->,>=stealth'] (-4,0)--(2.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-6)--(0,4.5) node[above]{$y$};
+            \foreach \x  in {-2,2,-4} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,-6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(7)-1:sqrt(7)-1},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-(\x)^2 -2*\x});
+            \node at (-1,-7){\textbf{I}};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="fig-CP-3-3-4-IIw"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-4,-4) grid (2,6);
+            \draw[black,thick,->,>=stealth'] (-4,0)--(2.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-4)--(0,6.5) node[above]{$y$};
+            \foreach \x  in {-2,2,-4} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(7)-1:sqrt(7)-1},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 +2*\x});
+            \node at (-1,-5){\textbf{II}};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="fig-CP-3-3-4-IIIw"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-3,-6) grid (3,4);
+            \draw[black,thick,->,>=stealth'] (-3,0)--(3.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-6)--(0,4.5) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,-6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(3):sqrt(3)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-2*(\x)^2 });
+            \node at (0,-7){\textbf{III}};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="fig-CP-3-3-4-IVw"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-3,-4) grid (3,6);
+            \draw[black,thick,->,>=stealth'] (-3,0)--(3.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-4)--(0,6.5) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(8):sqrt(8)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2-2 });
+            \node at (0,-5){\textbf{IV}};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></introduction>
+<webwork><pg-code>
+            $a = PopUp(
+              ["?","i", "II","III","IV"],
+              4, 
+            );
+            $b = PopUp(
+              ["?","I", "II","III","IV"],
+              1, 
+            );
+            $c = PopUp(
+              ["?","I", "II","III","IV"],
+              2, 
+            );
+            $d = PopUp(
+              ["?","I", "II","III","IV"],
+              3, 
+            );
+
+    </pg-code>
+    <statement><p>Match each equation with its graph.
+            <ol marker="a." cols="2">
+                <li><p><m>y=x^2-2</m> <var name="$a" form="popup"/> </p></li>
+                <li><p><m>y=-x^2-2x</m> <var name="$b" form="popup"/></p></li>
+                <li><p><m>y=x^2+2x</m> <var name="$c" form="popup"/></p></li>
+                <li><p><m>y=-2x^2</m> <var name="$d" form="popup"/></p></li>
+        </ol></p>
+
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+        <li>IV</li>
+        <li>I</li>
+        <li>II</li>
+        <li>III</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 5</title>
+<statement><p>Match each equation with its graph.</p>
+        <p><ol marker="a." cols="2">
+                <li><p><m>y=x^2-2</m></p></li>
+                <li><p><m>y=-x^2-2x</m></p></li>
+                <li><p><m>y=x^2+2x</m></p></li>
+                <li><p><m>y=-2x^2</m></p></li>
+        </ol></p>
+    <sidebyside widths="24% 24% 24% 24%" margins="0% 0%">
+        <image xml:id="fig-CP-3-3-4-I"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-4,-6) grid (2,4);
+            \draw[black,thick,->,>=stealth'] (-4,0)--(2.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-6)--(0,4.5) node[above]{$y$};
+            \foreach \x  in {-2,2,-4} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,-6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(7)-1:sqrt(7)-1},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-(\x)^2 -2*\x});
+            \node at (-1,-7){\textbf{I}};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="fig-CP-3-3-4-II"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-4,-4) grid (2,6);
+            \draw[black,thick,->,>=stealth'] (-4,0)--(2.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-4)--(0,6.5) node[above]{$y$};
+            \foreach \x  in {-2,2,-4} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(7)-1:sqrt(7)-1},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 +2*\x});
+            \node at (-1,-5){\textbf{II}};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="fig-CP-3-3-4-III"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-3,-6) grid (3,4);
+            \draw[black,thick,->,>=stealth'] (-3,0)--(3.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-6)--(0,4.5) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,-6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(3):sqrt(3)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-2*(\x)^2 });
+            \node at (0,-7){\textbf{III}};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+        <image xml:id="fig-CP-3-3-4-IV"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.6, yscale=.45]
+            \draw[cyan] (-3,-4) grid (3,6);
+            \draw[black,thick,->,>=stealth'] (-3,0)--(3.5,0) node[right]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-4)--(0,6.5) node[above]{$y$};
+            \foreach \x  in {-2,2} {
+               \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+            }
+            \foreach \x in {-4,-2,2,4,6} {
+               \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(8):sqrt(8)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2-2 });
+            \node at (0,-5){\textbf{IV}};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement></exercise>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            Context("Point")->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,   );
+            $intercepts=List("(0,0),(1.8,0)");
+            $my_evaluator = $intercepts -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $v = Point(0.9,2.916);
+        </pg-code> 
+    <statement><p>Find the intercepts and the vertex of the graph of <m>y = 6.4x-3.6x^2</m>.</p>
+            <p>Intercepts: <var name="$intercepts" width="20" evaluator="$my_evaluator"/> Note: Use a comma to separate different points.</p>
+                <p>Vertex: <var name="$v" width="8" /></p>
+    </statement>
+        <solution><p><m>(0,0)</m>,<m>(1.8,0)</m>, <m>(0.9,2.916)</m></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Find the intercepts and the vertex of the graph of <m>y = 6.4x-3.6x^2</m>.</p></statement>
+<solution><p><m>(0,0)</m>,<m>(1.8,0)</m>, <m>(0.9,2.916)</m></p></solution></exercise>
+</subsection>
+
+
+<xi:include href="./section-3-3-exercises.xml" /> <!-- exercises  -->
+</section> 
+<!-- </book>  </mathbook> -->

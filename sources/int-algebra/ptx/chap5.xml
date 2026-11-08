@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap5"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Functions and Their Graphs</title>
+    
+<introduction>
+    <sidebyside width="60%" margins="0% 40%"><image source="images/shutterstock_221329105.jpg"><description>earth population</description></image></sidebyside>
+        
+<p>World3 <idx>World3</idx> is a computer model developed by a team of researchers at MIT. The model tracks population growth, use of resources, land development, industrial investment, pollution, and many other variables that describe human impact on the planet.</p>
+
+<p> The figure below is taken from <pubtitle>Limits to Growth: The 30-Year Update</pubtitle>. The graphs represent four possible answers to World3's core question: How may the global population and economy interact with and adapt to Earth's limited carrying capacity <idx><h>carrying capacity</h></idx> (the maximum it can sustain) over the coming decades?</p>
+                
+    <sidebyside width="60%"><image source="images/world-population-limits"><description>models of world population limits</description></image></sidebyside>
+                
+<p>Each of the graphs represents a nonlinear function. A <term>function</term> is a special relationship between two variables, and we have already encountered linear and quadratic funtions. In this chapter we examine the properties and features of some basic nonlinear functions, and how they may be used as mathematial models.</p>
+
+
+</introduction>
+
+     <xi:include href="./section-5-1.xml" />  <!-- Functions -->
+     <xi:include href="./section-5-2.xml" />  <!--Graphs of Functions-->
+     <xi:include href="./section-5-3.xml" />  <!--Graphs of Functions-->
+     <xi:include href="./section-5-4.xml" />  <!--Direct Variation-->
+     <xi:include href="./section-5-5.xml" />  <!--Inverse Variation-->
+     <xi:include href="./section-5-6.xml" />  <!--Functions as Models-->
+     <xi:include href="./chap5-summary.xml" /> <!--Summary & Review-->
+
+</chapter> 

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="LinSys" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Linear Systems</title><idx>linear system</idx>
+
+<introduction>
+<p>For the rest of this chapter we'll consider problems that can be solved using two or more linear equations simultaneously. To begin, think about the two equations in the next Investigation.</p>
+
+<investigation><title>Water Level</title>
+ 
+<p>When sailing upstream in a canal or a river that has rapids, ships must sometimes negotiate locks to raise them to a higher water level. Suppose your ship is in one of the lower locks, at an elevation of 20 feet. The next lock is at an elevation of 50 feet. Water begins to flow from the higher lock to the lower one, raising your level by 1 foot per minute, and simultaneously lowering the water level in the next lock by 1.5 feet per minute. <ol marker="1.">
+
+<li><p>Fill in the table</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor"><m>t</m> (minutes)</cell>
+                        <cell bottom="minor">Lower lock water level</cell>
+                        <cell bottom="minor">Upper lock water level</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    </tabular></li>
+
+<li><p>Let <m>t</m> stand for the number of minutes the water has been flowing.<ol marker="a.">
+    <li>Write an equation for <m>L</m>, the water level in the lower lock after <m>t</m> minues.</li>
+    <li>Write an equation for <m>U</m>, the water level in the upper lock after <m>t</m> minues.</li>
+</ol></p></li>
+
+<li><p>Graph both your equations on the grid.</p>
+    <image width="50%" xml:id="fig-water-level-grid"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid (12,10);
+        \draw[black,thick,->,>=stealth'] (0,0)--(12.5,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,10.5);
+        \foreach \x  in {5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{\x};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 5* \x )]  in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left]{\xi};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+
+<li><p>When will the water level in the two locks be 10 feet apart?</p></li>
+<li><p>When will the water level in the two locks be the same?</p></li>
+<li><p>Write an equation you can use to verify your answer to part (5), and solve it.</p></li>
+</ol></p>
+</investigation>
+
+</introduction>
+
+<subsection><title>Systems of Equations</title>
+
+<p>A biologist wants to know the average weights of two species of birds in a wildlife preserve. She sets up a feeder whose platform is actually a scale and mounts a camera to monitor the feeder. She waits until the feeder is occupied only by members of the two species she is studying,  robins and thrushes. Then she takes a picture, which records the number of each species on the scale and the total weight registered.</p>
+
+<p>From her two best pictures, she obtains the following information. The total weight of 3 thrushes and 6 robins is 48 ounces, and the total weight of 5 thrushes and 2 robins is 32 ounces.  The biologist writes two equations about the photos.  She begins by assigning variables to the two unknown quantities:
+    <md><mrow>\amp\text{Average weight of a thrush:} ~~t </mrow>
+        <mrow>\amp\text{Average weight of a robin:} ~~r </mrow></md>
+    In each of the photos,
+    <me>(\blert{\text{weight of thrushes}}) + (\blert{\text{weight of robins}}) = \blert{\text{total weight}}</me>
+So the two equations are
+    <md><mrow>3t + 6r \amp = 48</mrow>
+        <mrow>5t + 2r \amp =32</mrow></md></p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review writing an expression for a linear model, see <xref ref="tkWriteLinMod" text="custom"> Section 2.2.1 </xref> of the Toolkit.</p></aside>
+
+<p>This pair of equations is an example of a <term>linear system of two equations in two unknowns</term><idx><h>system of equations</h><h><m>2\times 2</m></h></idx><idx><h>linear system</h><h><m>2\times 2</m></h></idx> (or a <m>2\times 2</m> linear system, for short). A <term>solution</term><idx><h>solution</h><h>to a system of equations</h></idx><idx><h>system of equations</h><h>solution</h></idx> to the system is an ordered pair of numbers, <m>(t, r)</m>, that satisfies both equations in the system.</p>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+        $pick = RadioButtons(
+          ["\( (7,1) \)",
+          "\( (0,2) \)",
+          "\( (5,-2) \)",
+          "\( (2,5) \)"],
+          2, 
+        );            
+        </pg-code>
+    <statement><p>Choose the solution of the system:
+        <md>
+            <mrow>3x-2y \amp = 19</mrow>
+            <mrow>4x+5y \amp = 10</mrow></md></p>
+        <p><var name="$pick" form="buttons"/></p>      
+    </statement>
+    <solution><p><m>(5,-2)</m> satisfies both equations.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Choose the solution of the system:
+        <md><mrow>3x-2y \amp = 19</mrow>
+            <mrow>4x+5y \amp = 10</mrow></md></p>
+    <p><ol marker="a." cols="4">
+            <li><p><m>(7,1)</m></p></li>
+            <li><p><m>(0,2)</m></p></li>
+            <li><p><m>(5,-2)</m></p></li>
+            <li><p><m>(2,5)</m></p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Solving Systems by Graphing</title><idx><h>system of equations</h><h>graphing</h></idx>
+
+<p>Recall that every point on the graph of an equation represents a solution to that equation, so a solution to both equations must be a point that lies on both graphs. Therefore, a solution to the system is a point where the two graphs intersect.</p>
+
+<sidebyside widths="57% 40%" valigns="middle middle">
+<p>The figure at right shows a graph of the system about robins and thrushes. The two lines appear to intersect at the point <m>(4, 6)</m>, so we expect that the values <m>t = \alert{4}</m> and <m>r = \alert{6}</m> are the solution to the system. We can check by verifying that these values satisfy both equations in the system
+    <md><mrow>3(\alert{4})+ 6(\alert{6}) \amp \stackrel{?}{=} 48\amp\amp \blert{\text{True}} </mrow>
+        <mrow>5(\alert{4})+ 2(\alert{6}) \amp \stackrel{?}{=} 32\amp\amp \blert{\text{True}} </mrow></md></p>
+    <image xml:id="fig-robins-thrushes"><description>two lines in first quadrant</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.55]
+        \draw[cyan] (0,0) grid (10,10);
+        \draw[black,thick,->,>=stealth'] (0,0)--(10.6,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,10.6) node[above]{$r$};
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\x};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[samples=2,domain=0:{32/5},smooth,variable=\x,red,very thick] plot (\x,{8 - 5/4*\x });
+        \node[red,rotate={atan(-5/4)}, fill=white, inner sep=1] at (2.5,6) {$5t+2r=32$};
+        \draw[samples=2,domain=0:{10},smooth,variable=\x,blue,very thick, ->, >=stealth'] plot (\x,{4 - 1/4*\x });
+        \node[blue,rotate={atan(-1/4)}, fill=white, inner sep=1] at (7.8,2.5) {$3t+6r=48$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>Both equations are true, so we have found the solution: a thrush weighs 4 ounces on average, and a robin weighs 6 ounces. </p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review solutions of linear systems, see <xref ref="tkSysSoln" text="custom"> Section 2.2.2 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+         $TF = PopUp(
+          ["?","True","False"],
+          2, 
+        );
+         $TrueF = PopUp(
+          ["?","True","False"],
+          1, 
+        );
+    </pg-code>
+<statement><p>True or false.<ol marker="a.">
+    <li><p>The point where two lines cross is called the <term>intercept</term>. <var name="$TF" form="popup"/></p></li>
+    <li><p>The <term>intercepts</term> of a line are the points where it intersects the axes. <var name="$TrueF" form="popup"/></p></li>
+    <li><p>The solution of a system may occur at an intercept. <var name="$TrueF" form="popup"/></p></li>
+    <li><p>The words <term>intercept</term> and <term>intersect</term> mean the same thing. <var name="$TF" form="popup"/></p></li></ol></p>
+</statement>
+    <solution>
+        <p><ol marker="a." cols="4">
+            <li><p>False</p></li>
+            <li><p>True</p></li>
+            <li><p>True</p></li>
+            <li><p>False</p></li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>True or false.<ol marker="a.">
+    <li><p>The point where two lines cross is called the <term>intercept</term>.</p></li>
+    <li><p>The <term>intercepts</term> of a line are the points where it intersects the axes.</p></li>
+    <li><p>The solution of a system may occur at an intercept.</p></li>
+    <li><p>The words <term>intercept</term> and <term>intersect</term> mean the same thing.</p></li>
+</ol></p></statement></exercise>
+
+<p>We can use a calculator or graphing utility to graph the equations in a system.</p>
+
+<example><statement><p>Use your grapher to solve the system by graphing. 
+            <md><mrow>y \amp= 1.7x + 0.4</mrow>
+                <mrow>y \amp= 4.1x + 5.2</mrow></md></p></statement>
+
+<solution><p>We set the graphing window to</p>
+    <tabular>
+            <row><cell><m>\text{Xmin}=-9.4 \qquad</m></cell>
+               <cell><m>\text{Ymin}=-10</m></cell></row>
+            <row><cell><m>\text{Xmax}=-9.4 \qquad</m></cell>
+                   <cell><m>\text{Ymax}=10</m></cell></row>
+        </tabular>
+<p>and enter the two equations. We can see in the figure that the two lines intersect in the third quadrant. We use the <kbd>TRACE</kbd> feature to find the coordinates of the intersection point, <m>(-2,-3)</m>. The solution to the system is <m>x=-2</m>, <m>y=-3</m>.</p>
+    <image width="38%" source="images/fig-GC-2x2-system"><description>GC display of 2 lines intersecting in 3rd quadrant</description></image></solution>
+</example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To learn about graphing equations with GeoGebra, see Appendix B.</p></aside>
+
+<p>The values we obtain from a calculator may be only approximations, so it is a good idea to check the solution algebraically. In the example above, we find that both equations are true when we substitute <m>x = \alert{-2}</m> and <m>y=\blert{-3}</m>.
+    <md><mrow>\blert{-3}\amp = 1.7(\alert{-2})+0.4\amp\amp \blert{\text{True}}</mrow>
+        <mrow>\blert{-3}\amp = 4.2(\alert{-2})+5.2\amp\amp \blert{\text{True}}</mrow></md></p>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            Context("Point");
+            $a = Compute("(7,2)");
+        </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Solve the system of equations
+                    <md><mrow>y \amp = -0.7x + 6.9</mrow>
+                        <mrow>y \amp =1.2x - 6.4</mrow></md>
+            by graphing. Use the window
+                    <md><mrow>\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+                        <mrow>\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10</mrow></md></p></li>
+        <li>Verify algebraically that your solution satisfies both equations.</li>
+    </ol></p>
+            <p>Answer: <var name="$a" width="6"/> </p>
+        <instruction>Enter the solution as an ordered pair.</instruction>
+    </statement>
+    <solution><p><ol>
+        <li><p><m>(7, 2)</m></p></li>
+        <li><p><md><mrow>{{2}}\amp= -0.7(7)+ 6.9\amp\amp \text{Yes!}</mrow>
+                <mrow>{{2}}\amp =1.2({7})-6.4\amp\amp \text{Yes!}</mrow></md></p></li>
+    </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p><ol marker="a.">
+        <li><p>Solve the system of equations
+                    <md><mrow>y \amp = -0.7x + 6.9</mrow>
+                        <mrow>y \amp =1.2x - 6.4</mrow></md>
+            by graphing. Use the window
+                    <md><mrow>\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+                        <mrow>\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10</mrow></md></p></li>
+        <li><p>Verify algebraically that your solution satisfies both equations.</p></li>
+    </ol></p></statement>
+<answer><p><ol>
+        <li><p><m>(7, 2)</m></p></li>
+        <li><p><md><mrow>{{2}}\amp= -0.7(7)+ 6.9\amp\amp \text{Yes!}</mrow>
+                <mrow>{{2}}\amp =1.2({7})-6.4\amp\amp \text{Yes!}</mrow></md></p></li>
+    </ol></p></answer></exercise>
+
+<p>Because the <kbd>TRACE</kbd> feature does not show every point on a graph, we may not find the exact solution to a system by tracing the graphs.</p>
+
+<example><statement><p>Solve the system
+            <md><mrow>3x - 2.8y \amp= 21.06</mrow>
+                <mrow>2x + 1.2y \amp= 5.3</mrow></md></p></statement>
+
+<solution><p>We can graph this system in the standard window by solving each equation for <m>y</m>. We enter
+            <md><mrow>Y_1\amp = (21.06 - 3X)/-2.8</mrow>
+                <mrow>Y_2\amp  = (5.3 - 2X)/1.2</mrow></md>
+and use the standard window. If we trace along the graph to the intersection point, we will not find the same coordinates on both lines. The intersection point is not displayed in this window. Instead, we can use the <term>intersect</term> feature of the grapher.</p> 
+        
+<p>Follow the instructions for your grapher's intersect feature to find the intersection point, <m>x = 4.36</m>, <m>y = -2.85</m>.</p>
+<p> We can substitute these values into the original system to check that they satisfy both equations.
+        <md><mrow>3(\alert{4.36}) - 2.8(\alert{-2.85}) \amp = 21.06 \amp\amp \blert{\text{True}}</mrow>
+            <mrow>2(\alert{4.36}) + 1.2(\alert{-2.85}) \amp = 5.3 \amp\amp \blert{\text{True}}</mrow></md></p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            Context("Point");
+            $a = Point("(40,-50)");
+        </pg-code>
+    <statement><p>Solve the system of equations
+            <md><mrow>y = 47x - 1930</mrow>
+                <mrow>y + 19x = 710</mrow></md>
+    by graphing. Estimate the intercepts of each graph to help you choose a suitable window, and use the <term>intersect</term> feature  to locate the solution.</p>
+            <p>Answer: <var name="$a" width="6"/> </p>
+            <instruction>
+                Enter the solution as an ordered pair.
+            </instruction>
+    </statement>
+    <solution><p><m>(40,-50)</m> is the intersection of the two lines.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Solve the system of equations
+            <md><mrow>y = 47x - 1930</mrow>
+                <mrow>y + 19x = 710</mrow></md>
+    by graphing. Estimate the intercepts of each graph to help you choose a suitable window, and use the <term>intersect</term> feature  to locate the solution.</p></statement>
+<answer><p><m>(40,-50)</m></p></answer></exercise>
+
+<p>How does the calculator find the exact coordinates of the intersection point? In the next section we’ll learn how to find the solution of a system using algebra.</p>
+</subsection>
+
+<subsection><title>Inconsistent and Dependent Systems</title><idx><h>dependent system</h><see>system of equations</see></idx><idx><h>system of equations</h><h>inconsistent</h></idx>
+
+<p>Because two straight lines do not always intersect at a single point, a <m>2\times 2</m> system of linear equations does not always have a unique solution. In fact, there are three possibilities, as illustrated below.</p>
+        <image width="90%" xml:id="fig-3-cases-2x2-systems"><description>3 cases for 2x2 linear system, namely two lines intersecting in a single point, two parallel lines, or two coincident lines</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (-5,-5) grid (5,5);
+        \draw[black,thick,->,>=stealth'] (-5,0)--++(10.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-5)--++(0,10.6) node[left]{$y$};
+        \draw[red,very thick, <->, >=stealth'] (11,-5)--(14.5,5);
+        \draw[blue,very thick, <->, >=stealth'] (9.5,-5)--(13,5);
+        \node[align=center] at (0,-6.5) {Consistent and \\independent: one solution};
+
+        \draw[cyan] (7,-5) grid (17,5);
+        \draw[black,thick,->,>=stealth'] (7,0)--++(10.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (12,-5)--++(0,10.6) node[left]{$y$};
+        \draw[red,very thick, <->, >=stealth'] (-2,5)--(5,-.5);
+        \draw[blue,very thick, <->, >=stealth'] (-4,-5)--(5,4);
+        \node[align=center] at (12,-6.5) {Inconsistent:  \\no solution};
+
+        \draw[cyan] (19,-5) grid (29,5);
+        \draw[black,thick,->,>=stealth'] (19,0)--++(10.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (24,-5)--++(0,10.6) node[left]{$y$};
+        \draw[red,very thick, <->, >=stealth'] (20,5)--(29,-.5);
+        \node[align=center] at (24,-6.5) {Dependent:  \\infinitely many solutions};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<definition xml:id="Definition-solution-system"><title>Solutions of Linear Systems</title><idx><h>linear system</h><seealso>system of equations</seealso></idx><idx><h>system of equations</h><h>solution</h></idx><idx><h>solution</h><h>to a system of equations</h></idx><idx><h>consistent</h><see>system of equations</see></idx><idx><h>system of equations</h><h>consistent and independent</h></idx><idx><h>inconsistent system</h><see>system of equations</see></idx><idx><h>system of equations</h><h>inconsistent</h></idx><idx><h>system of equations</h><h>dependent</h></idx><idx><h>system of equations</h><h>independent</h></idx>
+
+<statement><p>There are three types of <m>2 \times 2</m> linear system<idx><h>linear system</h><h><m>2\times 2</m></h></idx> : <ol marker="1.">
+    <li><p><term>Consistent and independent system</term><idx><h>independent system</h><see>system of equations</see></idx>. The graphs of the two lines intersect in exactly one point. The system has exactly one solution.</p></li>
+    <li><p><term>Inconsistent system</term><idx>inconsistent</idx>. The graphs of the equations are parallel lines and hence do not intersect. An inconsistent system has no solutions.</p></li>
+    <li><p><term>Dependent system</term><idx>dependent</idx>. All the solutions of one equation are also solutions to the second equation, and hence are solutions of the system. The graphs of the two equations are the same line. A dependent system has infinitely many solutions.</p></li></ol></p></statement>
+</definition>
+
+<example xml:id="example-inconsistent-system"><statement><p>Solve each system.<ol marker="a." cols="2">
+    <li><p><md><mrow>y = -x + 5</mrow>
+                <mrow>2x + 2y = 3</mrow></md></p></li>
+    <li><p><md><mrow>x = \frac{2}{3}y + 3</mrow>
+                <mrow>3x - 2y = 9</mrow></md></p></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We can use technology to graph both equations on the same axes. First, we rewrite the second equation in slope-intercept form by solving for <m>y</m>.
+                <md><mrow>2x + 2y \amp = 3\amp\amp \blert{\text{Substract } 2x \text{ from both sides.}}</mrow>
+                    <mrow>2y \amp = -2x + 3\amp\amp \blert{\text{Divide both sides by 2.}}</mrow>
+                    <mrow>y \amp = -x + 1.5</mrow></md>
+    We enter the equations as
+                <md><mrow>Y_1 \amp= -X + 5</mrow>
+                    <mrow>Y_2 \amp = -X + 1.5</mrow></md>
+    You should see that the lines do not intersect within the viewing window; they appear to be parallel. If we look again at the equations of the lines, we recognize that both have slope <m>-1</m> but different <m>y</m>-intercepts, so they are parallel. Because parallel lines never meet, there is no solution to the system.</p></li>
+    <li><p>This time we will graph by hand. We begin by writing each equation in slope-intercept form.</p>
+            <sidebyside widths="60% 30%" margins="0% 0%" valigns="middle middle">
+        <p><md><mrow>x \amp = \frac{2}{3}y + 3\amp\amp \blert{\text{Subtract 3.}}  </mrow>
+                        <mrow>x -3\amp = \frac{2}{3}y \amp\amp \blert{\text{Multiply by }   \frac{3}{2}.}</mrow>
+                        <mrow>\frac{3}{2}x-\frac{9}{2}\amp = y</mrow></md>
+        For the second equation,
+            <md><mrow>3x - 2y \amp = 9  \amp\amp \blert{\text{Subtract }    3x.}</mrow>
+                <mrow>-2y \amp = -3x + 9  \amp\amp \blert{\text{Divide by } -2.}</mrow>
+                <mrow>y \amp = \frac{3}{2}x - \frac{9}{2}</mrow></md></p>
+            <image source="images/fig-coincident-lines"  width="25%"><description>one line with two equations</description></image></sidebyside>
+    <p>The two equations are actually different forms of the same equation. They are equivalent, so they share the same line as a graph. Every point on the first line is also a point on the second line, and hence a solution of the system. The system has infinitely many solutions.</p></li></ol></p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $typeI =  PopUp(
+        ["?","dependent","inconsistent", "consistent and independent"],
+        2, 
+        );
+        $typeD =  PopUp(
+        ["?","dependent","inconsistent", "consistent and independent"],
+        1, 
+        );
+        $typeC =  PopUp(
+        ["?","dependent","inconsistent", "consistent and independent"],
+        3, 
+        );
+    </pg-code>
+    <statement><p>Complete the statements.<ol marker="a.">
+        <li><p>If two lines have the same slope but different <m>y</m>-intercepts, the system is <var name="$typeI" form="popup"/></p></li>
+        <li><p>If two lines have the same slope and the same <m>y</m>-intercept, the system is <var name="$typeD" form="popup"/></p></li>
+        <li><p>If two lines have the same <m>y</m>-intercept but different slopes, the system is <var name="$typeC" form="popup"/></p></li>
+        <li><p>If both lines are horizontal, the system is <var name="$typeD" form="popup"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol>
+            <li><p>Inconsistent</p></li>
+            <li><p>Dependent</p></li>
+            <li><p>Consistent and independent</p></li>
+            <li><p>Dependent</p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Complete the statements.<ol marker="a.">
+        <li><p>If two lines have the same slope but different <m>y</m>-intercepts, the system is <fillin characters="10"/>.</p></li>
+        <li><p>If two lines have the same slope and the same <m>y</m>-intercept, the system is <fillin characters="10"/>.</p></li>
+        <li><p>If two lines have the same <m>y</m>-intercept but different slopes, the system is <fillin characters="10"/>.</p></li>
+        <li><p>If both lines are horizontal, the system is <fillin characters="10"/>.</p></li>
+    </ol></p></statement></exercise>
+   
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            $type =  PopUp(
+            ["?","dependent","inconsistent", "consistent and independent"],
+            2, 
+            );
+            
+        </pg-code>
+    <statement><p><ol marker="a.">
+            <li><p>Graph the system
+                    <md><mrow>y = -3x + 6</mrow>
+                        <mrow>6x + 2y = 15</mrow></md>
+            by hand, using either the intercept method or the slope-intercept method.</p></li>
+            <li><p>Identify the system as dependent, inconsistent, or consistent and independent.</p>
+                <p><var name="$type" form="popup"/> </p></li></ol></p>
+    </statement>
+        <solution><p><ol marker="a." cols="2">
+                <li><p>A graph is below.</p></li>
+                <li><p>Inconsistent: The graph is two parallel lines.</p></li></ol></p>
+        </solution>
+</webwork>
+    <conclusion>
+        <p>Graph for part (a):</p>
+        <image width="30%" source="images/fig-ex-2-2-3ans"><description>parallel lines</description></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p><ol marker="a.">
+    <li><p>Graph the system
+                    <md><mrow>y = -3x + 6</mrow>
+                        <mrow>6x + 2y = 15</mrow></md>
+        by hand, using either the intercept method or the slope-intercept method.</p></li>
+    <li><p>Identify the system as dependent, inconsistent, or consistent and independent.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+            <li><image width="70%" source="images/fig-ex-2-2-3ans"><description>parallel lines</description></image></li>
+            <li><p>Inconsistent: The graph is two parallel lines.</p></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Applications</title>
+
+<p>Systems of equations are useful in many applied problems. Here are two examples from economics.</p>
+
+<p>A business venture calculates its <term>profit</term><idx>profit</idx> by subtracting its <term>costs</term><idx>cost</idx> from its <term>revenue</term><idx>revenue</idx>, the amount of money it takes in from sales.
+    <me>\blert{\text{Profit} = \text{Revenue} -\text{Cost}}</me>
+Cost is usually calculated as the sum of fixed costs, or overhead, and variable costs, the cost of labor and materials to produce its product. Revenue is the product of the selling price per item times the number of items sold. If the company’s revenue exactly equals its costs (so that their profit is zero), we say that the business venture will <term>break even</term><idx>break even</idx>.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To see more examples of the profit equation, see <xref ref="tkProfit" text="custom"> Section 2.2.3 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        $C = Formula("200+4x");
+        $R = Formula("12x");
+        Context("Point");
+        $a = Point("(25,300)");
+        $n = Compute("25");
+    </pg-code>
+<statement><p>The Aquarius jewelry company determines that each production run to manufacture a pendant involves an initial setup cost of $200 and $4 for each pendant produced. The pendants sell for $12 each.
+    <ol marker="a.">
+        <li><p>Express the cost <m>C</m> of production in terms of the number <m>x</m> of pendants produced.</p>
+                <p><m>C=</m><var name="$C" width="7"/></p></li>
+        <li><p>Express the revenue <m>R</m> in terms of the number <m>x</m> of pendants sold.</p>
+                <p><m>R=</m><var name="$R" width="7"/></p></li>
+        <li><p>Graph the revenue and cost on the same set of axes. (Find the intercepts of each equation to help you choose a window for the graph.) State the solution of the system.</p>
+                <p>Solution <var name="$a" width="6"/> Give the solution as an ordered pair.</p></li>
+        <li><p>How many pendants must be sold for the Aquarius company to break even on a particular production run?</p>
+            <p>The must sell <var name="$n" width="2"/> pendants to break even.</p></li>
+    </ol></p></statement>
+<solution><p><ol marker="a.">
+            <li><p><m>C=200+4x</m></p></li>
+            <li><p><m>R=12x</m></p></li>
+            <li><p><m>(25,300)</m></p></li>
+            <li><p>They must sell 25 pendants in order to break even.</p></li>
+    </ol></p></solution></webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>The Aquarius jewelry company determines that each production run to manufacture a pendant involves an initial setup cost of $200 and $4 for each pendant produced. The pendants sell for $12 each.
+<ol marker="a.">
+        <li><p>Express the cost <m>C</m> of production in terms of the number <m>x</m> of pendants produced.</p></li>
+        <li><p>Express the revenue <m>R</m> in terms of the number <m>x</m> of pendants sold.</p></li>
+        <li><p>Graph the revenue and cost on the same set of axes. (Find the intercepts of each equation to help you choose a window for the graph.) State the solution of the system.</p></li>
+        <li><p>How many pendants must be sold for the Aquarius company to break even on a particular production run?</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+            <li><p><m>C=200+4x</m></p></li>
+            <li><p><m>R=12x</m></p></li>
+            <li><p><m>(25,300)</m></p></li>
+            <li><p>They must sell 25 pendants to break even.</p></li>
+</ol></p></answer></exercise>
+
+
+
+<p>Another example involves supply and demand. The owner of a retail business must try to balance the demand for his product from consumers with the supply he can obtain from manufacturers. Supply and demand both vary with the price of the product: consumers usually buy fewer items if the price increases, but manufacturers will be willing to supply more units of the product if its price increases.</p>
+
+<p>The <term>demand equation</term><idx>demand equation</idx><idx><h>equation</h><h>demand</h></idx> gives the number of units of the product that consumers will buy at a given price. The <term>supply equation</term><idx>supply equation</idx><idx><h>equation</h><h>supply</h></idx> gives the number of units that the producer will supply at that price. The price at which the supply and demand are equal is called the <term>equilibrium price</term><idx>equilibrium price</idx>. This is the price at which the consumer and the producer agree to do business.</p>
+
+<example><statement><p>A woolens mill can produce <m>400x</m> yards of fine suit fabric if it can charge <m>x</m> dollars per yard. The mill's clients in the garment industry will buy <m>6000 - 100x</m> yards of wool fabric at a price of <m>x</m> dollars per yard. Find the equilibrium price and the amount of fabric that will change hands at that price.</p></statement>
+    
+<solution><p><ul>
+    <li><title>Step 1</title>
+        <p>We choose variables for the unknown quantities.</p>
+                    <tabular>
+                            <row><cell>Price per yard:</cell>
+                                <cell><m>x</m></cell></row>
+                            <row><cell>Number of yards:</cell>
+                                <cell><m>y</m></cell></row>
+                    </tabular></li>
+    <li><title>Step 2</title>
+        <p>The supply equation tells us how many yards of fabric the mill will produce for a price of <m>x</m> dollars per yard.
+                        <me>y=400x</me>
+        The demand equation tells us how many yards of fabric the garment industry will buy at a price of <m>x</m> dollars per yard.
+                        <me>y = 6000 - 100x</me></p></li>
+    <li><title>Step 3</title>
+        <p>We graph the two equations on the same set of axes, as shown below. We set the window values to
+                    <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 94</mrow>
+                        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 6200</mrow></md>
+        and use the <kbd>TRACE</kbd> or the <term>intersect</term> command to locate the solution. The graphs intersect at the point <m>(12, 4800)</m>.</p>
+                <image width="40%" source="images/fig-GC-equilibrium.png"><description>GC graph of supply and demand of wool fabric</description></image></li>
+    <li><title>Step 4</title>
+        <p>The equilibrium price is $12 per yard, and the mill will sell 4800 yards of fabric at that price.</p></li>
+    </ul></p></solution></example>
+
+</subsection>
+
+<xi:include href="./section-2-2-exercises.xml" />                
+
+
+</section>
+<!-- </book>  </mathbook> -->

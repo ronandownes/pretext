@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkDistanceMidpoint" xmlns:xi="http://www.w3.org/2001/XInclude"><title>The Distance and Midpoint Formulas</title>
+                 
+<subsubsection xml:id="tkRadDist"><title>Use radicals</title>
+
+<p>Because the distance formula is derived from the Pythagorean theorem, using it involves working with radicals.</p>
+
+<example><statement><sidebyside widths="60% 25%" margins="0% 5%">
+	<p>In the right triangle shown, <m>a=8</m> and <m>b=6</m>.
+<ol marker="a.">
+	<li>Is <m>c=a+b</m>?  Why or why not?</li>
+	<li>Find the length of <m>c</m>.</li></ol></p>
+	<image xml:id="fig-6-8-10-triangle"><description>right triangle</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+		\draw[blue] (0,0) rectangle ++(-.4,.4);
+		\draw[magenta!90!black, ultra thick] (0,0) -- (0, 3) -- (-4,0)-- cycle;
+		\node[text=black, font=\bf] at (-2.4,1.7) {$c$}; 
+		\node[text=black, font=\bf] at (.5,1.5) {$b$}; 
+		\node[text=black, font=\bf] at (-2,-.5) {$a$}; 
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+
+<solution><p><ol marker="a.">
+	<li>No, the length of <m>c</m> is shorter than the lengths of <m>a</m> and <m>b</m> combined, so <m>c \lt a+b</m>.</li>
+	<li><p>We use the Pythagorean theorem:
+		<md><mrow>c^2 \amp = a^2+b^2 \amp \amp \blert{\text{Substitute }a=8~ \text{and }b=6~ \text{and evaluate.}}</mrow>
+			<mrow>c^2 \amp = 8^2+6^2=64+36=100 \amp \amp \blert{\text{Take square roots.}}</mrow>
+			<mrow> c \amp = \sqrt{100} = 10</mrow></md>
+		The hypotenuse is 10 cm long.</p></li>
+</ol></p></solution></example>
+
+<example><statement><p>Is <m>\sqrt{a^2+b^2} = a+b</m>?</p></statement>
+
+<solution><p>No. In the previous example, <m>c=\sqrt{a^2+b^2}</m>, and we saw that <m>c \lt a+b</m>. We cannot simplify  <m>\sqrt{a^2+b^2}</m> by taking the square root of each term.</p></solution></example>
+
+<example><statement><p>If <m>r=\sqrt{14}</m>, write and simplify expressions for:
+<ol marker="a.">
+	<li><m>r \cdot r</m></li>
+	<li><m>r+r</m></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><m>r \cdot r = \left(\sqrt{14}\right)\left(\sqrt{14}\right) = 14</m>. Or, <m>r \cdot r = r^2 = \left(\sqrt{14}\right)^2 = 14</m>.</li>
+	<li><m>r+r = \sqrt{14} + \sqrt{14} = 2\sqrt{14}</m>.  Or, <m>r+r = 2r = 2\sqrt{14}</m>.</li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Simplify if possible:  <m>~\sqrt{(x-4)^2+(y-2)^2}</m></p></statement>
+<answer><p>cannot be simplified</p></answer></exercise>
+
+<exercise><statement><p>Simplify if possible:  <m>~\sqrt{7^2+w^2}</m></p></statement>
+<answer><p><m>\sqrt{49+w^2}</m></p></answer></exercise>
+
+<exercise><statement><p>Simplify if possible:  <m>~\sqrt{7+w} \sqrt{7+w}</m></p></statement>
+<answer><p><m>7+w</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkCircEqn"><title>Use the equation for a circle</title>
+
+<p>The equation for a circle of radius <m>r</m> centered at <m>(h,k)</m> is
+	<me>\blert{(x-h)^2+(y-k)^2=r^2}</me></p>
+
+<example><statement><p>Does <m>(-1,5)</m> lie on the circle <m>~(x-1)^2+(y-3)^2=8~</m>?</p></statement>
+
+<solution><p>We substitute <m>x=\alert{-1},~ y=\alert{5}</m> into the equation for the circle.
+	<me>(\alert{-1}-1)^2+(\alert{5}-3)^2 = (-2)^2+2^2 = 4+4 = 8</me> 
+The point <m>(-1,5)</m> satisfies the equation, so it does lie on the circle.</p></solution></example>
+
+<exercise><statement><p>Find a point with <m>y</m>-coordinate <m>-2</m> that lies on the circle <m>(x-2)^2+(y+1)^2=9</m>.</p></statement>
+<answer><p><m>(2+\sqrt{8}, -2)</m> and <m>(2-\sqrt{8}, -2)</m></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkCompSq"><title>Complete the square</title>
+
+<p>To find the center and radius of a circle, we may need to complete the square.</p>
+
+<example><statement><p>Write an equivalent equation in which the left side is a perfect square: <m>~x^2-6x=2</m></p></statement>
+
+<solution><p>We want to find a constant <m>p^2</m> so that <m>x^2\blert{-6x}+p^2</m> is a perfect square, namely <m>(x+p)^2</m>.  Now, <m>~(x+p)^2 = x^2\blert{+2px}+p^2~</m>, so <m>2p=-6</m>, and <m>p=-3</m>.  Thus, we add <m>p^2=\alert{9}</m> to both sides of the equation.
+	<me>x^2-6x+\alert{9} = 2+\alert{9}</me>
+Now we can write the left side as a perfect square:
+	<me>(x-3)^2 = 11</me></p>
+</solution></example>
+
+<example><statement><p>Write an equivalent equation in which the left side is a perfect square: <m>~y^2+7y=5</m></p></statement>
+
+<solution><p>For this equation, <m>2p=7</m> so <m>p = \dfrac{7}{2}</m>.  We add <m>p^2=\left(\dfrac{7}{2}\right)^2=\alert{\dfrac{49}{4}}</m> to both sides of the equation.
+	<me>y^2+7y+\alert{\dfrac{49}{4}}=5+\alert{\dfrac{49}{4}}</me>
+We write the left sides as a perfect square, <m>(x+p)^2</m>, and simplify the right side.
+	<me>\left(x+\dfrac{7}{2}\right)^2=\dfrac{69}{4}~~~~~~~~~~~~\blert{5+\dfrac{49}{4}=\dfrac{20}{4}+\dfrac{49}{4}=\dfrac{69}{4}}</me>
+</p></solution></example>
+
+<exercise><statement><p>Write an equivalent equation in which the left side is a perfect square: <m>~x^2+12x=-6</m></p></statement>
+<answer><p><m>(x+6)^2=30</m></p></answer></exercise>
+
+<exercise><statement><p>Write an equivalent equation in which the left side is a perfect square: <m>~y^2-5y=3</m></p></statement>
+<answer><p><m>\left(y-\dfrac{5}{2}\right)^2=\dfrac{37}{4}</m></p></answer></exercise>
+</subsubsection>
+
+
+</subsection>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkCompletingSquare" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Completing the Square</title>
+
+<subsubsection xml:id="tkBinSq"><title>Squares of binomials</title>
+
+<introduction><p>To solve a quadratic equation by completing the square, we create the square of a binomial:
+    <me>\blert{(x+p)^2 = x^2 + 2px + p^2}</me></p>
+</introduction>
+
+<example><statement><p>Write each trinomial as the square of a binomial.
+<ol marker="a." cols="2">
+    <li><m>x^2+6x+9</m></li>
+    <li><m>x^2-5x+\dfrac{25}{4}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>In the formula above, note that the coefficient of <m>x</m> is <m>2p</m> and the constant term is <m>p^2</m>. In this example, <m>2p=6</m> and <m>p^2=9</m>, so <m>p=\alert{3}</m>, and 
+        <me>x^2+6x+9 = (x+\alert{3})^2</me></p></li>
+    <li><p>The coefficient of <m>x</m> is <m>2p=-5</m> and the constant terms is <m>p^2=\dfrac{25}{4}</m>, so <m>p=\alert{\dfrac{-5}{2}}</m>, and 
+        <me>x^2-5x+\dfrac{25}{4} = \left(x-\alert{\dfrac{5}{2}}\right)^2</me></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write <m>~x^2+12x+36~</m> as the square of a binomial.</p></statement>
+    <answer><p><m>(x+6)^2</m></p></answer></exercise>
+
+<exercise><statement><p>Write <m>~x^2-26x+169~</m> as the square of a binomial.</p></statement>
+    <answer><p><m>(x-13)^2</m></p></answer></exercise>
+
+<exercise><statement><p>Write <m>~a^2-9a+\dfrac{81}{4}~</m> as the square of a binomial.</p></statement>
+    <answer><p><m>(a-\dfrac{9}{2})^2</m></p></answer></exercise>
+
+<exercise><statement><p>Write <m>~t^2-\dfrac{4}{3}t+\dfrac{4}{9}~</m> as the square of a binomial.</p></statement>
+    <answer><p><m>(t-\dfrac{2}{3})^2</m></p></answer></exercise>
+</subsubsection>
+  
+<introduction><p>To solve a quadratic equation by completing the square, we often have to work with fractions.</p></introduction>
+
+<subsubsection xml:id="tkMultFrac"><title>Multiply fractions</title>
+
+<p>To multiply two fractions together, we multiply their numerators together, and multiply their denominators together. We can divide out any common factors in numerator and denominator before we multiply.</p>
+
+<example><statement><p>Multiply <m>~\dfrac{3}{8} \cdot \dfrac{6}{5}</m></p></statement>
+    
+<solution><p>We can divide out a factor of 2.
+    <me>\dfrac{3}{8} \cdot \dfrac{6}{5} = \dfrac{3}{\cancel{2} \cdot 4} \cdot \dfrac{\cancel{2} \cdot 3}{5} = \dfrac{9}{20}</me></p></solution></example>
+  
+<example><statement><p>Multiply <m>~\dfrac{ab}{6} \cdot \dfrac{3a}{2b}</m></p></statement>
+
+<solution><p>We divide out common factors before multiplying.
+    <me>\dfrac{ab}{6} \cdot \dfrac{3a}{2b} = \dfrac{a \cancel{b}}{2 \cdot \cancel{3}} \cdot \dfrac{\cancel{3}a}{2 \cancel{b}} = \dfrac{a^2}{4}</me></p></solution></example>
+
+<exercise><statement><p>Multiply. 
+    <ol marker="a." cols="2">  
+    <li><m>\dfrac{2}{3} \cdot \dfrac{5}{7}</m></li>
+    <li><m>\dfrac{6}{7} \cdot \dfrac{14}{15}</m></li></ol> </p> </statement>
+<answer><p><ol marker="a.">
+        <li><m>\dfrac{10}{21}</m></li>
+        <li><m>\dfrac{4}{5}</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Multiply. 
+<ol marker="a." cols="2">  
+    <li><m>\dfrac{12x}{16y} \cdot \dfrac{18}{27xy}</m></li>
+    <li><m>\dfrac{9c^2}{10c} \cdot \dfrac{25cd}{12d^2}</m></li>
+</ol> </p> </statement>
+<answer><p><ol marker="a.">
+        <li><m>\dfrac{1}{2y^2}</m></li>
+        <li><m>\dfrac{15c^2}{8d}</m></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkAddFrac"><title>Add fractions</title>
+
+<assemblage><title>To add or subtract unlike fractions</title><p><ol marker="1.">
+    <li>Find the LCD for the fractions.</li>
+    <li>Build each fraction to an equivalent one with the LCD as its denominator.</li>
+    <li>Add or subtract the numerators. Keep the same denominator.</li>
+</ol></p></assemblage>
+
+<example><statement><p>Add. 
+    <ol marker="a." cols="2"> 
+    <li><m>\dfrac{7}{10} + \dfrac{5}{6}</m></li>
+    <li><m>6 + \dfrac{4}{9}</m></li>
+</ol></p></statement>
+ 
+<solution><p><ol marker="a.">
+    <li><p>Step1:  Find the LCD. Factor each denominator.
+        <md><mrow>10=2\cdot 5</mrow>
+            <mrow>6 = 2\cdot 3</mrow></md>
+    The LCD is <m>~2 \cdot 3 \cdot 5 = 30</m>.</p>
+    <p>Step2:  Build each fraction to a denominator of 30. The building factor for the first fraction is <m>\blert{3}</m>, and <m>\blert{5}</m> for the second fraction.
+        <me>\dfrac{7}{10} \cdot \blert{\dfrac{3}{3}} = \dfrac{21}{30}~~~~\text{and}~~~~\dfrac{5}{6} \cdot \blert{\dfrac{5}{5}} = \dfrac{25}{30}</me>
+    Step 3:  Add the two like fractions, and reduce.
+        <md><mrow>\dfrac{7}{10} + \dfrac{5}{6} \amp = \dfrac{21}{30} + \dfrac{25}{30} = \dfrac{46}{30}</mrow>
+            <mrow> \amp = \dfrac{\cancel{2} \cdot 23}{\cancel{2} \cdot 15} = \dfrac{23}{15}</mrow></md></p></li> 
+    <li><p>Step1:  The LCD is 9.</p>
+        <p>Step 2:  Build the whole number to a denominator of 9.
+            <me>\dfrac{6}{1} \cdot \blert{\dfrac{9}{9}} = \dfrac{54}{9}</me>
+        Step 3:  Add the two like fractions.
+            <me>6 + \dfrac{4}{9} = \dfrac{54}{9} + \dfrac{4}{9} = \dfrac{58}{9}</me></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Add or subtract. 
+<ol marker="a." cols="2">  
+    <li><m>\dfrac{5}{8} + \dfrac{1}{12}</m></li>
+    <li><m>3 - \dfrac{3}{4}</m></li></ol> </p> </statement>
+<answer><p><ol marker="a.">
+        <li><m>\dfrac{17}{24}</m></li>
+        <li><m>\dfrac{9}{4}</m></li>
+    </ol></p></answer></exercise>
+
+<exercise><statement><p>Add or subtract. 
+<ol marker="a." cols="2">  
+    <li><m>\dfrac{5}{2} - \dfrac{5}{3}</m></li>
+    <li><m>4 + \dfrac{3}{8}</m></li>
+</ol> </p> </statement>
+<answer><p><ol marker="a.">
+        <li><m>\dfrac{5}{6}</m></li>
+        <li><m>\dfrac{35}{8}</m></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+
+
+</subsection>

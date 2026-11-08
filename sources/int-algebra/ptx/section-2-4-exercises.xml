@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-2-4-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 2.4</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 1 and 2, solve the system by elimination.</p></introduction>
+
+<exercise number="1"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        4x-3\amp=3y\\
+        25+5x\amp =-2y
+        \end{alignedat}</m></p></statement>
+<answer><p><m>(-3,-5) </m></p></answer></exercise>
+
+<exercise number="2"><statement> <p>
+    <m>\begin{alignedat}[t]{5}
+        \dfrac{2x}{3} + \dfrac{8y}{9} \amp=\dfrac{4}{3}\\
+        \dfrac{x}{2} + 2 \amp= \dfrac{y}{3}
+        \end{alignedat}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="3"><statement><p>Karen has $2000, part of it invested in bonds paying 10%, and the rest in a certificate account at 8%. Her annual income from the two investments is $184. How much did Karen invest at each rate?
+<ol marker="a.">
+    <li><p>Choose variables for the unknown quantities, and fill in the table.</p>
+            <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center"><col halign="left"/><col/><col/><col/>
+                    <row>
+                        <cell></cell><cell>Principal</cell><cell>Interest rate</cell><cell>Interest</cell></row>
+                    <row>
+                        <cell>Bonds</cell><cell></cell><cell></cell><cell></cell></row>
+                    <row>
+                        <cell>Certificate</cell><cell></cell><cell></cell><cell></cell></row>
+                    <row>
+                        <cell>Total</cell><cell></cell><cell><mdash/><mdash/></cell><cell></cell></row>
+                </tabular></li>
+        <li><p>Write one equation about the amount Karen invested.</p></li>
+        <li><p>Write a second equation about Kaaren's annual interest.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center"><col halign="left"/><col/><col/><col/>
+                        <row>
+                            <cell></cell><cell>Principal</cell><cell>Interest rate</cell><cell>Interest</cell></row>
+                        <row>
+                            <cell>Bonds</cell><cell><m>x</m></cell><cell><m>0.10</m></cell><cell><m>0.10x</m></cell></row>
+                        <row>
+                            <cell>Certificate</cell><cell><m>y</m></cell><cell><m>0.08</m></cell><cell><m>0.08y</m></cell></row>
+                        <row>
+                            <cell>Total</cell><cell><m>2000</m></cell><cell><mdash/><mdash/></cell><cell><m>184</m></cell></row>
+                    </tabular></li>
+        <li><p><m>x+y=2000</m></p></li>
+        <li><p><m>0.10x+0.08y=184</m></p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="4"><statement><p>The pharmacist at Glenoaks Hospital was asked to supply 10 liters of a 20% solution of iodine. She has on hand iodine solutions in 15% strength and 40% strength. How much of each should she mix to make the required solution?<ol marker="a.">
+        <li><p>Choose variables for the unknown quantities, and fill in the table.</p>
+            <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center"><col halign="left"/><col/><col/><col/>
+                        <row>
+                            <cell></cell>
+                            <cell>Liters</cell>
+                            <cell>Strength</cell>
+                            <cell>Amount of iodine</cell></row>
+                        <row>
+                            <cell>15% Solution</cell><cell></cell><cell></cell><cell></cell></row>
+                        <row>
+                            <cell>40% solution</cell><cell></cell><cell></cell><cell></cell></row>
+                        <row>
+                            <cell>20% solution</cell><cell></cell><cell></cell><cell></cell></row>
+                    </tabular></li>
+        <li><p>Write one equation about the number of liters of solution.</p></li>
+        <li><p>Write a second equation about the amount of iodine.</p></li>
+    </ol></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5 and 6, use back-substitution to solve the system.</p></introduction>
+
+<exercise number="5"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        2x\amp{}+{}\amp 3y\amp{}-{}\amp z\amp{}={}-7\\
+        \amp \amp y\amp{}-{}\amp 2z\amp{}={}-6\\
+        \amp \amp \amp \amp 5z\amp{}={}15
+        \end{alignedat}</m></p></statement>
+    <answer><p><m>(-2,0,3) </m></p></answer>
+</exercise>
+
+<exercise number="6"><statement><p>
+    <m>\begin{aligned}[t]
+        2x + z\amp = 5\\
+        3y + 2z \amp =6\\
+        5x \amp = 20
+        \end{aligned}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 7<ndash/>12, use Gaussian reduction to solve the system.</p></introduction>
+
+<exercise number="7"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        x\amp{}+{}\amp y\amp{}+{}\amp z\amp{}={}0\\
+        2x \amp{}-{} \amp 2y\amp{}+{}\amp z\amp{}={}8\\
+        3x \amp{}+{} \amp 2y\amp {}+{}\amp z\amp{}={}2
+        \end{alignedat}</m></p></statement>
+<answer><p><m>(2,-2,0) </m></p></answer></exercise>
+
+<exercise number="8"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        x\amp{}-{}\amp 2y\amp{}+{}\amp 4z\amp{}={}-3\\
+        3x \amp{}+{} \amp y\amp{}-{}\amp 2z\amp{}={}12\\
+        2x \amp{}+{} \amp y\amp {}-{}\amp z\amp{}={}11
+        \end{alignedat}</m>
+</p></statement></exercise>
+
+<exercise number="9"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        3x\amp{}-{}\amp 4y\amp{}+{}\amp 2z\amp{}={}20\\
+        4x \amp{}+{} \amp 3y\amp{}-{}\amp 3z\amp{}={}-4\\
+        2x \amp{}-{} \amp 5y\amp {}+{}\amp 5z\amp{}={}24
+        \end{alignedat}</m></p></statement>
+<answer><p><m>(2,-3,1) </m></p></answer></exercise>
+
+<exercise number="10"> <statement><p>
+    <m>\begin{aligned}[t]
+        4x + z\amp = 3\\
+        2x - y \amp =2\\
+        3y+2z \amp = 0
+        \end{aligned}</m></p></statement></exercise>
+
+<exercise number="11"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        4x\amp{}+{}\amp 6y\amp{}+{}\amp 3z\amp{}={-3} \\
+        2x \amp{}-{} \amp 3y\amp{}-{}\amp 2z\amp{}=5 \\
+        -6x \amp{}+{} \amp 6y\amp {}+{}\amp 2z\amp{}={-5} 
+        \end{alignedat} </m></p></statement>
+<answer><p><m>\left(\dfrac{1}{2}, \dfrac{2}{3},-3 \right) </m></p></answer></exercise>
+
+<exercise number="12"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        x\amp{}-{}\amp \dfrac{1}{2} y\amp{}-{}\amp \dfrac{1}{2}z\amp{}={}4 \\
+        x \amp{}-{} \amp \dfrac{3}{2}y\amp{}-{}\amp 2z\amp{}={}3 \\
+        \dfrac{1}{4}x \amp{}+{} \amp \dfrac{1}{4}y\amp {}-{}\amp \dfrac{1}{4}z\amp{}={}0 
+        \end{alignedat} </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13 and 14, when you decide which variable to eliminate first, take advantage of the fact that one of the variables is already missing from each equation.</p></introduction>
+
+<exercise number="13"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        x\amp {}={} {-y} \\
+        x \amp{}+{} z=\dfrac{5}{6} \\
+        y \amp{}-{} 2z = -\dfrac{7}{6} 
+        \end{alignedat} </m></p></statement>
+<answer><p><m>\left(\dfrac{1}{2}, -\dfrac{1}{2},\dfrac{1}{3} \right) </m></p></answer></exercise>
+
+<exercise number="14"><statement><p>
+    <m>\begin{aligned}[t]
+        x\amp = y+\dfrac{1}{2} \\
+        y \amp =z+\dfrac{5}{4} \\
+        2z \amp = x-\dfrac{7}{4} 
+        \end{aligned} </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction>
+    <p>For Problems 15 and 16, decide whether the system is inconsistent or dependent.</p></introduction>
+
+<exercise number="15"><statement><p>
+    <m>\begin{alignedat}[t]{5}
+        3x\amp{}-{}\amp 2y\amp{}+{}\amp z\amp{}={6} \\
+        2x \amp{}+{} \amp y\amp{}-{}\amp z\amp{}=2 \\
+        4x \amp{}+{} \amp 2y\amp {}-{}\amp 2z\amp{}={3} 
+        \end{alignedat} </m></p></statement>
+<answer><p>Dependent</p></answer></exercise>
+
+<exercise number="16"><statement><p>
+    <m>\begin{aligned}[t]
+        x\amp = 2y -7 \\
+        y \amp =4z+3 \\
+        x \amp - 8z = -1 
+        \end{aligned} </m></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercisegroup><introduction><p>Use a system of equations to solve Problems 17-22.</p></introduction>
+
+<exercise number="17"><statement><p>The perimeter of a triangle is 155 inches. Side <m>x</m> is 20 inches shorter than side <m>y</m>, and side <m>y</m> is 5 inches longer than side <m>z</m>. Find the lengths of the sides of the triangle.</p></statement>
+<answer><p><m>x=40</m> in, <m>y=60</m> in, <m>z=55</m> in</p></answer></exercise>
+
+<exercise number="18"><statement><p>One angle of a triangle measures 10° more than a second angle, and the third angle is 10° more than six times the measure of the smallest angle. Find the measure of each angle.</p></statement></exercise>
+
+<exercise number="19"><statement><p>The Java Shoppe sells a house brand of coffee that is only 2.25% caffeine for $6.60 per pound. The house brand is a mixture of Colombian coffee that sells for $6 per pound and is 2% caffeine, French roast that sells for $7.60 per pound and is 4% caffeine, and Sumatran that sells for $6.80 per pound and is 1% caffeine. How much of each variety is in a pound of house brand?</p></statement>
+<answer><p><m>\dfrac{1}{2} </m> lb Colombian,  <m>\dfrac{1}{4} </m> lb French,  <m>\dfrac{1}{4} </m> Sumatran</p>
+</answer></exercise>
+
+<exercise number="20"><statement><p>Vegetable Medley is made of carrots, green beans, and cauliflower. The package says that 1 cup of Vegetable Medley provides 29.4 milligrams of vitamin C and 47.4 milligrams of calcium. One cup of carrots contains 9 milligrams of vitamin C and 48 milligrams of calcium. One cup of green beans contains 15 milligrams of vitamin C and 63 milligrams of calcium. One cup of cauliflower contains 69 milligrams of vitamin C and 26 milligrams of calcium. How much of each vegetable is in 1 cup of Vegetable Medley?</p></statement></exercise>
+
+<exercise number="21"><statement><p>Reliable Auto Company wants to ship 1700 Status Sedans to three major dealers in Los Angeles, Chicago, and Miami. From past experience Reliable figures that it will sell twice as many sedans in Los Angeles as in Chicago. It costs $230 to ship a sedan to Los Angeles, $70 to Chicago, and $160 to Miami. If Reliable Auto has $292,000 to pay for shipping costs, how many sedans should it ship to each city?</p></statement>
+<answer>800 to Los Angeles, 400 to Chicago, 500 to Miami</answer>
+</exercise>
+
+<exercise number="22"><statement><p>Office Depot makes three types of file cabinets: two-drawer, four-drawer, and horizontal. The building process is divided into three phases: assembly, painting, and finishing. A two-drawer cabinet requires 3 hours to assemble, 1 hour to paint, and 1 hour to finish. The four-drawer model takes 5 hours to assemble, 90 minutes to paint, and 2 hours to finish. The horizontal cabinet takes 4 hours to assemble, 1 hour to paint, and 3 hours to finish. Office Depot employs enough workers for 500 hours of assembly time, 150 hours of painting, and 230 hours of finishing each week. How many of each type of file cabinet should they make in order to use all the hours available?</p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+</exercises>

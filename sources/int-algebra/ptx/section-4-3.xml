@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="CurveFitting"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Curve Fitting</title><idx>curve fitting</idx>
+
+<introduction>
+<p>Earlier, we used linear regression to fit a line to a collection of data points. In this section we'll see how to fit a quadratic equation to a collection of data points.</p>
+</introduction>
+
+<subsection><title>Finding a Quadratic Equation through Three Points</title><idx><h>quadratic equation</h><h>find using three points</h></idx>
+
+<p>Every linear equation can be written in the form
+    <me>y=mx+b</me>
+To find a specific line we must find values for the two <term>parameters</term><idx>parameter</idx><idx><h>quadratic equation</h><h>parameters</h></idx><idx><h>parameter</h><seealso>quadratic equation</seealso></idx> (constants) <m>m</m> and <m>b</m>. We need two data points in order to find those two parameters.  A quadratic equation, however, has three parameters, <m>a,~b,</m> and <m>c</m>:
+    <me>y=ax^2+bx+c</me>
+To find these parameters we need three data points. </p>
+
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review points on a graph, see <xref ref="tkPtOnGraph" text="custom"> Section 4.3.1 </xref> of the Toolkit.</p></aside>
+
+<example xml:id="Example-parabola-through-3-points"><statement><p>Find values for <m>a</m>, <m>b</m>, and <m>c~</m> so that the points <m>(1, 3)</m>, <m>(3, 5)</m>, and <m>(4, 9)</m> lie on the graph of <m>~y = ax^2 + bx + c</m>. </p></statement>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review points on a graph, see <xref ref="tkPtOnGraph" text="custom"> Section 4.3.1 </xref> of the Toolkit.</p></aside>
+
+<solution><p>We substitute the coordinates of each of the three points into the equation of the parabola to obtain three equations:
+    <md><mrow>\alert{3} =\amp a(\alert{1})^2 + b(\alert{1}) + c \amp</mrow>
+        <mrow>\alert{5} =\amp a(\alert{3})^2 + b(\alert{3}) + c \amp</mrow>
+        <mrow>\alert{9} =\amp a(\alert{4})^2 + b(\alert{4}) + c \amp</mrow></md> 
+or, equivalently,
+    <md><mrow>a + b  + c \amp =  3 \amp\amp(1)</mrow>
+        <mrow>9a +  3b + c \amp = 5 \amp\amp(2)</mrow>
+        <mrow>16a +  4b + c \amp = 9 \amp\amp(3)</mrow></md> 
+This is a system of three equations in the three unknowns <m>a</m>, <m>b</m>, and <m>c</m>. To solve the system, we use Gaussian reduction.</p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review Gaussian reduction, see <xref ref="tkSpecSys" text="custom"> Section 4.3.3 </xref>. To see more examples of elimination, see <xref ref="tkSolve2by2" text="custom"> Section 4.3.2</xref> of the Toolkit.</p></aside>
+
+<p>We first eliminate <m>c</m>. We subtract Equation (1) from Equation (2) to obtain
+    <me>8a + 2b = 2 \hphantom{blankblank}(4)</me>
+and then subtract Equation (1) from Equation (3) to get
+    <me>15a + 3b = 6 \hphantom{blankblank}(5)</me>
+We now have a system of two linear equations in two variables:
+    <md><mrow>8a + 2b  \amp = 2 \amp\amp(4)</mrow>
+        <mrow>15a +3b  \amp = 6 \amp\amp(5)</mrow></md> 
+Next, we eliminate <m>b</m> from Equations (4) and (5): we add <m>-3</m> times Equation (4) to <m>2</m> times Equation (5) to get
+<!--
+    <me>
+    \begin{alignedat}{9}
+    -24a \amp {}-{} \amp 6b  \amp {}={} \amp -6\amp\hphantom{blankblank}\amp-3\times(4) \\
+    \underline{30a} \amp \underline{{}+{}} \amp \underline{6b}  \amp \underline{{}={}} \amp \underline{12}\amp\amp 2\times(5) \\
+     6a\amp {}{}   \amp\amp {}={} \amp 6    
+    \end{alignedat}
+    </me>
+-->
+    </p><sidebyside><tabular halign="right">
+        <row>
+            <cell><m>-24a</m></cell>
+            <cell><m>-</m></cell>
+            <cell><m>6b</m></cell>
+            <cell><m>=</m></cell>
+            <cell><m>-6</m></cell>
+            <cell><m>\hphantom{blank}</m></cell>
+            <cell><m>-3\times(4)</m></cell></row>
+        <row>
+            <cell bottom="minor"><m>30a</m></cell>
+            <cell bottom="minor"><m>+</m></cell>
+            <cell bottom="minor"><m>6b</m></cell>
+            <cell bottom="minor"><m>=</m></cell>
+            <cell bottom="minor"><m>12</m></cell>
+            <cell><m></m></cell>
+            <cell><m>2\times(5)</m></cell></row>
+        <row>
+            <cell><m>6a</m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m>=</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell></row>
+    </tabular></sidebyside>
+<p>or <m>a = 1</m>. We substitute <m>1</m> for <m>a</m> in Equation (4) to find
+        <md><mrow>8(\alert{1}) + 2b \amp= 2 \amp\amp \blert{\text{Solve for }b.}</mrow>
+            <mrow>b \amp= -3</mrow></md>
+Finally, we substitute <m>-3</m> for <m>b</m> and <m>1</m> for <m>a</m> in Equation (1) to find
+        <md><mrow>\alert{1} + (\alert{-3}) + c\amp = 3\amp\amp \blert{\text{Solve for }c.}</mrow>
+            <mrow>c \amp = 5</mrow></md>
+Thus, the equation of the parabola is
+    <me>y = x^2 - 3x + 5</me>
+The parabola and the three points are shown below.</p>
+    <image width="25%" source="images/fig-parabola-through-3-specified-points" ><description>parabola through-3 specified points</description></image>
+</solution></example>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork>
+    <pg-code>
+        $a = PopUp(
+          ["?","Gaussian reduction", "x-intercepts", "vertex", "three", "one"],
+          3, 
+        );
+        $b = PopUp(
+          ["?","Gaussian reduction", "x-intercepts", "vertex", "three", "one"],
+          2, 
+        );
+        $c = PopUp(
+          ["?","Gaussian reduction", "x-intercepts", "vertex", "three", "one"],
+          4, 
+        );
+        $d = PopUp(
+          ["?","Gaussian reduction", "x-intercepts", "vertex", "three", "one"],
+          1, 
+        );
+    </pg-code>
+    <statement>
+        <p>Fill in the blanks. To find the equation for a parabola: 
+            <ol marker="a.">
+                <li>We can use the formula <m>~y=a(x-x_v)^2+y_v~</m> if we know the <var name="$a" form="popup"/> and one other point.</li>
+                <li>We can use the formula <m>~y=a(x-r_1)(x-r_2)~</m> if we know the <var name="$b" form="popup"/> and one other point.
+                </li>
+                <li>Otherwise, we must know at least <var name="$c" form="popup"/> points on the graph.</li> 
+                <li>In that case, we use <var name="$d" form="popup"/> to solve for the parameters of the equation.</li>
+            </ol></p>
+    </statement>
+    <solution>
+        <p><ol marker="a.">
+            <li>vertex</li>
+            <li><m>x</m>-intercepts</li>
+            <li>three</li>
+            <li>Gaussian reduction</li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Fill in the blanks. To find the equation for a parabola: 
+        <ol marker="a.">
+            <li><p>We can use the formula <m>~y=a(x-x_v)^2+y_v~</m> if we know the <fillin characters="10"/> and one other point.</p></li>
+            <li><p>We can use the formula <m>~y=a(x-r_1)(x-r_2)~</m> if we know the <fillin characters="10"/> and one other point.</p></li>
+            <li><p>Otherwise, we must know at least <fillin characters="10"/> points on the graph.</p></li> 
+            <li><p>In that case, we use <fillin characters="10"/> to solve for the parameters of the equation.</p></li>
+        </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+           Context("LimitedPolynomial")->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,   );
+           Context()->flags->set(singlePowers=>1);
+            $answer= Formula(" -1/5*x^2+4x+80");
+            </pg-code>
+        <statement>
+            <p><ol marker="a.">
+            <li><p>Find the equation of a parabola
+                        <me>y = ax^2 + bx + c</me>
+            that passes through the points <m>(0, 80)</m>, <m>(15, 95)</m>, and <m>(25, 55)</m>.</p>
+            <p><m>y=</m><var name="$answer" width="15"/> </p></li>
+            <li><p>Plot the data points and sketch the parabola.</p></li></ol></p>
+        </statement>
+        <solution>
+            <p><ol marker="a." cols="2">
+                <li><p><m>y = \frac{-1}{5} x^2 + 4x + 80</m></p></li>
+                <li><p>A graph is below.</p></li></ol></p>
+        </solution>
+    </webwork>
+    <conclusion>
+        <image width="25%" xml:id="fig-parabola-through-3pointsw"><description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.64, yscale=.48]
+        \draw[cyan] (0,0) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5,10} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \filldraw[red] (0,8) ellipse (.15 and .2);
+        \filldraw[red] (1.5,9.5) ellipse (.15 and .2);
+        \filldraw[red] (2.5,5.5) ellipse (.15 and .2);
+        \draw[samples=65,domain={0:1+sqrt(5)},smooth,variable=\x,red,very thick, -] plot ({\x},{(-(10*\x)^2/5+40*(\x)+80) /10});
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p><ol marker="a.">
+        <li><p>Find the equation of a parabola
+                    <me>y = ax^2 + bx + c</me>
+            that passes through the points <m>(0, 80)</m>, <m>(15, 95)</m>, and <m>(25, 55)</m>.</p></li>
+        <li><p>Plot the data points and sketch the parabola.</p></li>
+    </ol></p></statement>
+    <solution>
+        <p><ol marker="a." cols="2">
+            <li><p><m>y = \frac{-1}{5} x^2 + 4x + 80</m></p></li>
+            <li><image width="50%" xml:id="fig-parabola-through-3points"><description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.64, yscale=.48]
+        \draw[cyan] (0,0) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5,10} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \filldraw[red] (0,8) ellipse (.15 and .2);
+        \filldraw[red] (1.5,9.5) ellipse (.15 and .2);
+        \filldraw[red] (2.5,5.5) ellipse (.15 and .2);
+        \draw[samples=65,domain={0:1+sqrt(5)},smooth,variable=\x,red,very thick, -] plot ({\x},{(-(10*\x)^2/5+40*(\x)+80) /10});
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    </ol></p>
+    </solution></exercise>
+</subsection>
+
+<subsection><title>Applications</title>
+
+<p>The simplest way to fit a parabola to a set of data points is to pick three of the points and find the equation of the parabola that passes through those three points.</p>  
+    
+<example xml:id="example-quadratic-fit"><statement><p>Major Motors Corporation is testing a new car designed for in-town driving. The data below show the cost of driving the car at different speeds. The speeds, <m>v</m>, are given in miles per hour, and the cost, <m>C</m>, includes fuel and maintenance for driving the car <m>100</m> miles at that speed.</p>
+        <tabular  top="minor" halign="center" right="minor" left="minor" bottom="minor">
+            <row>
+                <cell right="major"><m>v</m></cell>
+                <cell><m>30</m></cell>
+                <cell><m>40</m></cell>
+                <cell><m>50</m></cell>
+                <cell><m>60</m></cell>
+                <cell><m>70</m></cell></row>
+            <row>
+                <cell right="major"><m>C</m></cell>
+                <cell><m>6.50</m></cell>
+                <cell><m>6.00</m></cell>
+                <cell><m>6.20</m></cell>
+                <cell><m>7.80</m></cell>
+                <cell><m>10.60</m></cell></row>
+        </tabular>
+<p>Find a possible quadratic model, <m>~C=av^2+bv+c,~</m> that expresses <m>C</m> in terms of <m>v</m>.</p></statement>
+
+<solution><sidebyside widths="60% 25%"><stack><p>When we plot the data, it is clear that the relationship between <m>v</m> and <m>C</m> is not linear, but it may be quadratic, as shown at right.</p>
+
+<p>We will use the last three data points, <m>(50, 6.20)</m>, <m>(60, 7.80)</m>, and <m>(70, 10.60)</m>, to fit a parabola to the data. We would like to find the coefficients <m>a</m>, <m>b</m>, and <m>c</m> of a parabola <m>C = av^2 + bv + c</m> that includes the three data points. This gives us a system of equations:</p></stack>
+    <image source="images/fig-nonlinear-scatterplot"><description>scatterplot points following parabola shape</description></image> </sidebyside>
+<p> <md><mrow>2500a + 50b + c \amp =  6.20 \amp\amp(1)</mrow>
+            <mrow>3600a + 60b + c \amp = 7.8 \amp\amp(2)</mrow>
+            <mrow>4900a + 70b + c \amp = 10.6 \amp\amp(3)</mrow></md> 
+Eliminating <m>c</m> from Equations (1) and (2) yields Equation (4), and eliminating <m>c</m> from Equations (2) and (3) yields Equation (5).
+        <md><mrow>1100a + 10b  \amp = 1.60 \amp\amp(4)</mrow>
+            <mrow>1300a + 10b  \amp = 2.8 \amp\amp(5)</mrow></md> 
+Eliminating <m>b</m> from Equations (4) and (5) gives us
+        <md><mrow>200a \amp= 1.20</mrow>
+            <mrow>a \amp= 0.006</mrow></md></p>
+<sidebyside widths="65% 25%"><stack><p> We substitute this value into Equation (4) to find <m>b = -0.5</m>, then substitute both values into Equation (1) to find <m>c = 16.2</m>.</p> 
+<p>Thus, our quadratic model is
+        <me>C = 0.006v^2 - 0.5v + 16.2</me> 
+The graph of this equation, along with the data points, is shown at right.</p></stack>
+    <image source="images/fig-parabola-fitting-scatterplot"><description>parabola fitting nonlinear scatterplot</description></image></sidebyside>
+</solution></example>
+
+<p>As was the case with linear regression, the graph of the regression equation may not pass through all of the data points, but it should be close to most of them.</p>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork>
+    <pg-code>
+        Context()->variables->add(t=>"Real");
+        $a = Compute("0.75");
+        $b = Compute("-1.85");
+        $c = Compute("56.2");
+        $p = Formula("$a*t**2 + $b *t + $c");
+        $t = 5;
+        $answer = $p->eval(t=>$t);
+    </pg-code>
+    <statement><p>The data below show Americans' annual per capita consumption of chicken for several years since 1985.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell>Year</cell>
+                <cell>1986</cell>
+                <cell>1987</cell>
+                <cell>1988</cell>
+                <cell>1989</cell>
+                <cell>1990</cell></row>
+            <row> 
+                <cell>Pounds of chicken</cell>
+                <cell><m>51.3</m></cell>
+                <cell><m>55.5</m></cell>
+                <cell><m>57.4</m></cell>
+                <cell><m>60.8</m></cell>
+               <cell><m>63.6</m></cell></row>
+        </tabular>     
+        <p><ol marker="a.">
+            <li><p>Use the values for 1987 through 1989 to fit a quadratic equation to the data, <m>~C=at^2+bt+c,~</m> where <m>t</m> is measured in years since 1985.</p>
+            <p><m>C=</m><var name="$p" width="18"/></p></li>
+            <li><p>What does your equation predict for per capita chicken consumption in 1990?</p>
+            <p>Answer: <var name="$answer" width="3"/> lbs</p></li>
+            <li><p>Sketch the graph of your equation and the given data. Does your model provide a good fit for the data?</p></li>
+        </ol></p></statement>
+    <solution>
+        <p><ol marker="a.">
+        <li><p><m>C=0.75t^2-1.85t+56.2</m></p></li>
+        <li><p>65.7 lbs</p></li>
+        <li><p>A graph is below.</p></li>
+    </ol></p></solution>
+</webwork>
+<conclusion>
+        <image width="25%" source="images/fig-chicken-consumption"><description>scatterplot and parabola fit</description></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>The data below show Americans' annual per capita consumption of chicken for several years since 1985.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell>Year</cell>
+                <cell>1986</cell>
+                <cell>1987</cell>
+                <cell>1988</cell>
+                <cell>1989</cell>
+                <cell>1990</cell></row>
+            <row> 
+                <cell>Pounds of chicken</cell>
+                <cell><m>51.3</m></cell>
+                <cell><m>55.5</m></cell>
+                <cell><m>57.4</m></cell>
+                <cell><m>60.8</m></cell>
+               <cell><m>63.6</m></cell></row>
+        </tabular>     
+    <p><ol marker="a.">
+            <li><p>Use the values for 1987 through 1989 to fit a quadratic equation to the data, <m>~C=at^2+bt+c,~</m> where <m>t</m> is measured in years since 1985.</p></li>
+            <li><p>What does your equation predict for per capita chicken consumption in 1990?</p></li>
+            <li><p>Sketch the graph of your equation and the given data. Does your model provide a good fit for the data?</p></li>
+        </ol></p></statement>
+    <solution>
+        <p><ol marker="a.">
+        <li><p><m>C=0.75t^2-1.85t+56.2</m></p></li>
+        <li><p>65.7 lbs</p></li>
+        <li><image width="25%" source="images/fig-chicken-consumption"><description>scatterplot and parabola fit</description></image></li>
+    </ol></p></solution></exercise>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork>
+    <pg-code>
+        $TF = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or False  <ol marker="a.">
+        <li>We can plot the data points to see what type of curve is appropriate as a model.  <var name="$TF" form="popup"/> </li>
+        <li>We write a system of equations in which the <m>y</m>-coordinates of the data points are the unknown values.  <var name="$False" form="popup"/></li>
+        <li>A good regression equation will pass through all of the data points.  <var name="$False" form="popup"/></li>
+        <li><p>
+        According to the model in the previous <xref ref="example-quadratic-fit" text="custom">Example</xref> (involving a quadratic model for the cost of driving at different speeds), higher speeds always result in higher driving costs.  <var name="$False" form="popup"/></p></li>
+    </ol></p></statement>
+    <solution>
+        <p><ol marker="a.">
+            <li>True</li>
+            <li>False</li>
+            <li>False</li>
+            <li>False</li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>True or False</p>  
+    <p><ol marker="a.">
+        <li><p>We can plot the data points to see what type of curve is appropriate as a model.</p></li>
+        <li><p>We write a system of equations in which the <m>y</m>-coordinates of the data points are the unknown values.</p></li>
+        <li><p>A good regression equation will pass through all of the data points.</p></li>
+        <li><p>According to the model in the previous <xref ref="example-quadratic-fit" text="custom">Example</xref> (involving a quadratic model for the cost of driving at different speeds), higher speeds always result in higher driving costs.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Using a Calculator for Quadratic Regression</title>
+
+<p>We can use a graphing calculator or other technology to find an approximate quadratic fit for a set of data. The procedure is similar to the steps for linear regression.</p>
+
+<example xml:id="example-GC-quadratic-fit"><statement><p>
+    <ol marker="a.">
+        <li><p>Use your calculator to find a quadratic fit for the data in <xref ref="example-quadratic-fit" text="type-hybrid"/>.</p></li>
+        <li><p>How many of the given data points actually lie on the graph of the quadratic approximation?</p></li>
+    </ol></p></statement>
+<solution><p><ol marker="a.">
+        <li><p>We press <kbd>STAT</kbd> <kbd>ENTER</kbd> and enter the data under columns <m>L_1</m> and <m>L_2</m>, as shown below. Next, we calculate the quadratic regression equation and store it in <m>Y_1</m> by pressing <kbd>STAT</kbd> <kbd name="right"/>  <m>5</m> <kbd>VARS</kbd> <kbd name="right"/>  <m>1</m> <m>1</m> <kbd>ENTER</kbd>.</p>
+        <p>The regression equation has the form <m>y = ax^2 + bx + c</m>, where <m>a = 0.0057</m>, <m>b = -0.47</m>, and <m>c = 15.56</m>. Notice that <m>a</m>, <m>b</m>, and <m>c</m> are all close to the values we computed in <xref ref="example-quadratic-fit" text="type-global"/>.</p>
+                <image width="70%" source="images/fig-GC-quadratic-regression" ><description>GC lists and GC quadratic regression output</description></image></li>
+
+        <li><p>Next, we will graph the data and the regression equation. We press <kbd>Y=</kbd> and select <em>Plot1</em>, then press <kbd>ZOOM</kbd> <m>9</m> to see the graph shown below. The parabola seems to pass close to all the data points.</p> 
+        <p>However, try using either the <em>value</em> feature or a table to find the <m>y</m>-coordinates of points on the regression curve. By comparing these <m>y</m>-coordinates with our original data points, we find that none of the given data points lies precisely on the parabola.</p>
+            <image width="70%" source="images/fig-GC-quadratic-regression2" ><description>GC plot and GC table quadratic regression output</description></image></li>
+    </ol></p></solution></example>
+
+<exercise  component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            $Pop = PopUp(
+            ["?","linear","quadratic"],
+            2, 
+            );
+            $f = Formula("3.650137741*10**(-7)x**2-0.001*x+1.02")->with(
+              tolType => 'relative',
+              tolerance => .01,
+            );      
+        </pg-code>
+    <statement><p>To test the effects of radiation, a researcher irradiated male mice with various dosages and bred them with unexposed female mice. The table below shows the fraction of fertilized eggs that survived, as a function of the radiation dosage. (Source: Strickberger, Monroe W., 1976)</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+            <row bottom="minor">
+                <cell>Radiation (rems)</cell>
+                <cell><m>100</m></cell>
+                <cell><m>300</m></cell>
+                <cell><m>500</m></cell>
+                <cell><m>700</m></cell>
+                <cell><m>900</m></cell>
+                <cell><m>1100</m></cell>
+                <cell><m>1500</m></cell></row>
+            <row bottom="minor">
+                <cell><line>Relative survival</line><line>of eggs</line></cell>
+                <cell><m>0.94</m></cell>
+                <cell><m>0.700</m></cell>
+                <cell><m>0.544</m></cell>
+                <cell><m>0.424</m></cell>
+                <cell><m>0.366</m></cell>
+                <cell><m>0.277</m></cell>
+                <cell><m>0.195</m></cell></row>
+            </tabular>
+    <p><ol marker="a.">
+        <li><p>Enter the data into your calculator and create a scatterplot. Does the graph appear to be linear? Does it appear to be quadratic? <var name="$Pop" form="popup"/> </p></li>
+        <li><p>Fit a quadratic regression equation to the data and graph the equation on the scatterplot.</p>
+            <p><m>y=</m><var name="$f" width="25"/> </p></li>
+        </ol></p></statement>
+    <solution><p><ol marker="a.">
+            <li><p>The graph appears to be quadratic.</p></li>
+            <li><p><m>y = 3.65\times 10^{-7}x^2 - 0.001x + 1.02</m></p></li>
+        </ol></p>
+    </solution></webwork>
+    <conclusion>
+        <p>Graph for part (a):</p>
+        <image width="40%" source="images/fig-ex-4-3-5"><description>parabola fit to points</description></image>
+    </conclusion>
+</exercise>
+
+<exercise  component="main"><title>Practice 3</title>
+<statement><p>To test the effects of radiation, a researcher irradiated male mice with various dosages and bred them with unexposed female mice. The table below shows the fraction of fertilized eggs that survived, as a function of the radiation dosage. (Source: Strickberger, Monroe W., 1976)</p>
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+            <row bottom="minor">
+                <cell>Radiation (rems)</cell>
+                <cell><m>100</m></cell>
+                <cell><m>300</m></cell>
+                <cell><m>500</m></cell>
+                <cell><m>700</m></cell>
+                <cell><m>900</m></cell>
+                <cell><m>1100</m></cell>
+                <cell><m>1500</m></cell></row>
+            <row bottom="minor">
+                <cell><line>Relative survival</line><line>of eggs</line></cell>
+                <cell><m>0.94</m></cell>
+                <cell><m>0.700</m></cell>
+                <cell><m>0.544</m></cell>
+                <cell><m>0.424</m></cell>
+                <cell><m>0.366</m></cell>
+                <cell><m>0.277</m></cell>
+                <cell><m>0.195</m></cell></row>
+            </tabular>
+    <p><ol marker="a.">
+        <li><p>Enter the data into your calculator and create a scatterplot. Does the graph appear to be linear? Does it appear to be quadratic?</p></li>
+        <li><p>Fit a quadratic regression equation to the data and graph the equation on the scatterplot.</p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+            <li><p>The graph appears to be quadratic.</p></li>
+            <li><p><m>y = 3.65\times 10^{-7}x^2 - 0.001x + 1.02</m></p></li></ol></p>
+    </solution></exercise>
+</subsection>
+
+<subsection><title>Choosing an Appropriate Model</title>
+
+<p>We must be careful that our data set gives a complete picture of the situation we want to model. A regression equation may fit a particular collection of data and still be a poor model if the rest of the data diverge from the regression graph.</p>
+<sidebyside widths="30% 50%" valigns="middle middle">
+<image source="images/fig-GC-bad-linear-fit"  width="90%"><description>GC graph showing a poor linear fit for quadratic data</description></image>
+<p>In <xref ref="example-quadratic-fit" text="type-global"/>, suppose Major Motors had collected only the first three data points and fit a line through them, as shown at left. This regression line gives poor predictions for the cost of driving at 60 or 70 miles per hour.</p>
+</sidebyside>
+
+<example xml:id="Example-quadratic-fit-of-minute-hand"><statement><p>Delbert records the height of the tip of the minute hand on the classroom’s clock at different times. The data are shown in the table, where time is measured in minutes since noon. (A negative time indicates a number of minutes before noon.) Find a quadratic regression equation for the data and use it to predict the height of the minute hand's tip at 40 minutes past noon. Do you believe this prediction is valid?</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+            <row bottom="minor">
+                <cell><line>Time</line><line>(minutes)</line></cell>
+                <cell><m>-25</m></cell>
+                <cell><m>-20</m></cell>
+                <cell><m>-15</m></cell>
+                <cell><m>-10</m></cell>
+                <cell><m>-5</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>5</m></cell>
+                <cell><m>10</m></cell>
+                <cell><m>15</m></cell>
+                <cell><m>20</m></cell>
+                <cell><m>25</m></cell></row>
+            <row bottom="minor">
+                <cell><line>Height</line><line>(feet)</line></cell>
+                <cell><m>7.13</m></cell>
+                <cell><m>7.50</m></cell>
+                <cell><m>8.00</m></cell>
+                <cell><m>8.50</m></cell>
+                <cell><m>8.87</m></cell>
+                <cell><m>9.00</m></cell>
+                <cell><m>8.87</m></cell>
+                <cell><m>8.50</m></cell>
+                <cell><m>8.80</m></cell>
+                <cell><m>7.50</m></cell>
+                <cell><m>7.13</m></cell></row>
+        </tabular></statement>
+
+<solution><p>We enter the time data under <m>L_1</m> and the height data under <m>L_2</m>. Then we calculate and store the quadratic regression equation in <m>Y_1</m>, as we did in <xref ref="example-GC-quadratic-fit" text="type-global"/>. The regression equation is
+        <me>y = -0.00297x^2 + 0x + 8.834</me>
+From either the graph of the regression equation or from the table (see figure below), we can see that the fit is not perfect, although the curve certainly fits the data better than any straight line could.</p>
+        <image source="images/fig-GC-bad-quadratic-fit"><description>GC screens of graph and tables for quadratic fit</description></image>
+<p>If we scroll down the table, we find that this equation predicts a height of approximately 4.08 feet at time 40 minutes. (See figure (c).) This is a preposterous estimate! The position of the minute hand at 40 minutes after noon should be the same as it was exactly one hour earlier (at 20 minutes before noon), when it was 7.50 feet.</p></solution></example>
+
+<warning><p>Using the wrong type of function to fit the data is a common error in making predictions. In the <xref ref="Example-quadratic-fit-of-minute-hand" text="custom">Example</xref> above, we know that the minute hand of a clock repeats its position every 60 minutes. The graph of the height of its tip oscillates up and down, repeating the same pattern over and over. We cannot describe such a graph using either a linear or a quadratic function.</p>
+
+<sidebyside widths="45% 48%" valigns="middle middle">
+<image source="images/fig-quadratic-fit-of-periodic"><description>parabola fit on part of a periodic wave</description></image> 
+<p>The graph of the height is shown at left, along with the graph of our quadratic regression equation. You can see that the regression equation fits the actual curve only on a small interval.</p>
+</sidebyside>
+
+<p>Even though your calculator can always compute a regression equation,that equation is not necessarily appropriate for your data. Choosing a reasonable type of regression equation for a particular data set requires knowledge of different kinds of models and the physical or natural laws that govern the situation at hand.</p></warning>
+
+<exercise  component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $TF = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+<statement><p>True or False  <ol marker="a.">
+    <li>Your calculator can choose the correct type of regression equation for a data set.  <var name="$False" form="popup"/> </li>
+    <li>It is only necessary to use the first and last data points to compute a regression equation.  <var name="$False" form="popup"/></li>
+    <li>A regression equation may fit some of the data but still be a poor model.  <var name="$TF" form="popup"/></li>
+    <li>A good regression equation should fit all the data points exactly.  <var name="$False" form="popup"/></li>
+        </ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li>False</li>
+            <li>False</li>
+            <li>True</li>
+            <li>False</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise  component="main"><title>QuickCheck 3</title>
+<statement><p>True or False</p>  
+    <p><ol marker="a.">
+        <li><p>Your calculator can choose the correct type of regression equation for a data set.</p></li>
+        <li><p>It is only necessary to use the first and last data points to compute a regression equation.</p></li>
+        <li><p>A regression equation may fit some of the data but still be a poor model.</p></li>
+        <li><p>A good regression equation should fit all the data points exactly.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            Context("Point")->variables->set(x=>{limits=>[2,3]});
+            $f = Formula("-15*x**2+109.95714285714*x-0.071428571429")->with(
+              tolType => 'relative',
+              tolerance => .02,
+            );
+            $v = Point("(3.665238095,201.43812585)")->with(
+              tolType => 'relative',
+              tolerance => .01,
+            );            
+        </pg-code>
+<statement><p>A speeding motorist slams on the brakes when she sees an accident directly ahead of her. The distance she has traveled <m>t</m> seconds after braking is shown in the table.</p>
+            <tabular  top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell>Time (seconds)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>0.5</m></cell>
+                    <cell><m>1.0</m></cell>
+                    <cell><m>1.5</m></cell>
+                    <cell><m>2.0</m></cell>
+                    <cell><m>2.5</m></cell></row>
+                <row>
+                    <cell>Distance (feet)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>51</m></cell>
+                    <cell><m>95</m></cell>
+                    <cell><m>131</m></cell>
+                    <cell><m>160</m></cell>
+                    <cell><m>181</m></cell></row>
+            </tabular>
+    <p><ol marker="a.">
+        <li><p>Enter the data into your calculator and create a scatterplot. Fit a quadratic regression equation to the data and graph the equation on the scatterplot.</p>
+            <p>Regression equation: <m>y=</m><var name="$f" width="15"/>  Use <m>x</m> for the time in seconds.</p></li>
+        <li><p>Use your regression equation to find the vertex of the parabola: <var name="$v" width="12"/> </p>
+                <p> What do the coordinates represent in terms of the problem?</p></li></ol></p>
+    </statement>
+    <solution>
+        <p><ol marker="a.">
+            <li><p>A graph is below. </p><p><m>y = -15x^2 + 110x - 0.07</m></p></li>
+            <li><p><m>(3.67, 201)</m>: The car came to a stop in 3.67 seconds, after sliding 201 feet.</p></li></ol></p>
+    </solution></webwork>
+    <conclusion>
+        <p>Graph for part (a):</p>
+        <image width="40%" source="images/fig-ex-4-3-4ans"><description>parabola fit to points</description></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>A speeding motorist slams on the brakes when she sees an accident directly ahead of her. The distance she has traveled <m>t</m> seconds after braking is shown in the table.</p>
+            <tabular  top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell>Time (seconds)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>0.5</m></cell>
+                    <cell><m>1.0</m></cell>
+                    <cell><m>1.5</m></cell>
+                    <cell><m>2.0</m></cell>
+                    <cell><m>2.5</m></cell></row>
+                <row>
+                    <cell>Distance (feet)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>51</m></cell>
+                    <cell><m>95</m></cell>
+                    <cell><m>131</m></cell>
+                    <cell><m>160</m></cell>
+                    <cell><m>181</m></cell></row>
+            </tabular>
+    <p><ol marker="a.">
+        <li><p>Enter the data into your calculator and create a scatterplot. Fit a quadratic regression equation to the data and graph the equation on the scatterplot.</p></li>
+        <li><p>Use your regression equation to find the vertex of the parabola. What do the coordinates represent in terms of the problem?</p></li>
+    </ol></p></statement>
+    <solution>
+        <p><ol marker="a.">
+            <li><p><m>y = -15x^2 + 110x - 0.07</m></p></li>
+            <li><p><m>(3.67, 201)</m>: The car came to a stop in 3.67 seconds, after sliding 201 feet.</p></li>
+        </ol></p></solution></exercise>
+</subsection>
+
+<xi:include href="./section-4-3-exercises.xml" /> <!-- exercises  -->
+</section>

@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}[xscale=.55,yscale=.25]
+\draw[cyan] (-4,-1) grid[ystep=5] (4,20);
+\draw[black, thick, ->, >=stealth'] (-4,0)--(4.7,0) node[right]{$x$};
+\draw[black, thick, ->, >=stealth'] (0,-1)--(0,21.7) node[above]{$y$};
+\foreach \x  in {-2,2} {
+ \draw[black, thick] (\x,.156) --++(0,-.3) node[below]   {$\x$};
+}
+\foreach \x in  {5,10,15,20} {
+\draw[black, thick] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\draw[samples=65,domain={-sqrt(15)}:{sqrt(15)},smooth,variable=\x,red!80!black, very thick, <->, >=stealth'] plot (\x,{((\x)^2+5});
+      \end{tikzpicture}%
+}
+\end{document}

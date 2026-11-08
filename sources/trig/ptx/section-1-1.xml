@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="AngTri"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Angles and Triangles</title>
+    <idx><h>angle</h></idx><idx><h>triangle</h></idx>
+
+<introduction>
+ <p>Historically, trigonometry began as the study of triangles and their properties.  Let's review some definitions and facts from geometry. 
+    <idx><h>angle</h></idx><idx><h>angle</h><h>straight</h></idx><idx><h>angle</h><h>right</h></idx><idx><h>right angle</h></idx><idx><h>straight angle</h></idx>
+<ul>
+        <li> We measure angles in degrees.</li>
+        <li> One full rotation is <m>360\degree</m>, as shown below.</li>
+        <li> Half a full rotation is <m>180\degree</m> and is called a <term>straight angle</term>.</li>  
+        <li> One quarter of a full rotation is <m>90\degree</m> and is called a <term>right angle</term>.</li>
+</ul></p>
+    <image width="90%" xml:id="angles-in-degrees"><description>quadrantal angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.9]
+
+            \filldraw[black] (0,0) circle (2pt) ;
+            \draw[blue, thick] (0,0)rectangle (.25,.25);
+            \draw [very thick, ->,>=stealth'] (0,0) -- (2,0);
+            \draw[very thick, black!50!blue,->,>=stealth'] (0,0) -- (0,2);
+            \draw[red, thick, ->,>=stealth'] (0.6,0) arc (0:90:.6) node [above right, midway] {$90 \degree$};
+
+            \filldraw[black] (5,0) circle (2pt);
+            %\draw[blue, thick] (5,0)rectangle (5.25,.25);
+            \draw [very thick, ->,>=stealth' ] (5,0) -- (7,0);
+            \draw[very thick,black!50!blue, ->,>=stealth'] (5,0) -- (3,0);
+            \draw[red, thick, ->,>=stealth'] (5.5,0) arc (0:180:.5) node [above , midway] {$180 \degree$};
+
+
+            \filldraw[black] (8,0) circle (2pt);
+            \draw[blue, thick] (8,0)rectangle (8.25,-.25);
+            \draw [very thick, ->,>=stealth' ] (8,0) -- (10,0);
+            \draw[very thick,black!50!blue, ->,>=stealth'] (8,0) -- (8,-2);
+            \draw[red, thick, ->,>=stealth'] (8.4,0) arc (0:270:.4) node [above left, midway] {$270 \degree$};
+
+            \filldraw[black] (11,0) circle (2pt);
+            %\draw[blue, thick] (5,0)rectangle (5.25,.25);
+            \draw [very thick, ->,>=stealth' ] (11,0) -- (13,0);
+            \draw[very thick,black!50!blue, ->,>=stealth'] (11,0) -- (13.2,0);
+            \draw[red, thick, ->,>=stealth'] (11.4,0) arc (0:360:.4) node [below right] {$360 \degree$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></introduction>
+
+<subsection> <title>Triangles</title>
+    <idx><h>triangle</h></idx>
+
+<p> If you tear off the corners of any triangle and line them up, as shown below, they will always form a straight angle.</p>
+    <image width="60%" xml:id="tear-off-corners"><description>tear corners off triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4,0);
+        \coordinate (C) at (2.5,1.8);
+        \coordinate (D) at (2.5,-1.5);
+        \def\h{5};
+        \coordinate (S) at (\h,0);
+        \coordinate (Ap) at ($ (A) + (S)$);
+        \coordinate (Bp) at ($ (B) + (S)$);
+        \coordinate (Cp) at ($ (C) + (S)$);
+        \draw[black,  thick] (A) node[right, xshift=4mm, yshift=2mm]{$x$} -- (B) node[above left, xshift=-6]{$z$} -- (C) node[below, yshift=-3]{$y$} -- cycle;
+
+        \draw[gray!60,  thick, dashed] (Ap) node[right, xshift=4mm, yshift=2mm, text=blue!60]{$x$} -- (Bp) node[above left, xshift=-6, text=green!60]{$z$}-- (Cp) node[below, yshift=-3, text=black]{$y$} -- cycle;
+        \draw[blue!50,thick, dashed] (Ap)++(1.5,0) -- ++(-0.05,.2) -- ++(-.1, .06) -- ++(-0.18,.13)-- ++(-.01,.15)-- ++(-.12,.18);
+        \draw[green!50,thick, dashed] (Bp)++(-1.1,0)-- ++(0,.19)-- ++(.06,.01)-- ++(.1,.1)-- ++(.1,.02)-- ++(.02,.17)--++(.2,.2);
+
+         \draw[blue,thick] (Cp)++(-1.5,0) -- ++(0.05,-.2) -- ++(.1, -.06) -- ++(0.18,-.13)-- ++(.01,-.15)-- ++(.12,-.18);
+        \draw[black,thick] (Cp)++(-2,0) --(Cp) -- ++ (-1.04,-.72) ;
+
+        \draw[green,thick] (B)++(-1.1,0)-- ++(0,.19)-- ++(.06,.01)-- ++(.1,.1)-- ++(.1,.02)-- ++(.02,.17)--++(.21,.21);
+        \draw[green,thick] (Cp)++(1.1,0)-- ++(0,-.19)-- ++(-.06,-.01)-- ++(-.1,-.1)-- ++(-.1,-.02)-- ++(-.02,-.17)--++(-.21,-.21);
+        \draw[black,thick] (Cp)++(1.6,0) -- (Cp) -- ++(.77, -.896);
+        \draw[blue,->,>=stealth'] (.5,.6) arc ({180+atan(18/25)}:{atan(18/25)}:.8);
+        \draw[green,->,>=stealth'] (3.8,.6) arc ({-atan(18/15)}:{180-atan(18/15)}:.6);
+
+        \draw[magenta, thick] (C)++(-.8,-.8*18/25) -- ++(.1,-.2)-- ++(.3, -.16) -- ++(.1, .08)-- ++(.32,-.15)-- ++(.18,.08)-- ++(.27,.01)-- ++(.3,.02);
+        \draw[magenta] (Cp)++(-.8,-.8*18/25) -- ++(.1,-.2)-- ++(.3, -.16) -- ++(.1, .08)-- ++(.32,-.15)-- ++(.18,.08)-- ++(.27,.01)-- ++(.3,.02);
+        \node[below left, xshift=-4mm] at (Cp) {$x$};
+        \node[below right, xshift=4mm] at (Cp) {$z$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+
+<assemblage><title>Sum of angles in a triangle</title>
+        <idx><h>angle</h><h>sum in a triangle</h></idx>
+<idx><h>triangle</h><h>angle sum</h></idx>
+    <p>1.  The sum of the angles in a triangle is <m>180\degree</m>.</p>
+</assemblage>
+
+<example><statement>
+<sidebyside widths="55% 27%" valigns="middle middle">
+    <p>Two of the angles in the triangle at right are <m>25\degree</m> and <m>115\degree</m>.  Find the third angle.</p>
+    <image xml:id="exam1-1-1"><description>triangle with 25 and 115 angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (5,0.7);
+            \coordinate(C) at (3,2.1);
+            \draw[red] ({atan(.7/5)}:1.25) arc (atan(.7/5):atan(.7):1.25) node[right, midway, yshift=3, text=black] {$25\degree$};
+            \draw[red] ($ (B)+({180-atan(.7)}:.75) $) arc ({180-atan(.7)}:{180+atan(.7/5)}:.75) node[left, midway, text=black] {$x$};
+            \draw[red] ($ (C)+({180+atan(.7)}:.5) $) arc ({180+atan(.7)}:{360-atan(.7)}:.5) node[below, midway, yshift=0, text=black] {$115\degree$};
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p>To find the third angle, we write an equation.</p>
+        <p><md><mrow>x+25+115\amp =180 \amp \amp \blert{\text{Simpify the left side.}}</mrow>
+                <mrow>x+140\amp =180 \amp \amp \blert{\text{Subtract 140 from both sides.}}</mrow>
+                <mrow>x\amp =40   \amp \amp</mrow></md></p>
+        <p>The third angle is <m>40\degree</m>.</p>
+</solution></example>
+
+<exercise><statement>
+    <sidebyside widths="60% 27%" valigns="middle middle">
+    <p>Find each of the angles in the triangle at right.</p>
+    <image xml:id="exer1-1-2"><description>triangle with angles x, 2x, and 2x-15</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (5,0);
+        \coordinate(C) at (3,2.7);
+        \draw[red] (.75,0) arc (0:atan(.9):.75) node[right, midway, yshift=3, text=black] {$x$};
+        \draw[red] ($ (B)+(-.75,0) $) arc ({180}:{180-atan(2.7/2)}:.75) node[left, midway, text=black] {$2x-15$};
+        \draw[red] ($ (C)+({180+atan(.9)}:.5) $) arc ({180+atan(.9)}:{360-atan(2.7/2)}:.5) node[below, midway, yshift=0, text=black] {$2x$};
+        \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<answer><p>Because the sum of the angles is <m>180\degree</m>, we know that <m>~x + 2x + 2x-15 = 180</m>. Solving this equation gives <m>~x=39\degree,~~2x=78\degree, ~~2x-15=63\degree</m></p>
+</answer></exercise>
+
+<p>Some special categories of triangles are particularly useful. Most important of these are the <term>right triangles</term>.</p>
+
+<assemblage><title>Right triangle</title>
+    <idx><h>triangle</h><h>right</h></idx><idx><h>right triangle</h></idx><idx><h>right triangle</h><seealso>triangle</seealso></idx>
+    <p>2.  A right triangle has one angle of <m>90\degree</m>.</p>
+</assemblage>
+
+<example><statement><sidebyside widths="50% 17%" valigns="middle middle">
+    <p>One of the smaller angles of a right triangle is <m>34\degree</m>. What is the third angle?</p>
+    <image xml:id="exam1-1-3"><description>right triangle with 34 angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3,0);
+            \coordinate(C) at (0,4);
+            \draw[red] ($ (B)+(-.75,0) $) arc ({180}:{180-atan(4/3)}:.75) node[left, midway, text=black] {$x$};
+            \draw[red] ($ (C)+(0,-1) $) arc (-90:-atan(4/3):1) node[below, midway, xshift=3, text=black] {$34\degree$};
+            \draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[blue, thick] (0,0)rectangle (.3,.3);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p>The sum of the two smaller angles in a right triangle is <m>90\degree</m>. So</p>
+            <p><md><mrow>x+34\amp =90 \amp \amp \blert{\text{Subtract 34 from both sides.}}</mrow>
+                    <mrow>x\amp =56   \amp \amp</mrow></md></p>
+        <p>The unknown angle must be <m>56\degree</m>.</p></solution></example>
+
+<exercise><statement>
+      <p>Two angles of a triangle are <m>35\degree</m> and <m>45\degree</m>. Can it be a right triangle?</p>
+  </statement><answer><p>No, the third angle must be <m>100\degree</m>.</p></answer></exercise>
+
+<p>An <term>equilateral</term><idx><h>equilateral triangle</h></idx><idx><h>triangle</h><h>equilateral</h></idx><idx><h>triangle</h><h>equilateral</h><seealso>equilateral triangle</seealso></idx> triangle has all three sides the same length.</p>
+
+<assemblage><title>Angles of equilateral triangle</title>
+    <idx><h>equilateral triangle</h><h>angles of</h></idx>
+<p>3.  All of the angles of an equilateral triangle are equal.</p>
+</assemblage>
+
+<example><statement><sidebyside widths="60% 16%" valigns="middle middle">
+    <p>All three sides of a triangle are 4 feet long. Find the angles.</p>
+    <image xml:id="exam1-1-5"><description>equilateral triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.75]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (2.5,0);
+            \coordinate(C) at (60:2.5);
+            \draw[red] (.5,0)  arc (0:60:.5) node[right, midway, text=black] {$x$};
+            \draw[red] ($ (B)+(-.5,0) $) arc ({180}:{120}:.5) node[left, midway, text=black] {$x$};
+            \draw[red] (60:2) arc (240:300:.5) node[below, midway,text=black] {$x$};
+            \draw[black] (A) --  (B) node [below, midway] {$4$};
+            \draw[black] (A) --  (C) node [above left, midway,yshift=-2] {$4$};
+            \draw[black] (C) --  (B) node [above right, midway,yshift=-2] {$4$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<solution><p>The triangle is equilateral, so all of its angles are equal.  Thus</p>
+        <p><md><mrow>3x\amp =180 \amp \amp \blert{\text{Divide both sides by 3.}}</mrow>
+                <mrow>x\amp =60   \amp \amp  </mrow></md></p>
+        <p>Each of the angles is <m>60\degree</m>.</p>
+</solution></example>
+
+<exercise><statement><sidebyside widths="50% 16%" valigns="middle middle">
+    <p>Find <m>x</m>, <m>y</m>, and <m>z</m> in the triangle at right.</p>
+    <image xml:id="exer1-1-6"><description>equilateral triangle with side 8</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.75]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (2.5,0);
+            \coordinate(C) at (60:2.5);
+            \draw[red] (.5,0)  arc (0:60:.5) node[right, midway, text=black] {$60\degree$};
+            \draw[red] ($ (B)+(-.5,0) $) arc ({180}:{120}:.5) node[left, midway, text=black] {$x$};
+            \draw[red] (60:2) arc (240:300:.5) node[below, midway,text=black] {$60\degree$};
+            \draw[black] (A) --  (B) node [below, midway] {$z$};
+            \draw[black] (A) --  (C) node [above left, midway,yshift=-4] {$y$};
+            \draw[black] (C) --  (B) node [above right, midway,yshift=-4] {$8$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<answer><p>The third angle is <m>x=60\degree</m>, so the triangle is equilateral and <m>~y=8, ~z=8</m>.</p></answer></exercise>
+
+<p> An <term>isosceles</term><idx><h>isosceles triangle</h></idx><idx><h>triangle</h><h>isosceles</h></idx><idx><h>triangle</h><h>isosceles</h><seealso>isosceles triangle</seealso></idx> triangle has two sides of equal length.  The angle between the equal sides is the <term>vertex angle</term><idx><h>vertex angle</h><h>of an isosceles triangle</h></idx>. The other two angles are the <term>base angles</term>. </p>
+
+<assemblage><title>Base angles of an isosceles triangle</title>
+    <idx><h>isosceles triangle</h><h>base angles</h></idx>
+<p>4.  The base angles of an isosceles triangle are equal.</p>
+</assemblage>
+
+<example><statement><sidebyside widths="50% 32%" valigns="middle middle">
+    <p>Find <m>x</m> and <m>y</m> in the triangle at right.</p>
+    <image xml:id="exam1-1-7"><description>isosceles triangle with side 12, base angle 38</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.8]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4.7,0);
+        \coordinate(C) at (2.35,1.5);
+        \draw[red] (.75,0) arc (0:atan(1.5/2.35):.75) node[right, midway, text=black] {$y$};
+        \draw[red] ($ (B)+(-.75,0) $) arc (180:{180-atan(1.5/2.35)}:.75) node[left, midway, yshift=2, text=black] {$38\degree$};
+        \draw[red] ($ (C)+({180+atan(1.5/2.35)}:.3) $) arc ({180+atan(1.5/2.35)}:{360-atan(1.5/2.35)}:.3) node[below, midway, yshift=0, text=black] {$x$};
+        %\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+        \draw[black] (A) --  (B) node [below, midway] {};
+        \draw[black] (A) --  (C) node [above left, midway,yshift=-2] {$12$};
+        \draw[black] (C) --  (B) node [above right, midway,yshift=-2] {$12$};
+    \end{tikzpicture}]]>
+</latex-image></image></sidebyside></statement>
+
+<solution><p>The triangle is isosceles, so the base angles are equal.  Therefore, <m>y=38\degree</m>.  To find the vertex angle, we solve </p>
+        <p><md><mrow>x+38+38\amp =180 \amp \amp </mrow>
+                <mrow>x+76\amp =180 \amp \amp \blert{\text{Subtract 76 from both sides.}}</mrow>
+                <mrow>x\amp =104   \amp \amp </mrow></md></p>
+        <p>The vertex angle is <m>104\degree</m>.</p>
+</solution></example>
+
+<exercise><statement>
+    <sidebyside widths="50% 35%" valigns="middle middle">
+    <p>Find <m>x</m> and <m>y</m> in the figure at right.</p>
+    <image xml:id="exer1-1-8"><description>isosceles triangle with side 9, base angle 20</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (5.6,0);
+            \coordinate(C) at (2.8,1.2);
+            \draw[red] (.75,0) arc (0:atan(1.2/2.8):.75) node[right, midway, xshift=2, yshift=2, text=black] {$20\degree$};
+            \draw[red] ($ (B)+(-.75,0) $) arc (180:{180-atan(1.2/2.8)}:.75) node[left, midway, yshift=2, text=black] {$20\degree$};
+            \draw[red] ($ (C)+({180+atan(1.2/2.8)}:.3) $) arc ({180+atan(1.2/2.8)}:{360-atan(1.2/2.8)}:.3) node[below, midway, yshift=0, text=black] {$x$};
+           %\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black] (A) --  (B) node [below, midway] {};
+            \draw[black] (A) --  (C) node [above left, midway] {$9$};
+            \draw[black] (C) --  (B) node [above right, midway] {$y$};
+        \end{tikzpicture}]]>    
+    </latex-image></image></sidebyside></statement>
+
+<answer><p>The vertex angle is <m>180\degree - (20\degree + 20\degree) =140\degree</m>, and the triangle is isosceles so <m>~y=9</m>.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Angles</title>
+    <idx><h>angle</h></idx>
+
+<p>In addition to the facts about triangles reviewed above, there are several useful properties of angles.  
+    <idx><h>supplementary angles</h></idx><idx><h>complementary angles</h></idx><idx><h>acute angle</h></idx><idx><h>obtuse angle</h></idx>
+<ul>
+    <li> Two angles that add to <m>180\degree</m> are called <term>supplementary</term><idx><h>supplementary angles</h></idx><idx><h>angle</h><h>supplementary</h></idx><idx><h>angle</h><h>supplementary</h><seealso>supplementary angles</seealso></idx>.</li>
+    <li> Two angles that add to <m>90\degree</m> are called <term>complementary</term><idx><h>complementary angles</h></idx><idx><h>angle</h><h>complementary</h></idx><idx><h>angle</h><h>complementary</h><seealso>complementary angles</seealso></idx>. </li> 
+    <li> Angles between <m>0\degree</m> and <m>90\degree</m> are called <term>acute</term><idx><h>acute angle</h></idx><idx><h>angle</h><h>acute</h></idx><idx><h>angle</h><h>acute</h><seealso>acute angle</seealso></idx>.</li> 
+    <li> Angles between <m>90\degree</m> and <m>180\degree</m> are called <term>obtuse</term><idx><h>obtuse angle</h></idx><idx><h>angle</h><h>obtuse</h></idx><idx><h>angle</h><h>obtuse</h><seealso>obtuse angle</seealso></idx>. </li>
+</ul></p> 
+
+    <image width="100%" xml:id="angleterms"><description>types of angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.9]
+        %supplementary
+        \coordinate (O) at (0,0);
+        \coordinate (A) at (-2,0);
+        \coordinate (B) at (2,0);
+        \coordinate(C) at (1.65,1);
+
+        \filldraw[blue] (O) circle (.2pt) node[anchor=north]{supplementary angles};
+
+        \draw[black, thick, <->,>=stealth'] (A)--(B); 
+        \draw[black, thick, ->,>=stealth'] (O)--(C); 
+        \draw[red, thick, ->,>=stealth'] (.7,0) arc (0:30:.7);
+        \draw[red, thick, ->,>=stealth'] (.41,.25) arc (30:180:.5);
+
+        %complementary
+        \coordinate (O2) at (3.5,0);
+        \coordinate (A2) at (5.5,0);
+        \coordinate (B2) at (3.5,2);
+        \coordinate(C2) at (4.65,1.64);
+
+        %\filldraw[blue] (O) circle (.2pt) node[anchor=north]{complementary angles};
+
+        \draw[black, thick, ->,>=stealth'] (O2)--(A2)  node[below,midway ]{\color{blue}complementary angles}; 
+        \draw[black, thick, ->,>=stealth'] (O2)--(B2); 
+        \draw[black, thick, ->,>=stealth'] (O2)--(C2); 
+        \draw[red, thick, ->,>=stealth'] (4.2,0) arc (0:55:.7);
+        \draw[red, thick, ->,>=stealth'] (3.78,.41) arc (55:90:.5);
+
+        %acute
+        \coordinate (O3) at (7,0);
+        \coordinate (A3) at (9,0);
+        \coordinate (B3) at (8,1.73);
+
+        %\filldraw[blue] (O) circle (.2pt) node[anchor=north]{complementary angles};
+
+        \draw[black, thick, ->,>=stealth'] (O3)--(A3)  node[below,midway ]{\color{blue}acute angle}; 
+        \draw[black, thick, ->,>=stealth'] (O3)--(B3); 
+        \draw[red, thick, ->,>=stealth'] (7.7,0) arc (0:60:.7);
+
+        %obtuse
+        \coordinate (O4) at (11.2,0);
+        \coordinate (A4) at (13.,0);
+        \coordinate (B4) at (9.67,1.29);
+
+        \filldraw[blue] (O4) circle (.2pt) node[anchor=north]{obtuse angle};
+
+        \draw[black, thick, ->,>=stealth'] (O4)--(A4); 
+        \draw[black, thick, ->,>=stealth'] (O4)--(B4); 
+        \draw[red, thick, ->,>=stealth'] (11.7,0) arc (0:140:.5);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<example><statement><sidebyside widths="60% 30%">
+    <p>In the figure at right, 
+        <ul>
+            <li><m>\angle</m><m>AOC</m> and <m>\angle</m><m>BOC</m> are supplementary.</li>
+            <li> <m>\angle</m><m>DOE</m> and <m>\angle</m><m>BOE</m> are complementary.</li>
+            <li> <m>\angle</m><m>AOC</m> is obtuse,</li> 
+            <li>and <m>\angle</m><m>BOC</m> is acute.</li>
+        </ul></p>
+    <image xml:id="exam1-1-9"><description>types of angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (O) at (0,0);
+            \coordinate (A) at (-2,0);
+            \coordinate (B) at (2,0);
+            \coordinate(C) at (.7,1.2);
+            \coordinate (D) at (0,-1.7);
+            \coordinate(E) at (1.8,-.5);
+            \draw[blue, thick] (O)rectangle (-.25,-.25);
+            \filldraw[black] (O) circle (.2pt) node[anchor=south east]{$O$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=east]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=west]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=south west]{$C$};
+            \filldraw[black] (D) circle (.2pt) node[anchor=north west]{$D$};
+            \filldraw[black] (E) circle (.2pt) node[anchor=north west]{$E$};
+            %\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black] (A) --  (O) --  (B);
+            \draw[black] (O) --  (C) ;
+            \draw[black] (O) --  (D) ;
+            \draw[black] (O) --  (E) ;
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement></example>
+
+<p>In trigonometry we often use lower-case Greek letters to represent unknown angles (or, more specifically, the measure of the angle in degrees).  In the next <xref ref="Ex-Use-greek-letters" text="custom">exercise</xref>, we use the Greek letters <m>\alpha</m> (alpha), <m>\beta</m> (beta), and <m>\gamma</m> (gamma).</p>
+
+<exercise xml:id="Ex-Use-greek-letters"><statement><p>In the figure, <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m> denote the measures of the angles in degrees.</p>
+    <sidebyside widths="60% 30%" valigns="middle middle" margins="0% 10%" >
+            <p><ol marker="a.">
+                    <li> Find the measure of angle <m>\alpha</m>.</li>
+                    <li> Find the measure of angle <m>\beta</m>.</li>
+                    <li> Find the measure of angle <m>\gamma</m>.</li>
+                    <li> What do you notice about the measures of the angles?</li>
+                </ol></p>
+            <image xml:id="exer1-1-10"><description>straight angles with 50 degrees</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture}[scale=.9]
+                    \coordinate (O) at (0,0);
+                    \coordinate (A) at (-2,0);
+                    \coordinate (B) at (2,0);
+                    \coordinate(C) at (230:1.8);
+                    \coordinate (D) at (50:1.8);
+                    \draw[red, <->,>=stealth'] (.5,0) arc (0:50:.5) node[right, midway, xshift=2, yshift=2, text=black] {$50\degree$};
+                    \draw[red, <->,>=stealth'] (.3,0) arc (0:-130:.3) node[below right, midway, xshift=-2, text=black] {$\gamma$};
+                    \draw[red, <->,>=stealth'] (-.5,0) arc (180:230:.5) node[below left, midway, yshift=2, text=black] {$\beta$};
+                    \draw[red, <->,>=stealth'] (-.3,0) arc (180:50:.3) node[above left, midway, xshift=2, yshift=-2, text=black] {$\alpha$};
+                    \draw[black] (A) --  (B);
+                    \draw[black] (C) --  (D) ;
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+</statement>
+        
+<answer><p>Angle <m>\alpha</m> is supplementary to <m>50\degree</m> so <m>\alpha=130\degree</m>. Then <m>\beta</m> is supplementary to <m>\alpha</m> and <m>\gamma</m> is supplementary to <m>\beta</m>, giving us <m>\beta=50\degree, ~\gamma=130\degree.</m></p>
+</answer></exercise>        
+
+<p>Non-adjacent angles formed by the intersection of two straight lines are called <term>vertical angles</term><idx><h>vertical angles</h></idx><idx><h>angle</h><h>vertical</h></idx><idx><h>angle</h><h>vertical</h><seealso>vertical angles</seealso></idx>. In the previous exercise, the angles labeled <m>\alpha</m> and <m>\gamma</m> are vertical angles, as are the angles labeled <m>\beta</m> and <m>50\degree</m>.</p>
+
+<assemblage><title>Vertical Angles</title>
+    <idx><h>vertical angles</h></idx>
+<p>5.  Vertical angles are equal.</p>
+</assemblage>
+
+<example><statement><sidebyside widths="60% 20%" margins="0% 15%" valigns="middle middle">
+    <p>Explain why <m>\alpha=\beta</m> in the triangle at right.</p>
+    <image xml:id="exam1-1-11"><description>isosceles triangle with angles alpha and beta</description><latex-image>
+    <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+        \draw[red] (-.4,0) arc (0:atan(3):.2) node[right, midway, xshift=-1, yshift=4, text=black] {$\theta$};
+        \draw[red] (.4,0) arc (180:180-atan(3):.2) node[left, midway, xshift=1, yshift=4, text=black] {$\phi$};
+        \draw[red] (-.9,0) arc (180:180+atan(3):.3) node[left, midway, xshift=2, yshift=-3, text=black] {$\alpha$};
+        \draw[red] (.9,0) arc (0:-atan(3):.3) node[right, midway, xshift=-2, yshift=-3, text=black] {$\beta$};
+        \draw[black,  thick] (-1.5,0) -- (1.5,0);
+        \draw[black] (-.8,-.6) --  (0,1.8);
+        \draw[black] (0.8,-0.6) --  (0,1.8) ;
+        \draw[blue] (-.48,.86) -- (-.15,.75);
+        \draw[blue] (.48,.86) -- (.15,.75);
+    \end{tikzpicture}]]>
+</latex-image></image></sidebyside></statement>
+
+<solution><p>Because they are the base angles of an isosceles triangle, <m>\theta</m> (theta) and <m>\phi</m> (phi) are equal. Also, <m>\alpha=\theta</m> because they are vertical angles, and similarly <m>\beta=\phi</m>. Therefore, <m>\alpha=\beta</m> because they are equal to equal quantities.</p>
+</solution></example>
+
+<exercise><statement><sidebyside widths="50% 30%" valigns="middle middle" margins="0% 10%">
+    <p>Find all the unknown angles in the figure at right. (You will find a list of all the Greek letters and their names at the end of this section.)</p>
+    <image xml:id="exer1-1-12"><description>triangle with external angle 150</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (-1.8,0);
+            \coordinate (B) at (0.7,0);
+            \coordinate (C) at (0,1.50);
+            \draw[red] (-1.3,0) arc (0:40:.5) node[right, midway, xshift=-1, yshift=3, text=black] {$40\degree$};
+            \draw[red] (-2.3,0) arc (180:220:.5) node[left, midway, xshift=1, yshift=-2, text=black] {$\alpha$};
+            \draw[red] (-2.1,0) arc (180:40:.3) node[above, midway, xshift=-1, yshift=-2, text=black] {$\beta$};
+            \draw[red] (.4,0) arc (180:115:.3) node[left, midway, xshift=1, yshift=2, text=black] {$\delta$};
+            \draw[red] (1.1,0) arc (0:115:.4) node[above, midway, xshift=3, text=black] {$115\degree$};
+            \draw[red] ($(C)+(220:.3) $) arc (220:295:.3) node[below, midway, xshift=-1, text=black] {$\gamma$};
+            \draw[black,  thick] (-3.5,0) -- (1.5,0);
+            \draw[black] (-2.4,-.5) --  (0,1.5);
+            \draw[black] (B) --  (0,1.5) ;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<answer><p><m>\alpha=40\degree</m> because of vertical angles, and <m>\beta</m> is its supplement at <m>40\degree</m>. <m>\delta=65\degree</m>, the supplement of <m>115\degree</m>, and <m>~\gamma= 180 - (65 + 40) = 75\degree</m>.</p>
+</answer></exercise>
+
+<p> A line that intersects two parallel lines forms eight angles, as shown in the figure below. There are four pairs of vertical angles, and four pairs of <term>corresponding angles</term><idx><h>corresponding angles</h></idx><idx><h>angle</h><h>corresponding</h></idx><idx><h>angle</h><h>corresponding</h><seealso>corresponding angles</seealso></idx>, or angles in the same position relative to the transversal on each of the parallel lines.</p>  
+
+<sidebyside widths="60% 30%" valigns="middle middle" margins="0% 5%">
+<p>For example, the angles labeled 1 and 5 are corresponding angles, as are the angles labeled 4 and 8.  
+Finally, angles 3 and 6 are called <term>alternate interior angles</term><idx><h>alternate interior angles</h></idx><idx><h>angle</h><h>alternate interior</h></idx><idx><h>angle</h><h>alternate interior</h><seealso>alternate interior angles</seealso></idx>, and so are angles 4 and 5.</p>
+  
+    <image xml:id="transversal"><description>parallel lines with transversal</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (.6,1.8);
+            \coordinate (B) at (-.6,0);
+            \filldraw[black] (A) circle (.2pt) node[anchor=south east, xshift=3]{$1$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=south west, xshift=7]{$2$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=north east, xshift=-6]{$3$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=north west, xshift=-1]{$4$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=4]{$5$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south west, xshift=7]{$6$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north east, xshift=-5]{$7$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north west, xshift=-1]{$8$};
+            \draw[black,  thick] (-2.5,1.8) -- (2.5,1.8);
+            \draw[black,  thick] (-2.5,0) -- (2.5,0);
+            \draw[black,  thick, ->] (-2.5,1.8) -- (2.,1.8);
+            \draw[black,  thick, ->] (-2.5,0) -- (2.,0);
+            \draw[black, thick] (-1.2,-.9) --  (1.2,2.7) ;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<assemblage><title>Paralles lines cut by a transversal</title>
+<p>6.  If parallel lines are intersected by a transversal, the alternate interior angles are equal. Corresponding angles are also equal.</p>
+</assemblage>
+
+
+<example><statement>
+<sidebyside widths="55% 35%" valigns="middle middle">
+<p>The parallelogram <m>ABCD</m> shown at right is formed by the intersection of two sets of parallel lines. Show that the opposite angles of the parallelogram are equal.</p>
+<!--    <image source="photos/parallelogram.png"><description>parallelogram</description></image>-->
+    <image xml:id="parallelogram"><description>parallelogram</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (.4,1.6);
+            \coordinate (C) at( 4.4,1.6);
+            \coordinate (D) at (4,0);
+            \filldraw[black] (A) circle (.2pt) node[anchor=north east, xshift=-2]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=south west, xshift=2]{$C$};
+            \filldraw[black] (D) circle (.2pt) node[anchor=north west, xshift=-2]{$D$};
+            \filldraw[black] (D) circle (.2pt) node[anchor=south east, xshift=-1]{$4$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north east, xshift=-2]{$3$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north west, xshift=0]{$5$};
+            \filldraw[black] (A) circle (.2pt) node[anchor=south west, xshift=3]{$1$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north east, xshift=-5]{$2$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=north west, xshift=-1]{$6$};
+            \draw[black,  thick] (-.9,1.6) -- (4.9,1.6);
+            \draw[black,  thick] (-.9,0) -- (4.9,0);
+            \draw[black,  thick, ->] (-.5,1.6) -- (2.,1.6);
+            \draw[black,  thick, ->] (-.5,0) -- (2.3,0);
+            \draw[black,  thick, ->] (-.5,1.6) -- (2.3,1.6);
+            \draw[black,  thick, ->] (-.5,0) -- (2.,0);
+            \draw[black, thick] (-.2,-.8) --  (.6,2.4) ;
+            \draw[black, thick] (3.8,-.8) --  (4.6,2.4) ;
+            \draw[black, thick, ->] (-.2,-.8) --  (.2,.8) ;
+            \draw[black, thick, ->] (3.8,-.8) --  (4.2,.8) ;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p>Angles 1 and 2 are equal because they are alternate interior angles, and angles 2 and 3 are equal because they are corresponding angles. Therefore angles 1 and 3, the opposite angles of the parallelogram, are equal. Similarly, you can show that angles 4, 5, and 6 are equal.</p>
+</solution></example>
+
+<exercise><statement>   
+<p>Show that the adjacent angles of a parallelogram are supplementary.  (You can use angles 1 and 4 in the parallelogram of the previous example.)</p>
+</statement>
+
+<answer><p>Note that angles 2 and 6 are supplementary because they form a straight angle. Angle 1 equals angle 2 because they are alternate interior angles, and similarly angle 4 equals angle 5. Angle 5 equals angle 6 because they are corresponding angles. Thus, angle 4 equals angle 6, and angle 1 equals angle 2. So angles 4 and 1 are supplementary because 2 and 6 are.</p>
+</answer></exercise>
+
+<note><p> In the <!-- <xref ref="Section-1-1-Summary" text="custom">Section 1.1 Summary</xref> -->Section 1.1 Summary, you will find a list of vocabulary words and a summary of the facts from geometry that we reviewed in this section.  You will also find a set of study questions to test your understanding, and a list of skills to practice in the homework problems.</p></note>
+
+<table><title>Lower Case Letters in the Greek Alphabet</title><idx><h>Greek alphabet</h></idx>
+    <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+        <row>
+            <cell colspan="3" halign="center"> Greek Alphabet </cell></row>
+        <row bottom="minor">
+            <cell><m>\alpha~~~~\text{alpha}</m></cell>
+            <cell><m>\beta~~~~\text{beta}</m></cell>
+            <cell><m>\gamma~~~~\text{gamma}</m></cell></row>
+        <row> 
+            <cell><m>\delta~~~~\text{delta}</m></cell>
+            <cell><m>\epsilon~~~~\text{epsilon}</m></cell>
+            <cell><m>\zeta~~~~\text{zeta}</m></cell></row>
+        <row> 
+            <cell><m>\eta~~~~\text{eta}</m></cell>
+            <cell><m>\theta~~~~\text{theta}</m></cell>
+            <cell><m>\iota~~~~\text{iota}</m></cell></row>
+        <row> 
+            <cell><m>\kappa~~~~\text{kappa}</m></cell>
+            <cell><m>\lambda~~~~\text{lambda}</m></cell>
+            <cell><m>\mu~~~~\text{mu}</m></cell></row>
+        <row>
+            <cell><m>\nu~~~~\text{nu}</m></cell>
+            <cell><m>\xi~~~~\text{xi}</m></cell>
+<!--             <cell><m>\omicron~~~~\text{omicron}</m></cell></row> -->
+            <cell><m>o~~~~\text{omicron}</m></cell></row>  
+        <row>
+            <cell><m>\pi~~~\text{pi}</m></cell>
+            <cell><m>\rho~~~~\text{rho}</m></cell>
+            <cell><m>\sigma~~~~\text{sigma}</m></cell></row> 
+        <row>
+            <cell><m>\tau~~~~\text{tau}</m></cell>
+            <cell><m>\upsilon~~~~\text{upsilon}</m></cell>
+            <cell><m>\phi~~~~\text{phi}</m></cell></row>
+        <row>
+            <cell><m>\chi~~~\text{chi}</m></cell>
+            <cell><m>\psi~~~\text{psi}</m></cell>
+            <cell><m>\omega~~~\text{omega}</m></cell></row>                       
+    </tabular></table>
+
+<p>Review the following skills you will need for this section.</p>
+<theorem>
+    <sidebyside><p>Solve the equation.</p></sidebyside>
+    <sidebyside>
+        <stack>
+            <p>1. <m>x-8=19-2x\vphantom{\dfrac{1}{2}}</m></p>
+            <p>3. <m>13x+5=2x-28</m></p>
+        </stack>
+        <stack>
+            <p>2. <m>2x-9=12-x\vphantom{\dfrac{1}{2}}</m></p>
+            <p>4. <m>9+9x=-7+x</m></p>
+        </stack>
+    </sidebyside>
+
+    <sidebyside margins="0% 5%"><p>Solve the system.</p></sidebyside>
+    <sidebyside>
+        <p>5. <m>\begin{aligned}[t]
+                5x-2y\amp =-13 \amp \amp \\
+                2x+3y\amp =-9 \amp \amp \\ \\
+                \end{aligned}
+        </m></p>
+        <p>6. <m>\begin{aligned}[t]
+                4x+3y\amp =9 \amp \amp \\
+                3x+2y\amp =8 \amp \amp \\ 
+                \end{aligned}
+        </m></p>
+    </sidebyside>
+
+    <sidebyside><p><m>\underline{\qquad\qquad\qquad\qquad}</m></p></sidebyside>
+    <conclusion>
+
+    <sidebyside><p>Algebra Refresher Answers</p></sidebyside>
+    <sidebyside><p><ol marker="1." cols="3">
+        <li><p><m>9</m></p></li>
+        <li><p><m>7</m></p></li>
+        <li><p><m>-3</m></p></li>
+        <li><p><m>-2</m></p></li>
+        <li><p><m>x=-3,y=-1</m></p></li>
+        <li><p><m>x=6, y=-5</m></p></li>
+    </ol></p></sidebyside>
+</conclusion>
+</theorem>
+</subsection>
+<!--  
+<subsection><title>Algebra Refresher</title>
+<p>Review the following skills you will need for this section.</p>
+<exercises>
+<exercisegroup cols="2">
+        <introduction><p>Solve the equation.</p></introduction>
+    <exercise number="1"><statement>
+        <p><m>x-8=19-2x</m></p></statement><answer><p><m>9</m></p></answer>
+    </exercise>
+
+    <exercise number="2"><statement>
+        <p><m>2x-9=12-x</m></p></statement><answer><p><m>7</m></p></answer>
+    </exercise>
+
+    <exercise number="3"><statement>
+        <p><m>13x+5=2x-28</m></p></statement><answer><p><m>-3</m></p></answer>
+    </exercise>
+
+    <exercise number="4"><statement>
+        <p><m>9+9x=-7+x</m></p></statement><answer><p><m>-2</m></p></answer>
+    </exercise>
+</exercisegroup>
+
+<exercisegroup cols="2">
+        <introduction><p>Solve the system.</p></introduction>
+    <exercise number="5"><statement>
+        <p><m>\begin{aligned}[t]
+                5x-2y\amp =-13 \amp \amp \\
+                2x+3y\amp =-9 \amp \amp \\ 
+                \end{aligned}</m></p></statement><answer><p><m>x=-3,y=-1</m></p></answer>
+    </exercise>
+
+<exercise number="6"><statement>
+        <p><m>\begin{aligned}[t]
+                4x+3y\amp =9 \amp \amp \\
+                3x+2y\amp =8 \amp \amp \\ 
+                \end{aligned}</m></p></statement><answer><p><m>x=6, y=-5</m></p></answer>
+    </exercise>
+
+</exercisegroup>
+</exercises>
+</subsection>
+
+<subsection><title>Algebra Refresher Answers</title>
+<p><ol marker="1." cols="3">
+    <li><m>9</m></li>
+    <li><m>7</m></li>
+    <li><m>-3</m></li>
+    <li><m>-2</m></li>
+    <li><m>x=-3,y=-1</m></li>
+    <li><m>x=6, y=-5</m></li>
+</ol></p> 
+
+</subsection>
+-->
+
+
+<subsection xml:id="Section-1-1-Summary"><title>Section 1.1 Summary</title>
+<subsubsection><title>Vocabulary</title>
+<p><ul cols="2">
+    <li>Right angle</li>
+    <li>Straight angle</li>
+    <li>Right triangle</li>
+    <li>Equilateral triangle</li>
+    <li>Isosceles triangle</li>
+    <li>Vertex angle</li>
+    <li>Base angle</li>
+    <li>Supplementary</li>
+    <li>Complementary</li>
+    <li>Acute</li>
+    <li>Obtuse</li>
+    <li>Vertical angles</li>
+    <li>Transversal</li>
+     <li>Corresponding angles</li>
+    <li>Alternate interior angles</li>
+ </ul></p>
+</subsubsection>
+
+ <subsubsection><title>Concepts</title>
+ <assemblage><title>Facts from Geometry</title>
+ <idx><h>facts from geometry</h></idx>
+        <p>1.  The sum of the angles in a triangle is <m>180\degree</m>.</p>
+        <p>2.  A right triangle has one angle of <m>90\degree</m>.</p>
+        <p>3.  All of the angles of an equilateral triangle are equal.</p>
+        <p>4.  The base angles of an isosceles triangle are equal.</p>
+        <p>5.  Vertical angles are equal.</p>
+        <p>6.  If parallel lines are intersected by a transversal, the alternate interior angles are equal.  Corresponding angles are also equal.</p>
+</assemblage>
+</subsubsection>
+
+<subsubsection><title>Study Questions</title>
+    <p><ol marker="1.">
+    <li> Is it possible to have more than one obtuse angle in a triangle?  Why or why not?</li>
+    <li> Draw any quadrilateral (a four-sided polygon) and divide it into two triangles by connecting two opposite vertices by a diagonal.  What is the sum of the angles in your quadrilateral?</li>
+    <li> What is the difference between a vertex angle and vertical angles?</li>
+    <li> Can two acute angles be supplementary?</li>
+    <li> Choose any two of the eight angles formed by a pair of parallel lines cut by a transversal.  Those two angles are either equal or _______ .</li>
+</ol></p>
+</subsubsection>
+
+<subsubsection><title>Skills</title> <p>Practice each skill in the Homework Problems listed.</p>
+    <p><ol marker="1.">
+        <li> Sketch a triangle with given properties    #1<ndash/>6</li>
+    <li> Find an unknown angle in a triangle    #7<ndash/>12, 17<ndash/>20</li>
+    <li> Find angles formed by parallel lines and a transversal    #13<ndash/>16, 35<ndash/>44</li>
+    <li> Find exterior angles of a triangle    #21<ndash/>24</li>
+    <li> Find angles in isosceles, equilateral, and right triangles    #25<ndash/>34</li>
+    <li> State reasons for conclusions    #45<ndash/>48</li>
+</ol></p>
+</subsubsection>
+</subsection>
+
+
+<!--<xi:include href="./summary-1-1.xml" /> -->
+<xi:include href="./hmwk-1-1.xml" />   
+
+</section>

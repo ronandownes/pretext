@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Falling"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Falling</title>
+
+<introduction><p>Suppose you drop a small object from a height and let it fall under the influence of gravity.
+Does it fall at the same speed throughout its descent? The diagram below left shows a sequence of photographs of a steel ball falling onto a table. The photographs were taken using a stroboscopic flash at intervals of 0.05 second, and a scale on the left side shows the height of the ball, in feet, at each interval.</p>
+
+    <sidebyside width="75%"><image source="images/fig-inv-falling-object"><description>photos of falling object and grid</description></image></sidebyside>
+</introduction>
+
+<exercises>
+<exercise number="1"><statement><p>Complete the table showing the height of the ball at each 0.05-second interval. (Estimate the height at the bottom of the ball in each image.) The first photo was taken at time <m>t=0</m>.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>t</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>0.05</m></cell>
+                        <cell><m>0.10</m></cell>
+                        <cell><m>0.15</m></cell>
+                        <cell><m>0.20</m></cell>
+                        <cell><m>0.25</m></cell>
+                        <cell><m>0.30</m></cell>
+                        <cell><m>0.35</m></cell>
+                        <cell><m>0.40</m></cell>
+                        <cell><m>0.45</m></cell>
+                        <cell><m>0.50</m></cell></row>
+                    <row> 
+                        <cell><m>h</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="2"><statement><p>Plot the points in the table on the grid above. Connect the points with a smooth curve to sketch a graph of height versus elapsed time. Is the graph linear?</p></statement></exercise>
+
+<exercise number="3"><statement><p>Use your graph to estimate the time elapsed when the ball is 3.5 feet high, and when it is 1 foot high.</p></statement></exercise>
+
+<exercise number="4"><statement><p>What was the change in the ball’s height during the first quarter second, from <m>t=0</m> to <m>t=0.25</m> ? What was the change in the ball’s height from <m>t=0.25</m> to <m>t=0.50</m> ?</p></statement></exercise>
+
+<exercise number="5"><statement><p>Add to your graph a line segment connecting the points at <m>t=0</m> and <m>t=0.25</m>, and a second line segment connecting the points at <m>t=0.25</m> and <m>t=0.50</m>. Compute the slope of each line segment.</p></statement></exercise>
+
+<exercise number="6"><statement><p>What do the slopes in part (5) represent in terms of the problem?</p></statement></exercise>
+
+<exercise number="7"><statement><p>Use your answers to part (4) to verify algebraically that the graph is not linear.</p></statement></exercise>
+
+</exercises>
+
+</section>

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="GraphsofFunctions"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Graphs of Functions</title>
+
+<subsection><title>Reading Function Values from a Graph</title>   
+
+<p>The graph below shows the Dow-Jones Industrial Average (the average value of the stock prices of 500 major companies) recorded at noon each day during the stock market correction around October 10, 1987 ("Black Monday"). </p>
+
+    <image width="60%" source="images/fig-DJIA"><description>DJIA</description></image>
+
+<p>The graph describes a function because there is only one value of the output, DJIA, for each value of the input, <m>t</m>.  There is no formula that gives the DJIA for a particular day;  but it is still a function, defined by its graph.  The value of <m>f(t)</m> is specified by the vertical coordinate of the point with the given <m>t</m>-coordinate.</p>
+
+<example xml:id="example-DJIA"><statement><p><ol marker="a.">
+    <li>The coordinates of point <m>P</m> on the DJIA graph are <m>(15, 2412)</m>. What do the coordinates tell you about the function <m>f</m>?</li>
+    <li>If the DJIA was 1726 at noon on October 20, what can you say about the graph of <m>f</m>?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>The coordinates of point <m>P</m> tell us that <m>f(15) = 2412</m>, so the DJIA was 2412 at noon on October 15.</li>
+    <li>We can say that <m>f(20) = 1726</m>, so the point <m>(20, 1726)</m> lies on the graph of <m>f</m>. This point is labeled <m>Q</m> in the figure above.</li>
+</ol></p></solution></example>
+
+<p>The coordinates of each point on the graph of the function give the output for a specific input. </p>
+
+<assemblage><title>Graph of a Function</title>
+<p>The point <m>(a, b)</m> lies on the graph of the function <m>f</m> if and only if <m>f(a)=b</m>.</p></assemblage>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <introduction><p>The water level in Lake Huron alters unpredictably over time. The graph below gives the average water level, <m>L=f(t)</m>, in meters in the year <m>t</m> over a 20-year period. (Source: The Canadian Hydrographic Service)</p>
+       <image width="70%" source="images/fig-Lake-Huronw" ><description>graph of Lake Huron water level</description></image>
+    </introduction>
+    <webwork><pg-code>
+                $coord = RadioButtons(
+                    ["\(f(1997) = 176.98\); the average water level was 176.98 meters in 1997.", "\(f(176.98) = 176.98\); the average water level was 176.98 meters in 1997."],
+                  0, # index of correct answer; could also just be the correct answer
+                );
+                $point = RadioButtons(
+                    ["\(f(176.11) = 2004\). The point \((176.11, 2004)\) lies on the graph of \(f\).", "\(f(2004) = 176.11\). The point \((2004, 176.11)\) lies on the graph of \(f\)."],
+                  1, # index of correct answer; could also just be the correct answer
+                );
+            </pg-code>
+    <statement><p><ol marker="a.">
+           <li><p>The coordinates of point <m>H</m> on the graph are <m>(1997, 176.98)</m>. What do the coordinates tell you about the function <m>f</m>?</p>
+                <p><var name="$coord" form="buttons"/></p></li>
+           <li><p>The average water level in <m>2004</m> was <m>176.11</m> meters. Write this fact in function notation. What can you say about the graph of <m>f</m>?</p>
+                <p><var name="$point" form="buttons"/></p></li></ol></p>  
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><p><m>f(1997) = 176.98</m>; the average water level was <m>176.98</m> meters in <m>1997</m>.</p></li>
+        <li><p><m>f(2004) = 176.11</m>. The point <m>(2004, 176.11)</m> lies on the graph of <m>f</m>.</p></li>
+    </ol></p></solution>
+    </webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>The water level in Lake Huron alters unpredictably over time. The graph below gives the average water level, <m>L=f(t)</m>, in meters in the year <m>t</m> over a 20-year period. (Source: The Canadian Hydrographic Service)</p>
+       <image width="70%" source="images/fig-Lake-Huron" ><description>graph of Lake Huron water level</description></image>
+<p><ol marker="a.">
+    <li><p>The coordinates of point <m>H</m> on the graph are <m>(1997, 176.98)</m>. What do the coordinates tell you about the function <m>f</m>?</p></li>
+    <li><p>The average water level in <m>2004</m> was <m>176.11</m> meters. Write this fact in function notation. What can you say about the graph of <m>f</m>?</p></li>
+</ol></p>  </statement>
+    <solution><p><ol marker="a.">
+        <li><p><m>f(1997) = 176.98</m>; the average water level was <m>176.98</m> meters in <m>1997</m>.</p></li>
+        <li><p><m>f(2004) = 176.11</m>. The point <m>(2004, 176.11)</m> lies on the graph of <m>f</m>.</p></li>
+    </ol></p></solution></exercise>
+
+<p>The second coordinate of a point on the graph is the function value for the first coordinate.</p>
+
+<assemblage><title>Functions and Coordinates</title>
+<p>Each point on the graph of the function <m>f</m> has coordinates <m>(x, f(x))</m> for some value of <m>x</m>.</p></assemblage>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or False.
+        <ol marker="a.">
+            <li><p>If <m>(12,5)</m> lies on the graph of <m>f</m>, then <m>f(5)=12</m>. <var name="$False" form="popup"/></p></li>
+            <li><p>If <m>g(p)=w</m>, then <m>(p,w)</m> lies on the graph of <m>g</m>. <var name="$True" form="popup"/></p></li>
+            <li><p>We can find the function value at <m>x</m> by finding the <m>x</m>-coordinate of the corresponding point on the graph of <m>f</m>. <var name="$False" form="popup"/></p></li>
+            <li><p>Every <m>y</m>-coordinate on the graph of <m>F</m> represents a function value for <m>F</m>. <var name="$True" form="popup"/></p></li>
+        </ol></p></statement>
+    <solution>
+        <p><ol marker="a.">
+            <li>False</li>
+            <li>True</li>
+            <li>False</li>
+            <li>True</li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>If <m>(12,5)</m> lies on the graph of <m>f</m>, then <m>f(5)=12</m>.</p></li>
+        <li><p>If <m>g(p)=w</m>, then <m>(p,w)</m> lies on the graph of <m>g</m>.</p></li>
+        <li><p>We can find the function value at <m>x</m> by finding the <m>x</m>-coordinate of the corresponding point on the graph of <m>f</m>. </p></li>
+        <li><p>Every <m>y</m>-coordinate on the graph of <m>F</m> represents a function value for <m>F</m>. </p></li>
+    </ol></p></statement></exercise>
+
+<example xml:id="example-function-graph"><statement><p>The figure shows the graph of a function <m>g</m>.</p>
+    <image width="35%" source="images/fig-function"><description>graph of a function</description></image>
+    <p><ol marker="a.">
+        <li><p>Find <m>g(-2)</m> and <m>g(5)</m>.</p>
+            <aside><p><m>\alert{\text{[TK]}}~~</m>For more practice with function notation, see <xref ref="tkFncnNot" text="custom"> Section 5.2.1 </xref> of the Toolkit.</p></aside>  </li>
+        <li>For what value(s) of <m>t</m> is <m>g(t) = -2</m>?</li>
+        <li>What is the largest, or maximum, value of <m>g(t)</m>? For what value of <m>t</m> does the function take on its maximum value?</li>
+        <li>On what intervals is <m>g</m> increasing?</li>
+    </ol></p></statement>
+<solution><p><ol marker="a.">
+        <li>To find <m>g(-2)</m>, we look for the point with <m>t</m>-coordinate <m>-2</m>. The point <m>(-2, 0)</m> lies on the graph of <m>g</m>, so <m>g(-2) = 0</m>. Similarly, the point <m>(5, 1)</m> lies on the graph, so <m>g(5) = 1</m>.</li>
+        <li>We look for points on the graph with <m>y</m>-coordinate <m>-2</m>. Because the points <m>(-5, -2)</m>, <m>(-3, -2)</m>, and <m>(3, -2)</m> lie on the graph, we know that <m>g(-5) = -2</m>, <m>g(-3) = -2</m>, and <m>g(3) = -2</m>. Thus, the <m>t</m>-values we want are <m>-5</m>, <m>-3</m>, and <m>3</m>.</li>
+        <li>The highest point on the graph is <m>(1, 4)</m>, so the largest <m>y</m>-value is <m>4</m>. Thus, the maximum value of <m>g(t)</m> is <m>4</m>, and it occurs when <m>t = 1</m>.</li>
+        <li>A graph is increasing if the <m>y</m>-values get larger as we read from left to right. The graph of <m>g</m> is increasing for <m>t</m>-values between <m>-4</m> and <m>1</m>, and between <m>3</m> and <m>5</m>. Thus, <m>g</m> is increasing on the intervals <m>(-4, 1)</m> and <m>(3, 5)</m>.</li>
+    </ol></p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+<statement><p>True or False.
+    <ol marker="a.">
+        <li><p>A graph is called increasing if its <m>x</m>-values increase. <var name="$False" form="popup"/></p></li>
+        <li><p>The maximum function value is the <m>y</m>-coordinate of the highest point on the graph. <var name="$True" form="popup"/></p></li>
+        <li><p>If we say that <m>f</m> is increasing on the interval <m>(2,7)</m>, we mean that the function values increased from 2 to 7. <var name="$False" form="popup"/></p></li>
+        <li><p>It is not possible for a function of <m>x</m> to take on the same value at two different <m>x</m>-values. <var name="$False" form="popup"/></p></li>
+    </ol></p></statement>
+    <solution>
+        <p><ol marker="a.">
+            <li>False</li>
+            <li>True</li>
+            <li>False</li>
+            <li>False</li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>A graph is called increasing if its <m>x</m>-values increase.</p></li>
+        <li><p>The maximum function value is the <m>y</m>-coordinate of the highest point on the graph. </p></li>
+        <li><p>If we say that <m>f</m> is increasing on the interval <m>(2,7)</m>, we mean that the function values increased from 2 to 7. </p></li>
+        <li><p>It is not possible for a function of <m>x</m> to take on the same value at two different <m>x</m>-values.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <introduction><p>Refer to the graph of the function <m>g</m> shown in <xref ref="example-function-graph" text="type-global"/>.</p>
+    <image width="35%" source="images/fig-function"><description>graph of a function</description></image>
+    </introduction>
+    <webwork>
+         <pg-code>
+            $yint = 3;
+            $zeros = List("-2,2,4");
+            $my_evaluator = $zeros -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $min = -3;
+            $tmin = -4;
+            $Yes = PopUp(
+              ["?","Yes","No"],
+              1, 
+            );        
+            $No = PopUp(
+              ["?","Yes","No"],
+              2, 
+            );            
+        </pg-code> 
+        <statement><p>
+            <ol marker="a.">
+                <li><p><m> g(0)= </m><var name="$yint" width="3"/> </p></li>
+                <li><p> List the value(s) of <m> t </m> for which <m> g(t) = 0 </m>. Separate different values with commas.</p>
+                <p><var name="$zeros" width="10" evaluator="$my_evaluator"/>  </p></li>
+                <li><p>What is the smallest, or minimum, value of <m> g(t) </m>?</p>
+                <p>Minimum: <var name="$min" width="3"/></p> 
+                <p>For what value of <m> t </m> does the function take on its minimum value?</p>
+                <p><m> t= </m><var name="$tmin" width="3"/></p></li>
+                <li><p>Select all the intervals listed below where <m> g </m> is decreasing.</p>
+                <p>From <m>-5</m> to <m>-4</m>? <var name="$Yes" form="popup"/></p>
+                <p>From <m>-5</m> to <m>-2</m>? <var name="$No" form="popup"/></p>
+                <p>From 2 to 4? <var name="$No" form="popup"/></p>
+                <p>From 1 to 3? <var name="$Yes" form="popup"/></p>
+                </li>
+            </ol>
+        </p></statement>
+        <solution><p>
+        <ol marker="a." cols="2">
+            <li><p><m>3</m></p></li>
+            <li><p><m> -2, 2, 4 </m></p></li>
+            <li><p><m> -3 </m>; <m> t = -4 </m></p></li>
+            <li><p><m> (-5, -4) </m> and <m> (1, 3) </m></p></li>
+        </ol></p></solution>
+    </webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Refer to the graph of the function <m>g</m> shown in <xref ref="example-function-graph" text="type-global"/>.</p>
+    <p><ol marker="a.">
+        <li><p>Find <m> g(0) </m>. </p></li>
+        <li><p> For what value(s) of <m> t </m> is <m> g(t) = 0 </m>?</p></li>
+        <li><p>What is the smallest, or minimum, value of <m> g(t) </m>? For what value of <m> t </m> does the function take on its minimum value?</p></li>
+        <li><p>On what intervals is <m> g </m> decreasing?</p></li>
+    </ol></p></statement>
+<solution><p>
+    <ol marker="a." cols="2">
+        <li><p><m>3</m></p></li>
+        <li><p><m> -2, 2, 4 </m></p></li>
+        <li><p><m> -3 </m>; <m> t = -4 </m></p></li>
+        <li><p><m> (-5, -4) </m> and <m> (1, 3) </m></p></li>
+        </ol></p></solution></exercise>
+</subsection>
+
+<subsection><title>Constructing the Graph of a Function</title>
+
+<p>We can construct a graph for a function described by a table or an equation.  We make these graphs the same way we graph equations in two variables:  by plotting points whose coordinates satisfy the equation.</p>
+
+<example xml:id="example-graph-square-root"><statement><p>Graph the function <m>f(x) = \sqrt{x + 4}</m></p></statement>
+
+<solution><p>We choose several convenient values for <m>x</m> and evaluate the function to find the corresponding <m>f(x)</m>-values. For this function we cannot choose <m>x</m>-values less than <m>-4</m>, because the square root of a negative number is not a real number. 
+    <me>f(\alert{-4}) =\sqrt{\alert{-4} + 4}=\sqrt{0}= 0</me>
+    <me>f(\alert{-3}) =\sqrt{\alert{-3} + 4}=\sqrt{1}= 1</me>
+    <me>f(\alert{0}) =\sqrt{\alert{0} + 4}=\sqrt{4}=2</me>
+    <me>f(\alert{2}) =\sqrt{\alert{2} + 4}=\sqrt{6}\approx 2.45</me>
+    <me>f(\alert{5}) =\sqrt{\alert{5} + 4}=\sqrt{9}=3</me>
+    The results are shown in the table.</p>
+    <sidebyside widths="50% 38%" margins="0% 12%" valigns="middle middle">
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor"> <row bottom="minor">
+        <cell><m>x</m></cell>
+        <cell><m>f(x)</m></cell></row>
+    <row>
+        <cell><m>-4</m></cell>
+        <cell><m>0</m></cell></row>
+    <row>
+        <cell><m>-3</m></cell>
+        <cell><m>1</m></cell></row>
+    <row>
+        <cell><m>0</m></cell>
+        <cell><m>2</m></cell></row>
+    <row>
+        <cell><m>2</m></cell>
+        <cell><m>\sqrt{6}</m></cell></row>
+    <row>
+        <cell><m>5</m></cell>
+        <cell><m>3</m></cell></row>
+  </tabular>
+    <image source="images/fig-sq-root"><description>square root graph</description></image></sidebyside>
+    
+<p>Points on the graph have coordinates <m>(x, f(x))</m>, so the vertical coordinate of each point is given by the value of <m>f(x)</m>.  We plot the points and connect them with a smooth curve, as shown in the figure. Notice that no points on the graph have <m>x</m>-coordinates less than <m>-4</m>.</p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>       
+            $fof3 = RadioButtons(
+              ["Find 3 on the \(x\)-axis, move vertically to the point, then horizontally to the \(y\)-axis.",
+              "Find 3 on the \(y\)-axis, move horizontally to the point, then vertically to the \(x\)-axis.",
+              "Substitute 3 for \(x\) into the formula for the function.",
+              "Substitute 3 for \(y\) into the formula for the function."],
+              0, 
+            );            
+        </pg-code>
+<statement>
+        <p>How do we find the value of <m>f(3)</m> from a graph of <m>f</m>?</p>
+        <p><var name="$fof3" form="buttons"/></p>      
+</statement>
+    <solution>
+        <p>Find 3 on the <m>x</m>-axis, move vertically to the point, then horizontally to the <m>y</m>-axis.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>How do we find the value of <m>f(3)</m> from a graph of <m>f</m>?</p>
+</statement></exercise>
+
+<technology><title><!--<image source="images/icon-GC.jpg"  width="8%"><description>Graphing Calculator</description></image>-->Using Technology to Graph a Function</title>
+
+<p>We can also use a graphing utility to obtain a table and graph for the function in <xref ref="example-graph-square-root" text="type-global"/>. We graph a function just as we graphed an equation. For this function, we enter 
+    <me>Y_1 = \sqrt{\,}(X+4)</me>
+and press <kbd>ZOOM</kbd> <m>6</m> for the standard window. Your calculator does not use the <m>f(x)</m> notation for graphs, so we will continue to use <m>Y_1,~ Y_2,</m> etc. for the output variable.  Don't forget to enclose <m>x+4</m> in parentheses, because it appears under a radical.  The graph is shown below.</p>
+
+<image width="30%" source="images/fig-GC-sq-root"><description>GC square root graph</description></image>
+</technology>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            Context("Fraction")->variables->add(r=>'Real');
+            $func = Formula("x**3-2");
+            $a0 = $func->eval(x=>-2);
+            $a1 = $func->eval(x=>-1);
+            $a2 = $func->eval(x=>-1/2);
+            $a2 = Fraction($a2);
+            $a3 = $func->eval(x=>0);
+            $a4 = $func->eval(x=>1/2);
+            $a4 = Fraction($a4);
+            $a5 = $func->eval(x=>1);
+            $a6 = $func->eval(x=>2);
+        </pg-code>
+        <statement><p>Let <m>f(x) = <var name="$func"/></m></p>
+        <p>Complete the table of values and sketch a graph of the function.</p> 
+                <tabular top="major" halign="center" right="minor" left="minor" bottom="minor"> <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>-2</m></cell>
+                    <cell><m>-1</m></cell>
+                    <cell><m>-\frac{1}{2}</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>\frac{1}{2}</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell></row>
+                <row>
+                    <cell><m>f(x)</m></cell>
+                    <cell><var name="$a0" width="2"/></cell>
+                    <cell><var name="$a1" width="1"/></cell>
+                    <cell><var name="$a2" width="2"/></cell>
+                    <cell><var name="$a3" width="1"/></cell>
+                    <cell><var name="$a4" width="2"/></cell>
+                    <cell><var name="$a5" width="1"/></cell>
+                    <cell><var name="$a6" width="1"/></cell></row>
+                </tabular></statement>
+    <solution><tabular width="60%" margins="0% 40%" top="major" halign="center" right="minor" left="minor" bottom="minor"> <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>-2</m></cell>
+                    <cell><m>-1</m></cell>
+                    <cell><m>-\frac{1}{2}</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>\frac{1}{2}</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell></row>
+                <row>
+                    <cell><m>f(x)</m></cell>
+                    <cell><m>-10 </m></cell>
+                    <cell><m>-3 </m></cell>
+                    <cell><m>\frac{-17}{8}</m></cell>
+                    <cell><m>-2</m></cell>
+                    <cell><m>\frac{-15}{8} </m></cell>
+                    <cell><m>-1</m></cell>
+                    <cell><m>6</m></cell></row>
+                </tabular>
+            <p>The graph is shown below.</p>
+    </solution> </webwork>
+    <conclusion><p><m>f(x)=x^3-2</m></p><image width="25%" source="images/fig-ex-5-2-3ans"><description>cubic</description></image></conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p><m>f(x) = x^3-2</m></p>
+    <p>Complete the table of values and sketch a graph of the function by hand. Then use technology to make a table of values and graph the function.</p> 
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor"> <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>-2</m></cell>
+                    <cell><m>-1</m></cell>
+                    <cell><m>-\frac{1}{2}</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>\frac{1}{2}</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell></row>
+                <row>
+                    <cell><m>f(x)</m></cell>
+                    <cell><m>\hphantom{000}</m></cell>
+                    <cell><m>\hphantom{000}</m></cell>
+                    <cell><m>\hphantom{000}</m></cell>
+                    <cell><m>\hphantom{000}</m></cell>
+                    <cell><m>\hphantom{000}</m></cell>
+                    <cell><m>\hphantom{000}</m></cell>
+                    <cell><m>\hphantom{000}</m></cell></row>
+                </tabular></statement>
+<solution><tabular width="60%" margins="0% 40%" top="major" halign="center" right="minor" left="minor" bottom="minor"> <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>-2</m></cell>
+                    <cell><m>-1</m></cell>
+                    <cell><m>-\frac{1}{2}</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>\frac{1}{2}</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell></row>
+                <row>
+                    <cell><m>f(x)</m></cell>
+                    <cell><m>-10 </m></cell>
+                    <cell><m>-3 </m></cell>
+                    <cell><m>\frac{-17}{8}</m></cell>
+                    <cell><m>-2</m></cell>
+                    <cell><m>\frac{-15}{8} </m></cell>
+                    <cell><m>-1</m></cell>
+                    <cell><m>6</m></cell></row>
+                </tabular>
+            <p><m>f(x)=x^3-2</m></p><image width="25%" source="images/fig-ex-5-2-3ans"><description>cubic</description></image>
+    </solution></exercise>           
+</subsection>
+
+<subsection><title>The Vertical Line Test</title>
+
+<p>In a function, two different outputs cannot be related to the same  input. This restriction means that two different ordered pairs cannot have the same first coordinate. What does it mean for the graph of the function?</p>
+
+<p>Consider the graph shown in Figure (a). Every vertical line intersects the graph in at most one point, so there is only one point on the graph for each <m>x</m>-value. This graph represents a function.</p>  
+
+    <image width="65%" source="images/fig-vertical-line-test"><description>vertical line test</description></image>
+
+<p>In Figure (b), however, the line <m>x=2</m> intersects the graph at two points, <m>(2,1)</m> and <m>(2,4)</m>. Two different <m>y</m>-values, 1 and 4, are related to the same <m>x</m>-value, 2. This graph cannot be the graph of a function.</p>  
+
+<assemblage><title>The Vertical Line Test</title><idx><h>function</h><h>vertical line test</h></idx><idx><h>vertical line test</h><see>function</see></idx>
+<p>A graph represents a function if and only if every vertical line intersects the graph in
+at most one point.</p></assemblage>  
+
+<example xml:id="example-vertical-line-test"><statement><p>Use the vertical line test to decide which of the graphs in the figure represent functions.</p>
+    <image width="80%" source="images/fig-vertical-line-test2"><description>vertical line test</description></image></statement>
+
+<solution><p><ul>
+    <li><p>Graph (a) represents a function, because it passes the vertical line test.</p></li>
+    <li><p> Graph (b) is not the graph of a function, because the vertical line at (for example) <m>x = 1</m> intersects the graph at two points.</p></li>
+    <li><p> For graph (c), notice the break in the curve at <m>x = 2</m>: The solid dot at <m>(2, 1)</m> is the only point on the graph with <m>x = 2</m>; the open circle at <m>(2, 3)</m> indicates that <m>(2, 3)</m> is not a point on the graph. Thus, graph (c) is a function, with <m>f(2) = 1</m>.</p></li>
+</ul></p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>       
+            $ver = RadioButtons(
+              ["A) If the graph is a vertical line.",
+              "B) If the graph is increasing.",
+              "C) If the graph is decreasing.",
+              "D) If the graph is a function."],
+              3, 
+            );            
+        </pg-code>
+    <statement>
+        <p>What does the vertical line test tell us?</p>
+        <p><var name="$ver" form="buttons"/></p>      
+    </statement>
+    <solution>
+        <p>The vertical line test tells us if the graph is a function.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title><statement><p>Fill in the blanks to coplete the statements.
+<ol marker="a.">
+    <li><p>The vertical line test is used to decide whether a graph represents a <fillin characters="10"/>.</p></li>
+    <li><p>If it is, there cannot be two points on the graph with the same <fillin characters="10"/>.</p></li>
+</ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <introduction><p>Use the vertical line test to determine which of the graphs below represent functions.</p>
+    <image source="images/fig-vertical-line-test3w" ><description>vertical line test</description></image></introduction>
+    <webwork>
+         <pg-code>
+            $choice = RadioButtons(
+              ["(a)",
+              "(b)",
+              "(c)",
+              "None of the above"],
+              1, 
+            );            
+        </pg-code> 
+        <statement><p>
+            <var name="$choice" form="buttons"/>
+        </p></statement>
+        <solution><p>Only (b) is a function.</p></solution>
+    </webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Use the vertical line test to determine which of the graphs below represent functions.</p>
+    <image source="images/fig-vertical-line-test3" ><description>vertical line test</description></image></statement>
+<solution><p>Only (b) is a function.</p></solution></exercise>
+</subsection>
+
+<subsection><title>Graphical Solution of Equations and Inequalities</title>
+
+<p>We have used graphs to solve linear and quadratic equations and inequalities. We can also use a graphical technique to solve equations and inequalities involving other functions. </p>
+
+<example xml:id="example-graph-to-solve-cubic"><statement><p>Use a graph of <m>~f(x)=-2x^3 + x^2 + 16x~</m> to solve the equation 
+    <me>-2x^3 + x^2 + 16x = 15</me></p></statement>
+
+<solution><p>If we sketch in the horizontal line <m>y = 15</m>, we can see that there are three points on the graph of <m>f</m> that have <m>y</m>-coordinate <m>15</m>, as shown below. The <m>x</m>-coordinates of these points are the solutions of the equation. </p>
+        <image width="35%" source="images/fig-graph-to-solve-cubic"><description>graph of cubic</description></image>
+<p>From the graph, we see that the solutions are <m>x = -3</m>, <m>x = 1</m>, and approximately <m>x = 2.5</m>. We can verify each solution algebraically.</p> 
+<p>For example, if <m>x = \alert{-3}</m>, we have 
+        <md><mrow>f(\alert{-3})\amp= -2(\alert{-3})3 + (\alert{-3})^2 + 16(\alert{-3})</mrow>
+            <mrow>\amp= -2(-27) + 9 - 48</mrow>
+            <mrow>\amp =54 + 9 - 48 = 15</mrow></md>  
+so <m>-3</m> is a solution. Similarly, you can check that <m>x = 1</m> and <m>x = 2.5</m> are solutions.</p>
+</solution></example>  
+
+<exercise component="webwork" xml:id="exercise-graph-to-solve-quadraticw"><title>Practice 5</title>
+    <introduction>
+        <image width="30%" source="images/fig-graph-to-solve-quadraticw"><description>graph of parabola</description></image>
+    </introduction>
+    <webwork><pg-code>
+            $answer=List("-8,4");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code>
+    <statement><p>Use the graph of <m> y = \frac{1}{2}n^2 + 2n - 10 </m> shown above  to solve
+            <me> \frac{1}{2}n^2 + 2n - 10 = 6 </me>
+            and verify your solutions algebraically.</p>
+            <p><m> n= </m><var name="$answer" width="10" evaluator="$my_evaluator" />  </p>
+        <instruction>
+                Separate different values with a comma.
+        </instruction>
+    </statement>
+    <solution><p><m> -8, 4 </m></p></solution>
+</webwork></exercise>
+
+<exercise component="main" xml:id="exercise-graph-to-solve-quadratic"><title>Practice 5</title>
+<statement><sidebyside widths="50% 30%"><p>Use the graph of <m>~ y = \frac{1}{2}n^2 + 2n - 10 ~</m> shown at right to solve
+            <me> \frac{1}{2}n^2 + 2n - 10 = 6 </me>
+    Verify your solutions algebraically.</p>
+        <image source="images/fig-graph-to-solve-quadratic"><description>graph of parabola</description></image></sidebyside>
+</statement>
+<solution><p><m> -8, 4 </m></p></solution></exercise>
+
+<exercise component="webwork"><title>QuickCheck 5</title>
+<webwork><pg-code>
+        Context()->variables->add(y =>"Real"); 
+        $horizontal = PopUp(
+          ["?","vertical", "horizontal", slanted],
+          2, 
+        );
+        $x = Formula("x");
+        $y = Formula("y");
+    </pg-code>
+    <statement><p>To solve an equation graphically, it is helpful to sketch in a <var name="$horizontal" form="popup" /> line.  We are looking for <var name="$x" width="1" /> values that give the required <var name="$y" width="1" /> value.</p>
+    </statement>
+    <solution><p>horizontal line; <m>x</m>; <m>y</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 5</title>
+<statement><p>To solve an equation graphically, it is helpful to sketch in a <fillin characters="10"/> line. We are looking for <fillin characters="10"/> values that give the required <fillin characters="10"/> value.</p></statement></exercise>
+
+<example xml:id="example-graph-to-solve-cubic2"><statement><p>Use the graph in <xref ref="example-graph-to-solve-cubic" text="type-global"/>  to solve the inequality 
+    <me>-2x^3 + x^2 + 16x \ge 15</me>
+</p></statement>
+
+<solution><p>We first locate all points on the graph that have <m>y</m>-coordinates greater than or equal to <m>15</m>. The <m>x</m>-coordinates of these points are the solutions of the inequality.</p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>For more practice solving equatins and inequalities with a graph, see <xref ref="tkSolveGrph" text="custom"> Section 5.2.2 </xref> of the Toolkit.</p></aside>
+<p> The figure below shows the points in red, and their <m>x</m>-coordinates as intervals on the <m>x</m>-axis. The solutions are <m>x \le -3</m> and <m>1\le x \le 2.5</m>, or in interval notation, <m>(-\infty, -3] \cup [1, 2.5]</m>.</p>
+    <image width="35%" source="images/fig-graph-to-solve-cubic2"><description>graph of cubic</description></image>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 6</title>
+    <introduction>
+        <image width="30%" source="images/fig-graph-to-solve-quadratic"><description>graph of cubic</description></image>
+    </introduction>
+    <webwork><pg-code>
+            Context("Inequalities")->variables->add(n=>"Real");
+            $answer= Compute("-8 &lt; n &lt; 4");
+        </pg-code>
+    <statement><p>Use the graph above from <xref ref="exercise-graph-to-solve-quadratic" text="type-global" /> to solve the inequality
+            <md><mrow> \frac{1}{2}n^2 + 2n - 10 \lt 6 </mrow></md></p>
+            <p>Answer: <var name="$answer" width="12"/> </p>
+        <instruction>Note: Use interval notation or inequalities.</instruction>
+    </statement>
+    <solution><p><m> -8 \lt n \lt 4 </m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Use the graph above from <xref ref="exercise-graph-to-solve-quadratic" text="type-global" /> to solve the inequality
+            <me> \frac{1}{2}n^2 + 2n - 10 \lt 6 </me></p></statement>
+<solution><p><m> -8 \lt n \lt 4 </m></p></solution></exercise>
+</subsection>
+
+<subsection><title>More about Notation</title>
+
+<p>To simplify the notation, we sometimes use the same letter for the output variable and for the name of the function.  In the next example, <m>C</m> is used in this way.</p>
+
+<example><statement><p>TrailGear decides to market a line of backpacks. The cost, <m>C</m>, of manufacturing backpacks is a function of the number of backpacks produced, <m>x</m>, given by the equation
+    <me>C=C(x)=3000+20x</me>
+where <m>C(x)</m> is in dollars. Find the cost of producing 500 backpacks.</p></statement>
+
+<solution><p>To find the value of <m>C</m> that corresponds to <m>x=\alert{500}</m>, we evaluate <m>C(\alert{500})</m>:
+    <me>C(\alert{500}) = 3000+20(\alert{500}) = 13,000</me>
+The cost of producing 500 backpacks is $13,000.</p></solution>
+</example>  
+
+<exercise component="webwork"><title>Practice 7</title>
+    <webwork> 
+        <pg-code>
+            $meaning = RadioButtons(
+                ["A) the volume (in cm) of a sphere whose radius is 10 cu. cm",
+                "B) the radius (in cm) of a sphere whose volume is 10 cm",
+                "C) the volume (in sq. cm) of a sphere whose radius is 10 cm",
+                "D) the volume (in cu. cm) of a sphere whose radius is 10 cm"],
+              3, # index of correct answer; could also just be the correct answer
+            );
+            Context("Fraction")->variables->add(r=>'Real');
+            $V=Formula("4/3 * pi* r**3");
+            $V0 = $V->eval(r=>10);
+        </pg-code>
+     
+    <statement><p>The volume of a sphere of radius <m> r </m> centimeters is given by
+            <me> V = V(r) = \frac{4}{3}\pi r^3 </me>
+        Evaluate <m> V(10) </m> and explain what it means.</p>
+        <instruction>Note: You may use "pi" to enter the number <m>\pi</m>.</instruction>
+        <p><m> V(10)= </m><var name="$V0" width="12"/>, which represents </p>
+        <p><var name="$meaning" form="buttons"/></p>
+    </statement>
+    <solution><p><m> V(10) = 4000\pi/3\approx 4188.79 \text{ cm}^3 </m> is the volume of a sphere whose radius is 10 cm.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 7</title>
+<statement><p>The volume of a sphere of radius <m> r </m> centimeters is given by
+            <me> V = V(r) = \frac{4}{3}\pi r^3 </me>
+    Evaluate <m> V(10) </m> and explain what it means.</p></statement>
+<solution><p><m> V(10) = 4000\pi/3\approx 4188.79 \text{ cm}^3 </m> is the volume of a sphere whose radius is 10 cm.</p>
+</solution></exercise>
+
+</subsection>
+
+<xi:include href="./section-5-2-exercises.xml" /> <!-- exercises  -->
+</section> 
+<!-- </book>  </mathbook> -->

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Properties-of-Lines"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Properties of Lines</title>
+    <idx><h>lines</h><h>properties of</h></idx>
+
+<subsection><title>Parallel and Perpendicular Lines</title>
+
+<p>Lines that lie in the same plane but never intersect are called <term>parallel</term><idx><h>parallel lines</h></idx><idx><h>lines</h><h>parallel</h></idx> lines. It is easy to understand that parallel lines have the same slope.</p>
+
+<question number="1"><statement>
+    <sidebyside widths="55% 40%" valigns="middle middle" margins="0% 5%"><p>Calculate the slopes of the two parallel lines in the figure. (We denote the slope of the first line by <m>m_1</m> and the slope of the second line by <m>m_2</m>.)
+    <md><mrow>m_1 \amp= \dfrac{\Delta y}{\Delta x} =\hphantom{00000} </mrow>
+        <mrow>m_2 \amp= \dfrac{\Delta y}{\Delta x} = </mrow></md></p>
+    <!--<image source="photos/fig-3-5-1.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-5-1"><description>parallel lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan] (-5,-5) grid (5,5);
+        \draw[black,very thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-5)--(0,5.6) node[left, xshift=2]{$y$};
+        \foreach \x  in  {-5, 5} {
+         \draw[cyan, very thick] (\x,-5) --++(0,10);
+         \draw[cyan, very thick] (-5,\x) --++(10,0);
+         \draw[black] (\x,.1) --++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1] {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,very thick, <->, >=stealth'] (-4,-5)--(1,5) node[below right, xshift=1, text=black, fill=white, inner sep=2] {$l_1$};
+        \filldraw[red!80!black] (-3,-3) circle (2mm);
+        \filldraw[red!80!black] (0,3) circle (2mm);
+        \draw[red,very thick, <->, >=stealth'] (-1,-5)--(4,5) node[below right, xshift=1, text=black, fill=white, inner sep=2] {$l_2$};
+        \filldraw[red!80!black] (0,-3) circle (2mm);
+        \filldraw[red!80!black] (3,3) circle (2mm);
+        \end{tikzpicture}]]></latex-image></image></sidebyside></statement></question>
+
+<p>Lines that intersect at right angles <idx><h>right</h><h>angle</h></idx> are called <term>perpendicular</term><idx><h>perpendicular lines</h></idx><idx><h>lines</h><h>perpendicular</h></idx> lines. It is a little harder to see the relationship between the slopes of perpendicular lines.</p>
+
+<question number="2"><statement>
+	<sidebyside widths="55% 40%" valigns="middle middle" margins="0% 5%"><p>Calculate the slopes of the two perpendicular lines in the figure. 
+    <md><mrow>m_1 \amp= \dfrac{\Delta y}{\Delta x} =\hphantom{00000} </mrow>
+        <mrow>m_2 \amp= \dfrac{\Delta y}{\Delta x} = </mrow></md></p>
+	<!--<image source="photos/fig-3-5-2.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-5-2"><description>perpendicular lines</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture} [scale=.5]
+		\draw[cyan] (-5,-5) grid (5,7);
+		\draw[black,very thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+		\draw[black,very thick, ->, >=stealth'] (0,-5)--(0,7.6) node[left, xshift=2]{$y$};
+		\foreach \x  in  {-5, 5} {
+		 \draw[black] (\x,.1) --++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1] {$\x$};
+		 \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+		}
+		\draw[red,very thick, <->, >=stealth'] (-5, -3/2)--(5,7/2) node[below left, yshift=-8, text=black, fill=white, inner sep=2] {$l_1$};
+		\draw[red,very thick, <->, >=stealth'] (5,-4)--(-1/2,7) node[below left, xshift=1, yshift=-1, text=black, fill=white, inner sep=2] {$l_2$};
+		\filldraw[red!80!black] (-2,0) circle (2mm);
+		\filldraw[red!80!black] (2,2) circle (2mm);
+		\filldraw[red!80!black] (3,0) circle (2mm);
+        \end{tikzpicture}]]></latex-image></image></sidebyside></statement></question>
+
+<p>In the Exercise above, note that the product of <m>m_1</m> and <m>m_2</m> is <m>-1</m>, that is,
+	<md><mrow>m_1 m_2 = \dfrac{1}{2} (-2) = -1</mrow></md>
+This relationship holds for any pair of perpendicular lines.</p>
+
+<assemblage><title>Parallel and Perpendicular Lines</title>
+    <idx><h>lines</h><h>parallel</h></idx><idx><h>lines</h><h>parallel</h></idx>
+<p><ol marker="1.">
+	<li><p>Two lines are parallel if their slopes are equal, that is, if
+		<md><mrow>\blert{m_1 = m_2}</mrow></md>		
+	or if both lines are vertical.</p></li>
+	<li><p>Two lines are perpendicular if the product of their slopes is <m>-1</m>, that is, if 
+		<md><mrow>\blert{m_1 m_2 = -1}</mrow></md>
+	or if one of the lines is horizontal and one is vertical.</p></li>
+</ol></p></assemblage>
+
+<exercise number="3"><statement><p>What do we call two lines that lie in the same plane but never intersect?</p></statement>
+    	<answer><p>Parallel lines</p></answer></exercise>
+
+<exercise number="4"><statement><p>What are perpendicular lines?</p></statement>
+    	<answer><p>Lines that intersect at right angles</p></answer></exercise>
+
+<example><statement><p>Decide whether the lines  
+      <md><mrow>2x+3y=6~~~~~~~~~ \text{and} ~~~~~~~~~3x-2y=6</mrow></md>        
+are parallel, perpendicular, or neither.</p></statement>
+
+<solution><p>We could graph the lines, but we can't be sure from a graph if the lines are exactly parallel or exactly perpendicular. A more accurate way to answer the question is to find the slope of each line. To do this we write each equation in slope-intercept form, that is, we solve for <m>y</m>.</p>
+<sidebyside widths="50% 50%">
+	<p><md><mrow>2x+3y \amp = 6</mrow>
+           <mrow>3y \amp = -2x+6</mrow>
+        <mrow>y \amp = \dfrac{-2}{3}x+2</mrow></md></p>    
+
+	<p><md><mrow>3x-2y \amp = 6</mrow>
+           <mrow>-2y \amp = -3x+6</mrow>
+           <mrow>y \amp = \dfrac{3}{2}x-3</mrow></md></p></sidebyside>
+
+<p>The slope of the first line is <m>\dfrac{-2}{3}</m>, and the slope of the second line is <m>\dfrac{3}{2}</m>. The slopes are not equal, so the lines are not parallel. However, the product of the slopes is
+	<md><mrow>m_1 m_2 = (\dfrac{-2}{3}) (\dfrac{3}{2}) = -1</mrow></md>
+so the lines are perpendicular.</p></solution></example>
+
+<assemblage><title>Look Closer</title>
+    <idx><h>perpendicular lines</h></idx><idx><h>lines</h><h>perpendicular</h></idx><idx><h>negative reciprocal</h></idx>
+<p>Another way to state the condition for perpendicular lines is 
+	<md><mrow>m_2 = \dfrac{-1}{m_1}</mrow></md>
+Because of this relationship, we often say that the slope of one perpendicular line is the <term>negative reciprocal</term> of the other.</p></assemblage>
+
+<exercise number="5"><statement><p>What is true about the slopes of parallel lines?</p></statement>
+    	<answer><p>They are equal.</p></answer></exercise>
+
+<exercise number="6"><statement><p>What do we call the slopes of perpendicular lines?</p></statement>
+    	<answer><p>Negative reciprocals</p></answer></exercise>
+</subsection>
+
+<subsection><title>Equations for Horizontal and Vertical Lines</title>
+    <idx><h>lines</h><h>horizontal</h></idx><idx><h>horizontal line</h></idx><idx><h>lines</h><h>vertical</h></idx><idx><h>vertical line</h></idx>
+
+<p>In <xref ref="Slope">Lesson</xref> we learned that the slope of a horizontal line is zero. <idx><h>slope</h><h>of horizontal line</h></idx> What does this tell us about the equation of a horizontal line that passes through a particular point?</p>
+
+<example xml:id="Example-3-5-2"><statement><p>Find the equation of the horizontal line that passes through <m>(5,3)</m>.</p></statement>
+
+<solution><sidebyside widths="45% 35%" valigns="middle middle"><p>Looking at the graph of the line shown at right, we see that the <m>y</m>-coordinate of every point on the line is 3.</p> 
+	<image source="photos/hp-3-3-23"><description>horizontal line</description></image></sidebyside>
+<p>In particular, the <m>y</m>-intercept of the line is the point <m>(0,3)</m>, so <m>b=3</m>. As we noted above, the slope of the line is <m>m=0</m>. Substituting these values into the slope-intercept form gives us the equation 
+	<md><mrow>y= 0 \cdot x + 3</mrow></md>
+ or just <m>y=3</m>. The fact that <m>x</m> does not appear in the equation means that <m>y=3</m> for every point on the line, no matter what the value of <m>x</m> is.</p></solution></example> 
+
+<assemblage><title>Look Closer</title>
+    <idx><h>undefined</h><h>slope of vertical line</h></idx>
+    <idx><h>slope</h><h>vertical line</h></idx>
+<p>What about the equation of a vertical line? The slope of a vertical line is undefined; a vertical line does not have a slope. We cannot use the slope-intercept form to write the equation of a vertical line. However, we can use what we learned about horizontal lines in <xref ref="Example-3-5-2" text="type-global"/>.</p>
+
+<sidebyside widths="50% 35%" valigns="middle middle" margins="0% 5%"> 
+
+<p>Look at the graph of the vertical line at right. Every point on the line has <m>x</m>-coordinate <m>-2</m>, no matter what the <m>y</m>-coordinate is. An equation for this line is <m>x=-2</m>. The value of <m>x</m> does not depend upon <m>y</m>; it is constant, so <m>y</m> does not appear in the equation.</p>
+<image source="photos/hp-3-3-24"><description>vertical line</description></image></sidebyside></assemblage>
+
+<note><p>We make two observations about the examples above.<ul> 
+	<li>The <m>y</m>-intercept of the horizontal line <m>y=3</m> is <m>(0,3)</m>; it has no <m>x</m>-intercept.</li>
+	<li>The <m>x</m>-intercept of the vertical line <m>x=-2</m> is <m>(-2,0)</m>; it has no <m>y</m>-intercept.</li>
+</ul></p></note>
+
+<assemblage><title>Horizontal and Vertical Lines</title>
+    <idx><h>lines</h><h>horizontal</h></idx><idx><h>horizontal line</h><h>equation of</h></idx><idx><h>lines</h><h>vertical</h></idx><idx><h>vertical line</h><h>equation of</h></idx>
+<p><ol marker="1.">
+	<li><p>The equation of the horizontal line passing through <m>(0,b)</m> is
+			<md><mrow>\blert{y=b}</mrow></md></p></li>
+	<li><p>The equation of the vertical line passing through <m>(a,0)</m> is
+			<md><mrow>\blert{x=a}</mrow></md></p></li>
+</ol></p></assemblage>
+
+<warning><p>The equation for a line is not the same thing as the slope of the line!<ul>
+ 	<li>The slope of every horizontal line is zero, but the equation of a horizontal line has the form <m>y=b</m>, where <m>b</m> is the <m>y</m>-coordinate of every point on the line.</li> 
+ 	<li>Similarly, the equation of a vertical line has the form <m>x=a</m>, but the slope of a vertical line is undefined.</li>
+ </ul></p></warning>
+
+<exercise number="7"><statement><p>Give an example of an equation of a vertical line.</p></statement>
+    	<answer><m>x=k</m></answer></exercise>
+
+<exercise number="8"><statement><p>Give an example of an equation of a horizontal line.</p></statement>
+    	<answer><m>y=k</m></answer></exercise>
+</subsection>
+
+<subsection><title>Distance Between Points</title>
+    <idx><h>distance</h><h>between points</h></idx>
+
+<p>It is easy to compute the distance between two points that lie on the same horizontal or vertical line. We subtract the smaller coordinate from the larger one.</p>
+
+<example><statement><sidebyside widths="45% 53%" valigns="middle middle" margins="0% 0%"><p>The distance between the points <m>A(6, \blert{5})</m> and <m>B(6, \blert{-7})</m> in the figure is
+    <md><mrow>\Delta y = 5-(-7)=12</mrow></md>
+and the distance between points <m>C(\blert{-7}, -3)</m> and <m>D(\blert{-2}, -3)</m> is                
+    <md><mrow>\Delta x = -2-(-7)=5</mrow></md></p>
+<!--<image source="photos/fig-3-5-ex3.png"><description>graph</description></image>-->
+<image xml:id="fig-3-5-ex3"><description>a vertical segment and a horizontal segment</description><latex-image>
+    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+    <![CDATA[\tikzset{%
+    }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \coordinate(A) at (6,5);
+        \coordinate (B) at (6,-7);
+        \coordinate(C) at (-7,-3);
+        \coordinate(D) at (-2,-3);
+        \draw[red,very thick] (A)--(B);
+        \filldraw[red!80!black] (A) circle (2mm) node[above right, xshift=2, yshift=2, text=black, fill=white, inner sep=1] {$A$};
+        \filldraw[red!80!black] (B) circle (2mm) node[below right, xshift=2, yshift=-2, text=black, fill=white, inner sep=1] {$B$};
+        \draw[red,very thick] (C)--(D);
+        \filldraw[red!80!black] (C) circle (2mm) node[below left, xshift=-2, yshift=-2, text=black, fill=white, inner sep=1] {$C$};
+        \filldraw[red!80!black] (D) circle (2mm) node[below right, xshift=2, yshift=-2, text=black, fill=white, inner sep=1] {$D$};
+    \end{tikzpicture}]]></latex-image></image></sidebyside>
+</statement></example> 
+
+<p>Note that the <term>distance</term> between two points is always a positive number. That is why we always subtract the smaller coordinate from the larger one to compute distance. However, when we compute a slope, we need more information.</p>
+
+<assemblage><title>Look Closer</title>
+<p>When we compute slope, the direction in which we move on the line makes a difference. We will call this the <term>directed distance</term><idx><h>directed distance</h></idx><idx><h>distance</h><h>directed</h></idx>, and it can be either positive or negative.</p>
+<p>If we move from <m>C</m> to <m>D</m>, we have moved in the positive <m>x</m>-direction, so the directed distance is positive: 
+	<md><mrow>\Delta x = -2-(-7)=5</mrow></md>
+If we move from <m>D</m> to <m>C</m>, we have moved in the negative <m>x</m>-direction, so the directed distance is negative:                                        
+	<md><mrow>\Delta x = -7-(-2)=-5</mrow></md></p></assemblage>
+
+<assemblage><title>Directed Distance</title>
+    <idx><h>directed distance</h></idx><idx><h>distance</h><h>directed</h></idx>
+<p>To find the <term>directed distance</term> between two points on a number line, we subtract the initial coordinate from the final coordinate.</p></assemblage>
+
+<exercise number="9"><statement><p>How do we find the distance between two points that lie on the same 
+		vertical line?</p></statement>
+    	<answer><p>Subtract the smaller <m>y</m>-coordinate from the larger one</p></answer></exercise>
+
+<exercise number="10"><statement><p>A directed distance can be either <fillin characters="6"/> or <fillin characters="6"/>.</p></statement>
+    	<answer><p>positive, negative</p></answer></exercise>
+
+<assemblage><title>Look Ahead</title>
+<p>So far we have computed the slope of a line by finding <m>\Delta x</m> and <m>\Delta y</m> on the graph. Now we can use directed distance to develop a formula for slope.</p></assemblage>
+
+<example><statement><sidebyside widths="45% 53%" valigns="middle middle">
+<p>Compute the slope of the line segment joining <m>P</m> and <m>R</m> in two ways:<ol marker="a.">
+    <li><p>Find <m>\Delta y</m> and <m>\Delta x</m> using the graph</p></li>
+    <li><p>Find <m>\Delta y</m> and <m>\Delta x</m> using coordinates.</p></li></ol></p>
+<!--<image source="photos/fig-3-5-ex4.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-5-ex4"><description>graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \coordinate(P) at (-3,-4);
+        \coordinate (Q) at (-3,-2);
+        \coordinate(R) at (5,-2);
+        \draw[red,very thick] (P)--(R);
+        \filldraw[red!80!black] (P) circle (2.5mm) node[below left, xshift=-2, yshift=-2, text=black, fill=white, inner sep=1] {$P$};
+        \filldraw[red!80!black] (R) circle (2.5mm) node[below right, xshift=2, yshift=-2, text=black, fill=white, inner sep=1] {$R$};
+        \filldraw[gray] (Q) circle (2.5mm) node[left, xshift=-2, yshift=-2, text=black, fill=white, inner sep=1] {$Q$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>As we move from <m>P</m> to <m>Q</m>, we move up 2 squares on the graph, so <m>\Delta y = 2</m>. As 
+    we move from <m>Q</m> to <m>R</m>, we move 8 squares to the right, so <m>\Delta x = 8</m>. Thus, the slope of the line is 
+        <md><mrow>m = \dfrac{\Delta y}{\Delta x} = \dfrac{2}{8} = \dfrac{1}{4}</mrow></md></p></li>
+    <li><p>First we write down the coordinates of <m>P</m> and <m>Q</m>:       
+        <md><mrow>P(-3,\blert{-4})~~~~~~\text{and}~~~~~~Q(-3,\blert{-2})</mrow></md>
+    and compute the directed distance from <m>P</m> to <m>Q</m>:
+        <md><mrow>\Delta y = -2-(-4) = 2~~~~~~~~~~~~~~~~~~\blert{\text{final} - \text{initial}}</mrow></md>
+    Then we write down the coordinates of <m>Q</m> and <m>R</m>: 
+        <md><mrow>Q(\blert{-3},-2)~~~~~~\text{and}~~~~~~R(\blert{5},-2)</mrow></md>
+     and compute the directed distance from <m>Q</m> to <m>R</m>:
+          <md><mrow>\Delta x = 5-(-3) = 8~~~~~~~~~~~~~~~~~~\blert{\text{final} - \text{initial}}</mrow></md>
+    We get the same value for the slope as in part (a),   
+            <md><mrow>m = \dfrac{\Delta y}{\Delta x} = \dfrac{2}{8} = \dfrac{1}{4}</mrow></md></p></li>
+</ol></p></solution></example>
+</subsection>
+
+<subsection><title>Subscript Notation</title>
+<idx><h>subscript notation</h></idx>
+
+<p>When we compute the slope of a line joining two points, we must be careful to subtract their <m>x</m>-coordinates and their <m>y</m>-coordinates in the same order, final minus initial. To distinguish between the coordinates of different points, we use a new notation called <term>subscripts</term><idx><h>subscript</h></idx>.</p>
+
+<assemblage><title>Subscripts</title>
+    <idx><h>subscript notation</h></idx><idx><h>subscript</h></idx>
+<p>We denote the coordinates of a particular point by <m>(x_1,y_1)</m> and the coordinates of a second point by <m>(x_2,y_2)</m>.</p></assemblage>
+
+<example xml:id="Example-3-5-5"><statement><sidebyside widths="40% 53%" valigns="middle middle">
+<p>Compute the slope between point <m>D</m> and point <m>F</m> in the figure.</p>
+    <!--<image source="photos/fig-3-5-ex5.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-5-ex5"><description>graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \coordinate(F) at (9,4);
+        \coordinate (D) at (-6,-2);
+        \coordinate(E) at (-6,4);
+        \draw[red,very thick] (F)--(D);
+        \filldraw[red!80!black] (F) circle (2.5mm) node[above left, xshift=-2, yshift=2, text=black, fill=white, inner sep=1] {$F$};
+        \filldraw[red!80!black] (D) circle (2.5mm) node[below left, xshift=-2, yshift=-2, text=black, fill=white, inner sep=1] {$D$};
+        \filldraw[gray] (E) circle (2.5mm) node[above left, xshift=-2, yshift=2, text=black, fill=white, inner sep=1] {$E$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside></statement>
+
+<solution><p>We'll call <m>D</m> the first point and <m>F</m> the second point. Then their coordinates are 
+    <md><mrow>D:~~~x_1 \amp =-6 \amp\amp \text{and}\amp y_1 \amp =-2</mrow>
+        <mrow>F:~~~x_2 \amp = 9 \amp\amp \text{and}\amp y_2 \amp =4</mrow></md>
+Now we can describe the formula for slope in an organized way. We compute <m>\Delta y</m> and <m>\Delta x</m> as directed distances. First, we observe that the coordinates of point <m>E</m> are <m>(-6,4)</m> or <m>(x_1,y_2)</m>. From the figure, we can see that  
+        <md><mrow>\Delta y = y_2-y_1 = 4-(-2)=6</mrow></md>
+and
+        <md><mrow>\Delta x = x_2-x_1 = 9-(-6)=15</mrow></md>
+Thus, the slope of the line segment joining <m>D</m> and <m>F</m> is
+        <md><mrow>m=\dfrac{y_2-y_1}{x_2-x_1} = \dfrac{6}{15} = \dfrac{2}{5}</mrow></md></p></solution></example>
+
+<warning><p>The subscript 1 on <m>x_1</m>, for instance, has nothing to do with the value of the coordinate; it merely identifies this coordinate as the <m>x</m>-coordinate of the first point.</p></warning>
+
+<exercise number="11"><statement><p>What do the subscripts in <m>(x_1,y_1)</m> mean?</p></statement>
+    	<answer><p>Coordinates of the first point</p></answer></exercise>
+
+<exercise number="12"><statement><p>Write a formula for computing <m>\Delta y</m>.</p></statement>
+    	<answer><m>\Delta y= y_2-y_1</m></answer></exercise>
+</subsection>
+
+<subsection><title>A New Formula for Slope</title>
+
+<p>The method described in <xref ref="Example-3-5-5" text="type-global"/> gives us a new formula for computing slope.</p>
+
+<assemblage><title>Two-Point Formula for Slope</title>
+    <idx><h>slope</h><h>formula for</h></idx>
+    <idx><h>two-point formula for slope</h></idx>
+<p>The slope of the line joining points <m>P_1(x_1,y_1)</m> and <m>P_2(x_2,y_2)</m> is
+	<md><mrow>\blert{m=\dfrac{y_2-y_1}{x_2-x_1}}~~~~~~\text{if}~~~~x_2 \not= x_1</mrow></md></p></assemblage>
+
+<p>We don't need a graph in order to use this formula, just the coordinates of two points on the line.</p>
+
+<example xml:id="Example-3-5-6"><statement><p>Compute the slope of the line joining the points <m>(6,-2)</m> and <m>(3,-1)</m>.</p></statement>
+
+<solution><p>It doesn't matter which point is <m>P_1</m> and which is <m>P_2</m>, so we choose <m>P_1</m> to be <m>(6,-2)</m>. Then <m>(x_1,y_1)=(6,-2)</m> and <m>(x_2,y_2)=(3,-1)</m>. Thus,
+		<md><mrow>m \amp = \dfrac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp = \dfrac{-1-2}{3-(-6)} = \dfrac{-3}{9} = \dfrac{-1}{3}</mrow></md></p>
+</solution></example>
+
+<warning><p>In <xref ref="Example-3-5-6" text="type-global"/>, we can reverse the order of both subtractions to find
+		<md><mrow>m \amp = \dfrac{y_1-y_2}{x_1-x_2}</mrow>
+            <mrow>\amp = \dfrac{2-(-1)}{-6-3)} = \dfrac{3}{-9} = \dfrac{-1}{3}</mrow></md>
+the same answer as before. The order of the points does not matter, but we must be consistent and use the same order when computing <m>\Delta y</m> and <m>\Delta x</m>.</p></warning>
+
+<exercise number="13"><statement><p>What is wrong with this formula for slope: <m>m = \dfrac{y_2-y_1}{x_1-x_2}</m>?</p></statement>
+        <answer><p>The <m>x</m>- and <m>y</m>-coordinates should be subtracted in the same order.</p></answer></exercise>
+
+<problem>
+<p><ol marker="A.">
+<li><p>For Problems 1-8, find the negative reciprocal.</p>
+
+<p><ol marker="1." cols="2">
+    <li><m>\dfrac{3}{4}</m></li>
+    <li><m>\dfrac{-1}{3}</m></li>
+    <li><m>-6</m></li>
+    <li><m>\dfrac{11}{8}</m></li>
+    <li><m>1\dfrac{2}{3}</m></li>
+    <li><m>-2\dfrac{1}{2}</m></li>
+    <li><m>-3.2</m></li>
+    <li><m>0.625</m></li>
+</ol></p></li>
+
+<li><p>For Problems 9-14, simplify.</p>
+
+<p><ol marker="1." cols="2">
+    <li><m>\dfrac{10-2}{2-9}</m></li>
+    <li><m>\dfrac{-5(-5)}{2-8}</m></li>
+    <li><m>\dfrac{3}{2}(4-7)+\dfrac{1}{2}</m></li>
+    <li><m>\dfrac{-6-(-12)}{3-(-5)}</m></li>
+    <li><m>-3(-4-2)-6</m></li>
+    <li><m>\dfrac{5}{3}(5-8)+3</m></li>
+</ol></p></li>
+</ol></p>
+
+<answer>
+<p><ol marker="A.">
+<li><p><ol marker="1." cols="4">
+    <li><m>\dfrac{-4}{3}</m></li>
+    <li><m>3</m></li>
+    <li><m>\dfrac{1}{6}</m></li>
+    <li><m>\dfrac{-8}{11}</m></li>
+    <li><m>\dfrac{-3}{5}</m></li>
+    <li><m>\dfrac{2}{5}</m></li>
+    <li><m>0.3125</m></li>
+    <li><m>-1.6</m></li>
+</ol></p></li>
+<li><p><ol marker="1." cols="4">
+    <li><m>\dfrac{-4}{3}</m></li>
+    <li><m>0</m></li>
+    <li><m>-4</m></li>
+    <li><m>\dfrac{3}{4}</m></li>
+    <li><m>12</m></li>
+    <li><m>-2</m></li>
+</ol></p></li>
+</ol></p>
+</answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Parallel and Perpendicular Lines</title>
+
+<p><ol marker="1.">
+    <li><p>Put each equation into slope-intercept form.</p>
+        <p><ol marker="a." cols="2">
+            <li><m>2x-3y+3</m></li>
+            <li><m>2x+3y-6 = 0</m></li>
+            <li><m>3x+2y-2</m></li>
+            <li><m>2x-3y-2 = 0</m></li>
+        </ol></p></li>
+    <li>Which of the four lines in question (1) are parallel?  How do you know?</li>
+    <li>Which of the four lines in question (1) are perpendicular?  How do you know?</li>
+</ol></p>
+</activity>
+
+<activity><title>Horizontal and Vertical Lines</title>
+
+<p><ol marker="1.">
+    <li><p>Sketch a graph of the vertical line passing through <m>(-4,-1)</m>, then find its equation.</p>
+        <p>What is the slope of the line?</p>
+        <sidebyside widths="46% 46%"><image source="photos/alt-grid5"><description>grid</description></image>
+        <image source="photos/alt-grid5"><description>grid</description></image></sidebyside></li>
+    <li><p>Sketch a graph of the horizontal line passing through <m>(-4,-1)</m>, then find its equation.</p>
+        <p>What is the slope of the line?</p></li>
+</ol></p>
+</activity>
+
+<activity><title>Slope</title>
+
+<p><ol marker="1.">
+<li><p>Compute the slope of the line segment joining <m>A</m> and <m>C</m> in two ways:</p>
+    <!--<image source="photos/act-3-5-2.png"><description>line segment</description></image>-->
+    <image width="60%" xml:id="act-3-5-3-1"><description>line segment on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \coordinate(P) at (1,6);
+        \coordinate (Q) at (7,2);
+        \coordinate(R) at (1,2);
+        \draw[blue!80!black,very thick] (P)--(Q);
+        \filldraw[blue!80!black] (P) circle (2.5mm) node[above, xshift=2, yshift=4, text=black, fill=white, inner sep=1] {$A$};
+        \filldraw[magenta!80!black] (R) circle (2.5mm) node[below right, xshift=2, yshift=-2, text=black, fill=white, inner sep=1] {$B$};
+        \filldraw[blue!80!black] (Q) circle (2.5mm) node[below right, xshift=2, yshift=-2, text=black, fill=white, inner sep=1] {$C$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+<p><ol marker="a.">
+    <li><p>Using the graph.</p>
+        <p>Draw the line through <m>A</m> and <m>C</m>. Use point <m>B</m> to find <m>\Delta y</m> and <m>\Delta x</m>.</p>
+        <p><m>\Delta y = <fillin characters="6"/>,~~~~ \Delta x = <fillin characters="6"/></m></p>
+        <p><m>m = \dfrac{\Delta y}{\Delta x} = </m></p></li>
+    <li><p>Using coordinates.<ul>
+        <li><p>Step 1 Write down the coordinates of <m>A~ <fillin characters="6"/></m></p>
+            <p><m>\hphantom{000000}</m> Write down the coordinates of <m>B~ <fillin characters="6"/></m></p></li>
+        <li><p>Step 2 Compute <m>\Delta y</m> and <m>\Delta x</m>.
+            <md><mrow>\Delta x~ =~ \text{final} - \text{initial}~ =~ <fillin characters="6"/></mrow>
+                <mrow>\Delta y~ = ~\text{final} - \text{initial}~ = ~<fillin characters="6"/></mrow></md></p></li>
+        <li><p>Step 3 Compute the slope: <m>~~m = \dfrac{\Delta y}{\Delta x} = </m></p></li>
+        </ul></p></li>
+    <li><p>Do you get the same answers for parts (a) and (b)? You should!</p></li>
+</ol></p></li>
+
+<li><p>Follow the steps to compute the slope of the line segment joining <m>H</m> and <m>K</m>.</p>
+    <!--<image source="photos/act-3-5-3.png"><description>line segment</description></image>-->
+    <image width="60%" xml:id="act-3-5-3-2"><description>line segment on grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \coordinate(P) at (-9,3);
+        \coordinate (Q) at (-3,-5);
+        \coordinate(R) at (-9,-5);
+        \draw[blue!80!black,very thick] (P)--(Q);
+        \filldraw[blue!80!black] (P) circle (2.5mm) node[above, xshift=2, yshift=4, text=black, fill=white, inner sep=1] {$H$};
+        \filldraw[magenta!80!black] (R) circle (2.5mm) node[below right, xshift=2, yshift=-2, text=black, fill=white, inner sep=1] {$J$};
+        \filldraw[blue!80!black] (Q) circle (2.5mm) node[below right, xshift=2, yshift=-4, text=black, fill=white, inner sep=1] {$K$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+<p><ol marker="a.">
+    <li><p>Step 1 Let <m>H</m> be the first point and <m>K</m> the second point. Write down their coordinates.
+        <md><mrow>H(x_1,y_1) = </mrow>
+            <mrow>K(x_2,y_2) = </mrow></md></p></li>
+    <li><p>Step 2 Fill in the blanks:
+        <md><mrow>y_2 = <fillin characters="6"/>,~~y_1 = <fillin characters="6"/></mrow>
+            <mrow>x_2 = <fillin characters="6"/>,~~x_1 = <fillin characters="6"/></mrow></md></p></li>
+    <li><p>Step 3 Compute <m>\Delta y</m> and <m>\Delta x</m>.
+            <md><mrow>\Delta y~ =~ y_x-y_1~ =~ <fillin characters="6"/></mrow>
+                <mrow>\Delta x~ = ~x_2-x_1~ = ~<fillin characters="6"/></mrow></md></p></li>
+    <li><p>Step 4 Compute the slope: <m>~~m = \dfrac{y_2-y_1}{x_2-x_1} = </m></p></li>
+    <li><p>Illustrate <m>\Delta y</m> and <m>\Delta x</m> on the graph. Is your value for the slope reasonable?</p></li>
+</ol></p></li>
+
+<li><p>Use the formula <m>~~m = \dfrac{y_2-y_1}{x_2-x_1}</m> to compute the slope of the line joining the points <m>(-4,-7)</m> and  <m>(2,-3)</m>.</p></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Finding equations for parallel or perpendicular lines</li>
+    <li>Finding equations for horizontal or vertical lines</li>
+    <li>Using the slope formula</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>How can you decide if two lines are parallel, perpendicular, or neither?</li>
+    <li>How many points do you need to find the equation of a horizontal or a vertical line?</li>
+    <li>Explain the difference between the equation of a horizontal or vertical line and the slope of the line.</li> 
+    <li>Explain why the two-point formula for slope is the same as our old formula, <m>~~m = \dfrac{\Delta y}{\Delta x}.</m></li></ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<p><ol marker="1.">
+<li><p>Are the lines parallel, perpendicular, or neither?
+    <md><mrow>3x-4y=6~~~~~~~~\text{and}~~~~~~~~4x-3y=2</mrow></md></p></li>
+
+<li><p>Sketch a graph of each equation, label the coordinates of its intercept, and state the slope of the line.</p>
+    <p><ol marker="a." cols="2">
+    <li><p><m>y=-6</m></p>
+    <image source="photos/stangrid10"><description>grid</description></image></li>
+    <li><p><m>x=-8</m></p>
+    <image source="photos/stangrid10"><description>grid</description></image></li>
+</ol></p></li>
+
+<li><p>Find the slope of the line through <m>(-2,3)</m> and <m>(1,-5)</m>. Graph the line.</p>
+<p><m>m = </m></p>
+
+<sidebyside widths="45% 45%">
+    <image source="photos/stangrid10"><description>grid</description>
+    </image><image source="photos/stangrid10"><description>grid</description></image></sidebyside></li>
+
+<li><p>Find the slope of the line through <m>(5,-4)</m> and <m>(-2,-4)</m>. Graph the line.</p>
+<p><m>m = </m></p></li>
+</ol></p>
+    
+<p>Answers to Homework Preview</p>
+    <p><ol marker= "1.">
+    <li>Neither</li>
+    <li><p><ol marker="a." cols="2">
+        <li><m>(0,-6),~m = 0</m></li>
+        <li><m>(-2,0),~m~ </m> is undefined</li>
+    </ol></p></li>
+    <li><m>m=\dfrac{-8}{3}</m></li>
+    <li><m>~m~ </m> is undefined</li>
+</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-3-5.xml" />
+</section>	

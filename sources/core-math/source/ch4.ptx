@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chapter xml:id="ch4" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	  <title>Calculation</title>
+  
+
+  
+  <xi:include href="./sec-4-1.ptx" />
+  <xi:include href="./sec-4-2.ptx" />
+  <xi:include href="./sec-4-3.ptx" />
+  <xi:include href="./sec-4-4.ptx" />
+  <xi:include href="./sec-4-5.ptx" />
+<!-- 
+  <xi:include href="./sec_first-examples.ptx" />
+
+  <xi:include href="./ex_first.ptx"/> -->  
+</chapter>

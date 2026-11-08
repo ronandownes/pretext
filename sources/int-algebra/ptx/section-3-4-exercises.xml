@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-3-4-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 3.4</title>
+    
+<subexercises><title>Warm Up</title>
+
+<exercisegroup cols="2">
+<exercise number="1"><statement><p>Solve by factoring 
+    <me>2x^2+3x-20=0</me></p></statement>
+    <answer><p><m>-4, \dfrac{5}{2}</m></p></answer></exercise>
+
+<exercise number="2"><statement><p>Solve by extraction of roots
+    <me>5(2x+3)^2=80</me></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="3"><statement><p>Expand each square. <ol marker="a." cols="2">
+    <li><m>(x+5)^2 = </m></li>
+    <li><m>(x-6)^2 = </m></li>
+    <li><m>(x-12)^2 = </m></li>
+    <li><m>(x+15)^2 = </m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>x^2+10x+25</m></li>
+    <li><m>x^2-12x+36</m></li>
+    <li><m>x^2-24x+144</m></li>
+    <li><m>x^2+30x+225</m></li></ol></p>
+</answer></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercise number="4"><statement><p>Add a term to make a square of a binomial. <ol marker="a." cols="2">
+    <li><m>x^2-14x+<fillin characters="6"/></m></li>
+    <li><m>x^2+16x+<fillin characters="6"/></m></li>
+    <li><m>x^2+<fillin characters="6"/>+36</m></li>
+    <li><m>x^2-<fillin characters="6"/>+9</m></li></ol></p>
+</statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5 and 6, which of the expressions are squares of binomials?</p></introduction>
+
+<exercise number="5"><statement><p><ol marker="a.">
+    <li><m>x^2+4x+16</m></li>
+    <li><m>x^2-5x+\dfrac{25}{4}</m></li>
+    <li><m>x^2+16x+169</m></li></ol></p>
+</statement>
+    <answer><p>b and c</p></answer></exercise>
+
+<exercise number="6"><statement><p><ol marker="a.">
+    <li><m>x^2-6x+12</m></li>
+    <li><m>x^2+9x+81</m></li>
+    <li><m>x^2-\dfrac{3}{2}x+\dfrac{9}{4}</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 7<ndash/>10, solve by completing the square.</p></introduction>
+
+<exercise number="7"><statement><p><m>x^2+9x+20=0</m></p></statement>
+<answer><p><m>-4, -5</m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>x^2=3-3x</m></p></statement></exercise>
+
+<exercise number="9"><statement><p><m>x^2+5x=5</m></p></statement>
+<answer><p><m>-1 \pm \sqrt{\dfrac{5}{2}}</m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>3x^2+12x+2=0</m></p></statement></exercise>
+
+<exercise number="11"><statement><p><m>2x^2-4x-3=0</m></p></statement>
+    <answer><p><m>\dfrac{-5}{2} \pm \sqrt{\dfrac{45}{4}}</m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>3x^2+x=4</m></p></statement></exercise>      
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13<ndash/>16, choose the best method, then solve the equation</p></introduction>
+
+<exercise number="13"><statement><p><m>x^2-3x=40</m></p></statement>
+    <answer><p><m>-5,8</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>(x-3)^2=40</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>3x^2+5x=12</m></p></statement>
+    <answer><p><m>-3, \dfrac{4}{3}</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>3x^2+6x=15</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17<ndash/>20, <ol marker="a.">
+    <li>Use completing the square to find the <m>x</m>-intercepts of the graph.</li>
+    <li>Find the vertex of the graph</li></ol></p></introduction>
+
+<exercise number="17"><statement><p><m>y=4x^2-2x-3</m></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>(\dfrac{1}{4} \pm \sqrt{\dfrac{13}{15}}, 0)</m></li>
+        <li><m>(\dfrac{1}{4}, -3\dfrac{1}{4})</m></li></ol></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>y=2x^2-3x-5</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>y=5x^2+8x-4</m></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>(-2,0),~(\dfrac{2}{5},0)</m></li>
+        <li><m>(\dfrac{-4}{5}, -7\dfrac{1}{5})</m></li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>y=3x^2-x-4</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="21"><statement><p>The diagonal of a rectangle is 20 inches. The width of the rectangle is 4 inches shorter than its length.<ol marker="a.">  
+    <li>Write a quadratic equation about the length of the rectangle.</li>
+    <li>Solve your equation to find the dimensions of the rectangle.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>L^2+(L-4)^2=20^2</m></li>
+    <li>12 in by 16 in</li></ol></p>
+</answer></exercise>
+
+<exercise number="22"><statement><p>The city park used 136 meters of fence to enclose its rectangular rock garden.  The diagonal path across the middle of the garden is 52 meters long.  What are the dimensions of the garden?</p></statement>
+</exercise>
+
+<exercise number="23"><statement>
+    <sidebyside widths="60% 25%" margins="0% 5%" valigns="top top">
+        <p>The sail pictured is a right triangle of base and height <m>x</m>. It has a colored stripe along the hypotenuse and a white triangle of base and height <m>y</m> in the lower corner.</p>
+    <image source="images/fig-triangular-sail"><description>graph</description></image></sidebyside>
+<p><ol marker="a.">
+    <li>Write an expression for the area of the colored stripe.</li>
+    <li>Express the area of the stripe in factored form.</li>
+    <li>The sail is <m>7 \dfrac{1}{2}</m> feet high and the white triangle is <m>4 \dfrac{1}{2}</m> feet high. Use your answer to part (b) to calculate mentally the area of the stripe.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>A = \dfrac{1}{2}(x^2-y^2)</m></li>
+    <li><m>A = \dfrac{1}{2}(x-y)(x+y)</m></li>
+    <li>18 sq ft</li></ol></p>
+</answer></exercise>
+
+<exercise number="24"><statement>
+    <sidebyside widths="60% 20%" margins="0% 15%" valigns="top top">
+    <p>An hors d’oeuvres tray has radius <m>x</m>, and the dip container has radius <m>y</m>.</p>
+    <image source="images/fig-hors-doeuvres-tray"><description>graph</description></image></sidebyside>
+<p><ol marker="a.">
+    <li>Write an expression for the area for the chips (the shaded region).</li>
+    <li>Express the area in factored form.</li>
+    <li>The tray has radius <m>8 \dfrac{1}{2}</m> inches and the space for the dip has radius <m>2 \dfrac{1}{2}</m> inches. Use your answer to part (b) to calculate mentally the area for the chips. Express your answer as a multiple of <m>\pi</m>.</li></ol></p></statement></exercise>
+
+<exercise number="25"><statement>
+    <p><ol marker="a.">
+    <li><sidebyside widths="60% 20%" margins="0% 15%" valigns="top top">
+            <p>Write an expression for the area of the square.</p>
+        <image source="images/fig-square-side-x-plus-y"><description>graph</description></image></sidebyside></li>
+    <li>Express the area as a polynomial.</li>
+    <li>Divide the square into four pieces whose areas are given by the terms of your answer to part (b).</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>A = (x+y)^2</m></li>
+    <li><m>A = x^2+2xy+y^2</m></li>
+    <li><sidebyside width="40%"><image source="images/fig-square-side-x-plus-y-subdivided"><description>graph</description></image></sidebyside></li></ol></p></answer></exercise>
+
+<exercise number="26"><statement><p><ol marker="a.">
+    <li><sidebyside widths="60% 20%" margins="0% 15%" valigns="top top">
+            <p>Write an expression for the area of the shaded region.</p>
+            <image source="images/fig-square-removed-from-square"><description>graph</description></image>
+        </sidebyside></li>
+    <li>Express the area in factored form.</li>
+    <li>By making one cut in the shaded region, rearrange the pieces into a rectangle whose area is given by your answer to part (b).</li></ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 27<ndash/>30, solve by completing the square.  Your answers will involve <m>a,~b,~</m> or <m>c~</m> (or a combination of these).</p></introduction>
+
+<exercise number="27"><statement><p><m>x^2+2x+c=0</m></p></statement>
+    <answer><p><m>-1 \pm \sqrt{1-c}</m></p></answer></exercise>
+
+<exercise number="28"><statement><p><m>x^2+bx-4=0</m></p></statement></exercise>
+
+<exercise number="29"><statement><p><m>x^2+bx+c=0</m></p></statement>
+    <answer><p><m>\dfrac{b}{2} \pm \dfrac{b^2-4c}{4}</m></p></answer></exercise>
+
+<exercise number="30"><statement><p><m>ax^2-4x+9=0</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31<ndash/>36, solve the formula for the indicated variable.</p></introduction>
+
+<exercise number="31"><statement><p><m>V=\pi (r-3)^2h,~\text{for}~r</m></p></statement>
+    <answer><p><m>\pm \sqrt{\dfrac{V}{2w} - s^2}</m></p></answer></exercise>
+
+<exercise number="32"><statement><p><m>E=\dfrac{1}{2}mv^2+mgh,~\text{for}~v</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>V=2(s^2+t^2)w,~\text{for}~t</m></p></statement>
+    <answer><p><m>(-15,0), (15,0); (0,255)</m></p></answer></exercise>
+
+<exercise number="34"><statement><p><m>x^2y-y^2=0,~\text{for}~y</m></p></statement></exercise>
+
+<exercise number="35"><statement><p><m>(2y+3x)^2=9,~\text{for}~y</m></p></statement>
+    <answer><p><m>\dfrac{-3x \pm 3}{2}</m></p></answer></exercise>
+
+<exercise number="36"><statement><p><m>4x^2-9y^2=36,~\text{for}~y</m></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+</exercises>

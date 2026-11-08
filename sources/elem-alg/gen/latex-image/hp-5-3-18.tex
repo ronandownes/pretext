@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}
+\def\z{.2};
+\coordinate (A) at ({-16*\z},0);
+\coordinate (B) at (0,{sqrt(625-256)*\z});
+\node[below, yshift=-3] at ($ 0.5*(A) $) {$16$};
+\node[right, xshift=3] at ($  0.5*(B) $) {$x$};
+\node[above left] at ($  0.5*(A)+ 0.5*(B) $) {$25$};
+\draw[blue,thick] (0,0) rectangle ++({-2*\z},{2*\z});
+\draw[magenta!80!black,line width=1mm] (0,0)--(A)--(B)--(0,0);
+\end{tikzpicture}%
+}
+\end{document}

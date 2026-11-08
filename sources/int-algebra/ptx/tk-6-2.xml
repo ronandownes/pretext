@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <pretext><book> -->
+
+<subsection xml:id="tkRootsRadicals" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Roots and Radicals</title>
+                 
+<subsubsection xml:id="tkDefRoot"><title>Use the definition of root</title>
+
+<p>Because <m>~(\sqrt{a})(\sqrt{a})=a,~</m> it is also true that <m>~\dfrac{a}{\sqrt{a}}= \sqrt{a}</m>.</p>
+
+<example><statement><p>Simplify. Do not use a calculator!
+<ol marker="a." cols="2">
+    <li><m>\left(\sqrt{7}\right)\left(\sqrt{7}\right)</m></li>
+    <li><m>\sqrt{n}(\sqrt{n})</m></li>
+</ol></p></statement>
+ 
+<solution><p>By the definition of square root, <m>\sqrt{a}</m> is a number whose square is <m>a</m>.
+<ol marker="a.">
+    <li><m>\left(\sqrt{7}\right)\left(\sqrt{7}\right)=7</m></li>
+    <li><m>\sqrt{n}(\sqrt{n})=n</m></li>
+</ol></p></solution></example>
+
+<example><statement><p>Simplify. Do not use a calculator!
+<ol marker="a." cols="2">
+    <li><m>\left(\sqrt[3]{5}\right)^3</m></li>
+    <li><m>\left(\sqrt[3]{4}\right)\left(\sqrt[3]{4}\right)\left(\sqrt[3]{4}\right)</m></li>
+</ol></p></statement>
+ 
+<solution><p>By the definition of cube root, <m>\sqrt[3]{a}</m> is a number whose cube is <m>a</m>.
+<ol marker="a.">
+    <li><m>\left(\sqrt[3]{5}\right)^3=5</m></li>
+    <li><m>\left(\sqrt[3]{4}\right)\left(\sqrt[3]{4}\right)\left(\sqrt[3]{4}\right)=4</m></li>
+</ol></p></solution></example>
+
+<example><statement><p>Simplify. Do not use a calculator!
+<ol marker="a." cols="2">
+    <li><m>\dfrac{3}{\sqrt{3}}</m></li>
+    <li><m>\dfrac{p}{\sqrt{p}}</m></li>
+</ol></p></statement>
+ 
+<solution><p><ol marker="a.">
+    <li><m>\dfrac{3}{\sqrt{3}} = \dfrac{\sqrt{3}\sqrt{3}}{\sqrt{3}} = \sqrt{3}</m></li>
+    <li><m>\dfrac{p}{\sqrt{p}} = \dfrac{\sqrt{p}\sqrt{p}}{\sqrt{p}} = \sqrt{p}</m></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Simplify. Do not use a calculator!
+<ol marker="a." cols="2">
+    <li><m>\sqrt{5}(\sqrt{5})</m></li>
+    <li><m>\sqrt{x}(\sqrt{x})</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>5</m></li>
+    <li><m>x</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Simplify. Do not use a calculator!
+<ol marker="a." cols="2">
+    <li><m>\left(\sqrt[3]{9}\right)\left(\sqrt[3]{9}\right)\left(\sqrt[3]{9}\right)</m></li>
+    <li><m>\left(\sqrt[3]{20}\right)^3</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>9</m></li>
+    <li><m>20</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Simplify. Do not use a calculator!
+<ol marker="a." cols="2">
+    <li><m>\dfrac{10}{\sqrt{10}}</m></li>
+    <li><m>\dfrac{H}{\sqrt{H}}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>\sqrt{10}</m></li>
+    <li><m>\sqrt{H}</m></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkRatNos"><title>Irrational numbers</title>
+
+<p>Rational numbers are the integers and common fractions; we can represent them precisely in decimal form. But the best we can do for an irrational number is to write an approximate decimal form by rounding.</p>   
+
+<example><statement><p>Identify each number as rational or irrational.
+<ol marker="a." cols="2">
+    <li><m>\sqrt{6}</m></li>
+    <li><m>\dfrac{-5}{3}</m></li>
+    <li><m>\sqrt{16}</m></li>
+    <li><m>\sqrt{\dfrac{5}{9}}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>Irrational:  <m>~\sqrt{6}~</m> is not the quotient of two integers.</li>
+    <li><p> Rational: <m>~\dfrac{-5}{3}~</m> is the quotient of two integers.</p></li>
+    <li>Rational:  <m>~\sqrt{16} = 4~</m> is an integer.</li>
+    <li><p> Irrational: <m>~\sqrt{\dfrac{5}{9}} = \dfrac{\sqrt{5}}{3}~</m>,  but <m>\sqrt{5}</m> is irrational.</p></li>
+</ol></p></solution></example>
+
+<example><statement><p>Give a decimal approximation rounded to thousandths.
+<ol marker="a." cols="3">
+    <li><m>5\sqrt{3}</m></li>
+    <li><m>\dfrac{-2}{3}\sqrt{21}</m></li>
+    <li><m>2+\sqrt[3]{5}</m></li>
+</ol></p></statement>
+
+<solution><p>Use a calculator to evaluate.
+<ol marker="a.">
+    <li>Enter <m>~5~ \boxed{\sqrt{}}~3</m>  <kbd>ENTER</kbd> and round to three decimal places: <m>~8.660 </m></li>
+    <li>Enter <kbd>(-)</kbd> <m>2</m> <m>\boxed{\sqrt{}}~</m> <m>21</m> <kbd name="right-paren"/> <kbd name="obelus"/> <m>3</m> <kbd>ENTER</kbd> and round to three decimal places: <m>~-3.055</m></li>
+    <li>Enter <m>2</m> <kbd name="plus"/> <kbd>MATH</kbd> <kbd>4</kbd> <m>5</m> <kbd>ENTER</kbd> and round to three decimal places: <m>~3.710</m></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Identify each number as rational or irrational.
+<ol marker="a." cols="2">
+    <li><m>\sqrt{250}</m></li>
+    <li><m>\dfrac{\sqrt{3}}{2}</m></li>
+    <li><m>\dfrac{\sqrt{81}}{4}</m></li>
+    <li><m>\sqrt[3]{16}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li>Irrational</li>
+    <li>Irrational</li>
+    <li>Rational</li>
+    <li>Irrational</li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Give a decimal approximation rounded to thousandths.
+<ol marker="a." cols="3">
+    <li><m>-6\sqrt[3]{5}</m></li>
+    <li><m>\dfrac{3}{5}\sqrt{76}</m></li>
+    <li><m>7-\sqrt{19}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><m>-10.260</m></li>
+    <li><m>5.231</m></li>
+    <li><m>2.641</m></li></ol></p>
+    </answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkMistakes"><title>Using exponents and roots</title>
+
+<p>Be careful to avoid tempting but false operations with exponents and roots.</p>
+
+<example><statement><p>Which equation is a correct application of the laws of exponents?
+<ol marker="a.">
+    <li><m>20(1+r)^4 = 20+20r^4~~~~~</m> or <m>~~~~~(ab^t)^3 = a^3b^{3t}</m></li>
+    <li><m>2^{t/5} = (2^{1/5})^t~~~~~</m> or <m>~~~~~6.8(10)^t = 68^t</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The first statement is not correct. There is no law that says <m>(a+b)^n</m> is equivalent to <m>a^n+b^n</m>, so <m>(1+r)^4</m> is not equivalent to <m>1^4+r^4</m> or <m>1+r^4</m>.</p>
+    <p> However, it is true that <m>(ab)^n = a^nb^n</m>, so in particular the second statement is true: 
+        <me>~~(ab^t)^3 = a^3(b^t)^3 = a^3b^{3t}</me></p></li> 
+    <li><p>The first statement is correct. If we start with <m>(2^{1/5})^t</m>, we can apply the third law, <m>(a^m)^n = a^{mn}</m>, to find 
+        <me>(2^{1/5})^t = 2^{(1/5)t} = 2^{t/5}</me>.</p>
+    <p> In the second statement, 6.8 is not raised to power <m>t</m>, so we cannot multiply 6.8 times 10.</p></li>
+</ol></p></solution></example>
+
+<p>Decide whether each equation is a correct application of the laws of exponents. Write a correct statement if possible.</p>
+
+<exercise><statement><p><m>P(1-r)^6 \rightarrow P-Pr^6</m></p></statement>
+    <answer><p>Not correct</p></answer></exercise>
+
+<exercise><statement><p><m>25(2^t) \cdot 4(2^t) \rightarrow 100 \cdot 2^{t^2}</m></p></statement>
+    <answer><p>Not correct. <m>~25(2^t) \cdot 4(2^t) = 100(2^{2t})</m></p></answer></exercise>
+
+<exercise><statement><p><m>a\left(b^{1/8}\right)^{2t} \rightarrow ab^{t/4}</m></p></statement>
+    <answer><p>Correct</p></answer></exercise>
+
+<exercise><statement><p><m>N(0.94)^{1/8.3} \rightarrow \dfrac{N}{(0.94)^{8.3}}</m></p></statement>
+    <answer><p>Not correct, but <m>~N(0.94)^{-8.3} = \dfrac{N}{(0.94)^{8.3}}</m></p></answer></exercise>
+
+<assemblage><title>Properties of Radicals</title>
+    <p>Product Rule
+   <me>\sqrt[n]{ab}=\sqrt[n]{a}~\sqrt[n]{b}~~~~~~~\text{for } a, b \ge 0</me></p> 
+
+<p>Quotient Rule
+<me>\sqrt[n]{\frac{a}{b}}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}~~~~~~~\text{for } a\ge 0,~~ b \gt 0</me></p>
+
+<p>In general, it is <em>not</em> true that <m>\sqrt[n]{a+b}</m> is equivalent to <m>\sqrt[n]{a}+\sqrt[n]{b}</m>, or that <m>\sqrt[n]{a-b}</m> is equivalent to <m>\sqrt[n]{a}-\sqrt[n]{b}</m>.</p></assemblage>
+
+<example><statement><p>Which equation is a correct application of the properties of radicals?
+<ol marker="a.">
+    <li><m>\sqrt{x^4+81} = x^2 + 9~~~~~</m> or <m>~~~~~\sqrt[3]{P^2}~\sqrt[3]{1+r} = \sqrt[3]{P^2(1+r)}</m></li>
+    <li><m>\dfrac{\sqrt{x+y}}{\sqrt{x}} = \sqrt{y}~~~~~</m> or <m>~~~~~\dfrac{x+y}{\sqrt{x+y}} = \sqrt{x+y}</m></li>
+</ol></p></statement>
+ 
+<solution><p>
+<ol marker="a.">
+    <li><p>The first statement is incorrect. There is no property that says <m>~\sqrt[n]{a+b} = \sqrt[n]{a} + \sqrt[n]{b}</m>.</p> 
+    <p>However, it is true that <m>~\sqrt[n]{a}~ \sqrt[n]{b} = \sqrt[n]{ab}~</m>, so the second statement is correct.</p></li> 
+    <li><p>The first statement is incorrect, because <m>\dfrac{x+y}{x}</m> is not equivalent to <m>y</m>.</p>
+    <p> The second statement is correct, because <m>~\sqrt{x+y}~\sqrt{x+y} = x+y</m>.</p></li>
+</ol></p></solution></example>
+
+<p>Decide whether each equation is a correct application of the properties of radicals. Write a correct statement if possible.</p>
+
+<exercise><statement><p><m>\sqrt[4]{a^2-a^4} \rightarrow \sqrt[4]{a^2} - a</m></p></statement>
+    <answer><p>Not correct</p></answer></exercise>
+
+<exercise><statement><p><m>\sqrt{b^4-16} \rightarrow \sqrt{b^2-4} \sqrt{b^2+4}</m></p></statement>
+    <answer><p>Correct</p></answer></exercise>
+
+<exercise><statement><p><m>\sqrt[3]{t^4} + \sqrt[3]{t^4} \rightarrow \sqrt[3]{2t^4}</m></p></statement>
+    <answer><p>Not correct.<m>~\sqrt[3]{t^4} + \sqrt[3]{t^4} = 2\sqrt[3]{t^4}</m></p></answer></exercise>
+
+<exercise><statement><p><m>\dfrac{\sqrt{2p}}{\sqrt{4p+8p^2}} \rightarrow \dfrac{1}{\sqrt{2+4p}}</m></p></statement>
+    <answer><p>Correct</p></answer></exercise>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Intercepts-Factors"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Intercepts, Solutions, and Factors</title><idx>factor</idx>
+
+<introduction><p>In the last section, we used extraction of roots to solve quadratic equations of the form 
+    <me>~a(x-p)^2=q~</me> 
+But this technique will not work on quadratic equations that also include a linear term, <m>bx</m>. Recall that the most general type of quadratic equation looks like
+    <me>ax^2+bx+c = 0</me>
+ Here is an example.</p> 
+
+ <p>Suppose a baseball player pops up, that is, she hits the baseball straight up into the air. The height, <m>h</m>, of the baseball after <m>t</m> seconds is given by a formula from physics. This formula takes into account the initial speed of the ball (64 feet per second) and its height when it was hit (4 feet).  
+    <me>h=-16t^2+64t+4</me>
+The graph of this equation is shown below.</p>
+
+    <image width="40%" xml:id="fig-baseball-popup"><description>baseball popup</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.6, yscale=.5]
+        \draw[cyan] (0,0) grid (10,16);
+        \draw[black,thick,->,>=stealth'] (0,0)--++(10.6,0) node[right]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,16.6) node[above]{$h$};
+        \foreach \x [evaluate=\x as \xi using int( 1/2* \x )]  in {2,4,...,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 5* \x )] in {2,4,...,16} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \draw[samples=65,domain={0:{4+sqrt(17)}},smooth,variable=\x,red,very thick] plot ({\x},{(-16*(\x/2)^2 +64*\x/2 +4)/5});
+        \draw[green!60!black,ultra thick] (0,52/5)--(10,52/5);
+        \filldraw[red] (2,52/5) ellipse (.2 and .24);
+        \filldraw[red] (6,52/5) ellipse (.2 and .24);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<p>We would like to know when the baseball was exactly 52 feet high. To find out, we must solve the equation
+    <me>-16t^2+64t+4 = 52</me>
+where we have substituted 52 for the height, <m>h</m>. We can use the graph to solve this equation, by finding points with <m>h</m>-coordinate 52. You can see that there are two such points, with <m>t</m>-coordinates 1 and 3, so the baseball is 52 feet high at 1 second, and again on the way down at 3 seconds.</p>
+
+<p>Can we solve the equation algebraically? Not with the techniques we know, because there are two terms containing the variable <m>t</m>, and they cannot be combined. We will need a new method. To find this method, we are going to study the connection between:</p> 
+        <aside><p><m>\alert{\text{[TK]}}~~</m>If you would like to review multiplying binomials using the "FOIL" method, see <xref ref="tkMultBin" text="custom"> Section 3.2.1 </xref> of the Toolkit.</p></aside>
+<p><ol marker="1.">
+    <li>  the <term>factors</term> of  <m>ax^2+bx+c</m>,</li>
+    <li>  the <term>solutions</term> of the quadratic equation <m>~ax^2+bx+c=0,~</m> and</li> 
+    <li>  the <m>x</m>-intercepts <idx><em>x</em>-intercept</idx> of the graph of <m>y=~ax^2+bx+c=0</m>.</li></ol></p>
+
+</introduction> 
+
+<subsection><title>Zero-Factor Principle</title><idx>zero-factor principle</idx>
+
+<p>The method we will learn now is not like extraction of roots, or like solving linear equations, where we "undid" in reverse order each operation performed on the variable, like peeling an onion. This new method will seem less direct. It relies on applying a property of our number system.</p>
+
+ <p>Can you multiply two numbers together and obtain a product of zero? Only if one of the two numbers happens to be zero. (Try it yourself.)</p>  
+
+<assemblage xml:id="def-ZFP"><title>Zero-Factor Principle</title><idx>zero-factor principle</idx>
+<p>The product of two factors equals zero if and only if one or both of the factors equals zero.  In symbols,
+    <me>ab = 0~~~\text{if and only if}~~~a=0~~~\text{or}~~~b=0~~~\text{(or both)}</me>
+</p></assemblage>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+    <webwork><pg-code>       
+            $opposites = PopUp(
+              ["?","undefined", "opposites", "reciprocals", "numerator", "zero"],
+              2, 
+            );
+            $numerator = PopUp(
+              ["?","undefined", "opposites", "reciprocals", "numerator", "zero"],
+              4, 
+            );
+            $zero = PopUp(
+              ["?","undefined", "opposites", "reciprocals", "numerator", "zero"],
+              5, 
+            );
+            $undefined = PopUp(
+              ["?","undefined", "opposites", "reciprocals", "numerator", "zero"],
+              1, 
+            );
+        </pg-code>
+    <statement><p>Fill in the blanks.<ol marker="a.">
+            <li><p>If the sum of two numbers is zero, the numbers must be <var name="$opposites" form="popup"/>.</p></li>
+            <li><p>If a fraction equals zero, the <var name="$numerator" form="popup"/> must be zero.</p></li>
+            <li><p>If the product of two numbers is zero, one of the numbers must be <var name="$zero" form="popup"/>.
+                </p></li>
+            <li><p>If the divisor in a quotient is zero, the quotient is <var name="$undefined" form="popup"/>.</p></li>
+        </ol></p></statement>
+    <solution><p><ol marker="a.">
+                <li><p>opposites</p></li>
+                <li><p>numerator</p></li>
+                <li><p>zero</p></li>
+                <li><p>undefined</p></li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Fill in the blanks.</p>
+    <p><ol marker="a.">
+            <li><p>If the sum of two numbers is zero, the numbers must be <fillin characters="10"/>.</p></li>
+            <li><p>If a fraction equals zero, the <fillin characters="10"/> must be zero.</p></li>
+            <li><p>If the product of two numbers is zero, one of the numbers must be <fillin characters="10"/>.</p></li>
+            <li><p>If the divisor in a quotient is zero, the quotient is <fillin characters="10"/>.</p></li>
+        </ol></p></statement></exercise>
+
+<p>Here is the simplest possible application of the Zero-Factor Principle (ZFP): For what value(s) of <m>x</m> is the equation <m>~3x=0~</m> true? You could divide both sides by 3, but you can also see that the product <m>3x</m> can equal zero only if one of its factors is zero, so <m>x</m> must be zero!</p>
+
+<p>The ZFP is true even if the numbers <m>a</m> and <m>b</m> are represented by algebraic expressions, such as <m>x-6</m> or <m>x+2</m>. For example, if 
+    <me>(x-6)(x+2)=0</me>
+then it must be true that either <m>~x-6=0~</m> or <m>~x+2=0.~</m> This is how we can use the ZFP to solve quadratic equations.</p>
+
+<example xml:id="Example-solve-quadratic-by-factoring"><statement><p>Solve the equation <m>x^2-4x-12=0</m></p></statement>
+
+<solution><p>We can factor the expression <m>x^2-4x-12</m>, and write the equation as  
+    <me>(x-6)(x+2) = 0</me>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review factoring quadratic trinaomials, see <xref ref="tkFacQuadTri" text="custom"> Section 3.2.2 </xref> of the Toolkit.</p></aside>
+Now it is in the form <m>~ab=0~</m>, with <m>~a=x-6~</m> and <m>~b=x+2~</m>, so the ZFP tells us that either <m>~x-6=0~</m> or <m>~x+2=0~</m>. We solve each of these equations.
+    <md><mrow>x-6 = 0~~~~\amp \text{or}~~~~x+2 = 0 \amp \amp \blert{\text{Solve each equation.}}</mrow>
+        <mrow>x=6~~~~ \amp \text{or}~~~~x=-2</mrow></md>
+Once again we see that a quadratic equation has two solutions. You can check that both of these values satisfy the original equation.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            $r1 = Compute("3");
+            $r2 = Compute("8");
+            $answer = List("$r1, $r2");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+       </pg-code>
+    <statement><p>Solve the equation <m>\quad x^2-11x+24=0</m></p>
+            <p><m>x=</m><var name="$answer" width="6" evaluator="$my_evaluator"/> Use a comma to separate different solutions.</p>
+    </statement>
+    <solution><p><m>x=3</m> or <m>x=8</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Solve the equation <m>\quad x^2-11x+24=0</m></p></statement>
+    <answer><p><m>x=3</m> or <m>x=8</m></p></answer></exercise>
+</subsection>
+
+<subsection xml:id="ParabolaX-Ints"><title>X-Intercepts of a Parabola</title>
+
+<p>Recall that the <m>x</m>-intercept <idx><em>x</em>-intercept</idx> of a line is the point where <m>y=0</m>, or where the line crosses the <m>x</m>-axis. We find the <m>x</m>-intercept by setting <m>y=0</m> in the equation of the line, and solving for <m>x</m>. We can find the <m>x</m>-intercepts of a parabola the same way.</p>
+
+<example><statement><p>Find the <m>x</m>-intercepts of the graph of <m>~y=x^2-4x-12</m></p></statement>
+    
+<solution><p>To find the <m>x</m>-intercepts of the graph, we set <m>y=\alert{0}</m> and solve the equation 
+    <me>\alert{0}=x^2-4x-12</me>
+But this is the same equation we solved in the last <xref ref="Example-solve-quadratic-by-factoring" text="custom">Example</xref>, because 
+    <me>x^2-4x-12 = (x-6)(x+2)</me>
+The solutions of that equation were <m>6</m> and <m>-2</m>, so the <m>x</m>-intercepts of the graph are <m>(6,0)</m> and <m>(-2,0)</m>. You can see this by graphing the equation on your calculator, as shown in the figure.</p>
+        <image width="40%" source="images/fig-GC-parab-with-x-intercepts"><description>parabola with x-intercepts </description></image>
+</solution></example>
+
+<p>We can state a general result: The <m>x</m>-intercepts of the graph of 
+    <me>y=ax^2+bx+c</me>
+are the solutions of the equation
+    <me>0=ax^2+bx+c</me>
+So we can always solve a quadratic equation to find the <m>x</m>-intercepts of a parabola (if there are any).</p>
+
+<p>And we can use this relationship the other way round, too: If we know the <m>x</m>-intercepts of the graph of <m>~y=ax^2+bx+c,~</m> we also know the solutions of the equation <m>ax^2+bx+c=0</m>.</p>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            $r1 = Compute("3");
+            $r2 = Compute("-3/2");
+            $answer = Compute("3, -3/2");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+       </pg-code>
+    <statement><p>Use technology to graph the equation
+                <md><mrow> y=(x-3)(2x+3) </mrow></md>
+            and find the <m>x</m>-intercepts of the graph. Use your answers to solve the equation
+                <md><mrow> (x-3)(2x+3)=0 </mrow></md>
+            Check your solutions by applying the ZFP.</p>
+            <p><m>x=</m><var name="$answer" width="6" evaluator="$my_evaluator"/> Use a comma to separate different solutions.</p>
+        </statement>
+        <solution><p><m>x=3</m> or <m>x=\dfrac{-3}{2} </m></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Use technology to graph the equation
+                <md><mrow> y=(x-3)(2x+3) </mrow></md>
+            and find the <m>x</m>-intercepts of the graph. Use your answers to solve the equation
+                <md><mrow> (x-3)(2x+3)=0 </mrow></md>
+            Check your solutions by applying the ZFP.</p></statement>
+    <answer><p><m>x=3</m> or <m>x=\dfrac{-3}{2} </m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Solving Quadratic Equations by Factoring</title><idx><h>factoring</h><h>solve a quadratic equation by</h></idx><idx><h>quadratic equation</h><h>solve by factoring</h></idx>
+
+<p>Now we'll consider some other quadratic equations. Before we apply the ZFP, we must write the equation so that one side is zero.</p> 
+
+<example><statement><p>Solve <m>~3x(x+1)=2x+2</m></p></statement>
+    
+<solution><p>First, we write the equation in standard form. 
+    <md><mrow>3x(x+1) \amp = 2x+2  \amp \amp \blert{\text{Apply the distributive law to the left side.}}</mrow>
+        <mrow>3x^2+3x \amp = 2x+2  \amp \amp \blert{\text{Subtract}~2x+2~\text{from both sides.}}</mrow>
+        <mrow>3x^2+x-2 \amp = 0</mrow></md>
+Now we factor the left side to obtain
+    <md><mrow>(3x-2)(x+1) \amp = 0  \amp \amp \blert{\text{Apply the zero-factor principle.}}</mrow>
+        <mrow>3x-2=0~~\text{or} ~~x+1 \amp =0  \amp \amp \blert{\text{Solve each equation.}}</mrow>
+        <mrow>x=\dfrac{2}{3}~~\text{or} ~~x \amp = -1</mrow></md>
+The solutions are <m>\dfrac{2}{3}</m> and <m>-1</m>.</p></solution></example>
+
+<warning><p>When we apply the zero-factor principle, one side of the equation must be zero. For example, to solve the equation
+    <me>(x-2)(x-4) = 15</me>
+it is <em>incorrect</em> to set each factor equal to 15! (There are many ways that the product of two numbers can equal 15;  it is not necessary that one of the numbers be 15.)</p>
+<p>We must first simplify the left side and write the equation in standard form. (The correct solutions are <m>7</m> and <m>-1</m>; check that you can find these solutions.)</p></warning>
+
+<p>We summarize the factoring method for solving quadratic equations as follows.</p>
+
+<assemblage xml:id="Box-solve-by-factoring"><title>To Solve a Quadratic Equation by Factoring</title><idx><h>factoring</h><h>solve a quadratic equation by</h></idx><idx><h>quadratic equation</h><h>solve by factoring</h></idx>
+<p> <ol marker="1.">
+    <li>Write the equation in standard form.</li>
+    <li>Factor the left side of the equation.</li>
+    <li>Apply the zero-factor principle:  Set each factor equal to zero.</li>
+    <li>Solve each equation. There are two solutions (which may be equal).</li>
+</ol></p></assemblage>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            $r1 = Compute("-3");
+            $r2 = Compute("6");
+            $answer = List("$r1, $r2");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+       </pg-code>
+    <statement><p>Solve by factoring:
+                <m>\quad (t-3)^2=3 (9-t) </m></p>
+            <p><m>t=</m><var name="$answer" width="6" evaluator="$my_evaluator"/> Use a comma to separate different solutions.</p>
+    </statement>
+    <solution>
+            <p><m>t=-3</m> or <m>t=6 </m></p></solution>
+        <hint><p>Begin by multiplying out each side of the equation.</p></hint>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Solve by factoring:
+                <m>\quad (t-3)^2=3 (9-t) </m></p>
+                <p>Hint: Begin by multiplying out each side of the equation.</p></statement>
+    <answer><p><m>t=-3</m> or <m>t=6 </m></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+    <webwork><pg-code>       
+            $extract = PopUp(
+              ["?","extracting roots", "factoring"],
+              1, 
+            );
+            $factor = PopUp(
+              ["?","extracting roots", "factoring"],
+              2, 
+            );
+        </pg-code>
+    <statement><p>Which technique, extracting roots or factoring, is better-suited to each equation?<ol marker="a.">
+            <li><p><m>4x^2-12x=0</m> <var name="$factor" form="popup"/></p></li>
+            <li><p><m>6(4x-1)^2=18</m> <var name="$extract" form="popup"/></p></li>
+            <li><p><m>(x+4)^2=16x </m> <var name="$factor" form="popup"/></p></li>
+            <li><p><m>9x^2-42=0</m> <var name="$extract" form="popup"/></p></li>
+        </ol></p></statement>
+    <solution><p>Extracting roots applies to (b) and (d).</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Which technique, extracting roots or factoring, is better-suited to each equation?</p>
+    <p><ol marker="a." cols="2">
+            <li><p><m>4x^2-12x=0</m></p></li>
+            <li><p><m>6(4x-1)^2=18</m> </p></li>
+            <li><p><m>(x+4)^2=16x </m> </p></li>
+            <li><p><m>9x^2-42=0</m> </p></li>
+    </ol></p></statement></exercise>
+
+<p>Now we can use factoring to solve the opening problem in this section.</p>
+
+<example xml:id="Example-baseball-height"><statement><p>The height, <m>h</m>, of a baseball <m>t</m> seconds after being hit is given by
+    <me>h=-16t^2+64t+4</me>
+ When will the baseball reach a height of 64 feet?</p></statement>
+    
+<solution><p>We substitute <m>\alert{64}</m> for <m>h</m> in the formula, and solve for <m>t</m>. 
+    <md><mrow>-16t^2+64t+4 \amp = \alert{64} \amp \amp  \blert{\text{Write the equation in standard form.}}</mrow>
+        <mrow>16t^2-64t+60 \amp = 0  \amp \amp \blert{\text{Factor 4 from the left side.}}</mrow>
+        <mrow>4(4t^2-16t+15) \amp = 0  \amp \amp \blert{\text{Factor the quadratic expression.}}</mrow>
+        <mrow>4(2t-3)(2t-50) \amp = 0  \amp \amp \blert{\text{Set each variable factor equal to zero.}}</mrow>
+        <mrow>2t-3=0~~\text{or} ~~2t-5 \amp =0  \amp \amp \blert{\text{Solve each equation.}}</mrow>
+        <mrow>t=\dfrac{3}{2}~~\text{or} ~~t \amp = \dfrac{5}{2}</mrow></md>
+There are two solutions.  At <m>t=\dfrac{3}{2}</m> seconds, the ball reaches a height of 64 feet on the way up, and at <m>t=\dfrac{5}{2}</m> seconds, the ball is 64 feet high on its way down.</p></solution>
+</example>
+
+<warning><p>In the <xref ref="Example-baseball-height" text="custom">Example</xref> above, the factor of 4 does not affect the solutions of the equation at all. You can understand why this is true by looking at some graphs. Use technology to graph the equation
+    <me>y_1=x^2-4x+3</me>
+in the window
+   <md><mrow>\text{Xmin}=-2~~~~\text{Ymin}=-5</mrow>
+        <mrow>\text{Xmax}=8~~~~\text{Ymax}=10</mrow></md>
+Notice that when <m>y=0</m>, <m>x=1</m> or <m>x=3</m>. These two points are the <m>x</m>-intercepts of the graph. Now on the same window graph
+    <me>y_2=4(x^2-4x+3)</me>
+as shown below.</p>
+    <image width="35%" source="images/fig-GC-scaled-parabola"><description>graph </description></image>
+<p>This graph has the same <m>x</m>-values when <m>y=0</m>. The factor of 4 makes the graph "skinnier," but does not change the location of the <m>x</m>-intercepts.</p></warning>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            $x0 = Compute("0");
+            $x1 = Compute("4");
+            $answer = List("$x0,$x1");
+            $my_evaluator = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $answer1 = List("$x0,$x1");
+            $my_evaluator1 = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $answer2 = List("$x0,$x1");
+            $my_evaluator2 = $answer -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+        </pg-code> 
+    <statement><p><ol marker="a.">
+        <li><p>Solve by factoring <m>4t-t^2=0</m>.</p>
+            <p><m>t=</m><var name="$answer" width="5" evaluator="$my_evaluator"/> Use a comma to separate solutions.</p></li>
+        <li><p>Solve by factoring <m>20t-5t^2=0</m>.</p>
+            <p><m>t=</m><var name="$answer1" width="5" evaluator="$my_evaluator1"/> Use a comma to separate solutions.</p></li>
+        <li><p>Graph <m>y=4t-t^2</m> and <m>y=20t-5t^2</m> together in the window
+                    <md><mrow>\text{Xmin}\amp = -2\amp \text{Ymin}\amp = -20</mrow>
+                        <mrow>\text{Xmax}\amp = 6\amp \text{Ymax}\amp = 25</mrow></md>
+            and locate the horizontal intercepts on each graph.</p>
+            <p><m>t=</m><var name="$answer2" width="5" evaluator="$my_evaluator2"/> Use a comma to separate values.
+                </p></li></ol></p>
+    </statement>
+    <solution><p><m>t=0</m> and <m>t=4</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p><ol marker="a.">
+        <li><p>Solve by factoring <m>~4t-t^2=0</m>.</p></li>
+        <li><p>Solve by factoring <m>~20t-5t^2=0</m>.</p></li>
+        <li><p>Graph <m>~y=4t-t^2~</m> and <m>~y=20t-5t^2~</m> together in the window
+                    <md><mrow>\text{Xmin}\amp = -2\amp \text{Ymin}\amp = -20</mrow>
+                        <mrow>\text{Xmax}\amp = 6\amp \text{Ymax}\amp = 25</mrow></md>
+            and locate the horizontal intercepts on each graph.</p></li>
+   </ol></p></statement>
+<answer><p><m>t=0</m> and <m>t=4</m></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+    <webwork><pg-code>
+           component="webwork"  $ans1 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              2, 
+            );
+            $ans2 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              1, 
+            );
+            $ans3 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              4, 
+            );
+            $ans4 = PopUp(
+              ["?","i", "ii","iii","iv"],
+              3, 
+            );           
+        </pg-code>
+    <statement><p>Match each equation with its solutions.
+        <ol marker="a.">
+            <li><p><m>3t(t-2)=0 </m> <var name="$ans1" form="popup"/></p></li>
+            <li><p><m>t^2-t=2</m> <var name="$ans2" form="popup"/></p></li>
+            <li><p><m>3t^2=12</m> <var name="$ans3" form="popup"/></p></li>
+            <li><p><m>t(t-3)=2(t-3) </m> <var name="$ans4" form="popup"/></p></li></ol></p>
+        <p><ol marker="i.">
+            <li><p><m> -1,2</m></p></li>
+             <li><p><m>0,2</m></p></li>
+              <li><p><m> 2,3</m></p></li>
+              <li><p><m>-2,2</m></p></li></ol></p>
+        </statement>
+    <solution><p><ol marker="a.">
+                <li>ii</li>
+                <li>i</li>
+                <li>iv</li>
+                <li>iii</li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Match each equation with its solutions.</p>
+    <sidebyside widths="50% 50%"><p><ol marker="a.">
+            <li><p><m>3t(t-2)=0</m> </p></li>
+            <li><p><m>t^2-t=2</m></p></li>
+            <li><p><m>3t^2=12</m></p></li>
+            <li><p><m>t(t-3)=2(t-3)</m></p></li>
+        </ol></p>
+    <p><ol marker="i.">
+            <li><p><m> -1,2</m></p></li>
+            <li><p><m>0,2</m></p></li>
+            <li><p><m> 2,3</m></p></li>
+            <li><p><m>-2,2</m></p></li>
+    </ol></p></sidebyside></statement></exercise>
+</subsection>
+
+<subsection><title>An Application</title>
+<p>Here is another example of how quadratic equations arise in applications.</p>
+
+<example><statement><p>The size of a rectangular computer monitor screen is taken to be the length of its diagonal. If the length of the screen should be 3 inches greater than its width, what are the dimensions of a 15-inch monitor?</p></statement>
+
+<solution><p>We express the two dimensions of the screen in terms of a single variable:   
+        <md><mrow>\text{Width of screen:}~~w</mrow>
+            <mrow> \text{Length of screen:}~~w+3</mrow></md>
+We apply the Pythagorean theorem to write an equation:
+    <me>w^2+(w+3)^2=15^2</me>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review the Pythagorean theorem, see <xref ref="tkPythTh" text="custom"> Section 3.1.4 </xref> of the Toolkit.</p></aside>
+To solve this equation, we begin by simplifying the left side.
+        <md><mrow>w^2+w^2+6w+9 \amp = 225 \amp \amp \blert{\text{Write the equation in standard form.}}</mrow>
+            <mrow>2w^2+6w-216 \amp = 0  \amp \amp \blert{\text{Factor 2 from the left side.}}</mrow>
+            <mrow>2(w^2+3w-108) \amp = 0 \amp \amp \blert{\text{Factor the quadratic expression.}}</mrow>
+            <mrow>2(w-9)(w+12) \amp = 0  \amp \amp \blert{\text{Set each factor equal to zero.}}</mrow>
+            <mrow>w-9=0 ~~~ \text{or} ~~~ w+12 \amp = 0 \amp \amp \blert{\text{Solve each equation.}}</mrow>
+            <mrow> w = 9 ~~~ ~~~ \text{or} ~~~ w \amp = -12</mrow></md>
+    Because the width of the screen cannot be a negative number, the width is 9 inches, and the length is <m>~w+3=12~</m> inches.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+    <introduction>
+        <image width="25%" source="images/fig-gardenw"><description>garden</description></image>
+    </introduction>
+    <webwork><pg-code>
+            $a = Compute("20");
+        </pg-code> 
+    <statement><p>Francine is designing the layout for a botanical garden. The plan includes a square herb garden, with a path 5 feet wide through the center of the garden, as shown above. To include all the species of herbs, the planted area must be 300 square feet. Find the dimensions of the herb garden.</p>
+            <p>Answer: <var name="$a" width="2"/> feet by  <var name="$a" width="2"/> feet</p>
+    </statement>
+    <solution><p>20 feet by 20 feet</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><sidebyside widths="65% 25%"><p>Francine is designing the layout for a botanical garden. The plan includes a square herb garden, with a path 5 feet wide through the center of the garden, as shown at right. To include all the species of herbs, the planted area must be 300 square feet. Find the dimensions of the herb garden.</p>
+    <image source="images/fig-garden"><description>garden</description></image></sidebyside></statement>
+<answer><p>20 feet by 20 feet</p></answer></exercise>
+</subsection>
+
+<subsection><title>More About Solutions of Quadratic Equations</title><idx><h>quadratic equation</h><h>solutions of</h></idx>
+
+<p>As we have seen in ehe examples above, the solutions of the quadratic equation
+  <me>a(x - r_1)(x - r_2) = 0</me>
+are <m>r_1</m> and <m>r_2</m>. This is called the <term>factored form</term><idx>factored form</idx><idx><h>factored form</h><seealso>quadratic equation</seealso></idx> of the quadratic equation. Thus, if we know the two solutions of a quadratic equation, we can work backwards to reconstruct the equation.</p>
+
+<example><statement><p>Find a quadratic equation whose solutions are <m>\dfrac{1}{2}</m> and <m>-3</m>.</p></statement>
+    
+<solution><p>Each solution corresponds to a factor of the equation, so the equation must look like this:
+    <me>\left(x-\dfrac{1}{2}\right)(x-(-3)) = 0 </me>
+or, simplifying:
+    <me>\left(x-\dfrac{1}{2}\right)(x+3) = 0 </me>
+We multiply the factors together to obtain
+    <me>x^2+\dfrac{5}{2}x-\dfrac{3}{2} = 0</me>
+This is an equation that works, but we can make a "nicer" one if we clear the fractions. We can multiply both sides of the equation by 2. We know that multiplying by a constant does not change the solutions of the equation.
+    <md><mrow>\alert{2}\left(x^2+\dfrac{5}{2}x-\dfrac{3}{2}\right) \amp = \alert{2}(0)</mrow>
+        <mrow>2x^2+5x-3 \amp = 0</mrow></md>
+By factoring, we can check that this equation really does have the given solutions.
+    <me>0 = 2x^2+5x-3 = (2x-1)(x+3)</me>
+From here, you can see that the solutions are indeed <m>\dfrac{1}{2}</m> and <m>-3</m>.</p></solution>
+</example>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork>
+    <pg-code>
+        Context("LimitedPolynomial");
+        Context()->operators->undefine("/");
+        Parser::Number::NoDecimals(Context());
+        $f = Compute("3x^2+13x-10");
+        $my_evaluator = $f -> cmp(checker=>
+        sub {
+            my ( $correct, $student, $self ) = @_;
+            my $context = Context()->copy;
+            $context->flags->set(no_parameters=>0);
+            $context->variables->add('C0'=>'Parameter');
+            my $c0 = Formula($context,'C0');
+            $student = Formula($context,$student);
+            $correct = Formula($context,"3*x^2*$c0+13*x*$c0-10*$c0");
+            return $correct == $student;
+        });
+    </pg-code>
+    <statement><p>Find a quadratic equation with integer coefficients whose solutions are <m>\dfrac{2}{3}</m> and <m>-5</m>.</p>
+        <p><var name="$f" width="12" evaluator="$my_evaluator"/><m>=0 </m></p>
+    </statement>
+    <solution><p><m>3x^2+13x-10=0</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Find a quadratic equation with integer coefficients whose solutions are <m>\dfrac{2}{3}</m> and <m>-5</m>.</p>
+</statement>
+    <answer><p><m>3x^2+13x-10=0</m></p></answer></exercise>
+
+<p>A quadratic equation in one variable always has two solutions. In some cases, the solutions may be equal. For example, the equation
+        <me>x^2-2x+1=0</me>
+can be solved by factoring as follows:
+    <md><mrow>(x-1)(x-1) \amp = 0  \amp \amp \blert{\text{Apply the zero-factor principle.}}</mrow>
+        <mrow>x-1=0~~~~\text{or}~~~~x-1 \amp = 0</mrow></md>
+Both of these equations have solution <m>x=1</m>.  We say that 1 is a solution of <term>multiplicity two</term><idx>multiplicity</idx><idx><h>quadratic equation</h><h>multiplicity</h></idx>, meaning that it occurs twice as a solution of the quadratic equation.</p>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+    <webwork><pg-code>
+         $TF = PopUp(
+          ["?","True","False"],
+          2, 
+        );
+         $True = PopUp(
+          ["?","True","False"],
+          1, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>We find the <m>x</m>-intercepts of a graph by setting <m>x=0</m> . <var name="$TF" form="popup"/></p></li>
+        <li><p>If <m>z</m> is a solution of a quadratic equation, then <m>(x-z) </m> is a factor of the left side in standard form. <var name="$True" form="popup"/></p></li>
+        <li><p>We can factor a constant from both sides of a quadratic equation without changing its solutions. <var name="$True" form="popup"/></p></li>
+        <li><p>To solve a quadratic equation by factoring, we should factor each side of the equation. <var name="$TF" form="popup"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><p>False</p></li>
+            <li><p>True</p></li>
+            <li><p>True</p></li>
+            <li><p>False</p></li>
+        </ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>True or false.</p>
+<p><ol marker="a.">
+        <li><p>We find the <m>x</m>-intercepts of a graph by setting <m>x=0</m>. </p></li>
+        <li><p>If <m>z</m> is a solution of a quadratic equation, then <m>(x-z) </m> is a factor of the left side in standard form.</p></li>
+        <li><p>We can factor a constant from both sides of a quadratic equation without changing its solutions.</p></li>
+        <li><p>To solve a quadratic equation by factoring, we should factor each side of the equation. </p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<xi:include href="./section-3-2-exercises.xml" />                
+
+<!--
+<xi:include href="./summary-1-1.xml" /> 
+   -->
+
+</section>
+<!-- </book>  </mathbook> -->

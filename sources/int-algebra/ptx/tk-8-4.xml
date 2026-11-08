@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkMoreOperationsonAlgebraicFractions" xmlns:xi="http://www.w3.org/2001/XInclude"><title>More Operations on Fractions</title>
+
+<subsubsection xml:id="tkUseNegExp"><title>Use negative exponents</title>
+
+<p>Recall that a negative exponent indicates a reciprocal.</p>
+                   
+<example><statement><p>Write each expression without negative exponents.
+<ol marker="a." cols="2">
+	<li><m>\dfrac{1}{4}xy^{-2}</m></li>
+	<li><m>a^{-3}b^{-2}</m></li>
+	<li><m>\dfrac{2a^{-1}}{{bc}^{-2}}</m></li>
+	<li><m>\dfrac{x}{y^{-2}}+\dfrac{x^{-2}}{y}</m></li>
+</ol></p></statement>
+
+<solution><p>We use the fact that  <m>~a^{-n} = \dfrac{1}{a^n}</m>, and consequently that <m>~\dfrac{1}{a^{-n}} = a^n</m>.
+ <ol marker="a." cols="2">
+	<li><m>\dfrac{x}{4y^2}</m></li>
+	<li><m>\dfrac{1}{a^{3}b^{2}}</m></li>
+	<li><m>\dfrac{2c^2}{ab}</m></li>
+	<li><m>xy^{2}+\dfrac{1}{x^2y}</m></li>
+</ol></p></solution></example>
+
+<example><statement><p>Simplify where possible using the laws of exponents.
+<ol marker="a." cols="2">
+	<li><m>3x^{-3}x^5</m></li>
+	<li><m>\dfrac{4a^{-4}}{8a^{-8}}</m></li>
+	<li><m>(2bc^{-3})^{-2}</m></li>
+	<li><m>3x^{-4}-2x^{-3}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li>Add the exponents: <m>~3x^{-3}x^5 = 3x^2</m></li>
+	<li>Subtract the exponents: <m>~\dfrac{4a^{-4}}{8a^{-8}} = \dfrac{1}{2}a^{-4-(-8)} = \dfrac{a^4}{2}</m></li>
+	<li><p>Raise each factor to the power <m>-2</m>.  Multiply exponents:
+		<me>(2bc^{-3})^{-2} = 2^{-2}b^{-2}(c^{-3})^{-2} = \dfrac{c^6}{4b^2}</me></p></li>
+	<li><p>We cannot add or subtract powers with different exponents.
+		<me>3x^{-4}-2x^{-3} = \dfrac{3}{x^4} - \dfrac{2}{x^3}</me></p></li>
+</ol></p></solution></example>
+                  
+<exercise><statement><p>Simplify where possible.  Write your answer without negative exponents.  
+  	<me>(2x^3y^{-4})(\dfrac{3}{4}x^{-2}y^2)</me></p></statement>
+<answer><p><m>\dfrac{3x}{2y^2}</m></p></answer></exercise>
+
+<exercise><statement><p>Simplify where possible.  Write your answer without negative exponents.  
+	<me>~\dfrac{ab^{-3}}{(3ab)^{-2}}</me></p></statement>
+<answer><p><m>\dfrac{9a^3}{b}</m></p></answer></exercise>
+
+<exercise><statement><p>Simplify where possible.  Write your answer without negative exponents.  
+	<me>2x^{-2}-(2x)^{-2}</me></p></statement>
+<answer><p><m>\dfrac{8x^4-1}{4x^2}</m></p></answer></exercise>
+
+<exercise><statement><p>Simplify where possible.  Write your answer without negative exponents.  
+	<me>2x^{-2}(-2x)^{-2}</me></p></statement>
+<answer><p><m>\dfrac{1}{2}</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkImpFrac"><title>Improper fractions</title>
+
+<p>An improper fraction is one in which the numerator is larger than the denominator.</p>
+                  
+<example><statement><p>Write an improper fraction for the sum  <m>~2 + \dfrac{3}{8}</m></p></statement>
+
+<solution><p>We write the whole number with the same denominator as the fraction. Thus,
+	<me>\blert{2} + \dfrac{3}{8} = \blert{\dfrac{16}{8}}+\dfrac{3}{8} = \dfrac{16+3}{8} = \dfrac{19}{8}</me>
+</p></solution></example>
+
+<example><statement><p>Write an improper fraction for the difference  <m>~3 - \dfrac{1}{5}</m></p></statement>
+
+<solution><p>We write the whole number with the same denominator as the fraction. Thus,
+	<me>\blert{3} - \dfrac{1}{5} = \blert{\dfrac{15}{5}}-\dfrac{1}{5} = \dfrac{15-1}{5} = \dfrac{14}{5}</me>
+</p></solution></example>
+                  
+<exercise><statement><p>Write an improper fraction for each sum or difference.
+<ol marker="a." cols="2">
+	<li><m>1 + \dfrac{3}{4}</m></li>
+	<li><m>2 - \dfrac{3}{10}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+	<li><m>\dfrac{7}{4}</m></li>
+	<li><m>\dfrac{17}{10}</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Write an improper fraction for each sum or difference.
+<ol marker="a." cols="2">
+	<li><m>1 - \dfrac{23}{100}</m></li>
+	<li><m>3 + \dfrac{3}{25}</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+	<li><m>\dfrac{77}{100}</m></li>
+	<li><m>\dfrac{78}{25}</m></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkCheckDiv"><title>Check a division</title>
+
+<p>Remember that division is the inverse operation for multiplication.</p>
+                   
+<example><statement><p>Check that the division is correct:  <m>~536\div 15 = 35\dfrac{11}{15}</m></p></statement>
+
+<solution><p>The quotient tells us that 15 divides into 536 thirty-five times, with a remainder of 11. This in turn means that if we multiply 15 by 35, and then add 11, we should get 536 back again.
+	<me>15 \times 35 + 11 = 525 + 11 = 536</me>
+Note the pattern:  divisor <m>\times</m> quotient <m>+</m> remainder <m>=</m> starting number</p>
+</solution></example>
+
+<example><statement><p>Check that the division is correct: 
+	<me>(3n^2+n-6)\div (n+2) = 3n-5 + \dfrac{4}{n+2}</me></p></statement>
+
+<solution><p>The answer tells us that <m>n+2</m> divides into <m>3n^2+n-6</m> to give a quotient of <m>3n-5</m>,  with a remainder of 4.  If we multiply <m>n+2</m> by <m>3n-5</m>, and then add 4, we should get <m>3n^2+n-6</m> back again.
+	<me>(n+2)(3n-5)+4 = (3n^2+n-10)+4 = 3n^2-n-6</me></p>
+</solution></example>
+                 
+<exercise><statement><p>Check the division.  
+  	<me>25 \div 4 = 6\dfrac{1}{4}</me></p></statement>
+<answer><p><m>4(6)+1=25</m></p></answer></exercise>
+
+<exercise><statement><p>Check the division.  
+	<me>1331 \div 28 = 47\dfrac{15}{28}</me></p></statement>
+<answer><p><m>28(47)+15=1331</m></p></answer></exercise>
+
+<exercise><statement><p>Check the division. 
+	<me>(n^2+3n+6) \div (n+1) = n+2 +\dfrac{4}{n+1}</me></p></statement>
+<answer><p><m>(n+1)(n+2)+4 = n^2+3n+6</m></p></answer></exercise>
+
+<exercise><statement><p>Check the division.  
+	<me>(2x^3+7x^2+9x+40) \div (2x-3) = x^2+5x+12 + \dfrac{40}{2x-3}</me></p></statement>
+<answer><p><m>(2x-3)(x^2+5x+12)+40 = 2x^3+7x^2+9x+40</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

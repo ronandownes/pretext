@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="GaussReduct"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Gaussian Reduction</title>
+
+<introduction><p>Some problems involve many variables and equations. For example, scheduling airline flights or planning delivery routes can involve hundreds of variables and linear equations. There are efficient computer algorithms to solve such large systems. In this section we look at a method that can be generalized to many variables, but we will apply it to 3x3 linear systems.</p></introduction>
+
+<subsection><title>3x3 Linear Systems</title>
+<idx><h>linear system</h><h>3x3</h></idx><idx><h>system of equations</h><h>3x3</h></idx>-->
+
+<p>A <term>solution</term><idx><h>solution</h><h>to system of equations</h></idx> to an equation in three variables, such as
+    <me>x + 2y - 3z = -4</me>
+is an <term>ordered triple</term><idx>ordered triple</idx> of numbers that satisfies the equation. For example, <m>(0, -2, 0)</m> and <m>(-1, 0, 1)</m> are solutions to the equation above, but <m>(1, 1, 1)</m> is not. You can verify this by substituting the coordinates into the equation to see if a true statement results.
+    <md alignment="alignat">
+        <mrow>\amp\text{For }(0,-2, 0):{}\amp \alert{0}   {}+{}\amp 2(\alert{-2}) \amp{}-{}\amp 3(\alert{0}) \amp = -4{}\amp\hphantom{blank} \blert{\text{True}}\amp</mrow>
+        <mrow>\amp\text{For }(-1, 0, 1):{}\amp \alert{-1} {}+{}\amp 2(\alert{0})  \amp{}-{}\amp 3(\alert{1}) \amp = -4{}\amp\hphantom{blank} \blert{\text{True}}\amp</mrow>
+        <mrow>\amp\text{For }(1, 1, 1):{}\amp \alert{1}   {}+{}\amp 2(\alert{1})  \amp{}-{}\amp 3(\alert{1}) \amp = -4{}\amp\hphantom{blank} \blert{\text{Not true}}\amp </mrow></md>
+    A linear equation in three variables has infinitely many solutions.</p>
+
+<sidebyside  widths="55% 45%" margins="0% 0%" valigns="middle middle">
+<p>An ordered triple <m>(x, y, z)</m> can be represented geometrically as a point in space using a three-dimensional Cartesian coordinate system, as shown in the figure. The graph of a linear equation in three variables is a plane. A solution to a system of three linear equations in three variables is an ordered triple that satisfies each equation in the system. That triple represents a point where all three planes intersect. </p>
+    <image source="images/fig-3D-point"><description>point in 3D space</description></image>
+</sidebyside>
+
+<p><ul>
+  <li>If the planes intersect in a single point, the system has a unique solution.</li>
+  <li> If there is no point that lies on all three planes (for instance, if at least two of the planes are parallel), the system is inconsistent.</li>
+  <li> If all three planes are the same, or if they intersect in a line, the system is dependent.</li>
+</ul></p>
+
+<p>It is impractical to solve 3x3 systems by graphing. Even when technology for producing three-dimensional graphs is available, we cannot read coordinates on such graphs with any confidence. Thus, we will restrict our attention to algebraic methods of solving such systems.</p>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+        $solution = RadioButtons(
+          ["A) ordered pair that satisfies the equation.",
+          "B) ordered triple that satisfies the equation",
+          "C) arbitrary number that satisfies the equation"],
+          1, 
+        );                       
+         $graph = PopUp(
+          ["?","point", "line", "plane", "parabola"],
+          3, 
+        );
+         $unique = PopUp(
+          ["?","a single point","a line", "a plane"],
+          1, 
+        );
+         $line = PopUp(
+          ["?","in exacty 2 points", "in exactly 3 points", "in a line"],
+          3, 
+        );
+         $inconsistent = PopUp(
+          ["?","be the same plane", "in a parabola", "in a circle"],
+          1, 
+        );
+    </pg-code> 
+    <statement><p><ol marker="a.">
+        <li><p>A solution to an equation in three variables is an</p>
+                <p><var name="$solution" form="buttons"/>.</p></li>
+        <li><p>The graph of a linear equation in three variables is a <var name="$graph" form="buttons"/>.</p></li>
+        <li><p>A linear 3x3 system has a unique solution if the three planes intersect in <var name="$unique" form="popup"/>.</p></li>
+        <li><p>Three planes may also intersect <var name="$line" form="popup"/> or <var name="$inconsistent" form="popup"/>.</p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+        <li><p>ordered triple that satisfies the equation</p></li>
+        <li><p>plane</p></li>
+        <li><p>a single point</p></li>
+        <li><p>in a line; be the same plane</p></li>
+    </ol></p></solution>    
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p><ol marker="a.">
+        <li><p>A solution to an equation in three variables is an <fillin characters="10"/>.</p></li>
+        <li><p>The graph of a linear equation in three variables is a <fillin characters="10"/>.</p></li>
+        <li><p>A linear 3x3 system has a unique solution if the three planes intersect in <fillin characters="10"/>.</p></li>
+        <li><p>Three planes may also intersect in a <fillin characters="10"/> or a <fillin characters="10"/>.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Back-Substitution</title><idx><h>system of equations</h><h>back-subsitution</h></idx><idx><h>back-substitution</h></idx>
+
+<p>The strategy for solving a 3x3 system is the same as the strategy for 2x2 systems: we would like to reduce the system to an equation in a single variable. Once we have found the value for that variable, we substitute its value into the other equations to find the remaining unknowns.</p>
+
+<p>A special case of this technique is called <term>back-substitution</term><idx><h>back-substitution</h></idx>. It works when one of the equations involves exactly one variable, and a second equation involves that same variable and just one other variable. A 3x3 system with these properties is said to be in <term>triangular form</term><idx><h>triangular form</h></idx><idx><see>system of equations</see></idx>.</p>
+
+<example><statement><p>Solve the system
+            <md alignment="alignat">
+                <mrow> x +{}  2y \amp {}+{} \amp 3z \amp {}={} \amp 2</mrow>
+                <mrow>          -2y  \amp {}-{} \amp  4z \amp {}={} \amp -2</mrow>
+                <mrow>        \amp {}{} \amp 3z \amp {}={} \amp -3</mrow></md></p></statement>
+    
+<solution><p>We begin by solving the third equation to find <m>z = -1</m>. Then we substitute <m>\alert{-1}</m> for <m>z</m> in the second equation and solve for <m>y</m>.
+            <md><mrow>-2y - 4(\alert{-1}) \amp = -2</mrow>
+                <mrow>-2y + 4 \amp= -2</mrow>
+                <mrow>-2y \amp = -6</mrow>
+                <mrow>y\amp=3</mrow></md>
+Finally, we substitute <m>\alert{-1}</m> for <m>z</m> and <m>\alert{3}</m> for <m>y</m> into the first equation to find <m>x</m>.
+            <md><mrow>x + 2(\alert{3}) + 3(\alert{-1}) \amp= 2</mrow>
+                <mrow>x + 6 - 3 \amp = 2</mrow>
+                <mrow>x\amp=-1</mrow></md>
+The solution is the ordered triple <m>(-1, 3, -1)</m>. You should verify that this triple satisfies all three equations of the system.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork>
+        <pg-code>
+            Context("Point");
+            $triple = Point(5,1,-2);
+        </pg-code>
+        <statement><p>Use back-substitution to solve the system
+            <md alignment="alignat">
+                <mrow>2x + 2y \amp {}+{} \amp z \amp {}={} \amp 10</mrow>
+                <mrow>y \amp {}-{} \amp  4z \amp {}={} \amp 9</mrow>
+                <mrow>\amp\amp   3z \amp {}={} \amp -6</mrow></md></p>
+        <p><var name="$triple" width="6"/></p>
+        <instruction>
+            Give the solution as an ordered triple.
+        </instruction>
+    </statement>
+    <solution><p><m><var name="$triple"/> </m> satisfies all three equations.</p>
+    </solution>
+  </webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+  <statement><p>Use back-substitution to solve the system
+            <md alignment="alignat">
+                <mrow>2x + 2y \amp {}+{} \amp z \amp {}={} \amp 10</mrow>
+                <mrow>y \amp {}-{} \amp  4z \amp {}={} \amp 9</mrow>
+                <mrow>\amp\amp   3z \amp {}={} \amp -6</mrow></md></p></statement>
+<answer><p><m>(5,1,-2)</m></p></answer></exercise>
+</subsection>
+
+<subsection xml:id="GaussRed"><title>Gaussian Reduction</title>
+    <idx>Gaussian reduction</idx><idx><h>Gaussian reduction</h><seealso>system of equations</seealso></idx><idx><h>system of equations</h><h>Gaussian reduction</h></idx><idx><h>linear combination</h><seealso>Gaussian reduction</seealso></idx><idx><h>system of equations</h><h>linear combination</h></idx>
+
+<p>The method for solving a general <m>3 \times 3</m> linear system is called <term>Gaussian reduction</term>, after the German mathematician Carl Gauss. We use linear combinations to reduce the system to triangular form, and then use back-substitution to find the solutions.</p>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>       
+        $method = PopUp(
+          ["?",
+          "completing the square.",
+          "Gaussian reduction.",
+          "induction method."],
+          2, 
+        );                       
+         $case = PopUp(
+          ["?","back-substitution.", "negative reciprocals.", "linear regression.", "point-slope."],
+          1, 
+        );
+         $work = RadioButtons(
+          ["A) when one equation involves exactly one variable, and a second equation involves that same variable and just one other variable.",
+          "B) with more equations than unknowns.", 
+          "C) having only two unknowns."],
+          0, 
+        );
+         $reduce = PopUp(
+          ["?","guess-and-check.", " linear combinations.", "the discriminant."],
+          2, 
+        );
+    </pg-code> 
+    <statement><p><ol marker="a.">
+        <li><p>The method for solving a 3x3 linear system is called <var name="$method" form="popup"/>.</p></li>
+        <li><p>A special case of this method is called <var name="$case" form="popup"/></p></li>
+        <li><p>The special case works on systems</p>
+                <p><var name="$work" form="buttons"/></p></li>
+        <li><p>To reduce a system to the special form, we use <var name="$reduce" form="popup"/></p></li></ol></p>         
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><p>Gaussian reduction</p></li>
+        <li><p>back-substitution</p></li>
+        <li><p>when one equation involves exactly one variable, and a second equation involves that same variable and just one other variable</p></li>
+        <li> <p>linear combinations</p></li></ol></p>
+    </solution>  
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p><ol marker="a.">
+        <li><p>The method for solving a 3x3 linear system is called <fillin characters="10"/>.</p></li>
+        <li><p>A special case of this method is called <fillin characters="10"/>.</p></li>
+        <li><p>The special case works on systems in <fillin characters="10"/>.</p></li>
+        <li><p>To reduce a system to the special form, we use <fillin characters="10"/>.</p></li>
+    </ol></p></statement></exercise>
+
+<p>To obtain the triangular form, we eliminate one of the variables from each of the three equations by considering them in pairs. This results in a <m>2\times 2</m> system that we can solve using elimination.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review the method of elimination, see <xref ref="ElimMeth" text="custom"> Section 2.3 </xref> of the text.</p></aside>
+
+<example><statement><p>Solve the system:
+        <md alignment="alignat">
+            <mrow> x \amp {}+{} \amp 2y \amp {}-{} \amp 3z \amp {}={} \amp -4\amp\hphantom{blankblank} (1)</mrow>
+            <mrow>2x \amp {}-{} \amp  y \amp {}+{} \amp  z \amp {}={} \amp  3\amp\hphantom{blankblank} (2)</mrow>
+            <mrow>3x \amp {}+{} \amp 2y \amp {}+{} \amp  z \amp {}={} \amp 10\amp\hphantom{blankblank} (3)</mrow></md></p>
+</statement>
+
+<solution><p>We can choose any one of the three variables to eliminate first. For this example, we will eliminate <m>x</m>. Next, we choose two of the equations, say (1) and (2), and use a linear combination: We multiply Equation (1) by <m>-2</m> and add the result to Equation (2) to produce Equation (4).
+    <md alignment="alignat">
+        <mrow> -2x \amp {}-{} \amp 4y \amp {}+{} \amp 6z \amp {}={} \amp 8\amp\hphantom{blankblank} (1\text{a})</mrow>
+        <mrow>\underline{\hphantom{-}2x\vphantom{y}} \amp \underline{{}-{}\vphantom{y}} \amp   \underline{\hphantom{-5}y} \amp \underline{{}+{}\vphantom{y} }\amp  \underline{\hphantom{6}z\vphantom{y}} \amp {}={} \amp  \underline{\hphantom{1}\vphantom{y}                    3}\amp\hphantom{blankblank} (2)</mrow>
+        <mrow> \amp \amp{-5y} \amp {}+{} \amp  7z \amp {}={} \amp 11\amp\hphantom{blankblank} (4)</mrow></md></p>
+<p>Now we have an equation involving only two variables. But we need <em>two</em> equations in two unknowns to find the solution. So we choose a different pair of equations, say (1) and (3), and eliminate <m>x</m> again. We multiply Equation (1) by <m>-3</m> and add the result to Equation (3) to obtain Equation (5).
+    <md alignment="alignat">
+        <mrow> -3x \amp {}-{} \amp 6y \amp {}+{} \amp 9z \amp {}={} \amp 12\amp\hphantom{blankblank} (1\text{b})</mrow>
+        <mrow>\underline{\hphantom{-}3x\vphantom{y}} \amp \underline{{}+{}\vphantom{y}} \amp   \underline{\hphantom{-}2y} \amp \underline{{}+{}\vphantom{y} }\amp  \underline{\hphantom{10}z\vphantom{y}} \amp {}={} \amp  \underline{\vphantom{y}10}\amp\hphantom{blankblank} (3)</mrow>
+        <mrow> \amp \amp{-4y} \amp {}+{} \amp  10z \amp {}={} \amp 22\amp\hphantom{blankblank} (5)</mrow></md></p>
+<p>We now form a <m>2\times 2</m> system with our new Equations (4) and (5).
+            <md alignment="alignat">
+                <mrow>-5y\amp + \amp 7z \amp = 11 \hphantom{blankblank} (4)</mrow>
+                <mrow>-4y\amp + \amp 10z \amp = 22 \hphantom{blankblank} (5)</mrow></md></p>
+<p>Finally,  we eliminate one of the remaining variables to obtain an equation in a single variable. We choose to eliminate <m>y</m>, so we add 4 times Equation (4) to <m>-5</m> times Equation (5) to obtain Equation (6).
+    <md alignment="alignat">
+        <mrow>-20y~\amp {}+{} \amp 28z \amp =\hphantom{-1} 44 \hphantom{blankblank} (4\text{a})</mrow>
+        <mrow>\underline{\hphantom{-}20y~}\amp\underline{{}-{}\vphantom{{}+ y~}} \amp \underline{\hphantom{-}50z\vphantom{ -20y~}} \amp = \underline{-110\vphantom{y}} \hphantom{blankblank} (5\text{a})</mrow>
+        <mrow>\amp \amp -22z \amp = \hphantom{1}{-66} \hphantom{blankblankl} (6)</mrow></md></p>
+<p>Now we are ready to form a triangular system. We choose one of the original equations (in three variables), one of the equations from our <m>2\times 2</m> system, and our final equation in one variable. We choose Equations (1), (4), and (6).
+        <md alignment="alignat">
+            <mrow> x \amp {}+{} \amp 2y \amp {}-{} \amp 3z \amp {}={} \amp -4\amp\hphantom{blankblank} (1)</mrow>
+            <mrow> \amp {}{} \amp -5 y \amp {}+{} \amp 7z \amp {}={} \amp  11\amp\hphantom{blankblank} (4)</mrow>
+            <mrow> \amp \amp  \amp {}{} \amp  -22z \amp {}={} \amp -66\amp\hphantom{blankblank} (6)</mrow></md></p>
+<p>This new system has the same solutions as the original system, and we can solveit by back-substitution. We first solve Equation (6) to find <m>z = 3</m>. Substituting 3 for <m>z</m> in Equation (4), we find
+        <md><mrow>-5y+7(\alert{3}) \amp=11 </mrow>
+            <mrow>-5y+21 \amp=11 </mrow>
+            <mrow>-5y \amp=-10 </mrow></md></p>
+<p>So <m>y = 2</m>. Finally, we substitute <m>\alert{3}</m> for <m>z</m> and <m>\alert{2}</m> for <m>y</m> into Equation (1) to find
+            <md>
+                <mrow>x+2(\alert{2})-3(\alert{3}) \amp= -4 </mrow>
+                <mrow>x+4-9 \amp= -4 </mrow>
+                <mrow>x \amp= 1 </mrow></md></p>
+<p>The solution to the system is the ordered triple <m>(1, 2, 3)</m>. You should verify that this triple satisfies all three of the original equations.</p></solution></example>
+
+<p>We summarize the method for solving a 3x3 linear system as follows.</p>
+
+<assemblage><title>Steps for Solving a 3x3 Linear System</title><idx><h>linear system</h><h>3x3</h></idx><idx><h>system of equations</h><h>3x3</h></idx><idx>Gaussian reduction</idx><idx><h>system of equations</h><h>Gaussian reduction</h></idx>
+    <p><ol marker="1.">
+        <li><p>Clear each equation of fractions and put it in standard form.</p></li>
+        <li><p>Choose two of the equations and eliminate one of the variables by forming a linear combination.</p></li>
+        <li><p>Choose a different pair of equations and eliminate the <em>same</em> variable.</p></li>
+        <li><p>Form a <m>2\times 2</m> system with the equations found in steps (2) and (3). Eliminate one of the variables from this <m>2\times 2</m> system by using a linear combination.</p></li>
+        <li><p>Form a triangular system by choosing among the previous equations. Use back-substitution to solve the triangular system.</p></li></ol></p>
+</assemblage>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork> <pg-code>       
+            $elsm = RadioButtons(
+              ["Form a triangular system.",
+              "Eliminate either \(x\) or \(z\).",
+              "Eliminate \(y\) again from a different pair of equations.",
+              "Substitute the value for \(y\) into the equations."],
+              2, 
+            );            
+        </pg-code> 
+    <statement><p>Suppose you eliminate <m>y</m> from two equations as Step 2 of Gaussian reduction. What should you do for Step 3?</p>
+        <p><var name="$elsm" form="buttons"/></p>      
+    </statement>
+    <solution><p>Eliminate <m>y</m> again from a different pair of equations.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Suppose you eliminate <m>y</m> from two equations as Step 2 of Gaussian reduction. What should you do for Step 3?</p>
+    <p><ol marker="a.">
+        <li><p>Form a triangular system.</p></li>
+        <li><p>Eliminate either <m>x</m> or <m>z</m>.</p></li>
+        <li><p>Eliminate <m>y</m> again from a different pair of equations.</p></li>
+        <li><p>Substitute the value for <m>y</m>into the equations.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            Context("Point");
+            $triple = Point(2,2,1);
+        </pg-code>
+    <statement><p>Use Gaussian reduction to solve the system
+                <md><mrow>x-2y+z \amp= -1\qquad\qquad \amp\amp (1)</mrow>
+                    <mrow>\frac{2}{3}x +\frac{1}{3}y - z \amp= -1 \amp\amp (2)</mrow>
+                    <mrow>3x+3y-2z \amp= 10 \amp\amp (3)</mrow></md>
+        Follow the steps:<ul>
+            <li><p>Step 1: Clear the fractions from Equation (2).</p></li>
+            <li> <p>Step 2: Eliminate <m>z</m> from Equations (1) and (2).</p></li>
+            <li><p>Step 3: Eliminate <m>z</m> from Equations (1) and (3).</p></li>
+            <li><p>Step 4: Eliminate <m>x</m> from your new <m>2\times 2</m> system.</p></li>
+            <li><p>Step 5: Form a triangular system and solve by back-substitution.</p></li></ul></p>
+            <p><var name="$triple" width="6"/> </p>
+        <instruction>Give the solution as an ordered triple.  </instruction>
+        </statement>
+    <solution><p><m><var name="$triple"/> </m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Use Gaussian reduction to solve the system
+                <md><mrow>x-2y+z \amp= -1\qquad\qquad \amp\amp (1)</mrow>
+                    <mrow>\frac{2}{3}x +\frac{1}{3}y - z \amp= -1 \amp\amp (2)</mrow>
+                    <mrow>3x+3y-2z \amp= 10 \amp\amp (3)</mrow></md>
+        Follow the steps:<ul>
+            <li><p>Step 1: Clear the fractions from Equation (2).</p>
+                <aside><p><m>\alert{\text{[TK]}}~~</m>For help on clearing fractions, see <xref ref="tkClrFrac" text="custom"> Section 2.4.2 </xref> of the Toolkit.</p></aside></li>
+            <li> <p>Step 2: Eliminate <m>z</m> from Equations (1) and (2).</p></li>
+            <li><p>Step 3: Eliminate <m>z</m> from Equations (1) and (3).</p></li>
+            <li><p>Step 4: Eliminate <m>x</m> from your new <m>2\times 2</m> system.</p></li>
+            <li><p>Step 5: Form a triangular system and solve by back-substitution.</p></li>
+        </ul></p></statement>
+    <answer><p><m>(2,2,1)</m></p></answer></exercise>
+
+>
+</subsection>
+
+<subsection><title>Inconsistent and Dependent Systems</title>
+
+<p>If, at any step in forming linear combinations, we obtain an equation of the form
+    <md><mrow>0x + 0y + 0z = k, \qquad (k \ne 0)</mrow></md>
+then the system is inconsistent and has no solution. If we don’t obtain such an equation, but we do obtain one of the form
+    <md><mrow>0x + 0y + 0z = 0</mrow></md>
+then the system is dependent and has infinitely many solutions. <idx><h>system of equations</h><h>inconsistent</h></idx><idx><h>system of equations</h><h>dependent</h></idx></p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review the inconsistent and dependent systems, see <xref ref="IncDep" text="custom"> Section 2.3 </xref> of the text.</p></aside>
+
+<example><statement><p>Solve the systems.<ol marker="a.">
+        <li><p><m>\begin{alignedat}[t]{5}
+                    3x\amp{}+{}\amp y\amp{}-{}\amp 2z\amp{}={}1 \amp\qquad\amp (1)\\
+                    6x\amp{}+{}\amp 2y\amp{}-{}\amp 4z\amp{}={}5 \amp\qquad\amp (2)\\
+                    2x\amp{}-{}\amp y\amp {}+{}\amp 3z\amp{}={}-1 \amp\qquad\amp (3)
+                    \end{alignedat} </m></p></li>
+        <li><p><m>\begin{alignedat}[t]{5}
+                    -x\amp{}+{}\amp 3y\amp{}-{}\amp z\amp{}={}-2 \amp\qquad\amp (1)\\
+                    2x\amp{}+{}\amp y\amp{}-{}\amp 4z\amp{}={}-1 \amp\qquad\amp (2)\\
+                    2x\amp{}-{}\amp 6y\amp {}+{}\amp 2z\amp{}={}4 \amp\qquad\amp (3)
+                    \end{alignedat} </m></p></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+        <li><p>To eliminate <m>y</m> from Equations (1) and (2), we multiply Equation (1) by <m>-2</m> and add the result to Equation (2).
+                <md alignment="alignat">
+                    <mrow> -6x \amp {}-{} \amp 2y \amp {}+{} \amp 4z \amp {}={} \amp -2</mrow>
+                    <mrow>\underline{\hphantom{-}6x\vphantom{y}} \amp \underline{{}+{}\vphantom{y}} \amp   \underline{2y} \amp \underline{{}-{}\vphantom{y} }\amp  \underline{4z\vphantom{y}} \amp {}={} \amp  \underline{\hphantom{-}5}</mrow>
+                    <mrow> 0x\amp {}+{}\amp{0y} \amp {}+{} \amp  0z \amp {}={} \amp 3~</mrow></md>
+        Because the resulting equation has no solution, the system is <em>inconsistent</em>.</p></li>
+        <li><p>To eliminate <m>x</m> from Equations (1) and (3), we multiply Equation (1) by <m>2</m> and add Equation (3).
+                <md alignment="alignat">
+                    <mrow> -2x \amp {}+{} \amp 6y \amp {}-{} \amp 2z \amp {}={} \amp -4</mrow>
+                    <mrow>\underline{\hphantom{-}2x\vphantom{y}} \amp \underline{{}-{}\vphantom{y}} \amp   \underline{6y} \amp \underline{{}+{}\vphantom{y} }\amp  \underline{2z\vphantom{y}} \amp {}={} \amp  \underline{\hphantom{-}4}</mrow>
+                    <mrow> 0x\amp {}+{}\amp{0y} \amp {}+{} \amp  0z \amp {}={} \amp 0~</mrow></md>
+        Because the resulting equation vanishes, the system is dependent and has infinitely many solutions.</p></li>
+    </ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork><pg-code>       
+        $explain = RadioButtons(
+          ["Inconsistent",
+          "Dependent",
+          "Consistent and independent"],
+          0, 
+        );            
+        </pg-code>
+    <statement><p>Decide whether the system is inconsistent, dependent, or consistent and independent.
+            <md><mrow>x+3y-z\amp=4</mrow>
+                <mrow>-2x-6y+2z\amp=4</mrow>
+                <mrow>x+2y-z\amp=3</mrow></md></p>
+        <p><var name="$explain" form="buttons"/></p>      
+    </statement>
+    <solution><p>Inconsistent</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Decide whether the system is inconsistent, dependent, or consistent and independent.
+            <md><mrow>x+3y-z\amp=4</mrow>
+                <mrow>-2x-6y+2z\amp=4</mrow>
+                <mrow>x+2y-z\amp=3</mrow></md></p></statement>
+    <answer><p>Inconsistent</p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>
+         $TF = PopUp(
+          ["?","True","False"],
+          2, 
+        );
+         $True = PopUp(
+          ["?","True","False"],
+          1, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+            <li><p>If a system is dependent, it has no solutions. <var name="$TF" form="popup"/></p></li>
+            <li><p>The equation <m>0x + 0y + 0z = 0</m> has no solution. <var name="$TF" form="popup"/></p></li>
+            <li><p>If a 3x3 system is dependent, all three equations are the same. <var name="$TF" form="popup"/></p></li>
+            <li><p>Gaussian reduction will reveal whether a system is dependent or inconsistent. <var name="$True" form="popup"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><p>False</p></li>
+            <li><p>False</p></li>
+            <li><p>False</p></li>
+            <li><p>True</p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+            <li><p>If a system is dependent, it has no solutions.</p></li>
+            <li><p>The equation <m>0x + 0y + 0z = 0</m> has no solution.</p></li>
+            <li><p>If a 3x3 system is dependent, all three equations are the same. </p></li>
+            <li><p>Gaussian reduction will reveal whether a system is dependent or inconsistent.</p></li>
+        </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Applications</title>
+
+<p>Here are some problems that can be modeled by a system of three linear equations.</p>
+
+<example><statement><p>One angle of a triangle measures <m>4\degree</m> less than twice the second angle, and the third angle is <m>20\degree</m> greater than the sum of the first two. Find the measure of each angle. </p></statement>
+
+<solution><p><ul>
+    <li><title>Step 1 </title>
+        <p>We represent the measure of each angle by a separate variable.
+                <md><mrow>\amp\text{First angle: }\amp\amp x</mrow>
+                    <mrow>\amp\text{Second angle: }\amp\amp y</mrow>
+                    <mrow>\amp\text{Third angle:}\amp\amp z</mrow></md></p></li>
+    <li><title>Step 2</title>
+        <p>We write the conditions stated in the problem as three equations.
+            <md><mrow>\amp x\text{ is } 4\degree \text{ less than }2 \text{ times } y: \amp\amp x = 2y - 4</mrow>
+                <mrow>\amp z\text{ is } 20\degree \text{ more than } x+ y: \amp\amp z = x + y + 20</mrow>
+                <mrow>\amp \text{the sum of the angles of a triangle is } 180\degree : \amp\amp x + y + z =180</mrow></md>
+            </p></li>
+    <li><title>Step 3</title>
+        <p>We follow the steps for solving a <m>3\times 3</m> linear system.</p>
+                <p>1.   We write the three equations in standard form.  
+                <md alignment="alignat">
+                    <mrow>x\amp {}-{}\amp 2y\amp \amp \amp =\amp -4\amp\hphantom{blank} \amp(1)</mrow>
+                    <mrow>x\amp {}+{}\amp y\amp {}-{}\amp z\amp =\amp -20\amp\hphantom{blank} \amp(2)</mrow>
+                    <mrow>x\amp {}+{}\amp y\amp {}+{}\amp z\amp =\amp 180\amp\hphantom{blank} \amp(3)</mrow></md></p>
+            <aside><p><m>\alert{\text{[TK]}}~~</m>For help writing an equation in standard form, see <xref ref="tkStdForm" text="custom"> Section 2.4.1 </xref> of the Toolkit.</p></aside>
+        <p>2<ndash/>3. Because Equation (1) has no <m>z</m>-term, it will be most efficient to eliminate <m>z</m> from Equations (2) and (3). We add these two equations.
+                <md alignment="alignat">
+                    <mrow>x \amp {}+{} \amp y \amp {}-{} \amp z \amp {}={} \amp -20\qquad\amp\amp (2)</mrow>
+                    <mrow>\underline{x\vphantom{y}} \amp \underline{{}+{}\vphantom{y}} \amp   \underline{\hphantom{2}y} \amp \underline{{}+{}\vphantom{y} }\amp  \underline{\hphantom{~}\vphantom{y}z} \amp {}={} \amp  \underline{180\vphantom{y+y}}\qquad\amp\amp (3)</mrow>
+                    <mrow>2x\amp {}+{}\amp{2y} \amp  \amp   \amp {}={} \amp 160\qquad\amp\amp (4)</mrow></md></p>
+        <p>4. We form a <m>2\times 2</m> system from Equations (1) and (4). We add the two equations to eliminate the variable <m>y</m>, yielding
+                <md alignment="alignat">
+                    <mrow>x \amp {}-{} \amp 2y \amp {}={} \amp -4\qquad\amp\amp (1)</mrow>
+                    <mrow>\underline{2x\vphantom{y}} \amp \underline{{}+{}\vphantom{y}} \amp   \underline{2y} \amp {}={} \amp  \underline{160\vphantom{y+y}}\qquad\amp\amp (4)</mrow>
+                    <mrow>3x\amp\amp \amp   {}={} \amp 156\qquad\amp\amp (5)</mrow></md></p>
+        <p>5. We form a triangular system using Equations (2), (1), and (5). We use back-substitution to complete the solution.
+                <md alignment="alignat">
+                    <mrow>x\amp {}+{}\amp y\amp {}+{}\amp z\amp =\amp 180\hphantom{blankblank} \amp(2)</mrow>
+                    <mrow>x\amp {}-{}\amp 2y\amp \amp\amp =\amp -4\hphantom{blankblank} \amp(1)</mrow>
+                    <mrow>3x\amp\amp\amp\amp\amp = \amp156\hphantom{blankblank} \amp(5)</mrow></md>
+        We divide both sides of Equation (5) by <m>3</m> to find <m>x = 52</m>. We substitute <m>52</m> for <m>x</m> in Equation (1) and solve for <m>y</m> to find
+                    <md><mrow>\alert{52} - 2y \amp = -4</mrow>
+                        <mrow>y \amp= 28</mrow></md>
+        We substitute <m>\alert{52}</m> for <m>x</m> and <m>\alert{28}</m> for <m>y</m> in Equation (3) to find
+                    <md><mrow>\alert{52} + \alert{28} + z \amp= 180</mrow>
+                        <mrow>z\amp=100</mrow></md></p></li>
+        <li><title>Step 4</title>
+            <p>The angles measure 52°, 28°, and 100°.</p></li></ul></p>       
+    </solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>       
+        $w = 250;
+        $c = 600;
+        $s = 450;          
+        </pg-code>
+<statement><p>A farmer has 1300 acres on which to plant wheat, corn, and soybeans. The seed costs $6 for an acre of wheat, $4 for an acre of corn, and $5 for an acre of soybeans. An acre of wheat requires 5 acre-feet of water during the growing season, while an acre of corn requires 2 acre-feet and an acre of soybeans requires 3 acre-feet. If the farmer has $6150 to spend on seed and can count on 3800 acre-feet of water, how many acres of each crop should he plant in order to use all his resources?</p>
+    <p>Wheat: <var name="$w" width="3"/> acres</p>
+    <p>Corn: <var name="$c" width="3"/> acres</p>
+    <p>Soybeans: <var name="$s" width="3"/> acres</p>
+</statement>
+    <solution>
+    <p> We solve the system
+        <md alignment="alignat">
+        <mrow>w\amp {}+{} \amp c\amp {}+{} \amp s \amp= 1300</mrow>
+        <mrow>6w\amp {}+{} \amp 4c\amp {}+{} \amp 5s\amp=6150</mrow>
+        <mrow>5w\amp {}+{} \amp 2c\amp {}+{} \amp 3s\amp =3800</mrow></md>
+    to find that the farmer should plant 250 acres of wheat, 600 acres of corn, 450 acres of soybeans</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>A farmer has 1300 acres on which to plant wheat, corn, and soybeans. The seed costs $6 for an acre of wheat, $4 for an acre of corn, and $5 for an acre of soybeans. An acre of wheat requires 5 acre-feet of water during the growing season, while an acre of corn requires 2 acre-feet and an acre of soybeans requires 3 acre-feet. If the farmer has $6150 to spend on seed and can count on 3800 acre-feet of water, how many acres of each crop should he plant in order to use all his resources? </p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>For help writing equations, see <xref ref="tkWriteSys" text="custom"> Section 2.4.3 </xref> of the Toolkit.</p></aside>
+</statement>
+<answer><p>250 acres of wheat, 600 acres of corn, 450 acres of soybeans</p></answer></exercise>
+
+</subsection>
+
+<xi:include href="./section-2-4-exercises.xml" />                
+
+</section>
+<!-- </book>  </mathbook> -->

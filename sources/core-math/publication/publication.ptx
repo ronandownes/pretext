@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<publication>
+  <!-- Set where external assets and generated assets will be   -->
+  <!-- stored or created.  Directories are relative to the main -->
+  <!-- source PreTeXt file                                      -->
+  <source>
+    <directories external="../assets" generated="../generated-assets"/>
+  </source>
+
+  <common>
+    <tableofcontents level="2"/>
+        <exercise-divisional answer="no" solution="no"/>
+        <fillin textstyle="underline" mathstyle="underline"/>
+    <numbering>
+      <blocks level="2"/>
+      <projects level="2"/>
+      <equations level="2"/>
+      <footnotes level="2"/>
+    </numbering>
+  </common>
+  <latex print="no" sides="one">
+    <asymptote links="no"/>
+  </latex>
+  
+  <html>
+<!--    <index-page ref="preface"/>-->
+    <css theme="denver" color-meta="#ffcccc" palette="primaries" color-fact="#009999" color-do="#9966ff" color-main="#006699"/> 
+<!--    <css style="oscarlevin"/>-->
+    <knowl remark="no" example="no" example-solution="no" proof="no" exercise-inline="no"/>
+         <video privacy="yes"/>
+        <search variant="default"/>
+        <analytics google-gst="G-MLHBE6655J"
+                   statcounter-project="13069512"
+                   statcounter-security="3c431ca7"/>
+        <video privacy="yes"/>
+        <search variant="default"/>
+    <!-- ***************************************************** -->
+  </html>
+</publication>

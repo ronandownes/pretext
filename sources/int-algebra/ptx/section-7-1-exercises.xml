@@ -1,0 +1,685 @@
+<?xml version="1.0"?>
+
+
+<!-- This file was originally part of the book     -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<exercises xml:id="section-7-1-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 7.1</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p><ol marker="a.">
+    <li>A parking permit at Huron College cost $25 last year, but this year the price increased by 12%.  What is the price this year?</li>
+    <li>If the price of a parking permit increases by 12% again next year, what will the price be then?</li>
+    <li>Did the parking permit increase by the same amount each year?  Why or why not?</li></ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li>$28</li>    
+    <li>#31.36</li>
+    <li>No. It increase by 12% of different amounts.</li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a.">
+    <li>The computer you want cost $1200 when it first came on the market, but after 3 months the price was reduced by 15%.  What was the price then?</li>
+    <li>If the price falls by another 15% next month, what will the price be then?</li> 
+    <li>Did the price fall by the same amount each month?  Why or why not?</li></ol></p></statement></exercise>
+
+<exercise number="3"><statement><p>The value of your stock portfolio fell 10% last year, but this year it increased by 10%. How does the current value of your portfolio compare to what it was two years ago?</p></statement>
+<answer><p>Decreased by 1%.</p></answer></exercise>
+
+<exercise number="4"><statement><p>You got a 5% raise in January, but then in March everyone took a pay cut of 5%.  How does your new salary compare to what it was last December?</p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5<ndash/>10, solve. Round your answers to two places if necessary.</p>
+</introduction>
+
+<exercise number="5"><statement><p><m>768 = 12b^3</m></p></statement>
+<answer><p>4</p></answer></exercise>
+
+<exercise number="6"><statement><p><m>1875 = 3b^4</m></p></statement>
+</exercise>
+
+<exercise number="7"><statement><p><m>14,929.92 = 5000b^6</m></p></statement>
+<answer><p><m>\pm 1.2</m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>151,875 = 20,000b^5</m></p></statement></exercise>
+   
+<exercise number="9"><statement><p><m>1253 = 260(1+r)^{12}</m></p></statement>
+<answer><p><m>-2.14</m>; <m>0.14</m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>56.27 = 78(1-r)^8</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercise number="11"><statement><p>The population of Summerville is currently 12 hundred people. Let <m>P</m> represent the population, in hundreds of people, after <m>t</m> years.<ol marker="a.">
+    <li><p>Write a formula for the population if it grows at a constant rate of 1.5 hundred people per year. What is the population after 3 years?</p></li>
+    <li><p>Write a formula for the population if it has a constant growth factor of 1.5 per year. What is the population after 3 years?   </p></li></ol>
+</p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>P = 1200 + 150t</m>;  1650</p></li>
+    <li><p><m>P = 1200\cdot 1.5^t</m>;  4050</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>Delbert's sports car was worth  $45,000 when he bought it.<ol marker="a.">
+    <li><p>Write a formula for the value of the car if it depreciates at a constant rate of $7000 per year. What is the value of the car after 4 years?</p></li>
+    <li><p>Write a formula for the value of the car if it has a constant depreciation factor of 0.70 per year. What is the value of the car after 4 years?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="13"><statement><p>Francine's truck was worth $18,000 when she bought it.<ol marker="a.">
+    <li><p>Write a formula for the value of the truck if it depreciates by $2000 per year. What is the value of the truck after 5 years?</p></li>
+    <li><p>Write a formula for the value of the truck if it depreciates by 20% per year. What is the value of the truck after 5 years?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>V = 18,000 - 2000t</m>; $8000</p></li>
+    <li><p><m>V = 18,000\cdot 0.8^t</m>; $5898.24</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="14"><statement><p>The population of Lakeview is currently 150,000 people.<ol>
+    <li><p>Write a formula for the population if it grows by 6000 people per year. What is the population after 2 years?</p></li>
+    <li><p>Write a formula for the population if grows by 6% per year. What is the population after 2 years?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="15"><statement><p>The table shows the growth factor for a number of different populations.  For each population, find the percent growth rate.</p>
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Population</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>D</cell>
+                        <cell>E</cell></row>
+                    <row> 
+                        <cell>Growth factor</cell>
+                        <cell><m>1.2</m></cell>
+                        <cell><m>1.02</m></cell>
+                        <cell><m>1.075</m></cell>
+                        <cell><m>2.0</m></cell>
+                        <cell><m>2.15</m></cell></row>
+                    <row> 
+                        <cell>Percent growth rate</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p>20%, 2%, 7.5%, 100%, 115%</p></answer></exercise>
+
+<exercise number="16"><statement><p>The table shows the decay factor for a number of different populations.  For each population, find the percent decay rate.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Population</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>D</cell>
+                        <cell>E</cell></row>
+                    <row> 
+                        <cell>Decay factor</cell>
+                        <cell><m>0.6</m></cell>
+                        <cell><m>0.06</m></cell>
+                        <cell><m>0.96</m></cell>
+                        <cell><m>0.996</m></cell>
+                        <cell><m>0.096</m></cell></row>
+                    <row> 
+                        <cell>Percent decay rate</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>The graphs in Problems 17 and 18 represent exponential growth or decay.<ol>
+        <li><p>Find the initial value and the growth or decay factor.</p></li>
+        <li><p>Write a formula for the function.</p></li>
+    </ol></p></introduction>
+
+<exercise number="17"><statement><sidebyside width="70%">
+    <image source="images/fig-hw-7-1-29"><description>growth</description></image></sidebyside></statement>
+<answer><p><ol>
+    <li><p><m>P_0 = 4,~ b = 2^{1/3}</m></p></li>
+    <li><p><m>P(t) = 4\cdot 2^{t/3}</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="18"><statement><sidebyside width="70%">
+    <image source="images/fig-hw-7-1-30"><description>decay</description></image></sidebyside></statement>
+<answer><p><ol>
+    <li><p>Initial value <m>80</m>, decay factor <m>\frac{1}{2}</m></p></li>
+    <li><p><m>f(x) = 80\cdot \left(\dfrac{1}{2} \right)^x </m></p></li>
+</ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 19<ndash/>22,<ol marker="a.">
+        <li><p>Each table describes exponential growth or decay. Find the growth or decay factor.</p></li>
+        <li><p>Complete the table. Round values to two decimal places if necessary.</p></li>
+    </ol></p></introduction>
+
+<exercise number="19"><statement>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>x</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>Q</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>24</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+    </tabular></sidebyside></statement>
+<answer><p>The growth factor is <m>1.2</m>.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>x</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>Q</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>24</m></cell>
+            <cell><m>28.8</m></cell>
+            <cell><m>34.56</m></cell>
+            <cell><m>41.47</m></cell></row>
+    </tabular></sidebyside></answer></exercise>
+
+<exercise number="20"><statement>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>w</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>N</m></cell>
+            <cell><m>120</m></cell>
+            <cell><m>96</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+    </tabular></sidebyside></statement>
+<answer><p>The decay factor is <m>0.8</m>.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>w</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>N</m></cell>
+            <cell><m>120</m></cell>
+            <cell><m>96</m></cell>
+            <cell><m>76.8</m></cell>
+            <cell><m>61.44</m></cell>
+            <cell><m>49.15</m></cell></row>
+    </tabular></sidebyside></answer></exercise>
+
+<exercise number="21"><statement>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>t</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>C</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>6.4</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+    </tabular></sidebyside></statement>
+<answer><p>The decay factor is <m>0.8</m>.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>t</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>C</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>6.4</m></cell>
+            <cell><m>5.12</m></cell>
+            <cell><m>4.10</m></cell></row>
+    </tabular></sidebyside></answer></exercise>
+
+<exercise number="22"><statement>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>n</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>B</m></cell>
+            <cell><m>200</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>266.2</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+    </tabular></sidebyside></statement>
+<answer><p>The growth factor is <m>1.1</m>.</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>n</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row>
+            <cell><m>B</m></cell>
+            <cell><m>200</m></cell>
+            <cell><m>220</m></cell>
+            <cell><m>242</m></cell>
+            <cell><m>266.2</m></cell>
+            <cell><m>292.82</m></cell></row>
+    </tabular></sidebyside></answer></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercisegroup><introduction><p>For Problems 23<ndash/>30, <ol marker="a.">
+    <li>Complete the table of values.</li>
+    <li>Write a function that describes exponential growth or decay.</li>
+    <li>Use your calculator to graph the function.</li>
+    <li>Evaluate the function at the given values.</li></ol></p></introduction>
+
+<exercise number="23"><statement><p>Sales of Windsurfers have increased 12% per year since 2010. If Sunsails sold 1500 Windsurfers in 2010, how many did it sell in 2015?  How many should it expect to sell in 2022?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years after 2010</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell>Windsurfers</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years after 2010</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell>Windsurfers</cell>
+                        <cell><m>1500</m></cell>
+                        <cell><m>1680</m></cell>
+                        <cell><m>1882</m></cell>
+                        <cell><m>2107</m></cell>
+                        <cell><m>2360</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>S(t)=1200(1.12)^t</m></li>
+    <li><sidebyside width="40%" margins="0% 5%">
+        <image xml:id="fig-hw-7-1-17ans">
+        <description>Windsurfer sales exponential growth</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5] 
+        \draw[cyan] (0,0) grid (12,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(12.6,0) node[above]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.6) node[left, yshift=1mm]{$S$};
+        \foreach \x in {2,4,...,12} {
+          \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(500*\x)] in {2,4,...,12} {
+          \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \draw[samples=65,domain={0:12},smooth,variable=\x,red,very thick, ->,>=stealth'] plot (\x, {3*1.12^(\x)});
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+    <li>2644; 5844</li></ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>Paul bought a house for $200,000 in 1983. For the next 20 years, housing prices rose an average of 5% per year. How much was the house worth in 1995?  In 2000?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell>Years after 1983</cell>
+            <cell><m>0</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>15</m></cell>
+            <cell><m>20</m></cell></row>
+        <row> 
+            <cell>Value of house</cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell></row>
+        </tabular>
+    </sidebyside>
+</statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years after 1983</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell></row>
+                    <row> 
+                        <cell>Value of house</cell>
+                        <cell><m>20,000</m></cell>
+                        <cell><m>25,526</m></cell>
+                        <cell><m>32,578</m></cell>
+                        <cell><m>41,579</m></cell>
+                        <cell><m>53,066</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>V(t)=200,000(1.05)^t</m></li>
+    <li><sidebyside width="40%" margins="0% 5%">
+        <image xml:id="fig-hw-7-1-19ans"><description>house value</description><latex-image>
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.5] 
+            \draw[cyan] (0,0) grid (10,11);
+            \draw[black,thick,->,>=stealth'] (0,0)--(10.6,0) node[above]{$t$};
+            \draw[black,thick,->,>=stealth'] (0,0)--(0,11.6) node[left, yshift=1mm]{$V$};
+            \foreach \x [evaluate=\x as \xi using int(2*\x)] in {2,4,...,10} {
+            \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+            }
+            \foreach \x [evaluate=\x as \xi using int(50*\x)] in {2,4,...,10} {
+            \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+            }
+            \draw[samples=65,domain={0:10},smooth,variable=\x,red,very thick, ->,>=stealth'] plot (\x, {4*1.05^(2*\x)});
+            \node[rotate=90,font=\bf] at (-2.5,5)  {Thousands of dollars};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></li>
+    <li>$359,171.27; $458,403.66</li></ol></p>
+</answer>
+</exercise>
+
+<exercise number="25"><statement><p>A typical beehive contains 20,000 insects. The population can increase in size by a factor of 2.5 every 6 weeks. How many bees could there be after 4 weeks? After 20 weeks?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Weeks</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>18</m></cell>
+                        <cell><m>24</m></cell></row>
+                    <row> 
+                        <cell>Bees</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Weeks</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>18</m></cell>
+                        <cell><m>24</m></cell></row>
+                    <row> 
+                        <cell>Bees</cell>
+                        <cell><m>2000</m></cell>
+                        <cell><m>5000</m></cell>
+                        <cell><m>12,500</m></cell>
+                        <cell><m>31,250</m></cell>
+                        <cell><m>78,125</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>P(t)=2000(2.5)^{t/6}</m></li>
+    <li><sidebyside width="40%"><image source="images/fig-bee-population"><description>bee population</description></image></sidebyside></li>
+</ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>Otto invests $600 in an account that pays 7.3% interest compounded annually.  How much is in Otto's account after 3 years?  After 6 years?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell>Account balance</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="27"><statement><p>During a vigorous spraying program, the mosquito population was reduced to <m>\dfrac{3}{4}</m> of its previous size every week. If the mosquito population was originally estimated at 250,000, how many mosquitoes remained after 3 weeks of spraying?  After 9 weeks?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Weeks</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>8</m></cell></row>
+                    <row> 
+                        <cell>Mosquitos</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Weeks</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>8</m></cell></row>
+                    <row> 
+                        <cell>Mosquitos</cell>
+                        <cell><m>250,000</m></cell>
+                        <cell><m>187,500</m></cell>
+                        <cell><m>140,625</m></cell>
+                        <cell><m>105,469</m></cell>
+                        <cell><m>79,102</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>P(t)=250,000(0.75)^{t/2}</m></li>
+    <li><sidebyside width="40%"><image source="images/fig-mosquito-population"><description>graph</description></image></sidebyside></li>
+    <li>162,280; 68,504</li></ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>Scuba divers find that the water in Emerald Lake filters out 15% of the sunlight for each 4 feet they descend. How much sunlight penetrates to a depth of 20 feet? To a depth of 45 feet?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Feet</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>16</m></cell></row>
+                    <row> 
+                        <cell>% of light</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="29"><statement><p>Arch's motorboat cost $15,000 in 2000 and has depreciated by 11.5% every year. How much was the boat worth in 2009?  In 2010?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>12</m></cell></row>
+                    <row> 
+                        <cell>Value of boat</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>12</m></cell></row>
+                    <row> 
+                        <cell>Value of boat</cell>
+                        <cell><m>15,000</m></cell>
+                        <cell><m>13,500</m></cell>
+                        <cell><m>12,150</m></cell>
+                        <cell><m>10,935</m></cell>
+                        <cell><m>9841.50</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>V(t)=15,000(0.885)^t</m></li>
+    <li><sidebyside width="40%" margins="0% 5%">
+        <image xml:id="fig-hw-7-1-21ans"><description>motorboat depreciation</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.5, yscale=.33] 
+        \draw[cyan] (0,0) grid (10,15);
+        \draw[black,thick,->,>=stealth'] (0,0)--(10.6,0) node[above]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,15.8) node[above]{$V$};
+        \foreach \x [evaluate=\x as \xi using int(1*\x)] in {2,4,...,10} {
+          \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(1*\x)] in {5,10,15} {
+          \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \draw[samples=65,domain={0:10},smooth,variable=\x,red,very thick, ->,>=stealth'] plot (\x, {15*0.885^(\x)});
+        \node[rotate=90,font=\bf] at (-2.,7.5)  {Thousands of dollars};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+    <li>$4995.52; $4421.04</li></ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>Plutonium-238 is a radioactive element that decays over time into a less harmful element at a rate of 0.8% per year. A power plant has 50 pounds of plutonium-238 to dispose of. How much plutonium-238 will be left after 10 years?  After 100 years?</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+        <row bottom="minor">
+            <cell>Years</cell>
+            <cell><m>0</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>30</m></cell>
+            <cell><m>40</m></cell></row>
+        <row> 
+            <cell>Pounds</cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell>
+            <cell><m></m></cell></row>
+        </tabular>
+    </sidebyside>
+</statement></exercise>
+</exercisegroup>
+
+<exercise number="31"><statement><p>Riverside County is the fastest growing county in California. In 2000, the 
+population was 1,545,387. <ol marker="a.">
+    <li>Write a formula for the population of Riverside County as a function of time. (You don't know the value of the growth factor <m>b</m> yet.)</li>
+    <li>In 2004, the population had grown to 1,871,950. Find the growth factor and the percent rate of growth.</li>
+    <li>According to this model, what was the population of Riverside County in 2010? </li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>P(t)=1,545,387 b^t</m></li>
+    <li><m>b=1.049;~ r=4.9\%</m></li>
+    <li>3,167,157</li></ol></p></answer></exercise>
+
+<exercise number="32"><statement><p>In 2006, a new Ford Focus cost $15,574. The value of a Focus decreases exponentially over time. <ol marker="a."> 
+    <li>Write a formula for the value of a Focus as a function of time. (You don't know the value of the decay factor  yet.)</li>
+    <li>A 2-year old Focus cost $11,788. Find the decay factor and the percent rate of depreciation.</li>
+    <li>According to this model, how much did a 4-year old Focus cost?</li>
+    </ol></p></statement></exercise>
+
+<exercise number="33"><statement><p>In the 1940s David Lack undertook a study of the European robin. He tagged 130 one-year-old robins and found that on average 35.6% of the birds survived each year. (Source: Burton, 1998.)<ol marker="a.">
+    <li>According to the data, how many robins would have originally hatched to produce 130 one-year-olds?</li>
+    <li>Write a formula for the number of the original robins still alive after <m>t</m> years.</li>
+    <li>Graph your function on your calculator.</li>
+    <li>One of the original robins actually survived for 9 years. How many robins does the model predict will survive for 9 years?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li>365</li>
+    <li><sidebyside width="40%" margins="0% 5%"><image source="images/fig-surviving-robins"><description>exponential decay</description></image></sidebyside></li>
+
+    <li><m>N(t)=365(0.356)^t</m></li>
+    <li>0.03</li></ol></p></answer></exercise>
+
+<exercise number="34"><statement><p>Many insects grow by discrete amounts each time they shed their exoskeletons. Dyar’s rule says that the size of the insect increases by a constant ratio at each stage. (Source: Burton, 1998.)<ol marker="a.">
+    <li>Dyar measured the width of the head of a caterpillar of a swallowtail butterfly at each stage. The caterpillar’s
+    head was initially approximately 42 millimeters wide and was 63.84 millimeters wide after its first stage. Find the growth ratio.</li>
+    <li>Write an equation for the width of the caterpillar’s head at the <m>n^\text{th}</m> stage.</li>
+    <li>Graph your equation on your calculator.</li>
+    <li>What head width does the model predict after 5 stages?</li></ol></p></statement></exercise>
+
+<exercise number="35"><statement><p>The world’s population of tigers declined from 10,400 in 1980 to 6000 in 1998.
+    <ol marker="a.">
+    <li><p>If the population declined linearly, what was its annual rate of decrease?</p></li>
+    <li><p>If the population declined exponentially, what was its annual decay factor? What was its annual percent decrease?</p></li>
+    <li><p>Predict the number of tigers in 2010 under each assumption, linear or exponential decline.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>2440 tigers per decade</p></li>
+    <li><p>0.765; 23.5%</p></li>
+    <li><p>3080; 4656</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p>On January 10, the college infirmary treated 4 cases of flu. One week later, the total number of flu cases had grown to 6.<ol marker="a.">
+    <li>If the number of cases grew linearly, what was its weekly rate of growth?</li>
+    <li>If the number of cases grew exponentially, what was its weekly growth factor?  What was its weekly percent increase?</li>
+    <li>Predict the number of flu cases 6 weeks later under each assumption, linear or exponential growth.</li>
+    <li>Write a function for the number of flu cases under each assumption. Graph both functions for 10 weeks from January 10.</li></ol></p></statement></exercise>
+
+<exercise number="37"><statement><p>A researcher starts 2 populations of fruit flies of different species, each with 30 flies. Species A increases by 30% in 6 days, and species B increases by 20% increases in 4 days.<ol marker="a.">
+    <li>What was the population of species A after 6 days? Find the daily growth factor for species A.</li>
+    <li>What was the population of species B after 4 days? Find the daily growth factor for species B.</li>
+    <li>Which species multiplies more rapidly?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li>39; 1.045</li>
+    <li>36; 1.047</li>
+    <li>Species B</li></ol></p></answer></exercise>
+
+<exercise number="38"><statement><p><ol marker="a.">
+    <li>The population of Elmira was 350,000 in 1970 and doubled in 20 years. What was the annual percent increase to the nearest hundredth of a percent?</li>
+    <li>If a population doubles in 20 years, does the percent increase depend on the size of the original population?</li>
+    <li>The population of Grayling doubled in 20 years. What was the annual percent increase to the nearest hundredth of a percent?</li></ol></p></statement></exercise>
+
+</subexercises>
+</exercises>

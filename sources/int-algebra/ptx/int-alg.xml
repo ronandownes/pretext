@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+
+
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2020/03/15)                     -->
+<!--                                               -->
+<!--   Intermediate Algebra   -->
+<!--                                               -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<!-- Master file                           -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+<xi:include href="./bookinfo.xml" />   <!-- ISBN, website, other metadata -->
+
+<book xml:id="int-alg">
+   <title>Intermediate Algebra</title>
+   <subtitle>Functions and Graphs</subtitle>
+
+   <xi:include href="./frontmatter.xml" />  
+
+    <xi:include href="./chap1.xml" />   <!-- Linear Models  -->
+    <xi:include href="./chap2.xml" /> <!--Applicatios of Linear Models-->
+    <xi:include href="./chap3.xml" />   <!-- Quadratic Models  -->
+    <xi:include href="./chap4.xml" />   <!-- Apps of Quad Models  -->
+    <xi:include href="./chap5.xml" />   <!-- Functions & Graphs  -->
+    <xi:include href="./chap6.xml" />   <!-- Powers & Roots  -->
+    <xi:include href="./chap7.xml" />   <!-- Exponential Functions  -->
+    <xi:include href="./chap8.xml" />  <!--Polynomials & Rational  -->
+    <xi:include href="./chap9.xml" />   <!-- Equations & Graphs  -->
+    <xi:include href="./chap10.xml" />  <!-- Logarithmic Functions  -->
+
+    <xi:include href="./backmatter.xml" />       
+    </book>
+</pretext>

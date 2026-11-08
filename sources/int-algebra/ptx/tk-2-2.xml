@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkLinearSystems" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Linear Systems</title>
+
+<subsubsection xml:id="tkTwoVarEqn"><title>Write equations in two variables</title>
+
+<introduction><p>Applied problems that involve more than one unknown are often easier to model and solve with a system of equations.</p></introduction>
+
+<example><statement><p>Write equations about the number of tables and the number of chairs:
+    <ol marker="a.">
+        <li>There are four chairs for each table.</li>
+        <li>Chairs cost $125 each; a table costs $350.  Darryl spent $10,200 on tables and chairs.</li>
+    </ol> </p></statement>
+    
+<solution><p>Let <m>x</m> be the number of tables and <m>y</m> the number of chairs.
+    <ol marker="a.">
+        <li>The number of chairs is 4 times the number of tables: <m>~y=4x</m>.</li> 
+        <li><m>125y+350x=10,200</m></li>
+    </ol></p></solution></example>
+
+<example><statement><p>Write equations about the dimensions of a rectangle:
+    <ol marker="a.">
+        <li>The perimeter of the rectangle is 42 meters.</li>
+        <li>The length is 3 meters more than twice the width.</li>
+    </ol></p></statement>
+
+<solution><p>Let <m>x</m> be the width of the rectangle and <m>y</m> its length.
+    <ol marker="a.">
+        <li><m>2x+2y=42</m></li>  
+        <li><m>y=3+2x</m></li>
+    </ol></p></solution></example>
+
+<exercise><statement><p>Write equations about the number of calories in a hamburger and in a chocolate shake.
+    <ol marker="a.">    
+        <li>A hamburger and a chocolate shake together contain 1020 calories.</li>
+        <li>Two shakes and three hamburgers contain 2710 calories.</li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>x+y=1020</m></li>
+        <li><m>3x+2y=2710</m></li>
+    </ol></p></answer></exercise>
+
+<exercise><statement><p>Write equations about the vertex angle and the base angles of an isosceles triangle.
+    <ol marker="a.">
+        <li>The vertex angle is <m>15 \degree</m> less than each base angle.</li>
+        <li>The sum of the angles in a triangle is <m>180 \degree</m>.</li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>y=x-5</m></li>
+        <li><m>2x+y=180</m></li>
+    </ol></p></answer></exercise>
+</subsubsection>
+                 
+<subsubsection xml:id="tkSysSoln"><title>Identify the solution of a system</title>
+
+<introduction><p>Recall that a solution to a system makes each equation in the system true.</p></introduction>
+
+<example><statement><p>Decide whether <m>(3,-2)</m> is a solution of the system 
+    <md><mrow>x = 5y+13</mrow>
+        <mrow>2x+3y=0</mrow></md></p> </statement>
+
+<solution><p>A solution must satisfy both equations.  We substitute <m>x=\alert{3}</m> and <m>y=\alert{-2}</m> into the equations. 
+    <md><mrow>\alert{3} = 5(\alert{-2})+13 ? \amp \amp \text{Yes}</mrow>
+        <mrow> 2(\alert{3})+3(\alert{-2})=0 ? \amp \amp \text{Yes}</mrow></md>
+Yes, <m>(3,-2)</m> is a solution</p></solution></example>
+                    
+<example><statement><p>Find the solution of the system graphed below.</p>
+    <!-- <image source="images/fig-8-1-1.png"><description>graph</description></image> --><image width="35%" xml:id="fig-linear-system-50-1300"><description>Linear system</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.36, yscale=.32]
+        \draw[cyan, thin] (10,16) grid (0,0.3);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(10.9,0) node[right]{$t$};
+        \draw[black,very thick, ->, >=stealth'] (0,.8)--(0,16.9) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in {5,10} {
+         \draw[cyan, very thick] (\x,16)--(\x, 0.3);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(800+ 50*\x)] in {4,8,12,16} {
+         \draw[cyan, very thick] (10,\x)--(0, \x);
+          \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[white] (0,0)--(0,.8);
+        \draw[white, ultra thick] (0,0.1)--(10,.1);
+        \draw[black,thick] (0,.8)--(-.2,.7)--(.2,.5)--(-.2,.3)--(0,.2)--(0,0);
+        \filldraw[red] (5,10) ellipse (.24 and .21) node[text=black, below right, xshift=2,yshift=2, yshift=-2,fill=white, inner sep=2] {$P$};
+        \draw[blue!90!black, line width=0.6mm, ->, >=stealth'] (0,4)--(10,16) node[right, text=black] {$S$};
+        \draw[magenta!90!black,line width=0.6mm, ->, >=stealth'] (0,8)--(10,12) node[right, text=black] {$E$};
+        \filldraw[red] (5,10) ellipse (.16 and .18) node[text=black, below right, xshift=2,yshift=2, yshift=-2,fill=white, inner sep=2] {$P$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</statement>
+    
+<solution><p>The solution must lie on both graphs, so it is the intersection point, <m>P</m>. The coordinates of point <m>P</m> are <m>(50, 1300)</m>, so the solution of the system is <m>t=50,~y=1300</m>. </p></solution></example>
+
+<exercise><statement><p>Decide whether <m>(-3,-2)</m> is a solution of the system 
+    <md><mrow>x + 3y \amp = -9</mrow>
+        <mrow>3x+2y \amp = -5</mrow></md></p></statement>
+<answer><p>No</p></answer></exercise>
+
+<exercise><statement><p>Find the solution of the system graphed below.</p>
+    <!-- <image source="images/fig-8-1-2.png"><description>graph</description></image> --><image width="40%" xml:id="fig-linear-system-300-24"><description>Linear system</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.5, yscale=.35]
+        \draw[cyan, thin] (0,0) grid (10,20);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(10.9,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,20.9) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(50*\x)] in {2,4,...,10} {
+         \draw[cyan, very thick] (\x,0)--(\x, 20);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in {5,10,15,20} {
+         \draw[cyan, very thick] (10,\x)--(0, \x);
+          \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[blue!90!black, very thick, ->, >=stealth'] (0,0)--(10,20);
+        \draw[magenta!90!black,very thick, ->, >=stealth'] (0,3)--(10,18);
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+<answer><p><m>(300, 24)</m></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkProfit"><title>Use the formula for profit, <m>P=R-C</m></title>
+
+<assemblage><title>Profit</title>
+<p>To find the profit earned by a company we subtract the costs from the revenue.
+    <me>\text{Profit} = \text{Revenue} - \text{Cost}~~~~~~~~P=R-C</me></p></assemblage>
+
+<p>"Revenue" is the amount of money a company takes in from selling its product. A negative profit is the same as a loss.</p>
+
+<example><statement><p>The owner of a sandwich shop spent $800 last week for labor and supplies. She received $1150 in revenue.  What was her profit?</p></statement>
+
+<solution><p>We evaluate the formula with <m>R=1150</m> and <m>C=800</m> to find
+    <md><mrow>P \amp = R-C</mrow>
+        <mrow> \amp = 1150 - 800 = 350</mrow></md>
+The owner's profit was $350.</p></solution></example>
+
+<example><statement><p>EcoGreen made $1848 profit on low-flow shower heads last year, and spent $3426 in costs.  What was their revenue from shower heads?</p></statement>
+
+<solution><p>We usse the profit formula and solve the equation
+    <me>1848 = R - 3246</me>
+to find that <m>R=5094</m>.  Their revenue was $5094.</p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+    <li>The Earth Alliance made $6000 in revenue from selling tickets to Earth Day, an educational event for children.  Write an expression for their profit in terms of their costs.</li>  
+    <li>What was their profit if their costs were $2500?</li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><m>P=6000-C </m></li>
+    <li>$3500</li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Last week Moe's Auto Shop took in $5400 in revenue, but experienced a loss of $800.  What were Moe's costs last week? </p></statement>
+
+<answer><p>$6200</p></answer></exercise>
+
+</subsubsection>
+
+</subsection>

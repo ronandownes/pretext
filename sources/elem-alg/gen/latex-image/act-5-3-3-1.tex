@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+      \begin{tikzpicture} [scale=.8]
+\def\w{2 };
+\def\l{3.5};
+\def\d{.7};
+\draw[magenta!80!black,very thick] (\l,\w)--++(\d,\d);
+\draw[magenta!80!black,very thick] (0,0) rectangle (\l,\w);
+\draw[magenta!80!black,very thick] (0,\w)--++(\d,\d)--++(\l,0)--++(0,-\w) node[right, midway, text=black]{$w$} -- (\l,0) node[right, midway, text=black, xshift=1, yshift=-2]{$w$};
+\node at (\l/2,-.5){$l$};
+      \end{tikzpicture}%
+}
+\end{document}

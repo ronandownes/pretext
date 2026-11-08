@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}
+\def\a{28};
+\def\b{\a-35};
+\def\z{.8};
+\def\x{3/sqrt(2)/sin(35)};
+\coordinate (A) at ({\a+45}:{3*\z});
+\coordinate (B) at (\b:{\x*\z});
+\node[above left] at ($ 0.5*(A) $) {$3$};
+\node[above right] at ($ (A) + 0.5*(B) $) {$x$};
+\node[below right] at ($ 0.5*(A) + 0.5*(B) $) {$5$};
+\node[below right, xshift=-3, yshift=-3] at (A) {$100\degree$};
+\node[left, xshift=-14, yshift=-4] at ($(A)+(B)$) {$35\degree$};
+\node[above right,  xshift=5, yshift=9] at (0,0) {$45\degree$};
+\draw[magenta!80!black,line width=1mm] (0,0)--(A)--++(B)--(0,0);
+\end{tikzpicture}%
+}
+\end{document}

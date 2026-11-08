@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Angles and Triangles</title>
+
+  <sidebyside widths="50% 50%"><p><ul>
+    <li><p>Angles</p></li>
+    <li><p>Measuring Angles</p></li>
+    <li><p>Using a Protractor</p></li>
+    <li><p>Triangles</p></li>
+    <li><p>Sides and Angles</p></li>
+  </ul></p>
+      <image source="geodesic dome.png"></image></sidebyside>
+  
+  <subsection><title>Angles</title>
+
+<p>When two line segments meet at a point, they form an <term>angle</term>. The point where the two sides meet is called the <term>vertex</term>. Here are some angles. 
+
+  <image source="angles.png" width="55%"></image></p>
+
+  <p>You are probably familiar with a <term>right angle</term>, such as the corner of a square. Each of the corners of the tabletop below is a right angle. The two arms of a plus sign form four right angles. We say that the sides of a right angle are <term>perpendicular</term>.  
+    <image source="rightangles.png" width="65%"></image>
+    <m>~~~~~~~~~~~~~~~~~~~~\blert{\text{Right angles: a square table}}~~~~~~~~~~\blert{\text{Perpendicular lines make a plus sign}}</m></p>
+
+  <p>Now imagine slowly opening a laptop computer until the two sides lie flat on the table. The two sides form an angle that gradually opens until the two covers form a straight line. We give different names to angles, depending on how open they are.</p>  
+
+    <p><m>~~~~~~~~~~~~~~~\blert{\text{Partially open}}~~~~~~~~~~\blert{\text{More than half-way open}}~~~~~~~~~~~~~\blert{\text{All the way open}}</m>
+
+      <image source="computerangles.png" width="95%"></image>
+
+    <m>~~~~~~~~~~~~~~~\blert{\text{An acute angle}}~~~~~~~~~~~~~~~~\blert{\text{An obtuse angle}}~~~~~~~~~~~~~~~~~~~~~~\blert{\text{A straight angle}}</m></p>
+
+<assemblage><title>Kinds of Angles</title><p><ul>
+      <li><p>If the sides are less open than a right angle, we call the angle <term>acute</term>.</p></li>  
+      <li><p>If the sides are more open than a right angle, we call the angle <term>obtuse</term>.</p></li>  
+      <li><p>If the two sides are totally open to form a straight line, we call the angle a <term>straight angle</term>.</p></li></ul></p></assemblage>
+
+    <p><image source="kindsofangles.png" width="75%"></image></p>
+
+  <example><statement><p>In the pictures below, the handles of the hedge clipper form an acute angle. The hands of the clock form an obtuse angle.
+          <image source="clipperandclock.png" width="55%"></image></p>
+          <p><m>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\blert{\text{An acute angle}}~~~~~~~~~~~~~~~~\blert{\text{An obtuse angle}}</m></p></statement></example>
+
+  <exercise><statement><p>Acute, right, or obtuse? Choose the best answer for each angle in the photograph.
+          <image source="ballet.png" width="45%"></image></p>
+      <p><ol marker="a.">
+          <li><p>The ballerina's arms form a(n) <fillin characters="10"/> angle.</p></li>
+          <li><p>The ballerina's legs form a(n) <fillin characters="10"/> angle.</p></li>
+          <li><p>The male dancer's legs form a(n)<fillin characters="10"/> angle.</p></li></ol></p></statement>
+
+<answer><p><ol marker="a.">
+          <li><p>obtuse</p></li>
+          <li><p>right</p></li>
+          <li><p>acute</p></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Measuring Angles</title>
+  <p>We use <term>degrees</term> to measure how open an angle is. The symbol for a degree is <m>\degree</m>.  A right angle is 90<m>\degree</m>, and a straight angle is 180<m>\degree</m>. 
+        <image source="rightstraight.png" width="70%"></image></p>        
+
+  <p>The degree measure of an acute angle is less than 90<m>\degree</m>, and the degree measure of an obtuse angle is between 90<m>\degree</m> and 180<m>\degree</m>.  
+        <image source="acuteobtuse.png" width="100%"></image></p>
+
+<assemblage><title>Question</title><p>What do you think an angle of 0<m>\degree</m> looks like?</p></assemblage>
+
+<note><p>The measure of an angle does not depend on the orientation of the angle, or on how long the sides are, or whether the angle is combined with other angles. It only depends on how open the sides are. Here are some pictures of 30<m>\degree</m> angles.
+    <image source="thirtydeg.png" width="100%"></image></p></note>
+
+<p>We use the symbol <m>\angle</m> to stand for "angle."</p>
+
+<example><statement><p>The picture shows two angles that together make a right angle. If the measure of <m>\angle~A</m> is 25<m>\degree</m>, what is the measure of <m>\angle~B</m>?
+    <image source="anglesAandB.png" width="25%"></image></p></statement>
+
+  <solution><p>A right angle measures 90<m>\degree</m>, so the sum of <m>\angle~A</m> plus <m>\angle~B</m> must be 90<m>\degree</m>.  Therefore, 
+      <me>\angle~B = 90\degree - \angle~A = 90\degree - 25\degree = 65\degree</me>
+  The measure of <m>\angle~B</m> is 65<m>\degree</m>, or <m>\angle~B = 65\degree</m>.</p></solution></example>
+
+<exercise><statement><p>Find the measure of the unknown angle. Parts (a) and (b) show right angles.<ol marker="a." cols="2">
+  <li><p><image source="findangle-a.png" width="60%"></image></p><p><m>\angle~A = 38\degree, ~~ \angle~B =~?</m></p></li>
+  <li><p><image source="findangle-b.png" width="60%"></image></p><p><m>\angle~A = 20\degree, ~~ \angle~B = \angle~C =~?</m></p></li>
+  <li><p><image source="findangle-c.png" width="75%"></image></p><p><m>\angle~A =~?, ~~ \angle~B = 85\degree</m></p></li>
+  <li><p><image source="findangle-d.png" width="70%"></image></p><p><m>\angle~B = 27\degree, ~~ \angle~A =~?, ~~ \angle~C =~?</m></p></li></ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>52 \degree</m></p></li>
+  <li><p><m>35 \degree</m></p></li>
+  <li><p><m>95 \degree</m></p></li>
+  <li><p><m>153 \degree, ~ 153 \degree</m></p></li>
+</ol></p></answer></exercise>  
+
+</subsection>
+
+<subsection><title>Using a Protractor</title>
+  
+  <p>We use a <term>protractor</term> to measure angles.
+      <image source="protractor.png" width="60%"></image></p>
+
+  <assemblage><title>Using a protractor to measure an angle</title><p><ol marker="1.">
+    <li><p>Place the center dot of the protractor at the vertex of the angle.</p></li>
+    <li><p>Line up the bottom line of the protractor along one of the sides of the angle.</p></li>  
+    <li><p>Read the number where the other side of the angle meets the scale on the circular edge of the protractor.</p></li>
+  </ol></p></assemblage>
+
+  <note><p>Notice that the protractor has one scale that starts at the right edge and increases in the counterclockwise direction, and a second scale that starts on the left edge. That's so you can line up the first side of the angle in either direction from the center.</p></note>
+
+<example><statement><p>Use a protractor to measure this angle:
+    <image source="protractorangle.png" width="40%"></image></p></statement>
+
+<solution><p>Place the protractor as shown below, with the vertex O in the center and side OB lined up along the bottom of the protractor.
+    <image source="protractor40.png" width="70%"></image></p> 
+
+<p>Now follow the scale that increases from side OB up to side OA. In this case it is the inner scale. We see that side OA meets the inner scale at 40<m>\degree</m>. The measure of <m>\angle~AOB</m> is 40<m>\degree</m>.</p></solution></example>
+
+<exercise><statement><p>What is the measure of the obtuse angle shown below?
+    <image source="protractor135.png" width="70%"></image></p></statement>
+
+<answer><p><m>135 \degree</m></p></answer></exercise>
+
+<activity><title>Measuring Angles</title>
+  <p><ol marker="1.">
+
+  <li><p>Use your straightedge to draw an acute angle. Use your protractor to find the degree measure of your angle.</p></li>
+
+  <li><p>Use your straightedge to draw an obtuse angle. Use your protractor to find the degree measure of your angle.</p></li>
+
+  <li><p>Use your protractor to find the degree measure of each angle.
+      <image source="activityangles.png" width="70%"></image></p></li>
+
+  <li><p><ol marker="a.">    
+      <li><p>On another sheet of paper, use your straightedge to draw a triangle of any shape you like. Label the angles of your triangle A, B, and C.</p></li>  
+      <li><p>Now cut or tear off the three angles and place the vertex of angle A on the dot below.</p></li>  
+      <li><p>Next place the vertex of angle B at the dot so that one of its sides touches one of the sides of angle A. Repeat with angle C.
+
+          <me>\LARGE{\cdot}</me></p></li>   
+
+      <li><p>What do you notice about the sum of the three angles? Write it below:</p></li></ol></p></li></ol></p>
+</activity>
+</subsection>
+
+<subsection xml:id="triangles"><title>Triangles</title>
+
+<p>Triangles come in various shapes, depending on the size of their angles or the lengths of their sides. Here are the names of some triangles classified by the size of their angles.</p>
+
+<assemblage><title>Triangles</title>
+  <p><ul>
+  <li><p>A <term>right triangle</term> has one right angle.</p></li>
+  <li><p>In an <term>acute triangle</term>, all three angles are acute.</p></li>
+  <li><p>In an <term>obtuse triangle</term>, one of the angles is obtuse.</p></li></ul></p></assemblage>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Some right triangles <image source="righttris.png" width="50%"></image></p></li>
+
+  <li><p>Some acute triangles <image source="acutetris.png" width="50%"></image></p></li>
+
+  <li><p>Some obtuse triangles <image source="obtusetris.png" width="50%"></image></p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p> Identify each triangle as right, acute, or obtuse. The little square indicates that the angle is <m>90 \degree</m>.</p>
+<p><ol marker="a." cols="2">
+  <li><image source="4atri.png" width="60%"></image></li>
+  <li><image source="4btri.png" width="60%"></image></li>
+  <li><image source="4ctri.png" width="60%"></image></li>
+  <li><image source="4dtri.png" width="60%"></image></li>
+  <li><image source="4etri.png" width="80%"></image></li>
+  <li><image source="4ftri.png" width="50%"></image></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>right</p></li>
+  <li><p>obtuse</p></li>
+  <li><p>acute</p></li>
+  <li><p>right</p></li>
+  <li><p>obtuse</p></li>
+  <li><p>acute</p></li>
+</ol></p></answer></exercise>
+
+<p>Here are the names of some triangles classified by the lengths of their sides.</p>
+
+<assemblage><title>Triangles</title>
+  <p><ul>
+  <li><p>All three sides of an <term>equilateral triangle</term> are equal in length.</p></li>
+  <li><p>In an <term>isosceles triangle</term>, two sides are equal in length.</p></li>
+  <li><p>In a <term>scalene triangle</term>, all three sides have different lengths.</p></li>
+</ul></p></assemblage>
+
+<example><statement><p><ol marker="a.">
+  <li><p> An equilateral triangle. <image source="equitri.png" width="20%"></image></p></li>
+  <li><p> Some isosceles triangles. <image source="isostri.png" width="70%"></image></p></li>
+  <li><p> Some scalene triangles. <image source="scaltri.png" width="70%"></image></p></li></ol></p></statement></example>
+
+<exercise><statement><p> Identify each triangle as equilateral, isosceles, or scalene. Sides that have the same number of little hatch marks are equal in length.</p><ol marker="a." cols="2">
+  <li><p><image source="atri.png" width="80%"></image></p></li>
+  <li><p><image source="btri.png" width="80%"></image></p></li>
+  <li><p><image source="ctri.png" width="85%"></image></p></li>
+  <li><p><image source="dtri.png" width="70%"></image></p></li>
+  <li><p><image source="etri.png" width="90%"></image></p></li>
+  <li><p><image source="ftri.png" width="75%"></image></p></li></ol></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>isosceles</p></li>
+  <li><p>scalene</p></li>
+  <li><p>scalene</p></li>
+  <li><p>equilateral</p></li>
+  <li><p>isosceles</p></li>
+  <li><p>isosceles</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Sides and Angles</title>
+
+<p>You may have noticed that the longest side in a triangle is always opposite the largest angle.</p>
+
+<example><statement><p>In the triangle below, side <m>c</m> is opposite the 120<m>\degree</m> angle, and it is the longest side. Side <m>b</m>, which is the shortest side, is opposite the 20<m>\degree</m> angle.
+    <image source="sidestri.png" width="40%"></image></p>
+<p>In fact, because <m>120\degree \gt  40\degree \gt  20\degree</m>,  we know that <m>c \gt a \gt b</m>.</p></statement></example>
+
+<note><p><ul>
+  <li><p>The symbol <m>\blert{\gt}</m>  means "is greater than."  
+    So, <m>c \gt a \gt b</m> means  "<m>c</m> is greater than <m>a</m>, which is greater than <m>b</m>."</p></li>  
+  <li><p>Similarly, the symbol <m>\blert{\lt}</m>  means "is less than." </p></li> 
+  <li><p>These symbols are called <term>inequality symbols</term> (as opposed to equals signs), and sentences such as <m>c \gt a \gt b</m> are called <term>inequalities</term> (as opposed to equations).</p></li></ul></p></note>
+
+<assemblage><title>Inequality Symbols</title>
+  <p><m>~~~~~~~~\blert{\gt}~~~~</m> means  "is greater than"</p>
+  <p><m>~~~~~~~~\blert{\lt}~~~~</m>means  "is less than"</p></assemblage>
+
+<exercise><statement><p>Write an inequality about the angles in the triangle below.
+      <image source="ineqtri.png" width="30%"></image></p></statement>
+
+<answer><p><m>\angle A \gt \angle C \gt \angle B</m></p></answer></exercise>
+
+<assemblage><title>Sides and Angles</title>
+  <p>In any triangle, the angle opposite the longest side is the largest angle, and the angle opposite the shortest side is the smallest angle.</p></assemblage>
+
+<p>What about triangles that have equal sides, namely isosceles and equilateral triangles? The angles opposite equal sides must also be equal.</p>
+
+<assemblage><title>Definition</title>
+  <p>In an isosceles triangle, the two equal angles (the ones opposite the equal sides) are called the <term>base angles</term>, and the third angle (the one included between the equal sides) is called the <term>vertex angle</term>.
+      <image source="vertexangle.png" width="25%"></image></p></assemblage>
+
+<example><statement><p>The triangle below is isosceles. What is the measure of the other base angle, and what is the measure of the vertex angle?
+      <image source="tri38deg.png" width="35%"></image></p></statement>
+
+<solution><p>The base angles of an isosceles triangle are equal, so the other base angle is 38<m>\degree</m>. To find the vertex angle, we recall from Activity 1.4.1 that the sum of all the angles in a triangle is 180<m>\degree</m>, so the vertex angle must be
+            <md><mrow>\text{vertex angle} \amp = 180 \degree - (38 \degree + 38 \degree)</mrow>
+            <mrow>~~~~~~~~~~\amp =  180 \degree - 76 \degree = 104 \degree </mrow></md>
+</p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>The vertex angle of the isosceles triangle below is 120<m>\degree</m>. What is the measure of each base angle?
+        <image source="tri120deg.png" width="40%"></image></p></li>
+  <li><p>What is the measure of each angle of an equilateral triangle?</p></li></ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>30\degree</m></p></li>
+  <li><p><m>60\degree</m></p></li>
+</ol></p></answer></exercise>
+
+Here are the facts we have discovered about angles in triangles.
+
+  <assemblage><title> Angles in Triangles</title><p><ul>
+    <li><p>The sum of the angles in any triangle is 180<m>\degree</m>.</p></li>
+    <li><p>The base angles of an isosceles triangle are equal.</p></li>
+    <li><p>All the angles of an equilateral triangle are equal.</p></li></ul></p></assemblage>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>angle</p></li>
+  <li><p>vertex</p></li>
+  <li><p>right angle</p></li>
+  <li><p>perpendicular</p></li>
+  <li><p>acute angle</p></li>
+  <li><p>obtuse angle</p></li>
+  <li><p>straight angle</p></li>
+  <li><p>protractor</p></li>
+  <li><p>degrees</p></li>
+  <li><p>equilateral</p></li>
+  <li><p>isosceles</p></li>
+  <li><p>scalene</p></li>
+  <li><p>inequality symbols</p></li>
+  <li><p>base angles</p></li>
+  <li><p>vertex angle</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-1-4.ptx" />
+
+</section>

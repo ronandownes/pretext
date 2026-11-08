@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} 
+\draw[magenta!90!black, line width=1mm] (0,0) rectangle ++(2.5,2.5);
+\draw[magenta!90!black, line width=1mm] (0,.75) --++(2.5,0);
+\draw[magenta!90!black, line width=1mm] (1.75,0) --++(0,2.5);
+\node[above] at (1,2.5) {$x$};
+\node[above] at (2.25,2.5) {$8$};
+\node[left] at (0,1.5) {$x$};
+\node[left] at (0,0.25) {$8$};
+\end{tikzpicture}%
+}
+\end{document}

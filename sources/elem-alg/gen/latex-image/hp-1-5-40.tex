@@ -1,0 +1,38 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [scale=0.7]
+\node[left]at (0,3) {6};
+\node[above] at (1.25,6) {2.3};
+\draw[red!80!black, line width=0.9mm, text=black] (2.3,6)--++(5.7,0) node[above,midway]{5.7};
+\draw[red!80!black, line width=0.9mm, fill=cyan!30!white] (0,0) rectangle (8,6);
+\draw[red!80!black, line width=0.9mm, text=black] (2.3,0)--++(0,6); \draw[red!80!black, line width=0.9mm] (0,0)--(8,0) -- (8,6);
+\draw[red!80!black, line width=0.9mm, fill=white] (1.1,0.85) rectangle ++(4.5,2);
+\node[left] at (1.1,1.85) {2};
+\node[below] at (1.6,.85) {1.2};
+\node[below] at (3.95,.85) {3.3};
+\end{tikzpicture}%
+}
+\end{document}

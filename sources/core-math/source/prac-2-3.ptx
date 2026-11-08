@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-2-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 2.3</title>
+
+<exercisegroup cols="2">
+<introduction><p>For Problems 1-8, write mathematical sentences relating the variables.</p></introduction>
+
+<exercise number="1"><statement><p>Write a mathematical sentence thatexpresses the number of laps Shirleyhas swum in terms of the number oflaps Janet has swum.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Janet's laps</cell>
+      <cell>Shirley's laps</cell></row>
+    <row>
+      <cell>18</cell>
+      <cell>10</cell></row>
+    <row>
+      <cell>22</cell>
+      <cell>14</cell></row>
+    <row>
+      <cell>30</cell>
+      <cell>22</cell></row>
+    </tabular></p>
+
+    <p>Shirley's laps = </p></statement>
+<answer><p>Shirley's laps = Janet's laps - 8</p></answer></exercise> 
+
+<exercise number="2"><statement><p>Write a mathematical sentence that expresses the number of miles Cara has bicycled in terms of the number of miles Jamil has bicycled.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Jamil's miles</cell>
+      <cell>Cara's miles</cell></row>
+    <row>
+      <cell>2</cell>
+      <cell>5</cell></row>
+    <row>
+      <cell>6</cell>
+      <cell>9</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>15</cell></row>
+    </tabular></p>
+
+    <p>Cara's miles = </p></statement></exercise>
+
+<exercise number="3"><statement><p>Write a mathematical sentence thatgives the number of batteries in terms of the number of packages.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Packages</cell>
+      <cell>Batteries</cell></row>
+    <row>
+      <cell>5</cell>
+      <cell>30</cell></row>
+    <row>
+      <cell>8</cell>
+      <cell>48</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>72</cell></row>
+    </tabular></p>
+
+    <p>Number of batteries = </p></statement>
+<answer><p>Number of batteries = <m>6 \times </m> no. of packages</p></answer></exercise>
+
+<exercise number="4"><statement><p>Write a mathematical sentence that gives the number of study groups in terms of the number of students.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Students</cell>
+      <cell>Study Groups</cell></row>
+    <row>
+      <cell>20</cell>
+      <cell>5</cell></row>
+    <row>
+      <cell>28</cell>
+      <cell>7</cell></row>
+    <row>
+      <cell>40</cell>
+      <cell>10</cell></row>
+    </tabular></p>
+
+    <p>Number of study groups = </p></statement></exercise>
+
+<exercise number="5"><statement><p>Write a mathematical sentence that tells how many pages you have left to read out of a  200-page assignment.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Pages read</cell>
+      <cell>Pages left</cell></row>
+    <row>
+      <cell>30</cell>
+      <cell>170</cell></row>
+    <row>
+      <cell>85</cell>
+      <cell>115</cell></row>
+    <row>
+      <cell>160</cell>
+      <cell>40</cell></row>
+    </tabular></p>
+
+    <p>Number of pages left = </p></statement>
+<answer><p>Number of pages left = 200 - no. pages read</p></answer></exercise>
+
+<exercise number="6"><statement><p>Write a mathematical sentence that tells tells how many minutes are left in a two-hour (120-minute) game.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Minutes played</cell>
+      <cell>Minutes left</cell></row>
+    <row>
+      <cell>15</cell>
+      <cell>105</cell></row>
+    <row>
+      <cell>40</cell>
+      <cell>80</cell></row>
+    <row>
+      <cell>97</cell>
+      <cell>23</cell></row>
+    </tabular></p>
+
+    <p>Number of minutes left = </p></statement></exercise>
+
+<exercise number="7"><statement><p>Write a mathematical sentence that tells expresses the amount of your wages in terms of the number of hours you worked.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Hours worked</cell>
+      <cell>Wages</cell></row>
+    <row>
+      <cell>5</cell>
+      <cell>35</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>84</cell></row>
+    <row>
+      <cell>20</cell>
+      <cell>140</cell></row>
+    </tabular></p>
+
+    <p>Wages = </p></statement>
+  <answer><p>Wages = <m>7 \times</m> no. hours worked</p></answer></exercise>
+
+<exercise number="8"><statement><p>Write a mathematical sentence that tells expresses your weekly study hours in terms of the number of units you are enrolled in.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Units</cell>
+      <cell>Study hours</cell></row>
+    <row>
+      <cell>6</cell>
+      <cell>18</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>36</cell></row>
+    <row>
+      <cell>18</cell>
+      <cell>54</cell></row>
+    </tabular></p>
+
+    <p>Number of study hours = </p></statement></exercise>
+</exercisegroup>
+
+<exercise number="9"><statement><p>The bar graph shows the percent of children born outside of marriage in various European countries. </p>  
+      <image source="hp-2-3-9.png" width="70%"></image>                
+<p><ol marker="a.">
+  <li><p>What variable is displayed in this graph?</p></li>
+  <li><p>What percent of children are born outside of marriage in Germany?</p></li>
+  <li><p>In which country are 18% of children born outside of marriage?</p></li>
+  <li><p>In which country is the largest percent of children born outside of marriage?</p></li>
+  <li><p>In which country is the smallest percent of children born outside of marriage?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>Children born outside marriage</p></li>
+  <li><p>15%</p></li>
+  <li><p>Ireland</p></li>
+  <li><p>Denmark</p></li>
+  <li><p>Greece</p></li>
+</ol></p></answer></exercise> 
+
+<exercise number="10"><statement><p>The bar graph shows the percent of the original rain forest that remains in several areas that are undergoing heavy deforestation.</p>
+      <image source="hp-2-3-10.png" width="70%"></image>                
+<p><ol marker="a.">
+  <li><p>What variable is displayed in this graph?</p></li>
+  <li><p>What percent of the Central American rain forest remains?</p></li>
+  <li><p>In what region does only 3% of the rain forest remain?</p></li>
+  <li><p>In what region is the largest percent of the original rain forest left?</p></li>
+  <li><p>In what region is the smallest percent of the original rain forest left?</p></li>
+</ol></p>
+    <image source="rainforest.png" width="50%"></image>
+</statement></exercise>
+
+<exercise number="11"><statement><p>The bar graph shows the average temperature in Chicago during each month of the year.</p>
+      <image source="hp-2-3-11.png" width="70%"></image>                
+<p><ol marker="a.">
+  <li><p>What variable is displayed in this graph?</p></li>
+  <li><p>What is the average temperature during October?</p></li>
+  <li><p>In what month is the average temperature 59<m>\degree</m>?</p></li>
+  <li><p>Which month experiences the greatest temperature increase over the previous month?</p></li>
+  <li><p>Which month experiences the greatest temperature decrease over the previous month?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>Average temperature in Chicago</p></li>
+  <li><p><m>54 \degree</m></p></li>
+  <li><p>May</p></li>
+  <li><p>April</p></li>
+  <li><p>November</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>The bar graph shows the average precipitation (in inches) each month in Tampa, Florida.</p>
+      <image source="hp-2-3-12.png" width="70%"></image>                
+<p><ol marker="a.">
+   <li><p>What variable is displayed in this graph?</p></li>
+  <li><p>In which month does Tampa receive the most precipitation?</p></li>
+  <li><p>In which month does Tampa receive the least precipitation?</p></li>
+  <li><p>What is the increase in precipitation from April to May?</p></li>
+  <li><p>What is the decrease in precipitation from September to October?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="13"><statement><p>The bar graph shows the leading causes of accidental deaths for children under five years of age. (Note that in this bar graph, the bars are horizontal instead of vertical.)</p>
+      <image source="hp-2-3-13.png" width="70%"></image>                
+<p><ol marker="a.">
+  <li><p>Make a table showing the number of deaths for each cause.</p></li>
+  <li><p>What caused the most deaths for children under age 5?</p></li>
+  <li><p>About 3400 accidental deaths of children under age 5 were recorded. What fraction of those deaths were caused by drowning? (Round your answer to the nearest thousandth.)</p></li>
+  <li><p>How many accidental deaths were due to causes other than those shown in the bar graph?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>Falls: 60, Choking: 125, Suffocation: 350, Drowning: 450, Fires: 750, Motor vehicles: 1000</p></li>
+  <li><p>Motor vehicles</p></li>
+  <li><p>0.132</p></li>
+  <li><p>Approximately 665</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="14"><statement><p>The bar graph shows the number of annual paid vacation days received by workers in ten industrial nations.</p>
+      <image source="hp-2-3-14.png" width="70%"></image>                
+<p><ol marker="a.">
+   <li><p>In which nation do workers receive the most vacation days? In which nation do they receive the fewest?</p></li>
+  <li><p>Make a table showing the number of vacation days in each country. List the countries in order from most vacation days to fewest.</p></li>
+  <li><p>How many more vacation days would you get in France than in Australia?</p></li>
+  <li><p>Which countries get at least double the amount of vacation we get in the United States? Do any countries get double the amount of vacation Canadians get?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="15"><statement><p>The bar graph shows the average life expectancy in various countries in 1900 and now. (Life expectancy is the average age to which people can expect to live.)</p>
+      <image source="hp-2-3-15.png" width="70%"></image>                
+<p><ol marker="a.">
+  <li><p>Which country had the highest life expectancy in 1900? Which had the lowest?</p></li>
+  <li><p>Which country has the highest life expectancy now? Which has the lowest?</p></li>
+  <li><p>Which country experienced the greatest increase in life expectancy over the last century? By how many years?</p></li>
+  <li><p>How much has the gap in life expectancy among the countries listed decreased over the last century?</p></li>
+</ol></p>
+    <image source="lifeexp.png" width="30%"></image>
+</statement>
+<answer><p><ol marker="a.">
+  <li><p>US, Mexico</p></li>
+  <li><p>Japan, Mexico</p></li>
+  <li><p>Mexico, 41 years</p></li>
+  <li><p>8 years</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="16"><statement><p>The bar graph shows the average weekly working hours in various countries in 1900 and now.</p>
+      <image source="hp-2-3-16.png" width="70%"></image>                
+<p><ol marker="a.">
+    <li><p>Which country had the longest average work week in 1900? Which had the shortest?</p></li>
+  <li><p>Which country has the longest average work week now? Which has the shortest?</p></li>
+  <li><p>In which country did the number of working hours decrease the most over the last century? By how many hours?</p></li>
+  <li><p>How much has the gap in working hours among the countries listed increased over the last century?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="17"><statement><p>What is the difference between a variable and a constant?</p></statement>
+<answer><p>A variable can have different values; a constant always has the same value.</p></answer></exercise>
+
+<exercise number="18"><statement><p>How does a bar graph display the values of a variable?</p></statement></exercise>
+
+<exercisegroup>
+<introduction><p>For Problems 19-24, use letters to represent the variable quantities.</p></introduction>
+
+<exercise number="19"><statement><p>Yasmin needs <m>9 \dfrac{1}{2}</m> hours per week to study for her math class.</p>
+<p><ol marker="a.">  
+  <li><p>If Yasmin has 15 study hours per week, how many hours does she have for her other classes?</p></li>
+  <li><p>Explain how to find the number of study hours Yasmin has for her other classes if she has <m>t</m> hours of weekly study time.</p></li>
+  <li><p>Fill in the table for the given values of <m>t</m>. (Hint:  First subtract 9 from the value of <m>t</m>, then subtract <m>\dfrac{1}{2}</m> from the result.)</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>t \hphantom{000}</m></cell>
+      <cell>16 <m>\hphantom{000}</m></cell>
+      <cell>20 <m>\hphantom{000}</m></cell>
+      <cell>25 <m>\hphantom{000}</m></cell>
+      <cell>31 <m>\hphantom{000}</m></cell></row>
+    <row>
+      <cell><m>t - 9\dfrac{1}{2}</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><m>5 \frac{1}{2}</m> hr</p></li>
+  <li><p>Subtract <m>9 \frac{1}{2}</m> from <m>t</m></p></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>t </m></cell>
+      <cell>16</cell>
+      <cell>20</cell>
+      <cell>25</cell>
+      <cell>31</cell></row>
+    <row>
+      <cell><m>t - 9\dfrac{1}{2}</m></cell>
+      <cell><m>6 \frac{1}{2}</m></cell>
+      <cell><m>10 \frac{1}{2}</m></cell>
+      <cell><m>15 \frac{1}{2}</m></cell>
+      <cell><m>21 \frac{1}{2}</m></cell></row>
+    </tabular></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>Rose and her two sisters, Iris and Violet, plan to sell the family farm and move to Florida.  They will divide the money from the sale equally.</p>
+<p><ol marker="a.">  
+  <li><p>How much will Rose get if they make $30,000 on the sale?</p></li>
+  <li><p>Explain how to find Rose's share if they make <m>s</m> dollars.</p></li>
+  <li><p>Fill in the table for the given values of <m>s</m>.</p>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>s \hphantom{000}</m></cell>
+      <cell>36,000</cell>
+      <cell>45,000</cell>
+      <cell>51,000</cell>
+      <cell>114,000</cell></row>
+    <row>
+      <cell><m>\dfrac{s}{3}</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+</ol></p></statement></exercise>
+
+<exercise number="21"><statement><p>Kranberry Kooler is 10% cranberry juice.</p>
+<p><ol marker="a.">  
+  <li><p>How much cranberry juice is in 15 quarts of Kranberry Kooler?</p></li>
+  <li><p>Explain how to find the number of quarts of cranberry juice needed for <m>q</m> quarts of Kranberry Kooler.</p></li>
+  <li><p>Fill in the table for the given values of <m>q</m>.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>q \hphantom{000}</m></cell>
+      <cell>20</cell>
+      <cell>45</cell>
+      <cell>260</cell>
+      <cell>1250</cell></row>
+    <row>
+      <cell><m>0.10 \times q</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p>1.5 qt</p></li>
+  <li><p>Multiply by 0.10</p></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>q </m></cell>
+      <cell>20</cell>
+      <cell>45</cell>
+      <cell>260</cell>
+      <cell>1250</cell></row>
+    <row>
+      <cell><m>0.10 \times q</m></cell>
+      <cell>2</cell>
+      <cell>4.5</cell>
+      <cell>26</cell>
+      <cell>125</cell></row>
+    </tabular></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>The registrar at City College predicts a 4% enrollment increase for all departments next year.</p>
+<p><ol marker="a.">  
+  <li><p>If the English department has 5200 students enrolled this year, how many should they expect next year?</p></li>
+  <li><p>Explain how a department with <m>p</m> students this year can predict next year's enrollment.</p></li>
+  <li><p>Fill in the table for the given values of <m>p</m>.</p>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>p \hphantom{000}</m></cell>
+      <cell>600</cell>
+      <cell>1300</cell>
+      <cell>2200</cell>
+      <cell>3500</cell></row>
+    <row>
+      <cell><m>1.04 \times p</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+</ol></p></statement></exercise>
+
+<exercise number="23"><statement><p>Human hair grows approximately 0.085 centimeters per day. Sinead shaved her head this morning. </p>
+<sidebyside  widths="70% 20%" valigns="middle middle"><p><ol marker="a.">  
+  <li><p>How long will Sinead's hair be after 30 days?</p></li>
+  <li><p>Explain how to find the length of Sinead's hair after <m>t</m> days.</p></li>
+  <li><p>Fill in the table for the given values of <m>t</m>.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>t \hphantom{000}</m></cell>
+      <cell><m>\hphantom{0}</m>7<m>\hphantom{0}</m></cell>
+      <cell>60<m>\hphantom{0}</m></cell>
+      <cell>200</cell>
+      <cell>360</cell></row>
+    <row>
+      <cell><m>0.085\times t</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+</ol></p>
+    <image source="sinead.png" width="25%"></image></sidebyside></statement>
+<answer><p><ol marker="a.">  
+  <li><p>2.45 in</p></li>
+  <li><p>Multiply <m>t</m> by 0.085</p></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>t </m></cell>
+      <cell>7</cell>
+      <cell>60</cell>
+      <cell>200</cell>
+      <cell>360</cell></row>
+    <row>
+      <cell><m>0.085\times t</m></cell>
+      <cell>0.595</cell>
+      <cell>5.1</cell>
+      <cell>17</cell>
+      <cell>30.6</cell></row>
+    </tabular></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>Camilla wants to deposit her savings of $2000 into a one-year T-bill.</p>
+<p><ol marker="a.">  
+  <li><p>How much will Camilla's savings earn if the T-bill earns 7% interest?</p></li>  
+  <li><p>Explain how to compute Camilla's interest if the T-bill pays an interest rate of <m>r</m>.</p></li>
+  <li><p>Fill in the table for the given values of <m>r</m>.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>r \hphantom{000}</m></cell>
+      <cell>6%</cell>
+      <cell>6.5%</cell>
+      <cell>8%</cell>
+      <cell>10%</cell></row>
+    <row>
+      <cell><m>2000\times r</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 25-30, you may skip parts (b) and (c) if you can answer part (d) without them!</p></introduction>
+
+<exercise number="25"><statement><p>Mariel is driving 400 miles to her sister's house.</p>
+<p><ol marker="a.">  
+  <li><p>Fill in the table below.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Miles driven</cell>
+      <cell>80</cell>
+      <cell>150</cell>
+      <cell>225</cell>
+      <cell>310</cell></row>
+    <row>
+      <cell>Miles left</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>  
+  <li><p>Explain how to find the number of miles Mariel has left to drive if you know how many miles she has driven.</p></li>
+  <li><p>Write a mathematical sentence for the number of miles left to drive:</p> 
+        <p>Miles left  = </p></li>                                                               
+  <li><p>Let <m>d</m> stand for the number of miles Mariel has driven, and write an expression for the number of miles she has left in terms of <m>d</m>.</p>
+        <p>Miles left = </p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Miles driven</cell>
+      <cell>80</cell>
+      <cell>150</cell>
+      <cell>225</cell>
+      <cell>310</cell></row>
+    <row>
+      <cell>Miles left</cell>
+      <cell>320</cell>
+      <cell>250</cell>
+      <cell>175</cell>
+      <cell>90</cell></row>
+    </tabular></p></li>
+    <li><p>Subtract miles driven from 400</p></li>
+    <li><p>Miles left = 400 - miles driven</p></li>
+    <li><p>Miles left = <m>400 - d</m></p></li>
+</ol></p></answer></exercise>  
+
+<exercise number="26"><statement><p>Delbert has a coupon for $12 off at Video World.</p>
+<p><ol marker="a.">  
+  <li><p>Fill in the table below.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Regular price</cell>
+      <cell>18</cell>
+      <cell>25</cell>
+      <cell>76</cell>
+      <cell>130</cell></row>
+    <row>
+      <cell>Delbert's price</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>  
+  <li><p>Explain how to find Delbert's price if you know the regular price.</p></li>
+  <li><p>Write a mathematical sentence for what Delbert pays:</p> 
+        <p>Delbert's price  = </p></li>                                                               
+  <li><p>Let <m>p</m> stand for the regular price, and write an expression for Delbert's price in terms of <m>p</m>.</p>
+        <p>Delbert's price = </p></li>
+  </ol></p></statement></exercise>                                                                   
+
+<exercise number="27"><statement><p>Adria's diet allows one-fifth of her total daily calories to come from fat.</p>
+<p><ol marker="a.">  
+  <li><p>Fill in the table below.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Total calories</cell>
+      <cell>1200</cell>
+      <cell>1225</cell>
+      <cell>1500</cell>
+      <cell>1800</cell></row>
+    <row>
+      <cell>Calories from fat</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>  
+  <li><p>Explain how to find the number of calories from fat allowed if you know how many calories Adria plans to eat.</p></li>
+  <li><p>Write a mathematical sentence for the number of calories from fat:</p> 
+        <p>Calories from fat  = </p></li>                                                               
+  <li><p>Let <m>c</m> stand for the regular price, and write an expression for the number of calories from fat allowed in terms of <m>c</m>.</p>
+        <p>Calories from fat = </p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Total calories</cell>
+      <cell>1200</cell>
+      <cell>1225</cell>
+      <cell>1500</cell>
+      <cell>1800</cell></row>
+    <row>
+      <cell>Fat calories</cell>
+      <cell>240</cell>
+      <cell>245</cell>
+      <cell>300</cell>
+      <cell>360</cell></row>
+    </tabular></p></li>
+  <li><p>Divide total calories by 5</p></li>
+  <li><p>Calories from fat  = total calories <m>\div 5</m></p></li>                                                               
+  <li><p>Calories from fat = <m>c \div 5</m></p></li>
+</ol></p></answer> </exercise>
+
+<exercise number="28"><statement><p>  Marvin goes to a restaurant with three friends and agrees to split the bill equally.</p>
+<p><ol marker="a.">  
+  <li><p>Fill in the table below.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Total bill ($)</cell>
+      <cell>36</cell>
+      <cell>44</cell>
+      <cell>56</cell>
+      <cell>72</cell></row>
+    <row>
+      <cell>Marvin's share ($)</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>  
+  <li><p>Explain how to find Marvin's share of the bill.</p></li>
+  <li><p>Write a mathematical sentence for Marvin's share of the bill:</p> 
+        <p>Marvin's share = </p></li>                                                               
+  <li><p>Let <m>B</m> stand for the regular price, and write an expression for Marvin's share in terms of <m>B</m>.</p>
+        <p>Marvin's share = </p></li>
+  </ol></p>
+      <image source="restaurant.png" width="40%"></image>
+</statement></exercise>
+
+<exercise number="29"><statement><p>  Marvin and his friends from Problem 28 agree to tip 15% of the total bill.</p>
+<p><ol marker="a.">  
+  <li><p>Fill in the table below.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Total bill ($)</cell>
+      <cell>32</cell>
+      <cell>48</cell>
+      <cell>52</cell>
+      <cell>60</cell></row>
+    <row>
+      <cell>Tip ($)</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>  
+  <li><p>Explain how to find the tip.</p></li>
+  <li><p>Write a mathematical sentence for Marvin's share of the bill:</p> 
+        <p>Tip = </p></li>                                                               
+  <li><p>Let <m>B</m> stand for the total bill, and write an expression for the tip in terms of <m>B</m>.</p>
+        <p>Tip = </p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Total bill ($)</cell>
+      <cell>32</cell>
+      <cell>48</cell>
+      <cell>52</cell>
+      <cell>60</cell></row>
+    <row>
+      <cell>Tip ($)</cell>
+      <cell>4.80</cell>
+      <cell>7.20</cell>
+      <cell>7.80</cell>
+      <cell>9.00</cell></row>
+    </tabular></p></li>
+  <li><p>Multiply the bill by 0.15</p></li>
+  <li><p>Tip = 0.15 <m>\times</m> Bill</p></li>                                                               
+  <li><p>Tip = <m>0.15 \times B</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p> Rae has been collecting quarters to take to the bank.</p>
+<p><ol marker="a.">  
+  <li><p>Fill in the table below.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Number of quarters</cell>
+      <cell>15</cell>
+      <cell>32</cell>
+      <cell>68</cell>
+      <cell>100</cell></row>
+    <row>
+      <cell>Value of quarters ($)</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>  
+  <li><p>Explain how to find the value of the quarters if you know how many quarters Rae has.</p></li>
+  <li><p>Write a mathematical sentence for the value of the quarters, in dollars:</p> 
+        <p>Value of quarters = </p></li>                                                               
+  <li><p>Let <m>Q</m> stand for the total bill, and write an expression for the value of the quarters in terms of <m>Q</m>.</p>
+        <p>Value of quarters = </p></li>
+  </ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="31"><statement><p>Francine is saving up to buy a car, and deposits <m>\dfrac{1}{5}</m> of her spending money each month into a savings account.</p>
+ <p><ol marker="a.">  
+  <li><p>If <m>m</m> stands for Francine's spending money, write an expression for the amount she saves.</p>
+      <p>Amount Francine saves = </p></li>
+  <li><p>If Francine has $120 spending money, how much will she deposit into the savings account?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><m>\dfrac{1}{5} \times m</m> or <m>\dfrac{m}{5}</m></p></li>
+  <li><p>$24</p></li>
+</ol></p></answer></exercise>  
+
+<exercise number="32"><statement><p>The Pep Club donates <m>\dfrac{1}{6}</m> of the money it raises to charity.</p>
+ <p><ol marker="a.">  
+  <li><p>If <m>R</m> stands for the amount of money the Pep Club raised, write an expression for the amount they donated to charity.</p>
+      <p>Amount donated = </p></li>
+  <li><p>If the Pep Club raised $240 how much will did they donate to charity?</p></li>
+</ol></p></statement></exercise>                                                         
+
+<exercise number="33"><statement><p>Delbert wants to enlarge his class photograph. Its height is <m>\dfrac{1}{4}</m> of its width. The enlarged photo should have the same shape as the original. </p>
+ <p><ol marker="a.">  
+  <li><p>If <m>W</m> stands for the width of the enlargement, write an expression for its height.</p>
+      <p>Height = </p></li>
+  <li><p>If the width of the photo is 10 inches, what if its height?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><m>\dfrac{1}{4} \times W</m> or <m>\dfrac{W}{4}</m></p></li>
+  <li><p>2.5 in</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="34"><statement><p>The amount of soy flour in Lucy's protein bread is <m>\dfrac{1}{8}</m> of the amount of wheat flour.</p>
+ <p><ol marker="a.">  
+  <li><p>If <m>w</m> stands for the amount of wheat flour, write an expression for the amount of soy flour.</p>
+      <p>Amount of soy flour = </p></li>
+  <li><p>If Lucy uses 6 cups of wheat flour, how much soy flour will she need?</p></li>
+</ol></p>
+    <image source="flour.png" width="40%"></image>
+</statement></exercise>
+
+<exercise number="35"><statement><p>If the governor vetoes a bill passed by the State Assembly, <m>\dfrac{2}{3}</m> of the members present must vote for the bill in order to overturn the veto. </p>
+ <p><ol marker="a.">  
+  <li><p>If <m>p</m> stands for the number of Assembly members present, write an expression for the number of votes needed to overturn a veto.</p>
+      <p>Votes needed = </p></li>
+  <li><p>If 147 members are present, how many votes are needed to overturn a veto?</p></li>
+</ol></p>
+      <image source="assembly.png" width="40%"></image>
+</statement>
+<answer><p><ol marker="a.">  
+  <li><p>\dfrac{2}{3} \times p</p></li>
+  <li><p>98</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p>The case for a Blu Ray disk is <m>\dfrac{3}{8}</m> inch thick. You keep your disks lined up side-by-side on a bookshelf.</p>
+ <p><ol marker="a.">  
+  <li><p>If you own <m>n</m> disks, write an expression for the length of shelf space you will need.</p>
+      <p>Length of shelf space = </p></li>
+  <li><p>If you own 32 disks, how much shelf space will you need?</p></li>
+</ol></p></statement></exercise>
+
+</exercises>
+

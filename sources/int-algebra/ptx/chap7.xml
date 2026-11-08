@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap7"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+<title>Exponential Functions</title>
+    
+<introduction>
+    <sidebyside width="60%" margins="0% 40%"><image source="images/computer-chip.png"><description>computer chip, Andre Kudyusov/Getty Images</description></image></sidebyside>
+    
+<p>In Chapter 1 we studied <term>linear functions</term>, which model quantities that have a <em>constant rate of change</em>. That is, they increase or decrease by the same amount in equal time periods (or equal increments of the input variable). In Example 1.14 we considered a bicycle rental program where the hourly rental fee of $3 was added each hour to the initial insurance fee of $5. We found a formula for the cost of renting a bike for <m>t</m> hours:
+    <me>C(t) = 5 + 3t</me></p>
+<p>Recall that the general formula for linear functions is
+    <me>f(t) = b + mt</me>
+where <m>m</m> stands for the rate of change. Ponder the fact that <em>multiplying</em> <m>m</m> by <m>t</m> means repeatedly <em>adding</em> <m>t</m> copies of <m>m</m> to the initial amount <m>b</m>.</p>
+
+<p>We next consider another important family of functions, called <term>exponential functions</term><idx><h>exponential function</h></idx><idx><h>function</h><h>exponential</h></idx>. These functions describe growth by a constant <em>factor</em> in equal time periods. Just as multiplication means repeated addition, you also know that raising to an exponent means repeated multiplication. For example, the expression
+    <me>a \cdot b^5</me>
+means to multiply <m>a</m> by <m>5</m> copies of <m>b</m>, so we will use exponents to describe the effect of constant growth factors.</p>
+
+<p>Exponential functions model many familiar processes, including the growth of populations, compound interest, and radioactive decay.  Here is an example.</p>
+    
+<p>In 1965, Gordon Moore, the cofounder of Intel, observed that the number of transistors on a computer chip had doubled every year since the integrated circuit was invented. Moore predicted that the pace would slow down a bit, but the number of transistors would continue to double every 2 years. More recently, data density has doubled approximately every 18 months, and this is the current definition of <term>Moore's law</term><idx>Moore's law</idx>. Most experts, including Moore himself, expected Moore's law to hold for at least another two decades.</p>
+
+    <sidebyside widths="45% 50%" margins="0% 0%" valigns="middle middle">
+    <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell>Year</cell>
+            <cell>Name of circuit</cell>
+            <cell>Transistors</cell></row>
+        <row>
+            <cell><m>1971</m></cell>
+            <cell><m>4004</m></cell>
+            <cell><m>2300</m></cell></row>
+        <row>
+            <cell><m>1972</m></cell>
+            <cell><m>8008</m></cell>
+            <cell><m>3300</m></cell></row>
+        <row>
+            <cell><m>1974</m></cell>
+            <cell><m>8080</m></cell>
+            <cell><m>6000</m></cell></row>
+        <row>
+            <cell><m>1978</m></cell>
+            <cell><m>8086</m></cell>
+            <cell><m>29,000</m></cell></row>
+        <row>
+            <cell><m>1979</m></cell>
+            <cell><m>8088</m></cell>
+            <cell><m>30,000</m></cell></row>
+        <row>
+            <cell><m>1982</m></cell>
+            <cell><m>80286</m></cell>
+            <cell><m>134,000</m></cell></row>
+        <row>
+            <cell><m>1985</m></cell>
+            <cell><m>80386</m></cell>
+            <cell><m>275,000</m></cell></row>
+        <row>
+            <cell><m>1989</m></cell>
+            <cell><m>90486</m></cell>
+            <cell><m>1,200,000</m></cell></row>
+        <row>
+            <cell><m>1993</m></cell>
+            <cell>Pentium</cell>
+            <cell><m>3,000,000</m></cell></row>
+        <row>
+            <cell><m>1995</m></cell>
+            <cell>Pentium Pro</cell>
+            <cell><m>5,500,000</m></cell></row>
+        <row>
+            <cell><m>1997</m></cell>
+            <cell>Pentium II</cell>
+            <cell><m>7,500,000</m></cell></row>
+        <row>
+            <cell><m>1998</m></cell>
+            <cell>Pentium II Xeon</cell>
+            <cell><m>7,500,000</m></cell></row>
+        <row>
+            <cell><m>1999</m></cell>
+            <cell>Pentium III</cell>
+            <cell><m>9,500,000</m></cell></row>
+    </tabular>
+    <image source="images/fig-Moores-Law"><description>growth</description></image></sidebyside>
+
+<p>The data shown are modeled by the exponential function <m>N(t) = 2200(1.356)^t</m>, where <m>t</m> is the number of years since <m>1970</m>.</p>
+
+
+
+
+</introduction>
+
+<xi:include href="./section-7-1.xml" /> <!-- Exponential Growth & Decay -->
+<xi:include href="./section-7-2.xml" /> <!-- Exponential Functions  -->
+<xi:include href="./section-7-3.xml" /> <!-- Logarithms  -->
+<xi:include href="./section-7-4.xml" /> <!-- Properties of Logarithms -->
+<xi:include href="./section-7-5.xml" /> <!-- Exponential Models  -->
+<!--<xi:include href="./section-7-6.xml" />  Logarithmic Scales moved to 10.2 -->
+    <xi:include href="./chap7-summary.xml" /> <!--Summary and Review-->
+        
+
+</chapter> 
+<!-- </book>  </mathbook> -->

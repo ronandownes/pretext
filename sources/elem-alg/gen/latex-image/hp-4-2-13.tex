@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.5]
+\draw[cyan] (0,0) grid (10,15);
+\foreach \x [evaluate=\x as \xi using int(50*\x)] in {0, 2,4,6,8,10} {
+ \draw[cyan,very thick] (\x,0)--(\x,15);
+ \draw[black,very thick] (\x, .2)--++(0,-.4) node[below]{$ \xi $};
+ }
+\foreach \x [evaluate=\x as \xi using int(2*\x+10)] in {0, 5,10,15} {
+ \draw[cyan,very thick] (0,\x)--(10,\x);
+ \draw[black,very thick] (.2,\x)--++(-.4,0) node[left]{$ \xi $};
+ }
+\draw[black, very thick,->,>=stealth'] (0,0)--(11.3,0) node[right]{$x$};
+\draw[black, very thick,->,>=stealth'] (0,0)--(0,16.3) node[left]{$y$};
+\node[below] at (5,-1.5) {Thousands of dollars};
+\node[label=below:\rotatebox{90}{Thousands of dollars}] at (-2,11) {};
+\end{tikzpicture}%
+}
+\end{document}

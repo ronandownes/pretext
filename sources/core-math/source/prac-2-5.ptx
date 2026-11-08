@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-2-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 2.5</title>
+
+<exercisegroup><introduction><p>For Problelms 1-4, fill in the table, and answer the questions.</p></introduction>
+
+<exercise number="1"><statement><p>Rachel is eight years older than Simone.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Simone's age</cell>
+      <cell>6</cell>
+      <cell>10</cell>
+      <cell>15</cell>
+      <cell></cell>
+      <cell>30</cell>
+      <cell></cell></row>
+    <row>
+      <cell>Rachel's age</cell>
+      <cell>14</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>26</cell>
+      <cell></cell>
+      <cell>32</cell></row>
+    </tabular></p>
+<p><ol marker="a.">
+  <li><p>Explain how to find Rachel's age when you know Simone's age.</p></li>
+  <li><p>Explain how to find Simone's age when you know Rachel's age.</p></li>
+  <li><p>Let <m>r</m> stand for Rachel's age.  Write an equation for <m>r</m> in terms of Simone's age, <m>s</m>.</p></li>
+  <li><p>How can you find <m>r</m> if you know <m>s</m>?</p></li>  
+  <li><p>How can you find <m>s</m> if you know <m>r</m>?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>Add 8</p></li>
+  <li><p>Subtract 8</p></li>
+  <li><p><m>r = s + 8</m></p></li>
+  <li><p>Add 8</p></li>  
+  <li><p>Subtract 8</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="2"><statement><p>Farnaz deposits one-third of her paycheck into her savings account.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Paycheck ($)</cell>
+      <cell>30</cell>
+      <cell>60</cell>
+      <cell>120</cell>
+      <cell></cell>
+      <cell>240</cell>
+      <cell></cell></row>
+    <row>
+      <cell>Deposit ($)</cell>
+      <cell>10</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>70</cell>
+      <cell></cell>
+      <cell>100</cell></row>
+    </tabular></p>
+<p><ol marker="a.">
+  <li><p>Explain how to find Farnaz's deposit when you know her paycheck.</p></li>
+  <li><p>Explain how to find Farnaz's paycheck when you know her dposit.</p></li>
+  <li><p>Let <m>r</m> stand for Farnaz's deposit.  Write an equation for <m>d</m> in terms of her paycheck, <m>p</m>.</p></li>
+  <li><p>How can you find <m>d</m> if you know <m>p</m>?</p></li>  
+  <li><p>How can you find <m>p</m> if you know <m>d</m>?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="3"><statement><p>Delbert's checking account has an outstanding check (not yet received by the bank) for $76. So his actual balance is $76 less than the balance shown on his bank statement.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Bank statement ($)</cell>
+      <cell>100</cell>
+      <cell>138</cell>
+      <cell>188</cell>
+      <cell></cell>
+      <cell>332</cell>
+      <cell></cell></row>
+    <row>
+      <cell>Actual balance ($)</cell>
+      <cell>24</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>200</cell>
+      <cell></cell>
+      <cell>276</cell></row>
+    </tabular></p>
+<p><ol marker="a.">
+  <li><p>Explain how to find the actual balance from the bank statement.</p></li>
+  <li><p>Explain how to find the bank's figure for the balance if you know the actual balance.</p></li>
+  <li><p>Let <m>a</m> stand for the actual balance. Write an equation for <m>a</m> in terms of the bank statement, <m>b</m>.</p></li>
+  <li><p>How can you find <m>a</m> if you know <m>b</m>?</p></li>  
+  <li><p>How can you find <m>b</m> if you know <m>a</m>?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>Add $76</p></li>
+  <li><p>Subtract $76</p></li>
+  <li><p><m>a = b + 76</m></p></li>
+  <li><p>Add $76</p></li>  
+  <li><p>Subtract $76</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="4"><statement><p>Francine is traveling on an express train at 65 miles per hour.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Hours traveled</cell>
+      <cell>1</cell>
+      <cell>2</cell>
+      <cell>3.5</cell>
+      <cell></cell>
+      <cell>6</cell>
+      <cell></cell></row>
+    <row>
+      <cell>Miles traveled</cell>
+      <cell>65</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>325</cell>
+      <cell></cell>
+      <cell>650</cell></row>
+    </tabular></p>
+<p><ol marker="a.">
+  <li><p>Explain how to find the distance Francine traveled if you know how many hours she traveled.</p></li>
+  <li><p>Explain how to find the number of hours Francine traveled if you know  how many miles she traveled.</p></li>
+  <li><p>Let <m>d</m> stand for the distance Francine traveled. Write an equation for <m>d</m> in terms of the travel time, <m>t</m>.</p></li>
+  <li><p>How can you find <m>d</m> if you know <m>t</m>?</p></li>  
+  <li><p>How can you find <m>t</m> if you know <m>d</m>?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="4"><introduction><p>For Problems 5-12,</p>
+<p><ol marker="a.">
+  <li><p>Describe the relationship between the variables.</p></li>
+  <li><p>Write an equation that expresses the second variable in terms of the first variable.</p></li>
+</ol></p></introduction>
+
+<exercise number="5"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>r</m></cell>
+      <cell><m>q</m></cell></row>
+    <row>
+      <cell>25</cell>
+      <cell>17</cell></row>
+    <row>
+      <cell>21</cell>
+      <cell>13</cell></row>
+    <row>
+      <cell>16</cell>
+      <cell>8</cell></row>
+    <row>
+      <cell>10</cell>
+      <cell>2</cell></row>
+</tabular></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>q</m> is 8 less than <m>r</m>.</p></li>
+  <li><p><m>q = r - 8</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="6"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>v</m></cell>
+      <cell><m>b</m></cell></row>
+    <row>
+      <cell>4</cell>
+      <cell>36</cell></row>
+    <row>
+      <cell>6</cell>
+      <cell>54</cell></row>
+    <row>
+      <cell>8</cell>
+      <cell>72</cell></row>
+    <row>
+      <cell>10</cell>
+      <cell>90</cell></row>
+</tabular></p></statement></exercise>
+
+<exercise number="7"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>h</m></cell>
+      <cell><m>m</m></cell></row>
+    <row>
+      <cell>6</cell>
+      <cell>2</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>4</cell></row>
+    <row>
+      <cell>21</cell>
+      <cell>7</cell></row>
+    <row>
+      <cell>33</cell>
+      <cell>11</cell></row>
+</tabular></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>m</m> is <m>\dfrac{1}{3}</m> of <m>h</m>.</p></li>
+  <li><p><m>m = \dfrac{h}{3}</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="8"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>s</m></cell>
+      <cell><m>t</m></cell></row>
+    <row>
+      <cell>0</cell>
+      <cell>4</cell></row>
+    <row>
+      <cell>8</cell>
+      <cell>12</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>16</cell></row>
+    <row>
+      <cell>16</cell>
+      <cell>20</cell></row>
+</tabular></p></statement></exercise>
+
+<exercise number="9"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>c</m></cell>
+      <cell><m>k</m></cell></row>
+    <row>
+      <cell>1.2</cell>
+      <cell>1.8</cell></row>
+    <row>
+      <cell>1.4</cell>
+      <cell>2.0</cell></row>
+    <row>
+      <cell>2.3</cell>
+      <cell>2.9</cell></row>
+    <row>
+      <cell>2.6</cell>
+      <cell>3.2</cell></row>
+</tabular></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>k</m> is 0.6 more than <m>c</m>.</p></li>
+  <li><p><m>k = c + 0.6</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>x</m></cell>
+      <cell><m>z</m></cell></row>
+    <row>
+      <cell>17.5</cell>
+      <cell>15</cell></row>
+    <row>
+      <cell>16</cell>
+      <cell>13.5</cell></row>
+    <row>
+      <cell>12.7</cell>
+      <cell>10.2</cell></row>
+    <row>
+      <cell>9.3</cell>
+      <cell>6.8</cell></row>
+</tabular></p></statement></exercise>
+
+<exercise number="11"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>a</m></cell>
+      <cell><m>d</m></cell></row>
+    <row>
+      <cell>20</cell>
+      <cell>15</cell></row>
+    <row>
+      <cell>12</cell>
+      <cell>9</cell></row>
+    <row>
+      <cell>8</cell>
+      <cell>6</cell></row>
+    <row>
+      <cell>4</cell>
+      <cell>3</cell></row>
+</tabular></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>d</m> is <m>\dfrac{3}{4}</m> of <m>a</m>.</p></li>
+  <li><p><m>d = \dfrac{3}{4}a</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>u</m></cell>
+      <cell><m>s</m></cell></row>
+    <row>
+      <cell>6</cell>
+      <cell>4</cell></row>
+    <row>
+      <cell>15</cell>
+      <cell>10</cell></row>
+    <row>
+      <cell>27</cell>
+      <cell>18</cell></row>
+    <row>
+      <cell>36</cell>
+      <cell>24</cell></row>
+</tabular></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13-14, choose the equation that best describes each situation. In each case, <m>p</m> represents the unknown quantity.</p>
+  <assemblage><p><m>~~~~~p+8 = 40~~~~~~~~p-8 = 40~~~~~~~~8p=40</m></p></assemblage></introduction>
+
+<exercise number="13"><statement><p><ol marker="a.">
+  <li><p>Eight times a number is 40. What is the number?</p></li>
+  <li><p>A number decreased by 8 is 40. What is the number?</p></li>
+  <li><p>Eight less than a number is 40. What is the number?</p></li>
+  <li><p>Forty exceeds a number by 8. What is the number?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>8p=40</m></p></li>
+  <li><p><m>p-8=40</m></p></li>
+  <li><p><m>p-8=40</m></p></li>
+  <li><p><m>p+8=40</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="14"><statement><p><ol marker="a.">
+  <li><p>Antoinette scored 8 points more than Katy scored. If Antoinette scored 40 points, how many points did Katy score?</p></li>
+  <li><p>Raul got a discount of $8 on his calculator and paid $40. How much is the regular price?</p></li>
+  <li><p>Eight tickets to the rodeo cost $40. How much does one ticket cost?</p></li>
+  <li><p>If Jaye's golden retriever puppy gains 8 pounds, it will weigh 40 pounds. How much does the puppy weigh now?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 15-16, choose the equation that best describes each situation. In each case, <m>b</m> represents the unknown quantity.</p>
+  <assemblage><p><m>~~~~~b - 18 = 10~~~~~~~~18 - b = 10</m></p></assemblage></introduction>
+
+<exercise number="15"><statement><p><ol marker="a.">
+  <li><p>Eighteen less than a number is 10. What is the number?</p></li>
+  <li><p>Eighteen reduced by a number is 10. What is the number?</p></li>
+  <li><p>The difference of 18 and a number is 10. What is the number?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>b-18=10</m></p></li>
+  <li><p><m>18-b = 10</m></p></li>
+  <li><p><m>18-b = 10</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="16"><statement><p><ol marker="a.">
+  <li><p>The temperature dropped 18 degrees over night, and now it is 10<m>\deg</m>. What was the temperatureyesterday?</p></li>
+  <li><p>Negin was enrolled in 18 units, but she dropped some classes and now she has 10 units. Homany units did she drop?</p></li>
+  <li><p>Dorrie bought an $18 video on sale for $10. What was the discount?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 17-18, choose the equation that best describes each situation. In each case, <m>t</m> represents the unknown quantity.</p>
+  <assemblage><p><m>~~~~~16t = 80~~~~~~~~\dfrac{t}{16} = 80</m></p></assemblage></introduction>
+
+<exercise number="17"><statement><p><ol marker="a.">
+  <li><p>How many pounds does an 80-ounce box of laundry soap weigh?</p></li>
+  <li><p>How many ounces does an 80-pound child weigh?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>\dfrac{16}{t} = 80</m></p></li>
+  <li><p><m>\dfrac{t}{16} = 80</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="18"><statement><p><ol marker="a.">
+  <li><p>If Sarmila works 16 hours a week, how many weeks will it take her to complete 80 hours ofcooperative education?</p></li>
+  <li><p>Each member of the Friends of the Youth Symphony must raise $80 to keep the Symphony out of debt. If there are 16 members, how much money do they need?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 19-20, choose the equation that best describes each situation. In each case, <m>n</m> represents the unknown quantity.</p>
+  <assemblage><p><md><mrow>~~~~~n + 5 = 30~~~~~~~~n - 5 = 30</mrow>
+                      <mrow>~~~~~5n = 30~~~~~~~~\dfrac{n}{5} = 30</mrow></md></p></assemblage></introduction>
+
+<exercise number="19"><statement><p><ol marker="a.">
+  <li><p>Five less than a number is 30.</p></li>
+  <li><p>The quotient of a number and 5 is 30.</p></li>
+  <li><p>The product of a number and 5 is 30.</p></li>
+  <li><p>Five more than a number is 30.</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>n-5=30</m></p></li>
+  <li><p><m>\dfrac{n}{5} = 30</m></p></li>
+  <li><p><m></m>5n=30</p></li>
+  <li><p><m>n+5=30</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="20"><statement><p><ol marker="a.">
+  <li><p>The price of a concert ticket increased $5 this year and is now $30. How much did a ticket cost last year?</p></li>
+  <li><p>Amir spent 5 dollars and now has 30 dollars. How much did he have before he spent $5?</p></li>
+  <li><p>Marty jogged the same course five days this week for a total of 30 miles. How far did he jog each day?</p></li>
+  <li><p>Five brothers split the cost of a new TV, each paying $30. How much was the TV?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="21"><statement><p>What is an equation?</p></statement>
+<answer><p>A statement that two expressions are equal.
+</p></answer></exercise>
+
+<exercise number="22"><statement><p>What is a solution of an equation? </p></statement></exercise>
+
+<exercise number="23"><statement><p>What does it mean to solve an equation?</p></statement>
+<answer><p>To find a value for the variable that makes the equation true.</p></answer></exercise>
+
+<exercise number="24"><statement><p>How can you check whether your solution is correct?</p></statement></exercise>
+
+<exercise number="25"><statement><p>Describe a three-step strategy for solving an equation.</p></statement>
+<answer><p>(1) Identify the operation performed on the variable. (2) Perform the opposite operation on both sides of the equation. (3) Check the solution.</p></answer></exercise>
+
+<exercise number="26"><statement><p>Name the opposite operation for each of the four arithmetic operations.</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 27-28, which are equations? Explain why or why not.</p></introduction>
+
+<exercise number="27"><statement><p><ol marker="a." cols="2">
+  <li><p><m>8 + 6 = 14</m></p></li>  
+  <li><p><m>13 - 7 = 2</m></p></li>  
+  <li><p><m>25 - 12 + 4</m></p></li>   
+  <li><p><m>x - 5 = 9</m></p></li>
+</ol></p></statement>
+<answer><p>(a), (b), and (d) are equations</p></answer></exercise>
+
+<exercise number="28"><statement><p><ol marker="a." cols="2">
+  <li><p><m>9 + 7 + 6</m></p></li>  
+  <li><p><m>9 + 7 = 12 + 4</m></p></li>  
+  <li><p><m>24 = 7x4</m></p></li>   
+  <li><p><m>15 = 6 + x</m></p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 29-34, decide whether the given value is a solution of the equation.</p></introduction>
+
+<exercise number="29"><statement><p><m>x + 19 = 36;~~~~~~x=17</m></p></statement>
+<answer><p>Yes</p></answer></exercise>
+
+<exercise number="30"><statement><p><m>t - 7 = 35;~~~~~~t=18</m></p></statement></exercise>
+
+<exercise number="31"><statement><p><m>12v = 60;~~~~~~v=5</m></p></statement>
+<answer><p>Yes</p></answer></exercise>
+
+<exercise number="32"><statement><p><m>\dfrac{z}{15} = 3;~~~~~~z=5</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>3.4 - q = 0.8;~~~~~~q=1.6</m></p></statement>
+<answer><p>No</p></answer></exercise>
+
+<exercise number="34"><statement><p><m>5n = 28.2;~~~~~~n=23.2</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="35"><statement><p><ol marker="a.">
+  <li><p>Megan's cat Shadow lost 4.5 pounds. If Shadow used to weigh <m>w</m> pounds, write an expression for her new weight.</p></li>
+  <li><p>Shadow weighs <m>n</m> pounds now. Write an equation for <m>n</m> in terms of <m>w</m>.</p></li>
+  <li><p>Fill in the table.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>w</m></cell>
+      <cell>20</cell>
+      <cell></cell>
+      <cell>15</cell></row>
+    <row>
+      <cell><m>n</m></cell>
+      <cell></cell>
+      <cell>13.5</cell>
+      <cell></cell></row>
+    </tabular></p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>w-4.5</m></p></li>
+  <li><p><m>n=w-4.5</m></p></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>w</m></cell>
+      <cell>20</cell>
+      <cell>18</cell>
+      <cell>15</cell></row>
+    <row>
+      <cell><m>n</m></cell>
+      <cell>15.5</cell>
+      <cell>13.5</cell>
+      <cell>10.5</cell></row>
+    </tabular></p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="36"><statement><p><ol marker="a.">
+  <li><p>Rocio has $20,000 for a down payment on a house. If the house costs <m>p</m> dollars, write an expression for the amount Rocio will need to borrow.</p></li>
+  <li><p>Rocio borrowed <m>b</m> dollars to buy the house. Write an equation for <m>b</m> in terms of <m>p</m>.</p></li>
+  <li><p>Fill in the table.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>p</m></cell>
+      <cell>100,000</cell>
+      <cell></cell>
+      <cell>180,000</cell></row>
+    <row>
+      <cell><m>b</m></cell>
+      <cell></cell>
+      <cell>130,000</cell>
+      <cell></cell></row>
+    </tabular></p></li>
+  </ol></p></statement></exercise>
+
+  <exercise number="37"><statement><p><ol marker="a.">
+  <li><p>In 2023, one British pound was worth $1.20. Write an expression for the value in dollars of <m>p</m> British pounds.</p></li>
+  <li><p>Marion received <m>d</m> American dollars in exchange for <m>p</m> British pounds. Write an equation for <m>d</m> in terms of <m>p</m>.</p></li>
+  <li><p>Fill in the table.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>p</m></cell>
+      <cell>5</cell>
+      <cell></cell>
+      <cell>20</cell></row>
+    <row>
+      <cell><m>d</m></cell>
+      <cell></cell>
+      <cell>12</cell>
+      <cell></cell></row>
+    </tabular></p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>1.2p</m></p></li>
+  <li><p><m>d=1.2p</m></p></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>p</m></cell>
+      <cell>5</cell>
+      <cell>10</cell>
+      <cell>20</cell></row>
+    <row>
+      <cell><m>d</m></cell>
+      <cell>6</cell>
+      <cell>12</cell>
+      <cell>24</cell></row>
+    </tabular></p></li>
+  </ol></p></answer></exercise>
+
+  <exercise number="38"><statement><p><ol marker="a.">
+  <li><p>The gas company charges $0.725 per therm, including taxes. Write an expression for the cost of <m>t</m> therms.</p></li>
+  <li><p>Ryan's gas bill was <m>b</m> dollars last month. Write an equation for <m>b</m> in terms of <m>t</m>.</p></li>
+  <li><p>Fill in the table.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>t</m></cell>
+      <cell>8</cell>
+      <cell></cell>
+      <cell>20</cell></row>
+    <row>
+      <cell><m>b</m></cell>
+      <cell></cell>
+      <cell>7.25</cell>
+      <cell></cell></row>
+    </tabular></p></li>
+  </ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 39-60, solve the equation. Check your solution.</p></introduction>
+
+<exercise number="39"><statement><p><m>b + 8 = 15</m></p></statement>
+<answer><p>7</p></answer></exercise>
+
+<exercise number="40"><statement><p><m>3 + t = 5</m></p></statement></exercise>
+
+<exercise number="41"><statement><p><m>4 = x + 1</m></p></statement>
+<answer><p>3</p></answer></exercise>
+
+<exercise number="42"><statement><p><m>h + 3.9 = 6.8</m></p></statement></exercise>
+
+<exercise number="43"><statement><p><m>w - 7 = 5</m></p></statement>
+<answer><p>12</p></answer></exercise>
+
+<exercise number="44"><statement><p><m>16 = d - 8</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>p - 15 = 15</m></p></statement>
+<answer><p>30</p></answer></exercise>
+
+<exercise number="46"><statement><p><m>z - 0.3 = 0.04</m></p></statement></exercise>
+
+<exercise number="47"><statement><p><m>5g = 30</m></p></statement>
+<answer><p>6</p></answer></exercise>
+
+<exercise number="48"><statement><p><m>78 = 6h</m></p></statement></exercise>
+
+<exercise number="49"><statement><p><m>15p = 75</m></p></statement>
+<answer><p>5</p></answer></exercise>
+
+<exercise number="50"><statement><p><m>2z = 9.6</m></p></statement></exercise>
+
+<exercise number="51"><statement><p><m>\dfrac{m}{4} = 7</m></p></statement>
+<answer><p>28</p></answer></exercise>
+
+<exercise number="52"><statement><p><m>\dfrac{x}{3} = 14</m></p></statement></exercise>
+
+<exercise number="53"><statement><p><m>13 = \dfrac{s}{16}</m></p></statement>
+<answer><p>208</p></answer></exercise>
+
+<exercise number="54"><statement><p><m>\dfrac{v}{6} = 1.3</m></p></statement></exercise>
+
+<exercise number="55"><statement><p><m>d + 16 = 16</m></p></statement>
+<answer><p>0</p></answer></exercise>
+
+<exercise number="56"><statement><p><m>0 = f - 3.7</m></p></statement></exercise>
+
+<exercise number="57"><statement><p><m>\dfrac{x}{5} = 0</m></p></statement>
+<answer><p>0</p></answer></exercise>
+
+<exercise number="58"><statement><p><m>47.3 = 24.8 + v</m></p></statement></exercise>
+
+<exercise number="59"><statement><p><m>68.89 = 8.3n</m></p></statement>
+<answer><p>8.3</p></answer></exercise>
+
+<exercise number="60"><statement><p><m>\dfrac{w}{38} = 1.1</m></p></statement></exercise>
+</exercisegroup>
+
+</exercises>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- This is the publication file for a newly generated PreTeXt book.     -->
+<!-- By changing the values of attributes here, you can change how        -->
+<!-- the output looks and functions.  For the complete documentation      -->
+<!-- of publication-file options, see                                     -->
+<!-- https://pretextbook.org/doc/guide/html/publisher-file-reference.html -->
+
+
+
+<publication>
+  <!-- Set where external assets and generated assets will be   -->
+  <!-- stored or created.  Directories are relative to the main -->
+  <!-- source PreTeXt file                                      -->
+  <source>
+    <version include="webwork"/> <!-- include only webwork reading questions -->
+    <directories external="../ext" generated="../generated-assets"/>
+  </source>
+
+  <common>
+    <tableofcontents level="2"/>
+        <exercise-divisional answer="no" solution="no"/>
+    <fillin textstyle="underline" mathstyle="underline"/>
+  </common>
+  <numbering>
+    <blocks level="2"/>
+    <projects level="2"/>
+    <equations level="2"/>
+    <footnotes level="2"/>
+  </numbering>
+
+    <!-- LaTeX specific options: set @print="yes" to get pdf set up   -->
+    <!-- for printing; set @sides="two" if the printing woudl be two- -->
+    <!-- sided.  The asymptote/@links set to "yes" would produce      -->
+    <!-- links the html version of asymptote graphics.                -->
+  <latex print="no" sides="one">
+    <asymptote links="no"/>
+  </latex>
+  
+  <html>
+    <index-page ref="preface"/>
+    <css theme="denver" color-meta="#00d5fffc"/>  <!-- denver sets off inline exercises -->
+    <knowl remark="no" example="no" example-solution="no" proof="no" exercise-inline="no"/>
+    <analytics google-gst="G-MLHBE6655J"
+                statcounter-project="13069512"
+                statcounter-security="3c431ca7"/>
+  </html>
+</publication>

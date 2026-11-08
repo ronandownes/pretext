@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkExtractionofRoots"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Extraction of Roots</title>
+                 
+<subsubsection xml:id="tkQuadExp"><title>Evaluate quadratic expressions</title>
+
+<introduction><p>When squaring a negative number, don't forget to enclose it in parentheses. For example, if <m>x=-4</m>, then <me>x^2=(-4)^2 = (-4)(-4) = 16</me>  If we write <m>-4^2</m>, then only the 4 is squared, so we have <me>-4^2 = - (4)(4) = -16</me></p></introduction>
+
+<example><statement><p>Evaluate for <m>x=-6</m>.
+    <ol marker="a." cols="2">  
+        <li><m>2x^2</m></li>
+        <li><m>2-x^2</m></li>
+        <li><m>(2x)^2</m></li>
+        <li><m>(2-x)^2</m></li>
+</ol></p></statement>
+ 
+<solution><p>Enclose <m>-6</m> in parentheses, and follow the order of operations.
+    <ol marker="a.">
+    <li>Square first, then multiply by 2:  <m>~~2x^2=2(-6)^2=2(36)=72</m></li>
+    <li>Square first, then subtract from 2:  <m>~~2-x^2=2-(-6)^2=2-36=-34</m></li>
+    <li>Multiply by 2 first, then square:  <m>~~(2x)^2=[2(-6)]^2=[-12]^2=144</m></li>
+    <li>Subtract from 2 first, then square:  <m>~~(2-x)^2=[2-(-6)]^2=[8]^2=64</m></li>
+</ol></p></solution></example>
+
+<example><statement><p>Make a table of values for <m>y=x^2+2x-8</m>, and graph the equation.</p></statement>
+
+<solution><p>We plot the points from the table and connect them with a smooth curve.</p>
+    <sidebyside widths="65% 35%" valigns="middle middle"><tabular left="minor">             
+        <col top="minor" right="minor" halign="center"/><col top="minor" right="minor" halign="center"/><col/><col top="none" halign="left" right="none"/>
+                    <row>
+                        <cell bottom="minor"><m>x</m></cell>
+                        <cell bottom="minor"><m>y</m></cell>
+                        <cell></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-5</m></cell>
+                        <cell bottom="minor"><m>7</m></cell>
+                        <cell></cell>
+                        <cell><m>(-5)^2+2(-5)-8=25-10-8</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>-4</m></cell>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell></cell>
+                        <cell><m>(-4)^2+2(-4)-8=16-8-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-3</m></cell>
+                        <cell bottom="minor"><m>-5</m></cell>
+                        <cell></cell>
+                        <cell><m>(-3)^2+2(-3)-8=9-6-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-2</m></cell>
+                        <cell bottom="minor"><m>-8</m></cell>
+                        <cell></cell>
+                        <cell><m>(-2)^2+2(-2)-8=4-4-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-1</m></cell>
+                        <cell bottom="minor"><m>-9</m></cell>
+                        <cell></cell>
+                        <cell><m>(-1)^2+2(-1)-8=1-2-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>-8</m></cell>
+                        <cell></cell>
+                        <cell><m>(0)^2+2(0)-8=0+0-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>-5</m></cell>
+                        <cell></cell>
+                        <cell><m>(1)^2+2(1)-8=1+2-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell></cell>
+                        <cell><m>(2)^2+2(2)-8=4+4-8</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m>7</m></cell>
+                        <cell></cell>
+                        <cell><m>(3)^2+2(3)-8=9+6-8</m></cell></row>
+                    </tabular>
+    <image xml:id="y-eq-xsq-plus-2x-minus8"><description>parabola y=xsqd+2x-8</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[cyan] (-5,-5) grid (5,5);
+        \draw[black,very thick, ->, >=stealth'] (-5,0)--(5.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-5)--(0,5.8) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in  {-5, 5} {
+        \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={(-sqrt(19)-1)/2:(sqrt(19)-1)/2},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {((\x*2)^2+2*2*\x-8)/2});
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></solution></example>
+
+<exercise><statement><p>Evaluate for <m>w=-9</m>
+<ol marker="a." cols="2">
+    <li><m>(2w)^2</m></li>
+    <li><m>36-(2w)^2</m></li>
+    <li><m>-2(4-w)^2</m></li>
+    <li><m>2-w^2</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>324</m></li>
+        <li><m>-288</m></li>
+        <li><m>-338</m></li>
+        <li><m>-79</m></li>
+    </ol></p></answer></exercise>
+
+<exercise><statement><p>Evaluate for <m>a=-3,~b=-4</m>
+<ol marker="a." cols="2">
+    <li><m>ab^2</m></li>
+    <li><m>a-b^2</m></li>
+    <li><m>(a-b^2)^2</m></li>
+    <li><m>ab(a^2-b^2)</m></li>
+</ol></p></statement>
+<answer>
+    <p><ol marker="a.">
+        <li><m>-48</m></li>
+        <li><m>-19</m></li>
+        <li><m>361</m></li>
+        <li><m>-84</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Evaluate for <m>h=-2,~g=-5</m>
+<ol marker="a." cols="2">
+    <li><m>h^2-2hg+g^2</m></li>
+    <li><m>(h-g)^2</m></li>
+    <li><m>h^2-g^2</m></li>
+    <li><m>(h-g)(h+g)</m></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>9</m></li>
+        <li><m>9</m></li>
+        <li><m>-21</m></li>
+        <li><m>-21</m></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Make a table of values for <m>y=x^2-x-6</m>, and graph the equation.</p>
+    <sidebyside widths="10% 50%" valigns="middle middle">
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+            <row>
+                <cell bottom="minor"><m>x</m></cell>
+                <cell bottom="minor"><m>y</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>-3</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row> 
+                <cell bottom="minor"><m>-2</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>-1</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>0</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>1</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>2</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>3</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>4</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            <row>
+                <cell bottom="minor"><m>5</m></cell>
+                <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+            </tabular>
+        <image source="images/fig-10x10-grid"><description>grid</description></image></sidebyside></statement>
+<answer><sidebyside widths="10% 35%" valigns="middle middle">
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor"><m>x</m></cell>
+                        <cell bottom="minor"><m>y</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-3</m></cell>
+                        <cell bottom="minor"><m>6</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>-2</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>-1</m></cell>
+                        <cell bottom="minor"><m>-4</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>-6</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>-6</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>-4</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>6</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5</m></cell>
+                        <cell bottom="minor"><m>14</m></cell></row>
+                    </tabular>
+    <image xml:id="y-eq-xsq-minus-x-minus6"><description>parabola</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \draw[cyan, thin] (-10,-10) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in  {-5, 5, -10, 10} {
+         \draw[cyan, very thick] (\x,-10) --++(0,20);
+         \draw[cyan, very thick] (-10,\x) --++(20,0);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-sqrt(65)/2+1/2:sqrt(65)/2+1/2},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {(\x)^2-\x-6});
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSqRts"><title>Use square roots</title>
+
+<introduction><p>The simplest quadratic equations have the form
+        <me>ax^2+c=0</me>
+They are missing a linear term, <m>bx</m>, and are not difficult to solve.</p></introduction>
+
+<example><statement><p>Solve <m>~3y^2-40=35~</m> by extraction of roots.</p></statement>
+
+<solution><p>We isolate the quadratic term, <m>y^2</m>, and then extract roots.
+    <md><mrow>3y^2-40 \amp = 35  \amp \amp \blert{\text{Add 40 to both sides.}}</mrow>
+        <mrow>3y^2 \amp = 75 \amp \amp \blert{\text{Divide both sides by 3.}}</mrow>
+        <mrow>y^2 \amp = 25 \amp \amp \blert{\text{Take the square root of both sides.}}</mrow>
+        <mrow>y \amp = \pm \sqrt{25} \amp \amp \blert{\text{Simplify.}}</mrow>
+        <mrow>y \amp = \pm 5 \amp \amp \blert{\text{Remeber that a positive number has two square roots.}}</mrow></md>
+The solutions are <m>5</m> and <m>-5</m>.</p></solution></example>
+
+<exercise><statement><p>Solve by extraction of roots.
+<ol marker="a." cols="2">
+    <li><m>98=2a^2</m></li>
+    <li><m>0=3n^2-15</m></li>
+    <li><m>144 + \dfrac{h^2}{9} = 169</m></li>
+    <li><m>12-5v^2=2</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+    <li><m>\pm 7</m></li>
+    <li><m> \pm \sqrt{5}</m></li>
+    <li><m>\pm 15</m></li>
+    <li><m>\pm \sqrt{2}</m></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkGeomForm"><title>Use geometric formulas</title>
+
+<p>It may seem difficult to measure the inside of a round object like a sphere or a cone in cubic units, but you can imagine filling the object with liquid and then pouring the liquid into a box to measure its volume.</p>
+<image width="90%" source="images/fig-2-1-6.png"><description>solids</description></image>
+
+<example><statement><p>A cone is 16 cm tall and its volume is 500 cm<m>^3</m>. What is the radius of the base of the cone?</p></statement>
+
+<solution><p>We substitute <m>h=16</m> and <m>V=500</m> into the formula for the volume of a cone, and solve for <m>r</m>.
+    <md><mrow>\dfrac{1}{3} \pi r^2(\alert{16}) \amp = \alert{500} \amp \amp \blert{\text{Multiply both sides by 3.}}</mrow>
+        <mrow>16 \pi r^2 \amp = 1500 \amp \amp \blert{\text{Divide both sides by}~16 \pi.}</mrow>
+        <mrow>r^2 \amp = 29.842 \amp \amp \blert{\text{Take the square root of both sides.}}</mrow>
+        <mrow>r \amp = 5.46</mrow></md>
+The radius of the cone is 5.46 cm.</p></solution></example>
+
+<exercise><statement><p>A cylindrical syringe holds 100 cc (cubic centimeters) of fluid. If the syringe is 10 centimeters long, what is its radius?</p></statement>
+<answer><p>1.78 cm</p></answer></exercise>
+
+<example><statement><p>The diameter of a spherical wax candle is 5 inches. What is the volume of wax in the candle?</p></statement>
+
+<solution><p>The radius of the candle is half its diameter, or 2.5 inches. The volume of the candle is
+    <me>V=\dfrac{4}{3}\pi r^3=\dfrac{4}{3}\pi(2.5~ \text{in})^3=65.45~\text{in}^3</me></p></solution></example>
+
+<exercise><statement><p>Find the volume of a cylindrical water tank whose diameter is 20 feet and whose height is 20 feet.</p>
+</statement>
+    <answer><p>6283.2 cubic feet</p></answer></exercise>
+
+<exercise><statement><p>The diameter of the Earth is about 7920 miles. Find its volume.</p></statement>
+    <answer><p>About 260,120,000,000 cubic miles</p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkPythTh"><title>Use the Pythagorean theorem</title>
+
+<introduction><p>If <m>a</m> and <m>b</m> are the lengths of the legs of a right triangle and <m>c</m> is the length of the hypotenuse, then 
+    <me>a^2 + b^2 = c^2</me>
+Note that the theorem is true only for right triangles -- ones that have a 90<m>\degree</m> angle.</p></introduction>
+
+<example><statement><sidebyside widths="50% 30%"><p>Find the unknown side in the right triangle.</p>
+    <image xml:id="fig-12-35-37-triangle"><description> right triangle</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=1.1]
+        \draw[gray] (0,1.2) rectangle ++(.25,-.25);
+        \draw[blue, thick] (0,0) -- (0, 1.2) -- (3.5,1.2)-- cycle;
+        \node[text=black] at (1.75,1.5) {$35$}; 
+        \node[text=red, font=\bf] at (1.75,0.3) {\large$z$}; 
+        \node[text=black] at (-0.35,0.6) {$12$}; 
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+</statement>
+<solution><p>The unknown side is the hypotenuse, so we apply the Pythagorean theorem with <m>c=z,~a=12</m>, and <m>b=35</m>.
+    <md><mrow>a^2 + b^2 \amp = c^2</mrow>
+        <mrow>12^2+35^2 \amp =z^2 \amp \amp \blert{\text{Simplify the left side.}}</mrow>
+        <mrow>1369 \amp = z^2   \amp \amp  \blert{\text{Take the square root of both sides.}}</mrow>
+        <mrow>\pm 37 \amp = z</mrow></md>
+The length of the hypotenuse is a positive number, so <m>z=37</m>.</p></solution></example>
+
+<example><statement><p>A 25-foot ladder is placed against a wall so that its foot is 7 feet from the base of the wall. How far up the wall does the ladder reach?</p></statement>
+
+<solution><sidebyside widths="75% 15%"><stack><p>We make a sketch and label the known dimensions, calling the unknown height <m>h</m>.  The ladder forms the hypotenuse of a right triangle, so we apply the Pythagorean theorem, substituting 25 for <m>c</m>, 7 for <m>b</m>, and <m>h</m> for <m>a</m>.
+    <md><mrow>a^2 + b^2 \amp = c^2</mrow>
+        <mrow>h^2 + 7^2 \amp = 25^2</mrow></md>
+</p></stack>
+<image source="images/ladder"><description>ladder</description></image></sidebyside>
+<p>We solve the equation by extraction of roots:
+    <md><mrow>h^2 + 49 \amp = 625 \amp \amp \blert{\text{Subtract 49 from both sides.}}</mrow>
+        <mrow>h^2 \amp =576 \amp \amp \blert{\text{Extract roots.}}</mrow>
+        <mrow>h \amp =\pm \sqrt{576}   \amp \amp  \blert{\text{Simplify the radical.}}</mrow>
+        <mrow>h = \amp \pm 24</mrow></md>
+The height must be a positive number, so the ladder reaches 24 feet up the wall.</p></solution></example>
+
+<exercise><statement><p>A baseball diamond is a square whose sides are 90 feet long. Find the straight-line distance from home plate to second base.
+    <ol marker="a.">
+            <li>Make a sketch of the situation and label a right triangle.</li>
+            <li>Write an equation and solve.</li>
+        </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><image width="95%" xml:id="fig-baseball-diamond"><description>baseball diamond</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.75]
+                \draw[gray,thin] (3,0) rectangle ++(-.25,.25);
+                \draw[black, thick] (0,0) node[below left, align=center] {\small  Home\\ plate} -- (3,0) node[below right] {\small 1st base} --  (3,3) node[above right] {\small 2nd base} -- (0,3) node[above left] {\small 3rd base} -- cycle;
+                \draw[blue,thick] (0,0) -- (3,3) node[above,midway, xshift=-2] {$x$};
+                \node[text=blue] at (1.5,-.4) {\small 90 ft};
+                \node[text=blue] at (3.8,1.5) {\small 90 ft};
+                \end{tikzpicture}]]>
+                </latex-image></image></li>
+    <li>127.28 ft</li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>How long a wire is needed to stretch from the top of a 40-foot telephone pole to a point on the ground 20 feet from the base of the pole?
+    <ol marker="a.">
+        <li>Make a sketch of the situation and label a right triangle.</li>
+        <li>Write an equation and solve.</li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><image width="45%" xml:id="fig-telephone-pole"><description>telephone pole and wire</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture}
+                \draw[lightgray,thin] (0,0) rectangle ++(.25,.25);
+                \draw[black, thick] (0,0)  -- (0,4) node[left, midway] {40 ft} -- (2,0) -- cycle node[below, midway] {20 ft};
+                \node[text=blue] at (1.4,2) {$x$};
+                \end{tikzpicture}]]>
+                </latex-image></image></li>
+    <li>44.72 ft</li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkNaturalBase" xmlns:xi="http://www.w3.org/2001/XInclude"><title>The Natural Base</title>
+
+<subsubsection xml:id="tkGraphBaseE"><title>Graphs of <m>y=e^x</m> and <m>y=\ln {(x)}</m></title>
+
+<p>The graphs of the natural exponential function and the natural log function have some special properties.</p>
+
+<exercise><statement><p>Use technology to graph <m>~f(x)=e^x~</m> and <m>~y=x+1~</m> in a window with <m>~-2 \le {(x)} \le 3~</m> and <m>~-1 \le y \le 4~</m>.  What do you notice about the two graphs?</p></statement>
+<answer><image width="35%" source="images/fig-5-3-1"><description>graph</description></image>
+    <p>The line is tangent to the graph at <m>(0,1)</m>.</p>
+</answer></exercise>
+
+<exercise><statement><p>Use technology to graph <m>~f(x)=\ln x~</m> and <m>~y=x-1~</m> in a window with <m>~-1 \le {(x)} \le 4~</m> and <m>~-2 \le y \le 3~</m>.  What do you notice about the two graphs?</p></statement>
+<answer><image width="35%" source="images/fig-5-3-2"><description>graph</description></image>
+    <p>The line is tangent to the graph at <m>(1,0)</m>.</p>
+</answer></exercise>
+
+</subsubsection>
+                 
+<subsubsection xml:id="tkUseBaseE"><title>Using growth and decay laws with base <m>e</m></title>
+
+<p>We can write exponential growth and decay laws using base <m>e</m>.</p>
+
+<assemblage><title>Exponential Growth and Decay</title>
+    <p>The function
+        <me>P(t) = P_0 e^{kt}</me>
+    describes exponential growth if <m>k \gt 0</m>, and exponential decay if <m>k \lt 0</m>.</p>    
+</assemblage>
+                    
+<example><statement><p>A colony of bees grows at a rate of 8% annually. Write its growth law using base <m>e</m>.</p></statement>
+
+<solution><p>The growth factor is <m>~b = 1+r = 1.08~</m>, so the growth law can be written as
+    <me>P(t) = P_0 (1.08)^t</me>
+Using base <m>e</m>, we write <m>~P(t) = P_0 e^{kt},~</m> where <m>e^k = 1.08.</m> (You can see this by evaluating each growth law at <m>t=1</m>.) So we solve for <m>k</m>.
+    <md><mrow>e^k \amp = 1.08  \amp \amp \blert{\text{Take the natural log of both sides.}}</mrow>
+        <mrow>\ln (e^k) \amp = \ln (1.08) \amp \amp \blert{\text{Simplify both sides.}}</mrow>
+        <mrow> k \amp = 0.0770</mrow></md>
+The growth law is <m>~P(t) = P_0 e^{0.077t}</m>.</p>
+</solution></example>
+
+<example><statement><p>A radioactive isotope decays according to the formula <m>~N(t)=N_0 e^{-0.016t},~</m> where <m>t</m> is in hours. Find its percent rate of decay.</p></statement>
+
+<solution><p>First we write the decay law in the form <m>~N(t)=N_0 b^t,~</m> where <m>~b=e^k.~</m></p> 
+<p>In this case, <m>~k=-0.016,~</m> so <m>~b=e^{-0.016} = 0.9841.~</m>  Now, <m>~b=1-r,~</m> and solving for <m>r</m> we find <m>~r=-0.0159.~</m> The rate of decay is approximately 16% per hour.</p>
+</solution></example>
+
+<exercise><statement><p>A virus spreads in the population at a rate of 19.5% daily. Write its growth law using base <m>e</m>.</p></statement>
+<answer><p><m>P(t) = P_0 e^{0.178t}</m></p></answer></exercise>
+
+<exercise><statement><p>Sea ice is decreasing at a rate of 12.85% per decade. Write its decay law using base <m>e</m>.</p></statement>
+<answer><p><m>Q(t) = Q_0 e^{-0.1375t}</m></p></answer></exercise>  
+
+<exercise><statement><p>In 2020, the world population was growing according to the formula <m>~P(t)=P_0 e^{0.0488t},~</m> where <m>t</m> is in years. Find its percent rate of growth.</p></statement>
+<answer><p>5%</p></answer></exercise>
+
+<exercise><statement><p>Since 1984, the population of cod has decreased annually according to the formula <m>~N(t)=N_0 e^{-0.1863t}.~</m> Find its percent rate of decay.</p></statement>
+<answer><p>17%</p></answer></exercise>
+
+</subsubsection>
+
+
+
+
+
+</subsection>

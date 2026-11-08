@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Algebraic-Fractions" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Algebraic Fractions</title>
+
+<subsection><title>What is an Algebraic Fraction?</title>
+	<idx><h>algebraic fraction</h></idx>
+	<idx><h>algebraic fraction</h><seealso>fractions</seealso></idx>
+	<idx><h>fractions</h><h>algebraic</h><see>algebraic fraction</see></idx>
+
+<p>Variables may occur in the numerator or the denominator of a fraction, or both.</p>
+
+<example><statement><p>Choose variables and write a fraction for each situation.<ol marker="a.">
+	<li>The five people in Tom's study group order Chinese food and agree to split the bill equally. How much will Tom's share be?</li>
+	<li>Nurit has $800 to carpet a square bedroom in her house. What price per square foot can she afford?</li>
+	<li>How long does it take an ocean liner to make a trans-Atlantic voyage?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li>The amount of the bill is unknown. We let <m>b</m> represent the total bill. Then Tom's share is <m>\dfrac{b}{5}</m>.</li>
+	<li>The dimensions of the room are unknown. We let <m>L</m> represent the length of bedroom. Then the price per square foot is <m>\dfrac{800}{L^2}</m>.</li>
+	<li>The distance and the speed of the liner are unknown. We let <m>D</m> represent the distance traveled, and <m>R</m> the speed, or rate. Then the time for voyage is <m>\dfrac{D}{R}</m>.</li>
+</ol></p></solution></example>
+
+<assemblage><title>Algberaic Fraction</title>
+	<idx><h>algebraic fraction</h></idx>
+	<idx><h>rational expression</h></idx>
+	<idx><h>rational expression</h><seealso>algebraic fraction</seealso></idx>
+<p>An <term>algebraic fraction</term> (or rational expression, as they are sometimes called) is a fraction in which both numerator and denominator are polynomials.</p></assemblage>
+
+<p>Here are some examples:
+	<md><mrow>\dfrac{3}{x},~~~~~~\dfrac{a^2+1}{a-2},~~~~~~\text{and}~~~~~~\dfrac{z-1}{2z+3}</mrow></md></p>
+
+<assemblage><title>Look Closer</title>
+<p>We can evaluate algebraic fractions just as we do any other algebraic expression. But we cannot evaluate a fraction at any values of the variable that make the denominator equal to zero.</p></assemblage>
+
+<example><statement><p><ol marker="a.">
+	<li>Evaluate <m>~~\dfrac{a^2+1}{a-2}~~</m> for <m>~a=4</m>.</li>
+	<li>For what value of <m>a</m> is the fraction undefined?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>Substitute <m>\alert{4}</m> for <m>a</m> in the fraction.
+		<md><mrow>\dfrac{a^2+1}{a-2} \amp = \dfrac{\alert{4}^2+1}{\alert{4}-2} \amp \amp \blert{\text{Simplify numerator and denominator.}}</mrow>
+		<mrow> \amp = \dfrac{17}{2}</mrow></md></p></li>
+	<li>Because we cannot divide by zero, a fraction is undefined if its denominator is zero. This fraction is undefined for <m>a=\alert{2}</m>, because <m>~\dfrac{\alert{2}^2+1}{\alert{2}-2}=\dfrac{5}{0}</m>.</li>
+</ol></p></solution></example>
+
+<exercise number="1"><statement><p>What is an algebraic fraction? Give an example.</p></statement>
+    <answer><p>A fraction in which both numerator and denominator are polynomials.</p></answer></exercise>
+
+<exercise number="2"><statement><p>What values of the variable must we exclude when working with algebraic 
+	fractions?</p></statement>
+    <answer><p> Any values that make the denominator equal to zero.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Applications of Algebraic Fractions</title>
+	<idx><h>algebraic fraction</h><h>applications</h></idx>
+
+<p>	Envirogreen Technology, Inc. decides to produce a water filter for home use. They spend $5000 for startup costs, and each filter costs $50 to produce. To help her decide on a selling price for the filters, the marketing manager would like to know the average cost per filter if they produce <m>x</m> filters. She first computes the total cost of producing <m>x</m> filters.
+	<md><mrow>\text{Total Cost}~ \amp =~\text{Startup Cost}~+~\text{Cost of}~x~\text{Filters}</mrow>
+		<mrow>\amp = 5000 + 50x</mrow></md>
+Then, to find the average cost per filter, she divides the total cost by the number of filters produced.
+	<md><mrow>\text{Average Cost}~=~\dfrac{\text{Total Cost}}{\text{Number of Filters}}~=~\dfrac{5000+50x}{x}</mrow></md>
+This expression is an algebraic fraction. </p>
+
+<example><statement><p>Sketch a graph of the equation <m>~~A=\dfrac{5000+50x}{x}</m></p></statement>
+
+<solution><p>We evaluate the average cost for various production levels, <m>x</m>, and make a table of values. We plot the points and connect them with a smooth curve to obtain the graph shown below.</p>
+<sidebyside widths="25% 60%" valigns="middle middle">
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>A</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>150</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>100</m></cell></row>
+                    <row> 
+                        <cell><m>200</m></cell>
+                        <cell><m>75</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>62.50</m></cell></row>  
+                    <row>
+                        <cell><m>500</m></cell>
+                        <cell><m>60</m></cell></row> 
+                    <row>
+                        <cell><m>1000</m></cell>
+                        <cell><m>55</m></cell></row>
+                    <row>
+                        <cell><m>1250</m></cell>
+                        <cell><m>54</m></cell></row> 
+                    <row>
+                        <cell><m>2000</m></cell>
+                        <cell><m>52.50</m></cell></row>                     
+                </tabular>
+    <!--<image source="photos/fig-8-1-ex3.png"><description>graph</description></image>-->
+    <image xml:id="fig-8-1-ex3"><description>curve</description><latex-image>
+        <![CDATA[
+		\begin{tikzpicture}[scale=.4]
+		\draw[cyan] (0,0) grid (20,15);
+		\draw[black, very thick, ->, >=stealth'] (0,0)--(21,0) node[right]{$x$};
+		\draw[black, very thick, ->, >=stealth'] (0,0)--++(0,16) node[left, xshift=2]{$A$};
+		\foreach \x [evaluate=\x as \xi using int(100*\x)] in  {5,10,15,20} {
+		 \draw[cyan, very thick] ({\x},0) --++(0,15);
+		 \draw[black] ({\x},.2) --++(0,-.4) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\foreach \x [evaluate=\x as \xi using int(10*\x)] in  {5,10,15} {
+		 \draw[cyan, very thick] (0,\x) --++(20,0);
+		 \draw[black] ({.2},\x) --++(-.4,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+		}
+		\draw[samples=65,domain=1/2:20,smooth,variable=\x,red, very thick,<->, >=stealth'] plot ({\x},{(5 + 5*\x) / \x});
+        \end{tikzpicture}]]></latex-image></image></sidebyside>
+</solution></example>
+</subsection>
+
+<subsection><title>Reducing Fractions</title>
+	<idx><h>algebraic fraction</h><h>reducing</h></idx>
+	<idx><h>fractions</h><h>reducing</h></idx>
+
+<p>	We can <term>reduce</term> a fraction if we can divide both numerator and denominator by a common factor.  In algebra, it is helpful to think of factoring out the common factor first.  For example,
+	<md><mrow>\dfrac{27}{36} = \dfrac{\cancel{9} \cdot 3}{\cancel{9} \cdot 4} = \dfrac{3}{4}</mrow></md>
+where we have divided both numerator and denominator by <m>9</m> The new fraction has the same value as the old one, namely <m>0.75</m>, but it is simpler (the numbers are smaller.) Reducing is an application of the fundamental principle of fractions.</p>
+
+<assemblage><title>Fundamental Principle of Fractions</title>
+	<idx><h>algebraic fraction</h><h>reducing</h></idx>
+	<idx><h>fractions</h><h>reducing</h></idx>
+	<idx><h>fundamental principle of fractions</h></idx>
+
+<p>We can multiply or divide the numerator and denominator of a fraction by the same nonzero factor, and the new fraction will be equivalent to the old one.
+	<md><mrow>\blert{\dfrac{a \cdot c}{b \cdot c} = \dfrac{a}{b}~~~\text{if}~~~b,~c \not= 0}</mrow></md></p></assemblage>
+
+<example><statement><p>Reduce the fraction <m>~~\dfrac{42ab^2}{35ab^3}</m></p></statement>
+
+<solution><p>First we consider the numerical part of the fraction: we look for the largest common factor of <m>42</m> and <m>35</m>. This factor is <m>7</m>, so we write <m>42</m> and <m>35</m> in factored form:
+	<md><mrow>\dfrac{42ab^2}{35ab^3} = \dfrac{7 \cdot 6~ab^2}{7 \cdot 5~ab^3}</mrow></md>
+Next, we write the variable parts of the numerator and denominator in factored form.  
+Remember that <m>b^2</m> means <m>b \cdot b</m> and <m>b^3</m> means <m>b \cdot b \cdot b</m> .
+	<md><mrow>\dfrac{42ab^2}{35ab^3} =\dfrac{7 \cdot 6~a~b~b}{7 \cdot 5~a~b~b~b}</mrow></md>
+Finally, we divide any common factors from the numerator and denominator. 
+	<md><mrow>\dfrac{42ab^2}{35ab^3} =\dfrac{\cancel{7} \cdot 6~\cancel{a}~\cancel{b}~\cancel{b}}{\cancel{7} \cdot 5~\cancel{a}~\cancel{b}~\cancel{b}~b} = \dfrac{6}{5b}</mrow></md>
+The reduced fraction is <m>~\dfrac{6}{5b}</m>.</p></solution></example>
+
+<assemblage><title>Look Closer</title>
+	<idx><h>canceling to reduce a fraction</h></idx>
+<p>When we apply the fundamental principle, we often say that we are canceling common factors.  In this context, "canceling" means dividing:  Because division is the opposite operation for multiplication, we can cancel expressions that are multiplied together.</p></assemblage>
+
+<example><statement><p>Reduce the fraction <m>~~\dfrac{8x+4}{4}</m></p></statement>
+
+<solution><p>We cannot cancel the <m>4</m>'s, because <m>4</m> is added to <m>8x</m>, not multiplied. Instead, we write the numerator as a product instead of a sum. To do that, we factor the numerator.
+	<md><mrow>\dfrac{8x+4}{4} = \dfrac{4(2x+1)}{4}</mrow></md>
+We see that <m>4</m> is a factor of the numerator, so we can divide top and bottom of the fraction by <m>4</m> to get 
+	<md><mrow>\dfrac{\cancel{4}(2x+1)}{\cancel{4}} = \dfrac{1(2x+1)}{1} = 2x+1</mrow></md></p></solution></example>
+
+<exercise number="3"><statement><p>What does "canceling" mean when we reduce a fraction?</p></statement>
+    <answer><p>Dividing out common factors.</p></answer></exercise>
+
+<warning><idx><h>canceling to reduce a fraction</h></idx>
+<p>We can cancel common factors (expressions that are multiplied together), but not common terms (expressions that are added or subtracted). Use your calculator to decide which calculation in each pair is correct. (In the second pair, choose a value for the variable and evaluate.) <ol marker="1.">
+	<li><p><ol marker="a." cols="2">
+		<li><m>\dfrac{12}{8} = \dfrac{4 \cdot 3}{4 \cdot 2} \rightarrow \dfrac{3}{2}</m></li>
+		<li><m>\dfrac{7}{6} = \dfrac{4 + 3}{4 + 2} \rightarrow \dfrac{3}{2}</m></li>
+	</ol></p></li>
+	<li><p><ol marker="a." cols="2">
+		<li><m>\dfrac{5x}{8x}  \rightarrow \dfrac{5}{8}</m></li>
+		<li><m>\dfrac{x+5}{x+8}  \rightarrow \dfrac{5}{8}</m></li>
+	</ol></p></li>
+</ol></p></warning>
+
+<assemblage><title>Look Ahead</title>
+	<idx><h>canceling to reduce a fraction</h></idx>
+	<idx><h>canceling to reduce a fraction</h><seealso>fundamental principle of fractions</seealso></idx>
+<p>Now we can apply our method to algebraic fractions. We must be very careful to cancel only common factors, never common terms. For this reason, we will think of reducing fractions in two steps: first factor the numerator and denominator completely, then divide by any common factors.</p></assemblage>
+
+<assemblage><title>To Reduce an Algebraic Fraction</title>
+	<idx><h>algebraic fraction</h><h>reducing</h></idx>
+	<idx><h>fractions</h><h>reducing</h></idx>
+<p><ol marker="1.">
+	<li>Factor numerator and denominator completely.</li>
+	<li>Divide numerator and denominator by any common factors.</li>
+</ol></p></assemblage>
+
+<example xml:id="Example-8-1-6"><statement><p><ol marker="a.">
+	<li>Reduce  <m>~~\dfrac{3x^2+12x}{6x+24}</m></li>
+	<li>Evaluate the fraction for <m>x=4</m>.</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>We first factor the numerator and denominator completely.
+		<md><mrow>\dfrac{3x^2+12x}{6x+24} = \dfrac{3x(x+4)}{2 \cdot 3 (x+4)}</mrow></md>
+	Then we divide numerator and denominator by any common factors.
+		<md><mrow>\dfrac{3x(x+4)}{2 \cdot 3 (x+4)} = \dfrac{\cancel{3}x\cancel{(x+4)}}{2 \cdot \cancel{3}\cancel{(x+4)}} = \dfrac{x}{2}</mrow></md></p></li>
+	<li><p>If we substitute <m>x=\alert{4}</m> into the original fraction and simplify, we find
+		<md><mrow>\dfrac{3(\alert{4})^2+12(\alert{4})}{6(\alert{4})+24} = \dfrac{48+48}{24+24} = \dfrac{96}{48} = 2</mrow></md> 
+	However, the reduced fraction, <m>\dfrac{x}{2}</m>, is equivalent to the original one, so we should get the same answer if we substitute <m>x=\alert{4}</m> into the reduced fraction:
+		<md><mrow>\dfrac{x}{2} = \dfrac{\alert{4}}{2} = 2</mrow></md></p></li>
+</ol></p></solution></example>
+
+<warning>
+	<idx><h>canceling to reduce a fraction</h></idx>
+<p>In <xref ref="Example-8-1-6" text="type-global"/>, it would be incorrect to "cancel" terms of the numerator and denominator separately, as shown below:
+	<md><mrow>\dfrac{\cancel{3x^2}+\bcancel{12x}}{\cancel{6x}+\bcancel{24}} \rightarrow\dfrac{x+x}{2+2}~~~~~~~\alert{\text{Incorrect!}}</mrow></md>  
+We must always factor the numerator and denominator before attempting to cancel.</p></warning>
+
+<assemblage><title>Look Closer</title>
+<p>	Suppose we'd like to evaluate the fraction in <xref ref="Example-8-1-6" text="type-global"/> for <m>x=478</m>. Instead of substituting 478 into the original fraction, it is much simpler to use the reduced fraction, and get
+	<md><mrow>\dfrac{x}{2}=\dfrac{\alert{478}}{2} = 239</mrow></md>
+This the whole point of reducing a fraction: to get a simpler but equivalent expression.</p></assemblage>
+
+<exercise number="4"><statement><p>Why is it a good idea to reduce an algebraic fraction when possible?
+</p></statement>
+    <answer><p>To get a simpler but equivalent expression. </p></answer></exercise>
+</subsection>
+
+<subsection><title>Negative of a Binomial</title>
+	<idx><h>negative</h><h>of a binomial</h></idx>
+	<idx><h>opposite of a binomial</h></idx>
+
+<p>How can we deal with negative factors in a fraction? First, we consider some facts about the negative, or <term>opposite</term>, of an expression.</p>
+
+<assemblage><title>Negative Fractions</title>
+<p>A fraction is a negative number if either its numerator or its denominator is negative, but not both. For example, 
+	<md><mrow>-\dfrac{2}{3}=\dfrac{-2}{3}=\dfrac{2}{-3}</mrow></md>
+However, the fraction <m>\dfrac{-2}{-3}</m> is a positive number, because the quotient of two negative numbers is positive.</p></assemblage>
+
+<assemblage><title>Look Closer</title>
+	<idx><h>fractions</h><h>standard form for writing negative fraction</h></idx>
+<p>In algebra, we prefer to write such a fraction with the negative sign in the numerator, so that the standard form for the opposite of <m>~\dfrac{2}{3}~</m> is <m>~\dfrac{-2}{3}</m>.</p></assemblage>  
+
+<exercise number="5"><statement><p>Does a negative sign in front of a fraction apply to the numerator, the denominator, or both?</p></statement>
+    <answer><p>Either the numerator or the denominator, but not both. </p></answer></exercise>
+
+<p>To find the opposite, or negative, of a binomial (or any other algebraic expression) we multiply the expression by <m>-1</m>.</p>
+
+<assemblage><title>Negative of a Binomial</title>
+	<idx><h>negative</h><h>of a binomial</h></idx>
+	<idx><h>opposite of a binomial</h></idx>
+<p>The opposite of  <m>a-b</m>  is 
+	<md><mrow>\blert{-(a-b) = -a+b = b-a}</mrow></md></p></assemblage> 
+
+<example><statement><p>Find the opposite of each binomial.<ol marker="a." cols="2">
+	<li><m>2a-3b</m></li>
+	<li><m>-x-1</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>The opposite of <m>~2a-3b~</m> is
+		<md><mrow>-(2a-3b) = -2a+3b~~~~ \text{or}~~~~3b-2a</mrow></md></p></li>
+	<li><p>The opposite of <m>~-x-1~</m> is
+		<md><mrow>-(-x-1) = x+1</mrow></md></p></li>
+</ol></p></solution></example>
+
+<assemblage><title>Look Closer</title>
+	<idx><h>algebraic fraction</h><h>binomial divided by opposite</h></idx>
+<p>Recall that any number (except zero) divided by itself is <m>1</m>, and any number divided by its opposite is <m>-1</m>. For example,
+	<md><mrow>\dfrac{8}{-8} = -1~~~~~~\text{and}~~~~~~\dfrac{-5}{5} = -1</mrow></md>
+The same is true for binomials and other algebraic expressions, so that
+	<md><mrow>\dfrac{b-a}{a-b} = \dfrac{-(a-b)}{a-b} = -1</mrow></md>
+Here is an example of how opposites can arise in algebraic fractions.</p></assemblage>
+
+<example><statement><p>Reduce  <m>~~\dfrac{2x-4y}{6y-3x}</m></p></statement>
+
+<solution><p>First, we factor the numerator and denominator.
+	<md><mrow>\dfrac{2x-4y}{6y-3x} = \dfrac{2(x-2y)}{3(2y-x)}</mrow></md>
+We see that <m>x-2y</m> is the opposite of <m>2y-x</m>, that is, <m>x-2y = -(2y-x)</m>.  Thus,
+	<md><mrow>\dfrac{2(x-2y)}{3(2y-x)} = \dfrac{-2\cancel{(2y-x)}}{3\cancel{(2y-x)}} = \dfrac{-2}{3}</mrow></md></p></solution>
+</example>
+
+<exercise number="6"><statement><p>What do we get when we divide an expression by its opposite?</p></statement>
+    <answer><p><m>-1</m></p></answer></exercise>
+
+<problem><statement>
+
+<p>Factor completely.</p>
+<p><ol marker="1." cols="2">
+	<li><m>x^2-4</m></li>
+	<li><m>x^2-4x</m></li>
+	<li><m>x^2-4x+4</m></li>
+	<li><m>4x^2-1</m></li>
+	<li><m>4x^2-4x</m></li>
+	<li><m>4x^2+4x+1</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="1." cols="2">
+	<li><m>(x-2)(x+2)</m></li>
+	<li><m>x(x-4)</m></li>
+	<li><m>(x-2)^2</m></li>
+	<li><m>(2x-1)(2x+1)</m></li>
+	<li><m>4x(x-1)</m></li>
+	<li><m>(2x+1)^2</m></li>
+</ol></p></answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Algebraic Fractions</title>
+
+<p><ol marker="1.">
+	<li><p><ol marker="a.">
+		<li>Evaluate <m>~\dfrac{z-1}{2z+3~}</m> for <m>z=-3</m>.</li>
+		<li>For what value of <m>z</m> is the fraction undefined?</li>
+</ol></p></li>
+
+	<li><p>Recall the average cost of producing a filter in the Example about Evergreen Technology:
+		<md><mrow>\text{Average Cost} = \dfrac{5000+50x}{x}</mrow></md>
+	Use the table and graph of average cost to help you answer the questions.</p>
+
+<sidebyside widths="25% 60%" valigns="middle middle">
+	<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>A</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>150</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>100</m></cell></row>
+                    <row> 
+                        <cell><m>200</m></cell>
+                        <cell><m>75</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>62.50</m></cell></row>  
+                    <row>
+                        <cell><m>500</m></cell>
+                        <cell><m>60</m></cell></row> 
+                    <row>
+                        <cell><m>1000</m></cell>
+                        <cell><m>55</m></cell></row>
+                    <row>
+                        <cell><m>1250</m></cell>
+                        <cell><m>54</m></cell></row> 
+                    <row>
+                        <cell><m>2000</m></cell>
+                        <cell><m>52.50</m></cell></row>                     
+                </tabular>
+   <image source="photos/fig-8-1-ex3"><description>curve</description></image></sidebyside>
+<p><ol marker="a.">
+	<li>Approximately how many filters should Envirogreen produce for the average cost to be $75?</li>
+	<li>What happens to the average cost per filter as <m>x</m> increases?</li>
+	<li>As <m>x</m> increases, the average cost appears to be approaching a limiting value. What is that value?</li>
+	<li><p>A market analysis concludes that Envirogreen can sell 1250 filters this year. How much should they charge for one filter if they would like to make a total profit of $100,000?</p>
+		<p>(Hint: Use the formula   Profit <m>=</m> Revenue <m>-</m> Cost)</p></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Reducing Fractions</title>
+
+<p><ol marker="1.">
+<li><p>Explain why each calculation is incorrect.<ol marker="a." cols="2">
+	<li><m>\dfrac{x-6}{x-9} \rightarrow \dfrac{x-2}{x-3}</m></li>
+	<li><m>\dfrac{2x+5}{2} \rightarrow x+5</m></li>
+</ol></p></li>
+
+<li><p><ol marker="a.">
+	<li>Reduce <m>~\dfrac{12x-18}{16x-24}</m></li>
+	<li>If you evaluate <m>~\dfrac{12x-18}{16x-24}~</m> for <m>x=-17</m>, what do you expect to get?</li>
+</ol></p></li>
+
+<li><p>Reduce <m>~\dfrac{x^2-x-6}{x^2-9}</m></p></li>
+
+<li><p>Find the opposite of each binomial.<ol marker="a." cols="2">
+	<li><m>2a+3b</m></li>
+	<li><m>-x+1</m></li>
+</ol></p></li>
+
+<li><p>Reduce if possible.<ol marker="a." cols="2">
+	<li><m>\dfrac{-x+1}{1-x}</m></li>
+	<li><m>\dfrac{1+x}{1-x}</m></li>
+	<li><m>\dfrac{2a-3b}{3b-2a}</m></li>
+	<li><m>\dfrac{2a-3b}{2b-3a}</m></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Evaluating algebraic fractions</li>
+	<li>Reducing algebraic fractions</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>In Activity 1, Problem 2d, what was the average cost per filter?</li>
+	<li>In Activity 2, Problem 3, can we cancel the <m>x^2</m>'s?  Why or why not?</li>
+	<li>In Activity 2, Problem 4, which numerator is the opposite of its denominator?</li>
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<p><ol marker="1.">
+<li><p>The chess club will have 4 men and an unknown number  of women. What fraction of the club will be men?</p></li>
+
+<li><p><ol marker="a.">
+	<li>Evaluate <m>~\dfrac{z^2-4}{z-4}~</m> for <m>z=-2</m>.</li>
+	<li>For what values of <m>z</m> is <m>~\dfrac{z^2-4}{z-4}~</m> undefined?</li>
+</ol></p></li>
+
+<li><p>Reduce. <ol marker="a." cols="2">
+	<li><m>~~\dfrac{20s^3t^2}{12st^3}</m></li>
+	<li><m>~~\dfrac{x^2-4x}{2x}</m></li>
+	<li><m>~~\dfrac{a^2-9}{3a-9}</m></li>
+	<li><m>~~\dfrac{b-2}{2b^2-3b-2}</m></li>
+</ol></p></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p><ol marker= "1.">
+	<li><m>\dfrac{4}{4+w}</m></li>
+	<li><p><ol marker="a." cols="2">
+		<li><m>0</m></li>
+		<li><m>4</m></li>
+	</ol></p></li>
+	<li><p><ol marker="a." cols="2">
+		<li><m>\dfrac{5s^2}{3t}</m></li>
+		<li><m>\dfrac{x-4}{2}</m></li>
+		<li><m>\dfrac{a+3}{3}</m></li>
+		<li><m>\dfrac{1}{2b+1}</m></li>
+	</ol></p></li>
+</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-8-1.xml" />
+</section>
+

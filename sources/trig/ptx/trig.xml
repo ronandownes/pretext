@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+Copyright 2025 Katherine Yoshiwara
+
+
+
+*********************************************************************-->
+
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+<xi:include href="./bookinfo.xml" />   <!-- ISBN, website, other metadata -->
+
+<book xml:id="trig">
+       <title>Trigonometry</title>
+       
+       <xi:include href="./frontmatter.xml" />            
+        <xi:include href="./chap1.xml" />
+        <xi:include href="./chap2.xml" />       
+        <xi:include href="./chap3.xml" />       
+        <xi:include href="./chap4.xml" />        
+        <xi:include href="./chap5.xml" />       
+        <xi:include href="./chap6.xml" />        
+        <xi:include href="./chap7.xml" />        
+        <xi:include href="./chap8.xml" />          
+        <xi:include href="./chap9.xml" />        
+        <xi:include href="./chap10.xml" />          
+
+
+    <xi:include href="./backmatter.xml" />       
+
+    </book>
+</pretext>

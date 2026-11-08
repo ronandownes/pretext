@@ -1,0 +1,47 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} 
+\coordinate (O) at (0,0);
+\coordinate (A) at (-0.8,0.7);
+\coordinate (Aa) at (-0.4,.25);
+\coordinate (Ab) at (0.2,.25);
+\coordinate (B) at (-.5,-.2);
+\node at (O) {$2+3$};
+\draw[blue, <-, >=stealth'] (Ab)--(A) node[left, scale=.9]{terms};
+\draw[blue, <-, >=stealth'] (Aa)--(A);
+\draw [blue,decorate,decoration={brace,amplitude=3pt}] (.5,-0.2)--(B)  node [below,midway,yshift=-4pt] {sum};
+\coordinate (P) at (3,0);
+\coordinate (C) at (3.6,0.7);
+\coordinate (Ca) at (2.8,.2);
+\coordinate (Cb) at (3.4,.23);
+\coordinate (D) at (2.5,-.2);
+\node at (P) {$x+5$};
+\draw[blue, <-, >=stealth'] (Cb)--(C) node[right, scale=.9]{terms};
+\draw[blue, <-, >=stealth'] (Ca)--(C);
+\draw [blue,decorate,decoration={brace,amplitude=3pt}] (3.5,-0.2)--(D)  node [below,midway,yshift=-4pt] {sum};
+\end{tikzpicture}%
+}
+\end{document}

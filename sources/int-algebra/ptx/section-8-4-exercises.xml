@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+
+
+<!-- This file was originally part of the book     -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<exercises xml:id="section-8-4-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 8.4</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercisegroup cols="2">
+<exercise number="1"><statement><p>Add <m>~\dfrac{x}{x-1} + \dfrac{x+2}{x}</m></p></statement>
+<answer><p><m>\dfrac{2x^2+x-2}{x(x-1)} </m></p></answer></exercise>
+
+<exercise number="2"><statement><p>Subtract <m>~\dfrac{x}{x-1} - \dfrac{x+2}{x}</m></p></statement></exercise>
+
+<exercise number="3"><statement><p>Multiply <m>~\dfrac{x}{x-1} \cdot \dfrac{x+2}{x}</m></p></statement>
+<answer><p><m>\dfrac{x+2}{x-1} </m></p></answer></exercise>
+
+<exercise number="4"><statement><p>Divide <m>~\dfrac{x}{x-1} \div \dfrac{x+2}{x}</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="3"><introduction><p>For Problems 5<ndash/>16, simplify the complex fraction.</p></introduction>
+
+<exercise number="5"><statement><p><m>\dfrac{\dfrac{3x}{y}}{\dfrac{x}{2y^2}}</m></p></statement>
+<answer><p><m>6y</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>\dfrac{\dfrac{4a}{5b^2}}{\dfrac{8a^3}{15b}}</m></p></statement></exercise>
+
+<exercise number="7"><statement><p><m>\dfrac{1-\dfrac{1}{6}}{2+\dfrac{2}{3}}</m></p></statement>
+<answer><p><m>\dfrac{5}{16}</m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>\dfrac{\dfrac{1}{2}+\dfrac{1}{3}}{\dfrac{1}{3}-\dfrac{1}{6}}</m></p></statement></exercise>
+
+<exercise number="9"><statement><p><m>\dfrac{\dfrac{2}{a}+\dfrac{3}{2a}}{5+\dfrac{1}{a}}</m></p></statement>
+<answer><p><m>\dfrac{7}{10a+2}</m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>\dfrac{1+\dfrac{2}{a}}{1-\dfrac{4}{a^2}}</m></p></statement></exercise>
+
+<exercise number="11"><statement><p><m>\dfrac{4-\dfrac{1}{x^2}}{2-\dfrac{1}{x}}</m></p></statement>
+<answer><p><m>\dfrac{2x+1}{x}</m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>\dfrac{1}{1-\dfrac{1}{q}}</m></p></statement>
+</exercise>
+
+<exercise number="13"><statement><p><m>\dfrac{n}{\dfrac{p}{q}+1}</m></p></statement>
+<answer><p><m>\dfrac{nq}{p+q}</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>\dfrac{h+\dfrac{h}{m}}{1+\dfrac{1}{m}}</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>\dfrac{\dfrac{u}{x}-\dfrac{v}{x}}{v}</m></p></statement>
+<answer><p><m>\dfrac{u-v}{xv}</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>\dfrac{\dfrac{x}{at}-V}{1-V\dfrac{x}{t}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17<ndash/>20, divide. Write your answer as the sum of a polynomial and an algebraic fraction.</p></introduction>
+
+<exercise number="17"><statement><p><m>\dfrac{6x^4-6x^2-4}{12x^2}</m></p></statement>
+<answer><p><m>\dfrac{1}{2}x^2\dfrac{1}{2}-\dfrac{1}{3x^2}</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>\dfrac{3n^3-3n^2+2n-3}{3n^2}</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>\dfrac{2x^2y^2-4xy^2+6xy}{2xy^2}</m></p></statement>
+<answer><p><m>x-2+\dfrac{3}{y}</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>\dfrac{15s^{10}-21s^5+6}{-3s^2}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 21<ndash/>24, use polynomial division to write the quotient as the sum of a polynomial and an algebraic fraction.</p></introduction>
+
+<exercise number="21"><statement><p><m>\dfrac{4y^2+12y+7}{2y+1} </m></p></statement>
+<answer><p><m>2y+5+\dfrac{2}{2y+1)}</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>\dfrac{x^3+2x^2+x+1}{x-2}</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>\dfrac{4z^2+5z+8z^4+3}{2z+1}</m></p></statement>
+<answer><p><m>4z^3-2z^2+3z+1+\dfrac{2}{2z+1}</m></p></answer></exercise>
+
+<exercise number="24"><statement><p><m>\dfrac{x^4-1}{x^2-2}</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="25"><statement><p><ol marker="a.">
+    <li><sidebyside widths="65% 30%" margins="0% 0%" valigns="middle middle">
+            <p>On the figure at right, locate the points  <m>P\left(\dfrac{a}{2},0\right)</m>, <m>Q\left(a, \dfrac{b}{2}\right)</m>, <m>~R\left(\dfrac{a}{2},b\right)</m>, and <m>~S\left(0,\dfrac{b}{2}\right)</m>. Connect the points with line segments in the order <m>PQRS</m> to form a four-sided figure.</p>  
+    
+            <image xml:id="fig-rectangle-Q1">
+            <description>rectangle in first quadrant, one corner at origin</description>
+            <latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} 
+            \draw[thick,->,>=stealth'] (0,0) -- (4,0) node[above]{$x$};
+            \draw[thick,->,>=stealth'] (0,0) -- (0,3) node[left]{$y$};
+            \draw[red,thick] (3,0)--(3,2)--(0,2);
+            \filldraw[red] (3,2) circle (.08) node[above right, text=black] {$(a,b)$};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></li>
+    <li>Compute the slopes of each side of the figure.</li></ol></p></statement>
+<answer><p><m>\overline{PQ}</m> and <m>overline{RS}: ~\dfrac{b}{a}</m>; <m>\overline{QR}</m> and <m>overline{SP}: ~\dfrac{b}{a}</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><ol marker="a.">
+    <li>Suppose <m>x</m> and <m>y</m> are two positive numbers.  Write an expression for their average, and then for the reciprocal of their average.</li>
+    <li>For the same numbers <m>x</m> and <m>y</m>, write an expression for the average of their reciprocals.</li>
+    <li>Are your expressions in parts (a) and (b) the same?  Choose values for <m>x</m> and <m>y</m> and evaluate both expressions.</li></ol></p></statement></exercise>
+
+<exercise number="27"><statement><p>The focal length of a lens is given by the formula
+    <me>\dfrac{1}{f}=\dfrac{1}{p}+\dfrac{1}{q} </me> 
+where <m>f</m> stands for the focal length, <m>p</m> is the distance from the object viewed to the lens, and <m>q</m> is the distance from the image to the lens. Suppose you estimate that the distance from your cat (the object viewed) to your camera lens is 60 inches greater than the distance from the lens to the film inside the camera, where the image forms.<ol marker="a.">
+        <li><p>Express <m>1/f</m> as a single fraction in terms of <m>q</m>.</p></li>
+        <li><p>Write and simplify an expression for <m>f</m> as a function of <m>q</m>.</p></li>
+    </ol></p></statement>
+<answer><p><ol cols="2">
+    <li><p> <m>\dfrac{1}{f}=\dfrac{2q+60}{q^2+60q} </m></p></li>
+    <li><p> <m>f=\dfrac{q^2+60q}{2q+60} </m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>Andy drives 300 miles to Lake Tahoe at 70 miles per hour and returns home at 50 miles per hour. What is his average speed for the round trip? (It is not 60 miles per hour!) <ol marker="a.">
+    <li>Write expressions for the time it takes for each leg of the trip if Andy drives a distance <m>d</m> at speed <m>r_1</m> and returns at speed <m>r_2</m>.</li>
+    <li>Write expressions for the total distance and total time for the trip.</li>
+    <li>Write an expression for the average speed for the entire trip.</li>
+    <li>Write your answer to part (c) as a simple fraction.</li>
+    <li>Use your formula to answer the question stated in the problem.</li></ol></p>
+</statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 29<ndash/>36, Write each expression as a single fraction in simplest form.
+</p></introduction>
+
+<exercise number="29"><statement><p><m>\left(1-\dfrac{k}{n}\right) \left(1+ \dfrac{k}{n}\right)</m></p></statement>
+<answer><p><m>\dfrac{n^2-k^2}{n^2}</m></p></answer></exercise>
+
+<exercise number="30"><statement><p><m>m\left(\dfrac{v-V}{t}\right)\left(\dfrac{v+V}{2}\right)</m></p></statement></exercise>
+
+<exercise number="31"><statement><p><m>\dfrac{2d}{c} \cdot \dfrac{1}{1-\left(\dfrac{u}{c}\right)^2}</m></p></statement>
+<answer><p><m>\dfrac{2cd}{c^2-u^2}</m></p></answer></exercise>
+
+<exercise number="32"><statement><p><m>\dfrac{1}{\dfrac{1}{n}\left(\dfrac{1}{n}-1\right)}</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>\dfrac{\dfrac{L}{F}}{\dfrac{L}{F}-1} \cdot \dfrac{K}{N}</m></p></statement>
+<answer><p><m>\dfrac{KL}{N(L-F)}</m></p></answer></exercise>
+
+<exercise number="34"><statement><p><m>b\left(\dfrac{a-b}{a+b}\right) +b</m></p></statement></exercise>
+
+<exercise number="35"><statement><p><m>\dfrac{1-\dfrac{2h}{m}}{m-\dfrac{4h^2}{m}} </m></p></statement>
+<answer><p><m>\dfrac{1}{m+2h}</m></p></answer></exercise>
+
+<exercise number="36"><statement><p><m>\dfrac{\dfrac{6}{h+2}-\dfrac{3}{h}}{\dfrac{4}{h}-\dfrac{3}{h+2}} </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 37<ndash/>42, write each expression as a single fraction in simplest form.
+</p></introduction>
+
+<exercise number="37"><statement><p><m>x^{-2}+y^{-2}</m></p></statement>
+<answer><p><m>\dfrac{x^2+y^2}{x^2y^2}</m></p></answer></exercise>
+
+<exercise number="38"><statement><p><m>2w^{-1}-(2w)^{-2}</m></p></statement></exercise>
+
+<exercise number="39"><statement><p><m>a^{-1}b-ab^{-1}</m></p></statement>
+<answer><p><m>\dfrac{b^2-a^2}{ab}</m></p></answer></exercise>
+
+<exercise number="40"><statement><p><m>(x^{-1}+y^{-1})^{-1}</m></p></statement></exercise>
+
+<exercise number="41"><statement><p><m>(1-xy^{-1})^{-1}</m></p></statement>
+<answer><p><m>\dfrac{y}{y-x}</m></p></answer></exercise>
+
+<exercise number="42"><statement><p><m>\dfrac{a^{-1}+b^{-1}}{(ab)^{-1}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 43-48, write each complex fraction as a simple fraction in lowest terms, and rationalize the denominator.
+</p></introduction>
+
+<exercise number="43"><statement><p><m>\dfrac{\dfrac{\sqrt{5}}{3}}{\dfrac{1}{\sqrt{3}}}</m></p></statement>
+<answer><p><m>\dfrac{\sqrt{15}}{3}</m></p></answer></exercise>
+
+<exercise number="44"><statement><p><m>\dfrac{1-\dfrac{2}{\sqrt{6}}}{\dfrac{\sqrt{2}}{\sqrt{6}}}</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>\dfrac{1+\dfrac{1}{\sqrt{2}}}{2\sqrt{3}-\dfrac{\sqrt{3}}{2}}</m></p></statement>
+<answer><p><m>\dfrac{2\sqrt{3}+\sqrt{6}}{9}</m></p></answer></exercise>
+
+<exercise number="46"><statement><p><m>\dfrac{\dfrac{1}{2}-\dfrac{1}{\sqrt{3}}}{\dfrac{\sqrt{2}}{2}-\dfrac{\sqrt{2}}{3}}</m></p></statement></exercise>
+
+<exercise number="47"><statement><p><m>\dfrac{\dfrac{\sqrt{3}}{2}+\dfrac{1}{\sqrt{2}}}{1-\dfrac{\sqrt{3}}{2}\cdot\dfrac{1}{\sqrt{2}}}</m></p></statement>
+<answer><p><m>\dfrac{6\sqrt{3}+7\sqrt{2}}{5}</m></p></answer></exercise>
+
+<exercise number="48"><statement><p><m>\dfrac{\dfrac{1}{\sqrt{3}}-\dfrac{5}{3}}{1+\dfrac{\sqrt{1}}{\sqrt{3}}\cdot\dfrac{\sqrt{5}}{3}}</m></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+</exercises>

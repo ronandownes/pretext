@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkLinearInequalitiestwoVariables" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Linear Inequalities in Two Variables</title>
+                 
+<subsubsection xml:id="tkTwoVarIneq"><title>Solve a linear inequality</title>
+
+<introduction><p>Before we solve inequalities in two variables, let's review solving linear inequalities in one variable.</p></introduction>
+
+<example><statement><p>Solve <m>~3k-13 \lt 5+6k</m></p></statement> 
+
+<solution><p>We begin just as we do to solve an equation. The only difference is that we must reverse the direction of the inequality if we multiply or divide by a negative number.
+        <md><mrow>3k-13 \amp \lt 5+6k \amp \amp \blert{\text{Subtract}~6k~\text{from both sides.}} </mrow>
+            <mrow>-3k \amp \lt 18 \amp \amp \blert{\text{Divide both sides by}~-3.}</mrow> 
+            <mrow>k \amp \gt -6 \amp \amp \blert{\text{Don't forget to reverse the inequality.}}</mrow></md>
+In interval notation, the solution set is <m>(-6,\infty)</m>.</p> 
+</solution></example>               
+
+<exercise><statement><p>Solve <m>~~4(3a-7) \gt -18+2a.~~</m> Write the solution with interval notation.</p> </statement>
+<answer><p><m>(1, \infty)  </m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~~4 \le \dfrac{-3x}{4}-2.~~</m> Write the solution with interval notation.</p> </statement>
+<answer><p><m>(-\infty,8]  </m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~~15 \ge -6+3m \ge -6.~~</m> Write the solution with interval notation.</p> </statement>
+<answer><p><m>[0,7]  </m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~~\dfrac{-9}{2} \lt \dfrac{5-2n}{-4} \le -1.~~</m> Write the solution with interval notation.</p> </statement>
+<answer><p><m>\left(\dfrac{-13}{2}, \dfrac{1}{2}\right]  </m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkGraphLine"><title>Graph a line </title>
+
+<introduction><p>The boundary of the solution set for a linear inequality in two variables is made up of portions of straight lines.</p></introduction>
+
+<example><statement><p>Use the most convenient method to graph the equation. 
+<ol marker="a." cols="2">
+    <li><m>5x-10y=750</m></li>
+    <li><m>y=400-25x</m></li>
+</ol> </p></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>This equation is in the form <m>Ax+By=C</m>, so the intercept method of graphing is convenient. The intercepts are <m>(150,0)</m> and <m>(0,-75)</m>. The graph is shown below.</p>
+    <image width="45%" xml:id="fig-5x-minus-10y-eq750"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (-2,-4) grid (8,2);
+        \draw[black,very thick, ->, >=stealth'] (-2,0)--(8.6,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-4)--(0,2.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(25*\x)] in {-2,4,8} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(25*\x)] in  {-4,-2,2} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red,very thick,<->, >=stealth'] (-2, -4)--(8,1);
+        \filldraw[red] (0,-3) circle (.15);
+        \filldraw[red] (6,0) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></li> 
+    <li><p>This equation is in the form <m>y=mx+b</m>, so the slope-intercept method of graphing is convenient. The <m>y</m>-intercept is <m>(0,400)</m>, and the slope is <m>-25</m>. The graph is shown below.</p>
+    <image width="40%" xml:id="y-eq-400-minus25x"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan, thin] (-2,-2) grid (10,10);
+        \draw[black,very thick, ->, >=stealth'] (-2,0)--(10.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-2)--(0,10.8) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in {5,10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(50*\x)] in  {2,4,6,8,10} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red,very thick,<->, >=stealth'] (-2, 10)--(10,-2);
+        \filldraw[red] (0,8) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    </ol></p></solution></example>
+
+<exercise><statement><p>Graph the equation <m>~~24x+9y=432</m></p></statement>
+    <answer><image width="40%" xml:id="fig-24x-plus9y-eq432"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan, thin] (-2,-1) grid (10,11);
+        \draw[black,very thick, ->, >=stealth'] (-2,0)--(10.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-1)--(0,11.8) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in {5,10} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in  {2,4,6,8,10} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red,very thick,<->, >=stealth'] (-2.65/2, 11)--(10,{-48/(9*5)});
+        \filldraw[red] (0,48/5) circle (.15);
+        \filldraw[red] (9,0) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></answer></exercise>
+
+<exercise><statement><p>Graph the equation <m>~~y=12x+60</m></p></statement>
+    <answer><image width="40%" xml:id="y-eq-12x-plus60"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (-5,-2) grid (5,8);
+        \draw[black,very thick, ->, >=stealth'] (-5,0)--(5.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-2)--(0,8.8) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in {-4,-2,2,4} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(10*\x)] in  {-2,2,4,6,8} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red,very thick,<->, >=stealth'] (-10/3, -2)--(5/6,8);
+        \filldraw[red] (0,6) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></answer></exercise>
+
+<exercise><statement><p>Graph the equation <m>~~y=600-1.25x</m></p></statement>
+    <answer><image width="40%" xml:id="y-eq-600-minus-1pt25x"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan, thin] (-2,-2) grid (6,8);
+        \draw[black,very thick, ->, >=stealth'] (-2,0)--(6.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-2)--(0,8.8) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in {-2,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in  {-2,5} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red,very thick,<->, >=stealth'] (-1.6, 8)--(6,-1.5);
+        \filldraw[red] (0,6) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></answer></exercise>
+
+<exercise><statement><p>Graph the equation <m>~~45x-30y=15</m></p></statement>
+    <answer><image width="40%" xml:id="fig-45x-minus30y-eq15"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.6, yscale=.5]
+        \draw[cyan, thin] (-2,-2) grid (6,9);
+        \draw[black,very thick, ->, >=stealth'] (-2,0)--(6.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-2)--(0,9.8) node[above]{$y$};
+        \foreach \x  in {-2,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {-2,5} {
+         \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,very thick,<->, >=stealth'] (-1, -2)--(6,255/30);
+        \end{tikzpicture}]]>
+        </latex-image></image></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkTwobyTwo"><title>Solve a 2x2 system </title>
+
+<introduction><p>To find the vertices of the boundary of the solution set, we solve a linear 2x2 system.</p></introduction>
+
+<example><statement><p>Use substitution to solve the system: 
+    <md><mrow>3y-2x \amp = 3</mrow>
+        <mrow>x-2y \amp = -2</mrow></md> </p></statement>
+    
+<solution><p>We start by solving the second equation for <m>x</m> to get <m>x=2y-2</m>. Then we substitute this expression for <m>x</m> into the first equation, which gives us
+    <me>3y-2(2y-2)=3</me>
+We solve this equation for <m>y</m> to find <m>y=1</m>. Finally, we substitute <m>y=1</m> into our first step to find 
+    <me>x=2(1)-2=0</me>
+The solution is <m>x=0,~y=1</m>, or <m>(0,1)</m>.</p>
+</solution></example>
+
+<example><statement><p>Use elimination to solve the system: 
+    <md><mrow>2x+3y \amp = -1</mrow>
+        <mrow>3x+5y \amp = -2</mrow></md> </p></statement>
+    
+<solution><p>We multiply the first equation by 3 and the second equation by <m>-2</m> in order to eliminate <m>x</m>. 
+    <md><mrow>6x+9y \amp = -3</mrow>
+        <mrow>-6x-10y \amp = 4</mrow></md>
+Adding these two equations gives us <m>-y=1</m>, or <m>y=-1</m>. Finally, we substitute <m>y=-1</m> into either equation (we choose the first equation), and solve for <m>x</m>.  
+    <md><mrow>2x+3(-1) \amp = -1</mrow>
+        <mrow>2x-3 \amp = -1</mrow></md>
+We find<m>x=1</m>, so the solution is <m>x=1,~y=-1</m>, or <m>(1,-1)</m>.</p>
+</solution></example>
+
+<exercise><statement><p>Solve the system: 
+    <md><mrow>y \amp = 2x+1</mrow>
+        <mrow>2x+3y \amp = -21</mrow></md> </p></statement>
+    <answer><p><m>(-3,-5)</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the system: 
+    <md><mrow>x+4y \amp = 1</mrow>
+        <mrow>2x+3y \amp = -3</mrow></md> </p></statement>
+    <answer><p><m>(-3,1)</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the system: 
+    <md><mrow>2x+7y \amp = -19</mrow>
+        <mrow>5x-3y \amp = 14</mrow></md> </p></statement>
+    <answer><p><m>(1,-3)</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the system: 
+    <md><mrow>4x+3y \amp = -19</mrow>
+        <mrow>5x+15 \amp = -2y</mrow></md> </p></statement>
+    <answer><p><m>(-1,-5)</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

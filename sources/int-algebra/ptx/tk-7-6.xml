@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkLogScales" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Logarithmic Scales </title>
+                 
+<subsubsection><title>Compare quantities with logarithms</title>
+
+<introduction><p>Because <m>\log {x}</m> grows very slowly, we can use logs to compare quantities that vary greatly in magnitude.</p></introduction>
+
+<subsubsubsection><title>Example</title>
+
+<example><statement><p><ol marker="a.">
+    <li><p> Complete the table.  Round the values to one decimal place.
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>25</m></cell>
+                        <cell><m>125</m></cell>
+                        <cell><m>625</m></cell></row>
+                    <row> 
+                        <cell><m>\log x</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></p></li> 
+    <li>Plot the values of <m>x</m> on a log scale.
+        <sidebyside width="75%"><image source="images/fig-5-4-2.png"><description>log scale</description></image></sidebyside></li>
+    <li>Each time we multiply <m>x</m> by 5, how much does the logarithm increase? What is <m>\log 5</m>, to one decimal place?</li></ol></p></statement>
+ 
+<solution><p><ol marker="a.">
+    <li><p><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>25</m></cell>
+                        <cell><m>125</m></cell>
+                        <cell><m>625</m></cell></row>
+                    <row> 
+                        <cell><m>\log x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>0.7</m></cell>
+                        <cell><m>1.4</m></cell>
+                        <cell><m>2.1</m></cell>
+                        <cell><m>2.8</m></cell></row>
+                    </tabular></sidebyside></p></li>
+    <li><sidebyside width="75%"><image source="images/fig-5-4-1.png"><description>log scale</description></image></sidebyside></li>
+    <li> Each time we multiply <m>x</m> by 5, the log of <m>x</m> increases by 0.7, because <m>\log 5 = 0.7</m>. This is an application of the log properties: 
+        <me>\log 5x = \log x + \log 5 = \log x + 0.7</me></li></ol></p></solution></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<exercise><statement><p><ol marker="a.">
+    <li><p> Complete the table.  Round the values to one decimal place.
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~10~</m></cell>
+                        <cell><m>~20~</m></cell>
+                        <cell><m>~40~</m></cell>
+                        <cell><m>~80~</m></cell></row>
+                    <row> 
+                        <cell><m>\log x</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></p></li> 
+    <li>Plot the values of <m>x</m> on a log scale.
+        <sidebyside width="75%"><image source="images/fig-5-4-2.png"><description>log scale</description></image></sidebyside></li>
+    <li>Each time we multiply <m>x</m> by 2, how much does the logarithm increase? What is <m>\log 2</m>, to one decimal place?</li></ol></p> </statement>
+    <answer><p><ol marker="a.">
+        <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>~5~</m></cell>
+                        <cell><m>~10~</m></cell>
+                        <cell><m>~20~</m></cell>
+                        <cell><m>~40~</m></cell>
+                        <cell><m>~80~</m></cell></row>
+                    <row> 
+                        <cell><m>\log x</m></cell>
+                        <cell><m>0.7</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>1.3</m></cell>
+                        <cell><m>1.6</m></cell>
+                        <cell><m>1.9</m></cell></row>
+                    </tabular></sidebyside></li>
+        <li><sidebyside width="75%"><image source="images/fig-5-4-3.png"><description>log scale</description></image></sidebyside></li>
+        <li><m>0.3;~0.3</m></li></ol></p></answer></exercise>
+
+<exercise><statement><p><p><ol marker="a.">
+    <li><p> Complete the table.  Round the values to one decimal place.
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0.25</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~4~</m></cell>
+                        <cell><m>~16~</m></cell>
+                        <cell><m>~64~</m></cell>
+                        <cell><m>256</m></cell></row>
+                    <row> 
+                        <cell><m>\log x</m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></p></li> 
+    <li>Plot the values of <m>x</m> on a log scale.
+        <sidebyside width="75%"><image source="images/fig-5-4-2.png"><description>log scale</description></image></sidebyside></li>
+    <li>Each time we multiply <m>x</m> by 4, how much does the logarithm increase? What is <m>\log 4</m>, to one decimal place?</li></ol></p> </p> </statement>
+    <answer><p><ol marker="a.">
+        <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0.25</m></cell>
+                        <cell><m>~1~</m></cell>
+                        <cell><m>~4~</m></cell>
+                        <cell><m>~16~</m></cell>
+                        <cell><m>~64~</m></cell>
+                        <cell><m>256</m></cell></row>
+                    <row> 
+                        <cell><m>\log x</m></cell>
+                        <cell><m>-0.6</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>0.6</m></cell>
+                        <cell><m>1.2</m></cell>
+                        <cell><m>1.8</m></cell>
+                        <cell><m>2.4</m></cell></row>
+                    </tabular></sidebyside></li>
+        <li><sidebyside width="75%"><image source="images/fig-5-4-4.png"><description>log scale</description></image></sidebyside></li>
+        <li><m>0.6;~0.6</m></li></ol></p> </answer></exercise>
+</subsubsubsection>
+</subsubsection>
+
+<subsubsection><title>Use the properties of logarithms</title>
+
+<introduction><p>The three properties of lagarithms are helpful in making computations involving logs.
+
+<assemblage><title>Properties of Logarithms</title>
+    <p>If <m>x</m>, <m>y</m>, <m>b \gt 0</m>, and <m>b\ne 1</m>, then <ol marker="1.">
+        <li><p><m>\log_{b}{(xy)} = \log_{b}{x} + \log_{b}{y}</m></p></li>
+        <li><p><m>\log_{b}\dfrac{x}{y} = \log_b x - \log_b y</m></p></li>
+        <li><p><m>\log_b {x^k} = k \log_b x </m></p></li></ol></p></assemblage>
+</p></introduction>
+
+<subsubsubsection><title>Examples</title>
+
+<example><statement><p>If <m>\log_b 10 = 2.303</m> and <m>\log_b 2 = 0.693</m>, what is <m>\log_b 5</m>?</p></statement>
+
+<solution><p>Because <m>5 = \dfrac{10}{2}</m>,
+    <me>\log_b 5 = \log_b \left(\dfrac{10}{2}\right) = \log_b 10 - \log_b 2 = 2.303 - 0.693 = 1.61</me></p></solution></example>
+
+<example><statement><p>If <m>\log_b 10 = 2.303</m> and <m>\log_b 2 = 0.693</m>, what is <m>\log_b 20</m>?</p></statement>
+
+<solution><p>Because <m>20 = 10 \cdot 2</m>,
+    <me>\log_b 20 = \log_b (10 \cdot 2) = \log_b 10 + \log_b 2 = 2.303 + 0.693 = 2.996</me></p></solution></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<exercise><statement><p> Take the log of each number. What do you notice?<ol marker= "a." cols="2">
+    <li><m>8 \cdot 100 = 800</m></li>
+    <li><m>12 \cdot 1000 = 12,000</m></li>
+    <li><m>20 \cdot 25 = 500</m></li>
+    <li><m>200 \cdot 250 = 50,000</m></li></ol>
+</p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>\log 8 + \log 10 = \log 800</m></li>
+        <li><m>\log 12 + \log 100 = \log 12,000</m></li>
+        <li><m>\log 20 + \log 25 = \log 500</m></li>
+        <li><m>\log 200 + \log 250 = \log 50,000</m></li></ol>
+    </p></answer></exercise>
+
+<exercise><statement><p>Compare the two operations. What do you notice?<ol marker= "a.">
+    <li>(i) Compute <m>10^{2.68}~~~~~~~~~~~~~~~~~</m>  (ii) Solve for <m>x:~~\log x = 2.68</m></li>
+    <li>(i) Compute <m>10^{-0.75}~~~~~~~~~~~~~~~~</m>  (ii) Solve for <m>x:~~\log x = -0.75</m></li></ol>
+</p></statement>
+    <answer><p><ol marker= "a.">
+        <li>(i) and (ii) have the same answer: <m>478.63</m></li>
+        <li>(i) and (ii) have the same answer: <m>0.1778</m></li></ol>
+    </p></answer></exercise>
+
+<exercise><statement><p><ol marker= "a.">
+    <li>The ratio of <m>N</m> to <m>P</m> is <m>32.6</m>.  Compute <m>\log N - \log P</m>.</li>
+    <li><m>\log z - \log t = 2.5</m>.  Compute <m>\dfrac{z}{t}</m>.</li></ol></p>
+</statement>
+    <answer><p><ol marker= "a.">
+        <li><m>1.5132</m></li>
+        <li><m>316.2278</m></li></ol></p>
+    </answer></exercise>
+</subsubsubsection>
+</subsubsection>
+
+<subsubsection><title>Write expressions to compare quantities</title>
+
+<introduction><p>There is often more than one way to express a comparison with mathematical notation.</p></introduction>
+
+<subsubsubsection><title>Example</title>
+
+<example><statement><p>When we say that "<m>A</m> is 3 times larger than <m>B</m>," we mean that <m>A=3B</m>.</p>
+</statement></example>
+
+<example><statement><p>When we say that "<m>A</m> is 3 more than <m>B</m>," we mean that <m>A=B+3</m>.</p>
+</statement></example>
+</subsubsubsection>
+
+<subsubsubsection><title>Exercises</title>
+
+<introduction><p><ol marker="a." cols="3">
+    <li><m>x=5H</m></li>
+    <li><m>x=\dfrac{5}{H}</m></li>
+    <li><m>x=5+H</m></li>
+    <li><m>H=x+5</m></li>
+    <li><m>H=5x</m></li>
+    <li><m>H=\dfrac{5}{x}</m></li>
+    <li><m>x-H=5</m></li>
+    <li><m>H-x=5</m></li>
+    <li><m>\dfrac{x}{H}=5</m></li>
+    <li><m>\dfrac{H}{x}=5</m></li>
+    <li><m>\dfrac{\log x}{\log H} = 5</m></li>
+    <li><m>\log x - \log H =\log 5</m></li>
+    <li><m>\log x + \log 5 = \log H</m></li></ol></p></introduction>
+
+<exercise><statement><p>From the list above, match all the correct algebraic expressions to the phrase "<m>x</m> is 5 times as large as <m>H</m>."</p></statement>
+    <answer><p>(a), (i), (l)</p></answer></exercise>
+
+<exercise><statement><p>From the list above, match all the correct algebraic expressions to the phrase "<m>x</m> is 5 more than <m>H</m>."</p></statement>
+    <answer><p>(c), (g)</p></answer></exercise>
+</subsubsubsection>
+</subsubsection>
+
+</subsection>

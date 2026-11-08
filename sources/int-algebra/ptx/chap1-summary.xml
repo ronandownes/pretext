@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="chap1-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>mathematical model</p></li>
+    <li><p>linear model</p></li>
+    <li><p>evaluate an expressions</p></li>
+    <li><p>solve an equation</p></li>
+    <li><p>increasing graph</p></li>
+    <li><p>decreasing graph</p></li>
+    <li><p>inequality</p></li>
+    <li><p>intercepts</p></li>
+    <li><p>linear equation</p></li>
+    <li><p>solution of an equation</p></li>
+    <li><p>graph of an equation</p></li>
+    <li><p>ordered pair</p></li>
+    <li><p>rate</p></li>
+    <li><p>rate of change</p></li>
+    <li><p>net change</p></li>
+    <li><p>slope</p></li>
+    <li><p>slope-intercept form</p></li>
+    <li><p>point-slope form</p></li>
+</ul></p>
+
+
+</subsection>
+<subsection><title>Key Concepts</title>
+<p>
+    <ol marker="1.">
+        <li><p>
+            A <term>mathematical model</term> is a simplified description of reality that helps us understand a system or process.
+        </p></li>
+        <li><p>
+            We can describe a relationship between variables with a table of values, a graph, or an equation.
+        </p></li>
+        <li><p>
+            Linear models have equations of the form:
+            <md><mrow>
+                y = (\blert{\text{starting value}}) + (\blert{\text{rate of change}}) \cdot x
+            </mrow></md>
+        </p></li>
+        <li><p>
+            The <term>general form</term> for a linear equation is: <m>Ax + By = C</m>.
+        </p></li>
+        <li><p>
+            We can use the <term>intercepts</term> to graph a line. The intercepts are also useful for interpreting a model.
+        </p></li>
+        <li><p>
+            The <term>graph</term> of an equation in two variables is just a picture of all its solutions.
+        </p></li>
+        <li><p>
+            Lines have constant slope.
+        </p></li>
+        <li><p>
+            The slope of a line gives us the <term>rate of change</term> of one variable with respect to another.
+        </p></li>
+        <li><p>
+            Formulas for Linear Models
+            <ul>
+                <li><p>
+                    <term>slope:</term> <m>\qquad\qquad m=\dfrac{\Delta y}{\Delta x} =  \dfrac{y_2-y_1}{x_2-x_1} </m>, <m>x_1 \ne x_2</m>
+                </p></li>
+                <li><p>
+                    <term>slope-intercept form:</term> <m>\qquad\qquad y=b+mx </m>
+                </p></li>
+                <li><p>
+                    <term>point-slopet form:</term> <m>\qquad\qquad y=y_1+m(x-x_1) </m>
+                </p></li>
+            </ul>
+        </p></li>
+        <li><p>
+            The <term>slope-intercept</term> form is useful when we know the initial value and the rate of change.
+        </p></li>
+        <li><p>
+            The <term>point-slope</term> form is useful when we know the rate of change and one point on the line.
+        </p></li>
+    </ol>.
+</p>
+</subsection>
+
+<xi:include href="./chap1-rev-problems.xml" />  <!--exercises  -->
+
+</section>
+<!-- </appendix> -->
+<!-- </book>  </mathbook> -->

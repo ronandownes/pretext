@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Revenue"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Revenue from Theater Tickets</title>
+ 
+<introduction><p>The local theater group sold tickets to its opening-night performance for $5 and drew an audience of 100 people. The next night they reduced the ticket price by $0.25 and 10 more people attended; that is, 110 people bought tickets at $4.75 apiece. In fact, for each $0.25 reduction in ticket price, 10 additional tickets can be sold.</p></introduction>
+
+<exercises>
+<exercise number="1"><statement><p>Fill in the table</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">No. of price reductions</cell>
+                        <cell bottom="minor">Price of ticket</cell>
+                        <cell bottom="minor">No. of tickets sold</cell>
+                        <cell bottom="minor">Total revenue</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>5.00</m></cell>
+                        <cell bottom="minor"><m>100</m></cell>
+                        <cell bottom="minor"><m>500.00</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>4.75</m></cell>
+                        <cell bottom="minor"><m>110</m></cell>
+                        <cell bottom="minor"><m>522.50</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="2"><statement><p>On the grid below, plot <em>Total revenue</em> on the vertical axis versus <em>Number of price reductions</em> on the horizontal axis. Use the data from your table.</p>
+    <sidebyside width="40%"><image source="images/fig-???"><description>graph</description></image></sidebyside>
+</statement></exercise>
+
+<exercise number="3"><statement><p>Let <m>x</m> represent the <em>number of price reductions</em>, as in the first column of your table. Write algebraic expressions in terms of <m>x</m> for</p>
+
+<p>The <em>price of a ticket</em> after <m>x</m> price reductions:
+    <me>\text{Price} = </me></p>
+<p>The <em>number of tickets</em> sold at that price:
+    <me>\text{Number} = </me></p>
+<p>The <em>total revenue</em> from ticket sales:
+        <me>\text{Revenue} = </me></p></statement></exercise>
+
+<exercise number="4"><statement><p>Enter your expressions for the price of a ticket, the number of tickets sold, and the total revenue into the calculator as <m>Y_1, ~Y_2,</m> and <m>Y_3</m>. Use the Table feature to verify that your algebraic expressions agree with your table from part (1).</p></statement></exercise>
+
+<exercise number="5"><statement><p>Use your calculator to graph your expression for total revenue in terms of <m>x</m>. Use your table to choose appropriate window settings that show the high point of the graph and both <m>x</m>-intercepts.
+</p></statement></exercise>
+
+<exercise number="6"><statement><p>What is the maximum revenue possible from ticket sales? What price should the theater group charge for a ticket to generate that revenue? How many tickets will the group sell at that price?</p></statement>
+</exercise>
+
+</exercises>
+
+</section>
+
+
+
+                                                 
+

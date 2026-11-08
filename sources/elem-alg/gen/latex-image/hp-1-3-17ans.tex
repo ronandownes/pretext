@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [scale=.5]
+\draw[cyan] (0,0) grid (10,10);
+\draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$m$};
+\draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$S$};
+\foreach \x [evaluate=\x as \xi using int( 10* \x )] in  {2,4,...,10} {
+ \draw[black, thick] (\x,0.09) --++(0,-.18) node[below]{\xi};
+}
+\foreach \y [evaluate=\y as \yi using int( 40* \y )] in  {5,10} {
+ \draw[black, thick] (.09,\y) --++(-.18,0) node[left]{\yi};
+}
+\draw[samples=65,domain=.9:10,smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{9/\x)});
+\filldraw[blue](2,4.5) circle (.15cm);
+\filldraw[blue](4,2.25) circle (.15cm);
+\filldraw[blue](6,1.5) circle (.15cm);
+\filldraw[blue](10,0.9) circle (.15cm);
+\end{tikzpicture}%
+}
+\end{document}

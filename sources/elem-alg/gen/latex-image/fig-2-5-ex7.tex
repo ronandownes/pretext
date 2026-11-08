@@ -1,0 +1,46 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} 
+\coordinate (O) at (0,0);
+\node[left] at (O) {$-5b-(3-2b)+(4b-6)$};
+\node[right] at (O) {$=-5b-3+2b +4b-6$};
+\coordinate(A) at (1.55,0.2);
+\draw[blue,thick] (A) --++(0,.3)--++(3.2,0) node[right, scale=.9] {signs changed};
+\coordinate(B) at (2.27,0.2);
+\draw[blue,thick] (B) --++(0,.3);
+\coordinate(C) at (3.18,-0.2);
+\draw[blue,thick] (C) --++(0,-.2)--++(1.57,0) node[right, scale=.9] {signs not changed};
+\coordinate(D) at (4.07,-0.2);
+\draw[blue,thick] (D) --++(0,-.2);
+\coordinate (O2) at (0,-0.8);
+\node[right] at (O2) {$=-5b+2b +4b-3-6$};
+\coordinate (O3) at (0,-1.4);
+\node[right] at (O3) {$=b-9$};
+\end{tikzpicture}%
+}
+\end{document}

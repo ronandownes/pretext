@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="Slope" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Slope</title><idx>slope</idx>
+
+<introduction>
+<p>The introduction to Chapter 1 discussed the rise in sea level over the last few decades. One of the contributing factors to this rise is the melting of Earth's glaciers.</p>
+
+<p>Glaciers around the world are retreating at accelerating rates, and many lower-latitude mountain glaciers may soon disappear entirely. The meltwater from these smaller glaciers contributed as much as 40% to the total rise in sea level over the 1990s.</p>
+
+<p>By measuring the change in ice and snow height at fixed points and multiplying by the surface area <idx><h>surface area</h></idx> of the glacier, scientists calculate the total volume <idx>volume</idx> of water lost from land-based glaciers. Dividing this volume by the surface area of the world's oceans gives the resulting change in sea level.</p>
+
+<p>The graphs below show the change in thickness of the land-based glaciers overthe past 5 years, and the rise in sea level attributed to their melting. In this section we consider how to measure a rate of change.</p>
+
+<image width="80%" source="images/glacier-graphs"><description>graphs of change in glacier thickness and resulting rise in sea level</description></image>
+</introduction>
+
+<subsection><title>Rate of Change</title><idx>rate of change</idx>
+
+<p>The equation we use to describe a linear model, <m>y = mx + b</m>, gives the starting value <m>b</m> of the variable <m>y</m> and the rate <m>m</m> at which <m>y</m> changes. Now we will look more closely at rates and how they appear on the graph of the model. First, let's review the notion of a ratio used as a rate. You are already familiar with several types of rates.</p>
+
+<definition><title>Rate</title><idx>rate</idx>
+    <p>A <term>rate</term> is a type of ratio that compares two quantities with different units.</p>
+</definition>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+             $which1 = PopUp(
+              ["?","rate","integer", "price"],
+              1, 
+            );
+        </pg-code>
+<statement><p>A ratio that compares two quantities with different units is called a <var name="$which1" form="popup"/>.
+    </p></statement>
+<solution><p>rate</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>A ratio that compares two quantities with different units is called a <fillin characters="10"/>.</p></statement></exercise>
+
+<p>In the examples below, notice that each rate has units of the form  <m>\dfrac{\text{something}}{\text{something else}} </m>, which we read as "something per something else."</p>
+
+<example><statement><p>Caryn bought 7 used paperback novels for a total of $2.45. Use a ratio to calculate the price per book.</p></statement>
+
+<solution><p><me>\frac{\text{total cost in dollars}}{\text{number of books}} = \frac{2.45 \text{ dollars}}{7 \text{ books}} = 0.35 \text{ dollars/book} </me></p>
+<p>The novels were priced at a rate of $0.35 per book.</p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help on using ratios and rates, see <xref ref="tkUseRatios" text="custom"> Section 1.4.1 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>Practice 1</title>
+<webwork><pg-code>
+        $rate = 34/5;
+        $answer = Compute("$rate");
+        $units = PopUp(["?",
+        "miles", 
+        "hours",
+        "miles per hour",
+        "hours per mile"],
+          3, 
+        );
+    </pg-code>
+<statement><p>Delbert biked 34 miles in 5 hours. Use a ratio to calculate his average speed.
+        <me>\frac{\text{distance in miles}}{\text{time in hours}}= \hphantom{"Delbert speed"}</me></p>
+    <p>Delbert biked at a rate of <var name="$answer" width="3"/> <var name="$units" form="popup"/></p></statement>
+    <solution><p>6.8 miles per hour</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Delbert biked 34 miles in 5 hours. Use a ratio to calculate his average speed.
+        <me>\frac{\text{distance in miles}}{\text{time in hours}}= \hphantom{"Delbert speed"}</me></p>
+    <p>Delbert biked at a rate of <fillin characters="10"/>.</p></statement>
+<answer><p>6.8 miles per hour</p></answer></exercise>
+
+<p>The rate you calculated in Practice 1, Delbert's average speed, actually compares the <em>change</em> in two variables, his distance from his starting point, and the time elapsed. This type of rate appears often in linear models.</p>  
+
+<definition><title>Rate of Change</title>
+<statement><p>A <term>rate of change</term><idx>rate of change</idx><idx><h>rate of change</h><seealso>slope</seealso></idx> is a special kind of ratio that compares the change in two quantities or variables.</p></statement></definition>
+
+<p>In the next Example we calculate speed as a rate of change, and we introduce a new notation, <m>\blert{\Delta}</m>, to help with the calculation.</p>
+
+<example xml:id="Average-speed"><statement><p>Gregor is driving across Montana. At 1 pm his trip odometer reads 189 miles, and at 4 pm it reads 360 miles. Calculate Gregor's average speed as a rate of change.</p></statement>
+    
+<solution><p>We have two variables: time, <m>t</m>, and distance, <m>d</m>, and the following data points:</p>
+    <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+            <row><cell><m> ~ t ~ </m></cell>
+                <cell><m>d</m></cell></row>
+            <row><cell><m>1</m></cell>
+                <cell><m>189</m></cell></row>
+            <row><cell><m>4</m></cell>
+                <cell><m>360</m></cell></row>
+        </tabular>
+<p>Gregor's speed is the ratio of the distance he traveled to the time it took. The distance he traveled is the change in his odometer reading (from 189 miles to 360 miles), and the time it took is the change in the clock reading (from 1 pm to 4 pm).The units of this ratio are miles per hour.</p>
+<p>In mathematics, we use the symbol <m>\blert{\Delta}</m><idx>Delta (<m>\Delta</m>)</idx> (delta) for <term>change in</term><idx><h>change in</h><see>Delta (<m>\Delta</m>)</see></idx>. Thus
+        <md><mrow>\text{distance traveled}\amp= \Delta d = 360-189 = 171 \text{ miles} </mrow>
+            <mrow>\text{time elapsed}\amp= \Delta t=4-1=3 \text{ hours} </mrow></md>
+Gregor's average speed is the ratio <m>\dfrac{\text{distance traveled}}{\text{time elapsed}} =\dfrac{\Delta d}{\Delta t}</m>, so
+        <me>\text{Speed}=\frac{\Delta d}{\Delta t} = \frac{171 \text{ miles}}{3 \text{ hours}}= 57 \text{ miles/hour} </me></p>
+    </solution></example>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>       
+            $step1 = RadioButtons(
+              ["A triangle",
+              "Speed",
+              "Change in",
+              "Coordinate"],
+              2, 
+            );            
+        </pg-code>
+    <statement><p>What does the symbol <m>\Delta</m> stand for?</p>
+        <p><var name="$step1" form="buttons"/></p>      
+    </statement>
+    <solution><p>Change in</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>What does the symbol <m>\Delta</m> stand for?</p>
+    <p><ol marker="a." cols="2">
+        <li><p>A triangle</p></li>
+         <li><p>Speed</p></li>
+         <li><p>Change in</p></li>
+         <li><p>Coordinate</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        $rate = (421-127)/(10-4);
+        $answer = Compute("$rate");
+        $units = PopUp(["?",
+        "miles", 
+        "hours",
+        "miles per hour",
+        "hours per mile"],
+          3, 
+        );
+    </pg-code>
+<statement><p>Nelson is a long-distance truck driver. On a recent trip through the Midwest, he noted these odometer readings:</p>
+        <tabular halign="right">
+                <row><cell>4 am</cell>
+                    <cell>127 miles</cell></row>
+                <row><cell>10 am</cell>
+                    <cell>421 miles</cell></row>
+        </tabular>
+        <p>What was Nelson's average speed?</p>
+        <p><var name="$answer" width="3"/> <var name="$units" form="popup"/></p></statement>
+    <solution><p>49 miles per hour</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Nelson is a long-distance truck driver. On a recent trip through the Midwest, he noted these odometer readings:</p>
+        <tabular halign="right">
+                <row><cell>4 am</cell>
+                    <cell>127 miles</cell></row>
+                <row><cell>10 am</cell>
+                    <cell>421 miles</cell></row>
+        </tabular>
+        <p>What was Nelson's average speed?</p></statement>
+    <answer><p>49 miles per hour</p></answer></exercise>
+
+<sidebyside widths="58% 38%" margins="0% 0%" valigns="middle middle">
+    <p>How do we see the rate of change on a graph? Let's consider the example above. The graph shows Gregor's distance, <m>d</m>, at time <m>t</m>. We plot the two data points, <m>(1, 189)</m> and <m>(4, 360)</m>, and draw a straight line joining them. We can illustrate <m>\Delta d</m> and <m>\Delta t</m> by vertical and horizontal line segments, as shown on the graph.</p>
+    
+    <image xml:id="fig-example-1-4-2"><description>delta d and delta t on line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1, yscale=.6]
+        \draw[cyan] (0,0) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(5.5,0) node[right]{$t$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$d$};
+        \foreach \x in  {1,2,...,5} {
+         \draw[black,thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( \x *50)] in  {2,4,...,10} {
+         \draw[black,thick] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1] {$\xi$};
+        }
+
+        \draw[samples=2,domain=0:5,smooth,variable=\x,red, thick] plot ({\x},{189/50 + 57/50*(\x -1)});
+
+        \draw[very thick, blue, dashed] (1,3.78)--(4,3.78) -- (4,7.2);
+
+        \filldraw[red] (4,7.2) ellipse (.06 and .1) node[above left, yshift=3, fill=white, inner sep=1] {$(4,360)$};
+        \filldraw[red] (1,3.78) ellipse (.06 and .1) node[above, xshift=-8, yshift=8, fill=white, inner sep=1] {$(1,189)$};
+
+        \draw [black,decorate,decoration={brace,amplitude=7pt}] (4.2,7.2) -- (4.2,3.78) node [black, right,midway, xshift=5] {$\Delta d$};
+        \draw [black,decorate,decoration={brace,amplitude=7pt}] (4,3.58) -- (1,3.58) node [black, below,midway, yshift=-7] {$\Delta t$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+    <aside><p><m>\alert{\text{[TK]}}~~</m>For more help calculating slope from a graph, see <xref ref="tkSlopefromGraph" text="custom"> Section 1.4.2 </xref> of the Toolkit.</p></aside>
+
+<p>The rate of change of distance with respect to time, or speed, is the ratio of <m>\Delta d</m> to <m>\Delta t</m>. It measures how much <m>d</m> changes for each unit increase in <m>t</m>, or how far Gregor travels in each hour. This quantity, the ratio <m>\dfrac{\Delta d}{\Delta t} </m>, is the <em>slope of the line</em>. </p>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>       
+            $button = RadioButtons(
+              ["The \(y\)-axis",
+              "Slope",
+              "Scales on the axes",
+              "The coordinate of a point"],
+              1, 
+            );            
+        </pg-code>
+    <statement><p>What feature of a graph illustrates rate of change?</p>
+        <p><var name="$button" form="buttons"/></p>      
+    </statement>
+    <solution><p>Slope</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>What feature of a graph illustrates rate of change?</p>
+<p><ol marker="a." cols="2">
+        <li><p>The <m>y</m>-axis</p></li>
+         <li><p>Slope</p></li>
+         <li><p>Scales on the axes</p></li>
+         <li><p>The coordinate of a point</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Review of Slope</title><idx>slope</idx>
+
+<p>You may have encountered the notion of slope in previous courses. Let us see how slope is related to rate of change.</p>
+
+<assemblage><title>Slope</title><idx>slope</idx>
+<p>The <term>slope</term> of a line is a rate of change that measures the steepness of the line.</p>
+</assemblage>
+
+<p>The slope tells us how much the <m>y</m>-coordinate changes for each unit of increase in the <m>x</m>-coordinate, as we move from one point to another along the line.</p>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>
+        $answer = RadioButtons(
+              ["From one end of the graph to the other.",
+              "As we move up the \(y\)-axis.",
+              "From one point to the next point.",
+              "For each unit of increase in the \(x\)-coordinate."],
+              3, 
+            );      
+    </pg-code>
+    <statement><p>The slope of a line tells us how much the <m>y</m>-coordinate changes</p>
+        <p><var name="$answer" form="buttons"/></p>
+    </statement>
+    <solution><p>For each unit of increase in the <m>x</m>-coordinate.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>The slope of a line tells us how much the <m>y</m>-coordinate changes <fillin characters="10"/></p>
+<p><ol marker="a.">
+    <li><p>from one end of the graph to the other.</p></li>
+    <li><p>as we move up the <m>y</m>-axis.</p></li>
+    <li><p>from one point to the next point.</p></li>
+    <li><p>for each unit of increase in the <m>x</m>-coordinate.</p></li>
+</ol></p></statement></exercise>
+
+<p>Using the notation <m>\Delta</m> for "change in," we define slope as follows.</p>
+
+<definition><title>Slope of a Line</title><idx>slope</idx><idx><h>slope</h><h>of a line</h></idx>
+<statement><p>
+    <me>\text{slope}=\frac{\text{change in }y\text{-coordinate}}{\text{change in }x\text{-coordinate}} </me>
+or, in symbols
+    <me>m=\frac{\Delta y}{\Delta x} </me></p></statement>
+</definition>
+
+<p>In the definition of slope,
+    <me>\Delta x~ \text{ is}~ 
+            \begin{cases}
+            \text{positive if }x\text{ increases} \amp \text{(we move to the right)}\\
+            \text{negative if }x\text{ decreases} \amp \text{(we move to the left)}
+            \end{cases}</me>
+    <me>\Delta y~ \text{ is}~ 
+            \begin{cases}
+            \text{positive if }y\text{ increases} \amp \text{(we move up)}\\
+            \text{negative if }y\text{ decreases} \amp \text{(we move down)}\hphantom{to left}
+            \end{cases}</me></p>
+
+<p>How does slope measure the steepness of a line? Study the three examples below and notice how <m>y</m> changes for each 1 unit increase in <m>x</m>.</p>
+
+<sidebyside widths="30% 30% 30%" margins="0% 0%">
+    <stack>
+         <image xml:id="fig-measure-slope-A"><description>line of slope 2</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1, yscale=.6]
+        \draw[cyan] (0,0) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(5.4,0) node[above, xshift=-2]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.7) node[left]{$y$};
+        \foreach \x in  {1,2,...,5} {
+         \draw[black,thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x in  {1,2,...,10} {
+         \draw[black,thick] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+
+        \draw[samples=2,domain=0:3.5,smooth,variable=\x,red, thick, ->, >=stealth'] plot ({\x},{3+2*(\x )});
+        \filldraw[red] (1,5) ellipse (.06 and .1);
+        \filldraw[red] (2,7) ellipse (.06 and .1);
+        \filldraw[red] (3,9) ellipse (.06 and .1);
+        \node[text width=.3cm] at (2.5,-1.8){\large A};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    
+    <p><m>y</m> increases by 2 units
+        <me>m=\frac{\Delta y}{\Delta x}=\frac{2}{1}=2 </me></p>
+    </stack>
+    
+    <stack>
+         <image xml:id="fig-measure-slope-B"><description>line of slope 3/2</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1, yscale=.6]
+        \draw[cyan] (0,0) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(5.4,0) node[above, xshift=-2]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.7) node[left]{$y$};
+        \foreach \x in  {1,2,...,5} {
+         \draw[black,thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x in  {1,2,...,10} {
+         \draw[black,thick] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+
+        \draw[samples=2,domain=0:5,smooth,variable=\x,red, thick, ->, >=stealth'] plot ({\x},{1+3/2*(\x )});
+        \filldraw[red] (1,2.5) ellipse (.06 and .1);
+        \filldraw[red] (2,4) ellipse (.06 and .1);
+        \filldraw[red] (3,5.5) ellipse (.06 and .1);
+        \filldraw[red] (4,7) ellipse (.06 and .1);
+        \node[text width=.3cm] at (2.5,-1.8){\large B};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>y</m> increases by <m>\frac{3}{2}</m> units
+        <me>m=\frac{\Delta y}{\Delta x}=\frac{3}{2} </me></p>
+    </stack>
+
+    <stack>
+         <image xml:id="fig-measure-slope-C"><description>line of slope -2</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1, yscale=.6]
+        \draw[cyan] (0,0) grid (5,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(5.4,0) node[above, xshift=-2]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.7) node[left]{$y$};
+        \foreach \x in  {1,2,...,5} {
+         \draw[black,thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+        \foreach \x in  {1,2,...,10} {
+         \draw[black,thick] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1] {$\x$};
+        }
+
+        \draw[samples=2,domain=0:4,smooth,variable=\x,red, thick, ->, >=stealth'] plot ({\x},{8 -2*(\x )});
+        \filldraw[red] (1,6) ellipse (.06 and .1);
+        \filldraw[red] (2,4) ellipse (.06 and .1);
+        \filldraw[red] (3,2) ellipse (.06 and .1);
+        \node[text width=.3cm] at (2.5,-1.8){\large C};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>y</m> decreases by 2 units
+        <me>m=\frac{\Delta y}{\Delta x}=\frac{-2}{1}=-2 </me></p>
+    </stack>
+</sidebyside>
+
+<p>From these examples, we can make the following observations:</p>
+
+<assemblage><title>Slope and Steepness</title><idx>slope</idx><p>
+<ol marker="a.">
+    <li><p>For positive slopes, the larger the value of <m>m</m>, the more the <m>y</m>-value increases for each unit increase in <m>x</m>, and the more we climb up as our location changes from left to right. (So graph A is steeper than graph B.)<idx><h>slope</h><h>positive</h></idx></p></li>
+    <li><p>If <m>y</m> decreases as we move from left to right, then <m>\Delta y</m> is negative when <m>\Delta x</m> is positive, so their ratio (the slope) is negative. (See graph C.)<idx><h>slope</h><h>positive</h></idx></p></li>
+</ol></p></assemblage>
+
+<example><statement><sidebyside widths="55% 40%" margins="0% 0%">
+    <p><ol marker="a.">
+        <li><p>Compute the slope of the line. </p></li>
+        <li><p> Illustrate the slope on the graph by drawing a vertical segment of length <m>\Delta y</m> and a horizontal segment of length <m>\Delta x</m>.</p></li>
+        <li><p>If <m>\Delta x =1</m>, what is the length of the vertical segment? </p></li>
+    </ol></p>
+            <image xml:id="fig-example-1-4-3"><description>line with different scales on axes</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6]
+                \draw[cyan] (0,0) grid (10,10);
+                \draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+                \foreach \x [evaluate=\x as \xi using int( \x *5)] in {2,4,...,10} {
+                 \draw[black,thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1] {$\xi$};
+                }
+                \foreach \x [evaluate=\x as \xi using int( \x *100)] in  {2,4,...,10} {
+                 \draw[black,thick] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1] {$\xi$};
+                }
+
+                \draw[samples=2,domain=0:8,smooth,variable=\x,red, thick] plot ({\x},{ 5/4*(\x});
+                \filldraw[red] (4,5) circle (.1);
+                \filldraw[red] (8,10) circle (.1);
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+    </statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>The points <m>(20,500)</m> and <m>(40,1000) </m> lie on the graph. As we move from the first point to the second point, <m>x</m> increases by 20 units, so <m>\Delta x=20</m>, and <m>y</m> increases by 500 units, so <m>\Delta y = 500</m>. Thus
+            <me>\frac{\Delta y}{\Delta x}=\frac{500}{20}=25 </me> </p></li>
+    <li><p>The segments are shown in the graph below.</p>
+        <image width="45%" xml:id="fig-example-1-4-3-ans"><description>line with different scales on axes, slope illustrated</description>
+            <latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.6]
+                    \draw[cyan] (0,0) grid (10,10);
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+                    \foreach \x [evaluate=\x as \xi using int( \x *5)] in {2,4,...,10} {
+                     \draw[black,thick] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1] {$\xi$};
+                    }
+                    \foreach \x [evaluate=\x as \xi using int( \x *100)] in  {2,4,...,10} {
+                     \draw[black,thick] (.1,\x) --++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1] {$\xi$};
+                    }
+
+                    \draw[samples=2,domain=0:8,smooth,variable=\x,red, thick] plot ({\x},{ 5/4*(\x});
+                    \draw[very thick, blue, dashed] (4,5)--(8,5) -- (8,10);
+                    \filldraw[red] (4,5) circle (.1);
+                    \filldraw[red] (8,10) circle (.1);
+                    \draw [black,decorate,decoration={brace,amplitude=7pt}] (8.2,10) -- (8.2,5) node [black, right,midway, xshift=8, fill=white, inner sep=1] {$\Delta y$};
+                    \draw [black,decorate,decoration={brace,amplitude=7pt}] (8,4.8) -- (4,4.8) node [black, below,midway, yshift=-9, fill=white, inner sep=1] {$\Delta x$};
+                    \end{tikzpicture}]]>
+            </latex-image></image></li>
+    <li><p>The slope is 25, which means that <m>y</m> increases 25 units for each 1-unit increase in <m>x</m>. So, if <m>\Delta x=1</m>, then <m>\Delta y=25</m>.</p></li>
+    </ol></p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of calculating slope, see <xref ref="tkSlopefromGraph" text="custom"> Section 1.4.2 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>Practice 3</title>
+<introduction><image width="40%" xml:id="fig-ex-1-4-3w"><description>negative slope line with different scales on axes</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml--> 
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid  (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+        \foreach \x  [evaluate=\x as \xi using int(\x *2)] in {2,4,...,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x  [evaluate=\x as \xi using int(\x *25)] in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, very thick] (5,0)--(5/3,10);
+        \filldraw[red] (4,3) circle (0.15);
+        \filldraw[red] (3,6) circle (0.15);
+        \filldraw[red] (2,9) circle (0.15);
+        \end{tikzpicture}]]>
+    </latex-image></image></introduction>
+<webwork><pg-code>
+        $m = -225/6;
+        $slope = Compute("$m");
+        $dely = -$m;
+        $length = Compute("$dely");
+    </pg-code>
+    <statement><p><ol>
+        <li><p>Compute the slope of the line.</p>
+            <p><m>m=</m><var name="$slope" width="3" /></p></li>
+        <li><p>Illustrate the slope on the graph by drawing a vertical segment for <m>\Delta y</m> and a horizontal segment for <m>\Delta x</m>.</p></li>
+        <li><p>If <m>\Delta x=1</m>, what is the length of the vertical segment?</p>
+            <p>The length is <var name="$length" width="3" /> </p></li>
+        </ol></p></statement>
+    <solution><p><ol>
+            <li><p><m>-37.5</m></p></li>
+            <li><p>A figure is below.</p></li>
+            <li><p><m>37.5</m></p></li>
+    </ol></p></solution>
+</webwork>
+<conclusion><p>Graph for part (b):</p>
+    <image width="40%"  xml:id="fig-ex-1-4-3-answ"><description>negative slope line with different scales on axes</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml--> 
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid  (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+        \foreach \x  [evaluate=\x as \xi using int(\x *2)] in {2,4,...,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x  [evaluate=\x as \xi using int(\x *25)] in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, very thick] (5,0)--(5/3,10);
+        \filldraw[red] (4,3) circle (0.15);
+        \filldraw[red] (3,6) circle (0.15);
+        \filldraw[red] (2,9) circle (0.15);
+        \filldraw[red] (4,3) circle (0.15);
+        \draw[blue, very thick, dashed, ->, >=stealth'](2,9)--(4,9) node[above, midway, yshift=2, fill=white, inner sep=1]{$\Delta x$};
+        \draw[blue, very thick, dashed, ->, >=stealth'](4,9)--(4,3) node[right, midway, xshift=2, fill=white, inner sep=1]{$\Delta y$};
+        \filldraw[red] (3,6) circle (0.15);
+        \filldraw[red] (2,9) circle (0.15);
+        \end{tikzpicture}]]>
+    </latex-image></image></conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><sidebyside widths="50% 40%">
+    <p><ol marker="a.">
+        <li><p>Compute the slope of the line.</p></li>
+        <li><p>Illustrate the slope on the graph by drawing a vertical segment for <m>\Delta y</m> and a horizontal segment for <m>\Delta x</m>.</p></li>
+        <li><p>If <m>\Delta x=1</m>, what is the length of the vertical segment?</p></li>
+    </ol></p>
+    
+    <image xml:id="fig-ex-1-4-3"><description>negative slope line with different scales on axes</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid  (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+        \foreach \x  [evaluate=\x as \xi using int(\x *2)] in {2,4,...,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x  [evaluate=\x as \xi using int(\x *25)] in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, very thick] (5,0)--(5/3,10);
+        \filldraw[red] (4,3) circle (0.15);
+        \filldraw[red] (3,6) circle (0.15);
+        \filldraw[red] (2,9) circle (0.15);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+    <answer><p><ol marker="a.">
+            <li><p><m>-37.5</m></p></li>
+            <li><image width="50%" xml:id="fig-ex-1-4-3-ans"><description>negative slope line with different scales on axes</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid  (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$y$};
+        \foreach \x  [evaluate=\x as \xi using int(\x *2)] in {2,4,...,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x  [evaluate=\x as \xi using int(\x *25)] in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[red, very thick] (5,0)--(5/3,10);
+        \filldraw[red] (4,3) circle (0.15);
+        \filldraw[red] (3,6) circle (0.15);
+        \filldraw[red] (2,9) circle (0.15);
+        \filldraw[red] (4,3) circle (0.15);
+        \draw[blue, very thick, dashed, ->, >=stealth'](2,9)--(4,9) node[above, midway, yshift=2, fill=white, inner sep=1]{$\Delta x$};
+        \draw[blue, very thick, dashed, ->, >=stealth'](4,9)--(4,3) node[right, midway, xshift=2, fill=white, inner sep=1]{$\Delta y$};
+        \filldraw[red] (3,6) circle (0.15);
+        \filldraw[red] (2,9) circle (0.15);
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+            <li><p><m>37.5</m></p></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Interpreting Slope as a Rate</title>
+
+<p>By putting together all of our discussion so far, we can now see that the slope of a line measures the rate of change of <m>y</m> with respect to <m>x</m>.</p>
+
+<example><statement><p>The graph shows the altitude, <m>a</m> (in feet), of a skier <m>t</m> minutes after getting on a ski lift.</p>
+    <sidebyside widths="55% 40%" valigns="middle middle">
+    <p><ol marker="a.">
+            <li><p>Choose two points on the graph and compute the slope, including units.</p></li>
+            <li><p>Explain what the slope measures in this problem. </p></li>
+            <li><p>Write a linear model for <m>a</m> in terms of <m>t</m>.</p></li>
+    </ol></p>
+        <image xml:id="fig-ski-lift"><description>graph of altitude vs time</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [xscale=.64, yscale=.48]
+            \draw[cyan] (0,0) grid  (8,10);
+            \draw[black,thick, ->, >=stealth'] (0,0)--(8.5,0) node[right]{$t$};
+            \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$a$};
+            \foreach \x in {2,4,...,8} {
+              \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \foreach \x  [evaluate=\x as \xi using int(\x *100)] in {2,4,...,10} {
+              \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+            }
+            \draw[red, very thick] (0,1)--(6,10);
+            \filldraw[red] (2,4) ellipse (.12 and .16);
+            \filldraw[red] (4,7) ellipse (.12 and .16);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>We choose the points <m>(2,400)</m> and <m>(4, 700)</m>, as shown on the graph. Then
+            <me>m=\frac{\Delta a}{\Delta t} = \frac{300 \text{ feet}}{2 \text{ minutes}} = 150 \text{ feet/minute} </me></p></li>
+    <li><p>The slope gives the rate of change of altitude with respect to time. The skier rises at a rate of 150 feet per minute.</p></li>
+    <li><p>A linear model has the form
+            <me>y = (\text{starting value}) + (\text{rate}) \times t </me>
+    From the graph, we see that at <m>t = 0</m> the skier's altitude was <m>a = 100</m>, and we calculated the rate of change of altitude as 150 feet per minute. Substituting these values into the formula, we find
+            <me>a = 100 + 150t</me></p></li>
+    </ol></p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help interpreting slope, see <xref ref="tkInterpSlope" text="custom"> Section 1.4.3 </xref> of the Toolkit.</p></aside>
+
+<assemblage><title>Slope as a Rate of Change</title><idx><h>slope</h><h>rate of change</h></idx>
+<p><ol marker="1.">
+    <li><p>The slope of a line measures the <term>rate of change</term> of <m>y</m> with respect to <m>x</m>.</p></li>
+    <li><p>The units of <m>\Delta y</m> and <m>\Delta x</m> can help us interpret the slope as a rate.</p></li>
+</ol></p>
+</assemblage>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <introduction><image width="35%" xml:id="fig-garbage-depositedw"><description>linear graph of garbage deposited</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (0,0) grid  (9,10);
+            \draw[black,thick, ->, >=stealth'] (0,0)--(9.5,0) node[right]{$t$};
+            \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$G$};
+            \foreach \x  [evaluate=\x as \xi using int(\x *2.5)]in {2,4,6,8} {
+              \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+            }
+            \foreach \x  [evaluate=\x as \xi using int(\x *25)] in {2,4,...,10} {
+              \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+            }
+            \draw[red, very thick] (0,1)--(7.2,10);
+            \filldraw[red] (0,1) circle (.12);
+            \filldraw[red] (4,6) circle (.12);
+            \end{tikzpicture}]]>
+        </latex-image></image></introduction>
+    <webwork><pg-code>
+            $rate= (150-25)/10;
+            $m = Compute("$rate");
+
+            $units = PopUp(
+              ["?",
+              "tons",
+              "years",
+              "tons per year",
+              "years per ton"],
+              3, 
+            );
+            $explain = RadioButtons(
+              ["A) The rate at which garbage accumulates",
+              "B) The steepness of the garbage pile",
+              "C) The volume of the garbage",
+              "D) The cost to use the dump site"],
+              0, 
+            );            
+        </pg-code>
+    <statement><p>The graph shows the amount of garbage <m>G</m> (in tons) that has been deposited at a dumpsite <m>t</m> years after new regulations go into effect.
+    <ol marker="a.">
+        <li><p>Choose two points on the graph and compute the slope, including units.</p>
+            <p>The slope is <var name="$m" width="3"/><var name="$units" form="buttons"/></p></li>
+        <li><p>Explain what the slope measures in this problem.
+                        <var name="$explain" form="buttons"/></p></li>
+        <li><p>Choose two different points and compute the slope again. Do you get the same value as before?</p>
+                <p>The slope is <var name="$m" width="3"/><var name="$units" form="buttons"/></p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+            <li><p>12.5 tons per year</p></li>
+            <li><p>The slope gives the rate at which garbage is accumulating.</p></li>
+            <li><p>The slope is the same using any two points on the line.</p></li>
+    </ol></p></solution>
+    </webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>The graph shows the amount of garbage <m>G</m> (in tons) that has been deposited at a dumpsite <m>t</m> years after new regulations go into effect.</p>
+<sidebyside widths="50% 35%">
+    <p><ol marker="a.">
+        <li><p>Choose two points on the graph and compute the slope, including units.</p></li>
+        <li><p>Explain what the slope measures in this problem.</p></li>
+        <li><p>Choose two different points and compute the slope again. Do you get the same value as before?</p></li>
+    </ol></p>
+ <image xml:id="fig-garbage-deposited"><description>linear graph of garbage deposited</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (0,0) grid  (9,10);
+            \draw[black,thick, ->, >=stealth'] (0,0)--(9.5,0) node[right]{$t$};
+            \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.5) node[above]{$G$};
+            \foreach \x  [evaluate=\x as \xi using int(\x *2.5)]in {2,4,6,8} {
+              \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+            }
+            \foreach \x  [evaluate=\x as \xi using int(\x *25)] in {2,4,...,10} {
+              \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+            }
+            \draw[red, very thick] (0,1)--(7.2,10);
+            \filldraw[red] (0,1) circle (.12);
+            \filldraw[red] (4,6) circle (.12);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+    <answer><p><ol marker="a.">
+            <li><p>12.5 tons per year</p></li>
+            <li><p>The slope gives the rate at which garbage is accumulating.</p></li>
+            <li><p>The slope is the same using any two points on the line.</p></li>
+        </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Lines Have Constant Slope</title>
+
+<p>You have probably already noticed the following important fact about lines.</p>
+
+<assemblage><title>Lines Have Constant Slope</title>
+    <p>The slope of a line is constant: no matter which two points you pick to compute the slope, you will always get the same value.</p></assemblage>
+
+<sidebyside widths="50% 45%" margins="0% 0%" valigns="middle middle">
+    <stack><p>For the line shown in the figure, try computing the slope using the points <m>P</m> and <m>Q</m>, and then using the points <m>G</m> and <m>H</m>. In each case, you should find that the slope is <m>\frac{3}{2} </m>.</p>
+    <p>Here is another way to look at slopes. If we start at any point on the line shown and move 9 units to the right, what value of <m>\Delta y</m> will bring us back to the line? We can use the slope formula with <m>\Delta x=9</m>.</p>
+    </stack>
+    <image xml:id="fig-constant-slope"><description>line with several points</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.35]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (-10,-10) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+        \foreach \x in {-10,-5,5,10} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red,thick,<->,>=stealth'] (-10,-17/3) -- (10,23/3);
+        \filldraw[red] (-6,-3) circle (0.2) node[below right, xshift=3, fill=white, inner sep=1] {$G$};
+        \filldraw[red] (3,3) circle (0.2) node[below right, xshift=3, fill=white, inner sep=1] {$H$};
+        \filldraw[red] (9,7) circle (0.2) node[below right, yshift=-3, fill=white, inner sep=1] {$Q$};
+        \filldraw[red] (0,1) circle (0.2) node[above left, xshift=-3, fill=white, inner sep=1] {$P$};
+
+        \filldraw[red] (-9,-5) circle (0.2);
+        \filldraw[red] (-3,-1) circle (0.2);
+        \filldraw[red] (6,5) circle (0.2);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+<p><md><mrow>m \amp=\frac{\Delta y}{\Delta x} \amp\amp\blert{\text{Substitute the known values.}} </mrow>
+       <mrow>\frac{2}{3} \amp= \frac{\Delta y}{9} \amp\amp \blert{\text{Solve for }\Delta y.} </mrow>
+       <mrow>\Delta y \amp = 9 \left(\frac{2}{3} \right)=6</mrow></md></p>
+<p>You can use the graph to check this result for yourself; try starting at the point <m>(-6,-3) </m>.</p>
+
+<p>The fact that lines have constant slope has two important consequences. First because <m>m</m> is constant for a given line, we can use the formula <m>m=\dfrac{\Delta y}{\Delta x} </m>to find <m>\Delta y</m> when we know <m>\Delta x </m>, or to find <m>\Delta x </m> when we know <m>\Delta y </m>.</p>
+
+<exercise component="webwork"><title>QuickCheck 5</title>
+<webwork><pg-code>       
+            $Button = RadioButtons(
+              ["The equation of a line",
+              "The general linear formula",
+              "The slope formula",
+              "\(D=RT\)"],
+              2, 
+            );            
+        </pg-code>
+    <statement><p>What formula can we use to find <m>\Delta y</m> when we know <m>\Delta x</m>, or <m>\Delta x</m> when we know <m>\Delta y</m>?</p>
+        <p><var name="$Button" form="buttons"/></p>      
+    </statement>
+    <solution><p>The slope formula</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 5</title>
+<statement><p>What formula can we use to find <m>\Delta y</m> when we know <m>\Delta x</m>, or <m>\Delta x</m> when we know <m>\Delta y</m>?</p>
+<p><ol marker="a." cols="2">
+        <li><p>The equation of the line</p></li>
+        <li><p>The general linear formula</p></li>
+        <li><p>The slope formula</p></li>
+        <li><p><m>D=RT</m></p></li>
+    </ol></p></statement></exercise>
+
+<example><statement><p>A wheelchair ramp can have a slope of no more than 24%, or 0.24. What horizontal distance is needed if the ramp must climb an elevation of 4 feet?</p></statement>
+    
+<solution><sidebyside widths="55% 43%" margins="0% 0%" valigns="middle middle">
+    <p>We first draw a sketch of the wheelchair ramp and label <m>\Delta x</m> and <m>\Delta y</m>. We are given that <m>\Delta y=4</m> feet, and we are looking for <m>\Delta x</m>. We substitute the known values into the slope formula, and solve for <m>\Delta x</m>.</p>
+        <image xml:id="fig-wheelchair-ramp"><description>ramp</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.55]
+            \draw[black,thick] (-11,0)--(1.5,0);
+            \draw[black,thick] (-10,0)--(0,3);
+            \draw[black,thick] (0,0) -- (0,3.6);
+            \draw[darkgray, <-, >=stealth'] (.7,0) --++(0,1.1) node[above, yshift=-2] {$4'$};
+            \draw[darkgray, <-, >=stealth'] (.7,3) --++(0,-1.1);
+            \draw[darkgray, <-, >=stealth'] (-10,-.5) --++(4.65,0) node[right] {?};
+            \draw[darkgray, <-, >=stealth'] (0,-.5) --++(-4.6,0);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+    <p><md><mrow>0.24 \amp = \frac{4}{\Delta x} \amp\amp \blert{\text{Multiply both sides by }\Delta x.}</mrow>
+            <mrow>0.24 \Delta x \amp = 4 \amp\amp \blert{\text{Divide both sides by }0.24.}</mrow>
+            <mrow>\Delta x\amp = \frac{4}{0.24}=16.\overline{6}</mrow></md>
+    The wheelchair ramp must have a horizontal length of <m>16\frac{2}{3} </m> feet, or 16 feet 8 inches.</p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork><pg-code>
+        $answer= NumberWithUnits("2.4 ft");
+    </pg-code>
+    <statement><p>A wheelchair ramp can have a slope of no more than 24%, or 0.24. What height can the wheelchair ramp climb over a horizontal distance of 10 feet?</p>
+        <p>Answer: <var name="$answer" width="5"/> </p>
+    <instruction>Use "ft" for feet.</instruction></statement>
+    <hint><p>Do we know the value of <m>\Delta y</m> or of <m>\Delta x</m>?</p></hint>
+    <solution><p>2.4 ft</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>A wheelchair ramp can have a slope of no more than 24%, or 0.24. What height can the wheelchair ramp climb over a horizontal distance of 10 feet?</p>
+    <p>Hint: Do we know the value of <m>\Delta y</m> or of <m>\Delta x</m>?</p></statement>
+<answer><p>2.4 ft</p></answer></exercise>
+    
+<p>Here is a second consequence of the fact that lines have constant slope: We can tell whether a collection of data points lies on a straight line by computing slopes. If the slopes between pairs of data points are all the same, the points lie on a straight line.</p>
+
+<exercise component="webwork"><title>QuickCheck 6</title>
+<webwork><pg-code>       
+            $Pick = RadioButtons(
+              ["A) Plot them and look at the graph.",
+              "B) Calculate the slopes between points.",
+              "C) Find an equation for the line.",
+              "D) It depends on the scales on the axes."],
+              1, 
+            );            
+        </pg-code>
+    <statement><p>How can we can tell whether a collection of data points lies on a straight line?</p>
+        <p><var name="$Pick" form="buttons"/></p>      
+    </statement>
+    <solution><p>Calculate the slopes between points.</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 6</title>
+<statement><p>How can we can tell whether a collection of data points lies on a straight line?</p>
+<p><ol marker="a.">
+        <li><p>Plot them and look at the graph.</p></li>
+        <li><p>Calculate the slopes between points.</p></li>
+        <li><p>Find an equation for the line.</p></li>
+        <li><p>It depends on the scales on the axes.</p></li>
+    </ol></p></statement></exercise>
+
+<example><statement><p>Could this table represent a linear equation? Explain why or why not.</p>
+    <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+            <row>
+                <cell><m>x</m></cell>
+                <cell><m>-6</m></cell>
+                <cell><m>-3</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>8</m></cell></row>
+            <row>
+                <cell><m>y</m></cell>
+                <cell><m>20</m></cell>
+                <cell><m>18</m></cell>
+                <cell><m>16</m></cell>
+                <cell><m>14</m></cell>
+                <cell><m>12</m></cell></row>
+        </tabular></statement>
+    
+<solution><p>We compute the slope between each consecutive pair of points. In each case
+            <me>m=\frac{\Delta y}{\Delta x}=\frac{-2}{3} </me>
+    Because the slope is the same for all pairs of points, the table could be linear.</p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+         $YN = PopUp(
+          ["?","Yes","No"],
+          2, 
+         );
+        $explain = RadioButtons(
+          ["A) The slope is the same berween all pairs of points.",
+          "B) The slope between points is not constant.",
+          ],
+          1, 
+        );            
+     </pg-code>
+     <statement><p>Could this table represent a linear equation? <var name="$YN" form="popup"/></p>
+         <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+             <row>
+                 <cell><m>t</m></cell>
+                 <cell>5</cell>
+                 <cell>10</cell>
+                 <cell>15</cell>
+                 <cell>20</cell>
+                 <cell>25</cell></row>
+             <row>
+                 <cell><m>P</m></cell>
+                 <cell>0</cell>
+                 <cell>3</cell>
+                 <cell>6</cell>
+                 <cell>12</cell>
+                 <cell>24</cell></row>
+         </tabular>
+        <p>Explain why or why not.</p>
+         <p><var name="$explain" form="buttons"/></p>
+     </statement>
+     <hint><p>Calculate the slopes between points.</p></hint>
+     <solution><p>No, the slope between points is not constant.</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Could this table represent a linear equation? Explain why or why not.</p>
+         <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+             <row><cell><m>t</m></cell>
+                 <cell>5</cell>
+                 <cell>10</cell>
+                 <cell>15</cell>
+                 <cell>20</cell>
+                 <cell>25</cell></row>
+             <row><cell><m>P</m></cell>
+                 <cell>0</cell>
+                 <cell>3</cell>
+                 <cell>6</cell>
+                 <cell>12</cell>
+                 <cell>24</cell></row>
+         </tabular>
+    <p>Hint: Calculate the slopes between points.</p></statement>
+<answer><p>No, the slope between points is not constant.</p></answer></exercise>
+
+<p>To summarize, here are two ways that we can use the slope to study a model.</p>
+
+<assemblage><title>Two Uses for Slope</title>
+<p><ul>
+    <li><p>If we know the slope of a line, we can use the formula <m>~m=\dfrac{\Delta y}{\Delta x} ~</m> to find <m>\Delta y</m> when we know <m>\Delta x </m>, or to find <m>\Delta x </m> when we know <m>\Delta y </m>.</p></li>
+    <li><p>To test whether a collection of data points lies on a straight line, we can compute slopes. If the slopes between all pairs of data points are the same, the points lie on a straight line.</p></li>
+</ul></p></assemblage>
+
+</subsection>
+
+<xi:include href="./section-1-4-exercises.xml" />           
+ 
+</section>
+<!-- </book>  </mathbook> -->

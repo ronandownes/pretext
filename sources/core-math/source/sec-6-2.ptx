@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-6-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>Proportion</title>
+
+  <sidebyside widths="45% 45%" valigns="middle middle" margins="10% 0%"><p><ul>
+    <li><p>Proportional Variables</p></li>
+    <li><p>Proportional Reasoning</p></li>
+    <li><p>Using Proportions</p></li>
+    <li><p>Graphing Proportional Variables</p></li>
+  </ul></p>
+      <image source="parthenon.png"></image></sidebyside>
+
+<subsection><title>Proportional Variables</title>
+
+<p>Ratios can help us describe the relationship between two variables. </p>
+
+<assemblage><title>A Quick Refresher</title>
+<p>A <term>variable</term> is a numerical quantity that can take on different values at different times or in different situations.</p>  
+<p>Quantities that do not change are called <term>constants</term>.</p></assemblage>
+
+<activity xml:id="propvar"><title>Proportional Variables</title>
+
+<p><ol>
+  <li><p>The table shows the price of gasoline at your local gas station on a Saturday in April. There are two variables in the table: the <m>\blert{\text{Number of gallons}}</m> of gasoline purchased and the <m>\blert{\text{Total price}}</m>.  Compute the ratios in the third column of the table.</p>
+  <sidebyside widths="60% 25%" valigns="middle middle" margins="0% 10%">
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><line>Gallons of</line><line> Gasoline</line></cell>
+            <cell>Total Price</cell>
+            <cell><m>\dfrac{\text{Price}}{\text{Gallons}}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m> 4</cell>
+            <cell>$10.60</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>6</cell>
+            <cell>$15.90</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>8</cell>
+            <cell>$21.20</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>12</cell>
+            <cell>$31.80</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>14</cell>
+            <cell>$37.10</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>        
+        </tabular> 
+        <image source="gaspump.png"></image></sidebyside>
+
+<p>You should find that the ratio  <m>\dfrac{\text{total price}}{\text{number of gallons}}</m>, or price per gallon, is constant. It is the same for each pair of values of the variables. This result agrees with common sense:  the price per gallon of gasoline is the same no matter how many gallons you buy.</p></li>
+
+<li><p>The table shows the population of a town. The variable <m>\blert{\text{Years}}</m> means the age of the town, or the number of years since the town was established. <m>\blert{\text{Population}}</m>, of course, means the number of people who live in the town. Compute the ratios in the third column of the table.</p>
+
+<sidebyside widths="50% 45%" valigns="middle middle" margins="0% 5%">
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Years</cell>
+            <cell>Population</cell>
+            <cell><m>\dfrac{\text{People}}{\text{Years}}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m> 10</cell>
+            <cell>432</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>20</cell>
+            <cell>932</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>30</cell>
+            <cell>2013</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>40</cell>
+            <cell>4345</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>50</cell>
+            <cell>9380</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>        
+        </tabular> 
+        <image source="mainstreet.png"></image></sidebyside>
+
+<p>The ratios in this example, <m>\dfrac{\text{number of people}}{\text{number of years}}</m>,  give the rate of growth of the population in people per year.  You can see from the table that this ratio is not constant;  in fact, it increases as time goes on.</p></li> 
+</ol></p></activity>
+
+<assemblage><title>Definition</title>
+<p>Two variables are said to be <term>proportional</term> if their ratio is constant, or always the same.</p></assemblage> 
+
+<p>In Activity 6.2.1, we see that the total price of gasoline is proportional to the number of gallons you buy. On the other hand, the population of the town is not proportional to its age.</p>
+  
+<p>As with the price of gasoline, sometimes it seems clear that two variables are proportional. But to check, we can identify several pairs of corresponding values for the variables, and then compute their ratios.</p>
+
+<example><statement><p>Tuition at Woodrow University is $30 per unit added to an enrollment fee of $100. Is the tuition proportional to the number of units you take?</p></statement>
+
+<solution><p>To compute the tuition, we multiply the number of units by 30 and add 100 to the result. For example, if you take 6 units, your tuition is
+  <me>(6 \times 30) + 100 = 280</me>
+We make a table showing several pairs of variables and compute their ratios.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><line>Number</line><line>of Units</line></cell>
+            <cell>Tuition</cell>
+            <cell><m>\dfrac{\text{Tuition}}{\text{Units}}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m> 6</cell>
+            <cell>280</cell>
+            <cell>46.67</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>8</cell>
+            <cell>340</cell>
+            <cell>42.50</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>15</cell>
+            <cell>550</cell>
+            <cell>36.67</cell></row>       
+        </tabular>
+<p>The ratio <m>\dfrac{\text{tuition}}{\text{units}}</m>,  or tuition per unit, is not constant, so the tuition is not proportional to the number of units.</p></solution></example>
+
+<exercise><statement><p>Anouk is traveling by motorhome across Alaska at 60 miles per hour. Compute the ratios in the table.</p><sidebyside widths="50% 40%" margins="0% 10%">  
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Hours</cell>
+            <cell>Miles</cell>
+            <cell><m>\dfrac{\text{Miles}}{\text{Hours}}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m> 3</cell>
+            <cell>180</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>6</cell>
+            <cell>360</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>8</cell>
+            <cell>480</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>       
+        </tabular>
+          <image source="alaska.png"></image></sidebyside>
+<p>Is the distance Anouk has traveled proportional to the time she has traveled?</p></statement>
+<answer><p>Yes</p></answer></exercise>
+
+<p>From the Examples above, you may have discovered that two variables are proportional if one variable is a constant multiple of the other.</p>
+
+<example><statement><p>Is the area of a square proportional to the length of a side?</p></statement>
+
+<solution><p>We'll make a table of values for squares of various lengths.</p>
+
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Length of side (in)</cell>
+            <cell>Area (sq in)</cell>
+            <cell>Ratio <m>~\dfrac{\text{Area}}{\text{Length}}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>2</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>2</m></cell></row>
+        <row bottom="minor">
+            <cell><m>3</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>3</m></cell></row>
+        <row bottom="minor">
+            <cell><m>4</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>4</m></cell></row>       
+        </tabular>
+
+<p>From the table we see that the ratio of area to length is not constant, so the area of a square is not proportional to the length of a side.</p></solution></example>
+
+<exercise><statement><p>Is the perimeter of a square proportional to the length of a side?</p>
+<p>Hint: Make a table of values, or recall the formula for the perimeter of a square.</p></statement>
+
+<solution><p>The perimeter of a square is given by <m>~P=4L,~</m> where <m>L</m> is the length of a side. Because <m>P</m> is a constant multiple of <m>L</m>, the perimeter is proportional to the length of a side.</p></solution></exercise>
+
+</subsection>
+
+<subsection><title>Proportional Reasoning</title>
+
+<p>Here is a simple way to look at proportional variables. If we list multiples of each variable, their ratio stays the same, and we create a <term>ratio table</term>. We can sometimes use a ratio table to answer questions about proportional variables.</p>
+
+<example><statement><p>Five boxes of crayons cost Maryellen $4.25. How much will it cost to buy one box of crayons for each of the 25 students in her class?</p></statement>
+
+<solution><p>Because the cost of the crayons is proportional to the number of boxes, we can make a table. We add copies of 5 boxes and $4.25 until we reach 25 boxes.</p>
+    <image source="ratiotable.png" width="60%"></image>
+<p>We find that 25 boxes of crayons will cost $21.25.</p></solution></example>
+
+<exercise><statement><p>Three acres of land can support 220 apple trees. How many apple trees can you grow on 12 acres of land? Use a ratio table to find the answer.</p>
+  <sidebyside widths="25% 50%" margins="5% 15%" valigns="middle middle">
+      <image source="apple.png"></image> 
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Acres</cell>
+            <cell>3</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Trees</cell>
+            <cell>220</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        </tabular></sidebyside></statement>
+  <answer><p>880</p></answer></exercise>
+
+<note><p>Did you notice that we can use multiplication instead of addition to solve the two problems above? (After all, multiplication by a whole number is really just repeated addition.)</p>
+
+<p>In the Example we can multiply 5 boxes of crayons by <m>\alert{5}</m> to get 25 boxes of crayons, so we can multiply  $4.25 by <m>\alert{5}</m> to find the cost.
+    <me>\dfrac{\text{Boxes}}{\text{Cost}}: \hphantom{0000}  \dfrac{5}{4.25} \times \dfrac{\alert{5}}{\alert{5}} = \dfrac{25}{21.25}</me>
+The ratio of Boxes to Cost is not changed if we multiply both Boxes and Cost by the same number. This is the same principle that allows us to build a fraction, so we call this the <term>build-up</term> strategy for solving a problem about proportional variables, and we call <m>\alert{5}</m> the <term>scale factor</term>.</p>
+
+<p>Try the build-up strategy on Checkpoint 6.2.6.
+    <me>\dfrac{\text{Acres}}{\text{Trees}}: \hphantom{0000}  \dfrac{3}{220} \times   \hphantom{0000000}</me></p></note>                 
+<example><statement><p>Walking on a treadmill at 3 miles per hour for one hour burns 219 calories. How many calories will Shayla burn if she walks for 20 minutes?</p></statement>
+
+<solution><p>The number of calories you burn is proportional to the time you walk. Because 20 minutes is <m>\frac{1}{3}</m> of an hour, we should multiply the number of calories by <m>\frac{1}{3}</m> also. (We are using the build-up strategy, with a scale factor of <m>\frac{1}{3}</m>.) In 20 minutes Shayla will burn
+  <me>\dfrac{1}{3} \times 219 = 73~~ \text{calories}</me></p></solution></example>
+
+<p>The relationship between proportional variables is a very simple and useful one. The ratio between the variables must stay constant. So if we multiply one variable by a scale factor, we know exactly what will happen to the other variable.  If you double the amount of gasoline you buy, say from 6 gallons to 12 gallons, the price will also double. If you have 4 times the amount of land, you can plant 4 times as many apple trees.</p>
+
+<exercise><statement><p>The table shows the amount of some foreign currencies you could buy with ten US dollars on April 17, 2016. Complete the table to show how much you could buy with a US 20-dollar bill.</p>
+
+<sidebyside widths="40% 50%" margins="0% 5%" valigns="middle middle">
+      <image source="currency.png"></image> 
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Currency</cell>
+            <cell><m>\vphantom{\dfrac{1}{2}}\hphantom{00}</m>$10<m>\hphantom{00}</m></cell>
+            <cell><m>\vphantom{\dfrac{1}{2}}\hphantom{00}</m>$20<m>\hphantom{00}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Japanese yen</cell>
+            <cell>1083.3</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Mexican peso</cell>
+            <cell>177.1</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Canadian dollar</cell>
+            <cell>13</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Euro</cell>
+            <cell>8.9</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>British pound</cell>
+            <cell>7.1</cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        </tabular></sidebyside></statement>
+
+  <answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Currency</cell>
+            <cell><m>\vphantom{\dfrac{1}{2}}\hphantom{00}</m>$10<m>\hphantom{00}</m></cell>
+            <cell><m>\vphantom{\dfrac{1}{2}}\hphantom{00}</m>$20<m>\hphantom{00}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Japanese yen</cell>
+            <cell>1083.3</cell>
+            <cell>2166.6</cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Mexican peso</cell>
+            <cell>177.1</cell>
+            <cell>354.2</cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Canadian dollar</cell>
+            <cell>13</cell>
+            <cell>26</cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Euro</cell>
+            <cell>8.9</cell>
+            <cell>17.8</cell></row>
+          <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>British pound</cell>
+            <cell>7.1</cell>
+            <cell>14.2</cell></row>
+        </tabular></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Using Proportions</title>
+
+<p>The build-up strategy works well if there is a nice number to multiply by. But sometimes it is easier to compute a <term>unit rate</term>, as we did in Section 6.1.</p>
+
+<example><statement><p>Six bottles of VeryBerry soda costs $10.50. How much would 10 bottles cost?</p></statement>
+
+<solution><p>The cost of the soda is proportional to the number of bottles you buy. But 10 is not a nice multiple of 6, so instead we'll calculate the unit cost of a bottle of soda. We'll simplify the ratio by dividing top and bottom by 6.
+    <me>\dfrac{\text{Cost}}{\text{Bottles}}: \hphantom{00}  \dfrac{10.50}{6} \div \dfrac{6}{6} = \dfrac{1.75}{1}</me>
+One bottle of VeryBerry Soda costs $1.75. So 10 bottles cost
+    <me>10 \times 1.75 = 17.5</me>
+or $17.50.</p></solution></example>
+
+<exercise><statement><p>Jayden drove 132 miles on 5 gallons of gas. How far can he drive on a full tank of 18 gallons?  Use the unit rate strategy to find the answer. Start with a ratio.
+    <me>\dfrac{\text{Miles}}{\text{Gallons}}: \hphantom{0000000000000000000}</me></p></statement>
+<answer><p><me>\dfrac{\text{Miles}}{\text{Gallons}}= \dfrac{132~ \text{miles}}{5~ \text{gallons}} = 26.4~ \text{miles per gallon}</me>
+So on 18 galllons of gas Jayden can drive
+    <me>18 \times 26.4 = 475.2~ \text{miles}</me></p></answer></exercise>
+
+<activity><title>Using Proportions</title>
+
+<p>A 6-inch turkey submarine sandwich contains 282 calories. How many calories are there in a 15-inch turkey sandwich?</p>
+    <image source="turkeysub.png" width="45%"></image>
+
+<p>We'll compare three different strategies to solve the problem.<ol>
+  <li><p>Complete the ratio table and use it to answer the question.</p>
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Inches</cell>
+            <cell>3</cell>
+            <cell>6</cell>
+            <cell>12</cell>
+            <cell>15</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Calories</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell>282</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        </tabular>
+  <p>A 15-inch turkey sandwich contains <fillin></fillin> calories.</p></li>
+
+  <li><p>Use the build-up strategy to answer the question. First, what scale factor will you need to build 6 inches to 15 inches?</p>
+
+    <p><m>\blert{\text{Scale Factor}}</m>:</p>
+
+    <p><m>\blert{\text{Build Calories}}</m>:</p></li>
+
+  <li><p>Use the unit rate strategy to answer the question.</p>
+
+    <p><m>\blert{\text{Unit Rate, Calories/Inch}}</m>:</p>
+
+    <p><m>\blert{\text{Multiply}}</m>:</p></li>
+</ol></p></activity>
+
+<assemblage><title>Summary</title>
+<p>We have used two methods to solve problems involving proportional variables:<ol>
+  <li><p>Build-up strategy:   multiply both variables by the same amount</p></li>
+  <li><p>Unit rate strategy:   simplify the ratio by division</p></li>
+</ol></p>
+<p>Both of these strategies come from the definition of proportional.</p></assemblage>
+
+<p>Earlier we saw that the build-up strategy works because we can build or reduce a fraction without changing its value.  Now let us see why the unit rate strategy works.</p> 
+
+<p>Recall that multiplication and division are opposite operations. Every division fact can be written as a multiplication fact, and vice versa.  For example,
+    <me>\dfrac{15}{3} = 5 ~~   \text{because}  ~~  3 \times 5 = 15</me>
+We'll use this relationship in the next Example.</p>
+
+<example><statement><p>How much sugar is in a 16-ounce serving of cola?</p></statement>
+
+<solution><p>The nutrition label gives the following information.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cola</cell>
+            <cell>12-ounce can</cell>
+            <cell>20-ounce bottle</cell>
+            <cell>1-liter (34 ounces)</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Sugars</cell>
+            <cell>36 grams</cell>
+            <cell>60 grams</cell>
+            <cell>102 grams</cell></row>
+        </tabular>
+
+<p>Because the amount of sugar is proportional to the size of the serving, the ratio <m>\dfrac{\text{grams of sugar}}{\text{ounces of cola}}</m> is constant:
+
+  <me>\dfrac{\text{grams of sugar}}{\text{ounces of cola}} = \dfrac{36}{12} = \dfrac{60}{20} = \dfrac{102}{34} = 3</me>
+ 
+So <m>\blert{3}</m> is the unit rate for <m>\dfrac{\text{grams of sugar}}{\text{ounces of cola}}</m>. And because of the relationship between multiplication and division, we see that
+
+    <md><mrow>\dfrac{\text{grams of sugar}}{\text{ounces of cola}} = \blert{3} \phantom{000} \text{is the same as}</mrow>
+        <mrow>\text{grams of sugar} = \blert{3} \times \text{ounces of cola}</mrow></md>
+
+In particular, to answer the question in the problem,
+    <me>\text{grams of sugar} = 3 \times 16 = 48</me>
+We have used the unit rate strategy to see that there are 48 grams of sugar in a 16-ounce serving of cola.</p></solution>
+</example>
+
+<exercise><statement><sidebyside widths="60% 30%" valigns="middle middle"><p>In Example 6.2.12 we saw that there are 3 grams of sugar in each ounce of cola. Five teaspoons of sugar is equivalent to 21 grams of sugar. How many teaspoons of sugar are there in a 12-ounce can of cola?</p>
+  <image source="sugar.png"></image></sidebyside>
+<p>Hint: First compute the unit rate <m>~\dfrac{\text{teaspoons of sugar}}{\text{grams of sugar}}.</m></p></statement>
+<answer><p>8.57 teaspoons</p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Graphing Proportional Variables</title>
+
+<p>The relationship between proportional variables is a simple one, and their graphs are also simple. In <xref ref="plotpoints" text="custom">Section 5.5</xref> we practiced plotting points and graphing an equation. Here is a brief review.</p>
+
+<assemblage><title>Quick Refresher: How to Plot Points</title>
+  <p><ul>
+    <li><p>The first variable (the <term>input variable</term>) tells us the location of the point in the horizontal direction. </p></li>
+    <li><p>The second variable (the <term>output variable</term>) tells us its location in the vertical direction.</p></li>
+  </ul></p></assemblage> 
+
+<assemblage><title>Quick Refresher: Steps for Graphing an Equation</title>
+<p><ol> 
+  <li><p>Make a table of values. Choose values for the input variable and use the equation to find the values of the 
+  output variable.</p></li>
+  <li><p>Choose appropriate scales and label the axes.</p></li>
+  <li><p>Plot the points from the table, and connect them with a smooth curve.</p></li>
+</ol></p></assemblage>
+
+<activity xml:id="graphprop"><title>Graphing Proportions</title>
+
+<p>Delbert and Francine are classmates at City College. Before handing in big assignments such as term papers or lab reports, they make copies of their work. Delbert uses QuikCopy, and keeps track of the copying fee for each assignment.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="4">Delbert's Copying Fees</cell></row>
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Number of pages</cell>
+            <cell>14</cell>
+            <cell>27</cell>
+            <cell>35</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost (cents)</cell>
+            <cell>112</cell>
+            <cell>216</cell>
+            <cell>280</cell></row>
+        </tabular>
+
+<p>Francine copies her assignments at Copy World.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="4">Francine's Copying Fees</cell></row>
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Number of pages</cell>
+            <cell>12</cell>
+            <cell>26</cell>
+            <cell>32</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost (cents)</cell>
+            <cell>72</cell>
+            <cell>156</cell>
+            <cell>192</cell></row>
+        </tabular>
+<p><ol>
+  <li><p>Verify that the cost of copying is proportional to the number of pages at both QuikCopy and at Copy World.</p>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="4">Delbert's Copying Fees</cell></row>
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Number of pages</cell>
+            <cell>14</cell>
+            <cell>27</cell>
+            <cell>35</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost(cents)</cell>
+            <cell>112</cell>
+            <cell>216</cell>
+            <cell>280</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost/page</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        </tabular></p>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="4">Francine's Copying Fees</cell></row>
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Number of pages</cell>
+            <cell>12</cell>
+            <cell>26</cell>
+            <cell>32</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost(cents)</cell>
+            <cell>72</cell>
+            <cell>156</cell>
+            <cell>192</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost/page</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        </tabular></p></li>
+
+  <li><p><ol marker="a.">
+      <li><p>How do you know that the cost of copying is proportional to the number of pages copied?</p></li>
+      <li><p>Who is paying the higher price for copying?</p></li>
+    </ol></p></li>
+
+  <li><p><ol marker="a.">
+      <li><p>Plot the data for Delbert's copying fees on the grid. (Include a point for the cost of copying 0 pages.)</p></li>
+      <li><p>Connect the data points with a straight line.</p></li>
+    </ol></p>
+      <image source="copyfees.png" width="70%"></image></li>
+
+  <li><p><ol marker="a.">
+      <li><p>Similarly, plot the data for Francine's copying fees on the same grid, and connect them with a straight line.</p></li>
+      <li><p>Which line is rising more rapidly?</p></li>
+    </ol></p></li>
+</ol></p></activity>
+
+<p>From Activity 6.2.3, we observe two facts about the graphs of proportional variables.</p>
+
+<assemblage><title>Graphs of Proportional Variables</title>
+<p><ol>
+  <li><p>The graph is a straight line.</p></li>
+  <li><p>The graph passes through the point <m>(0, 0)</m>. In other words, if one variable is zero, the other variable must be zero also.</p></li>
+</ol></p></assemblage>
+
+<note><p>You might want to compare the graphs of copying costs in Activity 6.2.3 with the graph of tuition from Example 6.2.1, shown below. Recall that the cost of tuition was not proportional to the number of units you take, and the graph does not pass through the point <m>(0,0)</m>.</p>
+        <image xml:id="Tuition" width="50%">
+    <description>Graph of T=100+30u</description>
+    <latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale =.45]
+    \draw[cyan] (0,0) grid (10,12);
+    \draw[thick,->, >=stealth'] (0,0) -- (10.7,0) node[right]{$u$};
+    \draw[thick,->, >=stealth'] (0,0) -- (0,12.7) node[above]{$T$};
+    \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {5,10} {
+        \draw (\x,.08) -- (\x,-.16) node[below] {$\xi$};}
+    \foreach \y [evaluate=\y as \yi using int( 50* \y )]  in {4,8,...,12} {
+        \draw (0.08,\y) -- (-.16,\y) node[left] {$\yi$};}
+    \draw[very thick,magenta, ->, >=stealth'] (0,2)--(25/3,12);
+    \filldraw[magenta] (0,2) circle (.15);
+    \filldraw[magenta] (3,28/5) circle (.15);
+    \filldraw[magenta] (4,34/5) circle (.15);
+    \filldraw[magenta] (15/2,11) circle (.15);
+    \end{tikzpicture}]]>
+</latex-image>
+</image></note> 
+
+<p>We can recover information about proportional variables from their graphs. Here is a reminder about reading points on a graph.</p>
+
+<assemblage><title>How to Read Points</title>
+<p><ul>
+  <li><p>The location of the point in the horizontal direction tells us the value of the first variable (the <term>input variable)</term>.</p></li> 
+  <li><p>The location of the point in the vertical direction tells us the value of the second variable (the <term>output variable)</term>.</p></li>
+</ul></p></assemblage> 
+
+<example><statement><sidebyside widths="45% 45%"><p>Kira buys granola in bulk at the health food store.  There are three standard containers customers can use, as shown by the highlighted points on the graph.<ol marker="a.">
+  <li><p>What are the size and cost of each standard container?</p></li>
+  <li><p>What is the unit cost of the granola, in cents per ounce?</p></li>
+  <li><p>If we extend the graph to include 25 ounces of granola, how much taller should we make the vertical axis?</p></li>
+</ol></p>
+    <image source="granola.png"></image></sidebyside></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>We read the ounces and cents values for each of the three points. The standard containers are 10 ounces for $3.00, 16 ounces for $4.80, and 24 ounces for $7.20.</p></li>
+  <li><p>To find the unit cost, we compute the ratio of cost to ounces. 
+      <me>\dfrac{\text{300 cents}}{\text{10 ounces}} = \text{30 cents per ounce}</me></p></li>
+  <li><p>25 ounces would cost  
+        <me>\text{(25 ounces)} \times \text{(30 cents per ounce)} = \text{750 cents}</me>
+    So we would need to extend the vertical axis by another 30 units, to 750.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Esme and Marya both work part-time as data-entry technicians at different companies. The graph shows their earnings in terms of the number of hours they work.</p>
+    <!-- <image source="earnings.png" width="45%"></image> -->
+    <image xml:id="earnings" width="45%">
+        <description>vector</description>
+        <latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale =.45]
+        \draw[cyan] (0,0) grid (10,13);
+        \draw[thick,->, >=stealth'] (0,0) -- (10.7,0);
+        \draw[thick,->, >=stealth'] (0,0) -- (0,13.7);
+        \foreach \x in {5,10} {
+            \draw (\x,.08) -- (\x,-.16) node[below] {$\x$};}
+        \node[font=\bf] at (5,-1.5) {Hours};
+        \foreach \y [evaluate=\y as \yi using int( 20* \y )]  in {2,4,...,12} {
+            \draw (0.08,\y) -- (-.16,\y) node[left] {$\yi$};}
+        \node[rotate=90,font=\bf] at (-2.2,6.5)  {Dollars};
+        \draw[very thick,magenta, ->, >=stealth'] (0,0)--(10,7.5) node[midway, below, xshift=7mm, text=black, fill=white, inner sep=1]{Marya};
+        \draw[very thick,blue, ->, >=stealth'] (0,0)--(10,12.5) node[midway, above, xshift=7mm , yshift=16mm, text=black, fill=white, inner sep=1]{Esme};
+        \end{tikzpicture}]]>
+    </latex-image>
+    </image>
+
+<p><ol marker="a.">
+  <li><p>Who earns more per hour?  Explain how you know.</p></li>  
+  <li><p>Use the graph to fill in the table.</p>  
+
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Hours</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Esme's earnings</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Esme's earnings</cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell>
+            <cell><m>\hphantom{00000}</m></cell></row>
+      </tabular></li>
+
+  <li><p>Compute each woman's wages in dollars per hour.</p>
+
+      <p>Esme:</p>
+
+      <p>Marya:</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>Esme earns more per hour. Her graph is steeper.</p></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Hours</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Esme's earnings</cell>
+            <cell>100</cell>
+            <cell>200</cell>
+            <cell>250</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Marya's earnings</cell>
+            <cell>60</cell>
+            <cell>120</cell>
+            <cell>150</cell></row>
+      </tabular></p></li>
+    <li><p>Esme earns $25 per hour; Marya earns $15 per hour.</p></li>
+  </ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>variable</p></li>
+  <li><p>constant</p></li>
+  <li><p>proportional</p></li>
+  <li><p>ratio table</p></li>
+  <li><p>scale factor</p></li>
+  <li><p>unit rate</p></li>
+  <li><p>input variable</p></li>
+  <li><p>output variable</p></li>
+</ul></p>
+</subsection>
+
+
+<xi:include href="./prac-6-2.ptx" />
+
+</section>

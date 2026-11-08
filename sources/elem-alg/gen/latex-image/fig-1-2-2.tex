@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} 
+\coordinate (O) at (0,0);
+\coordinate (A) at (-0.8,0.7);
+\coordinate (Aa) at (-0.3,.2);
+\coordinate (Ab) at (0.15,.25);
+\coordinate (B) at (-.4,-.2);
+\node at (O) {$2\cdot3$};
+\draw[blue, <-, >=stealth'] (Ab)--(A) node[left, scale=.9]{factors};
+\draw[blue, <-, >=stealth'] (Aa)--(A);
+\draw [blue,decorate,decoration={brace,amplitude=3pt}] (.4,-0.2)--(B)  node [below,midway,yshift=-4pt] {product};
+\coordinate (P) at (3.4,0);
+\coordinate (C) at (2.8,0.7);
+\coordinate (Ca) at (3.15,.25);
+\coordinate (Cb) at (3.45,.25);
+\coordinate (D) at (3,-.2);
+\node at (P) {$2(3)$};
+\draw[blue, <-, >=stealth'] (Cb)--(C) node[left, scale=.9]{factors};
+\draw[blue, <-, >=stealth'] (Ca)--(C);
+\draw [blue,decorate,decoration={brace,amplitude=3pt}] (3.8,-0.2)--(D)  node [below,midway,yshift=-4pt] {product};
+\coordinate (Q) at (6.8,0);
+\coordinate (E) at (6.2,0.7);
+\coordinate (Ea) at (6.5,.25);
+\coordinate (Eb) at (6.95,.25);
+\coordinate (F) at (6.28,-.2);
+\node at (Q) {$(2)(3)$};
+\draw[blue, <-, >=stealth'] (Eb)--(E) node[left, scale=.9]{factors};
+\draw[blue, <-, >=stealth'] (Ea)--(E);
+\draw [blue,decorate,decoration={brace,amplitude=3pt}] (7.3,-0.2)--(F)  node [below,midway,yshift=-4pt] {product};
+\end{tikzpicture}%
+}
+\end{document}

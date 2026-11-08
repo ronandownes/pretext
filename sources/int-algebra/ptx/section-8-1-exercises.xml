@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+
+
+<!-- This file was originally part of the book     -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<exercises xml:id="section-8-1-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 8.1</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Complete the formulas for the special products of quadratic polynomials.
+    <ol marker="a." cols="2">
+    <li><m>(a+b)^2 = </m></li>
+    <li><m>(a-b)^2 = </m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><m>a^2 + 2ab + b^2</m></li>    
+    <li><m>a^2 - 2ab + b^2</m></li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p>Factor if possible.<ol marker="a." cols="2">
+    <li><m>a^2-b^2</m> </li>
+    <li><m>a^2+b^2</m> </li></ol></p></statement></exercise>
+
+<exercise number="3"><statement><p>Use the formulas to factor the polynomials, if possible.<ol marker="a." cols="2">
+    <li><m>x^2-14x+49</m></li>
+    <li><m>x^2+64</m></li>
+    <li><m>x^2+6x+9</m></li>
+    <li><m>x^2-64</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><m>(x-7)^2</m></li>    
+    <li>cannot be factored</li>
+    <li><m>(x+3)^2</m></li>
+    <li><m>(x+8)(x-8)</m></li></ol></p></answer></exercise>    
+
+<exercise number="4"><statement><p>Use the formulas to write down the products without multiplying:<ol marker="a." cols="2">
+    <li><m>(5x-6y)^2</m></li>
+    <li><m>(2x^3+y^5)^2</m></li>
+    <li><m>(3x-8y^2)(3x+8y^2)</m></li>
+    <li><m>(x^2+y^2)^2</m></li></ol></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercise number="5"><statement><p>Which of the following are polynomials?  If it is not a polynomial, explain why not.
+<ol marker="a." cols="2">
+    <li><m>5x^4-3x^2</m></li>
+    <li><m>3x+1+\dfrac{2}{x^2}</m></li>
+    <li><m>\dfrac{1}{2a^2+5a-6}</m></li>
+    <li><m>\dfrac{2}{3}t^2+\dfrac{1}{4}t^3+\dfrac{5}{8}</m></li></ol></p></statement>
+<answer><p>(b) and (c) are not polynomials; they have variables in a denominator.</p></answer></exercise>
+
+<exercise number="6"><statement><p>Give the degree of each polynomial.
+<ol marker="a." cols="3">
+    <li><m>x^2+4x-\dfrac{1}{4}</m></li>
+    <li><m>y-2.8y^7</m></li>
+    <li><m>\dfrac{z}{4}-3z^4+4z^3</m></li></ol></p></statement>
+</exercise>
+
+<exercise number="7"><statement><p>Write each polynomial in descending powers of <m>x</m>.
+ <ol marker="a." cols="2">
+    <li><m>x-1.9x^3+6.4</m></li>
+    <li><m>6xy-2x^2+2y^3</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><m>-1.9x^3+x+6.4</m></li>
+    <li><m>-2x^2+6xy+2y^3</m></li></ol></p></answer></exercise>
+
+<exercise number="8"><statement><p>Add or subtract the polynomials.<ol marker="a.">
+    <li><m>(2y^3-4y^2-y)+(6y^2+2y+1)</m></li>
+    <li><m>(5x^3+3x^2-4x+8)-(2x^3-4x-3)</m></li></ol></p></statement></exercise>
+   
+<exercise number="9"><statement><p>Without performing the multiplication, give the degree of each product.<ol marker="a.">
+    <li><m>(x^2-4)(3x^2-6x+2)</m></li>
+    <li><m>(x-3)(2x-5)(x^3-x+2)</m></li>
+    <li><m>(3x^2+2x)(x^3+1)(-2x^2+8)</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li>4</li>
+    <li>5</li>
+    <li>7</li></ol></p></answer></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 10 and 11, multiply.</p></introduction>
+
+<exercise number="10"><statement><p><ol marker="a.">
+    <li><m>(3x-2)(4x^2+x-2)</m></li>
+    <li><m>(x-2)(x-1)(x-3)</m></li></ol></p></statement></exercise>
+
+<exercise number="11"><statement><p><ol marker="a.">
+    <li><m>(2a^2-3a+1)(3a^2+2a-1)</m></li>
+    <li><m>(y-2)(y+2)(y+4)(y+1)</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>6a^4-5a^3-5a^2+5a-1</m></p></li>
+    <li><p><m>y^4+5y^3-20y-16</m></p></li>
+</ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup  cols="2"><introduction><p>For Problems 12 and 13, use the formulas for the cube of a binomial to expand the products.</p></introduction>
+
+<exercise number="12"><statement><p><ol marker="a.">
+    <li><m>(1+2z)^3</m></li>
+    <li><m>(1-x^2)^3</m></li></ol></p></statement></exercise>
+
+<exercise number="13"><statement><p><ol marker="a.">
+    <li><m>(1+5\sqrt{t})^3</m></li>
+    <li><m>\left(1-\dfrac{3}{a}\right)^3</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>1+15\sqrt{t}+75t+125t\sqrt{t}</m></p></li>
+    <li><p><m>1-\dfrac{9}{a}+\dfrac{27}{a^2}-\dfrac{27}{a^3}</m></p></li>
+</ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup  cols="2"><introduction><p>For Problems 14 and 15, write each product as a polynomial and simplify.</p></introduction>
+
+<exercise number="14"><statement><p><ol marker="a.">
+    <li><m>(2x + 1)(4x^2 - 2x + 1)</m></li>
+    <li><m>(3x - 1)(9x^2 + 3x + 1)</m></li></ol></p></statement></exercise>
+
+<exercise number="15"><statement><p><ol marker="a.">
+    <li><m>(3a - 2b)(9a^2 + 6ab + 4b^2)</m></li>
+    <li><m>(2a + 3b)(4a^2 - 6ab + 9b^2)</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>27a^3-8b^3</m></li>
+    <li><m>8a^3 + 27b^3</m></li></ol></p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 16 <ndash/> 21, factor completely.</p></introduction>
+
+<exercise number="16"><statement><p><m>x^3+27</m></p></statement></exercise>
+
+<exercise number="17"><statement><p><m>a^3-8b^3</m></p></statement>
+<answer><p><m>(a-2b)(a^2+2ab+4b^2)</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>x^3y^6-1</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>27a^3+64b^3</m></p></statement>
+<answer><p><m>(3a+4b)(9a^2-12ab+16b^2)</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>125a^3b^3-1</m></p></statement></exercise>
+
+<exercise number="21"><statement><p><m>64t^9+w^6</m></p></statement>
+<answer><p><m>(4t^3+w^2)(16t^6-4t^3w^2+w^4)</m></p></answer></exercise>
+</exercisegroup>
+
+<exercise number="22"><statement><p>Evaluate each polynomial for <m>n=10</m>. Try to do the calculations mentally. What do you notice?<ol marker="a." cols="2">
+    <li><m>5n^2+6n+7</m></li>
+    <li><m>5n^3+n^2+3n+3</m></li>
+    <li><m>n^3+1</m></li>
+    <li><m>8n^4+8n</m></li></ol></p></statement></exercise>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="23"><statement><p>A large wooden box (without lid) is 3 feet longer than it is wide, and its height is 2 feet shorter than its width. <ol marker="a.">
+    <li>If the width of the box is <m>w</m>, write expressions for its length and its height.</li>
+    <li>Write a polynomial for the volume of the box.</li>
+    <li>Write a polynomial for the surface area of the box.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li>length: <m>w+3</m>; height: <m>w-2</m></li>
+    <li><m>w^3+w^2-6w</m></li>
+    <li><m>5w^2+w-12</m></li></ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>A paper company plans to make boxes without tops from sheets of cardboard 12 inches wide and 16 inches long. The company will cut out four squares of side <m>x</m> inches from the corners of the sheet and fold up the edges as shown in the figure.</p>
+    <sidebyside width="50%"><image source="images/fig-box-12-16"><description>box</description></image></sidebyside>
+<p><ol marker="a.">
+    <li><p>Write expressions in terms of <m>x</m> for the length, width, and height of the resulting box.</p></li>
+    <li><p>Write a formula for the volume, <m>V</m>, of the box as a function of <m>x</m>.</p></li>
+    <li><p>What are the largest and smallest reasonable values for <m>x</m>?</p></li>
+    <li><p>Make a table of values for <m>V(x) </m> on its domain.</p></li>
+    <li><p>Graph your function <m>V</m> in the window
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 6</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 200</mrow></md></p></li>
+    <li><p>Use your graph to find the value of <m>x</m> that will yield a box with maximum possible volume. What is the maximum possible volume?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="25"><statement><sidebyside widths="65% 15%" valigns="middle middle"><p><ol>
+    <li><p>A grain silo is built in the shape of a cylinder with a hemisphere on top (see the figure). Write an expression for the volume of the silo in terms of the radius and height of the cylindrical portion of the silo.</p></li>
+    <li><p>If the total height of the silo is five times its radius, write a polynomial function <m>V(r)</m> in one variable for its volume.</p></li></ol></p>
+<image source="images/fig-grain-silo"><description>grain silo</description></image></sidebyside></statement>
+<answer><p><ol>
+    <li><p><m>\dfrac{2}{3}\pi r^3+\pi r^2h </m></p></li>
+    <li><p><m>V(r)=\dfrac{14}{3}\pi r^3 </m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>The annual profit, <m>P(t)</m>, of the Enviro Company, in thousands of dollars, is given by
+    <me>P(t) = 2t^3 - 152t^2 + 3400t + 30</me>
+where <m>t</m> is the number of years since 1980, the first year that the company showed a profit.<ol>
+    <li><p>Graph <m>P(t)</m> in the window
+         <md><mrow>{\text{Xmin}} \amp = 0 \amp\amp {\text{Xmax}} = 94</mrow>
+            <mrow>{\text{Ymin}} \amp = 0 \amp\amp {\text{Ymax}} = 50,000</mrow></md></p></li>
+    <li><p>What was the profit in 1980? In 2000? In 2020?</p></li>
+    <li><p>How did the profit change from 1980 to 1981? From 2000 to 2001? From 2020 to 2021?</p></li>
+    <li><p>During which years did the profit decrease from one year to the next?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="27"><statement><p>A doctor who is treating a heart patient wants to prescribe medication to lower the patient's blood pressure. The body's reaction to this medication is a function of the dose administered. If the patient takes <m>x</m> milliliters of the medication, his blood pressure should decrease by <m>R = f (x)</m> points, where
+    <me>f (x) = 3x^2 - \dfrac{1}{3}x^3 </me><ol marker="a.">
+        <li><p>For what values of <m>x</m> is <m>R = 0</m>?</p></li>
+        <li><p>What values of <m>x</m> make sense for this function? Why?</p></li>
+        <li><p>Graph the function in the window
+                 <md><mrow>{\text{Xmin}} \amp = 0 \amp\amp {\text{Xmax}} = 10</mrow>
+                     <mrow>{\text{Ymin}} \amp = 0 \amp\amp {\text{Ymax}} = 40</mrow></md></p></li>
+        <li><p>How much should the patient's blood pressure drop if he takes 2 milliliters of medication?</p></li>
+        <li><p>What is the maximum drop in blood pressure that can be achieved with this medication?</p></li>
+        <li><p>There may be risks associated with a large change in blood pressure. How many milliliters of the medication should be administered to produce half the maximum possible drop in blood pressure?</p></li>
+    </ol></p></statement>
+<answer><p><ol >
+    <li><p><m>0, 9</m></p></li>
+    <li><p><m>0\le x \le 9</m>; <m>R\ge 0</m> for these values</p></li>
+    <li><sidebyside width="35%"><image source="images/fig-GC-cubic-drug-reaction"><description>cubic</description></image> </sidebyside></li>
+    <li><p><m>\dfrac{28}{3} </m> points</p></li>
+    <li><p><m>36</m> points</p></li>
+    <li><p><m>3</m> ml or <m>8.2</m> ml</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>The water level (in feet) at a harbor is approximated by the polynomial 
+    <me>W(t) = 0.00733t^4 - 0.332t^2 + 9.1</me> 
+where <m>t</m> is the number of hours since the high tide. The approximation is valid for <m>-4 \le t \le 4</m>. (A negative value of <m>t</m> corresponds to a number of hours before the high tide.)<ol>
+    <li><p>Graph the polynomial for <m>-4 \le t \le 4</m>.</p></li>
+    <li><p>What is the water level at high tide?</p></li>
+    <li><p>What is the water level 3 hours before high tide?</p></li>
+    <li><p>When is the water level below 8 feet?</p></li>
+    <li><p>When is the water level above 7 feet?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="29"><statement><p>During an earthquake, Nordhoff Street split in two, and one section shifted up several centimeters. Engineers created a ramp from the lower section to the upper section. In the coordinate system shown in the figure below, the ramp is part of the graph of 
+    <me>y = f (x) = -0.00004x^3 - 0.006x^2 + 20</me></p>
+<sidebyside width="50%"><image source="images/fig-street-shift"><description>ramp</description></image></sidebyside> <p><ol>
+    <li><p>By how much did the upper section of the street shift during the earthquake?</p></li>
+    <li><p>What is the horizontal distance from the bottom of the ramp to the raised part of the street?</p></li>
+</ol></p></statement>
+<answer><p><ol cols="2">
+    <li><p><m>20</m> cm</p></li>
+    <li><p><m>100</m> cm</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>Expand each expression by removing parentheses. What do you notice? <ol marker="a.">
+    <li><m>x[x(x+3)+4]+1</m></li>              
+    <li><m>x(x[x(x-7)-5]+8)-3</m></li>          
+    <li>Evaluate each expression for <m>x=2</m>. Can you do this mentally? Is it easier to evaluate the expression before or after expanding it?</li>
+    <li>Use a calculator to evaluate each expression for <m>x=0.8</m>.</li></ol></p></statement>
+</exercise>
+
+<exercise number="31"><statement><p>Find the first three terms of the product in ascending powers. (Do not compute the entire product!)<ol marker="a.">
+    <li><m>(2 - x + 3x^2)(3 + 2x - x^2 + 2x^4)</m></li>
+    <li><m>(1 - 2x^2 - x^4)(4 + x^2 - 2x^4)</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>6 + x + 5x^2</m></li>
+    <li><m>4 - 7x^2 - 8x^4</m></li></ol></p></answer></exercise>
+
+<exercise number="32"><statement><p>Find the indicated term in each product. (Do not compute the entire product!)<ol marker="a.">
+    <li><m>(4 + 2x - x^2)(2 - 3x + 2x^2)</m>; <m>x^2</m></li>
+    <li><m>(3x + x^3 - 7x^5)(1 + 4x - 3x^2)</m>; <m>x^3</m></li></ol></p></statement></exercise>
+
+<exercise number="33"><statement><p>Verify the formula for the cube of a sum:
+    <me>(x + y)^3 = x^3 + 3x^2y + 3xy^2 + y^3</me></p></statement></exercise>
+        
+<exercise number="34"><statement><p>Verify the formula for the cube of a difference:
+    <me>(x - y)^3 = x^3 - 3x^2y + 3xy^2 - y^3</me></p></statement></exercise>
+
+<exercise number="35"><statement><p>Verify the formula for factoring the sum of two cubes:
+    <me>(x + y)(x^2 - xy + y^2) = x^3 + y^3</me></p></statement></exercise>
+        
+<exercise number="36"><statement><p>Verify the formula for factoring the difference of two cubes:
+    <me>(x - y)(x^2 + xy + y^2) = x^3 - y^3</me></p></statement></exercise>
+
+
+</subexercises>
+</exercises>

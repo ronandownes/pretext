@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [xscale=.6, yscale=.06]
+\draw[cyan] (-5,-50) grid[ystep=10] (5,50);
+\draw[black,thick, ->, >=stealth'] (-5,0)--(6,0) node[right]{$x$};
+\draw[black,thick, ->, >=stealth'] (0,-50)--(0,60) node[left, xshift=2]{$y$};
+\foreach \x in  {-5,5} {
+ \draw[cyan, very thick] (\x,-50) --(\x,50);
+ \draw[black] (\x,1.5) --++(0,-3)  node[below, yshift=-5, fill=white, inner sep=1]   {$\x$};
+}
+\foreach \x in  {-50,50} {
+ \draw[cyan, very thick] (-5,\x) --(5,\x);
+ \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-4, fill=white, inner sep=1]   {$\x$};
+}
+\draw[red,very thick, <->, >=stealth'] (5,{-3.65+9.1*5})--(-5,{-3.65+9.1*-5});
+\node[below, text=red,fill=white, inner sep=2] at (2.5,-37) {$y=3.65+9.1x$};
+\end{tikzpicture}%
+}
+\end{document}

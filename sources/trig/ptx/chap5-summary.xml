@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="chap5-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter 5 Summary and Review</title>
+
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+    <li>Expressions containing trig ratios can be simplified or evaluated like other algebraic expressions. To simplify an expression containing trig ratios, we treat each ratio as a single variable.</li>
+    <li>The parentheses in an expression such as <m>\sin (X + Y)</m> indicate function notation, not multiplication.</li>
+    <li>We write <m>\cos^2 (\theta)</m> to denote <m>\Big(\cos (\theta)\Big)^2</m>, and  <m>\cos^n (\theta)</m> to denote <m>\Big(\cos (\theta)\Big)^n</m>.  (Similarly for the other trig ratios.)</li>
+    <li>An <term>equation</term> is a statement that two algebraic expressions are equal.  It may be true or false.</li>
+    <li>We can solve equations by trial and error, by using graphs, or by algebraic techniques.</li>
+    <li>To solve a trigonometric equation, we first isolate the trigonometric ratio on one side of the equation. We then use reference angles to find all the solutions between <m>0\degree</m> and <m>360\degree</m>.</li>
+    <li>An equation that is true only for certain values of the variable, and false for others, is called a <term>conditional equation</term>. An equation that is true for all legitimate values of the variables is called an <term>identity</term>.</li>
+    <li>The expressions on either side of the equal sign in an identity are called <term>equivalent expressions</term>, because they have the same value for all values of the variable.</li>
+    <li>We often use identities to replace one form of an expression by a more useful form.</li>
+    <li>To check to whether an equation is an identity we can compare graphs of <m>Y_1 = </m> (left side of the equation) and <m>Y_2 = </m> (right side of the equation). If the two graphs agree, the equation is an identity.  If the two graphs are not the same, the equation is not an identity.</li>
+    <li><assemblage><title>Pythagorean Identity</title>
+        <p>For any angle <m>\theta</m>,
+            <me>\cos^2 (\theta) + \sin^2 (\theta) = 1</me>
+        Alternate forms:
+            <md><mrow>\cos^2 (\theta) \amp = 1 - \sin^2 (\theta)</mrow>
+                <mrow>\sin^2 (\theta) \amp = 1 -  \cos^2 (\theta) </mrow>
+            </md></p></assemblage></li>
+    <li><assemblage><title>Tangent Identity</title>
+        <p>For any angle not coterminal with <m>90\degree</m> or <m>270\degree</m>,
+            <me>\tan (\theta) = \dfrac{\sin (\theta)}{\cos (\theta)}</me></p></assemblage></li>
+    <li>To solve an equation involving more than one trig function, we use identities to rewrite the equation in terms of a single trig function.</li>
+    <li>To prove an identity, we write one side of the equation in equivalent forms until it is identical to the other side of the equation.</li>
+</ol></p>
+</subsection>
+	<xi:include href="./chap5-rev-problems.xml" />   <!-- exercises  -->
+
+</section>

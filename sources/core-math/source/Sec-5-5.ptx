@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-5-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <title>Graphs</title>
+
+  <sidebyside widths="45% 55%" valigns="middle middle"><p><ul>
+    <li><p>Line Graphs</p></li>
+    <li><p>Plotting Points</p></li>
+    <li><p>Graphing an Equation</p></li>
+    <li><p>Reading a Graph</p></li>
+  </ul></p>
+      <image source="linegraph.png"></image></sidebyside>
+
+<subsection><title>Line Graphs</title>
+
+<p>A good way to organize and display information is to create a graph. Graphs are especially useful for illustrating the relationship between two variables.</p>  
+  
+<p>In an earlier lesson we considered <term>bar graphs</term>. The height of the bar illustrated the value of the variable. However, we don't really need the whole bar to convey that information; we could instead place a dot at the top of each bar. If we connect the dots with line segments, we have created a <term>line graph</term>.</p>
+
+<example><statement><p>The bar graph in figure (a) shows the percentage of all flights from U.S. airports that experienced late departures.<ol marker="a.">  
+  <li><p>Make a line graph that gives the same information.</p></li>
+  <li><p>Describe the over-all trend in late departures over the time period 1995 to 2000.</p></li>
+</ol></p>
+<sidebyside widths="45% 45%"><image source="exm5-5-1a.png"></image><image source="exm5-5-1b.png"></image></sidebyside>
+</statement>
+
+<solution><p><ol marker="a.">  
+  <li><p>We place a dot at the top of each bar, and connect the dots with line segments, as shown above in figure (b).</p></li>
+  <li><p>The percentage of late departures increased over the five-year period. There was a spike in 1996, returning to previous levels in the following year, and then a steady increase from 1997 to 2000.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>The bar graph shows the percentage of canceled flights at U.S. airports.<ol marker = "a.">
+  <li><p>Make a line graph that gives the same information.</p></li>
+  <li><p>In which year was there a decline in canceled flights?</p></li>
+</ol></p>
+        <image source="exer5-5-1.png" width="90%"></image>
+</statement>
+
+<answer><p><ol marker = "a.">
+  <li><p><image width="45%" source="exer-5-5-1.png"></image></p></li>
+  <li><p>1997</p></li></ol></p></answer></exercise>
+
+<p>We often use line graphs to illustrate trends in data over time.</p>
+
+<example><statement><p>The graph shows the annual fees for attending the University of California and the California State Universities from 1984 to 1994.</p>
+      <image source="exm5-5-2.png" width="60%"></image>
+<p><ol marker="a.">
+  <li><p>What was the annual fee at the University of California in 1985?</p></li>
+  <li><p>When did the annual fee at Cal State first reach $1000?</p></li>
+  <li><p>How much did the annual fee at the University of California increase from 1992 to 1993?</p></li>
+  <li><p>How much did the annual fee at Cal State increase over the same time period?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The annual fee was approximately $1300.</p></li>
+  <li><p>The annual fee at Cal State first reached $1000 in 1991.</p></li>
+  <li><p>The fee increased from about $3000 to $3700, or by about $700.</p></li>
+  <li><p>At Cal State the fee increased from $1400 to $1500, or about $100.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>The bar graph shows the total annual U.S. sales of motorboats and sailboats over the decade from 1991 to 2000.</p>
+  <image source="exer5-5-2.png" width="95%"></image>
+<p><ol marker="a.">
+  <li><p>Use the grid to convert the bar graph into a line graph.</p></li> 
+  <li><p>How much did annual sales increase over the decade?</p></li>
+  <li><p>In which years did annual sales decrease over the previous year?</p></li>
+  <li><p>In which year did the greatest increase in sales occur?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><image source="exer-5-5-2.png" width="55%"></image></p></li> 
+  <li><p>About 14.5 billion dollars</p></li>
+  <li><p>1992, 1998, and 1999</p></li>
+  <li><p>1995</p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection xml:id="plotpoints"><title>Plotting Points</title>
+
+<p>We can make a graph that shows the relationship between two variables. We first decide which variable is the <term>input variable</term>, and which is the <term>output variable</term>.</p>
+
+<example><statement><p>Karen was born on Peter's fourth birthday.<ol marker="a.">
+  <li><p>Make a table showing Karen's age, <m>K</m>, and Peter's age, <m>P</m>.</p></li>
+  <li><p>Write an equation for Peter's age in terms of Karen's age.</p></li>
+  <li><p>Make a graph showing the relationship between the variables.</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Peter will always be 4 years older than Karen.</p>
+
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Karen's age, <m>K</m></cell>
+            <cell>0</cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>9</cell></row>
+        <row bottom="minor">
+            <cell>Peter's age, <m>P</m></cell>
+            <cell>4</cell>
+            <cell>6</cell>
+            <cell>9</cell>
+            <cell>13</cell></row>
+        </tabular></li>
+  <li><p>For this equation, <m>K</m> is the input variable, and <m>P</m> is the output variable. Peter's age is 4 more than Karen's age, or
+      <me>P = K + 4</me>
+  We start with a value of <m>K</m>, and then we add 4 to find the value of <m>P</m>. 
+      <me>\blert{\text{Value of}~K \rightarrow~ \text{add 4} \rightarrow~ \text{Value of}~P}</me></p></li>
+  <li><sidebyside widths="45% 55%" valigns="middle middle"><stack><p>On the grid, we label the horizontal direction with values of the input variable, and we label the vertical direction with values of the output variable.</p>
+      <p>For each pair of input/output values, we place a dot, or point, on the grid. For example, the point for <m>K=9,~ 9=13</m>  is labeled on the grid below left.</p></stack>
+      <image source="exm5-5-3a.png"></image></sidebyside>
+  <p>For each pair of input/output values, we place a dot, or point, on the grid. For example, the point for <m>K=9,~ 9=13</m>  is labeled on the grid below left.</p>   
+  <p>Finally, we connect the points with a smooth curve, as shown below right.  In this case, the curve is actually a straight line.</p> 
+    <sidebyside widths="48% 48%"><image source="exm5-5-3b.png"></image><image source="exm5-5-3c.png"></image></sidebyside></li>
+  </ol></p></solution></example>
+
+  <assemblage><title>How to Plot Points</title>
+  <p><ul>
+    <li><p>The first variable (the <term>input variable</term>) tells us the location of the point in the horizontal direction. </p></li>
+    <li><p>The second variable (the <term>output variable</term>) tells us its location in the vertical direction.</p></li>
+  </ul></p></assemblage> 
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Plot the points given by the table.</p>
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell>0</cell>
+            <cell>10</cell>
+            <cell>30</cell>
+            <cell>50</cell></row>
+        <row bottom="minor">
+            <cell><m>y</m></cell>
+            <cell>800</cell>
+            <cell>700</cell>
+            <cell>500</cell>
+            <cell>300</cell></row>
+        </tabular></li>
+  <li><p>Connect the points with a straight line. Extend your line to the edges of the grid.</p>
+        <image source="exer5-5-3.png" width="60%"></image></li>
+</ol></p></statement>
+
+<answer>
+  <image xml:id="exer5-5-3ans" width="50%">
+    <description>Line through plotted points</description>
+    <latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.5]
+    \draw[cyan] (0,0) grid (10,10);
+    \draw[black,thick,->,>=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+    \draw[black,thick,->,>=stealth'] (0,0)--(0,10.9) node[left, xshift=2]{$y$};
+    \draw[magenta!80!black,very thick] (0,8) -- (10,3);
+    \foreach \x [evaluate=\x as \xi using int( 5* \x )]  in {2,4,...,10} {
+      \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{$\xi$};
+    }
+    \foreach \y [evaluate=\y as \yi using int( 100* \y )]  in {5,10} {
+      \draw[black,thick] (.1,\y)--++(-.2,0) node[left]{$\yi$};
+    }        
+    \filldraw[black] (0,8) circle (3pt);
+    \filldraw[black] (2,7) circle (3pt);
+    \filldraw[black] (6,5) circle (3pt);
+    \filldraw[black] (10,3) circle (3pt);    
+    \end{tikzpicture}]]>
+</latex-image>
+</image>
+</answer></exercise>
+</subsection>
+
+<subsection xml:id="grapheqn"><title>Graphing an Equation</title>
+
+<p>Now that we know how to plot points, we can graph an equation.</p>
+
+<activity><title>Graphing an Equation</title>
+
+<p><ol>
+  <li><p>Uncle Herb is on a diet.  He can have 1200 calories per day. <ol marker="a."> 
+    <li><p>If Uncle Herb has 700 calories for lunch, how many calories can he have for dinner?</p></li>
+    <li><p>Write an equation for the number of calories, <m>d</m>, Uncle Herb can have for dinner if he consumes <m>c</m> calories for lunch.</p></li>
+    <li><p>Fill in the table for the given values of  <m>c</m>.</p> 
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>c</m></cell>
+            <cell>200</cell>
+            <cell>400</cell>
+            <cell>600</cell>
+            <cell>800</cell>
+            <cell>1000</cell></row>
+        <row bottom="minor">
+            <cell><m>d</m></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell></row>
+        </tabular></li>
+    <li><p>Plot the points from the table, and connect them with a straight line. Extend your line to the edges of the grid.</p></li></ol></p>
+          <image source="act5-5-1-1.png" width="70%"></image></li>
+
+  <li><p>The cost of a pane of glass depends upon its area. The area of a square pane of glass is given by <m>A = s^2</m>,  where <m>s</m> is the length of one side of the square, in feet, and <m>A</m> is the area of the square, in square feet. <ol marker="a.">
+      <li><p>Fill in the table for the given values of <m>s</m>.</p>
+            <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>s</m></cell>
+            <cell>0</cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+            <cell>5</cell></row>
+        <row bottom="minor">
+            <cell><m>A</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></li>
+    <li><p>Plot the points from the table, and connect them with a smooth curve. Extend your curve to the edges of the grid.</p></li></ol></p>
+        <image source="act5-5-1-1.png" width="70%"></image></li></ol></p>
+</activity>
+
+<note><p>Look back at the graphs in Activity 5.5.1, and notice the scales on the axes. We should choose scales to fit the values of the variables.<ul>
+  <li><p>In Problem 1, the total number of calories was 1200, so we scaled each axis by 100's from 0 to 1200.</p></li>
+  <li><p>In Problem 2, the values of <m>s</m> went for 0 to 5, while the values of <m>A</m> went from 0 to 25.  We scaled each axis to include those values.</p></li>
+</ul></p></note>
+
+<assemblage><title>Steps for Graphing an Equation</title>
+<p><ol> 
+  <li><p>Make a table of values. Choose values for the input variable and use the equation to find the values of the 
+  output variable.</p></li>
+  <li><p>Choose appropriate scales and label the axes.</p></li>
+  <li><p>Plot the points from the table, and connect them with a smooth curve.</p></li>
+</ol></p></assemblage>
+</subsection>
+
+<subsection><title>Reading a Graph</title>
+
+<p>Each point on the graph of an equation represents a pair of values for the variables that makes the equation true.</p>
+
+<example><statement><sidebyside widths="55% 43%" valigns="middle middle"><p>The graph shows possible values for the length <m>l</m> and width <m>w</m> of a rectangle with a given area.<ol marker="a.">
+  <li><p>What is the length of the rectangle if its width is 12 inches?</p></li>
+  <li><p>Complete the table.</p>
+      <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>w</m></cell>
+            <cell>2</cell>
+            <cell>4</cell>
+            <cell>2</cell>
+            <cell>6</cell>
+            <cell>8</cell></row>
+        <row bottom="minor">
+            <cell><m>l</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></li>
+  <li><p>Write an equation for the length of the rectangle in terms of its width.</p></li>
+</ol></p>
+    <image source="exm5-5-4-1.png"></image></sidebyside>
+</statement>
+
+<solution><p> <ol marker="a.">
+    <li><p>We find the point on the graph whose <m>w</m>-value is 12. The <m>l</m>-value of that point is 2, so the length of the rectangle is 2 inches.</p>
+          <image source="exm5-5-4-2.png" width="55%"></image></li>  
+    <li><p>Just as we did in part (a), we find points on the graph with the given <m>w</m>-values, then read the <m>l</m>-value of each point on the vertical scale. Here is the completed table.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>w</m></cell>
+            <cell>2</cell>
+            <cell>4</cell>
+            <cell>6</cell>
+            <cell>8</cell></row>
+        <row bottom="minor">
+            <cell><m>l</m></cell>
+            <cell>12</cell>
+            <cell>6</cell>
+            <cell>4</cell>
+            <cell>3</cell></row>
+        </tabular></li>
+        <li><p>Notice that the product of <m>l</m> and <m>w</m> is 24 for each pair of values. Or we can say that to find <m>l</m>, we divide 24 by <m>w</m>. The equation for the length of the rectangle is
+            <me>l = \dfrac{24}{w}</me></p></li>
+        </ol></p>
+</solution></example>
+
+<exercise><statement><p>Refer to your graph of <m>A=s^2</m> in Problem 2 of Activity 5.5.1.</p><ol marker="a.">
+  <li><p>Use the graph to answer the question:  You would like a square skylight to have an area of 20 square feet.  How long should the sides be?</p>
+    <p>(Hint:  Find the point on the graph with <m>A=20</m>.  What is the value of <m>s</m> at that point? You will have to estimate your answer.)</p></li>
+  <li><p>Now verify your answer by solving an equation.  (Hint:  What is the opposite operation for squaring?)</p></li>
+</ol></statement>
+
+<answer><p><ol marker="a.">
+    <li><p>About 4.5 feet</p></li>
+    <li><p><m>s = \sqrt{20} \approx 4.47~</m> ft</p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Reading a Graph</title>
+
+<p>If a car brakes suddenly while traveling at a high speed, its tires will leave skid marks on the road. The velocity <m>v</m>  of the car just before braking is given in miles per hour by
+    <me>v = 4.9 \sqrt{d}</me>
+where <m>d</m> is the length of the skid marks, in feet.</p>
+<ol>
+<li><p>Complete the table of values.</p>  
+    <p>Hint:   Follow theorder of operations:  take the square root of <m>d</m>, then multiply the result by 4.9.  Round your answers to the nearest whole number.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>d</m></cell>
+            <cell>0</cell>
+            <cell>100</cell>
+            <cell>200</cell>
+            <cell>300</cell>
+            <cell>400</cell>
+            <cell>500</cell>
+            <cell>600</cell></row>
+        <row bottom="minor">
+            <cell><m>v</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></li>
+<li><p>Plot the points from your table, and connect them with a smooth curve.</p>
+      <image source="act5-5-2.png" width="65%"></image></li>
+
+<li><p>If a car leaves skid marks 800 feet long, how fast was it going when it braked?</p>  
+
+    <p><m>\blert{\text{Evaluate} ~v~  \text{for 800.}~~~~ v = }</m></p></li>    
+
+<li><p>Verify your answer on the graph.</p>
+
+    <p><m>\blert{\text{Draw a dot at the point on the graph with 800.}}</m></p></li>
+
+<li><p>Use your graph to find the length of the skid marks left by a car traveling at 90 miles per hour when it braked.</p></li>
+</ol></activity>
+ 
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>bar graph</p></li>
+  <li><p>line graph</p></li>
+  <li><p>input variable</p></li>
+  <li><p>output variable</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-5-5.ptx" />
+
+</section>

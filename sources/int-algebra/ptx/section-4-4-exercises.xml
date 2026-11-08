@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-4-4-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 4.4</title>
+    
+<subexercises><title>Warm Up</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 1<ndash/>4, <ol marker="a.">
+    <li>Find the <m>x</m>-intercepts of the parabola.</li>
+    <li>Decide whether the parabola opens up or down.</li></ol>
+</p></introduction>
+
+<exercise number="1"><statement><p><m>y=x^2-2x-24</m></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>(-4,0),~(6,0)</m></li>
+    <li>up</li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><m>y=40-x^2</m></p></statement></exercise>
+
+<exercise number="3"><statement><p><m>y=12-(x-3)^2</m></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>(3 \pm \sqrt{12},0)</m></li>
+    <li>down</li></ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>y=x^2+3x+1</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5 and 6, write the set with interval notation, and graph the set on a number line.</p></introduction>
+
+<exercise number="5"><statement><p><ol marker="a.">
+    <li><m>0 \le x \lt 4</m></li>
+    <li><m>8 \gt x \gt 5</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>[0,4)</m></li>
+    <li><m>(5,8)</m></li></ol></p></answer></exercise>
+
+<exercise number="6"><statement><p><ol marker="a.">
+    <li><m>x \le 1</m></li>
+    <li><m>x \ge 3</m> or <m>x \le -3</m></li></ol></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercise number="7"><statement><p><ol marker="a.">
+    <li><p>Graph the equation <m>~y=x^2-2x-3~</m> on the grid.</p>
+        <sidebyside width="30%"><image xml:id="fig-xsqd-minus-2x-minus-3-grid"><description>grid</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6]
+                \draw[cyan] (-5,-7) grid (5,12);
+                \draw[black,thick, ->, >=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-7)--(0,12.6) node[above]{$y$};
+                \foreach \x in  {-4,-2,2,4} {
+                 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x in  {-6,-4,2,4,6,8,10,12} {
+                 \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></li>
+    <li>Darken the portion of the <m>x</m>-axis for which <m>y \gt 0</m>.</li>
+    <li>Solve the inequality <m>~x^2-2x-3\gt 0</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside width="30%"><image xml:id="fig-xsqd-minus-2x-minus-3"><description>grid</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6]
+                \draw[cyan] (-5,-7) grid (5,12);
+                \draw[black,thick, ->, >=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-7)--(0,12.6) node[above]{$y$};
+                \foreach \x in  {-4,-2,2,4} {
+                 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x in  {-6,-4,2,4,6,8,10,12} {
+                 \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \draw[samples=65,domain={-3:5},smooth,variable=\x,blue,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 -2* \x -3});
+                \draw[red, very thick, ->, >=stealth'] (-1,0)--(-5,0);
+                \draw[red, very thick, ->, >=stealth'] (3,0)--(5.5,0);
+                \draw[red, fill=white] (-1,0) circle (.2);
+                \draw[red, fill=white] (3,0) circle (.2);
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></li>
+    <li>See graph.</li>
+    <li><p><m>x \gt 3</m> or <m>x \lt -1</m></p></li></ol></p>
+    </answer></exercise>
+
+<exercise number="8"><statement><p><ol marker="a.">
+    <li><p>Graph the equation <m>~y=x^2+2x-8~</m> on the grid.</p>
+        <sidebyside width="30%"><image xml:id="fig-xsqd-plus-2x-minus-8-grid"><description>grid</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6]
+                \draw[cyan] (-5,-11) grid (5,8);
+                \draw[black,thick, ->, >=stealth'] (-5,0)--(5.5,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-11)--(0,8.6) node[above]{$y$};
+                \foreach \x in  {-2,4} {
+                 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \x in  {-10,-8,-6,-4,-2,2,4,6,8} {
+                 \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></li>
+    <li>Darken the portion of the <m>x</m>-axis for which <m>y \lt 0</m>.</li>
+    <li>Solve the inequality <m>~x^2+2x-8\lt 0</m></li></ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 9 and 10, use the graph to solve the equation and the inequality. </p></introduction>
+
+<exercise number="9"><statement>
+    <sidebyside width="90%">
+        <image xml:id="fig-xsqd-minus-3x-minus-180">
+        <description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-6,-5) grid (6,3);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,3.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in  {-4,2,4} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(50*\x)] in  {-4,-2,2} {
+         \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={-sqrt(1311/4)/5+3/10:sqrt(1311/4)/5+3/10}, smooth, variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{1/50*(5*\x-3/2)^2 - 711/200});
+        \node[right,text=red, fill=white, inner sep=1] at (1,-4) {$y=x^2-3x-180$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+<p><ol marker="a.">
+    <li><m>x^2-3x-180 = 0</m></li>
+    <li><m>x^2-3x-180 \gt 0</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>-12, 5</m></li>
+    <li><m>x \lt -12</m> or <m>x \gt 15</m></li></ol></p></answer></exercise>
+
+<exercise number="10"><statement>
+    <sidebyside width="90%">
+        <image xml:id="fig-175-minus-18x-minus-xsq">
+        <description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-8,-5) grid (5,7);
+        \draw[black,thick, ->, >=stealth'] (-8,0)--(5.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,7.6) node[above]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in  {-6,-4,2,4} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(50*\x)] in  {-4,-2,2,6} {
+         \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={-sqrt(506)/5-9/5:sqrt(506)/5-9/5}, smooth, variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-1/50*(5*\x+9)^2 + 256/50});
+        \node[text=red, fill=white, inner sep=1] at (-5.2,5.5) {$y=175-18x-x^2$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside>
+<p><ol marker="a.">
+    <li><m>175-18x-x^2 = 0</m></li>
+    <li><m>175-18x-x^2 \lt 0</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11 and 12, graph the parabola in the window
+    <md><mrow>\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+        <mrow>\text{Ymin} \amp = -25 \amp\amp \text{Ymax} = 25</mrow></md>
+Then use the graph to solve the inequalities. Write your answers in interval notation.</p></introduction>
+
+<exercise number="11"><statement><p><m>y=x^2-3x-18</m></p>
+    <p>For parts (c) and (d), it may be helpful to graph <m>Y_2=-8</m> as well.<ol marker="a.">
+    <li><m>x^2-3x-18 \gt 0</m></li>
+    <li><m>x^2-3x-18 \lt 0</m></li>
+    <li><m>x^2-3x-18 \le -8</m></li>
+    <li><m>x^2-3x-18 \ge -8</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>(-\infty,-3) \cup (6, \infty)</m></li>
+    <li><m>(-3,6)</m></li>
+    <li><m>[-2,5]</m></li>
+    <li><m>(-\infty,2] \cup [5,\infty)</m></li></ol></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>y=16-x^2</m></p>
+    <p>For parts (c) and (d), it may be helpful to graph <m>Y_2=7</m> as well.<ol marker="a.">
+    <li><m>16-x^2 \gt 0</m></li>
+    <li><m>16-x^2 \lt 0</m></li>
+    <li><m>16-x^2 \le 7</m></li>
+    <li><m>16-x^2 \ge 7</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13<ndash/>16, solve the inequality. It may be helpful to sketch a rough graph.</p></introduction>
+
+<exercise number="13"><statement><p><m>(x-3)(x+2) \gt 0</m></p></statement>
+<answer><p><m>x \lt -2</m> or <m>x \gt 3</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>(x+3)(x-4) \le 0</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>k(k-4)\ge 0</m></p></statement>
+<answer><p><m>0 \le k \le 4</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>t^2-36 \lt 0</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17<ndash/>24, solve the inequality algebraically. Write your answers in interval notation, and round to two decimal places if necessary.</p></introduction>
+
+<exercise number="17"><statement><p><m>q^2+9q+18 \lt 0</m></p></statement>
+<answer><p><m>(-6,-3)</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>28-3x-x^2 \ge 0</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>2z^2-7z \gt 4</m></p></statement>
+<answer><p><m>(-\infty, \dfrac{-1}{2}) \cup (4, \infty)</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>4x^2+x \ge -2x^2+2</m></p></statement></exercise>
+
+<exercise number="21"><statement><p><m>5-v^2 \lt 0</m></p></statement>
+<answer><p><m>(-\infty, -2.24) \cup (2.24, \infty)</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>x^2-4x+1 \ge 0</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>-3-m^2 \lt 0</m></p></statement>
+<answer><p>All <m>m</m></p></answer></exercise>
+
+<exercise number="24"><statement><p><m>w^2-w+4 \le 0</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 25 and 26, solve the inequality by graphing. Use the window setting
+    <md><mrow>\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4</mrow>
+        <mrow>\text{Ymin} \amp = -64 \amp\amp \text{Ymax} = 62</mrow></md>
+</p></introduction>
+
+<exercise number="25"><statement><p><m>x^2-1.4x-20 \lt 9.76</m></p></statement>
+<answer><p><m>-4.8 \lt x \lt 6.2</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>-6x^2-36x-20 \le 25.36</m></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="27"><statement><p>The <m>x</m>-intercepts of the graph of <m>~y=2x^2+bx+c~</m> are <m>-4.2</m> and <m>2.6</m>. What are the solutions of the inequality <m>~2x^2+bx+c \gt 0</m>?</p></statement>
+    <answer><p><m>(-\infty, -4.2) \cup (2.6, \infty)</m></p></answer></exercise>
+
+<exercise number="28"><statement><p>The <m>x</m>-intercepts of the graph of <m>~y=-x^2+bx+c~</m> are <m>-2 \pm \sqrt{17}.</m> Which of the following are solutions of the inequality <m>~-x^2+bx+c \ge 0</m>? <ol marker="a." cols="2">
+    <li><m>2</m></li>
+    <li><m>-6</m></li>
+    <li><m>\sqrt{17}</m></li>
+    <li><m>2\sqrt{17}</m></li></ol></p></statement></exercise> 
+
+<exercisegroup><introduction><p>For Problems 29 and 30, <ol marker="a.">
+    <li>Solve the problem by writing and solving an inequality.</li>
+    <li>Graph the equation and verify your solution on the graph.</li></ol></p></introduction>
+
+<exercise number="29"><statement><p>A fireworks rocket is fired from ground level.  Its height in feet <m>t</m> seconds after launch is given by 
+    <me>h=320t-16t^2</me>
+During what time interval is the rocket higher than 1024 feet?</p></statement>
+    <answer><p><m>4 \lt t \lt 16</m> sec</p></answer></exercise>
+
+<exercise number="30"><statement><p>The volume of a cylindrical can should be between 21.2 and 21.6 cubic inches.  If the height of the can is 5 inches, what values for the radius (to the nearest hundredth of an inch) will produce an acceptable can?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 31 and 32, recall that
+    <me>\text{Revenue} = \text{(number of items sold)} \cdot \text{( price per item)}</me></p></introduction>    
+
+<exercise number="31"><statement><p>Green Valley Nursery sells <m>120-10p</m> boxes of rose food per month at a price of  
+    <m>p</m> dollars per box. It would like to keep its monthly revenue from rose food over $350. In what range should it price a box of rose food?</p></statement>
+<answer><p><m>$5 \lt p \lt $7</m></p></answer></exercise>
+
+<exercise number="32"><statement><p>The Locker Room finds that it sells <m>1200-30p</m> sweatshirts each month when it charges <m>p</m> dollars per sweatshirt. It would like its revenue from sweatshirts to be over $9000 per month. In what range should it keep the price of a sweatshirt? </p></statement></exercise>
+</exercisegroup>
+
+<exercise number="33"><statement><p>A farmer inherits an apple orchard on which 60 trees are planted per acre. Each tree yields 12 bushels of apples. Experimentation has shown that for each tree removed per acre, the yield per tree increases by <m>\dfrac{1}{2}</m> bushel.<ol marker="a.">
+    <li>Write algebraic expressions for the number of trees per acre and for the yield per tree if <m>x</m> trees per acre
+    are removed.</li>
+    <li>Write a quadratic equation for the total yield per acre if <m>x</m> trees are removed per acre.</li>
+    <li>What is the maximum yield per acre that can be achieved by removing trees? How many trees per acre should be removed to achieve this yield?</li>
+    <li>How many trees should the farmer remove per acre in order to harvest at least 850 bushels per acre?</li>
+    <li>Graph your equation for total yield in the window
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 94</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 1000</mrow></md>
+        and use your graph to verify your answers to parts (e) and (f).</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>60-x;~~12+\dfrac{1}{2}x</m></li>
+    <li><m>y=(60-x)(12+\dfrac{1}{2}x)</m></li>
+    <li>882 bu; 18 trees</li>
+    <li>Between 10 and 26, inclusive</li></ol></p></answer></exercise>
+
+</subexercises>
+
+</exercises>

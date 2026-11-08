@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-4-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Negative Numbers</title>
+
+<sidebyside widths="50% 50%" valigns="middle middle">
+  <p><ul>
+    <li><p>Opposites</p></li>
+    <li><p>Signed Numbers</p></li>
+    <li><p>The Integers </p></li>
+    <li><p>Graphing on a Number Line</p></li>
+    <li><p>Indicating Change</p></li>
+  </ul></p>
+  
+  <image source="stockmarket.png"></image></sidebyside>
+
+  <subsection xml:id="negnos"><title>Opposites</title>
+
+  <p>The picture above shows part of the electronic display above a stock market trading floor. Notice the numbers in the column on the right.  Most of these are <term>negative numbers</term>, which tell us that the stock has decreased in value. The world of finance is just one of the areas where negative numbers are useful.</p>
+
+  <p>What are negative numbers?  In some situations, we can think of them as <term>opposites</term>.</p>
+
+<activity><title>Opposites</title>
+
+<p>Fill in the list below with opposites. The first two are done for you.
+
+    <md><mrow>1. ~~ \amp \text{Five feet above ground} \hphantom{000000000} \amp \amp \blert{\text{Five feet below ground}}</mrow>
+        <mrow>2. ~~ \amp \blert{\text{Earn }$20}  \hphantom{000000000}  \amp \amp \text{Spend }$20</mrow>
+        <mrow>3. ~~ \amp \text{Gain 15 yards}  \hphantom{000000000}  \amp \amp  <fillin characters="10"></fillin></mrow>
+        <mrow>4. ~~ \amp <fillin characters="10"></fillin>  \hphantom{000000000}  \amp \amp \text{Twelve degrees below zero}</mrow>
+        <mrow>5. ~~ \amp \text{Six pounds heavier}  \hphantom{000000000}  \amp \amp  <fillin characters="10"></fillin></mrow>
+        <mrow>6. ~~ \amp <fillin characters="10"></fillin>  \hphantom{000000000}  \amp \amp \text{Three weeks ago}</mrow>
+        <mrow>7. ~~ \amp \text{Win }$5  \hphantom{000000000}  \amp \amp  <fillin characters="10"></fillin></mrow>
+        <mrow>8. ~~ \amp <fillin characters="10"></fillin>  \hphantom{000000000}  \amp \amp \text{Four miles behind}</mrow>
+        <mrow>9. ~~ \amp \text{Climb 400 feet}  \hphantom{000000000}  \amp \amp  <fillin characters="10"></fillin></mrow>
+        <mrow>10. ~~ \amp <fillin characters="10"></fillin>  \hphantom{000000000}  \amp \amp \text{Two years younger}</mrow></md>
+</p></activity>
+
+<p>We can use a thermometer to visualize opposites as temperatures.</p>
+
+<sidebyside widths="60% 20%"><p><ul>
+  <li><p>On the thermometer at right, the opposite of five degrees above zero is five degrees below zero.</p></li>  
+  <li><p>Five degrees below zero is also called <term>negative</term> five degrees, and is written 5°.</p></li> 
+  <li><p>Temperatures below 0° are represented by <term>negative</term> numbers. Temperatures above zero degrees are called <term>positive</term>.</p></li>
+</ul></p>
+<!-- <image source="neg5deg.png"></image> -->
+<image xml:id="ThermometerMinus5"><description>Thermometer -5 deg</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=.15]
+  \def\r{1.2};
+  \def\R{1.5};
+  \def\w{1.8};
+  \def\t{1};
+  \def\W{2};
+  \draw[blue] (\r,-15) --++(0,26)  arc(0:180:\r) --++(0,-26) arc({180-acos(\r/\R}:400:{\R})--cycle;
+  \foreach \x in  {-14,..., 10} {
+    \draw[black] (\w,\x) --++(\t,0);
+    \draw[black] (-\w,\x) --++(-\t,0);
+    }
+    \foreach \x in  {-10,-5,..., 10} {
+    \draw[black] (\w,\x) --++(\W,0) node[right]{$\x$};
+    \draw[black] (-\w,\x) --++(-\W,0) node[left]{\small$\x$};
+  }
+  \filldraw[magenta] (0,-16) circle (1);
+  \filldraw[magenta] (-.7,-16) rectangle (.7,-5);
+  \end{tikzpicture}]]>
+</latex-image></image>
+</sidebyside> 
+
+<assemblage><title>Definition</title>
+<p> A <term>negative number</term> is a number less than zero. The symbol <m>\large -</m> in front of a number means negative or opposite of.</p></assemblage> 
+
+<example><statement><p>Sketch thermometers that show these temperatures.</p>
+  <p><ol marker="a." cols="2">
+    <li><p><m>14 \degree</m></p></li>
+    <li><p><m>-8  \degree</m></p></li>
+  </ol></p></statement>
+  
+  <solution><p><ol marker="a." cols="2">
+    <li>
+    <!-- <p><image source="pos14deg.png" width="42%"></image></p> -->
+    <image xml:id="Thermometerpos5" width="40%" margins="0% 60%"><description>Thermometer-5 deg</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.3]
+      \def\r{1.2};
+      \def\R{1.5};
+      \def\w{1.8};
+      \def\t{1};
+      \def\W{2};
+      \draw[blue] (\r,-10) --++(0,26)  arc(0:180:\r) --++(0,-26) arc({180-acos(\r/\R}:400:{\R})--cycle;
+      \foreach \x in  {-9,..., 15} {
+        \draw[black] (\w,\x) --++(\t,0);
+        \draw[black] (-\w,\x) --++(-\t,0);
+        }
+        \foreach \x in  {-5,0,..., 15} {
+        \draw[black] (\w,\x) --++(\W,0) node[right]{$\x$};
+        \draw[black] (-\w,\x) --++(-\W,0) node[left]{\small$\x$};
+      }
+      \filldraw[magenta] (0,-11) circle (1);
+      \filldraw[magenta] (-.7,-11) rectangle (.7,14);
+      \end{tikzpicture}]]>
+    </latex-image></image>
+    </li>
+    <li>
+    <!-- <p><image source="neg8deg.png" width="45%"></image></p> -->
+    <image xml:id="ThermometerNeg8" width="40%" margins="0% 60%"><description>Thermometer -8 deg</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.3]
+      \def\r{1.2};
+      \def\R{1.5};
+      \def\w{1.8};
+      \def\t{1};
+      \def\W{2};
+      \draw[blue] (\r,-15) --++(0,26)  arc(0:180:\r) --++(0,-26) arc({180-acos(\r/\R}:400:{\R})--cycle;
+      \foreach \x in  {-14,..., 10} {
+        \draw[black] (\w,\x) --++(\t,0);
+        \draw[black] (-\w,\x) --++(-\t,0);
+        }
+        \foreach \x in  {-10,-5,..., 10} {
+        \draw[black] (\w,\x) --++(\W,0) node[right]{$\x$};
+        \draw[black] (-\w,\x) --++(-\W,0) node[left]{\small$\x$};
+      }
+      \filldraw[magenta] (0,-16) circle (1);
+      \filldraw[magenta] (-.7,-16) rectangle (.7,-8);
+      \end{tikzpicture}]]>
+    </latex-image></image>      
+    </li>
+  </ol></p>
+  <p>In part (a), the red line stops at 14 degrees above zero. In part (b), the red line stops at 8 degrees below zero.</p></solution>
+</example>
+
+<exercise><statement><sidebyside widths="40% 20%"><stack><p>Fill in the thermometer at
+right to show a temperature of <m>-4  \degree</m>.</p>
+  <image source="snowman.png"></image></stack>
+  <!-- <image source="thermom.png"></image> -->
+  <image xml:id="Thermometer"><description>Thermometer</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=.15]
+  \def\r{1.2};
+  \def\R{1.5};
+  \def\w{1.8};
+  \def\t{1};
+  \def\W{2};
+  \draw[blue] (\r,-15) --++(0,26)  arc(0:180:\r) --++(0,-26) arc({180-acos(\r/\R}:400:{\R})--cycle;
+  \foreach \x in  {-14,..., 10} {
+    \draw[black] (\w,\x) --++(\t,0);
+    \draw[black] (-\w,\x) --++(-\t,0);
+    }
+  \foreach \x in  {-10,-5,..., 10} {
+    \draw[black] (\w,\x) --++(\W,0) node[right]{$\x$};
+    \draw[black] (-\w,\x) --++(-\W,0) node[left]{\small$\x$};
+  }
+    \end{tikzpicture}]]>
+</latex-image></image>
+</sidebyside></statement>
+
+  <answer><image xml:id="ThermometerMinus4" width="20%" margins="0% 80%"><description>Thermometer at -4</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=.15]
+  \def\r{1.2};
+  \def\R{1.5};
+  \def\w{1.8};
+  \def\t{1};
+  \def\W{2};
+  \draw[blue] (\r,-15) --++(0,26)  arc(0:180:\r) --++(0,-26) arc({180-acos(\r/\R}:400:{\R})--cycle;
+  \foreach \x in  {-14,..., 10} {
+    \draw[black] (\w,\x) --++(\t,0);
+    \draw[black] (-\w,\x) --++(-\t,0);
+    }
+    \foreach \x in  {-10,-5,..., 10} {
+    \draw[black] (\w,\x) --++(\W,0) node[right]{$\x$};
+    \draw[black] (-\w,\x) --++(-\W,0) node[left]{\small$\x$};
+  }
+  \filldraw[magenta] (0,-16) circle (1);
+  \filldraw[magenta] (-.7,-16) rectangle (.7,-4);
+  \end{tikzpicture}]]>
+</latex-image></image>
+</answer></exercise>
+
+<p>Here are some more examples of how negative numbers are used:</p>
+<p><ul> 
+  <li><p>Elevations above sea level are given by positive numbers, and elevations below sea level are given by negative numbers.</p></li>  
+  <li><p>If your checking account is overdrawn it has a negative balance.</p></li> 
+  <li><p>Gains and losses in football and other sports are recorded as positive and negative numbers.</p></li>
+  <li><p>In general, positive numbers denote gains, increases, profits, and the like, and negative numbers denote losses or decreases.</p></li>
+</ul></p>
+</subsection>
+
+<subsection><title>Signed Numbers</title>
+
+ <p>When we deal with positive and negative numbers together, we call them <term>signed numbers</term>.</p>
+
+<note><p>When we work with signed numbers, we use the symbol <m>\large +</m> to indicate a positive number. For example, <m>+3</m> means positive 3. However, unless some special distinction is needed, we usually write positive 3 as just 3. </p></note>
+
+<example><statement><p>Use a signed number to describe each situation.</p>
+<p><ol marker="a.">
+  <li><p>Death Valley is 273 feet below sea level.  What is its elevation?</p></li>
+  <li><p>The Very Big Corporation ended 2015 with a deficit of 8 billion dollars.  What is its net worth?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The elevation of Death Valley is <m>-273</m> feet.</p></li>
+  <li><p>The net worth of the Very Big Corporation is <m>-8</m> billion dollars.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write a sentence using a signed number to describe each situation.</p>
+<p><ol marker="a.">
+  <li><p>The water level in Pyramid Lake dropped 30 inches below normal.</p></li>
+  <li><p>Callie's checking account is overdrawn by $50.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>The water level in Pyramid Lake is <m>-30</m> inches.</p></li>
+  <li><p>The balance of Callie's checking account is <m>-50</m> dollars.</p></li>
+</ol></p></answer></exercise>
+
+<p>We can use a bar graph to display both positive and negative numbers. Bars that extend above the zero line indicate positive values, and bars that extend below the zero line indicate negative values. (See <xref ref="bargraph" text="custom">Section 2.3</xref> if you would like to review bar graphs.)</p>
+
+<example><statement><p>The bar graph below shows normal low temperatures, indegrees Celsius, for each month in Bismarck, North Dakota.</p>  
+    <image source="bismarcktemp.png" width="75%"></image>
+<p><ol marker="a.">
+  <li><p>What is normally the low temperature in December?</p></li>
+  <li><p>Which month normally has the coldest temperature?  What is the coldest temperature?</p></li>
+</ol></p></statement>
+
+<solution>
+  <p><ol marker="a.">
+  <li><p> The bar for December extends down to <m>-16</m>, so the normal low for December is <m>-16 \degree</m> Celsius.</p></li>
+  <li><p>January has the coldest temperature, <m>-19 \degree</m> Celsius.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Look at the bar graph in Example 4.4.6. What is the normal low temperature in Bismarck in February? Is it colder in Bismarck in February or in December?</p></li>
+  <li><p>Which two months have the same negative normal low temperature?  What is that temperature?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>-15 \degree</m> C; it is colder in December.</p></li>
+  <li><p>March and November, <m>-8 \degree</m> C</p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection xml:id="integers"><title>The Integers</title>
+
+<p>In Section 2.1 we used <term>number lines</term> to compare decimal numbers. Now we'll extend our number lines to include negative numbers. Here is an example. </p>
+    <image source="numberline.png" width="95%"></image>
+
+<assemblage><title>How to draw a number line</title>
+<p><ul>
+  <li><p>Begin by marking a position for zero in the middle of the line.</p></li> 
+  <li><p>Choose a length to represent one unit, and mark off the counting numbers (1, 2, 3, etc.) at equal intervals to the right of zero. These marks represent positive numbers.</p></li>
+  <li><p>Each positive number has its opposite or negative to the left of zero. For example, if we mark off three units to the left of zero, we come to the opposite of 3, or <m>-3</m>. The marks to the left of zero represent negative numbers.</p></li>  
+  <li><p>The arrow at either end means that the number line continues forever.</p></li>
+</ul></p>
+
+<p><me>\hphantom{000000000000}</me></p>
+
+<p>Draw your own number line here. Mark your line from <m>-5</m> to 5. Try to make sure that your marks are equally spaced.</p>
+
+<p><me>\hphantom{000000000000}</me></p>
+</assemblage>
+
+<assemblage><title>Definition</title>
+<p>The positive whole numbers, the negative whole numbers, and zero make up a set of numbers called the <term>integers</term>.</p>
+</assemblage>
+
+    <image source="integers.png" width="85%"></image>
+
+<example><statement><p>Which of the following numbers are integers?
+  <me> -16,~~~~ 3.5, ~~~~ \dfrac{20}{4}, ~~~~ -2 \dfrac{1}{4}, ~~~~ 0</me>
+</p></statement>
+
+<solution><p>The numbers <m> -16, ~~ \dfrac{20}{4} </m> (which equals 5), and <m>0</m> are integers.</p></solution></example>
+
+<exercise><statement><p>List all the integers between <m>-5</m> and <m>4</m>.</p></statement>
+
+<answer><m>-4,~-3,~-2,~-1,~0,~1,~2,~3</m></answer></exercise>
+ 
+<p>Which is colder, a temperature of <m>-5 \degree</m> or a temperature of <m>-10 \degree</m>?</p>  
+
+<p>Because <m>-10 \degree</m> is colder, it makes sense to say that <m>-10</m>  is less than <m>-5</m>.  On the number line, <m>-10</m> lies to the left of<m>-5,~</m> as shown below.</p> 
+
+    <image source="lessthan.png" width="90%"></image>
+
+<note><p>Numbers increase as we move from left to right on the number line.  For example, <m>-4</m>  is less than <m>-3</m>, <m>-2</m> is less than 0, and 3 is less than 6. In particular, every negative number is less than every positive number.</p></note>
+
+<p>In Section 1.4 we encountered <term>inequality symbols</term> to denote "less than" and "greater than".</p>
+
+<assemblage><title>Inequality Symbols</title>
+    <p><md><mrow> \amp \blert{\large \lt} \hphantom{0000} \text{ means } \hphantom{0000} \blert{\text{is less than}}</mrow>
+           <mrow> \amp \blert{\large \gt} \hphantom{0000}\text{ means } \hphantom{0000} \blert{\text{is greater than}}</mrow></md></p></assemblage>
+
+<p>For example,
+        <md><mrow> -8 \lt -6 \hphantom{0000} \amp \text{ means } \hphantom{00} \amp \amp -8 ~~~~ \text{is less than} -6</mrow>
+           <mrow> 2 \gt -5 \hphantom{0000} \amp \text{ means } \hphantom{00} \amp \amp 2 ~~~~ \text{is greater than} -5</mrow></md></p>
+
+<p>These two new symbols, <m>\lt</m> and <m>\gt</m>, are called inequality symbols, to distinguish them from the equality symbol, <m>=</m>.</p>
+
+<example><statement><p>Use inequality symbols to write the following phrases.</p>
+<p><ol marker="a.">
+  <li><p><m>-9</m> is less than <m>4</m></p></li>
+  <li><p><m>-1</m> is greater than <m>-12</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a." cols="2">
+  <li><p><m>-9 \lt 4</m></p></li>
+  <li><p><m>-1 \gt -12</m></p></li>
+</ol></p></solution></example>
+
+<note><p>We can show an inequality in two ways:
+  <me>-1 \gt -12 ~~~~ (\text{or } -1 ~~\text{ is greater than } -12)</me>
+means the same as
+  <me>-12 \lt -1 ~~~~ (\text{or } -12 ~~\text{ is less than } -1)</me></p></note>
+
+<exercise><statement><p>Use inequality symbols to write the phrase in two different ways: <m>~~~-2</m> is greater than <m>-10</m>.</p></statement>
+
+<answer><p><m>-2 \gt -10~</m>, or <m>~-10 \lt -2</m></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Graphing on a Number Line</title>
+
+<p>To show a particular number on the number line, we place a dot at its position. This is called the <term>graph</term> of the number.  Fractions, such as <m>2\dfrac{3}{4}</m> or <m>4.8</m>, are located between the integers on a number line.</p>
+
+<example><statement><p>Graph the following numbers on a number line.
+  <me>-6,~~~~ -2.5, ~~~~ 0, ~~~~ 4, ~~~~ \text{and} ~~~~ 5 \dfrac{1}{4} </me></p></statement>
+
+<solution><p>We graph fractions by placing dots between the appropriate integers on the number line. For example, we graph  <m>5 \dfrac{1}{4}</m>  between 5 and 6.  The completed graph is shown below.</p>
+
+  <image source="neg6to6.png" width="95%"></image></solution></example>
+
+<note><p>In Example 4.4.14, notice that <m>-2.5</m> is less than <m>-2</m>, so it is graphed to the left of <m>-2</m>, between <m>-2</m>  and <m>-3</m>.</p></note>
+
+<exercise><statement><p>Graph the numbers <m>-2\dfrac{3}{4}</m>,  0.2,  and  1.6 on the number line below.</p>
+
+  <!-- <image source="neg3to3.png" width="80%"></image> -->
+  <image xml:id="numberlineNeg3to3" width="80%"><description>Number line from -3 to 3</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=1.4]
+  \draw[black,thick, ->, >=stealth'] (-3.50,0)--(3.6,0);
+  \foreach \x  in  {-3,...,3} { 
+    \draw[black] (\x,.15) --++(0,-.15) node[below]{$\x$};
+  }
+      \foreach \x [evaluate=\x as \xi using ( 1/2+ \x )] in  {-3,...,2}{ 
+    \draw[black] (\xi,.075) --++(0,-.075);
+    }
+  \end{tikzpicture}]]>
+  </latex-image></image>
+</statement>
+<answer>
+  <image xml:id="numberlineNeg3to3with3points" width="80%"><description>Number line from -3 to 3 with -11/4, 0.2, and 1.6 plotted</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=1.4]
+    \draw[black,thick, ->, >=stealth'] (-3.50,0)--(3.6,0);
+    \foreach \x  in  {-3,...,3} { 
+      \draw[black] (\x,.15) --++(0,-.15) node[below]{$\x$};
+    }
+        \foreach \x [evaluate=\x as \xi using ( 1/2+ \x )] in  {-3,...,2}{ 
+      \draw[black] (\xi,.075) --++(0,-.075);
+      }
+    \filldraw[red] (-11/4,0) circle (.5mm) node[above, yshift=3]{$-2\dfrac{3}{4}$};
+    \filldraw[red] (0.2,0) circle (.5mm) node[above, yshift=3]{$0.2$};
+    \filldraw[red] (1.6,0) circle (.5mm) node[above, yshift=3]{$1.6$};
+    \end{tikzpicture}]]>
+    </latex-image></image>
+</answer></exercise>
+
+<note><p>The opposite of a negative number is a positive number. For example, the opposite of <m>-6</m> is 6. We write the opposite of <m>-6</m> as <m>-(-6)</m>,  so  
+  <me> -(-6) = 6</me>
+Can you use a number line to explain why this makes sense?</p></note>
+
+</subsection>
+
+<subsection><title>Indicating Change with Signed Numbers</title>
+
+<p>We can use negative numbers to indicate a decrease or a loss, and positive numbers to indicate an increase or a gain. For instance, if Simon lost $580 in a bad investment, we say that his financial worth changed by <m>-$580</m>.</p>
+
+<example><statement><p>The temperature was 6° yesterday evening and changed by <m>-10 \degree</m> overnight. What was the temperature in the morning?</p></statement>
+
+<solution><sidebyside widths="50% 20%" valigns="middle middle"><p>Start at 6° on the thermometer, as shown at right. Then count down 10° from there. This brings us to <m>-4 \degree</m>. The temperature in the morning was <m>-4 \degree</m>.</p>
+      <image source="down10.png"></image></sidebyside></solution></example>
+
+<exercise><statement><sidebyside widths="50% 20%" valigns="middle middle" margins="0% 10%"><p>The temperature was 5° in the evening yesterday and changed by <m>-11\degree</m> overnight. What was the temperature this morning? Illustrate your calculation on the thermometer at right.</p>  
+  <!-- <image source="thermom.png"></image> -->
+  <image source="Thermometer"></image>
+</sidebyside></statement>
+
+<answer><sidebyside widths="5% 28%" margins="0% 55%"><p><m>-6 \degree</m></p>
+  <image xml:id="Thermometer5toMinus6"><description>Thermometer drops 11 deg from 5 deg</description><latex-image>
+  <![CDATA[
+  \begin{tikzpicture} [scale=.15]
+  \def\r{1.2};
+  \def\R{1.5};
+  \def\w{1.8};
+  \def\t{1};
+  \def\W{2};
+  \draw[blue] (\r,-15) --++(0,26)  arc(0:180:\r) --++(0,-26) arc({180-acos(\r/\R}:400:{\R})--cycle;
+  \foreach \x in  {-14,..., 10} {
+    \draw[black] (\w,\x) --++(\t,0);
+    \draw[black] (-\w,\x) --++(-\t,0);
+    }
+    \foreach \x in  {-10,-5,..., 10} {
+    \draw[black] (\w,\x) --++(\W,0) node[right]{$\x$};
+    \draw[black] (-\w,\x) --++(-\W,0) node[left]{\small$\x$};
+  }
+  \filldraw[magenta] (0,-16) circle (1);
+  \filldraw[magenta] (-.7,-16) rectangle (.7,5);
+  \draw[black,->,>=stealth'] (7,5)--++(3,0)--++(0,-11) node[midway,right, align=center]{Down\\ $11^\circ$}--++(-6,0);
+  \end{tikzpicture}]]>
+  </latex-image></image></sidebyside>
+</answer></exercise>
+
+<p>An increase or decrease is called a <term>net change</term>.</p>
+
+<example><statement><p>Simon's Systech stock was worth $15 per share yesterday, but today its value is $9 per share.  What was the net change in the value of the stock?</p></statement>
+
+<solution><p>The stock lost $6 per share in value, so the net change in its value was <m>-$6</m> per share.</p></solution></example>
+
+<exercise><statement><p>Corinne's condo was worth $350,000 when she bought it, but she sold it for $335,000. What was the net change in its value?</p></statement>
+
+<answer><m>-$15,000</m></answer></exercise>
+
+<activity><title>Net Change</title>
+<p>Illustrate the change on the diagram or number line, then answer the question.</p>
+
+<p><ol>
+<li><p><ol marker="a." cols="2">
+  <li><p>The temperature was <m>-3\degree ~~</m> at 6 am and changed by <m>-10\degree ~~</m> over the next six hours. What was the temperature at noon?</p>
+   <image source="Thermometer" width="48%"></image></li>
+  <li><p>The temperature was <m>9\degree</m> yesterday afternoon and changed by <m>-9\degree</m> overnight. What was the temperature this morning?</p>
+   <image source="Thermometer" width="48%"></image></li>
+  </ol></p></li>
+<li><p><ol marker="a.">
+  <li><p>On Wednesday Brendan's checking account balance was $250. On Thursday he wrote a check for $400. What was his new balance?</p></li>
+  <li><p>On Friday Brendan deposited his paycheck of $600. What was his account balance then?</p>
+    <!-- <image source="neg500to500.png" width="90%"></image> -->
+    <image xml:id="neg500to500" width="90%"><description>From -500 to 500</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.95]
+    \draw[black,thick, ->,>=stealth'] (-5.3,0)--(5.6,0);
+    \foreach \x [evaluate=\x as \xi using int( 100* \x )]in  {-5,..., 5} {
+    \draw[black] (\x,.3) --++(0,-.3) node[below, yshift=-1] {$\xi$};
+    }
+    \end{tikzpicture}]]>
+    </latex-image></image>
+  </li>
+</ol></p></li>
+<li><p><ol marker="a.">
+  <li><p>At noon the Yellow Submarine was cruising at <m>-80</m> feet (that's a depth of 80 feet below seal level.)  After lunch they dove another 60 feet deeper. What was their new elevation?</p></li>
+  <li><p> Before dinner they rose 120 feet.  What was their elevation then?</p>
+    <!-- <image source="neg160to0.png" width="80%"></image> -->
+    <image xml:id="neg160to0" width="80%"><description>From -190 to 0</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.8]
+    \draw[black,thick, ->,>=stealth'] (-9.4,0)--(1.7,0);
+    \foreach \x in  {-9,..., 1} {
+    \draw[black] (\x,.3) --++(0,-.3);
+    }
+    \foreach \x [evaluate=\x as \xi using int( 20* \x )]in  {-8,-6,..., 0} {
+      \draw[black] (\x,.3) --++(0,-.3) node[below, yshift=-2] {$\xi$};
+      }
+      \end{tikzpicture}]]>
+    </latex-image></image>
+  </li>
+</ol></p></li>
+</ol></p></activity>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>negative number</p></li>
+  <li><p>positive number</p></li>
+  <li><p>signed numbers</p></li>
+  <li><p>integers</p></li>
+  <li><p>number line</p></li>
+  <li><p>inequality symbol</p></li>
+  <li><p>graph of a number</p></li>
+  <li><p>net change</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-4-4.ptx" />
+
+</section>

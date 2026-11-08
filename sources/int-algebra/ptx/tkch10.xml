@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <pretext><book> -->
+<section xml:id="tkchap10"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Chapter 10 Logarithmic Functions</title>
+
+
+
+<xi:include href="./tk-10-1.xml" />     <!-- Logarithmic Functions  -->
+<xi:include href="./tk-10-2.xml" />     <!-- Logarithmic Scales  -->
+<xi:include href="./tk-10-3.xml" />     <!-- The Natural Base  -->
+       
+
+</section>

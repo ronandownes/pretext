@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-7-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>Equations and Graphs</title>
+
+  <sidebyside widths="50% 40%" valigns="middle middle" margins="0% 5%"><p><ul>
+    <li><p>Solving Equations</p></li>
+    <li><p>The Cartesian Coordinate System</p></li>
+    <li><p>Plotting Points</p></li>
+    <li><p>Graphing Lines</p></li>
+    <li><p>Applications of Linear Equations</p></li>
+  </ul></p>
+      <image source="line.png"></image></sidebyside>
+
+<subsection><title>Solving Equations</title>
+
+<sidebyside widths="52% 40%" valigns="middle middle" margins="0% 5%"><p>The solid form of nitrogen is a useful substance. It is used as a refrigerant in medical research, and it can also be used to remove pollutants and metal ions from waste water. Nitrogen freezes into solid form at a temperature of <m>-210 \degree</m>F. </p><image source="nitrogen.png"></image></sidebyside>
+
+<p>Suppose your lab is kept at a temperature of <m>65 \degree</m>F, and your equipment can lower the temperature of nitrogen by <m>5 \degree</m>F per minute. How long will it take for nitrogen gas to solidify? The answer to this question is the solution of the equation
+    <me>65 - 5t = -210</me>
+In this section we'll solve equations that involve negative numbers.</p>
+
+<p>Recall that we solve an equation by undoing in reverse order the operations performed on the variable. To solve the equation
+    <me>2x+6 = 24</me>
+we first subtract 6 from both sides, then we divide both sides by 2.
+    <md><mrow> 2x + 6 \amp = 24 \amp \amp \blert{\text{Subtract 6 from both sides.}}</mrow>
+        <mrow>\underline{ ~~~~~~\blert{-6}} \amp = \underline{\blert{-6}}</mrow>
+        <mrow> 2x \amp = 18  \amp \amp \blert{\text{Divide both sides by 2.}}</mrow>
+        <mrow> </mrow>
+        <mrow>\dfrac{2x}{\blert{2}} \amp = \dfrac{18}{\blert{2}}</mrow>
+        <mrow> x \amp = 9</mrow></md>
+The solution is <m>x = 9</m>. If you like, you can review solving equations in <xref ref="solve1" text="custom">Section 2.5</xref> and <xref ref="solve2" text="custom">Section 5.4</xref>.</p>
+
+<assemblage><title>A Quick Refresher</title>
+
+<p>Consider the expression  
+      <me>8 - 2x</me>  
+We might naturally read this expression as "8 subtract <m>2x</m>," but we can also think of it as the sum of 8 and <m>-2x</m>.</p> 
+<p>To review this notion, see <xref ref="sum-of-signednos" text="custom"> Section 7.2 </xref>.</p>
+<p>In fact, we can think of any string of terms as a sum, where the <m>~+~</m> and <m>~-~</m> symbols tell us the sign of the term that follows.  For example,
+      <md><mrow>-5 - 4 ~~~~~~  \amp \text{is the sum of} ~~ -5 ~~ \text{and} ~~ -4</mrow>
+          <mrow>3a - 9 ~~~~~~  \amp \text{is the sum of} ~~~~~ 3a ~~ \text{and} ~~ -9</mrow>
+          <mrow>-7t + 6 ~~~~~~  \amp\text{is the sum of} ~~ -7t ~~ \text{and} ~~ +6</mrow></md></p>
+  
+  <p>We'll use this idea to solve equations involving negative numbers.</p></assemblage>
+
+  <example><statement><p>Solve the equation  <m>~8-2x = -6</m></p></statement>
+
+  <solution><p>We start by asking ourselves what operations have been performed on <m>x</m>.</p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by <m>-2</m></cell>
+            <cell>1. Subtract 8</cell></row>
+        <row bottom="minor">
+            <cell>2. Added 8</cell>
+            <cell>2. Divide by <m>-2</m></cell></row>
+        </tabular>
+
+<p>Now we carry out the plan.</p>
+<p>Step 1
+    <md><mrow>8 - 2x \amp = -6 ~~~~~~~~ \blert{\text{Subtract 8 from both sides.}}</mrow>
+        <mrow>\underline{\hphantom{00}\blert{-8}} \amp = \underline{\blert{-8}}</mrow>
+        <mrow>-2x \amp = -14</mrow></md></p>
+<p>Step 2
+    <md><mrow>\dfrac{-2x}{\blert{-2}} \amp = \dfrac{-14}{\blert{-2}} ~~~~~~~~\blert{\text{Divide both sides by}~-2.}</mrow>
+        <mrow>x \amp = 7</mrow></md></p>
+<p>The solution is 7.
+    <md><mrow> \text{Check:} ~~~~ 8-2(\alert{7}) \amp = -6 ?</mrow>
+          <mrow> 8 - 14 \amp = -6 ~~~~\blert{\text{True}}</mrow></md>
+The solution checks.</p></solution></example>
+
+<note><p>In Example 7.4.1, be sure to divide both sides by <m>-2</m>, not by 2. To reverse the operation "multiply by <m>-2</m>," we divide by the same number, <m>-2</m>.</p></note>
+
+<exercise><statement><p> Solve the equation  <m>~10 - 4x = 2</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+
+<p>Step 1:</p>
+
+<p>Step 2:</p>
+
+<p>Check:</p>
+</statement>
+
+<answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by <m>-4</m></cell>
+            <cell>1.Subtract 10</cell></row>
+        <row bottom="minor">
+            <cell>2. Added 10</cell>
+            <cell>2. Divide by <m>-4</m></cell></row>
+    </tabular>
+    <p><m>x=2</m></p></answer></exercise>
+
+<activity><title>Solving Equations</title>
+
+<p>Use a calculator as needed to solve the equations.</p>
+<p><ol>
+
+<li><p>Solve <m>~-4.4 = -6.8 - 0.2m</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+
+<p>Step 1:</p>
+
+<p>Step 2:</p>
+
+<p>Check:</p></li>
+
+<li><p>Solve <m>~-3.6 - 2.8t = -45.6</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular>
+
+<p>Step 1:</p>
+
+<p>Step 2:</p>
+
+<p>Check:</p></li>
+</ol></p></activity>
+
+<p>In Example 7.4.4, we use three steps to solve the equation.</p>
+
+<example><statement><p>Solve  <m>~15 = \dfrac{-3x}{4} - 9</m></p></statement>
+
+<solution><p>We analyze the equation and formulate a plan for its solution.</p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by <m>-3</m></cell>
+            <cell>1. Add 9</cell></row>
+        <row bottom="minor">
+            <cell>2. Divided by 4</cell>
+            <cell>2. Multiply by 4</cell></row>
+        <row bottom="minor">
+            <cell>3. Subtracted 9</cell>
+            <cell>3. Divide by <m>-3</m></cell></row>
+        </tabular>
+
+<p>Now we carry out the plan.</p>
+
+ <p><md><mrow>15 \amp = \dfrac{-3x}{4}- 9 ~~~~~~~~ \blert{\text{Add 9 to both sides}}</mrow>
+        <mrow>\underline{\hphantom{00}\blert{+9}} \amp = \underline{\blert{+9}}</mrow>
+        <mrow>24 \amp = \dfrac{-3x}{4}~~~~~~~~~~~ \blert{\text{Multiply both both sides by 4.}}</mrow>
+        <mrow>\blert{4}(24) \amp = \left(\dfrac{-3x}{4}\right)\blert{4}</mrow>
+        <mrow>96 \amp = -3x ~~~~~~~~~~~~ \blert{\text{Divide both sides by}~ -3.}</mrow>
+        <mrow>\dfrac{96}{\blert{-3}} \amp = \dfrac{-3x}{\blert{-3}}</mrow>
+        <mrow>-32 \amp = x</mrow></md></p>
+
+<p>The solution is <m>~-32</m>. (You should check the solution.)</p></solution></example>
+
+<exercise><statement><p>Solve  <m>~\dfrac{5-2x}{6} = -3</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        <row bottom="minor">
+            <cell>3. </cell>
+            <cell>3. </cell></row>
+        </tabular>
+<p>Step 1:</p>
+<p>Step 2:</p>
+<p>Check:</p></statement>
+
+<answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by <m>-2</m></cell>
+            <cell>1. Multiply by 6</cell></row>
+        <row bottom="minor">
+            <cell>2. Added 5</cell>
+            <cell>2. Subtract 5</cell></row>
+        <row bottom="minor">
+            <cell>3. Divided by 6</cell>
+            <cell>3. Divide by <m>-2</m></cell></row>
+        </tabular>
+    <p><m>x=11.5</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>The Cartesian Coordinate System</title>
+
+<p>Now that you can work with signed numbers, you can study graphs that use both positive and negative numbers. Recall that a graph shows the relationship between the values of two variables.</p> 
+  
+<p>We used a number line to keep track of operations on signed numbers. To display the values of two variables we need two number lines. We draw a second number line perpendicular to the first one, as shown below. The values on this second number line increase from bottom to top, and the two lines intersect at the zero points of each.</p> 
+
+<sidebyside widths="51% 40%" valigns="middle middle"><p>The horizontal number line is called the <term><m>x</m>-axis</term>, and the vertical number line is the <term><m>y</m>-axis</term>. The point where the two axes intersect is called the <term>origin</term>. The two axes divide the plane into four regions called <term>quadrants</term>, which are numbered 1 through 4 counter-clockwise around the origin. </p>
+    <image source="cartesian.png"></image></sidebyside>
+
+<p>This system for locating points in the plane was inspired by the French philosopher and mathematician Rene Descartes, who lived in the seventeenth century. It is called a <term>Cartesian coordinate system</term> in his honor.</p>
+</subsection>
+
+<subsection><title>Plotting Points</title>
+
+<p>Now we can use both positive and negative values when we graph an equation. We'll begin by plotting points on a Cartesian coordinate system. In <xref ref="plotpoints" text="custom">Section 5.5</xref> we plotted points from a table of values for two variables, and the same method works here.</p> 
+
+<assemblage><title>How to Plot Points</title>
+<p><ul>
+  <li><p>The first variable (the <term>input variable</term>) tells us the location of the point in the horizontal direction.</p></li> 
+  <li><p>The second variable (the <term>output variable</term>) tells us its location in the vertical direction.</p></li>
+</ul></p></assemblage>
+
+<p>We'll plot each pair of values in the table below as a point on a graph.</p>
+
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~x~</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-5</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>-3</m></cell></row>
+        <row bottom="minor">
+            <cell><m>~y~</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>0</m></cell></row>
+      </tabular> 
+
+<sidebyside widths="51% 40%" valigns="middle middle"><stack><p>The first pair of values is <m>x=2</m> and <m>y=6</m>,  which we write as <m>(2, 6)</m>.  We call the numbers 2 and 6 the <term>coordinates</term> of the point;  2 is the <term><m>x</m>-coordinate</term> and 6 is the <term><m>y</m>-coordinate</term>. The coordinates of a point describe its location in the plane.</p>
+
+<p>To plot the point <m>(2, 6)</m> we first find 2 on the <m>x</m>-axis (to the right of the origin), and from there move 6 units directly up, as shown at right.</p></stack><image source="coords1.png"></image></sidebyside>  
+
+<p>The expression (2, 6) is called an <term>ordered pair</term>, because the order of the numbers is important. The first number in the pair is always the value of the input variable, and the second number is the value of the output variable.</p>    
+
+<assemblage><title>Coordinates</title>
+ <p>The location of a point in the plane is given by an ordered pair  <m>(a, b)</m>, where <m>a</m> is the <term><m>x</m>-coordinate</term> of the point, and <m>b</m> is the <term><m>y</m>-coordinate</term>.</p></assemblage>
+
+<p>The signs of the coordinates tell us which direction to move when plotting the point. <ul>
+    <li><p>Starting at the origin, we move along the <m>x</m>-axis to the right if the <m>x</m>-coordinate is positive, and to the left if the <m>x</m>-coordinate is negative.</p></li>
+    <li><p> From this location on the <m>x</m>-axis, we move up if the <m>y</m>-coordinate is positive, and down if the <m>y</m>-coordinate is negative.</p></li>
+</ul></p>
+
+<example><statement><p>Plot the points <m>(-3,4)</m> and <m>(-5,-1)</m>.</p></statement>
+
+<solution><p>To plot <m>(-3, 4)</m>, we move 3 units to the left of the origin, then 4 units up. This point lies in the second quadrant. To plot <m>(-5, -1)</m>, we move 5 units to the left, then 1 unit down into the third quadrant.  Both points are shown below.</p>
+        <image source="coords2.png" width="85%"></image></solution></example>
+
+<exercise><statement><sidebyside widths="40% 35%" valigns="middle middle" margins="15% 10%"><p>Plot the point <m>(4,-3).</m></p>
+    <image source="coords3.png" ></image></sidebyside></statement>
+
+<answer><image source="exer-7-4-3.png" width="40%"></image></answer></exercise>
+
+<note><p>The signs of the coordinates determine in which of the four quadrants the point will appear.  If one (or both) of its coordinates is zero, the point lies on one of the two axes.</p></note> 
+
+<example><statement><p>Plot the points <m>(0,-2)</m> and <m>(-3,0)</m>.</p></statement>
+
+<solution><sidebyside widths="40% 40%" valigns="middle middle"><p>If the <m>x</m>-coordinate is 0, the point lies on the <m>y</m>-axis, like the point <m>(0,-2)</m> shown at right. If the <m>y</m>-coordinate is 0, the point lies on the <m>x</m>-axis, like the point <m>(-3,0)</m>.</p> 
+    <image source="coords4.png"></image></sidebyside></solution></example>
+
+<exercise><statement><sidebyside widths="50% 45%"><p>Plot the following points on the grid.<ol marker="a." cols="2">
+  <li><m>(-6,2)</m></li>
+  <li><m>(-5,-7)</m></li>
+  <li><m>(8,-4)</m></li>
+  <li><m>(1,7)</m></li>
+  <li><m>(0,-9)</m></li>
+  <li><m>(-2,0)</m></li>
+</ol></p>
+    <image source="grid10by10.png"></image></sidebyside></statement>
+
+<answer><image source="exer-7-4-4.png" width="60%"></image></answer></exercise>
+</subsection>
+
+<subsection><title>Graphing Lines</title>
+
+<sidebyside widths="50% 40%" margins="0% 5%" valigns="middle middle"><stack>
+      <p>At the start of this section we looked at an equation for freezing nitrogen. If <m>T</m> represents the temperature of the nitrogen after it has been cooling for <m>t</m> minutes, we have the equation
+          <me>T = 65 - 5t</me>
+      The graph of this equation looks like this. (You can review graphing equations in <xref ref="grapheqn" text="custom">Section 5.5</xref>.)</p>
+      </stack>
+    <image xml:id="Fig-nitrogen">
+        <description>Decreasing line of Temperature vs time</description><latex-image>
+        <![CDATA[
+            \begin{tikzpicture} [scale=.25]
+            \draw[cyan] (0,-10) grid (20,15);
+            \draw[black,thick, ->, >=stealth'] (0,0)--(21,0) node[right]{$t$};
+            \draw[black,thick, ->, >=stealth'] (0,-10)--(0,16) node[above]{$T$};
+            \foreach \t  in {5,10,15,20} {
+                \draw[black] (\t,.2)--++(0,-.4) node[below, yshift=-2,,fill=white, inner sep=0] {$\t$};
+            }
+            \foreach \T [evaluate=\T as \Ts using int(5*\T)] in {-10,-5,5,10,15} {
+                \draw[black] (.2,\T)--++(-.4,0) node[left, xshift=0] {$\Ts$};
+            }
+            \draw[red,thick, ->, >=stealth'] (0,13) -- (20,-7);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<p>Remember that each point on the graph tells us something about the variables involved. For instance, the point <m>(0,65)</m> tells us that the temperature of the nitrogen started at <m>65\degree</m>F.</p> 
+
+<example><statement><p>What does the point <m>(10, 15)</m> tell us?</p></statement>
+
+<solution><p>At the point <m>(10, 15)</m> we have <m>t=10</m> and <m>T=15</m>. After 10 minutes the temperature of the nitrogen is <m>15\degree</m>F.</p></solution></example>
+
+<exercise><statement><p>When does the nitrogen reach a temperature of <m>0\degree</m>F?</p></statement>
+
+<answer><p>At <m>t=13</m>, or at 13 minutes.</p></answer></exercise>
+
+<p>The simplest and most useful type of equation relating two variables has a very simple and useful graph. These equations are called <term>linear equations</term> because their graphs are straight lines.</p>
+
+<assemblage><title>Linear Equations</title>
+<p>An equation of the form
+  <me>\blert{y = ax + b}</me>    
+where <m>a</m> and <m>b</m> are constants, is a <term>linear equation</term>. Its graph is a straight line.</p></assemblage>
+
+<p>In <xref ref="grapheqn" text="custom">Section 5.5</xref> we used three steps to graph an equation.</p>
+
+<assemblage><title>Steps for Graphing an Equation</title>
+<p><ol> 
+  <li><p>Make a table of values. Choose values for the input variable and use the equation to find the values of the 
+  output variable.</p></li>
+  <li><p>Choose appropriate scales and label the axes.</p></li>
+  <li><p>Plot the points from the table, and connect them with a smooth curve.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Graph the equation  <m>~y = -2x + 6</m></p></statement>
+
+<solution><p><m>\blert{\text{Step 1} ~~}</m>  We begin by making a table of values. We should choose both positive and negative values for the input variable, <m>x</m>. Then we calculate the output values by substituting the <m>x</m>-values into the equation.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>x</m></cell>
+            <cell>Calculation</cell>
+            <cell><m>y</m></cell>
+            <cell>Ordered Pair</cell></row>
+        <row bottom="minor">
+            <cell><m>-3</m></cell>
+            <cell><m>y = -2(\alert{-3}) + 6 = 12</m></cell>
+            <cell><m>12</m></cell>
+            <cell><m>(-3,12)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>-2</m></cell>
+            <cell><m>y = -2(\alert{-2}) + 6 = 10</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>(-2,10)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>-1</m></cell>
+            <cell><m>y = -2(\alert{-1}) + 6 = 8</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>(-1,8)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>0</m></cell>
+            <cell><m>y = -2(\alert{0}) + 6 = 6</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m>(0,6)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>1</m></cell>
+            <cell><m>y = -2(\alert{1}) + 6 = 4</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>(1,4)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>2</m></cell>
+            <cell><m>y = -2(\alert{2}) + 6 = 2</m></cell>
+            <cell><m>12</m></cell>
+            <cell><m>(2,2)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>3</m></cell>
+            <cell><m>y = -2(\alert{3}) + 6 = 0</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>(3,0)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>4</m></cell>
+            <cell><m>y = -2(\alert{4}) + 6 = -2</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>(4,-2)</m></cell></row>
+        <row bottom="minor">
+            <cell><m>\uparrow</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\uparrow</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        <row bottom="minor">
+            <cell><line>we choose</line> <line>these values</line></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><line>we calculate</line> <line>these values</line></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+      </tabular></p>
+
+  <sidebyside widths="50% 40%" valigns="middle middle"><stack><p><m>\blert{\text{Step 2} ~~}</m>Next, we sketch a Cartesian coordinate system and scale the axes. For this graph, we choose scales from 5 to 5 on the <m>x</m>-axis, and from 5 to 15 on the <m>x</m>-axis.</p> 
+
+  <p><m>\blert{\text{Step 3} ~~}</m>Then we plot each of the points in the table and connect them with a smooth curve.</p>  
+  <p>You should find that all of the points lie on a straight line, as shown in the figure.</p></stack>
+    <image source="exmgraphline.png"></image></sidebyside>
+</solution></example>
+
+<note><p>If we choose more <m>x</m>-values and plot more points, we will find that the line extends forever in either direction. To indicate this we draw an arrow head at each end of the line, as shown in the figure.</p></note>
+
+<exercise><statement><p>Graph the equation  <m>~y = 3x - 9</m></p> 
+
+<sidebyside widths="50% 35%" valigns="middle middle">
+  <stack><p><m>\blert{\text{Step 1} ~~}</m> Complete the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>x</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell></row>
+        <row bottom="minor">
+            <cell><m>y</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell></row>
+        </tabular>
+  <p><m>\blert{\text{Step 2} ~~}</m> Label the scales on the axes.</p>
+
+  <p><m>\blert{\text{Step 3} ~~}</m> Plot the points from the table and connect them with a straight line.</p></stack>
+
+    <image source="exergrid.png"></image></sidebyside></statement>
+
+    <answer><image source="exer-7-4-5.png" width="30%"></image></answer></exercise>
+
+<activity><title>Graphing Lines</title>
+
+<p>How many points do we need to plot in order to draw an accurate graph? Perhaps you can see that to graph a line we really only need two points (and a ruler or straight-edge). It is a good idea to plot three points, though, as a check.</p>
+
+<p><ol>
+  <li><sidebyside widths="50% 40%" valigns="middle middle">
+  <stack><p>Graph the equation  <m>~y = 2x+4</m></p>
+
+    <p><m>\blert{\text{Step 1} ~~}</m> Complete the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>x</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell></row>
+        <row bottom="minor">
+            <cell><m>y</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell></row>
+        </tabular>
+  <p><m>\blert{\text{Step 2} ~~}</m> Label the scales on the axes.</p>
+
+  <p><m>\blert{\text{Step 3} ~~}</m> Plot the points from the table and connect them with a straight line. Extend your line to the edges of the grid.</p></stack>
+
+    <image source="act-7-4-1grid.png"></image></sidebyside>  
+
+    <p>If the coefficient of <m>x</m> is a fraction, we can simplify the calculations by choosing <m>x</m>-values with the fraction in mind.</p></li>
+
+  <li><p>Graph the equation  <m>~y = \dfrac{3}{4}x - 2</m></p>
+  <sidebyside widths="45% 50%" valigns="middle middle">
+  <stack><p><m>\blert{\text{Step 1} ~~}</m> Complete the table.</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>x</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>4</m></cell></row>
+        <row bottom="minor">
+            <cell><m>y</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell></row>
+        </tabular>
+  <p><m>\blert{\text{Step 2} ~~}</m> Label the scales on the axes.</p>
+
+  <p><m>\blert{\text{Step 3} ~~}</m> Plot the points from the table and connect them with a straight line. Extend your line to the edges of the grid.</p></stack>
+
+    <image source="act-7-4-2grid.png"></image></sidebyside></li>
+  </ol></p></activity>   
+</subsection>
+
+<subsection><title>Applications of Linear Equations</title>
+
+<p>Linear equations describe many common situations.</p>
+
+<example><statement><p>Byron borrowed $6000 from his uncle to help pay for his college education. Now that he has graduated and has a job, he is paying back the loan at $100 per month. (His uncle is not charging Byron any interest on the loan.)<ol marker="a.">  
+  <li><p>Write an equation showing the amount of money, <m>y</m>, that Byron still owes his uncle after <m>x</m> months.</p></li>
+  <li><p>Graph your equation.</p></li>
+  <li><p>Use your graph to find out how long will it take Byron to pay off his debt.</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a."> 
+  <li><p>Byron subtracts $100 from his debt each month, so
+        <me>y = 6000 - 100x</me></p></li>
+  <li><p>We choose values for <m>x</m> and make a table showing several points on the graph. Then we plot the points and connect them with a straight line.</p>
+
+  <sidebyside widths="30% 50%" margins="5% 10%" valigns="middle middle"><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~x~~</m></cell>
+            <cell><m>y</m></cell></row>
+        <row><cell><m>0</m></cell>
+            <cell><m>6000</m></cell></row>
+        <row><cell><m>10</m></cell>
+            <cell><m>5000</m></cell></row>
+        <row><cell><m>20</m></cell>
+            <cell><m>4000</m></cell></row>
+        </tabular>
+            <image source="applin.png"></image></sidebyside></li>
+
+  <li><p>Byron has paid off his debt when the amount he still owes his uncle is $0, or when <m>y=0</m>. On the graph, the point with <m>y</m>-coordinate 0 has <m>x</m>-coordinate 60. Thus, it will take Byron 60 months, or 5 years, to repay his uncle.</p></li>
+</ol></p></solution></example>
+
+<note><p>Note You can check your answer to part (c) of the previous Example by solving the equation  
+      <me>6000 - 100x = 0</me></p></note>
+
+<exercise><statement><p>Chloe's All-Night Diner buys coffee in 50-pound containers. They use 2 pounds of coffee per day. 
+<ol marker="a.">
+  <li><p>Write an equation for the number of pounds of coffee, <m>C</m>, left <m>d</m> days after they open a new container.</p></li>
+  <li><p>Graph your equation on the grid.</p>
+
+      <sidebyside widths="30% 50%" margins="5% 10%" valigns="middle middle"><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~d~~</m></cell>
+            <cell><m>C</m></cell></row>
+        <row><cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row><cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular>
+            <image source="Chloe.png"></image></sidebyside></li>
+  <li><p>Chloe's orders more coffee when they have 8 pounds left in the container. Use your graph to find out how long that will take.</p></li>
+  <li><p>Write and solve an equation to verify your answer to part (c).</p></li>
+</ol></p></statement>
+
+<answer><ol marker="a.">
+  <li><p><m>C = 50 - 2d</m></p></li>
+  <li><p><image source="Chloeans.png" width="50%"></image></p></li>
+  <li><p>21 days</p></li>
+  <li><p><m>8 = 50 - 2d</m></p></li>
+</ol></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>Cartesian coordinate system</p></li>
+  <li><p><m>x</m>-axis</p></li>
+  <li><p><m>y</m>-axis</p></li>
+  <li><p>origin</p></li>
+  <li><p>quadrants</p></li>
+  <li><p>input variable</p></li>
+  <li><p>output variable</p></li>
+  <li><p><m>x</m>-coordinate</p></li>
+  <li><p><m>y</m>-coordinate</p></li>
+  <li><p>ordered pair</p></li>
+  <li><p>linear equation</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-7-4.ptx" />
+</section>

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="SimTri"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Similar Triangles</title>
+    <idx><h>similar triangles</h></idx>
+
+<subsection><title>Congruent Triangles</title>
+    <idx><h>congruent triangles</h></idx>
+
+<p>Two triangles are <term>congruent</term><idx><h>congruent triangles</h></idx> if they have exactly the same size and shape. This means that their corresponding angles are equal, and their corresponding sides have the same lengths, as shown below.</p>
+
+    <image width="55%" xml:id="congtri"><description>congruent triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (1.3,1.8);
+            \coordinate (C) at (4.5,.25);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north east, xshift=0, yshift=0]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south , xshift=0, yshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor= west, xshift=0, yshift=0]{$C$};
+
+            \filldraw[ black, shift={(7 cm, 3 cm)}, rotate=-65]  (0,0) circle (.2pt) node[anchor=east, xshift=0, yshift=0]{$D$};
+            \filldraw[black, shift={(7 cm, 3 cm)}, rotate=-65] (1.3,1.8) circle (.2pt) node[anchor=west , xshift=0, yshift=0]{$E$};
+            \filldraw[black, shift={(7 cm, 3 cm)}, rotate=-65] (4.5,.25) circle (.2pt) node[anchor=north west, xshift=0, yshift=0]{$F$};
+
+            \draw (A)--(B) node[left, midway, xshift=-3,yshift=1,text=blue] {$c$} --(C) node[right, midway, xshift=3,yshift=2,text=blue] {$a$}--cycle node[below, midway, yshift=-3,text=blue] {$b$};
+
+            \draw[black, shift={(7 cm, 3 cm)}, rotate=-65]  (0,0)--(1.3,1.8) node[above, midway, xshift=0,yshift=3] {\color{blue}$f$};
+            \draw[black, shift={(7 cm, 3 cm)}, rotate=-65]  (1.3,1.8)--(4.5,.25) node[right, midway, xshift=3,yshift=2] {\color{blue}$d$};
+            \draw[black, shift={(7 cm, 3 cm)}, rotate=-65]  (0,0)--(4.5,.25) node[left, midway, xshift=-2, yshift=-3] {\color{blue}$e$};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+
+<example><statement>
+<p>The two triangles below are congruent. List the corresponding parts, and find the angles <m>\theta</m>, <m>\phi</m>, and <m>\chi</m>, and side <m>z</m>.</p>
+    <image width="50%" xml:id="exam1-2-1"><description>congruent triangles with vertical angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (-4,-1.5 );
+            \coordinate (B) at (-4,0);
+            \coordinate (C) at(0,0);
+            \coordinate (D) at (4,0);
+            \coordinate (E) at(4,1.5);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north east, xshift=0, yshift=0]{$A$};
+            \draw[red] ($ (A)+(0,.3)$) arc(90:atan(1.5/4):.3) node[above, midway,xshift=2]{$\phi$};
+
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=0, yshift=0]{$B$};
+            \draw[blue] (B) rectangle +(0.25,-0.25);
+
+            \filldraw[black] (C) circle (.2pt) node[anchor=south, xshift=0, yshift=0]{$C$};
+            \draw[red] ($ (C)+({180+atan(3/8)}:1.5)$) arc(180+atan(3/8):180:1.5) node[left, midway,yshift=-2]{$\theta$};
+            \draw[red] ($ (C)+({atan(3/8)}:1.5)$) arc(atan(3/8):0:1.5) node[right, midway,yshift=2]{$25\degree$};
+
+            \filldraw[black] (D) circle (.2pt) node[anchor=north west, xshift=0, yshift=0]{$D$};
+            \draw[blue] (D) rectangle +(-0.25,0.25);
+
+
+            \filldraw[black] (E) circle (.2pt) node[anchor=south west, xshift=0, yshift=0]{$E$};
+            \draw[red] ($ (E)+(-90:.3)$) arc(-90:-180+atan(1.5/4):.3) node[below, midway,xshift=-2]{$\chi$};
+
+            \draw[black, thick] (A) -- (B) node [left, midway, xshift=-2, text=blue]{$9$} --(D) -- (E) node[right, midway, text=blue]{$z$};
+            \draw[black, thick] (A) -- (E)  ;
+        \end{tikzpicture}]]>
+    </latex-image></image>left</statement>
+
+<solution><p> In these triangles, <m>\angle B=\angle D</m> because they are both right angles, and <m>\angle BCA=\angle DCE</m>  because they are vertical angles, so <m>\theta =25\degree</m>. The third angles, <m>\angle A</m> and <m>\angle E</m>, must also be equal, so <m>\phi = \chi =65\degree</m>. (Do you see why?)  The sides opposite each pair of corresponding angles are equal, so <m>AB=DE</m>, <m>BC=CD</m> and <m>AC=CE</m>. In particular, we find that <m>z=9</m>.</p>
+</solution></example>
+
+<exercise><statement>
+    <sidebyside widths="50% 30%" valigns="middle middle" margins="0% 10%">
+<p>The two triangles at right are congruent. Find the values of <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m>.</p>
+    <!--<image source="photos/exer1-2-1.png"><description>two cong triangles</description></image>-->
+    <image xml:id="exer1-2-1"><description>two congruent triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0 );
+            \coordinate (B) at (4,0);
+            \coordinate (C) at (3.6,1.3);
+            \draw[red] (0:1.2) arc(0:atan(13/36):1.2) node[right,midway, yshift=1]{$20\degree$};
+            \draw[red] ($(B)+(180:.5)$) arc(180:180-atan(13/4):.5) node[midway, left, xshift=1, yshift=1]{$75\degree$};
+            \draw[red] ($(C)+({180+atan(13/36)}:.25)$) arc(180+atan(13/36):360-atan(13/4):.25) node[below, midway, xshift=-1]{$\alpha$};
+
+            \draw (A)--(B)--(C)--cycle node[above, midway, yshift=3] {\color{blue}$16$};
+
+            \draw[black, shift={(5.5 cm, -1.5 cm)}, rotate=85]  (0,0)--(4,0);
+            \draw[black, shift={(5.5 cm, -1.5 cm)}, rotate=85]  (4,0)--(3.6,1.3) ;
+            \draw[black, shift={(5.5 cm, -1.5 cm)}, rotate=85]  (0,0)--(3.6,1.3) node[left, midway, xshift=0, yshift=2] {\color{blue}$16$};
+            \draw[red, shift={(5.5 cm, -1.5 cm)}, rotate=85] (3.365,1.215) arc(180+atan(13/36):360-atan(13/4):.25)node[below, midway, xshift=3]{$\gamma$};
+            \draw[red, shift={(5.5 cm, -1.5 cm)}, rotate=85] (3.7,0) arc(180:180-atan(13/4):.3) node[midway, below, xshift=-2]{$\beta$};
+            \draw[red, shift={(5.5 cm, -1.5 cm)}, rotate=85] (0:1.7) arc(0:atan(13/36):1.7) node[above,midway, yshift=4]{$20\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<answer><p><m>\alpha = 180 - (75+20) = 85\degree, ~\beta = 75\degree, ~\gamma = 85\degree</m></p>
+</answer></exercise>
+
+<p>Recall that the <term>altitude</term><idx><h>altitude</h><h>of a triangle</h></idx><idx><h>triangle</h><h>altitude</h></idx> of a triangle is the segment from one vertex of the triangle perpendicular to the opposite side.</p>
+
+<example xml:id="example-equilateral-triangle-altitude"><statement>
+<p>Show that the altitude of an equilateral triangle divides it into two congruent right triangles.</p>
+    <image width="60%" xml:id="exam1-2-2"><description>equilateral triangle with altitude</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3,0);
+            \coordinate(C) at (60:3);
+            \draw[red] (.4,0) arc (0:60:.4) node[right, midway, yshift=2]{$60\degree$};
+            \draw[red] ($ (B)+(-.4,0)$) arc (180:120:.4) node[left, midway, xshift=2, yshift=2]{$60\degree$};
+            \draw[red] ($ (C)+(240:.4)$) arc (240:300:.4) node[below, midway]{$60\degree$};
+
+            \draw[black] (A) -- (B) --(C) node [above right, midway,yshift=-4] {\color{blue}$8$} -- cycle  node [above left, midway,yshift=-4] {\color{blue}$8$};
+            \coordinate (A2) at (3.5,0);
+            \coordinate (B2) at (6.5,0);
+            \coordinate(C2) at (5,2.6);
+            \coordinate(D2) at (5,0);
+            \draw[red] ($(A2)+(.4,0)$) arc (0:60:.4) node[right, midway, yshift=2]{$60\degree$};
+            \draw[red] ($ (B2)+(-.4,0)$) arc (180:120:.4) node[left, midway, xshift=2, yshift=2]{$60\degree$};
+
+            \draw[blue] (D2) rectangle +(.25,.25);
+            \draw[black] (A2) --  (B2) ;
+            \draw[gray] (C2) --  (D2) ;
+            \draw[black] (A2) --  (C2) node [above left, midway,yshift=-4] {\color{blue}$8$};
+            \draw[black] (C2) --  (B2) node [above right, midway,yshift=-4] {\color{blue}$8$};
+
+            \coordinate (A3) at (7,0);
+            \coordinate (B3) at (10,0);
+            \coordinate(C3) at (8.5,2.6);
+            \coordinate(D3) at (8.5,0);
+
+            \draw[red] ($(A3)+(.4,0)$) arc (0:60:.4) node[right, midway, yshift=2]{$60\degree$};
+            \draw[red] ($ (B3)+(-.4,0)$) arc (180:120:.4) node[left, midway, xshift=2, yshift=2]{$60\degree$};
+            \draw[red,<->,>=stealth'] ($ (C3)+(240:1.1)$) arc (240:270:1.1) node[below, midway, xshift=-2, yshift=-1]{$30\degree$};
+            \draw[red,<->,>=stealth'] ($ (C3)+(270:1.1)$) arc (270:300:1.1) node[below, midway, xshift=2, yshift=-1]{$30\degree$};
+
+            \draw[blue] (D3) rectangle +(.25,.25);
+            \draw[black] (A3) --  (D3)  node [below, midway] {\color{blue}$4$};
+            \draw[black] (B3) --  (D3)  node [below, midway] {\color{blue}$4$};
+            \draw[gray] (C3) --  (D3) ;
+            \draw[black] (A3) --  (C3) node [above left, midway,yshift=-4] {\color{blue}$8$};
+            \draw[black] (C3) --  (B3) node [above right, midway,yshift=-4] {\color{blue}$8$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+
+<solution><p> Consider for example an equilateral triangle of side 8 inches, as shown above. The altitude is perpendicular to the base, so each half of the original triangle is a right triangle. Because each right triangle contains a <m>60\degree</m> angle, the remaining angle in each triangle must be <m>90\degree - 60\degree = 30\degree</m>.  Both triangles have a side of length 8 between the angles of 30° and 60°, so they are congruent. (Consequently, the short sides of the congruent triangles are equal, so each is half the original base.)</p>
+</solution></example>
+
+<p> The triangles in the previous example are a special type of right triangle called <m>30\degree</m><ndash/><m>60\degree</m><ndash/><m>90\degree</m> triangles. Notice that in these triangles, the <term>leg</term><idx><h>leg</h></idx> opposite the <m>30\degree</m> angle is half the length of the <term>hypotenuse</term><idx><h>hypotenuse</h></idx>.</p>
+
+<exercise><statement>
+    <sidebyside widths="65% 25%" margins="0% 5%" valigns="middle middle">
+<p>The diagonal of a <term>parallelogram</term> divides it into two congruent triangles, as shown at right. List the corresponding parts of the two triangles, and explain why each pair is equal.</p>
+    <image xml:id="exer1-2-2"><description>parallelogram with diagonal</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.63]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (.8,2.3);
+            \coordinate(C) at (4.5,2.3);
+            \coordinate (D) at (3.7,0);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north east]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=south west]{$C$};
+            \filldraw[black] (D) circle (.2pt) node[anchor=north west]{$D$};
+            \draw[black,  thick] (A) -- (B) --( C) --(D)-- cycle;
+            \draw[black] (A) --  (C);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<answer><p><m>\angle BCA = \angle CAD</m> and <m>\angle BAC = \angle ACD</m> because they are alternate interior angles.  If two pairs of angles in a triangle are equal, so is the third pair, so <m>\angle B = \angle D</m>. <m>BC = AD</m> and <m>AB = CD</m> because they are opposite sides of a parallelogram, and <m>AC = AC</m>.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Similar Triangles</title>
+
+<p> Two triangles are <term>similar</term><idx><h>similar triangles</h></idx><idx><h>triangle</h><h>similar</h></idx><idx><h>triangle</h><h>similar</h><seealso>similar triangles</seealso></idx> if they have the same shape but not necessarily the same size. The corresponding angles are equal, and the corresponding sides are <term>proportional</term>. We can think of one similar triangle as an enlargement or a reduction of the other. (See the figures below.)</p>
+
+<sidebyside widths="33% 25% 33%">
+    <image xml:id="simtri"><description>similar triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.63]
+            \coordinate (A) at (1.8,0);
+            \coordinate (B) at (-.2,1.2);
+            \coordinate(C) at (0,0);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north west]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north east]{$C$};
+
+            %\draw[black,  thick] (A) -- (B) --( C) -- cycle;
+            \draw[black,  thick] (A) --  (C) node[below, midway] {$\color{blue}b$};
+            \draw[black,  thick] (A) --  (B) node[above, midway] {$\color{blue}c$};
+            \draw[black,  thick] (B) --  (C) node[left, midway] {$\color{blue}a$};
+
+            \filldraw[black, shift={(1.3 cm, 2 cm)},scale=1.8] (1.8,0) circle (.2pt) node[anchor=north west]{$A'$};
+            \filldraw[black, shift={(1.3 cm, 2 cm)},scale=1.8] (-.2,1.2) circle (.2pt) node[anchor=south east, yshift=-2]{$B'$};
+            \filldraw[black, shift={(1.3 cm, 2 cm)},scale=1.8] (0,0) circle (.2pt) node[anchor=north east]{$C'$};
+
+            \draw[black,  thick, shift={(1.3 cm, 2 cm)},scale=1.8]  (0,0)--(1.8,0) node[below, midway, xshift=0,yshift=0] {$\color{blue}b '$};
+            \draw[black,  thick, shift={(1.3 cm, 2 cm)}, scale=1.8]  (1.8,0)--(-.2,1.2) node[right, midway, xshift=0,yshift=6] {$\color{blue}c '$};
+            \draw[black,  thick, shift={(1.3 cm, 2 cm)}, scale=1.8]  (0,0)--(-.2,1.2) node[left, midway, xshift=-2, yshift=-3] {$\color{blue}a '$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><md>
+        <mrow>\angle A \amp= \angle A'</mrow>
+        <mrow>\angle B \amp= \angle B'</mrow>
+        <mrow>\angle C \amp= \angle C'</mrow></md>
+    <me>\frac{a}{a'}=\frac{b}{b'}=\frac{c}{c'}</me></p>
+    <image xml:id="simtriproj"><description>similar triangles projected</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.54]
+            \coordinate (A) at (1.8,0);
+            \coordinate (B) at (-.2,1.2);
+            \coordinate(C) at (0,0);
+            \coordinate(O) at (-1.44,-2.22);
+
+            \filldraw[black] (A) circle (.2pt) node[anchor=north west]{$A$};
+            \filldraw[black] (B) circle (.2pt) node[anchor=south east, xshift=0]{$B$};
+            \filldraw[black] (C) circle (.2pt) node[anchor=north east]{$C$};
+
+            \draw[black,  thick] (A) --  (C);
+            \draw[black,  thick] (A) --  (B) ;
+            \draw[black,  thick] (B) --  (C) ;
+
+            \filldraw[black, shift={(1.3 cm, 2 cm)},scale=1.8] (1.8,0) circle (.2pt) node[anchor=north west]{$A'$};
+            \filldraw[black, shift={(1.3 cm, 2 cm)},scale=1.8] (-.2,1.2) circle (.2pt) node[anchor=south east, yshift=-2]{$B'$};
+            \filldraw[black, shift={(1.3 cm, 2 cm)},scale=1.8] (0,0) circle (.2pt) node[anchor=north east]{$C'$};
+
+            \draw[black,  thick, shift={(1.3 cm, 2 cm)},scale=1.8]  (0,0)--(1.8,0) ;
+            \draw[black,  thick, shift={(1.3 cm, 2 cm)}, scale=1.8]  (1.8,0)--(-.2,1.2) ;
+            \draw[black,  thick, shift={(1.3 cm, 2 cm)}, scale=1.8]  (0,0)--(-.2,1.2) ;
+
+            \draw[gray, dashed] (O) --  +(3.9,6);
+            \draw[gray, dashed] (O) --    +(2.5,6.84) ;
+            \draw[gray, dashed] (O) --    +(6.4,4.44) ;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p> To decide whether two triangles are similar, it turns out that we need to verify only one of the two conditions for similarity, and the other condition will be true automatically.</p>
+
+<assemblage><title>Similar Triangles</title>
+    <idx><h>triangle</h><h>similar</h></idx><idx><h>similar triangles</h></idx>
+<p>Two triangles are similar if either
+    <ol marker="1.">
+        <li> their corresponding angles are equal, or</li>
+        <li> their corresponding sides are proportional.</li>
+</ol> </p></assemblage>
+
+<example><statement>
+    <p>Which of the pairs of triangles shown below are similar?</p>
+    <p><ol marker="a." cols="2">
+        <li><!-- <image source="photos/exam1-2-3a.png"><description>sim triangles</description></image>-->
+    <image width="60%" xml:id="exam1-2-3a"><description>similar triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (1.6,0);
+            \coordinate(C) at (1.6,-1.2);
+
+            \draw[blue, thick] (B) rectangle +(-0.25,-0.25);
+
+            \draw[black,  thick] (A) --  (C) node[below left, midway] {\color{blue}$15$};
+            \draw[black,  thick] (A) --  (B) node[above, midway] {\color{blue}$12$} ;
+            \draw[black,  thick] (B) --  (C) node[right, midway] {\color{blue}$9$};
+
+            \draw[blue,  thick, shift={(3.5 cm, .1 cm)},scale=0.67, rotate=-90]  (1.6,0) rectangle +(-0.375,-0.375);
+            \draw[black,  thick, shift={(3.5 cm, .1 cm)},scale=0.67, rotate=-90]  (0,0)--(1.6,0) node [right, midway] {\color{blue}$8$};
+            \draw[black,  thick, shift={(3.5 cm, .1 cm)},scale=0.67, rotate=-90]   (1.6,0)--(1.6,-1.2) node [below, midway] {\color{blue}$6$};
+            \draw[black,  thick, shift={(3.5 cm, .1 cm)},scale=0.67, rotate=-90]   (0,0)--(1.6,-1.2) node [above left, midway, xshift=2, yshift=-3] {\color{blue}$10$};
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+        <li><!-- <image source="photos/exam1-2-3b.png"><description>not sim triangles</description></image>-->
+    <image width="70%" xml:id="exam1-2-3b"><description>not similar triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (1.8,0);
+            \coordinate(C) at (0,2.4);
+
+            \draw[black,  thick] (A) --  (C) node[below left, midway] {\color{blue}$4$};
+            \draw[black,  thick] (A) --  (B) node[below, midway] {\color{blue}$3$} ;
+            \draw[black,  thick] (B) --  (C) node[above right, midway] {\color{blue}$5$};
+
+            \coordinate (A2) at (2.4,-0.2);
+            \coordinate (B2) at (4.8,-0.2);
+            \coordinate(C2) at (2.6,2.6);
+
+            \draw[black,  thick] (A2) --  (C2) node[below left, midway] {\color{blue}$5$};
+            \draw[black,  thick] (A2) --  (B2) node[below, midway] {\color{blue}$4$} ;
+            \draw[black,  thick] (B2) --  (C2) node[above right, midway] {\color{blue}$6$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+        <li><!-- <image source="photos/exam1-2-3c.png"><description>sim triangles 42 deg</description></image>-->
+    <image width="80%" xml:id="exam1-2-3c"><description>similar triangles 42 degrees</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (-1.6,-2);
+            \coordinate (C) at (1.8,-1.44);
+
+            \draw[black,  thick] (A) --  (B) -- (C) -- cycle ;
+            \draw[blue,  thick]  (A) -- ++(-.16,-.2) -- ++(.2,-.16) -- ++(.16,.2);
+            \draw[blue, thick] (-1.3,-1.6) arc ({atan(1.25)}:{atan(.1647}:.5) node [above right, midway] {$42\degree$};
+
+            \coordinate (A2) at (2.5,-1.71);
+            \coordinate (B2) at (.6,0);
+            \coordinate (C2) at (4.04,0);
+
+            \draw[black,  thick] (A2) --  (B2) -- (C2) -- cycle ;
+            \draw[blue,  thick]  (A2) -- ++(-.14,.126) -- ++(.126,.14) -- ++(.14,-.126);
+            \draw[blue, thick] (3.54,0) arc (180:228:.5) node [below left, midway] {$48\degree$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+</ol></p></statement>
+
+<solution><p> 
+<ol marker="a.">
+    <li><p>We will check whether the corresponding sides are proportional. We compute the ratios of the corresponding sides, making sure to write each ratio in the same order, <m>\dfrac{\text{larger triangle}}{\text{smaller triangle}}</m>. (The other order, <m>\dfrac{\text{smaller triangle}}{\text{larger triangle}}</m>, would also work, as long as we use the same order for all the ratios.)</p>
+
+    <p><m>~~~~~\text{shorter legs:}~~\dfrac{9}{6}~~~~~</m> longer legs: <m>~~\dfrac{12}{8}~~~~~</m> hypotenuses: <m>~~\dfrac{15}{10}</m></p> 
+
+    <p> Because all of these ratios are equal to <m>1.5</m>, the triangles are similar.</p></li>
+    <li>The ratios of corresponding sides are not equal:  the ratio of the longest sides is <m>\dfrac{6}{5}</m>, but the ratio of the smallest sides is <m>\dfrac{4}{3}</m>. The triangles are not similar.</li>
+    <li>The missing angle of the first right triangle is <m>48\degree</m>, and the missing angle in the second right triangle is <m>42\degree</m>, so three pairs of angles match. The triangles are similar.</li>
+</ol></p></solution></example>
+
+<exercise><statement>
+<p>Are the triangles below similar? Explain why or why not in each case.</p>
+    <p><ol marker="a." cols="2">
+        <li><image width="80%" xml:id="exer1-2-3a"><description>similar triangles by sides</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (-.5,2.3);
+            \coordinate (C) at (1.8,0);
+
+            %\draw[black,  thick] (A) --  (B) -- (C) -- cycle ;
+            \draw[black, thick] (A) --  (B) node[left,midway] {\color{blue}$6$} ;
+            \draw[black, thick] (A)  -- (C) node[below,midway] {\color{blue}$4$} ;
+            \draw[black, thick] (B) -- (C) node[above ,midway,xshift=2] {\color{blue}$8$} ;
+
+            \coordinate (A2) at (4.5,2);
+            \coordinate (B2) at (5.2,0);
+            \coordinate (C2) at (1.3,1.6);
+
+            %\draw[black,  thick] (A2) --  (B2) -- (C2) -- cycle ;
+            \draw[black, thick] (A2) --  (B2) node[right,midway] {\color{blue}$6$} ;
+            \draw[black, thick] (A2)  -- (C2) node[above,midway] {\color{blue}$9$} ;
+            \draw[black, thick] (B2) -- (C2) node[below,midway,xshift=-2] {\color{blue}$12$} ;
+
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+        <li><!-- <image source="photos/exer1-2-3b.png"><description>sim triangles by angles</description></image>-->
+    <image width="55%" xml:id="exer1-2-3b"><description>similar triangles by angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (-.6,2.4);
+            \coordinate (C) at (1.27,2.6);
+
+            \draw[black,  thick] (A) --  (B) -- (C) -- cycle ;
+            \draw[red, thick] (-.121,.485) arc (104:64:0.5) node [above, midway, xshift=3, yshift=3] {\color{red}$40\degree$};
+            \draw[red, thick] (1.05,2.15) arc (244:184:0.5) node [below left, midway, xshift=0, yshift=2] {\color{red}$60\degree$};
+
+            \draw[red, thick,shift={(1 cm, .5 cm)}, rotate=-50, scale=.8] (-.121,.485) arc (104:64:0.5) node [above, midway, xshift=10, yshift=-2] {\color{red}$40\degree$};
+            \draw[red, thick, shift={(1 cm, .5 cm)}, rotate=-50, scale=.8] (1.05,2.15) arc (244:184:0.5) node [below left, midway, xshift=2, yshift=11] {\color{red}$60\degree$};
+
+            \draw[black, shift={(1 cm, .5 cm)}, rotate=-50, scale=.8]  (0,0)--(-.6,2.4);
+            \draw[black, shift={(1 cm, .5 cm)}, rotate=-50, scale=.8]  (-.6,2.4)--(1.27,2.6) ;
+            \draw[black, shift={(1 cm, .5 cm)}, rotate=-50, scale=.8]  (0,0)--(1.27,2.6) ;
+
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+</ol></p></statement>
+
+<answer><p>a.  The triangles are similar because <m>~\displaystyle\frac{4}{6} = \frac{6}{9} = \frac{8}{12}</m>, so the sides are proportional.</p>
+<p>b.  The third angle in both triangles is <m>80\degree</m>, so the triangles are similar because their corresponding angles are equal.</p></answer></exercise>
+
+<note><p>In part (b) of the previous exercise, note that the third angle in each triangle must be <m>80\degree</m>, because the sum of the angles is <m>180\degree</m>.  Thus, we need only show that <em>two</em> pairs of angles are equal to show that two triangles are similar.</p></note>
+</subsection>
+
+<subsection><title>Using Proportions with Similar Triangles</title>
+    <idx><h>similar triangles</h><h>proportions</h></idx>
+
+<p> The figure in the next example shows a parallelogram <m>ABCD</m> and two triangles, <m>\triangle ABE</m> and <m>\triangle FCE</m>. Can we find the unknown lengths <m>x</m> and <m>y</m> in the larger triangle? </p> 
+ 
+ <p> First note that two pairs of corresponding angles in the triangles are equal: <m>\angle BEA</m> and <m>\angle FEC</m> are vertical angles, and <m>\angle EFC</m> and <m>\angle BAE</m> are alternate interior angles. But if two pairs of corresponding angles are equal, then the third pair must be equal also. This means that the two triangles are similar, and we can use the fact that their corresponding sides are proportional to find <m>x</m> and <m>y</m>.</p>
+
+<example><statement><sidebyside widths="55% 30%" valigns="middle middle"> 
+<p>Find the value of <m>x</m> in the figure at right.</p>
+        <!--<image source="photos/exam1-2-4.png"><description>parallelogram triangles</description></image>-->
+    <image xml:id="exam1-2-4"><description>parallelogram with triangles</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture}[scale=.7]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (.7,3);
+        \coordinate (C) at (4.3,3);
+        \coordinate (D) at (3.6,0);
+        \coordinate (E) at (3.27,3);
+        \coordinate (F) at (4.58,4.2);
+
+        \draw[black,  thick] (A) --  (B) -- (C) -- (D) -- cycle ;
+        \draw[black,  thick] (F) -- (C) node[right, midway] {\color{blue}$6$} ;
+        \draw[black,  thick] (F) -- (E) node[left, midway, yshift=2] {\color{blue}$8$} ;
+        \draw[black,  thick] (A) -- (E) node[left, midway,yshift=2] {\color{blue}$y$} ;
+        \draw[black,  thick] (C) -- (E) node[below, midway] {\color{blue}$4$} ;
+        \draw[black,  thick] (B) -- (E) node[below, midway] {\color{blue}$x$} ;
+        \draw[black,  thick] (B) -- (A) node[left, midway] {\color{blue}$15$} ;
+
+        \filldraw[black] (A) circle (.2pt) node[anchor=north east]{$A$};
+        \filldraw[black] (B) circle (.2pt) node[anchor= east]{$B$};
+        \filldraw[black] (C) circle (.2pt) node[anchor=west]{$C$};
+        \filldraw[black] (D) circle (.2pt) node[anchor=north west]{$D$};
+        \filldraw[black] (E) circle (1.8pt) node[anchor=south east]{$E$};
+        \filldraw[black] (F) circle (.2pt) node[anchor= west]{$F$};
+
+    \end{tikzpicture}]]>
+</latex-image></image></sidebyside>   
+</statement>
+
+<solution><p> We see that <m>x</m> is the length of the shortest side in <m>\triangle ABE</m>. We know the short side in <m>\triangle FCE</m> and the lengths of the medium sides in each triangle. If we form the ratios of the short sides and the medium sides, we obtain the following proportion.
+
+        <me>\dfrac{\text{larger triangle}}{\text{smaller triangle}}:~~~~~\dfrac{x}{4}~~~=~~~\dfrac{15}{6}</me>
+
+To solve the proportion, we cross-multiply to get</p>
+ <p><md>
+     <mrow>6x\amp =4(15)=60 \amp \amp \blert{\text{Divide both sides by 6.}}</mrow>
+     <mrow>x\amp =\frac{60}{6} = 10  \amp \amp</mrow>
+ </md></p>
+</solution></example>
+
+<warning><p>Remember that “cross-multiplying” is a short-cut technique for solving proportions. It does not work for other operations involving fractions.</p></warning>
+
+<exercise><statement><p>Find the value of <m>y</m> in the previous example.</p></statement>
+
+<answer><p>Setting the ratios of corresponding sides equal, we find <m>\dfrac{y}{8} = \dfrac{15}{6}</m>, and solving for <m>y</m> yields <m>y=20</m>.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Similar Right Triangles</title>
+    <idx><h>similar triangles</h><h>right triangles</h></idx>
+    <idx><h>right triangle</h><h>similar</h></idx>
+
+<p>If two <em>right</em> triangles have one pair of corresponding acute angles with the same measure, then the triangles are similar. We can use this fact about right triangles to make indirect measurements.</p>
+
+<example><statement>
+<p>Delbert would like to know the height of a certain building. He gets Francine to hold up a 5-foot pole near the building and measures the length of its shadow. The shadow of the pole is 3 feet long, and the shadow of the building is 12 feet long.</p>
+    <image width="60%" source="photos/exam1-2-5"><description>building</description></image>
+<p><ol marker="a.">  
+        <li>Use similar triangles to write a proportion involving the height of the building.</li>
+        <li>Solve the proportion to find the height of the building.</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">  
+    <li><p>In the figure above we see two right triangles: One triangle is formed by the building and  its shadow, and the other by the pole and its shadow. Because the light rays from the sun are parallel, the two angles at the tips of the shadows are equal. Thus, the two right triangles are similar, and their corresponding sides are proportional. The ratios of heights and bases in the two triangles yield the proportion
+
+        <me>\dfrac{\text{larger triangle}}{\text{smaller triangle}}:~~~~~\dfrac{h}{5}~~~=~~~\dfrac{12}{3}</me></p></li>
+
+    <li><p>To solve the proportion, we cross-multiply to get
+            <md><mrow>3h\amp =5(12)=60 \amp \amp \blert{\text{Divide both sides by 3.}}</mrow>
+                <mrow>h\amp =\frac{60}{3} = 20  \amp \amp</mrow></md>
+        The building is 20 feet tall.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>In Example 1.19 we created a 30°-60°-90° triangle in which the shorter leg was 4 inches and the hypotenuse was 8 inches. The hypotenuse of another 30°-60°-90° triangle is 5 feet. What is the length of the side opposite the 30° angle?</p></statement>
+
+<answer><p>The side opposite the 30° angle is the shorter leg, which is half the length of the hypotenuse. So the its length is 2.5 feet.</p>
+</answer></exercise>
+</subsection>
+
+<subsection><title>Overlapping Triangles</title>
+    <idx><h>triangle</h><h>overlapping</h></idx>
+
+<p>In some applications, similar triangles may share a side or an angle.</p>
+
+<example><statement><sidebyside widths="55% 25%" valigns="middle middle" margins="0% 10%">
+<p>Identify two similar triangles in the figure at right, and write a proportion to find <m>H</m>.</p>       
+    <image xml:id="exam1-2-6"><description>overlapping triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.8]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (2.4,1);
+            \coordinate (C) at (2.4,0);
+            \coordinate (D) at (3.6,1.5);
+            \coordinate (E) at (3.6,0);
+
+            \draw[blue, thick] (C) rectangle +(-.25, .25);
+            \draw[blue, thick] (E) rectangle +(-.25, .25);
+            \draw[black,  thick] (A) --  (C) node[below,midway] {\color{blue}$24$} ;
+            \draw[black,  thick] (B) -- (C) node[right, midway] {\color{blue}$10$} ;
+            \draw[black,  thick] (C) -- (E) node[below, midway, yshift=0] {\color{blue}$12$} ;
+            \draw[black,  thick] (D) -- (E) node[right, midway,yshift=0] {\color{blue}$H$} ;
+            \draw[black,  thick] (A) -- (D)  ;
+
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p> The two triangles overlap, sharing the marked angle, as shown below. Because each triangle also has a right angle, they are similar.</p>
+
+    <image width="55%" xml:id="exam1-2-6soln"><description>separated triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (2.4,1);
+            \coordinate (C) at (2.4,0);
+            \coordinate (D) at (6.6,1.5);
+            \coordinate (E) at (6.6,0);
+            \coordinate (A2) at (3,0);
+
+            \draw[blue, thick] (C) rectangle +(-.25, .25);
+            \draw[blue, thick] (E) rectangle +(-.25, .25);
+            \draw[black,  thick] (A) -- (B)  ;
+            \draw[black, thick] (A) --  (C) node[below,midway] {\color{blue}$24$};
+            \draw[black,  thick] (B) -- (C) node[right, midway] {\color{blue}$10$} ;
+
+            \draw[red,thick] (0.48,-0.13) arc (-15:35:0.5);
+
+            \draw[black,  thick] (A2) -- (E) node[below, midway, xshift=5] {\color{blue}$24~~~+~~~12$} ;
+            \draw[black,  thick] (D) -- (E) node[right, midway,yshift=0] {\color{blue}$H$} ;
+            \draw[black,  thick] (A2) -- (D)  ;
+            \draw[red,thick] (3.48,-0.13) arc (-15:35:0.5);
+
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+<p>Note that the base of the larger triangle is <m>24+12=36</m>. The ratio of the heights and the ratio of the bases must be equal, so we write the following proportion.
+    <md><mrow>\frac{H}{10}\amp =\frac{36}{24} \amp \amp \blert{\text{Cross-multiply.}}</mrow>
+        <mrow>24H\amp =360 \amp \amp \blert{\text{Divide both sides by 24.}}</mrow>
+        <mrow>H\amp =\frac{360}{24} = 15  \amp \amp</mrow></md></p>
+</solution></example>
+
+<exercise><statement>  <sidebyside widths="55% 35%" margins="0% 0%" valigns="middle middle">
+<p>Heather wants to know the height of a street lamp. She discovers that when she is 12 feet from the lamp, her shadow is 6 feet long. Find the height of the street lamp.</p>
+        <image source="photos/exer1-2-6"><description>streetlamp</description></image></sidebyside>
+</statement>
+
+<answer><p>Because the two triangles are similar, <m>\dfrac{5}{6} = \dfrac{h}{18}</m>. Solving for <m>h</m> gives a height of 15 feet.</p>
+</answer></exercise>
+
+<p>Review the following skills you will need for this section.</p>
+<theorem>
+<sidebyside><p>Which of the following expressions and equations are proportions?</p></sidebyside>
+<sidebyside widths="30% 30% 30%" margins="0% 0%">
+    <p>1. <m>\dfrac{7}{x}=\dfrac{3}{5}</m></p>
+    <p>2. <m>\dfrac{x}{2}=\dfrac{8}{x+2}</m></p>
+    <p>3. <m>1+\dfrac{x}{4}=\dfrac{2x}{3}</m></p>
+</sidebyside>
+<sidebyside widths="30% 30% 30%" margins="0% 0%">
+    <p>4. <m>\dfrac{6}{x}+\dfrac{x}{5}</m></p>
+    <p>5. <m>\dfrac{3}{x+1}\cdot\dfrac{2x}{5}</m></p>
+    <p>6. <m>\dfrac{1}{x}+\dfrac{2}{3x}=\dfrac{x-2}{2}</m></p>
+</sidebyside>
+
+<sidebyside><p>Solve each equation.  Begin by writing an equivalent equation without fractions:  multiply both sides by the LCD.</p></sidebyside>
+
+<sidebyside widths="45% 45%" margins="0% 0%">
+    <p>7. <m>\dfrac{x}{12}=\dfrac{3}{x}</m></p>
+    <p>8. <m>1+\dfrac{x}{2}=\dfrac{2x}{5}</m></p>
+</sidebyside>
+<sidebyside><p><m>\underline{\qquad\qquad\qquad\qquad}</m></p></sidebyside>
+<conclusion>
+<sidebyside><p>Algebra Refresher Answers</p></sidebyside>
+<sidebyside><p>Only 1 and 2 are proportions.</p></sidebyside>
+<sidebyside widths="50% 50%">
+    <p>7.  <m>\pm 6</m></p>
+    <p>8.  <m>-10</m></p>
+</sidebyside>
+</conclusion>
+</theorem>
+</subsection>
+
+<subsection><title>Section 1.2 Summary</title>
+<subsubsection><title>Vocabulary</title> <p>Look up the definitions of new terms in the Glossary.</p>
+<p><ul cols="3">
+    <li>Congruent</li>
+    <li>Altitude</li>
+    <li>Leg</li>
+    <li>Hypotenuse</li>
+    <li>Parallelogram</li>
+    <li>Similar</li>
+    <li>Proportional</li>
+</ul></p>
+</subsubsection>
+
+<subsubsection><title>Concepts</title>
+<p><ol marker="1.">
+    <li>Two triangles are <term>congruent</term> if they have exactly the same size and shape.</li>
+    <li>The <term>altitude</term> of an equilateral triangle divides it into two congruent right triangles.</li>
+    <li>In a 30°-60°-90° right triangle, the <term>leg</term> opposite the 30° angle is half the length of the <term>hypotenuse</term>.</li>
+    <li>Two triangles are <term>similar</term> if they have the same shape but not necessarily the same size.  The corresponding angles are equal, and the corresponding sides are <term>proportional</term>.</li>
+    <li><assemblage><title>Similar Triangles</title>
+        <p>Two triangles are similar if either
+            <ol marker="1.">
+                <li> their corresponding angles are equal, or</li>
+                <li> their corresponding sides are proportional.</li>
+                </ol> </p>
+            </assemblage></li>
+    <li>If two <em>right</em> triangles have <em>one</em> pair of corresponding acute angles with the same measure, then the triangles are similar.</li>
+</ol></p>
+</subsubsection>
+
+<subsubsection><title>Study Questions</title>
+<p><ol marker="1.">
+    <li>What is the difference between congruent triangles and similar triangles?</li>
+    <li>What is the name of the short-cut method for solving proportions? Why does the method work?</li>
+    <li>In two triangles, if two corresponding pairs of angles are equal, are the triangles similar? How do you know?</li>
+    <li><sidebyside widths="45% 30%" valigns="middle middle" margins="0% 10%"><p>For the triangles shown, which of the following equations is true?  Explain why.</p>
+        <!--<image source="photos/1-2SQ4.png"><description>simtri</description></image>-->
+    <image xml:id="Section-1-2SQ4"><description>simtri</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.7]
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (3.6,0);
+            \coordinate (C) at (2.7,1.5);
+            \coordinate (D) at (4.8,0);
+            \coordinate (E) at (3.6,2);
+
+            \draw[black, thick] (A)--(D)--(E)--cycle;
+            \draw[black, thick] (A) -- (B) node [below, midway] {\color{blue}$x$};
+            \draw[black, thick] (D) -- (B) node [below, midway] {\color{blue}$4$};
+            \draw[black, thick] (D) -- (E) node [above right, midway] {\color{blue}$8$};
+            \draw[black, thick] (C) -- (B) node [above right, midway] {\color{blue}$6$};
+
+            \draw[black,  thick, ->] (C) --  (3.15,.75)  ;
+            \draw[black,  thick, ->] (E) --  (4.2,1)  ;
+
+        \end{tikzpicture}]]></latex-image></image></sidebyside>
+            
+        <p><ol marker="a." cols="2">
+            <li><m>\dfrac{4}{x} = \dfrac{6}{8}</m></li>
+            <li><m>\dfrac{x}{4} = \dfrac{6}{8}</m></li>
+            <li><m>\dfrac{x}{x+4} = \dfrac{6}{8}</m></li>
+            <li><m>\dfrac{x}{x+4} = \dfrac{6}{14}</m></li>
+        </ol></p></li>
+    </ol></p>
+</subsubsection>
+
+<subsubsection><title>Skills</title>
+<p>Practice each skill in the Homework Problems listed.</p>
+<p><ol marker="1.">
+    <li>Identify congruent triangles and find unknown parts     #1-6</li>
+    <li>Identify similar triangles    #7-10</li>
+    <li>Find unknown parts of similar triangles    #11-20</li>
+    <li>Solve problems using proportions and similar triangles    #21-26</li>
+    <li>Use proportions to relate sides of similar triangles    #27-38</li>
+</ol></p>
+</subsubsection>
+
+</subsection>
+
+<xi:include href="./hmwk-1-2.xml" />
+</section> 

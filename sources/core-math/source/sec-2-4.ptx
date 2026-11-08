@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-2-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algebraic Expressions</title>
+
+<sidebyside widths="50% 20%"><p><ul>
+    <li><p>Sums and Products</p></li>
+    <li><p>Differences and Quotients</p></li>
+    <li><p>Using Algebraic Expressions</p></li>
+    <li><p>Evaluating Algebraic Expressions</p></li>
+    <li><p>Writing Algebraic Expressions</p></li>
+  </ul></p>
+      <image source="algexp.png"></image></sidebyside>
+
+<subsection><title>What is an Algebraic Expression?</title>
+
+<p>In Section 2.3 we saw that we can use a letter to represent a variable quantity, such as temperature or age. Now we'll see how to work with variables to describe changing situations and to solve problems.</p>
+
+<p>Our first task is to describe variable situations in mathematical language. When we use operation symbols to combine numbers and variables, we create <term>algebraic expressions</term>. Some examples of algebraic expressions are</p>
+        <image source="exampalgexp.png" width="60%"></image>
+
+<p>For example, the expression <m>8 + b</m> might stand for 8 dollars more than the bill, and <m>r \times t</m> is often used to represent rate (or speed) times time.</p>
+
+<note><p>Remember that a variable really is a number, but one whose value is unknown or not specified.</p></note>
+</subsection>
+
+<subsection><title>Sums and Products</title>
+<p><ul>
+  <li><p>When we add two numbers or variables together, the result is called the <term>sum</term>, and the things added together are called <term>terms</term>.</p></li>  
+  <li><p>When we multiply two numbers or variables together, the result is called the <term>product</term>, and the things multiplied together are called <term>factors</term>.</p></li>
+</ul></p>
+        <image source="sumproduct.png" width="65%"></image>
+
+<assemblage><title>Products</title>
+<p>In algebra, we can use a raised dot or parentheses instead of a cross to indicate multiplication. For example, we write "two times three" as 
+    <me>\alert{2 \cdot 3}~~~~~~\text{or}~~~~~~\alert{2(3)}~~~~~~\text{or}~~~~~~\alert{2 \times 3}</me>
+We write the product of two variables, or a number and a variable, next to each other without any symbol between them. For example,
+    <md><mrow>\alert{5g}~~~~~~\text{means}~~~~~~\alert{5 \times g}</mrow>
+        <mrow>\alert{xy}~~~~~~\text{means}~~~~~\alert{x \times y}</mrow></md></p></assemblage>
+
+<activity><title>Ways to Write Multiplication</title>
+<p>Write each product in two other ways.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Six times <m>H</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell><m>4 \times 9</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell><m>lw</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell><m>3z</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+
+    <row>
+      <cell><m>12(25)</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell><m>5 \cdot A</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    </tabular></p>
+  </activity>
+
+<example><statement><p>Write each phrase as an algebraic expression.</p>
+<p><ol marker="a.">
+  <li><p>The product of 0.05 and <m>w</m></p></li>  
+  <li><p>The sum of <m>D</m> and <m>\dfrac{3}{4}</m></p></li>
+  <li><p>The product of <m>P</m> and <m>r</m></p></li>  
+  <li><p>The sum of <m>l</m> and <m>w</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a." cols="2">
+  <li><p><m>0.05w</m></p></li>  
+  <li><p><m>D + \dfrac{3}{4}</m></p></li>
+  <li><p><m>Pr</m></p></li>  
+  <li><p><m>l + w</m></p></li>
+</ol></p></solution></example>
+
+<note><p><ul>
+  <li><p>In Example 2.4.2a, we do not write a dot or parentheses between 0.05 and <m>w</m>. The simplest way of writing an algebraic expression is usually best.</p></li>  
+  <li><p>We could also write <m>w(0.05)</m>,  because we can multiply the factors in either order. However, in algebra we prefer to write the number before the variable in a product.</p></li> 
+  <li><p>In Example 2.4.2b, we could also write <m>\dfrac{3}{4} + D</m>. In a sum, it does not matter which term is written first.</p></li>
+  </ul></p></note>
+
+<exercise><statement><p>Write each phrase as an algebraic expression.</p>
+<p><ol marker="a." cols="2">
+  <li><p>The sum of <m>Q</m> and 1.3</p></li>
+  <li><p>The product of 1.07 and <m>P</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>Q + 1.3</m></p></li>
+  <li><p><m>1.07 P</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Differences and Quotients</title>
+<p>When we subtract one number or variable from another, the result is called the <term>difference</term>. Here are two common ways to describe subtraction.</p>
+
+<assemblage><title>Differences</title>
+  <p><md><mrow>\alert{b}~~\text{subtracted from}~~\alert{12}~~~~~~\amp \text{means}~~~~~~\alert{12-b}</mrow>
+      <mrow>\text{the difference of}~~\alert{12}~~\text{and}~~\alert{p} ~~~~~~\amp \text{means}~~~~~~\alert{12-p}</mrow></md></p>
+</assemblage>
+
+<p>When we divide one number or variable by another, the result is called the <term>quotient</term>. In algebra, we often use a fraction bar instead of the symbol <m>\div</m> to denote division. For example,</p>
+
+  <assemblage><title>Quotients</title>
+    <p><me>\alert{\dfrac{20}{5}}~~~~~~\text{means}~~~~~~\alert{20 \div 5}</me></p>
+  </assemblage>
+
+<p>The fraction bar and the symbol <m>\div</m> both mean "divided by."</p> 
+
+<note><p><ul>
+  <li><p>Unlike addition, in subtraction it does matter which term appears first:</p>    
+      <p><m>\alert{7 - 3}~~~</m>  does not  mean the same thing as <m>~~~\alert{3 - 7}</m>.</p></li>
+  <li><p>The order of the numbers also matters in division:</p>
+      <p><m>\alert{20 \div 5 = \dfrac{20}{5} = 4},~~~</m> but <m>~~~\alert{5 \div 20 = \dfrac{5}{20} = \dfrac{1}{4}}</m></p></li>
+</ul></p></note>
+
+<p>We can switch the order of the two numbers in a sum or in a product, but we cannot switch them in a difference or a quotient.  We say that the operations of addition and multiplication are <term>commutative</term>, but subtraction and division are not commutative.</p>
+
+<assemblage><title>Division</title>
+  <p>Here are three different ways to write the division  "Fifteen divided by three":
+    <me>~~\alert{3)\overline{15}~~~~~~~~~~~ 15 \div 3 ~~~~~~~~~~~ \dfrac{15}{3}}</me>
+  Look carefully at the order of the numbers in each expression.</p></assemblage>
+
+<activity><title>Ways to Write Division</title>
+<p>Write each quotient in three other ways. The first one is done for you.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>94 divided by 6</cell>
+      <cell><m>6)\overline{94}</m></cell>
+      <cell><m>94 \div 6</m></cell>
+      <cell><m>\dfrac{94}{6}</m></cell></row>
+    <row>
+      <cell><m></m></cell>
+      <cell><m>\hphantom{00000000}\vphantom{\dfrac{94}{6}}</m></cell>
+      <cell><m>60 \div 5</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell></row>
+    <row>
+      <cell><m></m></cell>
+      <cell><m>25)\overline{260}</m></cell>
+      <cell><m>\hphantom{00000000}\vphantom{\dfrac{94}{6}}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell></row>
+    <row>
+      <cell><m>M</m> divided by 8</cell>
+      <cell><m>\hphantom{00000000}\vphantom{\dfrac{94}{6}}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell></row>
+
+    <row>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\dfrac{T}{c}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000000}\vphantom{\dfrac{94}{6}}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>Q \div 4</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>\dfrac{1.5}{v}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000000}\vphantom{\dfrac{94}{6}}</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell>
+      <cell><m>18 \div k</m></cell>
+      <cell><m>\hphantom{00000000}</m></cell></row>
+    </tabular></p>
+  </activity>
+
+<example><statement><p> Write each phrase as an algebraic expression.</p>
+<p><ol marker="a.">
+  <li><p>16 subtracted from <m>z</m></p></li> 
+  <li><p><m>m</m> divided by 6</p></li>
+  <li><p> The difference of <m>R</m> and <m>C</m></p></li> 
+  <li><p>The quotient of <m>P</m> and <m>n</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a." cols="2">
+  <li><p><m>z - 16</m></p></li> 
+  <li><p><m>m \div 6~</m> or <m>~\dfrac{m}{6}</m></p></li>
+  <li><p><m>R - C</m></p></li> 
+  <li><p><m>\dfrac{P}{n}~</m> or <m>~P \div n</m></p></li>
+</ol></p></solution></example>
+
+<note><p>Sometimes English phrases can be tricky. We must be especially careful with subtraction and division.</p>
+<p><ul>  
+  <li><p>In part (a) of Example 2.4.6, the expression <m>16 - z</m> is not a correct answer.</p></li>  
+  <li><p>In part (b) of Example 2.4.6, "<m>m</m> divided by 6" means <m>\dfrac{m}{6}</m>, but "<m>m</m> divided into 6" means <m>\dfrac{6}{m}</m>.</p></li>
+  </ul></p></note>
+
+<p>Another common way of referring to division uses the word <term>ratio</term>.</p>
+
+<assemblage><title>Definition</title>
+    <p>The <term>ratio</term> of <m>a</m> to <m>b</m> is the quotient <m>\dfrac{a}{b}</m>.</p>
+</assemblage>
+
+<p>For example, the "ratio of <m>T</m> to 100" means the quotient <m>\dfrac{T}{100}</m>.</p>
+
+<exercise><statement><p>Write each phrase as an algebraic expression.</p>
+  <p><ol marker="a." cols="2">
+  <li><p>The ratio of 100 to <m>p</m></p></li>  
+  <li><p><m>d</m> subtracted from 19.95</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>\dfrac{100}{p}</m></p></li>  
+  <li><p><m>19.95 - d</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Using Algebraic Expressions</title>
+
+<p>There are usually several different ways to write an algebraic expression in English. Here are some English phrases that are used for each of the four arithmetic operations.</p>
+
+<activity><title>English to Math</title>
+<p><ol>
+  <li><p>Addition</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>English phrase</cell>
+      <cell>Algebraic expression</cell></row>
+    <row>
+      <cell>The sum of 5 and <m>x</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Three more than <m>n</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>q</m> increased by 5</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>15 plus <m>w</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>The total of 8 and <m>D</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>M</m> added to 12</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>1.7 greater than <m>B</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Exceeds <m>g</m> by 3</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p></li>
+
+  <li><p>Subtraction</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>English phrase</cell>
+      <cell>Algebraic expression</cell></row>
+    <row>
+      <cell>The difference of <m>b</m> and 2</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Five less than <m>z</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>n</m> minus 2.5</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Nine reduced by <m>s</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>H</m> subtracted from <m>K</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>Q</m> decreased by 16</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p></li>
+
+<li><p>Multiplication</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>English phrase</cell>
+      <cell>Algebraic expression</cell></row>
+    <row>
+      <cell>The product of 6 and <m>w</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Five times <m>v</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Three-quarters of <m>c</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Twice <m>p</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Eight percent of <m>m</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p></li>
+
+<li><p>Division</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>English phrase</cell>
+      <cell>Algebraic expression</cell></row>
+    <row>
+      <cell>The quotient of <m>a</m> and 7</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>G</m> divided by 10</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>m</m> divided into 15</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>The ratio of <m>V</m> to 5</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell><m>S</m> split 7 ways</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Dollars, <m>d</m> per hour, <m>h</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p></li>
+</ol></p></activity>
+
+<example><statement><p>Write algebraic expressions for each phrase.</p>
+<p><ol marker="a." cols="2">
+  <li><p>Five-eighths of <m>M</m></p></li> 
+  <li><p>Four less than  <m>w</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a." cols="2">
+  <li><p><m>\dfrac{5}{8}M</m></p></li> 
+  <li><p><m>w - 4</m></p></li>
+</ol></p></solution></example>
+
+<note><p>In part (a) of Example 2.4.9, notice that "of" means multiplication when used with fractions. The same is true for percents. For example, "35% of <m>P</m>"  is written as  <m>0.35 P</m></p></note>
+
+<exercise><statement><p>Write algebraic expressions for each phrase.</p>
+<p><ol marker="a." cols="2">
+  <li><p>Six greater than <m>h</m></p></li> 
+  <li><p>The product of 9 and <m>c</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>h + 6</m></p></li> 
+  <li><p><m>9c</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Evaluating Algebraic Expressions</title>
+ 
+<p>Now we are ready to use algebraic expressions to describe variable situations. If we know the value of the variable, we can substitute this value into the expression and simplify the result. This process is called <term>evaluating</term> the algebraic expression.</p>
+
+<example><statement><p>If  Martha puts <m>g</m> gallons of gas in her car, she can drive <m>22g</m> miles.</p>
+<p><ol marker="a.">
+  <li><p>How many miles can Martha drive if she buys 8 gallons of gas?</p></li>
+  <li><p>Explain how to find the number of miles Martha can drive if she buys <m>g</m> gallons of gas.</p></li>
+  <li><p>Evaluate the expression <m>22g</m> for the given values of <m>g</m>.</p>
+      <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>g</m></cell>
+      <cell>4</cell>
+      <cell>7.5</cell>
+      <cell>9</cell>
+      <cell>10</cell>
+      <cell>12.5</cell>
+      <cell>14</cell></row>
+    <row>
+      <cell><m>22g</m></cell>
+      <cell><m>\hphantom{000}</m></cell>
+      <cell><m>\hphantom{000}</m></cell>
+      <cell><m>\hphantom{000}</m></cell>
+      <cell><m>\hphantom{000}</m></cell>
+      <cell><m>\hphantom{00}</m></cell>
+      <cell><m>\hphantom{000}</m></cell></row>
+    </tabular></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Martha can drive <m>22 \cdot 8</m>, or 176 miles.</p></li>
+  <li><p>We multiply the number of gallons, <m>g</m>, by 22.</p></li>
+  <li><p>We multiply each value of <m>g</m> by 22 and fill in the table.</p>
+      <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>g</m></cell>
+      <cell>4</cell>
+      <cell>7.5</cell>
+      <cell>9</cell>
+      <cell>10</cell>
+      <cell>12.5</cell>
+      <cell>14</cell></row>
+    <row>
+      <cell><m>22g</m></cell>
+      <cell>88</cell>
+      <cell>165</cell>
+      <cell>198</cell>
+      <cell>220</cell>
+      <cell>275</cell>
+      <cell>308</cell></row>
+    </tabular></p></li>
+  </ol></p></solution></example>
+
+<exercise><statement><p>There is a room tax on all hotel bills. When the bill is <m>B</m> dollars, the tax is <m>0.08B</m>  dollars.</p>
+<p><ol marker="a.">
+  <li><p>How much is the tax on $100?</p></li>
+  <li><p>Explain how to find the tax when the bill is <m>B</m> dollars.</p></li>
+  <li><p>Evaluate the expression <m>0.08B</m> for the given values of <m>B</m>.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>B</m></cell>
+      <cell>60.00</cell>
+      <cell>80.00</cell>
+      <cell>120.00</cell>
+      <cell>250.00</cell></row>
+    <row>
+      <cell><m>0.08B</m></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell></row>
+    </tabular></p></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>The tax on $100 is $8.</p></li>
+  <li><p>Multiply <m>B</m> by 0.08.</p></li>
+  <li>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>B</m></cell>
+      <cell>60.00</cell>
+      <cell>80.00</cell>
+      <cell>120.00</cell>
+      <cell>250.00</cell></row>
+    <row>
+      <cell><m>0.08B</m></cell>
+      <cell>4.80</cell>
+      <cell>6.40</cell>
+      <cell>9.60</cell>
+      <cell>20.00</cell></row>
+    </tabular></p></li>
+  </ol></p></answer></exercise>
+
+<example><statement><p><ol marker="a.">
+    <li><p>Evaluate <m>y + 14</m>  for <m>y = \alert{7}</m></p></li>
+    <li><p>Evaluate <m>3xz</m> for <m>x = \alert{5}</m> and <m>z = \alert{4}</m>.</p></li>
+  </ol></p></statement>
+
+  <solution><p><ol marker="a.">
+    <li><p>We replace <m>y</m> by <m>\alert{7}</m> to get
+      <me>y + 14 = \alert{7} + 14 = 21~~~~~~~~ \blert{\text{Add 14 to 7.}}</me></p></li>
+    <li><p>We replace <m>x</m> by <m>\alert{5}</m> and <m>z</m> by <m>\alert{4}</m> to get
+      <me>3xz = 3(\alert{5})(\alert{4}) = 60~~~~~~~~ \blert{\text{Multiply 3 by 5 by 4.}}</me></p></li>
+    </ol></p></solution></example>
+
+<exercise><statement><p>Evaluate each expression for <m>a = \alert{0.3},~b = \alert{1.2}</m>, and <m>c = \alert{6}</m>.</p>
+<p><ol marker="a." cols="3">
+    <li><p><m>8.4-b</m></p></li>
+    <li><p><m>\dfrac{9}{a}</m></p></li>
+    <li><p><m>5bc</m></p></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li><p><m>7.2</m></p></li>
+    <li><p><m>30</m></p></li>
+    <li><p><m>36</m></p></li>
+  </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Writing Algebraic Expressions</title>
+
+<p>Now it's time to write our own algebraic expressions to describe variable situations.</p>
+
+<example><statement><p>Choose the correct algebraic expression from the box for each situation described below.</p>
+
+<assemblage><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>\hphantom{000} n+6 \hphantom{000}</m></cell>
+      <cell><m>\hphantom{000} n-6 \hphantom{000}</m></cell>
+      <cell><m>\hphantom{000} 6-n \hphantom{000}</m></cell></row>
+    <row>
+      <cell><m>6n</m></cell>
+      <cell><m>\dfrac{n}{6}</m></cell>
+      <cell><m>\dfrac{6}{n}</m></cell></row>
+    </tabular></p></assemblage>
+
+<p><ol marker="a.">
+  <li><p>Rashad is 6 years younger than Shelley. If Shelley is <m>n</m> years old, how old is Rashad?</p></li>
+  <li><p>Each package of sodas contains 6 cans. If Antoine bought <m>n</m> packages of sodas, how many cans did he buy?</p></li>
+  <li><p> Lizette and Patrick together own 6 cats. If Lizette owns <m>n</m> cats, how many cats does Patrick own?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>We subtract 6 from Shelley's age to get: <m>~~n-6</m></p></li>
+  <li><p>We multiply the number of packages by 6 to get:  <m>~~6n</m></p></li>
+  <li><p>We subtract the number of Lizette's cats from the total number of cats to get: <m>~~6-n</m></p></li> 
+</ol></p></solution></example>  
+
+<exercise><statement><p>Choose the correct algebraic expression from the box for each situation described below.</p>
+
+<assemblage><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>\hphantom{000} v+5 \hphantom{000}</m></cell>
+      <cell><m>\hphantom{000} v-5 \hphantom{000}</m></cell>
+      <cell><m>\hphantom{000} 5-v \hphantom{000}</m></cell></row>
+    <row>
+      <cell><m>5v</m></cell>
+      <cell><m>\dfrac{v}{5}</m></cell>
+      <cell><m>\dfrac{5}{v}</m></cell></row>
+    </tabular></p></assemblage>
+
+<p><ol marker="a.">
+  <li><p>The volume of a standard vat is <m>v</m> liters. What is the total volume of 5 standard vats?</p></li>
+  <li><p>The maximum velocity of a jet ski is <m>v</m> miles per hour. How fast can the jet ski travel against a current, if the speed of the current is 5 miles per hour?</p></li>
+  <li><p>Each batch of cookies requires <m>v</m> teaspoons of vanilla. How many batches can be made with 5 teaspoons of vanilla?</p></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>5v</m> liters</p></li>
+  <li><p><m>v - 5</m> miles per hour</p></li>
+  <li><p><m>\dfrac{5}{v}</m> batches</p></li>
+  </ol></p></answer></exercise>
+
+  <p>The first step in solving problems with algebra is to describe the problem in mathematical terms. This usually involves writing algebraic expressions. We can think of this process in three steps.</p>
+
+<assemblage><title>Steps for Writing Algebraic Expressions</title>
+  <p><ol>
+<li><p>Identify the unknown quantity. Remember that it must have numerical values.</p></li>
+<li><p>Choose a variable to represent the unknown quantity.</p></li>
+<li><p>Translate the English phrase into an algebraic expression, using the variable and appropriate operation symbols.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Write an algebraic expression for "6 feet taller than the height of the roof."</p></statement>
+
+<solution><p>Step 1 The height of the roof is unknown.</p>
+<p>Step 2   Height of the roof: <m>~~~~h</m></p> 
+<p>Step 3  "Taller than" suggests addition:  <m>~~~~h+6</m></p></solution></example>
+
+<exercise><statement><p>Write an algebraic expression for "two-thirds of the weight of the best-selling laptop."</p></statement>
+
+<answer><p>Step 1  The weight of the best-selling laptop is unknown</p>
+        <p>Step 2  Weight of best-selling laptop:  <m>~~~~w</m></p> 
+        <p>Step 3  "Two-thirds of" indicates a product:  <m>~~~~\dfrac{2}{3}w</m></p>
+  </answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>algebraic expression</p></li>
+  <li><p>evaluate</p></li>
+  <li><p>terms</p></li>
+  <li><p>factors</p></li>
+  <li><p>sum</p></li>
+  <li><p>product</p></li>
+  <li><p>difference</p></li>
+  <li><p>quotient</p></li>
+  <li><p>ratio</p></li>
+  <li><p>commutative</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-2-4.ptx" />
+
+</section>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkCurveFitting" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Curve Fitting </title>
+                 
+<subsubsection xml:id="tkPtOnGraph"><title>Points on a graph</title>
+
+<introduction><p>If a curve passes through a given point, the coordinates of the point satisfy the equation of the curve.</p></introduction>
+
+<example><statement><p>Write an equation to say that <m>(-3,8)</m> lies on the graph of<m>~y=ax^2+bx+c~</m>.</p></statement>
+ 
+<solution><p>Substitute <m>-3</m> for <m>x</m> and <m>8</m> for <m>y</m>. 
+    <md><mrow>8 \amp = a(-3)^2+b(-3)+c \amp \amp \blert{\text{Simplify.}}</mrow>
+        <mrow>8 \amp = 9a-3b+c</mrow></md>
+</p></solution></example>
+
+<exercise><statement><p>Write an equation to say that <m>(-4,-18)</m> lies on the graph of<m>~y=ax^2+bx+c~</m>.</p> </statement>
+    <answer><p><m>-16a-4b+c=-18</m></p></answer></exercise>
+
+<exercise><statement><p>Write an equation to say that <m>(8,0)</m> lies on the graph of<m>~y=ax^2+bx+c~</m>.</p> </statement>
+    <answer><p><m>64a+8b+c=0</m></p></answer></exercise>
+
+<exercise><statement><p>Write an equation to say that <m>(0,-5)</m> lies on the graph of<m>~y=ax^2+bx+c~</m>.</p> </statement>
+    <answer><p><m>c=-5</m></p></answer></exercise>
+
+<exercise><statement><p>Write an equation to say that <m>(-60,400)</m> lies on the graph of<m>~y=ax^2+bx+c~</m>.</p> </statement>
+    <answer><p><m>3600a-60b+c=400</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSolve2by2"><title>Solve a 2x2 linear system</title>
+
+<introduction><p>For fitting a parabola through given points, we'll solve systems using the method of elimination.</p></introduction>
+
+<example><statement><p>Solve the system by elimination.
+    <md><mrow>5x-2y \amp = 22</mrow>
+        <mrow>2x-5y \amp = 13</mrow></md>
+</p></statement>
+
+<solution><p>To eliminate the <m>x</m>-terms,look for the smallest integer that both 2 and 5 divide into evenly, namely, 10. Multiply the first equation by 2 and the second equation by <m>-5</m>.
+    <md><mrow>\blert{2}(5x-2y \amp = 22) \amp\amp \rightarrow \amp 10x-4y \amp = 44</mrow>
+        <mrow>\blert{-5}(2x-5y \amp = 13) \amp\amp \rightarrow \amp -10x+25y \amp = -65</mrow></md>
+Add these new equations to obtain an equation in <m>y</m>.
+    <md><mrow>10x-~4y \amp = 44</mrow>
+        <mrow>\underline{-10x+25y} \amp \underline{{}= -65 \vphantom{-10x+25y}}</mrow>
+        <mrow> 21y \amp = -21</mrow></md>
+Solve for <m>y</m> to find <m>y=-1</m>. Finally, substitute <m>y=\alert{-1}</m> into the first equation and solve for <m>x</m>.
+    <md><mrow>5x-2(\alert{-1}) \amp = 22</mrow>
+        <mrow>5x+2 \amp = 22</mrow>
+        <mrow> x \amp = 4</mrow></md>
+The solution to the system is <m>(4,-1)</m>. </p></solution></example>
+
+<exercise><statement><p>Solve the system by elimination.
+    <md><mrow>2x-9y \amp = 3</mrow>
+        <mrow>4x-5y \amp = -7</mrow></md>
+</p></statement>
+    <answer><p><m>(-3,-1)</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the system by elimination.
+    <md><mrow>5x+2y \amp = 5</mrow>
+        <mrow>4x+3y \amp = -3</mrow></md>
+</p></statement>
+    <answer><p><m>(3,-5)</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSpecSys"><title>Special 3x3 linear system</title>
+
+<introduction><p>In this special case of solving a 3x3 system, we can eliminate <m>c</m> to create a 2x2 system.</p></introduction>
+
+<example><statement><p>Solve the system by elimination.
+    <md><mrow>a+b+c \amp = 3 \amp \amp \text{(1)}</mrow>
+        <mrow>4a-2b+c \amp = 18 \amp \amp \text{(2)}</mrow>
+        <mrow>9a+3b+c \amp = 13 \amp \amp \text{(3)}</mrow></md></p></statement>
+
+<solution><p>Eliminate <m>c</m> by subtracting (1) from (2), then eliminate <m>c</m> again by subtracting (1) from (3), to get a 2x2 system:
+    <md><mrow>3a-3b \amp = 15 </mrow>
+        <mrow>8a+2b \amp = 10 </mrow></md>
+Divide the first equation by 3 and the second equation by 2, then add.
+    <md><mrow>a-b \amp = 5 </mrow>
+        <mrow>\underline{4a+b} \amp \underline{{}= 5 \vphantom{4a+b}} </mrow>
+        <mrow>5a \amp = 10 </mrow></md>
+We see that <m>a=2</m>. Substituting <m>a=2</m> into the equation <m>a-b=5</m>, we find that <m>b=-3</m>. Finally, we substitue <m>a=2</m> and <m>b=-3</m> into equation (1) to find
+    <md><mrow>2-3+c \amp = 3 </mrow>
+        <mrow>c \amp = 4 </mrow></md>
+The solution is <m>a=2,~b=-3</m>, and <m>c=4</m>.</p>
+</solution></example>
+
+<exercise><statement><p>Solve the system by elimination.
+    <md><mrow>a+b+c \amp = 5</mrow>
+        <mrow>4a-2b+c \amp = -7</mrow>
+        <mrow>16a+4b+c \amp = -37 </mrow></md></p></statement>
+    <answer><p><m>a=-3,~b=1,~c=7</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

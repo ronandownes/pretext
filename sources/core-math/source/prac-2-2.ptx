@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-2-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 2.2</title>
+
+<exercise number="1"><statement><p>List several different ways to find 10% of a number.</p></statement>
+<answer><p>Divide by 10, multiply by 0.1, move the decimal one place to the left.</p></answer></exercise>
+
+<exercise number="2"><statement><p>If you know 10% of a number, how can you find the number?</p></statement></exercise>
+
+<exercise number="3"><statement><p><ol marker="a.">
+  <li><p>If you know 10% of a number, how can you find 5% of the number?</p></li>
+  <li><p>How can you find 25% of the number?</p></li>
+  <li><p>Leslie gave $76 to a local charity. That was 10% of her paycheck. Find 25% of her paycheck, using the method you described in parts (a) and (b).</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p> Divide by 2</p></li>
+  <li><p>Add 5% to twice 10%</p></li>   
+  <li><p>$190</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a.">
+  <li><p>If you know 10% of a number, how can you find 1% of the number?</p></li>
+  <li><p>How can you find 99% of the number?</p></li>
+  <li><p>The Wellness Clinic gave flu shots to 170 seniors last week. That was 10% of the seniors living in Stratton County. Find 99% of the senior population, using the method you described in parts (a) and (b).</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="5"><statement><p>Delbert says that to find 4% of a number, we multiply the number by 0.4. Is he correct? Why or why not?</p></statement>
+<answer><p>No. Multiply by 0.04</p></answer></exercise>
+
+<exercise number="6"><statement><p>Francine says that we can omit the zero after the 8 in the fraction 0.80, but we cannot omit the zero before the 8 in 0.08. Is she correct? Why or why not?</p></statement></exercise> 
+
+<exercise number="7"><statement><p>Moving the decimal point 2 places to the left is a short-cut for what operation?</p></statement>
+<answer><p>Divide by 10</p></answer></exercise>
+
+<exercise number="8"><statement><p>Which of the following operations does <m>\dfrac{3}{8}</m> represent?</p>
+<p><ol marker="a." cols="2">  
+  <li><p>3 divided into 8</p></li>
+  <li><p>3 divided by 8</p></li>
+  <li><p><m>3 \div 8</m></p></li>
+  <li><p><m>8 \div 3</m></p></li>
+</ol></p></statement></exercise>
+
+<exercise number="9"><statement><p>Describe a way to find 0.625 of $6400 without using a calculator.</p></statement>
+<answer><p>Divide by 10, then muliply by 5</p></answer></exercise>
+
+<exercise number="10"><statement><p>One of the numbers below is not equal to any of the others. Which is it? Sort the rest of the numbers into three groups of equal numbers.</p>
+<tabular>
+  <row>
+    <cell><m>\hphantom{00} 0.3 \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 3.0 \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} \dfrac{3}{100} \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 0.03 \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} \dfrac{30}{100} \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 30\% \hphantom{00}</m></cell></row>
+  <row><cell><m>\hphantom{00} \dfrac{1}{3} \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 0.30 \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} \dfrac{300}{100} \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 300\% \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 3\% \hphantom{00}</m></cell>
+    <cell><m>\hphantom{00} 3.00 \hphantom{00}</m></cell></row>
+  </tabular>
+</statement></exercise>
+
+<exercise number="11"><statement><p><ol marker="a.">
+  <li><p>Which is a larger fraction, <m>\dfrac{3}{8}</m> or <m>\dfrac{1}{3}</m>?</p></li>
+  <li><p>Is <m>\dfrac{1}{9}</m> larger or smaller than 10%?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p><m>\frac{3}{8}</m></p></li>
+  <li><p>Larger</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>Is <m>\dfrac{1}{3}</m> equal to 0.3?  Try these calculations.</p>
+<p><ol marker="a.">
+  <li><p>Find <m>\dfrac{1}{3}</m> of $120 by dividing by 3.</p></li>
+  <li><p>Find <m>\dfrac{3}{10}</m> of $120 by dividing by 10, then multiplying the result by 3.</p></li>
+  <li><p>Use your calculator to find 0.3 of $120.</p></li>
+  <li><p>Use your calculator to find 0.33 of $120.</p></li>
+  <li><p>Which is a larger fraction,  <m>\dfrac{1}{3}</m> or 310?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="13"><statement><p>Find the percent form of each fraction by dividing the denominator into 10.</p>
+<p><ol marker="a." cols="4">
+  <li><p><m>\dfrac{1}{5}</m></p></li> 
+  <li><p><m>\dfrac{1}{25}</m></p></li> 
+  <li><p><m>\dfrac{1}{8}</m> </p></li> 
+   <li><p><m>\dfrac{1}{16}</m></p></li>
+ </ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>20%</p></li> 
+  <li><p>4%</p></li> 
+  <li><p>12.5%</p></li> 
+   <li><p><m>16.\overline{6}</m>%</p></li>
+ </ol></p></answer></exercise>
+
+<exercise number="14"><statement><p>Write exact decimal and percent forms for <m>\dfrac{1}{6}</m> and <m>\dfrac{1}{12}</m> as follows. (Hint: Do you remember the decimal forms for <m>\dfrac{1}{3}</m> and <m>\dfrac{2}{3}</m>?)</p>
+<p><ol marker="a.">
+  <li><p>Start with the decimal form for <m>\dfrac{1}{3}</m> and divide by 2.</p></li>
+  <li><p>Divide each denominator into 100.</p></li>
+  <li><p>Do you get the same results by each method?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="15"><statement><p>On Lincoln's birthday, Abe's Furniture Store offered 12% off some basic items. Complete the table showing Abe's discounted prices.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Item</cell>
+      <cell>Original Price</cell>
+      <cell>Discount</cell>
+      <cell>New Price</cell></row>
+    <row>
+      <cell>Sofa</cell>
+      <cell>$480</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Dining Table</cell>
+      <cell>$625</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Dresser</cell>
+      <cell>$390</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>TV Stand</cell>
+      <cell>$238</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement>
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Original Price</cell>
+      <cell>Discount</cell>
+      <cell>New Price</cell></row>
+    <row>
+      <cell>$480</cell>
+      <cell>$57.60</cell>
+      <cell>$422.40</cell></row>
+    <row>
+      <cell>$625</cell>
+      <cell>$75</cell>
+      <cell>$550</cell></row>
+    <row>
+      <cell>$390</cell>
+      <cell>$46.80</cell>
+      <cell>$343.20</cell></row>
+    <row>
+      <cell>$238</cell>
+      <cell>$28.56</cell>
+      <cell>$209.44</cell></row>
+    </tabular></p></answer></exercise>
+
+<exercise number="16"><statement><p>Calculate the percent change in price for each item over the past decade.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Item</cell>
+      <cell>Price in 2013</cell>
+      <cell>Price in 2023</cell>
+      <cell>Change in Price</cell>
+      <cell>Percent of 2013 Price</cell></row>
+    <row>
+      <cell>Dozen eggs</cell>
+      <cell>$1.31</cell>
+      <cell>$1.95</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Pound of Bananas</cell>
+      <cell>$0.50</cell>
+      <cell>$0.61</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Loaf of Bread</cell>
+      <cell>$0.98</cell>
+      <cell>$1.40</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Quart of milk</cell>
+      <cell>$2.04</cell>
+      <cell>$3.70</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement></exercise>
+
+<exercise number="17"><statement><p>The Bradleys bought a new home for $760,000 and made a down payment of 15%. What is the amount of their mortgage loan?</p></statement>
+<answer><p>$646,000</p></answer></exercise>
+
+<exercise number="18"><statement><p>Simon made a 20% down payment of $8400 on a new hybrid car. What was the cost of the car?</p></statement></exercise>
+
+<exercise number="19"><statement><p>Cliff answered 24 questions correctly on his quiz and got a score of 80%. How many questions were on the quiz?</p></statement>
+<answer><p>30</p></answer></exercise>
+
+<exercise number="20"><statement><p>Cadbury recently reduced the weight of its most popular chocolate bar from 250 grams to 200 grams. What percent of its original weight was that reduction?</p></statement></exercise>
+
+<exercise number="21"><statement><p>In the first half of 2013, there were 258,915 guns sold in Virginia. In the first half of 2014, there were 192,585 guns sold.</p>
+<p><ol marker="a.">
+  <li><p>What was the decrease in the number of guns sold?</p></li>
+  <li><p>What percent decrease did guns sales experience over 2013?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>66,330</p></li>
+  <li><p>25.6%</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>At the census of 2010, the population of the U.S. was 308,745,000.  In 2020, the population was 331,449,000.</p>
+<p><ol marker="a.">
+  <li><p>What was the increase in population over that decade?</p></li>
+  <li><p>By what percent of the 2010 population did the population increase from 2010 to 2020?</p></li>
+  <li><p>If the population continues to increase by the same percent, what will the U.S. population be in 2030?</p></li>
+</ol></p></statement></exercise> 
+
+<exercisegroup><introduction><p>For Problems 23-26, decide which discount results in a lower price.</p></introduction>
+
+<exercise number="23"><statement><p>A dress:    40% off $80,  or <m>\dfrac{1}{4}</m> off $60</p></statement>
+<answer><p><m>\frac{1}{4}</m> off $60</p></answer></exercise>
+
+<exercise number="24"><statement><p>Hiking shoes:    <m>\dfrac{1}{5}</m> off  $110,  or  25% off $120</p></statement></exercise>
+
+<exercise number="25"><statement><p>Oatmeal soap:    <m>\dfrac{1}{3}</m> off  $6,  or  30% off $6</p></statement>
+<answer><p><m>\frac{1}{3}</m> off $6</p></answer></exercise>
+
+<exercise number="26"><statement><p>Bathing suit:    60% off $50,  or  <m>\dfrac{2}{3}</m> off $60</p></statement></exercise>
+</exercisegroup>
+
+<exercise number="27"><statement><p>Which of the following are correct ways to find 5% of an amount?</p>
+<p><ol marker="a.">
+  <li><p>Divide by 10, then divide by 2.</p></li>
+  <li><p> Multiply by 0.5</p></li>
+  <li><p>Move the decimal two places to the left, then multiply by 5</p></li>
+  <li><p>Divide by 20</p></li>
+  <li><p>Multiply by 100, then divide by 5</p></li>
+</ol></p></statement>
+<answer><p>(a), (c), and (d)</p></answer></exercise>
+
+<exercise number="28"><statement><p>Which of these are the same?</p>
+<p><ol marker="a.">
+  <li><p>1% of $10,000</p></li>
+  <li><p>10% of $1000</p></li>
+  <li><p>0.01 of $1000</p></li>
+  <li><p><m>\dfrac{1}{100}</m> of $10,000</p></li>
+  <li><p>10% of $10,000</p></li>
+</ol></p></statement></exercise>  
+
+<exercise number="29"><statement><p>Allison is planning a birthday party for her daughter.  She has a budget of $68 to spend according to the circle graph shown at left below. How much can she spend in each category?</p></statement>
+<answer><p>Food: $34, Decorations: $17, Prizes: $8.50, Cups, etc.: $8.50</p></answer></exercise>
+
+  <p><image source="hp-2-2-29.png" width="85%"></image></p>      
+
+<exercise number="30"><statement><p> Robert divides his school days as shown in the circle graph shown above at right. How many hours does he spend on each activity? </p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31-36, what fraction of the rectangle is shaded?  Then reduce the fraction.</p></introduction>
+
+<exercise number="31"><statement><p><image source="hp-2-2-31.png" width="35%"></image></p></statement>
+<answer><m>\dfrac{6}{9} = \dfrac{2}{3}</m></answer></exercise>
+
+<exercise number="32"><statement><p><image source="hp-2-2-32.png" width="75%"></image></p></statement></exercise>
+
+<exercise number="33"><statement><p><image source="hp-2-2-33.png" width="60%"></image></p></statement>
+<answer><m>\dfrac{10}{12} = \dfrac{5}{6}</m></answer></exercise>
+
+<exercise number="34"><statement><p><image source="hp-2-2-34.png" width="60%"></image></p></statement></exercise>
+
+<exercise number="35"><statement><p><image source="hp-2-2-35.png" width="45%"></image></p></statement>
+<answer><m>\dfrac{4}{12} = \dfrac{1}{3}</m></answer></exercise>
+
+<exercise number="36"><statement><p><image source="hp-2-2-36.png" width="75%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 37-46, convert the percent to a fraction, and reduce.</p></introduction>
+
+<exercise number="37"><statement><p>80%</p></statement>
+<answer><m>\dfrac{80}{100} = \dfrac{4}{5}</m></answer></exercise>
+
+<exercise number="38"><statement><p>60%</p></statement></exercise>
+
+<exercise number="39"><statement><p>45%</p></statement>
+<answer><m>\dfrac{45}{100} = \dfrac{9}{20}</m></answer></exercise>
+
+<exercise number="40"><statement><p>85%</p></statement></exercise>
+
+<exercise number="41"><statement><p>24%</p></statement>
+<answer><m>\dfrac{24}{100} = \dfrac{6}{25}</m></answer></exercise>
+
+<exercise number="42"><statement><p>72%</p></statement></exercise>
+
+<exercise number="43"><statement><p>38%</p></statement>
+<answer><m>\dfrac{38}{100} = \dfrac{19}{50}</m></answer></exercise>
+
+<exercise number="44"><statement><p>74%</p></statement></exercise>
+
+<exercise number="45"><statement><p>96%</p></statement>
+<answer><m>\dfrac{96}{100} = \dfrac{24}{25}</m></answer></exercise>
+
+<exercise number="46"><statement><p>8%</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 47-52, find three fractions equivalent to the given fraction.
+</p></introduction>
+
+<exercise number="47"><statement><p><m>\dfrac{2}{3}</m></p></statement>
+<answer><m>\dfrac{4}{6},~ \dfrac{6}{9},~ \dfrac{8}{12}</m></answer></exercise>
+
+<exercise number="48"><statement><p><m>\dfrac{3}{8}</m></p></statement></exercise>
+
+<exercise number="49"><statement><p><m>\dfrac{1}{6}</m></p></statement>
+<answer><m>\dfrac{2}{12},~ \dfrac{3}{18},~ \dfrac{4}{24}</m></answer></exercise>
+
+<exercise number="50"><statement><p><m>\dfrac{5}{6}</m></p></statement></exercise>
+
+<exercise number="51"><statement><p><m>\dfrac{5}{16}</m></p></statement>
+<answer><m>\dfrac{10}{32},~ \dfrac{15}{48},~ \dfrac{20}{64}</m></answer></exercise>
+
+<exercise number="52"><statement><p><m>\dfrac{1}{8}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="53"><statement><p>Fabric is usually sold by the yard, and a yard is equal to 36 inches. The number line below represents one yard.</p>
+      <image source="oneyard.png" width="80%"></image>
+ 
+<p><ol marker="a.">
+  <li><p>On the number line, label each benchmark fraction of one yard with its measure in inches.</p></li>
+  <li><p>Here is another copy of the one-yard number line.  Mark the eighths of a yard on the number line, and label each with its measure in inches.</p>
+      <image source="oneyard.png" width="85%"></image></li>
+  <li><p>Use your answers to parts (a) and (b) to complete the table.</p></li>
+</ol></p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Fraction of One Yard</cell>
+      <cell>Length in Inches</cell>
+      <cell>Percent of One Yard</cell></row>
+    <row>
+      <cell><m>\dfrac{1}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{2}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{3}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{4}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{5}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{6}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{7}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell><m>\dfrac{8}{8}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement>
+<answer><p><ol marker="a.">
+  <li><image source="ans-2-2-53a.png" width="40%"></image></li>
+  <li><image source="ans-2-2-53b.png" width="40%"></image></li>
+  <li><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Fraction</cell>
+      <cell>Inches</cell>
+      <cell>Percent</cell></row>
+    <row>
+      <cell><m>\dfrac{1}{8}</m></cell>
+      <cell><m>4.5</m></cell>
+      <cell><m>12.5</m></cell></row>
+    <row>
+      <cell><m>\dfrac{2}{8}</m></cell>
+      <cell><m>9</m></cell>
+      <cell><m>25</m></cell></row>
+    <row>
+      <cell><m>\dfrac{3}{8}</m></cell>
+      <cell><m>13.5</m></cell>
+      <cell><m>37.5</m></cell></row>
+    <row>
+      <cell><m>\dfrac{4}{8}</m></cell>
+      <cell><m>18</m></cell>
+      <cell><m>50</m></cell></row>
+    <row>
+      <cell><m>\dfrac{5}{8}</m></cell>
+      <cell><m>22.5</m></cell>
+      <cell><m>62.5</m></cell></row>
+    <row>
+      <cell><m>\dfrac{6}{8}</m></cell>
+      <cell><m>27</m></cell>
+      <cell><m>75</m></cell></row>
+    <row>
+      <cell><m>\dfrac{7}{8}</m></cell>
+      <cell><m>31.5</m></cell>
+      <cell><m>87.5</m></cell></row>
+    <row>
+      <cell><m>\dfrac{8}{8}</m></cell>
+      <cell><m>36</m></cell>
+      <cell><m>100</m></cell></row>
+    </tabular></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="54"><statement><p>Each of the lengths in the table below is greater than one yard. Write each length as one yard plus a fraction of a yard.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Length in Inches</cell>
+      <cell>Length in Yards</cell></row>
+    <row>
+      <cell>54</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>45</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>40.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>67.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>63</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement></exercise>
+
+<exercise number="55"><statement><p>Here is a block from a quilt pattern called Irish Chain.</p>
+          <image source="hp-22-55.png" width="40%"></image>
+  <p><ol marker="a.">
+    <li><p>What fraction of the block is blue?</p></li>
+    <li><p>What fraction of the block is pink?</p></li>
+    <li><p>Use your answers to parts(a) and (b) to find the fraction of the block in the background color.</p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>\dfrac{1}{9}</m></p></li>
+    <li><p><m>\dfrac{2}{9}</m></p></li>
+    <li><p><m>\dfrac{2}{3}</m></p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="56"><statement><p>Here is a block from a quilt pattern called Bow Tie.</p>
+      <image source="hp-22-56.png" width="40%"></image>
+  <p><ol marker="a.">
+    <li><p>What fraction of the block is blue?</p></li>
+    <li><p>What fraction of the block is pink?</p></li>
+    <li><p>Use your answers to parts(a) and (b) to find the fraction of the block in the background color.</p></li>
+  </ol></p></statement></exercise>
+
+<exercise number="57"><statement><p>In New York, a three-fifths majority is required to pass most tax increases. The Assembly has 150 members. How many Assembly members must vote in favor to pass a tax increase?</p></statement>
+<answer><p>90</p></answer></exercise>
+
+<exercise number="58"><statement><p>The U.S. Constitution gives the Senate sole authority to ratify treaties  of the United States but makes this contingent upon a two thirds majority. There are 100 U.S. Senators. How many must vote in favor in order to ratify a treaty?</p></statement></exercise>
+
+ <exercisegroup><introduction><p>For Problems 59-60, use this picture of a ruler marked in inches.</p>
+      <image source="sixinches.png" width="90%"></image>
+</introduction>
+
+<exercise number="59"><statement>
+  <p><ol marker="a.">
+    <li><p>What is the smallest fraction of an inch marked on the ruler?</p></li>
+    <li><p>If you start at 2 on the ruler and move 20 sixteenths of an inch to the right, where will you end up?</p></li>
+    <li><p>Reduce 20 sixteenths.</p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>\dfrac{1}{16}</m></p></li>
+    <li><p><m>3\dfrac{1}{4}</m></p></li>
+    <li><p><m>\dfrac{5}{4}</m></p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="60"><statement>
+  <p><ol marker="a.">
+    <li><p>From 3 on the ruler, move eleven eighths inches to the right. Where are you now?</p></li>
+    <li><p>From 3 on the ruler, move eleven eighths inches to the left. Where are you now?</p></li>
+    <li><p>What is the distance between your ending points in parts (a) and (b)?</p></li>
+  </ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 61-64, remember that rotating through one whole circle sweeps out an angle of 360°.  A <term>sector</term> of a circle is a wedge with its point at the center of the circle.</p></introduction>
+
+<exercise number="61"><statement><p>
+  <sidebyside widths="50% 30%"><p><ol marker="a.">
+    <li><p>What is the degree measure of each sector of the circle shown at right?</p></li>
+    <li><p>Shade a sector that shows <m>\dfrac{2}{3}</m> of the circle. What is the degree measure of that sector?</p></li>
+  </ol></p>
+  <image source="hp-2-2-61.png"></image></sidebyside></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>60 \degree</m></p></li>
+    <li><p><m>240 \degree</m></p> <image source="as-2-2-61.png" width="40%"></image> </li>
+  </ol></p></answer></exercise>
+
+<exercise number="62"><statement><p>
+    <sidebyside widths="50% 30%"><p><ol marker="a.">
+    <li><p>What is the degree measure of each sector of the circle shown at right?</p></li>
+    <li><p>Shade a sector that shows <m>\dfrac{5}{8}</m> of the circle. What is the degree measure of that sector?</p></li>
+  </ol></p>
+  <image source="hp-2-2-62.png"></image></sidebyside></p></statement></exercise>
+
+<exercise number="63"><statement><p>
+  <sidebyside widths="50% 30%"><p><ol marker="a.">
+    <li><p>What is the degree measure of each sector of the circle shown at right?</p></li>
+    <li><p>Shade a sector that shows <m>\dfrac{5}{6}</m> of the circle. What is the degree measure of that sector?</p></li>
+  </ol></p>
+  <image source="hp-2-2-63.png"></image></sidebyside></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>30 \degree</m></p></li>
+    <li><p><m>300 \degree</m></p> <image source="as-2-2-63.png" width="40%"></image> </li>
+  </ol></p></answer></exercise>
+
+<exercise number="64"><statement><p>
+    <sidebyside widths="50% 30%"><p><ol marker="a.">
+    <li><p>What is the degree measure of each sector of the circle shown at right?</p></li>
+    <li><p>Shade a sector that shows <m>\dfrac{3}{8}</m> of the circle. What is the degree measure of that sector?</p></li>
+  </ol></p>
+  <image source="hp-2-2-64.png"></image></sidebyside></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="65"><statement><p>Until recently, a wife was typically entitled to one-third of the common family income when a couple divorced. The amount of the wife's alimony was calculated as one-third of the sum of both partners' incomes, minus her own income. If the husband earned $50,000 and the wife earned $10,000, what was the wife's alimony?</p></statement>
+<answer><p>$10,000</p></answer></exercise> 
+
+<exercise number="66"><statement><p>Demographers argue that when a subgroup becomes one-third of a population, it becomes a political force. In 2012 the U.S. population was 314 million, and the populations of some of the U.S. minority groups are given in the table. </p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Group</cell>
+      <cell>Population (millions)</cell>
+      <cell>% of US Population</cell></row>
+    <row>
+      <cell>Hispanic</cell>
+      <cell>53</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>African-American</cell>
+      <cell>44.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Asian</cell>
+      <cell>18.9</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p>
+<p><ol marker="a.">
+  <li><p>Compute the percent of the U.S. population made up by each minority group.</p></li>
+  <li><p>Do any of these groups, alone or in combination, make up one-third of the U.S. population?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="67"><statement><p>To prevent injury, fitness experts recommend that athletes increase their training activity no more than 10 percent per week. Use this 10 Percent Rule to complete the workout schedule.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Activity</cell>
+      <cell>This Week</cell>
+      <cell>Next Week</cell></row>
+    <row>
+      <cell>Running</cell>
+      <cell>20 miles</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Weights</cell>
+      <cell>45 pounds</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Swimming</cell>
+      <cell>400 yards</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement>
+    <answer><p>22 mi, 49.5 lb, 440 yd</p></answer></exercise>
+
+<exercise number="68"><statement><p>In 1942 the ecologist Raymond Lindemann put forth the ten percent law for the transfer of energy in the food chain. His law suggests that 90% of the energy is discarded or lost in the transfer at each level of the food chain, and only 10% is passed on as useable biological energy.</p>
+     <image source="hp-2-2-68.png" width="80%"></image>
+<p>Use the ten percent law to complete the table showing the amount of energy, in kilocalories, available at each level of the food chain.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Source</cell>
+      <cell>Sun</cell>
+      <cell>Plants</cell>
+      <cell>Cows</cell>
+      <cell>Humans</cell></row>
+    <row>
+      <cell>Energy Available</cell>
+      <cell>40,000 kcl</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement></exercise>
+
+</exercises>

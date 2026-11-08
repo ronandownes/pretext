@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="WaterLevel"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Water Level</title>
+ 
+<introduction><p>When sailing upstream in a canal or a river that has rapids, ships must sometimes negotiate locks to raise them to a higher water level. Suppose your ship is in one of the lower locks, at an elevation of 20 feet. The next lock is at an elevation of 50 feet. Water begins to flow from the higher lock to the lower one, raising your level by 1 foot per minute, and simultaneously lowering the water level in the next lock by 1.5 feet per minute.</p></introduction>
+
+<exercises>
+<exercise number="1"><statement><p>Fill in the table</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor"><m>t</m> (minutes)</cell>
+                        <cell bottom="minor">Lower lock water level</cell>
+                        <cell bottom="minor">Upper lock water level</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="2"><statement><p>Let <m>t</m> stand for the number of minutes the water has been flowing.<ol marker="a.">
+    <li>Write an equation for <m>L</m>, the water level in the lower lock after <m>t</m> minues.</li>
+    <li>Write an equation for <m>U</m>, the water level in the upper lock after <m>t</m> minues.</li></ol></p></statement></exercise>
+
+<exercise number="3"><statement><p>Graph both your equations on the grid.</p>
+
+<sidebyside width="40%"><image source="images/fig-???"><description>graph</description></image></sidebyside></statement>
+</exercise>
+
+<exercise number="4"><statement><p>When will the water level in the two locks be 10 feet apart?</p></statement></exercise>
+
+<exercise number="5"><statement><p>When will the water level in the two locks be the same?</p></statement></exercise>
+
+<exercise number="6"><statement><p>Write an equation you can use to verify your answer to part (5), and solve it.</p>
+</statement></exercise>
+
+</exercises>
+
+</section>
+
+
+
+                                                 
+

@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+
+
+<!-- This file was originally part of the book     -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<exercises xml:id="section-7-2-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 7.2</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercisegroup><introduction><p>In Problems 1<ndash/>4, use the laws of exponents to simplify.</p></introduction>
+
+<exercise number="1"><statement><p><ol marker="a." cols="3">
+    <li><p><m>3^x \, 3^4</m></p></li>
+    <li><p><m>(3^x)^4</m></p></li>
+    <li><p><m>3^x \, 4^x</m></p></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><p><m>3^{x+4}</m></p></li>
+    <li><p><m>3^{4x}</m></p></li>
+    <li><p><m>12^x </m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="2"><statement><p><ol marker="a." cols="3">
+    <li><p><m>8^x \, 8^x</m></p></li>
+    <li><p><m>8^{x+2} \, 8^{x-1} </m></p></li>
+    <li><p><m>\dfrac{8^{2x}}{8^x} </m></p></li>
+</ol></p></statement></exercise>
+
+<exercise number="3"><statement><p><ol marker="a." cols="3">
+    <li><p><m>b^{-4t} \, b^{2t} </m></p></li>
+    <li><p><m>(b^t)^{1/2} </m></p></li>
+    <li><p><m>b^{t-1} \, b^{1-t} </m></p></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><p><m>b^{-2t} </m></p></li>
+    <li><p><m>b^{t/2} </m></p></li>
+    <li><p><m>1</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a." cols="3">
+    <li><p><m>b^{t/2} \, b^{t/2}  </m></p></li>
+    <li><p><m>\dfrac{b^{2t}}{b} </m></p></li>
+    <li><p><m>b^{1/t} \, b^t </m></p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5 and 6, solve. Round your answers to two places if necessary.</p>
+</introduction>
+
+<exercise number="5"><statement><p><m>116,473 = 48,600(1 + r )^{15}</m></p></statement>
+<answer><p><m>0.06</m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>10.56 = 12.4(1 - r )^{20}</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 7-14, solve.</p></introduction>
+
+<exercise number="7"><statement><p><m>5^{x+2} = 25^{4/3}</m></p></statement>
+<answer><p><m>\dfrac{2}{3} </m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>3^{2x-1} =\dfrac{\sqrt{3}}{9} </m></p></statement>
+<answer><p><m>\dfrac{-1}{4} </m></p></answer></exercise>
+
+<exercise number="9"><statement><p><m>4\cdot 2^{x-3} =8^{-2x} </m></p></statement>
+<answer><p><m>\dfrac{1}{7} </m></p></answer></exercise>
+
+<exercise number="10"><statement><p><m>9\cdot 3^{x+2} =81^{-x} </m></p></statement></exercise>
+
+<exercise number="11"><statement><p><m>27^{4x+2} =81^{x-1} </m></p></statement>
+<answer><p><m>\dfrac{-5}{4} </m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>16^{2-3x} =64^{x+5} </m></p></statement></exercise>
+
+<exercise number="13"><statement><p><m>10^{x^2-1} =1000 </m></p></statement>
+<answer><p><m>\pm 2 </m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>5^{x^2-x-4} =25 </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15 and 16, <ol marker="a.">
+    <li><p>graph the function in the window
+        <md><mrow>\text{Xmin} \amp = -4.7 \amp\amp \text{Xmax} = 4.7</mrow>
+        <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 10</mrow></md></p></li>
+    <li>Use your graph to find an approximate solution accurate to the nearest hundredth.</li></ol></p></introduction>
+
+<exercise number="15"><statement><p><ol marker="a.">
+    <li><m>y=3^{x-1}</m></li>
+    <li><m>3^{x-1}=4</m></li></ol></p></statement>
+<answer><p><m>2.26</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><ol marker="a.">
+    <li><m>y=4^{-x}</m></li>
+    <li><m>4^{-x}=7</m></li></ol></p></statement>
+</exercise>
+</exercisegroup>
+
+<exercise number="17"><statement><p>Find the <m>y</m>-intercept of each exponential function and decide whether the graph is increasing or decreasing.<ol cols="2">
+    <li><p><m>f (x) = 26(1.4)^x</m></p></li>
+    <li><p><m>g(x) = 1.2(0.84)^x</m></p></li>
+    <li><p><m>h(x)=75\left(\dfrac{4}{5} \right)^x </m></p></li>
+    <li><p><m>k(x)=\dfrac{2}{3}\left(\dfrac{9}{8} \right)^x </m></p></li></ol></p></statement>
+<answer><p><ol cols="2">
+    <li><p><m>(0,26)</m>; increasing</p></li>
+    <li><p><m>(0,1.2)</m>; decreasing</p></li>
+    <li><p><m>(0,75)</m>; decreasing</p></li>
+    <li><p><m>(0,\frac{2}{3}) </m>; increasing</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="18"><statement><p>Decide whether each function is an exponential function, a power function, or neither.
+<ol marker="a." cols="2">
+    <li><p><m>g(t)=3 t^{0.4} </m></p></li>
+    <li><p><m>h(t)=4(0.3)^t </m></p></li>
+    <li><p><m>D(x)=6x^{1/2} </m></p></li>
+    <li><p><m>E(x)=4x+x^4 </m></p></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p>Power</p></li>
+    <li><p>Exponential</p></li>
+    <li><p>Power</p></li>
+    <li><p>Neither</p></li></ol></p></answer></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 19 and 20, graph each pair of functions on the same axes by making a table of values and plotting points by hand. Choose appropriate scales for the axes.</p></introduction>
+
+<exercise number="19"><statement><p><ol marker="a." >
+    <li><p><m>f(x)=3^x </m></p></li>
+    <li><p><m>g(x)=\left(\dfrac{1}{3} \right)^x </m></p></li></ol></p></statement>
+<answer>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col halign="left"/><col/><col/><col/><col/><col/><col/><col/>
+        <row>
+            <cell><m>x</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell></row>
+        <row>
+            <cell><m>f(x)=3^x </m></cell>
+            <cell><m>\frac{1}{27} </m></cell>
+            <cell><m>\frac{1}{9} </m></cell>
+            <cell><m>\frac{1}{3} </m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>27</m></cell></row>
+        <row>
+            <cell><m>g(x)=\left(\frac{1}{3} \right)^x </m></cell>
+            <cell><m>27</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>\frac{1}{3} </m></cell>
+            <cell><m>\frac{1}{9} </m></cell>
+            <cell><m>\frac{1}{27} </m></cell></row>
+    </tabular></sidebyside>
+    <sidebyside width="30%"><image source="images/fig-hw-7-2-19ans"><description>two exponentials</description></image></sidebyside>
+</answer></exercise>
+
+<exercise number="20"><statement><p><ol marker="a.">
+    <li><p><m>h(t)=4^{-t} </m></p></li>
+    <li><p><m>q(t)=-4^t </m></p></li></ol></p></statement>
+<!-- 
+<answer>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col halign="left"/><col/><col/><col/><col/><col/><col/><col/>
+        <row>
+            <cell><m>t</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell></row>
+        <row>
+            <cell><m>h(t)=4^{-t} </m></cell>
+            <cell><m>64</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>\frac{1}{4} </m></cell>
+            <cell><m>\frac{1}{16} </m></cell>
+            <cell><m>\frac{1}{64} </m></cell></row>
+        <row>
+            <cell><m>q(t)=-4^t </m></cell>
+            <cell><m>\frac{-1}{64} </m></cell>
+            <cell><m>\frac{-1}{16} </m></cell>
+            <cell><m>\frac{-1}{4} </m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>-16</m></cell>
+            <cell><m>-64</m></cell></row>
+    </tabular></sidebyside>
+    <sidebyside width="30%"><image source="images/fig-hw-7-2-20ans"><description>graph</description></image></sidebyside>
+</answer> -->
+</exercise>
+</exercisegroup>
+
+<exercise number="21"><statement><p>Which of the following functions have identical graphs? Explain why.<ol marker="a." cols="2">
+    <li><p><m>h(x) = 6^x </m></p></li>
+    <li><p><m>k(x)=\left(\dfrac{1}{6} \right)^x </m></p></li>
+    <li><p><m>m(x)=6^{-x} </m></p></li>
+    <li><p><m>n(x)=\dfrac{1}{6^x} </m></p></li></ol></p>
+</statement>
+<answer><p>Because they are defined by equivalent expressions, (b), (c), and (d) have identical graphs.</p>
+</answer></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 22 and 23:<ol marker="a.">
+    <li>Use a graphing calculator to obtain the graphs for <m>-5 \le x \le 5</m>.</li>
+    <li>Find the largest and smallest function values on the interval <m>-5 \le x \le 5</m>.</li></ol></p></introduction> 
+
+<exercise number="22"><statement><p><m>h(x)=2.4^x</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>P(x)=0.7^x</m></p></statement>
+<answer><p><m>0.17; 5.95</m></p></answer></exercise>
+</exercisegroup>
+
+<exercise number="24"><statement><p>The graph of <m>f(x)=P_0 a^x</m> is shown in the figure.</p>
+    <sidebyside width="25%"><image source="images/fig-mystery-exp-growth"><description>graph</description></image></sidebyside>
+<ol marker="a.">
+    <li>Read the value of <m>P_0</m> from the graph.</li>
+    <li>Make a short table of values for the function by reading values from the graph. Does your table confirm that the function is exponential?</li>
+    <li>Use your table to calculate the growth factor <m>a</m>.</li>
+    <li>Using your answers to parts (a) and (c), write a formula for <m>f(x)</m>.</li></ol></statement></exercise>
+
+<exercise number="25"><statement><p>The graph of <m>g(x)=P_0 a^x</m> is shown in the figure.</p>
+    <sidebyside width="22%"><image source="images/fig-mystery-exp-decay"><description>graph</description></image></sidebyside>
+<ol marker="a.">
+    <li>Read the value of <m>P_0</m> from the graph.</li>
+    <li>Make a short table of values for the function by reading values from the graph. Does your table confirm that the function is exponential?</li>
+    <li>Use your table to calculate the decay factor <m>a</m>.</li>
+    <li>Using your answers to parts (a) and (c), write a formula for <m>g(x)</m>.</li></ol></statement>
+<answer><p><ol marker="a.">
+    <li><m>P_0 = 800</m></li>
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell></row>
+                    <row> 
+                        <cell><m>g(x)</m></cell>
+                        <cell><m>800</m></cell>
+                        <cell><m>200</m></cell>
+                        <cell><m>50</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><m>a = \dfrac{1}{4}</m></li>
+    <li><m>g(x) = 800(\dfrac{1}{4})^x</m></li></ol></p></answer></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 26 and 27, which tables could describe exponential functions? Explain why or why not. If the function is exponential, find its growth or decay factor.</p></introduction>
+
+<exercise number="26"><statement><p><ol marker="a." cols="2">
+    <li><sidebyside width="70%" margins="0% 30%">
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col /><col halign="left"/>
+            <row>
+                <cell><m>h</m></cell>
+                <cell halign="center"><m> a</m></cell></row>
+            <row>
+                <cell><m>0</m></cell>
+                <cell><m>70</m></cell></row>
+            <row>
+                <cell><m>1</m></cell>
+                <cell><m>7</m></cell></row>
+            <row>
+                <cell><m>2</m></cell>
+                <cell><m>0.7</m></cell></row>
+            <row>
+                <cell><m>3</m></cell>
+                <cell><m>0.07</m></cell></row>
+            <row>
+                <cell><m>4</m></cell>
+                <cell><m>0.007</m></cell></row>
+        </tabular></sidebyside></li>
+    <li><sidebyside width="75%" margins="0% 50%">
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col /><col halign="right"/>
+            <row>
+                <cell><m>t</m></cell>
+                <cell halign="center"><m>Q</m></cell></row>
+            <row>
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell></row>
+            <row>
+                <cell><m>1</m></cell>
+                <cell><m>\frac{1}{4} </m></cell></row>
+            <row>
+                <cell><m>2</m></cell>
+                <cell><m>1</m></cell></row>
+            <row>
+                <cell><m>3</m></cell>
+                <cell><m>\frac{9}{4} </m></cell></row>
+            <row>
+                <cell><m>4</m></cell>
+                <cell><m>4</m></cell></row>
+        </tabular></sidebyside></li>
+</ol></p></statement></exercise>
+
+<exercise number="27"><statement><p><ol marker="a." cols="2"> 
+    <li><sidebyside width="70%" margins="0% 30%"> 
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col /><col halign="right"/>
+            <row>
+                <cell><m>t</m></cell>
+                <cell halign="center"><m>y</m></cell></row>
+            <row>
+                <cell><m>1</m></cell>
+                <cell><m>100</m></cell></row>
+            <row>
+                <cell><m>2</m></cell>
+                <cell><m>50</m></cell></row>
+            <row>
+                <cell><m>3</m></cell>
+                <cell><m>33\frac{1}{3} </m></cell></row>
+            <row>
+                <cell><m>4</m></cell>
+                <cell><m>25</m></cell></row>
+            <row>
+                <cell><m>5</m></cell>
+                <cell><m>20</m></cell></row>
+        </tabular></sidebyside></li>
+    <li><sidebyside width="50%" margins="0% 50%">
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center"><col /><col halign="right"/>
+            <row>
+                <cell><m>x</m></cell>
+                <cell halign="center"><m>P</m></cell></row>
+            <row>
+                <cell><m>1</m></cell>
+                <cell><m>\frac{1}{2} </m></cell></row>
+            <row>
+                <cell><m>2</m></cell>
+                <cell><m>1</m></cell></row>
+            <row>
+                <cell><m>3</m></cell>
+                <cell><m>2</m></cell></row>
+            <row>
+                <cell><m>4</m></cell>
+                <cell><m>4</m></cell></row>
+            <row>
+                <cell><m>5</m></cell>
+                <cell><m>8</m></cell></row>
+        </tabular></sidebyside></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>Power <m>y=100 x^{-1}</m></p></li>
+    <li><p>Exponential <m>P=\frac{1}{4} \cdot 2^x</m></p></li>
+</ol></p></answer></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="28"><statement><p>A mobile home loses 20% of its value every 3 years.<ol marker="a.">
+        <li><p>A certain mobile home costs $20,000. Write a function for its value after <m>t</m> years.</p></li>
+        <li><p>Use your calculator to graph your function on the interval <m>0 \le t\le 30</m>.</p></li>
+        <li><p>How long will it be before a $20,000 mobile home depreciates to $12,800? Use algebraic methods to find your answer, and verify it on your graph.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>V(t) = 20,000(0.8)^{t/3}</m></p></li>
+    <li><sidebyside width="90%"><image source="images/fig-hw-7-2-25ans.png"><description>GC decay</description></image></sidebyside></li>
+    <li><p>6 years</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="29"><statement><p>Before the advent of antibiotics, an outbreak of cholera might spread through a city so that the number of cases doubled every 6 days.<ol marker="a.">
+    <li><p>Twenty-six cases were discovered on July 5. Write a function for the number of cases of cholera <m>t</m> days later.</p></li>
+    <li><p>Use your calculator to graph your function on the interval <m>0 \le t\le 90</m>.</p></li>
+    <li><p>When should hospitals expect to be treating 106,496 cases? Use algebraic methods to find your answer, and verify it on your graph.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>N(t) = 26(2)^{t/6}</m></p></li>
+    <li><sidebyside width="90%"><image source="images/fig-hw-7-2-24ans.jpg"><description>GC growth</description></image></sidebyside></li>
+    <li><p>72 days later</p></li>
+</ol></p></answer> 
+</exercise>
+    
+<exercise number="30"><statement><p>The frequency of a musical note depends on its pitch. The graph shows that the frequency increases exponentially. The function <m>F(p) = F_0b^p</m> gives the frequency as a function of the number of half-tones, <m>p</m>, above the starting point on the scale</p>
+    <sidebyside  width="31%"><image source="images/fig-hw-7-2-27"><description>growth</description></image></sidebyside><p>
+    <ol marker="a.">
+        <li><p>Read the value of <m>F_0</m> from the graph. (This is the frequency of the note A above middle C.)</p></li>
+        <li><p>Find an approximation for the growth factor, <m>b</m>, by comparing two points on the graph. (Some of the points on the graph of <m>F(p)</m> are approximately <m>(1, 466)</m>, <m>(2, 494)</m>, <m>(3, 523)</m>, and <m>(4, 554)</m>.)</p></li>
+        <li><p>Using your answers to (a) and (b), write a formula for <m>F(p)</m>.</p></li>
+        <li><p>The frequency doubles when you raise a note by one octave, which is equivalent to 12 half-tones. Use this information to find an exact value for <m>b</m>.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><p><m>F_0=400</m></p></li>
+    <li><p><m>b=1.06</m></p></li>
+    <li><p><m>F(p) = 440(1.06)^p</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="31"><statement><p>For several days after the Northridge earthquake on January 17, 1994, the area received a number of significant aftershocks. The red graph shows that the number of aftershocks decreased exponentially over time. The graph of the function <m>S(d) = S_0b^d</m>, shown in black, approximates the data. (Source: <pubtitle>Los Angeles Times</pubtitle>, June 27, 1995)</p>
+    <sidebyside width="36%"><image source="images/fig-hw-7-2-28"><description>decay</description></image></sidebyside><p>
+    <ol marker="a.">
+        <li><p>Read the value of <m>S_0</m> from the graph.</p></li>
+        <li><p>Find an approximation for the decay factor, <m>b</m>, by comparing two points on the graph. (Some of the points on the graph of <m>S(d)</m> are approximately <m>(1, 82)</m>, <m>(2, 45)</m>, <m>(3, 25)</m>, and <m>(4, 14)</m>.)</p></li>
+        <li><p>Using your answers to (a) and (b), write a formula for <m>S(d)</m>.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="3">
+    <li><p><m>S_0=150</m></p></li>
+    <li><p><m>b\approx 0.55</m></p></li>
+    <li><p><m>S(d) = 150(0.55)^d</m></p></li>
+</ol></p></answer></exercise>
+
+<exercisegroup  cols="2"><introduction><p>For Problems 32 and 33, fill in the tables. Graph each pair of functions in the same window. Then answer the questions below.<ol marker="a.">
+        <li><p>For how many values of <m>x</m> does <m>f (x) = g(x)</m>?</p></li>
+        <li><p>Estimate the value(s) of <m>x</m> for which <m>f (x) = g(x)</m>.</p></li>
+        <li><p>For what values of <m>x</m> is <m>f (x)\lt g(x)</m>?</p></li>
+        <li><p>Which function grows more rapidly for large values of <m>x</m>?</p></li>
+    </ol></p></introduction>
+
+<exercise number="32"><statement>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row><cell><m>x</m></cell>
+            <cell><m>f(x)=x^2</m></cell>
+            <cell><m>g(x)=2^x </m></cell></row>
+        <row><cell><m>-2</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>-1</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>0</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>1</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>2</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>3</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>4</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row><cell><m>5</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+    </tabular></sidebyside></statement>
+<answer><sidebyside>
+    <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row><cell><m>x</m></cell>
+            <cell><m>f(x)=x^2</m></cell>
+            <cell><m>g(x)=2^x </m></cell></row>
+        <row><cell><m>-2</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>\frac{1}{4} </m></cell></row>
+        <row><cell><m>-1</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>\frac{1}{2} </m></cell></row>
+        <row><cell><m>0</m></cell>
+            <cell><m>0</m></cell>
+            <cell>1</cell></row>
+        <row><cell><m>1</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell></row>
+        <row><cell><m>2</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>4</m></cell></row>
+        <row><cell><m>3</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>8</m></cell></row>
+        <row><cell><m>4</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>16</m></cell></row>
+        <row><cell><m>5</m></cell>
+            <cell><m>25</m></cell>
+            <cell><m>32</m></cell></row>
+    </tabular></sidebyside>
+    <sidebyside width="50%"><image source="images/fig-hw-7-2-29ans"><description>exponential growth and qudratic</description></image></sidebyside>
+    <p><ol marker="a.">
+    <li><p><m>Three</m></p></li>
+    <li><p><m>x = -0.77,~2,~4</m></p></li>
+    <li><p><m>(-0.77, 2) \cup (4,\infty)</m></p></li>
+    <li><p><m>g(x)</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="33"><statement>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row>
+            <cell><m>x</m></cell>
+            <cell><m>f(x)=x^3</m></cell>
+            <cell><m>g(x)=3^x </m></cell></row>
+        <row>
+            <cell><m>-2</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>-1</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>0</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>1</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>2</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>3</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>4</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+        <row>
+            <cell><m>5</m></cell>
+            <cell></cell>
+            <cell></cell></row>
+    </tabular></sidebyside></statement></exercise>
+</exercisegroup>
+
+<exercise number="34"><statement><p>Related species living in the same area often evolve in different sizes to minimize competition for food and habitat. Here are the masses of eight species of fruit pigeon found in New Guinea, ranked from smallest to largest. (Source: Burton, 1998)</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Size rank</cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>7</m></cell>
+                        <cell><m>8</m></cell></row>
+                    <row> 
+                        <cell>Mass (grams)</cell>
+                        <cell><m>49</m></cell>
+                        <cell><m>76</m></cell>
+                        <cell><m>123</m></cell>
+                        <cell><m>163</m></cell>
+                        <cell><m>245</m></cell>
+                        <cell><m>414</m></cell>
+                        <cell><m>592</m></cell>
+                        <cell><m>802</m></cell></row>
+                    </tabular></sidebyside>
+<p><ol marker="a.">
+    <li><p>Plot the masses of the pigeons against their order of increasing size. What kind of function might fit the data?</p>
+    <sidebyside width="40%"><image xml:id="fig-pigeon-size-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.7] 
+        \draw[cyan] (0,0) grid[ystep=1/2] (8,8);
+        \draw[black,thick,->,>=stealth'] (0,0)--(8.6,0);
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,8.6);
+        \foreach \x in {1,2,...,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          }
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in {1,2,...,8} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+</image>
+</sidebyside></li>
+    <li>Compute the ratios of the masses of successive sizes of fruit pigeons. Are the ratios approximately constant? What does this information tell you about your answer to part (a)?</li>
+    <li>Compute the average ratio to two decimal places. Using this ratio, estimate the mass of a hypothetical fruit pigeon of size rank zero.</li>
+    <li>Using your answers to part (c), write an exponential function that approximates the data. Graph this function on top of the data and evaluate the fit.</li></ol></p></statement></exercise>
+
+</subexercises>
+</exercises>

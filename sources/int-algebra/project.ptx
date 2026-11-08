@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
+
+<project ptx-version="2" source="ptx">
+  <targets>
+    <target name="web" format="html" source="int-alg.xml" publication="publication.ptx" />
+    <target name="ww" format="html" source="int-alg.xml" publication="publication-webwork.ptx" />
+    <target name="print-latex" format="latex" source="int-alg.xml" publication="publication.ptx" />
+    <target name="print" format="pdf" source="int-alg.xml" publication="publication.ptx" />
+    <target name="subset" format="html" source="test-section.ptx" publication="publication-test.ptx" />
+    <target name="subtex" format="latex" source="test-tex.ptx" publication="publication-testtex.ptx" />
+    <target name="subprint" format="pdf" source="test-tex.ptx" publication="publication-testtex.ptx" />
+  </targets>
+</project>

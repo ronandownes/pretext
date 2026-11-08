@@ -1,0 +1,74 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=0.4]
+\coordinate (O) at (0,0);
+\draw[cyan] (O) grid (10,10);
+\draw[black,thick, ->, >=stealth'] (O)--(11,0) node[right]{$x$};
+\draw[black,thick, ->, >=stealth'] (O)--(0,11) node[left]{$y$};
+\foreach \x in  {5,10} {
+ \draw[black, thick] (\x,.08) --++(0,-.16)  node[below]   {\x};
+}
+\foreach \y [evaluate=\y as \yi using int( 6* \y )] in  {1,2,...,10} {
+ \draw[black, thick] (.08,\y) --++(-.16,0)  node[left]   {\yi};
+}
+\draw [red, very thick]  (O) -- (15/2,10);
+\node[below left, xshift=1] at (O) {0};
+\node[left, xshift=-.4cm] at ($ (O) +(0,12)$) {I};
+
+\def\delta{14};
+\coordinate (O) at (\delta,0);
+\draw[cyan] (O) grid ($ (O)+(10,10) $);
+\draw[black,thick, ->, >=stealth'] (O)--++(11,0) node[right]{$x$};
+\draw[black,thick, ->, >=stealth'] (O)--++(0,11) node[left]{$y$};
+\foreach \x in  {5,10} {
+ \draw[black, thick] (O)++(\x,.08) --++(0,-.16)  node[below]   {\x};
+}
+\foreach \y [evaluate=\y as \yi using int( 2* \y )] in  {5,10} {
+ \draw[black, thick] (O)++(.08,\y) --++(-.16,0)  node[left]   {\yi};
+}
+\draw [red, very thick]  (O)++(0,4) -- ++(10,5);
+\node[below left, xshift=1] at (O) {0};
+\node[left, xshift=-.4cm] at ($ (O) +(0,12)$) {II};
+
+\def\delta{28};
+\coordinate (O) at (\delta,0);
+\draw[cyan] (O) grid ($ (O)+(10,10) $);
+\draw[black,thick, ->, >=stealth'] (O)--++(11,0) node[right]{$x$};
+\draw[black,thick, ->, >=stealth'] (O)--++(0,11) node[left]{$y$};
+\foreach \x in  {5,10} {
+ \draw[black, thick] (O)++(\x,.08) --++(0,-.16)  node[below]   {\x};
+}
+\foreach \y in  {5,10} {
+ \draw[black, thick] (O)++(.08,\y) --++(-.16,0)  node[left]   {\y};
+}
+\draw [red, very thick]  (O)++(0,8) -- ++(8,-8);
+\node[below left, xshift=1] at (O) {0};
+\node[left, xshift=-.4cm] at ($ (O) +(0,12)$) {III};
+\end{tikzpicture}%
+}
+\end{document}

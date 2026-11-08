@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+
+
+<!-- This file was originally part of the book     -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<exercises xml:id="section-6-2-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 6.2</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Each radical below is equal to an integer. Use trial and error to find the root without a calculator.<ol marker="a." cols="3"> 
+        <li><m>\sqrt{169}</m></li>
+        <li><m>\sqrt[3]{64}</m></li>
+        <li><m>\sqrt[4]{81}</m></li>
+        <li><m>\sqrt[5]{100,000}</m></li>
+        <li><m>\sqrt[4]{1296}</m></li>
+        <li><m>\sqrt[3]{343}</m></li></ol></p></statement>
+<answer><p><m>13;~4;~3;~10;~6;~7</m></p></answer></exercise> 
+
+<exercise number="2"><statement><p>Evaluate each power without using a calculator.<ol marker="a." cols="3">
+        <li><m>9^{1/2}</m></li>
+        <li><m>81^{1/4}</m></li>
+        <li><m>64^{1/6}</m></li>
+        <li><m>32^{0.2}</m></li>
+        <li><m>8^{-1/3}</m></li>
+        <li><m>64^{-0.5}</m></li></ol></p></statement></exercise>  
+
+<exercise number="3"><statement><p>Use a calculator to approximate each irrational number to the nearest thousandth:
+<ol marker="a." cols="3">
+    <li><m>2^{1/2}</m></li>    
+    <li><m>\sqrt[3]{75}</m></li>
+    <li><m>\sqrt[4]{1.6}</m></li>
+    <li><m>365{-1/3}</m></li>
+    <li><m>0.006^{-0.2}</m></li>
+    <li><m>100^{0.25}</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>1.414</m></li>
+    <li><m>4.217</m></li>
+    <li><m>1.125</m></li>
+    <li><m>0.140</m></li>
+    <li><m>2.782</m></li>
+    <li><m>3.162</m></li></ol></p></answer></exercise>
+
+<exercise number="4"><statement><p>Use the definition of a root to simplify without using a calculator.<ol marker="a." cols="2">
+        <li><m>(\sqrt[3]{125})^3=</m></li>
+        <li><m>(\sqrt[4]{2})^4=</m></li>
+        <li><m>(\sqrt[3]{7})^3=</m></li>
+        <li><p><m>\left(2\sqrt[3]{12} \right)^3 </m></p></li>
+        <li><p><m>\left(-a^3\sqrt[4]{a^2} \right)^4 </m></p></li>
+        <li><m>(-x^2\sqrt[3]{2x})^3=</m></li></ol></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercise number="5"><statement><p>Evaluate each power, if possble.<ol marker="a." cols="2">
+        <li><m>-81^{1/4}</m></li>
+        <li><m>(-81)^{1/4}</m></li>
+        <li><m>-27^{1/3}</m></li>
+        <li><m>(-27)^{1/3}</m></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+        <li><m>-3</m></li>
+        <li><m>undefined</m></li>
+        <li><m>-3</m></li>
+        <li><m>-3</m></li></ol></p></answer></exercise>
+
+<exercise number="6"><statement><p>Complete the table converting radicals to powers.</p>
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Radical</cell>
+                        <cell><m>\sqrt{x}</m></cell>
+                        <cell><m>\sqrt[3]{x}</m></cell>
+                        <cell><m>\sqrt[4]{x}</m></cell>
+                        <cell><m>\sqrt[5]{x}</m></cell>
+                        <cell><m>\dfrac{1}{\sqrt{x}}</m></cell>
+                        <cell><m>\dfrac{1}{\sqrt[3]{x}}</m></cell>
+                        <cell><m>\dfrac{1}{\sqrt[4]{x}}</m></cell>
+                        <cell><m>\dfrac{1}{\sqrt[5]{x}}</m></cell></row>
+                    <row> 
+                        <cell>Exponent (Fraction)</cell>
+                        <cell><m>x^{1/2}</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell>Exponent (Decimal)</cell>
+                        <cell><m>x^{0.5}</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 7 and 8, write each expression in radical form.</p></introduction>
+
+<exercise number="7"><statement><p><ol cols="3">
+    <li><p><m>7^{1/2} </m></p></li>
+    <li><p><m>3x^{1/4} </m></p></li>
+    <li><p><m>(3x)^{0.25} </m></p></li>
+</ol></p></statement>
+<answer><p><ol cols="3">
+    <li><p><m>\sqrt{7}</m></p></li>
+    <li><p><m>3\sqrt[4]{x} </m></p></li>
+    <li><p><m>\sqrt[4]{3x}</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="8"><statement><p><ol cols="3">
+    <li><p><m>8^{-1/4} </m></p></li>
+    <li><p><m>y(5x)^{-0.5} </m></p></li>
+    <li><p><m>(y+2)^{1/3} </m></p></li>
+</ol></p></statement>
+</exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 9 and 10, write each expression in exponential form.</p></introduction>
+
+<exercise number="9"><statement><p><ol cols="3">
+    <li><p><m>\sqrt{5} </m></p></li>
+    <li><p><m>\sqrt[3]{4y} </m></p></li>
+    <li><p><m>5\sqrt[3]{x} </m></p></li>
+</ol></p></statement>
+<answer><p><ol cols="3">
+    <li><p><m>5^{1/2}</m></p></li>
+    <li><p><m>(4y)^{1/3}</m></p></li>
+    <li><p><m>5x^{1/3} </m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement><p><ol cols="3">
+    <li><p><m>\dfrac{2} {\sqrt[5]{3} } </m></p></li>
+    <li><p><m>\sqrt[3]{y+2x} </m></p></li>
+    <li><p><m>\dfrac{-1} {\sqrt[4]{3a-2b} } </m></p></li>
+</ol></p></statement>
+</exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11<ndash/>14, write the expression as a sum of terms of the form <m>kx^p</m>.</p></introduction>
+
+<exercise number="11"><statement><p><m>
+    \dfrac{\sqrt{x}}{4}-\dfrac{2}{\sqrt{x}}+\dfrac{x}{\sqrt{2}}</m></p></statement>
+<answer><p><m>\dfrac{1}{4}x^{1/2}-2x^{-1/2}+\dfrac{1}{\sqrt{2}}x</m></p></answer></exercise>
+
+<exercise number="12"><statement><p><m>
+    \dfrac{6-\sqrt[3]{x}}{2\sqrt[3]{x}}</m></p></statement></exercise>
+
+<exercise number="13"><statement><p><m>
+    x^{-0.5}\left(x+x^{0.25}-x^{0.5} \right)</m></p></statement>
+<answer><p><m>x^{0.5}+x^{-0.25}-1</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>
+    \dfrac{\dfrac{1}{2}x^{-1}+2x^{-0.5}+x^{-0.25}}{2x^{0.5}}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15<ndash/>20, solve.</p></introduction>
+
+<exercise number="15"><statement><p><m>6.5x^{1/3} + 3.8 = 33.05</m></p></statement>
+<answer><p><m>x = 91.125</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>4(x + 2)^{1/5} = 12</m></p></statement></exercise>
+
+<exercise number="17"><statement><p><m>(2x - 3)^{-1/4} = \dfrac{1}{2}</m></p></statement>
+<answer><p><m>x = \dfrac{19}{2} </m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>(5x-2)^{-1/3} = \dfrac{1}{4}</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>\sqrt[3]{x^2-3} = 3</m></p></statement>
+<answer><p><m>x = \pm \sqrt{30} </m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>\sqrt[3]{2x^2-15} = 5</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 21<ndash/>26, solve for the indicated variable.</p></introduction>
+
+<exercise number="21"><statement><p><m>T = 2\pi\sqrt{\dfrac{L}{g}}~~~~</m>  for <m>L</m></p></statement>
+<answer><p><m>L=\dfrac{gT^2}{4\pi^2} </m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>r = \sqrt{t^2-s^2}~~~~</m>  for <m>s</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>d = \sqrt[3] {\dfrac{16Mr^2}{m}}~~~~</m> for <m>M</m></p></statement>
+<answer><p><m>M=\dfrac{d^3m}{16r^2}</m></p></answer></exercise>
+
+<exercise number="24"><statement><p><m>R = \sqrt[4] {\dfrac{8Lvf}{\pi p}}~~~~</m>  for <m>p</m></p></statement></exercise>
+
+<exercise number="25"><statement><p><m>T = \sqrt[4] {\dfrac{E}{SA}}~~~~</m> for <m>A</m></p></statement>
+<answer><p><m>A=\dfrac{E}{ST^4}</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>r = \sqrt[3] {\dfrac{3V}{4 \pi}}~~~~</m>  for <m>V</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="27"><statement><p>Match each function with the description of its graph in the first quadrant.<ol marker="I." cols="2">
+    <li><m>f(x)=x^2</m></li>
+    <li><m>g(x)=x^{-2}</m></li>
+    <li><m>h(x)=x^{1/2}</m></li>
+    <li><p><m>f (x) = x^{-1/2}</m></p></li></ol></p>
+<p><ol marker="a.">
+    <li>Increasing and concave up</li>
+    <li>Increasing and concave down</li>
+    <li>Decreasing and concave up</li>
+    <li><p>Decreasing and concave down</p></li></ol></p></statement>
+<answer><p><ol marker="a." cols = "3">
+    <li>I</li>
+    <li>III</li>
+    <li>II</li>
+    <li>III</li></ol></p></answer></exercise>
+
+<exercise number="28"><statement><p>Match each function with its graph.<ol marker="a." cols="2">
+    <li><sidebyside width="60%" margins="0% 5%" valigns="middle"><stack><image xml:id="fig-cube-and-square">
+        <description>cube and square</description>
+        <latex-image>
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.5]
+        \draw[cyan] (0,0) grid[xstep=1] (3,4);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(3.4,0);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,4.6);
+        \draw[samples=65,domain={0:8^(1/3)},smooth,variable=\x,blue,very thick, ->,>=stealth'] plot ( {\x}, {1/2*(\x)^(3)}) node[above] {A};
+        \draw[samples=65,domain={0:sqrt(8)},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {1/2*(\x)^(2)}) node[above] {B};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    <p><m>f(x)=x^2,~g(x)=x^3</m></p></stack>
+    </sidebyside></li>
+    <li><sidebyside width="60%" margins="0% 5%" valigns="middle"><stack><image xml:id="fig-cube-and-square-roots">
+        <description>cube root and square root</description>
+        <latex-image>
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.9, yscale=.6]
+        \draw[cyan] (0,0) grid[xstep=1] (3,4);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(3.4,0);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,4.6);
+        \draw[samples=65,domain={0:3)},smooth,variable=\x,blue,very thick, ->,>=stealth'] plot ( {\x}, {(3*\x)^(1/3)}) node[right] {B};
+        \draw[samples=65,domain={0:3},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {(3*\x)^(1/2)}) node[right] {A};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+        <p><m>f(x)=x^{1/2},~g(x)=x^{1/3}</m>
+        </p></stack>
+        </sidebyside></li>
+    <li><sidebyside width="60%" margins="0% 5%" valigns="middle"><stack><image xml:id="fig-inv-cube-and-square">
+        <description>inverse cube and inverse square</description>
+        <latex-image>
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1.2, yscale=1]
+        \draw[cyan] (0,0) grid[xstep=1/2, ystep=1/2] (2,3);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(2.2,0);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,3.3);
+        \draw[samples=65,domain={1/3^(1/3):2)},smooth,variable=\x,blue,very thick, <->,>=stealth'] plot ( {\x}, {(\x)^(-3)});
+        \node[text=blue]  at (.75,3.3){B};
+        \draw[samples=65,domain={1/sqrt(3):2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {(\x)^(-2)});
+        \node[text=red]  at (.5,3.3){A};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+        <p><m>f(x)=x^{-2},~g(x)=x^{-3}</m></p></stack>
+    </sidebyside>
+    </li></ol></p></statement>
+</exercise>
+
+<exercise number="29"><statement><p>Write each expression as a power function.<ol marker="a." cols="3">
+    <li><p><m>G(x)=3.7 \sqrt[3]{x} </m></p></li>
+    <li><p><m>H(x)=\sqrt[4]{85x} </m></p></li>
+    <li><p><m>F(t)=\dfrac{25}{\sqrt[5]{t}} </m></p></li>
+</ol></p></statement>
+<answer><p><ol cols="3">
+    <li><p><m>G(x) = 3.7x^{1/3} </m></p></li>
+    <li><p><m>H(x) = 85^{1/4}x^{1/4} </m></p></li>
+    <li><p><m>F(t) = 25t^{-1/5} </m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>Graph each set of functions in the given window. What do you observe?<ol marker="a.">
+    <li><p><m>y_1=\sqrt{x},~y_2=x^2,~y_3=x</m>
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 4</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 4</mrow></md></p></li>
+    <li><p><m>y_1=\sqrt[3]{x},~y_2=x^3,~y_3=x</m>
+            <md><mrow>\text{Xmin} \amp = -4 \amp\amp \text{Xmax} = 4</mrow>
+                <mrow>\text{Ymin} \amp = -4 \amp\amp \text{Ymax} = 4</mrow></md></p></li></ol></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="31"><statement><p>When a ship moves through the water, it creates waves that hinder its own progress. Because of this resistance, there is an upper limit to the speed at which a ship can travel, given in knots by
+    <me>v_{\text{max}} = 1.3 \sqrt{L}</me>
+where <m>L</m> is the length of the vessel in feet.   (Source: Gilner, 1972) <ol marker="a.">
+    <li><p>Complete the table of values for <m>v_{\text{max}}</m> as a function of <m>L</m>.</p>
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>L</m> (feet)</cell>
+                        <cell><m>200</m></cell>
+                        <cell><m>400</m></cell>
+                        <cell><m>600</m></cell>
+                        <cell><m>800</m></cell>
+                        <cell><m>1000</m></cell></row>
+                    <row> 
+                        <cell><m>v_{\text{max}}</m> (knots)</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><p> Graph maximum speed against vessel length.</p>
+        <sidebyside width="40%"><image xml:id="fig-ship-speed-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid[] (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$L$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$v_{{max}}$};
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in {2,4,...,10} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+         }
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in {2,4,...,10} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li><!-- The world’s largest ship, the oil tanker Jahre Viking, is 1054 feet long. What is its top speed? --> 
+        The largest ship ever built, the oil tanker Seawise Giant, was 1,504 feet long. What was its top speed?</li>
+    <li>As a ship approaches its maximum speed, the power required increases sharply. Therefore, most merchant
+        ships are designed to cruise at speeds no higher than
+            <me>v_c = 0.8 \sqrt{L}</me>
+        Graph <m>v_c</m> on the same axes with <m>v_{\text{max}}</m>.</li>
+    <li>What was the cruising speed of the Seawise Giant? What percent of its maximum speed is that?</li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>L</m> (feet)</cell>
+                        <cell><m>200</m></cell>
+                        <cell><m>400</m></cell>
+                        <cell><m>600</m></cell>
+                        <cell><m>800</m></cell>
+                        <cell><m>1000</m></cell></row>
+                    <row> 
+                        <cell><m>v_{\text{max}}</m> (knots)</cell>
+                        <cell><m>18.4</m></cell>
+                        <cell><m>26</m></cell>
+                        <cell><m>31.8</m></cell>
+                        <cell><m>36.8</m></cell>
+                        <cell><m>41.1</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><sidebyside width="38%" margins="0% 0%"><image xml:id="fig-ship-speed">
+        <description>maximum velocity</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid[] (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$L$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$v_{{max}}$};
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in {2,4,...,10} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+         }
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in {2,4,...,10} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={0:10)},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {2*1.3*sqrt(\x)}) node[right]{$v_{max}$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li>50.4 knots</li>
+    <li><sidebyside width="44%" margins="0% 0%"><image xml:id="fig-ship-speeds">
+        <description>maximum and cruise velocities</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid[] (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$L$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$v_{{max}}$};
+        \foreach \x [evaluate=\x as \xi using int(100*\x)] in {2,4,...,10} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+         }
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in {2,4,...,10} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={0:10)},smooth,variable=\x,red,very thick, ->,>=stealth'] plot ( {\x}, {2*1.3*sqrt(\x)}) node[right]{$v_{max}$};
+        \draw[samples=65,domain={0:10)},smooth,variable=\x,blue,very thick, ->,>=stealth'] plot ( {\x}, {2*0.8*sqrt(\x)}) node[right]{$v_c$};
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li>31 knots, 62%</li></ol></p></answer></exercise>
+
+<exercise number="32"><statement><p>If you walk in the normal way, your speed, <m>v</m>, in meters per second, is limited by the length of your legs, <m>r</m>, according to the formula
+    <me>v \le \sqrt{gr}</me>
+where <m>g</m> is the acceleration due to gravity. (Source: Alexander, 1992)<ol marker="a.">
+    <li><p>Complete the table of values for <m>v</m> as a function of <m>r</m>. The constant, <m>g</m>, is approximately 10.</p>
+        <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>r</m> (meters)</cell>
+                        <cell><m>0.2</m></cell>
+                        <cell><m>0.4</m></cell>
+                        <cell><m>0.6</m></cell>
+                        <cell><m>0.8</m></cell>
+                        <cell><m>1.0</m></cell></row>
+                    <row> 
+                        <cell><m>v</m> (meters/sec)</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></sidebyside></li>
+    <li>A typical adult man has legs about 0.9 meter long. How fast can he walk?</li>
+    <li>A typical four-year-old has legs 0.5 meter long. How fast can she walk?</li>
+    <li><p>Graph maximum walking speed against leg length.</p>
+        <sidebyside width="38%"><image xml:id="fig-walk-speed-grid">
+        <description>grid</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid[] (10,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$r$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$v$};
+        \foreach \x in {2,4,...,8} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$0.\x$};
+         }
+         \draw[black] (10,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$1$};
+        \foreach \x [evaluate=\x as \xi using int(\x/2)] in {2,4,...,10} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image>
+        </image>
+    </sidebyside></li>
+    <li>Race-walkers can walk as fast as 4.4 meters per second by rotating their hips so that the effective length of their legs is increased. What is that effective length?</li>
+    <li>On the moon the value of <m>g</m> is 1.6. How fast can a typical adult man walk on the moon?</li></ol></p>
+</statement></exercise>
+
+<exercise number="33"><statement><p>The period of a pendulum is the time it takes for the pendulum to complete one entire swing, from left to right and back again. The greater the length, <m>L</m>, of the pendulum, the longer its period, <m>T</m>. In fact, if <m>L</m> is measured in feet, then the period is given in seconds by
+    <me>T=2\pi\sqrt{\frac{L}{32}} </me><ol>
+        <li><p>Write the formula for <m>T</m> as a power function in the form <m>f (x) = kx^p</m>.</p></li>
+        <li><p>The Foucault pendulum in the Convention Center in Portland, Oregon is 90 feet long. What is its period?</p></li>
+        <li><p>Choose a suitable window and graph the function <m>T=f(L)</m>. Label the point corresponding to point (b) on the graph.</p></li></ol>
+</p></statement>
+<answer><p><ol cols="3">
+    <li><p><m>T=\dfrac{2\pi}{\sqrt{32}}L^{1/2} </m></p></li>
+    <li><p><m>10.54</m> sec</p></li>
+    <li><sidebyside width="90%"><image source="images/fig-ans-3-3-39"><description>square root</description></image></sidebyside></li></ol></p></answer></exercise>
+
+<exercise number="34"><statement><p>The rate, <m>r</m>, in feet per second, at which water flows from a fire hose varies directly with the square root of the water pressure, <m>P</m>, in psi (pounds per square inch). What is the rate of water flow at a typical water pressure of 60 psi?</p>
+    <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row><cell><m>P</m> (psi)</cell>
+            <cell><m>10</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>30</m></cell>
+            <cell><m>40</m></cell></row>
+        <row><cell><m>r</m> (ft/sec)</cell>
+            <cell><m>38.3</m></cell>
+            <cell><m>54.1</m></cell>
+            <cell><m>66.3</m></cell>
+            <cell><m>76.5</m></cell></row>
+    </tabular></sidebyside><p><ol marker="a.">
+    <li><p>Find the value of <m>k</m> and write a power function relating the variables.</p></li>
+    <li>What is the rate of water flow at a typical water pressure of 60 psi?</li>
+    <li><p>Graph your function and verify your answer to part (b) on the graph.</p></li></ol></p></statement>
+</exercise>
+
+<exercise number="35"><statement><p>Thanks to improvements in technology, the annual electricity cost of running most major appliances has decreased steadily since 1970. The average annual cost of running a refrigerator is given, in dollars, by the function
+    <me>C(t) = 148- 28 t^{1/3}</me>
+where <m>t</m> is the number of years since 1970.<ol>
+    <li><p>How much did it cost to run a refrigerator in 1980? In 1990?</p></li>
+    <li><p>When was the cost of running a refrigerator half of the cost in 1970? If the cost continues to decline according to the given function, when will it cost $50 per year to run a refrigerator?</p></li>
+    <li><p>Graph the function <m>C(t)</m>. Do you think that the cost will continue to decline indefinitely according to the given function? Why or why not?</p></li></ol></p></statement>
+<answer><p><ol cols="3">
+    <li><p>$87.68; $72.00</p></li>
+    <li><p>1989; 2013</p></li></ol></p></answer></exercise>
+
+<exercise number="36"><statement><p>A rough estimate for the radius of the nucleus of an atom is provided by the formula
+    <me>r=kA^{1/3}</me>
+where <m>A</m> is the mass number of the nucleus and <m>k\approx 1.3 \times 10^{-13}</m> centimeter.<ol>
+    <li><p>Estimate the radius of the nucleus of an atom of iodine-127, which has mass number 127. If the nucleus is roughly spherical, what is its volume?</p></li>
+    <li><p>The nuclear mass of iodine-127 is <m>2.1 \times 10^{-22}</m> gram. What is the density of the nucleus? (Density is mass per unit volume.)</p></li>
+    <li><p>Complete the table of values for the radii of various radioisotopes.</p>
+            <sidebyside><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <col halign="left"/><col/><col/><col/><col/><col/>
+                <row><cell>Element</cell>
+                    <cell>Carbon</cell>
+                    <cell>Potassium</cell>
+                    <cell>Cobalt</cell>
+                    <cell>Technetium</cell>
+                    <cell>Radium</cell></row>
+                <row><cell><line>Mass</line><line>number, <m>A</m></line></cell>
+                    <cell><m>14</m></cell>
+                    <cell><m>40</m></cell>
+                    <cell><m>60</m></cell>
+                    <cell><m>99</m></cell>
+                    <cell><m>226</m></cell></row>
+                <row><cell>Radius, <m>r</m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell>
+                    <cell><m></m></cell></row>
+            </tabular></sidebyside></li>
+        <li><p>Sketch a graph of <m>r</m> as a function of <m>A</m>. (Use units of <m>10^{-13}</m> centimeter on the vertical axis.)</p></li></ol>
+</p></statement>
+<answer><p><ol>
+    <li><p><m>6.5\times 10^{-13}</m> cm; <m>1.17\times 10^{-36} \text{ cm}^3</m></p></li>
+    <li><p><m>1.8\times 10^{14} g/\text{cm}^3</m></p></li>
+    <li><sidebyside>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <col halign="left"/><col/><col/><col/><col/><col/><col/>
+            <row>
+                <cell>Element</cell>
+                <cell>Carbon</cell>
+                <cell>Potassium</cell>
+                <cell>Cobalt</cell>
+                <cell>Technetium</cell>
+                <cell>Radium</cell>
+            </row>
+            <row>
+                <cell><line>Mass</line><line>number, <m>A</m></line></cell>
+                <cell><m>14</m></cell>
+                <cell><m>40</m></cell>
+                <cell><m>60</m></cell>
+                <cell><m>99</m></cell>
+                <cell><m>226</m></cell>
+            </row>
+            <row>
+                <cell><line>Radius, <m>r</m></line><line>(<m>10^{-13}</m> cm) </line></cell>
+                <cell><m>3.1</m></cell>
+                <cell><m>4.4</m></cell>
+                <cell><m>5.1</m></cell>
+                <cell><m>6</m></cell>
+                <cell><m>7.9</m></cell>
+            </row>
+        </tabular>
+    </sidebyside></li>
+    <li><sidebyside width="25%"><image source="images/fig-ans-3-3-43"><description>cube root</description></image></sidebyside></li></ol></p></answer></exercise>
+
+<exercise number="37"><statement><p>When the Concorde lands at Heathrow airport in London, the width <m>w</m> of the sonic boom felt on the ground is given in kilometers by the following formula:
+    <me>w=4\left(\dfrac{Th}{m}\right)^{1/2}</me>
+where <m>T</m> stands for the temperature on the ground in kelvins, <m>h</m> is the altitude of the Concorde when it breaks the sound barrier, and <m>m</m> is the drop in temperature for each gain in altitude of 1 kilometer. Find the width of the sonic boom if the ground temperature is 293 kelvins, the altitude of the Concorde is 15 kilometers, and the temperature drop is 4 kelvin per kilometer of altitude.</p></statement>
+<answer><p>132.6 km</p></answer></exercise>
+
+<exercise number="38"><statement><p>The Stefan-Boltzmann law says that the temperature, <m>T</m>, of the Sun, in kelvins, can be computed from the formula
+    <me>sT^4 = \dfrac{L}{4 \pi R^2}</me>
+where <m>L=3.9 \times 10^{33}</m> is the total luminosity of the Sun, <m>R=9.96 \times 10^{10}</m> centimeters is the radius of the Sun, and <m>s=5.7 \times 10^{-5}</m> is a constant governing radiation. Calculate the temperature of the Sun.</p></statement></exercise>
+ 
+<exercise number="39"><statement><p><ol>
+    <li><p>Graph the functions <m>~~f (x) = 4 \sqrt[3]{x - 9}~~</m> and <m>~~g(x) = 12~~</m> in the window
+        <md><mrow>{\text{Xmin}} \amp = 0 \amp\amp {\text{Xmax}} = 47</mrow>
+        <mrow>{\text{Ymin}} \amp = -8 \amp\amp {\text{Ymax}} = 16</mrow></md> </p></li>
+    <li><p>Use the graph to solve the equation <m>4 \sqrt[3]{x - 9}=12</m>.</p></li>
+    <li><p>Solve the equation algebraically.</p></li>
+</ol></p></statement>
+<answer><p><ol cols="2">
+    <li><sidebyside width="70%"><image source="images/fig-ans-3-3-59.jpg"><description>cube root</description></image></sidebyside></li>
+    <li><p><m>x=36</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="40"><statement><p><ol>
+    <li><p>Graph the functions <m>~~f (x) = 6+2 \sqrt[4]{12-x}~~</m> and <m>~~g(x) = 10~~</m> in the window
+        <md><mrow>{\text{Xmin}} \amp = -27 \amp\amp {\text{Xmax}} = 20</mrow>
+        <mrow>{\text{Ymin}} \amp = 4 \amp\amp {\text{Ymax}} = 12</mrow></md> </p></li>
+    <li><p>Use the graph to solve the equation <m>6+2 \sqrt[4]{12-x}=10</m>.</p></li>
+    <li><p>Solve the equation algebraically.</p></li>
+</ol></p></statement></exercise>
+
+</subexercises>
+</exercises>

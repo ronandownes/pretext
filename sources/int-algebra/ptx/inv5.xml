@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Epidemics"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Epidemics</title>
+ 
+<introduction><p>A contagious disease whose spread is unchecked can devastate a confined population. For example, in the early 16th-century, Spanish troops introduced smallpox into the Aztec population in Central America, and the resulting epidemic contributed significantly to the fall of Montezuma’s empire.</p>
+
+ <p>Suppose that an outbreak of cholera follows severe flooding in an isolated town of 5000 people. Initially (Day 0), 40 people are infected. Every day after that, 25% of those still healthy fall ill.</p></introduction>
+
+<exercises>
+<exercise number="1"><statement><p>At the beginning of the first day (Day 1), how many people are still healthy? How
+many will fall ill during the first day? What is the total number of people infected after the first day?</p></statement></exercise>
+
+<exercise number="2"><statement><p>Check your results against the table below. Subtract the total number of infected residents from 5000 to find the number of healthy residents at the beginning of the second day. Then fill in the rest of the table for 10 days. (Round off decimal results to the nearest whole number.)</p>
+ 
+<sidebyside widths="40% 50%"><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">Day</cell>
+                        <cell bottom="minor">Number healthy</cell>
+                        <cell bottom="minor">New patients</cell>
+                        <cell bottom="minor">Total infected</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>5000</m></cell>
+                        <cell bottom="minor"><m>40</m></cell>
+                        <cell bottom="minor"><m>40</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>4960</m></cell>
+                        <cell bottom="minor"><m>1240</m></cell>
+                        <cell bottom="minor"><m>1280</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>7</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>9</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10</m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell>
+                        <cell bottom="minor"><m></m></cell></row>  
+                    </tabular>
+
+    <image source="images/fig-???"><description>graph</description></image></sidebyside></statement></exercise>
+
+<exercise number="3"><statement><p>Use the last column of the table to plot the total number of infected residents, <m>I</m>, against time, <m>t</m>, on the grid below. Connect your data points with a smooth curve.</p></statement></exercise>
+
+<exercise number="4"><statement><p>Do the values of <m>I</m> approach some largest value? Draw a dotted horizontal line at that value of <m>I<m>. Will the values of <m>I</m> ever exceed that value?</p></statement></exercise>
+
+<exercise number="5"><statement><p>What is the first day on which at least 95% of the population is infected?</p></statement></exercise>
+
+<exercise number="6"><statement><p>Look back at the table. What is happening to the number of new patients each day as time goes on? How is this phenomenon reflected in the graph? How would your graph look if the number of new patients every
+day were a constant?</p></statement></exercise>
+
+<exercise number="7"><statement><p>Summarize your work: In your own words, describe how the number of residents infected with cholera changes with time. Include a description of your graph.</p></statement></exercise>
+
+</exercises>
+
+</section>
+
+
+
+                                                 
+

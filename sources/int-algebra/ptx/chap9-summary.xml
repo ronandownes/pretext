@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="chap9-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter 9 Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>horizontal</p></li>
+    <li><p>vertical</p></li>
+    <li><p>parallel</p></li>
+    <li><p>perpendicular</p></li>
+    <li><p>conic section</p></li>
+    <li><p>circle</p></li>
+    <li><p>ellipse</p></li>
+    <li><p>parabola</p></li>
+    <li><p>hyperbola</p></li>
+    <li><p>central conic</p></li>
+    <li><p>major axis</p></li>
+    <li><p>minor axis</p></li>
+    <li><p>vertices</p></li>
+    <li><p>covertices</p></li>
+    <li><p>transverse axis</p></li>
+    <li><p>conjugate axis</p></li>
+    <li><p>asymptote</p></li>
+    <li><p>branch</p></li>
+</ul></p>
+</subsection>
+
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+    <li><assemblage><title>Horizontal and Vertical Lines</title>
+        <p><ol marker="1.">
+            <li><p>The equation of the <term>horizontal line</term> passing through <m>(0, b)</m> is
+                <md><mrow>y=b</mrow></md></p></li>
+            <li><p>The equation of the <term>vertical line</term> passing through <m>(a,0)</m> is
+                <md><mrow>x=a</mrow></md></p></li></ol></p>
+        </assemblage></li>
+    <li><assemblage><title>Slopes of Horizontal and Vertical Lines</title>
+        <p>The slope of a <term>horizontal line</term> is <em>zero</em>.</p>
+        <p>The slope of a <term>vertical line</term> is <em>undefined</em>.</p>
+    </assemblage></li>
+    <li><assemblage><title>Parallel and Perpendicular Lines</title>
+        <p><ol marker="1.">
+            <li><p>Two lines are <term>parallel</term> if their slopes are equal, that is, if
+                <md><mrow>m_1 = m_2</mrow></md>
+                or if both lines are vertical.</p></li>
+            <li><p>Two lines are <term>perpendicular</term> if the product of their slopes is <m>-1</m>, that is, if
+                <md><mrow>m_1m_2 = -1</mrow></md>
+                or if one of the lines is horizontal and one is vertical.</p></li></ol></p>
+        </assemblage></li>
+    <li><p>The distance between two points is the length of the segment joining them.</p></li>
+    <li><assemblage><title>Distance Formula</title>
+        <p>The <term>distance</term> <m>d</m> between points <m>P_1(x_1, y_1)</m> and <m>P_2(x_2, y_2)</m> is 
+           <md><mrow>d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</mrow></md></p>
+        </assemblage></li>
+    <li><p>The midpoint of a segment is the point halfway between its endpoints, so that the distance from the midpoint to either endpoint is the same.</p></li>
+    <li><assemblage><title>Midpoint Formula</title>
+        <p>The <term>midpoint</term> of the line segment joining the points <m>P_1(x_1, y_1)</m> and <m>P_2(x_2, y_2)</m> is the point <m>M(\overline{x},\overline{y})</m> where 
+           <md><mrow>\overline{x}=\frac{x_1+x_2}{2} \quad\text{ and } \overline{y}=\frac{y_1+y_2}{2}</mrow></md></p>
+        </assemblage></li>
+    <li><p>A circle is the set of all points in a plane that lie at a given distance, called the radius, from a fixed point called the center.</p></li>
+    <li><assemblage><title>Circle</title>
+        <p>The equation for a circle of radius <m>r</m> centered at the point <m>(h, k)</m> is
+           <md><mrow>(x-h)^2+(y-k)^2=r^2</mrow></md></p>
+        </assemblage></li>
+    <li><assemblage><title>Ellipse</title>
+        <p>The standard form for an ellipse centered at <m>(h, k)</m> is 
+           <md><mrow>\frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1</mrow></md></p>
+       </assemblage></li>
+    <li><assemblage><title>Hyperbola</title>
+        <p>The equation for a hyperbola centered at the point <m>(h, k)</m> has one of the two standard forms:
+            <md><mrow>\frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1</mrow></md>
+            <md><mrow>\frac{(y-k)^2}{b^2}-\frac{(x-h)^2}{a^2}=1</mrow></md>
+        </p></assemblage></li>
+    <li><assemblage><title>Conic Sections</title>
+        <p>The graph of <m>Ax^2+Cy^2+Dx+Ey+F=0</m> is
+            <ol marker="1.">
+                <li><p>a circle of <m>A=C</m>.</p></li>
+                <li><p>a parabola if <m>A=0</m> or <m>C=0</m> (but not both).</p></li>
+                <li><p>an ellipse if <m>A</m> and <m>C</m> have the same sign.</p></li>
+                <li><p>a hyperbola if <m>A</m> and <m>C</m> have opposite signs.</p></li></ol>
+        </p></assemblage></li>   
+    <li><p>A system of two quadratic equations may have up to four solutions.</p></li></ol></p>
+</subsection>
+
+<xi:include href="./chap9-rev-problems.xml" />  <!--exercises  -->
+
+</section>
+<!-- </appendix> -->
+<!-- </book>  </mathbook> -->

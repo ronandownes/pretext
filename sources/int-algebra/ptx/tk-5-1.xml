@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkFunctions"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Functions</title>
+                 
+<subsubsection xml:id="tkVocab"><title>New vocabulary</title>
+                  
+<p>Write a definition or description for each term. You can find answers in Section 5.1 of your textbook.
+    <ol marker="1.">
+        <li>Function</li>
+        <li>Input variable</li>
+        <li>Output variable</li>
+        <li>Function value</li>
+        <li>Function notation</li>
+    </ol></p>
+
+<exercise><statement><p>Identify each term above, or give an example, for this situation: At time <m>t</m> seconds,
+the height of a basketball above the ground, <m>h</m>, in feet, is given by 
+    <me>~~h=-16t^2+20t+5</me>.</p></statement>
+<answer><p><ol marker="1.">
+        <li><m>h</m> is a function of <m>t</m>.</li>
+        <li>The input variable is <m>t</m>.</li>
+        <li>The output variable is <m>h</m>.</li>
+        <li>The function value for <m>t=1</m> is <m>h=9</m>.</li>
+        <li><m>h=f(t)</m></li></ol></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkNonLinEqn"><title>Solve non-linear equations</title>
+
+<introduction><p>To solve simple non-linear equations, we "undo" the operation performed on the variable.</p></introduction>
+
+<example><statement><p>Solve the equation <m>~~5 \sqrt{t} = 83</m></p></statement>
+
+<solution><p>To "undo" a square root, we square both sides of the equation. First, we isolate the square root.
+    <md><mrow>\dfrac{5 \sqrt{t}}{\alert{5}} \amp = \dfrac{83}{\alert{5}} \amp \amp \blert{\text{Divide both sides by 5.}}
+        </mrow>
+        <mrow>(\sqrt{t})^2 \amp =(16.6)^2 \amp \amp \blert{\text{Square both sides.}}</mrow>
+        <mrow>t \amp =275.56</mrow></md>
+</p></solution></example>
+
+<example><statement><p>Solve the equation <m>~~\dfrac{15}{y}=45</m> </p></statement>
+
+<solution><p>If the variable is in the denominator of a fraction, we must first clear the fraction.
+    <md><mrow>\alert{y}\left(\dfrac{15}{y}\right) \amp = 45 \cdot \alert{y} \amp \amp \blert{\text{Multiply both sides by} ~y.}
+        </mrow>
+        <mrow>15 \amp = 45y \amp \amp \blert{\text{Divide both sides by 45.}}</mrow>
+        <mrow>y \amp =\dfrac{15}{45}=\dfrac{1}{3}</mrow></md>
+</p></solution></example>
+
+<exercise><statement><p>Solve the equation <m>~~\dfrac{4.8}{w}=3</m> </p></statement>
+    <answer><p><m>1.6</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the equation <m>~~18=36\sqrt{q}</m> </p></statement>
+    <answer><p><m>\dfrac{1}{4}</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

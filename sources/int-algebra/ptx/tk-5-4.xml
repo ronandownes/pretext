@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkDirectVariation" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Direct Variation</title>
+                 
+<subsubsection xml:id="tkConVar"><title>Find the constant of variation</title>
+
+<introduction><p>If we know the type of variation and the coordinates of one point ont the graph, we can find the variation equation.</p></introduction>
+
+<example><statement><p>Find the constant of variation and the variation equation:</p>
+        <p><m>~~~y</m> varies directly with the square of <m>x</m>, and <m>y=100</m> when <m>x=2.5</m>.</p></statement>
+    
+<solution><p>Because <m>y</m> varies directly with the square of <m>x</m>, we know that <m>y=kx^2</m>. We substitute the given values to find
+        <md><mrow>100 \amp = k(2.5)^2  \amp\amp \blert{\text{Solve for}~k.}</mrow>
+            <mrow>k \amp = \dfrac{100}{2.5^2} = 16</mrow></md>
+The constant of variation is 16, and the variation equation is <m>~y=16x^2</m>.</p></solution></example>
+
+<exercise><statement><p>Find the constant of variation and the variation equation:</p>  
+<p><m>y</m> varies directly with the cube of <m>x</m>, and <m>y=119,164</m> when <m>x=6.2</m>.</p></statement> 
+    <answer><p><m>k=500</m> and <m>y=500x^3</m></p></answer></exercise>  
+</subsubsection>
+
+<subsubsection xml:id="tkVarGraph"><title>Sketch a variation graph</title>
+
+<p>The graphs of direct variations are transformations of the basic graphs <m>y=x^n</m>.</p>
+
+<example><statement><p>Sketch a graph of <m>V=0.2s^3</m>.</p></statement>
+    
+<solution><p>We know that the graph has the shape of the basic function <m>y=x^3</m>, so all we need are a few points to "anchor" the graph.
+    <md><mrow>\text{If } s=1, \amp V = 0.2(1)^3 = 0.2</mrow>
+        <mrow>\text{If } s=2, \amp V = 0.2(2)^3 = 1.6</mrow>
+        <mrow>\text{If } s=3, \amp V = 0.2(3)^3 = 5.4 </mrow></md>
+The graph is shown below.</p>
+    <image width="25%" xml:id="V-eq-pt2-s-cubed"><description>cubic</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,0) grid (5,5);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(5.5,0) node[right]{$s$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,5.5) node[above]{$V$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in  {2,4} {
+        \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={0:50^(1/3)},smooth,variable=\x,magenta!90!black,very thick, ->,>=stealth'] plot ( {\x}, {(\x)^3/10});
+        \end{tikzpicture}]]>
+        </latex-image></image></solution></example>
+
+<exercise><statement><p>Plot three points and sketch a graph of <m>d=\dfrac{3}{8}t^2</m>.</p></statement>
+    
+<answer><p><m>\left(1,\dfrac{3}{8}\right)</m>, <m>\left(2,\dfrac{3}{2}\right)</m>, <m>(4,6)</m></p>
+    <image width="25%" xml:id="d-eq-3eighths-t-sq"><description>parabola</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+        \draw[cyan] (0,0) grid (4,4);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(4.5,0) node[right]{$t$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,4.5) node[above]{$d$};
+        \foreach \x in  {2,4} {
+        \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={0:sqrt(32/3)},smooth,variable=\x,magenta!90!black,very thick, ->,>=stealth'] plot ( {\x}, {3/8*(\x)^2});
+        \end{tikzpicture}]]>
+        </latex-image></image></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkVarEqn"><title>Solve a variation equation</title>
+
+<example><statement><p>Solve <m>~231.90 = 18.85r^2~</m></p></statement>
+
+<solution><p>The equation is quadratic.  We solve by extraction of roots.
+        <md><mrow>231.90 \amp = 18.85 r^2 \amp\amp \blert{\text{Isolate the squared expression.}}</mrow>
+            <mrow>12.302 \amp = r^2 \amp\amp \blert{\text{Take square roots.}}</mrow>
+            <mrow>r \amp = 35</mrow></md></p>
+</solution></example>
+
+<example><statement><p>Solve <m>~62x^3 = 4860.8~</m></p></statement>
+
+<solution><p>This equation is cubic. We isolate the variable, then take cube roots.
+    <md><mrow>62x^3 \amp = 4860.8 \amp\amp \blert{\text{Divide both sides by 62.}}</mrow>
+        <mrow>x^3 \amp = 78.4 \amp\amp \blert{\text{Take cube roots.}}</mrow>
+        <mrow>x \amp = 16.9</mrow></md></p>
+</solution></example>
+
+<exercise><statement><p>Solve <m>~1371.8 = 25R^3</m></p></statement>
+<answer><p><m>3.8</m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~6.3t^2 = 18.4</m></p></statement>
+<answer><p><m>1.7</m></p></answer></exercise>
+</subsubsection>
+
+
+
+</subsection>

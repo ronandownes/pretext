@@ -1,0 +1,1033 @@
+
+From Section 3.1:
+
+<p>Some examples of quadratic equations are    
+    <me>2x^2+5x-3=0,~~~~~~7t-t^2=0,~~~~~~\text{and}~~~~~~3w^2=16</me>
+The first equation is already written in standard form, with <m>a=2,~b=5,~</m> and <m>~c=3.~</m> In standard form, the other two equations are 
+    <md><mrow>-t^2+7t \amp = 0 \amp \amp \text{so}~~~~a=-1,~b=7,~c=0</mrow>
+        <mrow>3w^2+0w-16 \amp = 0 \amp \amp \text{so}~~~~a=3,~b=0,~c=-16</mrow></md>
+The numbers <m>a,~b,</m> and <m>c</m> are called <term>parameters</term>.  They are the coefficients of, respectively, the quadratic term (the <m>x^2</m>-term), the linear term (the <m>x</m>-term), and the constant term.  Note that the <m>x^2</m>-term and the <m>x</m>-term in a quadratic expression are not like terms, so they cannot be combined.</p>
+</introduction>
+
+<exercise><title>QuickCheck 1</title>
+<webwork><pg-code>       
+            $step1 = RadioButtons(
+              ["\(3x+2x^2=1\)",
+              "\(4x^3-2x^2+2=0\)",
+              "\(36y-16=0\)",
+              "\(v^2=6v\)"],
+              1, 
+            );            
+        </pg-code>
+    <statement>
+        <p>Which of the following equations are quadratic?</p>
+        <p><var name="$step1" form="buttons"/></p>      
+    </statement>
+    <solution>
+        <p>1 and 4</p>
+    </solution>
+</webwork></exercise>
+
+
+
+From MFG Section 6.3:
+
+<subsection><title>The Graph of <m>y = ax^2 + bx + c</m></title>
+
+<p>Now we will see that the vertex formula holds for any parabola. Consider the function</p>
+<sidebyside widths="65% 30%"><p> 
+  <me>y = 2x^2 + 8x + 6</me> 
+Adding <m>6</m> to <m>2x^2 + 8x</m> shifts each point on the graph <m>6</m> units upward, as shown at right. The <m>x</m>-coordinate of the vertex will not be affected by an upward shift. Thus, the formula 
+  <me>x_v=\frac{-b}{2a}</me>
+for the <m>x</m>-coordinate of the vertex still holds. We have
+  <me>x_v=\frac{-8}{2(2)}=-2</me></p>
+<image source="images/fig-scaled-and-shifted-parabola" /></sidebyside>
+
+<p>We find the <m>y</m>-coordinate of the vertex by substituting <m>x_v = \alert{-2}</m> into the equation for the parabola.
+  <!--*****--><me>\begin{aligned}[t]
+  y_v \amp= 2(\alert{-2})^2 + 8(\alert{-2}) + 6\\
+  \amp= 8 - 16 + 6 = -2
+  \end{aligned}</me><!--*****-->
+So the vertex is the point <m>(-2,-2)</m>. (Notice that this point is shifted <m>6</m> units upward from the vertex of <m>y = 2x^2 + 8x</m>.)</p>
+
+<p>We find the <m>x</m>-intercepts of the graph by setting <m>y</m> equal to zero.
+  <!--*****--><me>\begin{aligned}[t]
+  0 \amp= 2x^2 + 8x + 6\amp\amp \blert{\text{Factor the right side.}}\\
+  \amp= 2(x + 1)(x + 3)\amp\amp \blert{\text{Set each factor equal to zero.}}\\
+  x + 1 \amp=0 ~~~\text{ or } ~~~x + 3 = 0\\
+  x\amp= -1  \hphantom{blankbl} x = -3
+  \end{aligned}</me><!--*****-->
+The <m>x</m>-intercepts are the points <m>(-1, 0)</m> and <m>(-3, 0)</m>.</p>
+  
+<p>The <m>y</m>-intercept of the graph is found by setting <m>x</m> equal to zero:
+  <me>y = 2(\alert{0})2 + 8(\alert{0}) + 6 = 6</me>
+You can see that the <m>y</m>-intercept, <m>6</m>, is just the constant term of the quadratic equation. The completed graph is shown above.</p>
+
+<exercise><title>QuickCheck 4</title>
+<webwork>
+     <pg-code>       
+            $nox = RadioButtons(
+              ["\(a\)",
+              "\(b\)",
+              "\(c\)",
+              "None of these"],
+              2, 
+            );            
+        </pg-code> 
+    <statement>
+        <p>The <m>y</m>-intercept of <m>y=ax^2+bx+c</m> is the same as the value of which parameter?</p>
+        <p><var name="$nox" form="buttons"/></p>      
+    </statement>
+    <solution>
+        <p><m>c</m></p>
+    </solution>
+</webwork></exercise>
+
+<example xml:id="example-parabola-vertex2"><statement><p>Find the vertex of the graph of <m>f(x) = -2x^2 + x + 1</m>.</p>
+</statement>
+<solution><p>For this function, <m>a = -2</m>, <m>b = 1</m>, and <m>c = 1</m>. The <m>x</m>-coordinate of the vertex is given by
+    <me>x_v =\frac{-b}{2a}=\frac{-1}{2(-2)}=\frac{1}{4}</me>
+To find the <m>y</m>-coordinate of the vertex, we substitute <m>x = \alert{\dfrac{1}{4}}</m> into the equation. We can do this by hand to find
+    <!--*****--><me>\begin{aligned}[t]
+    y_v\amp= -2\left(\alert{\frac{1}{4}}\right)^2+ \alert{\frac{1}{4}}+1\\
+    \amp= -2\left(\frac{1}{16}\right)+ \frac{4}{16}+\frac{16}{16}=\frac{18}{16}
+    =\frac{9}{8}
+    \end{aligned}</me><!--*****-->
+So the coordinates of the vertex are <m>\left(\dfrac{1}{4},\dfrac{9}{8}\right)</m>. Alternatively, we can use the calculator to evaluate <m>-2x^2 + x + 1</m> for <m>x = 0.25</m>. The calculator returns the <m>y</m>-value <m>1.125</m>. Thus, the vertex is the point <m>(0.25, 1.125)</m>, which is the decimal equivalent of <m>\left(\dfrac{1}{4},\dfrac{9}{8}\right)</m>.</p></solution>
+</example>
+
+<exercise>
+  <title>Practice 4</title>
+    <webwork>
+         <pg-code>
+            Context("Point");
+            $answer= Point("(1,1)");
+            $maxmin = PopUp(
+            ["?","maximum","minimum"],
+            2, );
+        </pg-code> 
+        <statement>
+            <p>Find the vertex of the graph of <m>f(x) = 3x^2 - 6x + 4</m>.</p>
+            <p><var name="$answer" width="5"/> </p>
+            <p>Decide whether the vertex is a maximum point or a minimum point of the graph.<var name="$maxmin" form="popup"/> </p>
+        </statement>
+        <solution>
+            <p><m>(1, 1)</m>, minimum</p>
+        </solution>
+    </webwork>
+</exercise>
+</subsection>
+
+<subsection><title>Number of <m>x</m>-Intercepts</title>
+
+<p>The graph of the quadratic function 
+  <me>f(x) = ax^2 + bx + c</me> 
+  may have two, one, or no <m>x</m>-intercepts, according to the number of distinct real-valued solutions of the equation <m>ax^2 + bx + c = 0</m>.
+Consider the three functions graphed below.</p>
+<sidebyside width="40%"><image source="images/fig-parabola-x-intercepts"><description>parabolas with zero, one, or two x-intercepts</description></image> </sidebyside>
+<p><ul>
+  <li><p>The graph of 
+  <me>f(x) = x^2 - 4x + 3</me> 
+  has two <m>x</m>-intercepts, because the equation
+  <me>x^2 - 4x + 3 = 0</me>
+  has two real-valued solutions, <m>x = 1</m> and <m>x = 3</m>. </p></li> 
+  <li><p>The graph of
+  <me>g(x) = x^2 - 4x + 4</me>
+  has only one <m>x</m>-intercept, because the equation
+  <me>x^2 - 4x + 4 = 0</me>
+  has only one (repeated) real-valued solution, <m>x = 2</m>.</p></li>
+  <li><p> The graph of 
+  <me>h(x) = x^2 - 4x + 6</me> 
+  has no <m>x</m>-intercepts, because the equation 
+  <me>x^2 - 4x + 6 = 0</me> 
+  has no real-valued solutions.</p></li>
+</ul></p>
+
+<p>A closer look at the quadratic formula reveals useful information about the solutions of quadratic equations. For the three functions above, we have the following:</p>
+  <sidebyside><image source="images/fig-three-cases-x-intercepts"><description>discriminant for the three cases</description></image></sidebyside>
+
+<p>The expression <m>b^2 - 4ac</m>, which appears under the radical in the quadratic formula, is called the <term>discriminant</term><idx>discriminant</idx>, <m>D</m>, of the equation. The value of the discriminant determines the nature of the solutions of the equation. In particular, if the discriminant is negative, the solutions of the quadratic equation are <term>complex numbers</term><idx>complex numbers</idx>. (We will study complex numbers in <xref ref="Complex-Numbers" text="type-global"/>.)</p>
+
+<xi:include href="./assemblage-discriminant.xml" />
+
+<note><p>We can also use the discriminant to decide whether a quadratic equation can be solved by factoring. First, clear the equation of fractions. If the discriminant is a perfect square, that is, the square of an integer, the solutions are rational numbers. This in turn means that the equation can be solved by factoring.</p>
+  
+<p> If the discriminant is not a perfect square, the solutions will be irrational. Irrational solutions always occur in conjugate pairs,
+  <me>\frac{-b+\sqrt{b^2-4ac}}{2a} ~~~\text{and}~~~
+    \frac{-b-\sqrt{b^2-4ac}}{2a}</me>
+The only difference between the two solutions is the sign between the terms. For example, if we know that one solution of a particular quadratic equation is <m>3 +\sqrt{2}</m>, then the other solution must be <m>3 -\sqrt{2}</m>.</p></note>
+
+<example xml:id="example-discriminant"><statement><p>Use the discriminant to determine the nature of the solutions of each equation. Can the equation be solved by factoring?<ol marker="a." cols="3">
+  <li><m>x^2 - x - 3 = 0</m></li>
+  <li><m>2x^2 + x + 1 = 0</m></li>
+  <li><m>x^2 - 2x - 3 = 0</m></li>
+  </ol></p></statement><solution>
+  
+<p><ol marker="a.">
+  <li><p><m>D = b^2 - 4ac = (-1)^2 - 4(1)(-3) = 13 \gt 0</m>.</p><p> The equation has two real, unequal solutions. Because <m>13</m> is not a perfect square, the solutions will be irrational numbers, so the equation cannot be solved by factoring.</p></li>
+  <li><p><m>D = b^2 - 4ac = 1^2 - 4(2)(1) = -7 \lt 0</m>.</p><p>The equation has two complex solutions, which cannot be found by factoring.</p></li>
+  <li><p><m>D = b^2 - 4ac = (-2)^2 - 4(1)(-3) = 16 \gt 0</m>.</p><p> The equation has two real, unequal solutions. Because <m>16 = 4^2</m>, the solutions are rational numbers and can be found by factoring.</p></li>
+    </ol>
+    (You can verify the conclusions above by solving each equation.)</p></solution></example>
+
+<exercise xml:id="exercise-discriminant">
+  <title>Practice 5</title>
+    <webwork>
+         <pg-code>
+            $counta = PopUp(
+            ["?","None","1", "2", "Other"],
+            "None", );
+            $countb = PopUp(
+            ["?","None","1", "2", "Other"],
+            "1", );
+            
+        </pg-code> 
+        <statement>
+            <p>Use the discriminant to discover how many <m>x</m>-intercepts the graph of each function has.</p>
+            <p><ol marker="a." cols="2">
+            <li><p><m>y = x^2 + 5x + 7</m> <var name="$counta" form="popup"/></p></li>
+            <li><p><m>y = -\dfrac{1}{2}x^2 + 4x - 8</m> <var name="$countb" form="popup"/></p></li>
+            </ol></p>
+        </statement>
+    </webwork>
+</exercise>
+
+<p>In <xref ref="exercise-discriminant" text="type-global"/>, you should check that the single <m>x</m>-intercept is also the vertex of the parabola.</p>
+
+<exercise><title>Pause and Reflect</title>
+<webwork>
+     <pg-code>                      
+        </pg-code> 
+    <statement>
+        <p>Explain what the discriminant tells us about a quadratic equation.</p>
+        <p><var form="essay"/></p>      
+    </statement>    
+</webwork></exercise>
+</subsection>
+
+<subsection><title>Sketching a Parabola</title>
+
+<p>Once we have located the vertex of the parabola, the <m>x</m>-intercepts, and the <m>y</m>-intercept, we can sketch a reasonably accurate graph. Recall that the graph should be symmetric about a vertical line through the vertex. We summarize the procedure as follows.</p>
+
+<xi:include href="./assemblage-graph-general-quadratic.xml" />
+
+<example><statement><p>Sketch a graph of the equation <m>f(x) = x^2 + 3x + 1</m>, showing the significant points.</p></statement>
+<solution><p>We follow the steps outlined above.<ol marker="1.">
+  <li><p>Because <m>a = 1 \gt 0</m>, we know that the parabola opens upward.</p></li>
+  <li><p>We compute the coordinates of the vertex:
+        <me>\begin{aligned}[t]
+          x_v\amp=\frac{-b}{2a}=\frac{-3}{2(1)}= -1.5\\
+          y_v\amp=  (-1.5)2 + 3(-1.5) + 1 = -1.25
+          \end{aligned}</me>
+    The vertex is the point <m>(-1.5,-1.25)</m>.</p></li>
+  <li><p>We set <m>y</m> equal to zero to find the <m>x</m>-intercepts.
+        <me>\begin{aligned}[t]
+          0 \amp= x^2 + 3x + 1\amp\amp \blert{\text{Use the quadratic formula.}}\\
+          x \amp=\frac{-3\pm\sqrt{3^2-4(1)(1)}}{2(1)}\\
+          \amp=\frac{-3\pm\sqrt{5}}{2}
+          \end{aligned}</me>
+    Rounding to the nearest tenth, we find that the <m>x</m>-intercepts are approximately <m>(-2.6, 0)</m> and <m>(-0.4, 0)</m>.</p></li>
+  <li><p>We substitute <m>x = 0</m> to find the <m>y</m>-intercept, <m>(0, 1)</m>.</p></li>
+  <li><p>The axis of symmetry is the vertical line <m>x = -1.5</m>, so the <m>y</m>-intercept lies <m>1.5</m> units to the right of the axis of symmetry. </p>
+  <p> There must be another point on the parabola with the same <m>y</m>-coordinate as the <m>y</m>-intercept but <m>1.5</m> units to the left of the axis of symmetry. The coordinates of this point are <m>(-3, 1)</m>.</p>
+  <p>Finally, plot the <m>x</m>-intercepts, the vertex, and the <m>y</m>-intercept and its symmetric point, and draw a parabola through them. The finished graph is shown below.</p>
+    <sidebyside width="45%"><image source="images/fig-parabola-with-5-labeled-points"><description>parabola</description></image></sidebyside></li>
+  </ol></p></solution></example>
+
+<exercise>
+  <title>Practice 6</title>
+    <webwork>
+         <pg-code>
+            Context("Point")->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,   );
+            $intercepts=List("(0,4),(1,0), (4,0)");
+            $my_evaluator = $intercepts -> cmp(
+             showHints=>1,
+             showLengthHints => 1,
+             partialCredit => 1,
+            ); 
+            $v = Formula("(5/2,-9/4)");
+            
+        </pg-code> 
+        <statement>
+            <p><ol marker="a.">
+                <li><p>Find the intercepts and the vertex of the graph of <m>f(x) = x^2 - 5x + 4</m>.</p>
+                <p>Intercepts: <var name="$intercepts" width="20" evaluator="$my_evaluator"/> Note: Use a comma to separate different points.</p>
+                <p>Vertex: <var name="$v" width="8" /></p>
+               </li>
+                <li><p>Sketch the graph by hand.</p></li>
+                <li><p>Use your calculator to verify your graph.</p></li>
+            </ol></p>
+        </statement>
+        <solution>
+            <p><ol marker="a.">
+                <li><p><m>(0, 4)</m>; <m>(1, 0)</m>, <m>(4, 0)</m>; vertex <m>\left(\dfrac{5}{2},\dfrac{-9}{4} \right)</m></p></li>
+                <li><p>A graph is below.</p></li>
+            </ol></p>
+        </solution>
+    </webwork>
+    <conclusion>
+        <sidebyside widths="25%" margins="0% 75%"><image source="images/fig-in-ex-ans-6-3-6"><description>parabola</description></image></sidebyside>
+    </conclusion>
+</exercise>
+
+<exercise><title>Pause and Reflect</title>
+<webwork>
+     <pg-code>                      
+        </pg-code> 
+    <statement>
+        <p>Which points on a parabola should you find to help you sketch its graph? Describe how to find each of these points.</p>
+        <p><var form="essay"/></p>      
+    </statement>    
+</webwork></exercise>
+</subsection>
+
+From Section 2.1 Exercises:
+
+<exercise number="1"><statement><p><ol marker="a.">
+    <li><p>Sketch four different lines through the point <m>(2, 3)</m> with the following slopes:
+            <md><mrow>m=\frac{2}{5}, \quad m=\frac{-2}{5}, \quad m=\frac{5}{2}, \quad m=\frac{-5}{2}</mrow></md></p></li>
+    <li><p>What do you notice about these lines?</p></li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside width="45%" margins="0% 60%"><image xml:id="fig-ex-2-1-5ans"><description>four lines through (2,3)
+    </description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [scale=.4]
+                    \draw[cyan] (-6,-6) grid (6,6);
+                    \draw[black,thick,->,>=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,-6)--(0,6.6) node[above]{$y$};
+                    \draw[samples=2,domain={-6:6},smooth,variable=\x,red,very thick] plot (\x,{(3+2/5*(\x-2))}) node[right]{$m=\frac{2}{5}$};
+                    \draw[samples=2,domain={4/5:28/5},smooth,variable=\x,red,very thick] plot (\x,{(3-5/2*(\x-2))}) node[below]{$m=\frac{-5}{2}$};
+                    \draw[samples=2,domain={-11/2:6},smooth,variable=\x,blue,very thick] plot (\x,{(3-2/5*(\x-2))}) node[right]{$m=\frac{-2}{5}$};
+                    \draw[samples=2,domain={-8/5:16/5},smooth,variable=\x,blue,very thick] plot (\x,{(3+5/2*(\x-2))}) node[above]{$m=\frac{5}{2}$};
+                    \filldraw[black] (2,3) circle (.2);
+                    \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+    <li><p>The lines with slope <m>\dfrac{2}{5}</m> and <m>\dfrac{-5}{2}</m> are perpendicular to each other, and the lines with slope <m>\dfrac{-2}{5}</m> and <m>\dfrac{5}{2}</m> are perpendicular to each other.</p></li></ol></p>
+</answer></exercise>
+
+For Section 2.4 exercises:
+
+<exercise number="4">
+    <statement>
+        <p>
+            On a breezy day, Bonnie propelled her human-powered aircraft 100 meters in 15 seconds going into the wind and made the return trip in 10 seconds with the wind. What were the speed of the wind and Bonnie's speed in still air?
+            <ol marker="a.">
+                <li><p>Choose variables for the unknown quantities, and fill in the table.</p>
+                <sidebyside  margins="0$ 0%"><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center"><col halign="left"/><col/><col/><col/>
+                    <row>
+                        <cell></cell><cell>Rate</cell><cell>Time</cell><cell>Distance</cell></row>
+                    <row>
+                        <cell>Against the wind</cell><cell></cell><cell></cell><cell></cell></row>
+                    <row>
+                        <cell>With the wind</cell><cell></cell><cell></cell><cell></cell></row>
+                </tabular></sidebyside></li>
+                <li><p>Write one equation about Bonnie's initial flight.</p></li>
+                <li><p>Write a second equation about Bonnie's return trip.</p></li>
+            </ol>
+        </p>
+    </statement>
+</exercise>
+
+
+
+<exercise number="5">
+    <statement>
+        <p>
+            Acme Motor Company is opening a new plant to produce chassis for two of its models, a sports coupe and a wagon. Each sports coupe requires a riveter for 3 hours and a welder for 4 hours; each wagon requires a riveter for 4 hours and a welder for 5 hours. The plant has available 120 hours of riveting and 155 hours of welding per day. How many of each model of chassis can it produce in a day?
+            <ol marker="a.">
+                <li>
+                    <p>
+                        Choose variables for the unknown quantities, and fill in the table.
+                    </p>
+                    <sidebyside><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center"><col halign="left"/><col/><col/><col/>
+                        <row>
+                            <cell></cell><cell>Sports coupes</cell><cell>Wagons</cell><cell>Total</cell></row>
+                        <row>
+                            <cell>Hours of riveting</cell><cell></cell><cell></cell><cell></cell></row>
+                        <row>
+                            <cell>Hours of welding</cell><cell></cell><cell></cell><cell></cell></row>
+                    </tabular></sidebyside>
+                </li>
+                <li>
+                    <p>Write one equation about the hours of riveting.</p>
+                </li>
+                <li>
+                    <p>Write a second equation about the hours of welding.</p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <ol marker="a.">
+                <li>
+                   <sidebyside  margins="0% 30%"><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center"><col halign="left"/><col/><col/><col/>
+                        <row>
+                            <cell></cell><cell>Sports coupes</cell><cell>Wagons</cell><cell>Total</cell></row>
+                        <row>
+                            <cell>Hours of riveting</cell>
+                            <cell><m>3x</m></cell>
+                            <cell><m>4y</m></cell>
+                            <cell>120</cell>
+                        </row>
+                        <row>
+                            <cell>Hours of welding</cell>
+                            <cell><m>4x</m></cell>
+                            <cell><m>5y</m></cell>
+                            <cell>155</cell>
+                        </row>
+                    </tabular></sidebyside>
+                </li>
+                <li><p><m>3x+4y=120</m></p></li>
+                <li><p><m>4x+5y=155</m></p></li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+
+Answer to Hmwk 3.3 #14:
+
+<p><m>(0,0), (-2,0); (-1,-1)</m></p>
+        <sidebyside width="40%" margins="0% 50%">
+            <image xml:id="fig-hw-3-3-9ansb">
+                <description>parabola</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.35]
+                \draw[cyan] (-10,-10) grid (10,10);
+                \draw[black,thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+                \foreach \x in  {-5, 5, -10, 10} {
+                 \draw[cyan, very thick] (\x,-10) --++(0,20);
+                 \draw[cyan, very thick] (-10,\x) --++(20,0);
+                 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                 \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \draw[samples=65,domain={-sqrt(11)-1:sqrt(11)-1},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2+2*\x });
+                \end{tikzpicture}]]>
+            </latex-image>
+            </image>
+        </sidebyside></p></answer>
+
+<exercise number="11"><statement><p><m>y=225-x^2</m></p></statement>
+    <answer><p><m>(-15,0), (15,0); (0,255)</m></p>
+        <sidebyside width="35%" margins="0% 50%">
+            <image xml:id="fig-hw-3-3-11ans">
+                <description>parabola</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.6]
+                \draw[cyan] (-5,-2) grid (5,10);
+                \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-2)--(0,10.6) node[left, xshift=2]{$y$};
+                \foreach \x [evaluate=\x as \xi using int( 5* \x )] in  {-4,-2,2,4} {
+                 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \foreach \x [evaluate=\x as \xi using int( 25* \x )] in  {-2,2,4, 6,8,10} {
+                 \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[samples=65,domain={-sqrt(11):sqrt(11)},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{-(\x)^2+9 });
+                \end{tikzpicture}]]>
+            </latex-image>
+            </image>
+
+        </sidebyside></answer>
+
+<exercise number="9"><statement><p><ol marker="a.">
+    <li>Write an equation for a parabola whose vertex is the point <m>(5,10)</m>. (Many answers are possible.)</li>
+    <li>Find the value of <m>a</m> if the <m>x</m>-intercept of the parabola is <m>-5</m>.</li></ol></p>
+</statement>
+    <answer><p><ol marker="a.">
+    <li><m>y=a(x-5)^2-10</m></li>
+    <li><m>\dfrac{1}{5}</m></li></ol></p></answer></exercise>
+
+<p>Powers:  Complete the table with powers of integers:</p>
+        <p><sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~~x~~</m></cell>
+                        <cell><m>~~x^2~~</m></cell>
+                        <cell><m>~~x^3~~</m></cell>
+                        <cell><m>~~x^4~~</m></cell>
+                        <cell><m>~~x^5~~</m></cell></row>
+                    <row> 
+                        <cell><m>2</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>3</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>4</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>5</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>6</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>7</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>8</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>9</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>10</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>11</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    <row> 
+                        <cell><m>12</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell>
+                        <cell><m>~~~</m></cell></row>
+                    </tabular></sidebyside></p></li>
+
+<li><p>Converting powers to radicals:  Write with radicals.<ol marker="i." cols="3">
+        <li><m>3^{1/2}</m></li>
+        <li><m>4x^{1/3}</m></li>
+        <li><m>(4x)^{0.2}</m></li>
+        <li><m>6^{-1/3}</m></li>
+        <li><m>3(xy)^{-0.125}</m></li>
+        <li><m>(x-2)^{1/4}</m></li></ol></p></li>
+    <li><p>Converting radicals to powers:  Write with exponents.<ol marker="i." cols="3">
+        <li><m>\sqrt{7}</m></li>
+        <li><m>\sqrt[3]{2x}</m></li>
+        <li><m>2\sqrt[5]{z}</m></li>
+        <li><m>\dfrac{-3}{\sqrt[4]{6}}</m></li>
+        <li><m>\sqrt[4]{x-3y}</m></li>
+        <li><m>\dfrac{-1}{\sqrt[3]{1+3b}}</m></li></ol></p></li></ol></p></statement></exercise>
+
+
+        <exercise number="3"><statement>
+    <p>Converting between radical notation and exponent notation.<ol marker="a.">
+        <li><p>Write with radicals.<ol marker="i." cols="3">
+                        <li><m>x^{4/5}</m></li>    
+                        <li><m>b^{-5/6}</m></li>
+                        <li><m>(pq)^{-2/3}</m></li>
+                        <li><m>3x{0.4}</m></li>
+                        <li><m>4z^{-4/3}</m></li>
+                        <li><m>-2x^{0.25}y^{0.75}</m></li></ol></p></li>
+        <li><p>Write with fractional exponents.<ol marker="i." cols="3">
+                        <li><m>\sqrt[3]{x^2}</m></li>    
+                        <li><m>2\sqrt[5]{ab^3}</m></li>
+                        <li><m>\dfrac{-4m}{\sqrt[6]{p^7}}</m></li>
+                        <li><m>\sqrt[3]{(ab)^2}</m></li>
+                        <li><m>\dfrac{8}{\sqrt[4]{x^3}}</m></li>
+                        <li><m>\dfrac{R}{3\sqrt{TK^5}}</m></li></ol></p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>\sqrt[5]{x^4};~~\dfrac{1}{\sqrt[6]{b^5};~~\dfrac{1}{\sqrt[3]{p^2q^2};~~3\sqrt[5]{x^2};~~\dfrac{4}{\sqrt[3]{z^4};~~-2\sqrt[4]{xy^3}</m></li>
+    <li><m>x^{2/3};~~2a^{1/5}b^{3/5};~~-4mp^{-7/6};~~(ab)^{2/3};~~8x^{-3/4};~~\dfrac{1}{3}RT^{-1/2}K^{-5/2}</m></li></ol>
+</p></answer></exercise>
+
+
+
+<exercise number="49"><statement><p><m>t = T \log \left(1+\dfrac{A}{k}\right)</m>, for <m>A</m></p></statement>
+<answer><p><m>A = k(10^{t/T}-1) </m></p></answer></exercise>
+
+<exercise number="50"><statement><p><m>\log R = \log R_0 +kt</m>, for <m>R</m></p></statement>
+<answer><p><m> </m></p></answer></exercise>
+
+
+
+
+    
+    
+  <exercisegroup cols="2"><introduction><p>For Problems 43-46, solve the logarithmic equation.</p></introduction>
+
+<exercise number="43"><statement><p><m>\log_3 x + \log_3 4 = 2</m></p></statement>
+<answer><p><m>\dfrac{9}{4} </m></p></answer></exercise>
+
+<exercise number="44"><statement><p><m>\log_2(x + 2) - \log_2 3 = 6</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>\log_{10}(x-1) + \log_{10} (x+2) = 1</m></p></statement>
+<answer><p><m>3 </m></p></answer></exercise>
+
+<exercise number="46"><statement><p><m>\log_{10}(x + 2) - \log_{10} (x-3) = 1</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="57"><statement><p>The pH of an unknown substance is 6.3. What is its hydrogen ion concentration?</p></statement>
+<answer><p><m>5\times 10^{-7}</m></p></answer></exercise>
+
+
+
+
+<exercise number="61"><statement><p>The population of Sweden is growing at 0.1% annually. <ol>
+        <li><p>What is the doubling time for Sweden's population?</p></li>
+        <li><p>In 2005, the population of Sweden was 9 million. At the current rate of growth, how long will it take the population to reach 10 million?</p></li>
+    </ol></p></statement>
+<answer><p><ol cols="2">
+    <li><p><m>\dfrac{\log 2}{\log 1.001}\approx 693 </m> years</p></li>
+    <li><p><m>105</m> years</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="62"><statement><p>The bacteria <em>E. sakazakii</em> is found in powdered infant formula and can has a doubling time of 4.98 hours even if kept chilled to <m>50\degree</m>F. <ol>
+        <li><p>What is the hourly growth rate for <em>E. sakazakii?</em></p></li>
+        <li><p>How long would it take a colony of <em>E. sakazakii</em> to increase by 50%?</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="63"><statement><p>Manganese-53 decays to chromium-53 with a half-life of 3.7 million years and is used to estimate the age of meteorites. What is the decay rate of manganese-53, with time expressed in millions of years?</p></statement>
+<answer><p><m>17\%</m></p></answer></exercise>
+
+<exercise number="64"><statement><p>The cold medication pseudoephedrine decays at a rate of 5.95% per hour in the body. What is the half-life of pseudoephedrine?</p></statement></exercise>
+
+
+
+<exercise number="4"><statement><p>Evaluate.<ol marker="a.">
+            <li><p><m>2x^3 -x^2+4x-1</m> for <m>x=-5</m></p></li>
+            <li><p><m>\dfrac{3x-4}{x+6}</m> for <m>x=-2</m></p></li></ol></p></statement></exercise>
+
+<exercisegroup ><introduction><p>For Problems 25 and 26, decide whether the given value is a solution of the equation.</p>
+ </introduction>
+
+<exercise number="25"><statement><p><m>t^3-4t^2-4t+12=-6 </m> for <m>t=-2</m></p></statement>
+<answer><p><m>No </m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>\dfrac{\sqrt{36-x^2}}{1+x}=\dfrac{2\sqrt{5}}{5} </m> for <m>x=4</m></p></statement>
+</exercise>
+</exercisegroup>
+
+
+<sidebyside width="90%">
+                <image xml:id="fig-hw-1-4-1">
+                <description>two lines on grids</description>
+                <latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (0,0) grid (10,10);
+                \draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$y$};
+                \foreach \x  [evaluate=\x as \xi using int(\x *5)] in {2,4,...,10} {
+                  \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \foreach \x  [evaluate=\x as \xi using int(\x *100)] in {2,4,...,10} {
+                  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[red,thick] (0,0) -- (8,10);
+                \node[text width=.3cm] at (5.4,-2) {I};
+
+                \draw[cyan] (15,0) grid (25,10);
+                \draw[black,thick, ->, >=stealth'] (15,0)--(25.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (15,0)--(15,10.6) node[above]{$y$};
+                \foreach \x  [evaluate=\x as \xi using int(\x *20)] in {5,10} {
+                  \draw[black,thick] ({15+\x},.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \foreach \x  [evaluate=\x as \xi using int(\x *1)] in {5,10} {
+                  \draw[black,thick] (15.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[red,thick] (18,10) -- (23,0);
+                \node[text width=.3cm] at (20.4,-2) {II};
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></p></li>
+
+<sidebyside width="65%" margins="0% 0%"><image xml:id="fig-hw-1-4-1-ans"><description>two lines on grids</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (0,0) grid (10,10);
+                \draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$y$};
+                \foreach \x  [evaluate=\x as \xi using int(\x *5)] in {2,4,...,10} {
+                  \draw[black,thick] (\x,.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \foreach \x  [evaluate=\x as \xi using int(\x *100)] in {2,4,...,10} {
+                  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[red,thick] (0,0) -- (8,10);
+                \draw[blue, very thick, dashed, ->, >=stealth'](4,5)--(8,5) node[below, midway, yshift=-2, fill=white, inner sep=1]{$\Delta x$};
+                \draw[blue, very thick, dashed, ->, >=stealth'](8,5)--(8,10) node[right, midway, xshift=2, fill=white, inner sep=1]{$\Delta y$};
+                \node[text width=.3cm] at (5.4,-2) {I};
+
+                \draw[cyan] (15,0) grid (25,10);
+                \draw[black,thick, ->, >=stealth'] (15,0)--(25.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (15,0)--(15,10.6) node[above]{$y$};
+                \foreach \x  [evaluate=\x as \xi using int(\x *20)] in {5,10} {
+                  \draw[black,thick] ({15+\x},.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \foreach \x  [evaluate=\x as \xi using int(\x *1)] in {5,10} {
+                  \draw[black,thick] (15.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                }
+                \draw[red,thick] (18,10) -- (23,0);
+                \draw[blue, very thick, dashed, ->, >=stealth'](19,8)--(22,8) node[above, midway, yshift=2, fill=white, inner sep=1]{$\Delta x$};
+                \draw[blue, very thick, dashed, ->, >=stealth'](22,8)--(22,2) node[right, midway, xshift=2, fill=white, inner sep=1]{$\Delta y$};
+                \node[text width=.3cm] at (20.4,-2) {II};
+                \end{tikzpicture}]]>
+                </latex-image></image></sidebyside>
+
+<exercise number="9"><statement><p>Ariel, Beryl, and Carol are training for a kayaking race. The girls practice on a quiet stretch of river starting 200 yards from the dock. There are markers placed at 100-yard intervals along the shore, and their teammates are stationed at these markers to time their progress. Yesterday they recorded the following times, in seconds, for each girl:</p>
+        <sidebyside><tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+            <row>
+                <cell></cell>
+                <cell colspan="3" >Time (seconds)</cell></row>
+            <row>
+                <cell>Marker (yards)</cell>
+                <cell>Ariel</cell>
+                <cell>Beryl</cell>
+                <cell>Carol</cell></row>
+            <row>
+                <cell>200</cell>
+                <cell>0</cell>
+                <cell>0</cell>
+                <cell>0</cell></row>
+            <row>
+                <cell>300</cell>
+                <cell>20</cell>
+                <cell>25</cell>
+                <cell>15</cell></row>
+            <row>
+                <cell>400</cell>
+                <cell>40</cell>
+                <cell>50</cell>
+                <cell>30</cell></row>
+            <row>
+                <cell>500</cell>
+                <cell>60</cell>
+                <cell>75</cell>
+                <cell>45</cell></row>
+        </tabular></sidebyside><p><ol marker="a.">
+    <li><p>For each girl, make a graph showing time on the horizontal axis and distance from the dock on the vertical axis. Fill in a table and plot thepoints.</p>
+        <sidebyside widths="30% 56%" margins="0% 0%">
+            <stack><p>Ariel</p>
+                <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                            <row>
+                                <cell><m>t</m></cell>
+                                <cell><m>d</m></cell></row>
+                            <row>
+                                <cell><m>0</m></cell>
+                                <cell><m>200</m></cell></row>
+                            <row>
+                                <cell><m>20</m></cell>
+                                <cell><m>300</m></cell></row>
+                            <row>
+                                <cell><m>40</m></cell>
+                                <cell><m>400</m></cell></row>
+                            <row>
+                                <cell><m>60</m></cell>
+                                <cell><m>500</m></cell></row>
+                        </tabular></stack>
+    <image xml:id="fig-hw-1-4-9"><description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [xscale=.8, yscale=.64]
+                    \draw[cyan] (0,0) grid (8,6);
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(8.5,0) node[right]{$t$};
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(0,6.5) node[above]{$d$};
+                    \foreach \x [evaluate=\x as \xi using int(\x *10)] in {1,2,...,8} {
+                      \draw[black,thick] ({\x},.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \foreach \x [evaluate=\x as \xi using int(\x *100)] in {1,2,...,6}  {
+                      \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+        <sidebyside widths="30% 56%" margins="0% 0%">
+                <stack><p>Beryl</p>
+                    <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                            <row>
+                                <cell><m>t</m></cell>
+                                <cell><m>d</m></cell></row>
+                            <row>
+                                <cell><m>\hphantom{20}</m></cell>
+                                <cell><m>\hphantom{200}</m></cell></row>
+                            <row>
+                                <cell><m></m></cell>
+                                <cell><m></m></cell></row>
+                            <row>
+                                <cell><m></m></cell>
+                                <cell><m></m></cell></row>
+                            <row>
+                                <cell><m></m></cell>
+                                <cell><m></m></cell></row>
+                        </tabular></stack>
+        <image source="images/fig-hw-1-4-9"><description>grid</description></image></sidebyside>
+        <sidebyside widths="30% 56%" margins="0% 0%">
+                <stack><p>Carol</p>
+                <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                            <row>
+                                <cell><m>t</m></cell>
+                                <cell><m>d</m></cell></row>
+                            <row>
+                                <cell><m>\hphantom{20}</m></cell>
+                                <cell><m>\hphantom{200}</m></cell></row>
+                            <row>
+                                <cell><m></m></cell>
+                                <cell><m></m></cell></row>
+                            <row>
+                                <cell><m></m></cell>
+                                <cell><m></m></cell></row>
+                            <row>
+                                <cell><m></m></cell>
+                                <cell><m></m></cell></row>
+                </tabular></stack>
+            <image source="images/fig-hw-1-4-9"><description>grid</description></image></sidebyside></li>
+        <li><p>For each girl, choose two data points and compute her average speed, <m>\dfrac{\Delta d}{\Delta t} </m>. Don't forget the units!                    </p>
+                <p>Ariel's speed<m>{}=\dfrac{\Delta d}{\Delta t}= </m></p>
+                <p>Beryl's speed<m>{}=\dfrac{\Delta d}{\Delta t}= </m></p>
+                <p>Carol's speed<m>{}=\dfrac{\Delta d}{\Delta t}= </m></p>
+                <p>Illustrate each girl's speed on her distance graph above.</p></li>
+        <li><p> Which girl has the fastest average speed?</p>
+        <sidebyside width="56%"><image source="images/fig-hw-1-4-9"><description>grid</description></image></sidebyside>
+        <p>Plot all three graphs on the same grid above, and compare.  How can the different speeds be seen from the graphs?</p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside widths="45% 45%" margins="0% 0%">
+        <stack><p>Beryl</p>
+            <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                            <row>
+                                <cell><m>t</m></cell>
+                                <cell><m>d</m></cell></row>
+                            <row>
+                                <cell><m>0</m></cell>
+                                <cell><m>200</m></cell></row>
+                            <row>
+                                <cell><m>25</m></cell>
+                                <cell><m>300</m></cell></row>
+                            <row>
+                                <cell><m>50</m></cell>
+                                <cell><m>400</m></cell></row>
+                            <row>
+                                <cell><m>75</m></cell>
+                                <cell><m>500</m></cell></row>
+                        </tabular></stack>
+            <stack><p>Carol</p>
+                <tabular top="minor" bottom="minor" left="minor" right="minor" halign="center">
+                            <row>
+                                <cell><m>t</m></cell>
+                                <cell><m>d</m></cell></row>
+                            <row>
+                                <cell><m>0</m></cell>
+                                <cell><m>200</m></cell></row>
+                            <row>
+                                <cell><m>15</m></cell>
+                                <cell><m>300</m></cell></row>
+                            <row>
+                                <cell><m>30</m></cell>
+                                <cell><m>400</m></cell></row>
+                            <row>
+                                <cell><m>45</m></cell>
+                                <cell><m>500</m></cell></row>
+                        </tabular></stack></sidebyside></li>
+    <li><p>Ariel: 5 yd/sec; Beryl: 4 yd/sec; Carol: <m>6\frac{2}{3} </m> yd/sec</p></li>
+     <li><sidebyside width="60%"><image xml:id="fig-hw-1-4-9-ans"><description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                    }
+                    \begin{tikzpicture} [xscale=.8, yscale=.64]
+                    \draw[cyan] (0,0) grid (8,6);
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(8.5,0) node[right]{$t$};
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(0,6.5) node[above]{$d$};
+                    \foreach \x [evaluate=\x as \xi using int(\x *10)] in {1,2,...,8} {
+                      \draw[black,thick] ({\x},.1)--++(0,-.2) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \foreach \x [evaluate=\x as \xi using int(\x *100)] in {1,2,...,6}  {
+                      \draw[black,thick] (.1,\x)--++(-.2,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \draw[red,thick] (0,0) -- (8,4) node[right]{Ariel};
+                    \draw[blue,thick] (0,0) -- (8,3.2) node[right]{Beryl};
+                    \draw[green!60!black,thick] (0,0) -- (8,16/3) node[right]{Carol};
+                    \end{tikzpicture}]]>
+                </latex-image></image></sidebyside>
+        <p>Carol: The speeds are given by the slopes of their graphs.</p></li></ol></p></answer></exercise>
+
+
+<exercisegroup cols="2"><introduction><p>For Problems 7 and 8,<ol marker="a.">
+    <li><p>Write an equation in point-slope form for the line that passes through the given point and has the given slope.</p></li>
+    <li><p>Put your equation from part (a) into slope-intercept form.</p></li>
+    <li><p>Use your graphing utility to graph the line.</p></li></ol></p></introduction>
+
+<exercise number="7"><statement><p><m>(-6.4,-3.5) </m>; <m>m=-0.25 </m></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>y+3.5 = -0.25(x+6.4) </m></p></li>
+    <li><p><m>y=-0.25x -5.1</m></p></li></ol></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>(80,-250) </m>; <m>m=2.4 </m></p></statement></exercise>
+</exercisegroup>
+
+
+<exercise number="16"><statement><p>Compare the graphs of <m>y = 2x + 2</m> and <m>y = 2</m>.<ol marker="a.">
+    <li><p>What can you say about the graph of any equation <m>y = mx + b</m> if <m>b = 0</m>?</p></li>
+    <li><p>Explain why you cannot use the intercept method to graph the equation <m>y = mx</m>. What should you do instead?</p></li>
+    <li><p>What can you say about the graph of any equation <m>y = mx + b</m> if <m>m = 0</m>?</p></li>
+    <li><p> What is the slope of any horizontal line?</p></li></ol></p></statement></exercise>
+
+<exercise number="15"><statement><p>Here is part of a typical income tax schedule: A single taxpayer owes $1500 plus 20% of the amount of their income over $13,000.<ol marker="a.">
+    <li><p>Complete the table of values for the tax, <m>T</m>, on various incomes, <m>I</m>.</p>
+            <sidebyside><tabular top="minor" bottom="minor" right="minor" left="minor" halign="center">
+                        <row>
+                            <cell><m>I</m></cell>
+                            <cell>15,000</cell>
+                            <cell>20,000</cell>
+                            <cell>22,000</cell></row>
+                        <row>
+                            <cell><m>T</m></cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell></cell></row>
+                    </tabular></sidebyside></li>
+    <li><p>Let <m>I</m> represent income and write an expression for "the amount of income over $13,000." Use your expression to write a linear equation in point-slope form for the tax, <m>T</m>.</p></li>
+    <li><p>Write the equation in slope-intercept form. Does the vertical intercept have a meaning in this situation? Which form of the equation is more useful, the slope-intercept form or the point-slope form?</p></li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><sidebyside width="40%" margins="0% 0%"><tabular top="minor" bottom="minor" right="minor" left="minor" halign="center">
+                <row>
+                    <cell><m>I</m></cell>
+                    <cell>15,000</cell>
+                    <cell>20,000</cell>
+                    <cell>22,000</cell></row>
+                <row>
+                    <cell><m>T</m></cell>
+                    <cell>1900</cell>
+                    <cell>2900</cell>
+                    <cell>3300</cell></row>
+            </tabular></sidebyside></li>
+    <li><p><m>T=1500+0.20(I-13,000)</m></p></li>
+    <li><p><m>T=0.20I-1,100</m></p></li></ol></p></answer></exercise>
+
+
+<sidebyside width="60%" margins="0% 40%"><image source="images/shutterstock_67170118.jpg"><description>squirrel</description></image></sidebyside>
+        <sidebyside width="60%" margins="0% 40%"><image source="images/squirrel.jpg"><description>squirrel</description></image></sidebyside>
+
+    <p>
+        <term>Linear programming</term><idx>linear programming</idx> is an application of linear systems developed in the 1940s to solve complex optimization problems during wartime operations. Today linear programming is used for scheduling and allocation of resources, in shipping and telecommunications networks, and in the selection of stocks and bonds for portfolios. In 1980, the computer scientist Laszlo Lovasz said that "If one would take statistics about which  mathematical problem is using up most of the computer time in the world, ... the answer would probably be linear programming."
+    </p>
+    <p>
+        George Dantzig (1914-2005) invented the simplex method for solving linear programming problems in 1947. His first application of the method was to determine an adequate diet of least cost. This problem involved nine equations in 77 unknowns, and took 120 days to solve using the desk calculators available at the time. In this chapter we use a graphing technique to solve problems in two unknowns. For example, the diet of the Columbian ground squirrel consists of two foods: grass and forb, a type of flowering weed. Small animals spend most of their time foraging for food, but must also be alert for predators. Which foraging strategy favors survival: should the squirrel try to satisfy its dietary requirements in minimum time, thus minimizing its exposure to predators and the elements, or should it try to maximize its intake of nutrients?
+    </p>
+    <p>
+        Using linear programming, Gary Belovsky of Notre Dame University identified the optimal amounts of forb and grass for each foraging strategy. We can compare those solutions to the squirrel's actual diet to see which strategy the squirrel favors.
+    </p>
+    <sidebyside>
+    <image source="images/fig-minimize-time-eating">
+      <description>
+        feasible set with different times
+      </description>
+    </image>
+    <image source="images/fig-maximize-energy">
+      <description>
+        feasible set with different energy consumed
+      </description>
+    </image>
+    </sidebyside>
+
+<example><statement><p>It cost a bicycle company $9000 to make 50 touring bikes in its first month of operation and $15,000 to make 125 bikes during its second month.<ol marker="a.">
+    <li><p>Find a linear equation for the company's monthly production cost, <m>C</m>, in terms of the number of bikes made, <m>x</m>.</p></li>
+    <li><p>State the slope and vertical intercept of your line, including units. What do they tell you about the problem?
+</p></li></ol></p></statement>
+    
+<solution><p><ol marker="a.">
+   <li><p>We first find two data points, <m>(x, C)</m>, from the information given.</p>
+        <sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>C</m></cell></row>
+                    <row>
+                        <cell><m>50</m></cell>
+                        <cell><m>9000</m></cell></row>
+                    <row>
+                        <cell><m>125</m></cell>
+                        <cell><m>15,000</m></cell></row>
+            </tabular></sidebyside>
+        <p>Step 1:Compute the slope of the line.
+                    <md><mrow>m=\frac{C_2-C_1}{x_2-x_1}= \frac{15,000-9000}{125-5} = 80</mrow></md></p>
+        <p>Step 2: Apply the point-sope formula, using <m>(50,9000) </m> for <m>(x_1,y_1) </m>
+                    <md><mrow>C\amp=C_1 +m(x-x_1)</mrow>
+                        <mrow>\amp=9000 +80(x-50)</mrow>
+                        <mrow>\amp=9000 +80x-4000</mrow></md></p>
+                <p>The equation is <m>C=5000+80x</m></p></li>
+    <li><p>The slope is 80 dollars per bike, and it tells us the cost of producing each bike. The vertical intercept is 5000, and it tells us that the bicycle company's fixed costs (before production begins) are $5000.</p></li>
+</ol></p></solution></example>
+
+    <sidebyside><tabular top="minor" halign="center"  right="minor" left="minor" bottom="minor">
+        <col right="major" /><col/><col/><col/><col/><col/>
+        
+        <row>
+            <cell right="minor"></cell>
+            <cell colspan="8" halign="center"><m>y</m>-values</cell></row>
+        <row bottom="major"> 
+            <cell right="minor" bottom="minor"><m>x</m>-values</cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell></row>
+        <row> 
+            <cell><m>1</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>15</m></cell>
+            <cell><m>20</m></cell>
+            <cell><m>25</m></cell>
+            <cell><m>12</m></cell></row>
+        <row> 
+            <cell><m>2</m></cell>
+            <cell><m>22</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>-3</m></cell></row>
+        <row> 
+            <cell><m>3</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>-5</m></cell>
+            <cell><m>-11</m></cell></row>
+        <row> 
+            <cell><m>4</m></cell>
+            <cell><m>12</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-10</m></cell>
+            <cell><m>-17</m></cell></row>
+        <row> 
+            <cell><m>5</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>-7</m></cell>
+            <cell><m>-15</m></cell>
+            <cell><m>-22</m></cell></row>
+    </tabular></sidebyside>

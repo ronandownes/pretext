@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is an extracted section of book                    -->
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./meta_docinfo.ptx" />
+
+  <book xml:id="testing">
+    <title>core-math</title>
+
+   <xi:include href="./meta_frontmatter.ptx" />
+   <chapter xml:id="testchap"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Testing</title>
+
+
+    <xi:include href="./sec-4-5.ptx" />
+
+</chapter>
+
+
+    <xi:include href="./meta_backmatter.ptx" />
+  </book>
+</pretext>

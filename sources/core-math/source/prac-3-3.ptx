@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-3-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 3.3</title>
+
+<exercisegroup><introduction><p>Answer the questions in Problems 1-10 with complete sentences.</p></introduction>
+
+<exercise number="1"><statement><p>What is a conversion factor, and what is it used for?</p></statement>
+<answer><p>A conversion factor is a fraction that is equal to 1. It is used to convert from one type of units to another.</p>
+</answer></exercise>
+
+<exercise number="2"><statement><p>What is a unit fraction, and why is it called that?</p></statement></exercise>
+
+<exercise number="3"><statement><p>A meter is about the same length as which unit in the English system?</p></statement>
+<answer><p>A yard</p></answer></exercise>
+
+<exercise number="4"><statement><p><ol marker="a.">
+  <li><p>How many centimeters are there in a meter?</p></li>
+  <li><p>How many millimeters are there in a meter?</p></li>
+</ol></p></statement>
+
+<exercise number="5"><statement><p>Which English unit is about 2.5 centimeters in length?</p></statement></exercise>
+<answer><p>An inch</p></answer></exercise>
+
+<exercise number="6"><statement><p>Which metric unit is about 0.6 mile in length?</p></statement></exercise>
+
+<exercise number="7"><statement><p>Draw a sketch showing why there are 9 square feet in 1 square yard.</p></statement>
+<answer><image source ="ans-3-3-7.png" width="40%"></image></answer></exercise>
+
+<exercise number="8"><statement><p>Explain why there are 27 cubic feet in 1 cubic yard.</p></statement></exercise>
+
+<exercise number="9"><statement><p>One liter is almost the same as which English measure of capacity?</p></statement>
+<answer><p>A quart</p></answer></exercise>
+
+<exercise number="10"><statement><p>Why is a milliliter sometimes called a cc?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 11-14, convert units to fill in the blanks.</p></introduction>
+ 
+<exercise number="11"><statement><p><ol marker="a." cols="2">
+  <li><p>24 in = <fillin></fillin> ft</p></li>
+  <li><p>24 ft = <fillin></fillin> yd</p></li>
+  <li><p>66 in = <fillin></fillin> ft</p></li>
+  <li><p>16 ft = <fillin></fillin> yd</p></li>
+  <li><p>18 in = <fillin></fillin> yd</p></li>
+  <li><p>8 in = <fillin></fillin> ft</p></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+  <li><p>2</p></li>
+  <li><p>8</p></li>
+  <li><p>5.5</p></li>
+  <li><p><m>5\frac{1}{3}</m></p></li>
+  <li><p><m>\frac{1}{2}</m></p></li>
+  <li><p><m>\frac{2}{3}</m></p></li>
+</ol></p></answer></exercise> 
+
+<exercise number="12"><statement><p><ol marker="a." cols="2">
+  <li><p>360 in = <fillin></fillin> ft</p></li>
+  <li><p>72 ft = <fillin></fillin> yd</p></li>
+  <li><p>30 in = <fillin></fillin> ft</p></li>
+  <li><p>38 in = <fillin></fillin> yd</p></li>
+  <li><p>108 in = <fillin></fillin> ft</p></li>
+  <li><p>108 in = <fillin></fillin> yd</p></li></ol></p></statement></exercise> 
+
+<exercise number="13"><statement><p><ol marker="a." cols="2">
+  <li><p>16 qt = <fillin></fillin> gal</p></li>
+  <li><p>16 pt = <fillin></fillin> qt</p></li>
+  <li><p>5 c = <fillin></fillin> pt</p></li>
+  <li><p>5 pt = <fillin></fillin> qt</p></li>
+  <li><p>20 pt = <fillin></fillin> gal</p></li>
+  <li><p>20 c = <fillin></fillin> qt</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+  <li><p>4</p></li>
+  <li><p>8</p></li>
+  <li><p>2.5</p></li>
+  <li><p>2.5</p></li>
+  <li><p>2.5</p></li>
+  <li><p>5</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="14"><statement><p><ol marker="a." cols="2">
+  <li><p>3 c = <fillin></fillin> qt</p></li>
+  <li><p>9 c = <fillin></fillin> qt</p></li>
+  <li><p>18 c = <fillin></fillin> gal</p></li>
+  <li><p>40 pt = <fillin></fillin> gal</p></li>
+  <li><p>50 qt = <fillin></fillin> gal</p></li>
+  <li><p>100 c = <fillin></fillin> qt</p></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 15-24, show your work.</p></introduction>
+
+<exercise number="15"><statement><p>The basketball player Lebron James is 6 feet 8 inches tall.</p>
+  <p><ol marker="a.">
+    <li><p>Express his height in inches.</p></li>
+    <li><p>Express his height in feet.</p></li>
+    <li><p>Express his height in yards.</p></li>
+  </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>80 in</p></li>
+    <li><p><m>6\frac{2}{3}</m> ft</p></li>
+    <li><p><m>2 \frac{2}{9}</m> yd</p></li>   
+  </ol></p></answer></exercise>
+
+<exercise number="16"><statement><p>The California condor has a wingspan up to 9 feet 9 inches.</p>
+  <p><ol marker="a.">
+    <li><p>Express the wingspan in inches.</p></li>
+    <li><p>Express the wingspan in feet.</p></li>
+    <li><p>Express the wingspan in yards.</p></li>
+  </ol></p></statement></exercise>
+
+<exercise number="17"><statement><p>On U.S. airlines, carry-on baggage may not exceed 45 inches in combined length, width and height. What is that number in centimeters?</p></statement>
+<answer><p>114.3 cm</p></answer></exercise>
+
+<exercise number="18"><statement><p>The official length of a C-Class racing catamaran is 25 feet. What is that length in meters?</p></statement></exercise>
+
+<exercise number="19"><statement><p>An Olympic swimming pool is 50 meters long. How long is that in feet?</p></statement>
+<answer><p>164.042 ft</p></answer></exercise>
+
+<exercise number="20"><statement><p>The distance from Paris to Versailles on the A86 road is 28 kilometers. How far is that in miles?</p></statement></exercise>
+
+<exercise number="21"><statement><p><ol marker="a.">
+  <li><p>How many centimeters are there in one foot?</p></li>
+  <li><p>Frank Zappa is 6 feet tall. Convert his height to centimeters.</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>30.48 cm</p></li>
+  <li><p>182.88 cm</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="22"><statement><p><ol marker="a.">
+  <li><p>How many millimeters are there in one inch?</p></li>
+  <li><p>The average length of a ladybug is 8 millimeters. What is that length in inches?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="23"><statement><p>Necklaces come in standard lengths as shown in the figure below. Complete the table by converting each length, given in centimeters, to inches. Round your answers to the nearest quarter inch.</p>
+
+  <image source ="necklaces.png" width="80%"></image>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Necklace</cell>
+      <cell>Length (cm)</cell>
+      <cell>Length (in)</cell></row>
+    <row>
+      <cell>Collar</cell>
+      <cell>32</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Choker</cell>
+      <cell>38</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Princess</cell>
+      <cell>45</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+        <cell>Matinee</cell>
+      <cell>56</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+        <cell>Opera</cell>
+      <cell>78</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+        <cell>Lariat</cell>
+      <cell>120</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p></statement>
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Necklace</cell>
+      <cell>cm</cell>
+      <cell>in</cell></row>
+    <row>
+      <cell>Collar</cell>
+      <cell>32</cell>
+      <cell>12.5</cell></row>
+    <row>
+      <cell>Choker</cell>
+      <cell>38</cell>
+      <cell>15</cell></row>
+    <row>
+      <cell>Princess</cell>
+      <cell>45</cell>
+      <cell>17.75</cell></row>
+    <row>
+      <cell>Matinee</cell>
+      <cell>56</cell>
+      <cell>22</cell></row>
+    <row>
+      <cell>Opera</cell>
+      <cell>78</cell>
+      <cell>30.75</cell></row>
+    <row>
+      <cell>Lariat</cell>
+      <cell>120</cell>
+      <cell>47.25</cell></row>
+    </tabular></p></answer></exercise>
+
+<exercise number="24"><statement><p>Complete the table by converting the wrench sizes to metric. Round your answers to the nearest millimeter.</p>
+
+<sidebyside widths= "65% 30%">
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Wrench size (in)</cell>
+      <cell>Wrench size (mm)</cell></row>
+    <row>
+      <cell>1/8</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>1/4</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>3/8</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>1/2</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>5/8</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>3/4</cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p>
+
+      <image source ="wrenches.png"></image></sidebyside></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 25-28, complete the table.</p></introduction>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Object</cell>
+      <cell>Perimeter (ft)</cell>
+      <cell>Perimeter (yd)</cell>
+      <cell>Area (sq ft)</cell>
+      <cell>Area (sq ydft)</cell></row>
+    <row>
+      <cell>Blackboard</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Table top</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Side wall</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Dishwasher</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p>
+
+<exercise number="25"><statement><p>The blackboard is 9 feet wide and 6 feet tall.</p></statement>
+<answer><p>30 ft, 10 yd, 54 sq ft, 6 sq yd</p></answer></exercise>
+
+<exercise number="26"><statement><p>A table top is 18 inches wide and 3 feet long.</p></statement></exercise>
+
+<exercise number="27"><statement><p>The side wall is 12 feet tall and 6 yards wide.</p></statement>
+<answer><p>36 ft, 12 yd, 72 sq ft, 8 sq yd</p></answer></exercise>
+
+<exercise number="28"><statement><p>The dishwasher is 24 inches wide and 30 inches tall.</p></statement></exercise>
+</exercisegroup>
+
+<exercise number="29"><statement><p>The area of the new exercise room at the gym is 800 square feet. You are in charge of buying carpet for the room. How can you convert this area to square yards?</p></statement>
+<answer><p>Divide by 9</p></answer></exercise>
+
+<exercise number="30"><statement><p>The area of a sofa cushion is <m>2\dfrac{1}{4}</m> square feet. How can you convert this area to square inches?</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 31-40 about area, show your work.</p></introduction>
+
+<exercise number="31"><statement><p>A 1200-square-foot apartment at Tivoli Square costs $850 per month. For the same price you can get an apartment at Lakeview Centre that has 135 square yards of floor space. Which apartment gives you more room for your money?</p></statement>
+<answer><p>Lakeview Centre</p></answer></exercise>
+
+<exercise number="32"><statement><p>At Carpet World, Softwist carpet costs $3.42 per square foot. At Home Flooring the same carpet costs $31.28 per square yard. Which store offers the better deal?</p></statement></exercise>
+
+<exercise number="33"><statement><p><ol marker="a.">
+  <li><p>How many square inches are in a square yard?</p></li>  
+  <li><p>You have a square piece of felt that measures 9 inches on a side. What fraction of a square yard is that?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>1296</p></li>  
+  <li><p><m>\frac{1}{16}</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="34"><statement><p><ol marker="a.">
+  <li><p>How many square yards are in a square mile?</p></li>
+  <li><p>A square corn field measures 669 yards on a side. What fraction of a square mile is that?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="35"><statement><p><ol marker="a.">
+  <li><p>How many square yards are there in one square meter? How many square feet are in one square meter?</p></li>
+  <li><p>You see a floor plan you like for a house of area 220 square meters. How large is that in square feet?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>1.196 sq yd, 10.764 sq ft</p></li>  
+  <li><p>2368.06 sq ft</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p><ol marker="a.">
+  <li><p>How many square centimeters are in one square inch?</p></li>
+  <li><p>The international standard size for typing paper is called A4. A sheet of A4 paper measures 210 millimeters by 297 millimeters. What is its area in square centimeters?</p></li>
+  <li><p>What is the area of a sheet of A4 paper in square inches?</p></li>
+  <li><p>In the U.S., typing paper measures <m>8\dfrac{1}{2}</m> by 11 inches. What is the area of a sheet of U.S. typing paper?</p></li>
+  </ol></p></statement></exercise>
+
+<exercise number="37"><statement><p>How many 16-inch square tiles will it take to tile a kitchen floor that is 12 feet wide and 18 feet long?</p></statement>
+<answer><p>121.5</p></answer></exercise>
+
+<exercise number="38"><statement><p><sidebyside widths="60% 25%"><p>The figure at right is made of tangrams, a game that uses geometrical shapes. The piece labeled A is 1 square centimeter.</p>
+  <image source ="tangram.png"></image></sidebyside></p>
+<p><ol marker="a.">
+  <li><p>Find the areas of the 6 other pieces in the figure.</p></li>
+  <li><p>What is the area of the whole figure?</p></li>
+  <li><p>Will the figure fit into a square of area 2.25 inches?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="39"><statement><p>What is the difference between "6 square centimeters" and "a 6-centimeter square"?  Illustrate your answer with a sketch.</p></statement>
+<answer><image source ="ans-3-3-39.png" width="40%"></image></answer></exercise>
+
+<exercise number="40"><statement><p>Which is larger: a square yard, or a 100-centimeter square? By how much?</p></statement>
+</exercise>
+</exercisegroup>
+
+<exercise number="41"><statement><p>The figure below compares the average home size in various countries. The amount of floor space is given in square meters. Complete the table by converting the figures to square feet. For the last column, round your answers to hundredths.</p>
+    <image source ="floorspace.png" width="80%"></image>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Country</cell>
+      <cell>Home size (sq m)</cell>
+      <cell>Home size (sq ft)</cell>
+      <cell><line>Fraction of</line><line>US Home size</line></cell></row>
+    <row>
+      <cell>USA</cell>
+      <cell>214</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Australia</cell>
+      <cell>206</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Denmark</cell>
+      <cell>137</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>France</cell>
+      <cell>113</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Spain</cell>
+      <cell>97</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Ireland</cell>
+      <cell>88</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>UK</cell>
+      <cell>76</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p>
+  </statement>
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Country</cell>
+      <cell>sq m</cell>
+      <cell>sq ft</cell>
+      <cell>Fraction</cell></row>
+    <row>
+      <cell>USA</cell>
+      <cell>214</cell>
+      <cell>2303.5</cell>
+      <cell>1.00</cell></row>
+    <row>
+      <cell>Australia</cell>
+      <cell>206</cell>
+      <cell>2217.4</cell>
+      <cell>0.96</cell></row>
+    <row>
+      <cell>Denmark</cell>
+      <cell>137</cell>
+      <cell>1474.7</cell>
+      <cell>0.64</cell></row>
+    <row>
+      <cell>France</cell>
+      <cell>113</cell>
+      <cell>1216.3</cell>
+      <cell>0.53</cell></row>
+    <row>
+      <cell>Spain</cell>
+      <cell>97</cell>
+      <cell>1044.1</cell>
+      <cell>0.45</cell></row>
+    <row>
+      <cell>Ireland</cell>
+      <cell>88</cell>
+      <cell>947.2</cell>
+      <cell>0.41</cell></row>
+    <row>
+      <cell>UK</cell>
+      <cell>76</cell>
+      <cell>818.1</cell>
+      <cell>0.36</cell></row>
+    </tabular></p></answer></exercise>
+
+<exercise number="42"><statement><p>Building tiles come in various sizes, depending on their use and composition. Complete the table showing some common tile sizes.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Use</cell>
+      <cell>Size (in)</cell>
+      <cell>Area (sq in)</cell>
+      <cell>Size (cm)</cell>
+      <cell>Area (sq cm)</cell></row>
+    <row>
+      <cell>Floors (travertine)</cell>
+      <cell>24 x 24</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Floors (granite)</cell>
+      <cell>16 x 16</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Walls</cell>
+      <cell>12 x 12</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Countertops</cell>
+      <cell>6 x 6</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    <row>
+      <cell>Showers</cell>
+      <cell>4 x 4</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell><m>\hphantom{000000}</m></cell></row>
+    </tabular></p>
+  </statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 43-52 about volume, show your work.</p></introduction>
+
+<exercise number="43"><statement><p><ol marker="a.">
+  <li><p>How any cubic feet are in 4 cubic yards?</p></li>
+  <li><p>How many cubic yards are in 81 cubic feet?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>36</p></li>
+  <li><p>9</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="44"><statement><p><ol marker="a.">
+  <li><p>Is a cubic meter bigger or smaller than a cubic yard?</p></li>
+  <li><p>Is a cubic centimeter bigger or smaller than a cubic inch?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="45"><statement><p><ol marker="a.">
+  <li><p>How many square centimeters are in a square meter?</p></li>
+  <li><p>How many cubic centimeters are in a cubic meter?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>10,000</p></li>
+  <li><p>1,000,000</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="46"><statement><p><ol marker="a.">
+  <li><p>How many square meters are in a square kilometer?</p></li>
+  <li><p>How many cubic meters are in a cubic kilometer?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="47"><statement><p>Jazmin's garden is 36 feet long by 24 feet wide. How many (cubic) yards of wood chips should she order to cover the garden 3 inches deep?</p></statement>
+<answer><p>24 cu yd</p></answer></exercise>
+
+<exercise number="48"><statement><p>A rental dumpster holds 2 cubic yards of trash. It is 74 inches long and 40 inches wide.  How tall must it be?</p></statement></exercise>
+
+<exercise number="49"><statement><p>How many liters of water does it take to fill a cubic meter? (Hint: How many cubic centimeters are there in a cubic meter?)</p></statement>
+<answer><p>1000 liters</p></answer></exercise>
+
+<exercise number="50"><statement><p><ol marker="a.">
+  <li><p>The reflecting pool at the Lincoln Memorial in Washington, D.C. is 2029 feet long, 167 feet wide, and 30 inches deep.  How many cubic feet of water does it hold?</p></li>
+  <li><p>One cubic foot of water is about 7.48 gallons.  How many gallons of water does the reflecting pool hold?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="51"><statement><p>Here is the footprint for a new house.</p>
+    <image source ="newhouse1.png" width="80%"></image>
+<p><ol marker="a.">
+  <li><p>Fill in the missing dimensions and find the area of the floor.</p></li>
+  <li><p>The concrete foundation will be 2 feet deep. How many cubic yards of concrete will be used?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>147 sq yd</p></li>
+  <li><p>98 cu yd</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="52"><statement><p>The Wongs plan to have insulation blown into the attic of their house, shown below.</p>
+    <image source ="newhouse2.png" width="80%"></image>
+<p><ol marker="a.">
+  <li><p>Fill in the missing dimensions and find the area of the ceiling.</p></li>
+  <li><p>The insulation will be 9 inches deep. How many cubic yards of insulation will they need?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>Problems 53-60 explore some other units of measurement.</p></introduction>
+
+<exercise number="53"><statement><p><ol marker="a.">
+  <li><p>One acre is 43,560 square feet. How many acres are there in one square mile?</p></li>
+  <li><p>How many acres are there in one square kilometer?</p></li>
+  <li><p>How many square yards are in one acre?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>640</p></li>
+  <li><p>247.105</p></li>
+  <li><p>4840</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="54"><statement><p>Scientists monitor the extent of arctic sea ice as a measure of climate change. In January, 2015, there were 13.14 million square kilometers of arctic sea ice. What is that area in square miles?</p></statement></exercise>  
+<exercise number="55"><statement><p><ol marker="a.">
+  <li><p>One hectare is 10,000 square meters. How many hectares are there in one square kilometer?</p></li>
+  <li><p>How many hectares are there in one square mile?</p></li>
+  <li><p>How many acres are there in one hectare?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>100</p></li>
+  <li><p>258.999</p></li>
+  <li><p>2.47105</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="56"><statement><p>The total land area of planet Earth is just over 136 million square kilometers. There are 141 million hectares of arable land on Earth; that is, land used to grow crops.</p>
+<p><ol marker="a.">
+  <li><p>How many square kilometers of arable land are there on Earth?</p></li>
+  <li><p>What percent of the land mass of Earth is arable?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="57"><statement><p>Here are some units of volume once used in England. How is this system of units similar to the metric system?</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>2 gills = 1 cup</cell>
+      <cell>2 cups = 1 pint</cell></row>
+    <row>
+      <cell>2 pints = 1 quart</cell>
+      <cell>2 quarts = 1 pottle</cell></row>
+    <row>
+      <cell>2 pottles = 1 gallon</cell>
+      <cell>2 gallons = 1 peck</cell></row>
+  </tabular></p></statement>
+<answer><p>It uses a common conversion factor of 2 (instead of 10).</p></answer></exercise>
+
+<exercise number="58"><statement><p>One fathom is equal to 6 feet in length, and one furlong is equal to 220 yards. How many fathoms in a furlong? (Fathoms were used for measuring the depth of water, and a furlong was the length of one furrow for planting crops.)</p></statement></exercise>
+
+<exercise number="59"><statement><p>There are <m>1\dfrac{1}{4}</m> yards in an ell.</p>
+<p><ol marker="a.">  
+  <li><p>How many square yards are in a square ell?</p></li>
+  <li><p>How many cubic yards are in a cubic ell?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><m>1 \frac{9}{16}</m> sq yd</p></li>
+  <li><p><m>1 \frac{16}{64}</m> cu yd</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="60"><statement><p>There are <m>5\dfrac{1}{2}</m> yards in a rod.</p>
+<p><ol marker="a.">  
+  <li><p>How many square yards are in a square rod?</p></li>
+  <li><p>How many cubic yards are in a cubic rod?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+</exercises>
+

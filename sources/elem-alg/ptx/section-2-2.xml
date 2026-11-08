@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Expressions-and-Equations"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Expressions and Equations</title>
+
+<subsection><title>Writing Algebraic Expressions</title>
+    <idx><h>algebraic expression</h><h>writing</h></idx>
+
+<p>When we write an algebraic expression, we use the same operations on a variable that we would use to calculate with a specific number. Writing down the expression for a specific numerical value can help us write an algebraic expression.</p>
+
+<example xml:id="Example-2-2-1"><statement><p>Alida keeps $100 in cash from her weekly paycheck, and deposits 40% of the remainder in her savings account. If Alida's paycheck is <m>p</m>, write an expression for the amount she deposits in savings.</p></statement>
+
+<solution><p>How would we calculate Alida's deposit if we knew her paycheck? Suppose Alida's paycheck is $500. First she subtracts $100 from that amount to get <m>500-100</m>, and then she takes 40% of the remainder for savings:
+	<md><mrow>0.40(\alert{500}-100)~~~~~\blert{\text{Perform operations inside parentheses first.}}</mrow></md>
+If her paycheck is <m>p</m> dollars, we perform the same operations on <m>p</m> instead of on 500. The expression is thus
+	<md><mrow>0.40(\alert{p}-100)</mrow></md></p></solution></example>
+
+<exercise number="1"><statement><p>We write an expression with variables using the same operations we would use to calculate with a <fillin characters="6"/>.</p></statement>
+    	<answer><p>specific number</p></answer></exercise>
+
+<exercise number="2"><statement><p>In <xref ref="Example-2-2-1" text="type-global"/>, how does Alida calculate the amount to deposit in savings? How do we write that in an algebraic expression?</p></statement>
+    	<answer><p>Subtract 100 from her paycheck, then multiply the result by 0.40. <m>0.40(p-100)</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Evaluating Algebraic Expressions</title>
+    <idx><h>algebraic expression</h><h>evaluating</h></idx>
+<p>When we evaluate an algebraic expression, we must follow the order of operations.</p>
+
+<example xml:id="Example-2-2-2"><statement><p>Four students bought concert tickets with their $20 student-discount coupons.<ol marker="a.">
+	<li>If the regular price of a ticket is <m>t</m> dollars, write an expression for the total amount the four students paid.</li>
+	<li>How much did the students pay if the regular price of a ticket is $38?</li>
+</ol></p></statement>
+<solution><p><ol marker="a.">
+	<li><p>The discount price of one ticket is <m>~t-20~</m> dollars. So four tickets cost 
+		<md><mrow>4(t-20)~~\text{dollars}</mrow></md></p></li>
+	<li><p>We evaluate the expression in part (a) for <m>t=\alert{38}</m>.        
+		<md><mrow>4(t-20) \amp = 4(\alert{38}-20) \amp  \blert{\text{Simplify inside parentheses first.}}</mrow>
+            <mrow>\amp = 4(18)=72</mrow></md>                
+		The students paid $72 for the tickets.</p></li>
+    </ol></p></solution></example>
+
+<exercise number="3"><statement><p>Explain why we need parentheses in <xref ref="Example-2-2-2" text="type-global"/>.</p></statement>
+    	<answer><p>We need to subtract before we multiply.</p></answer></exercise>
+
+<exercise number="4"><statement><p>How should we write "3 times the sum of <m>x</m> and 12"?</p></statement>
+    	<answer><p><m>3(x+12)</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Negative Numbers</title>
+
+<p>The order of operations applies to signed numbers. Operations inside parentheses or other grouping devices should be performed first.</p>
+
+<example><statement><p>Simplify  <m>~~4-3-[-6+(-5)-(-2)]</m></p></statement>
+
+<solution><p>Perform the operations inside brackets first. Simplify each step by rewriting subtractions as equivalent additions. 
+    <md><mrow>\amp 4-3- [-6+\blert{(-5)-(-2)}] \amp\amp  \blert{-5-(-2)=-5+2}</mrow>
+        <mrow>=\,\amp  4-3-[\blert{-6-5+2}] \amp\amp \blert{-6-5+2=-9}</mrow>
+        <mrow>=\,\amp  4 \blert{-3-[-9]} \amp\amp \blert{\text{Rewrite as an addition.}}</mrow>
+        <mrow>=\,\amp  4-3+9 = 10 \amp\amp  \blert{\text{Add from left to right.}}</mrow>        
+    </md></p></solution></example>
+
+<exercise number="5"><statement><p>Which operation is performed first in the expression <m>6-4x</m>?</p></statement>
+    	<answer><p>multiplication</p></answer></exercise>
+
+<exercise number="6"><statement><p>What is the first step in evaluating the expression <m>2(18-x)</m>?</p></statement>
+    	<answer><p>Subtract <m>x</m> from 18</p></answer></exercise>
+
+<warning><p>When using negative numbers, we must be careful to distinguish between products and sums.  In <xref ref="Example-2-2-4" text="type-global"/>, note how the parentheses and minus signs are used in each expression.</p>
+</warning>
+
+<example xml:id="Example-2-2-4"><statement><p>Simplify each expression.<ol marker="a." cols="4">
+	<li><m>3(-8)</m></li>
+	<li><m>3-(-8)</m></li>
+	<li><m>3-8</m></li>
+	<li><m>-3-8</m></li>
+</ol></p></statement>
+<solution><p><ol marker="a.">
+	<li><p>This expression is a product: <m>~3(-8)=-24</m></p></li> 
+	<li><p>This is a subtraction. We follow the rule for subtraction by changing the sign of the second number and then adding: <m>~3-(-8)=3+8=11</m></p></li> 
+	<li><p>This is an addition; the negative sign in front of  tells us that we are adding <m>-8</m> to <m>3</m>. Thus, <m>~3-8=3+(-8)=-5</m></p></li> 
+	<li><p>This is also an addition: <m>~-3-8=-3+(-8)=-11</m></p></li>
+</ol></p></solution></example>
+
+<exercise number="7"><statement><p>What is wrong with this calculation: <m>4-3+9=4-12=-8</m>?</p></statement>
+    	<answer><p>We should subtract <m>4-3</m> first.</p></answer></exercise>
+
+<assemblage><title>Look Closer</title>
+<p>When we evaluate an algebraic expression at a negative number, we enclose the negative numbers in parentheses. This will help prevent us from confusing multiplication with subtraction.</p></assemblage>
+
+<example><statement><p>Evaluate <m>~2x-3xy~</m> for <m>~x=-5~</m> and <m>~y=-2</m>.</p></statement>
+
+<solution><p>We substitute <m>\alert{-5}</m> for <m>x</m> and <m>\blert{-2}</m> for <m>y</m>, then follow the order of operations.
+    <md><mrow>2x-3xy \amp = 2(\alert{-5})-3(\alert{-5})(\blert{-2})  \amp \blert{\text{ Do multiplications first.}}</mrow>
+        <mrow>\amp = -10-(-15)(-2)</mrow>
+        <mrow>\amp = -10-30=-40</mrow>         
+    </md></p></solution></example>
+
+<exercise number="8"><statement><p>When we evaluate an expression at a negative number, we should <fillin characters="6"/> the negative number in <fillin characters="6"/>.</p></statement>
+    	<answer><p>enclose; parentheses</p></answer></exercise>
+
+<problem>
+<p>Choose the correct algebraic expression for each of the following situations.</p>
+    <assemblage><p>
+	   <md><mrow>\amp n+12  \amp   \amp 12n    \amp  \amp \dfrac{n}{12}</mrow>
+        <mrow>\amp \dfrac{12}{n} \amp \amp 12-n   \amp  \amp n-12</mrow></md>          
+</p></assemblage>
+
+<p><ol marker="1.">
+    <li><p>Helen bought <m>n</m> packages of tulip bulbs. If each package contains 12 bulbs, how many bulbs did she buy?</p></li>
+
+    <li><p>Henry bought a package of <m>n</m> gladiolus bulbs, then bought 12 loose bulbs. How many bulbs did he buy?</p></li>
+
+    <li><p>Together Karen and Dave sold 12 tickets to the spring concert. If Karen sold <m>n</m> tickets, how many did Dave sell?</p></li>
+
+    <li><p>Together Karl and Diana collected <m>n</m> used books for the book sale. If Karl collected 12 books, how many did Diana collect?</p></li>
+
+    <li><p>Greta made <m>n</m> dollars last week. If she worked for 12 hours, how much did she make per hour?</p></li>
+
+    <li><p>Gert jogged for 12 minutes. If she jogged <m>n</m> miles, how many minutes does it take her to jog 1 mile?</p></li>
+</ol></p>
+
+<answer>
+<p><ol marker="1." cols="3">
+    <li><m>12n</m></li>
+    <li><m>n+12</m></li>
+    <li><m>12-n</m></li>
+    <li><m>n-12</m></li>
+    <li><m>\dfrac{n}{12}</m></li>
+    <li><m>\dfrac{12}{n}</m></li>
+</ol></p>
+</answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Order of Operations</title>
+<introduction><p>Follow the order of operations to simplify each expression.</p></introduction>
+
+<p><ol marker="1.">
+<li><p><ol marker="a." cols="2">
+    <li><m>5-(+7)-3-(-2)</m></li>
+    <li><m>-4-(-9)-3-8</m></li>
+    <li><m>7(-3)-2(-5)</m></li>
+    <li><m>9-4(-6)</m></li>
+</ol></p></li>
+
+<li><p><ol marker="a." cols="2">
+    <li><m>-6(-2)(-5)</m></li>
+    <li><m>-6(-2)-5</m></li>
+    <li><m>-6(-2-5)</m></li>
+    <li><m>-6-(2-5)</m></li>
+</ol></p></li>
+
+<li><p><ol marker="a." cols="2">
+    <li><m>[-5-8]-[7-10-4]</m></li>
+    <li><m>-6+[(4-8)-(-9)]</m></li>
+    <li><m>28-3(-12-2 \cdot 4)</m></li>
+    <li><m>12-36 \div 4(9-2 \cdot 3)</m></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Writing Algebraic Expressions</title>
+
+<p><ol marker="1.">
+<li><p>Neda decides to order some photo albums as gifts. Each album costs $12, and the total shipping cost is $4. Neda would like an algebraic expression that describes the total cost of ordering <m>a</m> albums.
+<ol marker="a.">
+    <li><p><m>\blert{\text{Consider some specific values for the variable:}}</m></p>  
+        <p>What is Neda's bill if she orders 3 albums?  If she orders 5 albums?</p>
+        <p>For <m>\alert{3}</m> albums, the bill is:
+            <md><mrow>12 \cdot  \alert{3} + 4 = </mrow></md></p>      
+        <p>For <m>\alert{5}</m> albums, the bill is:
+            <md><mrow>\hphantom{0000}</mrow></md></p></li>
+    <li>Describe in words how you calculated your answers for specific values.</li>
+    <li><p><m>\blert{\text{Replace the specific values in your calculations by a variable.}}</m></p>
+        <p>If Neda orders <m>\alert{a}</m> albums, an expression for the bill is:</p>
+        <p>Let <m>B</m> stand for Neda's bill, and write an equation that gives Neda's bill, <m>B</m>, 
+        in terms of the number of albums she orders, <m>a</m>:</p></li>
+    </ol></p></li>
+
+<li><p>Megan would like to buy a kayak on sale. She calculates that the kayak she wants costs $40 less than three weeks' salary. <ol marker="a."> 
+    <li>Write an expression for the price of the kayak if Megan makes $280 per week.</li>                           
+    <li>If Megan makes <m>w</m> dollars per week, write an expression for the price of the kayak.</li>
+</ol></p></li>
+
+<li><p>Emily bought five rose bushes for her garden. Each rose bush cost $9 plus tax. <ol marker="a.">
+    <li>Write an expression for the total amount Emily paid if the tax on one rose bush is $0.45.</li> 
+    <li>If the tax on one rose bush is <m>t</m>, write an expression for the total amount Emily paid.</li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Evaluating Algebraic Expressions</title>
+
+<p><ol marker="1.">
+<li><p>When a company purchases a piece of equipment such as a computer or a copy machine, the value of the equipment depreciates over time. One way to calculate the value of the equipment uses the formula
+    <md><mrow>V=C\left(1-\dfrac{t}{n}\right)</mrow></md>
+where <m>C</m> is the original cost of the equipment, <m>t</m> is the number of years since it was purchased, and <m>n</m> stands for the useful lifetime of the equipment in years. Find the value of a 4-year-old copy machine if it has a useful lifetime of 6 years and cost $3000 when new. 
+<ol marker="a.">
+    <li>List the values of the variables:
+        <md><mrow>C=<fillin characters="4"/>,~~~t=<fillin characters="4"/>,~~~n=<fillin characters="4"/></mrow></md></li>      
+    <li>Substitute the values into the formula.</li>
+    <li><p>Simplify the expression. Follow the order of operations.</p>
+        <p><m>\blert{\text{Simplify inside the parentheses.}}</m></p>
+        <p><m>\blert{\text{Multiply.}}</m></p>
+        <p>Answer:</p></li>
+    </ol></p></li>
+
+<li><p>Evaluate <m>~~8(x+xy)~~</m> for <m>~x=\dfrac{1}{2}~</m> and <m>~y=-6</m>.</p>
+    <p><m>\blert{\text{Substitute the values:}}~~~8\left(\dfrac{1}{2}+\dfrac{1}{2}(-6)\right)</m></p>
+    <p><m>\blert{\text{Follow the order of operations.}}</m></p></li>
+
+<li><p>Evaluate <m>~~3(a-b)~~</m> for <m>~a=-4~</m> and <m>~b=-6</m>.</p></li>
+
+<li><p>Evaluate <m>~~-2(a+b)-ab~~</m> for <m>~a=6~</m> and <m>~b=-3</m>.</p></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Simplifying expressions with the order of operations</li>
+    <li>Writing algebraic expressions with two or more operations</li>
+    <li>Evaluating algebraic expressions at signed numbers</li></ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li><p>Explain what is wrong with this calculation:
+        <md><mrow>9-4(-6) = 5 (-6) = -30</mrow></md></p></li>  
+    <li>For "5 dollars less than the price of 3 shirts," Delbert writes <m>5-3s</m>. What is wrong with his expression?</li>
+    <li>In problems 2 and 3 of Activity 2, which expression required parentheses?  Why?</li>
+    <li>When we evaluate <m>ab</m> for <m>a=6,~b=-3</m>, why should we enclose <m>-3</m> in parentheses?</li>
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<introduction><p>Write algebraic expressions.</p></introduction>
+
+<p><ol marker="1.">
+<li><p>Boyer's history book is 600 pages long, and he reads 20 pages per night. How many pages does he have left to read after <m>t</m> nights?</p></li>
+
+<li><p>Kristi deposits $50 from her paycheck into savings, and then gives herself 15% of the rest for spending money. If her paycheck is <m>p</m> dollars, how much spending money does she get?</p></li>
+
+<li><p>The area of a pyramid is one-third the product of its length, its width, and its height.</p></li>
+
+<li><p>The difference of a number <m>B</m> and twice its reciprocal.</p></li>
+</ol></p>
+
+<p>5. Evaluate.</p>
+
+<p><ol marker="a.">
+    <li><p><m>2m(m+p)(m-p)~~~~</m> for <m>~m=-5~</m>and <m>~p=-8</m></p></li>
+    <li><p><m>(z+2)(2z-1)~~~~</m> for <m>~z=\dfrac{-3}{4}</m></p></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p> <p><ol marker= "1." cols="2">
+    <li><m>600-20t</m></li>
+    <li><m>0.15(p-50)</m></li>
+    <li><m>\dfrac{1}{3}lwh</m></li>
+    <li><m>B-\dfrac{2}{B}</m></li>
+</ol></p>
+<p>5. <ol marker="a." cols="2">
+    <li><m>390</m></li>
+    <li><m>\dfrac{-25}{8}</m></li>
+</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-2-2.xml" />
+</section>

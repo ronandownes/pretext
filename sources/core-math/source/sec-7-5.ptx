@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-7-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>Working with Signed Numbers</title>
+
+  <sidebyside widths="50% 40%" valigns="middle middle" margins="0% 5%"><p><ul>
+    <li><p>Addition and Subtraction</p></li>
+    <li><p>Combining Operations</p></li>
+    <li><p>Parentheses</p></li>
+    <li><p>Fraction Bars</p></li>
+    <li><p>Powers</p></li>
+  </ul></p>
+      <image source="signednos.png"></image></sidebyside>
+
+<subsection><title>Addition and Subtraction</title>
+
+<p>In this Section we practice simplifying expressions that involve two or more operations on signed numbers. We'll start with combinations of addition and subtraction. The rules for the order of operations apply to operations on signed numbers.</p>
+
+<assemblage><title>Rule 1</title>
+<p>Perform additions and subtractions in order from left to right.</p></assemblage>
+
+<example><statement><p> Simplify  <m>~2 - 7 + 3 - 8</m></p></statement>
+
+<solution><p>In <xref ref="notation" text="custom">Section 7.2</xref> we saw that the simplest way to interpret such an expression is as a sum of signed numbers. Each <m>+</m> or <m>-</m> symbol tells us the sign of the number that follows. So to simplify this expression we add <m>2</m> and <m>-7</m> and <m>3</m> and <m>-8</m>.
+
+  <md><mrow>\blert{2-7}+3-8 \amp = \blert{-5} +3-8 \amp \amp \blert{\text{Add} ~2~ \text{and} ~-7~ \text{to get} ~-5.}</mrow>
+      <mrow>\blert{-5+3}-8 \amp = \blert{-2}-8 \amp \amp \blert{\text{Add} ~-5~ \text{and} ~3~ \text{to get} ~-2.}</mrow>
+      <mrow>-2-8 \amp = -10  \amp \amp \blert{\text{Add} ~-2~ \text{and} ~-8~ \text{to get} ~-10.}</mrow></md>
+
+The sum is <m>-10</m>.</p></solution></example>
+
+<exercise><statement><p>Simplify  <m>~9-12-15+7</m></p></statement>
+
+<answer><m>-11</m></answer></exercise>
+
+<p>If the expression includes some subtractions, we should convert those to additions first.</p>
+
+<example><statement><p>Simplify  <m>~5-(+7)-3-(-2)</m></p></statement>
+
+<solution><p>First we convert each subtraction to an addition by changing the sign of the subtracted number.
+
+    <me>5~ \blert{-(+7)}~-3~\alert{-(-2)} = 5~ \blert{+(-7)}~-3~\alert{+(+2)}</me>
+
+We changed "subtract <m>+7</m>" to "add <m>-7</m>," and we changed "subtract <m>-2</m>" to "add <m>+2</m>." Now we can omit all the addition symbols and the parentheses, leaving a string of signed numbers to add.
+
+  <me>5~ \cancel{+}(-7)~-3~\cancel{+}(+2) = 5-7-3+2</me>
+
+  Finally, we add from left to right.
+
+    <md><mrow>\blert{5-7}-3+2 \amp = \blert{-2} -3+2 \amp \amp \blert{\text{Add} ~5~ \text{and} ~-7~ \text{to get} ~-2.}</mrow>
+      <mrow>\blert{-2-3}+2 \amp = \blert{-5}+2 \amp \amp \blert{\text{Add} ~-2~ \text{and} ~3~ \text{to get} ~-5.}</mrow>
+      <mrow>-5+2 \amp = -3  \amp \amp \blert{\text{Add} ~-5~ \text{and} ~2~ \text{to get} ~-3.}</mrow></md>
+
+The sum is <m>-3</m>.</p></solution></example>
+
+<note><p>If you feel confident, you can combine the first two steps in Example 7.5.3. Delete any subtraction symbols at the same time you change the sign of the subtracted numbers, like this:
+
+    <image source="subtoadd.png" width="60%"></image>
+
+But be careful:  you can delete subtraction symbols, but don't delete any negative signs!</p></note>
+
+<exercise><statement><p> Simplify <m>~-12-(-8)-5-(+9)</m></p></statement>
+
+<answer><m>-18</m></answer></exercise>
+
+<p>The location of parentheses in an expression is very important. Compare the expressions in Example 7.5.6.  Note carefully how the parentheses and minus signs change the meaning of the expression.</p>
+
+<example><statement><p>Simplify each expression.</p>
+  <p><ol marker="a." cols="2">
+    <li><m>3(-8)</m></li>
+    <li><m>3-(-8)</m></li>
+    <li><m>-3-8</m></li>
+    <li><m>-3(-8)</m></li>
+  </ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The parentheses tell us to multiply:  <m>3(-8)=-24</m></p></li>
+  <li><p>We subtract negative 8 from 3 by first changing to an addition:  
+    <me>3-(-8) = 3+8=11</me></p></li>
+  <li><p>We add two negative numbers:  <m>-3-8=-3+(-8)=-11</m></p></li>     
+  <li><p>We multiply two negative numbers:  <m>-3(-8)=24</m></p></li>
+</ol></p></solution></example>
+
+<note><p>In Examples 7.5.6(a) and (d), the parentheses indicate multiplication. There is no addition or subtraction symbol between the first number and the parentheses, as there is in part (b).</p></note>
+
+<exercise><statement><p>Identify the operation in each expression as an addition, a subtraction, or a product. Then simplify the expression. </p>
+<p><ol marker="a." cols="3">
+  <li><p><m>-2-7</m></p></li>
+  <li><p><m>-2(-7)</m></p></li>
+  <li><p><m>-2-(-7)</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>addition, <m>~-9</m></p></li>
+  <li><p>multiplication, <m>~14</m></p></li>
+  <li><p>subtraction, <m>~5</m></p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Combining Operations</title>
+
+<p>Perhaps you remember that to simplify the expression
+    <me>5+2\cdot4</me>
+  we perform the multiplication first, so that
+    <me>5 + \blert{2 \cdot 4} = 5 + \blert{8} = 13</me>
+(If we do the addition first, we get  <m>7 \cdot 4 = 28</m>,  which is not correct!)</p>
+
+<assemblage><title>Rule 2</title>
+<p>Perform all multiplications and divisions before additions and subtractions.</p></assemblage>
+
+<example><statement><p>Simplify <m>~-6-3(-5)</m></p></statement>
+
+<solution><p>First, study the expression and analyze the operations involved.</p>
+  <image source="ex-7-5-4.png" width="75%"></image>
+<p>We begin by multiplying  <m>~3(-5)~</m> to get <m>-15</m>.
+  <me>6 - \blert{3(-5)} = -6 - \blert{(-15)}</me>
+Then we change the subtraction to an addition, and add.
+  <me>-6-(-15) = -6+15 = 9</me></p></solution></example>
+
+<exercise><statement><p>Simplify <m>~-5-2(-8)</m></p></statement>
+
+<answer><m>11</m></answer></exercise>
+
+<p>To analyze a long string of operations, it helps to underline each multiplication and division.  Doing so breaks the expression into <term>terms</term>, which can be simplified separately.</p>
+
+<assemblage><title>Definition</title>
+<p><term>Terms</term> are parts of an expression that are separated by addition or subtraction symbols.</p></assemblage>
+
+<example><statement><p>Simplify <m>~-24 \div (-6)-5(-4)</m></p></statement>
+
+<solution><p>We underline each multiplication and division and perform them first.
+  <me>\blert{\underline{-24 \div (-6)}} - \alert{\underline{5(-4)}} = \blert{4} - \alert{(-20)}</me>
+Note that we enclosed <m>-20</m> in parentheses because it follows a subtraction symbol.  Next we change the subtraction to an addition, and add.
+  <me>4 - (-20) = 4 + 20 = 24</me></p></solution></example>
+
+<exercise><statement><p>Underline each term, then simplify the expression:
+  <me>2(-8) - 12(-3)</me></p></statement>
+
+<answer><m>20</m></answer></exercise>
+</subsection>
+
+<subsection><title>Parentheses</title>
+
+<p>Parentheses are often used to denote multiplication, but they can also be used to enclose part of an expression. If there are operations inside (between) parentheses, we should perform those operations first. </p>
+
+<assemblage><title>Rule 3</title>
+<p>Perform any operations inside parentheses first.</p></assemblage>
+
+<example><statement><p>Compare the three expressions below, and simplify each.</p>
+<p><ol marker="a." cols="3">
+  <li><p><m>-4(6-10)</m></p></li>
+  <li><p><m>-4(6)(-10)</m></p></li>
+  <li><p><m>-4(6)-10</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The first e>\blertxpression has an operation inside parentheses,  <m>6-10</m>,  which must be performed first. 
+    <md><mrow>-4(\blert{6-10}) \amp = -4(\blert{-4}) \amp \amp \blert{\text{Add}~ 6~ \text{and} ~-10~ \text{inside parentheses.}}</mrow>
+        <mrow> \amp = -16 \amp \amp \blert{\text{Multiply} ~-4~ \text{by}~ -4.}</mrow></md></p></li>
+  <li><p>The second expression is a product of three factors.  We multiply in order from left to right.
+    <md><mrow>\blert{-4(6)}(-10) \amp = \blert{-24}(-10) \amp \amp \blert{\text{Multiply}~ -4~ \text{by}~ 6.}</mrow>
+        <mrow> \amp = 240  \amp \amp \blert{\text{Multiply}~ -24~ \text{by}~ -10.}</mrow></md></p></li>
+  <li><p>The third expression consists of two terms, <m>-4(6)</m>  and  <m>10</m>. We perform the multiplication first.
+    <md><mrow>\blert{-4(6)}-10 \amp = \blert{-24} - 10 \amp \amp \blert{\text{Multiply}~ -4~ \text{by}~ 6.}</mrow>
+        <mrow> \amp = -34  \amp \amp \blert{\text{Add}~ -24~ \text{and}~ -10.}</mrow></md></p></li>
+  </ol></p></solution></example>
+
+  <exercise><statement><p>Analyze the order of operations in each expression, then simplify.</p>
+  <p><ol marker="a." cols="3">
+    <li><m>-2(-3)-5</m></li>
+    <li><m>-2(-3)(-5)</m></li>
+    <li><m>-2(-3-5)</m></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+    <li><m>1</m></li>
+    <li><m>-30</m></li>
+    <li><m>16</m></li>
+  </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Fraction Bars</title>
+
+<p>A fraction bar is a division symbol, but it is also a grouping symbol like parentheses. </p>
+
+<assemblage><title>Rule 4</title>
+<p>Simplify any expressions above or below a fraction bar before dividing the bottom into the top.</p></assemblage>
+
+<example><statement><p>Simplify  <m>~\dfrac{4-40}{4+8}</m></p></statement>
+
+<solution><p>Do not be tempted to divide or "cancel" <m>4</m> by  <m>4</m>, or <m>-40</m> by <m>8</m>! We must first simplify the expressions above and below the fraction bar before we divide.
+  <me>\dfrac{4-40}{4+8} = \dfrac{-36}{12} = -3</me></p></solution></example>
+
+<exercise><statement><p> Simplify <m>~\dfrac{6-14}{3-7}</m></p></statement>
+
+<answer><m>2</m></answer></exercise>
+
+<p>Here are the rules for simplifying expressions, in the order they should be applied.</p>
+
+<assemblage><title>Order of Operations</title>
+<p><ol marker="1.">
+  <li><p>First, perform all operations inside parentheses, or above or below a fraction bar.</p></li>
+  <li><p>Next, perform all multiplications and divisions in order from left to right.</p></li>
+  <li><p>Finally, perform all additions and subtractions in order from left to right.</p></li>
+</ol></p></assemblage>
+
+<activity><title>Order of Operations</title>
+
+<p>Simplify each expression by following the order of operations.</p>
+
+<p><ol marker="1.">
+  <li><m>-6(-2)(-5)</m></li>
+  <li><m>-6(-2)-5</m></li>
+  <li><m>-6(-2-5)</m></li>
+  <li><m>-6-(2-5)</m></li>
+  <li><m>-6-2(-5)</m></li>
+  <li><m>(-6-2)(-5)</m></li>
+  <li><m>(-6-2)-5</m></li>
+  <li><m>-6-2-5</m></li>
+</ol></p></activity>
+</subsection>
+
+<subsection><title>Powers</title>
+
+<p>Recall that we must enclose a negative number in parentheses when we raise it to a power. This is a special case of a more general rule.</p>
+
+<assemblage><title>Exponents</title>
+<p>An exponent applies only to its base, and not to any other factors in the product. If we want an exponent to apply to more than one factor, we must enclose those factors in parentheses.</p></assemblage>
+
+<example><statement><p>Compare the expressions <m>~4 \cdot 2^3~</m> and <m>~(4 \cdot 2)^3</m>.</p></statement>
+
+<solution><p>In the first expression, only the 2 is cubed. Thus,
+  <md><mrow>4 \cdot 2^3 ~~ \text{means} ~~ \amp 4 \cdot 2 \cdot 2 \cdot 2</mrow>
+      <mrow>  \amp \blert{\text{Exponent applies to the base, 2, only.}}</mrow>
+      <mrow>(4 \cdot 2)^3 ~~ \text{means} ~~ \amp (4 \cdot 2)(4 \cdot 2)(4 \cdot 2)</mrow>
+      <mrow>  \amp \blert{\text{Exponent applies to the base,}~ 4 \cdot 2.}</mrow></md>
+
+The two expressions are not equivalent, as you can see by evaluating each:
+  <md><mrow>4 \cdot 2^3 = 4 \cdot 8 = 32</mrow>
+      <mrow>(4 \cdot 2)^3 = 8^3 = 512</mrow></md></p></solution></example>
+
+<p>Now we begin to see how exponents fit into the order of operations. </p>
+
+<note><p>Think about the operations in Example 7.5.17.<ul>  
+  <li><p>To evaluate <m>~4 \cdot 2^3~</m>, we compute the power <m>2^3</m> first, and then the product, <m>4 \cdot 8</m>.</p></li> 
+  <li><p>To evaluate <m>~(4 \cdot 2)^3</m>, we compute the product <m>4 \cdot 2</m> inside parentheses first, and then compute the power, <m>8^3</m>.</p></li>
+</ul></p></note> 
+
+<exercise><statement><p>Simplify the expression <m>~-3(-5)^2</m></p></statement>
+
+<answer><m>-75</m></answer></exercise>
+
+<p>When we simplify an expression, we compute powers before products.</p>
+
+<assemblage><title>Rule 5</title>
+<p>Perform all powers before multiplication or division.</p></assemblage>
+
+<p>Now we can include exponents in the order of operations.</p>
+
+<assemblage><title>Order of Operations</title>
+<p><ol marker="1.">
+  <li><p>Perform all operations inside parentheses, or above or below a fraction bar.</p></li>
+  <li><p>Compute all powers.</p></li>
+  <li><p>Perform all multiplications and divisions in order from left to right.</p></li>
+  <li><p>Perform all additions and subtractions in order from left to right.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Simplify <m>~-2(8-3\cdot 4)^2</m></p></statement>
+
+<solution><p>We simplify the expression enclosed in parentheses first.
+
+  <md><mrow>-2(8-\blert{3\cdot 4})^2 \amp = -2(\blert{8-12})^2  \amp \amp \blert{\text{Multiply first, then subtract.}}</mrow>
+      <mrow>  \amp = -2\blert{(-4)^2} \amp \amp \blert{\text{Compute the power, then multiply.}}</mrow>
+      <mrow>   \amp = -2(16) = -32</mrow></md></p></solution></example>
+
+<exercise><statement><p>Simplify each expression.<ol marker="a." cols="3">
+  <li><m>-4-2^3</m></li>
+  <li><m>-4(-2)^3</m></li>
+  <li><m>(-4-2)^3</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+  <li><m>-12</m></li>
+  <li><m>32</m></li>
+  <li><m>-216</m></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<xi:include href="./prac-7-5.ptx" />
+
+</section>

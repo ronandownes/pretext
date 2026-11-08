@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} 
+\draw[black,thick, ->, >=stealth'] (0,0)--(11,0);
+ \draw[black, thick] (0,.3) --++(0,-.35)  node[below]   {0};
+ \draw[black, thick] (10,.3) --++(0,-.35)  node[below]   {10,000};
+\foreach \x [evaluate=\x as \xi using int(1000*\x)] in {5/2,5,15/2} \draw[black,thick] (\x,.2) --++(0,-.2) node[below, yshift=-2, scale=.8]{\xi};
+\foreach \x [evaluate=\x as \xi using int(1000*\x)]  in {1.25, 3.75, 6.25, 8.75} \draw[black,thick] (\x,.15) --++(0,-.15) node[below, yshift=-2, scale=.8]{\xi};
+\filldraw[blue] (1.4,0) circle (1mm) node[above, yshift=4, scale=.9] {1400};
+\filldraw[blue] (8.35,0) circle (1mm) node[above, yshift=4, scale=.9] {8350};
+\end{tikzpicture}%
+}
+\end{document}

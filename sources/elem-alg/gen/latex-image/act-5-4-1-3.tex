@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+      \tikzset{%
+      }
+      \begin{tikzpicture} [scale=.5]
+\def\x{3.7 };
+\def\l{5};
+\def\w{2};
+\draw[magenta!80!black,line width=1mm] (0,0) rectangle (\x,\x);
+\draw[magenta!80!black,line width=1mm] (0,0) rectangle (\x,-\w);
+\draw[magenta!80!black,line width=1mm] (\x,0) rectangle +(\l,\x);
+\draw[magenta!80!black,line width=1mm] (\x,0) rectangle +(\l,-\w);
+\node at (-.6,\x/2) {$x$};
+\node at ({\x/2},{\x+.6}) {$x$};
+\node at ({\x+\l/2},{\x+.6}) {$5$};
+\node at (-.6,-\w/2) {$2$};
+      \end{tikzpicture}%
+}
+\end{document}

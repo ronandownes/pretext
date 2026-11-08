@@ -1,0 +1,231 @@
+<exercises xml:id="prac-6-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 6-4</title>
+
+<exercisegroup><introduction><p>For Problems 1-6, answer the questions in complete sentences.</p></introduction> 
+
+<exercise number="1"><statement><p>What is a factor?</p></statement>
+  <answer><p>Something to multiply by.</p></answer></exercise>
+
+<exercise number="2"><statement><p>How is the meaning of the word "similar" different in mathematics from its common English meaning?</p></statement></exercise>
+
+<exercise number="3"><statement><p>What does it mean for two figures to be congruent?</p></statement>
+  <answer>They have the same size and the same shape.</answer></exercise>
+
+<exercise number="4"><statement><p>What does it mean for two figures to be proportional?</p></statement></exercise>
+
+<exercise number="5"><statement><p>If you know the lengths of two corresponding sides in similar figures, how can you find the scale factor?</p></statement>
+  <answer>Divide one by the other.</answer></exercise>
+
+<exercise number="6"><statement><p>What does the 2 mean in the expression <m>k^2</m>?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 7-14, decide whether the figures are similar. If they are similar, give the scale factor from the first figure to the second figure. If the figures are not similar, explain why not.</p></introduction>
+
+<exercise number="7"><statement><image source="hp-6-4-7.png" width="75%"></image></statement>
+  <answer><m>\dfrac{5}{8}</m></answer></exercise>
+
+<exercise number="8"><statement><image source="hp-6-4-8.png" width="80%"></image></statement></exercise>
+
+<exercise number="9"><statement><image source="hp-6-4-9.png"></image></statement>
+  <answer>The sides are not proportional.</answer></exercise>
+
+<exercise number="10"><statement><image source="hp-6-4-10.png"></image></statement></exercise>
+
+<exercise number="11"><statement><image source="hp-6-4-11.png"></image></statement>
+  <answer><m>\dfrac{5}{4}</m></answer></exercise>
+
+<exercise number="12"><statement><image source="hp-6-4-12.png" width="80%"></image></statement></exercise>
+
+<exercise number="13"><statement><image source="hp-6-4-13.png" width="100%"></image></statement>
+  <answer><m>\dfrac{17}{11} \not= <m>\dfrac{9}{6}</m></m></answer></exercise>
+
+<exercise number="14"><statement><image source="hp-6-4-14.png" width="75%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 15-18, each statement is false. Correct it to make a true statement.</p>
+</introduction>
+
+<exercise number="15"><statement><p>Two figures are similar if their sides are proportional.</p></statement>
+  <answer><p> ... and their corresponding angles are equal.</p></answer></exercise>
+
+<exercise number="16"><statement><p>We can create an equivalent ratio by adding the same number to both top and bottom.</p></statement></exercise>
+
+<exercise number="17"><statement><p>Doubling the dimensions of a rectangle also doubles its area.</p></statement>
+  <answer>Doubling the dimensions of a rectangle quadruples its area.</answer></exercise>
+
+<exercise number="18"><statement><p>To enlarge a picture, we add the same factor to each dimension.</p></statement>
+</exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>In Problems 19-26, the figures are similar. Find the unknown angles and sides. </p>
+</introduction>
+
+<exercise number="19"><statement><image source="hp-6-4-19.png" width="90%"></image></statement>
+  <answer><m>\angle A = \angle B = 37 \degree</m></answer></exercise>
+
+<exercise number="20"><statement><image source="hp-6-4-20.png" width="70%"></image></statement></exercise>
+
+<exercise number="21"><statement><image source="hp-6-4-21.png" width="75%"></image></statement>
+  <answer><m>\angle A = \angle B = \angle C = 45 \degree, ~ d=5</m></answer></exercise>
+
+<exercise number="22"><statement><image source="hp-6-4-22.png" width="100%"></image></statement></exercise>
+
+<exercise number="23"><statement><image source="hp-6-4-23.png"></image></statement>
+  <answer><m>\angle A = 60 \degree, ~ w=3.5</m></answer></exercise>
+
+<exercise number="24"><statement><image source="hp-6-4-24.png" width="70%"></image></statement></exercise>
+
+<exercise number="25"><statement><image source="hp-6-4-25.png" width="100%"></image></statement>
+  <answer><m>h=12</m></answer></exercise>
+
+<exercise number="26"><statement><image source="hp-6-4-26.png" width="90%"></image></statement></exercise>
+</exercisegroup>
+
+<exercise number="27"><statement><p>Which of the following statements are true?<ol marker="a.">
+    <li><p>All isosceles triangles are similar.</p></li>
+    <li><p>All equilateral triangles are similar.</p></li>
+    <li><p>All rectangles are similar.</p></li>
+    <li><p>All squares are similar.</p></li>
+</ol></p></statement>
+  <answer><p>(b) and (d)</p></answer></exercise>
+
+<exercise number="28"><statement><p>Which of the following statements are true?<ol marker="a.">
+    <li><p>All right triangles are similar.</p></li>
+    <li><p>All isosceles right triangles are similar.</p></li>
+    <li><p>All circles are similar.</p></li>
+    <li><p>All obtuse triangles are similar.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="29"><statement><p>Tamisha is measuring the angles in two triangles. She finds that two of the angles in the first triangle are equal to two angles in the second triangle. She concludes that the triangles are similar. Is she correct? Explain why or why not.</p> </statement>
+  <answer><p>Yes, The third angles must also be equal.</p></answer></exercise>
+
+<exercise number="30"><statement><p>Hakim says that if the lengths and widths of two rectangles are proportional, then the rectangles are similar. Is he correct? Explain why or why not.</p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>In Problems 31-34, are the triangles similar? Explain why or why not.</p></introduction>
+
+<exercise number="31"><statement><image source="hp-6-4-31.png" width="80%"></image></statement>
+  <answer><p>Yes. The sides are proportional.</p></answer></exercise>
+
+<exercise number="32"><statement><image source="hp-6-4-32.png" width="90%"></image></statement></exercise>
+
+<exercise number="33"><statement><image source="hp-6-4-33.png"></image></statement>
+  <answer><p>Yes, Corresponding angles are equal.</p></answer></exercise>
+
+<exercise number="34"><statement><image source="hp-6-4-34.png" width="75%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 35-38, find two figures that are similar.</p></introduction>
+
+<exercise number="35"><statement><image source="hp-6-4-35.png" width="80%"></image></statement>
+  <answer><p>(b) and (e)</p></answer></exercise>
+
+<exercise number="36"><statement><image source="hp-6-4-36.png" width="100%"></image></statement></exercise>
+
+<exercise number="37"><statement><image source="hp-6-4-37.png" width="80%"></image></statement>
+  <answer><p>(b) and (e)</p></answer></exercise>
+
+<exercise number="38"><statement><image source="hp-6-4-38.png" width="100%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 39-42, <ol marker="a.">
+  <li><p>Find the scale factor.</p></li>
+  <li><p>Calculate the new dimension.</p></li>
+</ol></p></introduction>
+
+<exercise number="39"><statement><sidebyside widths="50% 25%"><p>A child's cello is 75% as tall as a full-sized cello. The strings on a full-sized cello are 28 inches long from the nut to the bridge. How long are the strings on a child's cello?</p>
+  <image source="hp-6-4-39.png"></image></sidebyside></statement>
+  <answer><p><ol marker="a.">
+  <li><m>\dfrac{3}{4}</m></li>
+  <li><p>21</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="40"><statement><p>Celia wants her 8 by 10 inch portrait enlarged by 100% in each direction.  What will be the new dimensions of the portrait? </p></statement></exercise>
+
+<exercise number="41"><statement><p>Barry increased the font size on his computer by 25%. Capital letters used to be 2 millimeters tall. How tall are they now?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><m>\dfrac{5}{4}</m></li>
+  <li><p>2.5 mm</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="42"><statement><p>The dimensions of a new model stereo speaker have been reduced by 20%. The old model speakers were 12 inches tall. How tall are the new speakers?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 43-48, <ol marker="a.">
+  <li><p>Use ratios to find the dimensions.</p></li>
+  <li><p>Find the scale factor.</p></li>
+</ol></p></introduction>
+
+<exercise number="43"><statement><p>In the floor plan for a new house, a six-foot wide picture window is shown as half an inch wide. How long is a 21-foot living room on the plan?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><m>1\dfrac{3}{4}</m> in</li>
+  <li><m>\dfrac{1}{144}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="44"><statement><p>On a map of the county botanical garden, a lake that is 20 meters wide appears 4 centimeters wide. The rose garden is 16 meters long. How long is it on the map?</p></statement></exercise>
+
+<exercise number="45"><statement><p>On a blueprint for the new library, 1 inch <m>=</m> 10 feet. How long are the 25-foot bookshelves on the blueprint?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>2.5 in</p></li>
+  <li><m>\dfrac{1}{120}</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="46"><statement><p>Grace enlarged an 8-inch wide photograph to a 2.5-foot wide poster. If the photo was 12 inches tall, how tall is the poster?</p></statement></exercise>
+
+<exercise number="47"><statement><p>On a billboard, a picture of a 6-inch submarine sandwich is 4 feet long. How tall is the picture of a 10-inch tall soda cup?</p></statement>
+  <answer><p><ol marker="a.">
+  <li><m>6\dfrac{2}{3}</m> ft</li>
+  <li><p>8</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="48"><statement><sidebyside widths="50% 35%" valigns="middle middle"><p>George Washington was 6 feet 2 inches tall, and his nose was 3.34 inches long. The nose on his likeness at Mount Rushmore is 21 feet long. At the same scale, how tall would a full statue of George Washington be?</p>
+    <image source="hp-6-4-48.png"></image></sidebyside></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 49-50, show your calculations.</p></introduction>
+
+<exercise number="49"><statement><sidebyside widths="50% 35%" valigns="middle middle"><p>While making the movie Titanic, the producers built a 775-foot model of the ill-fated ship. The original vessel was 882 feet, 9 inches long.</p>
+    <image source="hp-6-4-49.png"></image></sidebyside>
+<p><ol marker="a.">
+    <li><p>What was the scale factor used to build the model?</p></li>
+    <li><p>If the real Titanic was 175 feet tall from the keel to the top of the funnels, how tall is the model?</p></li>
+</ol></p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>0.878</p></li>
+  <li><p>153.64 ft</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="50"><statement><sidebyside widths="50% 45%"><p>The Straits of Mackinac between Michigan's Upper and Lower Peninsulas are 5 miles wide. Engineers studying the Mackinac bridge, the world's longest suspension bridge, build a model of the straits that is 50 feet wide.</p>
+    <image source="hp-6-4-50.png"></image></sidebyside>
+<p><ol marker="a.">
+  <li><p>Express the scale factor as a fraction. (There are 5280 feet in a mile.)</p></li>
+  <li><p>In their model, the suspension portion of the bridge is 7.2 feet long, and the towers are 12.5 inches above the water. What are the corresponding dimensions of the actual bridge?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 51-54, <ol marker="a.">
+  <li><p>Separate the figure into two similar triangles. Sketch and label the triangles.</p></li>
+  <li><p>Use ratios to find the unknown side.</p></li>
+</ol></p></introduction>
+
+<exercise number="51"><statement><image source="hp-6-4-51.png" width="60%"></image></statement>
+  <answer><p><ol marker="a.">
+  <li><image source="ans-hp-6-4-51.png" width="60%"></image></li>
+  <li><p>7.5</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="52"><statement><image source="hp-6-4-52.png" width="80%"></image></statement></exercise>
+
+<exercise number="53"><statement><image source="hp-6-4-53.png" width="50%"></image></statement>
+  <answer><p><ol marker="a.">
+  <li><image source="ans-hp-6-4-53.png" width="60%"></image></li>
+  <li><p>15</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="54"><statement><image source="hp-6-4-54.png" width="50%"></image></statement></exercise>
+</exercisegroup>
+
+
+
+
+
+</exercises>

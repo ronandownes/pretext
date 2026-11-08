@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tenths and Hundredths</title>
+
+<sidebyside widths="60% 35%"><p><ul>
+    <li><p>One-Tenth</p></li>
+    <li><p>Fractions in Tenths</p></li>
+    <li><p>Tenths and Fifths, Reducing Fractions</p></li>
+    <li><p>Hundredths</p></li>
+    <li><p>Decimal Form</p></li>
+  </ul></p>
+      <image source="pennydime.png"></image></sidebyside>
+
+  <subsection><title>One-Tenth</title>
+
+  <p>Tenths are important fractions because they are the foundation of our decimal number system. We can represent one-tenth in several ways.</p>
+
+  <p><ul>
+    <li><p><m>\dfrac{1}{10}~~~</m>  One out of ten</p>
+      <image source="tendots.png" width="45%"></image></li>
+    <li><p><m>0.1~~~</m>  Recall that the first place after the decimal point is the <m>\blert{\text{tenths place}}</m>.</p>
+      <!--<image source="decimalpoint.png" width="60%"></image>-->
+        <image xml:id="decimalpoint" width="60%"><description>Place values for 17.591</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \coordinate(O) at (0,0);
+        \draw[gray, <-, >=stealth'] ($(O)+(0,-.15)$) -- ++ (0,2.8) node[above, text=red]{Decimal point};
+        \draw[gray, <-, >=stealth'] ($(O)+(-1.7,0.7)$) -- ++ (135:.5)--++(-.5,0) node[left, text=black]{Tens};
+        \draw[gray, <-, >=stealth'] ($(O)+(-.7,0.7)$) -- ++ (135:2.)--++(-.5,0) node[left, text=black]{Units};
+        \draw[gray, <-, >=stealth'] ($(O)+(2.3,0.7)$) -- ++ (45:.5)--++(.5,0) node[right, text=black]{$1/1000$ (Thousandths)};
+        \draw[gray, <-, >=stealth'] ($(O)+(1.6,0.7)$) -- ++ (45:1.5)--++(.5,0) node[right, text=black]{$1/100$ (Hundredths)};
+        \draw[gray, <-, >=stealth'] ($(O)+(.9,0.7)$) -- ++ (45:2.5)--++(.5,0) node[right, text=black]{$1/10$ (Tenths)};
+        \node[text=violet] at (O) {\Huge $\hphantom{5}17.591$};
+    
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</li>
+    <li><p><m>0.10~~~</m>  Ten hundredths is the same as one-tenth:  <m>\dfrac{10}{100}=\dfrac{1}{10}</m></p>
+      <image source="tenhundredths.png" width="35%"></image>
+  </li></ul></p>
+
+  <note><p>Can you explain why <m>\dfrac{10}{100}</m> is another way to write <m>\dfrac{1}{10}</m> ?</p></note>
+
+  <example><statement><p>Major Motors plans to increase its workforce by one-tenth. They currently employ 260 people. How many new employees will they hire?</p></statement>
+
+  <solution><p>To find <m>\dfrac{1}{10}</m> of 260, we divide by 10:
+    <me>\dfrac{1}{10}~~ \text{of}~~ 260 = 260 \div 10 = 26</me>
+  Major Motors will hire 26 people.</p></solution></example>
+
+  <activity><title>One-Tenth</title>
+  <p>Decide whether the fraction is more or less than one-tenth. Show how you decided.<ol marker="1.">
+
+  <li><p>The tax on a $68 purchase was $5.78. Is that more or less than one-tenth of the price?</p></li>
+
+  <li><p>Randall has plowed 11 acres of his 80-acre corn field. Is that more or less than one-tenth of the field?</p></li>
+
+  <li><p>The Wildlife Conservancy tagged 23 of the 312 geese at Blue Lake. Is that more or less than one-tenth of the geese?</p></li>
+
+  <li><p>Gregor paid $4500 towards his $30,000 student loan. Is that more or less than one-tenth of the amount he owes?</p></li></ol></p>
+</activity>
+</subsection>
+
+<subsection><title>Fractions in Tenths</title>
+
+<p>One-tenth is a relatively small fraction. How do tenths compare to the benchmark fractions <m>\dfrac{1}{2}~</m>, <m>\dfrac{1}{4}~</m>, and <m>\dfrac{3}{4}~</m>?</p>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p> On the figure below, draw lines at <m>\dfrac{1}{2}~</m>, <m>\dfrac{1}{4}~</m>, and <m>\dfrac{3}{4}~</m> and label them.</p>
+    <!-- <image source="boxgridtenths.png" width="90%"></image> -->
+    <image xml:id="numberlinetenths" width="80%" ><description>From 0 to 1 by tenths</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.80]
+      \draw[black,thick] (0,0)--(10,0);
+  \draw[black] (10,.2) --++(0,-.4)node[below] {$1.0$};
+  \foreach \x in  {0,..., 9} {
+    \draw[black] (\x,.2) --++(0,-.4) node[below] {$0.\x$};
+    }
+      \end{tikzpicture}]]>
+      </latex-image></image></li>
+  <li><p> Which is larger, <m>\dfrac{1}{4}~</m> or <m>\dfrac{3}{10}~</m>?</p></li>
+  <li><p> Which is larger, <m>\dfrac{3}{4}~</m> or <m>\dfrac{6}{10}~</m>?</p></li></ol></p></statement>
+      
+  <answer><p><ol marker="a.">
+    <li><image xml:id="numberlinetenths-with-fourths" width="80%" margins="0% 20%"><description>From 0 to 1 by tenths</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.80]
+      \draw[black,thick] (0,0)--(10,0);
+      \draw[black] (10,.2) --++(0,-.4)node[below] {$1.0$};
+      \foreach \x in  {0,..., 9} {
+        \draw[black] (\x,.2) --++(0,-.4) node[below] {$0.\x$};
+        }
+      \draw[blue, thick] (5,-0.1) --++(0,.6)node[above] {$\dfrac{1}{2}$};
+      \draw[blue, thick] (2.5,-0.1) --++(0,.6)node[above] {$\dfrac{1}{4}$};
+      \draw[blue, thick] (7.5,-0.1) --++(0,.6)node[above] {$\dfrac{3}{4}$};
+      \end{tikzpicture}]]>
+      </latex-image></image></li>
+    <li><p><m>\dfrac{3}{10}</m></p></li>
+    <li><p><m>\dfrac{3}{4}</m></p></li>
+    </ol></p></answer></exercise>
+
+  <p>If you can find one-tenth of an amount, you can find two-tenths, or three-tenths, and so on. Remember that <m>\dfrac{2}{10}~</m> can also be written as 0.2, <m>\dfrac{3}{10}~</m> can also be written as 0.3, and so on.</p>
+
+  <example><statement><p>Of the 3200 students who commute at Lakeview College, 0.4 take the bus. How many students take the bus?</p></statement>
+
+  <solution><p>First we'll find <m>\dfrac{1}{10}~</m> of 3200.
+    <me>\dfrac{1}{10}~~ \text{of}~~ 3200 = 3200 \div 10 = 320</me>
+  To find 0.4, or <m>\dfrac{4}{10}</m>, of 3200, we can multiply <m>\dfrac{1}{10}</m> of 3200 by 4.
+    <me>\dfrac{4}{10}~~ \text{of}~~ 3200 = 320 \times 4 = 1280</me>
+  1280 students take the bus.</p></solution></example>
+
+  <note><p>In the Examples above, what do you notice about dividing a number by 10?</p></note>
+
+  <activity><title>Tenths</title>
+    <p>Find the fraction. Show your work.<ol marker="1.">
+
+    <li><p>A new section of county road will be 18 miles long. The road crew has completed 0.3 of the road. How long is the completed portion?</p></li>
+    <li><p>The average annual rainfall in Salem County is 39 inches. This year only 0.8 of that amount of rain fell. How many inches of rain fell this year?</p></li>
+    <li><p>Caroline spends $2400 a month, or 0.6 of her income, on food and rent.<ol marker="a.">
+      <li><p>What is one-tenth of Caroline's monthly income?</p></li>
+      <li><p>What is Caroline's monthly income?</p></li></ol></p></li>
+    <li><p>Radio station KWHY collected $4760 in the first week of their 10-day pledge drive. If they maintain the same level of support, how much can they expect to make by the end of the pledge drive?</p></li></ol></p></activity>
+</subsection>
+
+<subsection xml:id="reducing"><title>Tenths and Fifths, Reducing Fractions</title>
+
+<p>Perhaps you have noticed that <m>\dfrac{2}{10}~</m>, <m>\dfrac{4}{10}~</m>, <m>\dfrac{6}{10}~</m>, and <m>\dfrac{8}{10}~</m> can all be written with denominator 5.</p>
+
+    
+<exercise><statement><p><ol marker="a.">
+  <li><p>On the figure below, draw lines at <m>\dfrac{1}{5}~</m>, <m>\dfrac{2}{5}~</m>, <m>\dfrac{3}{5}~</m> and <m>\dfrac{4}{5}~</m> and label them.</p>
+    <image xml:id="numberlinetenths2" width="80%" ><description>From 0 to 1 by tenths</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.80]
+      \draw[black,thick] (0,0)--(10,0);
+  \draw[black] (10,.2) --++(0,-.4)node[below] {$1.0$};
+  \foreach \x in  {0,..., 9} {
+    \draw[black] (\x,.2) --++(0,-.4) node[below] {$0.\x$};
+    }
+      \end{tikzpicture}]]>
+      </latex-image></image></li>
+  <li><p><m>\dfrac{2}{10}~=<fillin characters="3"/>, ~~\dfrac{4}{10}~=<fillin characters="3"/>, ~~\dfrac{6}{10}~=<fillin characters="3"/>, ~~\dfrac{8}{10}~=<fillin characters="3"/> ~~</m></p></li></ol></p></statement> 
+  <answer><p><ol marker="a.">
+  <li><image xml:id="numberlinetenths-with-fifths" width="80%" margins="0% 20%"><description>From 0 to 1 by tenths</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.80]
+    \draw[black,thick] (0,0)--(10,0);
+    \draw[black] (10,.2) --++(0,-.4)node[below] {$1.0$};
+    \foreach \x in  {0,..., 9} {
+      \draw[black] (\x,.2) --++(0,-.4) node[below] {$0.\x$};
+      }
+    \draw[blue, thick] (2,-0.1) --++(0,.6)node[above] {$\dfrac{1}{5}$};
+    \draw[blue, thick] (4,-0.1) --++(0,.6)node[above] {$\dfrac{2}{5}$};
+    \draw[blue, thick] (6,-0.1) --++(0,.6)node[above] {$\dfrac{3}{5}$};
+    \draw[blue, thick] (8,-0.1) --++(0,.6)node[above] {$\dfrac{4}{5}$};
+    \end{tikzpicture}]]>
+    </latex-image></image></li>
+  <li><p><m>\dfrac{1}{5},~ \dfrac{2}{5},~ \dfrac{3}{5},~ \dfrac{4}{5}</m></p></li>
+  </ol></p></answer></exercise>
+
+<p> When we rewrite a fraction with a smaller denominator (but so that the size of the fraction stays the same), we say that we have <term>reduced</term> the fraction.</p>
+
+<assemblage><title>Definition</title>
+<p>To <term>reduce</term> a fraction, we rewrite it as an equivalent fraction with a smaller denominator.</p></assemblage>
+
+<p>For example, the fraction <m>\dfrac{4}{10}~</m> can be reduced to <m>\dfrac{2}{5}~</m>. You can see that these two fractions are <term>equivalent</term> — that is, they name the same portion of one whole.
+    <image source="twofifths.png" width="75%"></image></p>
+
+  <p>We can reduce <m>\dfrac{4}{10}~</m> because both the numerator are the denominator are divisible by 2.  
+    <me>\dfrac{4}{10} = \dfrac{4 \div \alert{2}}{10 \div \alert{2}} = \dfrac{2}{5}</me>
+  If there are half as many pieces in the whole, (5 instead of 10), we take half as many in the part, (2 instead of 4), to make the same fraction.</p>
+
+  <assemblage><title>How to Reduce a Fraction</title>
+  <p>To <m>\blert{\text{reduce}}</m> a fraction, we divide the numerator and the denominator by the same number.</p></assemblage>
+
+<example><statement><p>Reduce the fraction <m>\dfrac{16}{20}~</m>.</p></statement>
+
+<solution><p>Both the numerator and the denominator are divisible by 4.
+  <me>\dfrac{16}{20} = \dfrac{16 \div \alert{4}}{20 \div \alert{4}} = \dfrac{4}{5}</me>
+Thus, <m>\dfrac{16}{20} = \dfrac{4}{5}</m>.</p></solution></example>
+
+<exercise><statement><p>Here is a picture of a spider on a circle. If we start at the top of the circle, at 0°, and travel once clockwise all the way around the circle, we turn through a rotation of 360°. Each of the spider's legs intersects the circle at a fraction of one complete rotation. Name the fraction at each leg, and reduce it if possible. 
+    <image source="spider.png" width="40%"></image>
+<ol marker="a." cols="2">
+  <li><p>First leg:</p></li>
+  <li><p>Second leg:</p></li>
+  <li><p>Third leg:</p></li>
+  <li><p>Fourth leg:</p></li>
+  <li><p>Fifth leg:</p></li>
+  <li><p>Sixth leg:</p></li>
+  <li><p>Seventh leg:</p></li>
+  <li><p>Eighth leg:</p></li></ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>\dfrac{36}{360} = \dfrac{1}{10}</m></p></li>
+  <li><p><m>\dfrac{72}{360} = \dfrac{1}{5}</m></p></li>
+  <li><p><m>\dfrac{108}{360} = \dfrac{3}{10}</m></p></li>
+  <li><p><m>\dfrac{144}{360} = \dfrac{2}{5}</m></p></li>
+  <li><p><m>\dfrac{216}{360} = \dfrac{3}{5}</m></p></li>
+  <li><p><m>\dfrac{252}{360} = \dfrac{7}{10}</m></p></li>
+  <li><p><m>\dfrac{288}{360} = \dfrac{4}{5}</m></p></li>
+  <li><p><m>\dfrac{324}{360} = \dfrac{9}{10}</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Hundredths</title>
+
+<p> What is one-tenth of one-tenth?
+    <image source="hundredth.png" width="40%"></image>
+One-tenth of one-tenth is one-hundredth, or <m>\dfrac{1}{100}~</m>. In decimal form, we write <m>\dfrac{1}{100}~</m> as 0.01, with the 1 in the second decimal place, or <term>hundredths place</term>.
+
+<me>\blert{\text{one-hundredth} = \dfrac{1}{100} = 0.01}</me></p>
+
+<note><p>Be careful with those zeros! Note that 
+    <image source="zeros.png" width="80%"></image></p></note>
+
+<example><statement><p>When we read a decimal fraction, the denominator is given by the place of the <m>\blert{\text{last}}</m> digit. For example,<ul cols="3" >
+  <li><p><m>0.3 = \dfrac{3}{10}</m></p></li>
+  <li><p>three-tenths</p></li>  
+   <li><p> (3 is in the tenths place)</p></li>
+  <li><p><m>0.05 = \dfrac{5}{100}</m></p></li>
+  <li><p>five-hundredths</p></li>  
+   <li><p> (5 is in the hundredths place)</p></li>
+  <li><p><m>0.35 = \dfrac{35}{100}</m></p></li>
+  <li><p>thirty-five-hundredths</p></li>  
+   <li><p> (5 is in the hundredths place)</p></li>
+  <li><p><m>0.30 = \dfrac{30}{100}</m></p></li>
+  <li><p>thirty-hundredths</p></li>  
+   <li><p> (0 is in the hundredths place)</p></li></ul></p></statement></example>
+
+   <note><p>We can also say that there are ten hundredths in one tenth. You can check on your calculator that
+        <image source="tenthnote.png" width="50%"></image></p></note>
+
+<p>All of the fractions we have studied so far can be written with denominator 100.</p>
+
+<exercise><statement><p>Write each decimal fraction as a common fraction, and reduce it if possible.<ol marker="a." cols="2">
+  <li><p><m>0.20</m></p></li>
+  <li><p><m>0.25</m></p></li>
+  <li><p><m>0.30</m></p></li>
+  <li><p><m>0.40</m></p></li>
+  <li><p><m>0.50</m></p></li>
+  <li><p><m>0.60</m></p></li>
+  <li><p><m>0.75</m></p></li>
+  <li><p><m>0.80</m></p></li></ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>\dfrac{1}{5}</m></p></li>
+  <li><p><m>\dfrac{1}{4}</m></p></li>
+  <li><p><m>\dfrac{3}{10}</m></p></li>
+  <li><p><m>\dfrac{2}{5}</m></p></li>
+  <li><p><m>\dfrac{1}{2}</m></p></li>
+  <li><p><m>\dfrac{3}{5}</m></p></li>
+  <li><p><m>\dfrac{3}{4}</m></p></li>
+  <li><p><m>\dfrac{4}{5}</m></p></li>
+</ol></p></answer></exercise>
+
+  <activity><title>Hundredths</title>
+    <p>Compare each decimal fraction to the closest familiar common fraction from the previous Exercise. Is it larger or smaller than the familiar fraction?<ol marker="1.">
+    <li><p>Of all registered voters in the county, 0.63 turned out for the election.</p></li>
+  <li><p>Megacorps finds that on any given day, 0.17 of their employees are absent.</p></li>
+  <li><p>Among single-parent families, 0.27 live in poverty.</p></li>
+  <li><p>The United States spends 0.48 of the amount spent on the military world-wide.</p></li></ol></p></activity>
+</subsection>
+
+<subsection><title>Decimal Form</title>
+
+<p>We can find the <term>decimal form</term> for any fraction by dividing the denominator into the numerator. Remember that the fraction bar is really a division symbol. For instance, <m>\dfrac{1}{4}~</m> means "divide one whole into four equal parts, and take one part." You can use a calculator to check the decimal forms of our benchmark fractions.</p>
+
+<assemblage><title>Benchmark Fractions as Decimals</title>
+<p><md><mrow>\blert{\dfrac{1}{4} = 1 \div 4 = 0.25}</mrow>
+  <mrow>\blert{\dfrac{1}{2} = 1 \div 2 = 0.50}</mrow>
+  <mrow>\blert{\dfrac{3}{4} = 3 \div 4 = 0.75}</mrow></md></p></assemblage>
+
+<example><statement><p>Find the decimal form of <m>\dfrac{3}{20}</m>.</p></statement>
+
+<solution><p>We can use a calculator to divide the numerator by the denominator.
+    <me>\dfrac{3}{20} = 3 \div 20 = 0.15</me>
+  You can check that <m>0.15</m>, or <m>\dfrac{15}{100}</m>, reduces to <m>\dfrac{3}{20}</m>.</p></solution></example>
+
+<exercise><statement><p>Find the decimal form of each fraction.<ol marker="a." cols="2">
+  <li><p><m>\dfrac{5}{8}</m></p></li>
+  <li><p><m>\dfrac{1}{20}</m></p></li>
+  <li><p><m>\dfrac{7}{25}</m></p></li>
+  <li><p><m>\dfrac{3}{16}</m></p></li></ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>0.625</m></p></li>
+  <li><p><m>0.05</m></p></li>
+  <li><p><m>0.28</m></p></li>
+  <li><p><m>0.1875</m></p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>decimal place</p></li>
+  <li><p>decimal form</p></li>
+  <li><p>reduce a fraction</p></li>
+  <li><p>equivalent fraction</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-1-2.ptx" />
+
+</section>

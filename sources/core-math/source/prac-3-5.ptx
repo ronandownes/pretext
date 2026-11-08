@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-3-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 3.5</title>
+
+<exercisegroup cols="3"><introduction><p>For Problems 1-12, write each number in standard notation.</p></introduction>
+
+<exercise number="1"><statement><p><m>6 \times 10^4</m></p></statement>
+<answer><p>60,000</p></answer></exercise>
+
+<exercise number="2"><statement><p><m>9 \times 10^2</m></p></statement></exercise>
+
+<exercise number="3"><statement><p><m>275 \times 10^3</m></p></statement>
+<answer><p>275,000</p></answer></exercise>
+
+<exercise number="4"><statement><p><m>93 \times 10^5</m></p></statement></exercise>
+
+<exercise number="5"><statement><p><m>48.623 \times 10^2</m></p></statement>
+<answer><p>4862.3</p></answer></exercise>
+
+<exercise number="6"><statement><p><m>17.837 \times 10^3</m></p></statement></exercise>
+
+<exercise number="7"><statement><p><m>7.28 \times 10^{12}</m></p></statement>
+<answer><p>7,280,000,000,000</p></answer></exercise>
+
+<exercise number="8"><statement><p><m>6.259 \times 10^9</m></p></statement></exercise>
+
+<exercise number="9"><statement><p><m>0.74 \times 10^8</m></p></statement></exercise>
+<answer><p>74,000,000</p></answer>
+
+<exercise number="10"><statement><p><m>0.3592 \times 10^4</m></p></statement></exercise>
+
+<exercise number="11"><statement><p><m>0.0000006 \times 10^6</m></p></statement>
+<answer><p>0.6</p></answer></exercise>
+
+<exercise number="12"><statement><p><m>0.00094 \times 10^{11}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13-20, determine the correct power of 10.</p></introduction>
+
+<exercise number="13"><statement><p><m>113,000 = 113 \times <fillin></fillin></m></p></statement>
+<answer><m>10^3</m></answer></exercise>
+
+<exercise number="14"><statement><p><m>2,720,000 = 272 \times <fillin></fillin></m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>5,492,000 = 54.92 \times <fillin></fillin></m></p></statement>
+<answer><m>10^5</m></answer></exercise>
+
+<exercise number="16"><statement><p><m>60,940,000 = 60.94 \times <fillin></fillin></m></p></statement></exercise>
+
+<exercise number="17"><statement><p><m>2,697.283 = 2.697283 \times <fillin></fillin></m></p></statement>
+<answer><m>10^3</m></answer></exercise>
+
+<exercise number="18"><statement><p><m>591.57 = 5.9157 \times <fillin></fillin></m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>643,000,000,000,000,000 = 6.43 \times <fillin></fillin></m></p></statement>
+<answer><m>10^{17}</m></answer></exercise>
+
+<exercise number="20"><statement><p><m>1,386,700,000,000,000,000,000,000 = 1.3867 \times <fillin></fillin></m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 21-28, write in scientific notation.</p></introduction>
+
+<exercise number="21"><statement><p><m>3,500,000</m></p></statement>
+<answer><m>3.5 \times 10^6</m></answer></exercise>
+
+<exercise number="22"><statement><p><m>48,900</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>27.6</m></p></statement>
+<answer><m>2.76 \times 10^1</m></answer></exercise>
+
+<exercise number="24"><statement><p><m>38.92</m></p></statement></exercise>
+
+<exercise number="25"><statement><p><m>67,520</m></p></statement>
+<answer><m>6.752 \times 10^4</m></answer></exercise>
+
+<exercise number="26"><statement><p><m>83,600,000</m></p></statement></exercise>
+
+<exercise number="27"><statement><p><m>7,920,000,000,000,000,000,000</m></p></statement>
+<answer><m>7.92 \times 10^{24}</m></answer></exercise>
+
+<exercise number="28"><statement><p><m>60,777,000,000,000,000</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 29-38, use your calculator and scientific notation to perform the calculations. </p></introduction>
+
+<exercise number="29"><statement><p><m>23,500,000,000 \times 187,000,000</m></p></statement>
+<answer><m>4.39 \times 10^{18}</m></answer></exercise>
+
+<exercise number="30"><statement><p><m>9,478,000,000 \times 510,000,000,000</m></p></statement></exercise>
+
+<exercise number="31"><statement><p><m>982,000,000,000,000 \div 4,000,000,000</m></p></statement>
+<answer><m>3.92 \times 10^{24}</m></answer></exercise>
+
+<exercise number="32"><statement><p><m>260,000,000,000,000 \div 52,000,000,000,000</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>\dfrac{36,000,000,000 \times 4,800,000}{14,400,000,000,000}</m></p></statement>
+<answer><m>12,000</m></answer></exercise>
+
+<exercise number="34"><statement><p><m>\dfrac{750,000,000,000 \times 160,000,000,000}{240,000,000,000,000,000}</m></p></statement></exercise>
+
+<exercise number="35"><statement><p><m>\dfrac{7.2 \times 10^{24}}{(1.8 \times 10^{15})(3.2 \times 10^7)}</m></p></statement>
+<answer><m>125</m></answer></exercise>
+
+<exercise number="36"><statement><p><m>\dfrac{2.16 \times 10^{32}}{(6 \times 10^{14})(1.5 \times 10^{12})}</m></p></statement></exercise>
+
+<exercise number="37"><statement><p><m>(8 \times 10^{12})^3</m></p></statement>
+<answer><m>5.12 \times 10^{38}</m></answer></exercise>
+
+<exercise number="38"><statement><p><m>(5 \times 10^9)^4</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 39-42, use scientific notation to make the calculations, and round your answers to two decimal places if necessary.</p></introduction>
+
+<exercise number="39"><statement><p>Light travels at a speed of 186,000 miles per second. How many seconds does it take light to reach the Earth from Proxima Centauri? (See the Lesson to find the distance to Proxima Centauri.) How many days is that?</p></statement>
+<answer><p><m>1.33 \times 10^8</m> sec, 1543.21 days</p></answer></exercise>
+
+<exercise number="40"><statement><p>The population of the United States is approximately 322,106,000. If we divide up the national debt equally among the population, how much is your share? (See the Lesson to find the national debt.)</p></statement></exercise>
+
+<exercise number="41"><statement><p>The mass of the Earth is 13,200,000,000,000,000,000,000,000 pounds and its volume is 38,250,000,000,000,000,000,000 cubic feet.</p>
+<p><ol marker="a.">  
+  <li><p>Write each of these numbers in scientific notation.</p></li>
+  <li><p>What is the density of the Earth, in pounds per cubic foot? (Density is mass divided by volume.)</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><m>1.32 \times 10^{25}, ~3.825 \times 10^{22}</m></li>
+  <li><p>345 lb per cu ft</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="42"><statement><p>A one-mile tall stack of bills contains about 19,008,000  bills. In November of 1923 the circulation of Reichsbank marks in Germany was  400,338,326,350,700,000,000. How tall a stack of bills would that make?</p></statement></exercise>
+</exercisegroup>
+
+<exercise number="43"><statement><p><ol marker="a.">  
+  <li><p>Explain the difference between <m>3.2^4</m> and <m>3.2 \times 10^4</m>. Which number is expressed in scientific notation?</p></li>
+  <li><p>Simplify each of the numbers in part (a).</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p><m>3.2 \times 10^4</m></p></li>
+  <li><p>104.8576; 32,000</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="44"><statement><p>Are  <m>6.5^2</m>  and  <m>6.5\times 10^2</m>  the same number? Explain why or why not.</p></statement></exercise>
+
+<exercise number="45"><statement><p>Choose the best number for each.
+    <md><mrow> 3.65 \times 10^2 ~~~~~~~ 5.28 \times 10^3 ~~~~~~~ 4.32 \times 10^4</mrow>
+        <mrow> 6.048 \times 10^5 ~~~~~~ 5.256 \times 10^6 ~~~~~~ 2.788 \times 10^7</mrow></md></p>
+<p><ol marker="a.">  
+  <li><p>The number of feet in a mile.</p></li>  
+  <li><p>The number of days in a year.</p></li>
+  <li><p>The number of seconds in a week.</p></li>
+  <li><p>The number of square feet in a square mile.</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><m>5.28 \times 10^3</m></li>  
+  <li><m>3.65 \times 10^2</m></li>
+  <li><m>6.048 \times 10^5</m></li>
+  <li><m>2.788 \times 10^7</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="46"><statement><p>Choose the best approximation for each.
+    <md><mrow> 5 \times 10^2 ~~~~~~~ 5 \times 10^3 ~~~~~~~ 5 \times 10^4</mrow>
+        <mrow> 5 \times 10^5 ~~~~~~ 5 \times 10^6 ~~~~~~ 5 \times 10^7</mrow></md></p>
+<p><ol marker="a.">  
+  <li><p>The population of the United States.</p></li>
+  <li><p>The height of the tallest mountains, in feet.</p></li>
+  <li><p>The distance from New York to Los Angeles, in miles.</p></li>
+  <li><p>The number of hours in a century.</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="3"><introduction><p>For Problems 47-58, use mental arithmetic to multiply by the decimal fraction.</p></introduction>
+
+<exercise number="47"><statement><p><m>59.6 \times 0.1</m></p></statement>
+<answer>5.96</answer></exercise>
+
+<exercise number="48"><statement><p><m>23.48 \times 0.01</m></p></statement></exercise>
+
+<exercise number="49"><statement><p><m>17.65 \times 0.001</m></p></statement>
+<answer>0.01765</answer></exercise>
+
+<exercise number="50"><statement><p><m>41.9 \times 0.001</m></p></statement></exercise>
+
+<exercise number="51"><statement><p><m>563.7 \times 0.001</m></p></statement>
+<answer>0.5637</answer></exercise>
+
+<exercise number="52"><statement><p><m>86.9 \times 0.01</m></p></statement></exercise>
+
+<exercise number="53"><statement><p><m>1248 \times 0.01</m></p></statement>
+<answer>12.48</answer></exercise>
+
+<exercise number="54"><statement><p><m>3728 \times 0.001</m></p></statement></exercise>
+
+<exercise number="55"><statement><p><m>8 \times 0.0001</m></p></statement>
+<answer>0.0008</answer></exercise>
+
+<exercise number="56"><statement><p><m>4 \times 0.1</m></p></statement></exercise>
+
+<exercise number="57"><statement><p><m>38.62 \times 0.01</m></p></statement>
+<answer>0.3862</answer></exercise>
+
+<exercise number="58"><statement><p><m>25.3 \times 0.001</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="59"><statement><p>The diameter of the Sun is about 1,391,400 kilometers.</p>
+<p><ol marker="a.">  
+  <li><p>What is the radius of the Sun?</p></li>
+  <li><p>What is the volume of the Sun? Write your answer in scientific notation, then in standard notation.</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">  
+  <li><p>695,700 km</p></li>
+  <li><p><m>1.41 \times 10^{18}</m> cu km; 1,410,000,000,000,000,000 cu km</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="60"><statement><p>The distance from the Earth to the Sun is abouty 93,000,000  miles.</p>
+<p><ol marker="a.">  
+  <li><p>Write the distance from the Earth to the Sun in scientific notation.</p></li>
+  <li><p>Assuming that theEarth revolves around the Sun in a circular orbit, calculate the distance that the Earth travels around the Sun in one year. Write your answer in scientific notation, then in standard notation.</p></li>
+</ol></p></statement></exercise>
+
+</exercises>

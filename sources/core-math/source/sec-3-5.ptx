@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-3-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Large Numbers</title>
+
+<sidebyside widths="45% 55%" valigns="middle middle">
+  <p><ul>
+    <li><p>Millions and Billions</p></li>
+    <li><p>Multiplying by Powers of Ten</p></li>
+    <li><p>Using Powers of Ten</p></li>
+    <li><p>Scientific Notation</p></li>
+    <li><p>Using a Calculator</p></li>
+  </ul></p>
+    <image source="googol.png"></image></sidebyside>
+
+<subsection><title>Millions and Billions</title>
+
+<p>Did you know that the search engine Google is named after the large number <term>one googol</term>? One googol is equal to 10 raised to the 100th power. That is indeed a very large number, as scientists estimate there are "only" about <m>10^{80}</m> atoms in the whole universe.</p>
+
+<p>Large numbers that are much smaller than one googol can still be hard to visualize. For example:</p> 
+
+<sidebyside widths="55% 40%" margins="0% 5%"><stack><p>How much is one million, or 1,000,000 ?</p>  
+<p>In the figure below there are 1000 blue dots, arranged in 10 blocks of 100 dots each. Now imagine a book with 1000 pages (such as War and Peace, by Leo Tolstoy), and each page contains 1000 blue dots. That book contains one million blue dots.</p></stack>
+    <image source="warandpeace.png"></image></sidebyside>
+
+    <image source="bluedots.png" width="80%"></image>
+    <image source="bluedots.png" width="80%"></image>
+    <image source="bluedots.png" width="80%"></image>
+    <image source="bluedots.png" width="80%"></image>
+    <image source="bluedots.png" width="80%"></image>
+
+    <p><me>\blert{\large{\text{One   thousand   blue   dots}}} \hphantom{000000}</me></p>
+
+<sidebyside widths="55% 40%"><stack><p>Thus, one million is a thousand thousands.</p>
+<p>Let's review the names of the place values up to one million. As an example, the population of New York City in 2020 was 
+  <me>8,804,190</me>
+Covering about 300 square miles of land, New York is the most densely populated city in the United States, with just over 105.7 square yards of space for each person.</p></stack>
+    <image source="NYCpop.png"></image></sidebyside>
+
+<example><statement><p><ol marker="a.">
+  <li><p>In January 2023, the population of the United States was over 334,278,000. How do we read that number?</p></li>
+  <li><p>The land area of the United States is 3,806,000 square miles. What is the population density of the United States, in people per square mile?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The population of the United States was about three hundred thirty-four million, two hundrd seventy-eight thousand people.</p></li>
+  <li><p>We will divide the population by the land area of the United States.
+    <me>\dfrac{334,278,000 \text{ people}}{3,806,000 \text{ square miles}} = 87.83  \text{ people per square mile}</me>
+    The population density is about 88 people per square mile.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Look up the population and land area of your state.</p>
+        <p>Population:</p>                                                                            
+        <p>Land area:</p></li>
+  <li><p>Calculate the population density of your state.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>In 2023, the population of California was 40,223,504. Its land area is 163,696 square miles.</p></li>
+  <li><p>The population density of California is about 246 people per square mile.</p></li>
+</ol></p></answer></exercise>
+
+<activity><title>How Big Is a Billion?</title>
+<p>Here are three ways to think about the size of one billion.</p>
+
+<p><ol>
+  <li><p>Suppose you want to count to one billion, saying one number per second.</p>
+    <p><ol marker="a.">
+      <li><p>How many minutes will it take you to count to 1000?</p></li>   
+      <li><p>How many minutes will it take you to count to one million? How long is that in days?</p></li>
+      <li><p>How many days will it take you to count to one billion? How long is that in years?</p></li>
+    </ol></p></li>
+
+  <li><p>A stack of 100 one-dollar bills is 0.43 inches or 1.1 centimeters high.</p> 
+    <p><ol marker="a.">
+      <li><p>How high is a stack of 1000 one-dollar bills, in inches?</p></li>  
+      <li><p>How high is a stack of one million one-dollar bills, in inches? How high is that in feet?</p></li>
+      <li><p>How high is a stack of one billion one-dollar bills, in feet? How high is that in miles?</p></li>
+    </ol></p></li>
+
+  <li><p>The length of a one-dollar bill is 6.14 inches.</p> 
+    <p><ol marker="a.">
+      <li><p>How long is a string of 1000 one-dollar bills, laid end to end? How far is that in feet?</p></li> 
+      <li><p>How long is a string of one million one-dollar bills, in feet?  How far is that in miles?</p></li>
+      <li><p>How long is a string of one billion one-dollar bills, in miles?</p></li>  
+      <li><p>The distance around the Earth is 24,880 miles. How many times would a string of one billion one-dollar bills circle the Earth?</p></li>
+    </ol></p></li>
+  </ol></p></activity>
+
+<p>These days, when the national debt is measured in trillions of dollars, even larger numbers are commonplace.</p>
+
+    <p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+                <col halign="left"/>
+                <col halign="left"/>
+    <row header="yes">
+      <cell>Name</cell>
+      <cell>Numeral</cell></row>
+    <row>
+      <cell>Million</cell>
+      <cell>1,000,000</cell></row>
+    <row>
+      <cell>Ten Million</cell>
+      <cell>10,000,000</cell></row>
+    <row>
+      <cell>Hundred Million</cell>
+      <cell>100,000,000</cell></row>
+    <row>
+      <cell>Billion</cell>
+      <cell>1,000,000,000</cell></row>
+    <row>
+      <cell>Ten Billion</cell>
+      <cell>10,000,000,000</cell></row>
+    <row>
+      <cell>Hundred Billion</cell>
+      <cell>100,000,000,000</cell></row>
+    <row>
+      <cell>Trillion</cell>
+      <cell>1,000,000,000,000</cell></row>
+    <row>
+      <cell>Ten Trillion</cell>
+      <cell>10,000,000,000,000</cell></row>
+    <row>
+      <cell>Hundred Trillion</cell>
+      <cell>100,000,000,000,000</cell></row>
+    <row>
+      <cell>Quadrillion</cell>
+      <cell>1,000,000,000,000,000</cell></row>
+    <row>
+      <cell>Ten Quadrillion</cell>
+      <cell>10,000,000,000,000,000</cell></row>
+    <row>
+      <cell>Hundred Quadrillion</cell>
+      <cell>100,000,000,000,000,000</cell></row>
+    </tabular></p>
+
+<note><p>Each number name comes in groups of three (one million, ten million, hundred million), so one billion is 1000 millions, and one trillion is 1000 billions, etc. Other countries use a slightly different naming system.</p></note>
+
+<p>And after quadrillions come quintillions, sextillions, and ....  We're going to need a better way to keep track of all those zeroes!</p>
+</subsection>
+
+<subsection><title>Multiplying by Powers of Ten</title>
+
+<sidebyside widths="50% 40%" valigns="middle middle" margins="0% 5%"><p>People who deal with information often encounter very large numbers in their work. For instance, the nearest star to our solar system is Proxima Centauri, a faint, reddish star at a distance of approximately
+  <me>24,800,000,000,000 \text{ miles}</me></p>
+   <image source="proxcent.png"></image></sidebyside>
+
+<p>Economists work with figures like the national debt, which has surpassed</p>
+
+<sidebyside widths="40% 50%" valigns="middle middle"><p><image source="natdebt.png"></image></p>
+<p><me>$31,490,000,000,000</me>
+Calculations with such large numbers can be difficult. Most calculators have only an eight- or ten-digit display, so numbers in the trillions cannot even be entered. To get around this problem, we write numbers with a special notation that uses <term>powers of ten</term>.</p></sidebyside>
+
+<activity><title>Powers of Ten</title>
+<p>Compute each product.</p>
+<p><ol>
+  <li><p><ol marker="a." cols="2">
+    <li><p><m>35 \times 10</m></p></li>
+    <li><p><m>35 \times 100</m></p></li>
+    <li><p><m>35 \times 1000</m></p></li>
+    <li><p><m>35 \times 10,000</m></p></li></ol></p></li>
+  <li><p><ol marker="a." cols="2">
+    <li><p><m>0.064 \times 100</m></p></li>
+    <li><p><m>0.064 \times 10,000</m></p></li>
+    <li><p><m>0.064 \times 1,000,000</m></p></li>
+    <li><p><m>0.064 \times 100,000,000</m></p></li></ol></p></li>
+  <li><p>What do you notice about the products above? Can you state a shortcut for multiplying a number by a power of 10?</p>
+      <p>Short-Cut Rule:</p></li>
+  <li><p>Try your shortcut on the following products, then check by multiplying.</p>
+    <p><ol marker="a." cols="2">
+    <li><p><m>275 \times 100</m></p></li>
+    <li><p><m>0.08 \times 100,000</m></p></li>
+    <li><p><m>13.7 \times 1000</m></p></li>
+    <li><p><m>0.126 \times 10</m></p></li></ol></p></li>
+  </ol></p></activity>
+
+<p>In Activity 3.5.2, we discovered the following fact: </p>
+
+  <assemblage><title>Powers of Ten</title>
+    <p>To multiply a number by a power of ten, we move the decimal point to the right.</p></assemblage>
+
+<p>For example, you can check that</p>
+
+  <image source="decpt1.png" width="90%"></image>
+
+<p>The product is three-hundred sixty-two thousand.</p> 
+<p>When we write the power of ten with an exponent, we can state the rule more precisely.</p>
+
+<assemblage><title>To multiply a number by a power of ten</title>
+<p><ol>
+  <li><p>Move the decimal point to the right the same number of places as the exponent on ten.</p></li> 
+  <li><p>Write in zeros to fill any empty places at the end of the new number.</p></li>
+</ol></p></assemblage> 
+
+<example><statement><p>Compute each product.</p>
+<p><ol marker="a.">
+  <li><p>Compute <m>~28 \times 10^8</m>.
+    <image source="decpt2.png" width="90%"></image>
+    The product is two billion, eight hundred million.</p></li>
+  <li><p>Compute <m>~0.017 \times 10^4</m>.
+    <image source="decpt3.png" width="90%"></image>
+    The product is one hundred seventy.</p></li>
+</ol></p></statement></example>
+
+<note><p>When you write your answer, don't forget to insert commas at the proper locations, before every third digit from the right-hand end. This partitions the number into thousands, millions, billions, and so on, and makes it easier to read.</p></note>
+
+<exercise><statement><p>Compute each product, then write your answer in words.</p>
+<p><ol marker="a." cols="2">
+  <li><p><m>1.23 \times 10^5</m></p></li>
+  <li><p><m>1.23 \times 10^2</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>123,000 </m>; one hundred twenty-three thousand</p></li>
+  <li><p><m>123 </m>; one hundred twenty-three</p></li>
+</ol></p></answer></exercise>
+
+<note><p>The rule for multiplying by a power of ten is not <m>\alert{\large{\text{MAGIC}}}~</m>. It follows from the fact that our number system is based on powers of ten: each place value is 10 times the place to its right.</p></note>
+</subsection>
+
+<subsection><title>Using Powers of Ten</title>
+<p>We can also reverse the process and write numbers with powers of ten. For example, 
+    <me>800 = 8 \times 100 = 8 \times 10^2</me>       
+and
+    <me>2000 = 2 \times 1000 = 2 \times 10^3</me>
+We figure out what power of ten to use by counting backwards to the new location of the decimal.</p>
+
+<example><statement><p>Find the correct power of ten.</p>
+<p><ol marker="a.">
+  <li><p><m>358,000 = 35.8 \times 10^{<fillin></fillin>}</m></p></li>
+  <li><p><m>19,760,000 = 1.976 \times 10^{<fillin></fillin>}</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Counting backwards to the new location of the decimal, we see that we must move the decimal point 4 places.</p>
+      <image source="decpt4.png" width="60%"></image>
+      <p>Therefore, we need an exponent of <m>\alert{4}</m> for 10. Thus,
+          <me>358,000 = 35.8 \times 10^{\alert{4}}</me></p></li>
+  <li><p>Counting backwards to the new location of the decimal, we see that we must move the decimal point 7 places.</p>
+      <image source="decpt5.png" width="70%"></image>
+      <p>We need an exponent of <m>\alert{7}</m> for 10.
+        <me>19,760,000 = 1.976 \times 10^{\alert{7}}</me></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Find the correct power of 10.</p>
+  <p><ol marker="a.">
+  <li><p><m>1200 = 1.2 \times 10^{<fillin></fillin>}</m></p></li>
+  <li><p><m>12,000,000 = 1.2 \times 10^{<fillin></fillin>}</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>3</m></p></li>
+  <li><p><m>7</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Scientific Notation</title>
+
+<p>Which number below is larger?  
+    <me>37,964,500,000,000 ~~~~~~\text{or}~~~~~~2,174,925,800,000,000</me>
+Perhaps you began by counting the number of digits in each number. By doing so, you are really comparing powers of 10 :  are the numbers in the millions, the billions, or ... ?</p>  
+  
+<p>Here is a way to count digits using powers of 10:</p>
+
+  <assemblage><p>Write each number so that it begins with a factor between one and ten.</p></assemblage>  
+
+<p>To do this, we first move the decimal points as shown:</p>
+    <image source="decpt6.png" width="90%"></image>
+
+<p>Then we count the number of places we moved the decimal point in each number, to find the correct power of ten:
+    <me>3.79645 \times 10^{13} ~~~~~~ \text{and } ~~~~~~  2.1749258 \times 10^{15}</me>
+Now it is easy to see that the second number is larger.</p>
+
+<p>This method for writing large numbers is called <term>scientific notation</term>.</p>
+
+<assemblage><title>To write a number in scientific notation</title>
+<p><ol>
+  <li><p>Move the decimal point so that there is only one (non-zero) digit to the left of the decimal.</p></li>
+  <li><p>Multiply by a power of ten, where the exponent on ten is the number of places you moved the decimal.</p></li>
+</ol></p></assemblage>
+
+<p>Regular numbers are said to be in <term>standard notation</term>.</p>
+
+<example><statement><p>Write in scientific notation.</p>
+  <p><ol marker="a." cols="2">
+    <li><p><m>245.3</m></p></li>
+    <li><p><m>38,200,000,000</m></p></li>
+  </ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The decimal goes after the 2.
+      <me>245.3 = 2.453 \times 10^2 ~~~~~~~~ \blert{\text{Move the decimal 2 places.}}</me></p></li>         
+  <li><p>The decimal goes after the 3.
+      <me>38,200,000,000 = 3.82 \times 10^{10}~~~~~~~~ \blert{\text{Move the decimal 10 places.}}</me></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write in scientific notation.</p>
+  <p><ol marker="a." cols="2">
+    <li><p><m>98,700,000,000</m></p></li>
+    <li><p><m>98.7</m></p></li>
+  </ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>9.87 \times 10^{10}</m></p></li>
+    <li><p><m>9.87 \times 10^1</m></p></li>
+  </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Using a Calculator</title>
+
+<p>You can use scientific notation to enter very large numbers in your calculator. First, look for a key labeled <m>\boxed{\text{EE}}</m> or <m>\boxed{\text{EXP}}</m>.  To enter the number <m>2.61 \times 10^8</m>, for example, enter <m>2.61</m> as usual. Then press the <m>\boxed{\text{EXP}}</m> key and  enter just the exponent on the power of 10; for our example, we enter 8. The calculator should then display
+  <me> \boxed{~~~~~~2.61~~~08} ~~~~~~ \text{or} ~~~~~~ \boxed{~~~~~~2.61~~~\text{E}8}</me>
+This is the way most calculators display a number in scientific notation.</p>
+
+<note><p>Don't write down <m>~2.61\text{E}8~</m>  instead of <m>~2.61 \times 10^8~</m> ! Calculator notation is not the same as written notation.</p></note>
+
+<example><statement><p>How many insects are there on Earth? Entomologists estimate that there are 100 million insects per acre of land, and Earth's land area is 36.48 billion acres.</p></statement>
+
+<solution><p>We will write each number in scientific notation, then multiply them together.</p>
+
+  <p>100 million = <m>10^8</m>  insects per acre</p>
+  <p>36.48 billion = <m>3.648 \times 10^{10}</m> acres</p>
+<p>Their product is</p>
+  <p>(<m>10^8</m>  insects per acre) <m>\times</m> (<m>3.648 \times 10^{10}</m> acres) = <m>3.648 \times 10^{18}</m> insects</p>
+<p>That's 3.648 quintillion insects.</p></solution></example>
+
+  <image source="insects.png" width="80%"></image>
+
+<exercise><statement><p>Astronomers estimate that there are 200 billion stars in the Milky Way Galaxy and 150 billion galaxies in the universe. If each galaxy contains a similar number of stars, how many stars are there in the universe?</p></statement>
+
+<answer><m>3 \times 10^{22}</m> stars in the universe</answer></exercise>
+
+  <image source="galaxies.png" width="80%"></image>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>scientific notation</p></li>
+  <li><p>standard notation</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-3-5.ptx" />
+
+</section>

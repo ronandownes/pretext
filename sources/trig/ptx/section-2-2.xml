@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="right-triangle-trigonometry"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Right Triangle Trigonometry</title>
+
+<idx><h>trigonometry</h><h>right triangle</h></idx>
+<idx><h>right triangle</h><h>trigonometry</h></idx>
+<introduction>
+
+<p>With the Pythagorean theorem we can find one side of a right triangle if we know the other <em>two</em> sides.  By using what we know about similar triangles, we can find the unknown sides of a right triangle if we know only <em>one</em> side and <em>one</em> of the acute angles.</p>
+
+<sidebyside widths="12% 26%" valigns="middle middle" margins="25% 5%">
+    <image xml:id="fig-2-2intro-a"><description>right triangle with one unknown side</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (1.5,0);
+        \coordinate (C) at (0,3.27);
+
+        \draw[blue,thick] (A) rectangle +(0.25,0.25);
+        \draw[black,thick] (A)--(B) node[below,midway] {\color{blue}$5$};
+        \draw[black,thick] (A)--(C) node[left,midway] {\color{blue}$b$};
+        \draw[black,thick] (B)--(C) node[above right,midway] {\color{blue}$12$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    
+    <image xml:id="fig-2-2intro-b"><description>right triangle with two unknown sides</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=1.] 
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (-3,0);
+        \coordinate (C) at (0,2.);
+
+        \draw[blue,thick] (A) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B);
+        \draw[black,thick] (A)--(C) node[right,midway] {\color{blue}$b$};
+        \draw[black,thick] (B)--(C) node[above left,midway] {\color{blue}$18$};
+        \draw[red,thick] (-2.6,0) arc(0:{atan(2/3)}:.4) node[right,midway, xshift=2,yshift=2] {$36\degree$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside> 
+<sidebyside widths="60% 30%" margins="0% 0%">
+    <p><m>\blert{\text{We can find side}~ b~ \text{with the Pythagorean theorem.}}</m></p>
+    <p><m>\blert{\text{Can we find side} ~b \text{?}}</m></p>
+</sidebyside>
+</introduction>
+
+<subsection><title>The Sine of an Angle</title>
+
+<idx><h>sin <m>\theta</m></h></idx>
+<idx><h>sin <m>\theta</m></h><seealso>sine</seealso></idx>
+<idx><h>sine</h></idx>
+
+<sidebyside widths="60% 32%" valigns="middle middle" margins="0% 0%">
+<p>In <xref ref="example-equilateral-triangle-altitude" text="custom">Example 2 of Section 1.2</xref>, we saw that in a 30-60-90 right triangle, the ratio of the shortest side to the hypotenuse was <m>\frac{1}{2}</m>, or 0.5. This ratio is the same for any two right triangles with a <m>30\degree</m> angle, because they are similar triangles, as shown at right.</p>
+    <image xml:id="fig-2-2-30deg"><description>30-60-90 right triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4.2,0);
+        \coordinate (C) at (4.2,2.7);
+        \coordinate (D) at (2.8,0);
+        \coordinate (E) at (2.8,1.8);
+
+        \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+        \draw[blue,thick] (D) rectangle +(-0.25,0.25);
+        \draw[black,thick] (D)--(E)node[right,midway] {\color{blue}$2$};
+        \draw[black,thick] (A)--(B);
+        \draw[black,thick] (A)--(C);
+        \draw[black,thick] (B)--(C) node[right,midway] {\color{blue}$3$};
+
+        \draw [red, thick] (0.5,0) arc(0:{atan(9/14)}:.5) node[right,midway, xshift=1, yshift=2] {$30\degree$};
+
+        \draw[gray, thick] (-.09,.14) -- ++(-.27,.42) -- ++(-.27,.42);
+        \draw[gray, thick] (C)++(-.09,.14) -- ++(-.27,.42) -- ++(-.27,.42);
+        \draw[gray, thick] (E)++(-.09,.14) -- ++(-.27,.42);
+        \draw[gray, thick, <-,>=stealth'] (E)++(-.225,.35) -- ++(-1.05,-.675);
+        \draw[gray, thick, <-,>=stealth'] (A)++(-.225,.35) -- ++(1.05,.675) node [above right, xshift=2] {\color{blue}$4$};
+        \draw[gray, thick, <-,>=stealth'] (A)++(-.225,.35)++(-.27,.42) -- ++(1.68,1.08) node [above right, xshift=4] {\color{blue}$6$};
+        \draw[gray, thick, <-,>=stealth'] (C)++(-.225,.35)++(-.27,.42) -- ++(-1.68,-1.08);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+ <p>The ratio is given a name; it is called the "sine of <m>30\degree</m>."  We write <me> \sin (30\degree) = 0.5, </me> where <em>sin</em> is an abbreviation for sine. There is nothing special about <m>30\degree</m> angles; we can talk about the sine of any angle. The <term>sine</term> of an angle is the ratio of the side opposite the angle to the hypotenuse.</p>
+
+ <note><p>Recall that we use the notation <m>f(x)</m> to indicate a <term>function</term> of an input variable, <m>x</m>. In fact, the sine ratio is a function of the angle, so we use parentheses around the angle input to refer to its sine, like this: <m>\sin (\theta)</m>. </p></note>
+
+<definition><title>Sine of an Acute Angle</title>
+    <idx><h>sine</h></idx><idx><h>sine</h><h>of an acute angle</h></idx>
+<statement>
+    <sidebyside widths="30% 46%" margins="5% 5%" valigns="middle middle">
+        <p><m>~~~~~~\sin (\theta) = \dfrac{\text{opposite}}{\text{hypotenuse}}</m></p>
+        <image xml:id="fig-2-2sine"><description>right triangle</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.9]    
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (4.2,0);
+            \coordinate (C) at (4.2,2);    
+            \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+            \draw[black,thick] (A)--(B);
+            \draw[black,thick] (A)--(C) node[above left,midway, xshift=6] {hypotenuse};
+            \draw[black,thick] (B)--(C) node[right,midway] {opposite};
+    
+            \draw [red, thick] (0.7,0) arc(0:{atan(2/4.2)}:.7) node[right,midway, xshift=3, yshift=1] {$\theta$};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+    </statement>         
+</definition>
+
+<example><statement><p>Find the sine of the labeled angle in each triangle below. </p> 
+<sidebyside widths="40% 40%" valigns="middle middle">
+    <image xml:id="exam2-2-1a"><description>right triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.72]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (6,0);
+        \coordinate (C) at (0,-2.5);
+
+        \draw[blue,thick] (A) rectangle +(0.25,-0.25);
+        \draw[black,thick] (A)--(B);
+        \draw[black,thick] (A)--(C) node[left,midway] {\color{blue}5};
+        \draw[black,thick] (B)--(C) node[below right,midway] {\color{blue}13};
+
+        \draw [red, thick] (5,0) arc(180:{180+atan(5/12)}:1) node[left,midway, xshift=-3, yshift=-3] {$\phi$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <image xml:id="exam2-2-1b"><description>right triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}  [rotate=-138.1888, scale=1.55]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (2.236,0);
+        \coordinate (C) at (0,2);
+
+        \draw[blue,thick] (A) rectangle +(0.16,0.16);
+        \draw[black,thick] (A)--(B) node[above left,midway] {\color{blue}$\sqrt{5}$};
+        \draw[black,thick] (A)--(C);
+        \draw[black,thick] (B)--(C) node[below ,midway] {\color{blue}3};
+
+        \draw [red, thick] (C)++(0,-.4) arc(-90:{-atan(2/2.236)}:.4) node[ left,midway, xshift=-2, yshift=2] {$\beta$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+</statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The side opposite angle <m>\phi</m> is 5, and the hypotenuse is 13, so the sine of <m>\phi</m> is 
+        <me>\sin (\phi) =\dfrac{5}{13}, \text{  or approximately}~~ 0.3846</me> </p></li>
+    <li><p>The side opposite angle <m>\beta</m> is <m>\sqrt{5}</m>, and the hypotenuse is 3, so the sine of <m>\beta</m> is 
+        <me>\sin (\beta) =\dfrac{\sqrt{5}}{3}, \text{  or approximately}~~ 0.7454</me></p></li>
+</ol></p>
+</solution></example>
+
+<exercise><statement><sidebyside widths="60% 38%" valigns="middle middle" margins="0% 0%">
+    <p>Find the sine of the labeled angle in the triangle at right. Round your answer to 4 decimal places.</p>
+    <image xml:id="exer2-2-1"><description>right triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}  [scale=.81, rotate=41.91]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4,0);
+        \coordinate (C) at (0,3.6);
+
+        \draw[blue,thick] (A) rectangle +(0.25,0.25);
+        \draw[black,thick] (A)--(B) node[below right,midway] {\color{blue}$6.4$};
+        \draw[black,thick] (A)--(C);
+        \draw[black,thick] (B)--(C) node[above ,midway] {\color{blue}8.6};
+
+        \draw [red, thick] (C)++(0,-.4) arc(-90:{-atan(0.9)}:.4) node[ below right,midway, xshift=-2, yshift=2] {$\alpha$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<answer><p> <m>\sin (\alpha) = \dfrac{6.4}{8.6} \approx 0.7442</m></p>
+</answer></exercise>
+
+<warning><sidebyside widths="65% 35%" margins="0% 0%"><stack><p>We must use the sides of a <em>right</em> triangle to calculate the sine of an angle. For example, in the triangle at right, <m>\sin (\theta)=\frac{4}{7}</m>, because <m>\triangle ABC</m> is a right triangle.</p>
+<p>It is <em>not</em> true that <m>\sin (\theta)=\frac{5}{7}</m>, or <m>\sin (\theta)=\frac{6}{7}</m>.  In this chapter, we consider only right triangles.</p></stack>
+    <image xml:id="caut2-2"><description>triangles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.81]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (3.6,2);
+        \coordinate (C) at (3.6,0);
+        \coordinate (D) at (4.2,2.333);
+        \coordinate (E) at (4.7,2.611);
+
+        \filldraw[black] (A) circle (0.2pt) node[anchor=north east] {$A$};
+        \filldraw[black] (B) circle (0.2pt) node[anchor=south east] {$B$};
+        \filldraw[black] (C) circle (0.2pt) node[anchor=north ] {$C$};
+        \filldraw[red] (D) circle (0.2pt) node[anchor=south ] {\color{red}$D$};
+        \filldraw[cyan] (E) circle (0.2pt) node[anchor=south ] {\color{cyan}$E$};
+
+        \draw[blue,thick] (C) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B) node[above left,midway] {\color{blue}$7$};
+        \draw[black,thick] (A)--(C);
+        \draw[black,thick] (B)--(C) node[left ,midway] {\color{blue}4};
+        \draw[red,thick] (D)--(C) node[left ,midway, xshift=4, yshift=7] {\color{red}5};
+        \draw[red,thick] (D)--(B);
+        \draw[cyan,thick] (E)--(C) node[right ,midway, xshift=2, yshift=7] {6};
+        \draw[cyan,thick] (E)--(B);
+
+        \draw [red, thick] (.6,0) arc(0:{atan(2/3.6)}:.6) node[ right,midway, xshift=2, yshift=2] {$\alpha$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></warning>
+</subsection>
+
+<subsection><title>Using a Calculator</title>
+
+<p> Mathematicians have calculated the sines of any angle we like. The values of the sine were originally collected into tables, and are now available on scientific calculators. For example, let's find the sine of <m>50\degree</m>. First, consider some triangles, as shown below.</p>
+
+<image width="65%" xml:id="fig-2-2largesine"><description>right triangles</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.9]
+
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (3.464,0);
+    \coordinate (C) at (3.464,2);
+
+    \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+    \draw[black,thick] (A)--(B);
+    \draw[black,thick] (C)--(B);
+    \draw[black,thick] (A)--(C) node[above left,midway] {\color{blue}$18$};
+
+    \draw [red, thick] (.5,0) arc(0:30:.5) node[ right,midway, xshift=2, yshift=2] {$30\degree$};
+
+    \coordinate (D) at (6,0);
+    \coordinate (E) at (8.57,0);
+    \coordinate (F) at (8.57,3.06);
+
+    \draw[blue,thick] (E) rectangle +(-0.25,0.25);
+    \draw[black,thick] (D)--(E);
+    \draw[black,thick] (F)--(E);
+    \draw[black,thick] (D)--(F) node[above left,midway] {\color{blue}$18$};
+
+    \draw [red, thick] (D)++(.5,0) arc(0:50:.5) node[ right,midway, xshift=2, yshift=2] {$50\degree$};
+    \end{tikzpicture}]]>
+</latex-image></image>
+
+<sidebyside width="55%"><p><m>\blert{\text{Which angle has the larger sine,}~ 30\degree~ \text{or}~ 50\degree ?}</m></p></sidebyside>
+
+<p> Do you expect the sine of <m>50\degree</m> to be larger or smaller than the sine of <m>30\degree</m>?  Do you expect the sine of <m>50\degree</m> to be larger or smaller than 1?</p>
+
+<example><statement><p>Use your calculator to find the sine of <m>50\degree</m> by entering <kbd>SIN</kbd> <m>(50)</m>. (Make sure your calculator is set for degrees.) You should find that 
+        <me> \sin (50\degree) = 0.7660444431</me> 
+This is not an exact value; the sine of <m>50\degree</m> is an irrational number, and your calculator shows as many digits as its display will allow. (Not all sine values are as “nice” as the sine of <m>30\degree</m>!) Usually we round to four decimal places, so we write 
+        <me> \sin (50\degree) = 0.7660</me></p>
+</statement></example>
+
+<warning><p>Note that when you press the sine key, <kbd>SIN</kbd>, your calculator displays 
+        <me> \large{\text{sin}}~ (  </me> 
+with an open parenthesis, as the prompt to enter an angle, because the sine is a function of the angle.</p> 
+<p>You can think of the notation <em>sin</em> as an operation symbol telling you to find the sine of an angle, just as the symbol <m>\sqrt{~~} </m> tells you to take the square root of the expression under the radical.</p> </warning>   
+
+<exercise><statement><p><ol marker="a.">
+    <li><p>Use your calculator to complete the table, rounding your answers to four decimal places.</p> 
+        <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>\theta</m></cell>
+                    <cell><m>~~0 \degree</m></cell>
+                    <cell><m>~10 \degree</m></cell>
+                    <cell><m>~20 \degree</m></cell>
+                    <cell><m>~30 \degree</m></cell>
+                    <cell><m>~40 \degree</m></cell>
+                    <cell><m>~50 \degree</m></cell>
+                    <cell><m>~60 \degree</m></cell>
+                    <cell><m>~70 \degree</m></cell>
+                    <cell><m>~80 \degree</m></cell>
+                    <cell><m>~90 \degree</m></cell></row>
+                <row> 
+                    <cell><m>\sin (\theta)</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell></row>
+                </tabular></li>
+    <li>What do you notice about the values of <m>\sin (\theta)</m> as <m>\theta</m> increases from <m>0 \degree</m> to <m>90 \degree</m>? If you plot the values of <m>\sin (\theta)</m> against the values of <m>\theta</m>, will the graph be a straight line? Why or why not?</li>
+</ol></p></statement>
+<answer><p><ol marker="a."><li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>\small \theta</m></cell>
+                    <cell><m>\small 0 \degree</m></cell>
+                    <cell><m>\small 10 \degree</m></cell>
+                    <cell><m>\small 20 \degree</m></cell>
+                    <cell><m>\small 30 \degree</m></cell>
+                    <cell><m>\small 40 \degree</m></cell>
+                    <cell><m>\small 50 \degree</m></cell>
+                    <cell><m>\small 60 \degree</m></cell>
+                    <cell><m>\small 70 \degree</m></cell>
+                    <cell><m>\small 0 \degree</m></cell>
+                    <cell><m>\small 90 \degree</m></cell></row>
+                <row> 
+                    <cell><m>\small \sin (\theta)</m></cell>
+                    <cell><m>~~0</m></cell>
+                    <cell><m>\small 0.1737</m></cell>
+                    <cell><m>\small 0.3420</m></cell>
+                    <cell><m>\small 0.5</m></cell>
+                    <cell><m>\small 0.6428</m></cell>
+                    <cell><m>\small 0.7660</m></cell>
+                    <cell><m>\small 0.8660</m></cell>
+                    <cell><m>\small 0.9397</m></cell>
+                    <cell><m>\small 0.9848</m></cell>
+                    <cell><m>~~1</m></cell></row>
+                </tabular></li>
+    <li><p>The values of <m>\sin (\theta)</m> increase from 0 to 1 as <m>\theta</m> increases from <m>0\degree</m> to <m>90\degree</m>. The graph will not be a straight line because the slopes between successive points are not constant.</p></li>
+</ol></p></answer></exercise> 
+
+<note><p>The important thing to remember is that the sine of an angle, say <m>50 \degree</m>, is the same for any right triangle with a <m>50 \degree</m> angle, no matter what the size or orientation of the triangle.</p>
+
+<p> The figure below shows three different right triangles with a <m>50 \degree</m> angle. Although the sides of the triangle may be bigger or smaller, the <em>ratio</em> <m>\dfrac {\text{opposite}}{\text{hypotenuse}}</m> is always the same for that angle, because the triangles are similar. This is why the sine ratio <idx><h>sine ratio</h></idx><idx><h>sine ratio</h><seealso>sine</seealso></idx> is useful.</p>
+
+<image width="65%" xml:id="fig-2-2sin50"><description>right triangles, 50 degrees</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.7]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (-2.25,0);
+        \coordinate (C) at (0,2.7);
+
+        \draw[blue,thick] (A) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B) -- (C) -- cycle;
+        \draw [red, thick] (B)++(.5,0) arc(0:50:.5) node[ right,midway, xshift=2, yshift=2] {$50\degree$};
+
+        \draw[blue,thick,xshift=2.3cm, scale=1.2, rotate=-50] (0,0) rectangle +(-0.21,0.21);
+        \draw[black,thick,xshift=2.3cm, scale=1.2, rotate=-50] (0,0)--(-2.25,0) -- (0,2.7) -- cycle;
+        \draw [red, thick,xshift=2.3cm, scale=1.2, rotate=-50] (-2.25,0)++(.4,0) arc(0:50:.4) node[ right,midway, xshift=2, yshift=-2] {$50\degree$};
+
+
+        \draw[blue,thick,xshift=6.2cm, scale=1.35, rotate=20] (0,0) rectangle +(0.18,0.18);
+        \draw[black,thick,xshift=6.2cm, scale=1.35, rotate=20] (0,0)--(2.25,0) -- (0,2.7) -- cycle;
+        \draw [red, thick,xshift=6.2cm, scale=1.35, rotate=20] (2.25,0)++(-.3,0) arc(180:130:.3) node[ left,midway, xshift=2, yshift=-1] {$50\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image>           
+<sidebyside width="80%">
+    <p><m>\blert{\text{In each triangle, the ratio}~ \sin (50\degree)=\dfrac{\text{opposite}}{\text{hypotenuse}}=0.7660} </m></p></sidebyside>
+</note>
+
+</subsection>
+
+<subsection><title>Using the Sine Ratio to Find an Unknown Side</title>
+<idx><h>sine ratio</h></idx>
+<idx><h>sine</h><h>using to find an unknown side</h></idx>
+
+<p>In the next example we see how to use the sine ratio to find an unknown side in a right triangle, knowing only one other side and one angle.</p>
+
+<example><statement><sidebyside widths="60% 20%" margins="0% 5%" valigns="middle middle"><p>Find the length of the side opposite the <m>50 \degree</m> angle in the triangle shown. </p>  
+    <image xml:id="exam2-2-3"><description>right triangle, 50 degrees</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.9]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (-2.25,0);
+        \coordinate (C) at (0,2.7);
+
+        \draw[blue,thick] (A) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B);
+        \draw[black,thick] (A)-- (C) node[right,midway] {\color{blue}$x$};
+        \draw[black,thick] (B) -- (C) node[above left, midway] {\color{blue}18 cm};
+        \draw [red, thick] (B)++(.5,0) arc(0:50:.5) node[ right,midway, xshift=2, yshift=2] {$50\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p>In this triangle, the ratio <m>\dfrac {\text{opposite}}{\text{hypotenuse}}</m> is equal to the sine of <m>50 \degree</m>, or
+    <me> \sin (50\degree) = \dfrac {\text{opposite}}{\text{hypotenuse}}</me> 
+We use a calculator to find an approximate value for the sine of <m>50 \degree</m>, filling in the lengths of the hypotenuse and the opposite side to get 
+        <me>0.7660 = \dfrac {x}{18}</me>  
+We solve for <m>x</m> to find 
+        <me>x = 18(0.7660)=13.788</me>  
+To two decimal places, the length of the opposite side is 13.79 centimeters.</p></solution>
+</example>
+
+<warning><p>In the previous example, even though we showed only four places in <m>\sin (50\degree)</m>, you should not round off intermediate steps in a calculation, because the answer loses accuracy with each rounding. You can use the following keystrokes on your calculator to avoid entering a long approximation for <m>\sin (50\degree)</m>:  
+        <me>\text{sin}~(50)~\times 18</me> 
+The calculator returns <m>~x=13.78879998.</m></p></warning>
+
+<exercise><statement><sidebyside widths="60% 20%" margins="0% 5%" valigns="middle middle"><p>Find the length of the hypotenuse in the triangle shown.</p>
+    <image xml:id="exer2-2-3"><description>right triangle, 62 degrees</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.9]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (1.6,3);
+        \coordinate (C) at (1.6,0);
+
+        \draw[blue,thick] (C) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B) node[above left,midway] {\color{blue}$x$};
+        \draw[black,thick] (A)-- (C) ;
+        \draw[black,thick] (B) -- (C) node[right, midway] {\color{blue}7.5 m};
+        \draw [red, thick] (A)++(.3,0) arc(0:62:.3) node[ right,midway, xshift=0, yshift=2] {$62\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+<answer><p><m>\sin (62\degree) = \dfrac{7.5}{x}</m>. Solve this equation to find <m>~x = \dfrac{7.5}{0.8829} \approx 8.49</m>, or, rounding to one decimal place, about 8.5 m</p></answer></exercise>
+</subsection>
+
+<subsection><title>The Cosine and the Tangent</title>
+    <idx><h>cosine</h></idx><idx><h>tangent</h></idx><idx><h>cosine ratio</h></idx><idx><h>tangent ratio</h></idx>
+
+<p>There are two more trigonometric ratios used for calculating the sides of right triangles, depending on which of the three sides is known and which are unknown. These ratios are called the <term>cosine</term> and the <term>tangent</term>.</p>
+
+<p>Suppose we'd like to find the height of a tall cliff without actually climbing it. We can measure the distance to the base of the cliff, and we can use a surveying tool called a theodolite to measure the angle between the ground and our line of sight to the top of the cliff (this is called the <term>angle of elevation</term>).</p>  
+
+<sidebyside widths="60% 40%" valigns="middle middle"><p>These values give us two parts of a right triangle, as shown at right. The height we want is the side opposite the angle of elevation. The distance to the base of the cliff is the length of the side <term>adjacent</term> to the angle of elevation.</p>
+
+    <image xml:id="fig-2-2angelev"><description>angle of elevation triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.81]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (-5,0);
+        \coordinate (C) at (0,2.5);
+
+        \draw[blue,thick] (A) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B) node[below,midway, xshift=19] {\color{red}angle of elevation};
+        \draw[black,thick] (A)-- (C)  node[right, midway] {cliff};
+        \draw[gray,thick, dashed] (B) -- (C);
+        \draw [red, thick] (B)++(.5,0) arc(0:{atan(.5)}:.5) node[right,midway, xshift=-5](angle) {};
+
+        \draw[red] (-3.4,-.3) edge[out=180,in=10,->,>=stealth'] (angle);
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>The ratio of the side opposite an angle to the side adjacent to the angle is called the <term>tangent</term><idx><h>tangent</h></idx> of the angle. The abbreviation for “tangent of theta” is tan (<m>\theta</m>)<idx><h>tan <m>\theta</m></h></idx>.</p>  
+
+<definition><title>Tangent of an Acute Angle</title>
+    <idx><h>tan <m>(\theta)</m></h></idx><idx><h>tan <m>(\theta)</m></h><seealso>tangent</seealso></idx><idx><h>tangent</h></idx>
+
+<statement><sidebyside widths="48% 40%" margins="8% 4%" valigns="middle middle">
+<p><m>\qquad\tan (\theta) = \dfrac{\text{opposite}}{\text{adjacent}}</m></p>
+    <image xml:id="fig-2-2tan"><description>right triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.72]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4.2,0);
+        \coordinate (C) at (4.2,2);
+
+        \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+        \draw[black,thick] (A)--(B) node[below,midway] {adjacent};
+        \draw[black,thick] (A)--(C);
+        \draw[black,thick] (B)--(C) node[right,midway] {opposite};
+
+        \draw [red, thick] (0.7,0) arc(0:{atan(2/4.2)}:.7) node[right,midway, xshift=3, yshift=2] {$\theta$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+</definition>
+
+<p>Just like the sine of an angle, the tangent ratio is always the same for a given angle, no matter what size triangle it occurs in. And just like <m>\sin (\theta)</m>, we can find the values of <m>\tan (\theta)</m> on a scientific calculator.</p>
+
+<example><statement><p><ol marker="a.">
+    <li>Use your calculator to find the tangent of <m>58 \degree</m>.</li>
+    <li>Find the height of the cliff if the angle of elevation to the top of the cliff is <m>58 \degree</m> at a distance of 300 feet from the base of the cliff.</li>
+</ol></p> </statement>
+
+<solution><p><ol marker="a.">
+    <li>Enter <kbd>TAN</kbd> (58) to find <m>\tan (58\degree) = 1.6003</m>, rounded to four decimal places.</li>
+    <li><sidebyside widths="60% 40%">
+        <p>We use the tangent ratio to write an equation. In this triangle, the angle is <m>58 \degree</m>.
+                <me>\tan (58\degree) = \dfrac{\text{opposite}}{\text{adjacent}}</me></p><!--<image source="photos/2-2angelev.png">-->
+        <image source="photos/fig-2-2angelev"><description>angle of elevation triangle</description></image></sidebyside>
+<p>Next we fill in the value of <m>\tan (58\degree)</m>, and the lengths of the sides. 
+            <me>1.6003 = \frac{h}{300}</me> 
+Solving for <m>h</m> gives
+            <me>h = 300(1,6003) = 480.0</me> so the height of the cliff is about 480 feet.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+    <li><sidebyside widths= "50% 35%" valigns="middle middle"><p>Use the tangent ratio to find <m>x</m> in the triangle shown.</p>         
+    <image xml:id="exer2-2-4"><description>right triangle</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.9]
+
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (4,0);
+    \coordinate (C) at (4,1.84);
+
+    \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+    \draw[black,thick] (A)--(B) node[below,midway, text=blue] {50 ft};
+    \draw[black,thick] (A)--(C) node[above left,midway, text=blue] {$c$};
+    \draw[black,thick] (B)--(C) node[right,midway, text=blue] {$x$};
+
+    \draw [red, thick] (0.9,0) arc(0:24.7:.9) node[right,midway, xshift=1, yshift=2] {$24.7\degree$};
+    \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></li>
+    <li>Use the sine ratio to find the hypotenuse, <m>c</m>, of the triangle.</li>
+    <li>Use the Pythagorean theorem to find the hypotenuse of the triangle. Do you get the same answer with both methods? Can you explain why the calculations might give (slightly) different answers?</li>
+</ol></p> <!--<image source="photos/exer2-2-4.png"><description>triangle</description></image>--></statement>
+
+<answer><p><ol marker="a.">
+    <li><p><m>\tan(24.7\degree) = \dfrac{x}{50}</m>, and solving this equation gives <m>x = 23</m> ft.</p></li>
+    <li><p><m>\sin(24.7\degree) = \dfrac{23}{c}</m>, so <m>c = 55</m> ft.</p></li>
+    <li><p>The answers agree when rounded to units. Rounding during calculation can cause the results to differ.</p></li>
+</ol></p></answer></exercise>
+
+<p>The third trigonometric ratio, called the <term>cosine</term>, is the ratio of the side adjacent to an angle and the hypotenuse of the triangle.</p>
+
+<definition><title>Cosine of an Acute Angle</title>
+    <idx><h>cos <m>\theta</m></h></idx><idx><h>cos <m>\theta</m></h><seealso>cosine</seealso></idx><idx><h>cosine</h></idx>
+    
+<statement><sidebyside widths="50% 35%" margins="0% 5%" valigns="middle middle">
+    <p><m>\qquad\cos (\theta) = \dfrac{\text{adjacent}}{\text{hypotenuse}}</m></p>
+        <image xml:id="fig-2-2cos"><description>right triangle</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}[scale=.9]
+    
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (4.2,0);
+            \coordinate (C) at (4.2,2);
+    
+            \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+            \draw[black,thick] (A)--(B) node[below,midway] {adjacent};
+            \draw[black,thick] (A)--(C) node[above left,midway, xshift=6] {hypotenuse};
+            \draw[black,thick] (B)--(C);
+    
+            \draw [red, thick] (0.7,0) arc(0:{atan(2/4.2)}:.7) node[right,midway, xshift=3, yshift=2] {$\theta$};
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+</definition>
+    
+<example><statement> <sidebyside widths="55% 30%" margins="0% 5%" valigns="middle middle">
+    <p>Find  <m>\sin (\theta),~ \cos (\theta)</m>, and <m>\tan (\theta)</m> for the triangle shown at right.</p><!--<image source="photos/exam2-2-5.png"><description>triangle</description></image>-->
+    <image xml:id="exam2-2-5"><description>right triangle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.72]
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4,0);
+        \coordinate (C) at (0,-3);
+
+        \draw[blue,thick] (A) rectangle +(0.25,-0.25);
+        \draw[black,thick] (A)--(B) node[above,midway] {\color{blue}8 in};
+        \draw[black,thick] (A)--(C) node[left,midway] {\color{blue}6 in};
+        \draw[black,thick] (B)--(C);
+
+        \draw [red, thick] (0,-2.6) arc(90:{atan(.75)}:.4) node[above right,midway, xshift=-2, yshift=0] {$\theta$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside></statement>
+
+<solution><p>First, we use the Pythagorean theorem to find the hypotenuse, <m>c</m>.
+    <md><mrow>c^2 \amp =6^2 + 8^2</mrow>
+        <mrow>c^2 \amp = 536=84 = 100 \amp\amp \blert{\text{Take square roots.}}</mrow>
+        <mrow>c \amp =  \sqrt{100} = 10</mrow></md>
+For the angle <m>\theta</m>, the opposite side is 8 inches long, and the adjacent side is 6 inches long, as shown in the figure. Thus,
+    <md><mrow>\sin (\theta) \amp = \dfrac{\text{opposite}}{\text{hypotenuse}} = \frac{8}{10}~~  \text{or}~~ 0.8</mrow>
+        <mrow>\cos (\theta) \amp = \dfrac{\text{adjacent}}{\text{hypotenuse}} = \frac{6}{10} ~~ \text{or}~~ 0.6</mrow>
+        <mrow>\tan (\theta) \amp =  \dfrac{\text{opposite}}{\text{adjacent}}  = \frac{8}{6} ~~ \text{or}~~1.\overline{3}</mrow></md></p>
+</solution></example>
+
+<activity><title>Sine and Cosine</title>
+    <p><ol marker="1.">
+    <li><p>Use your calculator to complete the table. Round the values of sine and cosine to four decimal places.</p> 
+        <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>\theta</m></cell>
+                    <cell><m>~~0 \degree</m></cell>
+                    <cell><m>~10 \degree</m></cell>
+                    <cell><m>~20 \degree</m></cell>
+                    <cell><m>~30 \degree</m></cell>
+                    <cell><m>~40 \degree</m></cell>
+                    <cell><m>~50 \degree</m></cell>
+                    <cell><m>~60 \degree</m></cell>
+                    <cell><m>~70 \degree</m></cell>
+                    <cell><m>~80 \degree</m></cell>
+                    <cell><m>~90 \degree</m></cell></row>
+                <row> 
+                    <cell><m>\sin (\theta)</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell>
+                    <cell><m>\hphantom{0000}</m></cell></row>
+                <row> 
+                    <cell><m>\cos (\theta)</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell>
+                    <cell><m>~~~</m></cell></row>    
+                </tabular></li>
+    <li>What do you notice about the values of sine and cosine? Can you explain why this is true? (Hint:  If one (non-right) angle of a right triangle measures <m>x</m> degrees, how big is the other angle?)</li> 
+    <li>Sketch a right triangle and label the opposite and adjacent sides for each (non-right) angle.</li>
+    </ol></p></activity>
+
+<note><p>In the Activity, you should also notice that as the angle <m>\theta</m> increases, <m>\sin (\theta)</m> increases but <m>\cos (\theta)</m> decreases.</p>
+    <p> You can see why this is true in the figure below. In each right triangle, the hypotenuse has the same length. But as the angle increases, the opposite side gets longer and the adjacent side gets shorter.</p>
+        <image width="65%" xml:id="fig-2-2incang"><description>right triangles with increasing theta</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} 
+    
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (2.82,0);
+            \coordinate (C) at (2.82,1.03);
+    
+            \draw[blue,thick] (B) rectangle +(-0.25,0.25);
+            \draw[black,thick] (A)--(B)--(C)--cycle;
+            \draw [red, thick] (.6,0) arc(0:20:.6) node[right,midway, xshift=5, yshift=2] {$20\degree$};
+    
+            \draw[blue,thick] (5.4,0) rectangle +(-0.25,0.25);
+            \draw[black,thick] (3.1,0)--(5.4,0)--(5.4,1.93)--cycle;
+            \draw [red, thick] (3.6,0) arc(0:40:.5) node[right,midway, yshift=2] {$40\degree$};
+    
+            \draw[blue,thick] (7.2,0) rectangle +(-0.25,0.25);
+            \draw[black,thick] (5.7,0)--(7.2,0)--(7.2,2.6)--cycle;
+            \draw [red, thick] (6.1,0) arc(0:60:.4) node[right,midway, yshift=2] {$60\degree$};
+            \end{tikzpicture}]]>
+        </latex-image></image>
+</note>      
+</subsection>
+
+<subsection><title>The Three Trigonometric Ratios</title>
+
+<p>Here is a summary of the three trigonometric ratios we have discussed.</p>
+
+<assemblage><title>Trigonometric Ratios</title>
+    <idx><h>trigonometric ratios</h></idx>
+    
+<p>If <m>\theta</m>  is one of the angles in a right triangle,</p>
+    <sidebyside widths="50% 40%" valigns="middle middle" margins="5% 5%">
+        <p><md><mrow>\sin (\theta) \amp = \dfrac{\text{opposite}}{\text{hypotenuse}}</mrow>
+            <mrow>\cos (\theta) \amp = \dfrac{\text{adjacent}}{\text{hypotenuse}}</mrow>
+            <mrow>\tan (\theta) \amp =  \dfrac{\text{opposite}}{\text{adjacent}}</mrow></md></p>
+        <image xml:id="fig-2-2trigratios"><description>right triangle</description>
+        <xi:include href="Fig-trig-ratios.ptx"/></image></sidebyside>
+</assemblage>
+
+<p> These three definitions are the foundation for all the rest of trigonometry. <term>You should internalize them immediately!!</term></p> 
+
+<p>We must also be careful to apply these definitions of the trigonometric ratios <em>only</em> to right triangles. In the next example, we create a right triangle by drawing an extra line.</p>
+
+<example><statement><p>The vertex angle of an isosceles triangle is <m>34 \degree</m>, and the equal sides are 16 meters long. Find the altitude of the triangle.</p> </statement>
+
+<solution><sidebyside widths="70% 25%" margins="0% 0%" valigns = "middle middle">
+<p>The triangle described is not a right triangle. However, the altitude of an isosceles triangle bisects the vertex angle and divides the triangle into two congruent right triangles, as shown in the figure. The 16-meter side becomes the hypotenuse of the right triangle, and the altitude, <m>h</m>, of original triangle is the side adjacent to the <m>17\degree</m> angle.</p> <!--<image source="photos/exam2-2-6.png"><description>triangle</description></image>-->
+    <image xml:id="exam2-2-6"><description>triangle with altitude</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (-1.17,0);
+        \coordinate (C) at (0,3.8);
+        \coordinate (D) at (1.17,0);
+
+        \draw[blue,thick] (A) rectangle +(0.25,0.25);
+        \draw[black,thick] (D)--(B)--(A) ;
+        \draw[gray,thick] (C)--(A) node[left,midway, yshift=-10] {\color{blue}$h$};
+        \draw[black,thick] (B)--(C) node[above left,midway, yshift=-4] {\color{blue}16 m};
+        \draw[black,thick] (D)--(C) node[above right,midway, yshift=-4] {\color{blue}16 m};
+
+        \draw [red, thick] (0,2.3) arc(-90:{-atan(3.8/1.17)}:1.5) node[below,midway, xshift=1, yshift=-4] {\small$17\degree$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+<p>Which of the three trig ratios is helpful in this problem? The cosine is the ratio that relates the hypotenuse and the adjacent side, so we'll begin with the equation 
+        <me>\cos (17\degree) =\dfrac{\text{adjacent}}{\text{hypotenuse}}</me>
+We use a calculator to find <m>\cos (17\degree)</m> and fill in the lengths of the sides.  
+        <me>0.9563 = \dfrac {h}{16}</me> 
+Solving for <m>h</m> gives 
+        <me>h = 16(0.9563) = 15.3008</me>  
+The altitude of the triangle is about 15.3 meters long.</p>
+</solution></example>
+    
+<exercise><statement><p>Another isosceles triangle has base angles of <m>72\degree</m> and equal sides of length 6.8 centimeters. Find the length of the base.</p></statement>
+<answer><p>Let <m>x</m> stand for half of the base. Then <m>\cos (72\degree) = \dfrac{x}{6.8}</m>, so <m>x = 2.1</m> and the base is 4.2 cm.</p></answer></exercise>
+
+<p>Review the following skills you will need for this section.</p>
+<theorem>
+    <sidebyside><p>Write two more ratios equivalent to the given fraction.</p></sidebyside>
+    <sidebyside widths="25% 25% 25% 25%">
+            <p>1. <m>\:\dfrac{10}{4}</m></p>
+            <p>2. <m>\:\dfrac{6}{8}</m></p>
+            <p>3. <m>\:0.6</m></p>
+            <p>4. <m>\:1.5</m></p>
+    </sidebyside>
+
+<sidebyside><p>Compute the slope of the line.</p></sidebyside>    
+    <sidebyside widths="5% 40% 5% 40%" margins="0% 0%">
+            <p>5.</p>
+        <image xml:id="ar2-2-5"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.4]
+
+        \draw[thick,->,>=stealth'] (-5,0) -- (7,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-3) -- (0,3) node[anchor=south] {$y$};
+        `
+        \foreach \x in {-5,...,6}
+            \draw (\x cm,5pt) -- (\x cm,-5pt) ;
+        \foreach \y in {-3,...,2}
+            \draw (5pt,\y cm) -- (-5pt,\y cm)  ;
+
+        \coordinate (A) at (-5,-2);
+        \coordinate (B) at (5,2);
+        \coordinate (C) at (7,2.8);
+        \coordinate (O) at (0,0);
+
+        \draw[blue, thick] (A)--(C);
+
+        \filldraw[red] (B) circle (5pt) node[anchor=south east,xshift=0,yshift=0] {$(5,2)$};
+        \filldraw[red] (O) circle (5pt) ;
+        \end{tikzpicture}]]>
+    </latex-image></image>
+            <p>6.</p>
+    <image xml:id="ar2-2-6"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.3, yscale=0.16]
+
+        \draw[thick,->,>=stealth'] (-9,0) -- (7,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-3) -- (0,11) node[anchor=south] {$y$};
+        `
+        \foreach \x in {-9,...,6}
+            \draw (\x cm,5pt) -- (\x cm,-5pt) ;
+        \foreach \y in {-3,...,10}
+            \draw (5pt,\y cm) -- (-5pt,\y cm)  ;
+
+        \coordinate (A) at (-5,8);
+        \coordinate (B) at (2,-3.2);
+        \coordinate (C) at (-7,11.2);
+        \coordinate (O) at (0,0);
+
+        \draw[blue, thick] (B)--(C);
+
+        \filldraw[red] (A) ellipse (6pt and 12pt) node[anchor=north east,xshift=0,yshift=0] {$(-5,8)$};
+        \filldraw[red] (O) ellipse (6pt and 12pt)  ;
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+    <sidebyside widths="5% 40% 5% 40%" margins="0% 0%">
+        <p>7.</p>
+        <image xml:id="ar2-2-7"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.36, yscale=0.24]
+
+        \draw[thick,->,>=stealth'] (-6,0) -- (6,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-6) -- (0,6) node[anchor=south] {$y$};
+        `
+        \foreach \x in {-6,...,5}
+            \draw (\x cm,5pt) -- (\x cm,-5pt) ;
+        \foreach \y in {-6,...,5}
+            \draw (5pt,\y cm) -- (-5pt,\y cm)  ;
+
+        \coordinate (A) at (-2,3);
+        \coordinate (B) at (-4,5.4);
+        \coordinate (C) at (5,-5.4);
+        \coordinate (O) at (3,-3);
+
+        \draw[blue, thick] (B)--(C);
+
+        \filldraw[red] (A) ellipse (6pt and 9pt) node[anchor=north east,yshift=2] {$(-2,3)$};
+        \filldraw[red] (O) ellipse (6pt and 9pt)  node[anchor=south west,yshift=-5] {$(3,-3)$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+            <p>8.</p>
+    <image xml:id="ar2-2-8"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.3, yscale=0.2]
+
+        \draw[thick,->,>=stealth'] (-6,0) -- (10,0) node[anchor=west] {$x$};
+        \draw[thick,->,>=stealth'] (0,-7) -- (0,4) node[anchor=south] {$y$};
+
+        \foreach \x in {-6,...,9}
+            \draw (\x cm,9pt) -- (\x cm,-9pt) ;
+        \foreach \y in {-7,...,3}
+            \draw (5pt,\y cm) -- (-5pt,\y cm)  ;
+
+        \coordinate (A) at (-4,-5);
+        \coordinate (B) at (-6,-6);
+        \coordinate (C) at (10,2);
+        \coordinate (O) at (4,-1);
+
+        \draw[blue, thick] (B)--(C);
+
+        \filldraw[red] (A) ellipse (6pt and 9pt) node[anchor=north west,xshift=2,yshift=-2, fill=white] {$(-4,-5)$};
+        \filldraw[red] (O) ellipse (6pt and 9pt)  node[anchor=north west,xshift=-5,yshift=-1] {$(4,-1)$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+    <sidebyside><p>Solve.</p></sidebyside>
+    <sidebyside widths="50% 50%">
+        <p>9. <m>\:\dfrac{12}{x} = 48</m></p>
+        <p>10. <m>\:\dfrac{60}{x} = 80</m></p>
+    </sidebyside>
+
+    <sidebyside><p><m>\underline{\qquad\qquad\qquad\qquad}</m></p></sidebyside>
+<conclusion>
+
+<sidebyside><p>Algebra Refresher Answers</p></sidebyside>
+        <p>(Many answers are possible for 1<ndash/>4.)</p>
+        <p><ol marker= "1," cols = "4">
+            <li><m>\dfrac{5}{2},~~\dfrac{20}{8}</m></li>
+            <li><m>\dfrac{3}{4},~~\dfrac{12}{16}</m></li>
+            <li><m>\dfrac{3}{5},~~\dfrac{12}{20}</m></li>
+            <li><m>\dfrac{6}{4},~~\dfrac{12}{8}</m></li>
+            <li><m>\dfrac{2}{5}</m></li>
+            <li><m>\dfrac{-8}{5}</m></li>
+            <li><m>\dfrac{-6}{5}</m></li>
+            <li><m>\dfrac{1}{2}</m></li>
+            <li><m>\dfrac{1}{4}</m></li>
+            <li><m>\dfrac{3}{4}</m></li>
+        </ol></p></conclusion>
+</theorem>
+</subsection>
+
+<subsection><title>Section 2.2 Summary</title>
+
+<subsubsection><title>Vocabulary</title>
+<p><ul cols = "3">
+    <li>Sine</li>
+    <li>Cosine</li>
+    <li>Tangent</li>
+    <li>Angle of elevation</li>
+    <li>Adjacent side</li>
+    <li>Irrational number</li>
+</ul></p>
+</subsubsection>
+
+<subsubsection><title>Concepts</title>
+<p><ol marker="1.">
+    <li>By using similar triangles, we can find the unknown sides of a right triangle if we know only <em>one</em> side and <em>one</em> of the acute angles.</li>
+    <li><assemblage><title>Trigonometric Ratios</title>
+        <p>If <m>\theta</m> is one of the angles in a right triangle,</p>
+        <sidebyside widths="60% 40%" valigns="middle middle">
+        <p><md><mrow>\sin (\theta) \amp = \dfrac{\text{opposite}}{\text{hypotenuse}}</mrow>
+            <mrow>\cos (\theta) \amp = \dfrac{\text{adjacent}}{\text{hypotenuse}}</mrow>
+            <mrow>\tan (\theta) \amp =  \dfrac{\text{opposite}}{\text{adjacent}}</mrow></md></p>
+        <image xml:id="fig-2-2sum-trigratios"><description>triangle</description>
+            <xi:include href="Fig-trig-ratios.ptx"/></image></sidebyside>          
+        </assemblage></li>
+    <li>The trigonometric ratio of an angle <m>\theta</m> is the same for every right triangle containing the angle.</li>
+</ol></p>
+</subsubsection>
+
+<subsubsection><title>Study Questions</title>
+<p><ol marker="1.">
+    <li>Sketch a figure that illustrates why <m>\cos (25\degree)</m> is the same for every right triangle with a <m>25\degree</m> angle.</li>
+    <li>Sketch a figure that illustrates why <m>\cos (\theta)</m> decreases as <m>\theta</m>  increases from <m>0\degree</m> to <m>90\degree</m>.</li>
+    <li>Which trigonometric ratio would you use to find the hypotenuse of a right triangle if you knew one acute angle and the side opposite that angle?</li>
+    <li>Does your calculator give you the exact decimal values for the trigonometric ratios of acute angles?</li>
+</ol></p></subsubsection>
+
+<subsubsection><title>Skills</title>
+<p>Practice each skill in the Homework Problems listed.</p>
+<p><ol marker= "1.">
+    <li>Use measurements to calculate the trigonometric ratios for acute angles    #1-10, 57-60</li>
+    <li>Use trigonometric ratios to find unknown sides of right triangles    #11-26</li>
+    <li>Solve problems using trigonometric ratios    #27-34, 41-46</li>
+    <li>Use trig ratios to write equations relating the sides of a right triangle    #35-40</li>
+    <li>Use relationships among the trigonometric ratios    #47-56, 61-68</li>
+</ol></p></subsubsection>
+</subsection>
+
+<xi:include href="./hmwk-2-2.xml" />   
+</section>

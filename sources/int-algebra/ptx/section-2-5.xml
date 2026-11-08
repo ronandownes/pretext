@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Linear-Inequalities"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Linear Inequalities in Two Variables</title>
+
+<introduction><p>To conclude this chapter on applications of linear models, we look at some uses of linear inequalities and their graphs.</p></introduction>
+
+<subsection><title>Graphs of Inequalities in Two Variables</title>
+
+<p>Recall that a linear inequality can have many solutions. For example, the solutions of <m>x + 2 \lt 5</m> are all numbers less than <m>3</m>. So it should not be surprising that inequalities in two variables also have many solutions.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review solving linear inequalities, see <xref ref="tkTwoVarIneq" text="custom"> Section 2.5.1 </xref> of the Toolkit.</p></aside>
+
+<definition><statement><p>A <term>solution</term><idx>solution</idx> to an inequality in two variables is an ordered pair of numbers that satisfies the inequality.</p></statement></definition>
+
+<example xml:id="Example-inequality-1-of-2-variables-specified"><statement><p>Find a solution to the inequality <m>x + y \ge 10,000</m> for <m>x = 2000</m></p></statement>
+
+<p></p>
+    
+<solution><p>For <m>x = 2000</m>, we have 
+    <me>2000 + y \ge 10,000~~~~~~\text{or}~~~~~~y \ge 8000</me>
+ You can check that any value of <m>y</m> greater than or equal to 8000 provides a solution when <m>x=2000</m>. For example, <m>(2000, 9000)</m> is a solution because <m>2000 + 9000 \gt 10,000</m>.</p></solution></example>
+
+<sidebyside widths="50% 48%" margins="0% 0%" valigns="middle middle">
+    <p>We can gain some insight into the nature of the solutions if we rewrite the inequality as
+        <md><mrow>y \ge − x + 10,000</mrow></md>
+    This inequality says that for each <m>x</m>-value, we must choose points with <m>y</m>-values greater than or equal to <m>-x + 10,000</m>. As we saw in <xref ref="Example-inequality-1-of-2-variables-specified" text="type-global" /> above, when <m>x = 2000</m>, the solutions have <m>y</m>-values greater than or equal to 8000. Solutions for <m>x = 2000</m>, <m>x = 6000</m>, and <m>x = 11,000</m> are shown in the figure. Do you see a pattern emerging?</p>
+    <image xml:id="fig-example-2-5-1"><description>linear inequality</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (0,-2) grid (12,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(12.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,12.6) node[left]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(1000*\x)] in {4,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \draw[red,ultra thick, ->,>=stealth] (2,8) -- (2,12) node[above, text=black, align=center] {$x=2000$ \\ $y \ge 8000$};
+        \filldraw[red] (2,8) circle (.15);
+        \draw[red,ultra thick, ->,>=stealth] (6,4) -- (6,12) node[above, text=black, align=center] {$x=6000$ \\ $y \ge 4000$};
+        \filldraw[red] (6,4) circle (.15);
+        \draw[red,ultra thick, ->,>=stealth] (11,-1) -- (11,12) node[above, text=black, align=center] {$x=11,000$ \\ $y \ge -1000$};
+        \filldraw[red] (11,-1) circle (.15);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<sidebyside widths="47% 45%" margins="0% 0%" valigns="middle middle">
+<p>The graph of the inequality must show all the points whose coordinates are solutions. We found some solutions to the inequality <m>x + y \ge 10,000</m> in <xref ref="Example-inequality-1-of-2-variables-specified" text="type-global" /> above by choosing a value for <m>x</m>  and solving for <m>y</m>. A more efficient way to find all the solutions of the inequality is to start with the graph of the corresponding equation
+        <me>y = -x + 10,000</me></p>
+     <image xml:id="fig-example-2-5-1b"><description>linear inequality, 2 variables</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-2,-2) grid (12,12);
+        \draw[black,thick,->,>=stealth'] (-2,0)--(12.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,12.6) node[left]{$y$};
+        \foreach \x [evaluate=\x as \xi using int(1000*\x)] in {4,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\xi$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-2,12)--(12,12)--(12,-2)--cycle;
+        \draw[red,thick,<->, >=stealth'] (-2,12)--(12,-2);
+        \filldraw[red] (-1,12) circle (.15);
+        \filldraw[red] (5,4) circle (.15);
+        \node[fill=magenta!10!white, inner sep=2] at (8,8) {$x+y \ge 10,000$};
+        \draw[black, <-,>=stealth'] (8,1.5)--(6.5,1.5) node[left,fill=white, inner sep=2]{$x+y=10,000$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<p>The graph is a straight line with slope <m>-1</m>. Any point <em>above</em> this line has a <m>y</m>-coordinate greater than <m>~ {-x} + 10,000~ </m> and hence satisfies the inequality. Thus, the graph of the inequality includes all the points on or above the line <m>~y = -x + 10,000~</m>, as shown by the shaded region in the figure. Of course, the shaded points are also solutions to the original inequality, <m>~x + y \ge 10,000~</m>.</p>
+
+<p> For example, the point <m>(-1000, ~12,000)</m> is a solution, because
+    <me>-1000 + 12,000 \ge 10,000</me>
+On the other hand, the point <m>(5000, 4000)</m> does not lie in the shaded region because its coordinates do not satisfy the inequality.</p>
+
+<p>So, just as the solutions of a linear inequality in one variable can be a portion of the <m>x</m>-axis, the solutions of a linear inequality in two variables can be a portion of the <m>xy</m>-plane.</p>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            $x1 = Compute("1");
+            $y1 = Compute("5");
+
+            sub mychecker {
+               my $x = shift;
+               return sub {
+               my ($correct,$student,$ansHash) = @_;  
+               return ($student &lt; (6+3*$x) ? 1 : 0);  
+             };
+             }
+
+            $my_evaluator = $y1 -> cmp(checker=>
+            mychecker($x1) );
+
+            $x0 = Compute("0");
+            $y0 = Compute("0");
+            $my_eval2 = $y0 -> cmp(checker=>
+            mychecker($x0) );
+
+            $xn2 = Compute("-2");
+            $yn2 = Compute("-3");
+            $my_eval3 = $yn2 -> cmp(checker=>
+            mychecker($xn2) );
+        </pg-code> 
+    <statement><p><ol marker="a.">
+        <li><p>Find one <m>y</m>-value that satisfies the inequality <m>y - 3x \lt 6</m> for each of the <m>x</m>-values in the table.</p><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>-2</m></cell></row>
+                    <row>
+                        <cell><m>y</m></cell>
+                        <cell><var name="$y1" width="2"  evaluator="$my_evaluator"/> </cell>
+                        <cell><var name="$y0" width="2"  evaluator="$my_eval2"/></cell>
+                        <cell><var name="$yn2" width="2"  evaluator="$my_eval3"/></cell></row>
+                </tabular></li>
+                <li><p>Graph the line <m>y - 3x = 6</m>. Then plot your solutions from part (a) on the same grid.</p></li>
+            </ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+        <li><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>-2</m></cell></row>
+                <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>\alert{5} </m></cell>
+                    <cell><m>\alert{0}</m></cell>
+                    <cell><m>\alert{-3}</m></cell></row>
+                </tabular>
+                <p>(Many answers are possible.) </p></li>
+        <li><p>A graph is below.</p></li></ol></p>
+        </solution>
+    </webwork>
+    <conclusion>
+        <image width="30%"  source="images/fig-ex-2-5-1"><description>linear inequality in two variables</description></image>
+    </conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p><ol marker="a.">
+        <li><p>Find one <m>y</m>-value that satisfies the inequality <m>y - 3x \lt 6</m> for each of the <m>x</m>-values in the table.</p>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                    <row><cell><m>x</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>-2</m></cell></row>
+                    <row><cell><m>y</m></cell>
+                        <cell><m>\hphantom{00}</m></cell> 
+                        <cell><m>\hphantom{00}</m></cell>
+                        <cell><m>\hphantom{00}</m></cell></row>
+                </tabular></li>
+        <li><p>Graph the line <m>y - 3x = 6</m>. Then plot your solutions from part (a) on the same grid.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li><tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+                <row><cell><m>x</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>-2</m></cell></row>
+                <row><cell><m>y</m></cell>
+                    <cell><m>\alert{5} </m></cell>
+                    <cell><m>\alert{0}</m></cell>
+                    <cell><m>\alert{-3}</m></cell></row>
+                </tabular>
+                <p>(Many answers are possible.) </p></li>
+    <li><image width="80%" source="images/fig-ex-2-5-1"><description>linear inequality in 2 variables</description></image></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Finding the Solutions</title>
+
+<p>Let us organize our observations from the discussion above to develop a method for finding the solutions of a linear inequality.
+
+<ul>
+    <li><p>A <term>linear inequality</term><idx>linear inequality</idx><idx><h>inequality</h><h>linear</h></idx> can be written in the form
+        <me>ax + by + c \le 0 \qquad\text{ or }\qquad ax + by + c \ge 0</me>
+    The solutions consist of the line <m>ax + by + c = 0</m> and a <term>half-plane</term><idx>half-plane</idx> on one side of that line. We shade the half-plane to show that all its points are included in the solution set.</p></li>
+
+    <li><p>To decide which side of the line to shade, we can solve the inequality for <m>y</m> in terms of <m>x</m>. If we obtain
+        <me>y \ge mx + b \qquad(\text{ or } y \gt mx + b)</me>
+    then we shade the half-plane <em>above</em> the line. If the inequality is equivalent to
+        <me>y \le mx + b \qquad(\text{ or } y \lt mx + b)</me>
+    then we shade the half-plane <em>below</em> the line.</p></li>
+</ul></p>
+
+<example><statement><p>Graph the solutions of <m>4x - 3y \ge 12</m></p></statement>
+    
+<solution><p>First we solve the inequality for <m>y</m>.
+            <md><mrow>4x - 3y \amp\ge 12 \amp \amp \blert{\text{Subtract}~ 4x~ \text{from both sides.}}</mrow>
+                <mrow>-3y\amp\ge -4x + 12 \amp \amp \blert{\text{Divide both sides by}~ -3.}</mrow>
+                <mrow>y\amp\le \frac{4}{3}x-4</mrow></md></p>
+        <sidebyside widths="70% 28%" margins="0% 0%" valigns="middle middle">
+    <p>Then we graph the corresponding line 
+                <me>y = \frac{4}{3}x-4</me>
+            <aside><p><m>\alert{\text{[TK]}}~~</m>To review graphing lines, see <xref ref="tkGraphLine" text="custom"> Section 2.5.2 </xref> of the Toolkit.</p></aside>
+        with <m>y</m>-intercept is <m>-4</m> and slope <m>m=\dfrac{4}{3}</m>. Finally, we shade the half-plane below the line. The completed graph is shown at right.</p>
+    <image source="images/fig-linear-inequality2"><description>linear inequality in two variables</description></image>
+        </sidebyside>
+</solution></example>
+
+<warning><p>Be careful when isolating <m>y</m>. Remember to reverse the direction of the inequality whenever we multiply or divide by a negative number. For example, the inequality
+        <me>-2y ~ \alert{\gt} ~ 6x-8</me>
+is equivalent to
+        <me>y ~ \alert{\lt} ~ {-3x}+4</me></p>
+</warning>
+
+<p>An inequality that uses <m>\gt</m> or <m>\lt</m> instead of <m>\ge</m> or <m>\le</m> is called <term>strict</term><idx>strict inequality</idx><idx><h>inequality</h><h>strict</h></idx>. The graph of a strict inequality includes only the half-plane and not the line. In that case we use a dashed line for the graph of the equation <m>ax + by + c = 0</m> to show that it is not part of the solution.</p>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        $refreshCachedImages = 1;
+        $f[0] = Formula("2*x+4");
+        $f[1] = Formula("2*x+4");
+        $f[2] = Formula("(x-4)/2");
+        $f[3] = Formula("(x-4)/2");
+        $xmin=-10;
+        $xmax=10;
+        $ymin=-10;
+        $ymax=10;
+        foreach my $i (0..3) {
+          $yleft[$i] = $f[$i]->eval(x=>$xmin);
+          $yright[$i] = $f[$i]->eval(x=>$xmax);
+          $gr[$i] = init_graph($xmin,$ymin,$xmax,$ymax, axes=>[0,0], grid=>[20,20], size=>[240,240]);
+        $gr[$i]->new_color("lightred",  245,234,229); 
+        $gr[$i]->new_color("darkred",   159, 64, 16);
+        $light = "lightred";
+        $dark = "darkred";
+        $gr[$i]->moveTo($xmin,$yleft[$i]);
+        $gr[$i]->lineTo($xmax,$yright[$i],'red',3,'dashed');
+        $y=0.9*$ymax*(-1)**$i;
+        add_functions($gr[$i],
+        "$f[$i]  for x in &lt;$xmin,$xmax> using color:$light and weight:1");
+        $gr[$i]->fillRegion([0,$y,$light]
+        );
+        }
+
+       foreach my $i (0..3) {
+       $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+        }
+        $gr[0] -> lb(new Label (-7.5,8,"(A)",'black','center','middle'));
+        $gr[1] -> lb(new Label (-7.5,8,"(B)",'black','center','middle'));
+        $gr[2] -> lb(new Label (-7.5,8,"(C)",'black','center','middle'));
+        $gr[3] -> lb(new Label (-7.5,8,"(D)",'black','center','middle'));
+        $mc = RadioButtons(
+                    [ "(A)", "(B)", "(C)","(D)",
+                    "none of the above"],
+                    0
+                );
+    </pg-code>
+<statement><p>Graph the solutions of the inequality <m>4x - 2y \lt -8</m>.</p>
+                <image pg-name="$gr[0]" width="35%"/>
+                <image pg-name="$gr[1]" width="35%"/>
+                <image pg-name="$gr[2]" width="35%"/>
+                <image pg-name="$gr[3]" width="35%"/>
+            <p>Select the appropriate graph.</p>
+            <p><var name="$mc" form="buttons"/> </p>
+</statement>
+<solution><image pg-name="$gr[0]" width="40%"/>
+</solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Graph the solutions of the inequality <m>4x - 2y \lt -8</m>.</p></statement>
+<answer>
+    <image xml:id="fig-4x-minus-2y-lt-neg8" width="40%"><description>4x-2y less than -8 </description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (-6,-6) grid (6,6);
+        \draw[black,thick,->,>=stealth'] (-6,0)--(6.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-6)--(0,6.6) node[left]{$y$};
+          \foreach \x  in {-5,5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-5,-6)--(1,6)--(-6,6)--(-6,-6)--cycle;
+        \draw[red,thick,dashed,<->, >=stealth'] (-5,-6)--(1,6);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $a = PopUp(
+          ["?","single point", "quadrant", "semicircle", "half-plane"],
+          4, 
+        );
+        $b = PopUp(
+          ["?","strict", "non-strict", "compound", "conditional"],
+          1, 
+        );
+        $c = PopUp(
+          ["?","reverse", "simplify", "copy", "obey"],
+          1, 
+        );
+        $d = PopUp(
+          ["?","planes", "solutions", "constants", "slopes"],
+          2, 
+        );
+    </pg-code>
+<statement><p><ol marker="a.">
+    <li><p>The solutions of a linear inequality in two variables consist of a boundary line and a <var name="$a" form="popup"/>.</p></li>
+    <li><p>An inequality that uses <m>\gt</m> or <m>\lt</m> instead of <m>\ge</m> or <m>\le</m> is called <var name="$b" form="popup"/>.</p></li>
+    <li><p>If we multiply or divide an inequality by a negative number we must <var name="$c" form="popup"/> the direction of the inequality symbol.</p></li>
+    <li><p>The shaded region shows all the <var name="$d" form="popup"/> of the inequality.</p></li>
+</ol></p></statement>
+<solution><p><ol marker="a.">
+            <li><p>half-plane</p></li>
+            <li><p>strict </p></li>
+            <li><p>reverse</p></li>
+            <li><p>solutions</p></li>
+    </ol></p></solution>  
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Complete each statement by filling in the blank.
+<ol marker="a.">
+    <li><p>The solutions of a linear inequality in two variables consist of a boundary line and a <fillin characters="10"/>.</p></li>
+    <li><p>An inequality that uses <m>\gt</m> or <m>\lt</m> instead of <m>\ge</m> or <m>\le</m> is called <fillin characters="10"/>.</p></li>
+    <li><p>If we multiply or divide an inequality by a negative number we must <fillin characters="10"/> the direction of the inequality symbol.</p></li>
+    <li><p>The shaded region shows all the <fillin characters="10"/> of the inequality.</p></li>
+</ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Using a Test Point</title>
+
+<p>A second method for graphing inequalities does not require us to solve for <m>y</m>. Because all the solutions lie on one side of the boundary line, we only need to find one soution! Once we have graphed the boundary line, we can decide which half-plane to shade by using a <term>test point</term><idx>test point for inequalities</idx>. The test point can be any point that is not on the boundary line itself.</p>
+
+<example xml:id="example-linear-inequality-test-point"><statement><p>Graph the solutions of the inequality <m>~~3x - 2y\lt 6</m></p></statement>
+
+<solution><p>First, we graph the line <m>3x - 2y = 6</m>, as shown below. We will use the intercept method. The intercepts are <m>(2, 0)</m> and <m>(0, -3)</m>, so we sketch the boundary line through those points.</p> 
+
+<p>Next, we choose a test point. Because <m>(0, 0)</m> does not lie on the line, we choose it as our test point. We substitute the coordinates of the test point into the inequality to obtain 
+        <me>3(\alert{0}) - 2(\alert{0}) \lt 6</me></p>
+    <sidebyside widths="60% 33%" margins="0% 0%" valigns="middle middle">
+<p>Because this is a true statement, <m>(0, 0)</m> is a solution of the inequality. Since all the solutions lie on the same side of the boundary line, we shade the half-plane that contains the test point. In this example, the boundary line is a dashed line because the original inequality was strict.</p>
+        <image source="images/fig-linear-inequality3"><description>strict linear inequality in two variables</description></image></sidebyside>
+</solution></example>
+
+<p>Here is a summary of our test point method for graphing inequalities.</p>
+
+<assemblage><title>To Graph an Inequality Using a Test Point</title><idx><h>graph</h><h>graphing an inequality using a test point</h></idx><idx>test point for inequalities</idx><p><ol marker="1.">
+    <li><p>Graph the corresponding equation to obtain the boundary line.</p></li>
+    <li><p>Choose a test point that does not lie on the boundary line.</p></li>
+    <li><p>Substitute the coordinates of the test point into the inequality.<ol marker="a.">
+        <li><p>If the resulting statement is true, shade the half-plane that includes the test point.</p></li>
+        <li><p>If the resulting statement is false, shade the half-plane that does not include the test point.</p></li>
+        </ol></p></li>
+    <li><p>If the inequality is strict, make the boundary line a dashed line.</p></li>
+</ol></p></assemblage>
+
+<p>We can choose any point for the test point as long as it does not lie on the boundary line. We chose <m>(0, 0)</m> in <xref ref="example-linear-inequality-test-point" text="type-global"/> because the coordinates are easy to substitute into the inequality. Because <m>(0, 0)</m> is a solution, we shaded the half-plane including that point. If, for example, we choose <m>(5, 0)</m> as the test point, we find
+    <me>3(\alert{5}) - 2(\blert{0}) \lt 6</me>
+which is a false statement. Thus, <m>(5, 0)</m> is not a solution to the inequality, so the solutions must lie on the other side of the boundary line. Note that using <m>(5, 0)</m> as the test point gives us the same solutions we found in <xref ref="example-linear-inequality-test-point" text="type-global"/>.</p>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork><pg-code>
+        $refreshCachedImages = 1;
+        $f[0] = Formula("-3/2*x");
+        $f[1] = Formula("-3/2*x");
+        $f[2] = Formula("-2/3*x");
+        $f[3] = Formula("-2/3*x");
+        $xmin=-10;
+        $xmax=10;
+        $ymin=-10;
+        $ymax=10;
+        foreach my $i (0..3) {
+          $yleft[$i] = $f[$i]->eval(x=>$xmin);
+          $yright[$i] = $f[$i]->eval(x=>$xmax);
+          $gr[$i] = init_graph($xmin,$ymin,$xmax,$ymax, axes=>[0,0], grid=>[20,20], size=>[240,240]);
+        $gr[$i]->new_color("lightred",  245,234,229); 
+        $gr[$i]->new_color("darkred",   159, 64, 16);
+        $light = "lightred";
+        $dark = "darkred";
+        $gr[$i]->moveTo($xmin,$yleft[$i]);
+        $gr[$i]->lineTo($xmax,$yright[$i],'red',3,'dashed');
+        $y=0.9*$ymax*(-1)**$i;
+        add_functions($gr[$i],
+        "$f[$i]  for x in &lt;$xmin,$xmax> using color:$light and weight:1");
+        $gr[$i]->fillRegion([0,$y,$light]
+        );
+        }
+
+       foreach my $i (0..3) {
+       $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+        }
+        $gr[0] -> lb(new Label (-7.5,8,"(D)",'black','center','middle'));
+        $gr[1] -> lb(new Label (-7.5,8,"(C)",'black','center','middle'));
+        $gr[2] -> lb(new Label (-7.5,8,"(B)",'black','center','middle'));
+        $gr[3] -> lb(new Label (-7.5,8,"(A)",'black','center','middle'));
+        $mc = RadioButtons(
+                    [ "(A)", "(B)", "(C)","(D)",
+                    "none of the above"],
+                    3
+                );
+
+        $where =  PopUp(
+        ["?","Above the line","Below the line"],
+        1, 
+        );
+        $which =  PopUp(
+        ["?","Dashed","Solid"],
+        1, 
+        );
+    </pg-code>
+    <statement><p>Graph the solutions of the inequality <m> y \gt \dfrac{-3}{2}x</m>
+    <ol marker="1.">
+        <li><p>Graph the line <m>y = \dfrac{-3}{2}x.</m> (Use the slope-intercept method.)</p></li>
+        <li><p>Choose a test point. (Do not choose <m>(0, 0)</m>!)</p></li>
+        <li><p>Decide which side of the line to shade. <var name="$where" form="popup"/> </p></li>
+        <li><p>Should the boundary line be dashed or solid? <var name="$which" form="popup"/></p></li>
+    </ol></p>
+                <image pg-name="$gr[3]" width="35%"/>
+                <image pg-name="$gr[2]" width="35%"/>
+                <image pg-name="$gr[1]" width="35%"/>
+                <image pg-name="$gr[0]" width="35%"/>
+            <p>Select the appropriate graph.</p>
+            <p><var name="$mc" form="buttons"/> </p>
+    </statement>
+    <solution><image pg-name="$gr[0]" width="40%"/>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Graph the solutions of the inequality <m> y \gt \dfrac{-3}{2}x</m></p>
+    <p><ol marker="1.">
+        <li><p>Graph the line <m>y = \dfrac{-3}{2}x.</m> (Use the slope-intercept method.)</p></li>
+        <li><p>Choose a test point. (Do not choose <m>(0, 0)</m>!)</p></li>
+        <li><p>Decide which side of the line to shade.</p></li>
+        <li><p>Should the boundary line be dashed or solid?</p></li>
+    </ol></p></statement>
+<answer></answer></exercise>
+
+<warning><p>We cannot choose a test point that lies on the boundary line. In Practice 3 above, we cannot use <m>(0, 0)</m> as a test point, because it lies on the line <m>y =\dfrac{-3}{2}x.</m> In this case, we should choose some other point, such as <m>(0, 1)</m> or <m>(1, 2)</m>.</p>
+</warning>
+
+<p>A simple example of of our method involves horizontal and vertical lines. Recall that the equation of a vertical line <idx>vertical line</idx> has the form
+    <me>x=k</me>
+where <m>k</m> is a constant, and a horizontal line <idx>horizontal line</idx> has an equation of the form
+    <me>y=k</me>
+Even though only one variable appears in the equation <m>y=k</m>, if we think of it as <m>0x + 1y = k</m>, it represents a line in the plane. Similarly, the inequality <m>x\ge k</m> may represent the inequality in two variables
+    <me>x+0y\ge k</me>
+Its graph is then a region in the plane.</p>
+
+<example><statement><p>Graph <m>~~x\ge 2~~</m> in the plane.</p></statement>
+    
+<solution><p>First, we graph the equation <m>x = 2</m>; its graph is a vertical line. Because the origin does not lie on this line, we can use it as a test point. Substitute <m>0</m> for <m>x</m> (there is no <m>y</m>) into the inequality to obtain
+            <me>0\ge 2</me></p>
+    <sidebyside  widths="70% 26%" margins="0% 0%" valigns="middle middle">
+<p>Because this is a false statement, we shade the half-plane that does not contain the origin. We see that the graph of the inequality contains all points whose <m>x</m>-coordinates are greater than or equal to <m>2</m>. (Or we can use common sense to shade all points with <m>x</m>-coordinates greater than or equal to <m>2</m>.)</p>
+        <image source="images/fig-planar-graph-x-greater-or-equal-2"><description>graph of x greater or equal to 2 in the plane</description></image></sidebyside>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        $refreshCachedImages = 1;
+        $y1 = 4;
+        $y2 = -1;
+        $xmin=-10;
+        $xmax=10;
+        $ymin=-10;
+        $ymax=10;
+        foreach my $i (0..3) {
+           $gr[$i] = init_graph($xmin,$ymin,$xmax,$ymax, axes=>[0,0], grid=>[20,20], size=>[240,240]);
+        $gr[$i]->new_color("lightblue", 214,230,244); # RGB
+        $gr[$i]->new_color("darkblue",  100,100,255);
+        $gr[$i]->new_color("lightred",  245,234,229); # light red-purple
+        $gr[$i]->new_color("darkred",   159, 64, 16); # red-brown
+        $gr[$i]->new_color("lightgreen",156,215,151); 
+        $gr[$i]->new_color("darkgreen",   0, 86, 34);
+        $light = "lightgreen";
+        $dark = "darkred";
+        $gr[$i]->moveTo($xmin,$y1);
+        $gr[$i]->lineTo($xmax,$y1,red,.1);
+        $gr[$i]->moveTo($xmin,$y2);
+        $gr[$i]->lineTo($xmax,$y2,red,.1);
+        }
+        foreach my $i (0..1) {
+        $gr[$i]->moveTo($xmin,$y1);
+        $gr[$i]->arrowTo($xmax,$y1,'red',2);
+        $gr[$i]->arrowTo($xmin,$y1,'red',2);
+        $gr[$i]->moveTo($xmax,$y2);
+        $gr[$i]->arrowTo($xmin,$y2,'red',2,'dashed');
+        $gr[$i]->moveTo($xmax,$y2,'red',2,'dashed');
+        }
+        foreach my $i (2..3) {
+        $gr[$i]->moveTo($xmin,$y2);
+        $gr[$i]->arrowTo($xmax,$y2,'red',2);
+        $gr[$i]->arrowTo($xmin,$y2,'red',2);
+        $gr[$i]->moveTo($xmax,$y1);
+        $gr[$i]->arrowTo($xmin,$y1,'red',2,'dashed');
+        $gr[$i]->arrowTo($xmax,$y1,'red',2,'dashed');
+        }
+
+        foreach my $i (0,2) {
+        $y=0.9*$ymax;
+             $gr[$i]->fillRegion([0,$y,$light]);
+             $gr[$i]->fillRegion([0,.9*$ymin,$light]);
+             }
+             
+        foreach my $i (1,3) {
+             $gr[$i]->fillRegion([0,0,$light]);
+             }
+
+       foreach my $i (0..3) {
+       $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+        }
+        $gr[0] -> lb(new Label (-7.5,8,"(A)",'black','center','middle'));
+        $gr[1] -> lb(new Label (-7.5,8,"(B)",'black','center','middle'));
+        $gr[2] -> lb(new Label (-7.5,8,"(C)",'black','center','middle'));
+        $gr[3] -> lb(new Label (-7.5,8,"(D)",'black','center','middle'));
+
+        $mc = RadioButtons(
+                    [ "(A)", "(B)", "(C)","(D)",
+                    "none of the above"],
+                    1
+                );
+    </pg-code>
+    <statement><p>Graph  <m>-1\lt y \le 4 </m> in the plane.</p>
+                <image pg-name="$gr[0]" width="35%"/>
+                <image pg-name="$gr[1]" width="35%"/>
+                <image pg-name="$gr[2]" width="35%"/>
+                <image pg-name="$gr[3]" width="35%"/>
+            <p>Select the appropriate graph.</p>
+            <p><var name="$mc" form="buttons"/> </p>
+    </statement>
+    <solution><image pg-name="$gr[0]" width="40%"/>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Graph  <m>-1\lt y \le 4 </m> in the plane.</p></statement>
+<answer></answer></exercise>
+</subsection>
+
+<subsection><title>Systems of Inequalities</title><idx>system of inequalities</idx><idx><h>inequality</h><h>system of</h></idx>
+
+<sidebyside valigns="middle middle" widths="60% 30%" margins="0% 0%">
+<p>Some applications are best described by a system of two or more inequalities. The solutions to a system of inequalities include all points that are solutions to every inequality in the system. The graph of the system is the intersection of the shaded regions for each inequality in the system. For example, the figure at right shows the solutions of the system
+        <me>y \gt x \qquad\text{ and }\qquad y \gt 2</me></p>
+    <image xml:id="fig-system-of-2-inequalities"><description>system of two inequalities</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \coordinate(O) at (0,0);
+        \draw[lightgray!70!white] (-3,-3) grid (6,7);
+        \draw[black,thick,->,>=stealth'] (-3,0)--(6.8,0) node[right] {$x$};
+        \draw[black,thick,->,>=stealth'] (0,-3)--(0,7.8) node[above] {$y$};
+        \foreach \x   in  {5} {
+         \draw[black, thick] (\x,0.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1, scale=.9] {$\x$};
+         \draw[black, thick] (0.14,\x) --++(-.28,0) node[left, xshift=-2, fill=white, inner sep=1, scale=.9] {$\x$};
+        };
+        \draw[red, very thick, dashed, <->, >=stealth'] (-3,2)--(6,2);
+        \draw[red, very thick, dashed, <->, >=stealth'] (-3,-3)--(6,6);
+
+        \path [draw=none, very thick,fill=orange!50!white, fill opacity = 0.3] (-3,-3)--(6,6)    -- (6,7)--(-3,7)--(-3,-3);
+        \path [draw=none, very thick,fill=orange!70!red, fill opacity = 0.3] (-3,2)--(6,2)    -- (6,7)--(-3,7)--(-3,2);
+        \node[text=red] at (5,3){$y>2$};
+        \node[text=red] at (-1.5,1){$y>x$};
+        \node[text=red, align=center] at (2,5){$y>x$ \\ and \\ $y>2$};
+        \end{tikzpicture}]]>
+    </latex-image></image> </sidebyside>
+
+<example><statement><p>Laura's diet prescribes 500 milligrams of calcium from a combination of broccoli, at 160 milligrams per serving, and zucchini, at 30 milligrams per serving. Draw a graph representing the possible combinations of broccoli and zucchini that fulfill Laura’s calcium requirements.</p></statement>
+
+<solution><p><ul>
+    <li><title>Step 1</title>
+        <p>Number of servings of broccoli: <m>\quad x</m></p>
+        <p>Number of servings of zucchini: <m>\quad y</m></p></li>
+    <li><title>Step 2</title>
+        <p>To get enough calcium, Laura must choose <m>x</m> and <m>y</m> so that
+                <me>160x + 30y \ge 500</me>
+        It makes no sense to consider negative values of <m>x</m> or of <m>y</m>, since Laura cannot eat a negative number of servings. Thus, we have two more inequalities to satisfy:
+                <me>x \ge 0 ~~~\text{ and }~~~y \ge 0</me></p></li>
+    <li><title>Step 3</title>
+        <sidebyside widths="62% 30%" margins="0% 0%" valigns="middle middle">
+        <p>We graph all three inequalities on the same axes. The inequalities <m>x\ge 0</m> and <m>y \ge 0</m> restrict the solutions to lie in the first quadrant. The solutions common to all three inequalities are shown at right.</p>
+        <image source="images/fig-system-of-inequalities2"><description>system of three inequalities</description></image>
+            </sidebyside></li>
+    <li><title>Step 4</title>
+        <p>Laura can choose any combination of broccoli and zucchini represented by points in the shaded region. For example, the point <m>(3, 1)</m> is a solution to the system of inequalities, so Laura could choose to eat <m>3</m> servings of broccoli and <m>1</m> serving of zucchini.</p></li></ul></p></solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork>
+    <pg-code>
+        $refreshCachedImages = 1;
+       foreach my $i (0..3) {
+        $gr[$i] = init_graph(-4,-4,9,9, axes=>[0,0], grid=>[13,13], size=>[240,240]);
+        $gr[$i]->new_color("lightblue", 214,230,244); # RGB
+        $gr[$i]->new_color("darkblue",  100,100,255);
+        $gr[$i]->new_color("lightred",  245,234,229); # light red-purple
+        $gr[$i]->new_color("darkred",   159, 64, 16); # red-brown
+        $gr[$i]->new_color("lightgreen",156,215,151); 
+        $gr[$i]->new_color("darkgreen",   0, 86, 34);
+        $light = "lightgreen";
+        $dark = "darkgreen";
+        $pink = "lightred";
+
+        $gr[$i]->moveTo(-4,-2);
+        $gr[$i]->arrowTo(9,20/3,'red',2);
+        $gr[$i]->arrowTo(-4,-2,'red',2,);
+
+        $gr[$i]->moveTo(9,8);
+        $gr[$i]->arrowTo(-3,-4,'white',1);
+        $gr[$i]->arrowTo(9,8,'blue',2,'dashed');
+        $gr[$i]->arrowTo(-3,-4,'blue',2,'dashed');
+        $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+        }
+
+        $gr[0] -> lb(new Label (-3.,8,"(A)",'black','center','middle'));
+        $gr[0]->fillRegion([-1.1,5.1,$light]);
+        $gr[1] -> lb(new Label (-3.,8,"(B)",'black','center','middle'));
+        $gr[1]->fillRegion([-3.1,-3.1,$light]);
+        $gr[2] -> lb(new Label (-3.,8,"(C)",'black','center','middle'));
+        $gr[2]->fillRegion([3.1,-3.1,$light]);
+        $gr[3] -> lb(new Label (-3.,8,"(D)",'black','center','middle'));
+        $gr[3]->fillRegion([8.1,6.2,$light]);
+
+        $mc = RadioButtons(
+            [ "(A)", "(B)", "(C)","(D)"],
+            1
+        );
+    </pg-code>
+    <statement>
+        <p>Use the following steps to graph the solutions of the system
+            <md><mrow>3y-2x \amp\le 2</mrow>
+                <mrow>y \amp\gt x-1</mrow></md>
+        <ol marker="1.">
+            <li><p>Graph the boundary line <m>3y-2x = 2</m>.</p></li>
+            <li><p>Lightly shade the solutions of the inequality <m>3y-2x \le 2</m>.</p></li>
+            <li><p>Graph the boundary line <m>y=x-1</m>.</p></li>
+            <li><p>Lightly shade the solutions of <m>y \gt x-1</m>.</p></li>
+            <li><p>Shade the intersection of the two solutions sets.</p></li>
+        </ol></p>
+            <image pg-name="$gr[0]" width="35%"/>
+            <image pg-name="$gr[1]" width="35%"/>
+            <image pg-name="$gr[2]" width="35%"/>
+            <image pg-name="$gr[3]" width="35%"/>
+        <p>Which of the above is the best match for the solution to the system of inequalities?</p>
+        <p><var name="$mc" form="buttons"/> </p>
+    </statement>
+    <solution>
+        <image pg-name="$gr[1]" width="40%"/>
+        <p>A graph is also shown below.</p>
+    </solution>
+</webwork>  
+<conclusion><image width="36%" xml:id="fig-ex-2-5-5answ"><description>system of inequalities</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.6] 
+            \draw[lightgray] (-4,-4) grid (7,7);
+            \draw[black,thick,->,>=stealth'] (-4,0)--(7.6,0) node[above]{$x$};
+            \draw[black,thick,->,>=stealth'] (0,-4)--(0,7.6) node[left]{$y$};
+            \foreach \x  in {5} {
+              \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+              \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+            }
+            \filldraw[magenta!50!white, opacity=.2] (-4,-2)--(7,16/3)--(7,-4)--(-4,-4)--cycle;
+            \draw[red,thick,<->, >=stealth'] (-4,-2)--(7,16/3) node[below right, xshift=1cm, midway,fill=magenta!10!white, inner sep=2] {$3y-2x \le 2$};
+            \filldraw[blue!50!white, opacity=.2] (-3,-4)--(7,6)--(7,7)--(-4,7)--(-4,-4)--cycle;
+            \draw[blue,thick,<->, >=stealth', dashed] (-3,-4)--(7,6) node[above left, xshift=-1.5cm,yshift=1.5cm, midway,fill=blue!10!white, inner sep=2] {$y > x-1$};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Use the following steps to graph the solutions of the system
+            <md><mrow>3y-2x \amp\le 2</mrow>
+                <mrow>y \amp\gt x-1</mrow></md></p>
+    <p><ol marker="1.">
+        <li><p>Graph the boundary line <m>3y-2x = 2</m>.</p></li>
+        <li><p>Lightly shade the solutions of the inequality <m>3y-2x \le 2</m>.</p></li>
+        <li><p>Graph the boundary line <m>y=x-1</m>.</p></li>
+        <li><p>Lightly shade the solutions of <m>y \gt x-1</m>.</p></li>
+        <li><p>Shade the intersection of the two solutions sets.</p></li>
+    </ol></p></statement>
+<answer>        
+    <image width="40%" xml:id="fig-ex-2-5-5ans"><description>system of inequalities</description><latex-image>
+       <![CDATA[
+        \begin{tikzpicture} [scale=.4] 
+        \draw[lightgray] (-4,-4) grid (7,7);
+        \draw[black,thick,->,>=stealth'] (-4,0)--(7.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-4)--(0,7.6) node[left]{$y$};
+        \foreach \x  in {5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+        \filldraw[magenta!50!white, opacity=.2] (-4,-2)--(7,16/3)--(7,-4)--(-4,-4)--cycle;
+        \draw[red,thick,<->, >=stealth'] (-4,-2)--(7,16/3) node[below right, xshift=0cm,yshift=-1.5cm, midway,fill=magenta!10!white, inner sep=2] {$3y-2x \le 2$};
+        \filldraw[blue!50!white, opacity=.2] (-3,-4)--(7,6)--(7,7)--(-4,7)--(-4,-4)--cycle;
+        \draw[blue,thick,<->, >=stealth', dashed] (-3,-4)--(7,6) node[above left, xshift=1.2cm,yshift=1.5cm, midway,fill=blue!10!white, inner sep=2] {$y > x-1$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+   </answer></exercise>
+
+<p>To describe the solutions of a system of inequalities, it is useful to locate the <term>vertices</term><idx><h>vertices</h><see>system of inequalities</see></idx><idx><h>vertex</h><h>of a system of inequalities</h></idx>, or corner points, of the boundary.</p>
+
+<example><statement><p>Graph the solution set of the system below and find the coordinates of its vertices.
+            <md><mrow>x - y - 2 \amp\le 0</mrow>
+                <mrow>x + 2y - 6 \amp\le 0</mrow>
+                <mrow>x \ge 0, ~~~~~y \amp\le 0</mrow></md></p></statement>
+    
+<solution><sidebyside  widths="57% 42%" margins="0% 0%" valigns="middle middle">
+<p>The last two inequalities, <m>x\ge 0</m> and <m>y\ge 0</m>, restrict the solutions to the first quadrant. We graph the line <m>x-y-2 = 0</m>, and use the test point <m>(0, 0)</m> to shade the half-plane including the origin. Finally we graph the line <m>x - 2y - 6 = 0</m> and again use the test point <m>(0, 0)</m> to shade the half-plane below the line. The intersection of the shaded regions is shown at right.</p>
+    <image source="images/fig-system-of-inequalities3"><description>system of four inequalities</description></image>
+        </sidebyside>
+<p>To find the coordinates of the vertices <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>, we solve simultaneously the equations of the two lines that intersect at each vertex. </p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review solving a linear 2x2 system, see <xref ref="tkTwobyTwo" text="custom"> Section 2.5.3 </xref> of the Toolkit.</p></aside>
+        <sidebyside widths="38% 25% 25%" valigns="middle middle middle" margins="5% 2%">
+            <p>For <m>A</m>, we solve the system </p>
+            <p><md><mrow>x \amp= 0</mrow><mrow>y\amp =0</mrow></md></p>
+            <p>to find <m>(0, 0)</m></p></sidebyside>
+        <sidebyside widths="38% 25% 25%" valigns="middle middle middle" margins="5% 2%">
+            <p>For <m>B</m>, we solve the system </p>
+            <p><md><mrow>x \amp= 0</mrow><mrow>x + 2y \amp= 6</mrow></md></p>
+            <p>to find <m>(0, 3)</m></p></sidebyside>
+        <sidebyside widths="38% 25% 25%" valigns="middle middle middle" margins="5% 2%">
+            <p>For <m>C</m>, we solve the system </p>
+            <p><md><mrow>x + 2y \amp= 6</mrow><mrow>x -y \amp= 2</mrow></md></p>
+            <p>to find <m>\left(\dfrac{10}{3},\dfrac{4}{3} \right)</m></p></sidebyside>
+        <sidebyside widths="38% 25% 25%" valigns="middle middle middle" margins="5% 2%">
+            <p>For <m>D</m>, we solve the system </p>
+            <p><md><mrow>y \amp= 0</mrow><mrow>x -y \amp= 2</mrow></md></p>
+            <p>to find <m>\left(2,0 \right)</m></p></sidebyside>
+<p>The vertices are the points <m>(0, 0)</m>, <m>(0, 3)</m>, <m>\left(\dfrac{10}{3},\dfrac{4}{3} \right)</m>, and <m>(2, 0)</m>.</p></solution></example>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p><ol marker="a.">
+    <li><p>Graph the system of inequalities
+        <md><mrow>5x+4y \amp\lt 40</mrow>
+                <mrow>-3x+4y \amp\lt 12</mrow>
+                <mrow>x \lt 6, ~~~~~y \amp\gt 2</mrow></md></p></li>
+    <li><p>Find the coordinaes of the vertices of the solution set.</p></li>
+</ol></p></statement>
+<answer>       
+    <image width="40%" xml:id="fig-ex-2-5-6ans"><description>system of inequalities</description><latex-image>
+       <![CDATA[
+        \begin{tikzpicture} [scale=.4] 
+        \draw[lightgray] (-4,-2) grid (8,10);
+        \draw[black,thick,->,>=stealth'] (-4,0)--(8.6,0) node[above]{$x$};
+        \draw[black,thick,->,>=stealth'] (0,-2)--(0,10.8) node[left]{$y$};
+        \foreach \x  in {5} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$\x$};
+        }
+          \draw[black,thick] (.1,10)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{$10$};
+        \filldraw[magenta!50!white, opacity=.8] (-4/3,2)--(6,2)--(6,5/2)--(7/2,45/8)--(0,3)--cycle;
+        \draw[red,thick,dashed,<->, >=stealth'] (-4,0)--(8,9);
+        \draw[red,thick,dashed,<->, >=stealth'] (0,10)--(8,0);
+        \draw[red,thick,dashed,<->, >=stealth'] (-4,2)--(8,2);
+        \draw[red,thick,dashed,<->, >=stealth'] (6,-2)--(6,10);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+   </answer></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>We cannot choose a test point that lies on <fillin characters="10"/>.</p></li>
+        <li><p>The soution set of a system of inequalities is the <fillin characters="10"/> of the solutions to each inequality in the system.</p></li>
+        <li><p>The corner points of the solution set are called the <fillin characters="10"/>. </p></li>
+        <li><p>The graph of <m>x \gt 2</m> is the set of all points that lie <fillin characters="10"/> the boundary line.</p></li>
+</ol></p></statement></exercise>
+
+</subsection>
+ 
+<xi:include href="./section-2-5-exercises.xml" />
+</section>

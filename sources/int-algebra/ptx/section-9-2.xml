@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Distance-and-Midpoint"   xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<introduction><p>From straight lines we can build triangles and other polygons. For curves, the simplest figure is a circle, so we'll consider circles next. You know that a circle is the set of all points in a plane at the same distance from the the center of the circle, so our first task will be to develop a formula for the distance between two points.</p></introduction>
+
+<title>The Distance and Midpoint Formulas</title>
+                
+<subsection><title>Distance in a Coordinate Plane</title>   
+                   
+<p>Figure (a) shows a line segment joining the two points <m>(-2, 7)</m> and <m>(6, 3)</m>. What is the distance between the two points?</p>
+<sidebyside widths="38% 38%" margins="12% 12%">
+    <image xml:id="fig-line-segment-in-coordinate-plane"><description>line segment in coordinate plane</description>
+        <latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-5,-5) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(10.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x in  {10,5,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-2,7)--(6,3);
+        \node at (2.5,-7) {Figure a};
+        \filldraw[blue] (-2,7) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-2,7)$};
+        \filldraw[blue] (6,3) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(6,3)$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    <image xml:id="fig-line-segment-hypotenuse"><description>line segment as hypotenuse</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-5,-5) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(10.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x in  {10,5,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-2,7)--(6,3);
+        \node at (2.5,-7) {Figure b};
+        \draw[blue,ultra thick, dashed] (-2,7)--(-2,3) node[left, midway, xshift=-2, fill=white, inner sep=1]{$a$};
+        \draw[blue,ultra thick, dashed] (-2,3)--(6,3) node[below, midway, yshift=-2, fill=white, inner sep=1]{$b$};
+        \filldraw[blue] (-2,7) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-2,7)$};
+        \filldraw[blue] (-2,3) circle (.2) node[below left, yshift=-3, fill=white, inner sep=1, text=black] {$(-2,3)$};
+        \filldraw[blue] (6,3) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(6,3)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<assemblage><title>Definition</title>
+    <p>The distance between two points is the length of the segment joining them.</p>
+</assemblage>
+
+<p>If we make a right triangle as shown in Figure (b), we can use the Pythagorean theorem to find its length. First, notice that the coordinates at the right angle are <m>(-2, 3)</m>. We can find the lengths of the two legs of the triangle, because they are horizontal and vertical segments.
+    <md><mrow>a\amp= \abs{3-7} = 4</mrow>
+        <mrow>b\amp=\abs{6-(-2)}=8</mrow></md>
+    The segment we want is the hypotenuse of the right triangle, so we apply the Pythagorean theorem.
+    <md><mrow>c^2 \amp= a^2+b^2</mrow>
+        <mrow>\amp= 4^2+8^2=80\amp\amp \blert{\text{Take square roots.}}</mrow>
+        <mrow>c\amp=\sqrt{80}\approx 8.9</mrow></md></p>
+</subsection>
+
+<subsection><title>The Distance Formula</title>
+
+<p>We can also use the Pythagorean theorem to derive a formula for the distance between any two points, <m>P_1</m> and <m>P_2</m>, in terms of their coordinates. We first label a right triangle, as we did in the discussion above. Draw a horizontal line through <m>P_1</m> and a vertical line through <m>P_2</m>.</p>
+<p> These lines meet at a point <m>P_3</m>, as shown in the figure below. The <m>x</m>-coordinate of <m>P_3</m> is the same as the <m>x</m>-coordinate of <m>P_2</m>, and the <m>y</m>-coordinate of <m>P_3</m> is the same as the <m>y</m>-coordinate of <m>P_1</m>. Thus, the coordinates of <m>P_3</m> are <m>(x_2, y_1)</m>.</p>
+
+    <image width="70%" source="images/fig-distance-formula"><description>distance between two points in the plane</description></image>
+
+<p>The distance between <m>P_1</m> and <m>P_3</m> is <m>\abs{x_2-x_1}</m> , and the distance between <m>P_2</m> and <m>P_3</m> is <m>\abs{y_2-y_1} </m>. These two numbers are the lengths of the legs of the right triangle. The length of the hypotenuse is the distance between <m>P_1</m> and <m>P_2</m>, which we'll call <m>d</m>. By the Pythagorean theorem,
+    <md><mrow>d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2</mrow></md>
+Taking the (positive) square root of each side of this equation gives us the <term>distance formula</term><idx>distance formula</idx>.</p>
+
+<assemblage><title>Distance Formula</title><idx><h>distance</h><h>formula</h></idx>
+    <p>The <term>distance</term> <m>d</m> between points <m>P_1(x_1,y_1)</m> and <m>P_2(x_2,y_2)</m> is
+        <md><mrow>\blert{d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}}</mrow></md></p>
+</assemblage>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>The distance formula is a version of the Pythagorean theorem. <var name="$True" form="popup"/></p></li>
+        <li><p><m>(u-v)^2 = (v-u)^2 = |u-v|^2=|v-u|^2 </m> <var name="$True" form="popup"/></p></li>
+        <li><p>We can find the length of a horizontal segment by subtracting the <m>x</m>-coordinates of its endpoints. <var name="$True" form="popup"/></p></li>
+        <li><p>The distance between two points is always a positive number (or zero). <var name="$True" form="popup"/></p>
+            </li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li>True</li>
+        <li>True</li>
+        <li>True</li>
+        <li>True</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>The distance formula is a version of the Pythagorean theorem.</p></li>
+        <li><p><m>(u-v)^2 = (v-u)^2 = |u-v|^2=|v-u|^2 </m> </p></li>
+        <li><p>We can find the length of a horizontal segment by subtracting the <m>x</m>-coordinates of its endpoints.</p></li>
+        <li><p>The distance between two points is always a positive number (or zero).</p></li>
+    </ol></p></statement></exercise>
+
+<example xml:id="example-distance-betw-points"><statement><p>Find the distance between <m>(2,-1)</m> and <m>(4,3)</m>. </p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review working with radicals, see <xref ref="tkRadDist" text="custom"> Section 9.2.1 </xref> of the Toolkit.</p></aside></statement>
+    
+<solution><p>Substitute <m>(2,-1)</m> for <m>(x_1,y_1)</m> and <m>(4,3)</m> for <m>(x_2,y_2)</m> in the distance formula to obtain
+            <md><mrow>d \amp = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</mrow>
+                <mrow>\amp = \sqrt{(4-2)^2+\left[3-(-1)\right]^2}</mrow>
+                <mrow>\amp = \sqrt{4+16} =\sqrt{20} \approx 4.47 </mrow></md></p></solution></example>
+
+<p>It doesn't matter which point we call <m>P_1</m>  and which is <m>P_2</m>. We obtain the same answer in the previous Example if we switch the two points and use <m>(4,3)</m> for <m>P_1</m> and <m>(2,-1)</m> for <m>P_2</m>:
+    <md><mrow>d \amp = \sqrt{(2-4)^2+[(-1)-3]^2}</mrow>
+        <mrow>\amp = \sqrt{4+16} =\sqrt{20}</mrow></md></p>
+
+<warning><p>We cannot simplify <m>\sqrt{4+16} </m> as <m>\sqrt{4}+\sqrt{16} </m>. Remember that <m>\sqrt{a^2+b^2}\ne a+b </m>. You can easily see this by observing that
+        <md><mrow>\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{5}</mrow></md>
+so it cannot be true that <m>\sqrt{3^2+4^2} </m> equals <m>3+4</m>, or 7. For the same reason, we cannot simplify the distance formula to <m>(x_2-x_1)+(y_2-y_1)</m>.</p></warning>
+
+<exercise component="webwork"><title>Practice 1</title>
+<webwork><pg-code>
+        $d = Compute("sqrt(208)");
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Find the distance between the points <m>(-5,3)</m> and <m>(3,-9)</m>: <var name="$d" width="10"/></p>
+                </li>
+        <li><p>Plot the points, and illustrate how the Pythagorean theorem is used in calculating the distance.</p></li>
+        </ol></p>
+        <instruction>
+            Enter "sqrt(2)" to get <m>\sqrt{2}</m>.
+        </instruction>
+    </statement>
+    <solution>
+        <p><ol marker="a.">
+            <li><m>\sqrt{208}</m></li>
+            <li>A graph is below.</li></ol></p>
+    </solution>
+</webwork>
+<conclusion><p>Graph for Practice 1:</p>
+    <image width="40%" xml:id="fig-ex-9-2-1answ"><description>distance formula</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-8,-10) grid (5,5);
+        \draw[black,thick, ->, >=stealth'] (-8,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,5.6) node[above]{$y$};
+        \foreach \x in  {5,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-5,3)--(3,-9) node[midway, right, xshift=3, yshift=5, fill=white, inner sep=1] {$d$};
+        \draw[blue,ultra thick, dashed] (-5,3)--(-5,-9) node[left, midway, xshift=-2, fill=white, inner sep=1]{$12$};
+        \draw[blue,ultra thick, dashed] (-5,-9)--(3,-9) node[below, midway, yshift=-2, fill=white, inner sep=1]{$8$};
+        \filldraw[blue] (-5,3) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-5,3)$};
+        \filldraw[blue] (3,-9) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(3,-9)$};
+        \node[fill=white, inner sep=1,text=red] at (0.5,1.5) {$8^2+12^2=d^2$};
+        \end{tikzpicture}]]>
+        </latex-image></image></conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p><ol marker="a.">
+        <li><p>Find the distance between the points <m>(-5,3)</m> and <m>(3,-9)</m>.</p></li>
+        <li><p>Plot the points, and illustrate how the Pythagorean theorem is used in calculating the distance.</p></li>
+    </ol></p></statement>
+    <answer><p><ol marker="a.">
+            <li><m>\sqrt{208}</m></li>
+            <li><image width="40%" xml:id="fig-ex-9-2-1ans"><description>distance formula</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-8,-10) grid (5,5);
+        \draw[black,thick, ->, >=stealth'] (-8,0)--(5.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,5.6) node[above]{$y$};
+        \foreach \x in  {5,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-5,3)--(3,-9) node[midway, right, xshift=3, yshift=5, fill=white, inner sep=1] {$d$};
+        \draw[blue,ultra thick, dashed] (-5,3)--(-5,-9) node[left, midway, xshift=-2, fill=white, inner sep=1]{$12$};
+        \draw[blue,ultra thick, dashed] (-5,-9)--(3,-9) node[below, midway, yshift=-2, fill=white, inner sep=1]{$8$};
+        \filldraw[blue] (-5,3) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-5,3)$};
+        \filldraw[blue] (3,-9) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(3,-9)$};
+        \node[fill=white, inner sep=1,text=red] at (0.5,1.5) {$8^2+12^2=d^2$};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>The Midpoint Formula</title>
+
+<p>The <term>midpoint</term><idx>midpoint</idx> of a segment is the point halfway between its endpoints, so that the distance from the midpoint to either endpoint is the same.</p>
+<p>The <m>x</m>-coordinate of the midpoint is halfway between the <m>x</m>-coordinates of the endpoints, and likewise for the <m>y</m>-coordinate. For the points <m>(-2, 7)</m> and <m>(6, 3)</m> shown below, the <m>x</m>-coordinate of the midpoint is <m>2</m>, which is halfway between <m>-2</m> and <m>6</m>. The <m>y</m>-coordinate is halfway between <m>7</m> and <m>3</m>, or <m>5</m>. Thus, the midpoint is <m>(2, 5)</m>.</p>
+
+<image width="40%" xml:id="fig-line-segment-midpoint"><description>line segment</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.45]
+        \draw[lightgray] (-5,-5) grid (10,10);
+        \draw[black,thick, ->, >=stealth'] (-5,0)--(10.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x in  {10,5,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-2,7)--(6,3);
+        \draw[blue,ultra thick, dashed] (-2,7)--(-2,3)--(6,3);
+        \draw[green,ultra thick, dashed] (-2,5)--(2,5)--(2,3);
+        \filldraw[blue] (-2,7) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-2,7)$};
+        \filldraw[black] (2,5) circle (.2) node[above right, yshift=3, fill=white, inner sep=1, text=black] {$(2,5)$};
+        \filldraw[blue] (6,3) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(6,3)$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+
+<p>If we know the coordinates of two points, we can calculate the coordinates of the midpoint. Each coordinate of the midpoint is the average of the corresponding coordinates of the two points.</p>
+
+<assemblage><title>Midpoint Formula</title>
+<p>The <term>midpoint</term><idx>midpoint</idx> of the line segment joining the points <m>P_1(x_1,y_1)</m> and <m>P_2(x_2,y_2)</m> is the point <m>M(\overline{x},\overline{y})</m>, where
+    <me>\blert{\overline{x}=\dfrac{x_1+x_2}{2}}\qquad\text{ and }\qquad\blert{\overline{y}=\dfrac{y_1+y_2}{2}}</me></p>
+</assemblage>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Fill in the blanks to complete the statements.
+<ol marker="a.">
+    <li><p>Each coordinate of the midpoint is the <fillin/> of the corresponding coordinates of the endpoints.</p></li>
+    <li><p>The midpoint of a segment is the same <fillin/> from each endpoint of the segment.</p></li>
+</ol></p></statement></exercise>
+
+<example><statement><p>Find the midpoint of the line segment joining the points <m>(-2,1)</m> and <m>(4,3)</m>.</p></statement>
+
+<solution><p>We substitute <m>(-2,1)</m> for <m>(x_1,y_1)</m> and <m>(4,3)</m> for <m>(x_2,y_2)</m> in the midpoint formula to obtain 
+    <md><mrow>\overline{x}\amp=\dfrac{x_1+x_2}{2}=\dfrac{-2+4}{2}=1</mrow>
+        <mrow>\overline{y}\amp=\dfrac{y_1+y_2}{2}=\dfrac{1+3}{2}=2</mrow></md>
+The midpoint of the segment is the point <m>(\overline{x},\overline{y})=(1,2)</m>.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        Context("Point");
+        $answer = Point("(-1,-3)");
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Find the midpoint of the line joining the points <m>(-5,3)</m> and <m>(3,-9)</m>: <var name="$answer" width="6"/></p></li>
+        <li><p>Plot the points and draw a rectangle with the points as opposite vertices. Illustrate that the midpoint is the center of the rectangle.</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><m>(-1,-3)</m></li>
+        <li>A figure is below.</li>
+    </ol></p></solution>
+</webwork>
+<conclusion>
+    <p>Graph for Practice 2:</p>
+        <image width="35%" xml:id="fig-ex-9-2-2answ"><description>rectangle</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.45]
+            \draw[lightgray] (-8,-10) grid (5,5);
+            \draw[black,thick, ->, >=stealth'] (-8,0)--(5.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-10)--(0,5.6) node[above]{$y$};
+            \foreach \x in  {5,-5} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[gray, very thick, dashed] (-5,3) rectangle (3,-9);
+            \draw[blue, thick, dashed] (-5,3)--(3,-9);
+            \draw[blue, thick, dashed] (-5,-9)--(3,3);
+            \filldraw[blue] (-5,3) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-5,3)$};
+            \filldraw[blue] (3,-9) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(3,-9)$};
+            \filldraw[red] (-1,-3) circle (.2) node[left, xshift=-3, fill=white, inner sep=1] {$(-1,-3)$};
+            \end{tikzpicture}]]>
+            </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p><ol marker="a.">
+        <li><p>Find the midpoint of the line joining the points <m>(-5,3)</m> and <m>(3,-9)</m></p></li>
+        <li><p>Plot the points and draw a rectangle with the points as opposite vertices. Illustrate that the midpoint is the center of the rectangle.</p></li>
+    </ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><m>(-1,-3)</m></li>
+        <li><image width="35%" xml:id="fig-ex-9-2-2ans"><description>rectangle</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.45]
+            \draw[lightgray] (-8,-10) grid (5,5);
+            \draw[black,thick, ->, >=stealth'] (-8,0)--(5.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-10)--(0,5.6) node[above]{$y$};
+            \foreach \x in  {5,-5} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[gray, very thick, dashed] (-5,3) rectangle (3,-9);
+            \draw[blue, thick, dashed] (-5,3)--(3,-9);
+            \draw[blue, thick, dashed] (-5,-9)--(3,3);
+            \filldraw[blue] (-5,3) circle (.2) node[above left, yshift=3, fill=white, inner sep=1, text=black] {$(-5,3)$};
+            \filldraw[blue] (3,-9) circle (.2) node[below right, yshift=-3, fill=white, inner sep=1, text=black] {$(3,-9)$};
+            \filldraw[red] (-1,-3) circle (.2) node[left, xshift=-3, fill=white, inner sep=1] {$(-1,-3)$};
+            \end{tikzpicture}]]>
+            </latex-image></image></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Circles</title>
+
+<p>A <term>circle</term><idx>circle</idx> is the set of all points in a plane that lie at a given distance, called the <term>radius</term><idx>radius</idx>, from a fixed point called the <term>center</term><idx><h>center</h><h>of a circle</h></idx><idx><h>circle</h><h>center</h></idx>. We can use the distance formula to find an equation for a circle. First consider the circle in Figure (a), whose center is the origin, <m>(0,0)</m>.</p> 
+
+    <image width="80%" source="images/fig-circles"><description>circles</description></image>
+
+<p>The distance from the origin to any point <m>P(x,y)</m> on the circle is <m>r</m>. Therefore, 
+    <me>\sqrt{(x-0)^2+(y-0)^2}=r</me>
+ or, squaring both sides,
+    <me>(x-0)^2+(y-0)^2=r^2</me>
+Thus, the equation for a circle of radius <m>r</m> centered at the origin is
+    <me>\blert{x^2+y^2=r^2}</me></p>
+
+<p>Now consider the circle in Figure (b), whose center is the point <m>(h,k)</m>.  Every point <m>P(x,y)</m> on the circle lies a distance <m>r</m> from <m>(h,k)</m>, so the equation of the circle is given by the following formula.</p>
+
+<assemblage><title>Standard Form for a Circle</title><idx><h>circle</h><h>equation of</h></idx><idx><h>circle</h><h>radius</h></idx><idx><h>circle</h><h>center</h></idx><idx><h>radius</h></idx><idx><h>radius</h><seealso>circle</seealso></idx>
+    <p>The equation for a <term>circle</term> of radius <m>r</m> centered at the point <m>(h,k)</m> is
+        <me>\blert{(x-h)^2+(y-k)^2=r^2}</me></p>
+</assemblage>
+
+<example><statement><p>Find a point with <m>x</m>-coordinate <m>-3</m> that lies on the circle <m>(x+2)^2+(y-4)^2=5</m>. </p></statement>
+
+<solution><p>We substitute <m>x=\alert{-3}</m> into the equation, and solve for <m>y</m>.
+    <md><mrow>(\alert{-3}+2)^2+(y-4)^2 \amp = 5 \amp \amp \blert{\text{Simplify.}}</mrow>
+        <mrow>(-1)^2 +(y-4)^2 \amp = 5 \amp \amp \blert{\text{Solve by extracting roots.}}</mrow>
+        <mrow>(y-4)^2 \amp = 4 \amp \amp \blert{\text{Take square roots.}}</mrow>
+        <mrow>y-4 \amp = \pm 2</mrow></md>
+We see that the solutions are <m>y=6</m> and <m>y=2</m>. Thus, the points <m>(-3,6)</m> and <m>(-3,2)</m> lie on the circle.</p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more examples using the equation of a circle, see <xref ref="tkCircEqn" text="custom"> Section 9.2.2 </xref> of the Toolkit.</p></aside>
+
+<exercise component="main"><title>Practice 3</title><statement><p>Does <m>(2,6)</m> lie on the circle <m>~(x+3)^2+(y-5)^2=26~</m>?</p></statement>
+<answer><p>Yes</p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $No = PopUp(
+          ["?","Yes", "No"],
+          2, 
+        );
+        $radius = Compute("9");
+        $diameter = Compute("18");
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Does the center of a circle lie on the graph of the circle? <var name="$No" form="popup"/> </p></li>
+         <li><p>What is the radius of the circle <m>x^2 + y^2 = 81</m>? <var name="$radius" width="2"/> </p></li>
+        <li><p>What is the diameter of the circle in part (b)?  <var name="$diameter" width="2"/></p></li>
+        <li><p>Can we simplify the equation in part (b) to <m>x + y = 9</m>? <var name="$No" form="popup"/></p></li>
+        </ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li>No</li>
+            <li>9</li>
+            <li>18</li>
+            <li>No</li>
+        </ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Answer each question below.<ol marker="a.">
+        <li><p>Does the center of a circle lie on the graph of the circle?</p></li>
+         <li><p>What is the radius of the circle <m>x^2 + y^2 = 81</m>?</p></li>
+        <li><p>What is the diameter of the circle in part (b)?</p></li>
+        <li><p>Can we simplify the equation in part (b) to <m>x + y = 9</m>?</p></li>
+    </ol></p></statement></exercise>
+
+<p>It is easy to graph a circle if its equation is given in standard form.</p>
+
+<example xml:id="example-two-circles"><statement><p>Graph the circles.</p>
+<p><ol marker="a.">
+    <li><m>(x-2)^2+(y+3)^2=16</m></li>
+    <li><m>x^2+(y-4)^2=7</m></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The graph of <m>(x-2)^2+(y+3)^2=16</m> is a circle with radius 4 and center at <m>(2,-3)</m>. To sketch the graph, we first locate the center of the circle. (The center is not part of the graph of the circle.)</p>
+    <p> From the center, we move a distance of 4 units (the radius of the circle) in each of four directions:  up, down, left, and right. This locates four points that lie on the circle: <m>(2,1)</m>, <m>(2,-7)</m>, <m>(-2,-3)</m>, and <m>(6,-3)</m>.  We sketch the circle through these four points.</p> 
+
+    <image width="80%" source="images/fig-circles2"><description>circles</description></image></li>
+
+    <li><p>The graph of <m>x^2+(y-4)^2=7</m> is a circle with radius <m>\sqrt{7}</m> and center at <m>(0,4)</m>. From the center, we move approximately <m>\sqrt{7}</m>, or 2.6 units in each of the four coordinate directions to obtain the points <m>(0,6.6)</m>, <m>(0,1.4)</m>, <m>(-2.6,4)</m>, and <m>(2.6,4)</m>. We sketch the circle through these four points.</p></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        Context("Point");
+        $center = Point("(-3,-2)");
+        $r = Compute("4");
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>State the center and radius of the circle
+                <me>(x+3)^2+(y+2)^2=16</me></p>
+            <p>center: <var name="$center"  width="6"/>, radius: <var name="$r" width="2"/> </p></li>
+        <li>Graph the circle.</li></ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li><p>center <m>(-3,-2)</m>, radius 4</p></li>
+    <li>A graph is below.</li>
+</ol></p></solution>
+</webwork>
+<conclusion><p><m>(x+3)^2+(y+2)^2=16</m></p>
+    <image width="40%" xml:id="fig-ex-9-2-3answ"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \draw[lightgray] (-8,-8) grid (3,3);
+        \draw[black,thick, ->, >=stealth'] (-8,0)--(3.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-8)--(0,3.6) node[above]{$y$};
+        \foreach \x in  {2,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-3,-2) circle (4cm);
+        \filldraw (-3,-2) circle (.15) node[below, yshift=-2, fill=white, inner sep=1]{$(-3,-2)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p><ol marker="a.">
+        <li><p>State the center and radius of the circle
+                <me>(x+3)^2+(y+2)^2=16</me></p></li>
+        <li><p>Graph the circle.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>center <m>(-3,-2)</m>, radius 4</p></li>
+    <li><image width="40%" xml:id="fig-ex-9-2-3ans"><description>circle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \draw[lightgray] (-8,-8) grid (3,3);
+        \draw[black,thick, ->, >=stealth'] (-8,0)--(3.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-8)--(0,3.6) node[above]{$y$};
+        \foreach \x in  {2,-5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, thick] (-3,-2) circle (4cm);
+        \filldraw (-3,-2) circle (.15) node[below, yshift=-2, fill=white, inner sep=1]{$(-3,-2)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+</ol></p></answer></exercise>
+
+<p>We can write an equation for any circle if we can find its center and radius.</p>
+
+<example><statement><p>Find an equation for the circle whose diameter has endpoints <m>(7,5)</m> and <m>(1,-1)</m>.</p>
+</statement> 
+
+<solution><sidebyside widths="60% 32%" valigns="middle middle">
+<p>The center of the circle is the midpoint of its diameter. We use the midpoint formula to find the center:
+            <md><mrow>h=\overline{x}=\dfrac{7+1}{2}=4</mrow>
+                <mrow>k=\overline{y}=\dfrac{5-1}{2}=2</mrow></md>
+Thus, the center is the point <m>(h,k)=(4,2)</m>.  </p> 
+        <image xml:id="fig-example-9-2-5"><description>circle with diameter (7,5) to (1,-1)</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.55]
+            \draw[lightgray] (-1,-3) grid (9,7);
+            \draw[black,thick, ->, >=stealth'] (-1,0)--(9.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-3)--(0,7.6) node[above]{$y$};
+            \foreach \x in  {2,4,6,8} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \foreach \x in  {-2,2,4,6} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[very thick] (4,2) -- (4,{2+sqrt(18)}) node[left,midway, xshift=-3, fill=white, inner sep=1] {$r=\sqrt{18}$};
+            \draw[blue, thick,dashed] (4,2) circle ({sqrt(18)});
+            \filldraw (4,2) circle (.15) node[below right, xshift=3, fill=white, inner sep=1]{$(4,2)$};
+            \draw[red,thick] (7,5) -- (1,-1);
+            \filldraw[red] (7,5) circle (.15) node[above right, yshift=3, fill=white, inner sep=1]{$(7,5)$};
+            \filldraw[red] (1,-1) circle (.15) node[below, yshift=-.8cm, fill=white, inner sep=1]{$(1,-1)$};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+<p> The radius is the distance from the center to either of the endpoints of the diameter, say the point <m>(7,5)</m>. We use the distance formula with the points <m>(7,5)</m> and <m>(4,2)</m> to find the radius.
+            <md><mrow>r \amp = \sqrt{(7-4)^2+(5-2)^2}</mrow>
+                <mrow>\amp = \sqrt{3^2+3^2}=\sqrt{18}</mrow></md>
+Finally, we substitute 4 for<m>h</m> and 2 for <m>k</m> (the coordinates of the center) and <m>\sqrt{18}</m> for <m>r</m> (the radius) into the standard form 
+            <me>(x-h)^2+(y-k)^2=r^2</me>
+to obtain 
+            <me>(x-4)^2+(y-2)^2=18</me></p></solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork><pg-code>
+        Context()->variables->set(
+          x=>{limits=>[-4-sqrt(13),-4+sqrt(13)]},
+          y=>{limits=>[-3-sqrt(13),-3+sqrt(13)]},
+        );
+        $rsq = 13;
+        $r = sqrt($rsq);
+        $h = -4;
+        $k = -3;
+        $answer = ImplicitEquation(
+          "(x-$h)^2  + (y-$k)^2 =$rsq",
+          solutions=>[ 
+             [$h,$k+$r],
+             [$h,$k-$r],
+             [$h+$r,$k],
+             [$h-$r,$k],
+          ]
+        );
+    </pg-code>
+    <statement><p>Find an equation for the circle whose diameter has endpoint <m>(-7,-5) </m> and <m>(-1,-1) </m>.</p>
+        <p><var name="$answer" width="30"/></p>
+    </statement>
+    <solution><p><m>(x+4)^2 + (y+3)^2 = 13</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Find an equation for the circle whose diameter has endpoint <m>(-7,-5) </m> and <m>(-1,-1) </m>.</p></statement>
+    <answer><p><m>(x+4)^2 + (y+3)^2 = 13</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>General Form for Circles</title>
+
+<p>The equations of circles often appear in a <term>general quadratic form</term><idx><h>general quadratic form</h><h>of a circle</h></idx><idx><h>circle</h><h>general quadratic form</h></idx>, rather than the standard form described above. For example, we can expand the squares of binomials in part (a) of the previous Example,
+    <me>(x-2)^2+(y+3)^2=16</me>
+to obtain
+    <me>x^2-4x+4+y^2+6y+9=16</me>
+or
+    <me>x^2+y^2-4x+6y-3=0</me></p>
+
+<p>This is a quadratic equation in two variables. Such an equation describes a circle if the coefficients of the quadratic, or squared, terms are equal.</p>  
+
+<p>Conversely, an equation of the form <m>x^2+y^2+ax+by+c=0</m> can be converted to standard form by completing the square <idx>completing the square</idx> in both variables.  Once this is done, the center and radius of the circle can be determined directly from the equation.</p>
+
+<example><statement><p>Write the equation of the circle
+            <md><mrow>x^2+y^2+8x-2y+6=0</mrow></md>
+in standard form, and graph the equation.</p></statement>
+    
+<solution><p>We prepare to complete the square in both variables by writing the equation as
+        <me>(x^2+8x+<fillin characters="3"/>)+(y^2-2y+<fillin characters="3"/>)=-6</me>
+We complete the square in <m>x</m> by adding 16 to each side of the equation, and complete the square in <m>y</m> by adding 1 to each side, to get
+            <me>(x^2+8x+\alert{16})+(y^2-2y+\alert{1})=-6+\alert{16}+\alert{1}</me></p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>To review completing the square, see <xref ref="tkCompSq" text="custom"> Section 9.2.3 </xref> of the Toolkit.</p></aside>
+        <sidebyside widths="55% 32%" margins="0% 5%" valigns="middle middle">
+<p>from which we obtain the standard form,
+            <me>(x+4)^2+(y-1)^2=11</me>
+Thus, the circle has its center at <m>(-4,1)</m>, and its radius is <m>\sqrt{11}</m>, or approximately 3.3. The graph is shown at right.</p>
+    <image xml:id="fig-example-9-2-4"><description>circle</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.6]
+            \draw[lightgray] (-9,-3) grid (1,6);
+            \draw[black,thick, ->, >=stealth'] (-9,0)--(1.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-3)--(0,6.6) node[above]{$y$};
+            \foreach \x in  {-5} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \foreach \x in  {5} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[red, thick] (-4,1) circle ({sqrt(11)});
+            \draw[blue,thick, dashed](-4,1)--({-4-sqrt(7)},3) node[above right, midway]{$r=\sqrt{11}$};
+            \filldraw (-4,1) circle (.15) node[right, xshift=3, fill=white, inner sep=1]{$(-4,1)$};
+            \filldraw[red] ({-4-sqrt(7)},3) circle (.15) node[above left, yshift=3, fill=white, inner sep=1]{$P(x,y)$};
+            \end{tikzpicture}]]>
+            </latex-image></image></sidebyside>
+</solution></example>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>
+        $a = PopUp(
+          ["?",
+          "area and circumference", 
+          "center and radius",
+          "diameter and arclength"],
+          2, 
+        );
+        $b = PopUp(
+          ["?",
+          "squared", 
+          "opposites",
+          "equal",
+          "zero"],
+          3, 
+        );
+        $c = PopUp(
+          ["?",
+          "completing the square", 
+          "cross-multiplying",
+          "factoring"],
+          1, 
+        );        
+    </pg-code>
+    <statement><p>Fill in the blanks.<ol marker="a.">
+        <li><p>The standard form for a circle is useful because we can see the <var name="$a" form="popup"/> of the circle in the equation.</p></li>
+        <li><p>A quadratic equation in two variables describes a circle if the coefficients of the quadratic terms are <var name="$b" form="popup"/>.</p></li>
+        <li><p>We convert the equation for a circle into standard form by <var name="$c" form="popup"/> in both variables.
+            </p></li></ol></p>
+    </statement>
+    <solution>
+        <p><ol marker="a.">
+            <li>center and radius</li>
+            <li>equal</li>
+            <li>completing the square</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>Fill in the blanks.<ol marker="a.">
+        <li><p>The standard form for a circle is useful because we can see the <fillin characters="6"/> of the circle in the equation.</p></li>
+        <li><p>A quadratic equation in two variables describes a circle if the coefficients of the quadratic terms are <fillin characters="6"/>.</p></li>
+        <li><p>We convert the equation for a circle into standard form by <fillin characters="6"/> in both variables.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+        $h = Compute("7");
+        $k = Compute("-2");
+        $r = Compute("sqrt(28)");
+    </pg-code>
+    <statement><p>Write the equation of the circle
+            <m>x^2+y^2-14x+4y+25=0</m>
+    in standard form: 
+        <md><mrow>(x-h)^2+(y-k)^2=r^2</mrow></md>
+        <m>h=</m><var name="$h" width="2"/>, <m>k=</m><var name="$k" width="2"/>, <m>r=</m><var name="$r" width="8"/>.</p>
+        <instruction>
+            Enter "sqrt(2)" for <m>\sqrt{2}</m>.
+        </instruction></statement>
+    <solution><p><m>(x-7)^2+(y+2)^2=28</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Write the equation of the circle
+            <m>x^2+y^2-14x+4y+25=0</m>
+    in standard form.</p></statement>
+    <answer><p><m>(x-7)^2+(y+2)^2=28</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Investigation</title>
+
+<investigation><title>Global Positioning</title>
+
+<p>The Global Positioning System (GPS) is used by hikers, pilots, surveyors, automobiles to determine their location (latitude, longitude, and elevation) anywhere on the surface of the earth. The system depends on a collection of satellites in orbit around the earth. Each GPS satellite transmits its own position and the current time at regular intervals.</p>
+
+<p>A person with a GPS receiver on earth can calculate his or her distance from the satellite by comparing the time of transmission with the time when it receives the signal. Of course, there are many points at the same distance from the satellite—in fact, the set of all points at a certain distance <m>r</m> from the satellite lie on a sphere centered at the satellite. That is why there are several satellites: You calculate your position by finding the intersection
+point of several such spheres centered on different satellites.</p>
+
+<p>We will consider a simplified, two-dimensional model of a GPS system in which the satellites and the receiver all lie in the <m>xy</m>-plane instead of in three-dimensional space.  </p>
+
+<p>In this model we’ll need data from two GPS satellites. The satellites are orbiting along a circle of radius 100 meters centered at the origin. You have a receiver inside that circle and would like to know the coordinates of your position within the circle.</p> 
+
+    <image width="100%" xml:id="fig-gps-grid"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.45]
+        \draw[cyan] (-12,-12) grid (20,15);
+        \draw[black,thick,->,>=stealth'] (-12,0)--(20.8,0) node[right] {$x$};
+        \draw[black,thick,->,>=stealth'] (0,-12)--(0,15.8) node[above] {$y$};
+        \foreach \x [evaluate=\x as \xi using int(10*\x)]  in  {-10,-5,5,10,15} {
+         \draw[black, thick] (\x,0.14) --++(0,-.28) node[below, yshift=-2, fill=white, inner sep=1] {$\xi$};
+         \draw[black, thick] (0.14,\x) --++(-.28,0) node[left, xshift=-2, fill=white, inner sep=1] {$\xi$};
+        }
+        \draw[red!80!black,ultra thick] (0,0) circle (10 );
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    
+<p>To make the computations simpler, we will also assume that the satellite transmissions travel at 5 meters per second.</p>
+<p><ol marker="1.">
+
+<li><p>A signal from Satellite A arrives 18 seconds after it was transmitted. How far are you from Satellite A?</p></li>
+
+<li><p>The signal says that Satellite A was located at <m>(100, 0)</m> at the time of transmission. Use a compass to sketch a graph showing your possible positions relative to Satellite A.</p> </li>
+
+<li><p>Find an equation for the graph you sketched in part (2).</p></li>
+
+<li><p>A signal from Satellite B arrives 8.4 seconds after it was transmitted. How far are you from Satellite B?</p></li>
+
+<li><p>The signal says that Satellite B was located at <m>(28, 96)</m> at the time of transmission. Use a compass to sketch a graph showing your possible positions relative to Satellite B.</p></li>
+
+<li><p>Find an equation for the graph you sketched in part (5).</p></li>
+
+<li><p>Your position must lie at the intersection point, <m>P</m>, of your two graphs. Estimate the coordinates of your position from the graph. (Remember that you are within the orbits of the satellites.)</p></li>
+
+<li><p>Later in this chapter you will learn how to find the coordinates of <m>P</m> algebraically by solving a system of equations. Verify that the ordered pairs <m>(28, 54)</m> and <m>(68.32, 84.24)</m> both satisfy the equations you wrote in part (3) and part (6). What are the coordinates of <m>P</m>?</p></li>
+</ol></p></investigation>
+    
+</subsection>
+
+<xi:include href="./section-9-2-exercises.xml" />
+
+</section>

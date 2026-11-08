@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}[xscale=.4, yscale=.2]
+\draw[cyan] (0,0) grid[ystep=2] (14,50);
+\draw[black, thick, ->, >=stealth'] (0,0)--(15,0) node[right]{$r$};
+\draw[black, thick, ->, >=stealth'] (0,0)--(0,52) node[left]{$C$};
+\foreach \x  in  {5,10} {
+\draw[cyan, very thick] (\x,0)--++(0,50);
+ \draw[black, thick] ({\x},.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\foreach \x  in  {10,20,...,50} {
+ \draw[cyan, very thick] (0,\x)--++(14,0);
+\draw[black, thick] (.3,\x) --++(-.6,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+}
+\draw[samples=65,domain=0:{sqrt(200)},smooth,variable=\x,magenta!80!black, ultra thick, ->, >=stealth'] plot ({\x},{.25*(\x)^2});
+\filldraw[blue] (3,9/4) ellipse (2mm and 4mm) node[above left, yshift=2, fill=white, inner sep=1, text=black] {(b)};
+\filldraw[blue] (8,16) ellipse (2mm and 4mm) node[above left, xshift=-2, fill=white, inner sep=1, text=black] {(c)};
+\end{tikzpicture}%
+}
+\end{document}

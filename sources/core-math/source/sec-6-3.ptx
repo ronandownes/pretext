@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-6-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+<title>Slope</title>
+
+  <sidebyside widths="55% 35%" valigns="middle middle" margins="0% 5%"><p><ul>
+    <li><p>Equations Relating Proportional Variables</p></li>
+    <li><p>Steepness of the Graph</p></li>
+    <li><p>Rate of Growth</p></li>
+    <li><p>Visualizing Growth Rate on a Graph</p></li>
+    <li><p>Slope of a Line</p></li>
+  </ul></p>
+      <image source="steepslope.png"></image></sidebyside>
+
+<subsection><title>Equations Relating Proportional Variables</title>
+
+<p>Our definition from <xref ref="propvar" text="custom">Section 6.2</xref> says that two variables are proportional if the ratio of their values is constant. If we use <m>x</m> and <m>y</m> to stand for the variables, we can write the definition in mathematical language.</p>
+
+<assemblage><title>Proportional Variables, Version 1</title>
+<p>The variables <m>y</m> and <m>x</m> are <term>proportional</term> if <m>~\dfrac{y}{x} = k~</m>,  where <m>k</m> is a constant.</p></assemblage>
+
+<p>Notice how the algebraic equation captures the English description: "the ratio of the values" is <m>~\dfrac{y}{x}~</m>, and "is constant" is denoted by <m>~ = k~</m>,  where <m>k</m> is a constant.</p>
+<p>There is nothing special about the letters <m>x</m> and <m>y</m> used for the variables. In the next Example we use <m>p</m> and <m>q</m>.</p>
+
+<example><statement><p>Here are some values of the two variables <m>p</m> and <m>q</m>. Is <m>q</m> proportional to <m>p</m>?</p>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~\vphantom{\dfrac{1}{2}} p~~</m></cell>
+            <cell>8</cell>
+            <cell>20</cell>
+            <cell>28</cell>
+            <cell>52</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}} q</m></cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>7</cell>
+            <cell>13</cell></row>
+        </tabular></statement>
+
+<solution><p>We will check to see whether the ratio <m>\dfrac{q}{p}</m> is constant.</p>
+
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~\vphantom{\dfrac{1}{2}} p~~</m></cell>
+            <cell>8</cell>
+            <cell>20</cell>
+            <cell>28</cell>
+            <cell>52</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}} q</m></cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>7</cell>
+            <cell>13</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}} \dfrac{q}{p}</m></cell>
+            <cell><m>\dfrac{2}{8} = 0.25</m></cell>
+            <cell><m>\dfrac{5}{20} = 0.25</m></cell>
+            <cell><m>\dfrac{7}{28} = 0.25</m></cell>
+            <cell><m>\dfrac{13}{52} = 0.25</m></cell></row>
+        </tabular>
+  <p>Yes, <m>\dfrac{q}{p} = 0.25</m>, so <m>q</m> is proportional to <m>p</m>.</p></solution></example>
+
+  <note><p>If two variables are proportional, we can say that <m>q</m> is proportional to <m>p</m> or that <m>p</m> is proportional to <m>q</m>. In Example 6.3.1, you can check that the ratio <m>\dfrac{p}{q}</m> is also constant, in fact <m>\dfrac{p}{q} = 4</m>. It doesn't matter which ratio we compute to check for proportionality.</p></note>
+
+  <exercise><statement><p>Is <m>z</m> proportional to <m>w</m>?</p>
+
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~\vphantom{\dfrac{1}{2}} w~~</m></cell>
+            <cell>2</cell>
+            <cell>4</cell>
+            <cell>6</cell>
+            <cell>8</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}} z</m></cell>
+            <cell>8</cell>
+            <cell>12</cell>
+            <cell>16</cell>
+            <cell>20</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}} \dfrac{z}{w}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell>
+            <cell><m>\hphantom{0000}</m></cell></row>
+        </tabular></statement>
+
+    <answer><p>No, the ratio of <m>z</m> to <m>w</m> is not constant.</p></answer></exercise>
+
+<p>In Example 6.3.1 above, we found that the value of <m>k</m> was 0.25. This number is called the <term>constant of proportionality</term>. You can check that for each value of <m>p</m>,  we have  
+      <me>q = 0.25 \times p</me>
+This observation gives us another way to describe proportional variables.</p>
+
+<assemblage><title>Proportional Variables, Version 2</title>
+<p>If <m>y</m> is proportional to <m>x</m>, then
+    <me>y = k \times x</me> 
+where <m>k</m> is a constant.</p></assemblage>
+
+<p>Because multiplication and division are opposite operations, the two equations 
+     <me>\dfrac{y}{x} = k ~~~~~~ \text{and} ~~~~~~  y = k \times x</me>   
+are two ways to say the same thing. This second version says that <m>y</m> is proportional to <m>x</m> if <m>y</m> is a constant multiple of <m>x</m>.</p>
+
+<note><p>Recall that in algebra, we often write the product of two variables, or a number and a variable, next to each other, without any symbol between them.  For example,   
+        <me>5g ~~~\text{means}~~~ 5 \times g ~~~~~~\text{and} ~~~~~~xy ~~~\text{means} ~~~ x \times y</me>
+So in particular we can write the equation for proportional variables as
+    <me>y = kx</me></p></note>
+
+<example><statement><p>The distance, <m>d</m>, that you drive on the highway is proportional to the amount, <m>g</m>, of gasoline that you use.  Myrna used 6 gallons of gas to drive 159 miles.<ol marker="a.">  
+  <li><p>Find the constant of proportionality and write an equation relating the variables.</p></li>
+  <li><p>How far can Myrna drive on a full 22-gallon tank of gas?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">  
+  <li><p>Because <m>d</m> is proportional to <m>g</m>,  we can write the equation      
+      <me>d = kg ~~~~~~ \text{or} ~~~~~~ k = \dfrac{d}{g}</me>      
+where <m>k</m> is the constant of proportionality.  We find the value of <m>k</m> by using one pair of related values for the variables.  
+    <me>\dfrac{d}{g} = \dfrac{159~ \text{miles}}{6~ \text{gallons}} = 26.5 ~\text{miles per gallon}</me>
+So <m>k = 26.5</m>,  and an equation relating the two variables is 
+      <me>d = 26.5g</me> </p></li>
+  <li><p>If we now substitute <m>\alert{22}</m> for <m>g</m>,  we can compute the related value of <m>d</m>.
+        <me>d = 26.5g = 26.5 \times \alert{22} = 583</me>
+Myrna can drive 583 miles on 22 gallons of gas.</p></li>
+</ol></p></solution></example>
+
+<p>Example 6.3.4 demonstrates that the constant of proportionality, <m>k</m>, is just the unit rate we used in Section 6.1. By simplifying the ratio <m>\dfrac{d}{g}</m> for a specific pair of values, we found the distance that Myrna can drive on one gallon of gas, the unit rate for the proportion.</p>
+
+<exercise><statement><p>The number of calories, <m>C</m>, in a bar of chocolate is proportional to its weight, <m>w</m>. A four-ounce bar of dark chocolate contains 600 calories.</p>
+  <sidebyside widths="70% 20%" valigns="middle middle"><p><ol marker="a.">  
+  <li><p>Find the constant of proportionality, and express it as a rate, using appropriate units.</p></li>
+  <li><p>Use your constant to write an equation that gives the number of calories, <m>C</m>, in a chocolate bar in terms of its weight, <m>w</m>.</p></li>  
+  <li><p>How much chocolate can you eat for 200 calories?</p></li> 
+  <li><p>How many calories are in one-half ounce of chocolate?</p></li>
+  </ol></p>
+  <image source="chocolate.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>k = 150</m> calories per ounce</p></li>
+  <li><m>C = 150w</m></li>  
+  <li><p><m>1 \frac{1}{3}</m> ounces</p></li> 
+  <li><p>75 calories</p></li>
+  </ol></p></answer></exercise> 
+</subsection>
+
+<subsection><title>Steepness of the Graph</title>
+  
+<p>Now that we have seen how to write an equation relating proportional variables, let's take a closer look at the graphs of those equations. In <xref ref="graphprop" text="custom">Section 6.2</xref> we made graphs for the proportional variables in the following story:</p>
+
+<p>Before handing in big assignments such as term papers or lab reports, Delbert and Francine make copies of them. Delbert uses QuikCopy, and keeps track of the copying fee for each assignment. Francine copies her assignments at Copy World.</p>
+
+  <sidebyside widths="40% 55%" valigns="middle middle"><stack><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="4">Delbert's Copying Fees</cell></row>
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Number of pages</cell>
+            <cell>14</cell>
+            <cell>27</cell>
+            <cell>35</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost (cents)</cell>
+            <cell>112</cell>
+            <cell>216</cell>
+            <cell>280</cell></row>
+        </tabular></p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="4">Francine's Copying Fees</cell></row>
+        <row bottom="minor" >
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Number of pages</cell>
+            <cell>12</cell>
+            <cell>26</cell>
+            <cell>32</cell></row>
+        <row bottom="minor">
+            <cell><m>\vphantom{\dfrac{1}{2}}</m>Cost (cents)</cell>
+            <cell> 72</cell>
+            <cell>156</cell>
+            <cell>192</cell></row>
+        </tabular></p></stack>
+      <image source="copyfeegraph.png"></image></sidebyside>
+
+<p>We can write an equation for each of the variables, <m>D</m>, Delbert's copying fees, and <m>F</m>, Francine's copying fees, in terms of the number of pages copied, <m>p</m>. We'll calculate the unit cost in each case.</p>
+
+<p>Delbert's unit cost for copying is
+    <me>\dfrac{112 ~\text{cents}}{14 ~\text{pages}} = 8 ~\text{cents per page}</me>
+and this is the constant of proportionality, <m>k</m>, for his equation:
+    <me>D = 8p</me></p>.
+
+<p>Francine's unit cost for copying is
+    <me>\dfrac{72 ~\text{cents}}{12 ~\text{pages}} = 6 ~\text{cents per page}</me>
+so <m>k = 6</m>, for her equation:
+    <me>F= 6p</me></p>.
+
+<p>We can think of the unit cost as the <term>rate of increase</term> in copying fees as the number of pages copied increases. Delbert's cost increases by 8 cents for each page copied. Francine's cost increases by 6 cents for each page copied. How is the rate of increase reflected in the graph?</p> 
+
+<assemblage><title>Steepness of the Graph</title>
+<p>The unit cost in each case is a ratio that measures the steepness of the graph. It tells us how much to increase the output variable per unit of increase in the input variable, that is, each time the input variable increases by 1.</p></assemblage>
+
+<p>For example, for each additional page Delbert has copied, his cost will increase by 8 cents, and the graph will climb 8 units for each unit we move to the right. And because his cost is increasing more rapidly than Francine's, the graph of Delbert's cost is steeper than the graph of Francine's cost.</p> 
+</subsection>
+
+<subsection><title>Rate of Increase</title>
+
+<p>In the copying fee example, we interpreted the constant of proportionality or unit rate as a <term>rate of increase</term>. It tells us how quickly the output variable increases with respect to the input variable, and hence how steeply the graph of the equation rises.</p>
+
+<p>The notion of rate of increase can be applied to other equations besides proportions. Recall that the graph of a proportion is a straight line that passes through the point <m>(0,0)</m>. But as long as the graph is a straight line, we can still talk about its rate of increase, even if it does not pass through the point <m>(0,0)</m>. In Example 6.3.7 we'll compare the rate of growth of two strains of tomato plants.</p> 
+
+<example><statement><p>Sara bought two kinds of tomato plants at the nursery. The Spring Giant seedlings were 2 inches tall, and the Jubilee seedlings were 16 inches tall. Sara recorded the height, <m>h</m>, of the vines every two weeks, as shown in the tables below. Then she plotted their heights on a graph. Which variety grew more quickly?</p>
+
+<sidebyside widths="35% 45%" margins="10% 10%"><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="2">Spring Giant</cell></row>
+        <row bottom="minor" header="yes">
+            <cell><m>t</m> (wks)</cell>
+            <cell><m>h</m> (in)</cell></row>
+        <row bottom="minor">
+            <cell>0</cell>
+            <cell>2</cell></row>
+        <row bottom="minor">
+            <cell>2</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell>4</cell>
+            <cell>18</cell></row>
+        <row bottom="minor">
+            <cell>6</cell>
+            <cell>26</cell></row>
+        <row bottom="minor">
+            <cell>8</cell>
+            <cell>34</cell></row>        
+        </tabular></p> 
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row header="yes">
+          <cell colspan="2">Jubilee</cell></row>
+        <row bottom="minor" header="yes">
+            <cell><m>t</m> (wks)</cell>
+            <cell><m>h</m> (in)</cell></row>
+        <row bottom="minor">
+            <cell>0</cell>
+            <cell>16</cell></row>
+        <row bottom="minor">
+            <cell>2</cell>
+            <cell>21</cell></row>
+        <row bottom="minor">
+            <cell>4</cell>
+            <cell>26</cell></row>
+        <row bottom="minor">
+            <cell>6</cell>
+            <cell>31</cell></row>
+        <row bottom="minor">
+            <cell>8</cell>
+            <cell>36</cell></row>        
+        </tabular></p></sidebyside> 
+</statement>
+
+<solution><p>From the graph below, we can see that the Spring Giant tomato vines are growing faster than the Jubilee vines, because their graph increases more steeply. The steepness of the graph is a measure of how fast the vines grow. </p>
+
+<p><sidebyside widths="55% 42%" valigns="middle middle"><stack><p>To see exactly how fast the vines grow, we compute their rate of growth. The variables <m>t</m> and <m>h</m> are not proportional, so we cannot use a constant of proportionality to measure their growth.</p>
+<p> But we can see from the table that during the first two weeks, the Spring Giant vines grew 8 inches (from 2 inches to 10 inches), so their growth rate was
+        <me>\dfrac{\text{8 inches}}{\text{2 weeks}} = \text{4 inches/week}</me></p></stack> 
+        <image source="tomatoes.png"></image></sidebyside></p>
+<p>Similarly, the Jubilee vines grew 5 inches (from 16 inches to 21 inches), so their growth rate was
+        <me>\dfrac{\text{5 inches}}{\text{2 weeks}}  = \text{2.5 inches/week}</me>
+So the Spring Giant vines grew faster than the Jubilee vines, as we saw from the graph.</p></solution></example>
+
+<p>In Checkpoint 6.3.8, we'll compute some more growth rates. Use the tables in Example 6.3.7  about the Spring Giant and Jubilee tomato vines.</p>
+
+<exercise><statement><p><sidebyside widths= "50% 40%" margins="5% 5%"><p>Compute the ratio  
+    <me>\blert{\dfrac{\text{increase in height}}{\text{time interval}}}</me>
+to find each growth rate.</p>
+    <image source="vines.png"></image></sidebyside></p>
+<p><ol marker="a.">
+    <li><p>Find the growth rate of the Spring Giant tomato vines from the fourth week to the eighth week.</p></li>
+    <li><p>Find the growth rate of the Jubilee tomato vines over the first four weeks.</p></li>
+    <li><p>Find the growth rate of the Jubilee tomato vines from the fourth week to the eighth week.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+    <li><p>4 inches/week</p></li>
+    <li><p>2.5 inches/week</p></li>
+    <li><p>2.5 inches/week</p></li>
+</ol></p></answer></exercise>
+
+<p>Notice that the growth rate for each vine is the same over different time intervals, 4 inches/week for the Spring Giant and 2.5 inches/week for the Jubilee.</p>
+
+<assemblage><title>A Quick Refresher and Some New Notation</title>
+<p><ul>
+    <li><p>To calculate the increase or decrease in a quantity, we can subtract the initial value from the final value.  For example, over the first 2 weeks, the Jubilee tomato vines grew from 16 inches tall to 21 inches tall, so
+        <md><mrow>\text{increase in height} \amp = \text{final value} - \text{initial value} </mrow>
+            <mrow>  \amp = 21 - 16 = 5 ~\text{inches}</mrow></md></p></li>
+
+    <li><p>We use the Greek letter  <term>delta, <m>\Delta</m></term>,  to stand for the change in a quantity. So, for example, <m>\Delta h</m>  stands for the change in height of the vine, and we write
+            <me> \Delta h = 5~ \text{inches}</me></p>
+    <p>In general we have 
+        <md><mrow>\blert{\Delta x} \amp = \blert{~\text{change in value of }~x}</mrow>
+            <mrow> \amp = \blert{~\text{final value of }~x - \text{initial value of }~x}</mrow></md></p></li>
+</ul></p></assemblage>
+</subsection>
+
+<subsection><title>Visualizing Growth Rate on a Graph</title>
+
+<p>We can illustrate the growth rate of each tomato vine on its graph.</p>
+
+<example><statement><p>The graph below shows the height, <m>h</m>, of the Spring Giant tomato vine <m>t</m> weeks after Sara planted it. The vertical line segment labeled <m>\Delta h</m> represents the increase in the vine's height from the second week to the sixth week. The horizontal line segment labeled <m>\Delta t</m> represents the time interval, 4 weeks.</p>
+<p><sidebyside widths="45% 38%"><p>From week 2 to week 6, the vine grew at a rate of
+    <md><mrow>\dfrac{\Delta h}{\Delta t} \amp = \dfrac{\text{increase in height}}{\text{time interval}}</mrow>
+        <mrow> \amp = \dfrac{(26-10)~\text{inches}}{(6-2)~\text{weeks}}</mrow>
+        <mrow> \amp = \dfrac{\text{16 inches}}{\text{4 weeks}}</mrow> 
+        <mrow> \amp = \text{4 inches/week}</mrow></md></p>
+    <image source="tomatoslope.png"></image></sidebyside></p>
+</statement></example>
+
+<p>What does this ratio, 4 inches/week, tell us about the graph?  Place your pencil tip at any point on the graph, then move one unit to the right along the grid lines. To get back to the graph, you must now move up by four units (two grid lines on this graph). The graph increases by climbing four units vertically for each unit we move horizontally.</p>
+
+<exercise><statement><p>The graph shows the height, <m>h</m>, of the Jubilee tomato vines <m>t</m> weeks after Sara planted them.</p>
+<sidebyside widths="55% 40%" valigns="middle middle"><p><ol marker="a.">
+    <li><p>Start at any point on the graph. If you move four units horizontally, how many units does the graph climb vertically? If you move one unit horizontally, how many units does the graph climb vertically?</p></li>
+    <li><p>On the graph, draw and label line segments to illustrate the growth rate of the Jubilee tomato vines from the fourth week to the eighth week. Then calculate the growth rate.
+        <me>\dfrac{\Delta h}{\Delta t} = \hphantom{0000000000}</me></p></li>
+</ol></p><image source="jubileeslope.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+<li><p>10 units, 2.5 units</p></li>
+<li><p><image source="ansjubilee.png" width="55%"></image></p>
+<p><m>\dfrac{\Delta h}{\Delta t} = 2.5~</m> inches/week</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Slope of a Line</title>
+
+<p>The ratio <m>\dfrac{\Delta h}{\Delta t}</m> in the Examples above is called the <term>slope</term> of the line. The slope measures how steeply the line increases (or decreases) as we move from left to right across the graph. In general, we define the slope for any line as follows.</p>
+
+<assemblage><title>Slope</title>
+<p>The <term>slope</term>, <m>m</m>, of a line is the ratio
+    <me>\blert{m= \dfrac{\Delta y}{\Delta x} = \dfrac{\text{change in the output variable}}{\text{change in the input variable}}}</me>
+as we move from any point on the line to another point on the line.</p></assemblage>
+
+<example><statement><sidebyside widths="45% 35%" valigns="middle middle"><p>The graph shows the cost, <m>C</m>, of renting a bicycle for <m>t</m> hours.<ol marker="a."> 
+    <li><p>Use the points <m>P</m> and <m>Q</m> shown to calculate the slope of the line.</p></li>
+    <li><p>What does the slope tell you about renting a bicycle?</p></li>
+</ol></p>
+    <image source="bicyclerental.png"></image></sidebyside></statement>
+
+<solution><p><ol marker="a."> 
+    <li><p>At point <m>P, ~t=1</m> and <m>C = 8</m>,  which tells us that it costs $8 to rent a bicycle for 1 hour. Point <m>Q</m> tells us that it costs $17 to rent a bicycle for 4 hours. The slope of the line is given by
+        <md><mrow>\dfrac{\Delta C}{\Delta t} \amp = \dfrac{17-8}{4-1}</mrow>
+        <mrow> \amp = \dfrac{9~\text{dollars}}{3~\text{hours}} = \text{3 dollars/hour}</mrow></md></p></li>
+    <li><p>The slope tells us the rate at which the cost of renting a bicycle increases. It costs $3 per hour to rent a bike.</p></li>
+</ol></p></solution></example>
+
+<note><p>In Example 6.3.10, note that <m>C</m> is not proportional to <m>t</m>; the graph does not pass through the point <m>(0,0)</m>. In fact, at <m>t = 0</m>, we have <m> ~C = 5</m>. (Perhaps there is a $5 deposit on the bike.) Nonetheless, we can compute the slope of the line by calculating the <em>change</em> in its variables as we move from one point to another.</p></note>
+
+<assemblage><title>Caution</title>
+<p>Be careful when computing a slope: it is important that the numerator (top) of the slope ratio gives the <em>vertical</em> change as we move along the graph. This is because the slope is a unit rate;  it tells us how many units the graph climbs per unit of horizontal increase. So it would be <m>\alert{\text{incorrect}}</m> to compute <m>\dfrac{\Delta t}{\Delta C}</m> for the slope in the last Example.</p></assemblage>
+
+<exercise><statement><sidebyside widths="50% 40%" valigns="middle middle"><p>The graph shows the altitude <m>a</m> (in feet) of a skier <m>t</m> minutes after she boards a ski lift.<ol marker="a.">
+    <li><p>Use the points shown to compute the slope of the graph. Include units in your answer.</p>
+        <p><m> ~~~~~~ \dfrac{\Delta a}{\Delta t} = </m></p></li>
+    <li><p>What does the slope tell you about the ski lift?</p></li>
+</ol></p>
+    <image source="skilift.png"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+    <li><p>150 feet/minute</p></li>
+    <li><p>The rate at which the ski lift rises.</p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Decreasing Graphs</title>
+
+<p>When a variable decreases in value, we say that its change is negative. So, if the output-values of points on a line decrease as we move from left to right, we say that the slope of the line is negative.</p>
+
+<example><statement><p>At noon the temperature was 18<m>\degree</m>F, and it has been getting colder by 2<m>\degree</m> every hour.<ol marker="a.">
+    <li><p>Graph the temperature from noon to midnight.</p></li>
+    <li><p>Find the slope of the graph. </p></li>
+    <li><p>What does the slope tell us about the temperature?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p><sidebyside widths="50% 43%" valigns="middle middle"><stack><p>We start by making a table that shows the temperature, <m>T</m>, at <m>h</m> hours after noon. For every hour that passes, we subtract 2 degrees.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~ h~~</m></cell>
+            <cell>0</cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>9</cell>
+            <cell>12</cell></row>
+        <row bottom="minor">
+            <cell><m> T</m></cell>
+            <cell>18</cell>
+            <cell>14</cell>
+            <cell>8</cell>
+            <cell>0</cell>
+            <cell>-6</cell></row>
+        </tabular></p>
+    <p>Then we plot the points from the table on a grid, as shown at right. Finally, we connect the points with a straight line.</p></stack><image source="Example-6-3-6.svg"></image></sidebyside></p></li>
+    <li><p>To compute the slope of the line, we choose two points on the graph, say <m>(4,12)</m> and <m>(9,2)</m>. Now the the output variable, <m>T</m>, decreases by 10 degrees (from 12 degrees to 2 degrees), so we say that <m>\Delta T = -10</m>. The input variable, <m>h</m>, increases from 4 to 9, so <m>\Delta h = 5</m>. Next we calculate the slope ratio.
+        <me> \dfrac{\Delta T}{\Delta h} = \dfrac{-10 ~\text{degrees}}{5 ~\text{hours}} = -2 ~\text{degrees/hour}</me></p></li>
+    <li><p>The slope is <m>-2</m>.  It represents the rate at which the temperature is decreasing, 2 degrees per hour.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Softek bought a new photocopying machine for 18 thousand dollars ($18,000). Every year, the copier decreases in value by 3 thousand dollars ($3000).</p>
+    <sidebyside widths="50% 43%" valigns="middle middle"><stack><p><ol marker="a.">
+    <li><p>Complete the table and graph the value, <m>V</m>, of the copier after <m>t</m> years. Note that the values of <m>V</m> are given in thousands of dollars.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell><m>~~ t~~</m></cell>
+            <cell>0</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>5</cell>
+            <cell>6</cell></row>
+        <row bottom="minor">
+            <cell><m>~~ V~~</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell>
+            <cell><m>\hphantom{00}</m></cell></row>
+        </tabular></li>
+    <li><p>Compute the slope of the graph, including units.</p></li>
+    <li><p>What does the slope tell us about the copier?</p></li>
+</ol></p></stack><image source="Exercise-6-3-6-grid.svg"></image></sidebyside></statement>
+
+<answer><p><ol marker="a.">
+    <li><image source="Exercise-6-3-6ans.svg" width="40%"></image></li>
+    <li><p><m>-3000~</m> dollars/year</p></li>
+    <li><p>The rate at which the copier depreciates.</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>constant of proportionality</p></li>
+  <li><p>rate of increase</p></li>
+  <li><p>delta</p></li>
+  <li><p>slope</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-6-3.ptx" />
+
+
+</section>

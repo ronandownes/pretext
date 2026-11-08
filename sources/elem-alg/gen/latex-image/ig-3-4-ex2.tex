@@ -1,0 +1,55 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.5]
+\draw[cyan] (-5,-6) grid (5,4);
+\foreach \x  in  {-5,5} {
+ \draw[cyan, very thick] (\x,-6) --++(0,10);
+ \draw[black] (\x,0.1) --++(0,-0.2) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+}
+\foreach \x  in {-6,-3,3} {
+ \draw[cyan, very thick] (-5,\x) --++(10,0);
+ \draw[black] (.1,\x) --++(-.2,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\x$};
+}
+\draw[black, thick, ->, >=stealth'] (-5,0)--++(11,0) node[right]{$x$};
+\draw[black, thick, ->, >=stealth'] (0,-6)--++(0,11) node[left, xshift=2]{$y$};
+\draw[red,  thick, ->,>=stealth] (-5,-23/4)--++(10,15/2);
+\foreach \x in {-2,-1,0} 
+ \draw[violet,thick,->,>=stealth'] (0,\x)--++(0,1);
+\foreach \x in {0,1,2,3} 
+ \draw[violet,thick,->,>=stealth'] (\x,1)--++(1,0);
+\draw[red, ultra thick, ->,>=stealth] (-5,-23/4)--++(10,15/2);
+\foreach \x in {-2,-3,-4} 
+ \draw[magenta,thick,->,>=stealth'] (0,\x)--++(0,-1);
+\foreach \x in {0,1,2,3} 
+ \draw[magenta,thick,->,>=stealth'] (-\x,-5)--++(-1,0);
+\filldraw[red] (0,-2) circle (1.5mm);
+\filldraw[red] (4,1) circle (1.5mm);
+\filldraw[red] (-4,-5) circle (1.5mm);
+\end{tikzpicture}%
+}
+\end{document}

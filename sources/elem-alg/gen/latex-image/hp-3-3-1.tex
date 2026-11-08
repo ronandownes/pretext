@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.4]
+\coordinate (O) at (0,0);
+\coordinate (A) at ($ (O)+(4,6) $);
+\draw[lightgray,very thick] (O)--++(4,0) node[below,midway, text=black] {4};
+\draw[lightgray,very thick] (A)--++(0,-6) node[right,midway, text=black] {6};
+\filldraw[red] (O) circle (1.5mm);
+\filldraw[red] (A) circle (1.5mm);
+\draw[red,ultra thick] (O)--(A);
+\node[below] at ($ (O)+(-1,3) $) {a.};
+
+\coordinate (O) at (14,0);
+\coordinate (A) at ($ (O)+(-4,8) $);
+\draw[lightgray,very thick] (O)--++(-4,0) node[below,midway, text=black] {4};
+\draw[lightgray,very thick] (A)--++(0,-8) node[left,midway, text=black] {8};
+\filldraw[red] (O) circle (1.5mm);
+\filldraw[red] (A) circle (1.5mm);
+\draw[red,ultra thick] (O)--(A);
+\node[below] at ($ (O)+(-5.5,3) $) {b.};
+\end{tikzpicture}%
+}
+\end{document}

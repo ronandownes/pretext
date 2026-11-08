@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chap6"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Powers and Roots</title>
+    
+<introduction>       
+    <sidebyside width="60%" margins="0% 40%"><image source="images/fig-mouse-to-elephant.png"><description>mouse to elephant: Bob Elsdale/Getty Images</description></image></sidebyside>
+        
+<p>We next turn our attention to a large and useful family of functions, called power functions. Here is an example of a <term>power function</term><idx>power function</idx><idx><h>function</h><h>power</h></idx><idx><h>function</h><h>power</h><seealso>power function</seealso></idx> with fractional exponents. <idx><h>exponent</h><h>fractional</h></idx></p>
+        
+<p> In 1932, Max Kleiber published a remarkable equation for the metabolic rate of an animal as a function of its mass. The table at right shows the mass of various animals in kilograms and their metabolic rates, in kilocalories per day. A plot of the data, resulting in the famous “mouse-to-elephant” curve, is shown in the figure.</p>
+                
+<sidebyside widths="45% 45%" margins="0% 5%" valigns="middle middle">
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+    <col halign="left" />
+        <col />
+        <col />
+    <row bottom="minor">
+        <cell>Animal</cell>
+        <cell>Mass (kg)</cell>
+        <cell><line>Metabolic rate</line><line>(kcal/day)</line></cell></row>
+    <row>
+        <cell>Mouse</cell>
+        <cell><m>0.02</m></cell>
+        <cell><m>3.4</m></cell></row>
+    <row>
+        <cell>Rat</cell>
+        <cell><m>0.2</m></cell>
+        <cell><m>28</m></cell></row>
+    <row>
+        <cell>Guinea pig</cell>
+        <cell><m>0.8</m></cell>
+        <cell><m>48</m></cell></row>
+    <row>
+        <cell>Cat</cell>
+        <cell><m>3.0</m></cell>
+        <cell><m>150</m></cell></row>
+    <row>
+        <cell>Rabbit</cell>
+        <cell><m>3.5</m></cell>
+        <cell><m>165</m></cell></row>
+    <row>
+        <cell>Dog</cell>
+        <cell><m>15.5</m></cell>
+        <cell><m>520</m></cell></row>
+    <row>
+        <cell>Chimpanzee</cell>
+        <cell><m>38</m></cell>
+        <cell><m>1110</m></cell></row>
+    <row>
+        <cell>Sheep</cell>
+        <cell><m>50</m></cell>
+        <cell><m>1300</m></cell></row>
+    <row>
+        <cell>Human</cell>
+        <cell><m>65</m></cell>
+        <cell><m>1660</m></cell></row>
+    <row>
+        <cell>Pig</cell>
+        <cell><m>250</m></cell>
+        <cell><m>4350</m></cell></row>
+    <row>
+        <cell>Cow</cell>
+        <cell><m>400</m></cell>
+        <cell><m>6080</m></cell></row>
+    <row>
+        <cell>Polar bear</cell>
+        <cell><m>600</m></cell>
+        <cell><m>8340</m></cell></row>
+    <row>
+        <cell>Elephant</cell>
+        <cell><m>3670</m></cell>
+        <cell><m>48,800</m></cell></row>
+</tabular>
+    <image source="images/fig-mouse-to-elephant-curve"><description>Kleiber mouse-to-elephant-curve</description></image>
+</sidebyside>
+        
+<p>Kleiber modeled his data by the power function
+    <me>P(m) = 73.3m^{0.74}</me>
+where <m>P</m> is the metabolic rate and <m>m</m> is the mass of the animal.  Kleiber's rule <idx>Kleiber's Rule</idx> initiated the use of <term>allometric equations</term><idx><h>allometric equations</h></idx><idx><h>equation</h><h>allometric</h></idx>, or power functions of mass, in physiology.</p>
+
+       
+</introduction>
+
+     <xi:include href="./section-6-1.xml" />  <!--Integer Exponents -->
+     <xi:include href="./section-6-2.xml" />  <!--Roots and Radicals -->
+     <xi:include href="./section-6-3.xml" />  <!--Rational Exponents -->
+     <xi:include href="./section-6-4.xml" /> <!--Working with Radicals-->
+     <xi:include href="./section-6-5.xml" /> <!--Radical Equations-->
+    <xi:include href="./chap6-summary.xml" /> <!--Summary and Review-->
+        
+
+</chapter> 
+<!-- </book>  </mathbook> -->

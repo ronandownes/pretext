@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkMathematicalModels"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Functions as Models</title>
+
+<subsubsection xml:id="tkBasicProp"><title>Properties of the basic functions</title>
+
+<p>The eight basic functions are often used as models.</p>
+
+<p>For these Examples, refer to the eight basic functions:
+    <md><mrow>f(x) \amp = x \amp   f(x) \amp = \abs{x}  \amp  f(x) \amp = x^2  \amp  f(x) \amp = x^3</mrow>
+        <mrow>f(x) \amp = \sqrt{x}  \amp  f(x) \amp = \sqrt[3]{x}  \amp  f(x) \amp = \dfrac{1}{x} \amp   f(x) \amp = \dfrac{1}{x^2}</mrow></md></p>
+
+<example><statement><p>Which of the eight basic functions are always increasing?</p></statement>
+
+<solution><p><m>f(x)=x,~~~f(x)=x^3,~~~f(x)=\sqrt{x},~~~f(x)=\sqrt[3]{x}</m></p></solution></example>
+
+<example><statement><p>Which of the eight basic functions are concave up for positive <m>x</m>?</p></statement>
+
+<solution><p><m>f(x)=x^2,~~~f(x)=x^3,~~~f(x)=\dfrac{1}{x},~~~f(x)=\dfrac{1}{x^2}</m></p></solution></example>
+
+<exercise><statement><p>Which of the eight basic functions are undefined at <m>x=0</m>?</p></statement>
+<answer><p><m>f(x)=\dfrac{1}{x},~~~f(x)=\dfrac{1}{x^2}</m></p></answer></exercise>
+
+<exercise><statement><p>Which of the eight basic functions are always non-negative?</p></statement>
+<answer><p><m>f(x)=\abs{x},~~~f(x)=x^2,~~~f(x)=\sqrt{x},~~~f(x)=\dfrac{1}{x^2}</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSimpAbsVal"><title>Simplify absolute value functions</title>
+
+<p>The piecewise definition of the absolute value function is
+    <me>f(x) =
+        \begin{cases}
+        x \amp  \text{if} ~~x\ge 0\\
+        -x \amp  \text{if} ~~x\lt 0
+        \end{cases}</me>
+To write the absolute value of some other algebraic expression, we replace <m>x</m> by the expression wherever <m>x</m> appears.</p>
+
+<example><statement><p>Simplify the function <m>~f(x)=|2x-8|~</m> as a piecewise defined function.</p></statement>
+
+<solution><p>We use the definition of absolute value and replace <m>x</m> by <m>2x-8</m>.
+    <me>f(x) =
+        \begin{cases}
+        2x-8 \amp  \text{if} ~~2x-8\ge 0\\
+        -(2x-8)  \amp  \text{if} ~~2x-8\lt 0
+        \end{cases}</me>
+    Then we simplify each expression.
+    <me>f(x) =
+        \begin{cases}
+        2x-8 \amp  \text{if} ~~x\ge 4\\
+        8-2x  \amp  \text{if} ~~x\lt 4
+        \end{cases}</me>
+</p></solution></example>
+
+<exercise><statement><p>Simplify the function <m>~f(x)=|6-3x|~</m> as a piecewise defined function.</p></statement>
+    <answer><p><me>f(x) =
+        \begin{cases}
+        6-3x \amp  \text{if} ~~x\le 2\\
+        3x-6  \amp  \text{if} ~~x\gt 2
+        \end{cases}</me>
+    </p></answer></exercise>
+
+<exercise><statement><p>Simplify the function <m>~f(x)=|1+4x|~</m> as a piecewise defined function.</p></statement>
+    <answer><p><me>f(x) =
+        \begin{cases}
+        1+4x \amp  \text{if} ~~x\ge \dfrac{-1}{4}\\
+        -1-4x  \amp  \text{if} ~~x\lt \dfrac{-1}{4}
+        \end{cases}</me>
+    </p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkIntNot"><title>Use interval notation</title>
+
+<p>Recall that square brackets on an interval mean that the endpoints are included, and round brackets mean that the endpoints are not included.</p>
+
+<example><statement><p>Write each set with interval notation, and graph the set on a number line.
+<ol marker="a." cols="2">
+    <li><m>3 \le x \lt 6</m></li>
+    <li><m>x \ge -9</m></li>
+    <li><m>x \le 1~\text{or}~x\gt 4</m></li>
+    <li><m>-8 \lt x \le 5~\text{or}~-1\le x \lt 3</m></li>
+</ol></p></statement>
+ 
+<solution><p><ol marker="a.">
+    <li><p><m>[3,6).</m> This is called a half-open or half-closed interval. <m>3</m> is included in the interval, but <m>6</m> is not included.</p>
+    <image width="70%" source="images/fig-2-5-1.png"><description>interval</description></image></li>
+    <li><p><m>[-9, \infty).</m> We use round brackets next to the symbol <m>\infty</m> because <m>\infty</m> is not a specific number and is not included in the set.</p>
+    <image width="90%" source="images/fig-2-5-2.png"><description>interval</description></image></li>
+    <li><p><m>(-\infty,1] \cup (4, \infty).</m> The word “or” describes the union of two sets. The symbol <m>~\cup~</m> is used for union.</p>
+    <image width="70%" source="images/fig-2-5-3.png"><description>interval</description></image></li>
+    <li><p><m>(-8,-5] \cup [-1,3).</m></p>
+    <image width="70%" source="images/fig-2-5-4.png"><description>interval</description></image></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write each set with interval notation, and graph the set on a number line.
+<ol marker="a." cols="2">
+    <li><m>-5 \lt x \le 3</m></li>
+    <li><m>-6 \lt x \lt \infty</m></li>
+    <li><m>x \lt -3 ~\text{or}~ x\ge -1</m></li>
+    <li><m>-6 \le x \lt-4 ~\text{or}~ -2 \lt x \le 0</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><p><m>(-5,-3]</m></p>
+            <image width="70%" source="images/fig-2-5-5.png"><description>interval</description></image></li>
+        <li><p><m>(-6, \infty)</m></p>
+            <image width="70%" source="images/fig-2-5-6.png"><description>interval</description></image></li>
+        <li><p><m>(-\infty,-3) \cup [-1,\infty)</m></p>
+            <image width="70%" source="images/fig-2-5-7.png"><description>interval</description></image></li>
+        <li><p><m>[-6,-4) \cup (-2,0]</m></p>
+            <image width="70%" source="images/fig-2-5-8.png"><description>interval</description></image></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+
+
+
+
+
+
+
+
+<!--<subsubsection xml:id="tkUseForm"><title>Use familiar formulas</title>
+
+<p>Here are some useful formulas often used in models.</p>
+
+<example><statement><p>Write a formula for the volume of a rectangular box, and identify the variables.</p></statement>
+ 
+<solution><p><m>V=lwh~~</m></p>
+<p> <m>V</m> stands for volume, and <m>l,~w,</m> and <m>h</m> stand for, respectively, the length, width, and height of the box.</p></solution></example>
+
+<example><statement><p>Write a formula for the average of a number of scores, and identify the variables.</p></statement>
+ 
+<solution><p><m>A=\dfrac{S}{n}~~</m></p>
+<p> <m>A</m> stands for the average, <m>S</m> stands for the sum of the scores, and <m>n</m> stands for the number of scores.</p></solution></example>
+
+<exercise><statement><p>Choose the correct formula from the list below, and identify the variables.<ul cols="2">
+    <li><m>I=Prt</m></li>
+    <li><m>P=R-C</m></li>
+    <li><m>d=rt</m></li>
+    <li><m>P=rW</m></li>
+</ul></p>
+    <p><ol marker="a.">
+        <li>The distance traveled at a constant speed.</li>
+        <li>The simple interest on an investment.</li>
+        <li>The part specified by a percentage.</li>
+        <li>The profit on sales of an item.</li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>d=rt</m></p>
+        <p><m>~~d</m> stands for the distance traveled at speed <m>r</m> for time <m>t</m>.</p></li>
+    <li><p><m>I=Prt</m></p>
+        <p><m>~~I</m> stands for the interest earned on an investment <m>P</m> at interest rate <m>r</m> after a time period <m>t</m>.</p></li>
+    <li><p><m>P=rW</m></p>
+        <p><m>~~P</m> stands for the quantity <m>r</m> percent of a whole amount <m>W</m>.</p></li>
+    <li><p><m>P=R-C</m></p>
+        <p><m>~~P</m> stands for the profit left after the costs <m>C</m> are subtracted from the revenue <m>R</m>.</p></li>
+</ol></p></answer></exercise>
+
+<exercise><statement><p>Choose the correct geometric formula from the list below, and identify the variables.<ul cols="2">
+    <li><m>A=lw</m></li>
+    <li><m>P=2l+2w</m></li>
+    <li><m>A=\pi r^2</m></li>
+    <li><m>C=\pi d</m></li>
+    <li><m>V=\pi r^2h</m></li>
+    <li><m>V=\dfrac{4}{3}\pi r^3</m></li>
+</ul></p>
+    <p><ol marker="a.">
+        <li>The volume of a cylinder.</li>
+        <li>The area of a circle.</li>
+        <li>The area of a rectangle.</li>
+        <li>The perimeter of a rectangle.</li>
+        <li>The volume of a sphere.</li>
+        <li>The circumference of a circle.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>V=\pi r^2h</m></p>
+        <p><m>~~V</m> stands for the volume, <m>r</m> for the radius, and <m>h</m> for the height of the cylinder.</p></li>
+    <li><p><m>A=\pi r^2</m></p> 
+        <p><m>~~A</m> stands for the area and <m>r</m> for the radius of the circle.</p></li>
+    <li><p><m>A=lw</m></p> 
+        <p><m>~~A</m> stands for the area of the rectangle, <m>l</m> and <m>w</m> stand for its length and width.</p></li>
+    <li><p><m>P=2l+2w</m></p> 
+        <p><m>~~P</m> stands for the perimeter of the rectangle, <m>l</m> and <m>w</m> stand for its length and width.</p></li>
+    <li><p><m>V=\dfrac{4}{3}\pi r^3</m></p> 
+        <p><m>~~V</m> stands for the volume and <m>r</m> for the radius of the sphere.</p></li>
+    <li><p><m>C=\pi d</m></p> 
+        <p><m>~~C</m> stands for the circumference and <m>d</m> for the diameter of the circle.</p></li>
+</ol></p></answer></exercise>
+</subsubsection>-->
+
+</subsection>

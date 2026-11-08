@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="IntegerExponents" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Integer Exponents</title><idx><h>exponent</h><h>integer</h></idx><idx>power function</idx>
+
+<introduction><p>You know that that a positive integer exponent tells us how many times its base occurs as a factor in an expression. For example,
+    <me>4a^3b^2~~ \text{ means } ~~4aaabb</me></p>
+
+<p>What is the meaning of a negative exponent?</p></introduction>
+
+<subsection><title>Negative Exponents</title>
+
+<sidebyside widths="50% 30%" valigns="middle middle"><p>Study the list of powers of 2 shown in Table (a) and observe the pattern as we move up the list from bottom to top. Each time the exponent increases by 1 we multiply by another factor of 2. We can continue up the list as far as we like.</p>
+<stack><image source="images/fig-table-positive-exponents"/>
+    <p><m>\hphantom{000000000000}</m>a.</p></stack></sidebyside>
+
+<sidebyside widths="50% 30%" valigns="middle middle"><stack><p>If we move back down the list, we divide by 2 at each step, until we get to the bottom of the list, <m>2^{1} = 2</m>.</p><p> What if we continue the list in the same way, dividing by 2 each time we decrease the exponent? The results are shown in Table (b).</p>
+<p>As we continue to divide by 2, we generate fractions whose denominators are powers of 2. In particular,
+</p></stack>
+    <stack><image source="images/fig-table-integer-exponents"><description>table of integer exponents</description></image>
+    <p><m>\hphantom{000000000000}</m>b.</p></stack>
+</sidebyside>
+
+<p><me>2^{-1} = \frac{1}{2}= \frac{1}{2^1}~~~ ~ \text{ and } ~~~~ 2^{-2} = \frac{1}{4}= \frac{1}{2^2}</me>
+    Based on these observations, we make the following definitions.</p>
+
+<assemblage><title>Definition of Negative and Zero Exponents</title><idx><h>exponent</h><h>negative</h></idx><idx><h>exponent</h><h>zero</h></idx><idx>negative and zero exponents</idx><idx>negative exponents</idx>
+<p>
+    <md><mrow>\blert{a^{-n}} \amp \blert{= \frac{1}{a^n}} \amp\amp \blert{(a \ne 0)} </mrow>
+        <mrow>\blert{a^0} \amp \blert{= 1}  \amp\amp \blert{(a \ne 0)}</mrow></md>
+</p></assemblage>
+
+<p>These definitions tell us that if the base <m>a</m> is not zero, then any number raised to the zero power is <m>1</m>, and that a negative exponent denotes a reciprocal.</p>
+
+<example xml:id="example-integer-exponents"><p><ol marker="a." cols="2">
+    <li><p><m>2^{-3} = \dfrac{1}{2^3}= \dfrac{1}{8}</m></p></li>
+    <li><p><m>9x^{-2} = 9 \cdot \dfrac{1}{x^2}= \dfrac{9}{x^2}</m></p></li>
+</ol></p></example>
+
+<warning><p><ol>
+    <li><p>A negative exponent does <em>not</em> mean that the power is negative! For example,
+    <me>2^{-3}\ne -2^3</me></p></li>
+    <li><p>In <xref ref="example-integer-exponents" text="type-global" />b, note that 
+    <me>9x^{-2} \ne  \frac{1}{9x^2}</me>
+    The exponent, <m>-2</m>, applies only to the base <m>x</m>, not to <m>9</m>.</p></li>   
+</ol><idx><h>exponent</h><h>negative</h></idx></p></warning>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>Negative exponents are used to denote reciprocals. <var name="$True" form="popup"/></p></li>
+        <li><p>We can write <m>\dfrac{1}{4x^3}</m> as <m>4x^{-3}</m>. <var name="$False" form="popup"/></p></li>
+        <li><p>Any number raised to the zero power is zero. <var name="$False" form="popup"/></p></li>
+         <li><p><m>(-4)^{-3}=4^3</m>  <var name="$False" form="popup"/></p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+        <li>True</li>
+        <li>False</li>
+        <li>False</li>
+        <li>False</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>True or false.</p>
+<p><ol marker="a.">
+        <li><p>Negative exponents are used to denote reciprocals.</p></li>
+        <li><p>We can write <m>\dfrac{1}{4x^3}</m> as <m>4x^{-3}</m>.</p></li>
+        <li><p>Any number raised to the zero power is zero.</p></li>
+         <li><p><m>(-4)^{-3}=4^3</m></p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            Context("Fraction");
+            LimitedPowers::OnlyPositiveIntegers();
+            $a = Compute("1/5**4");
+            Context("RationalFunction");
+            $f = Formula("5/x**4");
+        </pg-code>
+    <statement><p>Write each expression without using negative exponents.<ol marker="a." cols="2">
+                <li><p><m>5^{-4}=</m><var name="$a" width="10"/> </p></li>
+                <li><p><m>5x^{-4}=</m><var name="$f" width="10"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+            <li><p><m>\dfrac{1}{5^4}</m> </p></li>
+            <li><p><m>\dfrac{5}{x^4} </m></p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Write each expression without using negative exponents.</p>
+<p><ol marker="a." cols="2">
+                <li><p><m>5^{-4}=</m></p></li>
+                <li><p><m>5x^{-4}=</m></p></li>
+            </ol></p></statement>
+    <solution><p><ol marker="a." cols="2">
+            <li><p><m>\dfrac{1}{5^4}</m> </p></li>
+            <li><p><m>\dfrac{5}{x^4} </m></p></li>
+        </ol></p></solution></exercise>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more practice using negative exponents, see <xref ref="tkNegExp" text="custom"> Section 6.1.1 </xref> of the Toolkit.</p></aside>
+
+<p>In the next Example, we see how to evaluate expressions that contain negative exponents and how to solve equations involving negative exponents.</p>
+
+<example xml:id="example-BMI-index"><statement><p>The body mass index, or BMI, is one measure of a person’s physical fitness. Your body mass index is defined by
+    <me>\text{BMI} = wh^{-2}</me>
+where <m>w</m> is your weight in kilograms and <m>h</m> is your height in meters. The World Health Organization classifies a person as obese if his or her BMI is 25 or higher.<ol marker="a.">
+    <li><p>Calculate the BMI for a woman who is 1.625 meters (64 inches) tall and weighs 54 kilograms (120 pounds).</p></li>
+    <li><p>For a fixed weight, how does BMI vary with height?</p></li>
+    <li><p>The world’s heaviest athlete is the amateur sumo wrestler Emanuel Yarbrough, who weighs 319 kg (704 pounds). What height would Yarbrough have to be to have a BMI under 25?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We evaluate the formula to find
+        <me>\text{BMI} = 54(1.625^{-2})= 54\left(\dfrac{1}{1.625^2}\right)= 20.45</me></p></li>
+    <li><p><m>\text{BMI} = wh^{-2} = \dfrac{w}{h^2}</m>, so BMI varies inversely with the square of height. That is, for a fixed weight, BMI decreases as height increases.</p></li>
+    <li><p>To find the height that gives a BMI of <m>25</m>, we solve the equation <m>25 = 319h^{-2}</m>. Note that the variable <m>h</m> appears in the denominator of a fraction, so we begin by clearing the denominator—in this case we multiply both sides of the equation by <m>h^2</m>.
+        <md><mrow>25 \amp = \frac{319}{h^2} \amp\amp \blert{\text{Multiply both sides by }h^2.}</mrow>
+            <mrow>25h^2 \amp = 319 \amp\amp \blert{\text{Divide both sides by }25.}</mrow>
+            <mrow>h^2 \amp = 12.76 \amp\amp \blert{\text{Extract square roots.}}</mrow> 
+            <mrow>h \amp\approx 3.57</mrow></md>
+    To have a BMI under 25, Yarbrough would have to be over 3.75 meters, or 11 feet 8 inches tall. (In fact, he is 6 feet 8 inches tall.)</p></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork><pg-code>
+            parser::Root->Enable;
+            Context()->operators->undefine("^","**");
+            Context()->functions->disable("All");
+            Context()->functions->enable("sqrt");
+            $a = Compute("root(3,2/15)");
+        </pg-code>
+    <statement><p>Solve the equation <m>0.2x^{-3} = 1.5</m></p>
+            <p><m>x=</m><var name="$a" width="12"/> </p>
+            <instruction>Enter "root(n,x)" for  <m>\sqrt[n]{x} </m>.</instruction>
+    </statement>
+        <hint><p><m>\blert{\text{Rewrite without a negative exponent.}}</m></p>
+            <p><m>\blert{\text{Clear the fraction.}}</m></p>
+            <p><m>\blert{\text{Isolate the variable.}}</m></p></hint>
+    <solution><p><m>x=\sqrt[3]{\dfrac{2}{15}}\approx 0.51 </m></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Solve the equation <m>0.2x^{-3} = 1.5</m></p>
+        <p>Hint: <m>\blert{\text{Rewrite without a negative exponent.}}</m></p>
+            <p><m>\blert{\text{Clear the fraction.}}</m></p>
+            <p><m>\blert{\text{Isolate the variable.}}</m></p></statement>
+    <solution><p><m>x=\sqrt[3]{\dfrac{2}{15}}\approx 0.51 </m></p>
+    </solution></exercise>
+</subsection>
+
+<subsection><title>Power Functions</title>
+
+<p>The functions that describe direct and inverse variation are part of a larger family of functions called <term>power functions</term>.</p> 
+
+<definition><title>Power Function</title><idx>power function</idx>
+    <statement><p>A function of the form
+        <me>\blert{f(x) = kx^p}</me>
+    where <m>k</m> and <m>p</m> are nonzero constants, is called a <term>power function</term><idx>power function</idx>.
+    </p></statement></definition>
+
+<p>Examples of power functions are
+    <me>V(r ) = \frac{4}{3}\pi r^3 ~~\text{ and }~~L(T ) = 0.8125T^2</me>
+In addition, the basic functions
+    <me>f (x) = \frac{1}{x} ~~\text{ and }~~ g(x) = \frac{1}{x^2}</me>
+which we studied in <xref ref="chap5" text="type-global"/> can be written as
+    <me>f (x) = x^{-1} ~~\text{ and }~~ g(x) = x^{-2} </me>
+Their graphs are shown below. Note that power functions with negative exponents are undefined at zero.</p>
+    <image width="50%" source="images/fig-basic-reciprocal-functions"  ><description>graphs of the two basic reciprocal functions</description></image>
+
+<example xml:id="example-identify-power-functions"><statement><p>Which of the following are power functions?</p>
+<p><ol marker="a." >
+    <li><p><m>f(x) = \dfrac{1}{3}x^4 + 2</m></p></li>
+    <li><p><m>g(x) = \dfrac{1}{3x^4}</m></p></li>
+    <li><p><m>h(x) = \dfrac{x + 6}{x^3}</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>This is not a power function, because of the addition of the constant term.</p></li>
+    <li><p>We can write <m>g(x) = \frac{1}{3}x^{-4}</m>, so <m>g</m> is a power function.</p></li>
+    <li><p>This is not a power function, but it can be treated as the sum of two power functions, because <m>h(x) = x^{-2} + 6x^{-3}</m>.</p></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork>
+    <pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p> The exponent in a power function must be positive. <var name="$False" form="popup"/></p></li>
+        <li><p>Direct and inverse variation are examples of power functions. <var name="$True" form="popup"/></p></li>
+        <li><p>If <m>f</m> is a power function, then <m>f(0)=0</m>. <var name="$False" form="popup"/></p></li>
+        <li><p>The sum of two power functions is not always a power function. <var name="$True" form="popup"/></p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+        <li>False</li>
+        <li>True</li>
+        <li>False</li>
+        <li>True</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>True or false.<ol marker="a.">
+        <li><p> The exponent in a power function must be positive.</p></li>
+        <li><p>Direct and inverse variation are examples of power functions.</p></li>
+        <li><p>If <m>f</m> is a power function, then <m>f(0)=0</m>. </p></li>
+        <li><p>The sum of two power functions is not always a power function.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            Context(Fraction);
+            $a = Compute("1/4");
+            $b = Compute("2/5");
+            $g = Formula("$a*x^(-1)");
+            $h = Formula("$b*x^(-6)");
+            Context()->operators->undefine("/");
+            $f = Formula("12*x^(-2)");
+            
+#           Context()->operators->redefine("/");
+  
+        </pg-code>
+    <statement><p>Write each function as a power function in the form <m>y = kx ^p</m>.</p> 
+            <p>For this exercise, enter rational numbers in decimal form. For example, enter "0.5" rather than "1/2".</p>
+            <p><ol marker="a.">
+                <li><p><m>f(x) = \dfrac{12}{x^2}=</m><var name="$f" width="10"/> </p></li>
+                <li><p><m>g(x) = \dfrac{1}{4x}=</m><var name="$g" width="10"/></p></li>
+                <li><p><m>h(x) = \dfrac{2}{5x^6}=</m><var name="$h" width="10"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+                <li><p><m>f(x) = 12x^{-2}</m></p></li>
+                <li><p><m>g(x)=\dfrac{1}{4}x^{-1}=0.25 x^{-1}</m></p></li>
+                <li><p><m>h(x)=\dfrac{2}{5}x^{-6}=0.4 x^{-6}</m></p></li>
+        </ol></p></solution>
+</webwork></exercise> 
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Write each function as a power function in the form <m>y = kx ^p</m>.</p> 
+            <p><ol marker="a.">
+                <li><p><m>f(x) = \dfrac{12}{x^2}</m></p></li>
+                <li><p><m>g(x) = \dfrac{1}{4x}</m></p></li>
+                <li><p><m>h(x) = \dfrac{2}{5x^6}</m></p></li>
+            </ol></p></statement>
+    <solution><p><ol marker="a.">
+                <li><p><m>f(x) = 12x^{-2}</m></p></li>
+                <li><p><m>g(x)=\dfrac{1}{4}x^{-1}=0.25 x^{-1}</m></p></li>
+                <li><p><m>h(x)=\dfrac{2}{5}x^{-6}=0.4 x^{-6}</m></p></li>
+        </ol></p></solution></exercise> 
+
+<p>Most applications are concerned with positive variables only, so many models use only the portion of the graph in the first quadrant.</p>
+
+<example><statement><p>The intensity of the radiation from our Sun varies inversely with distance.</p>
+    <p><ol marker="a.">  
+    <li>Use a negative exponent to write a formula for the intensity <m>I</m> as a function of <m>d,~I=f(d)</m>.</li>
+    <li>The planet Mercury is 0.387 AU (Astronomical Units <idx><h>astronomical units</h></idx>) distant from the Sun, and the intensity of radiation at its surface is 9147 watts per square meter. Find the constant of proportionality in the formula for <m>I</m>.</li>
+    <li>Graph  <m>I=f(d)</m>.</li>
+    <li>Earth is 1 AU from the Sun.  What is the intensity of the Sun's radiation at the surface of the Earth?</li>
+    <li>The surface of Jupiter receives 50.63 watts per square meter of the Sun's radiation. How far is Jupiter from the Sun?</li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li>If we use <m>k</m> for the constant of proportionality, then <m>I=\dfrac{k}{d^2}</m>.  Rewriting this equation with a negative exponent gives <m>I=kd^{-2}</m>.</li>
+    <li><p>We substitute <m>T=9147</m> and <m>d=0.387</m> to obtain
+        <md><mrow>9147 \amp = k(0.387)^{-2}</mrow>
+            <mrow>9147 \amp = \dfrac{k}{(0.387)^2} \amp \amp \blert{\text{Multiply both sides by}~0.387^2.}</mrow> 
+            <mrow>1369.9 \amp = k</mrow></md>
+     Thus, <m>I=f(d)=1370d^{-2}</m>.</p></li>
+    <li><p>We evaluate the function for several values of <m>d</m>, and use technology to obtain the graph shown.</p>
+        <image width="35%" xml:id="fig-example-6-1-4"><description>triangle</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.6, yscale=.4]
+        \draw[cyan] (0,0) grid (6,10);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(6.6,0) node[right]{$d$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,10.6) node[above]{$I$};
+        \foreach \x  in {5} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         }
+        \foreach \x [evaluate=\x as \xi using int(1000*\x)] in {5,10} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={sqrt(.137):6},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, {1.37/(\x)^2});
+        \node[above, text=red, fill=white, inner sep=2] at (3,6) {$I=1370d^{-2}$};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li>We substitute <m>d=1</m> into the formula to obtain
+        <me>I=1370(1)^{-2} = 1370</me>
+    Earth receives 1370 watts/m<m>^2</m> of solar radiation.</li>
+    <li><p>We substitute <m>I=\alert{50.63}</m> into the formula, and solve for <m>d</m>.
+        <md><mrow>\alert{50.63} \amp = 1370d^{-2} = \dfrac{1370}{d^2} \amp \amp \blert{\text{Multiply both sides by}~d^2.}</mrow>
+            <mrow>50.63d^2 \amp = 1370   \amp \amp \blert{\text{Divide both sides by 50.63.}}</mrow>
+            <mrow>d^2 \amp = \dfrac{1370}{50.63} = 27.059   \amp \amp \blert{\text{Extract roots.}}</mrow>
+            <mrow>d = \amp 5.202</mrow></md>
+    Jupiter is 5.202 AU from the Sun, or about 484 million miles.</p></li></ol></p></solution>
+</example>
+
+<p>The function <m>I = \dfrac{k}{d^2}</m> is an example of an <term>inverse square law</term><idx>inverse square law</idx>, because <m>I</m> varies inversely with the square of <m>d</m>. Such laws are fairly common in physics and its applications, because gravitational and other forces behave in this way. Here is another example of an inverse square law.</p>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            $k = 0.8 ;
+            $p = 0.01;
+            $d = Compute("sqrt($k/$p)")->with(
+              tolType => 'absolute',
+              tolerance => .1,
+            );
+        </pg-code>
+    <statement><p>Cell phone towers typically transmit signals at 10 watts of power. The signal strength varies inversely with the square of distance from the tower, and 1 kilometer away the signal strength is 0.8 picowatt. (A picowatt is <m>10^{-12}</m> watt.) Cell phones can receive a signal as small as 0.01 picowatt. How far can you be from the nearest tower and still hope to have cell phone reception?</p>
+            <p>About <var name="$d" width="2"/> km </p></statement>
+    <solution><p>About 9 km</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Cell phone towers typically transmit signals at 10 watts of power. The signal strength varies inversely with the square of distance from the tower, and 1 kilometer away the signal strength is 0.8 picowatt. (A picowatt is <m>10^{-12}</m> watt.) Cell phones can receive a signal as small as 0.01 picowatt. How far can you be from the nearest tower and still hope to have cell phone reception?</p></statement>
+    <solution><p>About 9 km</p></solution></exercise>
+</subsection>
+
+<subsection><title>Working with Negative Exponents</title><idx><h>exponent</h><h>negative</h></idx>
+
+<p>The laws of exponents apply to all integer exponents, positive negative, and zero.  When we allow negative exponents, we only need one version of the rule for computing quotients of powers, namely
+    <me>\dfrac{a^m}{a^n} = a^{m-n}~~~~~~(a \not=0)</me>
+For example, by applying this new version of the law we find
+    <me>\dfrac{x^2}{x^5} = x^{2-5} = x^{-3}</me>
+which is consistent with our previous version of the rule,
+    <m>\dfrac{x^2}{x^5} = \dfrac{1}{x^{5-2}} = \dfrac{1}{x^3}</m></p>
+
+<p>For reference, we restate the laws of exponents below. The laws are valid for all integer exponents <m>m</m> and <m>n</m>, and for <m>a,~b \not= 0</m>.</p>
+
+<assemblage><title>Laws of Exponents</title>
+<idx>laws of exponents</idx><idx><h>exponent</h><h>laws of</h></idx>
+<p><ol marker="I.">
+    <li><p><m>\displaystyle{a^m\cdot a^n = a^{m+n}}</m></p></li>
+    <li><p><m>\displaystyle{\frac{a^m}{a^n}=a^{m-n}}</m></p></li>
+    <li><p><m>\displaystyle{\left(a^m\right)^n=a^{mn}}</m></p></li>
+    <li><p><m>\displaystyle{\left(ab\right)^n=a^n b^n}</m></p></li>
+    <li><p><m>\displaystyle{\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}}</m></p></li>
+</ol></p>
+</assemblage>
+
+<example xml:id="example-laws-of-exponents"><p>
+    <md><mrow>\text{a}\amp. ~x^3\cdot x^{-5} = x^{3-5} = x^{-2} 
+                    \amp\amp     \blert{\text{Apply the first law: Add exponents.}} </mrow>
+        <mrow>\text{b}\amp. ~\frac{8x^{-2}}{4x^{-6}}= \frac{8}{4}x^{-2-(-6)} = 2x^4
+                    \amp\amp     \blert{\text{Apply the second law: Subtract exponents.}} </mrow>
+        <mrow>\text{c}\amp. ~\left(5x^{-3}\right)^{-2}= 5^{-2}(x^{-3})^{-2}=\frac{x^6}{25}
+                    \amp\amp     \blert{\text{Apply laws IV and III.}}</mrow></md>
+</p> </example>
+
+<p>You can check that each of the calculations in <xref ref="example-laws-of-exponents" text="type-global"/> is shorter when we use negative exponents instead of converting the expressions into algebraic fractions.</p>
+
+<exercise component="webwork"><title>Practice 5</title>
+    <webwork><pg-code>
+            Context("RationalFunction")->variables->add(a=>"Real", r=>"Real");
+            $f = Formula("-8/a^2");
+            $g = Formula("1/(3r^2)");
+        </pg-code>
+    <statement><p>Simplify by applying the laws of exponents. Write without negative exponents.<ol marker="a.">
+        <li><p><m>\left(2a^{-4}\right) \left(-4a^2\right)=</m><var name="$f" width="10"/> </p></li>
+        <li><p><m>\dfrac{(r^2)^{-3}}{3r^{-4}}=</m><var name="$g" width="10"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+            <li><p><m>\dfrac{-8}{a^2} </m></p></li>
+            <li><p><m>\dfrac{1}{3r^2} </m></p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Simplify by applying the laws of exponents. Write without negative exponents.</p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>\left(2a^{-4}\right) \left(-4a^2\right)</m></p></li>
+        <li><p><m>\dfrac{(r^2)^{-3}}{3r^{-4}}</m></p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a." cols="2">
+            <li><p><m>\dfrac{-8}{a^2} </m></p></li>
+            <li><p><m>\dfrac{1}{3r^2} </m></p></li></ol></p>
+    </solution></exercise>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review using the laws of exponents, see <xref ref="tkExplaws" text="custom"> Section 6.1.2 </xref> of the Toolkit.</p></aside>
+
+<warning><p>The laws of exponents do not apply to sums or differences of powers. We can add or subtract like terms, that is, powers with the same exponent. For example,
+    <me>6x^{-2} + 3x^{-2} = 9x^{-2}</me>
+but <em>we cannot combine terms with different exponents</em> into a single term. Thus, for example,
+    <md><mrow>4x^2 \amp- 3x^{-2} \amp\amp \blert{\text{cannot be simplified}}</mrow>
+        <mrow>x^{-1} \amp + x^{-3}\amp\amp \blert{\text{cannot be simplified}}</mrow></md>
+</p></warning>
+
+<p>In the opening table we saw that <m>2^0 = 1</m>, and in fact <m>a^0 = 1</m> as long as <m>a \ne 0</m>. Now we can see that this definition is consistent with the laws of exponents. The quotient of any (nonzero) number divided by itself is <m>1</m>. But by applying the second law of exponents, we also have
+    <me>1 = \frac{a^m}{a^m}= a^{m-m} = a^0</me></p>
+
+<assemblage><title>Zero as Exponent</title><idx>zero exponent</idx><idx><h>exponent</h><h>zero</h></idx><p>
+    <me>\blert{a^0 = 1, ~~ \text{ if } a \ne 0}</me></p>
+</assemblage>
+
+<p>For example,
+    <me>3^0 = 1, ~~ (-528)^0 = 1, ~~ \text{ and } ~~ (0.024)^0 = 1</me></p>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork>
+    <pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+          1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+          2, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>We cannot add or subtract terms with different exponents. <var name="$True" form="popup"/></p></li>
+        <li><p><m>(a+b)^5=a^5+b^5</m> is an application of the fourth law of exponents. <var name="$False" form="popup"/></p></li>
+        <li><p>If <m>x \not= 0</m>, then <m>\dfrac{k}{x^{-n}} = kx^n</m>. <var name="$True" form="popup"/></p></li>
+        <li><p><m>(x^2)^{-3} = (x^{-2})^3</m> because <m>\dfrac{1}{x^2 \cdot x^2 \cdot x^2} = \left(\dfrac{1}{x^2}\right)\left(\dfrac{1}{x^2}\right)\left(\dfrac{1}{x^2}\right)</m> . <var name="$True" form="popup"/></p></li>
+     </ol></p></statement>
+    <solution><p><ol marker="a.">
+        <li>True</li>
+        <li>False</li>
+        <li>True</li>
+        <li>True</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<statement><p>True or false.</p>
+<p><ol marker="a.">
+        <li><p>We cannot add or subtract terms with different exponents.</p></li>
+        <li><p><m>(a+b)^5=a^5+b^5</m> is an application of the fourth law of exponents.</p></li>
+        <li><p>If <m>x \not= 0</m>, then <m>\dfrac{k}{x^{-n}} = kx^n</m>. </p></li>
+        <li><p><m>(x^2)^{-3} = (x^{-2})^3</m> because <m>\dfrac{1}{x^2 \cdot x^2 \cdot x^2} = \left(\dfrac{1}{x^2}\right)\left(\dfrac{1}{x^2}\right)\left(\dfrac{1}{x^2}\right)</m>. </p></li>
+     </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Review of Scientific Notation</title><idx>scientific notation</idx>
+
+<p>Scientists and engineers regularly encounter very large numbers such as, 
+    <md><mrow>5,980,000,000,000,000,000,000,000,</mrow></md>
+(the mass of the earth in kilograms) and very small numbers such as
+    <md><mrow>0.000~ 000~ 000~ 000~ 000~ 000~ 000 ~001~ 67</mrow></md>
+(the mass of a hydrogen atom in grams) in their work. These numbers are easier to use when expressed in <term>scientific notation</term>.  </p>
+
+<assemblage><title>To Write a Number in Scientific Notation</title><idx>scientific notation</idx>
+<p><ol marker="1.">
+    <li>Locate the decimal point so that there is exactly one nonzero digit to its left.</li>
+    <li><p>Count the number of places you moved the decimal point:  this determines the power of 10.<ol marker="a.">
+        <li>If the original number is greater than 10, the exponent is positive.</li>
+        <li>If the original number is less than 1, the exponent is negative.</li></ol></p></li></ol></p></assemblage>
+
+<example><statement><p>Write each number in scientific notation. 
+<ol marker="a." cols="2">
+    <li><m>478,000</m></li>
+    <li><m>0.00032</m></li>
+</ol></p></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p><md><mrow>478,000 \amp = 4.78000 \times 10^5 \amp \amp \blert{\text{Move the decimal 5 places to the left.}}</mrow>           <mrow>\amp = 4.78 \times 10^5</mrow></md></p></li>
+    <li><p><md><mrow>0.00032 \amp = 00003.2 \times 10^{-4} \amp \amp \blert{\text{Move the decimal 4 places to the right.}}</mrow></md></p></li></ol></p></solution>
+</example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help practice with scientific notation, see <xref ref="tkSciNot" text="custom"> Section 6.1.3 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork>
+    <pg-code>
+        Context("ScientificNotation");
+        Context()->operators->add(
+         '*' => {precedence => 3, associativity => 'left', type => 'bin',
+                    TeX => '\times ', class => 'ScientificNotation::BOP::x'},
+            );
+        $a = Compute("6.3 * 10**-2");
+        $b = Compute("1.480 * 10**3");
+    </pg-code>
+    <statement><p>Write each number in scientific notation.<ol marker="a." cols="2">
+       <li><p><m>0.063=</m><var name="$a" width="8"/></p></li>
+        <li><p><m>1480=</m><var name="$b" width="8"/></p></li></ol></p>
+    <instruction>
+            Enter "10^-1" to get <m>10^{-1}</m>, and you may use either "*" or a lower case "x" for multiplication. Do not use parentheses for this problem.
+        </instruction>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+            <li><m>6.3 \times 10^{-2}</m></li>
+            <li><m>1.480 \times 10^3</m></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Write each number in scientific notation.</p>
+<p><ol marker="a." cols="2">
+       <li><p><m>0.063=</m></p></li>
+        <li><p><m>1480=</m></p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a." cols="2">
+            <li><m>6.3 \times 10^{-2}</m></li>
+            <li><m>1.480 \times 10^3</m></li>
+        </ol></p></solution></exercise>
+
+<p>Your calculator displays numbers in scientific notation if they are too large or too small to fit in the display screen.  Try squaring the number <m>123,456,789</m> on your calculator.  Enter
+    <me>\qquad\qquad 123456789 <kbd name="squared"/></me>
+and the calculator will display the result as
+    <me>1.524157875~~\text{E}~~16</me>
+This is how the calculator displays the number <m>1.524157875 \times 10^{16}</m>. Notice that the power <m>10^{16}</m> is displayed as E 16.</p>
+
+<p>To enter a number in scientific form, we use the key labeled <kbd>EE</kbd>, possibly accessed by pressing <kbd>2nd</kbd> <kbd>,</kbd>. For example, to enter <m>3.26 \times 10^{-18}</m> we enter the keying sequence
+    <m>\qquad\qquad 3.26</m> <kbd>EE</kbd> <kbd>(-)</kbd> <m>18</m></p>
+
+<example><statement><p>In 2019, the average American ate 98.6 kilograms of meat.  It takes about 16 kilograms of grain to produce one kilogram of meat, and advanced farming techniques can produce about 6000 kilograms of grain on each hectare of arable land.  (A hectare is 10,000 square meters, or just under two and a half acres.)</p>  
+<p>Now, the total land area of the Earth is about 13 billion hectares, but only about 11% of that land is arable. Is it possible for each of the 7.8 billion people on Earth to eat as much meat as Americans do?</p></statement>
+
+<solution><p>First we'll compute the amount of meat necessary to feed every person on earth 110 kilograms per year.  In scientific notation, the population of Earth is <m>7.8 \times 10^9</m> people. 
+    <me>(7.8 \times 10^9 \text{ people}) \times (98.6 \text{ kg/person}) = 7.69 \times 10^{11} \text{ kg meat}</me>
+Next we'll compute the amount of grain needed to produce that much meat. 
+    <me>(16 \text{ kg grain/kg meat}) \times (7.69 \times 10^{11} \text{ kg meat}) = 1.23 \times 10^{13} \text{ kg grain}</me>
+Next we'll see how many hectares of land are needed to produce that much grain. 
+    <me>(1.23 \times 10^{13} \text{ kg grain}) \div (6000~ \text{ kg grain/hectare}) = 2.05 \times 10^9 \text{ hectares}</me>
+Finally, we'll compute the amount of land on Earth suitable for grain production.
+    <me>0.11 \times (13 \times 10^9 \text{ hectares}) = 1.43 \times 10^9 \text{ hectares}</me>
+The amount of arable land on Earth is less than the amount needed to produce that much grain. Thus, even if we use every hectare of arable land to produce grain for livestock, we won't have enough to provide every person on Earth with 98.6  kilograms of meat per year.</p></solution>
+</example>
+
+</subsection>
+
+<xi:include href="./section-6-1-exercises.xml" />                
+
+
+</section>
+<!-- </book>  </mathbook> -->

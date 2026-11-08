@@ -1,0 +1,35 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+      \begin{tikzpicture} [scale=.2]
+\def\w{ 11.53 };
+\draw[blue] (0,\w) rectangle +(1.5,-1.5);
+\draw[blue] (17,0) rectangle +(-1.5,1.5);
+\draw[magenta!80!black,line width=1mm] (0,0) rectangle (17,\w);
+\node[above, yshift=-3] at (17/2,12) {17 cm};
+\draw[darkgray, dashed, very thick] (0,0)--(17,\w) node[above, midway, rotate=atan(\w/17)]{20 cm};
+      \end{tikzpicture}%
+}
+\end{document}

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="MoreOperationsonFractions"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>More Operations on Fractions</title>
+
+<introduction><p>In this section we consider a few more skills for working with algebraic fractions.</p></introduction>
+
+<subsection><title>Complex Fractions</title><idx><h>complex fraction</h></idx><idx><h>fraction</h><h>complex</h></idx>
+
+<p>A fraction that contains one or more fractions in either its numerator or its denominator or both is called a <term>complex fraction</term><idx>complex fraction</idx>.  For example,
+    <me>\dfrac{\dfrac{2}{3}}{\dfrac{5}{6}}~~~~~~\text{and}~~~~~~\dfrac{x+\dfrac{3}{4}}{x-\dfrac{1}{2}}</me>
+are complex fractions. Like simple fractions, complex fractions represent quotients. For the examples above,
+    <me>\dfrac{\dfrac{2}{3}}{\dfrac{5}{6}} = \dfrac{2}{3} \div \dfrac{5}{6}</me>
+and
+    <me>
+        \dfrac{x+\dfrac{3}{4}}{x-\dfrac{1}{2}} = \left(x+\dfrac{3}{4}\right) \div \left(x-\dfrac{1}{2}\right)</me>
+We can always simplify a complex fraction into a standard algebraic fraction. One way to do this is to treat the fraction as a division.</p>
+
+<example><statement><p>Simplify  <m>~~\dfrac{\dfrac{2}{3}}{\dfrac{5}{6}}</m></p></statement>
+
+<solution><p>First, Write the complex fraction as a quotient. Invert the divisor and multiply.
+    <me>\dfrac{\dfrac{2}{3}}{\dfrac{5}{6}} = \dfrac{2}{3} \div \dfrac{5}{6} = \dfrac{2}{3} \cdot \dfrac{6}{5} = \dfrac{12}{15} = \dfrac{4}{5}</me></p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+<webwork><pg-code>
+        Context()->variables->add(y=>"Real");
+        $num = Compute("6");
+        $den = Compute("y^2");
+        $multians = MultiAnswer($num, $den)->with(
+          singleResult => 0,
+          allowBlankAnswers => 1,
+          checker => sub {
+              my ( $correct, $student, $self ) = @_;
+              my ( $f1stu, $f2stu ) = @{$student};
+              my ( $f1, $f2 ) = @{$correct};
+         
+              if ( ( $f1==$f1stu &amp;  $f2==$f2stu) || 
+                   (-$f1==$f1stu &amp; -$f2==$f2stu) ) {
+                  return [1,1];
+              } elsif ( $f1==$f1stu || -$f1==$f1stu) {
+                  return [1,0];
+              } elsif ( $f2==$f2stu || -$f2==$f2stu ) {
+                  return [0,1];
+              } elsif ( $f1*$f2stu==$f1stu*$f2 ) {
+                  $self->setMessage(1,"Simplify your answer further");
+                  $self->setMessage(2,"Simplify your answer further");
+                  return [0,0];
+              } else {
+                  return [0,0];
+              }
+          }
+        );
+    </pg-code>
+    <statement><p>Simplify   <m>\quad\dfrac{\dfrac{2x}{y^3}}{\dfrac{x}{3y}}</m></p>
+        <tabular>
+            <row><cell bottom="minor">
+                    <var name="$multians" width="4"/></cell></row>
+            <row><cell>
+                    <var name="$multians" width="4"/></cell></row>
+        </tabular>
+        <instruction>Enter numerator and denominator in separate boxes.</instruction>
+    </statement>
+    <solution><p><m>\dfrac{6}{y^2}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Simplify   <m>\quad\dfrac{\dfrac{2x}{y^3}}{\dfrac{x}{3y}}</m></p></statement>
+    <answer><p><m>\dfrac{6}{y^2}</m></p></answer></exercise>
+
+<p>If the numerator or denominator of the complex fraction contains more than one term, there is an easier way to simplify the fraction. This method takes advantage of the fundamental principle of fractions.</p>
+
+<example><statement><p>Simplify  <m>~~\dfrac{\dfrac{1}{2x} - \dfrac{1}{x^2}}{\dfrac{1}{4} - \dfrac{1}{2x}}</m></p></statement>
+
+<solution><p>This complex fraction contains the simple fractions <m>\dfrac{1}{2x},~ \dfrac{1}{x^2},~ \dfrac{1}{4}</m> and <m>\dfrac{1}{2x}</m>. The LCD of these fractions is <m>4x^2</m>.  We multiply the numerator and denominator of the complex fraction by <m>4x^2</m>.  Doing this will not change the value of the fraction, but will clear all the "smaller" fractions inside.
+
+    <me>\dfrac{\dfrac{1}{2x} - \dfrac{1}{x^2}}{\dfrac{1}{4} - \dfrac{1}{2x}} =\dfrac{\alert{4x^2}\left(\dfrac{1}{2x} - \dfrac{1}{x^2}\right)}{\alert{4x^2}\left(\dfrac{1}{4} - \dfrac{1}{2x}\right)} </me>  
+
+Then we apply the distributive law, so that we multiply each term of the numerator and each term of the denominator by <m>\alert{4x^2}</m>.
+
+    <me>\dfrac{\alert{4x^2}\left(\dfrac{1}{2x} - \dfrac{1}{x^2}\right)}{\alert{4x^2}\left(\dfrac{1}{4} - \dfrac{1}{2x}\right)}  = 
+        \dfrac{\alert{\dfrac{4x^2}{1}} \cdot \dfrac{1}{2x} - \alert{\dfrac{4x^2}{1}} \cdot \dfrac{1}{x^2}}{\alert{\dfrac{4x^2}{1}} \cdot \dfrac{1}{4} - \alert{\dfrac{4x^2}{1}} \cdot \dfrac{1}{2x}}=\dfrac{2x-4}{x^2-2x}</me>
+
+Finally, we reduce the result to obtain
+    <me>\dfrac{2x-4}{x^2-2x} = \dfrac{2\cancel{(x-2)}}{x\cancel{(x-2)}} = \dfrac{2}{x}</me></p></solution>
+</example>
+
+ <p> We summarize the procedure for simplifying complex fractions as follows.</p>
+
+ <assemblage><title>To simplify a complex fraction</title><idx><h>complex fraction</h><h>simplify</h></idx><idx><h>fraction</h><h>complex</h></idx><idx><h>fraction</h><h>simplify</h></idx><idx>simplifying a complex fraction</idx>
+ <p><ol marker="1.">
+    <li>Find the LCD of all the fractions contained in the complex fraction.</li>
+    <li>Multiply the numerator and the denominator of the complex fraction by the LCD.</li>
+    <li>Reduce the resulting simple fraction, if possible.</li>
+</ol></p></assemblage>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        Context()->variables->add(a=>"Real", b=>"Real", c=>"Real", d=>"Real");
+        $num = Compute("a*d+b*d");
+        $den = Compute("a*d-b*c");
+        $multians = MultiAnswer($num, $den)->with(
+          singleResult => 0,
+          allowBlankAnswers => 1,
+          checker => sub {
+              my ( $correct, $student, $self ) = @_;
+              my ( $f1stu, $f2stu ) = @{$student};
+              my ( $f1, $f2 ) = @{$correct};
+         
+              if ( ( $f1==$f1stu &amp;  $f2==$f2stu) || 
+                   (-$f1==$f1stu &amp; -$f2==$f2stu) ) {
+                  return [1,1];
+              } elsif ( $f1==$f1stu || -$f1==$f1stu) {
+                  return [1,0];
+              } elsif ( $f2==$f2stu || -$f2==$f2stu ) {
+                  return [0,1];
+              } elsif ( $f1*$f2stu==$f1stu*$f2 ) {
+                  $self->setMessage(1,"Simplify your answer further");
+                  $self->setMessage(2,"Simplify your answer further");
+                  return [0,0];
+              } else {
+                  return [0,0];
+              }
+          }
+        );
+    </pg-code>
+    <statement><p>Simplify <m>\quad \dfrac{1+\dfrac{b}{a}}{1-\dfrac{bc}{ad}}</m></p>
+        <tabular>
+            <row><cell bottom="minor">
+                    <var name="$multians" width="5"/></cell></row>
+            <row><cell>
+                    <var name="$multians" width="5"/></cell></row>
+        </tabular>
+        <instruction>Enter numerator and denominator in separate boxes.</instruction>
+    </statement>
+    <solution><p><m>\dfrac{ad+bd}{ad-bc}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Simplify <m>\quad \dfrac{1+\dfrac{b}{a}}{1-\dfrac{bc}{ad}}</m></p></statement>
+    <answer><p><m>\dfrac{ad+bd}{ad-bc}</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Negative Exponents</title><idx>negative exponents</idx>
+
+<p>Algebraic fractions are sometimes written using negative exponents. </p>
+
+<example xml:id="Example-negarive-exponents-for-algebraic-fractions" ><statement><p>Write each expression as a single algebraic fraction. 
+<ol marker="a." cols="2">
+    <li><m>x^{-1}-y^{-1}</m></li>
+    <li><m>(x^{-2}+y^{-2})^{-1}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We write each power as a fraction, then simplify.
+        <md><mrow>x^{-1}-y^{-1} \amp = \dfrac{1}{x} - \dfrac{1}{y} \amp \amp \blert{\text{The LCD is}~xy.}</mrow>
+            <mrow>\amp = \dfrac{1}{x} \cdot \blert{\dfrac{y}{y}}- \dfrac{1}{y} \cdot \blert{\dfrac{x}{x}} \amp \amp \blert{\text{Build to the LCD.}}</mrow>
+            <mrow>\amp = \dfrac{y-x}{xy}</mrow></md></p></li>
+    <li><p>We simplify the expression inside parentheses first.
+        <md><mrow>\left(x^{-2}+y^{-2}\right)^{-1} \amp = \left(\dfrac{1}{x^2} + \dfrac{1}{y^2}\right)^{-1} \amp \amp \blert{\text{Add fractions.}}</mrow>
+            <mrow> \amp = \left(\dfrac{y^2+x^2}{x^2y^2}\right)^{-1} = \dfrac{x^2y^2}{x^2+y^2}</mrow></md>
+    For the last step, remember that a negative exponent indicates the reciprocal of its base.</p></li>
+</ol></p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review negative exponents, see <xref ref="tkUseNegExp" text="custom"> Section 8.4.1 </xref> of the Toolkit.</p></aside>
+
+<warning><p>When working with fractions and exponents, it is important to avoid some tempting but <em>incorrect</em> algebraic operations. <ol marker="1.">
+    <li><p>In part (a) of <xref ref="Example-negarive-exponents-for-algebraic-fractions" text="type-global"/>, note that     
+            <me>\dfrac{1}{x} - \dfrac{1}{y} \ne \dfrac{1}{x-y}</me>
+        For example, you can check that, for <m>x=2</m> and <m>y=3</m> ,
+            <me>\dfrac{1}{2} - \dfrac{1}{3} \ne \dfrac{1}{2-3} = -1</me></p></li>
+    <li><p>In part (b) of <xref ref="Example-negarive-exponents-for-algebraic-fractions" text="type-global"/>, note that
+            <me>(x^{-2}+y^{-2})^{-1} \ne x^2+y^2</me>
+        The fourth law of exponents does not apply to sums and differences;  that is,
+            <me>(a+b)^n \ne a^n + b^n</me></p></li></ol></p></warning>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork><pg-code>
+        $num = Compute("x");
+        $den = Compute("x+1");
+        $multians = MultiAnswer($num, $den)->with(
+          singleResult => 0,
+          allowBlankAnswers => 1,
+          checker => sub {
+              my ( $correct, $student, $self ) = @_;
+              my ( $f1stu, $f2stu ) = @{$student};
+              my ( $f1, $f2 ) = @{$correct};
+         
+              if ( ( $f1==$f1stu &amp;  $f2==$f2stu) || 
+                   (-$f1==$f1stu &amp; -$f2==$f2stu) ) {
+                  return [1,1];
+              } elsif ( $f1==$f1stu || -$f1==$f1stu) {
+                  return [1,0];
+              } elsif ( $f2==$f2stu || -$f2==$f2stu ) {
+                  return [0,1];
+              } elsif ( $f1*$f2stu==$f1stu*$f2 ) {
+                  $self->setMessage(1,"Simplify your answer further");
+                  $self->setMessage(2,"Simplify your answer further");
+                  return [0,0];
+              } else {
+                  return [0,0];
+              }
+          }
+        );
+    </pg-code>
+    <statement><p>Simplify <m>\quad(1+x^{-1})^{-1}</m></p>
+        <tabular>
+            <row><cell bottom="minor">
+                    <var name="$multians" width="5"/></cell></row>
+            <row><cell>
+                    <var name="$multians" width="5"/></cell></row>
+        </tabular>
+        <instruction>Enter numerator and denominator in separate boxes.</instruction>
+    </statement>
+    <solution><p><m>\dfrac{x}{x+1}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Simplify <m>\quad(1+x^{-1})^{-1}</m></p></statement>
+    <answer><p><m>\dfrac{x}{x+1}</m></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );        
+    </pg-code>
+    <statement><p>True or False.<ol marker="a.">
+        <li><p><m>\dfrac{1+\dfrac{1}{x}}{1-\dfrac{1}{x^2}} = \left(1+\dfrac{1}{x}\right) \div \left(1-\dfrac{1}{x^2}\right)</m> <var name="$True" form="popup"/></p></li>
+        <li><p><m>\dfrac{1+\dfrac{1}{x}}{1-\dfrac{1}{x^2}} = \dfrac{x+1}{x^2+1}</m>  <var name="$False" form="popup"/></p></li>
+        <li><p><m>\left(a^{-1}+b^{-1}\right)^{-2} = a^{-2} + b^{-2}</m> <var name="$False" form="popup"/></p></li>
+        <li><p><m>\dfrac{\dfrac{1}{a} - \dfrac{1}{b}}{\dfrac{1}{a} + \dfrac{1}{b}} = \dfrac{\dfrac{1}{a-b}}{\dfrac{1}{a+b}}</m> <var name="$False" form="popup"/></p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>True</li>
+    <li>False</li>
+    <li>False</li>
+    <li>False</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Decide whether each statement is true or false.</p>
+<p><ol marker="a.">
+    <li><p><m>\dfrac{1+\dfrac{1}{x}}{1-\dfrac{1}{x^2}} = \left(1+\dfrac{1}{x}\right) \div \left(1-\dfrac{1}{x^2}\right)</m></p></li>
+    <li><p><m>\dfrac{1+\dfrac{1}{x}}{1-\dfrac{1}{x^2}} = \dfrac{x+1}{x^2+1}</m></p></li>
+    <li><p><m>\left(a^{-1}+b^{-1}\right)^{-2} = a^{-2} + b^{-2}</m></p></li>
+    <li><p><m>\dfrac{\dfrac{1}{a} - \dfrac{1}{b}}{\dfrac{1}{a} + \dfrac{1}{b}} = \dfrac{\dfrac{1}{a-b}}{\dfrac{1}{a+b}}</m></p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>Applications</title>
+
+<p>Sometimes mathematics can help us solve problems when our intuition fails us or leads us astray.</p>
+
+<example><statement><p>On a weekday afternoon, when traffic is always horrible, Kathy left her home north of Los Angeles and drove south 120 miles along the San Diego Freeway to San Juan Capistrano. Her average speed was 40 miles per hour.  She returned home on Saturday, at an average speed of 60 miles per hour. What was her average speed for the round trip?
+</p></statement>
+
+<solution><p>If you said that the average speed is 50 miles per hour, you would be wrong! Let's do some calculations. Kathy's average speed for the round trip is given by
+    <me>\text{Average speed} = \dfrac{\text{Total distance}}{\text{Total time}}</me>
+The total distance she drove is 240 miles, but to find the total time we must compute the time Kathy drove on each part of the trip. We use the formula <m>d=rt</m> and solve for <m>t</m>.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~~~~</m></cell>
+                        <cell><m>d</m></cell>
+                        <cell><m>r</m></cell>
+                        <cell><m>t</m></cell></row>
+                    <row> 
+                        <cell>Driving south</cell>
+                        <cell><m>120</m></cell>
+                        <cell><m>40</m></cell>
+                        <cell><m>3</m></cell></row>
+                    <row> 
+                        <cell>Driving north</cell>
+                        <cell><m>120</m></cell>
+                        <cell><m>60</m></cell>
+                        <cell><m>2</m></cell></row>
+                    </tabular>
+
+<p>The total time for the round trip was <m>3+2 = 5</m> hours, so Kathy's average speed was
+    <me>\dfrac{240}{5} = 48~ \text{miles per hour}</me></p>
+</solution></example>
+
+<p>Why does the average speed turn out to be less than 50 miles per hour? Because Kathy spent more time driving at 40 miles per hour (3 hours) than she did driving at 60 miles per hour (2 hours).</p>
+
+<p>By generalizing the problem above we can find an algebraic formula for the average speed on a two-part trip. Suppose the distance traveled on the two parts of the trip are <m>d_1</m> and <m>d_2</m>, and the corresponding speeds on the two parts are <m>r_1</m> and <m>r_2</m>.  We fill in the table to find the time required for each part.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell><m>~~~~</m></cell>
+                        <cell>Distance</cell>
+                        <cell>Rate</cell>
+                        <cell>Time</cell></row>
+                    <row> 
+                        <cell>First part</cell>
+                        <cell><m>d_1</m></cell>
+                        <cell><m>r_1</m></cell>
+                        <cell><m>\dfrac{d_1}{r_1}</m></cell></row>
+                    <row> 
+                        <cell>Second part</cell>
+                        <cell><m>d_2</m></cell>
+                        <cell><m>r_2</m></cell>
+                        <cell><m>\dfrac{d_2}{r_2}</m></cell></row>
+                    </tabular>
+
+<p>The total distance traveled on the trip is <m>d_1+d_2</m>, and the total time required is  
+    <me>\frac{d_1}{r_1} + \frac{d_2}{r_2}</me>
+Thus, the average speed for the entire trip is
+    <me>\text{Average speed} = \frac{\text{Total distance}}{\text{Total time}} = \frac{d_1+d_2}{\dfrac{d_1}{r_1}} + \frac{d_2}{r_2}</me></p>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        $v = Compute("50");
+        $mph = PopUp(
+            [ "?", 
+            "miles", 
+            "hours",
+            "mph",
+            "hours/mile"],
+            3
+        );        
+    </pg-code>
+<statement><p>Bruce drove for 24 miles in rush-hour traffic at an average speed of 20 miles per hour. Then he drove 126 miles on the highway at an average speed of 70 miles an hour. Use the formula above to find his average speed for the entire trip.</p>
+        <p><var name="$v" width="2"/><var name="$mph" form="popup"/></p>
+    </statement>
+    <solution><p>50 mph</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Bruce drove for 24 miles in rush-hour traffic at an average speed of 20 miles per hour. Then he drove 126 miles on the highway at an average speed of 70 miles an hour. Use the formula above to find his average speed for the entire trip.</p></statement>
+    <answer><p>50 mph</p></answer></exercise>
+</subsection>       
+
+<subsection><title>Polynomial Division</title><idx><h>polynomial</h><h>division</h></idx>
+
+<p>Consider three improper fractions: <m>\dfrac{8}{6},~ \dfrac{8}{4},</m> and <m>\dfrac{8}{3}</m>. Can these fractions be simplified? <ul>
+    <li>We can reduce the first fraction: <m>~\dfrac{8}{6} = \dfrac{4}{3}</m></li>  
+    <li>The second fraction reduces to a whole number:  <m>~\dfrac{8}{4}  = \dfrac{2}{1} = 2</m></li> 
+    <li>The third fraction does not reduce, but by dividing the denominator into the numerator, we can write it as a whole number plus a proper fraction:  <m>~\dfrac{8}{3} = 2\dfrac{2}{3}</m></li></ul></p>    
+
+<p>An algebraic fraction is "improper" if the degree of the numerator is greater than the degree of the denominator. If it cannot be reduced, we can simplify the expression by treating it as a division of polynomials. The quotient will be the sum of a polynomial and a simpler algebraic fraction.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review improper fractions, see <xref ref="tkImpFrac" text="custom"> Section 8.4.2 </xref> of the Toolkit.</p></aside>
+
+<p>If the divisor is a monomial, we can simply divide the monomial into each term of the numerator.</p>
+
+<example><statement><p>Divide <m>\dfrac{9x^3 - 6x^2 + 4}{3x}</m></p></statement>
+<solution><p>We divide <m>3x</m> into each term of the numerator.
+        <md><mrow>\frac{9x^3 - 6x^2 + 4}{3x} \amp = \frac{9x^3}{3x}- \frac{6x^2}{3x}+ \frac{4}{3x}</mrow>
+            <mrow>\amp = 3x^2 - 2x + \frac{4}{3x}</mrow></md>
+Note that the quotient is the sum of a polynomial, <m>3x^2 - 2x</m>, and an algebraic fraction, <m>\dfrac{4}{3x}</m>.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork><pg-code>
+        Context()->variables->are(a=>"Real");
+        $poly = Formula("3a+1");
+        $frac = Formula("-1/(2a)");
+    </pg-code>
+    <statement><p>
+        Divide: <m>~\dfrac{6a^3+2a^2-a}{2a^2}=</m> <var name="$poly" width="6"/><m>{}+{}</m> <var name="$frac" width="6"/></p>
+    <instruction>Enter the appropriate polynomial in the first box, and enter the algebraic fraction in the second box.</instruction>
+    </statement>
+    <solution><p><m>3a + 1 - \dfrac{1}{2a}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Divide: <m>~\dfrac{6a^3+2a^2-a}{2a^2}</m></p></statement>
+    <answer><p><m>3a + 1 - \dfrac{1}{2a}</m></p></answer></exercise>
+
+<p>If the denominator is not a monomial, we use a method similar to the long division algorithm used in arithmetic.</p>
+
+<example xml:id="example-long-division"><statement><p>Divide <m>~~\dfrac{2x^2+x-7}{x+3}</m> </p></statement>
+
+<solution><p>We first write the quotient as a division problem:
+    <md><mrow>\require{enclose}x+3 \enclose{longdiv}{2x^2+x-7}\kern-.2ex </mrow></md>
+   and divide <m>2x^2</m> (the first term of the numerator) by <m>x</m> (the first term of the denominator) to obtain <m>2x</m>. (It may be helpful to write down the division: <m>\dfrac{2x^2}{2x}=x</m>.) We write <m>\alert{2x}</m> above the quotient bar as the first term of the quotient, as shown below.</p>
+<p>Next, we multiply <m>x+3</m> by <m>2x</m> to obtain <m>2x^2 + 6x</m>, and subtract this product from <m>2x^2 + x - 7</m>:
+<md><mrow>
+    \require{enclose}
+\begin{array}[t]{rll}
+    \alert{2x} \hphantom{1+x-7}&amp;&amp;  \\[-3pt]
+   x+3 \enclose{longdiv}{2x^2+x-7}\kern-.2ex &amp;&amp; \blert{\text{Multiply }2x \text{ by } x+3.}\\[-3pt]
+      \underline{-(2x^2+6x)\phantom{11}} &amp;&amp; \blert{\text{Subtract the result}.}\\[-3pt]
+      -5x-7 
+  \end{array}
+</mrow></md>
+Repeating the process, we divide <m>-5x</m> by <m>x</m> to obtain <m>-5</m>. We write <m>\alert{-5}</m> as the second term of the quotient. Then we multiply <m>x+3</m> by <m>-5</m> to obtain <m>-5x - 15</m>, and subtract:
+<md><mrow>
+    \require{enclose}
+\begin{array}[t]{rll}
+    2x\alert{-5} \hphantom{x-11}&amp;&amp;  \\[-3pt]
+   x+3 \enclose{longdiv}{2x^2+x-7}\kern-.2ex \phantom{11}&amp;&amp; \\[-3pt]
+      \underline{-(2x^2+6x)\phantom{11}} \phantom{11}&amp;&amp; \\[-3pt]
+      -5x-7\phantom{11} &amp;&amp; \blert{\text{Multiply } {-5} \text{ by }x+3.} \\[-3pt]
+      \underline{-(-5x-15)} &amp;&amp;\blert{\text{Subtract the result}.} \\[-3pt]
+      8\phantom{11} 
+  \end{array}
+</mrow></md>
+Because the degree of the remainder, 8, is less than the degree of <m>x + 3</m>, the division is finished. The quotient is <m>2x - 5</m>, with a remainder of <m>8</m>. We write the remainder as a fraction to obtain
+        <me>\dfrac{2x^2 + x - 7}{x + 3} = 2x - 5 + \dfrac{8}{x + 3}</me>
+</p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To check a polynomial division, see <xref ref="tkCheckDiv" text="custom"> Section 8.4.3 </xref> of the Toolkit.</p></aside>
+
+<p>When using polynomial division, it helps to write the polynomials in descending powers of the variable. If the numerator is missing any terms, we can insert terms with zero coefficients so that like powers will be aligned. For example, to perform the division
+    <me>\dfrac{3x - 1 + 4x^3}{2x-1}</me>
+we first write the numerator in descending powers as <m>4x^3 + 3x - 1</m>. We insert <m>0x^2</m> between <m>4x^3</m> and <m>3x</m> and set up the quotient as
+<md><mrow>
+    \require{enclose}
+   2x-1 \enclose{longdiv}{4x^3+0x^2+3x-1}\kern-.2ex
+</mrow></md>
+We then proceed as in <xref ref="example-long-division" text="type-global"/>. You can check that the quotient is
+  <md><mrow>2x^2 + x + 2 + \dfrac{1}{2x-1}</mrow></md></p>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+        Context()->variables->are(y=>"Real");
+        $poly = Formula("-y^2+3y-1");
+        $frac = Formula("5/(3y+1)");
+    </pg-code>
+    <statement><p>Divide: <m>\dfrac{4+8y^2-3y^3}{3y+1}=</m> <var name="$poly" width="8"/><m>{}+{}</m> <var name="$frac" width="6"/></p>
+    <instruction>Enter the appropriate polynomial in the first box, and enter the algebraic fraction in the second box.</instruction>
+    </statement>
+    <solution><p><m>-y^2+3y-1+ \dfrac{5}{3y+1}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Divide: <m>\dfrac{4+8y^2-3y^3}{3y+1}</m></p></statement>
+    <answer><p><m>-y^2+3y-1+ \dfrac{5}{3y+1}</m></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );        
+    </pg-code>
+    <statement><p>True or False.<ol marker="a.">
+        <li><p>The shortcut for simplifying complex fractions applies the fundamental principle of fractions. <var name="$True" form="popup"/></p></li>
+        <li><p>An improper algebraic fraction is one in which the denominator has higher degree than the numerator.  <var name="$False" form="popup"/></p></li>
+        <li><p>If the remainder is zero in polynomial division <m>\dfrac{p(x)}{q(x)} </m>, the numerator <m>p(x)</m> can be factored. <var name="$True" form="popup"/></p></li>
+        <li><p>If the divisor in polynomial division is a binomial, we use a process like long division.  <var name="$True" form="popup"/></p></li></ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>True</li>
+    <li>False</li>
+    <li>True</li>
+    <li>True</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>The shortcut for simplifying complex fractions applies the fundamental principle of fractions.</p></li>
+        <li><p>An improper algebraic fraction is one in which the denominator has higher degree than the numerator.</p></li>
+        <li><p>If the remainder is zero in polynomial division <m>\dfrac{p(x)}{q(x)} </m>, the numerator <m>p(x)</m> can be factored.</p></li>
+        <li><p>If the divisor in polynomial division is a binomial, we use a process like long division.</p></li>
+    </ol></p></statement></exercise>
+
+</subsection>
+
+
+<xi:include href="./section-8-4-exercises.xml" />                
+
+
+</section>
+<!-- </book>  </mathbook> -->

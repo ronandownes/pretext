@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="chap4-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter 4 Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>quadratic formula</p></li>
+    <li><p>imaginary unit</p></li>
+    <li><p>imaginary number</p></li>
+    <li><p>conjugate pair</p></li>
+    <li><p>complex number</p></li>
+    <li><p>maximum value</p></li>
+    <li><p>minimum value</p></li>
+    <li><p>vertex form</p></li>
+    <li><p>compound inequality</p></li>
+    <li><p>interval notation</p></li>
+    <li><p>open interval</p></li>
+    <li><p>closed interval</p></li>
+</ul></p>
+
+</subsection>
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+    <li><assemblage><title>The Quadratic Formula</title>
+        <p>The solutions of the equation <m>~~ax^2+bx+c=0,~~(a \not= 0)~~</m> are 
+                <me>\blert{x=\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}}</me></p></assemblage></li>
+	<li>We have four methods for solving quadratic equations:  extraction of roots, factoring, completing the square, and the quadratic formula.  The first two methods are faster, but they do not work on all equations.  The last two methods work on any quadratic equation.</li>
+    <li>The <term>imaginary unit</term>, <m>i</m>, is defined by <m>i=\sqrt{-1}</m>.</li>
+    <li>The square root of any negative number can be written as the product of a real number (the square root of its absolute value) and <m>i</m>.</li>
+    <li>The sum of a real number and an <term>imaginary number</term> is called a <term>complex number</term>. </li>
+    <li>The graph of the quadratic equation <m>~y=ax^2+bx+c</m> may have two, one, or no <m>x</m>-intercepts, according to the number of distinct real-valued solutions of the equation <m>~ax^2+bx+c=0</m>.</li>
+    <li><assemblage><title>The Discriminant</title>
+        <p>The <term>discriminant</term> of a quadratic equation is
+            <me>D=b^2-4ac</me>  <ol marker="1.">      
+        <li>If <m>D \gt 0</m>,  there are two unequal real solutions.</li>
+        <li>If  <m>D = 0</m>,  there is one solution of multiplicity two.</li>
+        <li>If<m>D \lt 0</m>,  there are two complex conjugate solutions.</li></ol></p></assemblage></li>
+        <li>Every quadratic equation has two solutions, which may be the same.</li>
+	<li>For the graph of  <m>~y=ax^2+bx+c</m>, the <m>x</m>-coordinate of the vertex is
+            <me>x_v=\dfrac{-b}{2a}</me> 
+        To find the -coordinate of the vertex, we substitute <m>x_v</m> into the formula for the parabola.</li>
+    <li>Quadratic models may arise as the product of two variables.</li>
+    <li>The maximum or minimum of a quadratic equation occurs at the vertex of its graph.</li>
+    <li><assemblage><title>Vertex Form for a Quadratic Equation</title>
+        <p>A quadratic equation <m>~y=ax^2+bx+c,~a \not=0,~</m> can be written in the vertex form 
+            <me>\blert{y=a(x-x_v)^2+y_v}</me>
+        where the vertex of the graph is <m>~(x_v,y_v)</m>.</p></assemblage></li>
+    <li>We can convert a quadratic equation to vertex form by completing the square.</li>
+    <li>We need the coordinates of three points to find the equation of a parabola.</li>
+    <li>We can use the method of elimination to find the equation of a parabola through three points.</li>
+    <li>If we know the vertex of a parabola, we need only one other point to find its equation.</li>
+    <li>We can use quadratic regression to fit a parabola to a collection of data points from a quadratic model.</li>
+    <li>We can use a graphical technique to solve quadratic inequalities.</li>
+    <li><assemblage><title>To solve a quadratic inequality algebraically</title>
+        <p><ol marker="1.">
+            <li>Write the inequality in standard form: One side is zero, and the other has the form  <m>ax^2+bx+c</m>.</li>
+            <li>Find the <m>x</m>-intercepts of the graph of <m>~y=ax^2+bx+c</m> by setting <m>y=0</m> and solving for <m>x</m>.</li>
+            <li>Make a rough sketch of the graph, using the sign of <m>a</m> to determine whether the parabola opens upward or downward.</li>
+            <li>Decide which intervals on the <m>x</m>-axis give the correct sign for <m>y</m>.</li></ol></p></assemblage>
+    </li>
+    <li>We can write the solution set to a quadratic inequality in interval notation.</li>
+	<li><assemblage><title>Interval Notation</title>
+        <p><ol marker="1.">
+            <li>The <term>closed interval</term> <m>[a,b]</m> is the set <m>a \le x \le b</m>.</li>
+            <li>The <term>open interval</term> <m>(a,b)</m> is the set <m>a \lt x \lt b</m>.</li>
+            <li>Intervals may also be <term>half-open</term> or <term>half-closed</term>.</li>
+            <li>The <term>infinite interval</term> <m>[a,\infty)</m> is the set <m>x \ge a</m>.</li>
+            <li>The <term>infinite interval</term> <m>(\infty,a]</m> is the set <m>x \le a</m>.</li></ol></p></assemblage>
+    </li>
+	<li><assemblage><title>To graph a quadratic equation <m>~y=ax^2+bx+c</m></title>
+        <p><ol marker="1.">
+            <li>Determine whether the parabola opens upward (if <m>a \gt 0</m>) or downward (if <m>a \lt 0</m>).</li>
+            <li><p>Locate the vertex of the parabola.<ol marker="a.">
+                <li>The <m>x</m>-coordinate of the vertex is <m>x_v=\dfrac{-b}{2a}</m>.</li>
+                <li>Find the <m>y</m>-coordinate of the vertex by substituting <m>x_v</m> into the equation of the  parabola.</li></ol></p></li>
+            <li>Locate the <m>x</m>-intercepts (if any) by setting <m>y=0</m> and solving for <m>x</m>.</li>
+            <li>Locate the <m>y</m>-intercept by evaluating <m>y</m> for <m>x=0</m>.</li>
+            <li>Locate the point symmetric to the <m>y</m>-intercept across the axis of symmetry.</li>
+        </ol></p></assemblage></li>  
+    </ol></p>
+</subsection>
+
+<xi:include href="./chap4-rev-problems.xml" />  <!--exercises  -->
+
+</section>
+<!-- </appendix> -->
+<!-- </book>  </mathbook> -->

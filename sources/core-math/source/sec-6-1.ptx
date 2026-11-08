@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-6-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <title>Ratios</title>
+
+  <sidebyside widths="55% 45%" valigns="middle middle"><p><ul>
+    <li><p>Comparing Quantities</p></li>
+    <li><p>Ratios</p></li>
+    <li><p>Decimal Form for Ratios</p></li>
+    <li><p>Rates</p></li>
+  </ul></p>
+      <image source="ratio.png"></image></sidebyside>
+
+<subsection><title>Comparing Quantities</title>
+
+<p>How can we compare two quantities? We might say "Boris weighs 20 pounds more than Cyril" or "Product A costs $100 less than Product B." These statements are examples of <term>additive comparison</term>, although we often use subtraction to describe the relationship:
+
+    <md><mrow>\blert{\text{Boris' weight} - \text{Cyril's weight} = \text{20 pounds}}</mrow>
+        <mrow>\blert{\text{Product B price} - \text{Product A price} = \text{\$100}}</mrow></md>
+
+But the significance of the difference between two quantities also depends on the size of the quantities themselves.</p>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Suppose Boris and Cyril are both world-class weight lifters. Cyril weighs 250 pounds and Boris weighs 270 pounds.  The 20-pound difference between their weights is not that significant.
+        <image source="borisandcyril.png" width="90%"></image></p></li>
+  <li><p>But what if Boris and Cyril are cats? Cyril weighs 10 pounds, and Boris weighs 30 pounds. So Boris weighs three times as much as Cyril, and is a very fat cat indeed.</p></li>
+</ol></p></statement></example>
+
+<p>In part (b) of Example 6.1.1, we used multiplication to compare Boris' and Cyril's weights:  Boris weighs <m>3</m> times as much as Cyril, or
+  <me>\blert{\dfrac{\text{Boris' weight}}{\text{Cyril's weight}} = \dfrac{30}{10} = 3}</me>
+We use division to make a <term>multiplicative comparison</term>.  For the weight-lifters,
+    <me>\blert{\dfrac{\text{Boris' weight}}{\text{Cyril's weight}} = \dfrac{270}{250} = 1.08}</me>
+Boris weighs <m>1.08</m> times as much as Cyril.  (We can also say that Boris weighs 8% more than Cyril.)</p>
+
+<exercise><statement><p>Use multiplicative comparison to compare prices. In which case is the $100 price difference more significant?<ol marker="a.">
+  <li>You are shopping for a new sweater and find one that you really like at Chic Boutique for $125. Luckily, you find the same sweater at Sweater Barn for $25.  
+    <me>\blert{\dfrac{\text{Price at Chic Boutique}}{\text{Price at Sweater Barn}} =~~~~~~~~~~~~~~~~~}</me></li>                             
+  <li>You are shopping for a new car. The model you want costs $25,000, but you can get it in red, your favorite color, for $25,100.                                           
+      <me>\blert{\dfrac{\text{Price of new car in red}}{\text{Price of new car}} =~~~~~~~~~~~~~~~~~}</me></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>5</p></li>
+  <li><p>1.004</p></li>
+</ol></p>
+<p>The price difference is more significant in (a).</p></answer></exercise>
+
+<p>We can think of additive and multiplicative comparison as different ways to evaluate the relationship between two quantities. Additive comparison gives us the actual difference between two quantities. Multiplicative comparison takes into account their relative sizes.</p> 
+
+<activity><title>Comparing Quantities</title>
+
+<p><ol>
+  <li><p>Jared and Carrie joined their department's "Losing It" contest for slimming down and getting in shape. Here are their weights before and after the six-month trial.</p>
+    <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell></cell>
+            <cell>Before</cell>
+            <cell>After</cell></row>
+        <row bottom="minor">
+            <cell>Jared</cell>
+            <cell>210 lbs</cell>
+            <cell>190 lbs</cell></row>
+        <row bottom="minor">
+            <cell>Carrie</cell>
+            <cell>135 lbs</cell>
+            <cell>120 lbs</cell></row>       
+        </tabular>
+    <p><ol marker="a.">
+      <li><p>Use additive comparison to compute each person's weight loss in pounds.</p></li>
+      <li><p>Use multiplicative comparison to compute each person's weight loss as a percentage of their initial weight.</p></li>
+      <li><p>Describe what each type of comparison tells you about Jared's and Carrie's weight loss.</p></li>
+      <li><p>Which person do you think did better in the contest? Why?</p></li>
+    </ol></p></li>
+<li><p>You are considering two different jobs, each of which will pay you $20,000 in your first year and $21,000 in your second year.</p>
+  <p><ol marker="a.">
+    <li><p>Use additive comparison to calculate the change in your salary after one year. If Job A calculates your new salary the same way each year, how much will you make in your third year? Your fourth year? Record your answers in the table below.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Year</cell>
+            <cell>Job A Salary</cell>
+            <cell>Job B Salary</cell></row>
+        <row bottom="minor">
+            <cell>1</cell>
+            <cell>20,000</cell>
+            <cell>20,000</cell></row>
+        <row bottom="minor">
+            <cell>2</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row> 
+        <row bottom="minor">
+            <cell>3</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        <row bottom="minor">
+            <cell>4</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>      
+        </tabular></li>
+    <li><p>Use multiplicative comparison to calculate the percent change in your salary after one year. If Job B calculates your new salary the same way each year, how much will you make in your third year? Your fourth year? Record your answers in the table above.</p></li>
+    <li><p>Which job offers the better salary increases?</p></li>
+  </ol></p></li>
+</ol></p></activity>
+</subsection>
+
+<subsection><title>Ratios</title>
+
+<p>We have looked at two ways of comparing quantities. For the rest of this lesson, we'll concentrate on multiplicative comparison.</p>
+
+<p>The quotient we used for multiplicative comparison is called a <term>ratio</term>. It tells us how many times greater one quantity is than another. If Boris weighs <m>3</m> times as much as Cyril, then the ratio of Boris' weight to Cyril's is <term>3 to 1</term>.</p>
+
+<assemblage><title>Definition</title>
+  <p>A <term>ratio</term> shows the relative sizes of two values by dividing one value into the other. The <term>ratio of <m>a</m> to <m>b</m></term>  is sometimes denoted by  <m>~a : b~</m>, and it is computed as the quotient <m>~\dfrac{a}{b}</m>.</p>
+</assemblage>
+
+<example><statement><p>There are 80 men in the state legislature and 16 women. To display the ratio of men to women as a quotient we would write
+  <me>\dfrac{\text{number of men}}{\text{number of women}} = \dfrac{80}{16}</me></p>
+<p>Just as we do with fractions, we can write the ratio in simpler form by reducing the fraction.
+    <me>\dfrac{\text{number of men}}{\text{number of women}} =  \dfrac{80}{16} =\dfrac{5}{2}</me>
+The ratio of men to women in the state legislature is <m>\dfrac{5}{2}</m>.</p> 
+</statement></example>
+
+<note><p>To say that the ratio of men to women is <m>\dfrac{5}{2}</m> does NOT tell us that there are exactly 5 men and 2 women in the legislature! There could be 100 men and 40  women, or 185 men and 74 women, or many other combinations, because
+  <me>\dfrac{100}{40} = \dfrac{185}{74} = \dfrac{5}{2}</me>
+You can check that all of these quotients equal 2.5. There are 2.5 times as many men as women in the state legislature.</p></note>
+
+<assemblage><title>A Quick Refresher</title>
+<p>Recall that we can use <term>building factors</term> to create new fractions with the same value, and we can reduce a fraction to a simpler form. The same is true for ratios. For example, we'll find three different pairs of numbers whose ratio is <m>\dfrac{4}{3}</m>.</p> 
+<p><m>\blert{\text{Solution}}~~~</m>  This task is the same as finding three different fractions equivalent to <m>\dfrac{4}{3}</m>.  Because <m>\dfrac{4}{3}</m> is already in lowest terms, we will <term>build</term> <m>~\dfrac{4}{3}</m> to find equivalent fractions.  We can use any number we like (except zero) as the building factor.
+
+  <md><mrow>\text{Using 2 as the building factor:} \hphantom{000} \amp \dfrac{4 \cdot \blert{2}}{3 \cdot \blert{2}} = \dfrac{8}{6}</mrow>
+      <mrow>\text{Using 3 as the building factor:} \hphantom{000} \amp \dfrac{4 \cdot \blert{3}}{3 \cdot \blert{3}} = \dfrac{12}{9}</mrow>
+      <mrow>\text{Using 4 as the building factor:} \hphantom{000} \amp \dfrac{4 \cdot \blert{4}}{3 \cdot \blert{4}} = \dfrac{16}{12}</mrow></md>
+
+We have found the following pairs with the ratio 4 to 3:
+  <me>\text{8  and  6,} ~~~~    \text{12  and  9,} ~~~~   \text{16  and 12}</me>
+All these ratios are equivalent, but whenever possible we write ratios in simplest or reduced form.</p></assemblage>
+
+<exercise><statement><p>On a Saturday evening a restaurant found that 84 of its customers asked for seating inside, and 35 customers preferred to sit outside on the patio.<ol marker="a.">  
+  <li><p>What was the ratio of inside diners to outside diners?</p></li>
+  <li><p>Write the ratio in simplest form.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">  
+  <li><p>84 to 35, or <m>\dfrac{84}{35}</m></p></li>
+  <li><p>12 to 5, or <m>\dfrac{12}{5}</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Decimal Form for Ratios</title>
+
+<p>Any ratio can be expressed as a decimal fraction.  For example, because 
+    <me>\dfrac{12}{5}  ~~~\text{is equal to}~~~ 12 \div 5 = 2.4</me>,
+we can say that the ratio of inside diners to outside diners in the previous Checkpoint is  2.4  to 1, or just 2.4. We usually express a ratio as a decimal number if the numbers being compared are decimal numbers.</p>
+
+<example><statement><p>Major Motors budgeted 5.6 million dollars for research next year, and 3.5 million dollars for advertising. What is the ratio of the amount budgeted for advertising to the amount budgeted for research?</p></statement>
+
+<solution><p>The ratio of amount budgeted for advertising to amount budgeted for research is 
+  <me>\dfrac{\text{budget for advertising}}{\text{budget for research}} = \dfrac{3.5}{5.6} = 0.625</me>
+(You might also recognize this ratio as <m>\dfrac{5}{8}</m>.)</p></solution></example>
+
+<exercise><statement><p>During the second quarter of 2015, consumers bought 271 million Android phones and 48.1 million iPhones. What was the ratio of Android phones sold to iPhones sold? Round your answer to the nearest tenth.</p></statement>
+
+<answer><p>5.6</p></answer></exercise>
+
+<activity><title>Ratios in Decimal Form</title>
+
+<p><ol>
+  <li><p>In the 2015-2016 season, Kobe Bryant attempted 281 free throws and made 232 of them. What is the ratio of his successes to his attempts?</p>
+  <sidebyside widths="60% 30%"><p><ol marker="a.">
+    <li><p>Write your answer in the form <m>a:b</m>.</p></li>
+
+    <li><p>Write your answer in the form of a common fraction.</p></li>
+    <li><p>Write your answer in the form of a decimal fraction, rounding to three decimal places.</p></li> 
+    <li><p>Write your answer as a percent.</p></li>
+  </ol></p>
+  <image source="kobe.png"></image></sidebyside></li>
+  <li><p>Here are the free-throw statistics for three other basketball greats in their last season of play. (FT stands for free throws, and FTA stands for free throw attempts.) Complete the table and compare the results. Who had the best free throw record, in your opinion?</p>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Player</cell>
+            <cell>FT</cell>
+            <cell>FTA</cell>
+            <cell>Ratio</cell>
+            <cell>Decimal</cell>
+            <cell>Percent</cell></row>
+        <row bottom="minor">
+            <cell>Wilt Chamberlain</cell>
+            <cell>232</cell>
+            <cell>455</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Kareen Abdul Jabbar</cell>
+            <cell>122</cell>
+            <cell>165</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Michael Jordan</cell>
+            <cell>324</cell>
+            <cell>366</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+        </tabular></li>
+</ol></p></activity>
+
+<note><p>Is a ratio a fraction?  Sometimes.  We think of fractions as comparing a part to the whole, <m>\dfrac{\text{part}}{\text{whole}}</m>,  but a ratio may also compare one part to another part.</p></note>
+
+<example><statement><p>25% of middle school teachers are male. <ol marker="a.">
+  <li><p>What fraction of middle school teachers are male?</p></li>
+  <li><p>What is the ratio of female middle school teachers to male middle school teachers?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>As a fraction, 25% is 0.25, so <m>\dfrac{1}{4}</m> of middle school teachers are male.</p></li>
+  <li><p>One out of four middle school teachers are male, so three out of four are female. The ratio of female teachers to male teachers is  3 to 1, or <m>\dfrac{3}{1}</m>.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>40% of high school teachers are male.<ol marker="a.">
+  <li><p>What fraction of high school teachers are male?</p></li>
+  <li><p>What is the ratio of female high school teachers to male high school teachers?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>\dfrac{2}{5}</m></p></li>
+  <li><p>3 to 2, or <m>\dfrac{3}{2}</m>.</p></li>
+</ol></p></answer></exercise>
+
+<p>Another important use of ratios is to compare quantities that are NOT parts of a whole.</p>
+
+<example><statement><sidebyside widths="55% 30%"><p>When Paolo makes coffee in the morning, he uses 3 scoops of coffee beans and 5 cups of water. Raul uses 5 scoops of coffee beans and 8 cups of water. Whose coffee is stronger?</p><image source="coffeecup.png"></image></sidebyside></statement>
+
+<solution><p>The strength of the coffee is determined by the ratio of coffee beans to water in the brew.
+  <md><mrow>\text{Paolo's coffee:} \hphantom{000} \amp \dfrac{\text{3 scoops coffee beans}}{\text{5 cups water}}</mrow>
+      <mrow>\text{Raul's coffee:} \hphantom{000} \amp \dfrac{\text{5 scoops coffee beans}}{\text{8 cups water}}</mrow>
+  </md>
+Which ratio is greater, 3 to 5 or 5 to 8?  We can compute each ratio as a decimal fraction. Remember that the ratio bar is a division symbol.
+  <me>\dfrac{3}{5} = 0.60~~~~ \text{and} ~~~~\dfrac{5}{8} = 0.625</me>
+Raul's coffee is stronger.</p></solution></example>
+
+<exercise><statement><p>City Health Club has 144 active members and 15 elliptical trainers. Fitness First has 123 active members and 12 elliptical trainers. At which club might you have to wait longer to use an elliptical trainer?</p>
+  <image source="healthclub.png" width="50%"></image>
+
+<p>City Health Club:     <m>~~~~~~~~~~\dfrac{\text{members}}{\text{trainers}} =</m></p>
+
+<p>Fitness First:         <m>~~~~~~~~~~~~~~~~~~\dfrac{\text{members}}{\text{trainers}} =</m></p>
+</statement>
+
+<answer><p>Fitness First</p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Rates</title>
+
+<p>A <term>rate</term> is just a ratio that compares quantities with different units. You are familiar with many rates already. You might hear that a certain car gets gas mileage of 28 miles per gallon, or that bananas cost 55 cents per pound. Because "per" indicates division, we see that
+  <me>\text{28  miles per gallon} ~~~~~~ \text{means} ~~~~~~ \dfrac{\text{28 miles}}{\text{1 gallon}}</me>
+and
+  <me>\text{55  cents per pound} ~~~~~~ \text{means} ~~~~~~ \dfrac{\text{55 cents}}{\text{1 pound}}</me></p>
+
+<p>You can think of "per" as meaning "for each" or "for every," so that "28 miles per gallon" means that you can travel 28 miles for every gallon of gas in the tank, and "55 cents per pound" means that each pound costs 55 cents.</p>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Kayla drove 130 miles in <m>2\frac{1}{2}</m> hours. Compute the ratio of the distance she traveled to the time it took.</p></li>
+  <li><p>What is the every-day interpretation of the ratio in part (a)?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The ratio of distance to time is
+      <me>\dfrac{\text{distance}}{\text{time}} = \dfrac{\text{130 miles}}{\text{2.5 hours}}</me>
+    To simplify the ratio, we divide 130 by 2.5 to find
+      <me>\dfrac{\text{130 miles}}{\text{2.5 hours}} = \dfrac{52}{1} \dfrac{\text{miles}}{\text{hour}}</me></p></li>
+  <li><p>We can interpret the simplified ratio as "52 miles per hour." It gives us the average speed at which Kayla traveled. For each hour that elapsed, Kayla traveled 52 miles.</p></li>
+</ol></p></solution></example>
+
+<p>The simplified rate in Example 6.1.3 is called a <term>unit rate</term> because it gives us the distance Kayla traveled in one hour. We can use the unit rate to find the distance Kayla would travel (at the same rate) over other time periods. For example, in 3 hours Kayla would travel
+  <me>3 \cancel{\text{hours}} \times \frac{52}{1} \frac{\text{miles}}{\cancel{\text{hours}}} = \text{156 miles}</me></p>
+
+<note><p>Here is one of those tricky places where an English word can mean more than one thing in mathematics. Although a rate describes a ratio of quantities with different units, such as miles/hours, the "unit" in <term>unit rate</term> means 1, so that the rate <m>\dfrac{\text{130 miles}}{\text{2.5 hours}}</m> is simplified to the unit rate <m>\dfrac{52}{\blert{1}} \dfrac{\text{miles}}{\blert{1~}\text{hour}}</m>.</p></note>
+
+<exercise><statement><p>Jamal worked for five hours on Tuesday and earned $132 (before taxes).<ol marker="a.">
+  <li><p>What was his pay rate, in dollars per hour?</p></li>
+  <li><p>How much did Jamal earn working 8 hours on Wednesday?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>$26.40 per hour</p></li>
+  <li><p>$211.20</p></li>
+</ol></p></answer></exercise>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>additive comparison</p></li>
+  <li><p>multiplicativ conparison</p></li>
+  <li><p>ratio</p></li>
+  <li><p>build</p></li>
+  <li><p>building factor</p></li>
+  <li><p>decimal form</p></li>
+  <li><p>rate</p></li>
+  <li><p>unit rate</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-6-1.ptx" />
+
+</section>

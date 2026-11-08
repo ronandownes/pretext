@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [xscale = 0.6, yscale=0.5]
+\draw[cyan] (0,0) grid[ystep=2]  (10,12);
+\draw[black,thick, ->, >=stealth'] (0,0)--(10.6,0) node[right]{$w$};
+\draw[black,thick, ->, >=stealth'] (0,0)--(0,12.8) node[left]{$Q$};
+\foreach \x  in  {5,10} {
+ \draw[cyan, very thick] (\x,0) --++(0,12);
+ \draw[black, thick] (\x,0.1) --++(0,-.2)  node[below] {\x};
+}
+\foreach \y in  {5,10} {
+ \draw[cyan, very thick] (0, \y) --++(10,0);
+ \draw[black, thick] (0.05,\y) --++(-.1,0)  node[left] {\y};
+}
+\draw[samples=65,domain=0:10,smooth,variable=\x,red,very thick] plot ({\x},{24/(\x+2)});
+\foreach \x [evaluate=\x as \y using int( 24/(\x+2) )] in  {0,1,2,4,6,10} {
+ \filldraw[blue] (\x,\y) ellipse (1.5mm and 1.8mm);
+}
+\node[below left] at (0,0) {0};
+\end{tikzpicture}%
+}
+\end{document}

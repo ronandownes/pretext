@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkRadicalEquations" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Radical Equations</title>
+                 
+<subsubsection xml:id="tkSimpRadEqn"><title>Solve radical equations</title>
+
+<introduction><p>To solve a simple radical equation, we raise both sides to the index of the radical.</p></introduction>
+
+<example><statement><p>Solve <m>~\sqrt{x-3} = 4</m></p></statement>
+
+<solution><p>We square both sides of the equation to produce an equation without radicals.
+	<md><mrow>\left(\sqrt{x-3}\right)^2 \amp = 4^2</mrow>
+		<mrow>x-3 \amp = 16</mrow>
+		<mrow>x \amp = 19</mrow></md>
+You can check that <m>x=19</m> satisfies the original equation.</p></solution></example>
+
+<example><statement><p>Solve <m>~-2\sqrt[3]{x-4} = -6</m></p></statement>
+
+<solution><p>We first isolate the cube root.
+		<md><mrow>-2\sqrt[3]{x-4} \amp = -6 \amp \amp \blert{\text{Divide both sides by}~-2.}</mrow>
+			<mrow>\sqrt[3]{x-4} \amp = 3</mrow></md>
+Next, we undo the cube root by cubing both sides of the equation.
+		<md><mrow>\left(\sqrt[3]{x-4}\right)^3 \amp = 3^3</mrow>
+			<mrow>x-4 \amp = 27</mrow></md>
+Finally, we add 4 to both sides to find the solution, <m>x=31</m>.  We do not have to check for extraneous solutions when we cube both sides of an equation, but it is a good idea to check the solution for accuracy anyway.</p>
+
+<p>Check: We substitute <m>\alert{31}</m> for <m>x</m> into the left side of the equation.
+	<me>2\sqrt[3]{\alert{31}-4} = -2\sqrt[3]{27} = -2(3) = -6</me>
+	The solutions checks.</p></solution></example>
+
+<exercise><statement><p>Solve <m>~\sqrt{x-6} = 2</m></p></statement>
+<answer><p><m>x=10</m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~3\sqrt[3]{4x-1} = -15</m></p></statement>
+<answer><p><m>x=-31</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSqRadBin"><title>Square binomials containing radicals</title>
+
+<introduction><p>We may encounter binomials when squaring both sides of an equation.</p></introduction>
+
+<example><statement><p>Expand <m>~(\sqrt{x}-3)^2</m></p></statement>
+
+<solution><p><m>(\sqrt{x}-3)^2 = (\sqrt{x}-3)(\sqrt{x}-3)</m>, so we apply "FOIL" to get
+	<md><mrow>(\sqrt{x}-3)(\sqrt{x}-3) \amp = \sqrt{x}\sqrt{x}-3\sqrt{x}-3\sqrt{x}-3(-3) \amp \amp \blert{\text{Simplify.}}</mrow> 
+	<mrow>\amp = x-6\sqrt{x}+9</mrow></md></p></solution></example>
+
+<example><statement><p>Expand <m>~(8+\sqrt{t-2})^2</m></p></statement>
+
+<solution><p>We multiply <m>~(8+\sqrt{t-2})(8+\sqrt{t-2})~</m> to get
+	<md><mrow>8\cdot 8+8 \amp \sqrt{t-2}+8\sqrt{t-2}+\left(\sqrt{t-2}\right)\left(\sqrt{t-2}\right)</mrow>
+		<mrow> \amp = 64+\sqrt{t-2}+(t+2)</mrow>
+		<mrow> \amp = 66+16\sqrt{t-2}+t</mrow></md></p></solution></example>
+
+<exercise><statement><p>Expand <m>~\left(6-\sqrt{3a+1}\right)^2</m></p></statement>
+<answer><p><m>37-12\sqrt{3a+1}+3a</m></p></answer></exercise>
+
+<exercise><statement><p>Expand <m>~\left(2\sqrt{z+4}-5\right)^2</m></p></statement>
+<answer><p><m>4z+41-20\sqrt{z+4}</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkRadAbsVal"><title>Use absolute value</title>
+
+<example><statement><p>Explain why <m>\sqrt{x^2}=x</m> is not true for all values of <m>x</m>.</p></statement>
+
+<solution><p>Recall that the symbol <m>\sqrt{a}</m> means the <em>non-negative</em> square root of <m>a</m>.  If <m>x</m> is a negative number, for example <m>x=-6</m>, then <m>x^2=(-6)^2=36</m>, and not <m>\sqrt{x^2}=\sqrt{36}=6</m>, not <m>-6</m>.  So if <m>x</m> is a negative number, <m>\sqrt{x^2}\not= x</m> In fact, <m>\sqrt{x^2}= \abs{x}</m>.</p></solution>
+</example>
+
+<example><statement><p>For what values of <m>x</m> is <m>~\sqrt{(x-5)^2} = x-5~</m>?</p></statement>
+
+<solution><p><m>~\sqrt{(x-5)^2} = x-5~</m> when <m>x-5</m> is positive or zero, that is for <m>x \ge 5</m>.  If <m>x \lt 5</m>, then <m>x-5</m> is negative. But the <m>\sqrt{}</m> symbol returns only the positive root, so we use absolute value bars to indicate that the root is positive:
+	<me>\sqrt{(x-5)^2} = \abs{x-5}</me></p></solution></example>
+
+<exercise><statement><p>For what values of <m>x</m> is <m>~\sqrt{(2x+8)^2} = 2x+8~</m>?</p></statement>
+<answer><p><m>x \ge -4</m></p></answer></exercise>
+
+<exercise><statement><p>For what values of <m>x</m> is <m>~\sqrt{(x-9)^2} = 9-x~</m>?</p></statement>
+<answer><p><m>x \le 9</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

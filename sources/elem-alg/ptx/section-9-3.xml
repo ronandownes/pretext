@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Properties-of-Radicals" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Properties of Radicals</title>
+
+<subsection><title>Product and Quotient Rules</title>
+	<idx><h>radical</h><h>product rule</h></idx>
+	<idx><h>radical</h><h>quotient rule</h></idx>
+
+<p>Radicals with the same value may be written in different forms. Consider the following calculation:
+	<md><mrow>\left(2\sqrt{2}\right)^2 \amp = 2^2\left(\sqrt{2}\right)^2~~~~~~~~\blert{\text{By the fourth law of exponents.}}</mrow>
+		<mrow> \amp = 4(2)=8</mrow></md>
+This calculation shows that <m>2\sqrt{2}</m> is equal to <m>\sqrt{8}</m>, because the square of <m>2\sqrt{2}</m> is <m>8</m>. You can verify on your calculator that <m>2\sqrt{2}</m> and <m>\sqrt{8}</m> have the same decimal approximation, <m>2.828</m>.</p>
+
+<example><statement><p>Show that  <m>~~\sqrt{45} = 3\sqrt{5}</m>.</p></statement>
+
+<solution><p> <m>\sqrt{45}</m> is a number whose square is <m>45</m>. We can square <m>3\sqrt{5}</m> as follows:
+	<md><mrow>(3\sqrt{5})^2 \amp = 3^2(\sqrt{5})^2</mrow>
+		<mrow> \amp = 9(5)=45</mrow></md>
+Because the square of <m>3\sqrt{5}</m> is equal to <m>45</m>, it is the case that <m>~3\sqrt{5}=\sqrt{45}</m>.</p>
+</solution></example>
+
+<p>It is usually helpful to write a radical expression as simply as possible. The expression <m>2\sqrt{2}</m> is considered simpler than <m>\sqrt{8}</m>, because the radicand is a smaller number. Similarly, <m>3\sqrt{5}</m> is simpler than <m>\sqrt{45}</m>. In this section we discover properties of radicals that help us simplify radical expressions.</p>
+
+<p>In the Activities we will verify the following properties of radicals.</p>
+
+<assemblage><title>Properties of Radicals</title>
+	<idx><h>radical</h><h>product rule</h></idx>
+	<idx><h>radical</h><h>quotient rule</h></idx>
+	<idx><h>product rule</h><see>radical</see></idx>
+	<idx><h>quotient rule</h><see>radical</see></idx>
+<p>Product Rule for Radicals
+		<md><mrow>\text{If}~~a,~b \ge 0,~~~\text{then}~~~~\blert{\sqrt{ab}=\sqrt{a}\sqrt{b}}</mrow></md></p>
+<p>Quotient Rule for Radicals
+		<md><mrow>\text{If}~~a \ge 0,~b \gt 0~~~\text{then}~~~~\blert{\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}}</mrow></md></p>
+</assemblage>
+
+<warning><p>It is just as important to remember that we do not have a sum or difference rule for radicals. That is, in general,
+		<md><mrow>\sqrt{a+b} \not= \sqrt{a}+\sqrt{b}</mrow>
+			<mrow>\sqrt{a-b} \not= \sqrt{a}-\sqrt{b}</mrow></md></p></warning>
+
+<example><statement><p>Decide which statement is true and which is false.<ol marker="a." cols="2"> 
+	<li><m>\sqrt{4} + \sqrt{9} = \sqrt{13}?</m></li>
+	<li><m>\sqrt{4}\sqrt{9} = \sqrt{36}?</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a." >
+	<li><p><m>\sqrt{4} + \sqrt{9} = 2+3 = 5</m>, but <m>~\sqrt{13} \not= 5</m>, so the first statement is false.</p></li>
+	<li><p><m>\sqrt{4}\sqrt{9} = 2(3) = 6</m>, and <m>~\sqrt{36} = 6</m>, so the second statement is true.</p></li>
+</ol></p></solution></example>
+</subsection>
+
+<subsection><title>Simplifying Square Roots</title>
+	<idx><h>square root</h><h>simplifying</h></idx>
+
+<p>We can use the product rule for radicals to write <m>~\sqrt{12} = \sqrt{4}\sqrt{3}</m>. Now, <m>\sqrt{4}=2</m>,  so we can simplify <m>\sqrt{12}</m> as
+	<md><mrow>\sqrt{12} = \sqrt{4}\sqrt{3} = 2\sqrt{3}</mrow></md></p>
+<p>The expression <m>2\sqrt{3}</m> is a simplified form for <m>\sqrt{12}</m>. The factor of <m>4</m>, which is a perfect square, has been removed from the radical. This example illustrates a strategy for simplifying radicals.</p>
+
+<assemblage><title>To Simplify a Square Root</title>
+	<idx><h>square root</h><h>simplifying</h></idx>
+<p><ol marker="1.">
+	<li>Factor any perfect squares from the radicand.</li>
+	<li>Use the product rule to write the radical as a product of two square roots.</li>
+	<li>Simplify the square root of the perfect square.</li>
+</ol></p></assemblage>
+
+<example xml:id="Example-9-3-3"><statement><p>Simplify <m>~\sqrt{45}</m>.</p></statement>
+
+<solution><p>We look for a perfect square that divides evenly into <m>45</m>. The largest perfect square that divides <m>45</m> is <m>9</m>, so we factor <m>45</m> as <m>9 \cdot 5</m>  Then we use the product rule to write
+	<md><mrow>\sqrt{45}=\sqrt{9 \cdot 5} = \sqrt{9}\sqrt{5}</mrow></md>
+Finally, we simplify <m>\sqrt{9}</m> to get
+	<md><mrow>\sqrt{45}= \sqrt{9}\sqrt{5} =3\sqrt{5}</mrow></md></p>
+</solution></example>
+
+<warning><p>Finding a decimal approximation for a radical is not the same as simplifying the radical. In <xref ref="Example-9-3-3" text="type-global"/>, we can use a calculator to find	
+	<md><mrow>\sqrt{45} \approx 6.708</mrow></md>
+but <m>6.708</m> is not the exact value for <m>\sqrt{45}</m>. For long calculations, too much accuracy may be lost by approximating each radical.</p>
+<p>However, <m>3\sqrt{5}</m> is equivalent to <m>\sqrt{45}</m>, which means that their values are exactly the same. We can replace one expression by the other without losing accuracy.</p></warning>
+
+<exercise number="1"><statement><p>What is the difference between simplifying a square root and approximating a square root?</p></statement>
+    <answer><p>Simplifying a square root gives an equivalent expression.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Square Root of a Variable Expression</title>
+	<idx><h>square root</h><h>of variable expression</h></idx>
+
+<p>To square a power of a variable we double the exponent. For example, the square of <m>x^5</m> is
+	<md><mrow>\left(x^5\right)^2 = x^{5 \cdot 2} = x^{10}</mrow></md>
+Because taking the square root of a number is the opposite of squaring a number, to take the square root of an even power we divide the exponent by <m>2</m>.</p>
+
+<example><statement><p>If <m>x</m> is a nonnegative number,
+	<md><mrow>\sqrt{x^{10}} = x^5~~~~~\text{because}~~~~~~(x^5)^2 = x^{10}</mrow></md>
+Similarly, if <m>a</m> is not negative,
+	<md><mrow>\sqrt{a^6} = a^3~~~~~\text{because}~~~~~~(a^3)^2 = a^6</mrow></md></p>
+</statement></example>
+
+<exercise number="2"><statement><p>How do we simplify the square root of a variable raised to an even exponent?</p></statement>
+    <answer><p>Divide the exponent by 2.</p></answer></exercise>
+
+<p>For the rest of this section we'll assume that all variables are nonnegative.</p>
+
+<warning><p>Note that <m>\sqrt{a^{16}}</m> is not equal to <m>a^4</m>. Compare the two radicals:
+	<md><mrow>\sqrt{16} = 4 ~~~~~~\text{but}~~~~~~    \sqrt{a^{16}} = a^8</mrow></md></p></warning>
+
+<assemblage><title>Look Closer</title>
+<p> How can we simplify the square root of an odd power? We write the power as a product of two factors, one having an even exponent and one having exponent 1.</p></assemblage>
+
+<example><statement><p>Simplify  <m>~~\sqrt{x^7}</m></p></statement>
+
+<solution><p>We factor <m>x^7</m> as <m>~x^6 \cdot x</m>. Then we use the product rule to write
+	<md><mrow>\sqrt{x^7} = \sqrt{x^6 \cdot x} = \sqrt{x^6} \cdot \sqrt{x}</mrow></md>
+Finally, we simplify the square root of <m>x^6</m> to get
+	<md><mrow> \sqrt{x^7} =  \sqrt{x^6} \cdot \sqrt{x} = x^3\sqrt{x}</mrow></md></p>
+</solution></example>
+
+<exercise number="3"><statement><p>How do we simplify the square root of a variable raised to an odd exponent?</p></statement>
+    <answer><p>Write the power as a product of two factors, one having an even exponent and one having exponent 1.
+    </p></answer></exercise>
+
+<p>If the radicand contains more than one variable or a coefficient, we consider the constants and each variable separately. We try to remove the largest factors possible from the radicand.</p>
+
+<example xml:id="Example-9-3-6"><statement><p>Simplify  <m>~~\sqrt{20x^2y^3}</m></p></statement>
+
+<solution><p>We look for the largest perfect square that divides 20; it is 4. We write the radicand as the product of two factors, one of which contains the perfect square and even powers of the variables. That is,     
+	<md><mrow>20x^2y^3 = 4x^2y^2 \cdot 5y~~~~~\blert{\text{Factor into perfect squares and "leftovers."}}</mrow></md>
+ Now we write the radical as a product.
+ 	<md><mrow>\sqrt{20x^2y^3}=\sqrt{4x^2y^2 \cdot 5y} = \sqrt{4x^2y^2} \cdot \sqrt{5y}</mrow></md>
+ Finally, we simplify the first of the two factors to find     
+ 	<md><mrow>\sqrt{20x^2y^3} \amp =\sqrt{4x^2y^2} \cdot \sqrt{5y}~~~~~\blert{\text{Take square root of the first factor.}}</mrow>
+ 		<mrow> \amp = 2xy\sqrt{5y}</mrow></md></p>
+ </solution></example>
+
+<exercise number="4"><statement><p>In <xref ref="Example-9-3-6" text="type-global"/>, what will we get if we square <m>~2xy\sqrt{5y}</m>?
+</p></statement>
+    <answer><p><m>20x^2y^3</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Sums and Differences</title>
+	<idx><h>addition</h><h>of radicals</h></idx>
+	<idx><h>subtraction</h><h>of radicals</h></idx>
+	<idx><h>radical</h><h>adding</h></idx>
+	<idx><h>radical</h><h>subtracting</h></idx>
+
+<p>What about sums and differences of radicals? We cannot add or subtract radicals by combining their radicands.  That is,
+	<md><mrow>\alert{\sqrt{a} + \sqrt{b} \not= \sqrt{a+b}}</mrow></md></p>
+
+<p>You can verify some examples on your calculator:<ul>
+	<li><p><m>\sqrt{3} + \sqrt{5} \not= \sqrt{8}</m></p></li>
+	<li><p><m>\sqrt{4} + \sqrt{16} \not= \sqrt{20}</m></p></li>
+	<li><p><m>\sqrt{7} + \sqrt{7} \not= \sqrt{14}</m></p></li>
+</ul></p>
+
+<p>So, we cannot simplify a sum or difference if the expressions under the radical are different. However, we can combine radicals with the same radicand. For example, we can write
+	<md><mrow>\sqrt{7}+\sqrt{7} = 2\sqrt{7}</mrow></md>
+just as we write
+	<md><mrow>x+x=2x</mrow></md></p>
+
+<assemblage><title> Like Radicals</title>
+	<idx><h>like radicals</h></idx>
+	<idx><h>radical</h><h>like</h></idx>
+<p>Square roots with identical radicands are called <term>like radicals</term>.</p></assemblage> 
+
+<assemblage><title>Look Closer</title>
+	<idx><h>addition</h><h>of radicals</h></idx>
+	<idx><h>subtraction</h><h>of radicals</h></idx>
+	<idx><h>radical</h><h>adding</h></idx>
+	<idx><h>radical</h><h>subtracting</h></idx>
+<p>We can add or subtract like radicals in the same way that we add or subtract like terms, namely by adding or subtracting their coefficients. For example,
+	<md><mrow>2r+3r=5r</mrow></md>
+where <m>r</m> is a variable that can stand for any real number. In particular, if <m>r=\sqrt{2}</m>, we have
+	<md><mrow>2\sqrt{2}+3\sqrt{2} = 5\sqrt{2}</mrow></md>
+Thus, we may add like radicals by adding their coefficients. The same idea applies to subtraction.</p>
+</assemblage>
+
+<exercise number="5"><statement><p>What are like radicals?</p></statement>
+    <answer><p>Square roots with identical radicands</p></answer></exercise>
+
+<example><statement><p>Simplify if possible.<ol marker="a." cols="2">
+  	<li><m>7\sqrt{3}-2\sqrt{3}</m></li>
+  	<li><m> 3\sqrt{2}+4\sqrt{3}</m></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li><p>Because <m>~7\sqrt{3}~</m> and <m>~2\sqrt{3}~</m> are like radicals, we can combine them as
+			<md><mrow>7\sqrt{3}-2\sqrt{3} = 5\sqrt{3}</mrow></md></p></li>	
+	<li>However, <m>~3\sqrt{2}~</m> and <m>~4\sqrt{3}~</m> are not like radicals. We cannot simplify sums or differences of unlike radicals. Thus, <m>~3\sqrt{2}+4\sqrt{3}~</m> cannot be combined into a single term.</li>
+</ol></p></solution></example>
+
+<exercise number="6"><statement><p>How do we add or subtract like radicals?</p></statement>
+    <answer><p>By adding or subtracting their coefficients</p></answer></exercise>
+
+<exercise number="7"><statement><p>How do we add or subtract unlike radicals?</p></statement>
+    <answer><p>Unlike radicals cannot be combined.</p></answer></exercise>
+
+<p>Sometimes we must simplify the square roots in a sum or difference before we can recognize like radicals.</p>
+
+<example><statement><p>Simplify <m>~~\sqrt{20} - 3\sqrt{50} + 2\sqrt{45}</m></p></statement>
+
+<solution><p>We simplify each square root by removing perfect squares from the radicals.
+	<md><mrow>\sqrt{20} - 3\sqrt{50} + 2\sqrt{45} \amp = \sqrt{\blert{4} \cdot 5} - 3\sqrt{\blert{25} \cdot 2} + 2\sqrt{\blert{9} \cdot 5}</mrow>
+		<mrow> \amp = \blert{2}\sqrt{5} - 3 \cdot \blert{5}\sqrt{2} + 2 \cdot \blert{3}\sqrt{5}</mrow>
+		<mrow> \amp = 2\sqrt{5} - 15\sqrt{2} + 6\sqrt{5}</mrow></md>
+Then we combine the like radicals <m>2\sqrt{5}</m> and <m>6\sqrt{5}</m> to get
+	<md><mrow>\sqrt{20} - 3\sqrt{50} + 2\sqrt{45} = 8\sqrt{5} - 15\sqrt{2}</mrow></md></p>
+</solution></example>
+
+<problem><statement>
+<p>Find the missing factor.</p>
+<p><ol marker="1." cols="2">
+	<li><m>60x^9 = 3x^3 \cdot ?</m></li>
+	<li><m>16z^{16} = 4z^4 \cdot ?</m></li>
+	<li><m>108a^5b^2 = 36a^4b^2 \cdot ?</m></li>
+	<li><m>\dfrac{20}{7}m^7=4m^6 \cdot ?</m></li>
+	<li><m>\dfrac{5k^5}{9n}=\dfrac{k^4}{9} \cdot ?</m></li>
+	<li><m>\dfrac{a^2+4a^4}{8}=\dfrac{a^2}{4} \cdot ?</m></li>
+</ol></p></statement>
+
+<answer>
+<p><ol marker="1." cols="3">
+    <li><m>20x^6</m></li>
+    <li><m>4z^8</m></li>
+    <li><m>3a</m></li>
+    <li><m>\dfrac{5m}{7}</m></li>
+	<li><m>\dfrac{5k}{n}</m></li>
+    <li><m>\dfrac{1+4a^2}{2}</m></li>
+</ol></p></answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Properties of Radicals</title>
+
+<p>For Problems 1-4, use the examples to decide whether each statement below is true for all nonnegative values of <m>a</m> and <m>b</m>.</p>
+<p><ol marker="1.">
+<li><p>Is it true that  <m>~~\sqrt{a+b} =\sqrt{a} + \sqrt{b}</m>?<ol marker="a.">
+	<li>Does <m>\sqrt{9+16} =\sqrt{9} + \sqrt{16}</m>?</li>
+	<li>Does <m>\sqrt{2+7} =\sqrt{2} + \sqrt{7}</m>?</li>
+</ol></p></li>
+
+<li><p>Is it true that  <m>~~\sqrt{a-b} =\sqrt{a} - \sqrt{b}</m>?<ol marker="a.">
+	<li>Does <m>\sqrt{100-36} =\sqrt{100} - \sqrt{36}</m>?</li>
+	<li>Does <m>\sqrt{12-9} =\sqrt{12} - \sqrt{9}</m>?</li>
+</ol></p></li>
+
+<li><p>Is it true that  <m>~~\sqrt{ab} =\sqrt{a}\sqrt{b}</m>?<ol marker="a.">
+	<li>Does <m>\sqrt{4 \cdot 9} =\sqrt{4} \cdot \sqrt{9}</m>?</li>
+	<li>Does <m>\sqrt{3 \cdot 5} =\sqrt{3} \cdot \sqrt{5}</m>?</li>
+</ol></p></li>
+
+<li><p>Is it true that  <m>~~\sqrt{\dfrac{a}{b}} =\dfrac{\sqrt{a}}{\sqrt{b}}</m>?<ol marker="a.">
+	<li>Does <m>\sqrt{\dfrac{100}{4}} =\dfrac{\sqrt{100}}{\sqrt{4}}</m>?</li>
+	<li>Does <m>\sqrt{\dfrac{20}{3}} =\dfrac{\sqrt{20}}{\sqrt{3}}</m>?</li>
+</ol></p></li>
+
+<li><p>Decide whether the statement is true or false, and then verify with your calculator.<ol marker="a." cols="2">
+	<li><m>\sqrt{12} = \sqrt{4}\sqrt{3}</m></li>
+	<li><m>\sqrt{12} =\sqrt{8} + \sqrt{4}</m></li>
+</ol></p></li>
+
+<li><p>Decide whether the statement is true or false. (All variables are positive.)<ol marker="a." cols="2">
+	<li><m>\sqrt{(2a+b)^2} = 2a+b</m></li>
+	<li><m>\sqrt{4a^2+b^2} =2a+b</m></li>
+	<li><m>\sqrt{1+25r^2} = 1+5r</m></li>
+	<li><m>\sqrt{4s^2-1} =2s-1</m></li>
+	<li><m>\sqrt{9q^2+36} = 3\sqrt{q^2+4}</m></li>
+	<li><m>\sqrt{m^2+\dfrac{1}{4}} =\dfrac{1}{2}\sqrt{4m^2+1}</m></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Simplifying Radicals</title>
+
+<p><ol marker="1.">
+<li><p>Simplify <m>~\sqrt{75}</m></p></li>
+
+<li><p>Find the square root of each power.<ol marker="a." cols="2">
+	<li><m>\sqrt{y^4} </m></li>
+	<li><m>\sqrt{a^{16}}</m></li>
+</ol></p></li>
+
+<li><p>Simplify <m>~\sqrt{b^9}</m></p></li>
+
+<li><p>Simplify <m>~\sqrt{72u^6v^9}</m></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Sums and Differences</title>
+
+<p><ol marker="1.">
+<li><p>Write each expression as a single term.<ol marker="a." cols="2">
+	<li><m>13\sqrt{6}- 8\sqrt{6}</m></li>
+	<li><m>5\sqrt{3x}+\sqrt{3x}</m></li>
+</ol></p></li>
+
+<li><p>Simplify <m>~2\sqrt{48}-\sqrt{75}</m></p></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Applying the product and quotient rules for radicals</li>
+	<li>Simplifying square roots</li>
+	<li>Adding and subtracting like radicals</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>Does <m>~\sqrt{x^2-4} = x-2~</m>?  Does <m>~\sqrt{x^2+4} = x+2~</m>?</li>
+	<li>Explain how simplifying a radical is different from evaluating a radical.</li>
+	<li>Explain why <m>~\sqrt{16} = 4~</m> but <m>~\sqrt{a^{16}} = a^8~</m>.</li>
+	<li>What is wrong with the statement <m>~3\sqrt{6}+2\sqrt{6} = 5\sqrt{12}~</m>? </li>
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<p><ol marker="1.">
+<li><p>Decide whether each statement is true or false, then verify with your calculator.<ol marker="a." cols="2">
+	<li><m>\sqrt{4}+\sqrt{16}=\sqrt{20}</m></li>
+	<li><m>\sqrt{4} \cdot \sqrt{25}=\sqrt{100}</m></li>
+	<li><m>\dfrac{\sqrt{36}}{\sqrt{9}}=\sqrt{4}</m></li>
+	<li><m>\sqrt{100}-\sqrt{64}=\sqrt{36}</m></li>
+</ol></p></li>
+
+<li><p>Decide whether each statement is true or false, then verify with your calculator.<ol marker="a." cols="2">
+	<li><m>\sqrt{3}+\sqrt{5}=\sqrt{8}</m></li>
+	<li><m>\sqrt{6} \cdot \sqrt{5}=\sqrt{30}</m></li>
+	<li><m>\dfrac{\sqrt{18}}{\sqrt{3}}=\sqrt{6}</m></li>
+	<li><m>\sqrt{12}-\sqrt{3}=\sqrt{9}</m></li>
+</ol></p></li>
+
+<li><p>Simplify each square root.<ol marker="a." cols="2">
+	<li><m>\sqrt{54}</m></li>
+	<li><m>\sqrt{b^9}</m></li>
+	<li><m>\sqrt{20x^2y^3}</m></li>
+	<li><m>3\sqrt{\dfrac{12x^4}{25}}</m></li>
+</ol></p></li>
+
+<li><p>Combine like terms.<ol marker="a.">
+	<li><m>2\sqrt{3} + 3\sqrt{5} - 8\sqrt{3} - \sqrt{5}</m></li>
+	<li><m>3\sqrt{12} - 2\sqrt{18} - 4\sqrt{8}</m></li>
+</ol></p></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p><ol marker= "1.">
+    <li><p><ol marker="a." cols="2">
+    	<li>True</li>
+    	<li>True</li>
+    	<li>True</li>
+    	<li>False</li>
+    </ol></p></li>
+    <li><p><ol marker="a." cols="2">
+    	<li>False</li>
+    	<li>True</li>
+    	<li>True</li>
+    	<li>False</li>
+    </ol></p></li>
+    <li><p><ol marker="a." cols="2">
+    	<li><m>3\sqrt{6}</m></li>
+    	<li><m>b^4\sqrt{b}</m></li>
+    	<li><m>2xy\sqrt{5y}</m></li>
+		<li><m>\dfrac{6x^2\sqrt{3}}{5}</m></li>
+	</ol></p></li>
+	<li><p><ol marker="a." cols="2">
+    	<li><m>-6\sqrt{3}+2\sqrt{5}</m></li>
+    	<li><m>6\sqrt{3}-14\sqrt{2}</m></li>
+    </ol></p></li>
+</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-9-3.xml" />
+</section>

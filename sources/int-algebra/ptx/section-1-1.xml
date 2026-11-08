@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="LinMod"   xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Creating a Linear Model</title><idx>linear model</idx>
+
+<introduction>
+<p>To help them understand phenomena that affect our planet, scientists study the connections between relevant variables, such as sea level. In the next investigation we consider a simpler example and look at some ways to connect the variables involved in a career choice.</p> 
+
+<investigation><title>Sales on Commission</title>
+
+<p>Delbert is offered a part-time job selling restaurant equipment. He will be paid $1000 per month plus a 6% commission on his sales. The sales manager tells Delbert he can expect to sell about $8000 worth of equipment per month. To help him decide whether to accept the job, Delbert does a few calculations. <ol marker="1.">
+
+<li><p>Based on the sales manager's estimate, what monthly income can Delbert expect from this job?  What annual salary would that provide?</p></li>
+
+<li><p>What would Delbert's monthly salary be if he sold only $5000 of equipment per month? What would his salary be if he sold $10,000 worth per month? Compute the monthly incomes for each sales totals shown in the table.</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">Sales</cell>
+                        <cell bottom="minor">Income</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5000</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>10,000</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>15,000</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>20,000</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>25,000</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>30,000</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    </tabular></li>
+
+<li><p>Plot your data points on a graph, using sales, <m>S</m>, on the horizontal axis and income, <m>I</m>, on the vertical axis, as shown in the figure. Connect the data points to show Delbert's monthly income for all possible monthly sales totals.</p>
+
+<image width="60%" source="images/Investigation1Grid"><description>grid for graph of sales versus income</description></image></li>
+
+<li><p>Add two new data points to the table by reading values from your graph.</p></li>
+
+<li><p>Write an algebraic expression for Delbert's monthly income, <m>I</m>, in terms of his monthly sales, <m>S</m>.  Use the description in the problem to help you:</p>
+          
+         <p>He will be paid: $1000 plus a 6% commission on his sales.</p>
+                
+        <p>Income <m>= ~~<fillin characters="16"/> </m></p></li>
+
+<li><p>Test your formula from part (5) to see if it gives the same results as those you recorded in the table.</p></li>
+
+<li><p>Use your formula to find out what monthly sales total Delbert would need in order to have a monthly income of $2500.</p></li>
+
+<li><p>Each increase of $1000 in monthly sales increases Delbert's monthly income by <m><fillin characters="6"/></m>.</p></li>
+
+<li><p>Summarize the results of your work:  In your own words, describe the relationship between Delbert's monthly sales and his monthly income. Include in your discussion a description of your graph.</p></li>
+</ol></p></investigation>    
+</introduction>
+
+<subsection><title>Tables, Graphs, and Equations</title>
+
+<p>In the Investigation you studied the connection between the variables <em>Sales</em> and <em>Income</em> for a part-time job. You created a <term>mathematical model</term> for that situation.</p>
+
+<definition><title>Mathematical Model</title>
+    <p>A <term>mathematical model</term><idx>mathematical model</idx><idx>model</idx> is a simplified description of reality that uses mathematics to help us understand a system or process.</p></definition>
+
+<p>We can use a model to analyze data, identify trends, and predict the effects of change. The first step in creating a model is to describe relationships between the variables involved.</p>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+            $step1 = RadioButtons(
+              ["A) Solve the equation.",
+              "B) Analyze data, identify trends, and predict the effects of change.",
+              "C) Describe the relationships between the variables involved.",
+              "D) Make a table of values."],
+              2, 
+            );            
+        </pg-code>
+    <statement><p>What is the first step in creating a mathematical model?</p>
+        <p><var name="$step1" form="buttons"/></p>      
+    </statement>
+    <solution><p>Describe the relationships between the variables involved.</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>What is the first step in creating a mathematical model?</p>
+    <p><ol marker="a.">
+        <li>Solve the equation.</li>
+        <li>Analyze data, identify trends, and predict the effects of change.</li>
+        <li>Describe the relationships between the variables involved.</li>
+        <li>Make a table of values.</li>
+    </ol></p></statement></exercise>
+
+<p>Starting from a description in words, we can represent the relationship by:
+    <ul><li><p>a table of values</p></li>
+        <li><p>a graph, or by</p></li>
+        <li><p>an algebraic equation</p></li></ul></p>
+
+<p>Each of these mathematical tools is useful in a different way.
+    <ol marker="1.">
+        <li>A <term>table of values</term><idx><h>table of values</h></idx> lists specific data points with precise numerical values.</li>
+        <li>A <term>graph</term><idx><h>graph</h></idx> is a visual display of the data. It is easier to spot trends and describe the overall behavior of the variables from a graph.</li>
+        <li>An <term>algebraic equation</term><idx><h>algebraic equation</h></idx><idx><h>equation</h><h>algebraic</h></idx> is a compact summary of the model. It can be used to analyze the model and to make predictions.</li> </ol></p>
+
+<p>Look back at the Investigation to see how each of these modeling tools featured in your work.</p>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>       
+            $threeways = RadioButtons(
+              ["A) By inputs, outputs, or evaluation",
+              "B) By tables, equations, or graphs",
+              "C) By the intercepts, the slope, or the vertex",
+              "D) By numbers, letters, or diagrams"],
+              1, 
+            );            
+        </pg-code>
+    <statement><p>Name three ways to represent a relationship between variables.</p>
+        <p><var name="$threeways" form="buttons"/></p>      
+    </statement>
+    <solution><p>By tables, equations, or graphs</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Name three ways to represent a relationship between variables.</p></statement></exercise>
+
+<p>In the examples that follow, observe the interplay among the three modeling tools and how each contributes to the model.</p>
+
+<example xml:id="example-bicycle"><statement><p>In May 2005, the city of Lyons, France, started a bicycle rental program. Over 3,000 bicycles are available at 350 computerized stations around the city. Each of the 52,000 subscribers pays an annual 5 euro fee (about $7.20) and gets a PIN to access the bicycles. The bicycles rent for 1 euro per hour and can be returned to any station.</p>
+<p>Your community decides to set up a similar program, charging a $5 subscription fee and $3 an hour for rental. (A fraction of an hour is charged as the corresponding fraction of $3).</p>
+    <p><ol marker="a.">
+        <li><p>Make a table of values showing the cost, <m>C</m>, of renting a bike for various lengths of time, <m>t</m>.</p></li>
+        <li><p>Plot the points on a graph. Draw a curve through the data points.</p>
+            <aside><p><m>\alert{\text{[TK]}}~~</m>For more help on plotting points, see <xref ref="tkPlotPoints" text="custom"> Section 1.1.2 </xref> of the Toolkit.</p></aside></li>
+        <li><p>Write an equation for <m>C</m> in terms of <m>t</m>. </p></li>
+    </ol></p></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>There is an initial fee of $5, and a rental fee of $3 per hour. To find the cost, we multiply the rental time by $3 per hour, and add the result to the $5 subscription fee. For example, the cost of a one-hour bike ride is
+        <md><mrow>\text{Cost}\amp=(\$5\text{ subscription fee})+(\$3\text{ per hour})\times(\alert{\text{one hour}})</mrow>
+            <mrow>C\amp=5+3(\alert{1})=8</mrow></md>
+    A one-hour bike ride costs $8.</p>
+    <p>We calculate the cost for the other values of <m>t</m> and record the results in a table as shown below.</p>
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <col/><col/><col top="none" /><col />
+                <row>
+                    <cell><line>Length of rental</line><line>(hours)</line></cell>
+                    <cell><line>Cost of rental</line><line>(dollars)</line></cell>
+                    <cell bottom="none"></cell>
+                    <cell><m>(t,C)</m></cell></row>
+                <row> 
+                    <cell><m>0</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell bottom="none"><m>\quad C=5+3(\alert{0})\quad</m></cell>
+                    <cell><m>(0,5)</m></cell></row>
+                <row> <cell><m>1</m></cell>
+                    <cell><m>8</m></cell>
+                    <cell bottom="none"><m>\quad C=5+3(\alert{1})\quad</m></cell>
+                    <cell><m>(1,8)</m></cell></row>
+                <row> <cell><m>2</m></cell>
+                    <cell><m>11</m></cell>
+                    <cell bottom="none"><m>C=5+3(\alert{2})</m></cell>
+                    <cell><m>(2,11)</m></cell></row>
+                <row> <cell><m>3</m></cell>
+                    <cell><m>14</m></cell>
+                    <cell bottom="none"><m>C=5+3(\alert{3})</m></cell>
+                    <cell><m>(3,14)</m></cell></row>
+                    </tabular></li>
+    <li><sidebyside widths="55% 28%" valigns="middle middle"><stack><p>Each pair of values represents a point on the graph. The first value gives the horizontal coordinate of the point, and the second value gives the vertical coordinate.</p> 
+    <p>The points lie on a straight line, as shown in the figure. The line extends infinitely in only one direction, because negative values of <m>t</m> do not make sense here.</p></stack>
+            <image source="images/fig-Annelise-1"><description>graph of cost versus time with labeled points</description></image></sidebyside></li>
+    <li><p>To write an equation, we let <m>C</m> represent the cost of the rental, and we use <m>t</m> for the number of hours:</p>
+        <p><md><mrow>\text{Cost}\amp=(\$5\text{ subscription})+\$3\cdot\text{(number of hours)}</mrow>
+                <mrow>C\amp=5+3\cdot t</mrow></md> </p></li>
+    </ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork ><pg-code>
+            $subscription=Compute("7");
+            $rate = Compute("2.50");
+        </pg-code>
+    <statement><p>Write an equation for the cost <m>C</m> of renting a bicycle for <m>t</m> hours if the subscription fee is $7 and the rental fee is $2.50 per hour.</p>
+        <p><md><mrow>\text{Cost} = (\text{subscription fee})+(\text{hourly rate})\cdot(\text{number of hours}) </mrow>
+            </md></p>
+        <p><m>C={} </m><var name="$subscription" width="2"/><m>{} + {}</m> <var name="$rate" width="3"/> <m>\cdot ~ t</m></p>
+    </statement>
+        <hint><p>Fill in the correct numbers.</p></hint>
+    <solution><p><m>C=7+2.50t </m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+    <statement><p>Write an equation for the cost <m>C</m> of renting a bicycle for <m>t</m> hours if the subscription fee is $7 and the rental fee is $2.50 per hour.</p>
+    <p>Hint: Fill in the correct numbers in the equation below.</p>
+        <md><mrow>\text{Cost}\amp= (\text{subscription fee}) + (\text{hourly rate}) \cdot(\text{number of hours})</mrow>
+            <mrow>C\amp= <fillin characters="10" /> + <fillin characters="10" /> \cdot t</mrow></md>
+    </statement>    
+<answer><p><m>C=7+2.50t </m></p></answer></exercise> 
+</subsection>
+
+<subsection><title>Equations for Linear Models</title>
+
+<p>The equation we wrote in <xref ref="example-bicycle" text="custom">Example 1.1.4</xref>, <m>~C=5+3t~</m>, is an example of a <term>linear model</term>, which describes a variable that increases or decreases at a constant rate. The cost of renting a bicycle increased at a constant rate of $3 every hour.</p>    
+
+<definition><title>Linear Model</title><idx>linear model</idx>
+    <statement><p>A <term>linear model</term><idx>linear model</idx> describes a variable that increases or decreases at a constant rate. It has the form
+        <me>\blert{y=(\text{starting value})+(\text{rate})\times t }</me></p></statement>
+</definition>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork>
+    <pg-code>       
+            $which = RadioButtons(
+              ["A) Increasing variables",
+              "B) Variables that change at a constant rate",
+              "C) Variables that describe time",
+              "D) Variables that can be graphed"],
+              1, 
+            );            
+        </pg-code>
+    <statement>
+        <p>What sort of variables can be described by a linear model?</p>
+        <p><var name="$which" form="buttons"/></p>      
+    </statement>
+    <solution><p>Variables that change at a constant rate</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>What sort of variables can be described by a linear model?</p>
+    <p><ol marker="a.">
+        <li>Increasing variables</li>
+        <li>Variables that change at a constant rate</li>
+        <li>Variables that describe time</li>
+        <li>Variables that can be graphed</li>
+    </ol></p></statement></exercise>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help on writing a linear model, see <xref ref="tkWriteLinMod" text="custom"> Section 1.1.1 </xref> of the Toolkit.</p></aside>
+
+<p>The connections between an equation and its graph can give us useful information about a model. In the next Example we see how to use this idea.</p>
+
+<example xml:id="example-6hrbike"><statement>
+    <p>Use the equation <m>~ C=5+3\cdot t ~</m> you found in <xref ref="example-bicycle" text="type-global"/> to answer the following questions. Then show how to find the answers by using the graph.</p><p>
+    <ol marker="a.">
+        <li><p>How much will it cost to rent a bicycle for 6 hours?</p></li>
+        <li><p>How long can you bicycle for $18.50?</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We substitute <m>t=\alert{6}</m> into the equation to find 
+        <me>C=5+3(\alert{6})=23</me>
+    A 6-hour bike ride will cost $23.  The point <m>P</m> on the graph in the figure represents the cost of a 6-hour bike ride.  The value on the <m>C</m>-axis at the same height as point <m>P</m> is 23, so a 6-hour bike ride costs $23.</p></li>
+    <li><sidebyside widths="60% 35%" valigns="middle middle">
+    <p>We substitute <m>C=\alert{18.50}</m> into the equation and solve for <m>t</m>. 
+        <md><mrow>\alert{18.50}\amp=5+3t</mrow>
+            <mrow>13.50\amp=3t</mrow>
+            <mrow>t\amp=4.5</mrow></md>
+    For $18.50 you can bicycle for <m>4\frac{1}{2} </m> hours. The point <m>Q</m> on the graph represents an $18.50 bike ride. The value on the <m>t</m>-axis below point <m>Q</m> is 4.5, so $18.50 will buy a 4.5 hour bike ride.</p>
+            <image source="images/fig1-2"><description>graph of cost versus time with showing coordinates of two points</description></image></sidebyside>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>For more help on solving linear equations, see <xref ref="tkSolveLinEq" text="custom"> Section 1.1.3 </xref> of the Toolkit.</p></aside></li>
+    </ol></p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+    <webwork>
+        <pg-code>
+            $time = Compute("1.5");
+        </pg-code>
+        <statement>
+            <p>In the preceding Example, how long can you bicycle for $9.50?</p> 
+            <p> Answer: <var name="$time" width="2"/> hr.</p> 
+            <p>Show this on the graph.</p>
+        </statement>
+        <hint>
+            <p>Start by finding $9.50 on the Cost (vertical axis). Then find the point on the graph with <m>C</m>-coordinate $9.50. Finally, find the <m>t</m>-coordinate of that point.</p>
+        </hint>
+        <solution>
+            <p>1.5 hours</p>
+            <p>A figure is below.</p>
+        </solution>
+    </webwork>    
+    <conclusion>
+        <image width="30%" source="images/fig-ex-1-1-3"><description>cost of bike rental</description></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>In the preceding Example, how long can you bicycle for $9.50?</p> 
+<p>Hint: Start by finding $9.50 on the Cost (vertical axis). Then find the point on the graph with <m>C</m>-coordinate $9.50. Finally, find the <m>t</m>-coordinate of that point.</p>
+</statement>
+<answer><p>1.5 hours</p></answer></exercise>
+
+<p>In <xref ref="example-6hrbike" text="type-global" />, note the different algebraic techniques we used in parts (a) and (b):</p>
+<p><ul>
+    <li><p>In part (a) we were given a value of <m>t</m> and we <term>evaluated the expression</term> <m>5 + 3t</m> to find <m>C</m>.</p></li>
+    <li><p>In part (b) we were given a value of <m>C</m> and we <term>solved the equation</term> <m>C = 5 + 3t</m> to find <m>t</m>.</p></li>
+</ul></p>
+
+<exercise component="webwork"><title>QuickCheck 4</title>
+<webwork><pg-code>
+             $which1 = PopUp(
+              ["?","solving","evaluating"],
+              2, 
+            );
+             $which2 = PopUp(
+              ["?","solving","evaluating"],
+              1, 
+            );
+        </pg-code>
+    <statement><p>
+        Consider the expression <m>C = 5 + 3t</m>. Finding a value of <m>C</m> when we know <m>t</m> is called <var name="$which1" form="popup"/> the expression. Finding a value of <m>t</m> when we know <m>C</m> is called <var name="$which2" form="popup"/> the equation.
+    </p></statement>
+    <solution><p>evaluating; solving</p>
+    </solution></webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 4</title>
+<statement><p>Consider the expression <m>C = 5 + 3t</m>. Finding a value of <m>t</m> when we know <m>C</m> is called <fillin characters="15" />. Finding a value of <m>t</m> when we know <m>C</m> is called <fillin characters="15" />.</p></statement>
+</exercise>
+
+<p>In the examples above, the graph is <term>increasing</term><idx>increasing graph</idx><idx><h>graph</h><h>increasing</h></idx> as <m>t</m> increases. In the next Example we consider a <term>decreasing graph</term><idx><h>decreasing graph</h></idx><idx><h>decreasing graph</h><seealso>decreasing function</seealso></idx><idx><h>graph</h><h>decreasing</h></idx><idx><h>graph</h><h>decreasing</h><seealso>decreasing function</seealso></idx>.</p>
+
+<example xml:id="Leon-camper"><statement><p>Leon's camper has a 20-gallon gas tank, and he gets 12 miles to the gallon. (Note that getting 12 miles to the gallon is the same as using <m>\frac{1}{12}</m> gallon of gas per mile.)</p>
+    <p><ol marker="a.">
+        <li><p>Write an equation for the amount of gasoline, <m>g</m>, left in Leon's tank after he has driven for <m>d</m> miles.</p></li>
+        <li><p>Make a table of values for the equation.</p></li>
+        <li><p>Graph the equation.</p></li>
+        <li><p>If Leon has less than 5 gallons of gas left, how many miles has he driven since his last fill-up? Illustrate on the graph.</p></li>
+    </ol></p></statement>
+    
+<solution><p><ol marker="a.">
+    <li><p>We use the form for a linear model,
+                <me>y=(\text{starting value})+(\text{rate})\times t</me>
+    However, in this problem, instead of variables <m>y</m> and <m>t</m>, we use <m>g</m> and <m>d</m>.  Leon's fuel tank started with 20 gallons, and the amount of gasoline is decreasing at a rate of <m>\frac{1}{12}</m> gallon for every mile that he drives. Thus,
+                <me>g=20-\frac{1}{12}d </me></p></li>
+    <li><p>Every time Leon drives 12 miles, he uses another gallon of gasoline. So, to make the calculations easier, we choose values that are divisible by 12.</p>
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="left"/><col /><col /><col /><col />
+                    <row bottom="minor">
+                        <cell><m>d</m> (miles)</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>48</m></cell>
+                        <cell><m>96</m></cell>
+                        <cell><m>144</m></cell></row>
+                    <row>
+                        <cell><m>g</m> (gallons)</cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>16</m></cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>8</m></cell></row>
+            </tabular></li>
+    <li><p>We scale the values of <m>d</m> along the horizontal axis, and the values of <m>g</m> along the vertical axis. Then we plot the points from the table and connect with a line, as shown in the figure below.</p></li>
+    <li><p>If Leon has less than 5 gallons of gasoline left, then <m>g\lt 5</m>, as shown on the <m>g</m>-axis. Using our model from part (a), we solve the inequality. 
+                <md><mrow>20-\frac{1}{12}d \amp \lt 5 \amp\amp\blert{\text{Subtract } 20 \text{ from both sides.}}</mrow>
+                    <mrow>-\frac{1}{12}d \amp \lt -15 \amp\amp\blert{\text{Multiply by } {-12} \text{ on both sides.}} </mrow>
+                    <mrow>d \amp\gt 180\amp\amp \begin{array}{l}
+                        \blert{\text{Note that we reversed the direction of the}}\\
+                        \blert{\text{the inequality when we multiplied by }{-12}. }
+                    \end{array}
+                </mrow></md>
+     Leon has driven at least 180 miles. The solution is shown on the graph below.</p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>For more help on solving linear inequalities, see <xref ref="tkSolveLinIneq" text="custom"> Section 1.1.4 </xref> of the Toolkit.</p></aside></li>
+    </ol></p>
+     <image width="40%" xml:id="fig-Leon-gas-miles"><description>graph of gas left versus miles driven, with solution of inequality</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.45]
+        \draw[lightgray] (0,0) grid (6,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(6.4,0) node[right]{$d$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.3) node[left]{$g$};
+        \foreach \x [evaluate=\x as \xi using int( 50* \x )]  in {1,2,5,6} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {4,6,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left]{$\xi$};
+        }
+        \draw[red,very thick] (0,10)--(24/5,0);
+        \draw[red,line width=1mm] (18/5,5/2)--(24/5,0);
+        \draw[cyan,very thick, dashed, ->] (0,5/2) --(1.8,5/2);
+        \draw[cyan,very thick, dashed, ->] (1.8,5/2) --(3.5,5/2);
+        \draw[cyan,very thick, dashed, ->] (18/5,5/2) -- (18/5,0.2);
+        \draw[line width=1mm, ->, >=stealth'] (18/5,0)--(6.4,0);
+        \draw[cyan, fill=white] (0,5/2) ellipse (.10125 and .2) node[left, xshift=-1.5, text=blue]{$5$};
+        \draw[cyan, fill=white] (18/5,5/2) ellipse (.10125 and .2);
+        \draw[cyan, fill=white] (18/5,0) ellipse (.10125 and .2) node[below, yshift=-1.5, text=blue]{$180$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</solution></example>
+
+<note><p>In part (d) of the previous Example we used an <term>inequality</term><idx>inequality</idx> to answer the question. We use inequalities to model English phrases such as "less than," "more than," "at least," and "at most."</p></note>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <introduction>
+        <image width="35%" xml:id="fig-Leon-mileage-gridw"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.45]
+        \draw[lightgray] (0,0) grid (6,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(6.4,0) node[right]{$d$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.3) node[left]{$g$};
+        \foreach \x [evaluate=\x as \xi using int( 50* \x )]  in {1,2,...,6} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left]{$\xi$};
+        }
+        \draw[red,very thick] (0,10)--(24/5,0);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </introduction>
+    <webwork>
+        <pg-code>
+            $gas = RadioButtons(
+              ["At least 7.5 gallons",
+              "At most 7.5 gallons",
+              "At least 20 gallons.",
+              "At most 240 gallons"],
+              1, 
+            );            
+        </pg-code>
+        <statement>
+            <p>Leon forgot to reset his odometer after his last fill-up, but he thinks he has driven at least 150 miles. How much gas does he have left?</p> 
+            <p><var name="$gas" form="buttons"/></p> 
+            <p>Show this on the graph.</p>
+        </statement>
+        <hint> <p>Locate 150 miles on the \(d\)-axis. What part of the axis represents "at least" 150 miles? Find the points on the graph with \(d\)-coordinates at least 150. What are the \(g\)-coordinates of those points?</p>
+        </hint>
+        <solution><p>At most 7.5 gallon</p></solution>
+    </webwork>    
+    <conclusion>
+        <image width="35%"  xml:id="fig-Leon-mileagew"><description>line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.45]
+        \draw[lightgray] (0,0) grid (6,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(6.4,0) node[right]{$d$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.3) node[left]{$g$};
+        \foreach \x [evaluate=\x as \xi using int( 50* \x )]  in {1,2,4,5,6} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,6,8,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left]{$\xi$};
+        }
+        \draw[red,very thick] (0,10)--(24/5,0);
+        \draw[red,line width=1mm] (24/5,0)--(3,3.6);
+        \draw[cyan,ultra thick, dashed,->] (3,0) -- (3,1.75);
+        \draw[cyan,ultra thick, dashed,->] (3,1.75) -- (3,3.5);
+        \draw[cyan,ultra thick, dashed,->] (3,15/4) -- (1.5,15/4);
+        \draw[cyan,ultra thick, dashed,->] (1.5,15/4) -- (0.15,15/4);
+        \draw[line width=1mm] (0,15/4)--(0,0);
+        \filldraw[cyan] (0,3.75) ellipse (.10125 and .2) node[left, xshift=-1.5, text=blue]{$7.5$};
+        \filldraw[cyan] (3,15/4) ellipse (.10125 and .2);
+        \filldraw[cyan] (3,0) ellipse (.10125 and .2) node[below, yshift=-1.5, text=blue]{$150$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><sidebyside widths="45% 45%"><stack><p>Leon forgot to reset his odometer after his last fill-up, but he thinks he has driven at least 150 miles. How much gas does he have left? Show this on the graph.</p>
+<p>Hint: Locate 150 miles on the <m>d</m>-axis. What part of the axis represents "at least" 150 miles? Find the points on the graph with <m>d</m>-coordinates at least 150. What are the <m>g</m>-coordinates of those points?</p></stack>
+    <image xml:id="fig-Leon-mileage-grid"><description>graph of gas left versus miles driven</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.45]
+        \draw[lightgray] (0,0) grid (6,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(6.4,0) node[right]{$d$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.3) node[left]{$g$};
+        \foreach \x [evaluate=\x as \xi using int( 50* \x )]  in {1,2,...,6} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,4,...,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left]{$\xi$};
+        }
+        \draw[red,very thick] (0,10)--(24/5,0);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></statement>
+    <answer><p>At most 7.5 gallon</p>
+    <image width="35%"  xml:id="fig-Leon-mileage"><description>graph of gas left versus miles driven with point located</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.8, yscale=.45]
+        \draw[lightgray] (0,0) grid (6,12);
+        \draw[black,thick,->,>=stealth'] (0,0)--(6.4,0) node[right]{$d$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,12.3) node[left]{$g$};
+        \foreach \x [evaluate=\x as \xi using int( 50* \x )]  in {1,2,4,5,6} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below]{$\xi$};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,6,8,10} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left]{$\xi$};
+        }
+        \draw[red,very thick] (0,10)--(24/5,0);
+        \draw[red,line width=1mm] (24/5,0)--(3,3.6);
+        \draw[cyan,ultra thick, dashed,->] (3,0) -- (3,1.75);
+        \draw[cyan,ultra thick, dashed,->] (3,1.75) -- (3,3.5);
+        \draw[cyan,ultra thick, dashed,->] (3,15/4) -- (1.5,15/4);
+        \draw[cyan,ultra thick, dashed,->] (1.5,15/4) -- (0.15,15/4);
+        \draw[line width=1mm] (0,15/4)--(0,0);
+        \filldraw[cyan] (0,3.75) ellipse (.10125 and .2) node[left, xshift=-1.5, text=blue]{$7.5$};
+        \filldraw[cyan] (3,15/4) ellipse (.10125 and .2);
+        \filldraw[cyan] (3,0) ellipse (.10125 and .2) node[below, yshift=-1.5, text=blue]{$150$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</answer></exercise>
+</subsection>
+
+<xi:include href="./section-1-1-exercises.xml" />                
+
+<!--
+<xi:include href="./summary-1-1.xml" /> 
+   -->
+
+</section>
+<!-- </book>  </mathbook> -->

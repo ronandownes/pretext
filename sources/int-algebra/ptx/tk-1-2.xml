@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkGraphsandEquations"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Graphs and Equations</title>
+
+             
+<subsubsection xml:id="tkVerify"><title>Verify a solution</title>
+<introduction><p>We can always check a solution to an equation by verifying that it makes the equation true.</p></introduction>
+
+<example><statement><p>Verify that <m>x=-5</m> is a solution of the equation <me>~~x^2+2x-15=0</me> </p></statement>
+
+<solution><p>We show that substituting <m>-5</m> for <m>x</m> makes the equation true.  When we substitute a negative number for a variable, we should enclose the number in parentheses.
+            <me>\begin{aligned}[t]
+                x^2+2x-15 \amp = (\alert{-5})^2+2(\alert{-5})-15\\
+                         \amp = 25-10-15=0
+                \end{aligned}</me>
+Because the expression does equal <m>0</m>, we see that <m>x=-5</m> is a solution.</p></solution></example>
+
+<example><statement><p>Verify that <m>x=-3</m> is not a solution of the equation <me>~~\sqrt{2x+10}-3x=8</me> </p></statement>
+
+<solution><p>We show that substituting <m>-3</m> for <m>x</m> does not make the equation true.
+            <me>\begin{aligned}[t]
+                \sqrt{2x+10}-3x \amp = \sqrt{2(\alert{-3})+10}-3(\alert{-3})\\
+                         \amp = \sqrt{4}+9=2+9=11 \not= 8
+                \end{aligned}</me>
+The left side of the equation does not equal 8 when <m>x=-3</m>, so <m>x=-3</m> is not a solution.</p></solution>
+</example>
+
+<exercise><statement><p>Decide whether the given value is a solution of the equation.
+    <me>x^3-3x^2-4x+2=10;~~~~x=-2</me></p></statement>
+    <answer><p>Yes</p></answer></exercise>
+
+<exercise><statement><p>Decide whether the given value is a solution of the equation.
+    <me>\sqrt{3x+5}=10+\sqrt{x+7};~~~~x=9</me></p></statement>
+    <answer><p>No</p></answer></exercise>
+
+<exercise><statement><p>Decide whether the given value is a solution of the equation.
+    <me>\dfrac{2x-1}{x+1}+2=\dfrac{x+1}{x-1};~~~~x=2</me></p></statement>
+    <answer><p>Yes</p></answer></exercise>
+
+<exercise><statement><p>Decide whether the given value is a solution of the equation.
+    <me>9-4x=5\sqrt{x+3};~~~~x=6</me></p></statement>
+    <answer><p>No</p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkParens"><title>Solve linear equations and inequalities with parentheses</title>
+
+<introduction>
+
+<assemblage><title>Strategy for solving linear equations</title>
+    <p><ol marker="1.">
+<li>Simplify each side of the equation:  
+    apply the distributive law, combine like terms.</li>
+<li>Use addition and subtraction to get all the variable terms on one 
+    side of the equation, and all constsnt terms on the other side.</li>
+<li>Divide both sides by the coefficient of the variable.</li>
+</ol></p></assemblage>
+</introduction>
+
+<example><statement><p>Solve <m>~~3(2a-4) \ge 4-(1-3a)</m></p></statement>
+
+<solution><p>First, we remove parentheses by applying the distributive law.  Then we can combine like terms on each side of the equation.</p>
+<p> Note that the minus sign in front of the parentheses on the right side of the equation applies to both terms inside the parentheses.
+    <md><mrow>3(2a-4) \amp \ge 4-(1-3a) \amp \amp \blert{\text{Apply the distributive law.}}</mrow>
+        <mrow>6a-12 \amp \ge 4\alert{-}1\alert{+}3a \amp \amp \blert{\text{Simplify the right side.}}</mrow>
+        <mrow>6a-12 \amp \ge 3+3a   \amp \amp \blert{\text{Subtract}~ 3a~ \text{from both sides.}}</mrow>
+        <mrow>3a-12 \amp \ge 3   \amp \amp \blert{\text{Add 12 to both sides.}}</mrow>
+        <mrow>3a \amp \ge 15   \amp \amp \blert{\text{Divide both sides by 3.}}</mrow>
+        <mrow>a \amp \ge 5</mrow></md>
+</p></solution></example>
+
+<example><statement><p>Solve the inequality <m>~~25-6x \gt 3x-2(4-x)</m></p></statement>
+
+<solution><p>We begin by the same way we solve an equation. For this example, we start by removing the parentheses.
+    <md><mrow>25-6x \amp \gt 3x-2(4-x) \amp \amp \blert{\text{Apply the distributive law.}}
+        </mrow>
+        <mrow>25-6x \amp \gt 3x-8+2x \amp \amp \blert{\text{Combine like terms.}}</mrow>
+        <mrow>25-6x \amp \gt 5x-8   \amp \amp \blert{\text{Subtract}~ 5x~ \text{from both sides.}}</mrow>
+        <mrow>25-11x \amp \gt -8   \amp \amp \blert{\text{Subtract 25 from both sides.}}</mrow>
+        <mrow>-11x \amp \gt -33   \amp \amp \blert{\text{Divide both sides by -11.}}</mrow>
+        <mrow>x \amp \alert{\lt} 3   \amp \amp  \blert{\text{Don't forget to reverse the inequality symbol.}}</mrow></md>
+    Recall that if we multiply or divide both sides of an inequality by a negative number, we must reverse the direction of the inequality symbol.</p></solution></example>
+
+<exercise><statement><p>Solve the inequality <m>~~-4(x+2)+3(x-2) \ge -2</m> </p></statement>
+    <answer><p><m>x \le -12</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the equation <m>~~4(2-3w)=9-3(2w-1)</m> </p></statement>
+    <answer><p><m>\dfrac{-1}{2}</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the inequality <m>~~2(3h-6) \lt 5-(h-4)</m> </p></statement>
+    <answer><p><m>h \lt 3</m></p></answer></exercise>
+
+<exercise><statement><p>Solve the equation <m>~~0.25(x+3)-0.45(x-3)=0.30</m> </p></statement>
+    <answer><p><m>9</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkEqn2Var"><title>Solutions of an equation in two variables</title>
+
+<introduction><p>A solution of an equation in two variables <m>x</m> and <m>y</m> is written as an <term>ordered pair</term>, <m>(x,y)</m>. For example, the solution <m>(-2,5)</m> means that <m>x=-2</m> and <m>y=5</m>.</p></introduction>
+
+<example><statement><p>Is <m>(-3,2)</m> a solution of the equation <m>~~x^2+4y^2=25</m> ?</p></statement>
+
+<solution><p>We substitute <m>x=\alert{-3}</m> and <m>y=\alert{2}</m> into the equation.
+    <me>(\alert{-3})^2+4(\alert{2})^2=9+4(4)=9+16=25</me>
+The ordered pair <m>(-3,2)</m> satisfies the equation, so it is a solution.</p></solution></example>
+
+<example><statement><sidebyside widths="65% 30%" margins="0% 0%"><p>Which of the following ordered pairs are solutions of the equation whose graph is shown?
+    <ol marker="a." cols="2">
+        <li><m>(-3,-2)</m></li>
+        <li><m>(-5,0)</m></li>
+        <li><m>(1,-4)</m></li>
+        <li><m>(-1,-6)</m></li></ol></p>
+    <image xml:id="y-eq-xsq-plus-2x-minus6"><description>parabola</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.5, yscale=.25]
+        \draw[cyan] (-6,-10) grid[ystep=2] (4,10);
+        \draw[black,very thick, ->, >=stealth'] (-6,0)--(4.8,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.4) node[left, xshift=2]{$y$};
+        \foreach \x  in  {-4,4} {
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x  in  {-4,4,-8,8} {
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-5:3},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {(\x)^2+2*\x-5});
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+</statement>
+
+<solution><p>The graph of an equation is just a picture of its solutions, so points that lie on the graph are solutions of the equation.</p>
+<p> The points <m>(-3,-2)</m> and <m>(-1,-6)</m> lie on the graph, so they represent solutions of the equation. The points <m>(-5,0)</m> and <m>(1,-4)</m> do not lie on the graph, so they are not solutions of the equation.
+</p></solution></example>
+
+<exercise><statement><p>Find a solution of the equation with the given coordinate.
+    <me>6x-5y=-3,~~~~(2,?)</me></p></statement>
+    <answer><p><m>(2,3)</m></p></answer></exercise>
+
+<exercise><statement><p>Find a solution of the equation with the given coordinate.
+    <me>y=\frac{3}{4}x+8,~~~~(?,-1)</me></p></statement>
+    <answer><p><m>(-12,-1)</m></p></answer></exercise>
+
+<exercise><statement><p>Find a solution of the equation with the given coordinate.</p>
+    <image width="40%" source="images/fig-wu-4.png"><description>graph</description></image>
+</statement>
+    <answer><p><m>(16,4)</m></p></answer></exercise>
+
+<exercise><statement><p>Find a solution of the equation with the given coordinate.</p>
+    <image width="40%" source="images/fig-wu-5.png"><description>graph</description></image>
+</statement>
+    <answer><p><m>(2,-5)</m></p></answer></exercise>
+
+</subsubsection>
+</subsection>

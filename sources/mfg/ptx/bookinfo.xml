@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+
+<!--********************************************************************
+
+
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2016/28/04)                     -->
+<!--                                               -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+<document-id>mfg</document-id>
+<blurb shelf="Mathematics">
+      Modeling, Functions, and Graphs covers the content of a typical college algebra course with an emphasis on functions and modeling; when combined with a trigonometry text or supplement, this text can be used in a precalculus course.
+    </blurb>
+
+<brandlogo url="https://yoshiwarabooks.org/" source="images/cover.png" /> 
+
+<!--    <website> -->
+<!--         <title>MFG-online</title> -->
+<!--         <url>https://byoshiwara.github.io/MFG-online/</url> -->
+<!--     </website> -->
+
+<!-- rename blocks -->
+        <rename element="warning">Caution</rename>
+<!--       <rename element="inlineexercise">Notebook</rename> -->  
+<!--        <rename element="theorem" lang="en-US">Key Idea</rename> -->
+
+
+    <!-- Prefix to enhance Sage notebook contents -->
+    <initialism>MFG</initialism>
+
+<math-package latex-name="cancel" mathjax-name="cancel"/>
+
+<!-- tikz package and libraries for images -->
+<latex-image-preamble>
+    \usepackage{tikz}
+    \usetikzlibrary{calc}
+    \usetikzlibrary{arrows}
+    \usetikzlibrary{decorations.pathreplacing}
+    \usetikzlibrary{patterns}
+    \usetikzlibrary{calc,intersections,through,backgrounds}
+    \usetikzlibrary{shapes.geometric}
+</latex-image-preamble>
+
+   <macros>
+        \newcommand\degree[0]{^{\circ}}
+        \newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+        \newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+        \newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+        \newcommand{\bluetext}[1]{\color{blue}{#1}} <!-- comments in aligned equations -->
+        \delimitershortfall-1sp
+        \newcommand\abs[1]{\left|#1\right|}
+    </macros>
+
+
+    <macros>
+        \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+    </macros>
+
+<!--        <search>
+            <google>
+                <cx>006592449927388994635:w0x-ox5bpme</cx>
+            </google>
+        </search> -->
+
+
+</docinfo>

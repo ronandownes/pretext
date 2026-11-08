@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Balloon"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Inflating a Balloon</title>
+ 
+<introduction><p>If you blow air into a balloon, what do you think will happen to the air pressure inside the
+balloon as it expands? Here is what two physics books have to say:</p>
+
+<p>“The greater the pressure inside, the greater the balloon’s volume.”
+Jay Boleman, Physics, a Window on Our World</p>
+
+<p>“Contrary to the process of blowing up a toy balloon, the pressure required to force air into a bubble decreases with bubble size.”
+Francis Sears, Mechanics, Heat, and Sound</p></introduction>
+
+<exercises>
+<exercise number="1"><statement><p>On the basis of these two quotations and your own intuition, sketch a graph of pressure as a function of the diameter of the balloon. Describe your graph: Is it increasing or decreasing? Is it concave up (bending upward) or concave down (bending downward)?</p></statement></exercise>
+
+<exercise number="2"><statement><p>Two high school students, April Leonardo and Tolu Noah, decided to see for themselves how the pressure inside a balloon changes as the balloon expands. Using a column of water to measure pressure, they collected the following data while blowing up a balloon. Graph their data on the grid below.</p>
+ 
+<sidebyside widths="40% 50%"><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">Diameter (cm)</cell>
+                        <cell bottom="minor">Pressure (cm H_2O)</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5.7</m></cell>
+                        <cell bottom="minor"><m>60.6</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>7.3</m></cell>
+                        <cell bottom="minor"><m>57.2</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8.2</m></cell>
+                        <cell bottom="minor"><m>47.9</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10.7</m></cell>
+                        <cell bottom="minor"><m>38.1</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>12</m></cell>
+                        <cell bottom="minor"><m>37.1</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>14.6</m></cell>
+                        <cell bottom="minor"><m>31.9</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>17.5</m></cell>
+                        <cell bottom="minor"><m>28.1</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>20.5</m></cell>
+                        <cell bottom="minor"><m>26.4</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>23.5</m></cell>
+                        <cell bottom="minor"><m>28</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>25.2</m></cell>
+                        <cell bottom="minor"><m>31.4</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>26.1</m></cell>
+                        <cell bottom="minor"><m>34</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>27.5</m></cell>
+                        <cell bottom="minor"><m>37.2</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>28.4</m></cell>
+                        <cell bottom="minor"><m>37.9</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>29</m></cell>
+                        <cell bottom="minor"><m>40.7</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>30</m></cell>
+                        <cell bottom="minor"><m>43.3</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>30.6</m></cell>
+                        <cell bottom="minor"><m>46.6</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>31.3</m></cell>
+                        <cell bottom="minor"><m>50</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>32.2</m></cell>
+                        <cell bottom="minor"><m>61.9</m></cell></row>    
+                    </tabular>
+
+    <image source="images/fig-???"><description>graph</description></image></sidebyside></statement></exercise>
+
+<exercise number="3"><statement><p>Describe the graph of April and Tolu’s data. Does the graph confirm the predictions of the physics books?</p></statement></exercise>
+
+<p>As the diameter of the balloon increases from 5 cm to 20 cm, the pressure inside decreases. Can we find a function that describes this portion of the graph? Here is some information: <ul>
+    <li>Pressure is the force per unit area exerted by the balloon on the air inside, or <m>P=\dfrac{F}{A}</m>.</li>
+    <li>The balloon is spherical, so its surface area, <m>A</m>, is given by <m>A=\pi d^2</m>.</li></ul></p>
+
+<exercise number="4"><statement><p>Because the force increases as the balloon expands, we will try a power function of the form <m>F=kd^p</m>, where <m>k</m> and <m>p</m> are constants, to see if it fits the data. Combine the three equations, <m>P=\dfrac{F}{A},~A=\pi d^2~</m>, and <m>~F=kd^p</m>, to express <m>P</m> as a power function of <m>d</m>.</p></statement></exercise>
+
+<exercise number="5"><statement><p>Graph the function <m>P=211 d^{-0.7}</m> on the same grid with the data.  Do the data support the hypothesis that <m>P</m> is a power function of <m>d</m>?</p></statement></exercise>
+
+<exercise number="6"><statement><p>What is the value of the exponent <m>p</m> in <m>~F=kd^p</m>?</p></statement></exercise>
+
+</exercises>
+
+</section>
+
+
+
+                                                 
+

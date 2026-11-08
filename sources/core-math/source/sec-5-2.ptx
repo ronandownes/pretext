@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-5-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>More Algebraic Expressions</title>
+
+  <sidebyside widths="50% 30%" valigns="middle middle"><p><ul>
+    <li><p>Writing Algebraic Expressions</p></li>
+    <li><p>Evaluating Algebraic Expressions</p></li>
+    <li><p>Formulas</p></li>
+  </ul></p>
+      <image source="emojis.png"></image></sidebyside> 
+  
+<subsection><title>Writing Algebraic Expressions</title>
+
+<p>Algebraic expressions may involve two or more operations.</p>
+
+<activity><title>Two Operations</title>
+
+<p><ol marker="1.">
+  <li><p>Emma can order T-shirts for her soccer team from a catalog for $5 each.  
+  She pays a $4 handling charge on her order.</p>
+  <p><ol marker="a.">
+    <li><p>Complete the table.</p>
+
+      <p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Number of T-shirts</cell>
+            <cell>3</cell>
+            <cell>5</cell>
+            <cell>8</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell>(Calculation)</cell>
+            <cell><m>5(3) + 4</m></cell>
+            <cell><m>5(5) + 4</m></cell>
+            <cell><m>5(8) + 4</m></cell>
+            <cell><m>5(10) + 4</m></cell></row>
+        <row bottom="minor">
+            <cell>Total Cost</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell></row>
+        </tabular></sidebyside></p></li>
+
+      <li><p>Describe in words how to find the total cost of Emma's order.</p></li>
+
+
+      <li><p>Let <m>t</m>  represent the number of T-shirts Emma orders. Write an algebraic expression for the total cost of her order.</p>
+      <p>Total cost =</p></li>
+      </ol></p></li>
+
+    <li><p>Francisco is sharing a taxicab with 3 friends from the airport to the hotel. The four friends will share the fare equally, but Francisco will also tip the driver $5 for handling his luggage.</p>
+     <p><ol marker="a.">
+    <li><p>Complete the table.</p>
+
+      <p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Fare ($)</cell>
+            <cell>10</cell>
+            <cell>16</cell>
+            <cell>20</cell>
+            <cell>30</cell></row>
+        <row bottom="minor">
+            <cell>(Calculation)</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        <row bottom="minor">
+            <cell>Francisco's share ($)</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell></row>
+        </tabular></sidebyside></p></li>
+
+      <li><p>Describe in words how to compute Francisco's share based on the fare.</p></li>
+
+
+      <li><p>If <m>F</m> represents the amount of the taxicab fare, write an algebraic expression for Francisco's share.
+      </p>
+        <p>Francisco's share = </p></li>
+      </ol></p></li>
+</ol></p></activity>
+
+<p>Some algebraic expressions involve more than one variable.</p>
+
+<example><statement><p>Choose variables for each unknown quantity and write the following phrase as an algebraic expression.</p>
+  <p><me>\text{The ratio of the interest earned to the amount invested.}</me></p></statement>
+
+<solution><p>  The interest earned and the amount invested are unknown quantities, so we assign variables to represent them.</p>
+  <p>Interest earned: <m>~~~I</m></p>
+  <p>Amount invested: <m>~~~P</m></p>  
+<p>The algebraic expression is a ratio:  <m>~~~\dfrac{I}{P}</m></p></solution></example>
+
+<exercise><statement><p>Choose variables for each unknown quantity and write the following phrase as an algebraic expression.</p>
+  <p><me>\text{The total of Ben's purchases and Emily's purchases.}</me></p></statement>
+<answer><m>B+E</m></answer></exercise>
+
+<example><statement><p>Choose variables for each unknown quantity and write the following phrase as an algebraic expression.</p>
+  <p><me>\text{Twelve times the difference of  your monthly salary and your house note.}</me></p></statement>
+
+<solution><p>  Your monthly salary and your house note are the unknown quantities.</p>
+  <p>Monthly salary: <m>~~~s</m></p>
+  <p>House note: <m>~~~n</m></p>  
+<p>The algebraic expression is :  <m>~~~12(s-n)</m></p></solution></example>
+
+<exercise><statement><p>Choose variables for each unknown quantity and write an algebraic expression for the following phrase.</p>
+  <p><me>\text{Two tablespoons times the number of cups, plus one extra tablespoon.}</me></p></statement>
+<answer><m>2c+1</m></answer></exercise>
+
+</subsection>
+
+<subsection><title>Evaluating Algebraic Expressions</title>
+
+<p>When we evaluate an algebraic expression, we follow the order of operations.</p>
+
+<example><statement><p> Evaluate <m>~\dfrac{12}{x-2}~</m> for each of the values in the table.</p>
+
+<p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell>6</cell>
+            <cell>10</cell>
+            <cell>20</cell></row>
+        <row bottom="minor">
+            <cell><m>~\dfrac{12}{x-2}~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+
+<solution><p>We substitute the given value for the variable. To simplify, we begin by subtracting below the fraction bar, then we reduce the fraction.
+
+  <md><mrow>\text{For} ~ x=\blert{6}, \hphantom{000000} \amp \dfrac{12}{\blert{6}-2} = \dfrac{12}{4} = 3</mrow>
+      <mrow>\text{For} ~ x=\blert{10}, \hphantom{000000} \amp \dfrac{12}{\blert{10}-2} = \dfrac{12}{8} = \dfrac{3}{2}</mrow>
+      <mrow>\text{For} ~ x=\blert{20}, \hphantom{000000} \amp \dfrac{12}{\blert{20}-2} = \dfrac{12}{18} = \dfrac{2}{3}</mrow></md></p>
+
+<p>Here is the table of values for <m>~\dfrac{12}{x-2}~</m>:</p>
+
+  <p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell>6</cell>
+            <cell>10</cell>
+            <cell>20</cell></row>
+        <row bottom="minor">
+            <cell><m>~\dfrac{12}{x-2}~</m></cell>
+            <cell><m>~~~3~~~</m></cell>
+            <cell><m>~~~\dfrac{3}{2}~~~</m></cell>
+            <cell><m>~~~\dfrac{2}{3}~~~</m></cell></row>
+        </tabular></sidebyside></p>
+</solution></example>
+
+<exercise><statement><p>Evaluate <m>~3+2h~</m> for the values in the table.</p>
+
+<p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>h</m></cell>
+            <cell>1</cell>
+            <cell>4</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell><m>~3+2h~</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular></sidebyside></p></statement>
+
+<answer><p><sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>h</m></cell>
+            <cell>1</cell>
+            <cell>4</cell>
+            <cell>10</cell></row>
+        <row bottom="minor">
+            <cell><m>~3+2h~</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>11</m></cell>
+            <cell><m>23</m></cell></row>
+        </tabular></sidebyside></p></answer></exercise>
+
+<example><statement><p>Evaluate <m>~\dfrac{h-k}{2b}~</m> for <m>~h = 20, ~ k = 8~</m> and <m>~b=6</m>.</p></statement>
+
+<solution><p>We substitute the given values for the variables, and follow the order of operations.
+  <md><mrow>\dfrac{h-k}{2b} \amp = \dfrac{20-8}{2(6)} \amp \amp \blert{\text{Simplify above and below the fraction bar.}}</mrow>
+      <mrow>  \amp = \dfrac{12}{12} = 1</mrow></md>
+</p></solution></example>
+
+<exercise><statement><p>Evaluate <m>~\dfrac{h(B + b)}{2}~</m> for <m>~h = 5, ~ B = 78~</m> and <m>~b=3</m>.</p></statement>
+
+<answer><m>25</m></answer></exercise>
+</subsection>
+
+<subsection><title>Formulas</title>
+
+<p>A <term>formula</term> is an equation that relates two or more variables, and usually helps us calculate some useful quantity. You probably know the formula for finding the area of a rectangle.
+  <md><mrow>\text{Area} \amp = \text{Length} \times \text{Width}</mrow>
+      <mrow>  A \amp = LW</mrow></md></p>
+
+<p>Substituting values for the variables on the right side of the formula is called <term>evaluating</term> the formula, just as we evaluate any other algebraic expression.</p>
+
+<example><statement><p>Find the area of a bedroom that measures 12 feet by 15 feet.</p></statement>
+
+<solution><p>We evaluate the formula for area by substituting <m>\blert{12}</m> for <m>W</m> and 15 for <m>\blert{15}</m> for <m>L</m>. Then we simplify the result.
+    <me>A = LW = (\blert{15} ~\text{ft}) \times (\blert{12} ~\text{ft}) = 180 ~\text{sq ft}</me>
+The area of the bedroom is 180 square feet.</p></solution></example>
+
+<exercise><statement><p>Find the area of a sheet of notebook paper that measures 8.5 inches by 11 inches.</p></statement>
+
+<answer><p>93.5 sq in</p></answer></exercise>
+
+<p>Here are some useful formulas, with examples of their application.</p>
+
+<assemblage><title>Distance</title>
+<p>The <term>distance</term> <m>d</m> traveled by an object moving at a constant speed <m>r</m>  for a time <m>t</m> is given by 
+<m>~~\blert{d = rt}</m></p></assemblage>
+
+<example><statement><p>A train traveled at 70 miles per hour for 3 hours. How far did the train travel?</p></statement>
+
+<solution><p>We are looking for a distance (how far).  We have <m>r = \alert{70}</m>  and <m>t=\alert{3}</m>.  The distance traveled is: 
+    <me>d = rt = (\alert{70})(\alert{3}) = 210 ~\text{miles}</me></p></solution></example>
+
+<note><p>When we use the distance formula, the rate, time, and distance must be expressed in compatible units. For example, if the speed is given in miles per hour, the time must be expressed in hours, and the distance will be in miles.</p></note>
+
+<assemblage><title>Profit</title>
+<p>To find the <term>profit</term> <m>P</m> earned or lost, subtract costs <m>C</m> from the amount of money taken in (called the <term>revenue</term>) <m>R</m>.  
+<me>~~\blert{P = R - C}</me></p></assemblage>
+
+<example><statement><p>The Selectronics company took in revenue of $85,000 last week, and their operating costs were $38,000.  What was their profit last week?</p></statement>
+
+<solution><p>We are looking for a profit.  We have <m>R = \alert{85,000}</m>  and <m>C = \alert{38,000}</m>.  Their profit was
+    <me>P = R - C = \alert{85,000} - \alert{38,000} = 47,000 ~\text{dollars}</me></p></solution></example>
+
+<assemblage><title>Average</title>
+<p>To find the <term>average</term> of several values, divide the sum <m>S</m> of the values by the number <m>n</m> of values:
+    <me>\blert{A = \dfrac{S}{n}}</me></p></assemblage>
+
+<example><statement><p>Last week Kendal worked a total of 27 hours on six days. What was the average number of hours he worked per day?</p></statement>
+
+<solution><p>We are looking for an average.  We have <m>S = \alert{27}</m>  and  <m>n = \alert{6}</m>.  Kendal's average work day was:
+    <me>A = \dfrac{S}{n} = \dfrac{\alert{27}}{\alert{6}} = 4.5 ~\text{hours}</me></p></solution></example>
+
+<assemblage><title>A Quick Refresher</title>
+  <p>The next two formulas involve <term>percents</term>.  Remember that a percent is a fraction with denominator 100. For example,
+        <me>6\% = \dfrac{6}{100} = 0.06</me></p></assemblage>
+
+<assemblage><title>Interest</title>
+<p>If you invest an amount of money (called the <term>principal</term>), <m>P</m>, in an account that pays interest at annual rate <m>r</m>,  then the <term>interest</term> earned after <m>t</m> years is given by  
+    <me>\blert{I = Prt}</me></p></assemblage>
+
+<example><statement><p>Three years ago, you invested $400 in an account that pays 5%  interest. How much interest has your account earned?</p></statement>
+
+<solution><p>We are looking for interest.  We have  <m>P = \alert{400}, ~r = \alert{0.05}</m>,  and  <m>t = \blert{3}</m>.  The interest earned on your account is:
+    <me>I = Prt =  (\alert{400})(\alert{0.05})(\blert{3}) = $60</me></p></solution></example>
+
+<assemblage><title>Percentage</title>
+<p>To find the <term>percentage</term> of a whole amount, multiply the percentage rate <m>r</m> times the whole amount <m>W</m>:
+    <me>\blert{P = rW}</me></p></assemblage>
+
+<example><statement><p>Your insurance pays for 80% of your dentist bill. The bill is $120. How much will yourinsurance pay?</p></statement>
+
+<solution><p>We are looking for a percentage.  We have  <m>r = \alert{0.80}</m>  and  <m>W = \alert{120}</m>.  The portion your insurance pays is:
+    <me>P = rW = (\alert{0.80}) (\alert{120}) = $96</me></p></solution></example>
+
+<p>Here is a list of the formulas we are studying.</p>
+
+<assemblage><title>Some Useful Formulas</title>
+<p><ol marker="1.">
+  <li><sidebyside widths="20% 65%"><p><m>d = rt</m></p>  <p>distance <m>=</m> rate <m>\times</m> time</p></sidebyside></li>
+  <li><sidebyside widths="20% 65%"><p><m>P = R - C</m></p>     <p>Profit <m>=</m> Revenue <m>-</m> Costs</p></sidebyside></li>
+  <li><sidebyside widths="20% 65%"><p><m>A = \dfrac{S}{n}</m></p>    <p>Average <m>=</m> <m>\dfrac{\text{Sum of values}}{\text{number of values}}</m></p></sidebyside></li>
+  <li><sidebyside widths="20% 65%"><p><m>I = Prt</m></p>   <p>Interest <m>=</m> Principal <m>\times</m> interest rate <m>\times</m> time</p></sidebyside></li>
+  <li><sidebyside widths="20% 65%"><p><m>P = rW</m></p> <p>Part <m>=</m> percentage rate <m>\times</m> Whole</p></sidebyside></li>
+</ol></p></assemblage>
+
+<activity><title>Using Formulas</title>
+
+<p>Use the formulas discussed above to answer the questions. First decide which formula is appropriate.</p> 
+
+<p><ol marker="1.">
+  <li><p>If Ann and Bill hike 16 kilometers per day, how far will they hike in a week?</p>
+
+    <p>Formula:</p></li>
+
+  <li><p>You loan your cousin $1200, and he agrees to pay you back the full amount plus 9% annual interest after 5 years.  How much interest will he pay?</p>
+
+    <p>Formula:</p></li>
+
+  <li><p>Delbert must make a down payment of 20% of the house price in order to qualify for a mortgage.  If the price of the house is $257,000, what is Delbert's down payment?</p>
+
+    <p>Formula:</p></li>
+
+  <li><p>Percy squeezes 9 ounces of lime juice from 5 limes.  What is the average amount of juice per lime?</p>
+
+    <p>Formula:</p></li>
+
+  <li><p>Arlene paid a total of $468 on her gas bill last year.  What was her average monthly gas bill?</p>
+
+    <p>Formula:</p></li>
+</ol></p></activity>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>formula</p></li>
+  <li><p>evaluate</p></li>
+  <li><p>profit</p></li>
+  <li><p>revenue</p></li>
+  <li><p>cost</p></li>
+  <li><p>average</p></li>
+  <li><p>principal</p></li>
+  <li><p>interest</p></li>
+  <li><p>percentage</p></li>
+</ul></p>
+</subsection>
+
+
+<xi:include href="./prac-5-2.ptx" />
+
+
+
+</section>

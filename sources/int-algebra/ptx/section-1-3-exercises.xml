@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-1-3-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 1.3</title>
+
+<subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>The owner of a movie theater needs to bring in $1000 revenue at each screening in order to stay in business. He sells adults' tickets for $5 each and children's tickets at $2 each.<ol marker="a.">
+        <li><p>How much revenue does he earn from selling <m>x</m> adults' tickets?</p></li>
+        <li><p>How much revenue does he earn from selling <m>y</m> children's tickets?</p></li>
+        <li><p>Write an equation in <m>x</m> and <m>y</m> for the number of tickets he must sell at each screening</p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+            <li><p><m>5x</m></p></li>
+            <li><p><m>2y</m></p></li>
+            <li><p>5x+2y=1000</p></li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p>Karel needs 45 milliliters of a 40% solution of carbolic acid. He plans to mix some 20% solution with some 50% solution.<ol marker="a.">
+    <li>How much carbolic acid is in <m>x</m> milliliters of the 20% solution?</li>
+    <li>How much carbolic acid is in <m>y</m> milliliters of the 50% solution?</li>
+    <li>How much carbolic acid is in the solution Karel needs?</li>
+    <li>Write an equation in <m>x</m> and <m>y</m> for the amount of each solution Karel should mix.</li></ol></p>
+</statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 3 and 4, solve the equation for <m>y</m> in terms of <m>x</m>.</p>
+</introduction>
+
+<exercise number="3"><statement><p><m>3x+5y=16 </m></p></statement>
+<answer><p><m>y=\dfrac{-3}{5}x+\dfrac{16}{5} </m></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>20x=30y-45,000</m></p></statement></exercise>
+</exercisegroup>
+</subexercises>
+    
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5-8,<ol marker="a.">
+            <li><p>Find the intercepts of the graph.</p></li>
+            <li><p>Graph the equation by the intercept method.</p></li></ol></p></introduction>
+
+<exercise number="5"><statement><p><m>9x-12y=36</m></p></statement>
+<answer><p><ol marker="a.">
+            <li><p><m>(4,0) </m>, <m>(0,-3) </m></p></li>
+            <li><image width="90%" xml:id="fig-ex-ans-1-2-1"><description>line with positive intercepts</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                      block/.style    = {draw, thick, rectangle, minimum height = 3em,
+                        minimum width = 3em},
+                      sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+                      input/.style    = {coordinate}, % Input
+                      output/.style   = {coordinate} % Output
+                    }
+                    \begin{tikzpicture} [scale=.75]
+                    \coordinate (O) at (0,0);
+                    \draw[cyan] (-5,-5) grid (5,5);
+                    \draw[black,thick, ->, >=stealth'] (-5,0)--(5.6,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,-5)--(0,5.6) node[left, xshift=2]{$y$};
+                    \foreach \x in  {-2,-4, 2, 4} {
+                     \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                     \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                    \draw[red,very thick,<->, >=stealth'] (-8/3,-5)--(5,3/4);
+                    \filldraw[red] (4,0) circle (0.15);
+                    \filldraw[red] (0,-3) circle (0.15);
+                    \end{tikzpicture}]]>
+                </latex-image></image></li></ol></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>\dfrac{x}{9}-\dfrac{y}{4}=1 </m></p></statement></exercise>
+
+<exercise number="7"><statement><p><m>4y=20 + 2.5x</m></p></statement>
+<answer><p><ol marker="a.">
+        <li><p><m>(-8,0) </m>, <m>(0,5) </m></p></li>
+        <li><image width="90%" xml:id="fig-ex-ans-1-2-5"><description>line with positive intercepts</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                      block/.style    = {draw, thick, rectangle, minimum height = 3em,
+                        minimum width = 3em},
+                      sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+                      input/.style    = {coordinate}, % Input
+                      output/.style   = {coordinate} % Output
+                    }
+                    \begin{tikzpicture} [scale=.6]
+                    \coordinate (O) at (0,0);
+                    \draw[cyan] (-10,-3) grid (1,7);
+                    \draw[black,thick, ->, >=stealth'] (-10,0)--(1.6,0) node[right]{$x$};
+                    \draw[black,thick, ->, >=stealth'] (0,-3)--(0,7.6) node[left, xshift=2]{$y$};
+                    \foreach \x in  {-8,-6,-4,-2} {
+                     \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                    \foreach \x in  {-2, 2, 4,6} {
+                     \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                    }
+                    \draw[red,thick,<->, >=stealth'] (-10,-5/4)--(1,225/40);
+                    \filldraw[red] (-8,0) circle (0.15);
+                    \filldraw[red] (0,5) circle (0.15);
+                    \end{tikzpicture}]]>
+                    </latex-image></image></li></ol></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>30x=45y+60,000</m></p></statement></exercise>        
+</exercisegroup>
+
+<exercise number="9"><statement><p>Find the intercepts of the graph for each equation.</p><ol marker="a." cols="2">
+                <li><p><m>\displaystyle{\frac{x}{3}+\frac{y}{5}=1} </m></p></li>
+                <li><p><m>\displaystyle{2x - 4y = 1} </m></p></li>
+                <li><p><m>\displaystyle{\frac{2x}{5}-\frac{2y}{3}=1} </m></p></li>
+                <li><p><m>\displaystyle{\frac{x}{p}+\frac{y}{q}=1} </m></p></li></ol>  
+            <p><m>\hphantom{00}</m> e.  Why is the equation <m>\displaystyle{\frac{x}{a}+\frac{y}{b}=1} </m> called the <term>intercept form</term> for a line?</p>   </statement>
+<answer><p><ol marker="a." cols="2">
+    <li><p><m>(3,0), (0,5) </m></p></li>
+    <li><p><m>\left(\dfrac{1}{2},0\right), \left(0,\dfrac{-1}{4}\right) </m></p></li>
+    <li><p><m>\left(\dfrac{5}{2},0\right), \left(0,\dfrac{-3}{2}\right) </m></p></li>
+    <li><p><m>(p,0), (0,q) </m></p></li>
+    <li><p>The value of <m>a</m> is the <m>x</m>-intercept, and the value of <m>b</m> is the <m>y</m>-intercept.</p></li></ol></p></answer></exercise>
+
+<exercise number="10"><statement><p>Write an equation in intercept form (see Problem 9) for the line with the given intercepts. Then write the equation in general form.</p><ol marker="a." cols="2">
+    <li><p><m>(6, 0), (0, 2) </m></p></li>
+    <li><p><m>(-3, 0), (0, 8) </m></p></li>
+    <li><p><m>\left(\dfrac{3}{4}, 0\right), \left(0, \dfrac{-1}{4}\right) </m></p></li>
+    <li><p><m>(v, 0), (0, -w) </m></p></li>
+    <li><p><m>\left(\dfrac{1}{H}, 0\right), \left(0, \dfrac{1}{T}\right) </m></p></li></ol></statement></exercise>
+
+<exercise number="11"><statement><p><ol marker="a.">
+    <li><p>Find the <m>y</m>-intercept of the line <m>y = mx + b</m>.</p></li>
+    <li><p>Find the <m>x</m>-intercept of the line <m>y = mx + b</m>.</p></li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>(0, b)</m></p></li>
+    <li><p><m>\left(\dfrac{-b}{m},0\right)</m></p></li></ol></p></answer></exercise>
+
+<exercise number="12"><statement><p><ol marker="a.">
+    <li><p>Find the <m>y</m>-intercept of the line <m>Ax + By = C</m>.</p></li>
+    <li><p>Find the <m>x</m>-intercept of the line <m>Ax + By = C</m>.</p></li></ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 13-16, write an equation in general form for the line.</p>
+</introduction>
+    
+<exercise number="13"><statement>
+    <image width="80%" source="images/fig-2x-plus-3y-eq2400"><description>graph of line</description></image></statement>
+<answer><p><m>-2x + 3y = 2400</m></p></answer></exercise>
+
+<exercise number="14"><statement>
+    <image width="80%" source="images/fig-3x-minus-5y-eq375"><description>graph of line</description></image>
+</statement></exercise>
+
+<exercise number="15"><statement>
+    <image width="80%" source="images/fig-3x-plus-400y-eq240"><description>graph of line</description></image>
+</statement>
+<answer><p><m>3x + 400y = 240</m></p></answer></exercise>
+
+<exercise number="16"><statement>
+    <image width="80%" source="images/fig-25x-plus-5y-eq-neg2"><description>graph of line</description></image>
+</statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17-20, write the equation in two standard forms:<ol marker="a.">
+    <li>the general linear form, <m>Ax+By=C</m>, with integer coefficients, and</li>
+    <li>the form for a linear model, <m>y = (\text{starting value}) + (\text{rate}) \times x</m></li></ol></p></introduction>
+
+<exercise number="17"><statement><p><m>\dfrac{2x}{3}+\dfrac{3y}{11}=1</m></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>22x+9y=33</m>, and</li>
+    <li><m>y = \dfrac{11}{3} + \dfrac{-22}{9}x</m></li></ol></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>\dfrac{8x}{7}+\dfrac{2y}{7}=1</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>0.4x=4.8-1.2y</m></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>4x+12y=48</m>, and</li>
+    <li><m>y = 4 - \dfrac{1}{3}x</m></li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>-0.8y=12.8-3.2x</m></p></statement></exercise>
+</exercisegroup>
+
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="21"><statement><p>Delbert must increase his daily potassium intake by 1800 mg. He decides to eat a combination of figs and bananas. One gram of fig contains 9 mg of potassium, and one gram of banana contains 4 mg of potassium.<ol marker="a.">
+        <li><p>How many mg of potassium are in <m>x</m> grams of figs?</p></li>
+        <li><p>How many mg of potassium are in <m>y</m> grams of bananas?</p></li>
+        <li><p>Write an equation for the number of grams of fig, <m>x</m>, and the number of grams of banana, <m>y</m>, that Delbert needs to eat daily.</p></li>
+        <li><p>Find the intercepts of the graph. What do the intercepts tell us about Delbert's diet?</p></li></ol>
+</p></statement>
+<answer><p><ol marker="a.">
+    <li><p><m>9x</m></p></li>
+    <li><p><m>4y</m></p></li>
+    <li><p><m>9x+4y=1800</m></p></li>
+    <li><p><m>(200,0) </m> Delbert must eat 200g of figs daily if he eats no bananas.</p></li>
+    <li><p><m>(0,450) </m> Delbert must eat 450g of bananas daily if he eats no figs.</p></li></ol></p></answer>
+</exercise>
+
+<exercise number="22"><statement><p>Five pounds of body fat is equivalent to approximately 16,000 calories. Carol can burn 600 calories per hour bicycling and 400 calories per hour swimming.<ol marker="a.">
+        <li><p>How many calories will Carol burn in <m>x</m> hours of cycling?</p></li>
+        <li><p>How many calories will she burn in <m>y</m> hours of swimming?</p></li>
+        <li><p>Write an equation that relates the number of hours, <m>x</m>, of cycling and <m>y</m>, of swimming Carol needs to perform in order to lose 5 pounds.</p></li>
+        <li><p>Find the intercepts of the graph. What do the intercepts tell us about Carol's exercise program?</p></li>
+</ol></p></statement></exercise>       
+
+<exercise number="23"><statement><p>A deep-sea diver is taking some readings at a depth of 400 feet. He begins rising at a rate of 20 feet per minute.<ol marker="a.">
+    <li><p>Complete the table of values for the diver's altitude <m>h</m> after <m>t</m> minutes. (A depth of <m>400</m> feet is the same as an altitude of <m>-400</m> feet.)</p>
+        <sidebyside><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>t</m></cell>
+                    <cell><m>\quad ~ 0 ~ \quad</m></cell>
+                    <cell><m>\quad 5 \quad</m></cell>
+                    <cell><m>\quad 10 \quad</m></cell>
+                    <cell><m>\quad 15 \quad</m></cell>
+                    <cell><m>\quad 20 \quad</m></cell></row>
+                <row> 
+                    <cell><m>h</m></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell></row>
+            </tabular></sidebyside></li>
+    <li><p>Write an equation for the diver's altitude, <m>h</m>, in terms of the number of minutes, <m>t</m>, elapsed.</p></li>
+    <li><sidebyside widths="35% 45%" margins="0% 0%"><stack><p>Find the intercepts and sketch the graph.</p>
+                <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                    <row>
+                        <cell><m>\quad t \quad</m></cell>
+                        <cell><m>\quad h \quad</m></cell></row>                        
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><m></m></cell></row>                        
+                    <row>
+                        <cell><m></m></cell>
+                        <cell><m>0</m></cell></row>                        
+                    </tabular></stack>
+                    
+                <image xml:id="fig-ex-grid-1-2-13"><description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                      block/.style    = {draw, thick, rectangle, minimum height = 3em,
+                        minimum width = 3em},
+                      sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+                      input/.style    = {coordinate}, % Input
+                      output/.style   = {coordinate} % Output
+                    }
+                    \begin{tikzpicture} [xscale=.9, yscale=.6]
+                    \draw[cyan] (0,-10) grid (6,1);
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(6.6,0) node[right]{$t$};
+                    \draw[black,thick, ->, >=stealth'] (0,-10)--(0,1.6) node[above]{$h$};
+                    \foreach \x [evaluate=\x as \xi using int(5 * \x )] in  {2,4,6} {
+                     \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \foreach \x[evaluate=\x as \xi using int( 50* \x )]  in  {-10, -8, ...,0} {
+                     \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \end{tikzpicture}]]>
+                </latex-image></image></sidebyside></li>
+    <li><p>Explain what each intercept tells us about this problem.</p></li></ol></p></statement>    
+<answer><p><ol marker="a.">
+    <li><sidebyside margins="0% 50%"><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>~ t ~</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>15</m></cell>
+                    <cell><m>20</m></cell></row>
+                <row> 
+                    <cell><m>~ h ~</m></cell>
+                    <cell><m>-400</m></cell>
+                    <cell><m>-300</m></cell>
+                    <cell><m>-200</m></cell>
+                    <cell><m>-100</m></cell>
+                    <cell><m>0</m></cell></row>
+                </tabular></sidebyside></li>
+    <li><p><m>h=-44+20t </m></p></li>
+    <li><image width="40%" xml:id="fig-ex-ans-1-2-13"><description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                      block/.style    = {draw, thick, rectangle, minimum height = 3em,
+                        minimum width = 3em},
+                      sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+                      input/.style    = {coordinate}, % Input
+                      output/.style   = {coordinate} % Output
+                    }
+                    \begin{tikzpicture} [xscale=.9, yscale=.6]
+                    \draw[cyan] (0,-10) grid (6,1);
+                    \draw[black,thick, ->, >=stealth'] (0,0)--(6.6,0) node[right]{$t$};
+                    \draw[black,thick, ->, >=stealth'] (0,-10)--(0,1.6) node[above]{$h$};
+                    \foreach \x [evaluate=\x as \xi using int(5 * \x )] in  {2,4,6} {
+                     \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \foreach \x[evaluate=\x as \xi using int( 50* \x )]  in  {-10, -8, ...,0} {
+                     \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+                    }
+                    \draw[red,thick] (0,-8)--(4,0);
+                    \filldraw[red] (0,-8) ellipse (0.06 and .09);
+                    \filldraw[red] (1,-6) ellipse (0.06 and .09);
+                    \filldraw[red] (2,-4) ellipse (0.06 and .09);
+                    \filldraw[red] (3,-2) ellipse (0.06 and .09);
+                    \filldraw[red] (4,0) ellipse (0.06 and .09);
+                    \end{tikzpicture}]]>
+            </latex-image></image></li>
+    <li><p><m>(0,-400) </m>: The diver starts at a depth of 400 feet. <m>(20,0) </m>: The diver surfaces after 20 minutes.</p></li></ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>In central Nebraska, each acre of corn requires 25 acre-inches of water per year, and each acre of winter wheat requires 18 acre-inches of water. (An acre-inch is the amount of water needed to cover one acre of land to a depth of one inch.) A farmer can count on 9000 acre-inches of water for the coming year. (Source: Institute of Agriculture and Natural Resources, University of Nebraska)<ol marker="a.">
+    <li><p>Write an equation relating the number of acres of corn, <m>x</m>, and the number of acres of wheat, <m>y</m>, that the farmer can plant.</p></li>
+    <li><p>Complete the table.</p>
+                <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>~ x ~</m></cell>
+                    <cell><m> ~ 50 ~ </m></cell>
+                    <cell><m>100</m></cell>
+                    <cell><m>150</m></cell>
+                    <cell><m>200</m></cell></row>
+                <row> 
+                    <cell><m>~ y ~</m></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell></row>
+            </tabular></li>
+    <li><sidebyside widths="35% 45%" margins="0% 0%"><stack><p>Find the intercepts of the graph.</p>
+            <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                    <row>
+                        <cell><m>\quad x \quad</m></cell>
+                        <cell><m>\quad y \quad</m></cell></row>                        
+                    <row>
+                        <cell><m>0</m></cell>
+                        <cell><m></m></cell></row>                        
+                    <row>
+                        <cell><m></m></cell>
+                        <cell><m>0</m></cell></row>                        
+                </tabular></stack>
+        <image xml:id="fig-1st-quad-grid"><description>grid</description><latex-image>
+                    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                    <![CDATA[\tikzset{%
+                      block/.style    = {draw, thick, rectangle, minimum height = 3em,
+                        minimum width = 3em},
+                      sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+                      input/.style    = {coordinate}, % Input
+                      output/.style   = {coordinate} % Output
+                    }
+                    \begin{tikzpicture} [scale=.6]
+                    \draw[cyan] (0,0) grid (10,10);
+                    \draw[black,thick,->,>=stealth'] (0,0)--(10.6,0) node[right]{$x$};
+                    \draw[black,thick,->,>=stealth'] (0,0)--(0,10.6) node[above]{$y$};
+
+                    \end{tikzpicture}]]></latex-image></image></sidebyside></li>
+    <li><p>Use the intercepts to help you choose appropriate scales for the axes, and graph the equation.</p></li>
+    <li><p>What do the intercepts tell us about the problem?</p></li>
+     <li><p>What does the point <m>(288, 100)</m> mean in this context?</p></li></ol></p></statement></exercise>
+
+<exercise number="25"><statement><p>The owner of a gas station has $19,200 to spend on unleaded gas this month. Regular unleaded costs him $2.40 per gallon, and premium unleaded costs $3.20 per gallon.</p><ol marker="a.">
+    <li><p>How much do <m>x</m> gallons of regular cost? How much do <m>y</m> gallons of premium cost?</p></li>
+    <li><p>Write an equation in general form that relates the amount of regular unleaded gasoline, <m>x</m>, the owner can buy and the amount of premium unleaded, <m>y</m>.</p></li>
+    <li><p>Find the intercepts and sketch the graph.</p></li>
+    <li><p>What do the intercepts tell us about the amount of gasoline the owner can purchase?</p></li></ol></statement>
+<answer><p><ol marker = "a.">
+    <li><p>$<m>2.40x,</m> $<m>3.20y</m></p></li>
+    <li><p><m>2.40x + 3.20y = 19,200</m></p></li>
+    <li><image width="40%" source="images/fig-unleaded-or-regular"><description>line</description></image></li>
+    <li><p>The <m>y</m>-intercept, 6000 gallons, is the amount of premium that the gas station owner can buy if he buys no regular. The <m>x</m>-intercept, 8000 gallons, is the amount of regular he can buy if he buys no premium.</p></li></ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>Leslie plans to invest some money in two CD accounts. The first account pays 3.6% interest per year, and the second account pays 2.8% interest per year. Leslie would like to earn $500 per year on her investment.</p><ol marker="a.">
+    <li><p>If Leslie invests <m>x</m> dollars in the first account, how much interest will she earn? How much interest will she earn if she invests <m>y</m> dollars in the second account?</p></li>
+    <li><p>Write an equation in general form that relates <m>x</m> and <m>y</m> if Leslie earns $500 interest.</p></li>
+    <li><p>Find the intercepts and sketch the graph.</p></li>
+    <li><p>What do the intercepts tell us about Leslie's investments?</p></li></ol></statement></exercise>
+
+</subexercises>
+
+</exercises>

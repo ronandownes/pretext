@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-4-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Multiplying and Dividing Fractions</title>
+
+<sidebyside widths="50% 40%">
+  <p><ul>
+    <li><p>Take Part</p></li>
+    <li><p>Multiplying by a Fraction</p></li>
+    <li><p>Dividing by a Fraction</p></li>
+    <li><p>More Dividing by Fractions</p></li>
+  </ul></p>
+  
+  <image source="allotment.png"></image></sidebyside>
+
+<subsection><title>Take Part</title>
+
+<p>What does it mean to take <m>\dfrac{1}{3}</m> of something? It means to divide the quantity by 3. For instance, to take <m>\dfrac{1}{3}</m> of 12 eggs, we divide 12 by 3 and take 4 eggs.</p>
+
+    <image source="foureggs.png" width="80%"></image>
+
+<p>The same is true if we take <m>\dfrac{1}{3}</m> of a fraction.  For example, to take <m>\dfrac{1}{3}</m> of half a pie, we divide the half pie into 3 pieces.</p>
+
+    <image source="sixthpie.png" width="70%"></image>
+
+<note><p>When we divide a fraction into more pieces, we increase its denominator. Taking <m>\dfrac{1}{3}</m> of half a pie increased the number of pieces by a factor of 3, so the denominator increased from 2 to 6.  We could say that dividing a fraction by 3 multiplies the denominator by 3.</p></note>
+
+<p>These examples suggest that to take <m>\dfrac{1}{3}</m> of a fraction we can multiply the fraction by <m>\dfrac{1}{3}</m>, like this:
+    <me>\dfrac{1}{3} \times \dfrac{1}{2} = \dfrac{1 \times 1}{3 \times 2} = \dfrac{1}{6}~~~~~~\blert{\dfrac{\text{Multiply the numerators together.}}{\text{Multiply the denominators together.}}}</me></p>
+
+<assemblage><title>To multiply two fractions together</title>
+<p><ol>
+  <li><p>Multiply the numerators together.</p></li>
+  <li><p>Multiply the denominators together.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Multiplying by <m>\dfrac{1}{3}</m> also works to find <m>\dfrac{1}{3}</m> of a dozen eggs, if we write 12 as a fraction, <m>\dfrac{12}{1}</m>.
+    <me>\dfrac{1}{3} \times \dfrac{12}{1} = \dfrac{1 \times 12}{3 \times 1} = \dfrac{12}{3} =4 ~~~~~~\blert{\dfrac{\text{Multiply the numerators together.}}{\text{Multiply the denominators together.}}}</me></p>
+
+<p>In other words, to take <m>\dfrac{1}{3}</m> of something, we can <m>\blert{\text{multiply}}</m> by <m>\dfrac{1}{3}</m>.</p>
+</statement></example>
+
+<p>Of course, the same idea works if we want to take <m>\dfrac{1}{4}</m> of something, or <m>\dfrac{1}{5}</m> of something, or <m>\cdots</m> .</p>
+
+<exercise><statement><p> Multiply fractions to answer the question.</p>
+<p><ol marker="a.">
+  <li><p>How many yards are there in <m>\dfrac{1}{4}</m> of a mile? (There are 1760 yards in 1 mile.)</p></li>
+  <li><p>Josie has <m>2\dfrac{1}{4}</m> chocolate bars to share equally among 6 children. What fraction of a chocolate bar will each child get?</p>
+    <p>Hint: Rewrite <m>2\dfrac{1}{4}</m> as an improper fraction.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>\dfrac{1}{4} \times \dfrac{1760}{1} = 440~</m> yards</p></li>
+  <li><p><m>\dfrac{1}{6} \times \dfrac{9}{4} = \dfrac{3}{8}</m> </p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Multiplying by a Fraction</title>
+  
+<p>What does it mean to take <m>\dfrac{2}{3}</m> of something? It means to divide the quantity into 3 equal parts, and then take 2 of them. For instance, to take <m>\dfrac{2}{3}</m> of 12 eggs, we divide 12 into 3 groups of 4eggs each, and take 2 of those groups of 4 eggs, to get 8 eggs.</p> 
+
+  <image source="eighteggs.png" width="70%"></image>
+
+<p>Mathematically, we divide 12 by 3 and then multiply the result by 2. Earlier we saw that dividing by 3, or taking <m>\dfrac{1}{3}</m> of something, is the same as multiplying by <m>\dfrac{1}{3}</m>. Is taking <m>\dfrac{2}{3}</m> of something the same as multiplying by <m>\dfrac{2}{3}</m> ?  Yes!  Observe:
+
+<me>\dfrac{2}{3}~ \text{of} ~12 = \dfrac{2}{3} \times \dfrac{12}{1} = \dfrac{2 \times 12}{3 \times 1} = \dfrac{24}{3} = 8</me></p>
+
+<note><p>You might notice that when we multiplied 12 by <m>\dfrac{2}{3}</m>, we actually multiplied by 2 first and then divided by 3, instead of the other way around, but the answer comes out the same.</p></note> 
+
+<p>We can also multiply by <m>\dfrac{2}{3}</m> to take <m>\dfrac{2}{3}</m> of a fraction.</p>
+
+<example><statement><sidebyside widths="70% 20%"><p>There was <m>\dfrac{3}{4}</m> of a pizza left in the refrigerator last night, but somebody ate <m>\dfrac{2}{3}</m> of it. How much of a whole pizza did they eat?</p>
+  <image source="nightpizza.png"></image></sidebyside></statement>
+
+<solution><p>We want to find <m>\dfrac{2}{3}</m> of <m>\dfrac{3}{4}</m>, so we multiply the fractions together.
+  <me>\dfrac{2}{3} \times \dfrac{3}{4} = \dfrac{2 \times 3}{3 \times 4} = \dfrac{6}{12} = \dfrac{1}{2}</me></p>
+
+<p>Whoever ate the pizza ate <m>\dfrac{1}{2}</m> of a whole pizza. In the picture, you can see that <m>\dfrac{3}{4}</m> of a pizza has 3 equal parts, each of which is <m>\dfrac{1}{4}</m> of a pizza. So 2 of those equal parts are <m>\dfrac{2}{4}</m>, or <m>\dfrac{1}{2}</m>, of a whole pizza.</p></solution></example>
+
+<p>Here is another way to visualize <m>\dfrac{2}{3}</m> of <m>\dfrac{3}{4}</m>. First, draw a rectangle with 4 vertical slices and color 3 of them red to illustrate <m>\dfrac{3}{4}</m>, like this:</p>  
+
+  <image source="pinkcols.png" width="80%"></image> 
+
+<p>Then, use horizontal lines to divide the rectangle into thirds, and color 2 of them blue to show <m>\dfrac{2}{3}</m> of the rectangle:</p>     
+
+  <image source="pinkandblue.png" width="80%"></image>
+
+<p>The pieces colored both pink and blue illustrate <m>\dfrac{2}{3}</m> of <m>\dfrac{3}{4}</m>.  Notice that they make up <m>\dfrac{6}{12}</m> or <m>\dfrac{1}{2}</m> of the entire rectangle.</p>
+
+<exercise><statement><p>Draw rectangles to illustrate the products.</p>
+  <p><ol marker="a." cols="2">
+    <li><p><m>\dfrac{1}{2} \times \dfrac{3}{4}</m></p></li>
+    <li><p><m>\dfrac{2}{3} \times \dfrac{2}{3}</m></p></li>
+    <li><p><m>\dfrac{1}{4} \times \dfrac{2}{3}</m></p></li>
+    <li><p><m>\dfrac{5}{8} \times \dfrac{3}{4}</m></p></li>
+  </ol></p></statement>
+  
+  <answer><p><ol marker="a." cols="2">
+    <li><image xml:id="grid2by4" width="40%" margins="0% 60%"><description>2x4 grid with 3 boxes shaded</description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.8]
+    \filldraw[pink,opacity=1] (0,0) rectangle (3,2);  
+    \filldraw[blue,opacity=.4] (0,1) rectangle (4,2); 
+    \draw[black,thick] (0,0) grid (4,2);  
+    \end{tikzpicture}]]>
+  </latex-image></image></li>
+    <li><image xml:id="grid3by3" width="30%" margins="0% 70%"><description>3x3 grid with 4 boxes shaded</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.8]
+      \filldraw[pink,opacity=1] (0,0) rectangle (2,3);  
+      \filldraw[blue,opacity=.4] (0,1) rectangle (3,3); 
+      \draw[black,thick] (0,0) grid (3,3);  
+      \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><image xml:id="grid4by3" width="30%" margins="0% 70%"><description>4x3 grid with 2 boxes shaded</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.8]
+      \filldraw[pink,opacity=1] (0,0) rectangle (2,4);  
+      \filldraw[blue,opacity=.4] (0,3) rectangle (3,4); 
+      \draw[black,thick] (0,0) grid (3,4);  
+      \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li><image xml:id="grid8by4" width="40%" margins="0% 60%"><description>8x4 grid with 15 boxes shaded</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.6]
+      \filldraw[pink,opacity=1] (0,0) rectangle (3,8);  
+      \filldraw[blue,opacity=.4] (0,3) rectangle (4,8); 
+      \draw[black,thick] (0,0) grid (4,8);  
+      \end{tikzpicture}]]>
+    </latex-image></image></li>
+  </ol></p></answer></exercise>
+
+<p>Here is another example using multiplication.</p>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Ronen has <m>1\dfrac{1}{2}</m> pounds of salmon to feed four people. How much salmon will be in each portion?</p></li>
+  <li><p>A standard portion is 6 ounces. Will Ronen's salmon provide each person a standard portion?</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>First, let's write <m>1\dfrac{1}{2}</m> pounds as a fraction:
+    <me>1\dfrac{1}{2} = \dfrac{2}{2} + \dfrac{1}{2} = \dfrac{3}{2}</me>
+  Because we are dividing <m>\dfrac{3}{2}</m> pounds among 4 people, each person gets <m>\dfrac{1}{4}</m> of that amount. So we multiply <m>\dfrac{3}{2}</m> by <m>\dfrac{1}{4}</m>.
+    <me>\dfrac{3}{2} \times \dfrac{1}{4} = \dfrac{3 \times 1}{2 \times 4} = \dfrac{3}{8} ~~~~~~\blert{\dfrac{\text{Multiply numerators together.}}{\text{Multiply denominators together.}}}</me>
+  Each person gets <m>\dfrac{3}{8}</m> of a pound of salmon.</p></li>
+  <li><p>We'd like to know how many ounces are in <m>\dfrac{3}{8}</m> of a pound. A pound is equal to 16 ounces, so we multiply 16 by <m>\dfrac{3}{8}</m>.
+    <me>\dfrac{3}{8} \times \dfrac{16}{1} = \dfrac{3 \times 16}{8 \times 1} = \dfrac{48}{8} = 6</me>
+  Each person gets 6 ounces of salmon, which is a standard portion.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Miranda pays <m>\dfrac{2}{15}</m> of her income in taxes, and <m>\dfrac{5}{12}</m> of those taxes go to education. What fraction of Miranda's income goes to education?</p></li>  
+  <li><p>Reduce your answer to part (a).</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p> <m>\dfrac{10}{180}</m> </p></li>  
+  <li><p><m>\dfrac{1}{18}</m></p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Multiplying Fractions</title>
+
+<p>Use multiplication to find each fraction. Show your work.</p>
+
+<p><ol>
+  <li><p>How many cents are there in <m>\dfrac{4}{5}</m> of a dollar?</p></li>
+
+  <li><p>The city council wants to clear <m>\dfrac{3}{4}</m> of an acre of weeds to make a community garden. If 6 people volunteer, how much ground must each person clear?</p></li>
+
+  <li><p>You made a chocolate cake for the Math Club bake sale, but at the end of the day <m>\dfrac{3}{8}</m> of the cake is left in the pan. You decide to take <m>\dfrac{2}{3}</m> of the remaining cake home, and give the rest to your math teacher.</p>  
+    <p><ol marker="a.">
+      <li><p>How much of the original cake are you taking home?</p></li>  
+      <li><p>Illustrate your work with a rectangle.</p></li>
+     </ol></p></li> 
+
+<li><p>A recipe for coffee cake calls for <m>2\dfrac{2}{3}</m> cups of flour and 4 eggs. You only have 3 eggs, so you decide to make <m>\dfrac{3}{4}</m> of the recipe. How much flour will you need?</p></li>
+</ol></p></activity>
+</subsection> 
+
+<subsection><title>Dividing by a Fraction</title>
+
+<p>When we divide a number, we are separating it into groups. For example, <m>12 \div 4</m> means to find how many groups of 4 fit into 12. The answer, of course, is 3; there are 3 groups of 4 in 12.</p>
+
+    <image source="groups.png" width="60%"></image>
+
+<p>But how about dividing by a fraction? What does it mean to divide a number by <m>\dfrac{1}{3}</m>? (Notice that this is NOT the same as dividing by 3!) For example, <m>2 \div \dfrac{1}{3}</m>  means to find the number of thirds in 2 wholes.</p>
+
+    <image source="sixthirds.png" width="50%"></image>
+
+<p>There are 3 thirds in one whole, so in 2 wholes there must be <m>2 \times 3 = 6</m> thirds. We see that
+
+    <me>2 \div \dfrac{1}{3} = 2 \times 3 = 6</me></p>
+
+<note><p>Do you see that dividing by <m>\dfrac{1}{3}</m> is the same as multiplying by 3? Do you see why?</p></note>
+
+<example><statement><p>Compute <m>~3\dfrac{1}{2} \div \dfrac{1}{8}~</m>,  and explain what it means.</p></statement>
+
+<solution><p>The division asks how many eighths there are in <m>3\dfrac{1}{2}</m> wholes.</p>
+
+    <image source="diveighths.png" width="80%"></image>
+
+<p>Because there are 8 eighths in one whole, there must be  <m>3\dfrac{1}{2} \times 8</m> eighths in <m>3\dfrac{1}{2}</m> wholes. So
+
+    <me>3\dfrac{1}{2} \div \dfrac{1}{8} = 3\dfrac{1}{2} \times 8 = \dfrac{7}{2} \times \dfrac{8}{1} = \dfrac{56}{2} = 28</me></p>
+
+<p>There are 28 eighths in <m>3\dfrac{1}{2}</m> wholes.</p></solution></example>
+
+<p>From the examples above, perhaps you see a method for dividing by a fraction. Try your method in the Checkpoint 4.2.11.</p>
+
+<exercise><statement><p>Compute the division, and draw a picture to illustrate. Then state in words what the division tells you.</p>
+  <p><ol marker="a." cols="2">
+      <li><p><m>4 \div \dfrac{1}{3}</m></p></li>
+      <li><p><m>\dfrac{3}{2} \div \dfrac{1}{4}</m></p></li>
+      <li><p><m>1\dfrac{2}{3} \div \dfrac{1}{6}</m></p></li>
+      <li><p><m>2\dfrac{1}{2} \div \dfrac{1}{8}</m></p></li>
+  </ol></p></statement>
+  
+  <answer><p><ol marker="a." cols="2">
+      <li><image xml:id="FourdivbyThird" width="80%" margins="0% 20%"><description>How many thirds in 4</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.6]
+      \def\r{1};
+      \coordinate (O) at (0,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O) --++(90:\r); 
+      \draw[black] (O) --++(210:\r);  
+      \draw[black] (O) --++(330:\r);  
+      \coordinate (O) at (2.5,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O) --++(90:\r); 
+      \draw[black] (O) --++(210:\r);  
+      \draw[black] (O) --++(330:\r);  
+      \coordinate (O) at (5,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O) --++(90:\r); 
+      \draw[black] (O) --++(210:\r);  
+      \draw[black] (O) --++(330:\r);  
+      \coordinate (O) at (7.5,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O) --++(90:\r); 
+      \draw[black] (O) --++(210:\r);  
+      \draw[black] (O) --++(330:\r);  
+      \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>12</m>. There are 12 thirds in 4.</p></li>
+      <li><image xml:id="ThreeHalvesdivbyFourth" width="40%" margins="0% 60%"><description>How many thirds in 4</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.3]
+      \def\r{1};
+      \coordinate (O) at (0,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(-\r,0) --++(2*\r,0); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r);   
+      \coordinate (O) at (2.5,0);
+      \filldraw[green] (O)++(0,-\r) arc (-90:90:\r)--++(0,-2*\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(-\r,0) --++(2*\r,0); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r);   
+      \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>6</m>. There are 6 fourths in <m>\dfrac{3}{2}</m>.</p></li>
+      <li><image xml:id="Five-ThirdsdivbySixth" width="40%" margins="0% 60%"><description>How many sixths in 1 and 2/3</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.6]
+      \def\r{1};
+      \coordinate (O) at (0,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r); 
+      \draw[black] (O)++(30:\r) --++(210:2*\r);   
+      \draw[black] (O)++(150:\r) --++(330:2*\r);    
+      \coordinate (O) at (2.5,0);
+      \filldraw[green] (O)++(-30:\r) arc (-30:210:\r)--(O)--cycle;  
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r); 
+      \draw[black] (O)++(30:\r) --++(210:2*\r);   
+      \draw[black] (O)++(150:\r) --++(330:2*\r);    
+      \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>10</m>. There are 10 sixths in <m>1\dfrac{2}{3}</m>.</p></li>
+      <li><image xml:id="TenHalvesdivbyEighth" width="65%" margins="0% 35%"><description>How many eighths in 2 and half</description><latex-image>
+      <![CDATA[
+      \begin{tikzpicture} [scale=.3]
+      \def\r{1};
+      \coordinate (O) at (0,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(-\r,0) --++(2*\r,0); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r);   
+      \draw[black] (O)++(45:\r) --++(225:2*\r);   
+      \draw[black] (O)++(135:\r) --++(315:2*\r);    
+      \coordinate (O) at (2.5,0);
+      \filldraw[green] (O) circle (\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(-\r,0) --++(2*\r,0); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r);   
+      \draw[black] (O)++(45:\r) --++(225:2*\r);   
+      \draw[black] (O)++(135:\r) --++(315:2*\r);    
+      \coordinate (O) at (5,0);
+      \filldraw[green] (O)++(0,-\r) arc (-90:90:\r)--++(0,-2*\r); 
+      \draw[black] (O) circle (\r); 
+      \draw[black] (O)++(-\r,0) --++(2*\r,0); 
+      \draw[black] (O)++(0,-\r) --++(0,2*\r);   
+      \draw[black] (O)++(45:\r) --++(225:2*\r);   
+      \draw[black] (O)++(135:\r) --++(315:2*\r);    
+      \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>20</m>. There are 20 eighths in <m>2\dfrac{1}{2}</m>.</p></li>
+  </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>More Dividing by Fractions</title>
+
+<p>We now know what it means to divide a number by <m>\dfrac{1}{3}</m>,  and it turns out that dividing by <m>\dfrac{1}{3}</m> is the same as multiplying by 3. What does it mean to divide a number by <m>\dfrac{2}{3}</m>?  Let's consider <m>4 \div \dfrac{2}{3}</m>. This division asks us how many groups of <m>\dfrac{2}{3}</m> can be made out of 4 wholes.</p>
+
+<!--   <image source="divtwothirds.png" width="80%"></image>--> 
+<image xml:id="divtwothirds" width="80%"><description>Four blocks each divided into 3 </description><latex-image>
+    <![CDATA[
+    \begin{tikzpicture} [scale=.6]
+    \draw[black,thick, fill=cyan!25] (0,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill=cyan!25] (1,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill={rgb,1:red,1;green,0;blue,1}] (2,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+
+    \draw[black,thick, fill={rgb,1:red,1;green,0;blue,1}] (3.2,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill=cyan!25] (4.2,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill=cyan!25] (5.2,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+
+    \draw[black,thick, fill={rgb,1:red,1;green,0;blue,1}] (6.4,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill={rgb,1:red,1;green,0;blue,1}] (7.4,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill=cyan!25] (8.4,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+
+    \draw[black,thick, fill=cyan!25] (9.6,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill={rgb,1:red,1;green,0;blue,1}] (10.6,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+    \draw[black,thick, fill={rgb,1:red,1;green,0;blue,1}] (11.6,0)--++(1,0)--++(0,1.4)--++(-1,0)--cycle;
+
+    \draw [cyan,decorate,decoration={brace,amplitude=5pt}] (2,-.3) -- ++(-2,0) node [blue,below,midway,yshift=-4pt] {${\frac{2}{3}} $};
+    \draw [magenta,decorate,decoration={brace,amplitude=5pt}] (4.2,-.3) -- ++(-2.2,0) node [text={rgb,1:red,.7;green,0;blue,.7},below,midway,yshift=-4pt] {${\frac{2}{3}}$};
+    \draw [cyan,decorate,decoration={brace,amplitude=5pt}] (6.2,-.3) -- ++(-2.,0) node [blue,below,midway,yshift=-4pt] {${\frac{2}{3}}$};
+
+    \draw [magenta,decorate,decoration={brace,amplitude=5pt}] (8.4,-.3) -- ++(-2.,0) node [text={rgb,1:red,.7;green,0;blue,.7},below,midway,yshift=-4pt] {${\frac{2}{3}}$};
+    \draw [cyan,decorate,decoration={brace,amplitude=5pt}] (10.6,-.3) -- ++(-2.2,0) node [blue,below,midway,yshift=-4pt] {${\frac{2}{3}}$};
+    \draw [magenta,decorate,decoration={brace,amplitude=5pt}] (12.6,-.3) -- ++(-2.,0) node [text={rgb,1:red,.7;green,0;blue,.7},below,midway,yshift=-4pt] {${\frac{2}{3}}$};
+
+    \end{tikzpicture}]]>
+    </latex-image></image>
+
+<p>In the picture, we see that there are 6 groups of <m>\dfrac{2}{3}</m> in 4 wholes. This tells us that
+    <me>4 \div \dfrac{2}{3} = 6</me></p>
+
+<p>But how can we calculate this result without the picture? Think about how we made the picture:</p>
+
+  <assemblage><p><ul>
+    <li><p>First, we separated each whole into thirds. This <em>multiplied</em> 4 wholes by 3, to get 12 pieces.</p></li>
+    <li><p>Then we grouped the 12 pieces into groups of 2 thirds each. This <em>divided</em> the 12 pieces by 2, to get 6 groups.</p></li>
+    <li><p>We started with 4, multiplied by 3, then divided by 2.</p></li>
+  </ul></p>
+
+<p>It seems that
+        <me>4 \div \dfrac{2}{3}~~~~~~ \text{is the same as} ~~~~~~  4 \times \dfrac{3}{2}</me></p></assemblage>
+
+<p>Let's check:
+        <me>4 \times \dfrac{3}{2} = \dfrac{4}{1} \times \dfrac{3}{2} = \dfrac{4 \times 3}{1 \times 2} = \dfrac{12}{2} = 6</me></p>
+
+<p>We have discovered a rule for division by a fraction.</p>
+
+<assemblage><title>To divide a number by a fraction</title>
+   <p>Multiply the number by the <term>reciprocal</term> of the fraction.</p></assemblage>
+
+<note><p>Do you remember how to find the <term>reciprocal</term> of a fraction? We interchange the numerator and denominator. For example, the reciprocal of <m>\dfrac{3}{4}</m>  is <m>\dfrac{4}{3}</m>,  and the reciprocal of 2, or <m>\dfrac{2}{1}</m>,  is <m>\dfrac{1}{2}</m>.</p></note>
+
+<example><statement><p>Compute <m>~3\dfrac{3}{4} \div \dfrac{3}{8}</m></p></statement>
+
+<solution><p>First we'll write <m>3\dfrac{3}{4}</m> as an improper fraction. Remember that <m>3\dfrac{3}{4}</m> means <m>\dfrac{3}{1} + \dfrac{3}{4}</m>.
+  <me>\dfrac{3}{1} + \dfrac{3}{4} = \left(\dfrac{3}{1} \times \dfrac{\alert{4}}{\alert{4}} \right) + \dfrac{3}{4} = \dfrac{12}{4} + \dfrac{3}{4} = \dfrac{15}{4} ~~~~~~ \blert{\text{Build, then add.}}</me></p>
+
+<p>To divide <m>\dfrac{15}{4}</m> by <m>\dfrac{3}{8}</m>, we multiply <m>\dfrac{15}{4}</m> by <m>\dfrac{8}{3}</m>.
+    <md><mrow>\dfrac{15}{4} \div \dfrac{3}{8} \amp = \dfrac{15}{4} \times \dfrac{8}{3} = \dfrac{15 \times 8}{4 \times 3} ~~~~~~ \blert{\dfrac{\text{Multiply numerators together.}}{\text{Multiply denominators together.}}}</mrow>
+        <mrow> \amp = \dfrac{120}{12} = 10</mrow></md></p>
+
+<p>So <m>3\dfrac{3}{4}</m> can be broken into 10 pieces of size <m>\dfrac{3}{8}</m>.</p>
+</solution></example>
+
+<exercise><statement><p>David has <m>4\dfrac{1}{2}</m> cans of paint. Each section of his fence needs <m>\dfrac{3}{4}</m> of a can of paint. How many sections of fence can he paint before he has to buy more paint?</p></statement>
+
+<answer><p><m>\dfrac{9}{2} \times \dfrac{4}{3} = 6~</m> sections of fence</p></answer></exercise>
+
+<activity><title>Dividing Fractions</title>
+
+<p>For Problems 1-6,</p>
+<p><ol marker="a.">
+  <li><p>Divide fractions.</p></li>  
+  <li><p>Explain what each division means, and illustrate with rectangles.</p></li>
+</ol></p>
+
+<p><ol>
+  <li><p><m>4 \div \dfrac{1}{4}</m></p></li>
+  <li><p><m>3 \div \dfrac{1}{6}</m></p></li>
+  <li><p><m>4 \div \dfrac{2}{3}</m></p></li>
+  <li><p><m>6 \div \dfrac{3}{4}</m></p></li>
+  <li><p><m>1\dfrac{3}{4} \div \dfrac{7}{8}</m></p></li>
+  <li><p><m>2\dfrac{1}{2} \div \dfrac{5}{6}</m></p></li>
+</ol></p>
+
+<p>The City Council plans to set aside <m>1\dfrac{1}{2}</m> acres of the city park for a community garden. Each allotment will be <m>\dfrac{1}{16}</m> of an acre in size. How many allotments can they offer?</p>
+    <image source="allotment2.png" width="60%"></image>
+</activity>
+
+<p>Here is one more example. It uses several of the skills we've learned.</p>
+
+<example><statement><p>Carrie has <m>2\dfrac{1}{2}</m> yards of florist's ribbon, and each bouquet uses <m>\dfrac{3}{4}</m> of a yard. How many bouquets can she make?</p></statement>
+
+<solution><p>We want to know how many pieces of length <m>\dfrac{3}{4}</m> of a yard can be cut from <m>2\dfrac{1}{2}</m> yards, so we will divide <m>2\dfrac{1}{2}</m> by <m>\dfrac{3}{4}</m>.  First, we'll write <m>2\dfrac{1}{2}</m> as a fraction.
+
+  <me>\dfrac{2}{1} + \dfrac{1}{2} = \left(\dfrac{2}{1} \times \dfrac{\alert{2}}{\alert{2}} \right) + \dfrac{1}{2} = \dfrac{4}{2} + \dfrac{1}{2} = \dfrac{5}{2} ~~~~~~ \blert{\text{Build, then add.}}</me></p>
+
+<p>Next, we'll divide by <m>\dfrac{3}{4}</m>.
+
+  <md><mrow>\dfrac{5}{2} \alert{\div \dfrac{3}{4}} \amp = \dfrac{5}{2} \alert{\times \dfrac{4}{3}} ~~~~~~ \blert{\text{Multiply by the reciprocal.}}</mrow>
+      <mrow> \amp = \dfrac{5 \times 4}{2 \times 3} = \dfrac{20}{6} = \dfrac{10}{3} ~~~~~~ \blert{\dfrac{\text{Multiply numerators.}}{\text{Multiply denominators.}}}</mrow></md></p>
+
+<p>Finally, <m>\dfrac{10}{3}</m> is equal to <m>3\dfrac{1}{3}</m>, so Carrie can make <m>3\dfrac{1}{3}</m> bouquets. Well, actually, she can make 3 bouquets, and has left <m>\dfrac{1}{3}</m> of the amount for another bouquet. That is <m>\dfrac{1}{3}</m> of <m>\dfrac{3}{4}</m> of a yard, or
+  <me>\dfrac{1}{3} \times \dfrac{3}{4} = \dfrac{3}{12} = \dfrac{1}{4}</me></p>
+
+<p>After making 3 bouquets, she has <m>\dfrac{1}{4}</m> yard left over.</p></solution></example>
+
+<note><p>Look carefully at the last part of Example 4.2.15.  Remember that the division asks how many pieces of <m>\dfrac{3}{4}</m> yard can be cut from <m>2\dfrac{1}{2}</m> yards.  We got 3 whole pieces and <m>\dfrac{1}{3}</m> of another piece: not <m>\dfrac{1}{3}</m> of a yard, but <m>\dfrac{1}{3}</m> of a piece!  Here is a picture:</p>
+    <image source="thirdofgroup.png" width="70%"></image>
+
+<p>One-third of a piece of length <m>\dfrac{3}{4}</m> yard is <m>\dfrac{1}{4}</m> yard.</p></note>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>reciprocal</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-4-2.ptx" />
+
+</section>

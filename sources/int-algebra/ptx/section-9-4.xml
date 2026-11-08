@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Hyperbolas"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Conic Sections: Hyperbolas</title><idx>hyperbola</idx>
+
+<introduction>     
+ <p>If a cone is cut by a plane parallel to its axis, the intersection is a <term>hyperbola</term><idx>hyperbola</idx>, the only conic section <idx>conic section</idx> made of two separate pieces, or <term>branches</term><idx><h>branches</h><see>hyperbola</see></idx><idx><h>hyperbola</h><h>branches</h></idx>. Hyperbolas occur in a number of applied settings. The navigational system called LORAN (long-range navigation) uses radio signals to locate a ship or plane at the intersection of two hyperbolas.  Satellites moving with sufficient speed will follow an orbit that is branch of a hyperbola; for example, a rocket sent to the moon must be fitted with retrorockets to reduce its speed in order to achieve an elliptical, rather than hyperbolic, orbit about the moon.</p>
+  
+  <p>The hyperbola is defined as follows.</p>
+
+  <definition><title>Hyperbola</title><idx>hyperbola</idx>
+    <statement><p>A <term>hyperbola</term><idx>hyperbola</idx> is the set of points in the plane, the difference of whose distances from two fixed points (the <term>foci</term><idx><h>focus</h><h>of a hyperbola</h></idx>) is a constant.</p></statement>
+</definition>
+
+<sidebyside widths="40% 40%" margins="5% 5%"><image xml:id="fig-hyperbola-left-right">
+        <description>hyperbola with horizontal transverse axis</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.6]
+        \pgfkeys{/pgf/declare function={asinh(\x) = ln(\x + sqrt(\x^2+1));}}
+        \draw[black,thick, ->, >=stealth'] (-4.5,0)--(4.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4.5)--(0,4.5) node[above]{$y$};
+        \def\a{1.5};
+        \def\b{1};
+        \def\c{sqrt((\a)^2+(\b)^2)};
+        \draw[samples=65,domain={-asinh(4.5/\a):asinh(4.5/\a)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*cosh(\x)}, {\b*sinh(\x)});
+        \draw[samples=65,domain={-asinh(4.5/\a):asinh(4.5/\a)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {-\a*cosh(\x)}, {\b*sinh(\x)});
+        \draw[blue,very thick] ({-\a},0)--(\a,0);
+        \filldraw[green!80!black] (0,\b) circle (.07) node[above right, text=green!30!black]{$(0,b)$};
+        \filldraw[green!80!black] (0,{-\b}) circle (.07) node[below right, text=green!30!black]{$(0,-b)$};
+        \filldraw[black] ({-\c},0) circle (.08) node[above left] {$F_2$};
+        \filldraw[black] ({\c},0) circle (.08) node[above right] {$F_1$};
+        \draw [green!70!black,very thick] (0,{-\b})--(0,\b);
+        \draw [green!70!black, decorate, decoration={brace,amplitude=8}] (0,{-\b})--(0,\b);
+        \filldraw[red] (\a,0) circle (.08) node[above left, text=red]  {$(a,0)$};
+        \filldraw[red] (-\a,0) circle (.08) node[below left, xshift=-3,  yshift=-1, text=red]  {$(-a,0)$};
+        \node[align=center] at (-1.4,2.7){Conjugate\\axis};
+        \draw [green!80!black,->, >=stealth'] (-1.4,2.1) to [out=270,in=125] (-.3,.2);
+        \draw[blue,very thick] ({-\a},0)--(\a,0);
+        \draw [blue, decorate, decoration={brace,amplitude=8}] ({\a},0)--({-\a},0);
+        \node[align=center] at (-1.3,-2.7){Transverse\\axis};
+        \draw [blue,->, >=stealth'] (-1.2,-2.1) to [out=90,in=235] (-.3,-.2);
+        \filldraw[red] (\a,0) circle (.1) node[above left, text=red]  {$(a,0)$};
+        \filldraw[red] (-\a,0) circle (.1) node[below left, xshift=-3,  yshift=-1, text=red]  {$(-a,0)$};
+        \node at (1.8,-3.7) {$\displaystyle{\frac{x^2}{a^2}-\frac{y^2}{b^2}={1} }$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <image xml:id="fig-hyperbola-up-down"><description>hyperbola with vertical transverse axis</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=0.6]
+        \pgfkeys{/pgf/declare function={asinh(\x) = ln(\x + sqrt(\x^2+1));}}
+        \draw[black,thick, ->, >=stealth'] (-4.5,0)--(4.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-4.5)--(0,4.5) node[above]{$y$};
+        \def\b{1.5};
+        \def\a{1};
+        \def\c{sqrt((\a)^2+(\b)^2)};
+        \draw[samples=65,domain={-asinh(4.5/\b):asinh(4.5/\b)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {\b*cosh(\x)});
+        \draw[samples=65,domain={-asinh(4.5/\b):asinh(4.5/\b)},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {-\b*cosh(\x)});
+        \draw[blue,very thick] (0,{-\b})--(0,\b);
+        \draw [blue, decorate, decoration={brace,amplitude=8}] (0,{-\b})--(0,{\b});
+        \node[align=center] at (-2.5,1.5){Transverse\\axis};
+        \draw [blue,->, >=stealth'] (-2,1.2) to [out=350,in=115] (-.3,.2);
+        \filldraw[green!80!black] (\a,0) circle (.08) node[above right] {$(a,0)$};
+        \filldraw[green!80!black] (-\a,0) circle (.08) node[above left]  {$(-a,0)$};
+        \draw[green!80!black,very thick] ({-\a},0)--(\a,0);
+        \draw [green!80!black, decorate, decoration={brace,amplitude=8}] ({\a},0)--({-\a},0);
+        \node[align=center] at (3.2,-1.1){Conjugate\\axis};
+        \draw [green!80!black,->, >=stealth'] (1.9,-.6) to [out=170,in=335] (.3,-.3);
+        \filldraw[red] (0,\b) circle (.1) node[below right, text=red]  {$(0,b)$};
+        \filldraw[red] (0,-\b) circle (.1) node[above right]  {$(0,-b)$};
+        \filldraw[black] (0,{-\c}) circle (.08) node[below right] {$F_2$};
+        \filldraw[black] (0,{\c}) circle (.08) node[above right] {$F_1$};
+        \node at (-3.2,-1.2) {$\displaystyle{\frac{y^2}{b^2} - \frac{x^2}{a^2}=1 }$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+
+<p>If the origin is the center of the hyperbola and the foci (labeled <m>F_1</m> and <m>F_2</m> on the graphs above) lie on the axes, we can use the distance formula to derive its equation.</p>
+
+<assemblage><title>Central Hyperbola</title><idx><h>hyperbola</h><h>central</h></idx><idx><h>center</h><h>of hyperbola</h></idx><idx><h>central</h><h>hyperbola</h></idx>
+    <p>The equation of a hyperbola with center at the origin is
+        <me>\blert{\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1} \qquad
+                \text{ or } \qquad \blert{\frac{y^2}{b^2} -\frac{x^2}{a^2}  = 1}</me></p>
+</assemblage>
+
+<p>In the first case, the two branches of the hyperbola open left and right, so the graph has <m>x</m>-intercepts at <m>a</m> and <m>-a</m> but no <m>y</m>-intercepts. (See figure above left.) The segment joining the <m>x</m>-intercepts is the <term>transverse axis</term><idx><h>axis</h><h>transverse</h></idx><idx><h>hyperbola</h><h>transverse axis</h></idx><idx><h>transverse axis</h><see>hyperbola</see></idx>, and its length is <m>2a</m>. The endpoints of the transverse axis are the <term>vertices</term><idx><h>hyperbola</h><h>vertices</h></idx><idx><h>vertex</h><h>of a hyperbola</h></idx><idx><h>vertices</h><see>hyperbola</see></idx> of the hyperbola. The segment of length <m>2b</m> is called the <term>conjugate axis.</term><idx>conjugate axis</idx><idx><h>conjugate axis</h><seealso>hyperbola</seealso></idx><idx><h>axis</h><h>conjugate</h></idx><idx><h>hyperbola</h><h>conjugate axis</h></idx></p>
+
+<p>In the second case, the graph has <m>y</m>-intercepts at <m>b</m> and <m>-b</m> but no <m>x</m>-intercepts<mdash/>the two branches open up and down. (See figure above right.) Here the <m>y</m>-intercepts are the vertices, so the transverse axis is vertical and has length <m>2b</m>. The conjugate axis has length <m>2a</m>.</p>
+</introduction>  
+
+<subsection><title>Asymptotes of Hyperbolas</title>
+
+<p>The branches of the hyperbola approach two straight lines that intersect at its center. These lines are <term>asymptotes</term><idx><h>asymptote</h><h>of hyperbola</h></idx><idx><h>hyperbola</h><h>asymptotes</h></idx> of the graph, and they are useful as guidelines for sketching the hyperbola. We first sketch a rectangle (called the <term>central rectangle</term><idx>central rectangle</idx>) whose sides are parallel to the axes and whose dimensions are <m>2a</m> and <m>2b</m>. The asymptotes are the diagonals of this rectangle.</p>
+
+<example><statement><p>Graph <m> \dfrac{y^2}{9} - \dfrac{x^2}{4} = 1</m></p></statement>
+
+<solution><p>The graph is a hyperbola with center at the origin. The <m>y^2</m>-term is positive, so the branches of the hyperbola open upward and downward. Because <m>a^2=4</m> and <m>b^2=9</m>, we have <m>a=2</m> and <m>b=3</m>, and the vertices are <m>(0,3)</m> and <m>(0,-3)</m>. There are no <m>x</m>-intercepts.</p>
+        <sidebyside widths="50% 40%" margins="0% 5%" valigns="middle middle">
+    <p>We construct the central rectangle with dimensions <m>2a=4</m> and <m>2b=6</m>, as shown in the figure. Then we draw the asymptotes through the diagonals of the rectangle. The asymptotes have slopes <m>\pm \dfrac{3}{2}</m>. Finally, we sketch the branches of the hyperbola through the vertices and approaching the asymptotes.</p>
+        <image xml:id="fig-example-9-4-1"><description>hyperbola opening up and down</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.6]
+                \filldraw[cyan!30!white, opacity=.50] (-2,-3) rectangle (2,3);
+                \draw[black,thick, ->, >=stealth'] (-6,0)--(6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-6)--(0,6) node[above]{$y$};
+                \foreach \x in {-5,5} {
+                 \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                 \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                 }
+                \def\a{2};
+                \def\b{3};
+                \draw[darkgray, dashed] (-4,6)--(4,-6);
+                \draw[darkgray, dashed] (4,6)--(-4,-6);
+                \draw[samples=65,domain={-1.35:1.35},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {\b*cosh(\x)});
+                \draw[samples=65,domain={-1.35:1.35},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {-\b*cosh(\x)});
+                \draw [blue, decorate, decoration={brace,amplitude=8}] (0,0)--(0,{\b});
+                \node at (-3.5,2.5){$b=3$};
+                \draw [blue,->, >=stealth'] (-2.6,2.4) to [out=0,in=165] (-.55,1.55);
+                \draw [green!80!black, decorate, decoration={brace,amplitude=8}] ({\a},0)--(0,0);
+                \node at (3.7,-1.9){$a=2$};
+                \draw [green!80!black,->, >=stealth'] (2.6,-1.8) to [out=170,in=295] (1.1,-.5);
+                \node at (4.5,1.9) {\Large${\frac{y^2}{9} - \frac{x^2}{4}={} }$\normalsize 1};
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+<webwork><pg-code>
+        $refreshCachedImages = 1;
+  $xfunc[0] = sub { my $t = shift();
+    return 3*cosh($t); };
+  $yfunc[0] = sub { my $t = shift();
+    return 4*sinh($t); };
+  $xfunc[1] = sub { my $t = shift();
+    return 4*cosh($t); };
+  $yfunc[1] = sub { my $t = shift();
+    return 3*sinh($t); };
+  $xfunc[2] = sub { my $t = shift();
+    return 4*sinh($t); };
+  $yfunc[2] = sub { my $t = shift();
+    return 3*cosh($t); };
+  $xfunc[3] = sub { my $t = shift();
+    return 3*sinh($t); };
+  $yfunc[3] = sub { my $t = shift();
+    return 4*cosh($t); };
+  $xfunc[4] = sub { my $t = shift();
+    return -3*cosh($t); };
+  $yfunc[4] = sub { my $t = shift();
+    return 4*sinh($t); };
+  $xfunc[5] = sub { my $t = shift();
+    return -4*cosh($t); };
+  $yfunc[5] = sub { my $t = shift();
+    return 3*sinh($t); };
+  $xfunc[6] = sub { my $t = shift();
+    return 4*sinh($t); };
+  $yfunc[6] = sub { my $t = shift();
+    return -3*cosh($t); };
+  $xfunc[7] = sub { my $t = shift();
+    return 3*sinh($t); };
+  $yfunc[7] = sub { my $t = shift();
+    return -4*cosh($t); };
+
+   foreach my $i (0..3) {
+    $gr[$i] = init_graph(-10,-10,10,10, axes=>[0,0], grid=>[20,20], size=>[240,240]);
+  $fn[$i] = new Fun( $xfunc[$i], $yfunc[$i], $gr[$i] );
+  $fn[$i]->domain(-3,3);
+  $fn[$i+4] = new Fun( $xfunc[$i+4], $yfunc[$i+4], $gr[$i] );
+  $fn[$i+4]->domain(-3,3);
+    }
+
+   foreach my $i (0..3) {
+   $gr[$i] -> lb('reset');
+    $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+    $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+    $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+    $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+    }
+    $gr[0] -> lb(new Label (-8.5,9,"(B)",'black','center','middle'));
+    $gr[1] -> lb(new Label (-8.5,9,"(A)",'black','center','middle'));
+    $gr[2] -> lb(new Label (-8.5,9,"(C)",'black','center','middle'));
+    $gr[3] -> lb(new Label (-8.5,9,"(D)",'black','center','middle'));
+
+    $mc = RadioButtons(
+        [ "(A)", "(B)", "(C)","(D)"],
+        1
+    );
+      </pg-code>     
+    <statement><p>Graph <m>\dfrac{x^2}{9} - \dfrac{y^2}{16} = 1</m></p>
+                <image pg-name="$gr[1]" width="35%"/>
+                <image pg-name="$gr[0]" width="35%"/>
+                <image pg-name="$gr[2]" width="35%"/>
+                <image pg-name="$gr[3]" width="35%"/>
+            <p>Which of the above is the best match for the graph?</p>
+            <p><var name="$mc" form="buttons"/> </p>
+     </statement>
+    <solution>
+        <image pg-name="$gr[0]" width="40%"/>
+        <p>Another graph is below.</p>
+    </solution>
+</webwork>
+    <conclusion>
+        <p><m>\dfrac{x^2}{9} - \dfrac{y^2}{16} = 1</m>:</p>
+            <image width="40%" xml:id="fig-ex-9-4-1answ"><description>hyperbola opening left and right</description><latex-image>
+            <![CDATA[
+             \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-8,-8) grid (8,8);
+            \draw[black,thick, ->, >=stealth'] (-8,0)--(8,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-8)--(0,8) node[above]{$y$};
+            \foreach \x in {-8,-6,-4,-2,2,4,6,8} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \def\a{3};
+            \def\b{4};
+            \draw[blue,very thick] (-\a,-\b) rectangle (\a,\b);
+            \draw[gray, dashed] (-6,8)--(6,-8);
+            \draw[gray, dashed] (6,8)--(-6,-8);
+            \draw[samples=65,domain={-1.45:1.45},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*cosh(\x)}, {\b*sinh(\x)});
+            \draw[samples=65,domain={-1.45:1.45},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {-\a*cosh(\x)}, {\b*sinh(\x)});
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </conclusion></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p>Graph <m>\dfrac{x^2}{9} - \dfrac{y^2}{16} = 1</m></p></statement>
+    <answer><image width="40%" xml:id="fig-ex-9-4-1ans"><description>hyperbola opening left and right</description><latex-image>
+            <![CDATA[
+             \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-8,-8) grid (8,8);
+            \draw[black,thick, ->, >=stealth'] (-8,0)--(8,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-8)--(0,8) node[above]{$y$};
+            \foreach \x in {-8,-6,-4,-2,2,4,6,8} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \def\a{3};
+            \def\b{4};
+            \draw[blue,very thick] (-\a,-\b) rectangle (\a,\b);
+            \draw[gray, dashed] (-6,8)--(6,-8);
+            \draw[gray, dashed] (6,8)--(-6,-8);
+            \draw[samples=65,domain={-1.45:1.45},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*cosh(\x)}, {\b*sinh(\x)});
+            \draw[samples=65,domain={-1.45:1.45},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {-\a*cosh(\x)}, {\b*sinh(\x)});
+            \end{tikzpicture}]]>
+            </latex-image></image>
+    </answer></exercise>
+
+<p>The equation of a central hyperbola <idx><h>hyperbola</h><h>central</h></idx> may be written as
+    <me>Ax^2 + By^2 = C</me>
+where <m>A</m> and <m>B</m> have <em>opposite</em> signs and <m>C \ne 0</m>. As with ellipses, it is best to rewrite the equation in standard form in order to graph it.</p>
+
+<example><statement><p>Write the equation <m>~4y^2-x^2=16~</m> in standard form and describe the important features of its graph.</p></statement>
+    
+<solution><p>We first divide each side by 16 to obtain
+        <me>\frac{y^2}{4} - \dfrac{x^2}{16} = 1\quad\text{ or } \quad \frac{y^2}{2^2} - \dfrac{x^2}{4^2} = 1</me></p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of writing in standard form, see <xref ref="tkQuadStdForm" text="custom"> Section 9.4.1 </xref> of the Toolkit.</p></aside>
+    <sidebyside widths="53% 40%" margins="0% 5%" valigns="middle middle">
+    <p>The graph is a central hyperbola with <m>y</m>-intercepts <m>2</m> and <m>-2</m>, as shown in the figure. The slopes of the asymptotes are given by
+        <me>\pm \frac{b}{a}=\pm \frac{2}{4}=\pm \frac{1}{2}</me>
+    so the equations of the asymptotes are 
+        <me>y= \dfrac{1}{2} x\quad \text{ and } y= \frac{-1}{2} x</me></p>
+
+    <image xml:id="fig-example-9-4-2"><description>hyperbola opening up and down</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.5]
+                \draw[black,thick, ->, >=stealth'] (-7,0)--(7,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-7)--(0,7) node[above]{$y$};
+                \foreach \x in {-5,5} {
+                 \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                 \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                 }
+                \def\a{4};
+                \def\b{2};
+                \filldraw[cyan!30!white, opacity=.50] (-\a,-\b) rectangle (\a,\b);
+                \draw[gray, dashed] (-7,{-7*\b/\a})--(7,{7*\b/\a});
+                \draw[gray, dashed] (-7,{7*\b/\a})--(7,{-7*\b/\a});
+                \draw[samples=65,domain={-1.3:1.3},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {\b*cosh(\x)});
+                \draw[samples=65,domain={-1.3:1.3},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {-\b*cosh(\x)});
+                \node at (3.3,4.9) {$4y^2-x^2=16$};
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside></solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        Context(Point)->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,  );
+        Context()->variables->add(y=>"Real");
+        $f = Formula("x^2/(5/2)^2 - y^2/5^2");
+        $vertices = Formula("(-5/2,0), (5/2,0)");
+        $my_evaluator = $vertices -> cmp(
+         showHints=>1,
+         showLengthHints => 1,
+
+         partialCredit => 1,
+        ); 
+        $l1 = Formula("2x");
+        $l2 = Formula("-2x");
+            $multians = MultiAnswer($l1,$l2)->with(
+              singleResult => 1,
+              checker => sub {
+                  my ( $correct, $student, $self ) = @_;
+                  my ( $f1stu, $f2stu ) = @{$student};
+                  my ( $f1, $f2 ) = @{$correct};
+                  return ( ($f1 == $f1stu &amp;&amp; $f2 == $f2stu) ||
+                       ($f1 == $f2stu &amp;&amp; $f2 == $f1stu)  
+                  );
+              }
+            );            
+    </pg-code>
+    <statement><p><ol marker = "a.">
+        <li><p>Write the equation <m>4x^2 = y^2 + 25</m> in standard form.</p>
+                <p><var name="$f" width="20"/><m>=1</m> </p></li>
+        <li><p>Find the vertices of the graph and the equations of the asymptotes.</p>
+                <p>Vertices: <var name="$vertices" width="25"  evaluator="$my_evaluator"/> Separate different vertices with a comma.</p>
+                <p>Equations of asymptotes: <m>y=</m><var name="$multians" width="2"/> and <m>y=</m><var name="$multians" width="2"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker = "a.">
+        <li><p><m>\dfrac{x^2}{\left(\dfrac{5}{2}\right)^2} - \dfrac{y^2}{5^2}=1</m></p></li>
+        <li><p><m>\left(\dfrac{5}{2}, 0\right)</m>, <m>\left(\dfrac{-5}{2}, 0\right)</m></p> 
+                <p><m>y=2x</m>, <m>y=-2x</m> </p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p><ol marker = "a.">
+        <li><p>Write the equation <m>~4x^2 = y^2 + 25~</m> in standard form. </p></li>
+        <li><p>Find the vertices of the graph and the equations of the asymptotes.</p></li>
+    </ol></p></statement>
+    <answer><p><ol marker = "a.">
+        <li><p><m>\dfrac{x^2}{\left(\dfrac{5}{2}\right)^2} - \dfrac{y^2}{5^2}=1</m></p></li>
+        <li><p><m>\left(\dfrac{5}{2}, 0\right)</m>, <m>\left(\dfrac{-5}{2}, 0\right)</m></p> 
+                <p><m>y=2x</m>, <m>y=-2x</m> </p></li>
+    </ol></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $branches = PopUp(
+          ["?","vertices", "foci", "axes", "branches"],
+         4, 
+        );
+        $transverse = PopUp(
+          ["?", "conjugate", "transverse", "vertical", "horizontal"],
+         2, 
+        );
+        $rectangle = PopUp(
+          ["?","central rectangle", "outer rectangle", "regular pentagon", "hypotenuse"],
+         1, 
+        );
+        $intercept = PopUp(
+          ["?","vertex", "asymptotes", "x-intercepts", "y-intercepts"],
+         3, 
+        );
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>The hyperbola is the only conic section with two separate <var name="$branches" form="popup"/>.</p></li>
+        <li><p>The endpoints of the <var name="$transverse" form="popup"/> axis are the vertices of the hyperbola.</p></li>
+        <li><p>The asymptotes of a hyperbola are the diagonals of the <var name="$rectangle" form="popup"/> .</p></li>
+        <li><p>If the <m>y^2</m> term in the standard form is positive, a central hyperbola has no <var name="$intercept" form="popup"/> .</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><p><var name="$branches"/></p></li>
+            <li><p><var name="$transverse"/></p></li>
+            <li><p><var name="$rectangle"/></p></li>
+            <li><p><var name="$intercept"/></p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Fill in the blanks to complete each statement.<ol marker="a.">
+        <li><p>The hyperbola is the only conic section with two separate <fillin characters="10"/>.</p></li>
+        <li><p>The endpoints of the <fillin characters="10"/> axis are the vertices of the hyperbola.</p></li>
+        <li><p>The asymptotes of a hyperbola are the diagonals of the <fillin characters="10"/> .</p></li>
+        <li><p>If the <m>y^2</m> term in the standard form is positive, a central hyperbola has no <fillin characters="10"/>.</p></li>
+    </ol></p></statement></exercise>
+
+<p>We can find exact coordinates of points on a hyperbola by substituting a value for one variable and solving for the other variable.</p>
+    
+<example><statement><p>Find the exact coordinates of any points with <m>x</m>-coordinate <m>x=2</m> on the hyperbola with equation <m>4x^2-y^2=16</m>. Plot and label those points on the hyperbola.</p></statement>
+
+<solution><sidebyside widths="53% 45%" margins="0% 0%" valigns="middle middle">
+    <p>We substitute <m>x=2</m> in the given equation.
+                <md><mrow>4y^2 - (2)^2 \amp = 16</mrow>
+                    <mrow>4y^2 \amp = 20</mrow>
+                    <mrow>y^2 \amp = 5</mrow>
+                    <mrow>y \amp = \pm \sqrt{5}</mrow></md>
+There are two points with <m>x=2</m>, namely <m>\left(2, \sqrt{5}\right)</m> and <m>\left(2, -\sqrt{5}\right)</m>, as shown in the figure.</p>
+    <image xml:id="fig-example-9-4-3"><description>hyperbola opens up and down</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (-7,-7) grid (7,7);
+                \draw[black,thick, ->, >=stealth'] (-7,0)--(7.6,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-7)--(0,7.6) node[above]{$y$};
+                \foreach \x in {-5,5} {
+                 \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+                 \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                 }
+                \def\a{4};
+                \def\b{2};
+                \draw[gray, dashed] (-7,{-7*\b/\a})--(7,{7*\b/\a});
+                \draw[gray, dashed] (-7,{7*\b/\a})--(7,{-7*\b/\a});
+                \draw[samples=65,domain={-1.3:1.3},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {\b*cosh(\x)});
+                \draw[samples=65,domain={-1.3:1.3},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\a*sinh(\x)}, {-\b*cosh(\x)});
+                \filldraw[red] (2,{sqrt(5)}) circle (.15) node[above, yshift=.2cm, fill=white, inner sep=1]{$ \left(2,\sqrt{5}\right)$};
+                \filldraw[red] (2,{-sqrt(5)}) circle (.15) node[below, yshift=-.2cm, fill=white, inner sep=1]{$ \left(2,-\sqrt{5}\right)$};
+                \end{tikzpicture}]]>
+            </latex-image></image></sidebyside> </solution></example>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork><pg-code>
+        @choices = ("?","DNE", "undefined", "does not exist", "none");
+        $popup = PopUp([@choices], $choices[0]);  # It doesn't matter which is used as the "correct answer".
+        Context($popup->context); 
+        $answer = OneOf(@choices[1..4]);
+        $mc = RadioButtons(
+            [ "The line \(y=1\) is one of the asymptotes.", 
+            "There are no points on the graph with \(y\)-coordinate 1.", 
+            "This is a degenerate conic.",
+            "The hyperbola opens left and right."],
+            1
+        );
+    </pg-code>
+    <statement><p>Solve the equation <m>4y^2 - x^2 = 16</m> when <m>y = 1</m>.</p>
+        <p><m>x=</m><var name="$answer" width="8"/></p>
+        <instruction>Separate different values with a comma, or enter DNE if there are no real solutions.</instruction>
+        <p>What does this tell you about the graph of the hyperbola?</p>
+        <p><var name="$mc" form="buttons"/></p>
+    </statement>
+    <solution><p>There are no real solutions when <m>y = 1</m>, so there are no points on the graph with <m>y</m>-coordinate 1.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>Solve the equation <m>4y^2 - x^2 = 16</m> when <m>y = 1</m>.</p></statement>
+    <answer><p>There are no real solutions when <m>y = 1</m>, so there are no points on the graph with <m>y</m>-coordinate 1.</p></answer></exercise>
+</subsection>
+
+<subsection><title>The Central Conics</title><idx><h>conic section</h><h>central</h></idx><idx><h>central</h><h>conics</h></idx>
+
+<p>The fourth conic section, <idx>conic section</idx> after circles, <idx><h>circle</h></idx> ellipses, and hyperbolas, is the parabola. We have already encountered parabolas in our study of quadratic functions. In particular, the graph of <m>y = ax^2</m> has its vertex at the origin and opens up or down, depending on the sign of <m>a</m>. The graph of <m>x = ay^2</m> is a parabola that opens to the left or right. There is also a geometric definition of a parabola, but we will not discuss that here.</p>
+
+<sidebyside><image source="images/conics-summary"><description>table summarizing conics</description></image></sidebyside>
+<!-- Here is a tabular in a figure version of the image:
+<figure><caption>Central Conics</caption>
+    <tabular top="major" right="minor" left="minor" bottom="minor">
+        <col halign="left"/><col halign="center"/><col halign="center"/>
+        <row>
+            <cell>Description of conic</cell>
+            <cell>Standard form of equation</cell>
+            <cell>Graph</cell>
+        </row>
+        <row>
+            <cell>circle</cell>
+            <cell><m>x^2+y^2=r^2 </m></cell>
+            <cell><image source="images/circle"><description>Circle</description></image></cell>
+        </row>
+        <row>
+            <cell>
+                <line>ellipse</line>
+                <line><m>\phantom{H}</m></line>
+                <line>(a) major axis on <m>x</m> axis</line>
+                <line>("wide and short")</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line>(b) major axis on <m>y</m>-axis</line>
+                <line>("tall and narow")</line>
+            </cell>
+            <cell>
+                <line><m>\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>(a \gt b)</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>(a \lt b)</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+            </cell>
+            <cell><image source="images/ellipses"><description>ellipses</description></image></cell>
+        </row>
+        <row>
+            <cell>
+                <line>hyperbola</line>
+                <line><m>\phantom{H}</m></line>
+                <line>(a) transverse axis on <m>x</m> axis</line>
+                <line>(opens left and right)</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line>(b) transvese axis on <m>y</m>-axis</line>
+                <line>(opens up and down)</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+            </cell>
+            <cell>
+                <line><m>\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1</m></line>
+               <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\dfrac{y^2}{b^2}-\dfrac{x^2}{a^2}=1</m></line>
+            </cell>
+            <cell><image source="images/hyperbolas"><description>hyperbolas</description></image></cell>
+        </row>
+        <row>
+            <cell>
+                <line>parabola</line>
+                <line><m>\phantom{H}</m></line>
+                <line>(a) opens up</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line>(b) opens down</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line>(c) opens right</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line>(b) opens left</line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+           </cell>
+            <cell>
+                <line><m>y=ax^2</m></line>
+                <line><m>(a\gt 0)</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>y=ax^2</m></line>
+                <line><m>(a\lt 0)</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>x=ay^2</m></line>
+                <line><m>(a\gt 0)</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>\phantom{H}</m></line>
+                <line><m>x=ay^2</m></line>
+                <line><m>(a\lt 0)</m></line>
+            </cell>
+            <cell><image source="images/parabolas"><description>parabolas</description></image></cell>
+        </row>        
+    </tabular>
+</figure> -->
+
+<example><statement><p>Write each equation in standard form and describe its graph.</p>
+    <p><ol marker="a." cols="2">
+            <li><p><m>x^2=6y^2+8</m></p></li>
+            <li><p><m>x^2=\dfrac{4-y^2}{2}</m></p></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The equation <m>x^2=6y^2+8</m> is equivalent to
+            <me>x^2-6y^2=8\qquad \text{ or }\qquad \frac{x^2}{\left( \sqrt{8} \right)^2} - \frac{y^2}{\left( \frac{2}{\sqrt{3}} \right)^2}=1</me>
+    The graph is a hyperbola that opens left and right.</p></li>
+    <li><p>The equation <m>x^2=\dfrac{4-y^2}{2}</m> is equivalent to
+            <me>2x^2+y^2=4\qquad \text{ or }\qquad \frac{x^2}{\left( \sqrt{2} \right)^2} + \frac{y^2}{2^2}=1</me>
+    The graph is an ellipse with major axis on the <m>y</m>-axis because <m>2\gt\sqrt{2} </m>.</p></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        Context(Point)->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,  );
+        $a = Formula("x^2/8 - y^2/2");
+        $hyperbola = PopUp(
+          ["?","a circle", "an ellipse", "a hyperbola", "a parabola"],
+         3, 
+        );
+        $origin = Point(0,0);
+        $vertices = Formula("(-2*sqrt(2),0), (2*sqrt(2),0)");
+        $my_evaluator = $vertices -> cmp(
+         showHints=>1,
+         showLengthHints => 1,
+         partialCredit => 1,
+        ); 
+        $are = PopUp(
+          ["?","are", "are not"],
+         1, 
+        );
+        $slope = Formula("1/2 *x");
+
+        $b = Formula("-4x^2");
+        $parabola = PopUp(
+          ["?","a circle", "an ellipse", "a hyperbola", "a parabola"],
+         4, 
+        );
+        $down = PopUp(
+          ["?","left", "right", "upward", "downward"],
+         4, 
+        );
+    </pg-code>
+    <statement><p>Write each equation in standard form and describe its graph.<ol marker="and">
+        <li><p><m>4y^2=x^2-8</m></p>
+                <p>Standard form: <var name="$a" width="15" /><m>=1</m></p>
+                <p>The graph is <var name="$hyperbola" form="popup"/> centered at the point <var name="$origin" width="5"/>, with vertices <var name="$vertices" width="25"  evaluator="$my_evaluator"/>. There <var name="$are" form="popup"/> asymptotes: <m>y=\pm</m><var name="$slope" width="3"/>.</p>
+        </li><li><p><m>4x^2+y=0</m></p>
+                <p>Standard form: <m>y=</m><var name="$b" width="15" /></p>
+                <p>The graph is <var name="$parabola" form="popup"/> with vertex at the point <var name="$origin" width="5"/>, opening <var name="$down" form="popup"/>.</p></li></ol></p>
+    </statement>
+    <solution><p><ol>
+        <li><p><m>\dfrac{x^2}{8}-\dfrac{y^2}{2}=1 </m>. A hyperbola centered at the origin with vertices <m>\left(2\sqrt{2},0 \right) </m> and <m>\left(-2\sqrt{2},0 \right) </m>, and asymptotes <m>y = \dfrac{1}{2}x</m> and <m>y = -\dfrac{1}{2} x</m>.</p></li>
+        <li><p><m>y=-4x^2</m>. A parabola opening downward with vertex at the origin.</p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Write each equation in standard form and describe its graph.</p>
+<p><ol marker="a." cols="2">
+        <li><p><m>4y^2=x^2-8</m></p></li>
+        <li><p><m>4x^2+y=0</m></p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><p><m>\dfrac{x^2}{8}-\dfrac{y^2}{2}=1 </m>. A hyperbola centered at the origin with vertices <m>\left(2\sqrt{2},0 \right) </m> and <m>\left(-2\sqrt{2},0 \right) </m>, and asymptotes <m>y = \dfrac{1}{2}x</m> and <m>y = -\dfrac{1}{2} x</m>.</p></li>
+        <li><p><m>y=-4x^2</m>. A parabola opening downward with vertex at the origin.</p></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Translated Hyperbolas</title>
+
+<p>The standard form for the equations of hyperbolas centered at the point <m>(h,k)</m> can be derived using the distance formula and the definition of hyperbola.</p>
+
+<assemblage><title>Hyperbolas</title><idx><h>hyperbola</h><h>translated</h></idx><idx><h>center</h><h>of hyperbola</h></idx>
+    <p>The equation for a hyperbola centered at <m>(h,k)</m> has one of the two standard forms:
+        <md><mrow>\blert{\frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1}</mrow>
+            <mrow>\blert{\frac{(y-k)^2}{b^2} - \frac{(x-h)^2}{a^2} = 1}</mrow></md></p>
+</assemblage>
+
+<p>The first equation describes a hyperbola whose transverse axis is parallel to the <m>x</m>-axis, so that the branches open left and right, and the second equation describes a hyperbola whose transverse axis is parallel to the <m>y</m>-axis, so that the branches open up and down, as shown below.</p>
+
+<sidebyside widths="37% 37%" margins="5% 5%">
+    <image xml:id="fig-hyperbola-left-right-translated"><description>hyperbola-left-and-right-translated</description>
+        <latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.7]
+        \draw[black,thick, ->, >=stealth'] (-4.5,-3)--(4.5,-3) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (-3,-4.5)--(-3,4.5) node[above]{$y$};
+        \draw[darkgray, thick,dashed] (-4.3,0)--(4.3,0);
+        \draw[darkgray, thick,dashed] (0,-4.3)--(0,4.3);
+
+        \def\a{1};
+        \def\b{1};
+        \draw[samples=65,domain={-2:2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {cosh(\x)}, {sinh(\x)});
+        \draw[samples=65,domain={-2:2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {-cosh(\x)}, {sinh(\x)});
+        \draw[blue,very thick] ({-\a},0)--(\a,0);
+        \filldraw[black] ({-sqrt(2)},0) circle (.1) node[above left] {$F_2$};
+        \filldraw[black] ({sqrt(2)},0) circle (.1) node[above right] {$F_1$};
+        \draw[blue,very thick] ({-\a},0)--(\a,0);
+        \draw[green!70!black, very thick] (0,\b)--(0,-\b);
+        \draw [green!70!black, decorate, decoration={brace,amplitude=5}] (0,{\b})--(0,0) node[right, xshift=2mm,midway]{$b$};
+
+        \draw [blue, decorate, decoration={brace,amplitude=6}] ({\a},0)--(0,0) node[below, midway, yshift=-2mm]{$a$};
+        \node at (0.5,-5) {\Large${\frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}={} }$\normalsize 1};
+        \filldraw[darkgray] (0,0) circle (.1) node[below left, yshift=-1cm, text=black] {$(h,k)$};
+        \draw [gray,->, >=stealth'] (-.8,-1.6) to [out=90,in=190] (-.2,-.2);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    <image xml:id="fig-hyperbola-up-down-translated">
+        <description>hyperbola-up-and-down-translated</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.7]
+        \draw[black,thick, ->, >=stealth'] (-4.5,-3)--(4.5,-3) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (-3,-4.5)--(-3,4.5) node[above]{$y$};
+        \draw[darkgray, thick,dashed] (-4.3,0)--(4.3,0);
+        \draw[darkgray, thick,dashed] (0,-4.3)--(0,4.3);
+        \def\a{1};
+        \def\b{1};
+        \draw[samples=65,domain={-2:2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {sinh(\x)}, {cosh(\x)});
+        \draw[samples=65,domain={-2:2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {sinh(\x)}, {-cosh(\x)});
+        \draw[blue,very thick] ({-\a},0)--(\a,0);
+        \filldraw[black] (0,{-sqrt(2)}) circle (.1) node[below right] {$F_2$};
+        \filldraw[black] (0,{sqrt(2)}) circle (.1) node[above right] {$F_1$};
+        \draw[blue,very thick] ({-\a},0)--(\a,0);
+        \draw[green!70!black, very thick] (0,\b)--(0,-\b);
+        \draw [green!70!black, decorate, decoration={brace,amplitude=5}] (0,{\b})--(0,0) node[right, xshift=2mm,midway]{$b$};
+
+        \draw [blue, decorate, decoration={brace,amplitude=6}] ({\a},0)--(0,0) node[below, midway, yshift=-2mm]{$a$};
+        \node at (0.5,-5) {\Large${\frac{(y-k)^2}{b^2}-\frac{(x-h)^2}{a^2}={} }$\normalsize 1};
+        \filldraw[darkgray] (0,0) circle (.1) node[above left, xshift=-2, yshift=2, text=black] {$(h,k)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+
+<example><statement><p><ol marker="a.">
+        <li><p>Graph <m>~\dfrac{(x-3)^2}{8} - \dfrac{(y+2)^2}{10} = 1</m></p></li>
+        <li><p>Find the equations of the asymptotes.</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The graph is a hyperbola with 
+            <me>(h,k) = (3,-2),\quad a = \sqrt{8} = 2\sqrt{2},\quad \text{ and } b=\sqrt{10}</me></p>
+        <sidebyside widths="50% 48%" margins="0% 0%" valigns="middle middle">
+        <p>Because the <m>x^2</m>-term is positive, the branches open left and right. The coordinates of the vertices are thus <m>(3+2\sqrt{2},-2)</m> and <m>(3-2\sqrt{2},-2)</m>, or approximately <m>(5.8,-2)</m> and <m>(0.2,-2)</m>. The ends of the conjugate axis are <m>(3,-2+\sqrt{10}</m>) and <m>(3,-2-\sqrt{10}</m>), or approximately <m>(3,1.2)</m> and <m>(3,-5.2)</m>.</p>
+        <image xml:id="fig-example-9-4-5"><description>translated hyperbola, left and right</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-3,-7) grid (9,3);
+        \draw[black,thick, ->, >=stealth'] (-3,0)--(9.6,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-7)--(0,3.6) node[above]{$y$};
+        \foreach \x in {5} {
+         \draw[black] (.1,-\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$-\x$};
+         \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         }
+        \def\h{3};
+        \def\k{-2};
+        \filldraw[cyan!60!white,very thick, opacity=.3] ({\h-sqrt(8)},{\k-sqrt(10)}) rectangle ({\h+sqrt(8)},{\k+sqrt(10)});
+        \draw[samples=2,domain={-1.5:7.5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k+sqrt(10)/sqrt(8) * (\x - \h) } );
+        \draw[samples=2,domain={-1.5:7.5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k-sqrt(10)/sqrt(8) * (\x - \h) } );
+        \filldraw[gray] (\h,\k) circle (.1) node[text=black,left, xshift=-2]{$(\h,\k)$};
+        \draw[samples=65,domain={-1.25:1.25},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(8)*cosh(\x)}, {\k+sqrt(10)*sinh(\x)});
+        \draw[samples=65,domain={-1.25:1.25},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h-sqrt(8)*cosh(\x)}, {\k+sqrt(10)*sinh(\x)});
+        \draw [green!90!black, decorate, decoration={brace,amplitude=5}] (\h,\k) --(\h,{\k+sqrt(10)}) node[left, xshift=2mm,midway, yshift=1.5cm, fill=white, inner sep=1, text=green!50!black]{$b=\sqrt{10}$};
+        \draw [green,thick,->, >=stealth'] (2,1.7) to [out=270,in=140] (2.7,-.3);
+        \draw [blue, decorate, decoration={brace,amplitude=6}] ({\h+sqrt(8)},\k)--(\h,\k) node[below, midway, yshift=-3mm, fill=white, inner sep=1]{$a=\sqrt{8}$};
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+   <p>The central rectangle is centered at the point <m>(3,-2)</m> and extends to the vertices in the horizontal direction and to the ends of the conjugate axis in the vertical direction. We draw the asymptotes through the opposite corners of the central rectangle, and sketch the hyperbola through the vertices and approaching the asymptotes to obtain the graph shown above.</p></li>
+   <li><p>Both asymptotes pass through the center of the hyperbola, <m>(3,-2)</m>.  Their slopes are 
+            <me>\frac{\sqrt{10}}{\sqrt{8}} = \frac{\sqrt{5}}{2}\quad \text{ and } \dfrac{-\sqrt{5}}{2}</me>
+        We substitute these values into the point-slope formula to find the equations
+            <me>y + 2 = \frac{\sqrt{5}}{2}(x-3)\quad \text{ and } \quad y + 2 = \frac{-\sqrt{5}}{2}(x-3)</me></p></li>
+    </ol></p></solution></example>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more help finding the equations of the asyptotes, see <xref ref="tkSolveLinIneq" text="custom"> Section 9.4.3 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork><pg-code>
+        $refreshCachedImages = 1;
+        $h = -4;
+        $k = 0;
+        $a = sqrt(12);
+        $b = 3;
+        $xfunc[0] = sub { my $t = shift();
+        return $h+$a*cosh($t); };
+        $yfunc[0] = sub { my $t = shift();
+        return $k+$b*sinh($t); };
+        $xfunc[1] = sub { my $t = shift();
+        return $h+$b*cosh($t); };
+        $yfunc[1] = sub { my $t = shift();
+        return $k+$a*sinh($t); };
+        $xfunc[2] = sub { my $t = shift();
+        return $h+$a*sinh($t); };
+        $yfunc[2] = sub { my $t = shift();
+        return $k +$b*cosh($t); };
+        $xfunc[3] = sub { my $t = shift();
+        return $h + $b*sinh($t); };
+        $yfunc[3] = sub { my $t = shift();
+        return $k+$a*cosh($t); };
+        $xfunc[4] = sub { my $t = shift();
+        return $h-$a*cosh($t); };
+        $yfunc[4] = sub { my $t = shift();
+        return $k+$b*sinh($t); };
+        $xfunc[5] = sub { my $t = shift();
+        return $h-$b*cosh($t); };
+        $yfunc[5] = sub { my $t = shift();
+        return $k+$a*sinh($t); };
+        $xfunc[6] = sub { my $t = shift();
+        return $h+$a*sinh($t); };
+        $yfunc[6] = sub { my $t = shift();
+        return $k -$b*cosh($t); };
+        $xfunc[7] = sub { my $t = shift();
+        return $h + $b*sinh($t); };
+        $yfunc[7] = sub { my $t = shift();
+        return $k-$a*cosh($t); };
+
+        foreach my $i (0..3) {
+        $gr[$i] = init_graph(-15,-10,5,10, axes=>[0,0], grid=>[20,20], size=>[240,240]);
+        $fn[$i] = new Fun( $xfunc[$i], $yfunc[$i], $gr[$i] );
+        $fn[$i]->domain(-3,3);
+        $fn[$i+4] = new Fun( $xfunc[$i+4], $yfunc[$i+4], $gr[$i] );
+        $fn[$i+4]->domain(-3,3);
+        }
+
+        foreach my $i (0..3) {
+        $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+        }
+        $gr[0] -> lb(new Label (-8.5,9,"(A)",'black','center','middle'));
+        $gr[1] -> lb(new Label (-8.5,9,"(B)",'black','center','middle'));
+        $gr[2] -> lb(new Label (-8.5,9,"(C)",'black','center','middle'));
+        $gr[3] -> lb(new Label (-8.5,9,"(D)",'black','center','middle'));
+
+        $mc = RadioButtons(
+                [ "(A)", "(B)", "(C)","(D)"],
+                2
+            );
+        Context(Point)->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,  );
+        $vertices = List("(5+sqrt(15),-3), (5-sqrt(15),-3)");
+        $my_evaluator = $vertices -> cmp(
+        showHints=>1,
+        showLengthHints => 1,
+        partialCredit => 1,
+        ); 
+        $covertices = List("(5,-3+sqrt(8)), (5,-3-sqrt(8))");
+        $my_evaluator2 = $covertices -> cmp(
+        showHints=>1,
+        showLengthHints => 1,
+        partialCredit => 1,
+        ); 
+        $l1 = Formula("sqrt(3)/2 *(x+4)");
+        $l2 = Formula("-sqrt(3)/2 *(x+4)");
+        $multians = MultiAnswer($l1,$l2)->with(
+          singleResult => 0,
+          checkTypes => 0,
+          checker => sub {
+              my ( $correct, $student, $self ) = @_;
+              my ( $f1stu, $f2stu ) = @{$student};
+              my ( $f1, $f2 ) = @{$correct};
+              if ( ($f1 == $f1stu &amp;&amp; $f2 == $f2stu) ||
+                   ($f1 == $f2stu &amp;&amp; $f2 == $f1stu)  
+              ) {
+              return[1,1];
+              } elsif ( ($f1 == $f1stu )  ||
+                       ($f2 == $f1stu )  
+                  ) {
+                  return [1,0];
+              } elsif ( ($f1 == $f2stu)   ||
+                       ($f2 == $f2stu )  
+                  ) {
+                  return [0,1];
+            } else {
+                return [0,0];
+            }
+            }
+        );            
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Graph <m>\dfrac{y^2}{9} - \dfrac{(x+4)^2}{12} = 1</m></p>
+                    <image pg-name="$gr[0]" width="35%"/>
+                    <image pg-name="$gr[1]" width="35%"/>
+                    <image pg-name="$gr[2]" width="35%"/>
+                    <image pg-name="$gr[3]" width="35%"/>
+                <p>Which of the above is the best match for the graph?</p>
+                <p><var name="$mc" form="buttons"/> </p></li>
+        <li><p>Find the equations of the asymptotes. (Enter "sqrt(2)" for <m>\sqrt{2}</m>.)</p>
+                <p>Equations of asymptotes: <m>y=</m><var name="$multians" width="15"/> and </p>
+                <p><m>y=</m><var name="$multians" width="15"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><image pg-name="$gr[2]" width="40%"/>
+                <p>A graph is also shown below.</p></li>
+        <li><m>y=\dfrac{\sqrt{3}}{2}x+4</m>, <m>y=\dfrac{-\sqrt{3}}{2}x+4</m></li></ol></p>
+    </solution>
+</webwork>
+<conclusion>
+    <p><m>\dfrac{y^2}{9} - \dfrac{(x+4)^2}{12} = 1</m>:</p>
+    <image width="40%" xml:id="fig-ex-9-4-5answ">
+            <description>translated hyperbola opening up and down</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.4]
+            \draw[cyan] (-13,-8) grid (5,8);
+            \draw[black,thick, ->, >=stealth'] (-13,0)--(5.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-8)--(0,8.6) node[above]{$y$};
+            \foreach \x in {-10,-4,5} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-6,6} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            % \def\a{sqrt({12})};
+            \def\b{3};
+            \def\h{-4};
+            \def\k{0};
+            \filldraw[cyan!60!white,very thick, opacity=.3] ({\h-sqrt(12)},{\k-\b}) rectangle ({\h+sqrt(12)},{\k+\b});
+            \draw[samples=2,domain={-13:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k+\b/sqrt(12) * (\x - \h) } );
+            \draw[samples=2,domain={-13:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k-\b/sqrt(12) * (\x - \h) } );
+            \filldraw[black] (\h,\k) circle (.1);
+            \draw[samples=65,domain={-1.65:1.65},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(12)*sinh(\x)}, {\k+\b*cosh(\x)});
+            \draw[samples=65,domain={-1.65:1.65},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(12)*sinh(\x)}, {\k-\b*cosh(\x)});
+            \end{tikzpicture}]]>
+        </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p><ol marker="a.">
+        <li><p>Graph <m>\dfrac{y^2}{9} - \dfrac{(x+4)^2}{12} = 1</m></p></li>
+        <li><p>Find the equations of the asymptotes.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><image width="40%" xml:id="fig-ex-9-4-5ans">
+            <description>translated hyperbola opening up and down</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.4]
+            \draw[cyan] (-13,-8) grid (5,8);
+            \draw[black,thick, ->, >=stealth'] (-13,0)--(5.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-8)--(0,8.6) node[above]{$y$};
+            \foreach \x in {-10,-4,5} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-6,6} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            % \def\a{sqrt({12})};
+            \def\b{3};
+            \def\h{-4};
+            \def\k{0};
+            \filldraw[cyan!60!white,very thick, opacity=.3] ({\h-sqrt(12)},{\k-\b}) rectangle ({\h+sqrt(12)},{\k+\b});
+            \draw[samples=2,domain={-13:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k+\b/sqrt(12) * (\x - \h) } );
+            \draw[samples=2,domain={-13:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k-\b/sqrt(12) * (\x - \h) } );
+            \filldraw[black] (\h,\k) circle (.1);
+            \draw[samples=65,domain={-1.65:1.65},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(12)*sinh(\x)}, {\k+\b*cosh(\x)});
+            \draw[samples=65,domain={-1.65:1.65},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(12)*sinh(\x)}, {\k-\b*cosh(\x)});
+            \end{tikzpicture}]]>
+        </latex-image></image></li>
+        <li><m>y=\dfrac{\sqrt{3}}{2}x+4</m>, <m>y=\dfrac{-\sqrt{3}}{2}x+4</m></li>
+    </ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Writing in Standard Form</title>
+
+<p>We can write the equation of a hyperbola in standard form by completing the squares <idx>completing the square</idx> in <m>x</m> and <m>y</m>.</p>
+
+<example><statement><p><ol marker="a.">
+    <li><p>Write the equation in standard form.
+                <me>y^2-4x^2+4y-8x-9=0</me></p></li>
+    <li><p>Graph the equation.</p></li>
+</ol></p></statement>
+    <solution><p><ol marker="a.">
+        <li><p>We prepare to complete the square by factoring out <m>-4</m> from the <m>x</m>-terms.
+                <me>(y^2+4y\hphantom{-} \underline{ \hphantom{0000}})-4(x^2+2x\hphantom{-}\underline{\hphantom{0000}})=9</me>
+            We complete the square in <m>y</m> by adding <m>\alert{4}</m> to each side of the equation. To complete the square in <m>x</m> we add 1 to <m>x^2+2x</m>, so we add <m>-4\cdot \alert{1}</m>, or <m>\alert{-4}</m> to the right side, to get
+                <me>(y^2 + 4y + \alert{4}) - 4(x^2 + 2x + \alert{1}) = 9 + \alert{4}~\alert{- 4}</me>
+            or
+                    <me>(y+2)^2 - 4(x+1)^2 = 9</me>
+            Finally, we divide each side by 9 to obtain the standard form
+                    <me>\frac{(y+2)^2}{9} - \frac{(x+1)^2}{\dfrac{9}{4}} = 1</me></p></li> 
+        <li><sidebyside widths="48% 48%" margins="0% 0%" valigns="middle middle">
+            <p>The graph is a hyperbola with center at <m>(-1,-2)</m>. Because the <m>y^2</m>-term is positive, the transverse axis is parallel to the <m>y</m>-axis, and
+                        <me>b^2 = 9,\quad a^2 = \frac{9}{4}</me>
+            Thus, <m>b=3</m> and <m>a = \dfrac{3}{2}</m>, and the vertices are <m>(-1,1)</m> and <m>(-1,5)</m>. The ends of the conjugate axis are <m>\left(\dfrac{-5}{2}, -2\right)</m> and <m>\left(\dfrac{1}{2}, -2\right)</m>.</p>
+            <image xml:id="fig-example-translated-hyperbola-up-down">
+            <description>translated hyperbola, open up and down</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-6,-9) grid (6,5);
+            \draw[black,thick, ->, >=stealth'] (-6,0)--(6.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-9)--(0,5.6) node[above]{$y$};
+            \foreach \x in {-5,5} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {5} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \def\a{3/2};
+            \def\b{3};
+            \def\h{-1};
+            \def\k{-2};
+            \draw[black, fill=cyan!60!white, opacity=.3] ({\h-\a},{\k-\b}) rectangle ({\h+\a},{\k+\b});
+            \draw[samples=2,domain={-4.5:2.5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k+2 * (\x - \h) } );
+            \draw[samples=2,domain={-4.5:2.5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k-\b/(\a )* (\x - \h) } );
+            \filldraw[black] (\h,\k) circle (.15) node[left, xshift=-.4cm, fill=white, inner sep=1]{$(-1,-2)$};
+            \draw[samples=65,domain={-1.5:1.5},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+\a*sinh(\x)}, {\k+\b*cosh(\x)});
+            \draw[samples=65,domain={-1.5:1.5},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+\a*sinh(\x)}, {\k-\b*cosh(\x)});
+            \draw [blue, decorate, decoration={brace,amplitude=7}] (\h+\a+.1,\k+\b) --++(0,{-\b}) node[right, xshift=4mm,midway,  fill=white, inner sep=1]{$b=3$};
+            \draw [green!60!black, decorate, decoration={brace,amplitude=6}] ({\h+\a},\k)--(\h,\k) node[below, midway, xshift=1.9cm, yshift=-6mm, fill=white, inner sep=1]{$a=\frac{3}{2}$};
+            \draw [green,thick,->, >=stealth'] (2,-3.5) to [out=180,in=280] (-.2,-2.5);
+            \end{tikzpicture}]]>
+        </latex-image></image></sidebyside>
+    <p>The central rectangle is centered at <m>(-1,-2)</m>, as shown in the figure. We draw the asymptotes through the corners of the rectangle, then sketch the hyperbola by starting at the vertices and approaching the asymptotes.</p></li>
+    </ol></p></solution></example>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+        $refreshCachedImages = 1;
+        Context()->variables->add(y=>"Real");
+        $f = Formula("(x+2)^2 /6 - (y+1)^2 /4");
+        $h = -2;
+        $k = -1;
+        $a = sqrt(6);
+        $b = 2;
+        $xfunc[0] = sub { my $t = shift();
+        return $h+$a*cosh($t); };
+        $yfunc[0] = sub { my $t = shift();
+        return $k+$b*sinh($t); };
+        $xfunc[1] = sub { my $t = shift();
+        return $h+$b*cosh($t); };
+        $yfunc[1] = sub { my $t = shift();
+        return $k+$a*sinh($t); };
+        $xfunc[2] = sub { my $t = shift();
+        return $h+$a*sinh($t); };
+        $yfunc[2] = sub { my $t = shift();
+        return $k +$b*cosh($t); };
+        $xfunc[3] = sub { my $t = shift();
+        return $h + $b*sinh($t); };
+        $yfunc[3] = sub { my $t = shift();
+        return $k+$a*cosh($t); };
+        $xfunc[4] = sub { my $t = shift();
+        return $h-$a*cosh($t); };
+        $yfunc[4] = sub { my $t = shift();
+        return $k+$b*sinh($t); };
+        $xfunc[5] = sub { my $t = shift();
+        return $h-$b*cosh($t); };
+        $yfunc[5] = sub { my $t = shift();
+        return $k+$a*sinh($t); };
+        $xfunc[6] = sub { my $t = shift();
+        return $h+$a*sinh($t); };
+        $yfunc[6] = sub { my $t = shift();
+        return $k -$b*cosh($t); };
+        $xfunc[7] = sub { my $t = shift();
+        return $h + $b*sinh($t); };
+        $yfunc[7] = sub { my $t = shift();
+        return $k-$a*cosh($t); };
+
+        foreach my $i (0..3) {
+        $gr[$i] = init_graph(-11,-11,9,9, axes=>[0,0], grid=>[20,20], size=>[240,240]);
+        $fn[$i] = new Fun( $xfunc[$i], $yfunc[$i], $gr[$i] );
+        $fn[$i]->domain(-3,3);
+        $fn[$i+4] = new Fun( $xfunc[$i+4], $yfunc[$i+4], $gr[$i] );
+        $fn[$i+4]->domain(-3,3);
+        }
+
+        foreach my $i (0..3) {
+        $gr[$i] -> lb('reset');
+        $gr[$i] -> lb(new Label (-0.8,5,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-0.8,-5,-5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (5,-0.8,5,'black','center','middle'));
+        $gr[$i] -> lb(new Label (-5,-0.8,-5,'black','center','middle'));
+        }
+        $gr[0] -> lb(new Label (-7.5,8,"(A)",'black','center','middle'));
+        $gr[1] -> lb(new Label (-7.5,8,"(B)",'black','center','middle'));
+        $gr[2] -> lb(new Label (-7.5,8,"(C)",'black','center','middle'));
+        $gr[3] -> lb(new Label (-7.5,8,"(D)",'black','center','middle'));
+
+        $mc = RadioButtons(
+                [ "(A)", "(B)", "(C)","(D)"],
+                0
+            );
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>Write the equation <m>4x^2 - 6y^2 + 16x-12y-14=0</m> in standard form.</p>
+                <p><var name="$f" width="25"/><m>=1</m></p></li>
+        <li><p>Graph the equation.</p>
+                    <image pg-name="$gr[0]" width="35%"/>
+                    <image pg-name="$gr[1]" width="35%"/>
+                    <image pg-name="$gr[2]" width="35%"/>
+                    <image pg-name="$gr[3]" width="35%"/>
+            <p>Which of the above is the best match for the graph?</p>
+                <p><var name="$mc" form="buttons"/> </p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><m>\dfrac{(x+2)^2}{6} - \dfrac{(y+1)^2}{4}=1</m></li>
+            <li><image pg-name="$gr[0]" width="40%"/>
+                <p>A graph is also shown below.</p></li></ol></p>
+    </solution>
+</webwork>
+<conclusion>
+    <p><m>4x^2 - 6y^2 + 16x-12y-14=0</m>:</p>
+        <image width="40%"  xml:id="fig-ex-9-4-6answ"><description>translated hyperbola opening left and right</description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-9,-7) grid (5,5);
+            \draw[black,thick, ->, >=stealth'] (-9,0)--(5.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-7)--(0,5.6) node[above]{$y$};
+            \foreach \x in {-6,4,-8,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-4,4, -6} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            %\def\a{sqrt(6)};
+            \def\b{2};
+            \def\h{-2};
+            \def\k{-1};
+            \draw[black, very thick] ({\h-sqrt(6)},{\k-\b}) rectangle ({\h+sqrt(6)},{\k+\b});
+            \draw[samples=2,domain={-9:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k+\b/sqrt(6) * (\x - \h) } );
+            \draw[samples=2,domain={-9:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k-\b/(sqrt(6) )* (\x - \h) } );
+            \draw[samples=65,domain={-1.7:1.7},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(6)*cosh(\x)}, {\k+\b*sinh(\x)});
+            \draw[samples=65,domain={-1.7:1.7},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h-sqrt(6)*cosh(\x)}, {\k+\b*sinh(\x)});
+            \end{tikzpicture}]]>
+        </latex-image></image>
+</conclusion>
+</exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p><ol marker="a.">
+        <li><p>Write the equation <m>4x^2 - 6y^2 + 16x-12y-14=0</m> in standard form.</p></li>
+        <li><p>Graph the equation.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>\dfrac{(x+2)^2}{6} - \dfrac{(y+1)^2}{4}=1</m></li>
+        <li><image width="40%"  xml:id="fig-ex-9-4-6ans"><description>translated hyperbola opening left and right</description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan] (-9,-7) grid (5,5);
+            \draw[black,thick, ->, >=stealth'] (-9,0)--(5.6,0) node[right]{$x$};
+            \draw[black,thick, ->, >=stealth'] (0,-7)--(0,5.6) node[above]{$y$};
+            \foreach \x in {-6,4,-8,2} {
+             \draw[black] (\x,.1) --++(0,-.2)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            \foreach \x in {-4,4, -6} {
+             \draw[black] (.1,\x) --++(-.2,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+             }
+            %\def\a{sqrt(6)};
+            \def\b{2};
+            \def\h{-2};
+            \def\k{-1};
+            \draw[black, very thick] ({\h-sqrt(6)},{\k-\b}) rectangle ({\h+sqrt(6)},{\k+\b});
+            \draw[samples=2,domain={-9:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k+\b/sqrt(6) * (\x - \h) } );
+            \draw[samples=2,domain={-9:5},smooth,variable=\x,gray,dashed] plot ( {\x}, { \k-\b/(sqrt(6) )* (\x - \h) } );
+            \draw[samples=65,domain={-1.7:1.7},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h+sqrt(6)*cosh(\x)}, {\k+\b*sinh(\x)});
+            \draw[samples=65,domain={-1.7:1.7},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\h-sqrt(6)*cosh(\x)}, {\k+\b*sinh(\x)});
+            \end{tikzpicture}]]>
+        </latex-image></image></li>
+    </ol></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+        $True = PopUp(
+          ["?","True", "False"],
+         1, 
+        );
+        $False = PopUp(
+          ["?","True", "False"],
+         2, 
+        );
+    </pg-code>
+    <statement><p>True or false.<ol marker="a.">
+        <li><p>The graph of a general quadratic is a hyperbola if the coefficients of both the <m>x^2</m>-term and the <m>y^2</m>-term are negative. <var name="$False" form="popup"/></p></li>
+        <li><p>The slopes of the asymptotes of a hyperbola are <m>\pm\dfrac{b}{a} </m>. <var name="$True" form="popup"/></p></li>
+        <li><p>The asymptotes pass through the vertices of the hyperbola. <var name="$False" form="popup"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><p>False</p></li>
+            <li><p>True</p></li>
+            <li><p>False</p></li>
+            <li><p>True</p></li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Decide whether each statement is true or false.</p>
+<p><ol marker="a.">
+        <li><p>The graph of a general quadratic is a hyperbola if the coefficients of both the <m>x^2</m>-term and the <m>y^2</m>-term are negative.</p></li>
+        <li><p>The slopes of the asymptotes of a hyperbola are <m>\pm\dfrac{b}{a} </m>.</p></li>
+        <li><p>The asymptotes pass through the vertices of the hyperbola. </p></li>
+        <li><p>We find the center of the hyperbola by completing the square.</p></li>
+    </ol></p></statement></exercise>
+</subsection>
+
+<subsection><title>General Quadratic Equation in Two Variables</title>
+
+<p>We have considered graphs of second-degree equations in two variables,
+    <me>Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0</me>
+for which <m>B</m>, the coefficient of the <m>xy</m>-term, is zero. These graphs are conic sections with axes parallel to one or both of the coordinate axes. If <m>B</m> does not equal zero, the axes of the conic section are rotated with respect to the coordinate axes. The graphing of such equations is taken up in more advanced courses in analytic geometry.</p> 
+
+<p>The graph of a second-degree equation can also be a point, a line, a pair of lines, or no graph at all, depending on the values of the coefficients <m>A</m> through <m>F</m>. Such graphs are called <term>degenerate conics</term><idx>degenerate conic</idx><idx><h>conic section</h><h>degenerate</h></idx>.</p> 
+
+<p>Given an equation of the form
+    <me>Ax^2 + Cy^2 + Dx + Ey + F = 0</me>
+we can determine the nature of the graph from the coefficients of the quadratic terms. If the graph is not a degenerate conic, the following criteria apply.</p>
+
+<assemblage><title>Conic Sections</title><idx>conic section</idx>
+    <p>The graph of <m>~Ax^2 + Cy^2 + Dx + Ey + F = 0~</m> is
+        <ol marker="1.">
+            <li><p>a circle if <m>A=C</m>.</p></li>
+            <li><p>a parabola if <m>A=0</m> or <m>C=0</m> (but not both).</p></li>
+            <li><p>an ellipse if <m>A</m> and <m>C</m> have the same sign.</p></li>
+            <li><p>a hyperbola if <m>A</m> and <m>C</m> have opposite signs.</p></li></ol></p>
+</assemblage>
+
+<example><statement><p>Name the graph of each equation, assuming that the graph is not degenerate.<ol marker="a.">
+                <li><p><m>3x^2+3y^2-2x+4y-6=0</m></p></li>
+                <li><p><m>4y^2+8x^2-3y=0</m></p></li>
+                <li><p><m>4x^2-6y^2+x-2y=0</m></p></li>
+                <li><p><m>y+x^2-4x+1=0</m></p></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>The graph is a circle because the coefficients of <m>x^2</m> and <m>y^2</m> are equal.</p></li>
+    <li><p>The graph is an ellipse because the coefficients of <m>x^2</m> and <m>y^2</m> are both positive.</p></li>
+    <li><p>The graph is a hyperbola because the coefficients of <m>x^2</m> and <m>y^2</m> have opposite signs.</p></li>
+    <li><p>The graph is a parabola because <m>y</m> is of first degree and <m>x</m> is of second degree.</p></li>
+        </ol></p></solution></example> 
+
+<p>The standard forms for the conic sections <idx><h>conic section</h><h>standard form</h></idx> are summarized in the table below. For the parabola, <m>(h, k)</m> is the vertex of the graph, and for the other conics, <m>(h, k)</m> is the center.<idx><h>circle</h></idx><idx><h>ellipse</h></idx><idx><h>hyperbola</h></idx><idx><h>parabola</h></idx></p>
+
+<sidebyside width="100%"><image source="images/conic-summary-2"><description>table of conic sections</description>
+    </image></sidebyside>
+
+<p>The coefficients <m>D</m>, <m>E</m>, and <m>F</m> do not figure in determining the type of conic section the equation represents. They do, however, determine the position of the graph relative to the origin. Once we recognize the form of the graph, we can write the equation in standard form in order to discover more information about the graph.</p>      
+
+<exercise component="webwork"><title>Practice 7</title>
+<webwork><pg-code>
+        Context(Point)->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,  );
+        $hyperbola = PopUp(
+          ["?","A circle with center", "An ellipse with center", "A hyperbola with center", "A parabola with vertex"],
+         3, 
+        );
+        $origin = Point(0,0);
+        $vertices = Formula("(0,-1), (0,1)");
+        $my_evaluator = $vertices -> cmp(
+         showHints=>1,
+         showLengthHints => 1,
+         partialCredit => 1,
+        ); 
+        $f = Formula("1/3*x");
+        $parabola = PopUp(
+          ["?","A circle with center", "An ellipse with center", "A hyperbola with center", "A parabola with vertex"],
+         4, 
+        );
+        $v = Point(1,-5);
+        $up = PopUp(
+          ["?","left", "right", "upward", "downward"],
+         3, 
+        );
+
+        $ellipse =  PopUp(
+          ["?","A circle with center", "An ellipse with center", "A hyperbola with center", "A parabola with vertex"],
+         2, 
+        );
+        $v2 = Point(-2,1);
+        $horizontal = PopUp(
+          ["?","major axis", "minor axis", "transverse axis", "conjugate axis"],
+         1, 
+        );
+        $a = Compute("2");
+        $b = Compute("2/3");
+    </pg-code>
+    <statement><p>Describe the graph of each equation without graphing.<ol marker="a.">
+        <li><p><m>x^2=9y^2-9</m></p>
+                <p><var name="$hyperbola" form="popup"/> at the point <var name="$origin" width="5"/>; vertices: <var name="$vertices" width="12"/>; asymptotes <m>y=\pm</m><var name="$f" width="5"/></p></li>
+        <li><p><m>x^2-y=2x+4</m></p>
+                <p><var name="$parabola" form="popup"/> at the point <var name="$v" width="5"/>, opening <var name="$up" form="popup"/></p></li>
+        <li><p><m>x^2+9y^2+4x-18y+9=0</m></p>
+                <p><var name="$ellipse" form="popup"/> at the point <var name="$v2" width="5"/> with horizontal <var name="$horizontal" form="popup"/>; <m>a=</m><var name="$a" width="3"/>, and <m>b=</m><var name="$b" width="3"/></p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li>A hyperbola centered at the origin with vertices <m>(0,1)</m> and <m>(0,-1)</m> and asymptotes <m>y=\dfrac{1}{3}x</m> and <m>y=\dfrac{-1}{3}x</m>.</li> 
+            <li>A parabola that opens upward from the vertex <m>(1,-5)</m>.</li>
+            <li>An ellipse centered at <m>(-2,1)</m> with a horizontal major axis, <m>a=2</m> and <m>b=\dfrac{2}{3} </m>.</li></ol></p>
+    </solution>
+</webwork></exercise> 
+
+<exercise component="main"><title>Practice 7</title>
+<statement><p>Describe the graph of each equation without graphing.</p>
+<p><ol marker="a.">
+        <li><p><m>x^2=9y^2-9</m></p></li>
+        <li><p><m>x^2-y=2x+4</m></p></li>
+        <li><p><m>x^2+9y^2+4x-18y+9=0</m></p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+        <li>A hyperbola centered at the origin with vertices <m>(0,1)</m> and <m>(0,-1)</m> and asymptotes <m>y=\dfrac{1}{3}x</m> and <m>y=\dfrac{-1}{3}x</m>.</li> 
+        <li>A parabola that opens upward from the vertex <m>(1,-5)</m>.</li>
+        <li>An ellipse centered at <m>(-2,1)</m> with a horizontal major axis, <m>a=2</m> and <m>b=\dfrac{2}{3} </m>.</li>
+    </ol></p></answer></exercise>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $a = PopUp(
+          ["?","degenerate", "central", "translated"],
+         1, 
+        );
+        $b = PopUp(
+          ["?","type", "position"],
+         2, 
+        );
+        $c = PopUp(
+          ["?","circle", "ellipse", "hyperbola", "parabola"],
+         4, 
+        );
+        $d = PopUp(
+          ["?","circle", "ellipse", "hyperbola", "parabola"],
+         1, 
+        );
+        
+    </pg-code>
+    <statement><p><ol marker="a.">
+        <li><p>A <var name="$a" form="popup"/> conic can be a point, a line, a pair of lines, or no graph at all.</p></li>
+        <li><p>The coefficients <m>D</m>, <m>E</m>, and <m>F</m> determine the <var name="$b" form="popup"/> of the conic.</p></li>
+        <li><p>The graph is a <var name="$c" form="popup"/> if one of <m>A</m> or <m>C</m> is zero.</p></li>
+        <li><p>If <m>A = C</m> (and <m>B=0</m>), the graph is a <var name="$d" form="popup"/>.</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li><p>A <var name="$a" /> conic can be a point, a line, a pair of lines, or no graph at all.</p></li>
+        <li><p>The coefficients <m>D</m>, <m>E</m>, and <m>F</m> determine the <var name="$b"/> of the conic.</p></li>
+        <li><p>The graph is a <var name="$c"/> if one of <m>A</m> or <m>C</m> is zero.</p></li>
+        <li><p>If <m>A = C</m> (and <m>B=0</m>), the graph is a <var name="$d"/>.</p></li></ol></p>        
+    </solution>
+</webwork></exercise> 
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Fill in the blank to complete each statement.<ol marker="a.">
+        <li><p>A <fillin characters="10"/> conic can be a point, a line, a pair of lines, or no graph at all.</p></li>
+        <li><p>The coefficients <m>D</m>, <m>E</m>, and <m>F</m> determine the <fillin characters="10"/> of the conic.</p></li>
+        <li><p>The graph is a <fillin characters="10"/> if one of <m>A</m> or <m>C</m> is zero.</p></li>
+        <li><p>If <m>A = C</m> (and <m>B=0</m>), the graph is a <fillin characters="10"/>.</p></li>
+    </ol></p></statement></exercise>
+
+</subsection>
+
+<xi:include href="./section-9-4-exercises.xml" />                
+
+
+</section>

@@ -1,0 +1,368 @@
+<exercises xml:id="prac-7-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 7-2</title>
+
+<exercisegroup><introduction><p>For Problems 1-8, <ol marker="a.">
+    <li><p>Rewrite the subtraction problem as an equivalent addition problem.</p></li>
+    <li><p>Illustrate the problem on a number line.</p></li>
+</ol></p></introduction> 
+
+<exercise number="1"><statement><p><m>8-(-4)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement>
+<answer><image source="ans-7-1-1.png" width="80%"></image></answer></exercise>
+
+<exercise number="2"><statement><p><m>9-(+6)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement></exercise>
+
+<exercise number="3"><statement><p><m>-3-(+8)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement>
+<answer><image source="ans-7-1-3.png" width="80%"></image></answer></exercise>
+
+<exercise number="4"><statement><p><m>-5-(-7)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement></exercise>
+
+<exercise number="5"><statement><p><m>11-(+5)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement>
+<answer><image source="ans-7-1-5.png" width="80%"></image></answer></exercise>
+
+<exercise number="6"><statement><p><m>8-(-1)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement></exercise>
+
+<exercise number="7"><statement><p><m>-9-(-2)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement>
+<answer><image source="ans-7-1-7.png" width="80%"></image></answer></exercise>
+
+<exercise number="8"><statement><p><m>-5-(-5)</m></p>
+    <image source="signednumberline.png" width="95%"></image></statement></exercise>
+</exercisegroup>
+
+<exercise number="9"><statement><p>Explain why subtracting a negative number is the same as adding a positive number.</p></statement>
+    <answer><p>They move in the same direction on the number line.</p></answer></exercise>
+
+<exercise number="10"><statement><p>Explain why we don't need any new rules for subtraction of signed numbers.</p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 11-24, subtract. Rewrite as an equivalent addition problem if that is helpful.</p></introduction>
+
+<exercise number="11"><statement><p><m>12-(+3)</m></p></statement>
+  <answer><m>9</m></answer></exercise>
+
+<exercise number="12"><statement><p><m>5-(+11)</m></p></statement></exercise>
+
+<exercise number="13"><statement><p><m>-6-(+9)</m></p></statement>
+  <answer><m>-15</m></answer></exercise>
+
+<exercise number="14"><statement><p><m>-8-(+4)</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>-5-(+5)</m></p></statement>
+  <answer><m>-10</m></answer></exercise>
+
+<exercise number="16"><statement><p><m>7-(+7)</m></p></statement></exercise>
+
+<exercise number="17"><statement><p><m>9-(-8)</m></p></statement>
+  <answer><m>17</m></answer></exercise>
+
+<exercise number="18"><statement><p><m>17 -(-20)</m></p></statement></exercise>
+
+<exercise number="19"><statement><p><m>-13-(+9)</m></p></statement>
+  <answer><m>-22</m></answer></exercise>
+
+<exercise number="20"><statement><p><m>-12-(+19)</m></p></statement></exercise>
+
+<exercise number="21"><statement><p><m>-17-(+17)</m></p></statement>
+  <answer><m>34</m></answer></exercise>
+
+<exercise number="22"><statement><p><m>-16-(-5)</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>-22-(-28)</m></p></statement>
+  <answer><m>6</m></answer></exercise>
+
+<exercise number="24"><statement><p><m>-30-(-30)</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="25"><statement><p>Delbert participated in a student math competition at his school. There were three rounds of problem-solving. Delbert earns points for correct answers, but loses points for each incorrect answer. The bar graph shows Delbert's results after three rounds.</p>
+    <image source="hp-7-2-25.png" width="55%"></image>
+<p><ol marker="a.">
+    <li><p>Find Delbert's score on each round.</p></li>
+    <li><p>The final score for each contestant is the sum of the scores on each round. Find Delbert's final score.</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li><m>-3, -2, 3</m></li>
+    <li><m>-2</m></li>
+</ol></p></answer></exercise>
+
+    <image source="lovemath.png" width="75%"></image>
+
+<exercise number="26"><statement><p>The bar graph shows the quarterly revenue and cost figures for Infocom, a new internet service provider.</p>
+        <image source="hp-7-2-26.png" width="65%"></image>
+<p><ol marker="a.">
+    <li><p>Compute Infocom's profit for each quarter of the year.</p></li>
+    <li><p>Compute Infocom's profit for the entire year (the sum of its profits for each quarter).</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>Use a calculator to find the following differences in Problems 27-34.</p></introduction>
+
+<exercise number="27"><statement><p><m>23.8-(-82.9)</m></p></statement>
+  <answer><m>106.7</m></answer></exercise>
+
+<exercise number="28"><statement><p><m>-18.3-(+74.1)</m></p></statement></exercise>
+
+<exercise number="29"><statement><p><m>-249-(-152)</m></p></statement>
+  <answer><m>-97</m></answer></exercise>
+
+<exercise number="30"><statement><p><m>-453-(-826)</m></p></statement></exercise>
+
+<exercise number="31"><statement><p><m>0.012-(-0.39)</m></p></statement>
+  <answer><m>0.402</m></answer></exercise>
+
+<exercise number="32"><statement><p><m>0.39-(-0.012)</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>-1.05-(0.15)</m></p></statement>
+  <answer><m>-0.90</m></answer></exercise>
+
+<exercise number="34"><statement><p><m>-2.02-(-0.2)</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="35"><statement><p><ol marker="a.">
+    <li><p>Read each expression aloud in English, then compute the values.
+        <me> 16 - (+4) ~~~~~~ \text{and} ~~~~~~ 16 + (-4)</me></p></li>
+    <li><p>Consider the expression <m>~16 - 4~</m>.  Should this expression be interpreted as 4 subtracted from 16, or as <m>-4</m> added to 16? Will both interpretations give the same value? Which do you prefer?</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li><m>12</m></li>
+    <li><p>Yes</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p><ol marker="a.">
+    <li><p>Read each expression aloud in English, then compute the values.
+        <me> 8 - (+15) ~~~~~~ \text{and} ~~~~~~ 8 + (-15)</me></p></li>
+    <li><p>Consider the expression <m>~8 - 15~</m>.  Should this expression be interpreted as 15 subtracted from 8, or as <m>-15</m> added to 8? Will both interpretations give the same value? Which do you prefer?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="37"><statement><p><ol marker="a.">
+    <li><p>Read each expression aloud in English, then compute the values.
+        <me> -3 - (+9) ~~~~~~ \text{and} ~~~~~~ -3 + (-9)</me></p></li>
+    <li><p>Consider the expression <m>~-3 - 9~</m>.  Should this expression be interpreted as 9 subtracted from <m>-3</m>, or as <m>-9</m> added to <m>-3</m>? Will both interpretations give the same value? Which do you prefer?</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li><m>-12</m></li>
+    <li><p>Yes</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="38"><statement><p><ol marker="a.">
+    <li><p>Read each expression aloud in English, then compute the values.
+        <me> -18 - (+6) ~~~~~~ \text{and} ~~~~~~ -18 + (-6)</me></p></li>
+    <li><p>Consider the expression <m>~-18 - 6~</m>. Should this expression be interpreted as 6 subtracted from <m>-18</m>, or as <m>-6</m> added to <m>-18</m>? Will both interpretations give the same value? Which do you prefer?</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="39"><statement><p><ol marker="a.">
+    <li><p>Write the expression <m>~8 - 15~</m> as an equivalent addition problem, and then as an equivalent subtraction problem.</p></li>
+    <li><p>Is it easier to compute <m>~8 - 15~</m> as a subtraction problem, or as an addition problem?</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+    <li><p><m>8+(-15); 8-(+15)</m></p></li>
+    <li><p>Your choice</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="40"><statement><p><ol marker="a.">
+    <li><p>Write the expression <m>~-4 - 5~</m> as an equivalent addition problem, and then as an equivalent subtraction problem.</p></li>
+    <li><p>Is it easier to compute <m>~-4 - 5~</m> as a subtraction problem, or as an addition problem?</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 41-42, simplify each expression by treating it as an addition of signed numbers.</p></introduction>
+
+<exercise number="41"><statement><p><ol marker="a." cols="2">
+    <li><p><m>-5-7</m></p></li>
+    <li><p><m>5-7</m></p></li>
+    <li><p><m>-2-9</m></p></li>
+    <li><p><m>2-9</m></p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a." cols="2">
+    <li><p><m>-12</m></p></li>
+    <li><p><m>-2</m></p></li>
+    <li><p><m>-11</m></p></li>
+    <li><p><m>-7</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="42"><statement><p><ol marker="a." cols="2">
+    <li><p><m>8-11</m></p></li>
+    <li><p><m>-8-11</m></p></li>
+    <li><p><m>-4-9</m></p></li>
+    <li><p><m>4-9</m></p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 43-56, add or subtract as indicated.</p></introduction>
+
+<exercise number="43"><statement><p><m>13+(-5)</m></p></statement>
+  <answer><m>8</m></answer></exercise>
+
+<exercise number="44"><statement><p><m>-16+(-7)</m></p></statement></exercise>
+
+<exercise number="45"><statement><p><m>-27+(-13)</m></p></statement>
+  <answer><m>-40</m></answer></exercise>
+
+<exercise number="46"><statement><p><m>28+(-15)</m></p></statement></exercise>
+
+<exercise number="47"><statement><p><m>35-11</m></p></statement>
+  <answer><m>24</m></answer></exercise>
+
+<exercise number="48"><statement><p><m>-15-20</m></p></statement></exercise>
+
+<exercise number="49"><statement><p><m>-40-30</m></p></statement>
+  <answer><m>-70</m></answer></exercise>
+
+<exercise number="50"><statement><p><m>44-22</m></p></statement></exercise>
+
+<exercise number="51"><statement><p><m>-18+53</m></p></statement>
+  <answer><m>35</m></answer></exercise>
+
+<exercise number="52"><statement><p><m>-18-53</m></p></statement></exercise>
+
+<exercise number="53"><statement><p><m>-3-(-5)</m></p></statement>
+  <answer><m>2</m></answer></exercise>
+
+<exercise number="54"><statement><p><m>-3-5</m></p></statement></exercise>
+
+<exercise number="55"><statement><p><m>3-5</m></p></statement>
+  <answer><m>-2</m></answer></exercise>
+
+<exercise number="56"><statement><p><m>3-(-5)</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="57"><statement><p>The bar graph shows the value of U.S. exports to Venezuela for the years 1994–1999.</p>
+        <image source="hp-7-2-57a.png" width="70%"></image>
+<p><ol marker="a.">
+    <li><p>By how much did the exports change in 1995 compared with 1994? In 1996 compared with 1995? Fill in the table.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell>Year</cell>
+            <cell>1995</cell>
+            <cell>1996</cell>
+            <cell>1997</cell>
+            <cell>1998</cell>
+            <cell>1999</cell></row>
+        <row bottom="minor">
+            <cell>Change in exports (billion $)</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+      </tabular></li>
+    <li><p>Make a bar graph showing changes in exports on the grid below. Use the table from part (a).</p>
+            <image source="hp-7-2-57b.png" width="80%"></image></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell>Year</cell>
+            <cell>1995</cell>
+            <cell>1996</cell>
+            <cell>1997</cell>
+            <cell>1998</cell>
+            <cell>1999</cell></row>
+        <row bottom="minor">
+            <cell>Change in exports (billion $)</cell>
+            <cell>0.6</cell>
+            <cell>0.1</cell>
+            <cell>1.9</cell>
+            <cell>0.1</cell>
+            <cell><m>-1.1</m></cell></row>
+      </tabular></li>
+      <li><image source="ans-7-2-57.png" width="60%"></image></li>
+    </ol></p></answer></exercise>
+
+<exercise number="58"><statement><p>The bar graph shows the value of U.S. exports to South Africa for the years 1994–1999.</p>
+        <image source="hp-7-2-58a.png" width="70%"></image>
+<p><ol marker="a.">
+    <li><p>By how much did the exports change in 1995 compared with 1994? In 1996 compared with 1995? Fill in the table.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell>Year</cell>
+            <cell>1995</cell>
+            <cell>1996</cell>
+            <cell>1997</cell>
+            <cell>1998</cell>
+            <cell>1999</cell></row>
+        <row bottom="minor">
+            <cell>Change in exports (billion $)</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+      </tabular></li>
+    <li><p>Make a bar graph showing changes in exports on the grid below. Use the table from part (a).</p>
+            <image source="hp-7-2-58b.png" width="80%"></image></li>
+</ol></p></statement></exercise>
+
+<exercise number="59"><statement><sidebyside widths="50% 40%" valigns="middle middle"><p>In 1995 the Boeing Corporation filled 468 orders for planes from commercial airlines.  The bar graph shows the change in the number of orders for aircraft over the next few years.</p><image source="boeing.png"></image></sidebyside>
+        <image source="hp-7-2-59.png" width="70%"></image>
+
+<p><ol marker="a.">
+    <li><p>Complete the table showing the number of commercial aircraft built by Boeing in each year.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell>Year</cell>
+            <cell>1996</cell>
+            <cell>1997</cell>
+            <cell>1998</cell>
+            <cell>1999</cell>
+            <cell>2000</cell></row>
+        <row bottom="minor">
+            <cell>Aircraft</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+      </tabular></li>
+    <li><p>In which year did Boeing build the most airplanes?</p></li>
+</ol></p></statement>
+    <answer><p><ol marker="a.">
+        <li><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell>Year</cell>
+            <cell>1996</cell>
+            <cell>1997</cell>
+            <cell>1998</cell>
+            <cell>1999</cell>
+            <cell>2000</cell></row>
+        <row bottom="minor">
+            <cell>Aircraft</cell>
+            <cell>754</cell>
+            <cell>568</cell>
+            <cell>656</cell>
+            <cell>391</cell>
+            <cell>585</cell></row>
+      </tabular></li>
+      <li><p>1996</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="60"><statement><p>In 1995 Airbus Industrie filled 106 orders for planes from commercial airlines.  The bar graph shows the change in the number of orders for aircraft over the next few years.</p>
+        <image source="hp-7-2-60.png" width="70%"></image>
+
+<p><ol marker="a.">
+    <li><p>Complete the table showing the number of commercial aircraft built by Boeing in each year.</p>
+        <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" >
+            <cell>Year</cell>
+            <cell>1996</cell>
+            <cell>1997</cell>
+            <cell>1998</cell>
+            <cell>1999</cell>
+            <cell>2000</cell></row>
+        <row bottom="minor">
+            <cell>Aircraft</cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell>
+            <cell><m>\hphantom{000}</m></cell></row>
+      </tabular></li>
+    <li><p>In which year did Airbus first build more commercial airplanes than Boeing? (See Problem 59.)
+</p></li>
+</ol></p></statement></exercise>
+
+
+
+</exercises>

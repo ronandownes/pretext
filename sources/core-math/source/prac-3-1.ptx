@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-3-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 3.1</title>
+
+<exercisegroup><introduction><p>Answer the questions in Problems 1-10 with complete sentences.</p></introduction>
+
+<exercise number="1"><statement><p>What is the surface area of a three-dimensional object? What units do we use to measure surface area?</p></statement>
+<answer><p>The surface area is the sum of the areas of the faces. We measure surface area in square units.</p></answer></exercise>
+
+<exercise number="2"><statement><p>Describe a method for finding the surface area of an object.</p></statement></exercise>
+ 
+<exercise number="3"><statement><p>How many faces does a box have?</p></statement>
+<answer><p>6</p></answer></exercise>
+ 
+<exercise number="4"><statement><p>What is a cube?</p></statement></exercise>
+ 
+<exercise number="5"><statement><p>What does volume measure? What units do we use for volume?</p></statement>
+<answer><p>Volume measures the amount of space inside the object. We use cubic units</p></answer></exercise>
+ 
+<exercise number="6"><statement><p>Give another common English meaning for the word "volume" that is not the same as its mathematical meaning.</p></statement></exercise>
+ 
+<exercise number="7"><statement><p>What is a cubic meter?</p></statement>
+<answer><p>A cubic meter is the amount of space inside a cube 1 meter on each side.</p></answer></exercise>
+ 
+<exercise number="8"><statement><p>What is the difference between area and surface area?</p></statement></exercise>
+ 
+<exercise number="9"><statement><p>Is there a cube whose volume and surface area are the same number?</p></statement>
+<answer><p>Yes, it is 6 units on each side.</p></answer></exercise>
+ 
+<exercise number="10"><statement><p>If you know the volume of a box and the area of its base, how can you find its height?</p>
+</statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>To answer the questions in Problems 11-20, should you find a perimeter, an area, a surface area, or a volume?</p></introduction>
+
+<exercise number="11"><statement><p>How much water is in the community swimming pool?</p></statement>
+<answer><p>Volume</p></answer></exercise>
+ 
+<exercise number="12"><statement><p>How much fertilizer do you need to cover your vegetable garden?</p></statement></exercise>
+ 
+<exercise number="13"><statement><p>How much shade film do you need to cover the greenhouse?</p>
+  <image source="greenhouse.png" width="35%"></image></statement>
+<answer><p>Surface area</p></answer></exercise>
+ 
+<exercise number="14"><statement><p>How much weather-stripping do you need to go around the picture window?</p></statement></exercise>
+ 
+<exercise number="15"><statement><p>How far is it to walk around the lake?</p></statement>
+<answer><p>Perimeter</p></answer></exercise>
+ 
+<exercise number="16"><statement><p>How much tile do you need for the bathroom floor?</p></statement></exercise>
+ 
+<exercise number="17"><statement><p>How much fabric do you need for a hot-air balloon?</p></statement>
+<answer><p>Surface area</p></answer></exercise>
+ 
+<exercise number="18"><statement><p>How much water do you use when taking a bath?</p></statement></exercise>
+ 
+<exercise number="19"><statement><p>How much contact paper do you need to line the dresser drawers?</p></statement>
+<answer><p>Area</p></answer></exercise>
+ 
+<exercise number="20"><statement><p>How many truckloads of fill dirt does the landscaper need?</p></statement></exercise>
+</exercisegroup> 
+
+<exercisegroup><introduction><p>For Problems 21-22,</p>
+<p><ol marker="a."> 
+  <li><p>Sketch the box that can be made from each diagram, and label its dimensions. The grids represent inches.</p></li>
+  <li><p>Find the surface area of the box.</p></li>
+  <li><p>Find the volume of the box.</p></li>
+</ol></p></introduction>
+
+<exercise number="21"><statement><p><image source="hp-3-1-21.png" width="60%"></image></p></statement>
+<answer>
+    <ol marker="a.">
+        <li>
+            <image xml:id="box-3by8by6" width="30%" margins="0% 70%"><description>box 3 by 8 by 6</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture}[scale=.35]
+                \draw[gray, thick, dashed] (5,5) rectangle ++(3,6);
+                \draw[gray, thick, dashed] (0,0) --++(5,5);
+                \draw[thick] (0,0) rectangle (3,6);
+                \draw[thick](3,6)--++(5,5);
+                \draw[thick](3,0)--++(5,5)--++(0,6)--++(-3,0)--++(-5,-5);
+                \node[text width=1cm, text=blue] at (2.4,-.6){3 in};
+                \node[text width=1cm, text=blue] at (7.,2){8 in};
+                \node[text width=1cm, text=blue] at (10,8){6 in};
+                \end{tikzpicture}]]>
+            </latex-image></image>
+        </li>
+        <li><p>180 sq in</p></li>
+        <li><p>144 cu in</p></li>
+    </ol>
+</answer></exercise>
+
+<exercise number="22"><statement><p><image source="hp-3-1-22.png" width="40%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 23-26, decide whether the figure can be folded into a cube.</p></introduction>
+
+<exercise number="23"><statement><p><image source="hp-3-1-23.png" width="55%"></image></p></statement>
+<answer><p>No</p></answer></exercise>
+
+<exercise number="24"><statement><p><image source="hp-3-1-24.png" width="80%"></image></p></statement></exercise>
+
+<exercise number="25"><statement><p><image source="hp-3-1-25.png" width="55%"></image></p></statement>
+<answer><p>No</p></answer></exercise>
+
+<exercise number="26"><statement><p><image source="hp-3-1-26.png" width="55%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 27-28, the grid lines represent feet.</p>
+<p><ol marker="a."> 
+  <li><p>Find the volume of the box.</p></li>
+  <li><p>Find the surface area of the box.</p></li>
+</ol></p></introduction>
+
+<exercise number="27"><statement><p><image source="hp-3-1-27.png" width="50%"></image></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>80 cu ft</p></li>
+  <li><p>112 sq ft</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><p><image source="hp-3-1-28.png" width="60%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 29-30,</p>
+<p><ol marker="a."> 
+  <li><p>Find the volume of the cube.</p></li>
+  <li><p>Find the surface area of the cube.</p></li>
+</ol></p></introduction>
+
+<exercise number="29"><statement><p><image source="hp-3-1-29.png" width="60%"></image></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>512 cu in</p></li>
+  <li><p>384 sq in</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p><image source="hp-3-1-30.png" width="60%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31-32,</p>
+<p><ol marker="a."> 
+  <li><p>Find the volume of the box.</p></li>
+  <li><p>Find the surface area of the box.</p></li>
+</ol></p></introduction>
+
+<exercise number="31"><statement><p><image source="hp-3-1-31.png" width="70%"></image></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>2560 cu cm</p></li>
+  <li><p>1216 sq cm</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="32"><statement><p><image source="hp-3-1-32.png" width="70%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 33-34, the grid lines represent meters.</p>
+<p><ol marker="a."> 
+  <li><p>Find the volume of the object.</p></li>
+  <li><p>Find the surface area of the object.</p></li>
+</ol></p></introduction>
+
+<exercise number="33"><statement><p><image source="hp-3-1-33.png" width="60%"></image></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>44 cu m</p></li>
+  <li><p>94 sq m</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="34"><statement><p><image source="hp-3-1-34.png" width="60%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 35-38,</p>
+<p><ol marker="a."> 
+  <li><p>Find the volume of the object.</p></li>
+  <li><p>Find the surface area of the object.</p></li>
+</ol></p></introduction>
+
+<exercise number="35"><statement><p><image source="hp-3-1-35.png" width="80%"></image></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>3 cu yd</p></li>
+  <li><p>14 sq yd</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p><image source="hp-3-1-36.png" width="90%"></image></p></statement></exercise>
+
+<exercise number="37"><statement><p><image source="hp-3-1-37.png" width="85%"></image></p></statement>
+<answer><p><ol marker="a."> 
+  <li><p>4000 cu in</p></li>
+  <li><p>1300 sq in</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="38"><statement><p><image source="hp-3-1-38.png" width="80%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 39-42, show your work.</p></introduction>
+
+<exercise number="39"><statement><p>A rectangular wooden tray measures 12 inches by 18 inches, and the sides are 3 inches high.  How much wood is used to make the tray?</p></statement>
+<answer><p>396 sq in</p></answer></exercise>
+
+<exercise number="40"><statement><p>A roll of wrapping paper contains 60 square feet of paper. Is that enough to cover a box that measures 4.2 feet by 3 feet by 2.5 feet?</p></statement></exercise>
+
+<exercise number="41"><statement><p>Joelle's aquarium is rectangular and measures 4 feet by 2 feet by 3 feet tall. What is the volume of the aquarium? One cubic foot holds 7.48 gallons of water. How many gallons of water would fill the aquarium?</p></statement>
+<answer><p>24 cu ft, 179.52 gal</p></answer></exercise> 
+
+<exercise number="42"><statement><p>Brandi's owner keeps her dog food in a rectangular plastic bin that measures 15 inches by 15 inches by 2 feet tall. Is the bin large enough to hold two 30-pound bags of dog food that measure 18 inches by 27 inches by 6 inches?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 43-46,</p>
+<p><ol marker="a.">
+  <li><p>Find the unknown dimension.</p></li>
+  <li><p>Sketch the object, and label its dimensions.</p></li>
+</ol></p></introduction>
+
+<exercise number="43"><statement><p>Daisy plans to buy a new refrigerator. The floor space for the refrigerator is 3 feet wide by 2 feet deep. The refrigerator takes up 36 cubic feet of space. How tall is the refrigerator?</p></statement>
+<answer><p>6 ft</p></answer></exercise>
+
+<exercise number="44"><statement><p>Darel is building a patio that is 12 feet wide by 16 feet long. The contractor says he will need 64 cubic feet of concrete. How deep will the concrete be?</p></statement></exercise>
+
+<exercise number="45"><statement><p>A pick-up truck advertises that is has 150 cubic feet of cargo space. If the cargo bed is 6 feet wide and <m>2\dfrac{1}{2}</m> feet deep, how long is it?</p></statement>
+<answer><p>10 ft</p></answer></exercise>
+
+<exercise number="46"><statement><p>Keesha has mixed cake batter in a 2.5 quart bowl. She estimates that the bowl is <m>\dfrac{3}{4}</m> full of batter. If her cake pan is 8 inches square, how tall must it be to hold the batter? You will need to know that there are 32 ounces in a quart, and 1 fluid ounce fills 1.8 cubic inches</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 47-50, make a sketch and show your work.</p></introduction>
+
+<exercise number="47"><statement><p>Shawn is building a block wall in his garden. It will be 2 feet high, 1 foot thick, and 16 feet long. The blocks measure 8 inches by 8 inches by are 6 inches thick. How many blocks will he need? (There are 12 inches in a foot.)</p></statement>
+<answer><p>192</p></answer></exercise>
+
+<exercise number="48"><statement><p>The bottom shelf in Katya's pantry is 30 inches wide, 24 inches deep, and 12 inches tall. How many plastic containers that measure 6 inches by 6 inches by 4 inches tall can she fit on the shelf?</p></statement></exercise>
+
+<exercise number="49"><statement><p>A bale of hay measures 2 feet by 2 feet by 4 feet. How many bales of hay can Orville stack in a hayloft that is 20 feet wide, 10 feet deep, and 8 feet tall?</p></statement>
+<answer><p>100</p></answer></exercise>
+
+<exercise number="50"><statement><p>Oskar is in charge of shipping textbooks to elementary schools. The fifth-grade reader is 6 inches wide, 8 inches tall, and 2 inches thick. How many readers can he pack into a box that is 40 inches wide, 30 inches deep, and 12 inches tall?</p></statement></exercise>
+</exercisegroup>
+
+<exercise number="51"><statement><p>Find a small box, such as a cereal box or shoe box. Use centimeter grid paper to cover all six sides of the box. Explain how you can use the grid paper to calculate both the surface area and the volume of the box.</p></statement>
+<answer><p>Count the grids to find length, width, and height</p></answer></exercise>
+
+<exercise number="52"><statement><p>Complete the table with the volumes and surface areas of cubes.</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Side of Cube</cell>
+      <cell>Surface Area</cell>
+      <cell>Volume</cell></row>
+    <row>
+      <cell>1 cm</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>2 cm</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>3 cm</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>4 cm</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>5 cm</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>10 cm</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    </tabular></p></statement></exercise>
+
+<exercise number="53"><statement><p>Give the dimensions of several boxes that have volume 36 cubic feet. Find the surface area of each box.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Height</cell>
+      <cell>Length</cell>
+      <cell>Width</cell>
+      <cell>Surface Area</cell></row>
+    <row>
+      <cell>1 ft</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>2 ft</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>3 ft</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>4 ft</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>5 ft</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    </tabular></p></statement>
+  <answer><p>Many answers are possible.</p></answer></exercise>
+
+<exercise number="54"><statement><p>You can make an open box from a standard sheet of paper measuring 812 inches by 11 inches. Cut out four equal square corners from the paper and fold up the edges that are left to form the sides of the box, as shown below.</p>
+    <image source="makeabox.png" width="60%"></image>
+
+<p>The volume of the resulting box depends on the size of the square cut-outs. Complete the table to find the volume of the box for squares of various sizes.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Square size</cell>
+      <cell>Length of box</cell>
+      <cell>Width of box</cell>
+      <cell>Height of box</cell>
+      <cell>Volume of box</cell></row>
+    <row>
+      <cell>0.5 in</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>1 in</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>1.5 in</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>2 in</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>2.5 in</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    <row>
+      <cell>3 in</cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell>
+      <cell><m>\hphantom{Six times H}</m></cell></row>
+    </tabular></p>
+
+<p><ol marker="a.">
+  <li><p>What do you notice about the volume as the size of the square cut-out increases?</p></li>
+  <li><p>What size cut-out produced the largest volume in the table?</p></li>
+  <li><p>Why can't the size of the square cut-out be more than <m>4\dfrac{1}{4}</m> inches?</p></li>
+</ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 55-56, it will be helpful to have a set of small cubes to experiment with.
+</p></introduction>
+
+<exercise number="55"><statement><p>Here is a picture of four 1-inch cubes arranged face-to-face.</p>
+  <image source="fourcubes.png" width="35%"></image>
+<p><ol marker="a.">
+  <li><p>What is the volume of the arrangement? What is its surface area?</p></li>
+  <li><p>Sketch some other ways you can arrange four cubes face-to-face. (For example, one way is in a straight line.) What is the smallest surface area you can arrange? What is the largest?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+  <li><p>4 cu in, 18 sq in</p></li>
+  <li><p>16 sq in, 18 sq in</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="56"><statement><p><ol marker="a.">
+  <li><p>How many small cubes will you need to build the next larger size cube?</p></li>
+  <li><p>How many small cubes will you need to build the next larger size cube after that?</p></li>
+  <li><p>One more time:  how many small cubes to build the next cube?</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+</exercises>

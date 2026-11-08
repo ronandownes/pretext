@@ -1,0 +1,365 @@
+<exercises xml:id="prac-5-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 5.3</title>
+
+<exercisegroup><introduction><p>For Problems 1-12,<ol marker="a.">
+  <li><p>Choose the appropriate formula and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question.</p></li>
+</ol></p></introduction>
+
+<exercise number="1"><statement><p>The Camp for Kids Foundation hopes to make $1500 profit at its next rummage sale.  If the cost of putting on the sale is $215, how much revenue will they need?</p>
+    <image source="kids.png" width="50%"></image></statement>
+  <answer><p><ol marker="a.">
+      <li><m>1500 = R - 215</m></li>
+      <li><p>$1715</p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="2"><statement><p>A gallon of paint will cover 350 square feet. The wooden fence around the public gardens is 7 feet high. What length of fence will one gallon of paint cover?</p></statement></exercise>
+
+<exercise number="3"><statement><p>36% of the freshman class at Hollins College is from out-of-state. If there are 162 freshmen from out-of-state, how large is the freshman class?</p></statement>
+  <answer><p><ol marker="a.">
+      <li><m>0.36W = 162</m></li>
+      <li><p>450</p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="4"><statement><p>A telephone poll of 800 voters showed 496 in favor of a school bond. What percent of those polled favored the bond?</p></statement></exercise>
+
+<exercise number="5"><statement><p>Millie invested $1300 in a certificate of deposit for one year and earned $98.80 interest.  What interest rate did the certificate earn?</p></statement>
+  <answer><p><ol marker="a.">
+      <li><m>98.80 = 1300r</m></li>
+      <li><p>7.6%</p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="6"><statement><p>Scott earned $14.70 in interest from his credit union last year. He made no deposits or withdrawals from the account. If the interest rate is 4.9%, how much is in the account?</p></statement></exercise>
+
+<exercise number="7"><statement><sidebyside widths="60% 35%" valigns="middle middle"><p>A fruit punch contains 36% ginger ale. If you have 9 quarts of ginger ale, how much fruit punch can you make?</p><image source="punch.png"></image></sidebyside></statement>
+  <answer><p><ol marker="a.">
+      <li><m>98.80 = 1300r</m></li>
+      <li><p>7.6%</p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="8"><statement><p>45% of the voters voted for Senator Fogbank. If the Senator received 540 votes, how many people voted?</p></statement></exercise>
+
+<exercise number="9"><statement><p>Staci invested some money in a T-bill account that pays 912% interest, and one year later the account had earned $171 interest.  How much did Staci deposit in the T-bill?</p></statement>
+  <answer><p><ol marker="a.">
+      <li><m>171=0.095P</m></li>
+      <li><p>$1800</p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="10"><statement><p>Clive loaned his brother some money to buy a new truck, and his brother agreed to repay the loan in one year with 3% interest. Clive earned $75  interest on the loan. How much did Clive loan his brother?</p></statement></exercise>
+
+<exercise number="11"><statement><sidebyside widths="60% 30%" valigns="middle middle"><p>Garden snails travel at about 2.6 feet per minute.  At that rate, how long will it take a snail to cross a 10-foot patio?</p><image source="snail.png"></image></sidebyside></statement>
+  <answer><p><ol marker="a.">
+      <li><m>10 = 2.6t</m></li>
+      <li><p>3,85 min</p></li>
+    </ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>The peregrine falcon is the fastest flying creature. At a 45° angle of descent, it can cover 312 yards in 3 seconds. What is the falcon's speed in yards per second?  In miles per hour? (Hint: There are 1720 yards in a mile.)</p>
+    <image source="falcon.png" width="40%"></image></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13-20, write an equation. Let <m>n</m> stand for the unknown number.</p></introduction>
+
+<exercise number="13"><statement><p>The product of a number and 6 is 162. What is the number?</p></statement>
+<answer><m>6n = 162</m></answer></exercise>
+
+<exercise number="14"><statement><p>The quotient of a number and 8 is 13. What is the number?</p></statement></exercise>
+
+<exercise number="15"><statement><p>A number decreased by 24 is 38. What is the number?</p></statement>
+<answer><m>n-24 = 38</m></answer></exercise>
+
+<exercise number="16"><statement><p>Eleven more than a number is 30. What is the number?</p></statement></exercise>
+
+<exercise number="17"><statement><p>A number divided by 2.5 is equal to 6.6. What is the number?</p></statement>
+<answer><m>\dfrac{n}{2.5} = 6.6</m></answer></exercise>
+
+<exercise number="18"><statement><p>Fifty-eight times a number is 34.8. What is the number?</p></statement></exercise>
+
+<exercise number="19"><statement><p>Twenty is 15.3 more than a number. What is the number?</p></statement>
+<answer><m>n+15.3 = 20</m></answer></exercise>
+
+<exercise number="20"><statement><p>Eighteen is the difference of a number and 7.1. What is the number?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 21-26, follow the steps to write an equation and solve the problem. (Remember:  writing the equation is the important part!)</p></introduction>
+
+<exercise number="21"><statement><p>Lupe spent $24.50 at the Craft Fair. She now has $39.75 left.  How much did she have before the Craft Fair?<ol marker="a.">
+  <li><p>What are we asked to find?  Choose a variable to represent it.</p></li>
+  <li><p>Find two ways to express the amount of money Lupe had after the Craft Fair, and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+</ol></p></statement>
+  <answer><p><ol marker="a.">
+    <li><p>money before the Fair:  <m>m</m></p></li>
+    <li><m>m-24.50 = 39.75</m></li>
+    <li><p>$64.75</p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>The sale price on a washing machine is $29.80 less than the regular price. The sale price is $258.35  What is the regular price?<ol marker="a.">
+  <li><p>What are we asked to find?  Choose a variable to represent it.</p></li>
+  <li><p>Find two ways to express the sale price of the washing machine, and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+  </ol></p></statement></exercise>
+
+<exercise number="23"><statement><p>Miranda worked 22 hours this week and made $149.60. What is Miranda's hourly wage?<ol marker="a.">
+  <li><p>What are we asked to find?  Choose a variable to represent it.</p></li>
+  <li><p>Find two ways to express Miranda's total earnings, and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+  </ol></p></statement>
+  <answer><p><ol marker="a.">
+    <li><p>hourly wage:  <m>w</m></p></li>
+    <li><m>22w = 149.60</m></li>
+    <li><p>$6.50</p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="24"><statement><p>Bruce goes jogging on the same course every morning except Sundays, when he rests.  His weekly mileage is 57 miles. How long is the course?<ol marker="a.">
+  <li><p>What are we asked to find?  Choose a variable to represent it.</p></li>
+  <li><p>Find two ways to express Bruce's weekly mileage, and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="25"><statement><p>Struggling Students Gardening Service splits their profit equally among their eight members. If each member made $64.35 last week, what was the total profit?<ol marker="a.">
+  <li><p>What are we asked to find?  Choose a variable to represent it.</p></li>
+  <li><p>Find two ways to express each member's share, and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+</ol></p>
+      <image source="gardening.png" width="35%"></image></statement>
+  <answer><p><ol marker="a.">
+    <li><p>profit:  <m>P</m></p></li>
+    <li><m>\dfrac{P}{8} = 64.35</m></li>
+    <li><p>$514.80</p></li>
+  </ol></p></answer></exercise>
+
+<exercise number="26"><statement><p>Judy's average score on 12 homework assignments was 17.5 points. What was the total number of points she earned?<ol marker="a.">
+  <li><p>What are we asked to find?  Choose a variable to represent it.</p></li>
+  <li><p>Find two ways to express Judy's average score, and write an equation.</p></li>
+  <li><p>Solve the equation and answer the question in the problem.</p></li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 27-36,<ol marker="a.">
+  <li><p>Identify the unknown quantity and choose a variable to represent it.</p></li>
+  <li><p>Write an eqution to model the problem. </p></li>
+</ol></p></introduction>
+
+<exercise number="27"><statement><p>A cheeseburger and fries together contain 1070 calories.  An order of fires contains 342 calories.  How many calories are in a cheeseburger?</p></statement>
+<answer><p><ol marker="a.">
+  <li><p>calories in a cheeseburger: <m>c</m></p></li>
+  <li><m>c+342 = 1070</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="28"><statement><sidebyside widths="50% 25%" valigns="middle middle"><p>Mishell weighs 28.5 pounds less than her dog, Bear. If Mishell weighs 96 pounds, how much does Bear weigh?</p><image source="bear.png"></image></sidebyside></statement></exercise>
+
+<exercise number="29"><statement><p>Caroline Gottrich divided her fortune equally among her three no-good sons and her cat. Each beneficiary received $350,000. How much was Caroline's fortune?</p></statement>
+<answer><p><ol marker="a.">
+  <li><p>fortune: <m>M</m></p></li>
+  <li><m>\dfrac{M}{4} = 350,000</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="30"><statement><p>The ratio of your quiz score to 80 points is 0.85. What is your quiz score?</p></statement></exercise>
+
+<exercise number="31"><statement><p>After writing a check for $2378, Averil's bank account shows a balance of $1978. How much was in Averil's account before the check cleared?</p></statement>
+<answer><p><ol marker="a.">
+  <li><p>account balance: <m>b</m></p></li>
+  <li><m>b - 2378 = 1978</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="32"><statement><p>Akiko's great-grandmother says she was 14 years old when the hotel burned down. If Akiko's great-grandmother is 92 years old now, how long ago did the hotel burn down?</p></statement></exercise>
+
+<exercise number="33"><statement><p>Beth's monthly income is $1800, and her rent is $576 per month.  What percent of her monthlyincome does Beth spend on rent?</p></statement>
+<answer><p><ol marker="a.">
+  <li><p>percent on rent: <m>p</m></p></li>
+  <li><m>1800p = 576</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="34"><statement><p>Andrea made a down payment of $1776 on her new car.  If this was 12% of the price of the car, how much did the car cost?</p></statement></exercise>
+
+<exercise number="35"><statement><p>In the 50 states, the average area devoted to state parks is 222,960 acres of land.  How many acres of state park are there in the whole United States? </p></statement>
+<answer><p><ol marker="a.">
+  <li><p>total acres: <m>A</m></p></li>
+  <li><m>\dfrac{A}{50} = 222,960</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="36"><statement><p>Latrisha invested $6500 in a certificate of deposit for one year, and earned $308.75 interest.  What rate of interest did the certificate earn?</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 37-46, use the appropriate formula to write an equation relating two variables.</p></introduction>
+
+<exercise number="37"><statement><p>The distance traveled in <m>t</m> hours by a small plane flying at 150 miles per hour.</p></statement>
+  <answer><m>d = 150t</m></answer></exercise>
+
+<exercise number="38"><statement><p> distance traveled in <m>t</m> seconds by a car moving at 88 feet per second.</p></statement></exercise>
+
+<exercise number="39"><statement><p>The amount of interest earned after <m>t</m> years by $1600 deposited in an accountthat pays 4% annual interest rate.  (Don't forget to change 4% to a decimal.)</p></statement>
+  <answer><m>I = 64t</m></answer></exercise>
+
+<exercise number="40"><statement><p>Your credit union loans you $3000 to be repaid with 4% annual interest.  Write an equation for the amount of interest you will owe after <m>t</m> years.</p></statement></exercise>
+
+<exercise number="41"><statement><p>Milton's great-aunt plans to put $6000 in a trust fund for Milton until he turns twenty-one three years from now. She has a choice of several different accounts. Write an equation in terms of <m>r</m> for the amount of interest the money will earn in three years.</p></statement>
+  <answer><m>I = 1800r</m></answer></exercise>
+
+<exercise number="42"><statement><p>Write an equation in terms of <m>r</m> for the amount of interest earned by  $1600 deposited in an interest-bearing account for one year.</p></statement></exercise>
+
+<exercise number="43"><statement><p>Write an equation for the amount <m>G</m> of grape juice in a fruit punch that is 20% grape juice.</p></statement>
+  <answer><m>G = 0.20W</m></answer></exercise>
+
+<exercise number="44"><statement><p>Eggnog is 70% milk.  Write an equation for the amount of milk <m>M</m> in a container of eggnog.</p></statement></exercise>
+
+<exercise number="45"><statement><p>Laureen took 12 quizzes in her math class this semester and earned a total of <m>S</m> points. Write an equation for Laureen's quiz average.</p></statement>
+  <answer><m>A = \dfrac{S}{12}</m></answer></exercise>
+
+<exercise number="46"><statement><p>Errol has saved $1200 for his vacation.  If he goes on vacation for <m>d</m> days, write an equation for the average amount he can spend each day.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 47-54,<ol marker="a.">
+  <li><p>Identify two unknown quantities and choose variables to represent them. Specify precisely what your variables represent.</p></li>
+  <li><p>Write an eqution relating the variables.</p></li>
+</ol></p></introduction>
+
+<exercise number="47"><statement><p>Danny weighs 32 pounds more than Brenda.</p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>Danny's weight: <m>D</m>, Brenda's weight: <m>B</m></p></li>
+  <li><m>D = B + 32</m></li>
+</ol></p></answer></exercise>  
+
+<exercise number="48"><statement><p>Corey worked for 5 fewer hours than Shant.</p></statement></exercise>  
+
+<exercise number="49"><statement><p>Trinh is 14 years younger than his brother Loc.</p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>Trinh's age: <m>T</m>, Loc's age: <m>L</m></p></li>
+  <li><m>T = L - 14</m></li>
+</ol></p></answer></exercise>  
+
+<exercise number="50"><statement><p>Mac's bowling score is 28 points higher than Tyrone's.</p></statement></exercise>  
+
+<exercise number="51"><statement><p>Each winter coat requires three buttons.</p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>number of coats: <m>c</m>, number of buttons: <m>b</m></p></li>
+  <li><m>b = 3c</m></li>
+</ol></p></answer></exercise>  
+
+<exercise number="52"><statement><p>For each camp counselor, there are eight children.</p></statement></exercise>  
+
+<exercise number="53"><statement><p>Interest rates are twice what they were five years ago.</p></statement>
+  <answer><p><ol marker="a.">
+  <li><p>rates now: <m>r</m>, rates five years ago: <m>p</m></p></li>
+  <li><m>r = 2p</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="54"><statement><p>Many birds eat half their body weight every day.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 55-58,<ol marker="a.">
+  <li><p>Look for a pattern relating the numbers in the second column of the table to the numbers in the first column. </p></li>
+  <li><p>Write an equation relating the variables, and fill in the rest of the table.</p></li>
+</ol></p></introduction>
+
+<exercise number="55"><statement><p>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>t</m></cell>
+            <cell><m>w</m></cell></row>
+        <row bottom="minor">
+            <cell>40</cell>
+            <cell>25</cell></row>
+        <row bottom="minor">
+            <cell>55</cell>
+            <cell>40</cell></row>
+        <row bottom="minor">
+            <cell>60</cell>
+            <cell>45</cell></row>
+        <row bottom="minor">
+            <cell>80</cell>
+            <cell>65</cell></row>
+        <row bottom="minor">
+            <cell>90</cell>
+            <cell></cell></row>
+        <row bottom="minor">
+            <cell></cell>
+            <cell>95</cell></row>
+        </tabular></p></statement>
+    <answer><p><ol marker="a.">
+  <li><m>w = t - 15</m></li>
+  <li><p>75; 110</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="56"><statement><p>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>z</m></cell></row>
+        <row bottom="minor">
+            <cell>6</cell>
+            <cell>2</cell></row>
+        <row bottom="minor">
+            <cell>12</cell>
+            <cell>4</cell></row>
+        <row bottom="minor">
+            <cell>27</cell>
+            <cell>9</cell></row>
+        <row bottom="minor">
+            <cell>33</cell>
+            <cell>11</cell></row>
+        <row bottom="minor">
+            <cell>36</cell>
+            <cell></cell></row>
+        <row bottom="minor">
+            <cell></cell>
+            <cell>14</cell></row>
+        </tabular></p></statement></exercise>
+
+<exercise number="57"><statement><p>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>D</m></cell>
+            <cell><m>H</m></cell></row>
+        <row bottom="minor">
+            <cell>3</cell>
+            <cell>12</cell></row>
+        <row bottom="minor">
+            <cell>5</cell>
+            <cell>20</cell></row>
+        <row bottom="minor">
+            <cell>6</cell>
+            <cell>24</cell></row>
+        <row bottom="minor">
+            <cell>9</cell>
+            <cell>36</cell></row>
+        <row bottom="minor">
+            <cell>11</cell>
+            <cell></cell></row>
+        <row bottom="minor">
+            <cell></cell>
+            <cell>64</cell></row>
+        </tabular></p></statement>
+      <answer><p><ol marker="a.">
+  <li><m>H = 4D</m></li>
+  <li><p>44; 16</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="58"><statement><p>
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>d</m></cell>
+            <cell><m>h</m></cell></row>
+        <row bottom="minor">
+            <cell>2</cell>
+            <cell>8</cell></row>
+        <row bottom="minor">
+            <cell>3</cell>
+            <cell>9</cell></row>
+        <row bottom="minor">
+            <cell>5</cell>
+            <cell>11</cell></row>
+        <row bottom="minor">
+            <cell>8</cell>
+            <cell>14</cell></row>
+        <row bottom="minor">
+            <cell>12</cell>
+            <cell></cell></row>
+        <row bottom="minor">
+            <cell></cell>
+            <cell>25</cell></row>
+        </tabular></p></statement></exercise>
+</exercisegroup>
+
+
+</exercises>

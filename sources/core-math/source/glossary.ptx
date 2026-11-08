@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<glossary xml:id="glossary">
+
+
+ <gi><title>acute angle</title>
+     <p>An angle whose measure is less than 90 <m>degree</m>.</p></gi>
+
+<gi><title>acute triangle</title>
+	<p>A triangle all of whose angles are less than 90 <m>degree</m>.</p></gi>
+
+<gi><title>additive comparison</title>
+	<p>Comparing two quantities by computing their difference.</p></gi>
+
+<gi><title>algebraic expression</title>
+	<p>A mathematical phrase that can include numbers, operations symbols, and variables.</p></gi>
+
+<gi><title>angle</title>
+	<p>A geometric figure formed when two rays, two segments, or two sides meet at the same endpoint.</p></gi>
+
+<gi><title>area</title>
+	<p>The measure in square units enclosed withun a two-dimensional figure.</p></gi>
+
+<gi><title>average</title>
+	<p>A single number used to represent the typical value of a set of numbers</p></gi>
+
+<gi><title>axis</title>
+	<p>One of the two perpenducular lines used in a Cartesian coordinate system.</p></gi>
+
+<gi><title>bar graph</title>
+	<p>A sequence of vertical bars whose heights represent the values of an outpur variable.</p></gi>
+
+<gi><title>base</title>
+	<p>1. The non-equal side of an isosceles triangle.</p>
+	<p>2. The number that is repeated in a power.</p></gi>
+
+<gi><title>base angles</title>
+	<p>The angles opposite the equal sides of an isosceles triangle.</p></gi>
+
+<gi><title>benchmark fractions</title>
+	<p>The familar fractions <m>\dfrac{1}{4}, ~ \dfrac{1}{2},</m> and <m>\dfrac{3}{4}</m>.</p></gi>
+
+<gi><title>building factor</title>
+	<p>A number used to raise a fraction to higher terms, usually when adding.</p></gi>
+
+<gi><title>capacity</title>
+	<p>A synonym for volume used with liquid measure.</p></gi>
+
+<gi><title>Cartesian coordinate system</title>
+	<p>A system for representing the location of points in a plane by their coordinates, or distances from two perpendicular axes.</p></gi>
+
+<gi><title>circle</title>
+	<p>A two-dimensional figure all of whose points are the same distance from its center.</p></gi>
+
+<gi><title>circumference</title>
+	<p>The distance around a circle.</p></gi>
+
+<gi><title>coefficient</title>
+	<p>A factor in an algebraic expression, usually a constant.</p></gi>
+
+<gi><title>common fraction</title>
+	<p>A fraction written in the form numerator over denominator.</p></gi>
+
+<gi><title>common multiple</title>
+	<p>A multiple of two or more numbers.</p></gi>
+
+<gi><title>commutative</title>
+	<p>An operation in which the two expressions can be written in either order, namely, addition and multiplication.</p></gi>
+
+<gi><title>composite</title>
+	<p>A number that is the product of two or more primes.</p></gi>
+
+<gi><title>congruent</title>
+	<p>Two geometric figures are congruent if they have the sam size and shape.</p></gi>
+
+<gi><title>constant</title>
+	<p>An algebraic expression that does not change value.</p></gi>
+
+<gi><title>constant of proportionality</title>
+	<p>The ratio of two proportional quantities.</p></gi>
+
+<gi><title>conversion factor</title>
+	<p>A constant that converts from one unit of measure to another, for example 12 inches per foot.</p></gi>
+
+<gi><title>corresponding angles</title>
+	<p>Angles in the same relative position in two similar or congruent figures.</p></gi>
+
+<gi><title>corresponding sides</title>
+	<p>Sides in the same relative position in two similar or congruent figures.</p></gi>
+
+<gi><title>cube</title>
+	<p>A solid with six identical square sides that are mutually perpendicular.</p></gi>
+
+<gi><title>cubic units</title>
+	<p>Units used to measure volume. </p></gi>
+
+<gi><title>decimal form (of a fraction), or decimal fraction</title>
+	<p>A fraction written in place-value notation in base 10.</p></gi>
+
+<gi><title>decimal place</title>
+	<p>The position of a digit after the decimal point in a decimal fraction.</p></gi>
+
+<gi><title>degree</title>
+	<p>A measure of angle equal to one 360th part of a complete revolution.</p></gi>
+
+<gi><title>delta</title>
+	<p>The Greek letter <m>\Delta</m>, used to represent "change" in mathematics.</p></gi>
+
+<gi><title>denominator</title>
+	<p>The divisor in a common fraction, used to indicate the number of parts in one whole.</p></gi>
+
+<gi><title>diameter</title>
+	<p>A straight line passing through the center of a circle, or its length.</p></gi>
+
+<gi><title>difference</title>
+	<p>The result of a subtraction.</p></gi>
+
+<gi><title>dimensions</title>
+	<p>A set of numbers that specify the size of a figure or object.</p></gi>
+
+<gi><title>divisible</title>
+	<p>Capable of being exactly divided by a specific number.</p></gi>
+
+<gi><title>equation</title>
+	<p>A mathematical statement that two algebraic expressions have the same value.</p></gi>
+
+<gi><title>equilateral triangle</title>
+	<p>A triangle all of whose sides are equal in length.</p></gi>
+
+<gi><title>equivalent expressions</title>
+	<p>Expressions that have the same value for any values of their variables.</p></gi>
+
+<gi><title>equivalent fractions</title>
+	<p>Fractions that are reducible to the same fraction in lowest termes.</p></gi>
+
+<gi><title>evaluate</title>
+	<p>To substitute a specific value for the variables in an expression.</p></gi>
+
+<gi><title>exponent</title>
+	<p>A superscript to a number or variable indicating how many times to use the number in a product.</p></gi>
+
+<gi><title>factor</title>
+	<p>1. A number that divides evenly into another number.</p>
+	<p>2. One of the numbers in a product.</p></gi>
+
+<gi><title>factor pair</title>
+	<p>Two numbers whose product is a desired number.</p></gi>
+
+<gi><title>factor tree</title>
+	<p>A diagram that breaks down a composite number into its prime factors.</p></gi>
+
+<gi><title>formula</title>
+	<p>An equation involving variables, usually for an application.</p></gi>
+
+<gi><title>fraction bar</title>
+	<p>The horizontal line between the numerator and denominator of a fraction. Indicates division.</p></gi>
+
+<gi><title>Fundamental Theorem of Arithmetic</title>
+	<p>Every positive integer (besides 1) has a unique representation as a product of primes.</p></gi>
+
+<gi><title>googol</title>
+	<p>The number <m>10^{100}</m>.</p></gi>
+
+<gi><title>gram</title>
+	<p>The basic metric unit of weight (or mass). One gram is approximately 0.035 ounce.</p></gi>
+
+<gi><title>graph</title>
+	<p>A diagram that represents the connection between two variables.</p></gi>
+
+<gi><title>greatest common factor</title>
+	<p>The largest number that is a factor of two or more given numbers.</p></gi>
+
+<gi><title>horizontal line</title>
+	<p>A line that is parallel to the horizon.</p></gi>
+
+<gi><title>hypotenuse</title>
+	<p>In a right triangle, the side opposite the right angle.</p></gi>
+
+<gi><title>improper fraction</title>
+	<p>A common fraction in which the numerator is larger than the denominator.</p></gi>
+
+<gi><title>inequality</title>
+	<p>A relationship in which one quantity is larger than the other.</p></gi>
+
+<gi><title>inequality symbol</title>
+	<p>One of the symbols <m>/lt</m>, less than, or <m>/gt</m>, greater than.</p></gi>
+
+<gi><title>input variable</title>
+	<p>The first variable in an ordered pair, or the variable at which to evaluate an expression.</p></gi>
+
+<gi><title>integers</title>
+	<p>The set of whole numbers, their negatives, and zero.</p></gi>
+
+<gi><title>interest</title>
+	<p>Money paid for the use of money, such as on a bank account.</p></gi>
+
+<gi><title>irrational number</title>
+	<p>A number whose decimal formneither ends or repeats a pattern, such as <m>\pi</m> or <m>\srt{2}</m>.</p></gi>
+
+<gi><title>isolate (the variable)</title>
+	<p>In solving an equation, to "undo" the operations on the variable so that it is alone on one side of the equation.</p></gi>
+
+<gi><title>isosceles triangle</title>
+	<p>A triangle in which two sides have equal length.</p></gi>
+
+<gi><title>leg</title>
+	<p>In a right triangle, one of the two sides that are not the hypotenuse.</p></gi>
+
+<gi><title>like fractions</title>
+	<p>Fractions that have the same denominator.</p></gi>
+
+<gi><title>like terms</title>
+	<p>Terms that have the same variable structure.</p></gi>
+
+<gi><title>linear equation</title>
+	<p>An equation that can be put into the form <m>y = ax + b</m>.</p></gi>
+
+<gi><title>line graph</title>
+	<p>A graph that connects the data points with line segments or a curve.</p></gi>
+
+<gi><title>liter</title>
+	<p>The basic metric unit of liquid measure. One liter is about 1.06 quarts.</p></gi>
+
+<gi><title>lowest common denominator</title>
+	<p>The smallest number that is a multiple of two or more denominators.</p></gi>
+
+<gi><title>lowest common multiple</title>
+	<p>The smallest number that two or more given numbers divide into evenly.</p></gi>
+
+<gi><title>meter</title>
+	<p>The basic metric unit of length. One meter is about 1.094 yards.</p></gi>
+
+<gi><title>metric system</title>
+	<p>A decimal measuring system used by most of the world.</p></gi>
+
+<gi><title>mixed number</title>
+	<p>A number that is the sum of a whole number and a common fraction.</p></gi>
+
+<gi><title>multiplicative comparison</title>
+	<p>Comparing two quantities by computing their ratio.</p></gi>
+
+<gi><title>multiple</title>
+	<p>A number that is the product of a given number and a whole number.</p></gi>
+
+<gi><title>negative number</title>
+	<p>A number that is less than zero.</p></gi>
+
+<gi><title>net change</title>
+	<p>The change between an initial and a final value.</p></gi>
+
+<gi><title>number line</title>
+	<p>A line on which numbers are marked at intervals.</p></gi>
+
+<gi><title>numerator</title>
+	<p>The top number in a common fraction, indicates how many parts out of one whole.</p></gi>
+
+<gi><title>obtuse angle</title>
+	<p>An angle greater than <m>90 \degree</m> but less than <m>180 \degree</m>.</p></gi>
+
+<gi><title>obtuse triangle</title>
+	<p>A triangle that has one obtuse angle.</p></gi>
+
+<gi><title>opposite operation</title>
+	<p>The operation that "undoes" its opposite, for example, addition and subtraction, or multiplication and division.</p></gi>
+
+<gi><title>order of operations</title>
+	<p>The rules that tell us the sequence in which we should simplify an expression with multiple operations.</p></gi>
+
+<gi><title>ordered pair</title>
+	<p>A pair of numbers <m>(a,b)</m> in which the order is important.</p></gi>
+
+<gi><title>origin</title>
+	<p>The point <m>(0,0)</m> on a Cartesian coordinate system, where the coordinate axes meet.</p></gi>
+
+<gi><title>output variable</title>
+	<p>The second variable in an ordered pair; the result of evaluating an expression at a value of the input variable.</p></gi>
+
+<gi><title>parallelogram</title>
+	<p>A four-sided figure in which opposite sides are parallel.</p></gi>
+
+<gi><title>parentheses</title>
+	<p>Used in mathematics as a "grouping device" to over-ride the order of operations.</p></gi>
+
+<gi><title>percent</title>
+	<p>A fraction with denominator 100, but represented by the numerator alone.</p></gi>
+
+<gi><title>perfect square</title>
+	<p>The square of a whole number, such as 4 and 9.</p></gi>
+
+<gi><title>perimeter</title>
+	<p>The distance formed by the border of a plane figure.</p></gi>
+
+<gi><title>perpendicular</title>
+	<p>Forming <m>90 \degree</m>.</p></gi>
+
+<gi><title>place value</title>
+	<p>The value represented by a particular position in the decial form of a number.</p></gi>
+
+<gi><title>positive number</title>
+	<p>A number greater than zero.</p></gi>
+
+<gi><title>power</title>
+	<p>The result of raising a number or variable to an expopnent.</p></gi>
+
+<gi><title>principal</title>
+	<p>The amount of money invested in an account.</p></gi>
+
+<gi><title>prime</title>
+	<p>A whole number other than 1 than is divisible only by itself and 1.</p></gi>
+
+<gi><title>prime factorization</title>
+	<p>The representation of a whole number as a product of primes.</p></gi>
+
+<gi><title>product</title>
+	<p>The result of a multiplication.</p></gi>
+
+<gi><title>profit</title>
+	<p>The anount of money a business makes after subtracting its costs from its revenue.</p></gi>
+
+<gi><title>proportional variables</title>
+	<p>Variables whose corresponding values have a constant ratio.</p></gi>
+
+<gi><title>protractor</title>
+	<p>A device for measuring angles.</p></gi>
+
+<gi><title>Pythagorean Theorem</title>
+	<p>In a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.</p></gi>
+
+<gi><title>quadrants</title>
+	<p>In a Cartesion coordinate system, the axes divide the plane into four quadrants.</p></gi>
+
+<gi><title>quotient</title>
+	<p>The result of a division.</p></gi>
+
+<gi><title>radical sign</title>
+	<p>The symbol <m>\sqrt{\hphantom{0}}</m>, which indicates the square root of a number.</p></gi>
+
+<gi><title>radius</title>
+	<p>A line segment from the center of a circle to any point on the circumference, or its length.</p></gi>
+
+<gi><title>rate</title>
+	<p>A ratio between quantities with different units.</p></gi>
+
+<gi><title>ratio</title>
+	<p>A quotient of two numbers showing how many times one value contains the other.</p></gi>
+
+<gi><title>reciprocal</title>
+	<p>The result of dividing 1 by a number.</p></gi>
+
+<gi><title>rectangle</title>
+	<p>A four-sided figure with four right angles, whose opposite sides are equal in length.</p></gi>
+
+<gi><title>reduce (a fraction)</title>
+	<p>To simplify a fraction by dividing numerator and denominator by a common factor.</p></gi>
+
+<gi><title>repeating decimal</title>
+	<p>The decimal form of a fraction that repeats a pattern.</p></gi>
+
+<gi><title>revenue</title>
+	<p>The amount of money taken in by a business, before they subtract their costs.</p></gi>
+
+<gi><title>right angle</title>
+	<p>An angle whose measure is <m>90 \degree</m>.</p></gi>
+
+<gi><title>right triangle</title>
+	<p>A triangle one of whose angles is a right angle.</p></gi>
+
+<gi><title>round (a number)</title>
+	<p>To approximate a number to a certain place value.</p></gi>
+
+<gi><title>scale factor</title>
+	<p>A number that is used to enlarge or reduce the size of a figure.</p></gi>
+
+<gi><title>scalene triangle</title>
+	<p>A triangle none of whose sides are equal in length.</p></gi>
+
+<gi><title>scientific notation</title>
+	<p>A way of writing very large or very small numbers as a number between 1 and 10 times a power of ten.</p></gi>
+
+<gi><title>Sieve of Eratosthenes</title>
+	<p>A method for finding all the prime numbers in a given interval by deleting all the composite numbers.</p></gi>
+
+<gi><title>signed numbers</title>
+	<p>Positive and negative numbers and zero.</p></gi>
+
+<gi><title>similar</title>
+	<p>Two geometric figures are similar if they have the same shape but different sizes.</p></gi>
+
+<gi><title>slope</title>
+	<p>A measure of how steep a line is. The ratio of change in height to change in horizontal distance.</p></gi>
+
+<gi><title>solution</title>
+	<p>A solution of an equation is a value of the variable that makes the equation true.</p></gi>
+
+<gi><title>solve</title>
+	<p>To find the solutions of an equaiton.</p></gi>
+
+<gi><title>sphere</title>
+	<p>A three-dimensional figure all of whose points are the same distance from its center; a globe.</p></gi>
+
+<gi><title>square</title>
+	<p>A rectangle with four equal sides.</p></gi>
+	<p>2. To multiply a number by itself, or the result.</p></gi>
+
+<gi><title>square (a number)</title>
+	<p>To multiply a number by itself, or the result.</p></gi>
+
+<gi><title>square root</title>
+	<p>A number that when squared is equal to a given number.</p></gi>
+
+<gi><title>square unit</title>
+	<p>A measure of area, a square one unit on each side.</p></gi>
+
+<gi><title>standard notation</title>
+	<p>The normal way of writing a number, as opposed to scientific notation.</p></gi>
+
+<gi><title>straight angle</title>
+	<p>An angle that measures <m>180 \degree</m>.</p></gi>
+
+<gi><title>sum</title>
+	<p>The esult of adding two or more numbers together.</p></gi>
+
+<gi><title>surface area</title>
+	<p>The amount of space covering the outside of a three-dimensional shape.</p></gi>
+
+<gi><title>term</title>
+	<p>A quantity being added or subtracted.</p></gi>
+
+<gi><title>terminating decimal</title>
+	<p>A number whose decimal form ends in a finite number of places.</p></gi>
+
+<gi><title>unit fraction</title>
+	<p>A fraction that is equal to 1.</p></gi>
+
+<gi><title>unit rate</title>
+	<p>A rate whose denominator is one unit.</p></gi>
+
+<gi><title>unlike fractions</title>
+	<p>Fractions whose denominators are not the same.</p></gi>
+
+<gi><title>variable</title>
+	<p>A quantity whose numerical value changes over time or in different situations.</p></gi>
+
+<gi><title>vertical line</title>
+	<p>A line that is perpendicular to horizontal, directly up an down with no slant.</p></gi>
+
+<gi><title>vertex</title>
+	<p>The point where the two sides of an angle meet.</p></gi>
+
+<gi><title>vertex angle</title>
+	<p>In an isosceles triangle, the anle between the two equal sides.</p></gi>
+
+<gi><title>volume</title>
+	<p>The amount of space enclosed inside a three-dimensionalobject.</p></gi>
+
+<gi><title>whole number</title>
+	<p>A number without fractions, a "counting" number.</p></gi>
+
+<gi><title>x-axis</title>
+	<p>The horizontal number line in a Cartesion coordinate system.</p></gi>
+
+<gi><title>x-coordinate</title>
+	<p>The distance from the y-axis of a point in the plane.</p></gi>
+
+<gi><title>y-axis</title>
+	<p>The vertical number line in a Cartesion coordinate system.</p></gi>
+
+<gi><title>y-coordinate</title>
+	<p>The distance from the x-axis of a point in the plane.</p></gi>
+	
+</glossary>

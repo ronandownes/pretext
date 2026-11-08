@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-1-1-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Set 1.1</title>
+    <subexercises><title>Warm Up</title>
+
+<exercise number="1"><statement><p>Solve the equation.<ol marker="a." cols="2">
+        <li><p><m>8x-18=26</m></p></li>
+        <li><p><m>14-\dfrac{3}{4}x=5 </m></p></li></ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+         <li><p><m>5.5</m></p></li>
+         <li><p><m>12</m></p></li></ol></p></answer></exercise>
+
+<exercise number="2"><statement><p>Solve the inequality.<ol marker="a." cols="2">
+        <li><p><m>8x-18\lt 16</m></p></li>
+        <li><p><m>14-\dfrac{3}{4}x \ge 5 </m></p></li></ol></p></statement>
+<!--            <answer><p>
+                <ol marker="a." cols="2">
+                    <li><p><m>x\lt 5.5</m></p></li>
+                    <li><p><m>x \le 12</m></p></li>
+                </ol>
+            </p></answer> -->
+        </exercise>
+
+<exercise number="3"><statement><p>April sells environmentally friendly cleaning products. Her income consists of $200 per week plus a commission of 9% of her sales. Write an algebraic expression for April's weekly income, <m>I</m>, in terms of her sales, <m>S</m>.
+        <md><mrow>\text{Income}\quad\amp=\qquad\text{Flat Rate}\quad  \amp \amp+{} \qquad \text{Commission} </mrow>
+            <mrow>\underline{\qquad\quad}\quad\amp=\qquad \underline{\qquad\qquad} \amp\amp+{} \qquad \underline{\qquad\qquad\quad} </mrow></md></p></statement>
+<answer><p><m>I=200+0.09 S</m></p></answer></exercise>
+
+<exercise number="4"><statement><p>Trinh is bicycling down a mountain road that loses 500 feet in elevation for each 1 mile of road. She started at an elevation of 6300 feet. Write an expression for Trinh's elevation, <m>h</m>, in terms of the distance she has cycled, <m>d</m>.
+        <md><mrow>\text{Elevation}\quad\amp=\qquad\text{Initial Elevation}\quad \amp \amp -{}\qquad \text{Decrease}</mrow>
+            <mrow>\underline{\qquad\quad}\quad\amp=\qquad \underline{\qquad\qquad\qquad} \amp\amp -{} \qquad \underline{\qquad\qquad} </mrow></md></p></statement></exercise>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup  cols="2"><introduction><p>For problems 5 and 6, solve the equation.</p></introduction>
+
+<exercise number="5"><statement><p><m>3y+2y=12-5y</m></p></statement>
+<answer><p><m>\dfrac{6}{5} </m></p></answer></exercise>
+
+<exercise number="6"><statement><p><m>0.8w - 2.6 = 1.4w + 0.3</m></p></statement></exercise>        
+</exercisegroup>
+
+<exercisegroup  cols="2"><introduction><p>For problems 7 and 8, solve the inequality.</p></introduction>
+        
+<exercise number="7"><statement><p><m>3y+2y\gt 12-5y</m></p></statement>
+<answer><p><m>y \gt \dfrac{6}{5} </m></p></answer></exercise>
+
+<exercise number="8"><statement><p><m>0.8w - 2.6 \le 1.4w + 0.3</m></p></statement></exercise>        
+    </exercisegroup>
+
+<exercise number="9"><statement><p>Bruce buys a 50-pound bag of rice and consumes about 0.4 pounds per week. Write an expression for the amount of rice, <m>R</m>, Bruce has left in terms of the number of weeks, <m>w</m>, since he bought the bag.</p></statement>
+<answer><p><m>R = 50- 0.4 w</m></p></answer></exercise>
+
+<exercise number="10"><statement><p>Delbert is offered a job as a salesman. He will be paid $1000 per month plus a 6% commission on his sales. Write an expression for Delbert's monthly income, <m>I</m>, in terms of his sales, <m>S</m>.
+</p></statement></exercise>
+ </subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="11"><statement><p>Frank plants a dozen corn seedlings, each 6 inches tall. With plenty of water and sunlight they will grow approximately 2 inches per day. Complete the table of values for the height, <m>h</m>, of the seedlings after <m>t</m> days.</p>
+<p><ol marker="a.">
+    <li><p>Complete the table of values for the height, <m>h</m> of the seedlings after <m>t</m> days.</p>
+                    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <row bottom="minor">
+                            <cell><m>t</m> (days)</cell>
+                            <cell><m>0</m></cell>
+                            <cell><m>5</m></cell>
+                            <cell><m>10</m></cell>
+                            <cell><m>15</m></cell>
+                            <cell><m>20</m></cell></row>
+                        <row> 
+                            <cell><m>h</m> (inches)</cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell></row>
+                    </tabular></sidebyside></li>
+    <li><p>Write an equation for the height, <m>h</m>, of the seedlings in terms of the number of days, <m>t</m>, since they were planted.</p></li>
+    <li><sidebyside widths="50% 35%"><stack><p>Graph the equation on the grid. Label the axes with the correct variables.</p>
+         <p>To answer questions (d) and (e), read the graph. Show your work on the graph:</p></stack>
+        <image xml:id="fig-seedling-grid"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan] (0,0) grid (8,20);
+        \draw[black,thick,->,>=stealth'] (0,0)--(8.6,0);
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,20.6);
+
+        \foreach \x [evaluate=\x as \xi using int( 5* \x )]  in {0,2,...,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\xi};
+        }
+
+        \foreach \x [evaluate=\x as \xi using int( 4* \x )]  in {3,6,...,18} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+    <li><p>How tall is the corn after 3 weeks?</p></li>
+    <li><p> When will the corn grow to 6 feet tall? (How many inches is 6 feet?)</p></li>
+    <li><p>Use algebra to find the answers for parts (d) and (e) above.</p></li>
+    <li><p>Frank also sets out some tomato plants. The height of the plants in inches after <m>t</m> days is:
+                    <me>h = 14 + 1.5t</me>
+           What do the constants in this equation tell us about the tomato plants?</p></li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <row bottom="minor">
+                            <cell><m>t</m> (days)</cell>
+                            <cell><m>0</m></cell>
+                            <cell><m>5</m></cell>
+                            <cell><m>10</m></cell>
+                            <cell><m>15</m></cell>
+                            <cell><m>20</m></cell></row>
+                        <row> 
+                            <cell><m>h</m> (inches)</cell>
+                            <cell>6</cell>
+                            <cell>16</cell>
+                            <cell>26</cell>
+                            <cell>36</cell>
+                            <cell>46</cell></row>
+                    </tabular></li>
+    <li><p><m>h=6+2t</m></p></li>
+    <li><image width="30%" xml:id="fig-seedling"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan] (0,0) grid (8,20);
+        \draw[black,thick,->,>=stealth'] (0,0)--(8.8,0) node[above, xshift=-5]{$t$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,20.8) node[left, yshift=-5]{$h$};
+        \foreach \x [evaluate=\x as \xi using int( 5* \x )]  in {0,2,...,8} {
+          \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\xi};
+        }
+        \foreach \x [evaluate=\x as \xi using int( 4* \x )]  in {3,6,...,18} {
+          \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+        }
+        \draw[red,thick](0,1.5)--(37/5,20);
+        \draw[green!80!black, ultra thick,  dashed, ->, >=stealth'] (0,18)--(33/5,18);
+        \draw[green!80!black, ultra thick,  dashed, ->, >=stealth'] (33/5,18) -- (33/5,0);
+        \node[text=green!80!black,fill=white, inner sep=1] at (7.2,2) {(e)};
+        \draw[blue, very thick,  dashed, ->, >=stealth'] (21/5,0)--(21/5,12);
+        \draw[blue, very thick,  dashed, ->, >=stealth'] (21/5,12) -- (0,12);
+        \node[blue,,fill=white, inner sep=1] at (1.2,12.5) {(d)};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><p>48 in</p></li>
+    <li><p>33 days</p></li>
+    <li><p><m>h=6+2(21)</m>; <m>72=6+2t</m></p></li>
+    <li><p>14 is the initial height of the plants in inches. 1.5 is the number of inches they grow each day.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>On October 31, Betty and Paul fill their 250-gallon oil tank for their heater. Beginning in November they use an average of 15 gallons of oil per week.</p>
+<p><ol marker="a.">
+    <li><p>Complete the table of values for the amount of oil, <m>A</m>, left in the tank after <m>w</m> weeks.</p>
+                    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <row bottom="minor">
+                            <cell><m>w</m> (weeks)</cell>
+                            <cell><m>0</m></cell>
+                            <cell><m>4</m></cell>
+                            <cell><m>8</m></cell>
+                            <cell><m>12</m></cell>
+                            <cell><m>16</m></cell></row>
+                        <row> 
+                            <cell><m>A</m> (gallons)</cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell></row>
+                    </tabular></li>
+    <li><p>Write an equation that expresses the amount of oil, <m>A</m>, in terms of the number of weeks, <m>w</m>, since October 31.</p></li>
+    <li><p>Graph the equation.</p>
+        <image width="40%" xml:id="fig-ex-1-1-12"><description>grid for gallons vs weeks</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.5]
+                \draw[cyan] (0,0) grid (9,15);
+                \draw[black,thick,->,>=stealth'] (0,0)--(9.8,0) node[right]{$w$};
+                \draw[black,thick,->,>=stealth'] (0,0)--(0,15.8) node[left, yshift=-1]{$A$};
+                \foreach \x [evaluate=\x as \xi using int( 2* \x )]  in {2,4,...,8} {
+                  \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\xi};
+                }
+                \foreach \x [evaluate=\x as \xi using int( 20* \x )]  in {2,4,...,14} {
+                  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+                }
+            \end{tikzpicture}]]>
+            </latex-image></image></li>
+     <li><p>How much did the amount of fuel oil in the tank decrease between the third week and the eighth week? Illustrate this amount on the graph.</p></li>
+     <li><p>During which weeks will the tank contain more than 175 gallons of fuel oil? Illustrate on the graph.</p></li>
+     <li><p>Write and solve an inequality to verify your answer to part (e).</p></li>
+</ol></p></statement></exercise>
+
+<exercise number="13"><statement><p>The boiling point of water changes with altitude. At sea level, water boils at <m>212\degree</m>F, and the boiling point decreases by approximately <m>2\degree</m>F for each 1000-foot increase in altitude.<ol marker="a.">
+    <li><p>Write an equation for the boiling point, <m>B</m>, in terms of <m>a</m>, the altitude in thousands of feet.</p></li>
+    <li><p>Complete the table of values.</p>
+                <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                            <row bottom="minor">
+                                <cell>Altitude (1000 ft)</cell>
+                                <cell><m>0</m></cell>
+                                <cell><m>1</m></cell>
+                                <cell><m>2</m></cell>
+                                <cell><m>3</m></cell>
+                                <cell><m>4</m></cell>
+                                <cell><m>5</m></cell></row>
+                            <row>
+                                <cell>Boiling point (<m>\degree</m>F)</cell>
+                                <cell><m>\hphantom{0000}</m> </cell>
+                                <cell><m>\hphantom{0000}</m> </cell>
+                                <cell><m>\hphantom{0000}</m> </cell>
+                                <cell><m>\hphantom{0000}</m> </cell>
+                                <cell><m>\hphantom{0000}</m> </cell>
+                                <cell><m>\hphantom{0000}</m> </cell></row>
+                    </tabular></li>
+    <li><p>Graph the equation.</p>
+        <image width="50%" xml:id="fig-hw-boiling-point-grid"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1.1, yscale=.4] 
+        \draw[cyan] (0,0) grid (5,15);
+        \draw[black,thick,->,>=stealth'] (0,0)--(5.4,0) node[right]{$a$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,15.9) node[above]{$B$};
+        \foreach \x  in {1,2,...,5} {
+          \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          }
+        \foreach \x [evaluate=\x as \xi using int(200+\x)] in {0,5,10,15} {
+          \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \node at (2.5,-2.5) {Altitude in thousands of ft};
+        \node[rotate=90] at (-1.2,7.5) {Boiling point ($^\circ$F)};
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><p>How much does the boiling point decrease when the altitude increases from 1000 to 3000 feet? Illustrate this amount on the graph.</p></li>
+    <li><p>At what altitudes is the boiling point less than <m>204\degree</m>F? Illustrate on the graph.</p></li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                            <row bottom="minor">
+                                <cell>Altitude (1000 ft)</cell>
+                                <cell><m>0</m></cell>
+                                <cell><m>1</m></cell>
+                                <cell><m>2</m></cell>
+                                <cell><m>3</m></cell>
+                                <cell><m>4</m></cell>
+                                <cell><m>5</m></cell></row>
+                            <row>
+                                <cell>Boiling point (<m>\degree</m>F)</cell>
+                                <cell><m>212</m> </cell>
+                                <cell><m>210</m> </cell>
+                                <cell><m>208</m> </cell>
+                                <cell><m>206</m> </cell>
+                                <cell><m>204</m> </cell>
+                                <cell><m>202</m> </cell></row>
+                    </tabular></li>
+    <li><image width="50%" xml:id="fig-hw-boiling-point"><description>boiling point</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=1.1, yscale=.4] 
+        \draw[cyan] (0,0) grid (5,15);
+        \draw[black,thick,->,>=stealth'] (0,0)--(5.4,0) node[right]{$a$};
+        \draw[black,thick,->,>=stealth'] (0,0)--(0,15.9) node[above]{$B$};
+        \foreach \x  in {1,2,...,5} {
+          \draw[black,thick] (\x,.15)--++(0,-.3) node[below, fill=white, inner sep=1, yshift=-2]{$\x$};
+          }
+        \foreach \x [evaluate=\x as \xi using int(200+\x)] in {0,5,10,15} {
+          \draw[black,thick] (.15,\x)--++(-.3,0) node[left, fill=white, inner sep=1, xshift=-2]{$\xi$};
+        }
+        \node at (2.5,-2.5) {Altitude in thousands of ft};
+        \node[rotate=90] at (-1.2,7.5) {Boiling point ($^\circ$F)};
+        \draw[red,thick,->,>=stealth'] (0,12)--(5,2);
+        \node[text=blue,left,xshift=-1, scale=.9] at (0,4) {$204$}; 
+        \node[text=blue,left,xshift=-1, fill=white, inner sep=2] at (3.8,2) {(e)}; 
+        \draw[blue,ultra thick, dashed,->,>=stealth'] (0,4)--(4,4)--(4,0);
+        \draw [green!80!black,decorate,decoration={brace,amplitude=5pt}] (3.1,10) -- ++(0,-4) node [right,midway,xshift=5pt, fill=white, inner sep=1] {(d) $4^\circ$};
+        \draw[green!80!black, ultra thick,dashed](1.1,10)--(3,10);
+        \draw[magenta!80!black, ultra thick, ->, >=stealth'] (4,4)--(5,2);
+        \draw[magenta!80!black, ultra thick, ->, >=stealth'] (4,0)--(5,0);
+        \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><m>4\degree</m>F</li>
+    <li>Over 4000 feet</li></ol></p></answer>
+</exercise>
+
+<exercise number="14"><statement><p>The taxi out of Dulles Airport charges a traveler with one suitcase an initial fee of $2.00, plus $1.50 for each mile traveled. Complete the table of values showing the charge, <m>C</m>, for a trip of <m>n</m> miles.</p>
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>n</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>25</m></cell></row>
+                    <row>
+                        <cell><m>C</m></cell>
+                        <cell><m>\hphantom{0000}</m> </cell>
+                        <cell><m>\hphantom{0000}</m> </cell>
+                        <cell><m>\hphantom{0000}</m> </cell>
+                        <cell><m>\hphantom{0000}</m> </cell>
+                        <cell><m>\hphantom{0000}</m> </cell>
+                        <cell><m>\hphantom{0000}</m> </cell></row>
+            </tabular><p>
+    <ol marker="a.">
+        <li><p>Write an equation for the charge, <m>C</m>, in terms of the number of miles traveled, <m>n</m>.</p></li>
+        <li><p>Graph the equation.</p>
+            <image width="40%" xml:id="fig-ex-1-1-14"><description>grid for taxi charge vs miles</description><latex-image>
+                <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+                <![CDATA[\tikzset{%
+                }
+                \begin{tikzpicture} [xscale=.5, yscale=.3]
+                \draw[cyan] (0,0) grid (9,25);
+                \draw[black,thick,->,>=stealth'] (0,0)--(9.8,0) node[right]{$n$};
+                \draw[black,thick,->,>=stealth'] (0,0)--(0,25.8) node[above]{$C$};
+                \foreach \x [evaluate=\x as \xi using int( 5* \x )]  in {2,4,...,8} {
+                  \draw[black,thick] (\x,.1)--++(0,-.2) node[below, fill=white, inner sep=1, yshift=-2]{\xi};
+                }
+                \foreach \x [evaluate=\x as \xi using int( 2.5* \x )]  in {4,8,...,24} {
+                  \draw[black,thick] (.1,\x)--++(-.2,0) node[left, fill=white, inner sep=1, xshift=-2]{\xi};
+                }
+                \end{tikzpicture}]]>
+            </latex-image></image></li>
+        <li><p>What is the charge for a trip to Mount Vernon, 40 miles from the airport? Illustrate the answer on your graph.</p></li>
+        <li><p>If a ride to the National Institutes of Health (NIH) costs $39.50, how far is it from the airport to the NIH? Illustrate the answer on your graph.</p></li>
+    </ol></p></statement></exercise>
+
+</subexercises>
+
+</exercises>

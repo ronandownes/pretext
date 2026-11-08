@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-5-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <title>More Equations</title>
+
+  <sidebyside widths="60% 35%" valigns="middle middle" margins="0% 5%"><p><ul>
+    <li><p>Equations with Two Operations</p></li>
+    <li><p>A Strategy for Solving Equations</p></li>
+    <li><p>Formulas</p></li>
+    <li><p>Problem Solving</p></li>
+    <li><p>Using Algebra to Solve Problems</p></li>
+  </ul></p>
+      <image source="presents.png"></image></sidebyside>
+
+<subsection xml:id="solve2"><title>Equations with Two Operations</title>
+
+<p>In this Lesson we learn how to solve equations with two or more operations.</p>
+
+<activity><title>Equations with Two Operations</title>
+
+<p>Emma can order T-shirts from a catalog for $5 each. She pays a $4 handling fee on her order.</p>
+<p><ol marker="1.">
+  <li><p>Write an algebraic expression for the cost of ordering <m>n</m> T-shirts.</p></li>
+  <li><p>Write an equation for the number of T-shirts Emma can order with $34.</p></li>
+  <li><p>Describe in words how to find the number of T-shirts Emma can order with $34. Your method should have two steps.</p>
+  <p>(Hint:  After she pays the handling fee, how much money is left to pay for T-shirts?</p></li>
+</ol></p></activity>
+
+<p>In part (3) of Activity 5.4.1 you described a method for solving the equation  <m>5n + 4 = 34</m>.</p>
+
+<example><statement><p>Solve the equation  <m>~5n + 4 = 34</m></p></statement>
+
+<solution><p>Just as we did with one-step equations, we try to isolate the variable on one side of the equation. We will use two steps to isolate the variable. Here is the first step.
+    <md><mrow>5n + 4 \amp = 34~~~~~~~~~~~~~~~\blert{\text{First, subtract 4 from both sides.}}</mrow>
+        <mrow>\underline{\hphantom{00}\blert{-4}} \amp = \underline{\blert{-4}}</mrow>
+        <mrow>5n \amp = 30</mrow></md></p>
+  <p>Here is the second step.
+        <md><mrow>\dfrac{5n}{\blert{5}} \amp = \dfrac{30}{\blert{5}}~~~~~~~~~~~~~~~\blert{\text{Next, divide both sides by 5.}}</mrow>
+            <mrow>n \amp = 6</mrow></md></p>
+  <p>To check the solution, we substitute <m>n= \alert{6}</m> into the original equation.
+      <md><mrow> \text{Check:} ~~~~ 5(\alert{6}) + 4 \amp =34 ?</mrow>
+          <mrow> 30 + 4 \amp = 34 ~~~~\blert{\text{True}}</mrow></md>
+  The solution checks.  Emma can order 6 T-shirts with $34.</p></solution></example>
+
+<exercise><statement><p>Phoebe is stacking books on top of a footstool that is 30 centimeters tall. Each book is 3 centimeters thick.<ol marker="a.">
+  <li><p>Write an algebraic expression for the height of the top of a stack of <m>n</m> books.</p></li>
+  <li><p>Write an equation for the number of books Phoebe needs for the stack to be 54 centimeters high.</p></li>
+  <li><p>Describe how to solve your equation from part (b) in two steps.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><m>30 + 3n</m></li>
+  <li><m>30 + 3n = 54</m></li>
+  <li><p>Subtract 30 from both sides, then divide both sides by 3.</p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>A Strategy for Solving Equations</title>
+  
+<p>You would like to give a bracelet to a friend as a surprise gift for her birthday. First you wrap the bracelet in a small box, and then you wrap the small box in a large box. 
+
+    <image source="bracelet.png" width="70%"></image>
+
+To open the gift, your friend will first unwrap the large box, and then unwrap the small box. That is, she will undo the wrappings in reverse order. We use this same idea to solve equations.</p>
+  
+<p>Consider the equation 
+    <me>2x-5=13</me></p>
+
+<p><m>\blert{\text{Question:}}</m>  What operations have been performed on the variable, <m>x</m>?</p>
+<p><m>\blert{\text{Answer:}}</m>    Imagine that you want to evaluate the expression <m>2x-5</m>. Following the order of operations, you would:
+<ol marker="1."> 
+  <li><p>First multiply <m>x</m> by 2,</p></li> 
+  <li><p>then subtract 5 from the result.</p></li>
+</ol></p>
+
+<p>To isolate the variable and solve the equation, we must undo these operations in reverse order. Whatever operation was performed last, we must undo first. So we first add 5 to both sides of the equation, and then divide both sides by 2.</p>  
+
+<tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by 2</cell>
+            <cell>1. Add 5</cell></row>
+        <row bottom="minor">
+            <cell>2. Subtracted 5</cell>
+            <cell>2. Divide by 2</cell></row>
+        </tabular>
+
+<p>Now let's use our plan to solve the equation.</p>
+<p>Step 1
+    <md><mrow>2x - 5 \amp = 13 ~~~~~~~~ \blert{\text{Add 5 to both sides of the equation.}}</mrow>
+        <mrow>\underline{\hphantom{00}\blert{+5}} \amp = \underline{\blert{+5}}</mrow>
+        <mrow>2x \amp = 18</mrow></md></p>
+<p>Step 2
+    <md><mrow>\dfrac{2x}{\blert{2}} \amp = \dfrac{18}{\blert{2}} ~~~~~~~~\blert{\text{Divide both sides of the equation by 2.}}</mrow>
+        <mrow>x \amp = 9</mrow></md></p>
+<p>To check the solution, we substitute <m>\alert{9}</m> for <m>x</m> in the original equation.
+    <md><mrow> \text{Check:} ~~~~ 2(\alert{9}) - 5 \amp = 13 ?</mrow>
+          <mrow> 18 - 5 \amp = 13 ~~~~\blert{\text{True}}</mrow></md>
+The solution checks.</p>
+
+<p>Here is a summary of our strategy for solving equations.</p>
+
+<assemblage><title>To solve an equation</title>
+<p><ol marker="1.">
+  <li><p>List the operations performed on the variable in order.</p></li>
+  <li><p>Undo those operations in reverse order.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Solve the equation <m>~4 + \dfrac{a}{3} = 9</m></p></statement>
+
+<solution><p>Ask yourself what operations were performed on the variable, <m>a</m>.  Then make a plan to undo those operations in reverse order.</p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Divided by 3</cell>
+            <cell>1. Subtract 4</cell></row>
+        <row bottom="minor">
+            <cell>2. Added 4</cell>
+            <cell>2. Multiply by 3</cell></row>
+        </tabular>
+
+<p>Now we follow the steps in the plan.</p>
+
+<p>Step 1
+    <md><mrow>4 + \dfrac{a}{3} \amp = ~~~9 ~~~~~~~~ \blert{\text{Subtract 4 from both sides of the equation.}}</mrow>
+        <mrow>\underline{\blert{-4}\hphantom{0000}} \amp = \underline{\blert{-4}}</mrow>
+        <mrow>\dfrac{a}{3} \amp = 5</mrow></md></p>
+<p>Step 2
+    <md><mrow>\blert{3}\left(\dfrac{a}{3}\right) \amp = \blert{3}(5) ~~~~~~~~\blert{\text{Multiply both sides of the equation by 3.}}</mrow>
+        <mrow>a \amp = 15</mrow></md></p>
+<p>The solution is 15.
+    <md><mrow> \text{Check:} ~~~~ 4 +\dfrac{\alert{15}}{3}\amp = 9 ?</mrow>
+          <mrow> 4 + 5 \amp = 9 ~~~~\blert{\text{True}}</mrow></md></p>
+</solution></example>
+
+<exercise><statement><p>Solve the equation <m>~3b-4 = 14</m></p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        </tabular></statement>
+
+<answer><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by 3</cell>
+            <cell>1. Add 4</cell></row>
+        <row bottom="minor">
+            <cell>2. Subtracted 4</cell>
+            <cell>2. Divide by 3</cell></row>
+        </tabular>
+
+    <p><m>b=6</m></p></answer></exercise>
+
+<note><p>With a little practice, you will be able to see the steps to "unwrap" the variable without writing them down. Just remember to undo the last operation first!</p></note>
+
+<p>In the next example we use three steps to solve the equation.</p>
+
+<example><statement><p>Solve the equation <m>~\dfrac{5t-3}{6} = 17</m></p></statement>
+
+<solution><p>We analyze the order of operations performed on the variable, <m>t</m>.  Then we make a plan for undoing those operations in the reverse order.</p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>t</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by 5</cell>
+            <cell>1. Multiply by 6</cell></row>
+        <row bottom="minor">
+            <cell>2. Subtracted 3</cell>
+            <cell>2. Add 3</cell></row>
+        <row bottom="minor">
+            <cell>3. Divided by 6</cell>
+            <cell>3. Divide by 5</cell></row>
+        </tabular>
+
+<p>Now we follow the steps in the plan.</p>
+
+ <p><md><mrow>\blert{6} \left(\dfrac{5t-3}{6}\right) \amp = \blert{6}(17) ~~~~~~~~ \blert{\text{Multiply both sides of the equation by 6.}}</mrow>
+        <mrow></mrow>
+        <mrow>5t-3 \amp = 102~~~~~~~~~~~ \blert{\text{Add 3 to both both sides of the equation.}}</mrow>
+        <mrow>\underline{\hphantom{00}\blert{+3}} \amp = \underline{\blert{+3}}</mrow>
+        <mrow>5t \amp = 105</mrow>
+        <mrow></mrow>
+        <mrow>\dfrac{5t}{\blert{5}} \amp = \dfrac{105}{\blert{5}} ~~~~~~~~ \blert{\text{Divide both sides by 5.}}</mrow>
+        <mrow>t \amp = 21</mrow></md></p>
+
+<p>The solution is 21.
+    <md><mrow> \text{Check:} ~~~~ \dfrac{5(\alert{21}) - 3}{6}\amp = 17 ?</mrow>
+          <mrow>\dfrac{205-3}{6} \amp = 17 ?</mrow>
+          <mrow>\dfrac{102}{6} \amp = 17 ~~~~\blert{\text{True}}</mrow></md></p>
+</solution></example>
+
+<exercise><statement><p>Solve the equation <m>~\dfrac{w + 3}{2} - 5 = 12</m></p>
+
+    <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. </cell>
+            <cell>1. </cell></row>
+        <row bottom="minor">
+            <cell>2. </cell>
+            <cell>2. </cell></row>
+        <row bottom="minor">
+            <cell>3. </cell>
+            <cell>3. </cell></row>
+        </tabular></statement>
+
+<answer>
+    <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>x</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Added 3</cell>
+            <cell>1. Add 5</cell></row>
+        <row bottom="minor">
+            <cell>2. Divided by 2</cell>
+            <cell>2. Multiply by 2</cell></row>
+        <row bottom="minor">
+            <cell>3. Subtracted 5</cell>
+            <cell>3. Subtract 3</cell></row>
+        </tabular>
+    <p><m>w=31</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Formulas</title>
+
+<p>We use the formula  
+    <me>F = \dfrac{9}{5}C + 32</me>  
+to convert temperatures in degrees Celsius to degrees Fahrenheit. By solving an equation, we can also convert from Fahrenheit to Celsius.</p>
+
+<example><statement><p>Normal body temperature for people is 98.6<m>\degree</m> F. Use the formula to convert normal temperature to degrees Celsius.</p></statement>
+
+<solution><p>To start, we substitute  <m>\alert{98.6}</m> for <m>F</m> in the formula.
+        <me>\alert{98.6} = \dfrac{9}{5}C + 32</me>
+Next, we solve the equation for <m>C</m>.  We undo the operations in three steps.</p>
+
+  <tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+        <row bottom="minor" header="yes">
+            <cell>Operations performed on <m>C</m></cell>
+            <cell>Steps for Solution</cell></row>
+        <row bottom="minor">
+            <cell>1. Multiplied by 9</cell>
+            <cell>1. Subtract 32</cell></row>
+        <row bottom="minor">
+            <cell>2. Divided by 5</cell>
+            <cell>2. Multiply by 5</cell></row>
+        <row bottom="minor">
+            <cell>3. Added 32</cell>
+            <cell>3. Divide by 0</cell></row>
+        </tabular>
+
+<p><md><mrow>98.6 \amp = \dfrac{9}{5}C + 32 ~~~~~~~~ \blert{\text{Subtract 32 from both sides.}}</mrow>
+        <mrow>\underline{\blert{-32}} \amp = \underline{\hphantom{0000}\blert{-32}}</mrow>
+        <mrow>66.6 \amp = \dfrac{9}{5}C ~~~~~~~~~~~~~~~~\blert{\text{Multiply both sides by 5.}}</mrow>
+        <mrow></mrow>
+        <mrow>\alert{5}(66.6) \amp = \alert{5}\left(\dfrac{9}{5}C\right) </mrow>
+        <mrow>333 \amp = 9C~~~~~~~~~~~~~~~~~~~ \blert{\text{Divide both sides by 9.}}</mrow>
+        <mrow></mrow>
+        <mrow>\dfrac{333}{\blert{9}} \amp = \dfrac{9C}{\blert{9}}</mrow>
+        <mrow>37 \amp = C</mrow></md></p>
+
+<p>Normal body temperature is 37<m>\degree</m>C.  You can check the solution by substituting <m>\alert{37}</m> for <m>C</m> in the equation.
+    <me>\text{Does} ~~98.6 = \dfrac{9}{5}(\alert{37}) + 32 ?</me></p>
+</solution></example>
+
+<exercise><statement><p>The boiling temperature of water is 212<m>\degree</m>F. Use the formula in the previous Example to find the boiling temperature of water in degrees Celsius.</p></statement>
+
+<answer><p>Solve  <m>~\alert{212} = \dfrac{9}{5}C + 32~</m> to find <m>~C = 100\degree~</m> Celsius.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Problem Solving</title>
+
+<p>There are many strategies for solving problems, and often the most efficient approach is to write and solve an equation.</p>
+
+<activity><title>Problem Solving</title>
+
+<p>Myron is buying a new computer system. He made a down payment of $500 and agreed to make 18 equal monthly payments. If the total price of the system is $6350, how much will each payment be?</p>
+
+<p>In Activity 5.4.2 we consider three ways to solve this problem that do not involve algebra.</p>
+
+<p><m>\blert{\text{Method 1:  Guess-and-Check}}</m>  Guess a value for the amount of each payment, and check to see whether that value gives the correct total price for the computer system. For example, guess that the payment is $200.  Myron would then pay
+    <md><mrow>500 ~~~~ + ~~~~\amp 18 (200)  \amp \amp = ~~??</mrow>
+        <mrow>\text{down}~~~~~~~~~~ \amp \text{monthly}~~~~ \amp \amp \text{total}</mrow>
+        <mrow>~~~~\text{payment}~~~~~~~~~~ \amp \text{payments}~~~~ \amp \amp \text{price}</mrow></md></p>
+
+<p>Is the total proice too high or too low? Should you try a larger value or a smaller value for your next guess at the monthly payment?  Try your next guess:
+    <me>500 + 18(\hphantom{000}) = ??</me>
+We would continue in this way, adjusting our guesses, until we closed in on the correct amount.</p>
+
+<p><m>\blert{\text{Method 2: Make a table.}}</m>  This is a more organized version of the guess-and-check method.  Complete this sample table:</p>
+
+  <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell>Monthly payment</cell>
+            <cell>150</cell>
+            <cell>200</cell>
+            <cell>250</cell>
+            <cell>300</cell>
+            <cell>350</cell></row>
+        <row bottom="minor">
+            <cell>Total price</cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell>
+            <cell><m>\hphantom{000000}</m></cell></row>
+        </tabular>
+<p>Which monthly payments capture the correct total price? We could make another table with smaller increments between those monthly payments. However, this is still a tedious method for solving the problem.</p>
+
+<p><m>\blert{\text{Method 3: Use arithmetic skills.}}</m> Since Myron paid $500 down on the system, we can subtract 500 from the total price to find out how much he has left to pay in monthly installments.
+    <me>6350 - 500 = \alert{??}</me>
+The balance will be paid in 18 equal installments, so we can divide the balance by 18 to find the amount of each installment:
+    <me>\dfrac{\alert{??}}{18} = </me>
+Each monthly payment will be $ <fillin characters="4"/> .</p>
+</activity>
+
+<p>Method 3 solves the problem efficiently. Notice that it uses the same technique of "undoing" operations that we use to solve equations. If we can describe a problem by an equation, we can work backwards to the solution by solving the equation.</p>
+</subsection>
+
+<subsection><title>Using Algebra to Solve Problems</title>
+
+<assemblage><title>A Quick Refresher</title>  
+<p><m>\blert{\text{Steps for Modeling a Problem}}</m> <ol marker="1.">
+<li><p> Identify the unknown quantity and choose a variable to represent it.</p></li>
+<li><p>   Find some quantity that can be expressed in two different ways, and write an equation.</p></li>
+<li><p>   Solve the equation, and answer the question in the problem.</p></li>
+</ol></p></assemblage>
+
+<example><statement><p>Here is a solution to the problem in Activity 5.4.2 that uses an equation.</p></statement>
+
+<solution><p>Step 1:  What are we asked to find in the problem?  Choose a variable to represent it.</p>
+  <p>The amount of each monthly payment:  <m>p</m></p>
+
+<p>Step 2:  We can express the total price of the system in two different ways.</p>
+<p>First way:  The total price of the system is  $6350.</p>
+<p>Second way: The total price is the sum of the down payment and all the monthly payments, <m>500 + 18p</m>.</p>   
+<p>Next, we write an equation using our two expressions.
+  <me>500 + 18p = 6350</me></p>
+
+<p>Now we solve the equation.
+    <md><mrow>500 + 18p \amp = 6350 ~~~~~~~~ \blert{\text{Subtract 500 from both sides.}}</mrow>
+        <mrow>\underline{\blert{-500}\hphantom{0000}} \amp = \underline{\blert{-500}}</mrow>
+        <mrow>18p \amp = 5850</mrow>
+        <mrow></mrow>
+        <mrow>\dfrac{18p}{\blert{18}} \amp = \dfrac{5850}{\blert{18}}~~~~~~~ \blert{\text{Divide both sides by 18.}}</mrow>
+        <mrow>9 \amp = 325</mrow></md></p>
+
+<p>The solutions is 325. Myron's monthly payments will be $325.</p></solution></example>
+
+<note><p>Notice that the two steps we used to solve the equation in Example 5.4.10 (subtract 500 and divide by 18) are the same steps we used in Method 3 of Activity 5.4.2, the arithmetic solution.</p></note>
+
+<exercise><statement><p>Lloyd scored only 13 out of 20 on his last quiz. That was 5 points lower than his average score over the previous 6 quizzes. How many quiz points did Lloyd accumulate over 6 quizzes?</p>
+
+<p>Step 1: What are we asked to find in the problem?  Choose a variable to represent it.</p>
+<p>Step 2:  Express Lloyd's score on the last quiz in two different ways, and write an equation using the two expressions.</p>
+<p>Step 3: Solve the equation and answer the question in the problem.</p></statement>
+
+<answer><p>Total quiz points:  <m>p</m></p>
+    <p><m>13 = \dfrac{p}{6} - 5</m></p>
+    <p>Lloyd accumulated 108 quiz points.</p></answer></exercise>
+
+<activity><title>Problem Solving</title>
+
+<p>Here are two more problems to try. <ol marker="1.">
+
+<li><p>On the same quiz as Lloyd in Checkpoint 5.4.12 above, Lucy scored 18 out of 20, which was 2 points higher than her average over the previous 6 quizzes. How many points had Lucy accumulated over the first 6 quizzes?</p></li>
+
+<li><p>Suppose that Myron's computer system from the previous Activity 5.4.2 goes on sale for $5540 just before he buys it. If he still makes 18 monthly payments after paying $500 down, how much will each of the monthly payments be?</p></li>
+</ol></p></activity>
+
+</subsection>
+
+<xi:include href="./prac-5-4.ptx" />
+
+</section>

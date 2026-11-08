@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+
+
+<exercises xml:id="chap8-rev-problems"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 8 Review Problems</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 1 and 2, multiply.</p></introduction>
+
+<exercise number="1"><statement><p><m>(2x-5)(x^2-3x+2)</m></p></statement>
+    <answer><p><m>2x^3-11x^2+19x-10</m></p></answer></exercise>
+
+<exercise number="2"><statement><p><m>(b^2-2b-3)(2b^2+b-5)</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 3 and 4, factor.</p></introduction>
+
+<exercise number="3"><statement><p><m>8x^3-27z^3</m></p></statement>
+    <answer><p><m>(2x-3z)(4x^2+6xz+9z^2)</m></p></answer></exercise>
+
+<exercise number="4"><statement><p><m>1+125a^3b^3</m></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="5"><statement><p>The expression <m>\dfrac{n}{6 }(n - 1)(n - 2)</m> gives the number of different 3-item pizzas that can be created from a list of <m>n</m> toppings.<ol marker="a.">
+        <li><p>Write the expression as a polynomial.</p></li>
+        <li><p>If Mitch's Pizza offers 12 different toppings, how many different combinations for 3-item pizzas can be made?</p></li>
+        <li><p>Use a table or graph to determine how many different toppings are needed in order to be able to have more than 1000 possible combinations for 3-item pizzas.</p></li>
+    </ol></p></statement>
+<answer><p><ol>
+    <li><p><m>\dfrac{1}{6}n^3-\dfrac{1}{2}n^2+\dfrac{1}{3}n </m></p></li>
+    <li><p><m>220</m></p></li>
+    <li><p><m>20</m></p></li>
+</ol></p></answer></exercise>
+
+<exercise number="6"><statement><p>The expression <m>n(n - 1)(n - 2)</m> gives the number of different triple-scoop ice cream cones that can be created from a list of <m>n</m> flavors.<ol marker="a.">
+        <li><p>Write the expression as a polynomial.</p></li>
+        <li><p>If Zanner's Ice Cream Parlor offers 21 flavors, how many different triple-scoop ice cream cones can be made?</p></li>
+        <li><p>Use a table or graph to determine how many different flavors are needed in order to be able to have more than 10,000 possible triple-scoop ice cream cones.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="7"><statement><p>The radius, <m>r</m>, of a cylindrical can should be one-half its height, <m>h</m>.
+<ol marker="a.">
+        <li><p>Express the volume, <m>V</m>, of the can as a function of its height.</p></li>
+        <li><p>What is the volume of the can if its height is 2 centimeters? 4 centimeters?</p></li>
+        <li><p>Graph the volume as a function of the height and verify your results of part (b) graphically. What is the approximate height of the can if its volume is 100 cubic centimeters?</p></li>
+    </ol></p></statement>
+<answer><p><ol>
+    <li><p><m>V=\dfrac{\pi h^3}{4} </m></p></li>
+    <li><p><m>2\pi\text{ cm}^3 \approx 6.28\text{ cm}^3 </m>; <m>16\pi\text{ cm}^3 \approx 50.27\text{ cm}^3 </m></p></li>
+    <li><sidebyside width="30%"><image source="images/fig-GC-cylinder-volume-vs-r"><description>cubic</description></image></sidebyside></li>
+</ol></p></answer></exercise>
+
+<exercise number="8"><statement><p>The Twisty-Freez machine dispenses soft ice cream in a cone-shaped peak with a height 3 times the radius of its base. The ice cream comes in a round bowl with base diameter <m>d</m>.<ol marker="a.">
+        <li><p>Express the volume, <m>V</m>, of  Twisty-Freez in the bowl as a function of <m>d</m>.</p></li>
+        <li><p>How much Twisty-Freez comes in a 3-inch diameter dish? A 4-inch dish?</p></li>
+        <li><p>Graph the volume as a function of the diameter and verify your results of part (b) graphically. What is the approximate diameter of a Twisty-Freez if its volume is 5 cubic inches?</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="9"><statement><p>A new health club opened up, and the manager kept track of the number of active members over its first few months of operation. The equation below gives the number, <m>N</m>, of active members, in hundreds, <m>t</m> months after the club opened.
+    <me>N=\frac{44t}{40+t^2}</me><ol marker="a.">
+        <li><p>Use your calculator to graph the function <m>N</m> in the window
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 20</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 4</mrow></md></p></li>
+        <li><p>How many active members did the club have after 8 months?</p></li>
+        <li><p>In which months did the club have 200 active members?</p></li>
+        <li><p>When does the health club have the largest number of active members? What happens to the number of active members as time goes on?</p></li>
+    </ol> </p></statement>
+<answer><p><ol>
+    <li><sidebyside width="30%"><image source="images/fig-ans-chap7-rev-51.jpg"><description>rational function</description></image></sidebyside></li>
+    <li><p>338</p></li>
+    <li><p>Months 2 and 02</p></li>
+    <li><p>During month 6. The number of members eventually decreases to zero.</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="10"><statement><p>A small lake in a state park has become polluted by runoff from a factory upstream. The cost for removing <m>p</m> percent of the pollution from the lake is given, in thousands of dollars, by
+    <me>C=\frac{25p}{100-p} </me><ol marker="a.">
+        <li><p>Use your calculator to graph the function <m>C</m> on a suitable domain.</p></li>
+        <li><p>How much will it cost to remove 40% of the pollution?</p></li>
+        <li><p>How much of the pollution can be removed for $100,000 ?</p></li>
+        <li><p>What happens to the cost as the amount of pollution to be removed increases? How much will it cost to remove all the pollution?</p></li>
+    </ol></p></statement></exercise>
+
+<exercise number="11"><statement><p>The Explorer's Club is planning a canoe trip to travel 90 miles up the Lazy River and return in 4 days. Club members plan to paddle for <m>6</m> hours each day, and they know that the current in the Lazy River is 2 miles per hour.<ol marker="a.">
+    <li><p>Express the time it will take for the upstream journey as a function of their paddling speed in still water.</p></li>
+    <li><p>Express the time it will take for the downstream journey as a function of their paddling speed in still water.</p></li>
+    <li><p>Graph the sum of the two functions in the window
+            <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 18.8</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 50</mrow></md>
+        and find the point on the graph with <m>y</m>-coordinate 24. Interpret the coordinates of the point in the context of the problem.</p></li>
+    <li><p>The Explorer's Club would like to know what average paddling speed members must maintain in order to complete their trip in 4 days. Write an equation to describe this situation.</p></li>
+    <li><p>Solve your equation to find the required paddling speed.</p></li>
+    </ol></p></statement>
+<answer><p><ol cols="2">
+    <li><p><m>t_1=\dfrac{90}{v-2} </m></p></li>
+    <li><p><m>t_2=\dfrac{90}{v+2} </m></p></li>
+    <li><sidebyside width="80%"><image source="images/fig-ans-chap7-rev-67.jpg"><description>curve</description></image></sidebyside></li>
+    <li><p><m>\dfrac{90}{v-2}+\dfrac{90}{v+2}=24 </m></p></li>
+    <li><p>8 mph</p></li>
+</ol></p></answer></exercise>
+
+<exercise number="12"><statement><p>Pam lives on the banks of the Cedar River and makes frequent trips in her outboard motorboat. The boat travels at 20 miles per hour in still water.<ol marker="a.">
+        <li><p>Express the time it takes Pam to travel 8 miles upstream to the gas station as a function of the speed of the current.</p></li>
+        <li><p>Express the time it takes Pam to travel 12 miles downstream to Marie's house as a function of the speed of the current.</p></li>
+        <li><p>Graph the two functions in the window
+                <md><mrow>\text{Xmin} \amp = 0 \amp\amp \text{Xmax} = 10</mrow>
+                <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 1</mrow></md>
+         and find the coordinates of the intersection point. Interpret those coordinates in the context of the problem.</p></li>
+        <li><p>Pam traveled to the gas station in the same time it took her to travel to Marie's house. Write an equation to describe this situation.</p></li>
+        <li><p>Solve your equation to find the speed of the current in the Cedar River.</p></li>
+    </ol></p></statement></exercise>
+
+<exercisegroup cols="3"><introduction><p>For Problems 13<ndash/>18, reduce the fraction to lowest terms.</p></introduction>
+
+<exercise number="13"><statement><p><m>\dfrac{2a^2(a-1)^2}{4a(a-1)^3}</m></p></statement>
+<answer><p><m>\dfrac{a}{2(a-1)}</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><m>\dfrac{4y-6}{6}</m></p></statement></exercise>
+
+<exercise number="15"><statement><p><m>\dfrac{2x^2y^3-4x^3y}{4x^2y}</m></p></statement>
+<answer><p><m>\dfrac{y^2-2x}{2}</m></p></answer></exercise>
+
+<exercise number="16"><statement><p><m>\dfrac{(x-2y)^2}{4y^2-x^2}</m></p></statement></exercise>
+
+<exercise number="17"><statement><p><m>\dfrac{a^2-6a+9}{2a^2-18}</m></p></statement>
+<answer><p><m>\dfrac{a-3}{2a+6)}</m></p></answer></exercise>
+
+<exercise number="18"><statement><p><m>\dfrac{4x^2y^2+4xy+1}{4x^2y^2-1}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 19<ndash/>26, write the expression as a single fraction in lowest terms.
+</p></introduction>
+
+<exercise number="19"><statement><p><m>\dfrac{2a^2}{3b} \cdot \dfrac{15b^2}{a}</m></p></statement>
+<answer><p><m>10ab</m></p></answer></exercise>
+
+<exercise number="20"><statement><p><m>\dfrac{-1}{3} ab^2\cdot \dfrac{3}{4}a^3b</m></p></statement></exercise>
+
+<exercise number="21"><statement><p><m>\dfrac{4x+6}{2x} \cdot \dfrac{6x^2}{(2x+3)^2}</m></p></statement>
+<answer><p><m>\dfrac{6x}{2x+3}</m></p></answer></exercise>
+
+<exercise number="22"><statement><p><m>\dfrac{4x^2-9}{3x-3} \cdot \dfrac{x^2-1}{4x-6}</m></p></statement></exercise>
+
+<exercise number="23"><statement><p><m>\dfrac{a^2-a-2}{a^2-4} \div \dfrac{a^2+2a+1}{a^2-2a}</m></p></statement>
+<answer><p><m>\dfrac{a^2-2a}{a^2+3a+2}</m></p></answer></exercise>
+
+<exercise number="24"><statement><p><m>\dfrac{a^3-8b^3}{a^2b} \div \dfrac{a^2-4ab+4b^2}{ab^2}</m></p></statement></exercise>
+
+<exercise number="25"><statement><p><m>1 \div \dfrac{4x^2-1}{2x+1}</m></p></statement>
+<answer><p><m>\dfrac{1}{2x-1}</m></p></answer></exercise>
+
+<exercise number="26"><statement><p><m>\dfrac{y^2+2y}{3x} \div (4y)</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 27<ndash/>30, divide.</p></introduction>
+
+<exercise number="27"><statement><p><m>\dfrac{36x^6-28x^4+16x^2-4}{4x^4}</m></p></statement>
+<answer><p><m>9x^2-7+\dfrac{4}{x^2}-\dfrac{1}{x^4} </m></p></answer></exercise>
+
+<exercise number="28"><statement><p><m>\dfrac{y^3+3y^2-2y-4}{y+1}</m></p></statement></exercise>
+
+<exercise number="29"><statement><p><m>\dfrac{x^3-4x^2+2x+3}{x-2}</m></p></statement>
+<answer><p><m>x^2-2x-2-\dfrac{1}{x-2}</m></p></answer></exercise>
+
+<exercise number="30"><statement><p><m>\dfrac{x^2+2x^3-1}{2x-1}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 31<ndash/>36, write the expression as a single fraction in lowest terms.
+</p></introduction>
+
+<exercise number="31"><statement><p><m>\dfrac{x+2}{3x} - \dfrac{x-4}{3x}</m></p></statement>
+<answer><p><m>\dfrac{2}{x}</m></p></answer></exercise>
+
+<exercise number="32"><statement><p><m>\dfrac{5}{6}b - \dfrac{1}{3}b + \dfrac{3}{4}b</m></p></statement></exercise>
+
+<exercise number="33"><statement><p><m>\dfrac{3}{2x-6} - \dfrac{4}{x^2-9}</m></p></statement>
+<answer><p><m>\dfrac{3x+1}{2(x-3)(x+3)}</m></p></answer></exercise>
+
+<exercise number="34"><statement><p><m>\dfrac{1}{y^2+4y+4} + \dfrac{3}{y^2-4}</m></p></statement></exercise>
+
+<exercise number="35"><statement><p><m>\dfrac{2a+1}{a-3} - \dfrac{-2}{a^2-4a+3}</m></p></statement>
+<answer><p><m>\dfrac{2a^2-a+1}{(a-3)(a-1{})}</m></p></answer></exercise>
+
+<exercise number="36"><statement><p><m>a - \dfrac{1}{a^2+2a+1} + \dfrac{3}{a^2-1}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 37<ndash/>40, write the complex fraction as a simple fraction in lowest terms.</p></introduction>
+
+<exercise number="37"><statement><p><m>\dfrac{\dfrac{3}{4} - \dfrac{1}{2}}{\dfrac{3}{4} + \dfrac{1}{2}}</m></p></statement>
+<answer><p><m>\dfrac{1}{5}</m></p></answer></exercise>
+
+<exercise number="38"><statement><p><m>\dfrac{y-\dfrac{2y}{x}}{1+\dfrac{2}{x}}</m></p></statement></exercise>
+
+<exercise number="39"><statement><p><m>\dfrac{x-4}{x-\dfrac{16}{x}}</m></p></statement>
+<answer><p><m>\dfrac{x}{x+4} </m></p></answer></exercise>
+
+<exercise number="40"><statement><p><m>\dfrac{\dfrac{1}{x-1}}{1-\dfrac{1}{x^2}} </m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 41<ndash/>44, solve.</p></introduction>
+
+<exercise number="41"><statement><p><m>\dfrac{y+3}{y+5}=\dfrac{1}{3}</m></p></statement>
+<answer><p><m>-2</m></p></answer></exercise>
+
+<exercise number="42"><statement><p><m>\dfrac{z^2+2}{z^2-2} = 3</m></p></statement>
+</exercise>
+
+<exercise number="43"><statement><p><m>\dfrac{x}{x-2} = \dfrac{2}{x-2}+7</m></p></statement>
+<answer><p>No solution</p></answer></exercise>
+
+<exercise number="44"><statement><p><m>\dfrac{3x}{x+1} - \dfrac{2}{x^2+x} = \dfrac{4}{x}</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 45<ndash/>48, solve for the indicated variable.</p></introduction>
+
+<exercise number="45"><statement><p><m>V=C\left(1-\dfrac{t}{n} \right) </m>, for <m>n</m></p></statement>
+<answer><p><m>n=\dfrac{Ct}{C-V} </m></p></answer>
+</exercise>
+
+<exercise number="46"><statement><p><m>r = \dfrac{dc}{1-ec} </m>, for <m>c</m></p></statement></exercise>
+
+<exercise number="47"><statement><p><m>\dfrac{p}{q} = \dfrac{r}{q+r}  </m>, for <m>q</m></p></statement>
+<answer><p><m>q=\dfrac{pr}{r-p} </m></p></answer></exercise>
+
+<exercise number="48"><statement><p><m>I = \dfrac{E}{R+\dfrac{r}{n}} </m>, for <m>R</m></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 49<ndash/>54, write the expression as a single fraction involving positive exponents only.</p></introduction>
+
+<exercise number="49"><statement><p><m>x^{-3}+y^{-1}</m></p></statement>
+<answer><p><m>\dfrac{x^3+y}{x^3y}</m></p></answer></exercise>
+
+<exercise number="50"><statement><p><m>\dfrac{x^{-1}}{y}-\dfrac{x}{y^{-1}}</m></p></statement></exercise>
+
+<exercise number="51"><statement><p><m>\dfrac{x^{-1}-y}{x-y^{-1}}</m></p></statement>
+<answer><p><m>\dfrac{1-x^2y^2}{xy}</m></p></answer></exercise>
+
+<exercise number="52"><statement><p><m>\dfrac{x^{-1}+y^{-1}}{x^{-1}}</m></p></statement></exercise>
+
+<exercise number="53"><statement><p><m>\dfrac{x^{-1}-y^{-1}}{(x-y)^{-1}}</m></p></statement>
+    <answer><p><m>\dfrac{-(x-y)^2}{xy}</m></p></answer></exercise>
+
+<exercise number="54"><statement><p><m>\dfrac{(xy)^{-1}}{x^{-1}-y^{-1}}</m></p></statement></exercise>
+</exercisegroup>
+
+
+
+</exercises>

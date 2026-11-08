@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+
+<exercises  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Homework 1.2</title>
+
+<exercisegroup cols="2">
+    <introduction><p>For Problems 1<ndash/>10, write the word phrase as an algebraic expression.</p></introduction>
+
+<exercise number="1"><statement><p>Product of 4 and <m>y</m></p></statement>
+<answer><m>4y</m></answer></exercise>
+
+<exercise number="2"><statement><p>Twice <m>b</m></p></statement></exercise>
+
+<exercise number="3"><statement><p>115% of <m>g</m></p></statement>
+<answer><m>1.15g</m></answer></exercise>
+
+<exercise number="4"><statement><p><m>t</m> decreased by 5</p></statement></exercise>
+
+<exercise number="5"><statement><p>The quotient of 7 and <m>w</m></p></statement>
+<answer><m>\dfrac{7}{w}</m></answer></exercise>
+
+<exercise number="6"><statement><p>4 divided into <m>B</m></p></statement></exercise>
+
+<exercise number="7"><statement><p>20 more than <m>T</m></p></statement>
+<answer><m>T+20</m></answer></exercise>
+
+<exercise number="8"><statement><p>16 reduced by <m>p</m></p></statement></exercise>
+
+<exercise number="9"><statement><p>The ratio of 15 to <m>M</m></p></statement>
+<answer><m>\dfrac{15}{M}</m></answer></exercise>
+
+<exercise number="10"><statement><p>The difference of <m>R</m> and 3.5</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 11<ndash/>14, choose the correct algebraic expression.</p>
+        <assemblage><p>
+            <md><mrow>\amp n+6 \amp \amp n-6 \amp \amp 6-n</mrow>
+                <mrow>\amp 6n \amp \amp \dfrac{n}{6} \amp \amp \dfrac{6}{n}</mrow></md>
+        </p></assemblage></introduction>
+
+<exercise number="11"><statement><p>Rashad is 6 years younger than Shelley. If Shelley is <m>n</m> years old, how old is Rashad?</p></statement>
+<answer><p><m>n-6</m></p> </answer></exercise>
+
+<exercise number="12"><statement><p>Each package of sodas contains 6 cans. If Antoine bought <m>n</m> packages of sodas, how many cans did he buy?</p></statement></exercise>
+
+<exercise number="13"><statement><p>Lizette and Patrick together own 6 cats. If Lizette owns <m>n</m> cats, how many cats does Patrick own?</p></statement>
+    <answer><m>6-n</m></answer></exercise>
+
+<exercise number="14"><statement><p>Mitra divided 6 cupcakes among <m>n</m> children.  How much of a cupcake did each child get?
+</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="3">
+    <introduction><p>For Problems 15<ndash/>17, write an algebraic expression for the area or perimeter of the figure. Include units in your answers. The dimensions are given in inches.</p></introduction>
+
+<exercise number="15"><statement>
+    <!--<image source="photos/hp-1-2-15.png"/>-->
+    <image xml:id="hp-1-2-15" width="100%">
+            <description>rectangle</description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=0.6]
+            \draw[blue] (0,0) rectangle +(.4,.4);
+            \draw[blue] (0,2.5) rectangle +(.4,-.4);
+            \draw[blue] (5,0) rectangle +(-.4,.4);
+            \draw[blue] (5,2.5) rectangle +(-.4,-.4);
+            \draw[magenta!80!black,ultra thick] (0,0) rectangle (5,2.5);
+            \node[left] at (-.1,1.25){$2$};
+            \node[below] at (2.5,-.1) {$x$};
+            \end{tikzpicture}]]>
+            </latex-image>
+    </image>
+<p>area =</p></statement>
+<answer><m>2x</m></answer></exercise>
+
+<exercise number="16"><statement>
+    <!--<image source="photos/hp-1-2-16.png"/>-->
+    <image xml:id="hp-1-2-16" width="80%">
+            <description>rectangle</description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=0.6]
+            \draw[blue] (0,0) rectangle +(.4,.4);
+            \draw[blue] (0,3) rectangle +(.4,-.4);
+            \draw[blue] (3,0) rectangle +(-.4,.4);
+            \draw[blue] (3,3) rectangle +(-.4,-.4);
+            \draw[magenta!80!black,ultra thick] (0,0) rectangle (3,3);
+            \node[left] at (-.1,1.5){$b$};
+            \node[below] at (1.5,-.1) {$b$};
+            \end{tikzpicture}]]>
+            </latex-image>
+    </image>
+<p>perimeter =</p></statement></exercise>
+
+<exercise number="17"><statement>
+    <!--<image source="photos/hp-1-2-17.png"/>-->
+    <image xml:id="hp-1-2-17" width="100%">
+            <description>triangle</description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=0.5]
+            \draw[blue] (0,0) rectangle +(.4,.4);
+            \draw[magenta!80!black,ultra thick] (0,0) -- (0,2.5)--(6,0)--cycle;
+            \node[left] at (-.1,1.25){$4$};
+            \node[below] at (3,-.1) {$v$};
+            \end{tikzpicture}]]>
+            </latex-image>
+    </image>
+
+    <p>area = </p></statement>
+<answer><m>2v</m></answer></exercise>
+</exercisegroup>
+
+<exercise number="18"><statement><p><ol marker="a.">
+    <li><p>Which of these expressions says "one-sixth of <m>x</m>" ?</p>
+        <md><mrow> \dfrac{x}{6}~~~~~~\dfrac{6}{x}~~~~~~\dfrac{1}{6}x~~~~~\dfrac{1}{6x}</mrow></md></li>
+    <li><p>Which of these expressions says "6% of <m>x</m>" ?</p>
+        <md><mrow> 0.6x~~~~~~0.06x~~~~~~\dfrac{6}{100}x~~~~~~\dfrac{1}{6}x</mrow></md></li>
+</ol></p></statement></exercise>
+
+<exercise number="19"><statement><p>Francine is saving up to buy a car, and deposits <m>\dfrac{1}{5}</m> of her spending money each month into a savings account.<ol marker="a.">    
+    <li>If <m>m</m> stands for Francine's spending money, write an expression for the amount she saves.</li>
+    <li>Evaluate the expression to complete the table.
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Spending money (dollars)</cell>
+                        <cell><m>~20~</m></cell>
+                        <cell><m>~25~</m></cell>
+                        <cell><m>~60~</m></cell></row>
+                    <row> 
+                        <cell>Amount saved (dollars)</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell></row>
+                    </tabular></li>
+        </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>\dfrac{m}{5}</m></li>
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Spending money (dollars)</cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>25</m></cell>
+                        <cell><m>60</m></cell></row>
+                    <row> 
+                        <cell>Amount saved (dollars)</cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>12</m></cell></row>
+                    </tabular></li>
+    </ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>Delbert wants to enlarge his class photograph. Its height is <m>\dfrac{1}{4}</m> of its width. The enlarged photo should have the same shape as the original.<ol marker="a."> 
+    <li>If <m>W</m> stands for the width of the enlargement, write an expression for its height.</li>
+    <li>Evaluate the expression to complete the table.
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Width of photo (inches)</cell>
+                        <cell><m>~6~</m></cell>
+                        <cell><m>~10~</m></cell>
+                        <cell><m>~24~</m></cell></row>
+                    <row> 
+                        <cell>Height of photo (inches)</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell></row>
+                    </tabular></li>
+        </ol></p></statement></exercise>
+
+ <exercise number="21"><statement><p>If the governor vetoes a bill passed by the State Assembly, <m>\dfrac{2}{3}</m> of the members present must vote for the bill in order to overturn the veto.<ol marker="a.">  
+    <li>If <m>p</m> stands for the number of Assembly members present, write an expression for the number of votes needed to overturn a veto.</li>
+    <li>Evaluate the expression to complete the table.
+    <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Members present</cell>
+                        <cell><m>~90~</m></cell>
+                        <cell><m>~96~</m></cell>
+                        <cell><m>~120~</m></cell></row>
+                    <row> 
+                        <cell>Votes needed</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell></row>
+                    </tabular></li>
+        </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>\dfrac{2}{3}p</m></li>
+    <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Members present</cell>
+                        <cell><m>90</m></cell>
+                        <cell><m>96</m></cell>
+                        <cell><m>120</m></cell></row>
+                    <row> 
+                        <cell>Votes needed</cell>
+                        <cell><m>60</m></cell>
+                        <cell><m>64</m></cell>
+                        <cell><m>80</m></cell></row>
+                    </tabular></li>
+    </ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>Marla's investment club buys some stock. She will get <m>\dfrac{3}{5}</m> of the dividends.<ol marker="a.">  
+    <li>If <m>D</m> stands for the stock dividends, write an expression for Marla's share.</li>
+    <li>Evaluate the expression to complete the table.
+    <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Stock dividend</cell>
+                        <cell><m>~40~</m></cell>
+                        <cell><m>~85~</m></cell>
+                        <cell><m>~115~</m></cell></row>
+                    <row> 
+                        <cell>Marla's share</cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell>
+                        <cell><m></m></cell></row>
+                    </tabular></li>
+        </ol></p></statement></exercise>
+
+<exercisegroup>
+    <introduction><p>For Problems 23<ndash/>30, choose a variable for the unknown quantity and translate the phrase into an algebraic expression.  </p></introduction>
+
+<exercise number="23"><statement><p>The product of the ticket price and 15</p></statement>
+<answer><m>15p</m></answer></exercise>
+
+<exercise number="24"><statement><p>Three times the cost of a light bulb</p></statement></exercise>
+
+<exercise number="25"><statement><p>Three-fifths of the savings account balance</p></statement>
+<answer><m>\dfrac{3}{5}b</m></answer></exercise>
+
+<exercise number="26"><statement><p>The price of the pizza divided by 6</p></statement></exercise>
+
+<exercise number="27"><statement><p>The weight of the copper in ounces divided by 16</p></statement>
+<answer><m>\dfrac{w}{16}</m></answer></exercise>
+
+<exercise number="28"><statement><p>9% of the school buses</p></statement></exercise>
+
+<exercise number="29"><statement><p>$16 less than the cost of the vaccine</p></statement>
+<answer><m>c-16</m></answer></exercise>
+
+<exercise number="30"><statement><p>The total cost of 32 identical computers</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 31<ndash/>32, write algebraic expressions in terms of <m>x</m>.</p></introduction>
+
+<exercise number="31"><statement><p><ol marker="a.">
+    <li>Daniel and Lara together made $480. If Daniel made <m>x</m> dollars, how much did Lara make?</li>
+    <li>Alix spent $500 on tuition and books. If she spent <m>x</m> dollars on books, how much was her tuition?</li>
+    <li>Thirty children signed up for summer camp. If <m>x</m> boys signed up, how many girls signed up?</li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>480-x</m></li>
+    <li><m>500-x</m></li>
+    <li><m>30-x</m></li></ol></p></answer></exercise>
+
+<exercise number="32"><statement><p><ol marker="a.">
+    <li>Rona spent $15 less than her sister on shoes. If Rona's sister spent <m>x</m> dollars, how much did Rona spend?</li>
+    <li>Phoenix had 12 fewer rain days than Boston last year. If Boston had <m>x</m> rain days, how many rain days did Phoenix have?</li>
+    <li>Jared scored 18 points lower on his second test than he scored on his first test. If he scored <m>x</m> points on the first test, what was his score on the second test?</li>
+</ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 33<ndash/>36, name the variable and write an algebraic expression.</p></introduction>
+
+<exercise number="33"><statement><p>Eggnog is 70% milk. Write an expression for the amount of milk in a container of eggnog.</p></statement>
+<answer><p>Amount of milk: <m>m,~~ 0.70m</m></p></answer></exercise>  
+
+<exercise number="34"><statement><p>Errol has saved $1200 for his vacation this year. Write an expression for the average amount he can spend on each day of his vacation.</p></statement></exercise>
+
+<exercise number="35"><statement><p>Garth received 432 fewer votes than his opponent in the election. Write an expression for the number of votes Garth received.</p></statement>
+<answer><p>Votes received: <m>v,~~ v-432</m></p></answer></exercise>  
+
+<exercise number="36"><statement><p>The cost of the conference was $2000 over budget. Write an expression for the cost of the conference.</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup>
+    <introduction><p>For Problems 37<ndash/>40, use the formulas in this Lesson.</p></introduction>
+
+<exercise number="37"><statement><p><ol marker="a.">
+    <li>Write an equation for the distance <m>d</m> traveled in <m>t</m> hours by a small plane flying at 180 miles per hour.</li>
+    <li>How far will the plane fly in 2 hours? In <m>3\dfrac{1}{2}</m> hours? In half a day?</li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>d=180t</m></li>
+    <li>360 miles, 630 miles, 2160 miles</li>
+    </ol></p></answer></exercise>  
+
+<exercise number="38"><statement><p><ol marker="a.">
+    <li>A certain pesticide contains 0.02% by volume of a dangerous chemical. Write an equation for the amount of chemical <m>C</m> that enters the environment in terms of the number of gallons of pesticide used.</li>
+   <li>How much of the chemical enters the environment if 400 gallons of the pesticide are used? 5000 gallons? 50,000 gallons?</li>
+</ol></p></statement></exercise>
+
+<exercise number="39"><statement><p><ol marker="a.">
+    <li>BioTech budgets 8.5% of its revenue for research. Write an equation for the research budget <m>B</m> in terms of BioTech's revenue <m>R</m>.</li>
+    <li>What is the research budget if BioTech's revenue is $100,000? $500,000? $2,000,000?</li>
+</ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>B=0.085R</m></li>
+    <li>$8500;  $42,500;  $170,000</li></ol></p></answer></exercise>  
+    
+<exercise number="40"><statement><p><ol marker="a.">
+    <li>Hugo's Auto Shop paid $4000 in expenses this month. Write an equation for their profit <m>P</m> in terms of their revenue <m>R</m>.</li>
+    <li>What was their profit if their revenue was $10,000? $6500? $2500?</li></ol></p></statement></exercise>
+</exercisegroup>
+
+</exercises>

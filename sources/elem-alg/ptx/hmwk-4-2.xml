@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+
+<exercises  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Homework 4.2</title>
+
+ <exercisegroup cols="2"><introduction><p>For Problems 1<ndash/>2, decide whether the given ordered pair is a solution of the system.</p></introduction>
+
+ <exercise number="1"><statement>
+    <p><m>\begin{aligned}[t]
+        x+2y\amp=-8\amp\amp (4,-2)\\
+        2x-y\amp=4
+    \end{aligned}</m></p></statement>
+ <answer><p>No</p></answer></exercise>
+
+ <exercise number="2"><statement>
+    <p><m>\begin{aligned}[t]
+        3x+2y\amp=-5\amp\amp (-3,-2)\\
+        x+3y\amp=-9
+    \end{aligned}</m></p>
+</statement></exercise>
+ </exercisegroup>
+
+<exercisegroup cols="3"><introduction><p>For Problems 3<ndash/>5, decide which graphing technique, the intercept method or the slope-intercept method, would be easier to use. Explain why you made the choice you did.</p></introduction>
+
+<exercise number="3"><statement><m>3x-2y=18</m></statement>
+<answer><p>Intercept method</p></answer></exercise>
+
+<exercise number="4"><statement><m>y=\dfrac{5x}{3}-8</m></statement></exercise>
+
+<exercise number="5"><statement><m>y=\dfrac{-5}{6}x</m></statement>
+<answer><p>Slope-intercept method</p></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 6<ndash/>9, solve the system by graphing.</p></introduction>
+
+<exercise number="6"><statement><p>
+    <m>\begin{aligned}[t]
+        y\amp=-3x\\
+        y\amp=3x-6
+        \end{aligned}</m></p>
+    <image source="photos/stangrid10"><description>grid</description></image></statement>
+ </exercise>
+
+ <exercise number="7"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp y=\dfrac{3}{4}x-2\\
+        \amp 2y-5x=10
+        \end{aligned}</m></p>
+    <image source="photos/stangrid10"><description>grid</description></image></statement>
+ <answer><m>(-4,-5)</m></answer></exercise>
+
+ <exercise number="8"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp x+y=4\\
+        \amp 3x-3y=12
+        \end{aligned}</m></p>
+    <image source="photos/stangrid10"><description>grid</description></image></statement>
+ </exercise>
+
+ <exercise number="9"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp 2y=-3x\\
+        \amp y=-2x-1
+        \end{aligned}</m></p>
+    <image source="photos/stangrid10"><description>grid</description></image></statement>
+ <answer><m>(-2,3)</m></answer></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 10<ndash/>11, decide whether the system is dependent or inconsistent.
+</p></introduction>
+
+<exercise number="10"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp x+y=4\\
+        \amp 2x+2y=12
+        \end{aligned}</m></p>
+ 	</statement></exercise>
+
+ <exercise number="11"><statement><p>
+    <m>\begin{aligned}[t]
+        \amp y=-2x+4\\
+        \amp 4x+2y=2
+        \end{aligned}</m></p></statement>
+ <answer><p>Inconsistent</p></answer></exercise>
+</exercisegroup>
+
+<exercise number="12"><statement><p>Without graphing, explain how you can tell that the system has no solution.</p>
+ 	<md><mrow>x+y=4</mrow>
+ 		<mrow>2x+2y=12</mrow></md></statement></exercise>
+
+<exercise number="13"><statement><p>Delbert has accepted a sales job and is offered a choice of two salary plans. Under Plan A he receives $20,000 a year plus a 3% commission on his sales. Plan B offers a $15,000 annual salary plus a 5% commission.<ol marker="a.">
+    <li><p>Let <m>x</m> stand for the amount of Delbert's sales in one year. Write equations for his total annual earnings, <m>E</m>, under each plan.
+    <md><mrow>\text{Plan A:}~~~E =</mrow>
+        <mrow>\text{Plan B:}~~~E =</mrow></md></p></li>
+    <li><p>Fill in the tables, where <m>x</m> is given in thousands of dollars.</p>
+        <sidebyside widths="40% 40%"><tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell>Earnings Under Plan A</cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>150</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>  
+                    <row>
+                        <cell><m>200</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>250</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>300</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>350</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>                      
+                </tabular>
+
+        <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell>Earnings Under Plan B</cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>150</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>  
+                    <row>
+                        <cell><m>200</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>250</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>300</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>350</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>                      
+                </tabular></sidebyside></li>
+    <li><p>Graph both of your equations on the grid. (Both axes are scaled in thousands of dollars.)</p>
+        <!--<image source="images/hp-4-2-13.png"><description>grid</description></image>-->
+    <image width="50%" xml:id="hp-4-2-13"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan] (0,0) grid (10,15);
+        \foreach \x [evaluate=\x as \xi using int(50*\x)] in {0, 2,4,6,8,10} {
+         \draw[cyan,very thick] (\x,0)--(\x,15);
+         \draw[black,very thick] (\x, .2)--++(0,-.4) node[below]{$ \xi $};
+         }
+        \foreach \x [evaluate=\x as \xi using int(2*\x+10)] in {0, 5,10,15} {
+         \draw[cyan,very thick] (0,\x)--(10,\x);
+         \draw[black,very thick] (.2,\x)--++(-.4,0) node[left]{$ \xi $};
+         }
+        \draw[black, very thick,->,>=stealth'] (0,0)--(11.3,0) node[right]{$x$};
+        \draw[black, very thick,->,>=stealth'] (0,0)--(0,16.3) node[left]{$y$};
+        \node[below] at (5,-1.5) {Thousands of dollars};
+        \node[label=below:\rotatebox{90}{Thousands of dollars}] at (-2,11) {};
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>For what sales amount do the two plans result in equal earnings for Delbert?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><p>Plan A: <m>E=0.03x+20,000</m>; Plan B: <m>E=0.05x+15,000</m></p></li>
+    <li><tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell>Earnings Under Plan A</cell>
+                        <cell>Earnings Under Plan b</cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>20,000</m></cell>
+                        <cell><m>15,000</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>21,500</m></cell>
+                        <cell><m>17,500</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>23,000</m></cell>
+                        <cell><m>20,000</m></cell></row>
+                    <row>
+                        <cell><m>150</m></cell>
+                        <cell><m>24,500</m></cell>
+                        <cell><m>22,500</m></cell></row>  
+                    <row>
+                        <cell><m>200</m></cell>
+                        <cell><m>26,000</m></cell>
+                        <cell><m>25,000</m></cell></row> 
+                    <row>
+                        <cell><m>250</m></cell>
+                        <cell><m>27,500</m></cell>
+                        <cell><m>27,500</m></cell></row>
+                    <row>
+                        <cell><m>300</m></cell>
+                        <cell><m>29,000</m></cell>
+                        <cell><m>30,000</m></cell></row> 
+                    <row>
+                        <cell><m>350</m></cell>
+                        <cell><m>30,500</m></cell>
+                        <cell><m>32,500</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>32,000</m></cell>
+                        <cell><m>35,000</m></cell></row>                      
+                </tabular></li>
+    <li></li>
+    <li>$250,000</li></ol></p></answer></exercise>
+
+<exercise number="14"><statement><p>Orpheus Music plans to manufacture clarinets for schools. Their startup costs are $6000, and each clarinet costs $60 to make. They plan to sell the clarinets for $80 each. <ol marker="a.">
+    <li><p>Let <m>x</m> stand for the number of clarinets Orpheus manufactures. Write equations for the total cost, <m>C</m>, of producing <m>x</m> clarinets, and the revenue, <m>R</m>, earned from selling <m>x</m> clarinets.
+    <md><mrow>\text{Cost}~~~C =</mrow>
+        <mrow>\text{Revenue}~~~R =</mrow></md></p></li>
+    <li><p>Fill in the tables, where cost and revenue are given in thousands of dollars.</p>
+        <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell>Cost</cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>150</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>  
+                    <row>
+                        <cell><m>200</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>250</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>300</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>350</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>                      
+                </tabular>
+
+        <tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>~x~</m></cell>
+                        <cell>Revenue</cell></row>
+                    <row> 
+                        <cell><m>0</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>50</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell><m>100</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>150</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>  
+                    <row>
+                        <cell><m>200</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>250</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>300</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row> 
+                    <row>
+                        <cell><m>350</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell><m>400</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>                      
+                </tabular></li>
+    <li><p>Graph both of your equations on the grid. (The vertical axis is scaled in thousands of dollars.)</p>
+        <!--<image source="photos/hp-4-2-13.png"><description>grid</description></image>-->
+    <image width="50%"> xml:id="hp-4-2-14"><description>grid</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.5]
+        \draw[cyan] (0,0) grid (10,15);
+        \foreach \x [evaluate=\x as \xi using int(50*\x)] in {0, 2,4,6,8,10} {
+            \draw[cyan,very thick] (\x,0)--(\x,15);
+            \draw[black,very thick] (\x, .2)--++(0,-.4) node[below]{$ \xi $};
+            }
+        \foreach \x [evaluate=\x as \xi using int(2*\x+10)] in {0, 5,10,15} {
+            \draw[cyan,very thick] (0,\x)--(10,\x);
+            \draw[black,very thick] (.2,\x)--++(-.4,0) node[left]{$ \xi $};
+            }
+        \draw[black, very thick,->,>=stealth'] (0,0)--(11.3,0) node[right]{$x$};
+        \draw[black, very thick,->,>=stealth'] (0,0)--(0,16.3) node[left]{$y$};
+        \node[left,rotate=90] at (-2,11) {Thousands of dollars};
+        \end{tikzpicture}]]>
+    </latex-image></image></li>
+    <li>How many clarinets must Orpheus sell in order to break even?</li>
+    <li>What is their profit if they sell 500 clarinets? 200 clarinets?</li>
+    <li>Illustrate your answers to part (e) on your graph.</li></ol></p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 15<ndash/>16, <ol marker="a.">
+	<li>Choose a variable for each of the unknown quantities.</li>
+	<li>Write a system of equations in two variables to model the problem.</li>
+	<li>Solve the system graphically.</li>  
+	<li>Verify your solution algebraically.</li>
+</ol></p></introduction>
+
+<exercise number="15"><statement><p>A bouquet of 4 roses and 8 carnations costs $14. A bouquet of 6 roses and 9 carnations costs $18. How much do one rose and one carnation cost?</p> 
+ 	<!--<image source="photos/hp-4-2-15.png"><description>grid</description></image>-->
+    <image width="45%" xml:id="hp-4-2-15"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=1]
+        \draw[cyan] (0,0) grid[step=1/2] (4,4);
+        \foreach \x in {1,2,3,4} {
+         \draw[cyan,very thick] (\x,0)--(\x,4);
+         \draw[black,very thick] (\x, .1)--++(0,-.2) node[below]{$ \x $};
+         \draw[cyan,very thick] (0,\x)--(4,\x);
+         \draw[black,very thick] (.1,\x)--++(-.2,0) node[left]{$ \x $};
+         }
+        \draw[black, very thick,->,>=stealth'] (0,0)--(4.6,0) node[right]{$x$};
+        \draw[black, very thick,->,>=stealth'] (0,0)--(0,4.6) node[left]{$y$};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p><ol marker="a.">
+    <li><p>Cost of one rose: <m>x</m>, cost of one carnation: <m>y</m></p></li>
+    <li><p><m>
+        \begin{aligned}[t]
+            4x+8y=14\\
+            6x+9y=18
+        \end{aligned}
+        </m></p></li>
+    <li><m>(1.50, 1.00)</m></li>  
+    <li><m>4(1.5)+8(1)=14;~6(1.5)+9(1)=18</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="16"><statement><p>The vertex angle of an isosceles triangle is <m>15 \degree</m> less than each base angle. (In an isosceles triangle, the base angles are equal.) Find the measure of each angle of the triangle. (Hint:  For your second equation, recall that the sum of the angles in any triangle is <m>180 \degree</m>.</p> 
+ 	<!--<image source="photos/hp-4-2-16.png"><description>grid</description></image>-->
+    <image width="55%" xml:id="hp-4-2-16"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \draw[cyan] (-5,-5) grid (10,10);
+        \foreach \x [evaluate=\x as \xi using int(20*\x)]in {-5,5,10} {
+         \draw[cyan,very thick] (\x,-5)--(\x,10);
+         \draw[black,very thick] (\x, .2)--++(0,-.4) node[below, yshift=-3, fill=white, inner sep=1]{$ \xi $};
+         \draw[cyan,very thick] (-5,\x)--(10,\x);
+         \draw[black,very thick] (.2,\x)--++(-.4,0) node[left,xshift=-2, fill=white, inner sep=1]{$ \xi $};
+         }
+        \draw[black, very thick,->,>=stealth'] (-5,0)--(11.6,0) node[right]{$x$};
+        \draw[black, very thick,->,>=stealth'] (0,-5)--(0,11.6) node[left]{$y$};
+        \end{tikzpicture}]]>
+    </latex-image></image></statement></exercise>
+</exercisegroup>
+</exercises>

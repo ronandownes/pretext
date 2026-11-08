@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-2-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>More Fractions and Percents</title>
+
+<sidebyside widths="50% 35%"><p><ul>
+    <li><p>Percents</p></li>
+    <li><p>Calculating Percents</p></li>
+    <li><p>What Percent Is It?</p></li>
+    <li><p>Eighths</p></li>
+    <li><p>Thirds</p></li>
+    <li><p>Decimal Form of One-Third</p></li>
+  </ul></p>
+      <image source="cashreg.png"></image></sidebyside>
+
+<subsection><title>Percents</title>
+<p>A <term>percent</term> is a fraction. For example,
+
+    <me>75\% = 0.75 = \dfrac{75}{100}</me>
+
+"Percent" means "for each 100" or "out of 100." So a percent is just a fraction whose denominator is 100. If you understand hundredths, you also understand percents!</p>
+    <image source="coffee.png" width = "80%"></image>
+
+<example><statement><p> Jaycee is an interior designer and takes a 10% commission on the cost of a remodel. A recent remodel cost $12,500. How much is Jaycee's commission?</p></statement>
+
+<solution><p>10% means "ten out of 100" or <m>\dfrac{10}{100}</m>, and <m>\dfrac{10}{100}</m> reduces to <m>\dfrac{1}{10}</m>. To find <m>\dfrac{1}{10}</m> of 12,500, we divide by 10:
+  <me>\dfrac{1}{10}~ \text{of}~ 12,500 = 12,500 \div 10 = 1250</me>
+Jaycee's commission is $1250.</p></solution></example>
+
+<p>Because 10% is equal to <m>\dfrac{1}{10},~</m> it is easy to find 10% of a number: we just divide the number by 10. Once we know 10% of a number, we can find other percents. For example, to find 20% of a number we can compute 10% of the number and then double the result.</p>
+
+<exercise><statement><p>Viktor used a coupon for 10% off the price of hiking boots and saved 
+$12.00. Find the following percents of the price of the boots.</p>
+<p><ol marker = "a." cols="2">
+  <li><p>5%</p></li>
+  <li><p>20%</p></li>
+  <li><p>25%</p></li>
+  <li><p>1%</p></li>
+  <li><p>3%</p></li>
+  <li><p>100%</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker = "a." cols="2">
+  <li><p>$6</p></li>
+  <li><p>$24</p></li>
+  <li><p>$30</p></li>
+  <li><p>$1.20</p></li>
+  <li><p>$3.60</p></li>
+  <li><p>$120</p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Percents</title>
+
+<introduction><p>Follow the steps to find each percent. Try to do the calculations in your head!</p></introduction>
+
+<p><ol>
+  <li><p>The Kwans are buying a house for $340,000, and they want to make a down payment of 20% of the price.</p>
+      <p><ol marker="a.">
+        <li><p>What is 10% of the price of the house?</p></li>
+        <li><p>What is 20% of the price of the house?</p></li>
+      </ol></p></li>
+
+  <li><p>The restaurant bill came to $26, and Tyrell wants to leave a 15% tip.</p>
+      <p><ol marker="a.">
+        <li><p>What is 10% of the bill?</p></li>
+        <li><p>What is 5% of the bill?</p></li>
+        <li><p>What is 15% of the bill?</p></li>
+      </ol></p></li>
+
+  <li><p>The sales tax on a $25 rose bush is 8%.</p>
+      <p><ol marker="a.">
+        <li><p>What is 10% of the price of the rose bush?</p></li>
+        <li><p>What is 1% of the price of the rose bush?</p></li>
+        <li><p>What is 8% of the price of the rose bush?</p></li>
+      </ol></p></li>
+
+  <li><p>In 2020 there were approximately 72 million children under the age of 18 in the United States. About 16% of them lived in poverty.</p>
+      <p><ol marker="a.">
+        <li><p>What was 10% of the US population of children?</p></li>
+        <li><p>What was 5% of the US population of children?</p></li>
+        <li><p>What was 1% of the US population of children?</p></li>
+        <li><p>What was 16% of the US population of children?</p></li>
+      </ol></p></li>
+  </ol></p></activity>
+</subsection>
+
+<subsection><title>Calculating Percents</title>
+<p>Because "percent" means "per 100," we can change a percent to a decimal fraction by dividing it by 100. You can use your calculator, or, even better, you can remember that to divide by 100 we move the decimal point 2 places to the left.</p>
+
+<example><statement><p>Change 12% to a decimal fraction.</p></statement>
+
+<solution><p>12% means twelve hundredths, so we divide 12 by 100. We move the decimal point 2 places to the left.</p>
+      <image source="twelvepercent.png" width = "80%"></image>
+<p>We see that 12% is equal to 0.12. </p></solution></example>
+
+<assemblage><title>To change a percent to a decimal fraction:</title>
+  <p>Divide the percent by 100,
+      <me>\text{or}</me>
+  Move the decimal point two places to the left.</p></assemblage>
+
+<p>Even Easier!  You can also think of the % sign as "hundredths," so that we read 12% as "twelve hundredths" and write the fraction 0.12.</p>
+
+<exercise><statement><p>Change each percent to a decimal fraction.</p>
+<p><ol marker="a." cols="2">
+  <li><p>50%</p></li>
+  <li><p>5%  (Be careful!)</p></li>
+  <li><p>23%</p></li>
+  <li><p>99%</p></li>
+  <li><p>12.5%</p></li>
+  <li><p>200%</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p>0.5</p></li>
+  <li><p>0.05</p></li>
+  <li><p>0.23</p></li>
+  <li><p>0.99</p></li>
+  <li><p>0.125</p></li>
+  <li><p>2.00</p></li>
+</ol></p></answer></exercise>
+
+<note><p>In Checkpoint 2.2.4 above, do you see the difference between the decimal forms of 50% and 5%? Try one yourself. Write the decimal form of each percent:
+  <me>8\% = \hphantom{0000000000000000} 80\% = \hphantom{0000000000000000}</me></p></note>
+
+<p>Now we can find any percent of a number.</p>
+
+<example><statement><p>The sales tax in Florida is 6%. What is the sales tax on a TV that costs $458?</p></statement>
+
+<solution><p>We'd like to find 6% of $458. We must first change 6% to a decimal fraction by moving the decimal point 2 places to the left.
+  <me>6\% = 0.06</me>
+(Note that we inserted a zero in front of 6 so that we could move the decimal point 2 places to the left!)</p>  
+<p>Next, we multiply 0.06 times 458.
+    <me>0.06 \times 458 = 27.48</me>
+The sales tax is $27.48.</p></solution></example>
+
+<note><p>In Example 2.2.6, why does multiplying by 0.06 give us 6 hundredths of 458?  Here's why:</p>
+  <p>To find one hundredth of 458 we divide by 100:    <m>~~~458 \div 100 = 4.58</m></p>
+  <p>To find six hundredths of 458 we multiply 4.58 by 6:    <m>~~~4.58 \times 6 = 27.48</m></p>
+<p>You can check with your calculator that multiplying 458 by 0.06 is the same as multiplying by 6 and dividing by 100!</p></note>
+
+<assemblage><title>To calculate a percent of a number</title>
+  <p><ol>
+    <li><p>Change the percent to a decimal fraction.</p></li>
+    <li><p>Multiply the number by the decimal fraction.</p></li></ol></p></assemblage>
+
+<exercise><statement><p>Calculate the sales tax.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+
+    <row header="yes">
+      <cell>State</cell>
+      <cell><line>Percent</line><line> Sales Tax</line> </cell>
+      <cell>Decimal Form</cell>
+      <cell>Amount</cell>
+      <cell>Tax</cell></row>
+    <row>
+      <cell>Indiana</cell>
+      <cell>7%</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell>$15</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Oklahoma</cell>
+      <cell>11%</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell>$120</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Washington</cell>
+      <cell>9.6%</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell>$80</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Texas</cell>
+      <cell>8.25%</cell>
+      <cell><m>\hphantom{000000}</m></cell>
+      <cell>$300</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement>
+
+  <answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+
+    <row header="yes">
+      <cell>State</cell>
+      <cell><line>Percent</line><line> Sales Tax</line> </cell>
+      <cell>Decimal Form</cell>
+      <cell>Amount</cell>
+      <cell>Tax</cell></row>
+    <row>
+      <cell>Indiana</cell>
+      <cell>7%</cell>
+      <cell>0.07</cell>
+      <cell>$15</cell>
+      <cell>$1.05</cell></row>
+    <row>
+      <cell>Oklahoma</cell>
+      <cell>11%</cell>
+      <cell>0.11</cell>
+      <cell>$120</cell>
+      <cell>$13.20</cell></row>
+    <row>
+      <cell>Washington</cell>
+      <cell>9.6%</cell>
+      <cell>0.096</cell>
+      <cell>$80</cell>
+      <cell>$7.68</cell></row>
+    <row>
+      <cell>Texas</cell>
+      <cell>8.25%</cell>
+      <cell>0.0825</cell>
+      <cell>$300</cell>
+      <cell>$24.75</cell></row>
+    </tabular></p></answer></exercise>
+</subsection>
+
+<subsection><title>What Percent Is It?</title>
+<p>If you follow a diet of 2000 calories per day, your minimum daily requirement (MDR) of potassium is 3500 milligrams.</p>
+
+<example><statement><p>A bowl of Cheerios provides 140 milligrams of potassium. What percent of your MDR is that?</p>
+    <image source="cheerios.png" width = "45%"></image></statement>
+
+<solution><p>We'd like to know what percent is 140 out of 3500. Remember that a percent is a fraction, so we make a fraction with the part (140) out of the whole (3500).
+
+  <me>\dfrac{\text{part}}{\text{whole}} = \dfrac{140}{3500} = 0.04 ~~~~~~~~\blert{\text{Divide 140 by 3500.}}</me>
+
+As a decimal fraction, Cheerios provides 0.04, or 4 hundredths of the MDR for potassium. Four hundredths is the same as 4%. (Or you can multiply 0.04 by 100 to write it as a percent:  <m>0.04 \times 100 = 4%</m>)</p></solution></example>
+
+<assemblage><title>To find what percent a part is</title>
+<p><ol>
+  <li><p>Divide the part by the whole.</p></li>
+  <li><p>Multiply the decimal fraction by 100.</p></li>
+</ol></p></assemblage>
+
+<exercise><statement><p>Calculate the percent of each MDR provided by Cheerios.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell></cell>
+      <cell>Cheerios</cell>
+      <cell>MDR</cell>
+      <cell>Percent</cell></row>
+    <row>
+      <cell>Calories</cell>
+      <cell>110</cell>
+      <cell>2000</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Sodium</cell>
+      <cell>120 mg</cell>
+      <cell>2400 mg</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Carbohydrate</cell>
+      <cell>24 g</cell>
+      <cell>300 g</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></statement>
+
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell></cell>
+      <cell>Cheerios</cell>
+      <cell>MDR</cell>
+      <cell>Percent</cell></row>
+    <row>
+      <cell>Calories</cell>
+      <cell>110</cell>
+      <cell>2000</cell>
+      <cell>5.5%</cell></row>
+    <row>
+      <cell>Sodium</cell>
+      <cell>120 mg</cell>
+      <cell>2400 mg</cell>
+      <cell>5%</cell></row>
+    <row>
+      <cell>Carbohydrate</cell>
+      <cell>24 g</cell>
+      <cell>300 g</cell>
+      <cell>8%</cell></row>
+    </tabular></p></answer></exercise>
+
+<activity><title>Using Percents</title>
+<p><ol>
+  <li><p>The Gonzalez family's monthly income is $5200. They budget their money according to the circle graph below. Complete the table showing the amount they spend in each category.</p>
+    <image source="circlegraph.png" width = "35%"></image>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Category</cell>
+      <cell>Percent</cell>
+      <cell>Amount Spent</cell></row>
+    <row>
+      <cell>Food</cell>
+      <cell>33%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Rent</cell>
+      <cell>25%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Clothes</cell>
+      <cell>15%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Miscellaneous</cell>
+      <cell>21%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Savings</cell>
+      <cell></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></li>
+  <li><p>At Marilyn's office, they held a "Losing It" competition:  whoever loses the largest percent of their body weight in six months wins a gift certificate.  Who won?</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Person</cell>
+      <cell><line>Original</line><line>Weight (lbs)</line></cell>
+      <cell>New Weight</cell>
+      <cell><line>Pounds Lost</line></cell>
+      <cell><line>Percent of</line><line>Original Weight </line></cell></row>
+    <row>
+      <cell>Jackie</cell>
+      <cell>156</cell>
+      <cell>140.4</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Trinh</cell>
+      <cell>128</cell>
+      <cell>120</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Jorge</cell>
+      <cell>210</cell>
+      <cell>182.7</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Adam</cell>
+      <cell>185</cell>
+      <cell>162.8</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Marilyn</cell>
+      <cell>166</cell>
+      <cell>157.7</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></li>
+<li><p>Estimate a 15% tip on each restaurant bill by rounding the amount to the nearest dollar.</p>
+
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes" halign="center">
+      <cell>Bill</cell>
+      <cell>Rounded</cell>
+      <cell>10% of Bill</cell>
+      <cell>5% of Bill</cell>
+      <cell>15% of Bill</cell></row>
+    <row>
+      <cell>$29.78</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>$45.16</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>$11.89</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>$63.58</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+  </tabular></p></li>
+</ol></p></activity>
+</subsection>
+
+<subsection><title>Eighths</title>
+<p>We have studied the benchmark fractions <m>\dfrac{1}{4},~~\dfrac{1}{2},~~</m> and <m>~\dfrac{3}{4},~~</m> as well as tenths and hundredths. Along the way we also encountered fifths. Here is another familiar and useful fraction.</p>
+
+<example><statement><p>Nelson bought a quarter-pound of sliced roast beef and ate half of it for lunch. How many ounces of roast beef did he eat? What fraction of a pound is that?</p> 
+    <image source="sandwich.png" width = "35%"></image></statement>
+
+<solution><p>There are 16 ounces in a pound, so a quarter-pound is
+  <me>\dfrac{1}{4}~ \text{of}~ 16 = 16 \div 4 = 4 ~~\text{ounces}</me>
+  Half of 4 ounces is 2 ounces, so Nelson ate 2 ounces of roast beef. As a fraction of a pound, 2 ounces is
+    <me>\dfrac{\text{part}}{\text{whole}} = \dfrac{2}{16} = \dfrac{1}{8}~~~~~~\blert{\text{Reduce: divide top and bottom by 2.}} </me>           
+Two ounces is <m>\dfrac{1}{8}</m> lb, or one-eighth of a pound.</p></solution></example>
+
+<note><p>Recall that <m>\dfrac{1}{4}</m> is one-half of <m>\dfrac{1}{2}</m>.  Now we see that <m>\dfrac{1}{8}</m> is one-half of <m>\dfrac{1}{4}</m>. You know that the decimal form of <m>\dfrac{1}{4}</m> is 0.25 (or 0.250). What is the decimal form of <m>\dfrac{1}{8}</m>?</p>
+    <image source="eighth.png" width = "50%"></image></note>
+
+<exercise><statement><p>Find the decimal and percent equivalents for each eighth. Then shade the corresponding fraction of the figure.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+          <col halign="center"/>
+          <col halign="center"/>
+          <col halign="center"/>
+    <row header="yes">
+    <cell>Fraction</cell>
+    <cell>Decimal</cell>
+    <cell>Percent</cell>
+    <cell></cell></row>
+    <row>
+    <cell><m>\dfrac{1}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{2}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{3}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{4}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{5}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{6}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{7}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    <row>
+    <cell><m>\dfrac{8}{8}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><m>\hphantom{0000000000}</m></cell>
+    <cell><image source="eightbar.png" width = "60%"></image></cell></row>
+    </tabular></p></statement>
+  <answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor" width="80%">
+          <col halign="center"/>
+          <col halign="center"/>
+          <col halign="center"/>
+          <col halign="center"/>
+    <row header="yes">
+    <cell>Fraction</cell>
+    <cell>Decimal</cell>
+    <cell>Percent</cell>
+    <cell></cell></row>
+    <row>
+    <cell><m>\dfrac{1}{8}</m></cell>
+    <cell>0.125</cell>
+    <cell>12.5%</cell>
+    <cell>
+      <image xml:id="grid-1-8ths" width="50%"><description>8 by 1 grid with 1 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (1,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{2}{8}</m></cell>
+    <cell>0.25</cell>
+    <cell>25%</cell>
+    <cell>
+      <image xml:id="grid-2-8ths" width="50%"><description>8 by 1 grid with 2 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (2,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{3}{8}</m></cell>
+    <cell>0.375</cell>6
+    <cell>37.5%</cell>
+    <cell>
+      <image xml:id="grid-3-8ths" width="50%"><description>8 by 1 grid with 3 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (3,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{4}{8}</m></cell>
+    <cell>0.5</cell>
+    <cell>50%</cell>
+    <cell>
+      <image xml:id="grid-4-8ths" width="50%"><description>8 by 1 grid with 4 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (4,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{5}{8}</m></cell>
+    <cell>0.625</cell>
+    <cell>62.5%</cell>
+    <cell>
+      <image xml:id="grid-5-8ths" width="50%"><description>8 by 1 grid with 5 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (5,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{6}{8}</m></cell>
+    <cell>0.75</cell>
+    <cell>75%</cell>
+    <cell>
+      <image xml:id="grid-6-8ths" width="50%"><description>8 by 1 grid with 1 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (6,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{7}{8}</m></cell>
+    <cell>0.875</cell>
+    <cell>87.5%</cell>
+    <cell>
+      <image xml:id="grid-7-8ths" width="50%"><description>8 by 1 grid with 7 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (7,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    <row>
+    <cell><m>\dfrac{8}{8}</m></cell>
+    <cell>1</cell>
+    <cell>100%</cell>
+    <cell>
+      <image xml:id="grid-8-8ths" width="50%"><description>8 by 1 grid with 8 shaded box</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}[xscale=.8]
+        \filldraw[blue] (0,0) rectangle (8,1);
+        \draw[black,thick] (0,0) grid (8,1);  
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    </cell></row>
+    </tabular></p></answer></exercise>
+
+<p>Converting  between fractions and percents can simplify many calculations.</p>
+
+<example><statement><p>Devon and Darla Grant together make $3200 per month in take-home pay. They are looking for an apartment, and don't want to spend more than 37.5% of their income on housing. What is the maximum rent they can afford?</p></statement>
+
+<solution><p>We'll solve this problem in two different ways.  First, we'll compute 37.5% of $3200.  We write the percent as a decimal fraction and use a calculator to multiply:
+  <me>0.375 \times 3200 = 1200</me>
+The Grants can afford $1200 monthly rent.</p>
+
+<p>We can compute the fraction without a calculator if we remember that 37.5% is the same as <m>\dfrac{3}{8}</m>.  We first find <m>\dfrac{1}{8}</m> of $3200 by dividing by 8:
+    <me>3200 \div 8 = 400</me> 
+Then we multiply by 3 to find <m>\dfrac{3}{8}</m> of 3200:
+  <me>3 \times 400 = 1200</me>
+We get the same answer, and we can do the calculations mentally!</p></solution></example>
+
+<exercise><statement><p>Devon and Darla from Example 2.2.14 have budgeted their $3200 monthly income as follows.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Category</cell>
+      <cell>Percent</cell>
+      <cell>Fraction</cell>
+      <cell>Amount</cell></row>
+    <row>
+      <cell>Housing</cell>
+      <cell>37.5%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Food and Clothing</cell>
+      <cell>25%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Auto and Insurance</cell>
+      <cell>12.5%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Entertainment</cell>
+      <cell>15%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Savings</cell>
+      <cell>10%</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>Total</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p>
+
+  <p><ol marker = "a.">
+    <li><p>Compute the amount they can spend in each category. Try to do each calculation in your head, by using fractions whenever possible!</p></li>
+  <li><p>Check your calculations by computing the total in each column.</p></li>
+</ol></p></statement>
+<answer><p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Category</cell>
+      <cell>Percent</cell>
+      <cell>Fraction</cell>
+      <cell>Amount</cell></row>
+    <row>
+      <cell>Housing</cell>
+      <cell>37.5%</cell>
+      <cell><m>\dfrac{3}{8}</m></cell>
+      <cell>$1200</cell></row>
+    <row>
+      <cell>Food and Clothing</cell>
+      <cell>25%</cell>
+      <cell><m>\dfrac{1}{4}</m></cell>
+      <cell>$800</cell></row>
+    <row>
+      <cell>Auto and Insurance</cell>
+      <cell>12.5%</cell>
+      <cell><m>\dfrac{1}{8}</m></cell>
+      <cell>$400</cell></row>
+    <row>
+      <cell>Entertainment</cell>
+      <cell>15%</cell>
+      <cell><m>\dfrac{3}{20}</m></cell>
+      <cell>$480</cell></row>
+    <row>
+      <cell>Savings</cell>
+      <cell>10%</cell>
+      <cell><m>\dfrac{1}{10}</m></cell>
+      <cell>$320</cell></row>
+    <row>
+      <cell>Total</cell>
+      <cell>100%</cell>
+      <cell>1</cell>
+      <cell>$3200</cell></row>
+    </tabular></p></answer></exercise>
+</subsection>
+
+<subsection><title>Thirds</title>
+
+<p>Thirds are also useful fractions.</p>
+    <image source="third.png" width = "60%"></image>
+<p>Many fields have a "one-third" rule as a guideline.</p>
+
+<example><statement><p>In photography, the one-third rule suggests that an image should be divided into thirds, both horizontally and vertically, and important elements of the picture, including the horizon, should be placed on the division lines or their intersections.</p>
+<p>Zack plans to enlarge the farming scene below into a 24-inch by 15-inch photograph. According to the one-third rule, how far will the base of the tree be from the right-side edge of the picture?</p>
+  <image source="photo.png" width = "60%"></image></statement>
+
+<solution><p>One-third of 24 is 8, so the base of the tree should be 8 inches from the edge of the picture.</p></solution></example>
+
+<exercise><statement><p>Apply the one-third rule to each situation.</p>
+<p><ol marker="a.">
+
+  <li><p>When a home-buyer applies for a mortgage, the monthly payments on the mortgage amount should not exceed one third of the buyer's net monthly salary. Brandon's net annual salary is $48,600. What size mortgage payment can he afford?</p></li> 
+
+  <li><p>A manager should allow herself up to one third of the available time for a task to organize the task and delegate responsibility, thus allowing her team the remaining two thirds of the time. Emily has two hours to write her weekly report.  How long should her team work on the report?</p></li>
+
+  <li><p>In scuba diving, one third of the gas supply is used for the outward journey, one third for the return journey, and one third is left as a safety reserve. Farah's cylinder holds 10 liters. How many liters are left when she starts her return journey?</p></li>
+
+  <li><p>When mowing grass, you should never remove more than one third of the grass blade. If the mowing height on your lawn mower is 3 inches, how tall should the grass be when you mow, so that you remove one third of the grass blade?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>$1700</p></li>
+  <li><p><m>\dfrac{4}{3}</m> hour, or 1 hour and 20 minutes</p></li>
+  <li><p><m>\dfrac{20}{3}</m> liters, or <m>6\dfrac{2}{3}</m> liters</p></li>
+  <li><p><m>4\dfrac{1}{2}</m> inches</p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Decimal Form of One-Third</title>
+
+<p>What about the decimal form of <m>\dfrac{1}{3}</m>? Remember that some fractions do not "come out evenly" in their decimal form. One-third is one of those fractions. Use your calculator to verify that
+      <image source="decthird1.png" width = "50%"></image>
+
+where the  …  symbol indicates that the 3's go on forever. (Recall that we encountered repeating decimals in <xref ref="fractodec"/>. We can represent <m>\dfrac{1}{3}</m> with a repeater bar as <m>0.\overline{3}.~</m>) This is the exact value of <m>\dfrac{1}{3}</m> as a decimal fraction.  We often round the decimal form to hundredths and say that
+    <image source="decthird2.png" width = "60%"></image>
+
+Similarly, you can verify that the exact value of <m>\dfrac{2}{3}</m> is
+    <image source="decthird3.png" width = "50%"></image>
+
+or <m>0.\overline{6},~~</m> and by rounding to hundredths we see that
+    <image source="decthird4.png" width = "60%"></image>
+
+From here we can say that
+    <image source="decthird5.png" width = "60%"></image></p> 
+
+<p>Can we write exact percent values for <m>\dfrac{1}{3}</m> and <m>\dfrac{2}{3}</m>?  Try the following calculation:</p>
+
+<p>To write <m>\dfrac{1}{3}</m> as a percent:  divide 100 by 3  by hand (that is, without a calculator!). You should find that 
+  <me>100 \div 3 = 33\dfrac{1}{3}</me>
+If we double this number we find the percent form of <m>\dfrac{1}{3}</m>:
+  <me>2 \times 33\dfrac{1}{3} = 66\dfrac{2}{3}</me> 
+We have found exact percent forms for <m>\dfrac{1}{3}</m> and <m>\dfrac{2}{3}</m>.</p>
+
+<assemblage><title>Thirds as Percents</title>
+  <p><me>\dfrac{1}{3} = 33\dfrac{1}{3} \% \hphantom{0000000000} \text{and} \hphantom{0000000000} \dfrac{2}{3} = 66\dfrac{2}{3} \% </me></p></assemblage>
+
+<note><p>You should become familiar these percent values, so that you will recognize <m>\dfrac{1}{3}</m> and <m>\dfrac{2}{3}</m> when you see them!</p></note>
+
+<activity><title>Percents as Fractions</title>
+<introduction><p>Complete the table by entering the (reduced) common fraction equivalent to each percent, and then computing that fraction of 120.</p> 
+
+<p>Try to do all of your work without a calculator. Remember that once you know the benchmark fractions of an amount, you 
+  can use those to find other fractions of the same amount.</p></introduction>
+<sidebyside widths="50% 50%">
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Percent, %</cell>
+      <cell><line>Common</line><line>Fraction</line></cell>
+      <cell><line>Fraction</line><line>of 120</line></cell></row>
+    <row>
+      <cell>1</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>10</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>12.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>20</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>25</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>30</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>33<m>\frac{1}{3}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>37.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>40</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>50</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p>
+
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell>Percent, %</cell>
+      <cell><line>Common</line><line>Fraction</line></cell>
+      <cell><line>Fraction</line><line>of 120</line></cell></row>
+    <row>
+      <cell>60</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>62.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>66<m>\frac{2}{3}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>70</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>75</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>80</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>87.5</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>90</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>95</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>99</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    <row>
+      <cell>100</cell>
+      <cell><m>\hphantom{0000000000}</m></cell>
+      <cell><m>\hphantom{0000000000}</m></cell></row>
+    </tabular></p></sidebyside>
+  </activity>
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>percent</p></li>
+  <li><p>circle graph</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-2-2.ptx" />
+
+</section>
+

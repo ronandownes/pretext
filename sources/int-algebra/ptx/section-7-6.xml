@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="LogarithmicScales"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Logarithmic Scales</title>
+
+<subsection><title>Making a Log Scale</title>
+
+<p>Because <m>\log x</m> grows very slowly as <m>x</m> increases, logarithms are useful for modeling phenomena that take on a very wide range of values. For example, biologists study how metabolic functions such as heart rate are related to an animal’s weight, or mass. The table shows the mass in kilograms of several mammals.</p>
+
+<sidebyside ><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell halign="left">Animal</cell>
+            <cell>Shrew</cell>
+            <cell>Cat</cell>
+            <cell>Wolf</cell>
+            <cell>Horse</cell>
+            <cell>Elephant</cell>
+            <cell>Whale</cell></row>
+        <row>
+            <cell halign="left">Mass, kg</cell>
+            <cell><m>0.004</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>80</m></cell>
+            <cell><m>300</m></cell>
+            <cell><m>5400</m></cell>
+            <cell><m>70,000</m></cell></row>
+    </tabular></sidebyside>
+
+<p>Imagine trying to scale the <m>x</m>-axis to show all of these values. If we set tick marks at intervals of 10,000 kg, as shown below, we can plot the mass of the whale, and maybe the elephant, but the dots for the smaller animals will be indistinguishable.</p>
+<sidebyside  width="75%"><image source="images/fig-numline-mammal-mass" ><description>number line with masses of mammals</description></image></sidebyside>
+
+<p>On the other hand, we can plot the mass of the cat if we set tick marks at intervals of 1 kg, but the axis will have to be extremely long to include even the wolf. We cannot show the masses of all these animals on the same scale</p>
+<sidebyside  width="75%"><image source="images/fig-numline-mammal-mass2"><description>number line with masses of mammals</description></image></sidebyside>
+
+<p>To get around this problem, we can plot the log of the mass, instead of the mass itself. The table below shows the base 10 log of each animal's mass, rounded to <m>2</m> decimal places.</p>
+
+	<sidebyside  ><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell halign="left"><em>Animal</em></cell>
+            <cell>Shrew</cell>
+            <cell>Cat</cell>
+            <cell>Wolf</cell>
+            <cell>Horse</cell>
+            <cell>Elephant</cell>
+            <cell>Whale</cell></row>
+        <row>
+            <cell halign="left">Mass, kg</cell>
+            <cell><m>0.004</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>80</m></cell>
+            <cell><m>300</m></cell>
+            <cell><m>5400</m></cell>
+            <cell><m>70,000</m></cell></row>
+        <row>
+            <cell halign="left">Log (mass)</cell>
+            <cell><m>-2.40</m></cell>
+            <cell><m>0.60</m></cell>
+            <cell><m>1.90</m></cell>
+            <cell><m>2.48</m></cell>
+            <cell><m>3.73</m></cell>
+            <cell><m>4.85</m></cell></row>
+    </tabular></sidebyside>
+
+<p>The logs of the masses range from -2.40 to 4.85. We can easily plot these values on a single scale, as shown below.</p>
+
+	<sidebyside   width="80%"><image source="images/fig-logscale-mammal-mass" ><description>mammal masses plotted on log scale</description></image></sidebyside>
+
+<p>The scale above is called a <term>logarithmic scale</term><idx>logarithmic scale</idx>, or log scale. The tick marks are labeled with powers of 10, because, as you recall, a logarithm is actually an exponent. For example, the mass of the horse is 300 kg, and
+	<me>\log 300 = 2.48 ~~ \text{ so } ~~ 10^{2.48} = 300</me>
+When we plot 2.48 for the horse, we are really plotting the power of 10 that gives its mass, because <m>10^{2.48} = 300</m> kg. The exponents on base 10 are evenly spaced on a log scale, so we plot <m>10^{2.48}</m> about halfway between <m>10^2</m> and <m>10^3</m>.</p>
+
+<example xml:id="example-plot-logscale"><statement><p>Plot the values on a log scale.</p>
+		<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>0.0007</m></cell>
+            <cell><m>0.2</m></cell>
+            <cell><m>3.5</m></cell>
+            <cell><m>1600</m></cell>
+            <cell><m>72,000</m></cell>
+            <cell><m>4 \times 10^8</m></cell> </row>
+    </tabular></sidebyside></statement>
+
+<solution><p>We actually plot the logs of the values, so we first compute the base 10 logarithm of each number.</p>
+		
+	<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>0.0007</m></cell>
+            <cell><m>0.2</m></cell>
+            <cell><m>3.5</m></cell>
+            <cell><m>1600</m></cell>
+            <cell><m>72,000</m></cell>
+            <cell><m>4 \times 10^8</m></cell></row>
+        <row>
+            <cell><m>\log x</m></cell>
+            <cell><m>-3.15</m></cell>
+            <cell><m>-0.70</m></cell>
+            <cell><m>0.54</m></cell>
+            <cell><m>3.20</m></cell>
+            <cell><m>4.86</m></cell>               
+            <cell><m>8.60</m></cell> </row>      
+    </tabular></sidebyside>
+
+<p>Then we plot each logarithm, estimating its position between integer exponents. For example, we plot the first value, <m>-3.15</m>, closer to <m>-3</m> than to <m>-4</m>. The finished plot is shown below.</p>
+
+	      <sidebyside ><image source="images/fig-logscale"><description>points plotted on log scale</description></image></sidebyside>
+</solution></example>
+
+<exercise><title>Practice 1</title>
+    <introduction>
+        <image source="images/fig-read-logscale"width="90%"><description>points on logscale</description></image>
+    </introduction>
+    <webwork><pg-code>
+            $l[0] = Compute("-4");
+            $l[1] = Compute("-2.5");
+            $l[2] = Compute("1.5");
+            $l[3] = Compute("4.25");
+            foreach my $i (0..3) {
+            $x[$i] = Compute("10**$l[$i]");
+            }
+        </pg-code>
+    <statement><p>Complete the table by estimating the logarithm of each point plotted on the log scale above. Then give a decimal value for each point.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row>
+            <cell><m>\log x</m></cell>
+            <cell><var name="$l[0]" width="3"/> </cell>
+            <cell><var name="$l[1]" width="3"/></cell>
+            <cell><var name="$l[2]" width="3"/></cell>
+            <cell><var name="$l[3]" width="3"/></cell></row>      
+        <row>
+            <cell><m>x</m></cell>
+            <cell><var name="$x[0]" width="5"/> </cell>
+            <cell><var name="$x[1]" width="5"/></cell>
+            <cell><var name="$x[2]" width="5"/></cell>
+            <cell><var name="$x[3]" width="5"/></cell>
+        </row></tabular>
+    </statement>
+    <solution><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row>
+            <cell><m>\log x</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>-2.5</m></cell>
+            <cell><m>1.5</m></cell>
+            <cell><m>4.25</m></cell></row>      
+        <row>
+            <cell><m>x</m></cell>
+            <cell><m>0.0001</m></cell>
+            <cell><m>0.00316</m></cell>
+            <cell><m>31.6</m></cell>
+            <cell><m>17,782.8</m></cell></row>
+    </tabular>
+    </solution>
+    </webwork>
+</exercise>
+
+<exercise><title>QuickCheck 1</title>
+<webwork>
+    <pg-code>
+        $a = PopUp(
+            [ "?", 
+            "logarithms", 
+            "imaginary numbers"],
+            1
+        );
+        $b = PopUp(
+            [ "?", 
+            "variables", 
+            "powers of 10"],
+            2
+        );
+        $c = PopUp(
+            [ "?", 
+            "reciprocals",
+            "logarithms"],
+            2
+        );
+        $d = PopUp(
+            [ "?", 
+            "negative", 
+            "positive"],
+            1
+        );
+    </pg-code>
+    <statement>
+        <p>Fill in the blanks.
+            <ol marker="a.">
+                <li>
+                    <p>
+                        We use <var name="$a" form="popup"/> for graphing variables that take on a very wide range of values.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The tick marks on a log scale are labeled with  <var name="$b" form="popup"/>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To plot values on a log scale, we first compute the  <var name="$c" form="popup"/> of the values.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A fraction is plotted  on a log scale as a power with a  <var name="$d" form="popup"/> exponent.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution><p><ol marker="a.">
+    <li>logarithms</li>
+    <li>powers of 10</li>
+    <li>logs</li>
+    <li>negative</li></ol></p></solution>
+</webwork>
+</exercise>
+</subsection>
+
+<subsection><title>Labeling a Log Scale</title>
+
+<p>Log scales allow us to plot a wide range of values, but there is a trade-off. Equal increments on a log scale do not correspond to equal differences in value, as they do on a linear scale. You can see this more clearly if we label the tick marks with their values, as well as powers of 10. The difference between <m>10^1</m> and <m>10^0</m> is <m>10 - 1 = 9</m>, but the difference between <m>10^2</m> and <m>10^1</m> is <m>100 - 10 = 90</m>.</p>
+	<sidebyside  width="60%"><image source="images/fig-logscale-increments" ><description>logscale with integer exponents</description></image></sidebyside>
+
+<p>As we move from left to right on this scale, we <em>multiply</em> the value at the previous tick mark by 10.  Moving up by equal increments on a log scale does not add equal amounts to the values plotted; it <em>multiplies</em> the values by equal <em>factors</em>.</p>
+
+<p>If we would like to label the log scale with integers, we get a very different looking scale, one in which the tick marks are not evenly spaced.</p>
+
+<example xml:id="example-logscale-integer-labels"><statement><p>Plot the integer values 2 through 9 and 20 through 90 on a log scale.</p></statement>
+
+<solution><p>We compute the logarithm of each integer value.</p>
+		<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+	        <row bottom="minor">
+	            <cell><m>x</m></cell>
+	            <cell><m>2</m></cell>
+	            <cell><m>3</m></cell>
+	            <cell><m>4</m></cell>
+	            <cell><m>5</m></cell>
+	            <cell><m>6</m></cell>
+	            <cell><m>7</m></cell>
+	            <cell><m>8</m></cell>
+	            <cell><m>9</m></cell></row>
+	        <row>
+	            <cell><m>\log x</m></cell>
+	            <cell><m>0.301</m></cell>
+	            <cell><m>0.477</m></cell>
+	            <cell><m>0.602</m></cell>
+	            <cell><m>0.699</m></cell>
+	            <cell><m>0.778</m></cell>
+	            <cell><m>0.845</m></cell>
+	            <cell><m>0.903</m></cell>
+	            <cell><m>0.954</m></cell></row>
+	    </tabular></sidebyside>
+		<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+	        <row bottom="minor">
+	            <cell><m>x</m></cell>
+	            <cell><m>20</m></cell>
+	            <cell><m>30</m></cell>
+	            <cell><m>40</m></cell>
+	            <cell><m>50</m></cell>
+	            <cell><m>60</m></cell>
+	            <cell><m>70</m></cell>
+	            <cell><m>80</m></cell>
+	            <cell><m>90</m></cell></row>
+	        <row>
+	            <cell><m>\log x</m></cell>
+	            <cell><m>1.301</m></cell>
+	            <cell><m>1.477</m></cell>
+	            <cell><m>1.602</m></cell>
+	            <cell><m>1.699</m></cell>
+	            <cell><m>1.778</m></cell>
+	            <cell><m>1.845</m></cell>
+	            <cell><m>1.903</m></cell>
+	            <cell><m>1.954</m></cell></row>
+	    </tabular></sidebyside>
+	<p>We plot on a log scale, as shown below.</p>
+		<sidebyside><image source="images/fig-logscale-integer-labels"><description>log scale showing integer points</description></image></sidebyside>
+</solution></example>
+
+<p>On the log scale in <xref ref="example-logscale-integer-labels" text="type-global"/>, notice how the integer values are spaced: They get closer together as they approach the next power of <m>10</m>. You will often see log scales labeled not with powers of <m>10</m>, but with integer values, like this:</p>
+	<sidebyside  width="90%"><image source="images/fig-logscale-integer-labels2" ><description>log scale showing tic marks at integer points</description></image></sidebyside>
+
+<p>In fact, <term>log-log graph paper</term><idx>log-log graph paper</idx> scales both axes with logarithmic scales.</p>
+
+<exercise><title>Practice 2</title>
+    <introduction>
+        <sidebyside  width="80%"><image source="images/fig-log-log-graph" ><description>mouse-to-elephant curve on log-log graph</description></image></sidebyside>
+    </introduction>
+    <webwork><pg-code>
+            $mouseMass = Compute("0.02")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $mouseMR = Compute("3.5")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $dogMass = Compute("15")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $dogMR = Compute("500")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $sheepMass = Compute("50")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $sheepMR = Compute("1500")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $cowMass = Compute("500")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $cowMR = Compute("6000")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $elephantMass = Compute("4000")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+            $elephantMR = Compute("50000")->with(
+              tolType => 'relative',
+              tolerance => .15, );
+        </pg-code>
+    <statement><p>The opening page of Chapter 6 shows the "mouse-to-elephant" curve, a graph of the metabolic rate of mammals as a function of their mass. (The elephant does not appear on that graph, because its mass is too big.) The figure above shows the same function, graphed on log-log paper.</p>
+    <p>Use this graph to estimate the mass and metabolic rate for the following animals, labeled on the graph.</p>
+            <sidebyside><tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+            <row bottom="minor">
+                <cell>Animal</cell>
+                <cell>Mouse</cell>
+                <cell>Dog</cell>
+                <cell>Sheep</cell></row>
+            <row>
+                <cell>Mass (kg)</cell>
+                <cell><var name="$mouseMass" width="4"/></cell>
+                <cell><var name="$dogMass" width="4"/></cell>
+                <cell><var name="$sheepMass" width="4"/></cell></row>
+            <row>
+                <cell>Metabolic rate (kcal/day)</cell>
+                <cell><var name="$mouseMR" width="4"/></cell>
+                <cell><var name="$dogMR" width="4"/></cell>
+                <cell><var name="$sheepMR" width="4"/></cell></row>
+            </tabular></sidebyside>
+            <sidebyside><tabular top="major" halign="left" right="minor" left="minor" bottom="minor">
+            <row bottom="minor">
+                <cell>Animal</cell>
+                <cell>Cow</cell>
+                <cell>Elephant</cell></row>
+            <row>
+                <cell>Mass (kg)</cell>
+                <cell><var name="$cowMass" width="4"/></cell>
+                <cell><var name="$elephantMass" width="4"/></cell></row>
+            <row>
+                <cell>Metabolic rate (kcal/day)</cell>
+                <cell><var name="$cowMR" width="4"/></cell>
+                <cell><var name="$elephantMR" width="4"/></cell></row>
+            </tabular></sidebyside>
+            <instruction>
+                Do not use commas. For example, use "10000" rather than "10,000".
+            </instruction>
+    </statement>
+    <solution><sidebyside> <tabular top="major" halign="center" right="minor" left="minor" bottom="minor"><col halign="left"/>
+                <row bottom="minor">
+                    <cell>Animal</cell>
+                    <cell>Mouse</cell>
+                    <cell>Dog</cell>
+                    <cell>Sheep</cell>
+                    <cell>Cow</cell>
+                    <cell>Elephant</cell></row>
+                <row>
+                    <cell>Mass (kg)</cell>
+                    <cell><m>0.02</m></cell>
+                    <cell><m>15</m></cell>
+                    <cell><m>50</m></cell>
+                    <cell><m>500</m></cell>
+                    <cell><m>4000</m></cell></row>
+                <row>
+                    <cell>Metabolic rate (kcal/day)</cell>
+                    <cell><m>3.5</m></cell>
+                    <cell><m>500</m></cell>
+                    <cell><m>1500</m></cell>
+                    <cell><m>6000</m></cell>
+                    <cell><m>50,000</m></cell></row>
+            </tabular></sidebyside>
+        </solution>
+    </webwork>
+</exercise>
+
+<exercise><title>QuickCheck 2</title>
+<webwork>
+    <pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );
+        
+    </pg-code>
+    <statement><p>True or False.
+    <ol marker="a.">
+        <li>
+            <p>
+                Equal increments on a log scale correspond to equal differences in value. <var name="$False" form="popup"/>
+            </p>
+        </li>
+        <li>
+            <p>
+                Moving up by equal increments on a log scale multiplies the values by equal factors.  <var name="$True" form="popup"/>
+            </p>
+        </li>
+        <li>
+            <p>
+                If we label a log scale with integers, the tick marks are evenly spaced.  <var name="$False" form="popup"/>
+            </p>
+        </li>
+        <li>
+            <p>
+                On log-log graph paper, both axes are labeled with logarithmic scales.  <var name="$True" form="popup"/>
+            </p>
+        </li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>False</li>
+    <li>True</li>
+    <li>False</li>
+    <li>True</li></ol></p></solution>
+</webwork>
+</exercise>
+</subsection>
+
+<subsection><title>Acidity and the pH Scale</title>
+
+<p>You may have already encountered log scales in some everyday applications. A simple example is the <term>pH scale</term><idx>pH scale</idx>, used by chemists to measure the acidity of a substance or chemical compound. This scale is based on the concentration of hydrogen ions in the substance, denoted by <m>[H^+]</m>. The pH value is defined by the formula 
+	<me>\text{pH}=-\log_{10}[H^+]</me> 
+Values for pH fall between 0 and 14, with 7 indicating a neutral solution. The lower the pH value, the more acidic the substance. Some common substances and their pH values are shown in the table.</p>
+
+	<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+		<col halign="left"/><col/><col/>
+        <row bottom="major">
+            <cell>Substance</cell>
+            <cell>pH</cell>
+            <cell><m>[H^+]</m></cell></row>
+        <row>
+            <cell>Battery acid</cell>
+            <cell><m>1</m></cell>
+            <cell><m>0.1</m></cell></row>
+        <row>
+            <cell>Lemon juice</cell>
+            <cell><m>2</m></cell>
+            <cell><m>0.01</m></cell></row>
+        <row>
+            <cell>Vinegar</cell>
+            <cell><m>3</m></cell>
+            <cell><m>0.001</m></cell></row>
+        <row>
+            <cell>Milk</cell>
+            <cell><m>6.4</m></cell>
+            <cell><m>10^{-6.4}</m></cell></row>
+        <row>
+            <cell>Baking soda</cell>
+            <cell><m>8.4</m></cell>
+            <cell><m>10^{-8.4}</m></cell></row>
+        <row>
+            <cell>Milk of magnesia</cell>
+            <cell><m>10.5</m></cell>
+            <cell><m>10^{-10.5}</m></cell></row>
+        <row>
+            <cell>Lye</cell>
+            <cell><m>13</m></cell>
+            <cell><m>10^{-13}</m></cell></row>
+    </tabular></sidebyside>
+
+<p>A decrease of 1 on the pH scale corresponds to an increase in acidity by a factor of 10. Thus, lemon juice is 10 times more acidic than vinegar, and battery acid is 100 times more acidic than vinegar.</p>
+
+<example xml:id="example-pH"><statement><p><ol marker="a.">
+	<li>Calculate the pH of a solution with a hydrogen ion concentration of <m>3.98 \times 10^{-5}</m>.</li>
+	<li>The water in a swimming pool should be maintained at a pH of 7.5. What is the hydrogen ion concentration of the water?</li>
+	</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li>We use a calculator to evaluate the pH formula with <m>[H^+] = 3.98\times10^{-5}</m>.
+			<me>\text{pH} = -\log_{10}{(\alert{3.98 \times 10^{-5}})} \approx 4.4</me></li>
+	<li><p>We solve the equation
+			<me>\alert{7.5} = -\log_{10}[H^+]</me>
+		for <m>[H^+]</m>. First, we write
+			<me>-7.5 = \log_{10}[H^+]</me>
+		Then we convert the equation to exponential form to get
+			<me>[H^+] = 10^{-7.5}\approx 3.2 \times 10^{-8}</me>
+		The hydrogen ion concentration of the water is <m>3.2 \times 10^{-8}</m>.</p></li>
+	</ol></p></solution></example>
+
+<exercise><title>Practice 3</title>
+    <webwork><pg-code>
+            $a = Compute("10**(-8.3)");
+        </pg-code>
+        <statement>
+            <p>The pH of the water in a tide pool is 8.3. What is the hydrogen ion concentration of the water?</p>
+            <p>Answer: <var name="$a" width="12"/> </p>
+        </statement>
+        <solution><p><m>5.01\times 10^{-9}</m></p>
+        </solution>
+    </webwork>
+</exercise>
+</subsection>
+
+<subsection><title>Decibels</title>
+
+<p>The <term>decibel scale</term><idx>decibel scale</idx>, used to measure the loudness or intensity of a sound, is another example of a logarithmic scale. The perceived loudness of a sound is measured in decibels, <m>D</m>, by
+	<me>D=10 \log_{10}\left(\frac{I}{10^{-12}}\right)</me>
+where <m>I</m> is the intensity of its sound waves (in watts per square meter). The table below shows the intensity of some common sounds, measured in watts per square meter.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor"><col halign="left"/><col/><col/>
+        <row bottom="major">
+            <cell>Sound</cell>
+            <cell>Intensity (watts/m<m>^2</m>)</cell>
+            <cell>Decibels</cell></row>
+        <row>
+            <cell>Whisper</cell>
+            <cell><m>10^{-10}</m></cell>
+            <cell><m>20</m></cell></row>
+        <row>
+            <cell>Background music</cell>
+            <cell><m>10^{-8}</m></cell>
+            <cell><m>40</m></cell></row>
+        <row>
+            <cell>Loud conversation</cell>
+            <cell><m>10^{-6}</m></cell>
+            <cell><m>60</m></cell></row>
+        <row>
+            <cell>Heavy traffic</cell>
+            <cell><m>10^{-4}</m></cell>
+            <cell><m>80</m></cell></row>
+        <row>
+            <cell>Jet airplane</cell>
+            <cell><m>10^{-2}</m></cell>
+            <cell><m>100</m></cell></row>
+        <row>
+            <cell>Thunder</cell>
+            <cell><m>10^{-1}</m></cell>
+            <cell><m>110</m></cell></row>
+    </tabular></sidebyside>
+
+<p>Consider the ratio of the intensity of thunder to that of a whisper:
+	<me>\frac{\text{Intensity of thunder}}{\text{Intensity of a whisper}}
+		= \frac{10^{-1}}{10^{-10}}= 10^9</me>
+Thunder is <m>10^9</m>, or one billion times more intense than a whisper. It would be impossible to show such a wide range of values on a graph. When we use a log scale, however, there is a difference of only 90 decibels between a whisper and thunder.</p>
+
+<example xml:id="example-decibels"><statement><p><ol marker="a.">
+	<li>Normal breathing generates about <m>10^{-11}</m> watts per square meter at a distance of 3 feet. Find the number of decibels for a breath 3 feet away.</li>
+	<li>Normal conversation registers at about 40 decibels. How many times more intense than breathing is normal conversation?</li></ol></p>
+</statement>
+
+<solution><p><ol marker="a.">
+	<li>We evaluate the decibel formula with <m>I = \alert{10^{-11}}</m> to find
+		<md><mrow>D \amp = 10 \log_{10}\left(\dfrac{\alert{10^{-11}}} {10^{-12}}\right) \amp\amp \blert{\text{Subtract exponents: }{-11}-(-12)=1}</mrow>
+			 <mrow>\amp = 10 \log_{10} {10^1} = 10(1)</mrow>
+			 <mrow>\amp = 10 \text{ decibels}</mrow></md>
+		The sound of breathing registers at 10 decibels.</li>
+	<li>We let <m>I_b</m> stand for the sound intensity of breathing, and <m>I_c</m> stand for the intensity of normal conversation. We are looking for the ratio <m>I_c/I_b</m>. From part (a), we know that
+			<me>I_w = 10^{-11}</me>
+	and we can calculate <m>I_c</m> from the decibelsformula.
+	<md><mrow>40 \amp = 10 \log_{10}\left(\frac{I_c}{10^{-12}}\right) \amp\amp\blert{\text{Divide both sides by 10.}}</mrow>
+		<mrow>4 \amp = \log_{10}\left(\frac{I_c}{10^{-12}}\right) \amp\amp\blert{\text{Convert to exponential form.}}</mrow>
+		<mrow>\dfrac{I_c}{10^{-12}} \amp = 10^4 \amp\amp \blert{\text{Multiply both sides by }10^{-12}.}</mrow>
+		<mrow>I_c \amp = 10^4(10^{-12}) = 10^{-8}</mrow></md>
+	Finally, we compute the ratio <m>\dfrac{I_c}{I_b}</m>:
+			<me>\dfrac{I_c}{I_b}= \frac{10^{-8}}{10^{-11}}= 10^3</me>
+	Normal conversation is 1000 times more intense than breathing.</li></ol></p>
+</solution></example>
+
+<exercise><title>Practice 4</title>
+    <webwork><pg-code>
+            $D = 70;
+            $a = Compute("10**($D/10-12)");
+            $conversation = 40;
+            $b = Compute("10**( ($D - $conversation)/10)");
+        </pg-code>
+    <statement><p>The noise of city traffic registers at about <m>70</m> decibels.</p>
+            <p><ol marker="a.">
+            <li><p>What is the intensity of traffic noise, in watts per square meter?</p>
+            	<p>Answer: <m>I=</m><var name="$a" width="12"/>  watts/m<m>^2</m></p></li>
+            <li><p>How many times more intense is traffic noise than conversation?</p>
+            	<p>Answer: <var name="$b" width="3"/> times </p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+                <li><p><m>I = 10^{-5}</m> watts/m<m>^2</m></p></li>
+                <li><p><m>1000</m></p></li></ol></p>
+        </solution>
+    </webwork>
+</exercise>
+
+<warning><p>Both the decibel model and the Richter scale in the next example use expressions of the form <m>\log\left(\dfrac{a}{b}\right)</m>. Be careful to follow the order of operations when using these models. We must compute the quotient <m>\dfrac{a}{b}</m> before taking a logarithm. In particular, it is <em>not</em> true that <m>\log\left(\dfrac{a}{b}\right)</m> can be simplified to <m>\dfrac{\log a}{\log b}</m>.</p></warning>
+</subsection>
+
+<subsection><title>The Richter Scale</title>
+
+<p>One method for measuring the magnitude of an earthquake compares the amplitude <m>A</m> of its seismographic trace with the amplitude <m>A_0</m> of the smallest detectable earthquake. The log of their ratio is the Richter<idx>Richter</idx> magnitude, <m>M</m>. Thus, 
+	<me>M=\log_{10}\left(\frac{A}{A_0} \right)</me></p>
+
+<example xml:id="example-northridge-earthquake"><statement><p><ol marker="a.">
+	<li>The Northridge earthquake of January 1994 registered 6.9 on the Richter scale. What would be the magnitude of an earthquake 100 times as powerful as the Northridge quake?</li>
+	<li>How many times more powerful than the Northridge quake was the San Francisco earthquake of 1989, which registered 7.1 on the Richter scale?</li>
+	</ol></p></statement>
+
+<solution><p><ol marker="a.">
+	<li>We let <m>A_N</m> represent the amplitude of the Northridge quake and <m>A_H</m> represent the amplitude of a quake 100 times more powerful. From the Richter model, we have
+			<me>6.9 = \log_{10}\left(\dfrac{A_N}{A_0}\right)</me>
+	or, rewriting in exponential form,
+			<me>\dfrac{A_N}{A_0}= 10^{6.9}</me>
+	Now, we want <m>A_H</m> to be 100 times <m>A_N</m>, so
+		<md><mrow>A_H \amp = 100A_N</mrow>
+			<mrow>	\amp = 100\left(10^{6.9}A_0\right) = 10^{8.9}A_0</mrow></md>
+	Thus, the magnitude of the more powerful quake is
+			<md><mrow>\log_{10}\left(\dfrac{A_H}{A_0}\right) \amp = \log_{10} 10^{8.9}</mrow>
+				<mrow>\amp = 8.9</mrow></md></li>
+	<li>We let <m>A_S</m> stand for the amplitude of the San Francisco earthquake. We are looking for the ratio <m>A_S/A_N</m>. First, we use the Richter formula to compute values for <m>A_S</m> and <m>A_N</m>.
+			<me>6.9 = \log_{10}\left(\dfrac{A_N}{A_0}\right)
+				~~\text{ and }~~ 7.1 = \log_{10}\left(\dfrac{A_s}{A_0}\right)</me>
+	Rewriting each equation in exponential form, we have
+			<me>\dfrac{A_N}{A_0}= 10^{6.9}
+				~~\text{ and }~~ \dfrac{A_S}{A_0}= 10^{7.1}</me>
+	or
+			<me>A_N = 10^{6.9}A_0 ~~\text{ and }~~A_S = 10^{7.1}A_0</me>
+	Now we can compute the ratio we want:
+			<me>\frac{A_S}{A_N}= \frac{10^{7.1}A_0}{10^{6.9}A_0}= 10^{0.2}</me>
+	The San Francisco earthquake was <m>10^{0.2}</m>, or approximately 1.58 times as powerful as the Northridge quake.</li></ol></p>
+</solution></example>
+
+<exercise><title>Practice 5</title>
+    <webwork><pg-code>
+            $sf = 7.1;
+            $p = 7.6;
+            $a = Compute("10**($p-$sf)")->with(
+              tolType => 'absolute',
+              tolerance => .0051,
+            );
+        </pg-code>
+    <statement><p>In October 2005, a magnitude 7.6 earthquake struck Pakistan. How much more powerful was this earthquake than the 1989 San Francisco earthquake of magnitude 7.1?</p>
+            <p>Answer: <var name="$a" width="3"/> </p>
+    </statement>
+    <solution><p>3.16</p>
+    </solution>
+    </webwork>
+</exercise>
+
+<note><p>An earthquake 100, or <m>10^2</m>, times as strong is only two units greater in magnitude on the Richter scale. In general, a difference of <m>K</m> units on the Richter scale (or any logarithmic scale) corresponds to a factor of <m>10^K</m> units in the intensity of the quake.</p></note>
+
+<example xml:id="example-compare-logscale"><statement><p>On a log scale, the weights of two animals differ by 1.6 units. What is the ratio of their actual weights?</p></statement>
+
+<solution><p>A difference of 1.6 on a log scale corresponds to a factor of <m>10^{1.6}</m> in the actual weights. Thus, the heavier animal is <m>10^{1.6}</m>, or 39.8 times as heavy as the lighter animal.</p></solution></example>
+
+<exercise><title>Practice 6</title>
+    <webwork><pg-code>
+            $a = Compute(" 10**(2.5) ")->with(
+              tolType => 'absolute',
+              tolerance => .051,
+            );
+        </pg-code>
+    <statement><p>Two points, labeled <m>A</m> and <m>B</m>, differ by <m>2.5</m> units on a log scale. What is the ratio of their decimal values?</p>
+            <p>Answer: <var name="$a" width="5"/> </p>
+     </statement>
+     <solution>
+            <p>316.2</p>
+    </solution>
+    </webwork>
+</exercise>
+
+<exercise><title>QuickCheck 3</title>
+<webwork>
+    <pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );
+        
+    </pg-code>
+    <statement><p>True or False.
+    <ol marker="a.">
+        <li>
+            <p>
+                An increase of 1 on the pH scale corresponds to an increase in acidity by a factor of 10. <var name="$True" form="popup"/>
+            </p>
+        </li>
+        <li>
+            <p>
+                A ratio of sound intensities of one billion corresponds to a difference of 90 decibels.  <var name="$True" form="popup"/>
+            </p>
+        </li>
+        <li>
+            <p>
+                The second property of logs says that <m>\log \left(\dfrac{a}{b} \right) = \dfrac{\log a}{\log b}</m>.  <var name="$False" form="popup"/>
+            </p>
+        </li>
+        <li>
+            <p>
+                A difference of 3 on a log scale corresponds to a ratio of <m>10^3</m>, or 1000.  <var name="$True" form="popup"/>
+            </p>
+        </li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>True</li>
+    <li>True</li>
+    <li>False</li>
+    <li>True</li></ol></p></solution>
+</webwork>
+</exercise>
+
+</subsection>
+<xi:include href="./section-7-6-exercises.xml" />                
+
+
+</section>
+<!-- </book>  </mathbook> -->

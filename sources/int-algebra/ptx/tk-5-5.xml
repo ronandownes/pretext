@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkInverseVariation" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Inverse Variation</title>
+                 
+<subsubsection xml:id="tkInvVar"><title>Solve an inverse variation equation</title>
+
+<example><statement><p>Solve <m>~2.8125 = \dfrac{36}{n}</m></p></statement>
+    
+<solution><p>We must first get the variable out of the denominator.
+        <md><mrow>n(2.8125) \amp = \dfrac{36}{n} n \amp\amp \blert{\text{Multiply boyh sides by}~n.}</mrow>
+            <mrow>2.8125n \amp = 36 \amp\amp \blert{\text{Divide both sides by 2.8125.}}</mrow>
+            <mrow>n \amp = 12.8</mrow></md>
+</p></solution></example>
+
+<example><statement><p>Solve <m>~0.5547 = \dfrac{1500}{d^2}</m></p></statement>
+    
+<solution><p>We must first get the variable out of the denominator.
+        <md><mrow>d^2(0.5547) \amp = \dfrac{1500}{d^2} d^2 \amp\amp \blert{\text{Multiply boyh sides by}~d^2.}</mrow>
+            <mrow>0.5547d^2 \amp = 1500 \amp\amp \blert{\text{Divide both sides by 0.5547.}}</mrow>
+            <mrow>d^2 \amp = 2704.16  \amp\amp \blert{\text{Take square roots.}}</mrow>
+            <mrow>d \amp = 52 </mrow></md>
+</p></solution></example>
+
+<exercise><statement><p>Solve <m>~13.03=\dfrac{380}{h^2}</m></p></statement>
+<answer><p><m>5.4</m></p></answer></exercise>
+
+<exercise><statement><p>Solve <m>~0.065=\dfrac{12}{p}</m></p></statement>
+<answer><p><m>184.6</m></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkSketchVar"><title>Sketch a variation graph</title>
+
+<p>The graphs of inverse variations are transformations of the basic graphs <m>y=\dfrac{1}{x^n}</m>.</p>
+
+<example><statement><p>Sketch a graph of <m>H=\dfrac{48}{w}</m>.</p></statement>
+    <solution><p>We know that the graph has the shape of the basic function <m>y=\dfrac{1}{x}</m>, so all we need are a few points to "anchor" the graph.
+    <md><mrow>\text{If } w=2, \amp H = \dfrac{48}{2} = 24</mrow>
+        <mrow>\text{If } w=6, \amp H = \dfrac{48}{6} = 8</mrow>
+        <mrow>\text{If } w=12, \amp H = \dfrac{48}{12} = 4 </mrow></md>
+The graph is shown below.</p>
+<image width="30%" xml:id="H-eq-48-over-w"><description>cubic</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.75]
+        \draw[cyan] (0,0) grid (6,6);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(6.5,0) node[right]{$w$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,6.5) node[above]{$H$};
+        \foreach \x [evaluate=\x as \xi using int(4*\x)] in  {3,6} {
+        \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={1/2:6},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {3/(\x)});
+        \end{tikzpicture}]]>
+        </latex-image></image></solution></example>
+
+<exercise><statement><p>Plot three points and sketch a graph of <m>B=\dfrac{0.8}{d^2}</m>.</p>
+<image width="25%" xml:id="B-eq-pt8-over-d-sq-grid"><description>reciprocal squared</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+        \draw[cyan] (0,0) grid (4,4);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(4.5,0) node[right]{$d$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,4.5) node[above]{$B$};
+        \foreach \x [evaluate=\x as \xi using int(1/2*\x)] in  {2,4} {
+        \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image></statement>
+    
+<answer><p><m>(1,0.8),~(2,0.2),~(4,0.05)</m></p>
+<image width="25%" xml:id="B-eq-pt8-over-d-sq"><description>reciprocal squared</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.8]
+        \draw[cyan] (0,0) grid (4,4);
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(4.5,0) node[right]{$d$};
+        \draw[black,very thick, ->, >=stealth'] (0,0)--(0,4.5) node[above]{$B$};
+        \foreach \x [evaluate=\x as \xi using int(1/2*\x)] in  {2,4} {
+        \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[samples=65,domain={sqrt(.4):4},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {2*.8/(\x)^2});
+        \end{tikzpicture}]]>
+        </latex-image></image></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkFindCon"><title>Find the constant of variation</title>
+
+<introduction><p>If we know the type of variation and the coordinates of one point on the graph, we can find the variation equation.</p></introduction>
+
+<example><statement><p>Find the constant of variation and the variation equation:</p>
+    <p><m>~~~y</m> varies inversely with the square of <m>x</m>, and <m>y=4687.5</m> when <m>x=0.16</m>.</p></statement>
+
+<solution><p>Because <m>y</m> varies inversely with the square of <m>x</m>, we know that <m>y=\dfrac{k}{x^2}</m>. We substitute the given values to find
+        <md><mrow>4687.5 \amp = \dfrac{k}{0.16^2}  \amp\amp \blert{\text{Solve for}~k.}</mrow>
+            <mrow>k \amp  = 4687.5(0.16)^2=120</mrow></md>
+        The constant of variation is 120, and the variation equation is <m>~y=\dfrac{120}{x^2}</m>.</p></solution>
+</example>
+
+<exercise><statement><p>Find the constant of variation and the variation equation:</p>
+<p> <m>y</m> varies inversely with <m>x</m>, and <m>y=31.25</m> when <m>x=640</m>.</p></statement> 
+    <answer><p><m>k=20,000</m> and <m>y=\dfrac{20,000}{x}</m></p></answer></exercise>
+</subsubsection>
+
+</subsection>

@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Slope"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Slope</title>
+
+<subsection><title>Rate of Change</title><idx><h>rate</h><h>of change</h></idx>
+
+<assemblage><title>Rate of Change</title>
+    <idx><h>rate</h><h>of change</h></idx>
+<p>A <term>rate of change</term> is a type of ratio that measures how one variable changes with respect to another.</p></assemblage>
+
+<example xml:id="example-pottery-oven"><statement><p>In order to fire a particular kind of pottery, the pieces must first be cured by raising the temperature slowly and evenly.  Sonia checks the temperature in the drying oven at ten-minute intervals, and records the following data.</p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Time, <m>~x</m></cell>
+                        <cell>0</cell>
+                        <cell>10</cell>
+                        <cell>20</cell>
+                        <cell>30</cell>
+                        <cell>40</cell>
+                        <cell>50</cell>
+                        <cell>60</cell></row>
+                    <row> 
+                        <cell>Temperature, <m>~y</m></cell>
+                        <cell>70</cell>
+                        <cell>74</cell>
+                        <cell>78</cell>
+                        <cell>82</cell>
+                        <cell>86</cell>
+                        <cell>90</cell>
+                        <cell>94</cell></row>
+                    </tabular>
+<p>The heat in the oven should not increase any faster than 0.5 degree per minute. Is the temperature in the oven within the safe limits?</p></statement>
+
+<solution><sidebyside widths="55% 40%" valigns="middle middle" margins="0% 0%">
+<stack><p>A graph of the data is shown at right. </p>
+<p>Sonia calculates the rate at which the temperature is rising by finding the following ratio:
+    <md><mrow>\dfrac{\text{change in temperature}}{\text{change in time}}</mrow></md>
+</p></stack>
+    <!--<image source="photos/fig-3-3-ex1.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-3-ex1"><description>oven temperature vs time</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.08, yscale=.10]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid[xstep=5, ystep=4] (60,52);
+        \foreach \x  in  {0,25, 50} {
+         \draw[cyan, very thick] (\x,0) --++(0,52);
+         \draw[black] (\x,0.8) --++(0,-1.6) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(\x+50] in  {0, 8, ..., 48} {
+         \draw[cyan, very thick] (0,\x) --++(60,0);
+         \draw[black] (.8,\x) --++(-1.6,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[black,very thick, ->, >=stealth'] (O)--++(62,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (O)--++(0,54) node[left, xshift=2]{$y$};
+        \draw[red, ultra thick, ->,>=stealth] (0,20)--++(60,24);
+        \end{tikzpicture}]]></latex-image></image></sidebyside>
+<p>For example, over the first 10 minutes, the temperature rises from 70 degrees to 74 degrees, so
+    <md><mrow>\dfrac{\text{change in temperature}}{\text{change in time}} = \dfrac{\text{4 degrees}}{\text{10 minutes}}</mrow></md>
+or 0.4 degree per minute. This is less than the maximum rate recommended for curing the pottery.</p></solution></example>
+
+<p>You can check that over each ten-minute interval the temperature again rises by four degrees, so it appears that the oven is heating up at an acceptable rate.</p>
+
+<exercise number="1"><statement><p>What is a rate of change?</p></statement>
+    	<answer><p>A type of ratio that measures how one variable changes with respect to another</p></answer></exercise>
+
+<exercise number="2"><statement><p>What are the units of the rate of change in <xref ref="example-pottery-oven" text="type-global"/>?</p></statement>
+    	<answer><p>degrees per minute</p></answer></exercise>
+</subsection>
+
+<subsection><title>Slope</title>
+
+<p>We introduce some new notation to use when calculating a rate of change. </p>
+
+<assemblage><title>Notation for Change</title>
+<p>The Greek letter <m>\blert{\Delta}</m><idx>Delta (<m>\Delta</m>)</idx><idx><h>change in</h><see>Delta</see></idx><idx><h><m>\Delta</m></h><see>Delta</see></idx> ("delta") is used in mathematics to indicate change.</p>
+</assemblage>
+
+<p>In <xref ref="example-pottery-oven" text="type-global"/>,  we used the variable <m>x</m> to represent time and <m>y</m> to represent the temperature, so we denote the ratio <m>~\dfrac{\text{change in temperature}}{\text{change in time}}~</m> by <m>~\dfrac{\Delta y}{\Delta x}</m>.</p>  
+
+<p>With this notation, we calculate the rate of change of temperature between the data points <m>(20, 78)</m> and <m>(50, 90)</m> as follows:
+	<md><mrow>\dfrac{\Delta y}{\Delta x}=\dfrac{\text{12 degrees}}{\text{30 minutes}} = 0.4 \text{ degree per minute}</mrow></md></p>
+
+<p>We can illustrate the rate of change on a graph of the data, as shown below.  We move from the point <m>(20, 78)</m> to the point <m>(50, 90)</m> by moving horizontally a distance of <m>\Delta x = 30</m> and then vertically a distance of <m>\Delta y = 12</m>. </p>
+<!--<image source="photos/fig-3-3-1.png"><description>graph</description></image>-->
+<image width="55%" xml:id="fig-3-3-1"><description>graph with slope</description><latex-image>
+    <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+    <![CDATA[\tikzset{%
+    }
+    \begin{tikzpicture} [xscale=.1, yscale=.125]
+    \coordinate (O) at (0,0);
+    \draw[cyan] (O) grid[xstep=5, ystep=4] (60,52);
+    \foreach \x  in  {0,25, 50} {
+     \draw[cyan, very thick] (\x,0) --++(0,52);
+     \draw[black] (\x,0.8) --++(0,-1.6) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+    }
+    \foreach \x [evaluate=\x as \xi using int(\x+50] in  {0, 8, ..., 48} {
+     \draw[cyan, very thick] (0,\x) --++(60,0);
+     \draw[black] (.8,\x) --++(-1.6,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+    }
+    \draw[black,very thick, ->, >=stealth'] (O)--++(62,0) node[right]{$x$};
+    \draw[black,very thick, ->, >=stealth'] (O)--++(0,54) node[left, xshift=2]{$y$};
+    \draw[red, ultra thick, ->,>=stealth] (0,20)--++(60,24);
+    \draw[black,thick,->,>=stealth'] (20,28)--++(5,0);
+    \draw[black,thick,->,>=stealth'] (25,28)--++(10,0);
+    \draw[black,thick,->,>=stealth'] (35,28)--++(10,0);
+    \draw[black,thick,->,>=stealth'] (45,28)--++(5,0)--++(0,4);
+    \draw[black,thick,->,>=stealth'] (50,32)--++(0,7);
+    \filldraw[red] (20,28) ellipse (1cm and 0.8cm);
+    \filldraw[red] (50,40) ellipse (1cm and 0.8cm);
+    \node[text=black,fill=white, inner sep=2] at (37.5,25.5) {$\Delta x = 30$};
+    \node[right,text=black,fill=white, inner sep=2] at (52,34) {$\Delta y = 12$};
+    \end{tikzpicture}]]></latex-image></image> 
+
+<p>The rate of change of one variable with respect to another is so important in applications that the ratio <m>\dfrac{\Delta y}{\Delta x}</m> is given a name; it is called <term>slope</term>, and is usually denoted by the letter <m>m</m><idx><em>m</em> as slope</idx>.</p>
+
+<assemblage><title>Slope</title>
+    <idx><h>slope</h></idx><idx><h>slope</h><h>formula for</h></idx>
+<p>The <term>slope</term> of a line is defined by the ratio
+	<md><mrow>\blert{\dfrac{\text{change in } y\text{-coordinate}}{\text{change in } x\text{-coordinate}}}</mrow></md>
+as we move from one point to another on the line. In symbols,
+	<md><mrow>\blert{m=\dfrac{\Delta y}{\Delta x}}</mrow></md></p></assemblage>
+
+<assemblage><title>Look Closer</title>
+<p>The slope of a line measures how fast the <m>y</m>-coordinate changes as we increase the <m>x</m>-coordinate of points on the line.  More specifically, when we move one unit in the <m>x</m>-direction, how many units should we move in the <m>y</m>-direction to get back to the line?</p></assemblage>
+
+<example><statement><p>Use the points <m>A</m> and <m>B</m> to compute the slope of the line shown.</p>
+	<!--<image source="photos/fig-3-3-ex2.png"><description>graph</description></image>-->
+    <image  width="45%" xml:id="fig-3-3-ex2"><description>lgraph of line with slope</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.4]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (-2,-2) grid (9,9);
+        \draw[black,very thick, ->, >=stealth'] (-2,0)--(10,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-2)--(0,10) node[left, xshift=2]{$y$};
+        \foreach \x  in  {5} {
+         \draw[cyan, very thick] (\x,-2) --++(0,11);
+         \draw[cyan, very thick] (-2,\x) --++(11,0);
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x in {1, 2.2, 3.4} 
+         \draw[blue,thick, ->, >=stealth'] (\x,3)--++(1.2,0);
+        \draw[blue,thick, ->, >=stealth'] (4.6,3)--++(0.4,0)--++(0,0.8);
+        \draw[blue,thick, ->, >=stealth'] (5,3.8)--++(0,1.1);
+        \draw[blue,thick, ->, >=stealth'] (5,4.9)--++(0,1.1);
+        \draw[red, ultra thick, <->, >=stealth'] (-2,3/4)--(9,9);
+        \filldraw[red!80!black] (1,3) circle (2mm) node[text=black,below,yshift=-4, xshift=1, fill=white, inner sep=1] {$A$};
+        \filldraw[red!80!black] (5,6) circle (2mm) node[text=black,below right,yshift=-4, xshift=5, fill=white, inner sep=1] {$B$};
+        \end{tikzpicture}]]></latex-image></image></statement>
+
+<solution><p>The point <m>A</m> has coordinates <m>(1,3)</m>, and <m>B</m> has coordinates <m>(5,6)</m>.  As we move along the line from <m>A(1,3)</m> to <m>B(5,6)</m>, the <m>y</m>-coordinate changes by 3 units, and the <m>x</m>-coordinate changes by 4 units. The slope of the line is thus
+	<md><mrow>\dfrac{\Delta y}{\Delta x}=\dfrac{3}{4}</mrow></md>
+The slope tells us that if we start at any point on the line and move 1 unit in the <m>x</m>-direction, we must move <m>\dfrac{3}{4}</m> unit in the <m>y</m>-direction to return to the line.</p>
+</solution></example>
+
+<warning><p>Note the difference between the statements <m>y=3</m> and <m>\Delta y = 3</m>; they are not the same!  When we discuss a graph,<ul> 
+	<li><m>y=3~~</m> means that the <m>y</m>-coordinate of a particular point is 3, but</li>
+	<li><m> \Delta y = 3~~</m> means that the <m>y</m>-coordinate changes by 3 units when we move from one point to another.</li>
+</ul></p></warning>
+
+<exercise number="3"><statement><p>What does <m>\Delta x</m> mean in mathematics?</p></statement>
+    	<answer><p>Change in <m>x</m>.</p></answer></exercise>
+
+<exercise number="4"><statement><p>How do we indicate <m>\Delta x</m> on a graph?</p></statement>
+    	<answer><p>By a horizontal arrow</p></answer></exercise>
+
+<exercise number="5"><statement><p>What is the name of the ratio <m>\dfrac{\Delta y}{\Delta x}</m>, and what letter is used to represent it?</p></statement>
+    	<answer><p>slope, <m>m</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Meaning of Slope</title><idx><h>slope</h><h>meaning</h></idx>
+
+<p>In <xref ref="example-pottery-oven" text="type-global"/>, we graphed the temperature of a pottery oven over time. We calculated the slope of the graph as
+	<md><mrow>\dfrac{\Delta y}{\Delta x} = 0.4~~ \text{degrees per minute}</mrow></md>
+The slope gives us the rate of change of the temperature with respect to time:  the temperature is increasing at a rate of 0.4 degrees per minute.</p>
+
+<assemblage><title>Meaning of Slope</title>
+    <idx><h>slope</h><h>meaning</h></idx>
+<p>The slope of a line measures the rate of change of <m>y</m> with respect to <m>x</m>.</p></assemblage>
+
+<p>In different situations, this rate might be interpreted as a rate of growth or a speed. The slope of a graph can give us valuable information about the variables involved. </p> 
+
+<example xml:id="Example-3-3-3"><statement><sidebyside widths="50% 35%">
+<stack><p>The graph shows the distance traveled by a driver for a cross-country trucking firm in terms of the number of hours she has been on the road.</p>
+<p><ol marker="a.">
+    <li>Compute the slope of the graph.</li>
+    <li>What is the meaning of the slope for this problem?</li>
+</ol></p></stack>
+    <!--<image source="photos/fig-3-3-ex3.png"><description>graph</description></image>-->
+    <image xml:id="fig-3-3-ex3"><description>graph</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (O) grid (6,10);
+        \draw[black,very thick, ->, >=stealth'] (O)--(6.6,0) node[right]{$t$};
+        \draw[black,very thick, ->, >=stealth'] (O)--(0,10.8) node[left, xshift=2]{$D$};
+        \foreach \x  in  {5} {
+         \draw[cyan, very thick] (\x,0) --++(0,10);
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x [evaluate=\x as \xi using int(25*\x] in  {2,4,6,8,10} {
+         \draw[cyan, very thick] (0,\x) --++(6,0);
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[blue, line width=0.8mm, dashed] (2,4)--++(2,0) node[above,midway, yshift=1, midway, fill=white, inner sep=1, scale=.75] {$\Delta t = 2$};
+        \draw[blue, line width=0.8mm, dashed] (4,4)--++(0,4) node[right,midway, xshift=1, midway, fill=white, inner sep=1, scale=.8] {$\Delta D = 100$};
+        \draw[red, ultra thick, ->, >=stealth'] (O)--(5,10);
+        \filldraw[red!80!black] (2,4) circle (2mm) node[text=black,below right,yshift=-4, xshift=1, fill=white, inner sep=1] {$G(2,100)$};
+        \filldraw[red!80!black] (4,8) circle (2mm) node[text=black,above left,yshift=2, xshift=-5, fill=white, inner sep=1] {$H(4,200)$};
+        \end{tikzpicture}]]></latex-image></image></sidebyside></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>Choose any two points on the line, say <m>G(2,100)</m> and <m>H(4,200)</m> shown in the figure. As we move from <m>G</m> to <m>H</m> we find 
+        <md><mrow>m = \dfrac{\Delta D}{\Delta t} = \dfrac{100}{2} = 50</mrow></md>
+    The slope of the line is 50.</p></li>
+    <li><p>The best way to understand the slope is to include units in the calculation.
+        <md><mrow>\dfrac{\Delta D}{\Delta t}~~ \text{means}~~\dfrac{\text{change in distance}}{\text{change in time}}</mrow></md>
+    or 
+        <md><mrow>\dfrac{\Delta D}{\Delta t} = \dfrac{100 \text{ miles}}{2~ \text{hours}} =50~ \text{miles per hour}</mrow></md>
+    The slope represents the trucker's average speed or velocity.</p></li>
+</ol></p></solution></example>
+
+<warning><p>In <xref ref="Example-3-3-3" text="type-global"/>, we refer to a point by a capital letter and the coordinates of the point, like this: <m>H(4,200)</m>. This means that <m>t=4</m> and <m>D=200</m> at the point <m>H</m>. Do not confuse the coordinates of a particular point with the values of <m>\Delta t</m> and <m>\Delta D</m> obtained by moving from one point to a second point.</p></warning>	
+		 
+<exercise number="6"><statement><p>What does the slope of a line measure?</p></statement>
+    	<answer><p>the rate of change of <m>y</m> with respect to <m>x</m></p></answer></exercise>
+
+<exercise number="7"><statement><p>What does the slope of the line measure in <xref ref="Example-3-3-3" text="type-global"/>?</p></statement>
+    	<answer><p>the trucker's average speed or velocity</p></answer></exercise>
+</subsection>
+
+<subsection><title>Geometrical Meaning of Slope</title>
+    <idx><h>slope</h><h>meaning</h></idx>
+<p>Suppose we graph two lines with positive slope on the same coordinate system. If we move along the lines from left to right, then the line with the larger slope will be steeper. This makes sense if we think of the slope as a rate of change: The line whose <m>y</m>-coordinate is increasing faster with respect to <m>x</m> is the steeper line.</p>
+
+<assemblage><title>Look Closer</title>
+<p>You can verify the slope given for each line in figure (a) by computing <m>\dfrac{\Delta y}{\Delta x}</m>. For each unit you increase in the <m>x</m>-direction, the steepest line increases 2 units in the <m>y</m>-direction, the middle line increases 1 unit in the <m>x</m>-direction, and the flattest line increases only <m>\dfrac{1}{3}</m> unit.</p>
+    <!--<image source="photos/fig-3-3-2.png"><description>graph</description></image>-->
+    <image width="50%" xml:id="fig-3-3-2a"><description>positive slopes</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (-6,-6) grid (6,6);
+        \draw[black,very thick, ->, >=stealth'] (-6,0)--(7.,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-6)--(0,7.) node[left, xshift=2]{$y$};
+        \foreach \x  in  {-5, 5} {
+         \draw[cyan, very thick] (\x,-6) --++(0,12);
+         \draw[cyan, very thick] (-6,\x) --++(12,0);
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, very thick, <->, >=stealth'] (-3,-6)--(3,6) node[left, xshift=-6, text=black, fill=white, inner sep=1] {$m=2$};
+        \draw[red, very thick, <->, >=stealth'] (-6,-6)--(6,6) node[below, yshift=-.52cm, text=black, fill=white, inner sep=1] {$m=1$};
+        \draw[red, very thick, <->, >=stealth'] (-6,-2)--(6,2) node[below, xshift=-2, yshift=-.25cm, text=black, fill=white, inner sep=1] {$m=\frac{1}{3}$};
+        \node at (0,-7){a.};
+        \end{tikzpicture}]]></latex-image></image>
+
+        <p>Figure (b) shows several lines with negative slopes. These lines slant downwards or decrease as we move from left to right. The more negative the slope, the more sharply the line decreases. For both increasing and decreasing graphs, the larger the absolute value of the slope, the steeper the graph.</p>
+
+        <image width="60%" xml:id="fig-3-3-2b"><description>negative slopes</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.5]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (-6,-6) grid (6,6);
+        \draw[black,very thick, ->, >=stealth'] (-6,0)--(7.,0) node[right]{$x$};
+        \draw[black,very thick, ->, >=stealth'] (0,-6)--(0,7.) node[left, xshift=2]{$y$};
+        \foreach \x  in  {-5, 5} {
+         \draw[cyan, very thick] (\x,-6) --++(0,12);
+         \draw[cyan, very thick] (-6,\x) --++(12,0);
+         \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+         \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[red, very thick, <->, >=stealth'] (2,-6)--(-2,6) node[above, xshift=-6, text=black, fill=white, inner sep=1] {$m=-3$};
+        \draw[red, very thick, <->, >=stealth'] (6,-6)--(-6,6) node[above, yshift=2, text=black, fill=white, inner sep=1] {$m=-1$};
+        \draw[red, very thick, <->, >=stealth'] (6,-4)--(-6,4) node[left, xshift=-2,  text=black, fill=white, inner sep=1] {$m=-\frac{2}{3}$};
+        \node at (0,-7){b.};
+        \end{tikzpicture}]]></latex-image></image>
+</assemblage>
+
+<warning><p>Slopes measure the relative steepness of two lines only if they are graphed on axes with the same scales.  Changing the scale on either the <m>x</m>-axis or the <m>y</m>-axis can greatly alter the appearance of a graph.</p></warning>
+
+<exercise number="8"><statement><p>What sort of lines have negative slopes?</p></statement>
+    	<answer><p>Lines that slant downwards or decrease as we move from left to right</p></answer></exercise>
+
+<problem>
+<p>Write a rate for each of the following situations, including units.</p>
+<p><ol marker="1.">
+    <li><p>Zack's average speed, if he drove 426 miles in 9 hours.</p></li>
+    <li><p>Zelda's average speed, if she ran 6.6 miles in 55 minutes.</p></li>
+    <li><p>The rate at which water flows through a pipe, if a 400-gallon storage tank fills in 20 
+        minutes.</p></li>
+    <li><p>A baby whale's rate of growth, if it gains 3000 pounds in its first 40 days of life.</p></li>
+    <li><p>Earnest's rate of pay, if he earns $344 for a 40-hour week.</p></li>
+    <li><p>Meg's rate of pay, if she charges $90 to type a 40-page paper.</p></li>
+</ol></p>
+
+<answer>
+<p><ol marker="1." cols="2">
+    <li><p><m>47.\overline{3}</m> miles per hour</p></li>
+    <li><p><m>0.12</m> miles per minute</p></li>
+    <li><p><m>20</m> gallons per minute</p></li>
+    <li><p><m>75</m> pounds per day</p></li>
+    <li><p><m>8.60</m> dollars per hour</p></li>
+    <li><p><m>2.25</m> dollars per page</p></li>
+    </ol></p>
+</answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Calculating Slope</title>
+    <idx><h>slope</h><h>calculate</h></idx>
+
+<p>To calculate slope, we choose two points on the graph and compute the ratio
+    <md><mrow>\dfrac{\blert{\text{change in vertical coordinate}}} {\blert{\text{change in horizontal coordinate}}}</mrow></md> 
+Be sure to include units with your ratios!</p>  
+
+<p><ol marker="1.">
+    <li><p>The table shows the price, <m>p</m>, for <m>g</m> gallons of gasoline at the pump.</p>
+        <p><ol marker="a.">
+        <li><sidebyside widths = "55% 40%" valigns="middle middle">
+                <stack><p>Plot the data on the grid.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+            <row bottom="minor">
+                <cell>Gallons</cell>
+                <cell>Total Price</cell></row>
+            <row> 
+                <cell><m>4</m></cell>
+                <cell>$6.00</cell></row>
+            <row>
+                <cell><m>6</m></cell>
+                 <cell>$9.00</cell></row>
+            <row>     
+                <cell><m>9</m></cell>
+                <cell>$13.50</cell></row>
+            <row>
+                <cell><m>12</m></cell>
+                <cell>$18.00</cell></row>
+            <row>    
+                <cell><m>15</m></cell>
+                <cell>$22.50</cell>
+            </row>
+        </tabular></stack>
+        <!--<image source="photos/act-3-3-1"><description>grid</description></image>-->
+        <image xml:id="act-3-3-1-1"><description>grid</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.3]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (0,0) grid (15,25);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(16.6,0) node[right]{$g$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,26.6) node[left, xshift=2]{$p$};
+        \foreach \x  in  {5,10,15} {
+         \draw[cyan, very thick] (\x,0) --++(0,25);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[black] (0,.15) --++(0,-.3)  node[below, yshift=-2, fill=white,inner sep=1]{$0$};
+        \foreach \y  in  {5,10,15,20,25} {
+         \draw[cyan, very thick] (0,\y) --++(15,0);
+         \draw[black] (.15,\y) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\y$};
+        }
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+        
+    <li><p>Choose two points from the graph and use them to compute the slope.</p>
+            <p><m>\blert{\text{First point:}}</m></p>                
+            <p><m>\blert{\text{Second point:}}</m></p>
+        <p><md><mrow>\blert{\text{Change in vertical coordinates:}}~~~~~~\amp \Delta p =\amp\amp\hphantom{00}</mrow>       <mrow>\blert{\text{Change in horizontal coordinates:}}~~~~~~\amp \Delta g =</mrow>
+               <mrow>\blert{\text{Slope:}} ~~~~~~\amp \dfrac{\Delta p}{\Delta g} = </mrow></md></p></li>
+
+    <li>Illustrate the slope on the graph.</li>
+    <li>Write the slope as a rate of change, including units. What does the slope tell you about the variables?</li></ol></p></li>
+    
+<li><p>The table shows the growth in population, <m>P</m>, of a new suburb <m>t</m> years after it was built.</p>
+    <p><ol marker="a.">
+    <li><sidebyside widths = "55% 40%" valigns="middle middle">
+    <stack><p>Plot the data on the grid.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Years</cell>
+                        <cell>Population</cell></row>
+                    <row> 
+                        <cell><m>1</m></cell>
+                        <cell>10</cell></row>
+                    <row> ~/mathbook/pretext/pretext -vv -c latex-image -f svg -d ./ext/photos ./ptx/test-section.xml
+                        <cell><m>2</m></cell>
+                         <cell>20</cell></row>
+                    <row>     
+                        <cell><m>3</m></cell>
+                        <cell>40</cell></row>
+                    <row>
+                        <cell><m>4</m></cell>
+                        <cell>80</cell></row>
+                    <row>    
+                        <cell><m>5</m></cell>
+                        <cell>160</cell>
+                    </row>
+                </tabular></stack>                    
+        <image source="photos/act-3-2-3-2"><description>grid</description></image></sidebyside></li>
+        
+    <li><p>Choose two points from the graph and use them to compute the slope.</p>
+        <p><m>\blert{\text{First point:}}</m></p>                
+        <p><m>\blert{\text{Second point:}}</m></p>
+    <p><md><mrow>\blert{\text{Change in vertical coordinates:}}~~~~~~\amp \Delta P =\amp\amp\hphantom{00}</mrow>    
+        <mrow>\blert{\text{Change in horizontal coordinates:}}~~~~~~\amp \Delta t =</mrow>
+        <mrow>\blert{\text{Slope:}}~~~~~~ \amp \dfrac{\Delta P}{\Delta t} = </mrow></md></p></li>
+    <li>Illustrate the slope on the graph. Is the slope the same between all points?</li>
+    <li>Write the slope as a rate of change, including units. What does the slope tell you about the variables?</li></ol></p></li>
+    
+<li><p>Tuition at Woodrow University is $400 plus $30 per unit.</p>
+    <p><ol marker="a.">  
+    <li>Write an equation for tuition, <m>T</m>, in terms of the number of units, <m>u</m>.
+        <md><mrow>T=\hphantom{0000}</mrow></md></li>
+    <li><p>Use your equation to fill in the table.
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Units</cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>12</m></cell></row>
+                    <row> 
+                        <cell>Tuition</cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    </tabular></p></li>
+    <li><p>Graph the equation on the grid.</p>
+        <image width="50%" source="photos/act-3-2-3-4"><description>grid</description></image></li>
+    <li><p>Choose two points from the graph and use them to compute the slope.</p>
+        <p><m>\blert{\text{First point:}}</m></p>                
+        <p><m>\blert{\text{Second point:}}</m></p>
+    <p><md><mrow>\blert{\text{Change in vertical coordinates:}}~~~~~~\amp \Delta T =</mrow>                
+        <mrow>\blert{\text{Change in horizontal coordinates:}}~~~~~~\amp \Delta u =</mrow>
+        <mrow>\blert{\text{Slope}}~~~~~~ \amp \dfrac{\Delta T}{\Delta u} = </mrow></md></p></li>
+    <li>Illustrate the slope on the graph.</li>
+    <li>Write the slope as a rate of change, including units. What does the slope tell you about the variables?</li></ol></p></li>
+
+<li><p>Anouk is traveling by train across Alaska at 60 miles per hour.</p>
+    <p><ol marker="a.">
+    <li><p>Write an equation for the distance, <m>D</m>, Anouk has traveled in terms of hours, <m>h</m>.
+        <md><mrow>D=\hphantom{0000}</mrow></md></p></li>
+    <li><p>Use your equation to fill in the table.
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Hours</cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>16</m></cell></row>
+                    <row> 
+                        <cell>Distance</cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell>
+                        <cell><m>\hphantom{0000}</m></cell></row>
+                    </tabular></p></li>
+    <li><p>Graph the equation on the grid.</p>
+        <image width="50%" source="photos/act-3-2-3-5"><description>grid</description></image></li>
+    <li><p>Choose two points from the graph and use them to compute the slope.</p>
+        <p><m>\blert{\text{First point:}}</m></p>                
+        <p><m>\blert{\text{Second point:}}</m></p>
+    <p><md><mrow>\blert{\text{Change in vertical coordinates:}}~~~~~~\amp \Delta T =</mrow>                
+        <mrow>\blert{\text{Change in horizontal coordinates:}}~~~~~~\amp \Delta u =</mrow>
+        <mrow>\blert{\text{Slope}}~~~~~ \amp \dfrac{\Delta T}{\Delta u} = </mrow></md></p></li>
+    <li>Illustrate the slope on the graph.</li>
+    <li>Write the slope as a rate of change, including units. What does the slope tell you about the variables?</li></ol></p></li>
+
+<li><p><ol marker="a.">
+    <li>Which of the four graphs will give different values for the slope, depending on which points you choose?</li>  
+    <li>What is different about this graph, compared to the other three graphs?</li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Negative Slopes</title>
+    <idx><h>slope</h><h>negative</h></idx><idx><h>negative</h><h>slope</h></idx>
+
+<assemblage><title>Increasing and Decreasing</title>
+    <p>An increasing quantity has a positive rate of change, or slope, and a decreasing quantity has a negative rate of change. </p></assemblage>
+
+<assemblage><title>Horizontal and Vertical Changes</title>
+    <p><ul>
+    <li>When we move to the right on a graph, <m>\Delta x</m> is positive.
+        <idx><h>positive</h><h><m>\Delta x</m></h></idx></li>
+    <li>When we move to the left, <m>\Delta x</m> is negative.
+        <idx><h>negative</h><h><m>\Delta x</m></h></idx></li>
+    <li>When we move up on a graph, <m>\Delta y</m> is positive.
+        <idx><h>positive</h><h><m>\Delta y</m></h></idx></li>           
+    <li>When we move down, <m>\Delta y</m> is negative.
+        <idx><h>negative</h><h><m>\Delta y</m></h></idx></li>
+    </ul></p></assemblage>
+
+<p><ol marker="1.">
+<li><p>The value of new office equipment decreases, or depreciates, over time. The graph shows the value, <m>V</m>, in thousands of dollars, of a large copy machine <m>t</m> years after it was purchased.<ol marker="a.">
+    <li><p>Compute the slope of the line by moving from point <m>A</m> to point <m>B</m>.</p>
+    <sidebyside widths = "47% 47%%" margins="0% 0%">
+        <!--<image source="photos/act-3-3-2.png"><description>grid</description></image>
+        <image source="photos/act-3-3-3.png"><description>grid</description></image>-->
+    <image xml:id="act-3-3-2-1a"><description>decreasing line with labeled deltas</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.4]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (0,0) grid (10,12);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(11.,0) node[right]{$t$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,13.) node[left, xshift=1]{$V$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in  {5,10} {
+         \draw[cyan, very thick] (\x,0) --++(0,12);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[black] (0,.15) --++(0,-.3)  node[below, yshift=-2, fill=white,inner sep=1]{$0$};
+        \foreach \y [evaluate=\y as \yi using int(2*\y)] in  {5,10} {
+         \draw[cyan, very thick] (0,\y) --++(10,0);
+         \draw[black] (.15,\y) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\y$};
+        }
+        \draw[black,->, >=stealth'] (2,9)--(4.5,9);
+        \draw[very thick, magenta!90!black, ->, >=stealth'] (0,10)--(10,5);
+        \filldraw[magenta!80!black] (2,9) circle (.15) node[above right, yshift=2, fill=white, inner sep=1] {$A$};
+        \filldraw[magenta!80!black] (8,6) circle (.15) node[above right, xshift=2, fill=white, inner sep=1] {$B$};
+        \draw[black,->, >=stealth'] (2,9)--(4.5,9);
+        \draw[black,->, >=stealth'] (4.5,9) -- (6.5,9) node[above , xshift=-5mm,yshift=2mm,fill=white, inner sep=1]{$\Delta t = 12$};
+        \draw[black,->, >=stealth'] (6.5,9) -- (8,9)  -- (8,7.5) node[right , xshift=1mm, yshift=1mm, fill=white, inner sep=1]{$\Delta V = -6$};
+        \draw[black,->, >=stealth'] (8,9)--(8,6);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+    <image xml:id="act-3-3-2-1b"><description>decreasing line with labeled deltas</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.4]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (0,0) grid (10,12);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(11.,0) node[right]{$t$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,13.) node[left, xshift=1]{$V$};
+        \foreach \x [evaluate=\x as \xi using int(2*\x)] in  {5,10} {
+         \draw[cyan, very thick] (\x,0) --++(0,12);
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\xi$};
+        }
+        \draw[black] (0,.15) --++(0,-.3)  node[below, yshift=-2, fill=white,inner sep=1]{$0$};
+        \foreach \y [evaluate=\y as \yi using int(2*\y)] in  {5,10} {
+         \draw[cyan, very thick] (0,\y) --++(10,0);
+         \draw[black] (.15,\y) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\y$};
+        }
+        \draw[very thick, magenta!90!black, ->, >=stealth'] (0,10)--(10,5);
+        \filldraw[magenta!80!black] (2,9) circle (.15) node[above right, yshift=2, fill=white, inner sep=1] {$A$};
+        \filldraw[magenta!80!black] (8,6) circle (.15) node[above right, xshift=2, fill=white, inner sep=1] {$B$};
+        \draw[black,->, >=stealth'] (8,6)--(6.5,6);
+        \draw[black,->, >=stealth'] (6.5,6) -- (4.5,6) node[below, xshift=2mm,yshift=-1mm,fill=white, inner sep=1]{$\Delta t = -12$};
+        \draw[black,->, >=stealth'] (4.5,6) -- (2,6)  -- (2,7.5) node[left, xshift=-2mm, yshift=-1mm, fill=white, inner sep=1]{$\Delta V = 6$};
+        \draw[black,->, >=stealth'] (2,7.5)--(2,9);
+        \end{tikzpicture}]]>
+        </latex-image></image></sidebyside></li>
+    <li>What does the slope tell you about the value of the machine?</li>
+    <li>Compute the slope of the line by moving from point <m>B</m> to point <m>A</m>.</li>
+</ol></p></li>
+
+<li><p>Find the slope of each line segment. Verify that you get the same answer if you move in the opposite direction. (Each square counts for one unit.)</p>
+<p><ol marker="a." cols="2">
+    <li><image xml:id="acbt-3-3-2-2" width="40%"><description>grid with line</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture} [scale=.4]
+            \coordinate (O) at (0,0);
+            \draw[cyan] (0,0) grid (4,7);
+            \draw[very thick, magenta!80!black] (1,6)--(3,1);
+            \filldraw[magenta!80!black] (1,6) circle (.15) node[below left,yshift=-2, fill=white, inner sep=1] {$A$};
+            \filldraw[magenta!80!black] (3,1) circle (.15) node[left, xshift=-4, fill=white, inner sep=1] {$B$};                
+            \end{tikzpicture}]]>
+            </latex-image></image></li>
+    <li><image xml:id="act-3-3-2-2c" width="65%"><description>grid with segment</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.4]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (0,0) grid (6,6);
+        \draw[very thick, magenta!80!black] (1,5)--(5,1);
+        \filldraw[magenta!80!black] (1,5) circle (.15) node[above left,xshift=-1,yshift=3, fill=white, inner sep=1] {$S$};
+        \filldraw[magenta!80!black] (5,1) circle (.15) node[right, xshift=4, fill=white, inner sep=1] {$T$};       \end{tikzpicture}]]>
+        </latex-image></image></li>
+    <li><image width="90%" xml:id="act-3-3-2-2a"><description>grid with segment</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.25]
+        \coordinate (O) at (0,0);
+        \draw[cyan] (0,0) grid (14,5);
+        \draw[very thick, magenta!80!black] (1,1)--(13,4);
+        \filldraw[magenta!80!black] (1,1) circle (.15) node[above,yshift=2, fill=white, inner sep=1] {$P$};
+        \filldraw[magenta!80!black] (13,4) circle (.15) node[below, yshift=-2, fill=white, inner sep=1] {$Q$};        \end{tikzpicture}]]>
+        </latex-image></image></li>
+</ol></p></li>
+</ol></p>
+
+<assemblage><p>It doesn't matter which direction we move along a line to compute its slope; the answer will be the same.</p></assemblage>
+</activity>
+
+<activity><title>Computing Slopes</title>
+    <idx><h>slope</h><h>compute</h></idx>
+
+<p>How do we know which two points to choose when we want to compute the slope of a line? It turns out that any two points on the line will do.</p>
+
+<p><ol marker="1.">
+<li><p>Calculate the slope of the line <m>~y=\dfrac{2}{3}x-2~</m> shown in the figure:</p>
+    <image xml:id="act-3-3-3-1" width="55%"><description>line with labeled points</description><latex-image>
+                <![CDATA[
+                \begin{tikzpicture} [scale=.4]
+                \coordinate (O) at (0,0);
+                \draw[cyan] (-5,-6) grid (10,6);
+                \draw[black,thick, ->, >=stealth'] (-5,0)--(11.,0) node[right]{$x$};
+                \draw[black,thick, ->, >=stealth'] (0,-6)--(0,7.) node[left, xshift=1]{$y$};
+                \foreach \x in  {-5,5,10} {
+                 \draw[cyan, very thick] (\x,-6) --++(0,12);
+                 \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+                }
+                \foreach \y in  {5,-5} {
+                 \draw[cyan, very thick] (-5,\y) --++(15,0);
+                 \draw[black] (.15,\y) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\y$};
+                }
+                \draw[very thick, magenta!90!black, <->, >=stealth'] (-5,-16/3)--(10,14/3);
+                \filldraw[magenta!80!black] (-3,-4) circle (.2) node[below right, yshift=-2, fill=white, inner sep=1, text=black] {$P$};
+                \filldraw[magenta!80!black] (0,-2) circle (.2) node[below right, xshift=2, yshift=-2, fill=white, inner sep=1, text=black] {$S$};
+                \filldraw[magenta!80!black] (3,0) circle (.2) node[above left, xshift=-2,yshift=2, fill=white, inner sep=1, text=black] {$Q$};
+                \filldraw[magenta!80!black] (6,2) circle (.2) node[above left, xshift=-2, yshift=2, fill=white, inner sep=1, text=black] {$R$};
+                \draw[black, ->, >=stealth'] (6,2)--(6,.5);
+                \draw[black, ->, >=stealth'] (6,.5)--(6,-2)--(4.5,-2);
+                \draw[black, ->, >=stealth'] (4.5,-2)--(1.9,-2);
+                \draw[black, ->, >=stealth'] (1.9,-2)--(0,-2);
+                \draw[black, ->, >=stealth'] (-3,-4)--(-3,-1.5);
+                \draw[black, ->, >=stealth'] (-3,-1.5)--(-3,0)--(-1.5,0);
+                \draw[black, ->, >=stealth'] (-1.5,0)--(1.1,0);
+                \draw[black, ->, >=stealth'] (1.1,0)--(3,0);    \end{tikzpicture}]]>
+                </latex-image></image>
+<p><ol marker="a.">
+    <li>By using the points <m>P(-3,-4)</m> and <m>Q(3,0)</m>.</li>
+    <li>By using the points <m>R(6,2)</m> and <m>S(0,-2)</m>.</li>
+    <li>Do you get the same value for the slope in each case?</li>
+</ol></p></li>
+
+<li><p><ol marker="a.">
+    <li><sidebyside widths="45% 50%" valigns="middle middle">
+        <stack><p>Graph the line 
+            <md><mrow>4x-2y=8</mrow></md>    
+        by finding the <m>x</m>- and <m>y</m>-intercepts.</p><p></p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row>
+                        <cell bottom="minor"><m>x</m></cell>
+                        <cell bottom="minor"><m>y</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+        </tabular></stack>
+        <image source="photos/fig-2-3-1"><description>grid</description></image></sidebyside></li>
+    <li><p>Compute the slope of the line using the <m>x</m>- and <m>y</m>-intercepts.
+        <md><mrow>m = \dfrac{\Delta y}{\Delta x} = \hphantom{0000}</mrow></md></p></li>
+    <li><p>Compute the slope of the line using the points <m>(4,4)</m> and <m>(1,-2)</m>
+        <md><mrow>m = \dfrac{\Delta y}{\Delta x} = \hphantom{0000}</mrow></md></p></li>
+    </ol></p></li>
+</ol></p>
+
+<assemblage><p>No matter which two points we use to calculate the slope of a line, we will always get the same result.</p></assemblage>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Computing the slope of a line</li>
+    <li>Interpreting the slope as a rate of change</li></ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>In Activity 1, which of the four graphs was not a straight line?</li>
+    <li>What does the sign of the slope tell you about the graph?</li>
+    <li>Delbert says that if both intercepts of a line are positive, then the slope is positive also. Is he correct?  Explain why or why not.</li></ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<p><ol marker="A.">
+
+<li><introduction><p>Use the intercepts to find the slope of the line. Illustrate the slope on the graph.</p></introduction>
+
+<p><ol marker="1." cols="2">
+<li><p><m>5x-3y=15</m></p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">      
+                    <row>
+                        <cell bottom="minor"><m>~x~</m></cell>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row><cell bottom="minor"><m>~y~</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+        </tabular>
+        <p><m>m=\hphantom{0000}</m></p>
+    <image width="100%" source="photos/stangrid8"><description>grid</description></image></li>
+
+<li><p><m>y=\dfrac{3}{4}x-6</m></p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">      
+                    <row>
+                        <cell bottom="minor"><m>~x~</m></cell>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row><cell bottom="minor"><m>~y~</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+        </tabular>
+        <p><m>m=\hphantom{0000}</m></p>
+    <image source="photos/stangrid8" width="100%"><description>grid</description></image></li>
+
+<li><p><m>\dfrac{x}{6}+\dfrac{y}{8} = 1</m></p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">      
+                    <row>
+                        <cell bottom="minor"><m>~x~</m></cell>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row><cell bottom="minor"><m>~y~</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+        </tabular>
+        <p><m>m=\hphantom{0000}</m></p>
+    <image width="100%" source="photos/stangrid8"><description>grid</description></image></li>
+
+<li><p><m>x+\dfrac{2}{3}y+4=0</m></p>
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">      
+                    <row>
+                        <cell bottom="minor"><m>~x~</m></cell>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row><cell bottom="minor"><m>~y~</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>0</m></cell></row>
+        </tabular>
+        <p><m>m=\hphantom{0000}</m></p>
+    <image width="100%" source="photos/stangrid8"><description>grid</description></image></li>
+</ol></p></li>
+
+<li><introduction><p>Plot the points and find the slope of the line between them.</p></introduction>
+
+<p><ol marker="1.">
+<li><p><m>(-2,8)</m> and <m>(4,-6)</m></p>
+    <image source="photos/stangrid8" width="100%"><description>grid</description></image>
+    <p><m>m=\hphantom{0000}</m></p></li>
+
+<li><p><m>(-7,-3)</m> and <m>(5,9)</m></p>
+    <image source="photos/stangrid8" width="100%"><description>grid</description></image>
+    <p><m>m=\hphantom{0000}</m></p></li>
+</ol></p></li>
+
+<li><p><ol marker="1.">
+<li><p>If <m>m=\dfrac{4}{5}</m>, and <m>\Delta x = -6</m>, find <m>\Delta y</m>.</p></li>
+
+<li><p>If <m>m=\dfrac{-3}{2}</m>, and <m>\Delta y = 6</m>, find <m>\Delta x</m>.</p></li>
+</ol></p></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p><ol marker="A."> 
+    <li><p><ol marker= "1." cols="2">
+        <li><m>m=\dfrac{5}{3}</m></li>
+        <li><m>m=\dfrac{3}{4}</m></li>
+        <li><m>m=\dfrac{-4}{3}</m></li>
+        <li><m>m=\dfrac{-3}{2}</m></li>
+    </ol></p></li>
+    <li><p><ol marker= "1." cols="2">
+        <li><m>m=\dfrac{-7}{3}</m></li>
+        <li><m>m=1</m></li>
+    </ol></p></li>
+    <li><p><ol marker= "1." cols="2">
+        <li><m>\Delta y = \dfrac{-24}{5}</m></li>
+        <li><m>\Delta x=-4</m></li>
+    </ol></p></li>
+</ol></p>
+</activity>
+</subsection>
+
+<xi:include href="./hmwk-3-3.xml" />
+</section>

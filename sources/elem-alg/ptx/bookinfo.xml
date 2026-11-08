@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+
+<!--********************************************************************
+
+
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2019/01/01)                     -->
+<!--                                               -->
+<!--   Elementary Algebra   -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+<document-id>elemalg</document-id>
+<blurb shelf="Mathematics">
+      Elementary Algebra: Equations and Graphs was written with two goals in mind: to present the skills of algebra in the context of modeling and problem solving, and to engage students in an activity-based course.
+    </blurb>
+
+<!--<brandlogo url="https://yoshiwarabooks.org/" source="photos/cover.png" />-->
+<directories
+  external="../ext" generated="../gen"
+/>
+
+
+<!-- rename blocks -->
+        <rename element="warning">Caution</rename>
+        <rename element="question">Exercise</rename>
+        <rename element="exercise-inline">QuickCheck</rename>
+        <rename element="problem">Skills Warm-Up</rename>
+        
+        
+<!-- <rename element="chapter" lang="en-US">Lesson</rename> -->
+
+
+    <initialism>Elementary Algebra</initialism>
+
+<!--<docinfo>-->
+<math-package latex-name="cancel" mathjax-name="cancel"/>
+
+<latex-image-preamble>
+  \usepackage{tikz}
+  \usetikzlibrary{arrows}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{calc,intersections,through,backgrounds}
+</latex-image-preamble>
+
+
+
+   <macros>
+        \newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+        \newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+        \newcommand{\bluetext}[1]{\color{skyblue}{#1}} <!-- comments in aligned equations -->
+        \delimitershortfall-1sp
+        \newcommand\abs[1]{\left|#1\right|}
+        \newcommand\degree[0]{^{\circ}}
+        \newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+
+   </macros>
+
+
+
+</docinfo>

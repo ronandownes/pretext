@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="TheVertex"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>The Vertex</title>
+
+<introduction>
+    <investigation><title>Revenue from Theater Tickets</title>
+ 
+<p>The local theater group sold tickets to its opening-night performance for $5 and drew an audience of 100 people. The next night they reduced the ticket price by $0.25 and 10 more people attended; that is, 110 people bought tickets at $4.75 apiece. In fact, for each $0.25 reduction in ticket price, 10 additional tickets can be sold.</p>
+
+<p><ol marker="1.">
+<li><p>Fill in the table</p>
+
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">             
+                    <row>
+                        <cell bottom="minor">No. of price reductions</cell>
+                        <cell bottom="minor">Price of ticket</cell>
+                        <cell bottom="minor">No. of tickets sold</cell>
+                        <cell bottom="minor">Total revenue</cell></row>
+                    <row>
+                        <cell bottom="minor"><m>0</m></cell>
+                        <cell bottom="minor"><m>5.00</m></cell>
+                        <cell bottom="minor"><m>100</m></cell>
+                        <cell bottom="minor"><m>500.00</m></cell></row>
+                    <row> 
+                        <cell bottom="minor"><m>1</m></cell>
+                        <cell bottom="minor"><m>4.75</m></cell>
+                        <cell bottom="minor"><m>110</m></cell>
+                        <cell bottom="minor"><m>522.50</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>2</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>3</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>4</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>5</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>6</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>8</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    <row>
+                        <cell bottom="minor"><m>10</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell>
+                        <cell bottom="minor"><m>\hphantom{0000}</m></cell></row>
+                    </tabular></li>
+
+<li><p>On the grid below, plot <em>Total revenue</em> on the vertical axis versus <em>Number of price reductions</em> on the horizontal axis. Use the data from your table.</p>
+    <image width="50%" source="images/fig-grid-for-theatre-tickets"><description>graph</description></image></li>
+
+<li><p>Let <m>x</m> represent the <em>number of price reductions</em>, as in the first column of your table. Write algebraic expressions in terms of <m>x</m> for</p>
+
+<p>The <em>price of a ticket</em> after <m>x</m> price reductions:
+    <me>\text{Price} = </me></p>
+<p>The <em>number of tickets</em> sold at that price:
+    <me>\text{Number} = </me></p>
+<p>The <em>total revenue</em> from ticket sales:
+        <me>\text{Revenue} = </me></p></li>
+
+<li><p>Enter your expressions for the price of a ticket, the number of tickets sold, and the total revenue into the calculator as <m>Y_1, ~Y_2,</m> and <m>Y_3</m>. Use the Table feature to verify that your algebraic expressions agree with your table from part (1).</p></li>
+
+<li><p>Use your calculator to graph your expression for total revenue in terms of <m>x</m>. Use your table to choose appropriate window settings that show the high point of the graph and both <m>x</m>-intercepts.</p></li>
+
+<li><p>What is the maximum revenue possible from ticket sales? What price should the theater group charge for a ticket to generate that revenue? How many tickets will the group sell at that price?</p></li>
+
+</ol></p></investigation>
+</introduction>
+
+<subsection><title>Finding the Vertex</title>
+
+<p>The vertex of a parabola <m>~y=ax^2+bx~</m> is an interesting point. It is the highest or lowest point on the parabola, and it "anchors" the parabola's position in the plane. As we saw in the Investigation, the vertex may represent the maximum or minimum possible value for a variable, so it has important implications for applications. Thus, it will be very useful to have a way to find the vertex easily.</p> 
+
+<p>In <xref ref="VertexFormula" text="custom"> Section 3.3.5 </xref> we saw that the vertex of the graph of <m>~y=ax^2+bx~</m> has <m>x</m>-coordinate given by
+    <me>x_v=\dfrac{-b}{2a}</me>
+Now we'll see that the same formula holds for any parabola.  Use your calculator to graph the two parabolas
+    <md><mrow>y \amp = 2x^2+8x</mrow>
+        <mrow>y \amp = 2x^2+8x+6</mrow></md> 
+ in the window  
+    <md><mrow>\text{Xmin}=-6~~~~\text{Ymin}=-6</mrow>
+        <mrow>\text{Xmax}=4~~~~~\text{Ymax}=10</mrow></md></p>
+<sidebyside widths="60% 30%" margins="0% 5%" valigns="middle middle">
+     <p>The graphs are shown at right. Now compare the two graphs. You should notice that:
+        <ul>
+            <li>The second graph is identical to the first, except shifted upward by 6 units.</li>
+            <li>For both graphs, the <m>x</m>-coordinate of the vertex is <m>x_v=-2</m>.</li>
+        </ul></p> 
+    <image xml:id="fig-2-parabolas-symmetry-line">
+        <description>two parabolas with same symmetry line</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [xscale=.6, yscale=.3]
+        \draw[cyan] (-6,-10) grid[ystep=2] (2,10);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(2.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-10)--(0,10.6) node[above]{$y$};
+        \foreach \x in  {-4,-2,2} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x in  {-8,-4,4,8} {
+         \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-5:1},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{2*(\x)^2 +8* \x });
+        \draw[samples=65,domain={-sqrt(6)-2:sqrt(6)-2},smooth,variable=\x,blue,very thick, <->, >=stealth'] plot ({\x},{2*(\x)^2 +8* \x+6 });
+        \end{tikzpicture}]]>
+    </latex-image></image></sidebyside>
+<p>We see that the <m>x</m>-coordinate of the vertex is not affected by an upward shift. The formula for the <m>x</m>-coordinate of the vertex still holds.</p> 
+
+<assemblage xml:id="Summary-vertex-of-parabola"><title>Vertex of a Parabola</title><idx><h>parabola</h><h>vertex of</h></idx><idx><h>vertex of a parabola</h></idx>
+    <p>For the graph of  <m>~~y=ax^2+bx+c=0,~~</m> the <m>x</m>-coordinate of the vertex is 
+        <me>\blert{x_v=\dfrac{-b}{2a}}</me></p></assemblage>
+
+<example xml:id="example-parabola-vertex2"><statement><p> Find the vertex of the graph of <m>f(x) = -2x^2 + x + 1</m>.</p>
+</statement>
+
+<solution><p>For this equation, <m>a = -2</m>, <m>b = 1</m>, and <m>c = 1</m>. The <m>x</m>-coordinate of the vertex is given by
+            <me>x_v =\frac{-b}{2a}=\frac{-1}{2(-2)}=\frac{1}{4}</me>
+To find the <m>y</m>-coordinate of the vertex, we substitute <m>x = \alert{\dfrac{1}{4}}</m> into the equation. We can do this by hand to find
+        <md><mrow>y_v \amp= -2\left(\alert{\frac{1}{4}}\right)^2+ \alert{\frac{1}{4}}+1</mrow>
+            <mrow>\amp= -2\left(\frac{1}{16}\right)+ \frac{4}{16}+\frac{16}{16}=\frac{18}{16}=\frac{9}{8}</mrow></md>
+So the coordinates of the vertex are <m>\left(\dfrac{1}{4},\dfrac{9}{8}\right)</m>. Alternatively, we can use the calculator to evaluate <m>-2x^2 + x + 1</m> for <m>x = 0.25</m>. We enter</p>
+    <p><m>\qquad\qquad</m> <kbd>(-)</kbd> <m>2</m> <kbd name="times"/> <m>0.25</m> <kbd name="squared"/> <kbd name="plus"/> <m>0.25</m> <kbd name="plus"/> <m>1</m></p>
+<p>and press <kbd>ENTER</kbd>. The calculator returns the <m>y</m>-value <m>1.125</m>. Thus, the vertex is the point <m>(0.25, 1.125)</m>, which is the decimal equivalent of <m>\left(\dfrac{1}{4},\dfrac{9}{8}\right)</m>.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+    <webwork><pg-code>
+            Context("Point");
+            $answer= Point("(1,1)");
+            $maxmin = PopUp(
+            ["?","maximum","minimum"],
+            2, );
+        </pg-code>
+<statement><p>Find the vertex of the graph of <m>y = 3x^2 - 6x + 4</m>.</p>
+            <p><var name="$answer" width="5"/> </p>
+    <p>Decide whether the vertex is a maximum point or a minimum point of the graph.<var name="$maxmin" form="popup"/> </p>
+        </statement>
+<solution><p><m>(1, 1)</m>, minimum</p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+<statement><p><ol marker="a.">
+    <li><p>Find the vertex of the graph of <m>y = 3x^2 - 6x + 4</m>.</p></li>
+    <li><p>Decide whether the vertex is a maximum point or a minimum point of the graph.</p>
+        <p>Hint: Does the parabola open up or down?</p></li>
+</ol></p></statement>
+<solution><p><ol marker="a." cols="2">
+    <li><p><m>(1, 1)</m></p></li>
+    <li><p> minimum</p></li>
+</ol></p></solution></exercise>
+
+<p>Once we know the vertex of a parabola, we can make a quick sketch of the graph.</p>
+
+<example><statement><p>Sketch a graph of <m>~y=x^2+3x+1</m></p></statement>
+
+<solution><p>The vertex of the graph is given by
+    <md><mrow>x_v \amp = \dfrac{-b}{2a} = \dfrac{-3}{2(1)} = -1.5</mrow>
+        <mrow>y_v \amp = (-1.5)^2+3(-1.5)+1 =-1.25</mrow></md>
+The vertex is the point <m>(-1.5,-1.25)</m>.</p>
+
+<p>We set <m>x=0</m> to find the <m>y</m>-intercept, <m>(0,1)</m>. Now, the axis of symmetry of the parabola is the vertical line that passes through its vertex. That line is <m>x=-1.5</m>, so the <m>y</m>-intercept lies 1.5 units to the right of the axis. There must be another point on the parabola with the same <m>y</m>-coordinate as the intercept but 1.5 units to the left of the axis. This point is <m>(-3,1)</m>.</p>
+
+<p>By plotting the vertex, the <m>y</m>-intercept, and its symmetric point, we can make a quick sketch of the parabola, as shown below.</p>
+    <image width="40%" xml:id="fig-xsqd-plus-3x-plus-1"><description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-6,-3) grid (6,6);
+        \draw[black,thick, ->, >=stealth'] (-6,0)--(6.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-3)--(0,6.6) node[above]{$y$};
+        \foreach \x in  {-5,5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x in  {5} {
+         \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-sqrt(29)/2-3/2:sqrt(29)/2-3/2},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 +3* \x+1 });
+        \filldraw[red](-3/2,-5/4) circle (.12) node[below , yshift=-.2cm,fill=white, inner sep=1, text=black]{$(-1.5,-1.25)$};
+        \filldraw[red](0,1) circle (.12) node[right, xshift=.2cm,fill=white, inner sep=1, text=black]{$(0,1)$};
+        \filldraw[red](-3,1) circle (.12) node[left, xshift=-.2cm,fill=white, inner sep=1, text=black]{$(-3,1)$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+<p>If we need more accuracy in our graph, we can find and plot more points, including the <m>x</m>-intercepts. </p>
+
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review finding the <m>x</m>-intercepts of a parabola, see <xref ref="ParabolaX-Ints" text="custom"> Section 3.2.2 </xref>.</p></aside>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        Context("Point");
+        $answer = Point("(2.5,-3.25)");
+    </pg-code>
+    <statement>
+        <p>Find the vertex and sketch a graph of <m>y=x^2-5x+3</m></p>
+        <p>Vertex: <var name="$answer" width="8"/> </p>
+    </statement>
+    <solution><p><m>(2.5,-3.25)</m>; a graph is below.</p></solution>
+</webwork>
+<conclusion>
+    <p><m>y=x^2-5x+3</m>:</p>
+    <image width="35%" xml:id="fig-xsqd-minus-5x-plus-3w"><description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-3,-5) grid (8,10);
+        \draw[black,thick, ->, >=stealth'] (-3,0)--(8.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x in  {5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x in  {-5,5,10} {
+         \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-sqrt(53)/2+5/2:sqrt(53)/2+5/2},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 -5* \x+3 });
+        \filldraw[red](2.5,-3.25) circle (.12) node[below , yshift=-.2cm,fill=white, inner sep=1, text=black]{$(2.5,-3.25)$};
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Find the vertex and sketch a graph of <m>y=x^2-5x+3</m></p></statement>
+    <solution><p><m>(2.5,-3.25)</m></p>
+<image width="35%" xml:id="fig-xsqd-minus-5x-plus-3"><description>parabola</description>
+        <latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[cyan] (-3,-5) grid (8,10);
+        \draw[black,thick, ->, >=stealth'] (-3,0)--(8.5,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,-5)--(0,10.6) node[above]{$y$};
+        \foreach \x in  {5} {
+         \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \foreach \x in  {-5,5,10} {
+         \draw[black] (.3,\x) --++(-.6,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+        }
+        \draw[samples=65,domain={-sqrt(53)/2+5/2:sqrt(53)/2+5/2},smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(\x)^2 -5* \x+3 });
+        \filldraw[red](2.5,-3.25) circle (.12) node[below , yshift=-.2cm,fill=white, inner sep=1, text=black]{$(2.5,-3.25)$};
+        \end{tikzpicture}]]>
+        </latex-image></image></solution></exercise>
+</subsection>
+
+<subsection><title>Maximum or Minimum Values</title>
+
+<p>Many quadratic models arise as the product of two variables, one of which increases while the other decreases. For example, in <xref ref="tkSolveLinIneq" text="custom"> the Investigation for Section 3.3 </xref> we looked at the areas of different rectangles with the same perimeter. The area of a rectangle is the product of its length and its width, or <m>A=lw</m>.  If we require that the rectangle have a certain perimeter, then as we increase its length, we must also decrease its width.</p>  
+    
+<p>Another example is the formula for the revenue <idx>revenue</idx> from sales of an item:
+    <me>\blert{\text{Revenue} = \text{(price of one item)} \times \text{(number of items sold)}}</me>
+Usually, when the price of an item increases, the number of items sold decreases.</p>
+
+<p>Finding the maximum or minimum value for a variable expression is a common problem in applications. For example, if you own a company that manufactures blue jeans, you might like to know how much to charge for your jeans in order to maximize your revenue. As you increase the price of the jeans, your revenue may increase for a while. But if you charge too much for the jeans, consumers will not buy as many pairs, and your revenue may actually start to decrease. Is there some optimum price you should charge for a pair of jeans in order to achieve the greatest revenue?</p>
+
+<example xml:id="example-maximum-revenue"><statement><p>Late Nite Blues finds that it can sell <m>600 - 15x</m> pairs of jeans per week if it charges <m>x</m> dollars per pair. (Notice that as the price increases, the number of pairs of jeans sold decreases.)
+        <ol marker="a.">
+            <li><p>Write an equation for the revenue as a function of the price of a pair of jeans.</p></li>
+            <li><p>Graph the function.</p></li>
+            <li><p>How much should Late Nite Blues charge for a pair of jeans in order to maximize its revenue?</p></li>
+        </ol></p></statement>
+<solution><p><ol marker="a.">
+        <li><p>Using the formula for revenue stated above, we find
+                <md><mrow>\text{Revenue} \amp= (\text{price of one item})(\text{number of items sold})</mrow>
+                    <mrow>R \amp = x(600 - 15x)</mrow>
+                    <mrow>R \amp = 600x - 15x^2</mrow></md></p></li>
+        <li><p>We recognize the equation as quadratic, so the graph is a parabola. You can use your calculator to verify the graph below.</p>
+            <image width="45%" source="images/fig-revenue-jeans-sales"><description>graph showing revenue from sales of jeans</description></image></li>
+        <li><p>As you can see from the graph, the maximum value of <m>R</m> occurs at the vertex of the parabola. Thus,
+                <md><mrow>x_v\amp=\frac{-b}{2a}=\frac{-600}{2(-15)}=20</mrow>
+                    <mrow>y_v\amp=600(\alert{20}) - 15(\alert{20})^2 = 6000</mrow></md>
+        The revenue takes on its maximum value when <m>x = 20</m>, and the maximum value is <m>R = 6000</m>. This means that Late Nite Blues should charge $20 for a pair of jeans in order to maximize revenue at $6000 a week.</p></li></ol></p>
+    </solution></example>
+
+<note><p>If the equation relating two variables is quadratic, then the maximum or minimum value is easy to find: It is the value at the vertex. If the parabola opens downward, as in <xref ref="example-maximum-revenue" text="type-global"/>, there is a maximum value at the vertex. If the parabola opens upward, there is a minimum value at the vertex.<idx>maximum value</idx><idx>minimum value</idx><idx><h>maximum value</h><seealso>parabola</seealso></idx><idx><h>minimum value</h><seealso>parabola</seealso></idx>
+<idx><h>parabola</h><h>maximum value</h></idx><idx><h>quadratic equation</h><h>maximum value</h></idx>
+<idx><h>parabola</h><h>minimum value</h></idx><idx><h>quadratic equation</h><h>minimum value</h></idx></p></note>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>       
+            $lint = RadioButtons(
+              ["Set \(y=0\) and solve for \(x\).",
+              "Factor the expression.",
+              "Use the quadratic formula.",
+              "Find the vertex."],
+              3, 
+            );            
+        </pg-code>
+    <statement>
+        <p>To find the maximum or minimum value of a quadratic expression, we should:</p>
+        <p><var name="$lint" form="buttons"/></p>      
+    </statement>
+    <solution><p>Find the vertex.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement>
+        <p>To find the maximum or minimum value of a quadratic expression, we should:</p>
+    <p><ol marker="a." cols="2">
+        <li><p>Set <m>y=0</m> and solve for <m>x</m>.</p></li>
+        <li><p>Factor the expression.</p></li>
+        <li><p>Use the quadratic formula.</p></li>
+        <li><p>Find the vertex.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 3</title>
+    <webwork><pg-code>
+            $f = Formula("1200*x-80*x**2");
+            $R = Compute("4500");
+            $p = sprintf("%0.2f", 7.50);
+        </pg-code>
+        <statement><p>The Metro Rail service sells <m>1200 - 80x</m> tickets each day when it charges <m>x</m> dollars per ticket.</p>
+            <p><ol marker="a.">
+            <li><p>Write an equation for the revenue, <m>R</m>, as a function of the price of a ticket.</p>
+            <p><m>R=</m><var name="$f" width="10"/> </p></li>
+            <li><p>What ticket price will return the maximum revenue?</p>
+            <p>$<var name="$p" width="3"/> </p> </li>
+            <li><p>What is the maximum revenue?</p>
+            <p>$<var name="$R" width="5"/> </p></li></ol></p>
+        </statement>
+        <solution><p><ol marker="a." cols="2">
+                <li><p><m>R = 1200x - 80x^2</m></p></li>
+                <li><p>$<m>7.50 </m></p></li>
+                <li><p> $<m>4500</m></p></li></ol></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title>
+<statement><p>The Metro Rail service sells <m>1200 - 80x</m> tickets each day when it charges <m>x</m> dollars per ticket.</p>
+            <p><ol marker="a.">
+            <li><p>Write an equation for the revenue, <m>R</m>, as a function of the price of a ticket.</p></li>
+            <li><p>What ticket price will return the maximum revenue?</p></li>
+        </ol></p></statement>
+    <solution><p><ol marker="a." cols="2">
+                <li><p><m>R = 1200x - 80x^2</m></p></li>
+                <li><p>$<m>7.50 </m>, $<m>4500</m></p></li>
+        </ol></p></solution></exercise>
+</subsection>
+
+<subsection><title>The Vertex Form for a Parabola</title><idx><h>parabola</h><h>vertex form</h></idx><idx><h>vertex form</h><h>for a parabola</h></idx><idx><h>quadratic equation</h><h>vertex form</h></idx>
+
+<p>Because the vertex is such a useful tool, we introduce a new form for a quadratic equation. Consider the equation
+    <me>y = 2(x - 3)^2 - 8</me>
+By expanding the squared expression and collecting like terms, we can rewrite the equation in standard form as
+        <md><mrow>y \amp= 2(x^2 - 6x + 9) - 8</mrow>
+            <mrow>y \amp = 2x^2 - 12x + 10</mrow></md></p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>To review multiplying binomials, see <xref ref="tkProdBin" text="custom"> Section 4.2.2 </xref> of the Toolkit.</p></aside>
+<sidebyside  widths="50% 30%" margins="0% 10%"><p>The vertex of this parabola is
+        <md><mrow>x_v \amp= \frac{-(-12)}{2(2)}=3</mrow>
+            <mrow>y_v \amp = 2(3)^2 - 12(3) + 10=-8</mrow></md>
+and its graph is shown at right.</p>
+    <image source="images/fig-vertex-form"><description>parabola
+    with vertex labeled</description></image></sidebyside>
+
+<p>Now notice that the coordinates of the vertex, <m>(3,-8)</m>, are apparent in the original equation; we don’t need to do any computation to find the vertex.
+        <md><mrow>y = 2(x - \amp \alert{3})^2 ~~ \alert{- 8}</mrow>
+            <mrow>\amp \alert{x_v} ~~~~~~~~\alert{y_v}</mrow></md>
+This equation is an example of the <term>vertex form</term><idx>vertex form</idx> for a quadratic function.</p>
+
+<assemblage><title>Vertex Form for a Quadratic Equation</title><idx><h>parabola</h><h>vertex form</h></idx><idx><h>vertex form</h><h>for a quadratic equation</h></idx>
+<p>A quadratic equation <m>~y=ax^2+bx+c,~a \not=0,~</m> can be written in the vertex form 
+    <me>\blert{y=a(x-x_v)^2+y_v}</me>
+where the vertex of the graph is <m>~(x_v,y_v)</m>.</p></assemblage>
+
+<example xml:id="example-vertex-form"><statement><p>Find the vertex of the graph of <m>y = -3(x - 4)^2 + 6</m>. Is the vertex a maximum or a minimum point of the graph?</p></statement>
+
+<solution><p>We compare the equation to the vertex form to see that the coordinates of the vertex are <m>(4, 6)</m>. For this equation, <m>a = -3 \lt 0</m>, so the parabola opens downward. The vertex is the maximum point of the graph.</p>
+</solution></example>
+
+<p>To understand why the vertex form works, substitute <m>x_v = \alert{4}</m> into <m>y = -3(x - 4)^2 + 6</m> from <xref ref="example-vertex-form" text="type-global"/> to find
+    <me>y = -3(\alert{4} - 4)^2 + 6 = 6</me>
+which confirms that when <m>x = 4</m>, <m>y = 6</m>. Next, notice that if <m>x</m> is any number except <m>4</m>, the expression <m>-3(x - 4)^2</m> is negative, so <m>y \lt 6</m>. Therefore, <m>6</m> is the maximum value for <m>y</m> on the graph, so <m>(4, 6)</m> is the high point or vertex.</p>
+
+<p>You can also rewrite <m>y = -3(x - 4)^2 + 6</m> in standard form and use the formula <m>x_v = \dfrac{-b}{2a}</m> to confirm that the vertex is the point <m>(4, 6)</m>.</p>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>       
+            $lint = RadioButtons(
+              ["\(y=4(x-2)+3\)",
+              "\(y=4(x-2)^2+3\)",
+              "\(y=4(x+2)^2+3\)",
+              "\(y=4(x-3)^2+2\)"],
+              2, 
+            );            
+        </pg-code>
+    <statement><p>Which of the following is the vertex form for a parabola with vertex <m>(-2,3)</m>?</p>
+        <p><var name="$lint" form="buttons"/></p>      
+    </statement>
+    <solution><p><m>y=4(x+2)^2+3</m></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Which of the following is the vertex form for a parabola with vertex <m>(-2,3)</m>?</p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>y=4(x-2)+3</m></p></li>
+        <li><p><m>y=4(x-2)^2+3</m></p></li>
+        <li><p><m>y=4(x+2)^2+3</m></p></li>
+        <li><p><m>y=4(x-3)^2+2</m></p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 4</title>
+    <webwork><pg-code>
+            Context("Point")->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,   );
+            $v = Point("(-2,5)");
+            $f = Formula("-1/2*x**2-2*x+3");
+        </pg-code>
+        <statement><p><ol marker="a.">
+                <li><p>Find the vertex of the graph of <m>y = 5 - \dfrac{1}{2}(x + 2)^2</m>.</p>
+                <p>Vertex: <var name="$v" width="5"/> </p></li>
+                <li><p>Write the equation of the parabola in standard form.</p>
+                <p><m>y=</m><var name="$f" width="15"/> </p></li></ol></p>
+        </statement>
+        <solution><p><ol marker="a." cols="2">
+                <li><p><m>(-2,5) </m></p></li>
+                <li><p><m>y=-\frac{1}{2}x^2-2x+3 </m></p></li></ol></p>
+        </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p><ol marker="a.">
+                <li><p>Find the vertex of the graph of <m>y = 5 - \dfrac{1}{2}(x + 2)^2</m>.</p></li>
+                <li><p>Write the equation of the parabola in standard form.</p></li>
+            </ol></p></statement>
+    <solution><p><ol marker="a." cols="2">
+                <li><p><m>(-2,5) </m></p></li>
+                <li><p><m>y=-\frac{1}{2}x^2-2x+3 </m></p></li>
+    </ol></p></solution></exercise>
+
+<p>Any quadratic equation in vertex form can be written in standard form by expanding, and any quadratic equation in standard form can be put into vertex form by completing the square. <idx>completing the square</idx></p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>To review completing the square, see <xref ref="SolvebyCompletingSquare" text="custom"> Section 3.4.2 </xref>.</p></aside>
+
+<example xml:id="example-write-in-vertex-form"><statement><p>Write the equation <m>y = 3x^2 - 6x - 1</m> in vertex form and find the vertex of its graph.</p></statement>
+
+<solution><p>We factor the lead coefficient, <m>3</m>, from the variable terms, leaving a space to complete the square.
+        <me>y = 3(x^2 - 2x <fillin characters="6" /> ) - 1</me>
+Next, we complete the square inside parentheses. Take half the coefficient of <m>x</m> and square the result: 
+        <me>p = \frac{1}{2}(-2) = -1,~~\text{and}~~ p^2 = (-1)^2 = 1</me> 
+We must add <m>1</m> to complete the square. However, we are really adding <m>3(1)</m> to the right side of the equation, so we must also subtract <m>3</m> to compensate:
+        <me>y = 3(x^2 - 2x \alert{{}+{}1}) - 1\,\alert{-\,3}</me>
+The expression inside parentheses is now a perfect square, and the vertex form is
+        <me>y = 3(x - 1)^2 - 4</me>
+The vertex of the parabola is <m>(1,-4)</m>.</p></solution></example>
+
+<exercise component="webwork"><title>Practice 5</title>
+    <webwork><pg-code>
+            Context("Point");
+            $a = Compute("2");
+            $h = Compute("-3");
+            $k = Compute("-5");
+            $v = Point("(-3,-5)");
+        </pg-code>
+    <statement>
+            <p>Write the equation <m>y = 2x^2 + 12x + 13</m> in vertex form, and find the vertex of its graph.</p>
+            <p>The vertex form is <m>y=a(x-x_v)^2+y_v</m>, where</p>
+            <p><m>a=</m><var name="$a" width="2"/> </p>
+            <p><m>x_v=</m><var name="$h" width="2"/> </p>
+            <p><m>y_v=</m><var name="$k" width="2"/> </p>
+            <p>The vertex of the graph is <var name="$v" width="5"/> </p>
+    </statement>
+        <hint><p><ol marker="1.">
+                <li><p>Factor <m>2</m> from the variable terms.</p></li>
+                <li><p>Complete the square inside parentheses.</p></li>
+                <li><p>Subtract <m>2p^2</m> outside parentheses.</p></li>
+                <li><p>Write the vertex form.</p></li>
+            </ol></p></hint>
+    <solution><p><m>y = 2(x + 3)^2 - 5</m>;   <m>(-3,-5)</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>Write the equation <m>y = 2x^2 + 12x + 13</m> in vertex form, and find the vertex of its graph.</p>
+            <p>Hint:<ol marker="1.">
+                <li><p>Factor <m>2</m> from the variable terms.</p></li>
+                <li><p>Complete the square inside parentheses.</p></li>
+                <li><p>Subtract <m>2p^2</m> outside parentheses.</p></li>
+                <li><p>Write the vertex form.</p></li>
+            </ol></p></statement>
+    <solution><p><m>y = 2(x + 3)^2 - 5</m>;   <m>(-3,-5)</m></p></solution></exercise>
+</subsection>
+
+<subsection><title>Using the Vertex Form</title>
+
+<p>We can make a quick sketch of a parabola whose equation is given in vertex form.</p>
+
+<example><statement><p>Graph the equation <m>~y=\dfrac{-1}{2}(x+3)^2-2</m></p></statement>
+    
+<solution><p>The vertex is the point <m>(-3,2)</m>.  We can find the <m>y</m>-intercept by setting <m>x=0</m>.
+            <me>y = \dfrac{-1}{2}(\alert{0}+3)^2-2 = \dfrac{-9}{2}-2 = -6\dfrac{1}{2}</me>
+The <m>y</m>-intercept is the point <m>\left(0, -6\dfrac{1}{2}\right)</m>. The axis of symmetry is the vertical line <m>x=-3</m>, and there is a symmetric point equidistant from the axis, namely <m>\left(-6, -6\dfrac{1}{2}\right)</m>. We plot these three points and sketch the parabola through them.</p>
+<aside><p><m>\alert{\text{[TK]}}~~</m>To see more examples of sketching from the vertex form, see <xref ref="tkVertForm" text="custom"> Section 4.2.1 </xref> of the Toolkit.</p></aside>
+
+    <image width="30%" xml:id="y-eq-neg-half-sq-of-x-plus3-minus2"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.6]
+            \draw[cyan, thin] (-7,-8) grid (1,1);
+            \draw[black,very thick, ->, >=stealth'] (-7,0)--(1.6,0) node[right]{$x$};
+            \draw[black,very thick, ->, >=stealth'] (0,-8)--(0,1.6) node[above]{$y$};
+            \foreach \x  in  {-6,-4,-2} {
+             \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \foreach \x  in  {-8,-6,-4,-2} {
+             \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \filldraw[magenta!90!black] (-3,-2) circle (.15);
+            \filldraw[magenta!90!black] (0,-13/2) circle (.15);
+            \filldraw[magenta!90!black] (-6,-13/2) circle (.15);
+            \draw[samples=65,domain={-sqrt(12)-3:sqrt(12)-3},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, { -1/2*(\x+3)^2-2 });
+            \end{tikzpicture}]]>
+            </latex-image></image></solution></example>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Find the vertex, the <m>y</m>-intercept, and the <m>x</m>-intercepts of <m>~y=(x-2)^2-5</m>, and sketch its graph.</p></statement>
+    
+<answer><image width="35%" xml:id="y-eq-sq-of-x-minus2-minus5"><description>parabola</description><latex-image>
+            <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+            <![CDATA[\tikzset{%
+            }
+            \begin{tikzpicture} [scale=.3]
+            \draw[cyan, thin] (-10,-10) grid (10,10);
+            \draw[black,very thick, ->, >=stealth'] (-10,0)--(11.6,0) node[right]{$x$};
+            \draw[black,very thick, ->, >=stealth'] (0,-10)--(0,11.6) node[left, xshift=2]{$y$};
+            \foreach \x in  {-5, 5, -10, 10} {
+             \draw[cyan, very thick] (\x,-10) --++(0,20);
+             \draw[cyan, very thick] (-10,\x) --++(20,0);
+             \draw[black] (\x,.15) --++(0,-.3)  node[below, yshift=-2, fill=white, inner sep=1]   {$\x$};
+             \draw[black] (.15,\x) --++(-.3,0)  node[left, xshift=-2, fill=white, inner sep=1]   {$\x$};
+            }
+            \draw[samples=65,domain={-sqrt(15)+2:sqrt(15)+2},smooth,variable=\x,red,very thick, <->,>=stealth'] plot ( {\x}, { ((\x-2)^2-5) });
+            \filldraw[magenta!90!black] (2,-5) circle (.25);
+            \filldraw[magenta!90!black] (0,-1) circle (.25);
+            \filldraw[magenta!90!black] ({2-sqrt(5)},0) circle (.25);
+            \filldraw[magenta!90!black] ({2+sqrt(5)},0) circle (.25);
+            \end{tikzpicture}]]>
+            </latex-image></image></answer></exercise>
+
+<p>If we know the vertex of a parabola and one other point, we can use the vertex form to find its equation. </p>
+
+<example><statement><p>When Andre practices free-throws at the park, the ball leaves his hands at a height of 7 feet, and reaches the vertex of its trajectory 10 feet away at a height of 11 feet.</p>
+<p><ol marker="a.">
+    <li>Find a quadratic equation for the ball's trajectory.</li>
+    <li>Do you think Andre's free-throw would score on a regulation basketball court, where the hoop is 15 feet from the shooter and 10 feet high?</li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>If Andre's feet are at the origin, then the vertex of the ball's trajectory is the point <m>(\alert{10},\alert{11})</m>, and its  <m>y</m>-intercept is <m>(0,7)</m>.  We start with the vertex form for a parabola.
+        <md><mrow>y \amp =a(x-x_v)^2+y_v</mrow>
+            <mrow>y \amp =a(x-\alert{10})^2+\alert{11}</mrow></md>
+    We use the point <m>(0,7)</m> to find the value of <m>a</m>.
+        <md><mrow>\alert{7} \amp = a(\alert{0}-10)^2+11</mrow>
+            <mrow>7 \amp= 100a+11</mrow>
+            <mrow>a \amp = -0.04</mrow></md>
+    The equation of the trajectory is <m>~y=-0.04(x-10)^2+11</m>.</p>
+    <aside><p><m>\alert{\text{[TK]}}~~</m>For more examples of finding the vertex form, see <xref ref="tkSolveforParam" text="custom"> Section 4.2.3 </xref> of the Toolkit.</p></aside>
+
+    <image width="40%" source="images/fig-free-throw" ><description>parabola</description></image></li>
+    <li><p> We'd like to know if the point <m>(15,10)</m> is on the trajectory of Andre's free-throw. We substitute <m>x=\alert{15}</m> into the equation. 
+        <md><mrow>y \amp =-0.04(\alert{15}-10)^2+11</mrow>
+            <mrow>y \amp =-0.04(25)+11 = 10</mrow></md>
+    From our computations, we see that the point <m>(15,10)</m> is indeed on the trajectory. However, because Andre's shot will probably hit the backboard just where the hoop attaches and bounce off, so it is unlikely that his shot will score.</p> </li>
+</ol></p>
+</solution></example> 
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>       
+            $lint = RadioButtons(
+              ["We need two points to find the equation of a line.",
+              "To find the value of \(a\).",
+              "We must know one of the \(x\)-intercepts.",
+              "We must know the \(y\)-intercept."],
+              1, 
+            );            
+        </pg-code>
+    <statement><p>Why do we need to know a second point besides the vertex to find the equation of a parabola?</p>
+        <p><var name="$lint" form="buttons"/></p>      
+    </statement>
+    <solution><p>To find the value of <m>a</m> for the vertex form <m>y=a(x-x_v )^2 + y_v</m>.</p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Why do we need to know a second point besides the vertex to find the equation of a parabola?</p>
+    <p><ol marker="a.">
+        <li><p>We need two points to find the equation of a line.</p></li>
+        <li><p>To find the value of <m>a</m>.</p></li>
+         <li><p>We must know one of the <m>x</m>-intercepts.</p></li>
+         <li><p>We must know the <m>y</m>-intercept.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+        Context()->flags->set( reduceConstants => 0, reduceConstantFunctions => 0,  );
+        $f = Formula("-5/36*(x-16)**2 +80 ");
+    </pg-code>
+<statement><p>A parabola has its vertex at <m>(16,80)</m> and one of its  <m>x</m>-intercepts at <m>(40,0)</m>. Find an equation for the parabola.</p>
+        <p><m>y=</m><var name="$f" width="15"/></p>
+</statement>
+<solution><p><m>y=\dfrac{-5}{36}(x-16)^2+80</m></p></solution>
+</webwork></exercise> 
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>A parabola has its vertex at <m>(16,80)</m> and one of its  <m>x</m>-intercepts at <m>(40,0)</m>. Find an equation for the parabola.</p></statement>
+    <solution><p><m>y=\dfrac{-5}{36}(x-16)^2+80</m></p></solution></exercise>     
+</subsection>
+
+
+<xi:include href="./section-4-2-exercises.xml" /> <!-- exercises  -->
+</section> 
+<!-- </book>  </mathbook> -->

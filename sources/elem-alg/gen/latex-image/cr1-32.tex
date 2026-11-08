@@ -1,0 +1,46 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [xscale=0.25, yscale=.5]
+\coordinate (O) at (0,0);
+\draw[cyan] (O) grid[xstep=2, ystep=1] (24,12);
+\draw[black,thick, ->, >=stealth'] (O)--(26,0) node[right]{$x$};
+\draw[black,thick, ->, >=stealth'] (O)--(0,13) node[left]{$y$};
+\foreach \x in  {10, 20} {
+ \draw[cyan, very thick] (\x,0)--++(0,12);
+ \draw[black, thick] (\x,.08) --++(0,-.16) node[below] {\x};
+}
+\foreach \y in  {5,10} {
+ \draw[cyan, very thick] (0,\y)--++(24,0);
+ \draw[black, thick] (.04,\y) --++(-.08,0) node[left] {\y};
+}
+\draw[samples=65,domain=2:24,smooth,variable=\x,red,very thick, <->, >=stealth'] plot ({\x},{(24/\x});
+\node[below left, xshift=1] at (O) {0};
+\node[fill=white, inner sep=1, text=red] at (7,8) {$\displaystyle y=\frac{24}{x}$};
+\end{tikzpicture}%
+}
+\end{document}

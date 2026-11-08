@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-3-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Exponents</title>
+
+<sidebyside widths="40% 40%" valigns="middle middle"><p><ul>
+    <li><p>A New Notation</p></li>
+    <li><p>Squares and Cubes</p></li>
+    <li><p>Products and Powers</p></li>
+    <li><p>Pythagorean Theorem</p></li>
+  </ul></p>
+      <image source="lazy.png"></image></sidebyside>
+
+  <subsection xml:id="exponents"><title>A New Notation</title>
+
+  <assemblage><p>"I will always choose a lazy person to do a difficult job…Because (s)he will find an easy way to do it."</p>
+<p>Bill Gates</p></assemblage>
+
+<p>Mathematicians are lazy people. They prefer the easiest or shortest way to solve a problem. Sometimes that involves inventing a new notation. In this lesson we study a new notation called an <term>exponent</term>.</p>
+
+<p>In <xref ref= "factortree" text="custom">Section 1.3</xref> we learned to make a factor tree to write the prime factorization of a whole number. You might review that skill before completing the Warm-Up.</p>
+
+<assemblage><title>Warm-Up</title>
+<p>Make a factor tree and write the prime factorization of each number:</p>
+    <p> 16 = </p>
+    <p>32 = </p>
+    <p>64 = </p>
+<p>  Did you get tired of writing down all those 2's? </p></assemblage>
+
+<p>Each of the factorizations above involves a repeated multiplication. Here is a shorter way to write them.</p>
+
+<assemblage><title>Definition</title>
+<p>An <term>exponent</term> is a number that appears above and to the right of a particular factor. It tells us how many times that factor occurs in the product.</p>  
+<p>The factor to which the exponent applies is called the <term>base</term>, and the product is called a <term>power</term> of the base.</p></assemblage>
+
+<p>For example, we can write 32 as <m>2^5</m>.</p>
+
+    <image source="exponent.png" width="45%"></image>
+
+<note><p>Recall that the dot, <m>\large{\cdot}</m>, between the 2's is another symbol for multiplication, so <m>2 \cdot 2</m> means <m>2 \times 2</m>.</p></note>
+
+<p>Similarly, we can write 
+    <md><mrow>16 = \alert{2^4} = 2 \cdot 2 \cdot 2 \cdot 2</mrow>
+        <mrow>64 = \alert{2^6} = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2</mrow></md>
+  We say that 16 is "the fourth power of 2" or "2 raised to the fourth power" or just "2 to the fourth."</p>
+
+  <example><statement><p>Use an exponent to write "3 to the fifth power," then evaluate the power.</p></statement>
+
+  <solution><p>The base is 3 and the exponent is 5.  We evaluate the product of 5 factors of 3.
+    <me>3^5 = 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 = 243</me></p></solution></example>
+
+  <note><p><ul>
+    <li><p>Do not confuse powers with products! For example, <m>3^5</m> does not mean <m>3 \times 5</m>. Remember that an exponent tells us how many times the base occurs in a repeated multiplication.</p></li>
+    <li><p>Is  <m>3^5</m>  the same as  <m>5^3</m> ?  No!
+        <md><mrow>3^5 \amp = 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 = 243   \amp \blert{\text{Five factors of 3}}</mrow>
+            <mrow>5^3 \amp = 5 \cdot 5 \cdot 5 = 125    \amp \blert{\text{Three factors of 5}}</mrow></md></p></li>
+  </ul></p></note>
+
+<exercise><statement><p>Write each power as a repeated multiplication, then evaluate the power. (Use your calculator for part (d).)</p><p><ol marker="a." cols="2">
+  <li><p><m>6^2</m></p></li>
+  <li><p><m>\left(\dfrac{2}{3}\right)^3</m></p></li>
+  <li><p><m>10^5</m></p></li>
+  <li><p><m>1.4^4</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p><m>6 \cdot 6 = 36</m></p></li>
+  <li><p><m>\left(\dfrac{2}{3}\right)\left(\dfrac{2}{3}\right)\left(\dfrac{2}{3}\right) = \dfrac{8}{27}</m></p></li>
+  <li><p><m>10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100,000</m></p></li>
+  <li><p><m>(1.4)(1.4)(1.4)(1.4) = 3.8416</m></p></li>
+</ol></p></answer></exercise>
+
+<assemblage><title>A Quick Refresher</title>
+<p>Recall that we can find the area of a rectangle by multiplying its length times its width. In the figures below, the grid lines represent centimeters.</p>
+  <sidebyside widths="35% 60%"><image source="area24.png"></image>
+      <p><md><mrow>\hphantom{Area = 6 \times 4 = 24}</mrow>
+              <mrow>\text{Area} = 6 \times 4 = 24~~ \text{square centimeters}</mrow></md></p></sidebyside>
+<p>We can find the volume of a box by multiplying its length times its width times its height.</p>
+  <sidebyside widths="45% 55%"><image source="boxvol.png"></image>
+      <p><md><mrow>\text{Volume} \amp = 6 \times 4 \times 3</mrow>
+          <mrow> \amp = 72~~ \text{cubic centimeters}</mrow></md></p></sidebyside></assemblage>
+</subsection>
+
+<subsection><title>Squares and Cubes</title>
+<p>Exponents are useful in a variety of calculations. You probably recall that a square is a rectangle whose sides are equal, and a cube is a box whose edges are all equal.</p>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Use exponents to calculate the area of a square whose side is 5 inches long.</p></li> 
+  <li><p>Use exponents to calculate  the volume of a cube whose edge is 5 inches long.</p></li>
+</ol></p>
+    <image source="squareandcube.png" width="50%"></image></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>The area of the square is
+    <me>5 \times 5 = 5^2 = 25~~\text{square inches}</me></p></li>
+  <li><p>The volume of the cube is
+    <me>5 \times 5 \times 5= 5^3 = 125~~\text{cubic inches}</me></p></li>
+</ol></p></solution></example>
+
+<note><p>The exponents 2 and 3 are used frequently, so they have special names.</p>
+<p><ul>
+  <li><p>Instead of reading <m>5^2</m> as "5 raised to the second power,"  we say "5 squared."</p></li>
+  <li><p>Instead of reading  <m>5^3</m>  as "5 raised to the third power,"  we say "5 cubed."</p></li>
+</ul></p></note>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>A square closet has sides 6 feet long. Write a power to express the area of its floor space, then compute the area, including units.</p></li>
+  <li><p>A cubical storage container measures 4 meters on each side. Write a power to express the volume of the container, then compute the volume, including units.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>6^2 = 36 </m> sq ft</p></li>
+  <li><p><m>4^3 = 64 </m> cu m</p></li>
+</ol></p></answer></exercise>
+
+<activity><title>Exponents</title>
+<p><ol>
+  <li><p>Compute the squares of the whole numbers from 1 to 10.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>1^2</m></cell>
+      <cell><m>2^2</m></cell>
+      <cell><m>3^2</m></cell>
+      <cell><m>4^2</m></cell>
+      <cell><m>5^2</m></cell>
+      <cell><m>6^2</m></cell>
+      <cell><m>7^2</m></cell>
+      <cell><m>8^2</m></cell>
+      <cell><m>9^2</m></cell>
+      <cell><m>10^2</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+  <li><p>Compute the cubes of the whole numbers from 1 to 10.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>1^3</m></cell>
+      <cell><m>2^3</m></cell>
+      <cell><m>3^3</m></cell>
+      <cell><m>4^3</m></cell>
+      <cell><m>5^3</m></cell>
+      <cell><m>6^3</m></cell>
+      <cell><m>7^3</m></cell>
+      <cell><m>8^3</m></cell>
+      <cell><m>9^3</m></cell>
+      <cell><m>10^3</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+  <li><p>Compute all powers of 2 up to <m>2^{10}</m>.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>2^1</m></cell>
+      <cell><m>2^2</m></cell>
+      <cell><m>2^3</m></cell>
+      <cell><m>2^4</m></cell>
+      <cell><m>2^5</m></cell>
+      <cell><m>2^6</m></cell>
+      <cell><m>2^7</m></cell>
+      <cell><m>2^8</m></cell>
+      <cell><m>2^9</m></cell>
+      <cell><m>2^{10}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+  <li><p>Compute all powers of 3 up to <m>3^{10}</m>.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>3^1</m></cell>
+      <cell><m>3^2</m></cell>
+      <cell><m>3^3</m></cell>
+      <cell><m>3^4</m></cell>
+      <cell><m>3^5</m></cell>
+      <cell><m>3^6</m></cell>
+      <cell><m>3^7</m></cell>
+      <cell><m>3^8</m></cell>
+      <cell><m>3^9</m></cell>
+      <cell><m>3^{10}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+</ol></p></activity>
+</subsection>
+
+<subsection><title>Products and Powers</title>
+
+<p>How should we simplify the expression
+    <me>3 \cdot 5^2 ?</me> 
+Should we multiply 3 times 5 and then square the result, or should we square 5 first and then multiply by 3?</p>
+
+<assemblage><title>Which Comes First?</title>
+  <p> Which option is correct:</p>
+  <sidebyside widths="50% 50%"><p>Option 1
+    <md><mrow>3 \amp \cdot 5^2 \hphantom{0000000} \blert{\text{Multiply first.}}</mrow>
+      <mrow>\amp \rightarrow 15^2 \hphantom{0000} \blert{\text{Then square.}}</mrow>
+      <mrow> \amp = 225</mrow></md></p>
+  <p>Option 2
+    <md><mrow>3 \amp \cdot 5^2 \hphantom{000000000} \blert{\text{Square first.}}</mrow>
+      <mrow>\amp \rightarrow 3 \cdot 25 \hphantom{0000} \blert{\text{Then multiply.}}</mrow>
+      <mrow> \amp = 75</mrow></md></p></sidebyside></assemblage>
+
+<p>We have defined powers so that an exponent applies only to its base, so Option 2 is the correct one.</p>
+
+<assemblage><title>Powers Before Products</title>
+  <p><m>\blert{\text{Rule:}}~~</m>  Compute powers before multiplications or divisions.</p></assemblage>
+
+<p>If we really want to multiply before computing the power, we can use parentheses around the product. The parentheses tell us to simplify what's inside first. Compare the two calculations in the next Example.</p>
+
+<example><statement><p>Simplify.</p>
+<p><ol marker="a.">
+  <li><p><m>3 \cdot 5^2 = 3 \cdot 25 = 75  \hphantom{0000} ~~\blert{\text{Compute the power first, then multiply.}}</m></p></li>
+  <li><p><m>(3 \cdot 5)^2 = 15^2 = 225  \hphantom{0000} \blert{\text{Multiply inside parentheses first, then compute the power.}}</m></p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p><ol marker="a." cols="2">
+  <li><p><m>5 \cdot 2^3</m></p></li>
+  <li><p><m>(5 \cdot 2)^3</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>40</m></p></li>
+  <li><p><m>1000</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection xml:id="pythagoras"><title>Pythagorean Theorem</title>
+<p><sidebyside widths="50% 40%" valigns="middle middle"><p>Delbert is taking a week-long tour on his trail bike. He is traveling across open country in the West, using a guide book that describes his route and suggests places to camp each night. This morning he read the following instructions in the guide book:</p>
+ <image source="biketrip.png"></image></sidebyside></p> 
+
+ <assemblage><p>"After breaking camp, ride directly west for 20 miles. You will come to a deep, narrow canyon running north and south.  However, there is a dirt road that runs along the east side of the canyon, and precisely where you meet the road there is a bridge over the canyon. Cross the bridge and continue for two more miles to a county park, which is your first rest stop for the day."</p></assemblage>
+
+ <p>Delbert sets out heading west, but his compass is not completely accurate. He is actually riding on a course slightly north of west. When he reaches the canyon, his odometer reads 20.5 miles instead of 20 miles, as the guide book described.</p> 
+  
+<p>“Oh, well,” thinks Delbert, who is getting a little tired and ready for his rest stop, “That's not so far off. If I head south on this dirt road I should come to the bridge in just a short distance.”</p>
+
+<assemblage><title>Warm-Up</title>
+<p><ol>
+  <li><p>Sketch the situation described in the story. Show Delbert's camp, the canyon and the bridge, Delbert's actual route and the route he should have taken.</p></li>
+
+  <li><p> Without doing any calculations, guess how far Delbert must ride on the dirt road to reach the bridge.</p></li>
+</ol></p></assemblage>
+
+<assemblage><title>Definition</title>
+<p>A triangle in which one of the angles is a right angle, or 90°, is called a <term>right triangle</term>. The side opposite the right angle is the longest side of the triangle, and is called the <term>hypotenuse</term>. The other two sides of the triangle are called the <term>legs</term>.</p>
+    <image source="righttriangle.png" width="45%"></image></assemblage>
+
+<activity><title>Pythagorean Theorem</title>
+<p>In this Activity we'll investigate some properties of right triangles. You will need a piece of graph paper measured in centimeters, similar to the one shown below. Use the grid and follow the steps.</p>
+<p><ol>
+  <li><p>First, measure carefully and cut out a strip of paper or cardboard between 12 and 24 centimeters long. (It will be easier if you choose a whole number value for the length of the strip.)</p></li>  
+  <li><p>Use your strip as the hypotenuse of a right triangle on the grid, with the legs on the axes.</p></li>   
+  <li><p>Record the lengths of the legs (First Leg, <m>FL</m>, and Second Leg, <m>SL</m>) and the Hypotenuse, <m>H</m>, in the first three columns of the table provided. (We'll get to the other columns in a minute.)</p></li>
+  <li><p>Try several different triangles, and record the lengths of the legs.</p>
+
+<image source="Pythcmgrid.png" width="100%"></image>
+
+<p>Table 1</p>
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell><m>H</m></cell>
+      <cell><m>FL</m></cell>
+      <cell><m>SL</m></cell>
+      <cell><m>(FL)^2</m></cell>
+      <cell><m>(SL)^2</m></cell>
+      <cell><m>(FL)^2 + (SL)^2</m></cell>
+      <cell><m>(H)^2</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p>
+
+  <p>Repeat the previous exercise with a hypotenuse strip of a different length, and record your data in the first three columns of the second table.</p>
+
+  <p>Table 2</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell><m>H</m></cell>
+      <cell><m>FL</m></cell>
+      <cell><m>SL</m></cell>
+      <cell><m>(FL)^2</m></cell>
+      <cell><m>(SL)^2</m></cell>
+      <cell><m>(FL)^2 + (SL)^2</m></cell>
+      <cell><m>(H)^2</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p></li>
+
+<li><p>The last four columns in each table are for recording some calculations. You should be able to interpret what goes in each column:</p>
+     <p><m>(FL)^2</m>:    Square the length of the first leg.</p>
+     <p><m>(SL)^2</m>:  Square the length of the second leg.</p>
+     <p><m>(FL)^2 + (SL)^2</m>: Add the entries in the previous two columns.</p> 
+     <p><m>(H)^2</m>: Square the length of the hypotenuse.</p></li>
+
+<li><p>Compare the entries in the last two columns of each table. Do you notice any pattern? Summarize your observations as a conjecture</p>
+
+<p>Conjecture:</p></li>
+</ol></p></activity>
+
+<p>The Activity revealed a relationship among the sides of a right triangle. If we know the lengths of any two sides of a right triangle, we can find the third side by using a formula called the <term>Pythagorean Theorem</term>.</p>
+
+<assemblage><title>Pythagorean Theorem</title>
+<p><sidebyside widths="60% 30%"><p>If the letter <m>\alert{c}</m> stands for the length of the hypotenuse, and the lengths of the two legs are denoted by <m>\alert{a}</m> and <m>\alert{b}</m>, then
+  <me>\alert{a^2 + b^2 = c^2}</me></p>
+<image source="Pythtri.png"></image></sidebyside></p></assemblage>
+
+<p>In words, the Pythagorean theorem says:</p>
+
+<assemblage>
+  <p><me>\blert{\large\text{In a right triangle,}}</me></p>
+  <p><me>\substack{\hphantom{000}\blert{\LARGE\text{the square of}}\\ \blert{\LARGE\text{the hypotenuse}}}
+      \hphantom{00000} \blert{\large\text{is equal to}}\hphantom{0000}
+      \substack{\blert{\LARGE\text{the sum of the squares}} \\ \blert{\LARGE\text{of the two legs}}}</me></p>
+</assemblage>
+
+<p>Because the square of its side length gives the area of a square, we can visualize the Pythagorean theorem with areas of squares, like this:</p>
+
+<image source="Pythsquares.png" width="50%"></image>
+
+<p>You can check that if we add the areas of the two squares on the legs, we get the area of the square on the hypotenuse!</p>
+
+<note><p>The Pythagorean Theorem holds <m>\alert{\text{only for right triangles}}</m>; it is not true for any other kind of triangle.</p>
+<p>Several ancient civilizations, including the Egyptians and Chinese, discovered this formula, but it is named in honor of the Greek mathematician Pythagoras, who gave a proof of the formula.</p></note> 
+
+<activity><title>Pythagorean Triples</title>
+<p>Whole numbers that fit the Pythagorean theorem are called <term>Pythagorean triples</term>. You can make your own Pythagorean triple by starting with any two whole numbers, which we'll call <m>P</m> and <m>Q</m>. Fill in the table below by using the rules at the top of each column. The first row is done for you.</p> 
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row header="yes">
+      <cell><m>P</m></cell>
+      <cell><m>Q</m></cell>
+      <cell><m>2PQ</m></cell>
+      <cell><m>P^2-Q^2</m></cell>
+      <cell><m>P^2+Q^2</m></cell></row>
+    <row>
+      <cell><m>2</m></cell>
+      <cell><m>1</m></cell>
+      <cell><m>2 \cdot 2 \cdot 1 = \blert{4}</m></cell>
+      <cell><m>2^2-1^2 = \blert{3}</m></cell>
+      <cell><m>2^2+1^2= \blert{5}</m></cell></row>
+    <row>
+      <cell><m>3</m></cell>
+      <cell><m>1</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>3</m></cell>
+      <cell><m>2</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>4</m></cell>
+      <cell><m>1</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>4</m></cell>
+      <cell><m>2</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>4</m></cell>
+      <cell><m>3</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>5</m></cell>
+      <cell><m>1</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>5</m></cell>
+      <cell><m>2</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>5</m></cell>
+      <cell><m>3</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    <row>
+      <cell><m>5</m></cell>
+      <cell><m>4</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell>
+      <cell><m>\hphantom{00000}</m></cell></row>
+    </tabular></p>
+
+<p><ol>
+  <li><p>Which column gives the hypotenuse of the right triangle?</p></li>
+  <li><p>Check that your triples satisfy the Pythagorean theorem.</p></li>
+  <li><p>For this method to work, <m>P</m> must be greater than <m>Q</m>. Do you see why?</p></li>
+</ol></p></activity>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>exponent</p></li>
+  <li><p>power</p></li>
+  <li><p>base</p></li>
+  <li><p>squared</p></li>
+  <li><p>cubed</p></li>
+  <li><p>hypotenuse</p></li>
+  <li><p>leg</p></li>
+  <li><p>Pythagorean Theorem</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-3-2.ptx" />
+
+</section>

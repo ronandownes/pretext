@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="prac-1-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Practice 1.4</title>
+
+<exercise number="1"><statement><p>At what time do the hands of a clock form a 90<m>\degree</m> angle? At what time do they form a straight angle?</p></statement>
+<answer><p>3 o'clock, 6 o'clock</p></answer></exercise>
+
+<exercise number="2"><statement><p>A rectangle has four right angles. What is the sum of the angles in a rectangle?</p></statement></exercise>
+
+<exercise number="3"><statement><p>Is it possible for a triangle to have more than one obtuse angle? Why or why not?</p></statement>
+<answer><p>No. The sum of the angles would be more than 180°.</p></answer></exercise>
+
+<exercise number="4"><statement><p>What can you say about the sum of the two acute angles in a right triangle?</p></statement></exercise>
+
+<exercise number="5"><statement><p>The word "vertex" has several meanings in mathematics. Describe two ways it is used in this lesson.</p></statement>
+<answer><p>The point where the two sides of an angle meet, and the angle between the equal sides of an isosocelels triangle.
+</p></answer></exercise>
+
+<exercise number="6"><statement><p>Can two acute angles add up to a straight angle? Why or why not?</p></statement></exercise>
+
+<exercisegroup><introduction><p>For Problems 7<ndash/>12, sketch and label a triangle with the given properties.</p></introduction>
+
+<exercise number="7"><statement><p>An isosceles triangle with vertex angle 30<m>\degree</m></p></statement>
+<answer><p><image source="ans-1-4-7.png" width="40%"></image></p></answer></exercise>
+
+<exercise number="8"><statement><p>A right triangle with one angle 20<m>\degree</m></p></statement></exercise>
+
+<exercise number="9"><statement><p>A scalene triangle with one obtuse angle</p></statement>
+<answer><p><image source="ans-1-4-9.png" width="40%"></image></p></answer></exercise>
+
+<exercise number="10"><statement><p>An isosceles right triangle</p></statement></exercise>
+
+<exercise number="11"><statement><p>An isosceles triangle with one obtuse angle</p></statement>
+<answer><p><image source="ans-1-4-11.png" width="40%"></image></p></answer></exercise>
+
+<exercise number="12"><statement><p>An equilateral triangle</p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 13<ndash/>14, use a protractor to measure the angles in the triangle. Find the sum of the angles to check your work.</p></introduction>
+
+<exercise number="13"><statement><p><image source="bigtri.png" width="50%"></image></p></statement>
+<answer><p><m>80 \degree, ~30 \degree, ~70 \degree</m></p></answer></exercise>
+
+<exercise number="14"><statement><p><image source="bigtri2.png" width="50%"></image></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 15<ndash/>16, find the angle made by the hands of the clock, without using a protractor.</p></introduction>
+
+    <exercise number="15"><statement><!-- <image source="clockangle.png" width="50%"></image>-->
+        <image xml:id="clockangle" width="50%"><description>clock</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \coordinate(O) at (0,0);
+            \draw [thick] (O) circle [radius=2cm];
+            \filldraw [black] (O) circle [radius=.075cm];
+            \foreach \angle [count=\xi] in {6,12,...,354}
+              \draw[thin] (\angle:1.9cm) -- (\angle:2cm);
+    
+            \foreach \angle [count=\xi] in {60,30,...,-270}
+            {
+              \draw[line width=1pt] (\angle:1.85cm) -- (\angle:2cm);
+              \node[font=\large] at (\angle:1.62cm) {\textsf{\xi}};
+            }
+            \draw[black,ultra thick,->,>=stealth'] (O) -- (90:1.45cm);
+            \draw[black,ultra thick,->,>=stealth'] (0,0) -- (300:1.2cm);
+            
+            \end{tikzpicture}]]>
+            </latex-image></image>
+        </statement>
+    <answer><p><m>150 \degree</m></p></answer></exercise>
+    
+    <exercise number="16"><statement><!-- <image source="clockangle2.png" width="50%"></image>-->
+        <image xml:id="clockangle2" width="50%"><description>clock</description><latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \coordinate(O) at (0,0);
+            \draw [thick] (O) circle [radius=2cm];
+            \filldraw [black] (O) circle [radius=.075cm];
+            \foreach \angle [count=\xi] in {6,12,...,354}
+              \draw[thin] (\angle:1.9cm) -- (\angle:2cm);
+    
+            \foreach \angle [count=\xi] in {60,30,...,-270}
+            {
+              \draw[line width=1pt] (\angle:1.85cm) -- (\angle:2cm);
+              \node[font=\large] at (\angle:1.62cm) {\textsf{\xi}};
+            }
+            \draw[black,ultra thick,->,>=stealth'] (O) -- (90:1.45cm);
+            \draw[black,ultra thick,->,>=stealth'] (0,0) -- (30:1.2cm);
+            
+            \end{tikzpicture}]]>
+        </latex-image></image>
+    </statement></exercise>
+    </exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 17<ndash/>22, find the measure of the unknown angles. Show your work.</p></introduction>
+
+<exercise number="17"><statement><!-- <image source="hp-1-4-17.png" width="45%"></image>-->
+    <image xml:id="hp-1-4-17" width="50%"><description>clock</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \draw[black,thick,<->,>=stealth'] (\r,0)--(O) -- (0,\r);
+        \draw[black,thick,->,>=stealth'] (O) -- (52:{\r/cos(38)});
+        \draw[red] (.6,0) arc(0:52:.6) node[midway, right]{$B$};
+        \draw[red] (0,.75) arc(90:52:.75) node[midway, above]{$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+
+    <p><m>~~~~~~~~~\angle A = 38\degree</m></p></statement>
+<answer><p><m>52 \degree</m></p></answer></exercise>
+
+<exercise number="18"><statement><!-- <image source="hp-1-4-18.png" width="50%"></image>-->
+    <image xml:id="hp-1-4-18" width="50%"><description>clock</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \draw[black,thick,<->,>=stealth'] (\r,0)--(O) -- (0,\r);
+        \draw[black,thick,->,>=stealth'] (O) -- (16:{\r/cos(16)});
+        \draw[red] (1.3,0) arc(0:16:1.3) node[midway, right, yshift=1]{$B$};
+        \draw[red] (0,.75) arc(90:16:.75) node[midway, above,xshift=2]{$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>~~~~~~~~~\angle A = 74\degree</m></p></statement></exercise>
+
+<exercise number="19"><statement><!-- <image source="hp-1-4-19.png" width="60%"></image>-->
+    <image xml:id="hp-1-4-19" width="60%"><description>angle in first quadrant</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [ rotate=15]
+        \coordinate(O) at (0,0);
+        \def\r{2};
+        \draw[black,thick,<->,>=stealth'] (-\r,0)--(\r,0);
+        \draw[black,thick,->,>=stealth'] (O) -- (57:{\r});
+        \draw[red] (.8,0) arc(0:57:.8) node[midway, right, xshift=2]{$B$};
+        \draw[red] (-.5,0) arc(180:57:.5) node[midway, above,xshift=-2]{$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>~~~~~~~~~\angle B = 57\degree</m></p></statement>
+<answer><p><m>123 \degree</m></p></answer></exercise>
+
+<exercise number="20"><statement><!-- <image source="hp-1-4-20.png" width="25%"></image>-->
+    <image xml:id="hp-1-4-20" width="22%"><description>angle in first quadrant</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [ rotate=80]
+        \coordinate(O) at (0,0);
+        \def\r{2};
+        \draw[black,thick,<->,>=stealth'] ({-.6*\r},0)--(\r,0);
+        \draw[black,thick,->,>=stealth'] (O) -- (24:{\r});
+        \draw[red] (1,0) arc(0:24:1) node[midway, above]{$B$};
+        \draw[red] (-.5,0) arc(180:24:.5) node[midway, left,xshift=-2]{$A$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>~~~~~~~~~\angle A = 158\degree</m></p></statement></exercise>
+
+<exercise number="21"><statement><!-- <image source="hp-1-4-21.png" width="35%"></image>-->
+    <image xml:id="hp-1-4-21" width="35%"><description>intersecting lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{2};
+        \draw[black,thick,<->,>=stealth'] (0,{-\r})--(0,\r);
+        \draw[black,thick,<->,>=stealth'] (231:\r) -- (51:\r);
+        \draw[red] (0,.4) arc(90:231:.4) node[midway, left, xshift=0]{$B$};
+        \draw[red] (0,-.8) arc(270:231:.8) node[midway, below, xshift=-2]{$A$};
+        \draw[red] (0,.7) arc(90:51:.7) node[midway, above, xshift=2]{$C$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>~~~~~~~~~\angle A = 39\degree</m></p></statement>
+<answer><p><m>141 \degree, ~39 \degree</m></p></answer></exercise>
+
+<exercise number="22"><statement><!-- <image source="hp-1-4-22.png" width="50%"></image>-->
+    <image xml:id="hp-1-4-22" width="50%"><description>intersecting lines</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate(O) at (0,0);
+        \def\r{2};
+        \draw[black,thick,<->,>=stealth'] (0,{-\r})--(0,\r);
+        \draw[black,thick,<->,>=stealth'] (-4:\r) -- (176:\r);
+        \draw[red] (0,-.6) arc(270:356:.6) node[midway, below right]{$B$};
+        \draw[red] (90:.4) arc(90:-4:.4) node[midway, above, xshift=2]{$A$};
+        \draw[red] (0,-.5) arc(270:176:.5) node[midway, below left]{$C$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><m>\angle B = 86\degree</m></p>
+</statement></exercise>
+</exercisegroup>
+
+<exercisegroup><introduction><p>For Problems 23<ndash/>24, the angles between consecutive radii are equal. Give the measure of each angle.</p></introduction>
+
+<exercise number="23"><statement><!-- <image source="sixsectors.png" width="50%"></image>-->
+    <image xml:id="sixsectors" width="50%"><description>semicircle divided into six sectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=1]
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \draw[green!80!black,thick] (\r,0) arc (0:180:\r);
+        
+        \foreach \x [evaluate=\x as \xi using int( 30* \x )]  in  {0,1,...,6} {
+        \draw[blue,thick] (0,0) -- (\xi:\r);
+        }
+        \draw[black, fill=red] (O) circle (.05) node[below] {$O$};
+        \draw[black, fill=red] (0:\r) circle (.05) node[right] at (0:\r) {$A$};
+        \draw[black, fill=red] (30:\r) circle (.05) node[right, yshift=2] at (30:\r) {$B$};
+        \draw[black, fill=red] (60:\r) circle (.05) node[above right] at (60:\r) {$C$};
+        \draw[black, fill=red] (90:\r) circle (.05) node[above] at (90:\r) {$D$};
+        \draw[black, fill=red] (120:\r) circle (.05) node[above left] at (120:\r) {$E$};
+        \draw[black, fill=red] (150:\r) circle (.05) node[left, yshift=2] at (150:\r) {$F$};
+        \draw[black, fill=red] (180:\r) circle (.05) node[left] at (180:\r) {$G$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><ol marker="a.">
+      <li><m>\angle AOB =</m></li>
+      <li><m>\angle AOC =</m></li>
+      <li><m>\angle AOD =</m></li>
+      <li><m>\angle AOE =</m></li>
+      <li><m>\angle AOF =</m></li></ol></p></statement>
+<answer><p><ol marker="a.">
+      <li><m>30 \degree</m></li>
+      <li><m>60 \degree</m></li>
+      <li><m>90 \degree</m></li>
+      <li><m>120 \degree</m></li>
+      <li><m>150 \degree</m></li>
+</ol></p></answer></exercise>
+
+<exercise number="24"><statement><!-- <image source="foursectors.png" width="40%"></image>-->
+    <image xml:id="foursectors" width="40%"><description>semicircle divided into four sectors</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8]
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \draw[red!80!black,thick] (\r,0) arc (0:180:\r);
+        
+        \foreach \x [evaluate=\x as \xi using int( 45* \x )]  in  {0,1,...,4} {
+        \draw[blue,thick] (0,0) -- (\xi:\r);
+        }
+        \draw[black, fill=red] (O) circle (.05) node[below] {$O$};
+        \draw[black, fill=red] (0:\r) circle (.05) node[right] at (0:\r) {$A$};
+        \draw[black, fill=red] (45:\r) circle (.05) node[above right] at (45:\r) {$B$};
+        \draw[black, fill=red] (90:\r) circle (.05) node[above] at (90:\r) {$C$};
+        \draw[black, fill=red] (135:\r) circle (.05) node[above left] at (135:\r) {$D$};
+        \draw[black, fill=red] (180:\r) circle (.05) node[left] at (180:\r) {$E$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+    <p><ol marker="a.">
+      <li><m>\angle AOB =</m></li>
+      <li><m>\angle AOC =</m></li>
+      <li><m>\angle AOD =</m></li></ol></p></statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 25<ndash/>36, find the measure of the unknown angle. Show your work.</p></introduction>
+
+<exercise number="25"><statement><!-- <image source="hp-1-4-25.png" width="50%"></image>-->
+    <image xml:id="hp-1-4-25" width="50%"><description>Triangle with 23 and 48 deg angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [scale=.8, rotate=80]
+        \coordinate(O) at (0,0);
+        \def\r{2};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (109:{sin(48)*\r/sin(23)});
+        \draw[red] ({.2*\r},0) arc (0:109:{.2*\r}) node[midway, above left, yshift=-2]{$A$};
+        \draw[red] ({.7*\r},0) arc (180:132:{.3*\r}) node[midway, below, xshift=-4]{$48^\circ$};
+        \draw[red] (109:{sin(48)*.6*\r/sin(23)}) arc (289:312:{sin(48)*.4*\r/sin(23)}) node[midway, above right, yshift=-4]{$23^\circ$};
+        
+        \draw[blue,thick] (O) -- (A)--(B)--cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p><m>109 \degree</m></p></answer></exercise>
+
+<exercise number="26"><statement><!-- <image source="hp-1-4-26.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-26" width="70%"><description>Triangle with 131 and 17 deg angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (229:{sin(17)*\r/sin(32)});
+        \draw[red] ({.2},0) arc (360:229:{.2}) node[midway, below right, yshift=3]{$131^\circ$};
+        \draw[red] ({.7*\r},0) arc (180:197:{.3*\r}) node[midway, left, yshift=-2]{$17^\circ$};
+        \draw[red] (229:{.7*sin(17)*\r/sin(32)}) arc (49:17:{.3*sin(17)*\r/sin(32)}) node[midway, above right, yshift=-2]{$B$};
+        
+        \draw[blue,thick] (O) -- (A)--(B)--cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+
+<exercise number="27"><statement><!-- <image source="hp-1-4-27.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-27" width="70%"><description>Right triangle with 26 deg angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \coordinate(O) at (0,0);
+        \def\r{4};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (0,{-\r*sin(29)});
+        \draw[blue] (O) rectangle ++({.25},{-.25});
+        \draw[red] ({.8*\r},0) arc (180:209:{.2*\r}) node[midway, left, yshift=-1]{$P$};
+        \draw[red] (270:{.8*\r*sin(29)}) arc (90:29:{.2*\r*sin(29)}) node[midway, above right, xshift=-3]{$61^\circ$};      
+        \draw[black,thick] (O) -- (A)--(B)--cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p><m>29 \degree</m></p></answer></exercise>
+
+<exercise number="28"><statement><!-- <image source="hp-1-4-28.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-28" width="70%"><description>Right triangle with 26 deg angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} [rotate=20]
+        \coordinate(O) at (0,0);
+        \def\r{4};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (0,{\r*sin(18)});
+        \draw[blue] (O) rectangle ++(.25,.25);
+        \draw[red] ({.6*\r},0) arc (180:162:{.4*\r}) node[midway, left, yshift=-2]{$18^\circ$};
+        \draw[red] (90:{.7*\r*sin(18)}) arc (270:342:{.3*\r*sin(18)}) node[midway, below right, yshift=4]{$Q$};      
+        \draw[black,thick] (O) -- (A)--(B)--cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+
+<exercise number="29"><statement><!-- <image source="hp-1-4-29.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-29" width="70%"><description>Isosceles triangle with 26 deg vertex angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{4};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (26:\r);
+        \draw[red] (.8,0) arc (0:26:.8) node[midway, right, yshift=2]{$26^\circ$};
+        \draw[red] (26:3.7) arc (206:285:.3) node[midway, below, xshift=-2]{$T$};
+        \draw[black,thick] (O) -- (A) node[midway, below, text=blue]{$10$}--(B)--cycle node[midway, above, text=blue]{$10$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p><m>77 \degree</m></p></answer></exercise>
+
+<exercise number="30"><statement><!-- <image source="hp-1-4-30.png" width="30%"></image>-->
+    <image xml:id="hp-1-4-30" width="22%"><description>Isosceles triangle with 32 deg base angle</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{2};
+        \coordinate (A) at (0,-4);
+        \coordinate (B) at (-58:{\r/cos(32)});
+        \draw[red] (0,-.8) arc (270:302:.8) node[midway, below, xshift=2]{$32^\circ$};
+        \draw[red] (-58:{\r/cos(32)-.3}) arc (122:238:.3) node[midway, left, xshift=1]{$V$};
+        \draw[black,thick] (O) -- (A)--(B) node[midway, right, xshift=1, text=blue]{$7$}--cycle node[midway, right, xshift=1, text=blue]{$7$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+
+<exercise number="31"><statement><!-- <image source="hp-1-4-31.png" width="55%"></image>-->
+    <image xml:id="hp-1-4-31" width="50%"><description>External angle for triangle with 80 and 40 deg opposite angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \coordinate (D) at (\r,0);
+        \coordinate (B) at (80:\r);
+        \coordinate (A) at ({\r*sin(40)/sin(60)},0);
+        \draw[red] (.3,0) arc (0:80:.3) node[midway, right, yshift=2]{$80^\circ$};
+        \draw[red] (80:{\r-.7}) arc (260:300:.7) node[midway, below, xshift=2]{$40^\circ$};
+        \draw[red] ($(A)+(.3,0) $) arc (0:120:.3) node[midway, above]{$P$};
+        \draw[black,thick] (A)--(B)--(O) -- cycle--(D);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p><m>120 \degree</m></p></answer></exercise>
+
+<exercise number="32"><statement><!-- <image source="hp-1-4-32.png" width="80%"></image>-->
+    <image xml:id="hp-1-4-32" width="80%"><description>External angle for triangle with 50 and 110 deg opposite angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{1.5};
+        \coordinate (B) at (50:\r);
+        \coordinate (A) at ({\r*sin(110)/sin(20)},0);
+        \coordinate (D) at ($(A)+(.6,0)$);
+        \draw[red] (.3,0) arc (0:50:.3) node[midway, right, yshift=2]{$50^\circ$};
+        \draw[red] (50:{\r-.3}) arc (230:340:.3) node[midway, below, xshift=2]{$110^\circ$};
+        \draw[red] ($(A)+(.3,0) $) arc (0:160:.3) node[midway, above, xshift=-2]{$Q$};
+        \draw[black,thick] (A)--(B)--(O) -- cycle--(D);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+
+<exercise number="33"><statement><!-- <image source="hp-1-4-33.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-33" width="70%"><description>External angle for triangle with 30 deg angle and other external angle 122 deg</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \coordinate (B) at (30:\r); 
+        \coordinate (A) at ({\r*sin(92)/sin(58)},0);
+        \coordinate (D) at ($(A)+(.6,0)$);
+        \draw[red] (.5,0) arc (0:30:.5) node[midway, right, yshift=2]{$30^\circ$};
+        \draw[red] (30:{\r-.3}) arc (210:122:.3) node[midway, left]{$A$};
+        \draw[red] ($(A)+(.3,0) $) arc (0:122:.3) node[midway, above, xshift=2]{$122^\circ$};
+        \draw[black, thick] (B)--+(122:.6);
+        \draw[black,thick] (A)--(B)--(O) -- cycle--(D);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p><m>88 \degree</m></p></answer></exercise>
+
+<exercise number="34"><statement><!-- <image source="hp-1-4-34.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-34" width="60%"><description>External angle for triangle with adjacent external angle of 140 deg angle and other external angle 110 deg</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (40:\r);
+        \coordinate (D) at (40:{\r+.6});
+        \coordinate (D0) at (220:.6);
+        \coordinate (A0) at ($ (A)+(-70:.6)$);
+        \draw[red] (.3,0) arc (0:-140:.3) node[midway, below]{$140^\circ$};
+        \draw[red] (40:{\r+.3}) arc (40:-70:.3) node[midway, right, xshift=0]{$110^\circ$};
+        \draw[red] ($(A)+(-.3,0) $) arc (180:290:.3) node[midway, below, xshift=-2]{$B$};
+        \draw[black,thick] (D0)--(D);
+        \draw[black,thick] (B)--(A0);
+        \draw[black,thick] (O)--(A);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+
+<exercise number="35"><statement><!-- <image source="hp-1-4-35.png" width="50%"></image>-->
+    <image xml:id="hp-1-4-35" width="50%"><description>Equilateral triangle with altitude</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (60:\r);
+        \coordinate (D) at ({\r/2},0);
+        \draw[blue] (D) rectangle ++(.25,.25);
+        \draw[red] (.4,0) arc (0:60:.4) node[midway, right, yshift=1]{$K$};
+        \draw[red] (60:{\r-.7}) arc (240:270:.7) node[midway, below, xshift=-02]{$L$};
+        \draw[red] ($(B)+(0, -.8) $) arc (270:300:.8) node[midway, below, xshift=2]{$L$};
+        \draw[black,thick] (D)--(B);
+        \draw[black,thick] (O)--(D)node[midway,below]{$1$}--(A)node[midway,below]{$1$}--(B)node[midway,right,yshift=2]{$2$}--cycle node[midway,left,yshift=2]{$2$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p><m>60 \degree, ~30 \degree</m></p></answer></exercise>
+
+<exercise number="36"><statement><!-- <image source="hp-1-4-36.png" width="50%"></image>-->
+    <image xml:id="hp-1-4-36" width="50%"><description>Square with diagonal</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{2.5};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (\r,\r);
+        \coordinate (C) at (0,\r);
+        \draw[blue] (C) rectangle ++(.25,-.25);
+        \draw[blue] (A) rectangle ++(-.25,.25);
+        \draw[red] (45:.4) arc (45:90:.45) node[midway, above, xshift=2]{$T$};
+        \draw[red] ($(B)+(0, -.5) $) arc (270:225:.5) node[midway, below, xshift=-2]{$S$};
+        \draw[black,thick] (O)--(A)node[midway,below]{$1$}--(B) node[midway,right]{$1$}--(C)node[midway,above]{$1$} --cycle node[midway,left]{$1$}-- (B);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+</exercisegroup>
+
+<exercisegroup cols="2"><introduction><p>For Problems 37<ndash/>40, explain why the measurements shown in the figure cannot be accurate.</p></introduction>
+
+<exercise number="37"><statement><!-- <image source="hp-1-4-37.png" width="60%"></image>-->
+    <image xml:id="hp-1-4-37" width="50%"><description>27-58-103 degree angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{1.8};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (255:{1.8*\r});
+        \draw[red] (.4,0) arc (0:-103:.4) node[midway, below, xshift=3]{$103^\circ$};
+        \draw[red] ($ (A)+(-.3,0)$) arc (180:238:.3) node[midway, left, yshift=-3]{$58^\circ$};
+        \draw[red] ($(B)+(255: -1.2) $) arc (75:50:1.2) node[midway, above, xshift=5]{$27^\circ$};
+        \draw[black,thick] (O)--(A) -- (B)--cycle;
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p>The sum of the angles is not 180°.</p></answer></exercise>
+
+<exercise number="38"><statement><!-- <image source="hp-1-4-38.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-38" width="70%"><description>27-58-103 degree angles</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{3};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (30:{\r*sin(50)/sin(100)});
+        \draw[red] ($ (A)+(-.3,0)$) arc (180:130:.3) node[midway, left, yshift=2]{$50^\circ$};
+        \draw[red] ($ (B)+(30:-.3)$) arc (210:310:.3) node[midway, below]{$100^\circ$};
+        \draw[red] (-.3,0) arc (180:30:.3) node[midway, above]{$120^\circ$};
+        \draw[black,thick] (O)--(A) -- (B)--cycle--++(-.6,0);
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+</exercise>
+
+<exercise number="39"><statement><!-- <image source="hp-1-4-39.png" width="70%"></image>-->
+    <image xml:id="hp-1-4-39" width="70%"><description>Two 23 degree angles, scalene</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{2.5};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (134:\r);
+        \draw[red] ($ (A)+(-1.3,0)$) arc (180:157:1.3) node[midway, left, yshift=2]{$23^\circ$};
+        \draw[red] ($ (B)+(134:-1.3)$) arc (-46:-23:1.3) node[midway, below right]{$23^\circ$};
+        \draw[black,thick] (O)--(A) node[midway,below, xshift=2, text=blue]{$21$} -- (B) node[midway,above, yshift=2, text=blue]{$29$}--cycle node[midway,left, yshift=-2, text=blue]{$20$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement>
+<answer><p>The triangle should be isosceles.</p></answer></exercise>
+
+<exercise number="40"><statement><!-- <image source="hp-1-4-40.png" width="75%"></image>-->
+    <image xml:id="hp-1-4-40" width="75%"><description>20 and 85 degree angles, scalene</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{4};
+        \coordinate (A) at (\r,0);
+        \coordinate (B) at (85:{5/12*\r});
+        \draw[red] ($ (A)+(-1,0)$) arc (180:157:1) node[midway, left, yshift=2]{$20^\circ$};
+        \draw[red] ($ (O)+(.4,0)$) arc (0:85:.4) node[midway, right]{$85^\circ$};
+        \draw[black,thick] (O)--(A) node[midway,below, text=blue]{$12$} -- (B) node[midway,above, yshift=2, text=blue]{$13$}--cycle node[midway,left, yshift=-2, text=blue]{$5$};
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+</exercisegroup>
+
+<exercise number="41"><statement><p>What is the measure of each base angle in a right isosceles triangle?</p></statement>
+<answer><p><m>45 \degree</m></p></answer></exercise>
+
+<exercise number="42"><statement><p>In a particular right triangle, the largest angle is three times the smallest angle.  What are the measures of the three angles?</p></statement></exercise>
+
+<exercise number="43"><statement><p>Why is the longest side in a right triangle always opposite the right angle?</p></statement>
+<answer><p>It is the largest angle.</p></answer></exercise>
+
+<exercise number="44"><statement><p>Is it possible for the vertex angle in an isosceles triangle to be obtuse?  Explain your reasoning.</p></statement></exercise>
+
+<exercise number="45"><statement><p>Find the measure of each angle in the octagon.  (There are eight identical isosceles triangles around the center of the octagon.)</p><!-- <image source="octagon.png" width="25%"></image>-->
+    <image xml:id="hp2-sum-35" width="25%"><description>octagon</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+        \def\r {sqrt(2)};
+        \coordinate(O) at (0,0);
+        \coordinate (A) at (2,0 );
+        \coordinate (B) at ({sqrt(2)},{sqrt(2)});
+        \coordinate (C) at(0,2);
+        \coordinate (D) at ({-sqrt(2)},{sqrt(2)});
+        \coordinate (E) at(-2,0);
+        \coordinate (F) at({-sqrt(2)},{-sqrt(2)});
+        \coordinate (G) at(0,-2);
+        \coordinate (H) at ({sqrt(2)},{-sqrt(2)});
+
+        \draw[blue,thick] (A)--(B)--(C)--(D)--(E)--(F)--(G)--(H)--cycle;
+        \draw[blue,thick](A)--(E);
+        \draw[blue,thick](B)--(F);
+        \draw[blue,thick](C)--(G);
+        \draw[blue,thick](D)--(H);
+       \end{tikzpicture}]]>
+    </latex-image></image></statement>
+<answer><p>Central angles: <m>45 \degree</m>, all other angles: <m>67.5 \degree</m></p></answer></exercise>
+
+<exercise number="46"><statement><p>Find the measure of each unknown angle.</p><!-- <image source="transversal.png" width="50%"></image>-->
+    <image xml:id="hp-1-4-46" width="45%"><description>20 and 85 degree angles, scalene</description><latex-image>
+        <![CDATA[
+        \begin{tikzpicture} 
+        \coordinate(O) at (0,0);
+        \def\r{1.6};
+        \coordinate (a) at ({2*\r},\r);
+        \coordinate (b) at ({-2*\r},\r);
+        \coordinate (c) at ({2*\r},-\r);
+        \coordinate (d) at ({-2*\r},-\r);
+        \coordinate (e) at (0,{1.7*\r});
+        \coordinate (f) at (0,{-1.7*\r});
+        \coordinate (g) at (40:{2*\r/cos(40)});
+        \coordinate (h) at (220:{2*\r/cos(40)});
+        \coordinate (B) at (85:{5/12*\r});
+        \draw[black,thick] (a)--(b);
+        \draw[black,thick] (c)--(d);
+        \draw[black,thick] (e)--(f);
+        \draw[black,thick] (g)--(h);
+        \draw[blue] (0,\r) rectangle ++(.15,-.15);
+        \draw[blue] (0,-\r) rectangle ++(-.15,.15);
+        \draw[red] ({\r/tan(40)+.5},\r) arc(0:40:.5) node[midway,right, yshift=3]{$40^\circ$};
+        \draw[red] ({\r/tan(40)-.2},\r) arc(180:40:.2) node[midway,above, yshift=0]{$A$};
+        \draw[red] ({\r/tan(40)-.5},\r) arc(180:220:.5) node[midway,left, yshift=-3]{$B$};
+        \draw[red] ({\r/tan(40)+.2},\r) arc(0:-140:.2) node[midway,below, yshift=-3]{$K$};
+
+        \draw[red] (0,.4) arc(90:40:.4) node[midway,above, xshift=2]{$C$};
+        \draw[red] (0,.25) arc(90:220:.25) node[midway,left, yshift=2]{$D$};
+        \draw[red] (0,-.4) arc(270:220:.4) node[midway,below, xshift=-2]{$E$};
+        \draw[red] (0,.-.25) arc(-90:40:.25) node[midway,right, yshift=-2]{$J$};
+
+        \draw[red] ({-\r/tan(40)+.5},-\r) arc(0:40:.5) node[midway,right, yshift=3]{$F$};
+        \draw[red] ({-\r/tan(40)-.2},-\r) arc(180:40:.2) node[midway,above, yshift=0]{$G$};
+        \draw[red] ({-\r/tan(40)-.5},-\r) arc(180:220:.5) node[midway,left, yshift=-3]{$H$};
+        \draw[red] ({-\r/tan(40)+.2},-\r) arc(0:-140:.2) node[midway,below, yshift=-3]{$I$};
+
+        \end{tikzpicture}]]>
+    </latex-image></image>
+</statement></exercise>
+
+</exercises>

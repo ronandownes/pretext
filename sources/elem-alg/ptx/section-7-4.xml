@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="Special-Products-and-Factors" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Special Products and Factors</title>
+
+<subsection><title>Squares of Monomials</title>
+	<idx><h>monomial</h><h>square of</h></idx>
+
+<p>A few special binomial products occur so frequently that it is useful to recognize their forms. This will enable you to write their factored forms directly, without trial and error. To prepare for these special products, we first consider the squares of monomials.</p>
+
+<p>Study the squares of monomials in <xref ref="Example-7-4-1" text="type-global"/>. Do you see a quick way to find the product?</p>
+
+<example xml:id="Example-7-4-1"><statement><p><ol marker="a.">
+	<li><m>(w^5)^2 = w^5 \cdot w^5 = w^{10}</m></li>
+	<li><m>(4x^3)^2 = 4x^3 \cdot 4x^3 = 4 \cdot 4 \cdot x^3 \cdot x^3 = 16x^6</m></li>
+</ol></p></statement></example>
+
+<assemblage><title>Look Closer</title>
+<p>In <xref ref="Example-7-4-1" text="type-global"/>a, we doubled the exponent and kept the same base. In <xref ref="Example-7-4-1" text="type-global"/>b, we squared the numerical coefficient and doubled the exponent.</p>
+</assemblage>
+
+<exercise number="1"><statement><p>Why do we double the exponent when we square a power?</p></statement>
+    <answer><p>Because when we multiply powers with the same base, we add the exponents.</p></answer></exercise>
+
+<example><statement><p>Find a monomial whose square is <m>36t^8</m>.</p></statement>
+
+<solution><p>When we square a power, we double the exponent, so <m>t^8</m> is the square of <m>t^4</m>. Because <m>36</m> is the square of <m>6</m>, the monomial we want is <m>6t^4</m>. To check our result, we square <m>6t^4</m> to see that <m>~(6t^4)^2=36t^8</m>.</p></solution></example>
+</subsection>
+
+<subsection><title>Squares of Binomials</title>
+	<idx><h>binomial</h><h>square of</h></idx>
+
+<p>You can use the distributive law to verify each of the following special products.
+
+<md><mrow>(a+b)^2 \amp =(a+b)(a+b) \amp \amp \amp (a-b)^2 \amp =(a-b)(a-b)</mrow>
+	<mrow> \amp = a^2+ab+ab+b^2 \amp \amp \amp \amp =a^2-ab-ab+b^2</mrow>
+	<mrow> \amp = a^2+2ab+b^2 \amp \amp  \amp \amp =a^2-2ab+b^2</mrow></md></p>
+
+<assemblage><title>Squares of Binomials</title>
+	<idx><h>binomial</h><h>square of</h></idx>
+<p><ol marker="1.">
+	<li><m>\blert{(a+b)^2=a^2+2ab+b^2}</m></li>
+	<li><m>\blert{(a-b)^2=a^2-2ab+b^2}</m></li>
+</ol></p></assemblage>
+
+<exercise number="2"><statement><p>Explain why it is NOT true that <m>~(a+b)^2=a^2+b^2</m>.</p></statement>
+    <answer><p>Because we must square <m>(a+b)</m> using FOIL.</p></answer></exercise>
+
+<p>We can use these results as formulas to compute the square of any binomial.</p>  
+
+<example xml:id="Example-7-4-3"><statement><p>  Expand <m>~(2x+3)^2~</m> as a polynomial.</p></statement>
+
+<solution><p>The formula for the square of a sum says to square the first term, add twice the product of the two terms, then add the square of the second term. We replace <m>a</m> by <m>2x</m> and <m>b</m> by <m>3</m> in the formula.
+	<md><mrow>(a+b)^2 \amp = a^2 ~~~~~~ + ~~~~~~ 2 a b~~~~~~ + ~~~~~~b^2</mrow>
+		<mrow>(2x+3)^2 \amp = (2x)^2 + ~~2 (2x)(3) + ~~~(3)^2</mrow>
+		<mrow>\amp ~~\blert{\text{square of}} ~~~~~ \blert{\text{twice their}} ~~~~~ \blert{\text{square of}}</mrow>
+		<mrow>\amp ~~\blert{\text{first term}} ~~~~~~~ \blert{\text{product}} ~~~~~ \blert{\text{second term}}</mrow>
+		<mrow> \amp = 4x^2 ~~~~ + ~~~~~~ 12x ~~~~~ + ~~~~~ 9</mrow></md></p>
+</solution></example>
+
+<p>Of course, you can verify that you will get the same answer for <xref ref="Example-7-4-3" text="type-global"/> if you compute the square by multiplying <m>~(2x+3)(2x+3)</m>.</p>
+
+<warning><p>We cannot square a binomial by squaring each term separately! For example, it is NOT true that
+	<md><mrow>(2x+3)^2 = 4x^2+9~~~~~~\alert{\text{Incorrect!}}</mrow></md> 
+We must use the distributive law to multiply the binomial times itself.</p></warning>
+
+<exercise number="3"><statement><p>How do we compute <m>~(a+b)^2</m>?</p></statement>
+    <answer><p><m>~a^2+2ab+b^2</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Difference of Two Squares</title>
+
+<p>Now consider the product
+	<md><mrow>(a+b)(a-b) = a^2 - ab + ab - b^2</mrow></md>
+In this product, the two middle terms cancel each other, and we are left with a difference of two squares.</p>
+
+<assemblage><title>Difference of Two Squares</title>
+	<idx><h>difference</h><h>of two squares</h></idx>
+	<idx><h>binomial</h><h>difference of two squares</h></idx>
+<p><md><mrow>\blert{(a+b)(a-b)=a^2-b^2}</mrow></md></p></assemblage>  
+
+<example><statement><p>Multiply <m>~(2y+9w)(2y-9w)~</m></p></statement>
+
+<solution><p>The product has the form <m>(a+b)(a-b)</m>, with <m>a</m> replaced by <m>2y</m> and <m>b</m> replaced by <m>9w</m>. We use the difference of squares formula to write the product as a polynomial.
+	<md><mrow>(a+b)(a-b) \amp = ~~a^2 ~~~~~~ - ~~~~~~b^2</mrow>
+		<mrow>(2y+9w)(2y-9w) \amp = (2y)^2 ~~ - ~~~(9w)^2</mrow>
+		<mrow>\amp ~~\blert{\text{square of}} ~~~~~  \blert{\text{square of}}</mrow>
+		<mrow>\amp ~~\blert{\text{first term}} ~~~~~ \blert{\text{second term}}</mrow>
+		<mrow> \amp = 4y^2 ~~~~ - ~~~~~ 81w^2</mrow></md></p>
+</solution></example>
+
+<exercise number="4"><statement><p>Explain the difference between <m>~(a-b)^2~</m> and <m>~a^2-b^2</m>.</p></statement>
+    <answer><p>To simplify <m>~(a-b)^2</m>, we must square the binomial.</p></answer></exercise>
+</subsection>
+
+<subsection><title>Factoring Special Products</title>
+
+<p>The three special products we have just studied are useful as patterns for factoring certain polynomials. For factoring, we view the formulas from right to left.</p>
+
+<assemblage><title>Special Factorizations</title>
+	<idx><h>factoring</h><h>special factorizations</h></idx>
+	<idx><h>factoring</h><h>difference of squares</h></idx>
+	<idx><h>factoring</h><h>perfect square trinomial</h></idx>
+<p><ol marker="1.">
+	<li><m>\blert{a^2+2ab+b^2=(a+b)^2}</m></li>
+	<li><m>\blert{a^2-2ab+b^2=(a-b)^2}</m></li>
+	<li><m>\blert{a^2-b^2=(a+b)(a-b)}</m></li>
+</ol></p></assemblage>
+
+<p>If we recognize one of the special forms, we can use the formula to factor it. Notice that all three special products involve two squared terms, <m>a^2</m> and <m>b^2</m>, so we first look for two squared terms in our trinomial.</p>
+
+<example><statement><p>Factor <m>~x^2+24x+144</m></p></statement>
+
+<solution><p>This trinomial has two squared terms, <m>x^2</m> and <m>144</m>. These terms are <m>a^2</m> and <m>b^2</m>, so <m>a=x</m> and <m>b=12</m>. We check whether the middle term is equal to <m>2ab</m>.
+	<md><mrow>2ab=2(x)(12) = 24x</mrow></md>
+This is the correct middle term, so our trinomial has the form (1), with <m>a=x</m> and <m>b=12</m>. Thus,
+	<md><mrow>a^2+2ab+b^2 \amp = (a+b)^2 \amp \amp \blert{\text{Replace}~a~\text{by}~x~\text{and}~b~ \text{by}~12.}</mrow>
+		<mrow>x^2+24x+144 \amp = (x+12)^2</mrow></md></p>
+</solution></example>
+
+<exercise number="5"><statement><p>How can we factor <m>~a^2- 2ab + b^2</m>?</p></statement>
+    <answer><p><m>(a-b)^2</m></p></answer></exercise>
+
+<exercise number="6"><statement><p>How can we factor <m>~a^2- b^2</m>?</p></statement>
+    <answer><p><m>(a+b)(a-b)</m></p></answer></exercise>
+
+<warning><p>The sum of two squares, <m>~a^2+b^2</m>, cannot be factored!  For example, 
+	<md><mrow>x^2+16,~~~~~~9x^2+4y^2,~~~~~~\text{and}~~~~~~25y^4+w^4</mrow></md>
+cannot be factored. You can check, for instance, that <m>~x^2+16 \not= (x+4)(x+4)</m>.</p></warning>
+
+<assemblage><title>Sum of Two Squares</title>
+	<idx><h>factoring</h><h>sum of two squares</h></idx>
+	<idx><h>sum</h><h>of two squares</h></idx>	
+<p>	The sum of two squares, <m>~a^2+b^2~</m>, cannot be factored.</p></assemblage>
+
+<p>As always when factoring, we should check first for common factors.</p>
+
+<example><statement><p>Factor completely <m>~98-28x^4+2x^8</m></p></statement>
+
+<solution><p>Each term has a factor of 2, so we begin by factoring out 2.
+	<md><mrow>98-28x^4+2x^8 = 2(49-14x^4+x^8)</mrow></md>
+The polynomial in parentheses has the form <m>(a-b)^2</m>, with <m>a=7</m> and <m>b=x^4</m>. The middle term is 
+	<md><mrow>-2ab=-2(7)(x^4)</mrow></md>
+ We use equation (2) to write
+  	<md><mrow><mrow>a^2+2ab+b^2 \amp = (a-b)^2 \amp \amp \blert{\text{Replace}~a~\text{by}~7~\text{and}~b~ \text{by}~x^4.}</mrow></mrow>
+		<mrow>49-14x^4+x^8 \amp = (7-x^4)^2</mrow></md>
+Thus,
+	<md><mrow>98-28x^4+2x^8 = 2(7-x^4)^2</mrow></md></p>
+</solution></example>
+
+<exercise number="7"><statement><p>What expression involving squares cannot be factored?</p></statement>
+    <answer><p>The sum of two squares, <m>a^2+b^2</m></p></answer></exercise>
+
+<problem><statement>
+<p>Express each product as a polynomial.</p>
+
+<p><ol marker="1." cols="2">
+	<li><m>(z-3)^2</m></li>
+	<li><m>(x+4)^2</m></li>
+	<li><m>(3a+5)^2</m></li>
+	<li><m>(2b-7)^2</m></li>
+	<li><m>(2n-5)(2n+5)</m></li>
+	<li><m>(4m+9)(4m-9)</m></li>
+</ol></p></statement>
+
+<answer><p><ol marker="1." cols="2">
+	<li><m>z^2-6z+9</m></li>
+	<li><m>x^2+8x+16</m></li>
+	<li><m>9a^2+30a+25</m></li>
+	<li><m>4b^2-28b+49</m></li>
+	<li><m>4n^2-25</m></li>
+	<li><m>16m^2-81</m></li>
+</ol></p></answer></problem>
+</subsection>
+
+<subsection><title>Lesson</title>
+
+<activity><title>Activity 1: Special Products</title>
+
+<p><ol marker="1.">
+	<li><p>Simplify each square. <ol marker="a." cols="2">
+		<li><m>(-6h^6)^2</m></li>
+		<li><m>(12st^8)^2</m></li>
+	</ol></p></li>
+
+	<li><p>Find a monomial whose square is given. <ol marker="a." cols="2">
+		<li><m>64b^6</m></li>
+		<li><m>169a^4b^{16}</m></li>
+</ol></p></li>
+
+	<li><p>Use a formula to expand each product. <ol marker="a.">
+		<li><m>(4-3t)^2</m></li>
+		<li><m>(6s+2t)^2</m></li>
+		<li><m>(5x^4+4)(5x^4-4)</m></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<activity><title>Activity 2: Special Factorizations</title>
+
+<p><ol marker="1.">
+	<li><p>Use one of the three formulas to factor each polynomial.<ol marker="a.">
+		<li><m>25y^2-w^2</m></li>
+		<li><m>m^6-18m^3+81</m></li>
+		<li><m>4h^2+36hk+81k^2</m></li>
+</ol></p></li>
+
+	<li><p>Factor completely.<ol marker="a.">
+		<li><m>x^6-16x^2</m></li>
+		<li><m>3b^9+18b^6+27b^3</m></li>
+		<li><m>2x^5y-20x^3y^3+50xy^3</m></li>
+</ol></p></li>
+</ol></p>
+</activity>
+
+<subsubsection><title>Wrap-Up</title>
+
+<assemblage><title>Objectives</title>
+<p>In this Lesson we practiced the following skills:<ul>
+    <li>Identifying squares of monomials</li>
+	<li>Using the fromulas for squares of binomials and difference of squares</li>
+	<li>Factoring squares of binomials and difference of squares</li>
+	<li>Knowing that the sum of squares cannot be factored</li>
+</ul></p></assemblage>
+
+<assemblage><title>Questions</title>   
+<p><ol marker="1.">
+    <li>Explain the difference between squaring <m>3b^3</m> and squaring <m>3+b^3</m>.</li>
+	<li>How can you check whether a trinomial might be the square of a binomial?</li>
+	<li>Explain why we can factor the difference of two squares, but we cannot factor the sum of two squares.</li>
+</ol></p></assemblage>
+</subsubsection>
+
+<activity><title>Homework Preview</title>
+
+<p><ol marker="A.">
+<li><p>Expand each product.</p>
+<p><ol marker="1.">
+   	<li><p><m>(4a-5b)^2</m></p></li>
+    <li><p><m>(4a+5b)^2</m></p></li>
+    <li><p><m>(4a+5b)(4a-5b)</m></p></li>
+</ol></p></li>
+
+<li><p>Factor.</p>
+<p><ol marker="1.">
+   	<li><p><m>36x^2+96x+64</m></p></li>
+   	<li><p><m>36x^2-96x+64</m></p></li>
+   	<li><p><m>36x^2-64</m></p></li>
+</ol></p></li>
+</ol></p>
+
+<p>Answers to Homework Preview</p>
+<p><ol marker="A.">
+<li><p><ol marker= "1.">
+	<li><m>16a^2-40ab+25b^2</m></li>
+	<li><m>16a^2+40ab+25b^2</m></li>
+	<li><m>16a^2-25b^2</m></li>
+</ol></p></li>
+<li><p><ol marker= "1.">
+	<li><m>4(3x+4)^2</m></li>
+	<li><m>4(3x-4)^2</m></li>
+	<li><m>4(3x+4)(3x-4)</m></li>
+</ol></p></li>
+</ol></p></activity>
+</subsection>
+
+<xi:include href="./hmwk-7-4.xml" />
+</section> 

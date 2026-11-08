@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="chap3-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter 3 Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>quadratic equation</p></li>
+    <li><p>parabola</p></li>
+    <li><p>extraction of roots</p></li>
+    <li><p>compound interest</p></li>
+    <li><p>factor</p></li>
+    <li><p>multiplicity</p></li>
+    <li><p>vertex</p></li>
+    <li><p>axis of symmetry</p></li>
+    <li><p>quadratic trinomial</p></li>
+    <li><p>complete the square</p></li>
+</ul></p>
+
+
+</subsection>
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+       <li>A <term>quadratic</term> equation has the standard form <m>ax^2+bx=c=0</m>, where <m>a,~b,~</m> and <m>c</m> are constants and <m>a</m> is not equal to zero.</li>
+		<li>The graph of a quadratic equation <m>y=ax^2+bx=c</m> is called a <term>parabola</term>. The <term>basic parabola</term> is the graph of <m>y=x^2</m>.</li>
+        <li><assemblage><title>Extraction of Roots</title>
+			<p>To solve a quadratic equation of the form
+    			<me>ax^2+c=0</me> <ol marker="1.">
+    		<li>Isolate <m>x</m> on one side of the equation.</li> 
+    		<li>Take the square root of each side.</li></ol></p></assemblage></li>
+        <li>Every quadratic equation has two solutions, which may be the same.</li>
+		<li>Solutions of a quadratic equation can be given as exact values or as decimal approximations.</li>
+        <li><p><assemblage><title>Formulas for Volume and Surface Area</title><p><ol marker="1.">
+        		<li>Sphere <m>~~~~~~V=\dfrac{4}{3}\pi r^3~~~~~~S=4\pi r^2</m></li>
+        		<li>Cylinder <m>~~~~~~V=\pi r^2h~~~~~~S=2\pi r^2+2 \pi rh</m></li>
+        		<li>Cone  <m>~~~~~~V=\dfrac{1}{3}\pi r^2h~~~~~~S=\pi r^2+\pi rs</m></li>
+        		<li>Square Pyramid  <m>~~~~~~V=\dfrac{1}{3}s^2h</m></li></ol></p></assemblage></p></li>
+        <li><p>The formula for interest compounded annually is
+        	<me>A=P(1+r)^n</me></p></li>
+		<li><p><term>Zero-Factor Principle</term>:  The product of two factors equals zero if and only if one or both of the factors equals zero.  In symbols,    
+				<me>ab=0~~\text{if and only if}~~a=0~~\text{or}~~b=0~~\text{or both}</me></p></li>
+        <li><p><assemblage><title>To Solve a Quadratic Equation by Factoring</title><p> <ol marker="1.">
+    		<li>Write the equation in standard form.</li>
+    		<li>Factor the left side of the equation.</li>
+    		<li>Apply the zero-factor principle:  Set each factor equal to zero.</li>
+    		<li>Solve each equation. There are two solutions (which may be equal).</li></ol></p></assemblage></p></li>
+        <li>Each solution of a quadratic equation corresponds to a non-constant factor in the factored form.</li>
+		<li>The value of the constant <m>a</m> in the factored form of a quadratic equation does not affect the solutions.</li>
+		<li><p>The <m>x</m>-intercepts of the graph of <m>y=ax^2+bx+c</m> are the solutions of the equation <m>ax^2+bx+c=0</m>.</p></li>
+		<li><p><assemblage><title>The Graph of <m>y=ax^2</m></title>
+			<p><ul>
+    		<li>The parabola opens upward if <m>a \gt 0</m></li>
+    		<li>The parabola opens downward if <m>a \lt 0</m></li>
+    		<li>The magnitude of <m>a</m> determines how wide or narrow the parabola is.</li>
+    		<li>The vertex, the <m>x</m>-intercepts, and the <m>y</m>-intercept all coincide at the origin.</li>
+		</ul></p></assemblage></p></li>
+		<li><p><assemblage><title>The Graph of <m>y=x^2+c</m></title>
+		<p>Compared to the graph of <m>y=x^2</m>, the graph of <m>y=x^2+c</m><ul>
+    		<li>is shifted upward by <m>c</m> units if <m>c \gt 0</m></li>
+    		<li>is shifted downward by <m>c</m> units if <m>c \lt 0</m></li>
+		</ul></p></assemblage></p></li>
+		<li><p>For the graph of <m>y=ax^2+bx+c</m>, the <m>x</m>-coordinate of the vertex is
+			<me>x_v=\dfrac{-b}{2a}</me></p></li>
+		<li><p>The square of a binomial is a quadratic trinomial,
+				<me>(x+p)^2=x^2+2px+p^2</me></p></li>
+		<li><p><assemblage><title>To Solve a Quadratic Equation by Completing the Square</title>
+    		<p><ol marker="1.">
+            <li><ol marker="a.">
+                <li><p>Write the equation in standard form.</p></li>
+                <li><p>Divide both sides of the equation by the coefficient of the quadratic term, and subtract the constant term from both sides.</p></li></ol></li>
+            <li><p>Complete the square on the left side:<ol marker="a.">
+                <li>Multiply the coefficient of the first-degree term by one-half, then square the result.</li>
+                <li>Add the value obtained in (a) to both sides of the equation.</li></ol></p></li>
+            <li><p>Write the left side of the equation as the square of a binomial. Simplify the right side.</p></li>
+            <li><p>Use extraction of roots to finish the solution.</p></li>
+        </ol></p></assemblage></p></li>  </ol></p>
+</subsection>
+
+<xi:include href="./chap3-rev-problems.xml" />  <!--exercises  -->
+
+</section>
+<!-- </appendix> -->
+<!-- </book>  </mathbook> -->

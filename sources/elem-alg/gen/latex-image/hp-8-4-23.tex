@@ -1,0 +1,38 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [scale=2.5]
+\def\r{(1+sqrt(5))/2};
+\draw[magenta!80!black,  line width=1mm] (0,0) rectangle ++({\r},1);
+\draw[magenta!80!black,  line width=1mm] (1,0) --++(0,1);
+\node [below, yshift=-1] at (0,0) {A};
+\node [below, yshift=-1] at (1,0) {E};
+\node [below, yshift=-1] at ({\r},0) {D};
+\node [above, yshift=1] at (0,1) {B};
+\node [above, yshift=1] at (1,1) {F};
+\node [above, yshift=1] at ({\r},1) {C};
+      \end{tikzpicture}%
+}
+\end{document}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+
+<!--********************************************************************
+
+
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2017/01/07)                     -->
+<!--                                               -->
+<!--   Trigonometry   -->
+<!--                                                -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+<document-id>trig</document-id>
+<blurb shelf="Mathematics">
+      This trigonometry textbook should be suitable for a one-semester course in trigonometry, useful to students in a variety of programs.  For example, students who have encountered elements of triangle trig in previous courses may be able to skip all or part of Chapters 1 through 3.  Students preparing for technical courses may not need much of the material after Chapter 6 or 7.  Chapters 9 and 10 cover vectors and polar coordinates, optional topics that occur in some trigonometry courses but are often reserved for precalculus.
+    </blurb>
+<brandlogo url="https://yoshiwarabooks.org/" source="photos/cover.png" /> 
+
+
+<!-- rename blocks -->
+       <rename element="warning">Caution</rename>
+        <rename element="theorem">Algebra Refresher</rename>  
+        <rename element="exploration">Skills Refresher</rename>
+
+
+    <!-- Prefix to enhance Sage notebook contents -->
+    <initialism>Trig</initialism>
+
+    <!-- tikz package and libraries for images -->
+    <latex-image-preamble>
+        \usepackage{tikz}
+        \usetikzlibrary{arrows}
+        \usetikzlibrary{arrows.meta}
+        \usetikzlibrary{decorations.pathreplacing}
+        \usetikzlibrary{calc,intersections,through,backgrounds}
+        \usetikzlibrary{patterns}
+        \usetikzlibrary{shapes.misc}
+
+    </latex-image-preamble>
+
+   <macros>
+        \newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+        \newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+        \newcommand{\bluetext}[1]{\color{skyblue}{#1}} <!-- comments in aligned equations -->
+        \delimitershortfall-1sp
+        \newcommand\abs[1]{\left|#1\right|}
+        \newcommand\degree[0]{^{\circ}}
+
+   </macros>
+
+
+
+</docinfo>

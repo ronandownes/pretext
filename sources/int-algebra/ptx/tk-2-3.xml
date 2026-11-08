@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<subsection xml:id="tkAlgSol"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Algebraic Solution of Systems</title>
+
+<introduction><p>Some familiar formulas are useful in writing equations to solve a problem.</p></introduction>
+
+<subsubsection xml:id="tkInterest"><title>Use the interest formula, <m>I=Pr</m></title>
+
+<example><statement><p>You have $5000 to invest for one year. You want to put part of the money into bonds that pay 7% interest, and the rest of the money into stocks that involve some risk but will pay 12% if successful. Now suppose you decide to invest <m>x</m> dollars in stocks and <m>y</m> dollars in bonds.
+    <ol marker="a.">
+        <li>Use the interest formula, <m>I=Pr</m>, to write expressions for the interest earned on the bonds and on the stocks.</li>
+        <li>Write an equation about the amount invested.</li>                 
+        <li>Write an equation to say that the total interest earned was $400.</li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>Stocks: <m>I=0.12x;~~~</m>Bonds: <m>I=0.07y</m></p></li>
+    <li><m>x+y=500</m></li>
+    <li><m>0.12x+0.07y=400</m></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Mort invested money in two accounts, a savings plan that pays 8% interest and a mutual fund that pays 7% interest. He put twice as much money in the savings plan as in the mutual fund. At the end of the year Mort's total interest income was $345. How much did he invest in each account? 
+    <ol marker="a."> 
+        <li>Use the interest formula to write expressions for the interest Mort earned on the savings plan and the interest he earned on the mutual fund.</li>
+        <li>Write an equation about the amount Mort invested.</li>
+        <li>Write an equation about the interest Mort earned.</li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>0.04x;~~0.09y</m></li>
+    <li><m>x+y=2000</m></li>
+    <li><m>0.09y=37+0.04x</m></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+<subsubsection xml:id="tkPercent"><title>Use the percent formula, <m>P=rW</m></title>
+
+<example><statement><p>A pharmacist has on hand a solution of a certain medication at 40% strength, but she needs 48 ounces of the medication at 75% strength for a prescription. She decides to add a pure form of the medication to the 40% solution. How much of the each strength solution should she add to make a mixture of 75% strength?
+    <ol marker="a.">
+        <li>Choose variables for the unknown quantities.</li>
+        <li>Write an equation about the amount of 75% solution.</li>
+        <li>Use the percent formula, <m>P=rW</m>, to calculate the amount of the medication in the original solution.</li>
+        <li>Use the percent formula to calculate the amount of the medication in the mixture.</li>         
+        <li>Write an equation about the amount of medication.</li>
+    </ol></p></statement> 
+
+<solution><p><ol marker="a.">
+        <li>Let <m>x</m> stand for tthe amount of 40% solution and <m>y</m> for the pure solution.</li>
+        <li><m>x+y=48</m></li>
+        <li><m>0.40(20)=8</m></li>
+        <li><m>P=rW = 0.40x</m></li>
+        <li><m>P=rW=0.0.75(48) = 36</m></li>
+        <li><m>0.40x+y = 36</m></li>
+    </ol></p></solution></example>
+
+<exercise><statement><p>A pet store owner wants to mix a 12% saltwater solution and a 30% saltwater solution to obtain 90 liters of a 24% solution. He uses <m>x</m> quarts of the 12% solution and <m>y</m> quarts of the 30% solution.
+    <ol marker="a.">
+        <li>Write an equation about the total amount of saltwater.</li>
+        <li>Use the percent formula to write expressions about the amount of salt in each original solution.</li>
+        <li>How many liters of salt are in the mixture?</li>
+        <li>Write an equation about the amount of salt.</li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>x+y=90</m></li>
+    <li><m>0.20x;~~0.30y</m></li>
+    <li><m>0.24(90)</m></li>
+    <li><m>0.20x+0.30y=0.24(90)</m></li>
+</ol></p></answer></exercise>
+</subsubsection>
+
+<subsubsection xml:id="tkDistance"><title>Use the distance formula, <m>d=rt</m></title>
+
+<example><statement><p>A river steamer requires 3 hours to travel 24 miles upstream and 2 hours for the return trip downstream.  Let <m>x</m> be the speed of the current and <m>y</m> the speed of the steamer in still water.
+    <ol marker="a.">
+        <li>Write an equation about the upstream trip.</li>      
+        <li>Write an equation about the downstream trip.</li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a.">
+        <li>The speed of the steamer aginst the current is <m>r=y-x</m>, so <m>~3(y-x)=24</m></li>
+        <li>The speed of the steamer with the current is <m>r=y+x</m>, so <m>~2(y+x)=24</m></li>
+    </ol></p></solution></example> 
+
+<exercise><statement><p>A yacht leaves San Diego and heads south, traveling at 25 miles per hour. Six hours later a Coast Guard cutter leaves San Diego traveling at 40 miles per hour and pursues the yacht. Let <m>x</m> be the time it takes the cutter to catch the yacht, and <m>y</m> the distance it traveled.
+    <ol marker="a.">
+        <li> Write an equation about the yacht's journey.</li>
+        <li>Write an equation about the cutter's journey.</li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>25(x+6)=y</m></li>
+    <li><m>40x=y</m></li>
+</ol></p></answer></exercise>
+
+</subsubsection>
+
+</subsection>

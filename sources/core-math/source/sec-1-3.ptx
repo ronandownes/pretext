@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Whole Numbers</title>
+
+  <sidebyside widths="50% 50%"><p><ul>
+    <li><p>Factors</p></li>
+    <li><p>Primes and Composites</p></li>
+    <li><p>Greatest Common Factor</p></li>
+    <li><p>Lowest Common Multiple</p></li>
+  </ul></p>
+      <image source="wholenums.png"></image></sidebyside>
+  
+  <subsection><title>Factors</title>
+
+    <p>First let's review some vocabulary. Match each word with its definition.</p>
+
+    <assemblage><title>Vocabulary</title>
+      <p>factor<fillin characters="8"/>  product <fillin characters="8"/>  divisible<fillin characters="8"/>  whole number<fillin characters="8"/></p>
+      <p><ol marker="1.">
+        <li><p>The result of multiplying two or more numbers together.</p></li>
+        <li><p>A counting number or zero.</p></li>
+        <li><p>Can be divided evenly (with no remainder) by another number.</p></li>
+        <li><p>A whole number that divides evenly into a given number.</p></li> </ol></p></assemblage>
+
+  <activity xml:id="activityrectangles"><title>Rectangles</title>
+    <p>For this Activity (and the Practice problems), you will need 40 small tiles.</p> 
+    <p><ol marker="1.">
+        <li><p>Select 12 tiles from your collection. Can you make a rectangle using all 12 tiles? One possibility is a rectangle with length 4 tiles and height 3 tiles. Or we could arrange the rectangle with length 3 tiles and height 4 tiles.</p>
+          <image source="tiles.png" width="40%"></image> 
+        <p><ol marker="a.">
+            <li><p>What other rectangles can you make?  Fill in the table below.</p>
+                <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+        <row>
+        <cell>Length</cell>
+        <cell><m>\hphantom{0}1\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}2\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}3\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}4\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}5\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}6\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}7\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}8\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}9\hphantom{0}</m></cell>
+        <cell><m>\hphantom{1}10\hphantom{1}</m></cell>
+        <cell><m>\hphantom{1}11\hphantom{1}</m></cell>
+        <cell><m>\hphantom{1}12\hphantom{1}</m></cell></row>
+        <row>
+        <cell>Height</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>4</cell>
+        <cell>3</cell>
+        <cell>X</cell>
+        <cell></cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell></cell></row>
+    </tabular></p></li>
+    <li><p>How many rectangles did you find? On the grid below, sketch all of your rectangles. Start each one in the bottom left-hand corner. The rectangles will overlap. What do you notice about the rectangles?  (Hint: Draw in a diagonal on the grid, from bottom left to upper right.)</p>
+      <image source="graphpaper.png" width="60%"></image></li>
+    </ol></p></li>
+
+  <li><p>Repeat Problem 1 with a set of 24 tiles. Make your own table for Length and Height, and use the grid below to sketch your rectangles. (Note: two of your rectangles will not fit on the grid.)
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+        <cell>Length</cell>
+        <cell><m>\hphantom{0}1\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}2\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}3\hphantom{0}</m></cell>
+        <cell><m>\hphantom{000000000} \large{\cdots}\hphantom{000000000} </m></cell></row>
+    <row>
+        <cell>Height</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell></row>
+    </tabular></p>
+          <image source="graphpaper.png" width="60%"></image>
+  How many rectangles did you find?</p></li>
+</ol></p></activity>
+
+<p>Can you think of two whole numbers whose product is 12? Can you think of another pair? Let's try the whole numbers in order, starting with 1. We are looking for factors of 12, or numbers that divide evenly into 12.</p>
+
+<p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+        <cell>Length</cell>
+        <cell><m>\hphantom{0}1\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}2\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}3\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}4\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}5\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}6\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}7\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}8\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}9\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}10\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}11\hphantom{0}</m></cell>
+        <cell><m>\hphantom{0}12\hphantom{0}</m></cell></row>
+    <row>
+        <cell>Height</cell>
+        <cell>12</cell>
+        <cell>6</cell>
+        <cell>4</cell>
+        <cell>3</cell>
+        <cell>X</cell>
+        <cell>2</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>X</cell>
+        <cell>1</cell></row>
+    </tabular></p>
+
+<p>Do you see that these are the same numbers we found in Problem 1 of Activity 1.3.1? We have found three number pairs:
+    <me>\large{\blert{1}~~~~ \text{and}~~~~\blert{12}}, \hphantom{0000} \large{\blert{2}~~~~\text{and}~~~~\blert{6}}, \hphantom{0000} \text{and} \hphantom{0000} \large{\blert{3}~~~~\text{and}~~~~\blert{4}}</me></p>
+        <image source="factorrainbow.png" width="40%"></image>
+<p>Each of these pairs of numbers is called a <term>factor pair</term> for 12. (The order of the numbers in a factor pair doesn't matter.)</p>
+
+<activity><title>Factor Pairs</title>
+<p>Find all the factor pairs for each number.  List them in order.<ol marker="1.">
+    <li><p><m>27</m></p></li>
+    <li><p><m>26</m></p></li>
+    <li><p><m>25</m></p></li>
+    <li><p><m>24</m></p></li>
+    <li><p><m>23</m></p></li>
+</ol></p>
+<p>Which number above has the most factor pairs? <fillin characters="8"/></p>                            
+
+<p>Which number above has the fewest factor pairs? <fillin characters="8"/></p>
+</activity>
+
+<assemblage><title>Definition</title>                         
+<p>A counting number (larger than 1) that is evenly divisible only by 1 and itself is called a <term>prime</term> number. A counting number larger than 1 that is not prime is called <term>composite</term>.</p></assemblage>
+
+<example><statement><p>Which of the following numbers are prime numbers?
+        <me>6 \hphantom{0000}  7 \hphantom{0000} 10 \hphantom{0000} 11</me></p></statement>
+
+<solution><p>Because  6  is divisible by 2 and 3, it is composite. Similarly, 2 and 5 are factors of 10, so it is composite also. But 7 has no factors other than 1 and 7, so it is prime. Similarly, 11 is prime.</p></solution></example>
+
+<exercise><statement><p>Which of the following numbers are prime numbers?
+        <me>4 \hphantom{0000}  5 \hphantom{0000} 8 \hphantom{0000} 9</me></p></statement>
+<answer><p>Only 5 is prime.</p></answer></exercise>
+
+<p>In Activity 1.3.3 we'll find all the prime numbers between 1 and 100.</p>
+
+<activity xml:id="activitysieve"><title>The Sieve of Eratosthenes</title>
+<p><ol marker="a.">
+  <li><p>Circle the first prime number, 2. Cross out all multiples of 2.</p></li>
+  <li><p>Circle the first number that is not crossed out. (It should be a prime 
+    number.) Cross out all multiples of that number.</p></li>
+  <li><p>Repeat part (b) until there are no more numbers to cross out.</p></li></ol></p>
+
+  <image source="sieve.png" width="65%"></image>
+
+<p>The circled numbers are the primes!</p>
+</activity>
+</subsection>
+
+<subsection><title>Primes and Composites</title>
+
+<p>The prime numbers are important because they are the building blocks for the whole numbers: every composite number is a product of primes.</p>
+
+<example><statement><p>Write each composite number as a product of primes.<ol cols="2" marker="a.">
+  <li><p><m>35</m></p></li>
+  <li><p><m>8</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol cols="2" marker="a.">
+  <li><p><m>35 = 5 \times 7</m></p></li>
+  <li><p><m>8 = 2 \times 2 \times 2</m></p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Write each composite number as a product of primes.<ol cols="2" marker="a.">
+  <li><p><m>10</m></p></li>
+  <li><p><m>18</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol cols="2" marker="a.">
+  <li><p><m>10 = 2 \times 5</m></p></li>
+  <li><p><m>18 = 2 \times 3 \times 3</m></p></li>
+</ol></p></answer></exercise>
+
+<p>The list of prime numbers whose product is the original number is called the <term>prime factorization</term> of a composite number. To find the prime factorization of a larger number, we can use a <term>factor tree</term>.</p>
+
+<example xml:id="factortree"><statement><p>Find the prime factorization of 60.</p></statement>
+
+<solution><p>We begin by finding any factor pair for 60. For example, we might start with <m>60 = 6 \times 10</m>. We write each factor on a "branch" of the tree, as shown below:</p>
+    <image source="factortree1.png" width="20%"></image>
+<p>Both 6 and 10 are composite numbers and can be factored further.</p>
+    <image source="factortree2.png" width="30%"></image>
+<p>Now all the factors are prime numbers. These are the "leaves" of the factor tree. We circle each prime factor, and then write them in increasing order. The prime factorization of 60 is
+    <me>60 = 2 \times 2 \times 3 \times 5</me></p></solution></example>
+
+<note><p>It doesn't matter how we start a factor tree; we will always get the same prime factorization at the end. In the previous Example, we might have started the factor tree with  <m>60 = 2 \times 30</m>  and built the following tree.</p>
+    <image source="factortree3.png" width="30%"></image>
+<p>You can see that we end up with the same prime factorization of 60.</p></note>
+
+<exercise><statement><p>Build a factor tree and write the prime factorization for 280.</p></statement>
+
+<answer><p><m>280 = 2 \times 2 \times 2 \times 5 \times 7</m></p></answer></exercise>
+
+<p>There is only one prime factorization for any whole number.</p>
+
+<assemblage><title>Fundamental Theorem of Arithmetic</title>
+  <p>Every whole number greater than 1 can be written in exactly one way as a prime number or as a product of primes.</p></assemblage>
+
+</subsection>
+
+<subsection><title>Greatest Common Factor</title>
+
+<p>We use factors when we work with fractions. Suppose we would like to reduce the fraction <m>\dfrac{15}{24}</m>. We look for the largest number that divides evenly into both 15 and 24, or in other words, the largest number that is a factor of both 15 and 24. By listing all the factors of each number, we can see that the largest factor common to both 15 and 24 is <m>\alert{3}</m>.</p>
+    <image source="factors15and24.png" width="60%"></image>
+<p>We say that 3 is the <term>greatest common factor</term> or <term>GCF</term> for 15 and 24.</p>
+
+<assemblage><title>Definition</title>
+<p>The <term>greatest common factor</term> or <term>GCF</term> of two whole numbers is the largest factor of both numbers.</p></assemblage>
+
+<example><statement><p>Find the greatest common factor of 16 and 24.</p></statement>
+
+<solution><p>We list all the factors of 16 and 24.</p>
+      <image source="factors16and24.png" width="45%"></image>
+<p>The numbers 16 and 24 have several common factors (namely, 1, 2, and 4), but the largest common factor is 8. The GCF of 16 and 24 is 8.</p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>List all the factors of 18 and 24.</p>
+           <image source="factors18and24.png" width="60%"></image></li>
+    <li><p>Find the GCF of 18 and 24.</p></li></ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>18:  2, 3, 6, 9</p>
+      <p>24:  2, 3, 4, 6, 8, 12</p></li>
+  <li><p>6</p></li>
+</ol></p></answer></exercise>
+
+<p> There is a faster way to find the GCF of two numbers, using their prime factorizations.</p>
+
+<example><statement><p>Use prime factorization to find the greatest common factor of 16 and 24.</p></statement>
+
+<solution><p>Make factor trees to verify the factorizations of 16 and 24.
+    <me>16 = 2 \times 2 \times 2 \times 2</me>
+    <me>24 = 2 \times 2 \times 2 \times 3</me>
+ Now list all the factors that appear in the factorization of both numbers.</p>   
+ <image source="gcf16and24.png" width="27%"></image>
+<p>Finally, multiply together the factors that appear in both numbers. The GCF of 16 and 24 is
+  <me>\text{GCF} = 2 \times 2 \times 2  = 8</me></p></solution></example>
+
+<note><p> Do you see why this method works? By including all the factors that appear in both 18 and 24, we find the largest number that will divide evenly into both 18 and 24.</p></note>
+
+<exercise><statement><p>Use prime factorization to find the greatest common factor of 18 and 24.
+    <md><mrow>18 \amp = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow>
+        <mrow>24 \amp = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow>
+        <mrow>\text{GCF} \amp = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow></md></p></statement>
+
+<answer><p><md><mrow>18 \amp = 2 \times 3 \times 3</mrow>
+        <mrow>24 \amp = 2 \times 2 \times 2 \times 3</mrow>
+        <mrow>\text{GCF} \amp = 2 \times 3 = 6</mrow></md></p>
+</answer></exercise>
+</subsection>
+
+<subsection xml:id="lcm"><title>Lowest Common Multiple</title>
+
+<p>Tastee hot dogs come in packages of 8, and Tastee hot dog buns come in packages of 6. How many packages of each should you buy so that you won't have any hot dogs or buns left over?</p>
+      <image source="hotdogs.png" width="50%"></image>
+<p>Let's try some numbers.  We are looking for the same number of hot dogs as buns.</p>
+      <image source="LCMtable.png" width="55%"></image>
+
+<p>We can stop here. If we buy 3 packages of hot dogs and 4 packages of buns, we'll have equal numbers of each: 24 hot dogs and 24 buns.</p>
+<p>The numbers in the second row of the table are <term>multiples</term> of 8, and the numbers in the third row are multiples of 6. The number 24 is a <term>common multiple</term> of 6 and 8; in fact, it is the <term>lowest common multiple</term>. (You can check that 48 and 72 are also common multiples of 6 and 8.)</p>
+
+<assemblage><title>Definition</title>
+  <p>The <term>lowest common multiple</term> or LCM of two whole numbers is the smallest number that is a multiple of both whole numbers.</p></assemblage>
+
+<example><statement><p>Find the lowest common multiple for 12 and 15.</p></statement>
+
+<solution><p>We list multiples of each number until we find the smallest common multiple.</p>
+    <image source="LCM12and15.png" width="80%"></image>
+<p>We see that 60 is the smallest number that is a multiple of both 12 and 15. The LCM of 12 and 15 is 60.</p></solution>
+</example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Juicee hot dogs come in packages of 10, and Juicee hot dog buns come in packages of 8. How many packages of each should you buy so that you won't have any hot dogs or buns left over?</p></li>
+  <li><p>What is the LCM of 8 and 10?</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a.">
+  <li><p>4 packages of hot dogs and 5 packages of buns</p></li>
+  <li><p>40</p></li>
+</ol></p></answer></exercise>
+
+<p>We can use prime factorization to find LCM's, too.</p>
+
+<example><statement><p>Use prime factorization to find the lowest common multiple for 12 and 15</p></statement>
+
+<solution><p>Make factor trees to verify the factorizations of 12 and 15.</p>
+    <p><m>\hphantom{Some space}\begin{alignedat}[t]
+            12 \amp = 2 \times 2 \times \amp \amp 3\\
+            15 \amp =                   \amp \amp 3 \times 5
+            \end{alignedat}</m></p>
+<p>Notice that we wrote the products so that common factors line up vertically.</p>
+<p> Next we select one number from each column.</p>
+      <image source="factorLCM.png" width="25%"></image>
+<p>Finally, we multiply together all the factors that appear in either number.
+      <me>\large{\text{LCM} = 2 \times 2 \times 3 \times 5 = 60}</me></p></solution></example>
+
+<p>In the previous Example, we used 2 factors of <m>2</m> for the LCM because there are 2 factors of <m>2</m> in 12. We used only one factor of <m>3</m> because there is only one factor of <m>3</m> in either 12 or 15. In general, we can say that for the LCM we use each factor the most times it appears in either one of the two given numbers.</p>
+
+<note><p> Look carefully at the difference between using prime factorization to find the GCF and to find the LCM.</p>
+<p><ul>  
+  <li><p>To find the GCF, we use <m>\blert{\text{only}}</m> the factors that occur in <m>\blert{\text{both}}</m> numbers.</p></li>
+  <li><p>To find the LCM, we use <m>\blert{\text{all}}</m> the factors that appear in <m>\blert{\text{either}}</m> number.</p></li></ul></p></note> 
+
+<exercise><statement><p>Use prime factorization to find the lowest common multiple of 18 and 24.
+    <md><mrow>18 \amp = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</mrow>
+        <mrow>24 \amp = </mrow>
+        <mrow>\text{LCM} \amp = </mrow></md></p></statement>
+
+<answer><p><md><mrow>18 \amp = 2 \times 3 \times 3</mrow>
+        <mrow>24 \amp = 2 \times 2 \times 2 \times 3</mrow>
+        <mrow>\text{LCM} \amp = 2 \times 2 \times 2 \times 3 \times 3 = 72</mrow></md></p>
+</answer></exercise>
+
+<activity><title>Factor Trees</title>
+    <p><ol marker="1.">
+  <li><p><ol marker="a.">
+    <li><p>Make a factor tree for 42.</p></li>
+
+    <li><p>Write the prime factorization for 42.</p></li></ol></p></li>
+
+  <li><p><ol marker="a.">
+    <li><p>Make a factor tree for 60.</p></li>
+
+    <li><p>Write the prime factorization for 60.</p></li></ol></p></li>
+
+  <li><p>Write the two prime factorizations with common factors aligned vertically.</p>
+
+      <p>42 = </p>
+
+      <p>60 = </p></li>
+
+  <li><p><ol marker="a.">
+    <li><p>Find the GCF for 42 and 60.</p></li>
+
+    <li><p>In Step 3, circle the factors you used to build the GCF.</p></li></ol></p></li>
+
+  <li><p><ol marker="a.">
+    <li><p>Find the LCM for 42 and 60.</p></li>
+
+    <li><p>In Step 3, circle the factors you used to build the LCM. (Use a different 
+    color than the circles in (4b), or use squares.</p></li></ol></p></li>
+
+  <li><p><ol marker="a.">
+    <li><p>Find the product of 42 and 60.</p></li>
+
+    <li><p>Find the product of the GCF and the LCM for 42 and 60.</p></li>
+
+    <li><p>What do you notice?</p></li>
+
+    <li><p>Can you explain why that is true?</p></li></ol></p></li>
+
+<li><p><ol marker="a.">
+    <li><p>If you have found the GCF for 42 and 60, what is an easy way to find their LCM?</p></li>
+
+    <li><p>If you have found the LCM for 42 and 60, what is an easy way to find their GCF?</p></li></ol></p></li>
+  </ol></p></activity>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>whole number</p></li>
+  <li><p>product</p></li>
+  <li><p>factor</p></li>
+  <li><p>factor pair</p></li>
+  <li><p>divisible</p></li>
+  <li><p>multiple</p></li>
+  <li><p>prime</p></li>
+  <li><p>composite</p></li>
+  <li><p>factor tree</p></li>
+  <li><p>prime factorization</p></li>
+  <li><p>greatest common factor (GCF)</p></li>
+  <li><p>lowest common multiple (LCM)</p></li>
+</ul></p>
+</subsection>
+
+<xi:include href="./prac-1-3.ptx" />
+
+
+
+</section>

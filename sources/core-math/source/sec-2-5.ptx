@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-2-5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Equations</title>
+
+<sidebyside widths="50% 30%"><p><ul>
+    <li><p>What Is an Equation?</p></li>
+    <li><p>The Solution of an Equation</p></li>
+    <li><p>Finding Solutions: Opposite Operations</p></li>
+    <li><p>Isolating the Variable</p></li>
+  </ul></p>
+      <image source="scales.png" width="400%"></image></sidebyside>
+
+<subsection><title>What Is an Equation?</title>
+
+<assemblage><title>Equations in Arithmetic</title>
+<p><ul>
+  <li><p>In arithmetic, an equals sign usually tells you to perform a calculation. If you were given the problem
+      <me>5 \times 12 =  <fillin></fillin></me>                   
+you would respond by filling in the blank:  <m>5 \times 12 = 60</m>.</p>  
+<p>In this problem the equals sign is like a command to perform some mathematical task; it prompts you to give an answer.</p></li>  
+  <li><p>An equals sign can also be used to show the result of a simplification. It says: Here is a simpler form of the same expression. Here is an example of this use of the equals sign.
+    <me>8 + 15 + 3 + 24 = 50</me></p></li>
+  </ul></p></assemblage>
+
+  <p>In algebra, we often use the equals sign in a completely different way, to show a relationship between two algebraic expressions. When we write
+      <me>\blert{\large{\text{Delbert's age}~~~~ = ~~~ \text{Francine's age}~~~~ + ~~~6}}</me>
+  we are describing the relationship between Delbert's age and Francine's age. Such a statement is called an <term>equation</term>.</p>
+
+<assemblage><title>Definition</title>
+<p>An <term>equation</term> is a mathematical statement that two algebraic expressions are equal.</p></assemblage>
+
+<note><p>We can use variables to write equations. For example,     
+  <me>D = F + 6</me>
+where <m>D</m> and <m>F</m> stand for Delbert's age and Francine's age. Finding relationships between variables and describing them as equations is an important algebraic skill.</p></note>
+
+<example><statement><p>During a sales event, The Home Store offers $50 off the price of any sofa. Write an equation that gives the sale price, <m>S</m>, in terms of the regular price, <m>P</m>.</p></statement>
+
+<solution><p>The sale price is $50 less than the regular price, so to find <m>S</m> we subtract $50 from <m>P</m>.
+    <me>S = P - 50</me></p></solution></example>
+
+<note><p>The instruction  "Write an equation for <m>\alert{S}</m> in terms of <m>P</m>" means to start with "<m>\alert{S} = </m>". After the equals sign, we write an algebraic expression that involves <m>P</m> and describes <m>S</m>.</p></note>
+
+<exercise><statement><p>The CEO of Luminess decided that all programmers should get a 20% raise. Write an equation that gives a programmer's new salary, <m>N</m>, in terms of her old salary, <m>S</m>.</p></statement>
+
+<answer><p><m>N = 1.20S</m></p></answer></exercise>
+
+<activity><title>Equations and Variables</title>
+<p><ol>
+  <li><p>Tamir and his three roommates split their weekly grocery bill equally. Fill in the table below, then answer the questions.</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Grocery bill</cell>
+      <cell>120</cell>
+      <cell>140</cell>
+      <cell>164</cell>
+      <cell></cell>
+      <cell>220</cell>
+      <cell></cell></row>
+    <row>
+      <cell>Tamir's share</cell>
+      <cell>30</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>48</cell>
+      <cell></cell>
+      <cell>59</cell></row>
+    </tabular></p>
+    <p><ol marker="a.">
+      <li><p>Explain how to find Tamir's share when you know the grocery bill.</p></li>
+      <li><p>Explain how to find the grocery bill when you know Tamir's share.</p></li>
+      <li><p>Let <m>T</m> stand for Tamir's share. Write an equation for <m>T</m> in terms of the grocery bill, <m>g</m>.</p></li>
+      <li><p>How can you find <m>T</m> if you know <m>g</m>?</p></li>
+      <li><p>How can you find <m>g</m> if you know <m>T</m>?</p></li>
+    </ol></p></li>
+  <li><p>The VAT (value-added tax) in England is 18% of the price. Fill in the table below, then answer the questions. (£ is the symbol for pounds.)</p>
+  <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell>Price (£)</cell>
+      <cell>6</cell>
+      <cell>10</cell>
+      <cell>14</cell>
+      <cell></cell>
+      <cell>92</cell>
+      <cell></cell></row>
+    <row>
+      <cell>VAT (£)</cell>
+      <cell>1.08</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>5.76</cell>
+      <cell></cell>
+      <cell>25.20</cell></row>
+    </tabular></p>
+    <p><ol marker="a.">
+      <li><p>Explain how to find the VAT share when you know the price before tax.</p></li>
+      <li><p>Explain how to find the price before tax when you know the VAT.</p></li>
+      <li><p>Let <m>V</m> stand for the VAT. Write an equation for <m>V</m> in terms of the price, <m>p</m>.</p></li>
+      <li><p>How can you find <m>V</m> if you know <m>p</m>?</p></li>
+      <li><p>How can you find <m>p</m> if you know <m>V</m>?</p></li>
+    </ol></p></li>
+  </ol></p></activity>
+
+<example><statement><p><ol marker="a.">
+  <li><p>Describe the relationship between the two variables shown in the table.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>w</m></cell>
+      <cell>4</cell>
+      <cell>7</cell>
+      <cell>10</cell>
+      <cell>12</cell></row>
+    <row>
+      <cell><m>g</m></cell>
+      <cell>9</cell>
+      <cell>12</cell>
+      <cell>15</cell>
+      <cell>17</cell></row>
+    </tabular></p></li>
+  <li><p>Write an equation that expresses the second variable, <m>g</m>, in terms of the first variable, <m>w</m>.</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p> <m>g</m> is 5 more than <m>w</m>.</p></li> 
+  <li><p> <m>g = w + 5</m></p></li></ol></p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Describe the relationship between the two variables shown in the table.</p>
+    <p><tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell><m>t</m></cell>
+      <cell>0.5</cell>
+      <cell>1</cell>
+      <cell>2</cell>
+      <cell>3</cell></row>
+    <row>
+      <cell><m>d</m></cell>
+      <cell>15</cell>
+      <cell>30</cell>
+      <cell>60</cell>
+      <cell>90</cell></row>
+    </tabular></p></li>
+  <li><p>Write an equation that expresses the second variable, <m>d</m>, in terms of the first variable, <m>t</m>.</p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="2">
+  <li><p><m>d</m> is 30 times <m>t</m>.</p></li>
+  <li><p><m>d = 30t</m></p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>The Solution of an Equation</title>
+
+<sidebyside widths="60% 30%"><p>An <term>equation</term> is a statement that two expressions are equal. An equation  can be true or false. For example, the equation
+  <me>3 + 4 = 7~~~~~~~~~~~~~~~~~\blert{\large{\text{True!}}}</me>
+is true, but the equation
+  <me>16 - 10 = 2~~~~~~~~~~~~~~~~\alert{\large{\text{False!}}}</me>
+is false.</p>
+  <image source="eqn.png"></image></sidebyside>
+
+<p>If an equation contains a variable it can be true or false, depending on the value of the variable. The equation
+    <me>x + 5 = 9</me>
+is true if the value of <m>x</m> is 4, but false if <m>x</m> has any other value.</p>
+
+<assemblage><title>Definition</title>
+<p>A <term>solution</term> of an equation is a value of the variable that makes the equation true.</p></assemblage> 
+
+<p>So  4 is the solution of the equation <m>\alert{x} + 5 = 9</m> because  <m>\alert{4} + 5 = 9</m>.</p>
+
+<example><statement><p>Decide whether 28 is a solution of the equation <m>6z=178</m>.</p></statement>
+
+<solution><p>We substitute 28 for <m>z</m> in the equation <m>6z=178</m>.
+  <me>6 (28) = 178 ?</me>
+Multiply 6 times 28 to see if a true statement results.
+  <me>168 = 178? ~~~~~~~~\blert{\large{\text{False!}}}</me>
+The statement is false, so 28 is not a solution of the equation <m>6z=178</m>.</p></solution></example>
+
+<exercise><statement><p><ol marker="a.">
+  <li><p>Decide whether <m>221</m> is a solution of the equation <m>~~\dfrac{w}{17} = 13</m></p></li>
+  <li><p>Decide whether  <m>18.2</m>  is a solution of the equation  <m>~~b-13.5 = 4.7</m></p></li>
+  <li><p>Decide whether  <m>30.1</m>  is a solution of the equation  <m>~~r+12.5 = 17.6</m></p></li>
+</ol></p></statement>
+
+<answer><p><ol marker="a." cols="3">
+  <li><p>Yes</p></li>
+  <li><p>Yes</p></li>
+  <li><p>No</p></li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Finding Solutions: Opposite Operations</title>
+
+<sidebyside widths="68% 20%" margins="0% 12%"><stack><p>To <term>solve</term> an equation means to find its solution (or solutions).</p>
+<p> Some equations are easy to solve; you can see the solution just by thinking about it. For example, the equation <m>x=5</m> is very easy to solve; its solution is 5.</p></stack><image source="spyglass.png"></image></sidebyside>  
+
+<p>We can solve more complicated equations by transforming them into simple ones. Of course, we must do this in a way that the new equation has the same solution as the original equation.</p>
+
+<p>We will use the fact that each of the four arithmetic operations has an <term>opposite operation</term>.</p>  
+
+<activity><title>Opposite Operations</title>
+
+<p>Choose a value for <m>x</m> and fill in the Example column.</p>
+<p><ol>
+  <li><p>Addition and subtraction are opposite operations.</p>
+
+<p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+                <col halign="left"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell></cell>
+      <cell></cell>
+      <cell>Example</cell></row>
+    <row>
+      <cell>Start with any number.</cell>
+      <cell><m>x</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell>Add 12 to get a new number.</cell>
+      <cell><m>x + 12</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell>Now subtract 12 from the new number.</cell>
+      <cell><m>x + 12 - 12</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell>You should get your original number back again.</cell>
+      <cell><m>x</m></cell>
+      <cell></cell></row>
+    </tabular></p>
+
+  <p>You don't have to use 12 to add and subtract; any number will work.</p></li>
+
+<li><p>Multiplication and division are opposite operations.</p>
+
+<p><tabular top="minor" halign="left" right="minor" left="minor" bottom="minor">
+                <col halign="left"/>
+                <col halign="center"/>
+                <col halign="center"/>
+    <row>
+      <cell></cell>
+      <cell></cell>
+      <cell>Example</cell></row>
+    <row>
+      <cell>Start with any number.</cell>
+      <cell><m>x</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell>Multiply by 3 to get a new number.</cell>
+      <cell><m>3x</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell>Now divide the new number by 3.</cell>
+      <cell><m>\dfrac{3x}{3}</m></cell>
+      <cell></cell></row>
+    <row>
+      <cell>You should get your original number back again.</cell>
+      <cell><m>x</m></cell>
+      <cell></cell></row>
+    </tabular></p>
+
+    <p>Try multiplying and dividing by another number besides 3 (but not 0).</p></li>
+</ol></p></activity>
+
+<p>We see that subtraction "undoes" the effect of addition, and division "undoes" the effect of multiplication. Next we'll use opposite operations to solve an equation.</p>
+</subsection>
+
+<subsection xml:id="solve1"><title>Isolating the Variable</title>
+
+<sidebyside widths="70% 25%" valigns="middle middle"><stack><p>Consider the equation
+    <me>x - 6 = 4</me>
+You can check that the solution to this easy equation is 10. Even though you can solve the equation in your head, we'll use it as an example to demonstrate techniques for solving more complicated equations.</p></stack><image source="keepcalm.png"></image></sidebyside>
+
+<p>We'd like to transform the equation <m>x - 6 = 4</m> into the simpler equation <m>x = 10</m>. By undoing any operations performed on <m>x</m> we will <term>isolate</term> the variable on one side of the equals sign, with the solution on the other side.</p>
+
+<p>Think of an equation as a set of scales, evenly balanced, with equal weights on each side. To maintain the balance, we must add or subtract an equal amount from each side of the scale.</p>
+
+<example><statement><p>Solve the equation <m>x - 6 = 4</m></p></statement>
+
+<solution><p>We'll use the following steps.</p>
+<p>Step 1:  Ask yourself:  What operation has been performed on <m>x</m>?
+    <me>\alert{6}~~ \blert{\text{has been}}~ \alert{\text{subtracted}}~ \blert{\text{from}~x.}</me></p>
+<p>Step 2: We perform the opposite operation on both sides of the equation. The opposite operation for subtraction is addition.
+    <md><mrow>x - 6 \amp = 4</mrow>
+        <mrow>~~\underline{+ 6} \amp \hphantom{=} \underline{+ 6} \amp \alert{\text{Add 6}}~\blert{\text{to both sides of the equation.}}</mrow> 
+        <mrow> x \amp =  10 </mrow></md>
+We have isolated the variable on the left side of the equation. The solution is on the right side, namely, 10.</p></solution>
+</example>
+
+<note><p>It is important to perform the opposite operation on both sides of the equation! Otherwise, the two sides are no longer equal, and the "solution" we find will not make the original equation true.</p></note>
+
+<p>To check that the solution is correct, we substitute our value for <m>x</m>,  namely, <m>\alert{10}</m>, into the original equation to see whether a true statement results.
+<md><mrow>\blert{\text{Check:}} \hphantom{000} \amp \text{Does}~~ \alert{10} - 6 = 4?</mrow>
+    <mrow> \amp \text{Yes. The solution is correct.}</mrow></md>
+It is a good idea to perform the check as part of the solution process.</p>
+
+<assemblage><title>To solve an equation</title>
+<p><ol>
+  <li><p>Ask yourself:  Which operation has been performed on the variable?</p></li>
+  <li><p>Perform the opposite operation on both sides of the equation.</p></li>
+  <li><p>Check your solution.</p></li>
+</ol></p></assemblage>
+
+<exercise><statement><p>Use an opposite operation to solve <m>~a - 3.2 = 7.2</m></p></statement>
+
+<answer><p>We add 3.2 to both sides of the equation to find <m>~a = 10.4</m>.</p></answer></exercise>
+
+<p>In Example 2.5.9, we solved an equation by "undoing" a subtraction. In Activity 2.5.3, note carefully how we write down the solution step in the Examples for the other three operations. </p>
+
+<activity><title>Isolating the Variable</title>
+<p>Read each Example, then complete the Exercise following the Example.</p>
+<p><ol>
+  <li><p><m>\blert{\text{Example 1}}~~</m>Solve the equation <m>~4x = 32</m></p>
+    <p>Step 1:  What operation has been performed on <m>x</m>?
+        <me>\blert{x~ \text{has been multiplied by 4.}}</me></p>
+    <p>Step 2: Perform the opposite operation on both sides of the equation.
+        <md><mrow>\dfrac{4x}{\alert{4}} \amp = \dfrac{32}{\alert{4}} \hphantom{000000} \blert{\text{Divide both sides by 4.}}</mrow>
+            <mrow> x \amp = 8</mrow></md>
+      The solution is <m>x=8</m>.</p>
+    <p>Check:  Does <m>4(8) = 32?</m>  Yes. The solution is correct.</p>
+
+    <p><m>\blert{\text{Exercise 1}}~~</m>  Solve the equation  <m>12p = 60</m></p>
+    <p>Step 1:  What operation has been performed on <m>p</m>?</p>
+    <p>Step 2: Perform the opposite operation on both sides of the equation.</p>
+    <p>Check:</p></li>
+
+  <li><p><m>\blert{\text{Example 2}}~~</m>Solve the equation <m>~x+8.3 = 24</m></p>
+    <p>Step 1:  What operation has been performed on <m>x</m>?
+        <me>\blert{8.3~ \text{has been added to}~x.}</me></p>
+    <p>Step 2: Perform the opposite operation on both sides of the equation.
+        <md><mrow>x + 8.3 \amp = 24 \hphantom{000000} \blert{\text{Subtract 8.3 from both sides.}}</mrow>
+            <mrow> \underline{\alert{-8.3}} \amp = \underline{\alert{-8.3}}</mrow>
+            <mrow> x \amp = 15.7</mrow></md>
+      The solution is <m>x = 15.7</m>.</p>
+    <p>Check:  Does <m>15.7 + 8.3 = 24?</m>  Yes. The solution is correct.</p>
+
+    <p><m>\blert{\text{Exercise 2}}~~</m>  Solve the equation  <m>m + 1.6 = 5.2</m></p>
+    <p>Step 1:  What operation has been performed on <m>m</m>?</p>
+    <p>Step 2: Perform the opposite operation on both sides of the equation.</p>
+    <p>Check:</p></li>
+
+    <li><p><m>\blert{\text{Example 3}}~~</m>Solve the equation <m>~\dfrac{x}{6} = 12</m></p>
+    <p>Step 1:  What operation has been performed on <m>x</m>?
+        <me>\blert{x~ \text{has been divided by 6.}}</me></p>
+    <p>Step 2: Perform the opposite operation on both sides of the equation.
+        <md><mrow>\alert{6}\left(\dfrac{x}{6}\right) \amp = (12)\alert{6} \hphantom{000000} \blert{\text{Multiply both sides by 6.}}</mrow>
+            <mrow> x \amp = 72</mrow></md>
+      The solution is <m>x = 72</m>.</p>
+    <p>Check:  Does <m>\dfrac{72}{6} = 12?</m>  Yes. The solution is correct.</p>
+
+    <p><m>\blert{\text{Exercise 3}}~~</m>  Solve the equation  <m>\dfrac{S}{7} = 12</m></p>
+    <p>Step 1:  What operation has been performed on <m>S</m>?</p>
+    <p>Step 2: Perform the opposite operation on both sides of the equation.</p>
+    <p>Check:</p></li>
+  </ol></p></activity>
+
+  <note><p>Even if you can solve these equations in your head, you should still learn to write down the solution steps!</p>
+      <image source="brain.png" width="40%"></image>
+    <p>The method of isolating the variable can help us solve more complicated equations that are harder to solve mentally.</p>
+  </note> 
+ 
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>equation</p></li>
+  <li><p>solution</p></li>
+  <li><p>solve</p></li>
+  <li><p>opposite operation</p></li>
+  <li><p>isolate the variable</p></li>
+</ul></p></subsection>
+
+<xi:include href="./prac-2-5.ptx" />
+
+
+</section>

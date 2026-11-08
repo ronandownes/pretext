@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\tikzset{%
+}
+\begin{tikzpicture} [scale=.4]
+\coordinate (O) at (0,0);
+\draw[cyan] (-2,-2) grid (9,9);
+\draw[black,very thick, ->, >=stealth'] (-2,0)--(10,0) node[right]{$x$};
+\draw[black,very thick, ->, >=stealth'] (0,-2)--(0,10) node[left, xshift=2]{$y$};
+\foreach \x  in  {5} {
+ \draw[cyan, very thick] (\x,-2) --++(0,11);
+ \draw[cyan, very thick] (-2,\x) --++(11,0);
+ \draw[black] (\x,.15) --++(0,-.3) node[below, yshift=-3, fill=white, inner sep=1]   {$\x$};
+ \draw[black] (.15,\x) --++(-.3,0) node[left, xshift=-3, fill=white, inner sep=1]   {$\x$};
+}
+\foreach \x in {1, 2.2, 3.4} 
+ \draw[blue,thick, ->, >=stealth'] (\x,3)--++(1.2,0);
+\draw[blue,thick, ->, >=stealth'] (4.6,3)--++(0.4,0)--++(0,0.8);
+\draw[blue,thick, ->, >=stealth'] (5,3.8)--++(0,1.1);
+\draw[blue,thick, ->, >=stealth'] (5,4.9)--++(0,1.1);
+\draw[red, ultra thick, <->, >=stealth'] (-2,3/4)--(9,9);
+\filldraw[red!80!black] (1,3) circle (2mm) node[text=black,below,yshift=-4, xshift=1, fill=white, inner sep=1] {$A$};
+\filldraw[red!80!black] (5,6) circle (2mm) node[text=black,below right,yshift=-4, xshift=5, fill=white, inner sep=1] {$B$};
+\end{tikzpicture}%
+}
+\end{document}

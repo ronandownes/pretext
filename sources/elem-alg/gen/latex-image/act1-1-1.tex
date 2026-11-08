@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{skyblue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture} [xscale=1, yscale=.3]
+\draw[gray] (0,0) grid (13,25);
+\foreach \x [evaluate=\x as \year using int(\x+1929)] in  {0,1,2,...,13} {
+ \draw[darkgray, thick] (\x,.25) --++(0,-.5)  node[below]   {\year};
+}
+\foreach \y in  {0,5,10, ..., 25} {
+ \draw[black, thick] (.1,\y) --++(-.2,0)  node[left]   {\y};
+ \draw[darkgray, very thick] (0,\y) --++(13,0);
+}
+\draw [blue, very thick] (0,3.2)-- (1,9)-- (2,16)-- (3,23.5)-- (4,24.9) --(5,21.7)--(6,20) -- (7,17) --(8,14) --(9,19) --(10,17) --(11,14.5) --(12, 9.5) -- (13,4.5);
+\node[left, xshift=-1, rotate=90 ] at (-1.,18.5) {Unemployment Rate};
+\node at (6,27) {\Large U.S. Unemployment Rate};
+\end{tikzpicture}%
+}
+\end{document}

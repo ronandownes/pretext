@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+
+
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+
+<exercises xml:id="section-4-3-exercises"  xmlns:xi="http://www.w3.org/2001/XInclude"><title>Problem Set 4.3</title>
+    
+<subexercises><title>Warm Up</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 1 and 2, state the vertex, the <m>y</m>-intercept, and the <m>x</m>-intercepts of the parabola.</p></introduction>
+
+<exercise number="1"><statement><p><m>y=-2(x-4)^2+10</m></p></statement>
+<answer><p><m>(4,10),~(0,-22),~(4 \pm \sqrt{5},0)</m></p></answer></exercise>
+
+<exercise number="2"><statement><p><m>y=\dfrac{1}{3}(x+1)^2-4</m></p></statement>
+</exercise>
+</exercisegroup>
+
+<exercise number="3"><statement><p>You are in charge of selling tickets to a one-woman show at a local art gallery.  Tickets to the opening night were priced at $25, and you sold 30 tickets. <ol marker="a.">
+    <li>Every night after the opening, you reduce the ticket price by $2. What is the ticket price after <m>x</m> nights?</li>
+    <li>Every night after the opening, you sell 4 more tickets than the previous night. How many tickets did you sell <m>x</m> nights after the opening?</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>25-2x</m></li>
+    <li><m>30+4x</m></li></ol></p></answer></exercise>
+
+<exercise number="4"><statement><p>The point <m>(-3,8)</m> lies on the graph of <m>y=ax^2+bx+c</m>. Write an equation involving <m>a,~b,</m> and <m>c</m>.</p></statement></exercise>
+
+<exercisegroup cols="2"><introduction><p>For Problems 5<ndash/>8, find an equation for the parabola. Use the vertex form or the factored form of the equation, whichever is more appropriate.</p></introduction>
+
+<exercise number="5"><statement><sidebyside  width="70%" margins="0% 5%"><image source="images/fig-hw-4-3-5"><description>graph</description></image></sidebyside></statement>
+<answer><p><m>y=-x^2-2x+8</m></p></answer></exercise>
+
+<exercise number="6"><statement><sidebyside  width="70%" margins="0% 5%"><image source="images/fig-hw-4-3-6"><description>graph</description></image></sidebyside></statement></exercise>
+
+<exercise number="7"><statement><sidebyside  width="70%" margins="0% 5%"><image source="images/fig-hw-4-3-7"><description>graph</description></image></sidebyside></statement>
+<answer><p><m>y=-x^2</m></p></answer></exercise>
+
+<exercise number="8"><statement><sidebyside  width="65%" margins="0% 5%"><image source="images/fig-hw-4-3-8"><description>graph</description></image></sidebyside></statement></exercise>
+</exercisegroup>
+</subexercises>
+
+<subexercises><title>Skills Practice</title>
+
+<exercisegroup cols="2"><introduction><p>For Problems 9<ndash/>12, solve the system by elimination. Begin by eliminating <m>c</m>.</p></introduction>
+
+<exercise number="9"><statement><p>
+    <md><mrow>a+b+c \amp = -3</mrow>
+        <mrow>a-b+c \amp = -9</mrow>
+        <mrow>4a+2b+c \amp = -6</mrow></md></p></statement>
+<answer><p><m>(-2,3,-4)</m></p></answer></exercise>
+
+<exercise number="10"><statement><p>
+    <md><mrow>a+b+c \amp = 10</mrow>
+        <mrow>4a+2b+c \amp = 19</mrow>
+        <mrow>9a+3b+c \amp = 38</mrow></md></p></statement></exercise>
+
+<exercise number="11"><statement><p>
+    <md><mrow>a-b+c \amp = 12</mrow>
+        <mrow>4a-2b+c \amp = 19</mrow>
+        <mrow>9a+3b+c \amp = 4</mrow></md></p></statement>
+<answer><p><m>(1,-4,7)</m></p></answer></exercise>
+
+<exercise number="12"><statement><p>
+    <md><mrow>4a+2b+c \amp = 14</mrow>
+        <mrow>9a-3b+c \amp = -41</mrow>
+        <mrow>16a-4b+c \amp = -70</mrow></md></p></statement></exercise>
+</exercisegroup>
+
+<exercise number="13"><statement><p>Find values for <m>a,~b,</m> and <m>c</m> so that the graph of <m>y = ax^2+bx+c</m> includes the points <m>(-1,0), ~(2,12),</m> and <m>(-2,8)</m>.</p></statement>
+<answer><p><m>a=3,~b=1,~c=-2</m></p></answer></exercise>
+
+<exercise number="14"><statement><p>Find values for <m>a,~b,</m> and <m>c</m> so that the graph of <m>y = ax^2+bx+c</m> includes the points <m>(-1,2), ~(1,6),</m> and <m>(2,11)</m>.</p></statement></exercise>   
+</subexercises>
+
+<subexercises><title>Applications</title>
+
+<exercise number="15"><statement><p>The data show the number of people of certain ages who were the victims of 
+    homicide in a large city last year.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Age</cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>30</m></cell>
+                        <cell><m>40</m></cell></row>
+                    <row> 
+                        <cell>Number of victims</cell>
+                        <cell><m>12</m></cell>
+                        <cell><m>62</m></cell>
+                        <cell><m>72</m></cell>
+                        <cell><m>40</m></cell></row>
+                    </tabular></sidebyside> <p><ol marker="a.">
+    <li>Use the first three data points to fit a quadratic equation to the data, <m>~N=ax^2+bx+c</m>, where <m>x</m> represents age.</li>
+    <li>What does your equation predict for the number of 40-year-olds who were the victims of homicide?</li>
+    <li>Sketch the graph of your quadratic equation and the given data on the same axes.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+    <li><m>y=a(x-5)^2-10=-0.2x^2+11x-78</m></li>
+    <li><m>42</m></li></ol></p></answer></exercise>
+
+<exercise number="16"><statement><p>Sara plans to start a side business selling eggs. She finds that the total number of eggs produced each day depends on the number of hens confined in the henhouse, as shown in the table.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Number of hens, <m>n</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>25</m></cell>
+                        <cell><m>30</m></cell>
+                        <cell><m>36</m></cell>
+                        <cell><m>39</m></cell></row>
+                    <row> 
+                        <cell>Number of eggs, <m>E</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>18</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>21</m></cell>
+                        <cell><m>21</m></cell>
+                        <cell><m>20</m></cell></row>
+                    </tabular></sidebyside> <p><ol marker="a.">
+    <li>Use the first three data points to find a quadratic model, <m>~E=an^2+bn+c</m>.</li>  
+    <li>Plot the data and sketch the model on the same axes.</li> 
+    <li>What does the model predict for the number of eggs produced when 39 hens are confined in the henhouse?</li>
+</ol></p></statement></exercise>
+
+<exercise number="17"><statement><p>Find a quadratic model for the number of diagonals that can be drawn in a polygon of <m>n</m> sides. Some data are provided.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Sides</cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>7</m></cell></row>
+                    <row> 
+                        <cell>Diagonals</cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>14</m></cell></row>
+                    </tabular></sidebyside></statement>
+<answer><p><m>D=\dfrac{1}{2}n^2 - \dfrac{3}{2}n</m></p></answer></exercise>
+
+<exercise number="18"><statement><p>You are driving at a speed of 60 miles per hour when you step on the brakes. Find a quadratic model for the distance in feet that your car travels in <m>t</m> seconds after braking. Some data are provided.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Seconds</cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell></row>
+                    <row> 
+                        <cell>Feet</cell>
+                        <cell><m>81</m></cell>
+                        <cell><m>148</m></cell>
+                        <cell><m>210</m></cell>
+                        <cell><m>267</m></cell></row>
+                    </tabular></sidebyside></statement></exercise>
+
+<exercise number="19"><statement><p>In the 1990's, an outbreak of mad cow disease (Creutzfeldt-Jakob disease) alarmed health officials in England. The table shows the number of deaths each year from the disease.</p>
+    <sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Year</cell>
+                        <cell><m>94</m></cell>
+                        <cell><m>95</m></cell>
+                        <cell><m>96</m></cell>
+                        <cell><m>97</m></cell>
+                        <cell><m>98</m></cell>
+                        <cell><m>99</m></cell>
+                        <cell><m>00</m></cell>
+                        <cell><m>01</m></cell>
+                        <cell><m>02</m></cell>
+                        <cell><m>03</m></cell>
+                        <cell><m>04</m></cell></row>
+                    <row> 
+                        <cell>Deaths</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>18</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>28</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>17</m></cell>
+                        <cell><m>19</m></cell>
+                        <cell><m>9</m></cell></row>
+                    </tabular></sidebyside> 
+            <p>(Source:  www.cjd.ed.ac.uk/vcjdqsep05)</p>
+    <p><ol marker="a.">
+    <li>The Health Protection Agency determined that a quadratic model was the best-fitting model for the data. Find a quadratic regression equation for the data.</li> 
+    <li>Use your model to estimate when the peak of the epidemic occurred, and how many deaths from mad cow disease were expected in 2005.</li></ol></p></statement>
+<answer><p><ol marker="a.">
+        <li><m>N=-0.59t^2+7.33t-2.54</m></li>
+        <li><m>2000;~7</m></li></ol></p></answer></exercise>
+
+<exercise number="20"><statement><p>The table shows the height in kilometers of a star-flare at various times after it exploded from the surface of a star.</p>
+
+<sidebyside><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">              
+                    <row bottom="minor">
+                        <cell>Time (seconds)</cell>
+                        <cell><m>0.2</m></cell>
+                        <cell><m>0.4</m></cell>
+                        <cell><m>0.6</m></cell>
+                        <cell><m>0.8</m></cell>
+                        <cell><m>1.0</m></cell>
+                        <cell><m>1.2</m></cell></row>
+                    <row> 
+                        <cell>Height (kilometers)</cell>
+                        <cell><m>6.8</m></cell>
+                        <cell><m>12.5</m></cell>
+                        <cell><m>17.1</m></cell>
+                        <cell><m>20.5</m></cell>
+                        <cell><m>22.8</m></cell>
+                        <cell><m>23.9</m></cell></row>
+                    </tabular></sidebyside>
+<p><ol marker="a.">
+    <li>Find the equation of the least-squares regression line for the height of the flare in terms of time.</li>
+    <li>Use the regression line to predict the height of the flare 1.4 seconds after it exploded.</li>
+    <li>Make a scatterplot of the data and draw the regression line on the same axes.</li>
+    <li>Find the quadratic regression equation for the height in terms of time.</li>
+    <li>Use the quadratic regression equation to predict the height of the flare 1.4 seconds after it exploded.</li>
+    <li>Draw the quadratic regression curve on the graph from part (c).</li>
+    <li>Which model is more appropriate for the height of the star-flare, linear or quadratic? Why?</li></ol></p>
+</statement></exercise>
+
+<exercise number="21"><statement><p>Some comets move about the sun in parabolic orbits. In 1973 the comet Kohoutek passed within 0.14 AU (<term>astronomical units</term><idx><h>astronomical units</h></idx>), or 21 million kilometers of the sun. Imagine a coordinate system superimposed on a diagram of the comet's orbit, with the sun at the origin, as shown below. The units on each axis are measured in AU.</p>
+    <sidebyside  width="20%"><image source="images/fig-comet-parabola"><description>graph</description></image></sidebyside>  
+<p><ol marker="a.">
+    <li>The comet's closest approach to the sun (called perihelion) occurred at the vertex of the parabola. What were the comet's coordinates at perihelion?  </li> 
+    <li>When the comet was first discovered, its coordinates were <m>(1.68,-4.9)</m>. Find an equation for comet Kohoutek's orbit in vertex form.</li></ol></p>
+</statement>
+<answer><p><ol marker="a.">
+    <li><m>(0,0.14)</m></li>
+    <li><m>y=-1.786x^2+0.14</m></li></ol></p></answer></exercise>
+
+<exercise number="22"><statement><p>The Akashi Kaikyo bridge in Japan is the longest suspension bridge in the world, with a main span of 1991 meters. Its main towers are 297 meters tall. The roadbed of the bridge is 14 meters thick and clears the water below by 65 meters. The cables on a suspension bridge hang in the shape of parabolas. Imagine a coordinate system superimposed on the diagram of the bridge, as shown in the figure.</p>
+    <sidebyside  width="60%"><image source="images/fig-suspension-bridge"><description>graph</description></image></sidebyside> 
+<p><ol marker="a.">
+    <li>Find the coordinates of the vertex and one other point on the cable.</li>
+   <li>Use the points from part (a) to find an equation for the shape of the cable in vertex form.</li></ol></p>
+ </statement></exercise>    
+
+</subexercises>
+
+</exercises>

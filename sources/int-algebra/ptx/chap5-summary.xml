@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="chap5-summary" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Chapter 5 Summary and Review</title>
+
+<subsection><title>Glossary</title>
+
+<p><ul cols="2">
+    <li><p>function</p></li>
+    <li><p>input variable</p></li>
+    <li><p>output variable</p></li>
+    <li><p>cube root</p></li>
+    <li><p>absolute value</p></li>
+    <li><p>proportional</p></li>
+    <li><p>direct variation</p></li>
+    <li><p>inverse variation</p></li>
+    <li><p>constant of variation</p></li>
+    <li><p>concavity</p></li>
+    <li><p>scaling</p></li>
+    <li><p>horizontal asymptote</p></li>
+    <li><p>vertical asymptote</p></li>
+</ul></p>
+
+</subsection>
+<subsection><title>Key Concepts</title>
+<p><ol marker="1.">
+    <li>A function can be described in words, by a table, by a graph, or by an equation.</li>
+    <li><assemblage><title>Function Notation</title><sidebyside width="65%">
+        <image  source="images/Function-Notation"><description>Function Notation</description></image></sidebyside></assemblage></li>
+	<li>Finding the value of the output variable that corresponds to a particular value of the input variable is called 
+        <term>evaluating the function</term>.</li>
+    <li>The point <m>(a, b)</m> lies on the graph of the function <m>f</m> if and only if <m>f(a)=b</m>.</li>
+    <li>Each point on the graph of the function <m>f</m> has coordinates <m>(x, f(x))</m> for some value of <m>x</m>.</li>
+    <li><assemblage><title>The Vertical Line Test</title>
+        <p>A graph represents a function if and only if every vertical line intersects the graph in at most one point.</p></assemblage>  </li>
+    <li>We can use a graphical technique to solve equations and inequalities.</li>
+    <li><m>b</m> is the <term>cube root</term> of <m>a</m> if <m>b</m> cubed equals <m>a</m>.  In symbols, we write
+        <me>\blert{b=\sqrt[3]{a}~~~~\text{if}~~~~b^3=a}</me></li>
+	<li><assemblage><title>Absolute Value</title>
+        <p>The <term>absolute value</term> of <m>x</m> is defined by
+            <me>\abs{x} =
+                \begin{cases}
+                x \amp \text{if } x\ge 0\\
+                -x  \amp \text{if } x\lt 0
+                \end{cases}</me></p></assemblage></li>
+    <li>Absolute value bars act like grouping devices in the order of operations:  you should complete any operations that appear inside absolute value bars before you compute the absolute value.</li>
+    <li>The maximum or minimum of a quadratic function occurs at the vertex.</li>
+    <li><p>Eight basic functions and their graphs are important in applications:
+        <md><mrow>f(x)=x~~~~~~f(x)=\abs{x}~~~~~~f(x)=x^2~~~~~~f(x)=x^3</mrow>
+            <mrow>f(x)=\sqrt{x}~~~~~f(x)=\sqrt[3]{x}~~~~~~f(x)=\dfrac{1}{x}~~~~~~f(x)=\dfrac{1}{x^2}</mrow></md></p></li>
+    <li>Two variables are <term>directly proportional</term> if the ratios of their corresponding values are always equal.</li>
+    <li><assemblage><title>Direct Variation</title>
+        <p><m>y</m> <term>varies directly</term> with <m>x</m> if
+            <me>y = kx</me>
+        where <m>k</m> is a positive constant called the <term>constant of variation</term>.</p></assemblage></li>
+    <li>Direct variation defines a linear function of the form
+            <me>y = f (x) = kx</me>
+        The positive constant <m>k</m> in the equation <m>y = kx</m> is just the slope of the graph.</li>
+    <li>Direct variation has the following <term>scaling</term> property: increasing <m>x</m> by any factor causes <m>y</m> to increase by the same factor.  </li>
+    <li><assemblage><title>Direct Variation with a Power</title><p></p>
+        <p><m>y</m> <term>varies directly</term> with a power of <m>x</m> if
+            <me>y = kx^n</me>
+        where <m>k</m> and <m>n</m> are positive constants.</p></assemblage></li>
+    <li>If the ratio <m>\dfrac{y}{x^n}</m> is constant, then <m>y</m> varies directly with <m>x^n</m>.</li>
+    <li><assemblage><title>Inverse Variation</title>
+        <p><m>y</m> <term>varies inversely</term> with <m>x</m> if
+            <me>y = \dfrac{k}{x}\text{, }x \ne 0</me>
+        where <m>k</m> is a positive constant.</p></assemblage></li>
+    <li><assemblage><title>Inverse Variation with a Power</title>
+        <p><m>y</m> <term>varies inversely</term> with <m>x^n</m> if
+            <me>y = \frac{k}{x^n}\text{, }x \ne 0</me>
+        where <m>k</m> and <m>n</m> are positive constants.</p></assemblage></li>
+	<li>If the product <m>~yx^n~</m> is constant and <m>n</m> is positive, then <m>y</m> varies inversely with <m>x^n</m>.
+    </li>
+	<li>A graph that bends upward is called <term>concave up</term>, and one that bends downward is <term>concave down</term>.</li>  
+    </ol></p>
+</subsection>
+
+<xi:include href="./chap5-rev-problems.xml" />  <!--exercises  -->
+
+</section>
+<!-- </appendix> -->
+<!-- </book>  </mathbook> -->

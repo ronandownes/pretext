@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-4-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Roots and Radicals</title>
+
+<sidebyside widths="50% 30%" valigns="middle middle">
+  <p><ul>
+    <li><p>What Is a Square Root?</p></li>
+    <li><p>Approximating a Square Root</p></li>
+    <li><p>Squares and Square Roots</p></li>
+    <li><p>Pythagorean Theorem</p></li>
+  </ul></p>
+  
+  <image source="rootspiral.png"></image></sidebyside>
+
+<subsection><title>What Is a Square Root?</title>
+
+<assemblage><title>A Quick Refresher</title>
+<p>Recall that an <term>exponent</term> is a number that appears above and to the right of a particular factor. It tells us how many times that factor occurs in the product. For example,
+    <me>5^2 = 5 \times 5 = 25 ~~~~~~ \text{and} ~~~~~ 5^3 = 5 \times 5 \times 5 = 125</me>
+You can review exponents in <xref ref="exponents" text="custom">Section 3.2</xref>.</p></assemblage>
+
+<p>To <term>square</term> a number means to multiply the number by itself. For example,
+    <me>7^2 = 7 \times 7 = 49</me>
+If you know the square of a number, can you find the original number?</p>
+
+<sidebyside widths="70% 25%" margins="0% 5%"><stack><p>The area of the square shown at right is 25 square inches. What is the length of each side of the square? Because the area of a square is found by squaring the length of a side, we are looking for a number whose square is 25.</p>
+<p>You can probably see that the number we need is 5, because <m>5^2 = 25</m>. The number 5 is called a <term>square root</term> of 25.</p></stack>  
+  <image source="fivesquared.png"></image></sidebyside>
+
+<assemblage><title>Definition</title>
+<p>A number <m>s</m> is called a <term>square root</term> of <m>N</m>  if <m>s^2 = N</m>.</p></assemblage>
+
+<example><statement><p><ol marker="a.">
+  <li><p>3 is a square root of 9 because <m>3^2 = 9</m>.</p></li>
+  <li><p>8  is a square root of  64  because <m>8^2 = 64</m>.</p></li>
+  <li><p><m>\dfrac{2}{3}</m>  is a square root of <m>\dfrac{4}{9}</m> because  <m>\left(\dfrac{2}{3}\right)^2 = \dfrac{4}{9}</m>.</p></li>
+</ol></p></statement></example>
+
+<exercise><statement><p>What number is a square root of 16 ?</p></statement>
+
+<answer><p>4 is a square root of 16.</p></answer></exercise>
+
+<note><p> If you know about negative numbers, you will have noticed that 5 is not the only square root of 25.  We can see that <m>-5</m>  is another square root of  25, because 
+    <me>(-5)^2 = (-5) \cdot (-5) = 25</me>
+In fact, every positive number has two square roots, one positive and one negative.  We'll learn more about negative numbers in the next lesson.</p></note>
+
+<assemblage><title>Notation</title>
+<p>We have a special symbol called a <term>radical sign</term>, <m>\sqrt{\hphantom{0}}</m>, to denote the positive square root of a number.  For example,
+    <me>\sqrt{16}~~~~ \text{means} ~~~~ \text{"the positive square root of 16."}</me>
+so <m>\sqrt{16} = 4.</m></p></assemblage>
+
+<example><statement><p><ol marker="a." cols="2">
+  <li><p><m>\sqrt{144} = 12</m></p></li>
+  <li><p><m>\sqrt{0} = 0</m></p></li>
+  <li><p><m>\sqrt{1} = 1</m></p></li>
+  <li><p><m>\sqrt{17^2} = 17</m></p></li></ol></p></statement></example>
+
+<exercise><statement><p>Evaluate  <m>\sqrt{4}</m></p></statement>
+
+<answer><p><m>\sqrt{4} = 2</m></p></answer></exercise>
+
+<p>Numbers such as 16 and 25 are called <term>perfect squares</term> because they are the squares of whole numbers: 
+    <me>16 = 4^2 ~~~~~~ \text{and} ~~~~~~ 25 = 5^2 </me> 
+We met perfect squares in our work with exponents. So you already know the square roots of several numbers.</p>
+
+  <activity><title>Square Roots</title>
+
+  <p>Fill in the table below. The first two are done for you. In this table, all the numbers <m>N</m> are perfect squares.</p>
+
+    <p><sidebyside>
+      <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                        
+        <row bottom="minor">
+            <cell>Number, <m>N</m></cell>
+            <cell><m>\sqrt{N}</m></cell></row>
+        <row> 
+            <cell><m>1</m></cell>
+            <cell><m>\sqrt{1} = 1</m></cell></row>
+        <row> 
+            <cell><m>4</m></cell>
+            <cell><m>\sqrt{4} = 2</m></cell></row>
+        <row> 
+            <cell></cell>
+            <cell><m>\hphantom{00} = 3</m></cell></row>
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>  
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row> 
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>  
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>  
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\hphantom{00} = 10</m></cell></row>               
+    </tabular>
+
+    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">                        
+        <row bottom="minor">
+            <cell>Number, <m>N</m></cell>
+            <cell><m>\sqrt{N}</m></cell></row>
+        <row> 
+            <cell></cell>
+            <cell><m>\hphantom{00} = 11</m></cell></row>
+        <row> 
+            <cell></cell>
+            <cell><m>\hphantom{00} = 12</m></cell></row>
+        <row> 
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>  
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row> 
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>  
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>  
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\vphantom{0}</m></cell></row>
+        <row>
+            <cell><m>\vphantom{0}</m></cell>
+            <cell><m>\hphantom{00} = 20</m></cell></row>               
+    </tabular></sidebyside></p>
+  </activity>
+</subsection>
+
+<subsection><title>Approximating Square Roots</title>
+
+<p>The square roots of perfect squares are easy to find.  But how can we find the square roots of numbers like 3 or 5, which are not perfect squares?</p>
+<p>You can use your calculator to find square roots, but before we do that, let's try to understand what happens.</p>
+
+<activity><title>More Square Roots</title>
+
+<p>We'll try to find the square root of  5  by the method of guessing and correcting.</p>
+
+<p><m>\blert{\text{Step 1}}</m></p>
+<p>Because <m>2^2 = 4 </m>, <m>~~~~~~~~~~\sqrt{5}~</m> must be bigger than 2</p>
+<p>Because <m>3^2 = 9 </m>, <m>~~~~~~~~~~\sqrt{5}~</m> must be smaller than 3</p>
+<p>So <m>\sqrt{5}</m> is a number between 2 and 3.</p>
+
+<p><m>\blert{\text{Step 2}}</m></p>
+<p>Let's guess 2.5 for <m>\sqrt{5}</m>. To check our guess, we can square  2.5  and see if we get  5:
+  <me>(2.5)^2 = 6.25</me>
+  So 2.5 is too big to be the square root of  5.</p>
+
+<p><m>\blert{\text{Step 3}}</m></p>
+<p>Check the squares of several other numbers between  2  and  2.5:
+    <md><mrow>(2.1)^2 = 4.41</mrow>
+        <mrow>(2.2)^2 = 4.84 ~~~~~~ \blert{\text{Smaller than 5.}}</mrow>
+        <mrow>(2.3)^2 = 5.29 ~~~~~~ \blert{\text{Larger than 5.}}</mrow></md>
+  From these values, we see that <m>\sqrt{5}</m>  must be between  2.2  and  2.3. </p>
+
+<p><m>\blert{\text{Step 4}}</m></p>
+<p>Use your calculator to find the squares of several numbers between 2.2 and 2.3, until you "capture" 5.</p>
+
+<tabular halign="center" >                        
+        <row >
+            <cell><m>(2.21)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.26)^2 = <fillin characters="10"/></m></cell></row>
+        <row> 
+            <cell><m>(2.22)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.27)^2 = <fillin characters="10"/></m></cell></row>
+        <row> 
+            <cell><m>(2.23)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.28)^2 = <fillin characters="10"/></m></cell></row>
+        <row> 
+            <cell><m>(2.24)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.29)^2 = <fillin characters="10"/></m></cell></row>
+        <row>
+            <cell><m>(2.25)^2 = <fillin characters="10"/></m></cell>
+            <cell></cell></row>                 
+    </tabular>
+
+<p>You should have discovered that <m>(2.23)^2</m>  is too small, and <m>(2.24)^2</m>  is too big. Therefore, <m>\sqrt{5}</m>  is a number between  2.23  and  2.24.</p>
+
+<p><m>\blert{\text{Step 5}}</m></p>
+<p>Use your calculator to capture 5 between two squares.</p>
+
+<tabular halign="center" >                        
+        <row >
+            <cell><m>(2.231)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.236)^2 = <fillin characters="10"/></m></cell></row>
+        <row> 
+            <cell><m>(2.232)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.237)^2 = <fillin characters="10"/></m></cell></row>
+        <row> 
+            <cell><m>(2.233)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.238)^2 = <fillin characters="10"/></m></cell></row>
+        <row> 
+            <cell><m>(2.234)^2 = <fillin characters="10"/></m></cell>
+            <cell><m>(2.239)^2 = <fillin characters="10"/></m></cell></row>
+        <row>
+            <cell><m>(2.235)^2 = <fillin characters="10"/></m></cell>
+            <cell></cell></row>                 
+    </tabular>
+
+<p>You should have discovered that <m>(2.236)^2</m>  is too small, and <m>(2.237)^2</m>  is too big. Therefore, <m>\sqrt{5}</m> is a number between  2.236  and  2.237.</p>
+</activity>
+
+<p>Perhaps you think that  2.236  is close enough, and you don't want to fill in any more tables.  But maybe you are curious to know how far we have to go to find the exact decimal value of <m>\sqrt{5}</m>.</p>
+
+<p>It turns out that no matter how many decimal places we find, we will never obtain an exact decimal form for <m>\sqrt{5}</m>.  For this reason, <m>\sqrt{5}</m> is called an <term>irrational number</term>, because it cannot be expressed as a decimal fraction. (The term "irrational" comes from "ratio," another word for fraction.)</p>
+
+<assemblage><title>Definition</title>
+<p>An <term>irrational number</term> is one that cannot be written as a fraction.</p></assemblage>
+
+<note><sidebyside widths="60% 30%"><p>Do you think it's strange that some numbers cannot be written as fractions? So did the Pythagoreans. Hippasus, one of Pythagoras' students, proved that <m>\sqrt{2}</m> is irrational, and legend has it that they threw him overboard into the ocean.</p>
+    <image source="hippasus.png"></image></sidebyside></note>
+
+<p>There is nothing special about <m>\sqrt{5}</m>.  All whole numbers that are not perfect squares have square roots that are irrational.  However, by increasing the number of decimal places, we can find an approximation to <m>\sqrt{5}</m>, or to any irrational number, as accurate as we like.  For example,
+    <me>\sqrt{5} \approx 2.2360679774998…</me>
+But there is no symbol to write the exact value of <m>\sqrt{5}</m> except for <m>\sqrt{5}</m> !</p>
+
+<p>Most scientific calculators give values for square roots to as many digits as their displays allow. Look for a key labeled <m>\boxed{\sqrt{\hphantom{0}}}</m>,  and enter
+  <me> 5 \hphantom{0} \boxed{\sqrt{\hphantom{0}}}</me>
+(On a graphing calculator, enter the radical symbol first: <m>\boxed{\sqrt{\hphantom{0}}} \hphantom{0} 5</m>.)  The calculator will return an approximation for <m>\sqrt{5}</m>, for example, 2.236068. You can then round off the number to as many decimal places as you need.</p>
+
+<note><p>You can review rounding in <xref ref="rounding"/>.</p></note>
+
+<example><statement><p>Use a calculator to find approximate values for each square root. Round your answers to three decimal places.</p>
+<p><ol marker="a." cols="3">
+  <li><p><m>\sqrt{3}</m></p></li>
+  <li><p><m>\sqrt{243}</m></p></li>
+  <li><p><m>\sqrt{0.02}</m></p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+  <li><p>Enter <m> 3 \hphantom{0} \boxed{\sqrt{\hphantom{0}}}</m>, and the calculator displays  1.7320508. Rounding to three decimal places gives  1.732.</p></li>
+  <li><p>Enter  <m>243 \hphantom{0} \boxed{\sqrt{\hphantom{0}}}</m>,  and the calculator displays  15.588457. Rounding to three decimal places gives  15.588.</p></li>
+  <li><p>Enter <m>0.02 \hphantom{0} \boxed{\sqrt{\hphantom{0}}}</m>,  and the calculator displays  0.1414214. Rounding to three decimal places gives  0.141.</p></li>
+</ol></p></solution></example>
+
+<exercise><statement><p>Use a calculator to approximate <m>\sqrt{226}</m> to three decimal places.</p></statement>
+
+<answer><m>15.033</m></answer></exercise>
+
+</subsection>
+
+<subsection><title>Squares and Square Roots</title>
+
+<p>If you know that the square of an unknown positive number is 36, can you find the number?  Let's call the unknown number <m>n</m>.  In math notation, the question becomes:  can you find <m>n</m> if you know that
+        <me>n^2 = 36</me> 
+Of course you can: <m>n</m>  must be the square root of 36, or
+        <me>n = \sqrt{36} = 6</me>
+This is because squaring and taking square roots are <term>opposite operations</term>;  each operation undoes the effects of the other.  If you square a number and then take the square root of the result, you get back to the original number.
+    <me>\blert{\large\substack{\text{Start with} \\ \text{a Number}}  13  \rightarrow  \large\substack{\text{Square the} \\ \text{Number}}  \rightarrow  169  \rightarrow \large\substack{\text{Take the}\\ \text{Square Root}} \rightarrow  13 \hphantom{0} \large\substack{\text{Get the original}\\ \text{number back!}}}</me></p>
+
+<example><statement><p>If <m>B</m> is a positive number and <m>B^2 = 784</m>,  what is the value of <m>B</m>?</p></statement>
+
+<solution><p> <m>B</m> must be the square root of 784, or <m>B = \sqrt{784}</m>.  Using a calculator, we find that
+    <me>B = \sqrt{784} = 28</me>
+We can check our result by squaring.
+    <me>B^2 = 28^2 = 784</me></p></solution></example>
+
+<note><p>In Example 4.3.10, we can also say that we solved the equation <m>B^2 = 784</m>. Earlier we learned that we solve equations by applying opposite operations, and the same is true here:  to solve an equation where the variable is squared, we take the square root.</p></note>
+
+<exercise><statement><p>If <m>p</m> is a positive number, solve the equation  <m>p^2 = 0.0225</m>.</p></statement>
+
+<answer><m>p = \sqrt{0.0225} = 0.15</m></answer></exercise>
+</subsection>
+
+<subsection><title>Pythagorean Theorem</title>
+
+<p>You probably remember the Pythagorean Theorem about the sides of a right triangle. Recall that a <term>right triangle</term> is one with a right, or ninety degree, angle. The side opposite the right angle is called the <term>hypotenuse</term>, and the other two sides are the <term>legs</term>.</p>
+
+<assemblage><title>Pythagorean Theorem</title>
+<p><sidebyside widths="60% 30%"><p>If the letter <m>\alert{c}</m> stands for the length of the hypotenuse, and the lengths of the two legs are denoted by <m>\alert{a}</m> and <m>\alert{b}</m>, then
+  <me>\alert{a^2 + b^2 = c^2}</me></p>
+<image source="Pythtri.png"></image></sidebyside></p></assemblage>
+ 
+<p>We first studied the Pythagorean Theorem in <xref ref="pythagoras" text="custom">Section 3.2</xref>. And now that we can take square roots, we can use the theorem to solve problems.</p>
+
+<example><statement><sidebyside widths="60% 30%" valigns="middle middle"><p>The two legs of a right triangle are 6 inches and 8 inches long. How long is the hypotenuse?</p>
+    <image source="six8rttri.png"></image></sidebyside></statement>
+
+<solution><p>We substitute the lengths of the two legs into the Pythagorean theorem for <m>a</m> and <m>b</m>.
+    <md><mrow>6^2 + 8^2 \amp = c^2  \amp \amp \blert{\text{Compute the powers.}}</mrow>
+        <mrow>36 + 64 \amp = c^2  \amp \amp \blert{\text{Add.}}</mrow>
+        <mrow>100 \amp = c^2  \amp \amp \blert{\text{Take square roots.}}</mrow>
+        <mrow>\sqrt{100} \amp = c  \amp \amp \blert{\text{Simplify the radical.}}</mrow>
+        <mrow>10 \amp = c</mrow></md>
+The hypotenuse is 10 inches long.</p></solution></example>
+
+<exercise><statement><p>The two short sides of a right triangle are 9 meters and 40 meters. What is the length of the hypotenuse?</p></statement>
+
+<answer><p>41 meters</p></answer></exercise>
+
+<example><statement><sidebyside widths="70% 30%"><p>A triathlete wants to know the distance across a small lake, from point <m>A</m> to point <m>B</m>.  She locates point <m>C</m> on one side of the lake to make a right triangle as shown. The distance from <m>A</m> to <m>C</m> is 3 miles, and the distance from <m>B</m> to <m>C</m> is 4 miles.  How far is it from <m>A</m> to <m>B</m> across the lake?</p>
+    <image source="laketri.png"></image></sidebyside></statement>
+
+<solution><p>We can apply the Pythagorean theorem. Let's let <m>d</m> represent the distance across the lake, from <m>A</m> to <m>B</m>.  Then
+    <me>d^2 + 3^2 = 4^2</me>
+We square the numbers to get
+    <me>d^2+ 9 = 16</me>
+If 9 added to <m>d^2</m> gives 16, then <m>d^2</m> must be equal to 7.
+    <me>d^2 = 7</me>
+So <m>d</m> must be the square root of 7.
+    <me>d = \sqrt{7} = 2.64575 ...</me>
+The distance across the lake is about 2.65 miles.</p></solution></example>
+
+<exercise><statement><sidebyside widths="70% 30%"><p>The Department of Roads wants to know the distance through a mountain in the path of a proposed highway from <m>A</m> to <m>B</m>. The field engineer locates point <m>C</m> on a line perpendicular to the planned route.  He then measures the distance from <m>A</m> to <m>C</m> as 2 miles, and the distance from <m>B</m> to <m>C</m> as 3 miles.  How far is it from <m>A</m> to <m>B</m> through the mountain?</p>
+     <image source="roadstri.png"></image></sidebyside></statement>
+
+<answer><p>About 2.24 miles</p></answer></exercise>
+
+<activity><title>Delbert's Bike Trip</title>
+
+<p>In a previous lesson, we considered a problem about Delbert's bike trip.</p>  
+
+  <p>Delbert sets out heading west, but his compass is not completely 
+  accurate. He is actually riding on a course slightly north of west.  
+  When he reaches the canyon, his odometer reads 20.5 miles instead 
+  of 20 miles, as the guide book described.  How far south must 
+  Delbert ride to reach the bridge over the canyon?</p>
+
+<p>Here is a picture of the situation.</p>
+
+    <image source="biketripmap.png" width="70%"></image>
+
+<p><ol>
+  <li><p>Let us call the distance Delbert has to ride <m>D</m>. The three distances, 20 miles, 20.5 miles, and <m>D</m> miles, form a right triangle. Write an equation using the Pythagorean theorem.</p></li>
+
+  <li><p>Now square the two numbers in your equation to get a new equation.</p></li>
+
+  <li><p>What does your new equation tell you about the value of <m>D^2</m> ? 
+        <me>D^2 = </me>  </p></li>              
+
+  <li><p>Now you can find <m>D</m>. Use a calculator to find that 
+        <me>D = </me>  </p></li>                
+
+  <li><p>Delbert must ride another <fillin></fillin> miles to reach the bridge. (Do you find the answer surprising?)</p></li>
+</ol></p></activity>
+
+<activity><title>Spiral of Roots</title>
+
+<sidebyside widths="60% 35%"><stack><p>The figure at the start of this section is called the Spiral of Theodorus. Theodorus of Cyrene was a Greek mathematician who lived in the 5th century BCE. He used the spiral to prove that the square roots of the non-square numbers up to 17 are irrational.</p>
+
+<p>To make the spiral, you start with the right triangle shaded in blue. Then you use the hypotenuse of that triangle as one leg of another right triangle, with a second leg of length 1. Continue the process, adding a new right triangle at each step.</p></stack>
+  <image source="bluespiral.png"></image></sidebyside>
+
+<p><ol>
+  <li><p>Use the Pythagorean theorem to find the hypotenuse of the first right triangle, shaded blue in the figure.</p></li>
+
+  <li><p>Using your answer to part 1, find the hypotenuse of the second right triangle.</p></li>
+
+  <li><p>Continue to find the hypotenuse of each right triangle in the figure.  Do you see a pattern?</p></li>
+</ol></p></activity>
+
+<assemblage><title>Challenge Problem</title>
+
+<p>When the railroad lays a new track, they always leave a small amount of space between the ends of adjacent rails. This is because the rails expand on hot days, and without some room between rails the tracks would buckle. Suppose that a fifteen mile section of rail expands one inch, causing the track to buckle as shown in the figure.  (Not to scale!) </p>
+
+    <image source="hp-4-3-chall.png" width="50%"></image>
+
+<p><ol>
+  <li><p>How high will the rail rise in the middle?  First, choose your best guess:</p>
+      <p><ol marker="a." cols="2">
+          <li><p>1  centimeter</p></li>
+          <li><p>2 inches</p></li>
+          <li><p>3  feet</p></li> 
+          <li><p>15  yards</p></li>
+      </ol></p></li>
+  <li><p>Now work out the answer. Be careful with units!</p></li>
+</ol></p></assemblage>
+
+</subsection>
+
+<subsection><title>Vocabulary</title>
+<p><ul cols="2">
+  <li><p>square root</p></li>
+  <li><p>radical sign</p></li>
+  <li><p>irrational number</p></li>
+</ul></p></subsection>
+
+
+<xi:include href="./prac-4-3.ptx" />
+
+</section>

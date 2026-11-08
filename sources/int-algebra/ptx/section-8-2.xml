@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="AlgebraicFractions"   xmlns:xi="http://www.w3.org/2001/XInclude"><title>Algebraic Fractions</title>
+
+<subsection><title>Introduction</title>
+
+<p>In applications, variables may occur in the numerator or denominator of a fraction, or both. For example, the time it takes for the Moon to eclipse the Sun is given by the formula
+    <me>T = \dfrac{rD-Rd}{vR}</me>
+where the variables give the diameter of the Sun and the distances of the Moon and Sun from Earth. The total resistance of two appliances with resistances <m>a</m> and <m>b</m> connected in parallel is given by
+    <me>R=\dfrac{ab}{a+b}</me></p>
+<p>These two formulas involve simple poynomials in more than one variable. Let's start our study of fractions with expressions that include only one variable.</p>
+
+<definition><title>Algebraic Fraction</title>
+<statement><p>An <term>algebraic fraction</term><idx><h>algebraic fraction</h></idx> (or <term>rational expression</term><idx>rational expression</idx><idx><h>rational expression</h><seealso>algebraic fraction</seealso></idx>, as they are sometimes called) is a fraction in which both numerator and denominator are polynomials.</p></statement></definition>
+
+<p>Here are some examples of algebraic fractions:
+    <me>\dfrac{3}{x},~~~~~~\dfrac{a^2+1}{a-2},~~~~~~\text{and}~~~~~~\dfrac{z-1}{2z+3}</me>
+We can evaluate algebraic fractions just as we evaluate any other algebraic expression.</p>
+
+<note><p>If we try to evaluate the fraction <m>\dfrac{a^2+1}{a-2}</m> for <m>a=2</m>, we get <m>\dfrac{2^2+1}{2-2}</m>  or <m>\dfrac{5}{0}</m>, which is undefined. When working with fractions, we must exclude any values of the variable that make the denominators equal to zero.</p></note>
+</subsection>
+
+<subsection><title>Reducing Fractions</title><idx>reducing fractions</idx>
+
+<p>You'll recall from your study of arithmetic that we can <term>reduce</term><idx><h>fraction</h><h>reducing</h></idx><idx>reducing fractions</idx> a fraction if we can divide both numerator and denominator by a <term>common factor</term><idx><h>common factor</h></idx><idx><h>fraction</h><h>common factor</h></idx><idx><h>common factor</h><seealso>fraction</seealso></idx>.  In algebra, it is helpful to think of factoring out the common factor first.  For example,
+    <me>\dfrac{27}{36} = \dfrac{\cancel{9} \cdot 3}{\cancel{9} \cdot 4} = \dfrac{3}{4}</me>
+where we have divided both numerator and denominator by 9. The new fraction has the same value as the old one, namely 0.75, but it is simpler (the numbers are smaller.) Reducing is an application of the Fundamental Principle of Fractions.</p>
+
+<assemblage><title>Fundamental Principle of Fractions</title><idx><h>fraction</h><h>fundamental principal</h></idx><idx>fundamental principal of fractions</idx><idx>reducing fractions</idx>
+<p>We can multiply or divide the numerator and denominator of a fraction by the same nonzero factor, and the new fraction will be equivalent to the old one.
+    <me>\blert{\dfrac{a \cdot c}{b \cdot c} = \dfrac{a}{b}}~~~~~~\text{if}~~~~~~b,c \ne 0</me></p></assemblage>
+
+<example><statement><p>Reduce  <m>~\dfrac{8x^3y}{6x^2y^3}</m></p></statement>
+
+<solution><p>The common factor for numerator and denominator is <m>2x^2y</m>.  We factor <m>2x^2y</m> from the numerator and denominator, then divide by the common factor.
+    <me>\dfrac{8x^3y}{6x^2y^3} = \dfrac{4x \cdot \cancel{2x^2y}}{3y^2 \cdot \cancel{2x^2y}} = \dfrac{4x}{3y^2}</me></p>
+</solution></example>
+
+<exercise component="webwork"><title>Practice 1</title>
+<webwork><pg-code>
+        Context()->variables->are(a=>"Real", b=>"Real");
+        $answer = Compute("(-15*a*b^4)/(25*a^2*b)");
+        $num = Compute("-3b^3");
+        $den = Compute("5a");
+    </pg-code>
+    <statement><p>Reduce   <m>\displaystyle\frac{-15ab^4}{25a^2b}</m></p>
+        <tabular>
+            <row><cell bottom="minor">
+                    <var name="$num" width="4"/></cell></row>
+            <row><cell>
+                    <var name="$den" width="4"/></cell></row>
+        </tabular>
+        <instruction>Enter numerator and denominator in separate boxes.</instruction>
+    </statement>
+    <solution><p><m>\dfrac{-3b^3}{5a}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 1</title>
+    <statement><p>Reduce   <m>\displaystyle\frac{-15ab^4}{25a^2b}</m></p></statement>   
+    <answer><p><m>\dfrac{-3b^3}{5a}</m></p></answer></exercise>
+
+<warning><p>When we cancel common factors, we are <em>dividing</em>. Because division is the inverse or opposite operation for multiplication, we can cancel common <em>factors</em>, but <em>we cannot cancel common terms</em>.
+</p></warning>
+
+<example><statement><p>Use your calculator to decide which calculation is correct. <ol marker="a." cols="2">
+        <li><m>\dfrac{12}{8} = \dfrac{4 \cdot 3}{4 \cdot 2} \rightarrow \dfrac{3}{2}</m></li>
+        <li><m>\dfrac{7}{6} = \dfrac{4 + 3}{4 + 2} \rightarrow \dfrac{3}{2}</m></li></ol></p></statement>
+
+<solution><p>We can cancel the 4's in part (a), because they are factors of numerator and denominator.</p>
+<p> We cannot cancel the 4's in part (b), because they are terms.</p>
+<p> You can verify that <m>\dfrac{12}{8} = \dfrac{3}{2}</m>, but <m>\dfrac{7}{6} \ne \dfrac{3}{2}</m>.</p></solution>
+</example>
+
+<exercise component="webwork"><title>QuickCheck 1</title>
+<webwork><pg-code>
+        $undefined = PopUp(
+            [ "?", 
+            "denominator", 
+            "index",
+            "numerator",
+            "radicand"
+            ],
+            1
+        );
+        $undef2 = PopUp(
+            [ "?", 
+            "even", 
+            "negative",
+            "positive",
+            "zero"
+            ],
+            4
+        );
+        $cancel = PopUp(
+            [ "?", 
+            "addition", 
+            "division",
+            "subtraction",
+            "squaring"
+            ],
+            2
+        );
+        $terms = PopUp(
+            [ "?", 
+            "added", 
+            "exponentiated",
+            "multiplied",
+            "reduced"
+            ],
+            1
+        );
+        $terms2 = PopUp(
+            [ "?", 
+            "divided", 
+            "expended",
+            "simplified",
+            "subtracted"
+            ],
+            4
+        );
+        $equiv = PopUp(
+            [ "?", 
+            "equivalent", 
+            "inverse",
+            "superior",
+            "unrelated"
+            ],
+            1
+        );
+    </pg-code>
+    <statement><p>Fill in the blanks.<ol marker="a.">
+        <li>An algebraic fraction is undefined when the <var name="$undefined" form="popup"/> is <var name="$undef2" form="popup"/>.</li>
+        <li>"Canceling" common factors uses the operation of <var name="$cancel" form="popup"/>.</li>
+        <li>Terms are expressions that are <var name="$terms" form="popup"/> or <var name="$terms2" form="popup"/>.</li>
+        <li>When we reduce a fraction, the new fraction is <var name="$equiv" form="popup"/> to the old one.</li>
+            </ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li>denominator, zero</li>
+        <li>division</li>
+        <li>added, subtracted</li>
+        <li>equivalent</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 1</title>
+<statement><p>Fill in the blanks to complete each statement.</p>
+    <p><ol marker="a.">
+        <li><p>An algebraic fraction is undefined when the <fillin characters="10"/> is <fillin characters="10"/>.</p></li>
+        <li><p>"Canceling" common factors uses the operation of <fillin characters="10"/>.</p></li>
+        <li><p>Terms are expressions that are <fillin characters="10"/> or <fillin characters="10"/>.</p></li>
+        <li><p>When we reduce a fraction, the new fraction is <fillin characters="10"/> to the old one.</p></li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 2</title>
+<webwork><pg-code>
+        $ans = RadioButtons(
+            [ "(a) \(\quad \displaystyle\frac{5x}{8x}=\frac{5}{8} \)$BR", 
+            "(b) \(\quad \displaystyle\frac{x+5}{x+8}=\frac{5}{8}  \)"
+            ],
+            0
+        );
+        
+    </pg-code>
+    <statement>
+        <p>Which calculation is correct? Choose a value for <m>x</m> and use your calculator to verify your answer.</p>
+        <p><var name="$ans" form="buttons"/> </p>
+    </statement>
+    <solution><p>(a) <m>~\dfrac{5x}{8x}=\dfrac{5}{8}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 2</title>
+<statement><p>Which calculation is correct? Choose a value for <m>x</m> and use your calculator to verify your answer.</p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>\dfrac{5x}{8x} = \dfrac{5}{8}</m></p></li>
+        <li><p><m>\dfrac{x+5}{x+8} = \dfrac{5}{8}</m></p></li>
+    </ol></p></statement>
+    <answer><p>(a) <m>~\dfrac{5x}{8x}=\dfrac{5}{8}</m></p></answer></exercise>
+
+<p>If the numerator or denominator of the fraction contains more than one term, it is especially important to <em>factor before reducing</em>, so that numerator and denominator are written as products of factors, instead of as sums of terms. </p>
+
+<example xml:id="example-reduce"><statement><p>Reduce each fraction.</p>
+    <p><ol marker="a." cols="2">
+        <li><m>\dfrac{4x+2}{4}</m></li>
+        <li><m>\dfrac{9x^2+3}{6x+3}</m></li></ol></p></statement>
+
+<solution><p>First we factor the numerator and denominator. Then we divide numerator and denominator by any common factors.</p>
+        <aside><p><m>\alert{\text{[TK]}}~~</m>To refresh your factoring skills, see <xref ref="tkFactPoly" text="custom"> Section 8.2.1 </xref> of the Toolkit.</p></aside>
+    <p><ol marker="a.">
+        <li><m>\dfrac{4x+2}{4} = \dfrac{\cancel{2}(2x+1)}{\cancel{2}(2)} = \dfrac{2x+1}{2}</m></li>
+        <li><m>\dfrac{9x^2+3}{6x+3} = \dfrac{\cancel{3}(3x^2+1)}{\cancel{3}(2x+1)} = \dfrac{3x^2+1}{2x+1}</m></li>
+    </ol></p></solution></example>
+
+<warning><p>We cannot cancel the 4's in part (a) of the Example above, because 4 is not a factor of the entire numerator.  Thus,
+        <me>\dfrac{4x+2}{4} \ne x+2</me>
+In part (b) of the Example, we cannot cancel the 3's, because they are terms and not factors. Thus,
+        <me>\dfrac{9x^2+3}{6x+3} \ne \dfrac{9x^2}{6x}</me></p>
+</warning>
+
+<exercise component="webwork"><title>Practice 3</title>
+<webwork><pg-code>
+        $a = RadioButtons(
+            [ "A) 3 is not a factor of numerator or denominator.", 
+            "B) More cancelling is required."
+            ],
+            0
+        );
+        $b = RadioButtons(
+            [ "A) 2 is not a factor of the numerator.", 
+            "B) 2 should be subtracted from 5."
+            ],
+            0
+        );
+    </pg-code>
+    <statement><p>Explain why each calculation is incorrect.<ol marker="a.">
+        <li><p><m>\dfrac{x-6}{x-9} \rightarrow \dfrac{x-2}{x-3}</m>
+            </p><p><var name="$a" form="buttons"/></p></li>
+        <li><p><m>\dfrac{2x+5}{2} \rightarrow x+5</m>
+            </p><p><var name="$b" form="buttons"/></p></li></ol></p>
+        </statement>
+    <solution><p><ol marker="a.">
+    <li>3 is not a factor of numerator or denominator</li>
+    <li>2 is not a factor of the numerator</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 3</title> 
+<statement><p>Explain why each calculation is incorrect.</p>
+    <p><ol marker="a." cols="2">
+        <li><p><m>\dfrac{x-6}{x-9} \rightarrow \dfrac{x-2}{x-3}</m></p></li>
+        <li><p><m>\dfrac{2x+5}{2} \rightarrow x+5</m></p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+    <li>3 is not a factor of numerator or denominator</li>
+    <li>2 is not a factor of the numerator</li>
+</ol></p></answer></exercise>       
+
+<p>We summarize the procedure for reducing algebraic fractions as follows.</p>
+
+<assemblage><title>To reduce an algebraic fraction</title><idx><h>algebraic fraction</h><h>reducing</h></idx><idx><h>fraction</h><h>reducing an algebraic fraction</h></idx><idx>reducing fractions</idx>
+    <p><ol marker="1.">
+        <li>Factor the numerator and the denominator.</li>
+        <li>Divide the numerator and denominator by any common factors.</li>
+    </ol></p></assemblage>
+
+<example xml:id="Reduce-algebraic-fractions"><statement><p>Reduce each fraction. <ol marker="a." cols="2">
+        <li><m>\dfrac{3x+12}{6x+24}</m></li>
+        <li><m>\dfrac{27x^3-1}{9x^2-1}</m></li></ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>We first factor the numerator and denominator completely.  
+        <me>\dfrac{3x+12}{6x+24} = \dfrac{3(x+4)}{2 \cdot 3(x+4)}</me>
+    Then we divide numerator and denominator by the common factors 3 and <m>(x+4)</m>. We must cancel the entire expression <m>(x+4)</m> from numerator and denominator (we cannot cancel the <m>x</m>'s or the 4's separately!).
+        <me>\dfrac{3(x+4)}{2 \cdot 3(x+4)} = \dfrac{\cancel{3}\cancel{(x+4)}}{2 \cdot \cancel{3}\cancel{(x+4)}}= \dfrac{1}{2}</me>
+    All the factors are canceled from the numerator, so we replace them by 1, because any expression divided by itself is 1.</p></li>
+    <li><p>The numerator of the fraction is a difference of two cubes, and the denominator is a difference of two squares.  We factor each to obtain
+        <me>\dfrac{27x^3-1}{9x^2-1} = \dfrac{(3x-1)(9x^2+3x+1)}{(3x-1)(3x+1)}</me>
+        We cancel the factor <m>(3x-1)</m> from top and bottom, to get
+        <me>\dfrac{\cancel{(3x-1)}(9x^2+3x+1)}{\cancel{(3x-1)}(3x+1)} = \dfrac{9x^2+3x+1}{3x+1}</me>
+    Because we cannot factor any further, we cannot reduce the fraction any further.</p></li>
+</ol></p></solution></example>
+
+<exercise component="webwork"><title>QuickCheck 2</title>
+<webwork><pg-code>
+        $cancel = PopUp(
+            [ "?", 
+            "exponentiate", 
+            "factor",
+            "invalidate",
+            "subtract"
+            ],
+            2
+        );
+        $factor = PopUp(
+            [ "?", 
+            "difference", 
+            "product",
+            "quotient",
+            "sum"
+            ],
+            2
+        );
+        $common = PopUp(
+            [ "?", 
+            "common", 
+            "fallacious",
+            "missing",
+            "zero"
+            ],
+            1
+        );
+        $one = Compute("1");
+    </pg-code>
+    <statement><p>Fill in the blanks.<ol marker="a.">
+        <li>If we want to cancel an expression from a fraction, we must be able to <var name="$cancel" form="popup"/> it from numerator and denominator.</li>
+        <li>When we factor an expression, we write it as a <var name="$factor" form="popup"/>.</li>
+        <li>If a factor appears in both numerator and denominator, it is called a <var name="$common" form="popup"/> factor.</li>
+        <li>If all the factors in the numerator or denominator cancel out, we replace it by <var name="$one" width="2"/>.</li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+        <li>factor</li>
+        <li>product</li>
+        <li>common</li>
+        <li>1</li></ol></p>
+    </solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 2</title>
+<statement><p>Fill in the blanks to complete each statement.</p>
+<p><ol marker="a.">
+        <li>If we want to cancel an expression from a fraction, we must be able to <fillin characters="10"/> it from numerator and denominator.</li>
+        <li>When we factor an expression, we write it as a <fillin characters="10"/>.</li>
+        <li>If a factor appears in both numerator and denominator, it is called a <fillin characters="10"/> factor.</li>
+        <li>If all the factors in the numerator or denominator cancel out, we replace it by <fillin characters="10"/>.</li>
+    </ol></p></statement></exercise>
+
+<exercise component="webwork"><title>Practice 4</title>
+<webwork><pg-code>
+        $ans = RadioButtons(
+            [ "\(\quad \displaystyle\frac{x+6}{9} \)$BR", 
+            "\(\quad \displaystyle\frac{x+2}{x+3} \)$BR",
+            "\(\quad \displaystyle\frac{x-2}{x-3} \)"
+            ],
+            1
+        );
+        $ansb = RadioButtons(
+            [ "\(\quad 2t-1 \)$BR", 
+            "\(\quad \displaystyle\frac{t-2}{2} \)$BR",
+            "\(\quad3t^2 \)"
+            ],
+            0
+        );
+    </pg-code>
+    <statement><p>Reduce each fraction. <ol marker="a." cols="2">
+        <li><p><m>\dfrac{x^2-x-6}{x^2-9}</m></p>
+                    <p><var name="$ans" form="buttons"/> </p></li>
+        <li><p><m>\dfrac{16t^2-4}{8t+4}</m></p>
+                    <p><var name="$ansb" form="buttons"/> </p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+        <li><m>\dfrac{x+2}{x+3}</m></li>
+        <li><m>2t-1</m></li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 4</title>
+<statement><p>Reduce each fraction. <ol marker="a." cols="2">
+        <li><p><m>\dfrac{x^2-x-6}{x^2-9}</m></p></li>
+        <li><p><m>\dfrac{16t^2-4}{8t+4}</m></p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+        <li><m>\dfrac{x+2}{x+3}</m></li>
+        <li><m>2t-1</m></li></ol></p></answer></exercise>
+
+<p>Keep in mind that the reduced form is equivalent to the original form of the fraction. If we evaluate the original form and the reduced form at the same value of the variable, the results are equal.</p>
+
+<example><statement><p>Verify that <m>~\dfrac{x^2-x-6}{x^2-9}~</m> is equal to <m>~\dfrac{x+2}{x+3}~</m> for <m>x=2</m>.</p></statement>
+
+<solution><p>We evaluate each fraction at <m>x=\alert{2}</m>.
+    <me>\dfrac{x^2-x-6}{x^2-9} = \dfrac{(\alert{2})^2-\alert{2}-6}{(\alert{2})^2-9} = \dfrac{-4}{-5} = \dfrac{4}{5}</me>
+and
+    <me>\dfrac{x+2}{x+3} = \dfrac{\alert{2}+2}{\alert{2}+3} = \dfrac{4}{5}</me></p></solution>
+</example> 
+
+<exercise component="webwork"><title>Practice 5</title>
+<webwork><pg-code>
+        $answer = Compute("1/2");
+    </pg-code>
+    <statement><p>If you evaluate <m>~\dfrac{3x+12}{6x+24}~</m> for <m>x=2</m> and for <m>x=-5</m>, what answer do you expect to get? (Recall the previous Example with the same algebraic fraction in part a.)</p>
+        <p><var name="$answer" width="3"/> </p>
+    </statement>
+    <solution><p><m>\dfrac{1}{2}</m></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 5</title>
+<statement><p>If you evaluate <m>~\dfrac{3x+12}{6x+24}~</m> for <m>x=2</m> and for <m>x=-5</m>, what answer do you expect to get?</p>
+    <p>Hint:  see <xref ref="Reduce-algebraic-fractions" /></p></statement>
+<answer><p><m>\dfrac{1}{2}</m></p></answer></exercise>
+</subsection>
+
+<subsection><title>Opposite of a Binomial</title><idx><h>binomial</h><h>opposite of</h></idx><idx>opposite of a binomial</idx>
+
+<p>Any number (except zero) divided by itself is 1, and any number divided by its opposite is <m>-1</m>. For example,
+        <me>\dfrac{5}{5} = 1 ~~~~~\text{and}~~~~~\dfrac{-5}{5} = -1</me>
+The same is true for binomials and other algebraic expressions. The opposite of an expression can be found by multiplying it by <m>-1</m>. Thus, the opposite of <m>a-b</m> is
+        <me>-(a-b) = -a + b= b-a</me>
+and so
+        <me>\dfrac{b-a}{a-b} = \dfrac{-\cancel{(a-b)}}{\cancel{(a-b)}} = -1</me>
+Here are some examples of opposites.
+    <md><mrow> 2a-3b~~~~~~~~\amp \text{and}~~~~~~~~3b-2a</mrow>
+        <mrow> 2a+3b~~~~~~~~\amp \text{and}~~~~~~~~-2a-3b</mrow>
+        <mrow> -x-1~~~~~~~~\amp \text{and}~~~~~~~~x+1</mrow>
+        <mrow> -x+1~~~~~~~~\amp \text{and}~~~~~~~~x-1</mrow></md>
+We can cancel opposites when we reduce fractions.</p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more about the opposite of a binomial, see <xref ref="tkOppBin" text="custom"> Section 8.2.2 </xref> of the Toolkit.</p></aside>
+
+<example><statement><p>Reduce  <m>~\dfrac{2x-4y}{6y-3x}</m> </p></statement>
+
+<solution><p>We first factor the numerator and denominator.
+    <me>\dfrac{2x-4y}{6y-3x} = \dfrac{2(x-2y)}{3(2y-x)}</me>
+We see that <m>x-2y</m> is the opposite of <m>2y-x</m>, that is, <m>x-2y = -(2y-x)</m>.  Thus,
+    <me>\dfrac{2(x-2y)}{3(2y-x)} = \dfrac{-2\cancel{(2y-x)}}{3\cancel{(2y-x)}} = \dfrac{-2}{3}</me></p></solution>
+</example>
+
+<exercise component="webwork"><title>Practice 6</title>
+<webwork><pg-code>
+        $a = Compute("1");
+        @choices = ("?", "cannot be reduced","cbr");
+        $popup = PopUp([@choices], $choices[0]);  # It doesn't matter which is used as the "correct answer".
+        Context($popup->context); 
+        $b = OneOf(@choices[1..2]);
+        $c = Compute("-1");
+    </pg-code>
+    <statement><p>Reduce if possible. <ol marker="a." cols="2">
+        <li><p><m>\dfrac{-x+1}{1-x}</m><var name="$a" width="5"/></p></li>
+        <li><p><m>\dfrac{1+x}{1-x}</m> <var name="$b" width="5"/></p></li>
+        <li><p><m>\dfrac{2a-3b}{3b-2a}</m> <var name="$c" width="5"/></p></li>
+        <li><p><m>\dfrac{2a-3b}{2b-3a}</m> <var name="$b" width="5"/></p></li></ol></p>
+        <instruction>Enter "cbr" if the fraction cannot be reduced</instruction>
+    </statement>
+    <solution><p><ol marker="a." cols="2">
+    <li>1</li>
+    <li>cannot be reduced</li>
+    <li><m>-1</m></li>
+    <li>cannot be reduced</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>Practice 6</title>
+<statement><p>Reduce if possible. <ol marker="a." cols="2">
+        <li><p><m>\dfrac{-x+1}{1-x}</m></p></li>
+        <li><p><m>\dfrac{1+x}{1-x}</m> </p></li>
+        <li><p><m>\dfrac{2a-3b}{3b-2a}</m></p></li>
+        <li><p><m>\dfrac{2a-3b}{2b-3a}</m> </p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a." cols="2">
+    <li>1</li>
+    <li>cannot be reduced</li>
+    <li><m>-1</m></li>
+    <li>cannot be reduced</li>
+</ol></p></answer></exercise>
+</subsection>
+
+<subsection><title>Rational Functions</title><idx><h>rational function</h></idx><idx><h>function</h><h>rational</h></idx>
+
+<definition><title>Rational Function</title>
+<p>A <term>rational function</term><idx><h>rational function</h></idx> is a function defined by an algebraic fraction. That is, it has the form
+    <me>f(x) = \dfrac{P(x)}{Q(x)}</me>
+where <m>P(x)</m> and <m>Q(x)</m> are polynomials. A rational function is undefined at any <m>x</m>-values where <m>Q(x) = 0</m>.</p></definition>
+
+<example xml:id="example-pedal-aircraft"><statement><p>Francine is planning a 60-mile training flight through the desert on her cycle-plane, a pedal-driven aircraft. If there is no wind, she can pedal at an average speed of 15 miles per hour, so she can complete the flight in 4 hours. <ol marker="a.">
+    <li><p>If there is a headwind of <m>x</m> miles per hour, it will take Francine longer to fly 60 miles. Express the time it will take to complete the training flight as a function of <m>x</m>.</p></li>
+    <li><p>Make a table of values for the function.</p></li>
+    <li><p>Graph the function and explain what it tells you about the time Francine should allot for the flight.</p></li>
+</ol></p></statement>
+
+<solution><p><ol marker="a.">
+    <li><p>If there is a headwind of <m>x</m> miles per hour, Francine's ground speed will be <m>15 - x</m> miles per hour. Using the fact that <m>\text{time} = \dfrac{\text{distance}}{\text{rate}}</m>, we find that the time needed for the flight will be
+            <me>t = f(x) = \frac{60}{15 - x}</me></p></li>
+    <li><p>We evaluate the function for several values of <m>x</m>, as shown in the table below.</p>
+        <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>7</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>10</m></cell></row>
+                    <row>
+                        <cell><m>t</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>7.5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>12</m></cell></row>
+            </tabular>
+    <p>For example, if the headwind is <m>\alert{5}</m> miles per hour, then
+                <me>t=\frac{60}{15-\alert{5}}=\frac{60}{10}=6</me>
+    Francine's effective speed is only 10 miles per hour, and it will take her 6 hours to fly the 60 miles. The table shows that as the speed of the headwind increases, the time required for the flight increases also.</p></li>
+    <li><p>The graph of the function is shown below. You can use your calculator with the window
+                <md><mrow>\text{Xmin} \amp = -8.5 \amp\amp \text{Xmax} = 15</mrow>
+                    <mrow>\text{Ymin} \amp = 0 \amp\amp \text{Ymax} = 30</mrow></md>
+    to verify the graph. In particular, the point <m>(0,4)</m> lies on the graph. This point tells us that if there is no wind, Francine can fly 60 miles in 4 hours, as we calculated earlier.</p>
+                
+    <image width="50%" source="images/fig-graph-time-against-headwind"><description>graph showing time to complete trip vs speed of headwind</description></image>
+            
+    <p>The graph is increasing, as indicated by the table of values. In fact, as the speed of the wind gets close to 15 miles per hour, Francine's flying time becomes extremely large. In theory, if the wind speed were exactly 15 miles per hour, Francine would never complete her flight. On the graph, the time becomes infinite at <m>x = 15</m>.</p>
+    <p>What about negative values for <m>x</m>? If we interpret a negative headwind as a tailwind, Francine's flying time should decrease for negative <m>x</m>-values. For example, if <m>x = -5</m>, there is a tailwind of 5 miles per hour, so Francine's effective speed is 20  miles per hour, and she can complete the flight in 3 hours. As the tailwind gets stronger (that is, as we move farther to the left in the <m>x</m>-direction), Francine's flying time continues to decrease, and the graph approaches the <m>x</m>-axis.</p></li></ol></p>
+</solution></example>
+
+<p>The vertical dashed line at <m>x=15</m> on the graph of <m>t=\dfrac{60}{15-x}</m> is a <term>vertical asymptote</term><idx><h>asymptote</h><h>vertical</h></idx><idx>vertical asymptote</idx> for the graph. We first encountered asymptotes in <xref ref="EightBasicGraphs" text="type-global"/> when we studied the graph of <m>y=\dfrac{1}{x}</m>. Locating the vertical asymptotes of a rational function is an important part of determining the shape of the graph.</p>
+
+<exercise component="webwork" xml:id="average-tshirt-costw"><title>Practice 7</title>
+<webwork><pg-code>
+        $cost = Formula("(100+5*x)/x");
+        @t = (1,2,4,5,10,20);
+        foreach my $i(0..5) {
+        $C[$i]= $cost->eval(x=>$t[$i]);
+        }
+    </pg-code>
+    <statement><p>EarthCare decides to sell T-shirts to raise money. The company makes an initial investment of $100 to pay for the design of the T-shirt and to set up the printing process. After that, the T-shirts cost $5 each for labor and materials.<ol marker="a.">
+        <li><p>Express the average cost, <m>C</m>, per T-shirt as a function of the number of T-shirts EarthCare produces.</p>
+                    <p><m>C=</m><var name="$cost" width="10"/> </p></li>
+        <li><p>Make a table of values for the function.</p>
+                    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <row bottom="minor">
+                            <cell><m>x</m></cell>
+                            <cell><m>1</m></cell>
+                            <cell><m>2</m></cell>
+                            <cell><m>4</m></cell>
+                            <cell><m>5</m></cell>
+                            <cell><m>10</m></cell>
+                            <cell><m>20</m></cell></row>
+                        <row> 
+                            <cell><m>C</m></cell>
+                            <cell><var name="$C[0]" width="3"/></cell>
+                            <cell><var name="$C[1]" width="2"/></cell>
+                            <cell><var name="$C[2]" width="2"/></cell>
+                            <cell><var name="$C[3]" width="2"/></cell>
+                            <cell><var name="$C[4]" width="2"/></cell>
+                            <cell><var name="$C[5]" width="2"/></cell></row>
+                        </tabular></li>
+    <li><p>Graph the function and explain what it tells you about the cost of the T-shirts.</p></li></ol></p>
+    </statement>
+    <solution><p><ol marker="a.">
+            <li><m>C=g(x) = \dfrac{100+5x}{x}</m></li>
+            <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell></row>
+                <row> 
+                    <cell><m>C</m></cell>
+                    <cell><m>105</m></cell>
+                    <cell><m>55</m></cell>
+                    <cell><m>30</m></cell>
+                    <cell><m>25</m></cell>
+                    <cell><m>15</m></cell>
+                    <cell><m>10</m></cell></row>
+                </tabular></li>
+            <li><p>A graph is below.</p>                
+                <p>As the number of T-shirts increases, the average cost per shirt decreases, but eventually levels off and approaches $5 per T-shirt.</p></li>
+    </ol></p></solution></webwork>
+<conclusion>
+    <p>Graph for part (c):</p>
+    <image width="35%" xml:id="fig-average-costw">
+        <description>graph of average cost of production</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[lightgray] (0,0) grid  (10,8);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,8.6) node[above]{$C$};
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in {2,4,...,10} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below]   {$\xi$};
+         }
+        \foreach \x [evaluate=\x as \xi using int(5*\x)]  in {2,4,6,8} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left]   {$\xi$};
+        }
+        \draw[samples=65,domain={4/7:10},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {(4+1*\x)/\x)});
+        \draw[ultra thick,dashed,blue](0,1)--(10,1);
+        \end{tikzpicture}]]>
+        </latex-image></image>
+</conclusion></exercise>
+
+<exercise component="main" xml:id="average-tshirt-cost"><title>Practice 7</title>
+<statement><p>EarthCare decides to sell T-shirts to raise money. The company makes an initial investment of $100 to pay for the design of the T-shirt and to set up the printing process. After that, the T-shirts cost $5 each for labor and materials.</p>
+    <p><ol marker="a.">
+        <li><p>Express the average cost, <m>C</m>, per T-shirt as a function of the number of T-shirts EarthCare produces.</p></li>
+        <li><p>Make a table of values for the function.</p>
+                    <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                        <row bottom="minor">
+                            <cell><m>x</m></cell>
+                            <cell><m>1</m></cell>
+                            <cell><m>2</m></cell>
+                            <cell><m>4</m></cell>
+                            <cell><m>5</m></cell>
+                            <cell><m>10</m></cell>
+                            <cell><m>20</m></cell></row>
+                        <row> 
+                            <cell><m>C</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell>
+                            <cell><m>\hphantom{000}</m></cell></row>
+                        </tabular></li>
+        <li><p>Graph the function and explain what it tells you about the cost of the T-shirts.</p></li>
+    </ol></p></statement>
+<answer><p><ol marker="a.">
+            <li><m>C=g(x) = \dfrac{100+5x}{x}</m></li>
+            <li><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell></row>
+                <row> 
+                    <cell><m>C</m></cell>
+                    <cell><m>105</m></cell>
+                    <cell><m>55</m></cell>
+                    <cell><m>30</m></cell>
+                    <cell><m>25</m></cell>
+                    <cell><m>15</m></cell>
+                    <cell><m>10</m></cell></row>
+                </tabular></li>
+        <li><image width="55%" xml:id="fig-average-cost"><description>graph of average cost of production</description><latex-image>
+        <!-- CDATA prevents certain LaTeX code from being interpreted as xml -->
+        <![CDATA[\tikzset{%
+        }
+        \begin{tikzpicture} [scale=.6]
+        \draw[lightgray] (0,0) grid  (10,8);
+        \draw[black,thick, ->, >=stealth'] (0,0)--(10.7,0) node[right]{$x$};
+        \draw[black,thick, ->, >=stealth'] (0,0)--(0,8.6) node[above]{$C$};
+        \foreach \x [evaluate=\x as \xi using int(5*\x)] in {2,4,...,10} {
+         \draw[black] (\x,.1) --++(0,-.2)  node[below]   {$\xi$};
+         }
+        \foreach \x [evaluate=\x as \xi using int(5*\x)]  in {2,4,6,8} {
+         \draw[black] (.1,\x) --++(-.2,0)  node[left]   {$\xi$};
+        }
+        \draw[samples=65,domain={4/7:10},smooth,variable=\x,magenta!90!black,very thick, <->,>=stealth'] plot ( {\x}, {(4+1*\x)/\x)});
+        \draw[ultra thick,dashed,blue](0,1)--(10,1);
+        \end{tikzpicture}]]>
+        </latex-image></image>                
+        <p>As the number of T-shirts increases, the average cost per shirt decreases, but eventually levels off and approaches $5 per T-shirt.</p></li>
+    </ol></p></answer></exercise>
+
+<p>In <xref ref="average-tshirt-cost" text="custom" >Practice 7</xref>, the horizontal line <m>C=5</m> is a <term>horizontal asymptote</term><idx><h>asymptote</h><h>horizontal</h></idx><idx>horizontal asymptote</idx> for the graph of the function. As <m>x</m> increases, the graph approaches the line <m>C=5</m> but will never actually meet it. The average price per T-shirt will always be slightly more than $5. Horizontal asymptotes are also important in sketching the graphs of rational functions. </p>
+
+<aside><p><m>\alert{\text{[TK]}}~~</m>For more about asymptotes, see <xref ref="tkAsymp" text="custom"> Section 8.2.3 </xref> of the Toolkit.</p></aside>
+
+<exercise component="webwork"><title>QuickCheck 3</title>
+<webwork><pg-code>
+        $True = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            1
+        );
+        $False = PopUp(
+            [ "?", 
+            "True", 
+            "False"],
+            2
+        );        
+    </pg-code>
+    <statement><p>True or False.<ol marker="a.">
+        <li><p>A rational function is a quotient of polynomials. <var name="$True" form="popup"/></p></li>
+        <li><p>A vertical asymptote occurs where a rational function is undefined.  <var name="$True" form="popup"/></p>
+        </li>
+        <li><p>A horizontal asymptote is a line that the graph of a rational function approaches as <m>x</m> increases. 
+        <var name="$True" form="popup"/></p></li>
+        <li><p>The algebraic fraction <m>\dfrac{60}{x-15}</m> is never equal to zero.  <var name="$True" form="popup"/>
+            </p></li>
+    </ol></p></statement>
+    <solution><p><ol marker="a.">
+    <li>True</li>
+    <li>True</li>
+    <li>True</li>
+    <li>True</li></ol></p></solution>
+</webwork></exercise>
+
+<exercise component="main"><title>QuickCheck 3</title>
+<statement><p>Decide whether each statement is true or false.</p>
+    <p><ol marker="a.">
+        <li><p>A rational function is a quotient of polynomials.</p></li>
+        <li><p>A vertical asymptote occurs where a rational function is undefined.</p></li>
+        <li><p>A horizontal asymptote is a line that the graph of a rational function approaches as <m>x</m> increases.</p></li>
+        <li><p>The algebraic fraction <m>\dfrac{60}{x-15}</m> is never equal to zero. </p></li>
+    </ol></p></statement></exercise>
+
+</subsection>
+
+<xi:include href="./section-8-2-exercises.xml" />                
+
+
+</section>
